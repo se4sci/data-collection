@@ -1,0 +1,542 @@
+hash,time,message,buggy
+54ed4b3,2010-10-08 13:55:34,Fixed bug 582 for compilation with C++ and additional fixes for compilation with c++.,0
+7603305,2010-10-30 23:05:37,coordinate tests: make sure that for Gromacs tests the conversion flag is set correctly - set core.flags[convert_gromacs_lengths] explicitly in setUp - encountered failures (possibly when running multiple tests with --processes=8) which   came about because the conversion flag was set to False even though it should have   been True,0
+b869469,2010-10-31 00:29:18,Trajectory API: clarified use of Writer write() method in response to Issue 49 - no code changes  only docs - Trajectory writers can take a Timestep as a rgument to write() - Frame writers only take a AtomGroup or a Universe for write(),0
+2edbb91,2010-10-31 00:29:24,test datafiles: fixed import list CRD_small -> CRD,0
+6ff313f,2010-10-31 00:29:34,Frame writer can take a Universe (fixes one half of Issue 49) - added universe attribute to Universe - altered GRO  CRD  and PrimitivePDB writer so that they can   deal with a Universe as argument (just get the coordinates from   the atoms instead of the 'selection' --- no performance penalty    just making use of the improved hierarchy and the fact that   .atoms is now a true AtomGroup) - added test case (passes),0
+7129ae7,2010-11-01 22:10:11,use PrimitivePDBReader as default PDB reader - Bio.PDB's reader can drop atoms when they have the same name   in a residue (which happens for systems generated from MD simulations)   The PrimitivePDBReader copes just fine with thos cases (but does   not handle esoteric PDB features such as alternative atoms and   insertion codes that are not needed for handling MD simulation data). - The default behaviour of MDAnalysis can be set through the flag       MDAnalysis.core.flag['permissive_pdb_reader']   The default is True. - One can always manually select the PDB reader by providing the   permissive keyword to Universe  e.g. Universe(... permissive=False)   will read the input file with the Bio.PDB reader. This might be   useful when processing true Protein Databank PDB files.,0
+9dd0cc7,2010-11-01 22:10:16,updated CHANGELOG with denniej's CRD additions (from http://code.google.com/p/mdanalysis/wiki/ReleaseNotes070 ),0
+0d30f46,2010-11-02 12:46:44,started 0.7.1 development,0
+97e5ab6,2010-11-03 12:46:17,fixed race conditions in test suite - any tests that relied on values of the internal flags have been   changed so that they set behaviour through keyword arguments instead    of manipulating flags - affects gromacs conversion of length (GRO  XTC  TRR) with the convert_gromacs_length   flag and the use of the permissive PDB reader (permissive_pdb_reader flag) - tests could fail when they were performed in parallel and different test threads   changed the global flags - added a fes tests to check for the default values but DO NOT USE THE FLAGS during   testing,0
+2e778c0,2010-11-03 18:40:28,names() for AG,0
+c47fadb,2010-11-03 18:40:35,new COntactAnalysis1 class,0
+3ce0098,2010-11-03 18:40:40,upgraded ez_setup.py to 0.6c11,0
+aec4310,2010-11-03 18:45:56,fixed: tests for crd files would fail (added crds to setup.py distribution),0
+c1a04e4,2010-11-03 20:10:50,contact analsysis: added docs and matrix plotting,0
+5fc635e,2010-11-03 21:11:09,Fix for issue 51: bolean correction from and to or for various flot32/64 checks etc.,0
+094b90a,2010-11-03 22:24:57,added Joe Goose to AUTHORS and documented fix of Issue 51 in CHANGELOG (picked from the 0.7.0 release branch),0
+4784f04,2010-11-03 23:39:44,contacts: can write figures by suppling filename and more docs,0
+4af4a34,2010-11-04 00:22:01,selection update for nucleicxstal 0.7.1 only,0
+4a637c2,2010-11-05 04:15:54,"documentation enhancements and configuration changes - added overview (not finished) and page on selections (goes beyond the current   online docs and includes the docs on instant selectors) - maded analysis modules separate pages (otherwise the analysis page becomes very   long and cluttered) - renamed the top level file to index because that makes it easier to serve it   via apache - configuration file changes     - bumped version/release     - put authors in one variable and also added Joe     - removed most of the special sphinx modules  only kept autodoc and intersphinx        add the others peicewise when needed (also might help to reduce weird sphinx       errors)     - added links for intersphinx (but commented out during development because       loading the objects.inv always takes a while)     - removed all path fiddling  simply use full import names in docs. This works well       but keep in mind that this obtains the docs from imported modules  works best       with developer installation (i.e. ""python setup.py develop"") - ""make html"" works fine for me",0
+22a353d,2010-11-05 21:00:44,dihedral analysis for AtomGroupmust use a hard-specific selection to get correct dihedral value,0
+653ee5d,2010-11-06 01:47:36,-Sphinx .rst source changes in this commit  but not supplying the built html -not everything is formatted/fully consistent but at least we are grabbing more docs -a few syntax warning do pop up during the build by they are not exceptions and allow the index file to be made,0
+e1f4c14,2010-11-07 19:18:58,The Makefile in /doc/sphinx/ has been modified to put all output in the doc/html/ folder. Simply use the command: 'make html'. Newly included sphinx .rst documentation (source only  not including built html): -modules in /MDAnalysis/core/,0
+43be61e,2010-11-18 15:42:05,Sphinx source updated to include documentation from modules in: MDAnalysis/KDTree (except for the CKDTree module which has no docstrings),0
+cd44261,2010-12-17 15:22:00,Writer class: fixed repr even if no numatoms provided,0
+1ca2520,2010-12-17 15:25:59,enabled inter-sphinx links to numpy and scipy,0
+49e815e,2010-12-17 15:26:11,FIXED: Issue 53 (ChainedReader failed when accessing dt),0
+bf16cd7,2011-01-05 19:21:16,generated docs with sphinx,0
+5dcee4a,2011-01-05 19:49:11,added mime types for serving docs from googlecode  see Issue 44,0
+7ad7cd9,2011-01-10 15:16:09,docs fixes (see Paul Rigor's email and Comment 5 in Issue 26 (http://code.google.com/p/mdanalysis/issues/detail?id=26#c5)),0
+70c1dd8,2011-01-10 15:16:22,regenerate docs (make html) with sphinx 1.05,0
+85e9399,2011-01-10 19:46:10,transformation improvements - added align_principalAxis() method to AtomGroup - added two helpers to transformations - added transform(4x4matrix) to AtomGroup - also made AtomGroup.dihedral() raise ValueError if the group has not   4 members.,0
+464f2d6,2011-01-10 19:46:17,bumped docs version info to 0.7.1 and added docs (invisible) to functions in AG.dihedral(),0
+c15845c,2011-01-10 19:46:26,regenerated docs (now show that they are for 0.7.1),0
+c691a1d,2011-01-10 19:47:06,updated/beautified docs - added Trajectory API - added intro to core - wenth through DCD and XYZ,0
+535cabd,2011-01-10 19:47:20,regenerated sphinx docs,0
+dd94415,2011-01-19 10:22:50,new example: monitor multimeric state of helical TM peptides (Jan Domanski),0
+8014ed7,2011-01-24 02:50:21,Amber support,0
+a535558,2011-01-25 11:30:03,updated CHANGELOG and bumped numpy version requirement to 1.0.3 (histogramming code??),0
+6975481,2011-01-28 10:56:42,fixed: some tests did not remove temporary files - added forgotten import os so that files get properly unlinked - problem was silently ignored because I had put it in an indiscriminate   try...except: pass block... d'oh - now only pass if os.unlink(temp) produces OSError  otherwise raise,0
+1fff1b0,2011-01-28 10:56:48,fixed Issue 58 (analysis.align.rms_fit_try) - messed up a horrible if/elif construct - fix reported by Joshua Adelman - added unit test (and marked as slow) - updated CHANGELOG NOTE: The rms_fit_trj() function should be rewritten for       - speed       - better handling of trajectory formats,0
+6fcb061,2011-01-28 17:09:03,added online docs to CHANGELOG (Tyler),0
+4e42355,2011-01-28 17:09:12,density module - generate volumetric data from trajectories - Density class and density_from_* functions for water/protein/... densities - originally from hops.sitemaps - added docs - added a few custom Exceptions and Warnings at top level - improved docs for units (which are central to the Density class) - uses GridDataFormats from https://github.com/orbeckst/GridDataFormats   (added as a requirement for the analysis module in setup.py  can be downloaded   from PyPi),0
+8188862,2011-01-28 17:09:29,regenerated 0.7.1 docs with new density  analysis module,0
+f66c5ab,2011-01-28 17:21:31,density: friendly error message if GridDataFormats are not installed,0
+6b16151,2011-02-01 04:18:18,fast RMSD aligner  based on Douglas Theobald's QCP method - contributed by Joshua Adelman from his pyqcprot package   https://github.com/synapticarbors/pyqcprot - new module: core.qcprot - used as a drop-in replacement for core.rms_fitting.rms_rotation_matrix()    rms_rotation_matrix() is deprecated and scheduled for removal in 0.8 - added test case for qcprot (using Josh's example.py) - analysis.align.rms_fit_trj() got additional functionality (thanks to   qcprot):   - can do mass-weighted RMSD fit with new mass_weighted=True keyword   - can write the RMSD timeseries to a text file (rmsdfile keyword),0
+d353a88,2011-02-01 04:19:23,docs for qcprot (and also distances),0
+01cef05,2011-02-01 04:19:56,generated docs with sphinx (includes QCP rotation and distances module (which had been missing)),0
+c2dd672,2011-02-01 04:35:39,docs again (small issue in analysis.align and set all svn properties on docs),0
+559c64d,2011-02-01 17:09:04,added HIE residue (Amber) to protein selections and updated some docs,0
+b2c933b,2011-02-01 17:09:12,work on Amber TRJ format - enhanced the Trajectory API: readers must be able to accept (and   ignore) any keywords. This is necessary to pass the number of atoms   to the Amber TRJ reader  which needs it - updated all readers to accept **kwargs if they hadn't done so already - made the TRJReader work with or without box in the trajectory   (reads the first frame and looks for box information - documented the quirks of the TRJ reader - Amber TRJ reader can also read compressed files - introduced a registry for formats that can do compressed files   (MDAnalysis.coordinates._compressed_formats),0
+11eca03,2011-02-01 17:40:49,added testcase for Amber TRJ (thanks to Ranjit Vijayan!),0
+a263b11,2011-02-02 12:59:15,protein selections: added ACE and NME (Amber termini),0
+a21bf73,2011-02-02 13:06:18,PBC Amber test cases - PBC Amber trajectory (provided by Ranjit Vijayan) - various fixes to bugs uncovered by testcases - added functionality to the FORTRANReader class - more Amber formatted TRJ tests - example conversion Amber -> DCD,0
+60f478b,2011-02-02 14:37:14,test_atomgroup.py: added assert_() that is missing in numpy 1.2 and earlier: lead to 4 failed tests,0
+399eff1,2011-02-04 01:28:47,CHANGELOG AMBER,0
+d26b368,2011-02-05 22:59:01,Amber top parser: convert charge to MDAnalysis base unit e,0
+94c09f1,2011-02-05 23:04:26,added PQR support,0
+e9a3556,2011-02-06 00:11:50,added PQR and Amber TRJ docs,0
+4c664d4,2011-02-06 00:12:15,regenerated online docs (PQR and TRJ added),0
+dc58ca8,2011-02-06 14:30:02,docs: added table of all supported coordinate formats and linked it from top page,0
+fbe6c82,2011-02-06 14:30:23,regenerated docs: added table of supported coordinate formats,0
+b60c129,2011-02-06 14:52:13,docs on iteration and slices in the Trajectory API,0
+e37557f,2011-02-06 14:52:29,regenerated online docs (coordinates),0
+22eb49f,2011-02-07 03:38:05,density: new density_from_PDB() function (uses BFactorDensityCreator to make a density from crystal waters  checked with 1IFC.),0
+ae0d4f5,2011-02-07 03:38:19,updated units docs,0
+6adfc95,2011-02-07 03:38:29,simple example for block averaging,0
+e6a43ac,2011-02-07 03:38:50,regenerated online docs,0
+da03548,2011-02-08 11:59:59,prepared 0.7.1 release - bumped version to 0.7.1 - updated README with various package licences - updated contacts - removed doc/DevelopmentBranch.txt (outdated) and   added short README to point user to docs - fixed: pqr must be included in test cases,0
+8f2c67b,2011-02-08 12:13:55,bumped version to 0.7.2-devel for developing,0
+f150c00,2011-02-09 22:44:18,PDB topology parser: use chain as segment id if no other segid defined in the file,0
+4a73b46,2011-02-09 22:44:28,Segment.id is an alias for Segment.name (to make the interface more consistent),0
+1764edd,2011-02-12 20:54:39,copied QCP rotation example to examples directory,0
+db3bd0b,2011-02-12 20:54:52,added accepted MDAnalysis paper as citation - in README  online docs and init - also updated the examples section in the overview - also ask users to cite the Theobald articles for the QCP rotation code,0
+08610ac,2011-02-12 20:55:16,regenerated online docs (0.7.2 with MDAnalysis citation),0
+36e42bc,2011-02-12 21:09:58,updated deprecated usage in potential profile example (and added note that the example requires user editing),0
+014e7ef,2011-02-14 12:06:52,fixed problems with reading an processing triclinic unitcells - Issue 60: fixed reading of CRYST1 (was completely messed up) - Issue 61: order of angles was wrong when converting from a box vectors representation to   box lengths  angles  see e.g. http://en.wikipedia.org/wiki/Lattice_constant   for definitions - Issue 34: revisited old bug and changed test case so that it would catch angle mix up that was   overlooked in the previous fix,0
+e3c5763,2011-02-14 13:53:20,PrimitivePDBWriter writes chainID (from 1st letter of segid),0
+a7fbe07,2011-02-14 19:30:52,new method bbox() for AtomGroup: calculates the orthorhombic bounding box,0
+61bfdfe,2011-02-14 19:31:00,density: use PrimitivePDBReader to get PDB (can do B-factors and does not break as easily),0
+88356e8,2011-02-14 19:31:17,density: corrected docs for density units (and added better error message),0
+cfd2e95,2011-02-15 14:56:56,fixed Online Doc for point selection (reported by Joe),0
+f74ffcb,2011-02-15 14:57:09,rebuilt online docs (0.7.2 with fix for point selection),0
+b946c38,2011-03-09 20:06:32,Issue 64 fixed: universe.trajectory.delta values are rounded when read from the dcd header file (This used to be rounded to 4 decimals but people suggested that the full precision would be better.),0
+23a1bb7,2011-03-11 01:52:59,Support for PDBs with 4 character resnames and segID output when writing (PrimitivePDBWriter) (Issue 63  patch by dcaplan) - When I try to read and write PDBs with 4 character resnames used in NAMD/VMD I end up with an improperly formatted PDB file. This is also an issue with segIDs not being written. - I've made a quick patch where I add support for 4 character resnames and change the format string for the output to write the segID. I also added very simple support for better guessing of atom types since the function guess_atom_type was just returning 0. - I'm still not sure about how to deal with the 2 types of format strings for writing PDBs.,0
+ca81a4d,2011-03-11 03:24:13,synced CHANGELOG with http://code.google.com/p/mdanalysis/w/edit/ReleaseNotes072,0
+154f362,2011-03-16 23:02:29,fixed: Python >=2.5 required (with statement is used),0
+3ac43e7,2011-03-16 23:33:42,fixed: minimum requirment is Python 2.5 - check in setup.py - explicitly say in CHANGELOG that we need Python 2.5,0
+86cf7d9,2011-03-17 00:15:21,fixed Issue 66: supply generated C files so that only developers need Cython - provide generated C files - provide simple setup.py (for users) and setup_developers.py,0
+fa564fe,2011-03-17 12:44:57,MANIFEST fixes: add *.c files to distribution  also make sure that the html docs are included  + some cleanup,0
+1afa771,2011-03-17 12:54:07,fixed AdK testcase: dt and totaltime was broken by fix for Issue 64 - dt is not rounded anymore  hence dt is reported as 0.99999 and not 1.0 - use assert_almost_equal() in test case,0
+71a286b,2011-03-17 13:42:17,fixed XTC/TRR testcase: fix for Issue 64 broke dt and totaltime,0
+44eb889,2011-03-19 05:00:19,fixed: PDB writer would fail if atom type was an integer - use new guess_atom_element() which right now just does the same as guess_atom_type()   to always guess the element from the atomname - improved guess_atom_type() by also checking for names that start with numbers   such as some hydrogen atoms,0
+58644cc,2011-03-19 05:00:34,guess_atom_types(): added more ions (mostly GROMOS) and unit test,0
+61add54,2011-03-19 05:00:51,topology: moved atom types and masses into separate tables - new topology.tables module (can be later expanded to read tables from files) - added more masses and atom types (using CHARMM top_all27 and Gromacs atommass.dat) - added unit tests for masses (note: atomtype/masses test cases are incomplete... TODO)- new functions: get_atom_mass() and guess_atom_element() that do not do much yet  but will allow finer grained control later,0
+3f58920,2011-03-21 00:47:42,added reST docs for topology modules  including the hard-coded tables,0
+a6487d9,2011-03-21 00:48:08,regenerated online docs with new topology reader docs,0
+9ecb534,2011-03-21 18:12:57,new attributes for Atom: radius and bfactor - enhanced Atom object with the radius value (read by the PQR reader) and   added radii() to AtomGroup  this should make it easier to handle PQR files - changed the way that B-factors were stored: they are now also store with   each individual Atom. For compatibility with the old behaviour  AtomGroup.bfactors   is still a (managed) attribute but this will likely be changed to a method in   the 0.8 release to have a more uniform interface - Fixed a bug with the Bio.PDB reader: in the absence of a segid in the file it   would throw an error,0
+1a318b5,2011-03-21 18:13:26,minor reST fixes in doc (more to do... volunteers  anyone?),0
+8ac5acd,2011-03-21 18:13:38,regenerated online docs,0
+1d18048,2011-03-23 02:55:55,added many more residue names from Amber and OPLS/AA to be recognised as protein,0
+818a060,2011-03-23 02:56:03,_angle(v1 v2) should not return nan,0
+319ca59,2011-03-23 02:56:11,"spatial alignment convenience functions added to analysis.align: - rotation_matrix(a b  weights=None) to get the matrix for b = R.a - alignto(mobile  ref  select=""backbone""  mass_weighted=False) to align the Universe of the mobile   AtomGroup - rmsd() is now using qcprot - rms_fit_trj() minor optimizations (preallocate R)",0
+59aa167,2011-03-23 02:56:24,regenerated online docs http://mdanalysis.googlecode.com/svn/trunk/doc/html/index.html,0
+dba1134,2011-03-23 03:03:50,alignto(): doc update,0
+9a368a6,2011-03-23 03:04:00,regenerated online docs http://mdanalysis.googlecode.com/svn/trunk/doc/html/index.html again,0
+c919b8d,2011-03-23 03:38:44,minor doc improvements,0
+3b16db1,2011-03-23 03:38:52,fixed Issue 59 (naveen.michaudagrawal) -- DCDWriter now checks input coordinate array for continguousness - Because DCD's store the data in fortran format  ie a single timestep is (x x x ...  y y y...  z z z...) and through the magic of numpy arrays that's usually transparently handled.,0
+596b8ef,2011-03-23 14:09:56,align module improvements - alignto(): added subselection to transform arbitrary AtomGroups - much more exhaustive documentation (including step-by-step tutorial),0
+d71a514,2011-03-23 14:11:29,regenerated online docs (new analysis.align docs),0
+acdb227,2011-03-24 00:34:45,improved docs for align,0
+12f3fec,2011-03-24 00:34:57,regenerated online docs,0
+bf53397,2011-03-30 18:12:27,minor align docs (rms_fit_trj() is now pretty fast),0
+20253fa,2011-03-30 18:12:33,TrajectoryReader gained new Writer() method that returns an appropriate TrajectoryWriter for the read trajectory,0
+db97ed4,2011-03-30 18:12:41,analysis.align: streamlined rms_fit_trj() and alignto()  use common 'select' interface - consistent usage of 'mobile' and 'reference' set - fasta2select() returns dict with 'mobile' and 'reference' keys (MIGHT BREAK OLD   CODE ... but I don't think anyone used this) - the common select code _process_selection() has a hack to accept the old   'target' key instead of 'mobile' until 0.8 - test cases: added unit test for rmsd() and had to adjust the value for   the rms_fit_trj() test case (not really sure why but at least it's consistent   with what VMD shows),0
+4d43e92,2011-03-30 18:13:44,regenerate online docs (updated Trajectory API and align),0
+e95a78f,2011-03-31 00:25:02,added improved masses and atomtypes detection and white space fixes throughout,0
+e3db494,2011-03-31 00:39:10,CHANGELOG: white space fixes (note: do not edit CHANGELOG through the gcode web interface because whitespace is messed up),0
+ad586dc,2011-03-31 10:46:40,fixed: CRDWriter tests failed because of a bug in the use of the with statement,0
+7fc2d6f,2011-03-31 10:46:47,internally rewired guess_atom_type() to use guess_atom_element() and changed docs accordingly,0
+f089d8f,2011-03-31 12:06:52,release 0.7.2 - bumped release - fixed documentation (made all headings start with text  not a module name) - added documentation to the topology module - bumped developer release to 0.7.3-devel,0
+bd402ab,2011-03-31 12:07:09,online documentation for Release 0.7.2,0
+3189b2b,2011-03-31 16:08:08,bumped release to 0.7.3-devel,0
+615227f,2011-03-31 16:08:22,added documentation for Gromacs TRR and XTC format and libxdrfile - new reST docs - also fixed documentation for Writer() (was still the DCD one) - sanitized argument processing of xdrfile.core.TrjReader.Writer() (most of the DCD arguments   are not used by XTC/TRR),0
+0747737,2011-03-31 16:08:47,regenerated online docs with TRR/XTC additions,0
+16efded,2011-03-31 16:14:16,fixed: mime type of new html online docs was not text/html,0
+e50d422,2011-03-31 23:19:03,better docs for logging,0
+f9f75fc,2011-03-31 23:19:19,regenerated online docs,0
+1af849b,2011-03-31 23:46:55,FIXED: alignto() raises KeyError: 'target',0
+fdf23da,2011-03-31 23:58:33,alignto() and rms_fit_trj(): changed keyword 'select' default from 'backbone' to 'all' because this leads to less confusion  especially when the mobile and ref  groups are already appropriately chosen,0
+5d27868,2011-04-01 00:01:54,regenerated docs,0
+ca30f66,2011-04-09 22:33:59,comment on benchmarking sqrt(dot(v v)) vs numpy.linalg.norm (first one is 3x faster),0
+0d37e3c,2011-04-09 22:34:05,patch for Issue 57 by jandom,0
+d1ffce7,2011-04-09 22:34:12,fixed Issue 57: optimized patch and added test case - moved the coordinate check out of the loop and test the whole coordinate array in one   go (better performance but error reporting is worse because we do not report the offending   atom anymore) - remove the opened PDB file before raising the ValueError - added test case (should have had one for PrimitivePDBWriter anyway...),0
+241afbf,2011-04-09 22:34:19,relaxed test for MDAnalysis.analysis.align.rmsd: rmsd(A B) == rmsd(B A) only has to be equal to 5 decimals (jandom reported some spurious test failures in Issue 57),0
+f28ec8b,2011-04-09 22:34:26,updated CHANGELOG with recent 0.7.3 changes,0
+f0b2076,2011-04-10 12:20:45,patch 57b by jandom: completes the fix of Issue 57 (coordinate checking of GRO/PDB writers) - From http://manual.gromacs.org/current/online/gro.html    - position (in nm  x y z in 3 columns  each 8 positions with 3 decimal places)    - velocity (in nm/ps (or km/s)  x y z in 3 columns  each 8 positions with 4 decimal places)   Does that mean a max values of 9999.999/-999.999 for coords and same for velocities  but with the decimal moved a digit to left? - added validation for gro writing  moved the coordinate checking method to parent writer class.,0
+3ace9d4,2011-04-10 12:20:57,"test case for writing GRO files and optimization of fixes for Issue 57 - testing for writing GRO and limits ( -999.994 nm < x < 9999.994 nm ) - sharpened test for PDB limits ( -999.994 A < x < 9999.994 A)  note units A vs nm - conceivably we could include the boundaries into the legal values (they still round down)    if we do then we need to adjust the tests - legal coordinates check for GRO: moved out to before the file is even opened so we can get   rid of removing the opened file - GRO writer: use ""with open() as ..."" instead of ""try: ... finally: close()""",0
+46cc00d,2011-04-10 13:05:51,changed legal coordinate values for GRO and PDB - limits -999.9995/9999.9995 - changed the actual check to min < x <= max (see Issue 57 comment #7) - tests: the min test is ok  the max test relies on <= and somehow does not   sharply discriminate  e.g. for GRO 9999.9996 passes and for PDB 9999.9951   passes. Not sure what's going on but I made the tests a little bit weaker   (PDB: 9999.996  GRO: 9999.999). In practice it probably won't matter...,0
+0114e6a,2011-04-17 14:27:27,converted all TABs to spaces (Issue 69) - used emacs 'untabify' on all files  see   http://code.google.com/p/mdanalysis/issues/detail?id=69#c1 - unit tests pass - TODO: add marker lines for editors (do this together with a   fix for Issue 68),0
+87977a3,2011-04-17 14:28:19,added comment and formatting header to files (Issue 68 and Issue 69) - name  url  copyright and licence (GPL v2+)  Issue 68 - citation information (need to update once full citation available) - modelines for emacs and vim to ensure that no TABs are use (Issue 69) - might have to take a closer look at the licences of the bundled packages   and customize their comment headers,0
+67e1102,2011-04-17 19:36:19,fixed: units.py must be in UTF-8,0
+1adeb82,2011-04-17 19:36:26,CRDReader streamlined and improved - fixed default unit as Angstrom  but that did not   have any influence on the behaviour so far) - added official CRD format to the comments for future reference - improved robustness of EXT detection by using a staged detection of   lines (continue blocks) and checking length of fields - added additional sanity check on the number of atoms (which we can   get from the CRD header),0
+d9b741c,2011-04-18 02:30:17,added original HELANAL (Python) code by Benjamin Hall - LICENCE: not free  DO NOT DISTRIBUTE yet - not integrated  this is the code as provided by Ben,0
+6cf3507,2011-04-18 02:30:29,replaced uses of CartesianToolkit with numpy (untested),0
+6ee0d03,2011-04-18 02:30:38,new attributes for universe.trajectory: frame and time - report the frame number and time of the current time step - single frame formats return frame = 0 and time = 0.0 - added test cases,0
+1000dd5,2011-04-18 02:30:52,HELANAL helix analysis (integrated Ben Hall's Python implementation) - Ben's code is licensed under the GPL v2+ - http://www.ccrnp.ncifcrf.gov/users/kumarsan/HELANAL/helanal.html - reference: Bansal M  Kumar S  Velavan R.  HELANAL - A program to   characterise helix geometry in proteins. J Biomol Struct Dyn. 2000  17(5):811-9. - requires universe and start and stop residue of the helix to be analyzed    write a number of output files - not fully tested! - numpified  removed support code for vector handling and trajectory I/O   (now all done with numpy or MDAnalysis)  added docs,0
+ec5546e,2011-04-18 02:32:36,regenerated online docs (includes HELANAL),0
+8da7bed,2011-04-18 02:43:50,fixed reST in helanal.py,0
+616dc4e,2011-04-18 02:44:00,regenerated docs (after helanal reST fixes),0
+894f85e,2011-04-19 20:06:03,LeafletFinder: removed deprecated atoms() method and some reST fixes,0
+ea0e3d1,2011-04-19 20:06:12,integrated and expanded documentation on selection exporters,0
+b559fe3,2011-04-19 20:06:30,regenerated online docs with new docs on selection exporters,0
+ae0b88d,2011-04-20 20:29:16,notes on using Apple gcc and possible problems running examples from source dir (thanks to Justin Lemkul for the tips),0
+e2ee557,2011-04-20 20:29:24,new attribute Timestep.volume: unit cell volume (+test cases),0
+7e42c6e,2011-04-20 20:29:31,online docs: link to Selection exporters from start page and made exporter table clearer,0
+c1758c6,2011-04-20 20:29:40,regenerated online docs,0
+3a7fe45,2011-04-20 20:30:00,fixed Issue 70 (instant selection of atoms in residues that are also termini) - removed caching of atoms in Residue - decreases performance (probably) but at least returns correct selections,0
+8caec3c,2011-04-20 20:30:24,coordinates: use close() throughout instead of deprecated close_trajectory(),0
+8b07211,2011-04-20 20:30:34,updated a number of examples - write figures to ./figures subdirectory - write data to ./output - added example output and figures for blocks.py  backbone_dihedrals.py    radial_distribution_function.py - fixed/update a number of examples   - blocks.py: block averaging (see example in the paper)   - radial_distribution_function.py: g(r)  this is the optimized version     (see paper) with correct normalisation   - backbone_dihedral.py: example for Timeseries.Collection and use of the     new special Residue.phi_selection() and Residue.psi_selection() methods     for the common backbone dihedrals  script is now ran on the DIMS AdK     trajectory and produces a figure   - TODO: other scripts - made all scripts executable,0
+2627b53,2011-04-20 21:19:22,example updates: fixed normalization in radial_distribution_function.py and redrew figures,0
+58572f9,2011-04-23 20:09:48,updated MDAnalysis paper citation: published online http://dx.doi.org/10.1002/jcc.21787   also added HELANAL citation and made everything look similar to the googlecode home page,0
+a0548a9,2011-04-23 20:10:45,regenerated online docs,0
+2af9058,2011-04-27 20:21:30,PDBQT support (Paul Rigor http://www.ics.uci.edu/~prigor ),0
+3ab4202,2011-04-27 20:21:44,PDBQT small changes - fixed PDBQT test case  passes now sensibly - added docs - removed commented out Bio.PDB stuff in PDBQT.py (not needed) - updated CHANGELOG and AUTHORS with Paul Rigor's contribution - added PDBQT to the list of supported formats,0
+684b281,2011-04-27 20:21:52,added test for writing PDBQT files,0
+aae1ef9,2011-04-27 20:21:58,PQDBQT: use Atom.charge for partial charges and Atom.type for atomtype - removed partialCharge and element attributes from Atom - minor comments and streamlining - adjusted format description to match PDBQT,0
+147d013,2011-04-27 20:22:20,docs for PDBQST format integrated into online docs,0
+95f61ed,2011-04-28 00:11:49,David Caplan's hydrogen bond analysis - add http://github.com/davecap/labwork/raw/master/mdanalysis/hbonds.py - currently GPL3 so we cannot use it - added to init,0
+956f4fe,2011-04-28 00:12:00,added tweaks to David Caplans hbond.py to make it work with Gromacs waters,0
+33ab408,2011-04-28 00:12:10,integrated docs for David Caplan's hbonds analysis module into online docs added h-bonding analysis to CHANGELOG and David Caplan to AUTHORS,0
+be2381a,2011-04-28 00:12:28,regenerated online docs (H-bonding analysis and PDBQT format),0
+8438487,2011-04-30 17:27:51,MDAnalysis.analysis.distances.dist() for computing distances between matching atoms in two groups,0
+a25173d,2011-05-02 14:37:47,fixed: AtomGroup.bbox(),0
+e56a2a6,2011-05-02 14:37:54,added method AtomGroup.bsphere(),0
+ead8179,2011-05-02 15:43:09,AtomGroup.dihedral(): use faster numpy functions to calculate dihedral  added test cases for dihedral() and the phi()/psi()/omega() selection methods,0
+d1b37bb,2011-05-11 12:48:58,MDAnalysis with new logo: rebranded docs,0
+e347580,2011-05-11 12:49:51,generated online docs with new layout (sphinxdoc) and logo,0
+c21e114,2011-05-17 21:42:36,fixed dihedral function in AtomGroup,0
+f48a746,2011-05-18 01:19:13,dihedral orig,0
+eeb44e2,2011-05-18 01:48:59,old dihedral() function,0
+c2dc848,2011-05-18 02:55:34,dihedral() function,0
+a8bab45,2011-05-18 02:55:48,new AtomGroup methods bond() and angle(),0
+c4b1728,2011-05-18 16:39:01,reST doc fixes and updates,0
+bb193df,2011-05-18 16:39:09,added improper() with test case  more reST fixes,0
+3f88313,2011-05-18 16:39:20,regenerated online docs 0.7.3 with sphinx,0
+b414093,2011-05-18 21:40:19,setup: removed un-used fast_numeric_include from transformations.c,0
+7c84c95,2011-05-20 17:30:12,enabled mass-weighted fitting in rms_fit_trj(),0
+0410f40,2011-05-20 17:30:21,removed core.rms_fitting,0
+84b2be3,2011-05-20 17:58:24,fixed mass weighted RMSD fitting,0
+0fd173b,2011-05-20 17:59:31,regenerated online docs with sphinx (changes to align examples),0
+13c108b,2011-05-21 23:25:24,release 0.7.3 (only changed release number and CHANGELOG),0
+4855f14,2011-05-21 23:43:52,added forgotten CHANGELOG entry (from the Release073 wiki notes),0
+906a91f,2011-05-21 23:44:00,bumped release to 0.7.4-devel,0
+ae97e37,2011-05-23 17:30:25,specify file formats when building the Universe,0
+e199fea,2011-05-23 18:09:14,keywords for format specification,0
+55e0d16,2011-05-23 20:26:09,CHANGELOG: updated with coordinate_format -> format,0
+dd8932d,2011-05-24 17:42:44,updated classifier keywords,0
+e771e62,2011-05-24 17:57:21,fixed: rmsd_fit_trj() failed to write a XTC file,0
+2dd048f,2011-05-24 19:59:00,fixed exception message for coordinate format guessing and minor doc typo,0
+f6f7ce1,2011-05-24 20:03:19,fixed: XTC and TRRReader would fail to obtain an appropriate Writer,0
+8149a38,2011-05-25 11:05:26,small improvements in Density docs,0
+1a7a236,2011-05-25 11:05:37,regenerated online html docs (0.7.4-devel + density),0
+1ddf95c,2011-06-02 16:50:11,fix for Issue 74 (htaoyu1): AMBER TOP parser failure and related changes,0
+2e79cb4,2011-06-03 11:00:37,full paper citation,0
+fba02f0,2011-06-14 11:36:02,fixed: stop_logging(),0
+90b1ddf,2011-07-18 18:41:38,INSTALL: fixed requirements and added help - first sentence wrongly stated that cython was still required - added links to web site and mailing list,0
+268c33d,2011-07-18 18:41:50,chain reader: added frame indexing,0
+94f4e40,2011-07-20 15:34:36,regenerated online docs,0
+8a515c7,2011-07-29 04:17:34,reST: some link fixing in intro,0
+b2d6ea7,2011-07-29 04:17:42,regenerated online docs with improvements in intro (links),0
+1704578,2011-07-29 04:18:34,fix for Issue 75 (HydrogenBondingAnalysis),0
+c6249a8,2011-07-29 04:18:44,hbond analysis: minor changes and docs,0
+5b4883b,2011-07-29 04:18:52,regenerated online docs,0
+cf49068,2011-08-05 19:01:05,fix for Issue 48 (sparse contact_matrix in distances.py),0
+81cef48,2011-08-05 19:43:33,streamlined AtomGroup.dihedral_numpy(),0
+a2961b0,2011-08-05 19:43:46,jandom was forgotten as a author of 0.7.4 in CHANGELOG,0
+7052c1a,2011-08-09 22:02:02,hbond analysis: updated docs for output format,0
+1ddf707,2011-08-09 22:02:10,hbonds: use norm() and angle() from core.util,0
+bc277e2,2011-08-09 22:02:21,added parse_residue() to util,0
+e3334a7,2011-08-09 22:02:28,hbond analysis: added additional method generate_table(),0
+44fc965,2011-08-09 22:31:26,hbonds: fixed failure to import warnings,0
+e896e0b,2011-08-10 14:23:55,hbonds: fixed bugs in save(),0
+d4b4f57,2011-08-10 18:58:30,regenerated online docs,0
+64fe87c,2011-08-10 19:02:07,hbonds: still return timeseries from run() and fixed reST,0
+46814de,2011-08-10 19:02:18,regenerated online docs,0
+d0e633e,2011-08-10 22:27:37,hydrogen bonding analysis: changes to atom list an,0
+5282576,2011-08-10 22:27:50,regenerated online docs (mainly for hbonds update),0
+b34f8b9,2011-08-23 00:15:13,moved echo() and progress_meter() to core.log,0
+28ae7b4,2011-08-23 00:15:22,replaced progress_meter() with class ProgressMeter,0
+54fc000,2011-08-23 00:15:31,added simple test case for distance_array,0
+6d7eacc,2011-08-23 00:15:38,fixed: alignto() and rms_fit_trj() selection,0
+3dea3db,2011-08-23 00:15:45,alignto(): preserve atom order in input AtomGroups,0
+b8ca809,2011-08-29 02:10:44,new set_*() methods for AtomGroup (EXPERIMENTAL),0
+b73133e,2011-08-29 02:10:51,new attribute 'resnum' for Atom and Residue,0
+f875567,2011-08-29 02:10:59,regenerated html docs (new setters and resnum),0
+407a2e5,2011-09-07 18:02:12,minor fixes,0
+0fb11f4,2011-09-07 20:23:13,removed trajectory test data (Issue 28),0
+9163e91,2011-09-07 22:32:44,release 0.7.4,0
+82013d0,2011-09-07 22:32:57,online docs for 0.7.4,0
+abfa65e,2011-09-07 22:34:53,started development: bumped version to 0.7.5-devel,0
+e36836e,2011-09-14 20:14:57,test dependencies in dedicated setuptools variables,0
+30f480f,2011-09-14 20:15:03,merged changes for PyPI submission into master,0
+75da459,2011-09-28 20:54:53,updated PyPI metadata and summary,0
+b901dfc,2011-09-28 20:54:59,upgraded some analysis depedencies to be installed right away,0
+3c339ed,2011-10-01 00:21:52,new distances.between() function (EXPERIMENTAL),0
+c8022ab,2011-10-01 00:22:01,fixed: ResidueGroup and SegmentGroup indexing,0
+cbec9fe,2011-10-01 00:22:09,fixed: ProgressMeter,0
+5fee837,2011-10-03 23:13:26,improved writing of trajectories,0
+8bc9e92,2011-10-03 23:13:35,updated CHANGELOG with changes so far,0
+6cf1f6e,2011-10-05 21:27:25,fixed HydrogenBondingAnalysis backbone donor list,0
+134951b,2011-10-05 23:10:12,Issue 79: recipe for making PCA TRRs from arrays,0
+f41558f,2011-10-05 23:10:43,reST fixes (mainly ..note formatting),0
+396b6dc,2011-10-05 23:12:17,regenerated online docs (0.7.5-devel),0
+6ec77ee,2011-10-11 18:01:27,fixed(?): util.angle() would sometimes produce nan,0
+f3f698f,2011-10-11 18:01:37,new chi1_selection() method for Residues,0
+bd1b1ca,2011-10-11 18:08:27,fixed: SUMMARY.txt was not distributed with source dist,0
+a6d0156,2011-10-26 16:30:52,contact analysis: additional example and cleaned up docs,0
+f2205ee,2011-10-26 16:31:00,updated html docs with contact analysis example,0
+739cf76,2011-11-04 22:21:09,fixed Issue 81: ChainReader CRD bug (Timestep problem),0
+33caccf,2011-11-14 15:39:08,fixed Issue 82: support files for online docs are now included in the source distribution,0
+ff9470f,2011-11-16 16:44:23,fixed bug in core.util.iterable(): failed on unicode,0
+009600b,2011-11-18 21:16:15,A few modifications made to INSTALL to reflect Debian support.,0
+74e446f,2011-11-26 22:37:23,Enhancements to PrimitivePdbReader and PrimitivePdbWriter,0
+f12cc49,2011-11-28 03:47:11,added fs as a time unit and minor fix in flags,0
+0e78d84,2011-11-28 03:47:16,hbond analysis test update,0
+2cdb8f7,2011-11-28 03:47:20,unified caches in AtomGroup,0
+24d8000,2011-11-28 03:47:25,example output from native contact analysis,0
+f219f93,2011-11-28 17:21:33,AtomGroup set_NAME() methods for residues also modify residues,0
+8a08496,2011-11-28 18:28:03,experimental support for a special LAMMPS DCD Reder/Writer (Issue 84),0
+a7de6ce,2011-11-28 22:33:10,Experimental PrimitivePDBReader/Writer: Support for r/w of multiframe PDB files,0
+df1cdbf,2011-11-28 22:52:23,fixed LAMMPS - PDB merge confict,0
+1750084,2011-11-29 22:21:55,Fixed: testest broken by the new PrimitivePDB Reader and Writer,0
+f7b4fd5,2011-11-30 13:47:13,fixed/improved docs,0
+e5e942a,2011-12-05 10:06:51,GNM trajectory analysis tool Please cite Hall et al JACS 2007 http://dx.doi.org/10.1021/ja071797y benjamin.a.hall@ucl.ac.uk,0
+d4c8e03,2011-12-05 15:38:48,minor updates to AUTHORS (utf-8) and INSTALL,0
+3f5a1b7,2011-12-06 13:29:37,added AUTHORs to Copyright note and formatted citations uniformly,0
+39223ab,2011-12-08 09:22:58,Merge branch 'master' of https://code.google.com/p/mdanalysis,0
+495c1c2,2011-12-08 12:20:16,metadata for Ben Hall's GNM trajectory analysis,0
+9a91cf0,2011-12-11 11:45:54,__version__ attribute added to MDAnalysis/__init__.py,0
+1aec10a,2011-12-11 22:12:22,setup.py modified to use Cython if present. setup_developer.py deleted,0
+6d5800f,2011-12-11 22:18:59,Merge branch 'setup-merge' into develop,0
+0b8348d,2011-12-11 22:32:27,Closes issue 85.,0
+9b322ca,2011-12-12 09:44:33,Example script for using GNM analysis,0
+89c9834,2011-12-12 14:54:28,Added *docstrings *way to treat non protein groups for CA based GNM *alternative to CA based GNM  using 4.5 A closest atom contacts,0
+ce1508d,2011-12-13 22:15:56,Issue 77: adding tests  extending the functionality,0
+d84fe09,2011-12-14 21:38:55,Minor fixes in PrimitivePDB reader/writer,0
+de451c8,2011-12-18 18:08:47,ignore files from builds and some generated example data,0
+166bb87,2011-12-19 16:33:15,generate more docs for parents of AtomGroup,0
+966c8c2,2011-12-21 09:25:54,Issue 87: moved master into package/ dir,0
+b26bbff,2011-12-21 09:35:53,Issue 87: testsuite along package,0
+30e21da,2011-12-21 14:19:23,Issue 87: moved UnitTest code from package to testsuite,0
+6479bad,2012-01-10 19:04:05,fixes in PrimitivePDBWriter and PrimitivePDBReader,0
+ec26dd0,2012-01-10 20:12:02,fixed writing of element column in PrimitivePDBWriter,0
+b059c46,2012-01-26 17:04:52,small changes to start testing,0
+2391408,2012-01-26 17:04:52,Issue 92: fixes/enhancements in relation to GLYCAM,0
+9fcfe41,2012-01-27 14:52:05,Small adjustments to get it working.  analysis/hbonds.py: fixed a bug when calling save_table  coordinates/XYZ.py: added two dummy variables  core/util.py: changed RegEx to detect GLYCAM style residue names,0
+61b4691,2012-01-30 13:33:42,Added further defaule values to hbonds.py and fixed minor errors in XYZ.py,0
+bf98edd,2012-01-30 14:11:14,Final changes before giving out pull request:  core/util.py: adjustments to work with ALL GLYCAM_06 residue names  analysis/hbonds.py: reverted DEFAULT_{ACCEPTORS DONORS} to original,0
+c7fa3aa,2012-02-02 23:27:14,misspelt Lukas Grossar's name in his handle --- sorry,0
+0c9cf46,2012-02-03 12:49:44,new builder module: helper for creating CHARMM-ready structures,0
+8a0de39,2012-02-11 01:45:06,Writers do not modify coordinates in place anymore,0
+ecfd6e4,2012-02-11 01:45:06,Writers do not modify coordinates in place anymore,0
+009098c,2012-02-11 01:45:56,changed generic Exceptions to specific ones in DCD module,0
+02319ba,2012-02-11 01:45:56,changed generic Exceptions to specific ones in DCD module,0
+4be4cb5,2012-02-11 03:22:59,Fixes Issue 91: Reading/Writing of TRR velocities,0
+b92ba10,2012-02-11 03:41:14,regenerated online docs,0
+f766ecd,2012-02-11 03:44:48,fixed path to online docs in doc/README,0
+092647c,2012-02-11 13:34:53,TRR velocity fix,0
+c598b2e,2012-02-11 14:46:04,Fixed potential issues in XTC TRR GRO PDB writers (when convert_units=False),0
+633c090,2012-02-11 17:50:32,updated metadata for release 0.7.5,0
+e52b313,2012-02-11 18:09:53,online docs for release 0.7.5,0
+e29e049,2012-02-12 00:26:53,updated PyPI summary with MDAnalysisTests,0
+c453b40,2012-02-12 01:02:37,Merge branch 'build',0
+54d8b90,2012-02-12 01:10:49,bumped release to 0.7.6-devel,0
+ed23f7d,2012-02-12 14:12:11,doc improvements (GNM and Universe),0
+b2589df,2012-02-12 14:15:58,regenerated online docs (includes MDAnalysis.analysis.gnm),0
+e686a9f,2012-02-12 14:41:35,testsuite: prepared setup.py for PyPI,0
+a862751,2012-02-12 21:35:18,maintainer scripts,0
+359cae0,2012-02-15 22:44:19,delaunay stuff deleted,0
+9d515b3,2012-02-15 22:52:53,"A few changes in sphinx configuration to make it more close to the default configuration. doc/Makefile fixed so ""make clean"" actually cleans something",0
+450ad43,2012-02-15 22:58:58,doc/sphinx/source/logos/LICENSE deleted to avoid lintian warnings. doc/sphinx/source/logos/AUTHORS was already fixed to include link to CC License text,0
+948d06d,2012-02-15 23:03:07,Version number changed back to 0.7.5.1,0
+b5f587f,2012-02-15 23:03:58,C files regenerated,0
+2787fb0,2012-02-15 23:06:20,MDAnalysisTests.egg_info added,0
+fb9ba38,2012-02-15 23:11:54,fixes issue #95,0
+740db3d,2012-02-15 23:11:54,fixes issue #95,0
+2056877,2012-02-15 23:34:28,updated coordinate module docs,0
+2c4dcde,2012-02-16 15:29:44,Merge branch 'master' of https://code.google.com/p/mdanalysis,0
+7387d8e,2012-02-16 15:55:37,MANIFEST.in corrected in testsuite to include license and related files,0
+d2523b1,2012-02-17 14:46:40,improved docs for AtomGroup and Timestep,0
+262a933,2012-02-17 16:47:05,Merge branch 'master' of https://code.google.com/p/mdanalysis,0
+8239120,2012-02-17 16:51:19,regenerated HTML (online) docs,0
+5cc5d70,2012-02-19 00:09:24,HOLE analysis,0
+bc3d680,2012-02-20 00:43:41,new utility functions which() and realpath(),0
+009fb40,2012-02-20 00:59:03,HOLE analysis,0
+7ee2d25,2012-02-20 16:22:05,updated Ben Hall's analysis packages,0
+e4ddfea,2012-02-24 14:05:55,hbonds.py: _get_bonded_hydrogens now also takes distance to donor atom into account to avoid choosing hydrogens that are close by by index  but not bonded,0
+a4d50ae,2012-02-28 01:29:14,fixed: hbond analysis generate_table(),0
+0c2a707,2012-02-28 02:24:04,fixed  maintainer/change_release.sh,0
+58f1ba9,2012-02-29 09:44:39,Version bumped to 0.7.6-devel maintainer/change_release.sh fixed,0
+b4cd3b2,2012-02-29 10:11:46,Added: test running script,0
+8116017,2012-03-07 22:34:56,new AtomGroup.moveto() method (+test),0
+d3f7100,2012-03-07 22:40:15,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+a8a280c,2012-03-10 14:42:12,fixes issue #99 	Infinite loop when writing single frame,0
+f53cff4,2012-03-10 14:53:19,Merge branch 'Issue/99/pdb-writer' into develop,0
+6220bcd,2012-03-10 16:24:45,minor fixes to coordinates code and docs,0
+88bc68f,2012-03-23 15:29:21,HydrogenBondAnalysis: fixed acceptors  doc improvements,0
+2d46c0e,2012-03-23 16:00:57,resphinxed docs,0
+c25ea38,2012-03-23 23:21:59,HydrogenBondAnalysis.run(): do not return results anymore,0
+8dcc038,2012-03-24 19:04:43,ProgressMeter: fixed docs,0
+1a44a23,2012-03-24 19:09:41,hbond analysis: possibly fixed bug and added ProgressMeter,0
+8e3a410,2012-03-24 19:17:29,Merge branch 'orbeckst/hbonds' into develop,0
+d565fb8,2012-03-25 15:12:10,HBond analysis: better detection of bonded hydrogens,0
+c61e39f,2012-04-04 10:20:44,Merge remote-tracking branch 'mdanalysis/master',0
+1c1a7e5,2012-04-06 17:15:57,analysis/hbonds.py: changed DEFAULT_DONORS and DEFAULT_ACCEPTORS to a dict  to allow switching to different forcefields,0
+696ccd5,2012-04-06 18:02:17,merged mdanalysis/develop,0
+7af7fc4,2012-04-10 12:41:25,merged with d565fb8bf98f of orbeckst/hbonds,0
+92d1ae9,2012-04-11 16:41:20,Built table with values for GLYCAM06 force field  DEFAULT_... tuples not yet updated,0
+2747eaf,2012-04-19 12:37:41,added changes to accomodate the switch to multiple available force fields,0
+1127d73,2012-04-19 14:53:55,removed some wrong atom types from DEFAULT_ACCEPTORS,0
+d564da1,2012-04-20 11:16:59,hydrogen bond analysis: Lukas Grossar's patches for the heuristic H-detection,0
+4e440eb,2012-04-24 10:00:54,removed CHO and EAM for resnames recognized as protein,0
+4e59491,2012-04-26 18:07:02,patch for the heuristic H-detection   * _get_bonded_hydrogens_list() was changed so that any hydrogens found     also have to be within a maximum distance of the donor   * the maximum distance is stored in the defaultdict HydrogenBondAnalysis.r_cov      covalent H-donor distances are hard coded for N  O  S  P  anything else gets     a default value of 1.5 A.,0
+178af90,2012-05-01 13:31:01,fixes for PDB and GRO writer,0
+936af56,2012-05-03 16:11:43,implemented count_by_time in HydrogenBondAnalysis,0
+da8e05b,2012-05-03 16:22:18,fixed Universe.load_new() raised a NameError,0
+c401ddd,2012-05-04 14:26:58,added count_by_type and count_by_type_correlation to analysis/hbonds.py,0
+1b5b8e4,2012-05-07 14:24:32,merged orbeckst/hbonds into Lukas Grossars development branch,0
+24171ce,2012-05-07 17:13:45,fixed NameError in AtomGroup.__contains__,0
+dccc668,2012-05-07 17:15:21,Merge branch 'develop' into Issue/103/develop,0
+2e59a03,2012-05-07 19:20:33,HBond analysis enhancements (H-detection and count_by_type_*),0
+0f2d36e,2012-05-07 23:09:13,hbond analysis: fixes and new feature: start:stop:step,0
+a847635,2012-05-07 23:24:10,hbond analysis: use tuples directly as keys,0
+04bbe28,2012-05-10 16:48:10,analysis/hbonds.py  - fixed a merge error  - changed implementation of count_by_type_correlation to match    count_by_type,0
+77594ec,2012-05-18 15:35:11,hbonds: removed doubled r_cov and doc improvements,0
+9ccc544,2012-05-18 15:40:26,Merge remote-tracking branch 'lukasgrossar/develop' into Issue/103/develop,0
+d97c7df,2012-05-21 09:35:12,analysis/hbonds.py - renamed count_by_type_correlation --> timesteps_by_type,0
+3fbb15c,2012-05-21 14:07:52,analysis.hbonds.py - slicing doesn't work for XYZ files  so I needed to comment it,0
+98d55e0,2012-05-21 15:30:18,analysis/hbonds.py - always initialize the dicts in _update_selection_{1 2} as empty to   avoid problems in _donor_lookup_table_{byindex byres},0
+2d2427e,2012-05-22 16:49:38,fixes Issue 105: MultiPDB support and writing of single PDB frames,0
+eb213a2,2012-05-25 18:41:26,test AMBER trajectories for Issue 109,0
+557491b,2012-05-27 17:40:33,fixed test case test_atomgroup:TestWritePDB.test_write_universe,0
+86b41e2,2012-05-27 21:18:53,NetCDFReader working (Issue 109),0
+c44d844,2012-05-29 16:54:49,NetCDFWriter working (closes Issue 109),0
+50c3f62,2012-05-29 17:07:00,Merge branch 'Issue/109' into develop,0
+0bd5b1a,2012-05-29 18:14:03,documentation fixes and small things in the AMBER NCDF Reader/Writer,0
+58730f8,2012-05-29 18:15:39,regenerated online docs (new AMBER readers  omitted LAMMPS R/W  pdb extensions),0
+3c68292,2012-05-29 19:27:14,Empty AtomGroup allowed (Issue 12),0
+a81dcdb,2012-05-30 09:40:17,forgot to include the test cases for Issue 109 in package,0
+5f8b06c,2012-05-30 09:42:13,deleted testsuite/MDAnalysisTests.egg-info,0
+cc73f72,2012-05-30 10:05:43,NCDFReader (Issue 109): load coordinates right away,0
+fe7292d,2012-05-30 14:30:06,data files and test case for Issue 107,0
+8a71081,2012-05-30 16:22:35,fixes Issue 107: read NAMD/VMD space separated PSF files,0
+daa117f,2012-05-30 16:31:00,Merge branch 'Issue/107' into develop,0
+e58958c,2012-05-30 18:38:35,minor fixes for PrimitivePDBWriter,0
+e81a933,2012-05-31 11:03:33,UnitTests for Issue 101,0
+d25969a,2012-05-31 11:16:09,fixes Issue 101,0
+e0f7a07,2012-05-31 11:18:11,use null-vectors for non-periodic/empty unit cells in Gromacs trajectories,0
+14e523e,2012-05-31 13:40:50,updated position property,0
+80fd2c3,2012-05-31 15:46:35,added unit tests for Atom.position and AtomGroup.positions,0
+d5d6df4,2012-06-01 14:17:34,positions/velocities in AtomGroup: docs  tests,0
+ce5a658,2012-06-01 14:31:56,regenerated online docs (changes in AtomGroup),0
+f3ae146,2012-06-01 15:11:13,removed experimental AtomGroup.moveto(),0
+ca96458,2012-06-01 15:13:07,regenerated online docs (removed moveto() and generally nicer),0
+b92cad3,2012-06-01 15:22:47,removed test for moveto(),0
+f1b64de,2012-06-03 14:20:08,Merged Lukas Grossar's HbondAnalysis improvements (fixes issue 103),0
+8aa93ba,2012-06-03 16:59:40,Velocities may now be accessed from GRO files as AtomGroup.velocities() or Atom.velocity   A velocity unit test was included with this commit to verify that both the AtomGroup and Atom-specific velocity reading functionalities are preserved for GRO files. This implementation uses the ts._velocities attribute. Addresses Issue 102.,0
+17b28b1,2012-06-03 17:15:48,Dealing with CHANGELOG conflict resolution.,0
+6298104,2012-06-04 15:53:55,notes on netcdf installation and projected release date for 0.7.6,0
+6033416,2012-06-04 17:02:00,Trajectory API: partial implementation of Reader.__getitem__(),0
+0d129b4,2012-06-04 17:21:30,HbondAnalysis: use new standard slicing,0
+1de7eaf,2012-06-04 17:25:51,Merge Lukas Grossar's HydrogenBondAnalysis (Issue 103),0
+963ad0b,2012-06-04 17:58:02,PrimitivePDBReader: fixed: __getitem__ and __iter__ returned None for single frame,0
+5d67a2b,2012-06-04 19:08:34,single frame reader fixes,0
+f5786eb,2012-06-04 19:47:37,updated CHANGELOG,0
+a66a34b,2012-06-05 11:39:06,addition of nucleic acid analysis,0
+35118f6,2012-06-05 16:37:46,removed experimental moveto() method from CHANGELOG (should have done this previously...),0
+e7371cd,2012-06-06 10:10:58,initial test case for Issue 100,0
+ab1b66b,2012-06-06 20:20:46,updated nuclinfo,0
+7d82467,2012-06-06 20:23:17,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+bbe4dcf,2012-06-06 20:40:09,Fixed Amber TOPParser for both 10 and 12 formats,0
+bfd9d36,2012-06-07 18:01:14,additional nuclinfo testcase,0
+1bd901d,2012-06-07 18:01:45,fixes Issue 112 (alig.fasta2select used outdated Biopython),0
+2f2f6f0,2012-06-07 18:08:26,merged origin/develop into local develop,0
+91ff415,2012-06-07 18:37:42,fixed for nuclinfo docs and testcases,0
+fe1683f,2012-06-07 18:46:18,added docs to TOPParser,0
+35b8c76,2012-06-07 18:47:17,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+48d78c1,2012-06-07 18:51:11,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+4339386,2012-06-08 11:31:01,fixed type selection,0
+d4610a5,2012-06-12 01:19:30,hbonds: fixed NH1NH2 --> NH1  NH2,0
+435430e,2012-06-16 18:12:35,fixes Issue 111 (qcprot would sometimes return NAN),0
+6a76463,2012-06-17 20:37:19,fixes Issue 113 (ClustalW would not be run in align.fasta2select()),0
+d52d011,2012-06-23 11:52:03,HOLE analysis: 2D and 3D plot of profile families,0
+ee773d0,2012-06-26 09:11:22,version number changed to 0.7.6,0
+fdb8809,2012-06-26 11:24:46,HTML doc regenerated doc + corrected a few mistakes.,0
+9161c1a,2012-06-26 11:37:23,MDAnalysisTests.egg-info added to .gitignore,0
+6ba4667,2012-06-26 17:43:39,MANIFEST.in files corrected,0
+999aca6,2012-06-26 21:55:01,version bumped to 0.7.7-devel,0
+1a38e4b,2012-06-29 11:40:46,HOLE analysis: better error check and streamlined code,0
+8ca4bd2,2012-07-03 19:29:07,HydrogenBond analysis: fixes and tests (Issue 103),0
+ae2fe77,2012-07-04 10:08:15,Documation regenerated,0
+c606311,2012-07-04 10:50:52,Merge branch 'release-0.7.6' into develop,0
+93808b3,2012-07-04 10:53:46,Merge branch 'release-0.7.6',0
+e2b9522,2012-07-04 21:14:44,removed '(in development)' inside CHANGELOG,0
+4c9f18d,2012-07-04 21:15:09,Merge branch 'release-0.7.6' into develop,0
+365d54c,2012-07-04 21:15:39,Merge branch 'release-0.7.6',0
+b5f1f84,2012-07-12 00:53:19,Fix for Issue 115 - GRO file column width,0
+f4184ea,2012-07-12 01:02:06,Updated CHANGELOG,0
+86f7c4c,2012-07-12 10:25:54,HOLE analysis: HOLEtraj can take any MDAnalysis universe,0
+e4fa96d,2012-07-12 11:13:57,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+daafe4c,2012-07-13 17:42:40,disabled Bio.PDB warnings in PDBReader,0
+b523653,2012-07-14 15:56:53,adjusted GRO velocity test case for fixed Issue 115,0
+390b6e8,2012-07-14 23:04:51,Issue 80: Parallel distance matrix computation using Cython,0
+0f81a6f,2012-07-16 10:03:59,hole: can save profiles as pickle,0
+4381bbc,2012-07-17 11:43:30,HOLEtraj: can read orderparameters from file or sequence,0
+61c8316,2012-07-17 11:45:47,New RMS analysis module,0
+f060ed3,2012-07-17 14:13:54,parallel distance_array (Issue 80) in core.parallel.distances,0
+9455306,2012-07-17 16:14:22,Merge branch 'develop' into Lukas/HOLE,0
+aac158f,2012-07-18 17:39:01,docs for HOLE  RMS  parallel,0
+3e46aa0,2012-07-18 17:42:32,regenerated html docs (HOLE  RMS  parallel added),0
+57887a7,2012-07-18 17:43:23,Merge branch 'Lukas/HOLE' into develop,0
+e469b9b,2012-07-19 09:36:43,reST docs: better referencing of QCP in rms and align,0
+7004214,2012-07-19 10:37:00,regenerated online docs,0
+b91013f,2012-07-20 23:02:06,Issue 76: chainreader format,0
+d326bca,2012-07-20 23:05:52,Merge branch 'Issue/76' into develop,0
+e11b6d2,2012-08-04 10:48:25,Issue 76: integrated jjlights03's patch,0
+642a6ce,2012-08-04 11:51:45,Nuclinfo test fixes,0
+06f592c,2012-08-06 21:37:22,Issue 80:  Parallel distance matrix computation using Cython (closing),0
+cd19ce0,2012-08-16 14:34:52,added force methods / properties to AtomGroup,0
+e792b02,2012-08-29 11:49:06,Added shapeParameter and asphericity calculations to AtomGroup.py.,0
+63d571c,2012-08-29 18:42:25,asphericity() and shapeParameter() additions,0
+e15fb06,2012-09-03 10:54:42,fixes Issue 117,0
+4a0b2e5,2012-09-03 11:54:20,fixes Issue 116 (Failed to write AMBER netcdf trajectory from AtomGroup),0
+07a1f30,2012-10-15 15:02:48,fixes DCD writer: wrote wrong unitcell,0
+1433d0a,2012-10-15 15:20:01,added test case for DCDWriter unitcell fix (and updated CHANGELOG),0
+7cced89,2012-10-19 16:13:36,fixed: helanal analysis was missing import statement,0
+553b355,2012-11-01 17:25:45,parallel distance array,0
+a1cff5a,2012-11-01 18:29:53,doc fixes (Dima2004 reference),0
+06cd49d,2012-11-01 18:30:15,regenerated online docs,0
+31df971,2012-11-19 11:29:27,CHANGELOG: heading for 0.7.7  added link to Issue 120,0
+ffa309f,2012-11-22 09:38:05,added comments to examples/potential_profile.py,0
+ef59286,2012-12-01 18:02:28,Issue 23: 	generate bond list when using a PDB instead of a PSF,0
+94db576,2012-12-03 13:44:30,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+1294a3f,2012-12-03 14:29:04,reST update: changed 'versionadded:: 0.8' to 0.7.7,0
+3cdab9a,2012-12-06 16:07:10,added elements to mass table,0
+ca3a3f6,2012-12-10 15:16:31,forces: unit conversion and test case,0
+dd1624a,2012-12-10 21:39:10,updated CHANGELOG,0
+fdb8acd,2012-12-10 21:46:52,"Revert ""Issue 23: generate bond list when using a PDB instead of a PSF""",0
+1c85077,2012-12-12 19:16:00,fixed Issue 121: PSFParser raised IndexError for missing SEGID,0
+76e776b,2012-12-13 09:35:31,fixed force conversion (from commit ca3a3f62347e6b154ca167211a92b0db533b6d2b),0
+4104e5a,2012-12-14 10:11:27,updated sphinx conf,0
+8d8a89a,2012-12-14 10:12:02,LeafletFinder: use asUniverse(),0
+f07e1d3,2012-12-14 10:26:03,libxdrfile: updated to 1.1.1,0
+09458b2,2012-12-14 10:48:46,Merge branch 'xdrfile_update' into develop,0
+050d4ab,2012-12-14 10:49:06,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+431d037,2012-12-14 17:08:02,logger reports MDAnalysis version when starting,0
+50e6f5a,2012-12-18 12:39:13,fixes Issue 122 by making netCDF4 an optional dependency,0
+dd3345e,2012-12-18 13:39:36,updated authors/copyright in README,0
+6d5f1af,2012-12-19 11:27:31,Empty commit to save state before psfgen addition,0
+cdaeb60,2012-12-20 14:10:06,A few errors in code corrected,0
+05a9d47,2012-12-20 16:47:07,Merge branch 'code-cleaning' into develop,0
+dcd3dbc,2012-12-20 16:50:06,Fixed run_tests script,0
+ad076bb,2012-12-20 18:53:20,Version number bumped to 0.7.7-rc1,0
+004bcbc,2012-12-20 22:00:09,Updated MANIFEST.in to include scripts/,0
+faf262f,2012-12-24 20:21:03,Version number change to '0.7.7' Documentation regenerated sebastien.buchoux added to contributors in CHANGELOG,0
+a8bbf7c,2013-01-02 11:01:28,version number changed to 0.7.8-dev,0
+a88b91f,2013-01-18 18:50:38,dihedral calculation as separate function,0
+3ff668d,2013-01-20 20:36:30,MDAnalysis.analysis.density: updated docs,0
+bebea4a,2013-01-20 21:29:24,DMSReader for topology and coordinates,0
+612c547,2013-01-20 21:29:24,DMSReader for topology and coordinates,0
+38136b4,2013-01-29 14:17:29,improved documentation for WaterDipole time series,0
+65b4af2,2013-01-29 14:24:28,removed non-functional Timeseries.PrincipleAxis,0
+431582a,2013-01-29 18:51:58,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+83d8371,2013-02-01 12:07:39,merge feature-trr-sub branch  adds 'sub' arg to TRRReader,0
+477236b,2013-02-01 12:07:39,merge feature-trr-sub branch  adds 'sub' arg to TRRReader,0
+2bf6e69,2013-02-02 22:48:04,DMSReader for topology and coordinates,0
+577bb55,2013-02-02 22:48:04,DMSReader for topology and coordinates,0
+8433d13,2013-02-07 16:36:37,fixed Issue 126: corrected links to examples,0
+9d0585f,2013-02-07 17:01:49,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+c2f5b25,2013-02-07 17:14:32,added boilerplate docs for DMS coordinate and topology reader,0
+a5d674e,2013-02-07 18:04:05,regenerated docs (fixed Issue 127  DMS parser  TRR parser sub argument),0
+0a62194,2013-02-19 20:47:52,DMSReader - fixed a 'dictionary' typo  replaced with 'dict',0
+aa87e2b,2013-02-24 00:16:17,PrimitivePDBReader - fixed bug related to 1-based frame indexing  which had broken multi-model PDB parsing,0
+de88e95,2013-02-24 17:57:38,Fixed bug in rms.py,0
+fd43469,2013-04-09 22:35:32,updated links in SUMMARY.txt (PyPi),0
+46f29f9,2013-04-09 22:37:30,HOLE analysis: cpoint keyword can now select HOLE's own algorithm,0
+4ae13ac,2013-04-09 22:48:40,ChainReader: can fake a time with delta keyword,0
+43d0db1,2013-04-11 18:43:14,Fixed array comparison bug in helanal,0
+4ba9dbd,2013-04-24 09:38:54,sphinx: added intersphinx links and more extensions,0
+3198250,2013-04-24 09:50:46,Fixes Issue 133: helanal: additional output of local bend and unit twist angles,0
+59560c2,2013-04-25 16:48:27,Resolved issue 129 with unit test included. hole.py analysis module was missing os.close() call on temporary PDB file descriptors.,0
+9fc92b2,2013-04-25 17:03:00,Resolving CHANGELOG conflict.,0
+d524b7e,2013-04-25 18:20:56,Issue 129: improved fix,0
+6a51af3,2013-04-25 18:33:44,test cases: close fd for any tempfile.mkstemp,0
+9fbf128,2013-04-25 18:37:49,immediately close fd from tempfile.mkstemp(),0
+dd2ea3b,2013-05-02 10:00:36,moved util.LAMPPSParser to topology,0
+6f9cdc4,2013-05-02 10:01:07,removed MDAnalysis.util (was not used),0
+4800dcf,2013-05-02 12:25:24,simple convert_float() function and math docs added to util.py,0
+2450fd5,2013-05-03 15:00:11,updated CHANGELOG with Danny Parton's fixes,0
+373b1ab,2013-05-11 10:15:14,Extending the bond-guessing,0
+3c9ae52,2013-05-11 12:45:04,closes Issue 23: bond information can be guessed for a PDB,0

@@ -1,0 +1,72 @@
+hash,time,message,buggy
+3189b2b,2011-03-31 16:08:08,bumped release to 0.7.3-devel,0
+615227f,2011-03-31 16:08:22,added documentation for Gromacs TRR and XTC format and libxdrfile - new reST docs - also fixed documentation for Writer() (was still the DCD one) - sanitized argument processing of xdrfile.core.TrjReader.Writer() (most of the DCD arguments   are not used by XTC/TRR),0
+0747737,2011-03-31 16:08:47,regenerated online docs with TRR/XTC additions,0
+16efded,2011-03-31 16:14:16,fixed: mime type of new html online docs was not text/html,0
+e50d422,2011-03-31 23:19:03,better docs for logging,0
+f9f75fc,2011-03-31 23:19:19,regenerated online docs,0
+1af849b,2011-03-31 23:46:55,FIXED: alignto() raises KeyError: 'target',0
+fdf23da,2011-03-31 23:58:33,alignto() and rms_fit_trj(): changed keyword 'select' default from 'backbone' to 'all' because this leads to less confusion  especially when the mobile and ref  groups are already appropriately chosen,0
+5d27868,2011-04-01 00:01:54,regenerated docs,0
+ca30f66,2011-04-09 22:33:59,comment on benchmarking sqrt(dot(v v)) vs numpy.linalg.norm (first one is 3x faster),0
+0d37e3c,2011-04-09 22:34:05,patch for Issue 57 by jandom,0
+d1ffce7,2011-04-09 22:34:12,fixed Issue 57: optimized patch and added test case - moved the coordinate check out of the loop and test the whole coordinate array in one   go (better performance but error reporting is worse because we do not report the offending   atom anymore) - remove the opened PDB file before raising the ValueError - added test case (should have had one for PrimitivePDBWriter anyway...),0
+241afbf,2011-04-09 22:34:19,relaxed test for MDAnalysis.analysis.align.rmsd: rmsd(A B) == rmsd(B A) only has to be equal to 5 decimals (jandom reported some spurious test failures in Issue 57),0
+f28ec8b,2011-04-09 22:34:26,updated CHANGELOG with recent 0.7.3 changes,0
+f0b2076,2011-04-10 12:20:45,patch 57b by jandom: completes the fix of Issue 57 (coordinate checking of GRO/PDB writers) - From http://manual.gromacs.org/current/online/gro.html    - position (in nm  x y z in 3 columns  each 8 positions with 3 decimal places)    - velocity (in nm/ps (or km/s)  x y z in 3 columns  each 8 positions with 4 decimal places)   Does that mean a max values of 9999.999/-999.999 for coords and same for velocities  but with the decimal moved a digit to left? - added validation for gro writing  moved the coordinate checking method to parent writer class.,0
+3ace9d4,2011-04-10 12:20:57,"test case for writing GRO files and optimization of fixes for Issue 57 - testing for writing GRO and limits ( -999.994 nm < x < 9999.994 nm ) - sharpened test for PDB limits ( -999.994 A < x < 9999.994 A)  note units A vs nm - conceivably we could include the boundaries into the legal values (they still round down)    if we do then we need to adjust the tests - legal coordinates check for GRO: moved out to before the file is even opened so we can get   rid of removing the opened file - GRO writer: use ""with open() as ..."" instead of ""try: ... finally: close()""",0
+46cc00d,2011-04-10 13:05:51,changed legal coordinate values for GRO and PDB - limits -999.9995/9999.9995 - changed the actual check to min < x <= max (see Issue 57 comment #7) - tests: the min test is ok  the max test relies on <= and somehow does not   sharply discriminate  e.g. for GRO 9999.9996 passes and for PDB 9999.9951   passes. Not sure what's going on but I made the tests a little bit weaker   (PDB: 9999.996  GRO: 9999.999). In practice it probably won't matter...,0
+0114e6a,2011-04-17 14:27:27,converted all TABs to spaces (Issue 69) - used emacs 'untabify' on all files  see   http://code.google.com/p/mdanalysis/issues/detail?id=69#c1 - unit tests pass - TODO: add marker lines for editors (do this together with a   fix for Issue 68),0
+87977a3,2011-04-17 14:28:19,added comment and formatting header to files (Issue 68 and Issue 69) - name  url  copyright and licence (GPL v2+)  Issue 68 - citation information (need to update once full citation available) - modelines for emacs and vim to ensure that no TABs are use (Issue 69) - might have to take a closer look at the licences of the bundled packages   and customize their comment headers,0
+67e1102,2011-04-17 19:36:19,fixed: units.py must be in UTF-8,0
+1adeb82,2011-04-17 19:36:26,CRDReader streamlined and improved - fixed default unit as Angstrom  but that did not   have any influence on the behaviour so far) - added official CRD format to the comments for future reference - improved robustness of EXT detection by using a staged detection of   lines (continue blocks) and checking length of fields - added additional sanity check on the number of atoms (which we can   get from the CRD header),0
+d9b741c,2011-04-18 02:30:17,added original HELANAL (Python) code by Benjamin Hall - LICENCE: not free  DO NOT DISTRIBUTE yet - not integrated  this is the code as provided by Ben,0
+6cf3507,2011-04-18 02:30:29,replaced uses of CartesianToolkit with numpy (untested),0
+6ee0d03,2011-04-18 02:30:38,new attributes for universe.trajectory: frame and time - report the frame number and time of the current time step - single frame formats return frame = 0 and time = 0.0 - added test cases,0
+1000dd5,2011-04-18 02:30:52,HELANAL helix analysis (integrated Ben Hall's Python implementation) - Ben's code is licensed under the GPL v2+ - http://www.ccrnp.ncifcrf.gov/users/kumarsan/HELANAL/helanal.html - reference: Bansal M  Kumar S  Velavan R.  HELANAL - A program to   characterise helix geometry in proteins. J Biomol Struct Dyn. 2000  17(5):811-9. - requires universe and start and stop residue of the helix to be analyzed    write a number of output files - not fully tested! - numpified  removed support code for vector handling and trajectory I/O   (now all done with numpy or MDAnalysis)  added docs,0
+ec5546e,2011-04-18 02:32:36,regenerated online docs (includes HELANAL),0
+8da7bed,2011-04-18 02:43:50,fixed reST in helanal.py,0
+616dc4e,2011-04-18 02:44:00,regenerated docs (after helanal reST fixes),0
+894f85e,2011-04-19 20:06:03,LeafletFinder: removed deprecated atoms() method and some reST fixes,0
+ea0e3d1,2011-04-19 20:06:12,integrated and expanded documentation on selection exporters,0
+b559fe3,2011-04-19 20:06:30,regenerated online docs with new docs on selection exporters,0
+ae0b88d,2011-04-20 20:29:16,notes on using Apple gcc and possible problems running examples from source dir (thanks to Justin Lemkul for the tips),0
+e2ee557,2011-04-20 20:29:24,new attribute Timestep.volume: unit cell volume (+test cases),0
+7e42c6e,2011-04-20 20:29:31,online docs: link to Selection exporters from start page and made exporter table clearer,0
+c1758c6,2011-04-20 20:29:40,regenerated online docs,0
+3a7fe45,2011-04-20 20:30:00,fixed Issue 70 (instant selection of atoms in residues that are also termini) - removed caching of atoms in Residue - decreases performance (probably) but at least returns correct selections,0
+8caec3c,2011-04-20 20:30:24,coordinates: use close() throughout instead of deprecated close_trajectory(),0
+8b07211,2011-04-20 20:30:34,updated a number of examples - write figures to ./figures subdirectory - write data to ./output - added example output and figures for blocks.py  backbone_dihedrals.py    radial_distribution_function.py - fixed/update a number of examples   - blocks.py: block averaging (see example in the paper)   - radial_distribution_function.py: g(r)  this is the optimized version     (see paper) with correct normalisation   - backbone_dihedral.py: example for Timeseries.Collection and use of the     new special Residue.phi_selection() and Residue.psi_selection() methods     for the common backbone dihedrals  script is now ran on the DIMS AdK     trajectory and produces a figure   - TODO: other scripts - made all scripts executable,0
+2627b53,2011-04-20 21:19:22,example updates: fixed normalization in radial_distribution_function.py and redrew figures,0
+58572f9,2011-04-23 20:09:48,updated MDAnalysis paper citation: published online http://dx.doi.org/10.1002/jcc.21787   also added HELANAL citation and made everything look similar to the googlecode home page,0
+a0548a9,2011-04-23 20:10:45,regenerated online docs,0
+2af9058,2011-04-27 20:21:30,PDBQT support (Paul Rigor http://www.ics.uci.edu/~prigor ),0
+3ab4202,2011-04-27 20:21:44,PDBQT small changes - fixed PDBQT test case  passes now sensibly - added docs - removed commented out Bio.PDB stuff in PDBQT.py (not needed) - updated CHANGELOG and AUTHORS with Paul Rigor's contribution - added PDBQT to the list of supported formats,0
+684b281,2011-04-27 20:21:52,added test for writing PDBQT files,0
+aae1ef9,2011-04-27 20:21:58,PQDBQT: use Atom.charge for partial charges and Atom.type for atomtype - removed partialCharge and element attributes from Atom - minor comments and streamlining - adjusted format description to match PDBQT,0
+147d013,2011-04-27 20:22:20,docs for PDBQST format integrated into online docs,0
+95f61ed,2011-04-28 00:11:49,David Caplan's hydrogen bond analysis - add http://github.com/davecap/labwork/raw/master/mdanalysis/hbonds.py - currently GPL3 so we cannot use it - added to init,0
+956f4fe,2011-04-28 00:12:00,added tweaks to David Caplans hbond.py to make it work with Gromacs waters,0
+33ab408,2011-04-28 00:12:10,integrated docs for David Caplan's hbonds analysis module into online docs added h-bonding analysis to CHANGELOG and David Caplan to AUTHORS,0
+be2381a,2011-04-28 00:12:28,regenerated online docs (H-bonding analysis and PDBQT format),0
+8438487,2011-04-30 17:27:51,MDAnalysis.analysis.distances.dist() for computing distances between matching atoms in two groups,0
+a25173d,2011-05-02 14:37:47,fixed: AtomGroup.bbox(),0
+e56a2a6,2011-05-02 14:37:54,added method AtomGroup.bsphere(),0
+ead8179,2011-05-02 15:43:09,AtomGroup.dihedral(): use faster numpy functions to calculate dihedral  added test cases for dihedral() and the phi()/psi()/omega() selection methods,0
+d1b37bb,2011-05-11 12:48:58,MDAnalysis with new logo: rebranded docs,0
+e347580,2011-05-11 12:49:51,generated online docs with new layout (sphinxdoc) and logo,0
+c21e114,2011-05-17 21:42:36,fixed dihedral function in AtomGroup,0
+f48a746,2011-05-18 01:19:13,dihedral orig,0
+eeb44e2,2011-05-18 01:48:59,old dihedral() function,0
+c2dc848,2011-05-18 02:55:34,dihedral() function,0
+a8bab45,2011-05-18 02:55:48,new AtomGroup methods bond() and angle(),0
+c4b1728,2011-05-18 16:39:01,reST doc fixes and updates,0
+bb193df,2011-05-18 16:39:09,added improper() with test case  more reST fixes,0
+3f88313,2011-05-18 16:39:20,regenerated online docs 0.7.3 with sphinx,0
+b414093,2011-05-18 21:40:19,setup: removed un-used fast_numeric_include from transformations.c,0
+7c84c95,2011-05-20 17:30:12,enabled mass-weighted fitting in rms_fit_trj(),0
+0410f40,2011-05-20 17:30:21,removed core.rms_fitting,0
+84b2be3,2011-05-20 17:58:24,fixed mass weighted RMSD fitting,0
+0fd173b,2011-05-20 17:59:31,regenerated online docs with sphinx (changes to align examples),0
+13c108b,2011-05-21 23:25:24,release 0.7.3 (only changed release number and CHANGELOG),0
+f2a497b,2011-05-21 23:26:57,release 0.7.3 (fixes and enhancements and removal of dependency on LAPACK),0

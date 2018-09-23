@@ -1,0 +1,66 @@
+hash,time,message,buggy
+8656ff9,2003-11-19 19:21:06,Added Hendrik and Florian to the developers page.,0
+4087e4c,2003-11-24 09:32:55,Made Hendrik and Florian students.,0
+97d6bb1,2003-11-28 16:23:39,the nodal values are now averaged for plotting purposes.  Makes discontinuous solutions pretty when plotted at the nodes,0
+5e8c11d,2003-11-30 05:00:50,updated configure system,0
+3e69d1e,2003-11-30 05:37:47,updated configure system,0
+8afb0b8,2003-11-30 05:43:43,updated configure system,0
+86694f9,2003-11-30 05:58:14,updated configure system,0
+db55d56,2003-11-30 06:01:18,updated configure system,0
+2c1f5b9,2003-11-30 06:07:41,updated configure system,0
+5c57370,2003-11-30 06:21:32,updated configure system,0
+8a60f1c,2003-11-30 06:29:46,updated configure system,0
+c0d9a5d,2003-11-30 06:33:37,updated configure system,0
+3d1fa1a,2003-11-30 06:35:10,updated configure system,0
+60865f2,2003-11-30 06:38:39,updated configure system,0
+9f7c4c4,2003-11-30 06:38:40,updated configure system,0
+aa35f94,2003-11-30 07:04:21,updated configure system,0
+1d61019,2003-11-30 07:10:18,changed CONST to CONSTANT in the Order enum.  This caused a problem with LAM MPI,0
+95a3e72,2003-11-30 21:42:56,made the configure --help output pretty,0
+686738c,2003-12-03 17:19:53,updated Daniel.,0
+f918768,2003-12-06 13:49:20,ignore Itanium-dependent files,0
+f890d68,2003-12-08 19:14:43,added TetGen reader from Jens Oeser,0
+28bebe6,2003-12-09 20:24:09,added a direct solver for dense systems in the DenseMatrix and DenseVector classes,0
+ec31854,2003-12-11 08:28:51,Fixed Daniel.,0
+5822f4e,2003-12-12 18:57:51,fixed some bugs contributed by Marc Buffat,0
+ae2271a,2003-12-12 22:42:53,It is now possible to compute curvatures on element boundaries.  This information is available at the quadrature points via fe->get_curvatures().  This information is sometimes necessary for computing stresses on curved boundaries.  I have tested in in 3D (2D boundaries) and 2D (1D boundaries) and it appears to work.,0
+9d444f7,2003-12-18 03:07:07,fixed a no-return statement condition,0
+4ee00d5,2003-12-19 13:25:36,fixed a bug in the Plane class.  Thanks to Peter Kolb for this fix,0
+2bcd7c0,2003-12-20 19:55:33,added capability in the EquationSystems to extract a discontinuous solution vector for plotting purposes,0
+d0f7d2d,2003-12-20 19:58:09,fixed an off-by-one error in the UCD input,0
+d0b4dfd,2003-12-22 13:40:56,parallelized the nodal solution construction.  This particularly effects the writing of discontinuous data averaged to the nodes,0
+112de30,2003-12-23 22:57:51,Made the constructor protected to prevent the possibility of users constructing this class.  It is only used internally by the mesh.,0
+d9980c3,2003-12-24 00:30:43,fixed for Scali MPI compatibility.  Apparently MPI_SUM is not always valid for char data types,0
+a309c4b,2004-01-03 15:37:44,initial rewrite of Systems classes.  The new solver interface will be much more flexible for complicated system arrangements  i.e. 2 systems  one implicit  one explicit  or 2 implicit systems  one linear  one nonlinear  etc...  More documentation and discussion on the developers list to come,0
+e541d3c,2004-01-05 21:03:16,Updated the doxygen input file to also document the files in the new solvers directories.,0
+9c6d3c4,2004-01-09 19:25:35,Added a new set of shape functions based on integrated Legendre polynomials. The new FEFamily SZABAB is simply named after the corresponding reference by Szabo and Babuska. Class FE<_dim  SZABAB> is only available through the FEBase::build method. Currently the shapes are implemented up to seventh order in 2D. Since some users may not be interested in higher order shape functions (and we will add more of them in the future)  these shapes are only available when the library is compiled with option pfem enabled.,0
+d57285b,2004-01-09 19:33:22,Added new set of shape functions. Currently implemented up to seventh order in 2D.,0
+64431a6,2004-01-11 15:56:46,fixed a bug in the solution projection that caused all vectors to be projected as parallel  distributed vectors regardless of initial distribution.  This causes a problem when the current_local_solution (a local vector) was projected  since it was improperly projected into a parallel vector.  I introduced this bug about a week ago in the system rewrite.,0
+c4fb38a,2004-01-14 07:02:00,Added some links to TACC press release  USNCCM  and SAVIAC web sites.,0
+ee99226,2004-01-14 22:34:24,added another build_nodes_to_elem member that gets pointers to all the elements connected to a node,0
+47f3373,2004-01-16 11:01:52,Changed 1D szabab shapes to some nicer expressions1D szabab shapes to some nicer expressions.,0
+af1a50e,2004-01-17 22:56:54,fixes for the systems,0
+0ec7bba,2004-01-20 13:36:04,fix for AMR when variables are approximated by different orders (e.g. Taylor-Hood elements for incompressible flows,0
+022ffc1,2004-02-03 01:39:57,removed a stray here(),0
+0eb9787,2004-02-08 20:25:24,added the libmesh-config script for easy building.  Note that your make must understand the --no-print-directory flag,0
+0e4b5d1,2004-02-08 20:36:57,configure no longer removes config.status  but distclean does,0
+66fc274,2004-02-08 20:52:45,converted sqrt calls into constant parameters,0
+3d3b97c,2004-02-08 22:07:46,optimizations for shape function calculations,0
+5f97a69,2004-02-08 22:17:31,optimizations for shape function calculations,0
+4383734,2004-02-09 17:12:28,Changed all instances of pow(x int) to pow<int>(x).  Those calls should all be inlined via template magic and be evaluated in O(1) time.,0
+540a955,2004-02-09 18:32:46,Checked in example 13  a nonlinear example.,0
+d8be541,2004-02-09 18:40:19,Added html documentation for example 13. We still need to figure out why some of the system include files are being omitted from the documentation.,0
+2d93b37,2004-02-09 18:51:31,Had to include libmesh_common.h in utility.h so that it would pass the test_headers.sh script.,0
+0668f09,2004-02-10 13:28:07,no need for Utility::swap() when std::swap() will do...  Also fixes for Metis and Parmetis for new compiler -I semantics,0
+7f62225,2004-02-10 16:20:15,Changed 2D szabab shapes for TRI6 elements to nicer (Horner scheme) representations.,0
+ecb4561,2004-02-10 22:48:14,code to look at the SFC in Tecplot format,0
+6be44ce,2004-02-10 22:48:53,changed comment style so that it makes it into the documented source,0
+f55e387,2004-02-10 22:50:22,changed 2D mapping to properly handle 2D manifolds in 3D space,0
+b354bc6,2004-02-10 22:51:17,more efficient comparison function,0
+6d4878a,2004-02-10 22:51:55,use leng=3,0
+2c8a402,2004-02-10 22:52:28,changed INT  probably should remove?,0
+622e810,2004-02-10 23:02:15,changed unsigned long to unsigned,0
+91575a2,2004-02-12 17:31:38,only renumber the nodes if refinement has occured.  This should fix Bills grid2grid problem,0
+e6f8a24,2004-02-12 20:52:15,do not try to build optional packages when they are disabled,0
+158ae41,2004-02-13 21:36:49,the user must be able to extract a writeable node ptr to build elements by hand,0
+5ca4af4,2004-02-13 21:36:50,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_2'.,0

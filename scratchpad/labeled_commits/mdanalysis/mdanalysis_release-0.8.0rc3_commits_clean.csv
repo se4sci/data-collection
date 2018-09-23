@@ -1,0 +1,19 @@
+hash,time,message,buggy
+7dd804d,11/2/2013 20:29,topologyDict created,0
+9a8d2e2,11/3/2013 15:25,topologyGroup created,0
+d18ceeb,11/3/2013 15:30,Fixed bad commit,1
+364440a,11/6/2013 11:28,More work on topologyDicts and topologyGroups,0
+edd5c9c,11/7/2013 21:25,Added calc_angles and calc_torsions to core.distances These are cython implementations of mass angle/torsion calculation,0
+5bd25e7,11/10/2013 23:04,Cython analysis work,0
+615f1a7,11/11/2013 20:12,Added unit tests for new cython distance modules (calc_bonds  calc_angles and calc_torsions),0
+077c188,11/16/2013 20:56,Doc strings and tidying,0
+dd808b2,11/17/2013 14:17,Documentation,0
+72c1c51,12/28/2013 10:45,Version number changed to 0.8.0rc2,0
+ee8cbda,12/29/2013 10:36,Update to Top,0
+17a2d68,12/29/2013 19:12,Merge branch 'develop' into topologydicts,0
+12e11a2,12/29/2013 19:17,Doc update,0
+c692018,12/29/2013 19:19,Small fix with missing import,0
+d8a503a,12/29/2013 21:53,Merge remote-tracking branch 'richard/triclinic' into develop,0
+8afdeda,12/29/2013 23:01,"""a1  a2 = self.atoms[i] self.atoms[j]"" changed back to ""a1  a2 = self.atoms[i-1] self.atoms[j-1]""",0
+4a1d06f,12/30/2013 13:15,PSF Parser Fix,0
+5f12ae5,12/30/2013 18:19,Version bumped to 0.8.0rc3. Doc fixed and regenerated,0

@@ -1,0 +1,159 @@
+hash,time,message,buggy
+85d420f,2017-11-21 11:53:45,Debugging of dfpt_mkvxc_noncoll for nlxccc case,0
+822f7ee,2017-12-08 15:06:41,Modification of the scf_history_type to allow storing only the wavefunctions   init and free scf_history_wf. Should compile.,0
+ced1f27,2017-12-08 15:17:04,Define new input variable wfmix.,0
+5efc706,2017-12-08 15:47:36,Improve the documentation for wfmix,0
+f0f3d2a,2017-12-08 15:53:11,Fix typo,0
+c35c764,2017-12-08 16:00:01,Fix typo in doc,0
+dd7a083,2017-12-08 16:05:57,Fix args of scf_history_init,0
+2cbf1ba,2017-12-08 17:35:15,Fix missing declaration,0
+0dd687c,2017-12-11 12:57:30,Complete coding (not debugged) of simple mixing of WFs  in NC and k-point parallelism (PAW not complete  band-fft parallelism not complete).,0
+7c2b011,2017-12-11 14:37:45,Compilation is OK.,0
+1d42aa0,2017-12-11 14:44:06,Define new test v7#69 (at present  same as v7#t67),0
+ba2ad39,2017-12-11 16:03:27,Fix bugs. Now test v7#69 executes properly with simple mixing and wfmix=one (so  no mixing ...),0
+c9aefd8,2017-12-20 09:44:54,Define the Fock istep outer loop counter,0
+cda8ea0,2017-12-20 09:49:37,Debugging modifications - to be removed afterwards,0
+9eb237c,2017-12-20 09:53:30,Temporary commit of light test directory,0
+baca663,2017-12-20 20:37:48,Merge branch 'develop' into wfmix2,0
+d6b0247,2017-12-21 20:55:12,Initialize v8.7.3,0
+4a8ec04,2017-12-21 22:00:04,Merge remote-tracking branch 'trunk/develop' into develop,0
+f7a1655,2017-12-22 10:05:03,merge,0
+2bb81c6,2017-12-22 11:47:51,some minor changes includig new input variable ixcrot,0
+369e460,2017-12-22 12:21:34,mistake in 57_iovars/chkinp.F90 corrected,0
+be3a5b3,2017-12-22 15:31:41,preparation of an automatic test for DFPT in non-collinear  MnO AFM with GS  ddk and atom+E-field perturbations  put in t70.in,0
+e5604f1,2017-12-22 20:54:13,Define new routine dotprod_set_cgcprj.F90  modify wf_mixing.F90 accordingly. Still to be compiled and tested.,0
+9be2112,2017-12-22 20:57:52,Continue to debug,0
+0b83fcc,2017-12-22 21:03:14,Merge branch 'wfmix2' of gitlab:trunk/abinit into wfmix2,0
+d9d4ac1,2017-12-22 21:21:09,Fix minor problems : src/66_wfs/dotprod_set_cgcprj.F90 pass abilint,0
+c4c6b20,2017-12-22 21:53:57,Fix several typos.,0
+ba3b315,2017-12-22 21:54:38,Fix several typos,0
+6f04d52,2017-12-22 21:54:51,Merge branch 'wfmix2' of gitlab:trunk/abinit into wfmix2,0
+f11f66f,2017-12-23 09:05:30,The native matrix element computation for sets of wfs  and the dotprod_set_cgcproj give the same results.,0
+77c7b39,2017-12-23 09:48:57,The inversion is now working  and tested in one case.,0
+d1eb6ae,2017-12-23 14:14:49,Simple mixing is working. Update test v7#69.,0
+59301a9,2017-12-23 14:20:05,Merge branch 'develop' into wfmix2,0
+3c7fda6,2017-12-23 14:37:49,Merge branch 'wfmix2' of gitlab:trunk/abinit into wfmix2,0
+b7697e5,2017-12-23 22:17:38,Create 66_wfs/lincom_cgcprj.F90  and use it (did not try to compile yet !),0
+8952dfe,2017-12-24 07:04:39,Apply abilint,0
+aabe761,2017-12-24 09:29:23,Fix minor problems  so that compilation is OK.,0
+526823c,2017-12-24 09:37:50,Now test v7#69 executes correctly.,0
+0b49dc9,2017-12-24 09:45:35,Fix typo,0
+75a2b47,2017-12-24 17:41:22,Create new routine cgcproj_cholesky.F90 . Generalize dotprod_set_cgcprj.F90. Adapt wf_mixing.F90.,0
+45fde22,2017-12-24 18:11:13,Many small fixes (typos  declarations ...). Now cgcprj_cholesky passes abilint.,0
+9b8a773,2017-12-24 18:23:22,Merge branch 'wfmix2' of gitlab:trunk/abinit into wfmix2,0
+4686a91,2017-12-25 07:29:37,Fix typos.,0
+493cee8,2017-12-25 07:30:19,Dummy modifications of *html files.,0
+8d4c1aa,2017-12-25 07:34:28,Add missing arg,0
+295f99d,2017-12-25 07:39:29,mv v7#71 to v7#76 and mv v7#72 to v7#77,0
+789f24d,2017-12-25 09:45:36,Define files for new test v7#71. Also  tutorial#nuc_1 had never been activated for automatic tests ...,0
+b8881f8,2017-12-25 10:02:22,Add two JTH pseudos for tests (and possible elimination of other obsolete pseudos).,0
+ea78413,2017-12-25 10:55:21,Now the test tutorial#nuc_1 is activated.,0
+5808970,2017-12-25 10:59:03,Merge branch 'develop' into wfmix2,0
+90da3ef,2017-12-25 10:59:19,Merge branch 'wfmix2' of gitlab:trunk/abinit into wfmix2,0
+f29a2d0,2017-12-25 12:11:44,Fix several things for wfmix with PAW,0
+0d13a58,2017-12-25 12:13:31,Disable temporarily v7#71 . The tutorial_nuc might soon be merged.,0
+1ebbb5c,2017-12-25 12:23:06,Actiavte again v7#71,0
+4a951c0,2017-12-25 14:11:25,added tim1rev variable,0
+fdd6ecd,2017-12-25 15:22:56,Several minor modifications  to make pass on the test farm (abirules as well as compile).,0
+e2b8fd8,2017-12-25 15:28:25,Introduce downsampling for test v7#71,0
+81b5005,2017-12-25 15:29:24,Merge branch 'wfmix2' of gitlab:trunk/abinit into wfmix2,0
+0f14a1b,2017-12-25 17:57:20,Still debugging ...,0
+94e1b2a,2017-12-25 18:12:56,Debug memory leak. Also update abirules#4 ref.,0
+6e78bae,2017-12-25 18:22:17,Treat the allocation of scf_history%cprj in case usepaw==0.,0
+dd9134f,2017-12-25 18:26:13,Treat correctly allocation of scf_history%cprj in the case usepaw==0.,0
+22dce06,2017-12-25 18:28:21,Merge branch 'tuto_nuc' of gitlab:trunk/abinit into tuto_nuc,0
+8cf6012,2017-12-25 18:40:33,Merge branch 'wfmix2' of gitlab:trunk/abinit into wfmix2,0
+f3fa638,2017-12-25 18:41:34,abilint,0
+30359ff,2017-12-25 18:41:45,Merge branch 'wfmix2' of gitlab:trunk/abinit into wfmix2,0
+50bd446,2017-12-25 18:43:21,Merge branch 'tuto_nuc' into wfmix2,0
+d68a6d2,2017-12-25 23:17:28,small changes of output t20 renamed to t66  and new NC test (t67) added,0
+2d1aec6,2017-12-25 23:47:21,got updates from trunk,0
+6205b1f,2017-12-26 06:36:45,Complete deallocations.,0
+49b4d84,2017-12-26 06:41:23,Merge branch 'tuto_nuc' into wfmix2,0
+2e9939e,2017-12-26 07:22:40,Fix problem with the indices in src/66_wfs/lincom_cgcprj.F90. Check is now working.,0
+5403f07,2017-12-26 19:01:23,Define timrho for scfcv,0
+b2a29e5,2017-12-26 19:02:01,Merge branch 'tuto_nuc' of gitlab:trunk/abinit into tuto_nuc,0
+50ba3b5,2017-12-26 19:02:44,Recompute the density after upgrading the wavefunctions,0
+831e383,2017-12-26 19:03:56,Merge branch 'tuto_nuc' into wfmix2,0
+32ab973,2017-12-26 21:06:29,Define tim_mkrho,0
+81789c0,2017-12-26 21:38:10,Try to compute the density from the rhoij ...,0
+6125910,2017-12-26 21:40:18,Declare qpt,0
+8ecfa96,2017-12-26 21:58:54,THe density is now recomputed after the mixing of wfs  but this is apparently useless ?!,0
+66358a3,2017-12-27 17:33:47,Use nbandhf for wf_mixing (and update ref file fro v7[69]. Also clean wf_mixing.F90 . Print eigenvalues of the projector associated to S in dotprod_set_cgcprj.F90 .,0
+c118521,2017-12-27 19:20:21,Finalize use of nbandhf instead of nband_k. Also make test that the mixing of wavefunctions ins not made when paral_kgb is activate  or when extrapwf is activated.,0
+5638b7f,2017-12-27 21:11:36,FIx minor issues,0
+8676595,2017-12-27 22:17:19,new automatic test for dfpt-non-collinear,0
+6217721,2017-12-27 22:23:44,resolved conflict with Sergei branch (list of new automatic tests in tests/v8/__init__.py),0
+aca2828,2017-12-28 09:13:23,Fix allocation problems of cprj's. Update test v7#71. A clear speed up is now observed with wfmix 1.3  PAW case.,0
+b41f2a4,2017-12-28 19:23:42,suppress nunused variables,0
+2afdc6d,2017-12-28 20:46:06,Enforce ixc1 11 (instead of the LibXC version of PBE),0
+f0461ab,2017-12-29 09:54:53,Temporary : modifications to test frozen wavefunctionsTemporary : modifications to test frozen wavefunctions..,0
+39d4044,2017-12-29 09:57:02,Merge branch 'wfmix3' of gitlab:trunk/abinit into wfmix3,0
+ed31dce,2017-12-30 21:54:48,Code RMM-DIIS up to the computation of the (cross-)residuals,0
+4973824,2017-12-31 07:32:37,Merge branch 'wfmix3' of gitlab:trunk/abinit into wfmix3,0
+ee68d4d,2017-12-31 09:37:59,Fix minor issues  so that abinit compiles.,0
+3745e59,2018-01-01 08:19:03,RMM DIIS algorithm for wf mixing is now coded (for insulators  though).,0
+da067a6,2018-01-01 08:22:42,Minor fixes  to pass on the test farm.,0
+4aadf7d,2018-01-01 10:48:17,Compilation works.,0
+d8dd0b9,2018-01-01 11:20:35,Nex test v7#72  for RMM-DIIS a for wavefunction mixing,0
+5915728,2018-01-01 11:29:57,Fix in t72.in,0
+ef44df8,2018-01-02 09:13:08,Suppress unused vars,0
+12273c9,2018-01-02 10:38:59,Replace imag by aimag to please NAG,0
+1a93fa6,2018-01-08 15:53:41,RMM-DIIS is working  in the NC case. Test v7#72 OK (portability still to be established  though).,0
+07aa46d,2018-01-08 16:08:16,Clean (suppress debugging sections),0
+1cb97a6,2018-01-10 11:21:18,tiny dbg comment change,0
+0e8a4dd,2018-01-10 11:27:26,Merge remote-tracking branch 'sergei/dfpt_noncoll' into dfpt_noncoll,0
+604a6c5,2018-01-10 14:28:38,fixed timab bug in src/66_wfs/getgh1c.F90,0
+25adda2,2018-01-10 15:34:21,Preparation of automatic test for DFTP in non-collinear: t70 for GS WF reference,0
+2ab5871,2018-01-10 16:38:18,automatic test chain for ddk in non-collinear  for ixcrot=1  2 and3 --> t71  72 and 73,0
+5659880,2018-01-10 16:39:06,automatic test chain for ddk in non-collinear  for ixcrot=1  2 and3 --> t71  72 and 73,0
+cbe7f3e,2018-01-10 20:53:50,changed tolnlines v8[t67],0
+bc37a4c,2018-01-11 11:56:44,simplified v8[67] test  only longitudinal response,0
+9f0c6d6,2018-01-11 13:57:46,small adjustements for t67,0
+1b6136b,2018-01-11 15:20:43,added description of new input variables ixcrot and tim1rev,0
+9cf822e,2018-01-11 16:48:21,dfpt nc rfmang test at q=0.5 is now split into two parts,0
+fb5787a,2018-01-11 16:51:51,removed some unused variables,0
+6e63bb7,2018-01-11 17:58:43,toldfe reduced for t68,0
+01d20b0,2018-01-11 20:31:48,change of t68,0
+194f1d6,2018-01-11 21:15:50,changed reference for t68 to satisfy abiref,0
+9709bc6,2018-01-11 22:56:22,relative tol adjusted to 0.004,0
+18c01bc,2018-01-11 23:05:32,change ref t68,0
+1bc7af1,2018-01-12 09:36:55,further tol increase in t68,0
+9f95b79,2018-01-12 09:41:37,some additional t67 t68 modifications,0
+9841c3e,2018-01-12 11:36:55,unused vars test reference updated,0
+1aef7ad,2018-01-12 12:03:11,potential solution of compilation problem on petrus and ibm8,0
+482a97d,2018-01-12 13:44:15,merge with recent updates from the trunk  doc conflicts resolved,0
+0769f6d,2018-01-12 15:09:33,slight change of accuracy in v67mbpt[t51] to make it pass all the tests,0
+b0e2d1c,2018-01-12 15:24:42,merge fix with latest Sergei's branch,0
+e10cc22,2018-01-12 21:08:05,test for transverse B-field response,0
+487bb77,2018-01-12 22:41:29,t69 tolerance updated,0
+bac2244,2018-01-13 00:17:55,tolnlines t69 adjustemed to 11,0
+c75b4a4,2018-01-13 13:27:40,another transverse response test,0
+364e6da,2018-01-14 19:19:58,A dimension of a zgesv call was incorrect,0
+dbb31a4,2018-01-14 19:21:03,Update the reference file,0
+07ec14e,2018-01-14 19:57:44,shift of dfpt noncoll automatic tests to fullfil Sergei's ones  now t71-->t74,0
+1e8ce0c,2018-01-14 19:59:18,Merge remote-tracking branch 'trunk/develop' into dfpt_noncoll,0
+47a6e55,2018-01-14 20:49:41,shift to ixc 7 instead of libxc -1012 to pass on testfarm for tests v8[71:74],0
+732fea4,2018-01-15 06:56:30,There were missing DEALLOCATE statements,0
+f1bacd0,2018-01-15 06:58:53,Merge branch 'develop' into wfmix3,0
+d0eb98a,2018-01-15 09:09:25,Update tolerance for v8#68 on bob openmp,0
+f8bdfd9,2018-01-15 17:11:57,New automatic tests for DFPT noncollinear with E-field perturbation (t75:t77)  the perturbation direction has been reduced to only [100] to speedup a bit the time length of the tests  Bug correction in dfpt_nstdy.F90 (replace rhodummy by the actual densities),0
+2915672,2018-01-16 11:26:42,addition of atom perturbation DFPT tests in case of non-collinear magnetism (t78 to t80)  The previous t[80:83] have been moved to t[90:93],0
+1df771b,2018-01-17 11:57:07,bug fix for xccc (option=0) in case(1) (ixcrot=1) of rotate_back_mag_dfpt,0
+efe3f80,2018-01-17 14:29:56,change refs automatic tests t[75:78],0
+a692435,2018-01-18 09:45:23,t90 to pass on abiref,0
+892fa53,2018-01-19 10:04:35,adapting t90:93 to pass abiref  last round?,0
+ba024f1,2018-01-20 07:36:43,Merge remote-tracking branch 'remotes/bousquet/dfpt_noncoll' into _bousquet,0
+2e6aed5,2018-01-20 16:24:11,update of t[71:80] to have them tested with mpi,0
+de5e379,2018-01-20 20:40:10,Merge bousquet/dfpt_noncoll/2e6a into develop,0
+231a5a8,2018-01-25 09:17:19,Before updating year 2017 to 2018 in the copyright  fix the remaining 2016 (upgraded to 2017),0
+0ea551c,2018-01-25 09:21:40,Update script to 2018,0
+1d6c0d6,2018-01-25 09:27:50,Update copyright year ...,0
+be1a288,2018-01-25 09:44:40,... update copyright year (continued) ...,0
+14b24de,2018-01-25 14:13:34,... update copyright year (continued) ...,0
+a4dad64,2018-01-25 14:16:38,... update copyright year (continued) ...,0
+c33fc98,2018-01-25 14:22:40,... update copyright year (continued) ...,0
+e34cc10,2018-01-25 14:31:02,... update copyright year (final).,0
+b187895,2018-01-25 14:36:42,Run ./generate_doc.py,0
+e8d4342,2018-01-25 14:40:04,make parents,0
+fab6f11,2018-01-25 18:04:29,Enlarge tolerance for test v8#69 due to bob_openmp,0

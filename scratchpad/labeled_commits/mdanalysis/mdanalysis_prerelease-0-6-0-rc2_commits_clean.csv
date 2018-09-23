@@ -1,0 +1,49 @@
+hash,time,message,buggy
+8cbdc55,2008-08-23 00:02:50,Branch to test pre 0.5.1 (This is UNSTABLE and any given svn version may be completely broken),0
+0554742,2008-08-23 01:14:54,updated UNSTABLE to release 0.5.1 using merge: this revision is equivalent to tags/release-0-5-1,0
+b90aea8,2008-08-23 01:36:39,H-bond analysis: reading donors/acceptors from psf,0
+b4d55bc,2008-08-23 03:53:25,Major restructuring of module: - core functions are in core - coordinate readers/writers are in coordinates - topology contains topology parsers - utils: misc - KDTree: copied Thomas Hamelryck's KDTree neighbour search code from Biopython   added copyright boilerplate and Biopython to LICENSE   This code will be used for fast distance selection and H-bond analysis. Loading a psf/dcd universe works  Selecting on the universe works  nothing else tested.,0
+b9d4f29,2008-08-23 04:15:04,initial work on defining hydrogen bonds,0
+842210f,2008-08-23 12:49:35,UNSTABLE: fixes in HBond (at least now it runs...),0
+4630319,2008-08-23 12:51:23,UNSTABLE: fixed __init__.py fles so that we really present the same names in the MDAnalysis name space as before the reorganization,0
+ab57ac8,2008-08-24 00:59:21,- switched KDTree to using numpy - neighbor searching methods work in principle with selections   (re-implemented some functionality of NeighborSearch using the Atom   data structure instead of the Bio.PDB entities),0
+798161f,2008-08-24 01:58:28,Basic outline of how to calculate pairs within a given radius for determining H-bonds.,0
+3ca7d91,2008-08-24 22:14:46,- made bfactors a property of Universe - added dimensions property to AtomGroup (required for AROUND and   POINT selection to work on AtomGroups) - reformatted docs (line breaks  initial white space),0
+652d487,2008-08-24 23:02:23,New functionality in NeighborSearch: - CoordinateNeighborSearch(): takes coordinate arrays   AtomNeighborSearch(): takes AtomGroups (or anything with a   coordinates()) method. In MDAnalysis we are only using   CoordinateNeighborSearch() at the moment. - New search_list() method to find all A within R of B.,0
+4cfbf64,2008-08-24 23:13:35,Distance selections: - AROUND and POINT work when applied to a universe (there's still a   bug present that prevents proper use with AtomGroups)  I fixed a bug   that made these selections spit out total garbage or crash - AROUND uses by default KDTree neighbor search and is about 7x faster   than the distance matrix based routine (still  it is even better to   explicitly construct such selections with AtomGroups and   KDTree.NeighborSearch.AtomNeighborSearch),0
+b842b018,2008-08-25 01:08:25,fixed: threw exception if no atom was found at all  now just returns empty index list,0
+5c16948,2008-08-25 10:43:16,Let AROUND selection use periodic=True (if available),0
+2e4d939,2008-08-25 19:47:34,Added order='C' to make clear what the array layout should be  this does not change anything because the numpy default is 'C' anyway.,0
+eca9dd9,2008-08-25 20:25:39,fixed: typo  entity unwrapping of segment should now really return a segment,0
+68dc377,2008-08-31 21:36:32,fixed: 'from MDAnalysis import *' did not get Universe and collection into the main name space (in the same way as the old MDAnalysis did),0
+0e75b0d,2008-08-31 23:14:57,fixed: copy does not take kw args,0
+23b347d,2008-09-01 01:59:50,Framework to organize flags: setup the core.flags instance in __init__.py and import where necessary. Values can be changed interactively and include error checks on values.,0
+85c6124,2008-09-01 02:02:40,renamed append() to register() (makes more sense),0
+f4e4e92,2008-09-01 11:21:01,- cleaned up and added docs - defined specifications and conventions for flag doc strings,0
+a33a015,2008-09-01 11:25:01,docs: spelt out which routines use KDTree with flags['use_KDTree_routines']=='fast',0
+210d85b,2008-09-01 11:38:30,docs: more on periodic selections,0
+d232c0b,2008-09-01 11:40:21,AtomGroup.coordinates() returns a VIEW on the array if it can (copy=False)  the copy=True hack was supposed to help with the old distance array bug but this has been fixed independently. I don't think that we need copy=True here but perhaps one should proceed with some caution. For testing the argument is left in the method.,0
+c7e2a6a,2008-09-02 15:17:08,- fixed installation bug  can now do 'python setyp.py --prefix=~/my/pydir' at the cost of not installing the docs  however it's not really clear where the docs should go. > - new scheme for labelling UNSTABLE releases: get global revision with svnversion and put this number + 1 into RELESE. This way we weill be able to produce nice svn snapshot tarballs.,0
+a0589bb,2008-10-27 12:34:25,PSFParser should appear at module top as well (for backward compatibility),0
+50a86cb,2008-11-04 18:58:06,corrected docs for flags,0
+b239d6b,2008-11-04 18:59:21,AtomGroup.__init__(): check that the input is an object that can be indexed  if not turn it into a list  This is necessary so that one can use sets as input for AtomGroup  for instance  when manually constructing selections for speed.,0
+f71c4e0,2009-01-19 03:56:35,New: selection can write snapshot to a pdb file (EXPERIMENTAL) - added a simple PDB writer that does not require Bio.PDB (should rewrite PDBWriter) - added core.util for helper functions like filename mangling - small steps towards a unified trajectory API:   . universe.trajectory points to the reader object   . coord.__init__ advertises readers  writers in dicts,0
+fcfd6f1,2009-01-20 19:47:24,dummy Biopython when pdb-loading functionality is not needed and Biopythn not available,0
+4643eb6,2009-01-21 17:45:33,fixed: pdb file output could not be read by Charmm even though it was technical legal pdb 3.2.,0
+99000bf,2009-01-21 23:47:27,fixed: pdb format was off  apparently one has to strip all spaces from name and resName,0
+9371251,2009-01-31 15:15:25,some cleanup in PDB writer code + added docs,0
+5dfa8ac,2009-04-18 14:00:57,- use modern MKL - development release 148,0
+f41a5c5,2009-04-18 14:47:36,release candidate 1: - updated docs (README  INSTALL) - added examples + short README.txt - cranked RELEASE,0
+02e9bce,2009-08-11 21:11:30,- CRDWriter added (denniej0) - fixed a bug in PrimitivePDBWriter: would only work if run from a base AtomGroup  not a derived   class such as a segment - updated CHANGELOG and TODO,0
+9fb3698,2009-08-11 21:19:33,docs update (write AtomGroup),0
+a7dc12f,2009-08-11 23:06:22,checking in my deleted charmm format and altering title,0
+3d207f4,2009-08-11 23:10:43,fixed: lone star can not have space  must be '*\n'.,0
+9640477,2009-12-17 18:15:36,use easy_install for installation - added ez_setup.py - added EasyInstall lines to setup.py - package directory renamed to the package name so that we can use the debug setup - bumped development release number,0
+10cbef5,2009-12-17 18:38:24,added ez files to MANIFEST  I think they are needed to build fully functional eggs (untested),0
+e965b30,2010-02-02 22:11:12,improved installability - disabled easy_install - moved fast_numeric install config file - some more docs,0
+197fcdd,2010-03-10 23:24:33,added Liz to authors  updated dates  moved INSTALL to top dir,0
+0992cbb,2010-03-10 23:24:39,added lapack lib to libraries (see Issue 17 http://code.google.com/p/mdanalysis/issues/detail?id=17 ) and documented fast math libs switching via setup.cfg - merged INSTALL from website with current version (should now cover 0.6.0) - lapack should always be in linker line -- added,0
+105b25c,2010-03-10 23:24:46,added devel instructions from website  added link to online doc which is more recent,0
+0b8037c,2010-03-10 23:24:53,use python set and only fall back to deprecated Set,0
+08d14db,2010-03-10 23:25:00,better docs on fast libs  spell check  and INSTALL added to distribution,0
+e6c76e2,2010-03-10 23:27:34,Create tag prerelease-0-6-0-rc2,0

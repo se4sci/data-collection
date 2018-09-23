@@ -1,0 +1,66 @@
+hash,time,message,buggy
+75779f1,2013-12-30 18:54:26,Some corrections to documentation files.,0
+98aa7d5,2014-01-07 11:52:26,deprecations in AtomGroup: AtomGroup.velocities is now an attribute,0
+42a5735,2014-01-07 14:45:42,added new authors to online docs,0
+a562659,2014-01-07 16:57:46,fixed another velocity test,0
+93c45e6,2014-01-10 16:56:05,Resolves Issue 161 (trajectory slicing is now possible in MDAnalysis.analysis.contacts.ContactAnalysis1.run() method),0
+11c1fd9,2014-01-14 11:40:52,fixed Python 2.6 incompatibility in topology.Bond.__eq__(),0
+e6b7061,2014-01-14 14:09:46,provide assert_allclose() from numpy 1.6.1 numpy.testing.utils,0
+6cc7b17,2014-01-14 15:38:53,XDR-related cleanup and unit tests. Large file indexing now ok in 32bit.,0
+f69f2db,2014-01-14 18:15:36,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+256f32c,2014-01-14 18:32:36,Fixed compatibility with Python2.6. Positional argument specifiers can't be omitted in Python2.6.,0
+d2ee47f,2014-01-15 14:45:08,application RotamerConvolve: 1.0 release,0
+aa544f5,2014-01-15 14:50:44,application RotamerConvolveMD: write licence when starting up,0
+002ced0,2014-01-15 21:37:57,fixed XDR writer incorrect use of delta parameter (Issue 154),0
+796c56e,2014-01-16 02:53:18,Fix default creation of writer from XTC/TRR TrjReader. Fixed docs.,0
+e75d869,2014-01-16 05:20:15,libxdrfile2.0 license modified to GPL. Minor cleaning.,0
+510db46,2014-01-16 15:17:54,TRZReader upgrade,0
+a72168f,2014-01-19 06:35:20,TRR I/O fully aware of missing coord/vel/force information (Issue 162) Exceptions are raised on access of missing data.,0
+e262263,2014-01-20 01:25:34,improved HBonds docs,0
+f71164e,2014-01-20 01:25:50,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+58d676b,2014-01-22 00:15:33,Cleaned up TRR I/O property-control code,0
+dc6e0a6,2014-01-24 22:16:25,TRR Timestep constructor now accepts has_x  has_v and has_f Added **kwargs to Timestep constructors that didn't have them already,0
+e67ce35,2014-01-25 04:13:29,Adaptation/renaming to libxdrfile2,0
+e649a95,2014-01-25 04:35:55,TRR documentation update,0
+30e29e0,2014-01-26 01:04:08,Merge branch 'XDRclean' into develop Merged and finished converting the code to use libxdrfile2,0
+a955578,2014-01-26 17:42:48,Update of TRR I/O doc and improved error-checking.,0
+ae1b14c,2014-01-26 22:28:36,Added applyPBC(coords  box) function to core.distances.  This moves all  atoms within the primary unit cell as defined by box.  Will work with both triclinic and orthogonal boxes.,0
+517bfa4,2014-01-27 21:33:47,Added 'use_pbc' flag to core.flags this toggles the pbc flag in AtomGroup methods.,0
+69ebc6c,2014-02-02 14:44:30,Made unit tests for Issue 164  Timestep.copy() not functioning properly,0
+62b8bdc,2014-02-02 16:31:20,Merge remote-tracking branch 'richardjgowers2/issue156' into Issue/156,0
+31d83bb,2014-02-02 17:01:24,minor reST cleanup in AtomGroup,0
+dceb7c7,2014-02-02 17:54:10,AtomGroup.bond(): renamed keyword minimage to pbc for consistency,0
+5f9b2f2,2014-02-03 10:01:34,reduced prec from 5 to 3 in TestPBCFlag,0
+a42d488,2014-02-03 10:13:51,reST fix,0
+2d5a068,2014-02-04 10:28:07,Fixed Timesteps not copying correctly (fixes Issue 164),0
+044b513,2014-02-04 12:02:54,Merge remote-tracking branch 'richardjgowers2/TScopy' into develop,0
+1c81d77,2014-02-04 12:04:08,added maintainer/install_all.sh for quick installation,0
+53ed8c0,2014-02-04 21:29:14,Added copy_slice(slice) method to base.Timestep (Fixes Issue 163),0
+de467cc,2014-02-06 16:03:10,MDAnalysis.analysis.rms.rmsd(): new center keyword,0
+2ad3e7f,2014-02-06 16:28:43,changed name of flag 'convert_gromacs_lengths' to 'convert_lengths',0
+e07ff2b,2014-02-11 12:53:14,Some corrections to documentations files.,0
+7de22de,2014-02-11 16:00:03,reST fixes in analysis.density,0
+3e9feb0,2014-02-11 22:00:28,Version bumped to 0.8.1rc1,0
+8c7dc34,2014-02-11 22:07:29,Doc regenerated. libxdrfile2 generated doc files added to git,0
+94fed0d,2014-02-12 13:51:57,XTC/TRR-related doc update and cleanup.,0
+a7249de,2014-02-12 16:43:59,libxdrfile2 XTC TRR doc update and cleanup.,0
+d20554a,2014-02-12 17:07:14,Doc update,0
+48d106f,2014-02-13 02:09:24,libxdrfile2 docs: added all exdr symbols,0
+96859f6,2014-02-13 02:16:44,cleaned up docs for XTC and TRR,0
+5eb9899,2014-02-13 12:11:16,TRR doc minor cleanup.,0
+c491437,2014-02-13 17:15:58,Conflicts in documentation solved (Revision f69f2dbd1bd7),0
+bd35685,2014-02-13 22:57:01,minor doc fix for XTC,0
+64c6eba,2014-02-22 18:01:54,Addition of new MDAnalysis.visualization.streamlines namespace.,0
+e2dabb0,2014-02-22 19:07:41,MDAnalysis now correctly initializes the namespace for MDAnalysis.visualization. The 2D streamplot code in MDAnalysis.visualization.streamlines has been added and appears to function properly.,0
+54b2860,2014-02-23 09:12:52,MDAnalysis.visualization.streamlines adjusted in the following ways: -an ImportError with appropriate message should now be raised when a non-standard dependency of this module is not available (rather than a print statement only) -the only non-standard (i.e.  outside of regular MDAnalysis) module requirement has been simplified to matplotlib.nxutils  and ideally this requirement will eventually be removed because it is a deprecated module of matplotlib (and also an analytical rather than plotting use of matplotlib) -the standard dependencies (MDAnalysis  multiprocessing  numpy  scipy) are now imported in separate statements for improved dependency sanity -a substantial amount of extraneous debugging code has been removed (although a bit more clean-up could likely still be done) -the placeholder main() function has been renamed to generate_streamlines() and the workflow may eventually be adjusted (perhaps encapsulated in a class),0
+25afe78,2014-02-23 17:21:32,work on (sphinx) documentation for 2D streamplot visualization code: -mdanalysis/package/doc/sphinx/source/index.rst adjusted to include entry for visualization modules -new visualization_modules.rst entry and package/doc/sphinx/source/documentation_pages/visualization/streamlines.rst for pulling in 2D streamplot documentation automatically -major improvements to the documentation in and related to MDAnalysis.visualization.streamlines  including an inline example of usage / output plot,0
+2eabfad,2014-02-24 12:23:25,-incorporation of the new MDAnalysis.visualization.streamlines_3D module and associated documentation,0
+7bf1676,2014-02-24 12:39:49,Rebuilt docs to include new MDAnalysis.visualization modules,0
+d79ca74,2014-02-27 15:53:52,-MDAnalysis.visualization namespace properly labelled as experimental in the CHANGELOG and Matthieu Chavent credited in authors list for most recent set of changes -Matthieu Chavent added to AUTHORS file and to authors list in documentation conf.py file -Changed the citation format for Chavent  Reddy et al. (2014) for consistency with MDA formatting standards -Python assertion statements in the 2D / 3D streamplot modules have been removed in cases where they perform type checking on user input  but they remain for algorithm-level integrity checks (i.e.  expected array shapes at different stages) -The 2D streamplot code now raises a more useful ImportError message when a user does not have matplotlib installed,0
+c37ca71,2014-03-13 15:46:27,removed toplevel matplotlib imports,0
+457bf8e,2014-03-18 14:47:11,MDAnalysis.visualization.streamlines_3D adjusted in the following ways: -the assessment of proper grid cube geometries is now less sensitive to floating point equality failure (assertion is now from numpy.testing.assert_almost_equal rather than a conventional equality test) -print statements for debug / progress monitoring have been suppressed (mostly deleted from source code) -the generate_streamlines_3d() function now accepts x y z Cartesian coordinate limits for the analysis instead of automatically calculating the limits of the system  this change is largely motivated by increased consistency with the 2D version of the code in MDAnalysis.visualization.streamlines.generate_streamlines(),0
+257b2aa,2014-03-18 15:05:11,-updated docstring for MDAnalysis.visualization.streamlines_3D to include an example using the new coordinate boundary arguments -attempting a selective docs rebuild that only commits the modified pages/ images rather than full commit / push of mostly unchanged html pages,0
+ddf5b1d,2014-03-28 00:03:06,Named groups in selections now accepted (Issue 174),0
+1d4c599,2014-03-29 02:54:50,Merge branch 'NamedSel' into develop,0
+719e468,2014-03-29 03:52:31,issubclass vs. isinstance fix (Issue 176),0
+1e17fa6,2014-04-01 15:42:01,Documentation regenerated and version changed to 0.8.1,0

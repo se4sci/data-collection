@@ -1,0 +1,291 @@
+hash,time,message,buggy
+9c685d5,8/26/16 17:22,modif pour forces sur terme de Fock,0
+856b723,9/9/16 18:13,BZR to GIT : WVL-PAW-FORCES branch (forces in WVL-PAW formalism),0
+2f2d406,9/9/16 19:10,Merge error corrected,0
+99177d7,9/22/16 18:44,Conflicts resolved  test refs adjusted - take 1,1
+da2ad4f,9/23/16 19:44,Conflicts resolved  test refs adjusted - take 2,1
+964804c,9/26/16 10:27,synchronisation avec trunk,0
+32d4e6a,9/26/16 11:00,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+fb240c9,10/6/16 0:16,Improve convergence of SCF cycle for WVL calculations and for all iscf/nnsclo/wvlbigdft_comp combinations,0
+ab4ae8e,10/12/16 17:36,Merge branch 'develop' of abinit-gitlab:trunk/abinit into wvl-paw-forces,0
+9952c98,10/12/16 18:40,Change bigdft version to 1.7.1.24 (including PAW forces),0
+425b1d8,10/12/16 19:17,Change nnsclo default value for WVL calculations with iscf>0,0
+1c8a3ee,10/12/16 19:41,Adapt bigdft tests (31 to 34) : potential mixing activated  nnsclo modified,0
+6d374a4,10/12/16 19:53,Re-activate bigdft_paral tests and improve them,0
+7f1abe6,10/13/16 12:04,Activate forces in WVL+PAW automatic tests,0
+787999e,10/19/16 14:57,Bug corrections for PAW Fock forces. It works for hydrogen.,0
+332e8bc,10/19/16 14:59,Synchronisation avec le tronc Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+9dcfece,10/19/16 23:35,Merge branch 'develop' of abinit-gitlab:trunk/abinit into wvl-paw-forces,0
+4b8b34b,10/19/16 23:39,Add missing module dependency,1
+ec4a874,10/20/16 0:33,Conflicts resolved,1
+18c3b7a,10/20/16 1:01,Compilation errors eliminated,1
+07ba5d3,10/20/16 15:19,Adjust test tolerances,0
+de95470,10/20/16 15:30,Activate bigdft 1.7.1.24 on abiref,0
+f75865d,10/20/16 17:13,Update some bigdft test refs (all tests pass on abiref),0
+0c5d677,10/20/16 18:31,Another tolerance adjusted,0
+cc827bd,11/3/16 14:09,PAW forces for the Fock term: it works for several k points,0
+36291c5,11/15/16 16:47,Implement Blue Moon Ensemble method within PIMD (MT+GG),0
+d96e0b7,11/15/16 18:31,Add doc for new pimd_constraint variable,0
+ea63055,11/16/16 19:24,First version of history (HIST  hist%) with images WE save the rewriting of existing iterations in HIST file. There is room for improvment (memory saving),0
+140246e,11/22/16 18:56,Typos found thanks to the automatic tests,1
+a0eb760,11/23/16 10:26,A bug (only printing) has been magically corrected  update ref files,0
+09cdc0f,11/23/16 11:44,Save work,0
+5936f72,11/23/16 11:44,PIMD constraint improved (now the center of mass is fixed),0
+5dfccce,11/23/16 18:03,Sauvegarde au 23/11/2016,0
+b0932b5,11/24/16 11:32,pimd constraint improved (center of mass fixed),0
+39a45a1,11/25/16 18:31,Suppress xcart and fred from abi_hist datastructure,0
+357e571,12/2/16 15:52,HIST file was not correctly written in parallel (images),0
+85454b6,12/2/16 17:37,terme Fock-PAW:les forces sont test_es pour plusieurs atomes de plusieurs types  02 d_cembre 2016,0
+4cc59ed,12/7/16 17:25,Minor changes,0
+c75f6b6,12/7/16 17:26,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
+97afe71,12/7/16 23:48,Fred forces were not correctly output during MD/relaxation They were not synchronized with fcart Ex.: if Faverage was suppressed from fcart  it wa not from red. This is now corrected. However the value of dE/dt remains unchanged in out file (not equal to -Fred). This is logical as it is supposed to be the exact derivative of the energy.,0
+5e09408,12/8/16 0:50,HIST file was not correcly written in parallel (images),0
+2db89fd,12/8/16 1:06,A test had to be updated,0
+8104ef6,12/8/16 1:54,Merge branch 'develop' of abinit-gitlab:trunk/abinit into pimd,0
+1eb4bef,12/8/16 3:10,Post-merge changes (conflicts HIST and effpot),0
+9991c6e,12/8/16 11:25,Post-merge correction,0
+d6feb39,12/8/16 22:24,Replace abi_hist%histXF by abi_hist%xred/fcart,0
+7a2f5b4,12/8/16 22:31,Replace abi_hist%histA by abi_hist%acell,0
+a0bd57c,12/8/16 22:58,Replace abi_hist%histR by abi_hist%rprimd,0
+5d38068,12/8/16 23:28,Replace abi_hist%histV by abi_hist%vel,0
+61c2dce,12/8/16 23:46,Replace abi_hist%histE/Ek/Ent by abi_hist%etot/ekin/entropy,0
+6ed8d67,12/9/16 0:00,Replace abi_hist%histT by abi_hist%time,0
+d7d1d24,12/10/16 0:41,Add vel_cell in history (datastructure and file),0
+b9758d7,12/10/16 22:16,Preliminary tests for AHC code,0
+ff82173,12/10/16 22:41,mrgddb: Don't issue a warning if ngfft meshes are equal,0
+742972d,12/10/16 22:58,Use refs from abiref,0
+bea05d4,12/11/16 14:29,Add output of Phonon bands,0
+efe62d9,12/11/16 15:13,Fix minor bug in xmgrace format,1
+02b5a53,12/11/16 15:25,abilint,0
+362ff1e,12/11/16 19:39,Saving work,0
+b83807d,12/12/16 1:11,Optimize size of history in gstateimg (and children),0
+293788d,12/12/16 18:40,Add prteband and prtphbands variables to print bands in Xmgracen/gnuplot format,0
+286ca21,12/12/16 19:35,Init ebands%eig with zero to avoid SIGFPE,0
+9dad72d,12/12/16 20:14,Update refs (extra line introduced for prtebands),0
+776a27c,12/12/16 21:27,This should fix the SIGFPE when nband_k != mband,0
+b2afba8,12/12/16 21:28,Merge branch 'eph' of gitlab.abinit.org:gmatteo/abinit into eph,0
+69ebb82,12/12/16 22:38,Fix wrong bantot passed to ebands_init in dfpt_loopert (prtgkk  ieig2rf),1
+484acdf,12/12/16 22:57,Try to workaround bug in ieig2rf (ebands_init),0
+8ebc424,12/13/16 11:06,Tune tolerances of new tests  add docs,0
+7af6345,12/13/16 18:29,Cosmetic changes,0
+c124545,12/13/16 20:33,Saving work,0
+69ae688,12/14/16 10:40,Saving work,0
+92bc67a,12/14/16 16:21,Phonon velocities via IFC(R) and FT (dipdip and q=0 not treated yet),0
+1a43d6d,12/17/16 10:44,abirules,0
+23a9a46,12/17/16 11:03,Merge remote-tracking branch 'origin' into eph,0
+6f8b9c9,12/20/16 18:08,Saving work,0
+905a88c,12/20/16 18:14,Merge remote-tracking branch 'origin' into eph,0
+769820e,12/21/16 10:46,Version for buildbot,0
+bf5ad8b,12/22/16 17:41,Module for gruneisen parameters,0
+6a10cb9,12/23/16 12:53,Testing grunesein,0
+8b926f9,12/24/16 12:46,Add new anaddb variables for grunesein  Change inupper so that tokens between quotes are ignored,0
+e62a6f8,12/24/16 14:16,Fix bug with optional argument,1
+16909cb,12/27/16 13:37,Add routine to compute speed of sound,0
+f35a5f8,12/28/16 11:01,Saving work,0
+17cd88b,12/28/16 12:18,Refactor lebedev API,0
+d96e11b,12/30/16 11:17,Add ifc_print_info method,0
+2f13675,12/30/16 11:17,Merge remote-tracking branch 'origin/hotfix-readrhor' into eph,0
+dd6a168,12/30/16 22:54,Merge branch 'develop' of abinit-gitlab:trunk/abinit into pimd,0
+739542a,12/31/16 1:08,vel_cell was not correctly defined in netCDF file,0
+c684d1f,12/31/16 2:13,Error in predict_pimd corrected,1
+6059527,1/2/17 11:14,Saving work,0
+073fe8d,1/2/17 16:59,Get rid off matom in ewald9,0
+5f080ab,1/2/17 17:51,Merge remote-tracking branch 'origin/hotfix-anaddb' into eph,0
+5729689,1/2/17 17:54,Import hotfix-anaddb,0
+aaddf43,1/2/17 18:04,abilint,0
+4a25966,1/2/17 18:45,Call ifc_init with prtfreq=False in anaddb,0
+c436041,1/2/17 18:46,Pass MPI communicator to elphon,0
+c795584,1/2/17 18:46,Merge branch 'eph' of gitlab.abinit.org:gmatteo/abinit into eph,0
+16d145d,1/2/17 20:00,Pass ncid to ifc_speedofsound,0
+5dce539,1/2/17 20:02,Merge remote-tracking branch 'origin/hotfix-anaddb' into eph,0
+fe0c9bd,1/2/17 20:28,Activate call to ifc_speedofsound,0
+145707,1/2/17 22:54,abinit --abimem-level,0
+0853f8f,1/2/17 23:12,Merge remote-tracking branch 'origin/hotfix-anaddb' into eph,0
+18ac95e,1/3/17 18:40,Adjust ref file for ionmov=22  according to new xred printing,0
+da9f93c,1/4/17 13:14,New anaddb variables: prtvol  vs_qrad_tolms,0
+90b820a,1/4/17 17:49,Document new anaddb variables,0
+ae05242,1/4/17 20:12,Remove useless begin at cpu lines from anaddb ab_out,0
+d4164f4,1/4/17 20:58,Remove begin at cpu lines from anaddb ref files,0
+9ddac9c,1/5/17 0:33,Precompute ifc%omega_minmax in ifc constructor to facilitate DOSes computation,0
+c0a4576,1/5/17 1:16,Check lapack exit status,0
+c91ff3c,1/5/17 13:22,symkpt: use more explicative names for args,0
+dd8242d,1/5/17 13:59,ewald9: return zeros immediately if zeff==zero (non negligible speedup),0
+c7cbfc4,1/5/17 15:59,parallelize dip-dip in ifc_init  pass mpi comm to other anaddb routines,0
+488224c,1/5/17 16:09,handle nprocs > 1 in ddb_diel,0
+8f0ec86,1/5/17 16:34,Handle nprocs > 1 in dtchi,0
+1903d29,1/5/17 16:39,Handle MPI in ramansus,0
+c03e381,1/5/17 16:42,Handle nprocs > 1 in electrooptic,0
+01d8c1c,1/5/17 17:02,Handle nprocs > 1 in ddb_elast,0
+e7fe195,1/5/17 17:08,handle MPI in ddb_piezo,0
+099a212,1/5/17 17:20,handle Mpi in relaxpol,0
+1d2aae8,1/5/17 18:01,Increase number of anaddb tests executed with nprocs > 1,0
+8c7d008,1/5/17 21:50,ifc_print --> ifc_write  simplify API  add tests with nprocs > 1,0
+065004b,1/6/17 0:49,Preliminary test for Gruneisen parameters,0
+e33f38e,1/6/17 1:13,Use abiref refs,0
+e315eb8,1/6/17 18:58,Add msqd to netcdf file,0
+0e61970,1/6/17 22:15,new anaddb variables: prtphbands,0
+659697,1/6/17 22:53,cleanup,0
+973dfa0,1/6/17 23:42,Move printbxc and printvtk to m_pptools,0
+eedec31,1/8/17 12:58,Add reference files for grunesein,0
+5bc6bb6,1/8/17 13:18,refs from abiref,0
+7a7c358,1/9/17 21:46,Prepare to pull,0
+6c05270,1/9/17 21:46,Merge branch 'eph' of gitlab.abinit.org:gmatteo/abinit into eph,0
+c641cd8,1/13/17 11:21,Replace make_path with kpath_t  update refs,0
+e6b8b20,1/13/17 12:36,Prepare to pull,0
+358e5a0,1/13/17 13:24,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
+6.26E+74,1/13/17 13:27,abilint,0
+a9a7c6e,1/13/17 16:28,Increase tol  update ref file,0
+5f86c96,1/14/17 11:25,Regenerate robodoc files,0
+5ba5047,1/14/17 14:12,Testing SKW interpolation,0
+5315806,1/15/17 18:35,Saving work,0
+c0dd8ab,1/16/17 15:36,Interface GW with interpolator,0
+64b8e55,1/16/17 23:29,Stress test for ebands interpolation,0
+3827d20,1/17/17 0:03,LBYL,0
+50597d2,1/17/17 2:01,Handle shifted meshes,0
+6f66751,1/18/17 13:11,New dtset% entries: ndivsm  nkpath  kptbounds and einterp,0
+3a1d49f,1/18/17 14:27,Update refs after inclusion of new vars in dtset,0
+f7ecdd7,1/18/17 14:28,stash apply,0
+caa0b4a,1/18/17 16:09,nag finds real bugs while xlf creates new ones,0
+94e5ae0,1/20/17 15:13,Cleanup,0
+8f20946,1/21/17 13:20,Faster algo for stars,0
+85f86f2,1/21/17 14:54,Add tests for interpolation of electronic band energies,0
+0d9259b,1/21/17 15:16,Use abiref refs,0
+ba245c1,1/21/17 15:50,Preliminary documentation for new variables,0
+fe02d43,1/21/17 21:37,Increase tolnlines,0
+065ea0e,1/22/17 15:24,Add ifc%qibz  pass info on q-path bounds to gnuplot/xmgrace routines,0
+9b55b6c,1/22/17 15:55,Prepare to pull,0
+06a9a0f,1/22/17 16:00,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
+c51020d,1/22/17 17:15,Add ifc%wtq,0
+c02cde7,1/23/17 17:46,anaddb: Use nsphere -1 to activate ifc_autocutoff,0
+8760b84,1/23/17 18:06,abilint,0
+5588b1c,1/23/17 21:35,Start v8.2.1 . Modify the */configure.ac files.,0
+1dd14ab,1/23/17 22:44,Add check on anaddb variables,0
+f2440bb,1/23/17 22:55,Fix wrong varnames in anaddb tests,1
+baba758,1/23/17 23:35,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
+8d1b88b,1/24/17 12:11,Improve typo detection in anaddb input files,0
+57d77c5,1/24/17 12:48,Adjust tolerance for bob_gnu_5.3_openmp,0
+97b0cf9,1/24/17 12:53,Merge branch 'release-8.2.1' into develop.,0
+311f6bf,1/24/17 19:28,Still a modification of a tolerance for bob_gnu-5.3_openmp,0
+ab95013,1/24/17 19:31,Synchro tolerance for bob with v8.3.1,0
+4b0db39,1/25/17 13:10,Add test for nsphere -1,0
+5c15af1,1/25/17 13:30,Use abiref refs,0
+2b0d7d2,1/25/17 13:31,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
+61c535c,1/25/17 15:18,Exit immediately if grunesein becayse phdos_print_vsound prints tons of non-portable lines to ab_out,0
+4344c39,1/25/17 15:34,Update gruneisen ref,0
+2d29964,1/25/17 19:33,ewald9: use spline to reduce number of calls to exp  abi_derfc  sqrt. 70 s --> 50 s,0
+8772bf7,1/25/17 20:30,Had to introduce extra checks to avoid numerical instabilities in spline,0
+64549c6,1/26/17 19:06,Allocate cg with mcg ==0 if rank is idle in order to avoid integer overflow or malloc error,0
+8a0ed76,1/26/17 20:07,Improve error message if integer overflow,0
+109a3e1,1/27/17 12:17,Add tests for CG with idle processors  nsppol = 2 and WFK read/write,0
+8a6bdbb,1/27/17 12:24,Use abiref refs,0
+2b1e19e,1/27/17 13:52,Increase tolnlines,0
+eb14f49,1/28/17 9:58,Pass band_block to ebands_interpolate_kpath,0
+469630c,1/28/17 17:49,Parallelize star functions algorithm,0
+7428cb5,1/28/17 20:27,Add test of SKW interpolation with HSE  improve doc,0
+7219302,1/28/17 20:52,Fix compilation error,1
+8636f17,2/2/17 14:46,Fix doc for rfatpol,1
+bd0bf5d,2/2/17 14:54,Update doc for xred,0
+bef2b02,2/2/17 14:58,Fix typo,0
+1e87c80,2/2/17 15:18,Fix minor maintenance problem.,0
+0e7cf57,2/2/17 15:27,Typo,0
+b7e4221,2/2/17 15:33,Typo,0
+620d968,2/2/17 15:50,Typo in doc,0
+3.37E+90,2/3/17 13:06,Correct dimension of becij in d2frnl,0
+fb90252,2/5/17 6:22,Merge remote-tracking branch baguetl/hotfix-d2frnl/3374 into _baguetl-8.2.1,0
+248a153,2/9/17 17:32,Merge branch 'release-8.2.1' of gitlab.abinit.org:trunk/abinit into develop,0
+860bd13,2/15/17 13:39,Final steps for delivery of v8.2.1,0
+b542cb4,2/16/17 12:16,Update maintainers/check_list.txt,0
+f1fa25c,2/16/17 12:31,Split some lines in chkvars.F90,0
+d233012,2/16/17 14:02,Complete the doc for ionmov=22 LBFGS,0
+6edab64,2/16/17 16:16,First complete version of the release_notes for 8.2.,0
+bcf2d0c,2/16/17 16:25,Minor,0
+eea0ede,2/16/17 20:41,Final update of release_notes.,0
+81590d0,2/16/17 21:11,Silly bug introduced at the last minute in chkvars.F90,0
+783ba5e,2/17/17 5:29,Real finalization of the release notes.,0
+bed9194,2/17/17 5:42,Modify the *.ac files for the new branch hotfix-8.2.2,0
+4d48cca,2/17/17 6:06,Merge branch 'release-8.2.1' into develop,0
+8ee0c02,2/18/17 15:53,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
+fa84a0f,2/19/17 16:11,Split too long lines (that do not appear well on the Web site).,0
+ce6959c,2/19/17 16:38,Improves formatting of selected pages of the doc,0
+db6eeca,2/20/17 14:37,Small change in the build system (improve compilation on exotic architectures),0
+8f5267a,2/21/17 14:55,Merge branch 'develop' of abinit-gitlab:trunk/abinit into wvl-paw-forces,0
+b095ae2,2/21/17 16:28,Propagate new bigDFT version in testfarm configurations,0
+07488ab,2/21/17 18:51,Several changes to please abirules/buildsys,0
+f0754b1,2/22/17 10:33,Another try to satisfy abirules,0
+22a8eae,2/22/17 14:28,Another correction (abirules),0
+788388d,2/22/17 21:11,Add v8 directory to buildsys,0
+c9feb9a,2/22/17 22:27,Small modifs in abinit_vars.yml  and update of vardev and varrlx.,0
+91fc156,2/22/17 23:07,Fixed mrgdv issue with large number of files,1
+9.26E+05,2/23/17 1:36,Fix problem with test#10 of buildsys  related to FCFLAGS_FIXEDFORM  and other FCFLAGS_* . Fix borrowed from torrent/wvl-paw-forces.,1
+2618022,2/23/17 11:12,Merge remote-tracking branch gmatteo/hotfix-runtests/7883 into hotfix-8.2.2,0
+1f74147,2/23/17 14:23,The modification of env. variables should pass the tests now,0
+0896d59,2/23/17 15:31,Adapt tikal to new bigdft,0
+de54de8,2/23/17 15:49,One step backwards,0
+3d3c28b,2/23/17 15:56,typo,0
+751dc2e,2/23/17 16:09,Change ref files for configuration files,0
+4325261,2/23/17 16:14,typo,0
+e62885e,2/23/17 18:34,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+4df9e54,2/27/17 12:24,Merge with the trunk: Fock forces and stresses (in progress),0
+104c3af,2/27/17 13:49,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+4071796,2/27/17 14:23,Update the install notes (was severely outdated). Minor improvement of the release notes formatting.,0
+8cb9d43,2/27/17 14:31,Suppress unallowed calls to file function (newunit is not compatible with F2008),1
+6ea9bc4,2/27/17 14:37,Typo again,0
+1cf50ea,2/27/17 14:40,Update doc  incl. features  statistics  and release notes.,0
+e2784ff,2/27/17 14:49,Update year 2015 to 2016 (I),0
+5ac6d66,2/27/17 14:56,Update year 2015 to 2016 (II),0
+67e315f,2/27/17 15:04,Update year 2015 to 2016 (III),0
+5be3a56,2/27/17 15:11,Update years for a first batch of python files,0
+02a9ebc,2/27/17 15:13,Update year 2015 to 2016,0
+aef2062,2/27/17 15:18,Update year 2016 to 2017 (I),0
+2a07d4a,2/27/17 15:26,Update year 2016 to 2017 (II),0
+4fe0149,2/27/17 15:37,Update year 2016 to 2017 (III),0
+2.62E+06,2/27/17 15:38,Update year 2016 to 2017,0
+8061983,2/27/17 15:43,Update years 2016 to 2017 (IV),0
+d387a17,2/27/17 15:59,Update year 2016 to 2017 (V),0
+b8cbe65,2/27/17 16:21,Update contributor list,0
+ded633e,2/27/17 16:35,Fix README as links,0
+d3232af,2/27/17 16:37,Modify script to take into account README links,0
+4a4dae8,2/27/17 16:45,Now handle libtetra as libpaw in some scripts,0
+194e41b,2/28/17 10:03,Merge remote-tracking branch torrent/quickfixes/4a4d into _torrent-8.2.2,0
+ae6b95e,2/28/17 10:11,Update KNOWN_PROBLEMS,0
+57fd8c1,2/28/17 12:16,Had to (re)import from Marc the declarations for FCFLAGS_* in environment.conf,0
+bd4dcfc,2/28/17 12:18,Merge branch '_torrent-8.2.2' into hotfix-8.2.2,0
+7075972,2/28/17 15:08,Merge branch 'hotfix-8.2.2' into develop,0
+d4ca977,3/1/17 8:08,Start the final merge of v8.3.1,0
+67b9d59,3/1/17 9:00,Create a new test v8#30  to test the new capability to treat spatially varying chemical potentials (to be coded),0
+d16a8b0,3/1/17 9:38,Document the new input variables chempot and nzchempot,0
+f8befc5,3/1/17 10:40,Read  write  and manage the new input variable nzchempot,0
+e56556d,3/1/17 11:04,Now compiles,0
+43e1201,3/1/17 11:07,Merge branch 'develop' of abinit-gitlab:trunk/abinit into pimd,0
+6306fc8,3/1/17 11:41,Read/write/manage chempot . Do not use it yet ...,0
+19c098c,3/1/17 12:19,Now compiles,0
+9f14e88,3/2/17 8:43,Introduce the routine spatialchempot.F90 . Results not used yet.,0
+b7dbbc2,3/2/17 9:00,Fix problems found by abilint,1
+bf01a84,3/2/17 9:38,Defines conditions to be respected by nzchempot and chempot,0
+89e99a6,3/2/17 10:01,Define spatialchempot in the lisrt of routines (I thought I had already done it ?!),0
+77bc105,3/2/17 10:29,Take into account nzchempot to detzermine the remaining symmetries.,0
+1944aac,3/2/17 11:00,Compile  and execute test v8#30 . Checks on input variables work. Still need to propagate the results.,0
+57f28a9,3/2/17 12:10,Introduce e_chempot inside the energy datatype. Also order the components of this datatype.,0
+a20774d,3/2/17 12:41,Energies are computed correctly. However  symmetries are not yet determined correctly.,0
+421e40c,3/2/17 14:12,The computation of energy has been extensively tested.,0
+0f2f5e0,3/2/17 14:29,on for the farm testillez saisir le message de validation pour vos modifications. Les lignes,0
+822da1e,3/2/17 15:02,Time step was not correctly updated within PIMD (will have to change ref files for xred and vel),0
+e39bba2,3/2/17 15:11,abieauty,0
+42b71a8,3/2/17 18:20,Some change to make HIST work with PIMD  new automatic test,0
+7cfe6a1,3/3/17 6:22,Merge remote-tracking branch jollet/develop/0f2f into _jollet,0
+07b2f3b,3/3/17 10:57,Changes to make new test OK,0
+d2cb5c4,3/3/17 12:17,One test ref had to be still adjusted (change of xred printing in output),0
+9070d8b,3/3/17 14:45,2 additiona lref files changed (new fred output),0
+fdf11a8,3/4/17 6:32,"Merge remote-tracking branch torrent/wvl-paw-forces/6ea9 into _torrent Were lots of conflicts  all solved. Conflicts: 	src/67_common/etotfor.F90 	src/67_common/forces.F90 	src/67_common/mklocl_realspace.F90 	src/67_common/mklocl_wavelets.F90 	src/79_seqpar_mpi/vtorho.F90 	src/94_scfcv/scfcv.F90",0
+cbb68f6,3/4/17 7:02,Fix problem with args of pawgrnl in 66_wfs/fock_getghc.F90. Also suppress two debugging write statements.,1
+880645f,3/4/17 7:31,Merge remote-tracking branch origin/_torrent/cbb6 into gonze_chempot2,0
+7c7462c,3/5/17 5:36,Fix allocation issue,1
+87dc232,3/5/17 5:43,Merge remote-tracking branch _torrent/7c74 into gonze_chempot2,0
+4c8be43,3/5/17 5:54,Update ref for v8#30 . Not yet the final version  as the propagation of chempot forces is not done in this branch.,0
+b88d789,3/5/17 5:59,Updated v5#t79o_LOG_xml   due to new component in the total energy (chempot),0
+8b760ef,3/5/17 6:54,Remove debugging statements in symfind.F90 . Fix minor issues in the doc form chempot input variable.,0
+83ee850,3/5/17 7:02,Fix type error,1
+8324dbf,3/5/17 7:11,Defines tolerances for v8#30. By the way  there is a portability problem : tolerances are too large. This should be fixed.,0
+8f0d51c,3/5/17 7:20,Merge remote-tracking branch torrent/pimd/9070 into _torrent,0
+3dd95a8,3/5/17 21:53,Merge remote-tracking branch gonze_chempot2/8324 into _gonze,0
+998c8ab,3/5/17 23:39,Initialize v8.3.2,0

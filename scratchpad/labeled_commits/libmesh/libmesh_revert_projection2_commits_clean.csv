@@ -1,0 +1,8 @@
+hash,time,message,buggy
+c8812b1,2015-12-21 14:30:09,Update meaning of MeshBase::spatial_dimension().,0
+f97b0a4,2016-01-08 12:34:59,Change operator<<(pair<Hilbert unique_id>) namespace,0
+c97c775,2016-01-12 09:11:01,Revert recent changes to system_projection.C,0
+d936e6c,2016-01-12 13:04:35,Merge pull request #771 from roystgnr/operator_namespace_change,0
+27678be,2016-01-12 13:13:51,System::calculate_norm() now works with mixed-dimension meshes,0
+0141d2c,2016-01-12 15:24:22,Merge pull request #776 from dknez/calculate_norm_mixed_dimension,0
+f244d17,2016-01-13 09:11:17,Remove unused variable.,0

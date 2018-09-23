@@ -1,0 +1,67 @@
+hash,time,message,buggy
+cb20060,2003-02-24 22:03:50,changed example programs to use element iterators.  This will make it easier to add an example for parallel,0
+713995d,2003-02-25 04:49:09,Changed example 7 to exit without a fatal error when complex numbers have not been enabled in the code.,0
+0760cf5,2003-02-25 16:26:47,libMesh now compiles & runs w/o _any_ complaints in dbg & opt on HP,0
+85c36cb,2003-02-25 18:34:52,added the Prism18 and Prism15.  Still need embedding matrices  shape functions for Prism15,0
+5451061,2003-02-26 00:47:52,Adding explicit this-> qualifications for calling member functions within other member functions. For now private and protected members will remain with an underscore prefix and not use the this-> qualifier.  It was felt that that would be a bit of overkill :),0
+1b05f5a,2003-02-26 01:08:14,- Added the embedding matrices for the Prism18. - Fixed the ambiguous definition of the Prism reference element...   For the record  it is (xi eta) in the standard reference isoscolese   triangle with zeta in [0 1]  NOT [-1 1].  Sorry about the confusion.   It was wrong in two places in such a way that they cancelled each other   out! - Creating the boundary mesh works again  this time without renumbering the   nodes,0
+3ba4d30,2003-02-26 04:43:14,Added this-> qualifier to the different element classes.,0
+24685e0,2003-02-26 11:34:36,fixed silly tests that avoided the use of petsc options,0
+f68cd32,2003-02-26 13:59:52,example 4 now runs properly in parallel,0
+0935967,2003-02-26 16:05:46,minor fix to gmv complex output,0
+182e5b8,2003-02-26 17:27:34,* src/apps/.cvsignore (Module): Ignore foo.cc,0
+e8c0a65,2003-02-27 00:15:14,- typo in ex4  - major rework & debug of InfFE<...>::reinit() and related methods,0
+f60a691,2003-02-27 00:55:30,unified the refinement code for the non-infinite elements.  Thanks for the suggestion  John.  Daniel  you might want to take a look at this...  Maybe the refinement code for the infinte elements can be consolidated too?,0
+6e9ade3,2003-02-27 01:44:48,weirdly  Ben could override my changes to inf_fe.h... so  here they are again  -),0
+342c07f,2003-02-27 02:02:15,change for --disable-amr,0
+9491199,2003-02-27 17:20:03,"minor fixes for HP: - new aCC requires the same notation for AutoPtr as the IBM xlC - made aCC shut up about further future errors - improved std support  see mesh_documentation.h: for now  this   works.   Possible future improvement?: ./configure could just try   to figure out the architecture on its own? Then this whole   environment variable thing  like CXX=""aCC -AA""   won't be necessary?",0
+eac915d,2003-02-27 22:26:51,added boundary conditions for internal cube mesh,0
+5ac4933,2003-02-28 23:37:49,parallelizing the mesh.  Added DenseSubMatrix  DenseVector  DenseSubVector.  Made all read_* members protected...  The only way to read a mesh now is with the Mesh::read() member.,0
+9995749,2003-03-02 17:36:35,Added this-> qualifier to one place.,0
+ce14852,2003-03-03 02:15:58,redesigned the Mesh  MeshBase  BoundaryMesh layout.  Moved most things into the MeshBase.  Working on parallelizing the mesh.  Will need to move boundary node information from being tied to a node number to a node pointer  more like the elements.,0
+48b9f59,2003-03-03 18:03:39,PerfLog optionally takes subheaders for the events,0
+a49c2a6,2003-03-03 18:09:04,PerfLog optionally takes subheaders for the events,0
+c907dc4,2003-03-03 19:25:19,build fixes for xlC,0
+b978e87,2003-03-03 19:29:39,build fixes for xlC,0
+0414a99,2003-03-03 19:55:53,nada,0
+f0b4b84,2003-03-03 22:23:43,changed boundary node information to be tied to node addresses  not node numbers.  This will facilitate renumbering nodes and elements without breaking the boundary conditions,0
+cd91eb0,2003-03-04 12:59:48,boundary conditions are tied to pointers now  not numbers.  This allows nodes and elements to be renumbered without messing up the boundary conditions,0
+9e8ec26,2003-03-04 15:31:24,changed all internal performance logging to be based on macros defined in mesh_common.h.  This eliminates _any_ overhead with --disable-perflog (the default).,0
+9cd115b,2003-03-04 18:09:47,debugging InfFE,0
+0d6ac2b,2003-03-04 22:31:17,replaced reinterpret_cast with dynamic_cast,0
+d4eb974,2003-03-05 13:11:57,Elem::level() now exists when configured with --disable-amr  and simply returns 0. Fix for building with --disable-reference-counting. reference_counter.h still needs to #include <string>,0
+1e63074,2003-03-05 17:01:21,changed definition of reference prism (again),0
+0e528c8,2003-03-07 04:44:38,The DenseMatrix<T> and DenseSubMatrix<T> now come from a common base class  DenseMatrixBase<T>.  The base class provides some common functionality for both classes to reduce the overall code length.  Note that the transpose() member cannot move up into the base class because asking for the transpose entries of a submatrix does not make sense  i.e. the transpose entry of its parent is not in general available in the submatrix.  Also added is a common DenseVectorBase base class for both DenseVector and DenseSubVector.,0
+129bf30,2003-03-07 05:07:55,Tightened up the definitions of the DenseVector<T> and the DenseSubVector<T>.  Also added .C files of the same name so that the objects are explicitly instantiated and compiled.,0
+ce10506,2003-03-07 20:59:04,Added a here() stmt. for debugging.,0
+2d03e69,2003-03-08 05:44:02,fixed broken assert,0
+7da3a7c,2003-03-08 07:30:56,fixed a bug in the DofObject that tried to delete a NULL pointer when clearing an object for which no variables were allocated.  Also changed two references to copys in the DenseMatrix multiplication,0
+f4dd9fc,2003-03-10 00:33:01,visual bits  will update infinite elements to the new & clearer refine() scheme soon  this will also include prisms,0
+eb96c44,2003-03-11 00:47:47,"- consolidated infinite elements to match up with the new & neat   Elem::refine() style - fixed bug in MeshBase::build_inf_elem() which only occured   with higher-order elements - fixed (sometimes-erratic) behavior of Elem::n_nodes() by   shifting it all the way down to where n_nodes() is truly   unique - added convenient way to automatically determine origin   in meshtool - fixed some documentation  like the ""delete pointer""  where   actually an AutoPtr already takes care of",0
+1df6317,2003-03-11 04:35:19,templated EquationSystems for the systems to handle  done it using static_casts  since i _really_ did not find a way to use T_sys instead of SystemBase  see equation_systems.C -- help certainly appreciated  i think there _should_ be some better way  avoiding the casts...,0
+11eb1c5,2003-03-11 19:50:04,thanks to Steffen: fixed a wrong shift pattern in Legendre polynomials for infinite elements,0
+a2e7eeb,2003-03-11 23:36:46,portability fixes for HP,0
+48627a9,2003-03-12 00:33:20,Added the typename identifier in the EquationSystems source file.  Fixed a bug in the add function for complex numbers in the DenseMatrixBase class.,0
+0f917b4,2003-03-12 20:15:11,cleaned up some TODO: - thanks John  the complex output of EqnSystems now also exists.   anybody please feel free to optimize it  but as far as i got it    that's all i can do with xdr. - PetscVector::localize() and localize_to_one() now do not use   MPIU_SCALAR any more  couldn't get this running.  Current   implementation works  but if anybody finds something better    please improve. - beautified EqnSystems output for infinite elements - removed outdated TODOs,0
+d05659b,2003-03-12 20:21:03,cleaned up some TODO: - thanks John  the complex output of EqnSystems now also exists.   anybody please feel free to optimize it  but as far as i got it    that's all i can do with xdr. - PetscVector::localize() and localize_to_one() now do not use   MPIU_SCALAR any more  couldn't get this running.  Current   implementation works  but if anybody finds something better    please improve. - beautified EqnSystems output for infinite elements - removed outdated TODOs,0
+030c33c,2003-03-14 09:56:41,discontinue efforts to get PETSc<complex> on HP running  resort to Laspack. Even PETSc maintenance does not use HP anymore... --- Am i the only one to be damned to use an HP compute server??? ---,0
+49cba51,2003-03-16 19:10:23,Minor fixes for compiling with --enable-perflog.  Fixed a problem with dense matrix multiplication  showed up with constraint matrices.,0
+22b4c8f,2003-03-16 20:11:38,oops... forgot to check this one in,0
+7ef07af,2003-03-17 01:27:08,SGI fixes,0
+de9b430,2003-03-17 11:35:00,added support for multiple (possibly parallel) matrices & vectors  as suggested by Ben  keep them in SystemBase  since they incur almost no overhead when not used. will update FrequencySystem soon to use this new feature,0
+bc4baa6,2003-03-18 18:20:15,changed the condense() member to take a DenseVector  added a get_mesh() member to the SystemBase,0
+5982148,2003-03-19 22:43:30,SystemBase::n_vars() no longer asserts that the system has variables  so it will return 0 for a system in which no variables have been defined.,0
+e652cfb,2003-03-19 23:43:56,fixed a bug in the nodes_to_elem_map computation,0
+d311cec,2003-03-20 11:51:25,- fixed SystemBase handling of multiple matrices & vectors for Laspack - fixed FrequencySystem to support either fast solution or solution of large   frequency-dependent linear systems (complex)  updated ex7 accordingly - added axpy for sparse matrices,0
+7141534,2003-03-20 14:40:39,moved the #ifdefs in ex7 to work with real numbers.  changed the number of CVS diffs generated by cvs2html from 3 to 2.  The creation time was getting ridiculous!,0
+952fcb9,2003-03-20 17:19:56,made PetscMatrix::add inline,0
+a9c7bd2,2003-03-20 18:38:33,adding backbone of compare.cc. Will implement the specializations for the two systemtypes once i modified the EquationSystems output,0
+28d0366,2003-03-21 15:29:29,- compare.cc now runs fine  with option -q helpful for scripted testing - in the course of making compare.cc added compare() functionality   to some classes - added the ThinSystem which implements the minimum necessities for   systems  acts as a lean alternative to GeneralSystem,0
+b30afa3,2003-03-21 17:15:22,Added an add_vector function to NumericVector and derived classes,0
+4469b3b,2003-03-22 13:23:48,Changed the iterative solver stopping test with PETSc to use default values for atol and divergence tests,0
+d43e133,2003-03-22 21:04:31,actually  just wanted PerfLog output with the old gcc... ended up in introducing two wrapper classes for the broken fstream and stringstream as a side-effect  the (ASCII) output  like .xda and .dat is now uniform for the two gcc's i tested.,0
+e98b38d,2003-03-23 01:39:14,"fixes for HP  of which this one is a curiosity  i'd say: - aCC definitely dislikes names of function/method parameters starting   with an underscore ""_""  like what i first did in SparseMatrix etc...  -)",0
+5425863,2003-03-23 02:47:51,fixed a printing problem in PerfLog  an uninitialized variable in laspack,0
+eebc6d8,2003-03-23 15:09:19,rework the OFStream and OStringStream again because of  guess what  HP aCC  had to resort to preprocessor macros.,0
+ad52060,2003-03-23 15:23:30,documentation,0
+3ba8712,2003-03-23 15:23:31,This commit was manufactured by cvs2svn to create tag 'libmesh-0_3_3'.,0

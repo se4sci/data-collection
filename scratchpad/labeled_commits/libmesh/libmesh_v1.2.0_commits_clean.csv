@@ -1,0 +1,626 @@
+hash,time,message,buggy
+9e45641,2016-08-25 10:05:37,Update DiffPhysics::time_evolving to store time order,0
+4fb2e2f,2016-08-25 10:31:49,Add DiffSystem::time_evolving() overrides,0
+f711b27,2016-08-25 10:47:16,Add UnsteadySolver hooks for specifying var order,0
+78113a0,2016-08-25 10:56:20,Indicate time order to UnsteadySolver,0
+e9bfca0,2016-08-25 13:02:25,Make space for DiffContext second order var accels,0
+bf0ddd7,2016-08-25 15:21:08,Add FirstOrderUnsteadySolver::init() override,0
+12040cb,2016-08-25 15:22:00,Add new FirstOrderUnsteadySolver source and bootstrap,0
+654db99,2016-09-18 23:43:12,Rework CheckpointIO a bit to make it more conducive toward working as a splitting format,0
+d7ee4e8,2016-09-19 00:18:29,Add the ability to set the processor_id and n_procs for CheckpointIO,0
+6d87d35,2016-09-19 17:10:10,Fixup CheckpointIO again to make it work properly for serial,0
+35ce521,2016-09-20 15:19:28,More fixes for CheckpointIO parallel writing.,0
+0e4af23,2016-09-23 13:29:23,Some optimization of Parallel CheckpointIO writing,0
+84f7a96,2016-09-27 12:19:38,Add splitter app for splitting mesh files into parallel CheckpointIO partitions,0
+0735e55,2016-09-27 12:19:49,Makefile updates for splitter app,0
+ca61348,2016-09-27 20:34:49,PointNeighborCoupling class,0
+349419b,2016-09-27 20:35:16,Build PointNeighborCoupling code,0
+7d6695b,2016-09-27 20:40:16,Re-bootstrap,0
+d00137d,2016-10-24 11:11:59,Some small updates to read_ref_elem().,0
+de0f71f,2016-10-24 11:28:22,fix operator= for vecs with nonlocal state,0
+ce1d9dd,2016-10-24 14:54:21,Merge pull request #1132 from rwcarlsen/fix-op-eq,0
+6c2c460,2016-10-24 15:36:35,Use UniquePtr to manage helper class lifetimes in ExodusII_IO and Nemesis_IO.,0
+9a3930e,2016-10-24 15:44:30,Merge pull request #1133 from jwpeterson/reference_elem,0
+47663c2,2016-10-24 16:37:00,Treat empty _dof_coupling as full _dof_coupling,0
+9768197,2016-10-24 17:33:22,Optionally skip find_neighbors in MeshBase::read,0
+e867f9c,2016-10-24 17:56:25,Added 'target' spectrum positions,0
+4575b72,2016-10-24 23:03:20,Merge pull request #1136 from dknez/skip_find_neighbors_in_read,0
+57a795b,2016-10-25 08:16:11,Merge pull request #1135 from jwpeterson/unique_helper,0
+66af865,2016-10-25 09:53:41,Update citations.,0
+b64cb69,2016-10-25 10:16:00,Merge branch 'set_initial_space',0
+4da7227,2016-10-25 10:45:55,Add PointNeighborCoupling unit test,0
+68fc793,2016-10-25 10:47:14,Build and run PointNeighborCoupling test,0
+9df0a07,2016-10-25 10:58:18,Re-bootstrap,0
+53834a1,2016-10-25 11:04:13,Add option to set initial guess for the SLEPc eigensolver.,0
+2d2f1ec,2016-10-25 21:42:17,Leave _default_evaluating->_dof_coupling == NULL,0
+2a9eb87,2016-10-26 00:32:22,Avoid unused variable warning in some configs.,0
+562c4ad,2016-10-26 00:32:35,Disallow renumbering of GMV meshes in non-deprecated way.,0
+26b0bb4,2016-10-26 00:32:46,Use std::vector in GMVIO instead of manually managing memory.,0
+fd44b19,2016-10-26 00:32:54,Fix binary writing of GMV files.,0
+680f909,2016-10-26 08:36:00,Merge pull request #1140 from jwpeterson/gmv_delete,0
+430a7dd,2016-10-26 08:58:30,Bugfix merges of NULL+non-null CouplingMatrix,0
+981b255,2016-10-26 09:15:04,Fix spacing/indentation issues.,0
+e98e2bb,2016-10-26 09:17:50,Merge pull request #1134 from roystgnr/handle_empty_dof_coupling,0
+c2a08b1,2016-10-26 09:23:10,Merge branch 'pos_target',0
+d115ccc,2016-10-26 10:02:08,Guard use EPS_TARGET_XXX to SLEPc >= 3.1.,0
+2614ad9,2016-10-26 10:06:18,eigenproblems_ex2 is already wrapped in ifdefs.,0
+2148bdb,2016-10-26 10:14:25,Always check for successful cast.,0
+6f9f1f2,2016-10-26 11:10:34,Fix remaining C-style comments.,0
+6e92862,2016-10-26 11:14:10,Merge branch 'slepc_misc',0
+11c7afd,2016-10-26 11:32:27,Merge pull request #1139 from roystgnr/safer_algebraic_coupling,0
+5866cf6,2016-10-26 11:51:22,fix for distcheck,0
+0c1355e,2016-10-26 12:25:02,Use UniquePtr to automatically manage lifetime of _periodic_boundaries.,0
+09ea823,2016-10-26 12:31:20,Use UniquePtr to automatically manage lifetime of _dirichlet_boundaries.,0
+ef54050,2016-10-26 12:52:54,Manage lifetime of tetgen_output object with a UniquePtr.,0
+d01ed87,2016-10-26 13:00:17,Merge branch 'tetgen_unique',0
+6c2beb6,2016-10-26 13:04:30,Manage lifetime of _pmetis pointer with UniquePtr.,0
+c59d1c1,2016-10-26 13:20:22,Manage lifetime of _fe and _qrule in RBEIMAssembly with UniquePtr.,0
+99ef670,2016-10-26 13:32:16,Manage lifetime of _mesh_function in RBEIMConstruction with UniquePtr.,0
+3fa9220,2016-10-26 13:43:53,Remove unnecessary release/delete idiom.,0
+d8459f4,2016-10-26 13:59:26,Manage subprecond_matrix lifetime with a UniquePtr.,0
+cc7584a,2016-10-26 14:15:22,MatSetTransposeNullSpace requires PETSc >= 3.6.,0
+9ec197a,2016-10-26 14:26:21,Merge pull request #1141 from jwpeterson/unique_boundaries,0
+e478f82,2016-10-26 14:59:03,Manage lifetime of matrix_A and matrix_B with UniquePtrs.,0
+ce95843,2016-10-26 15:22:26,Manage the lifetime of _edge_qrule with a UniquePtr.,0
+76059a6,2016-10-26 15:54:24,Use a UniquePtr to manage the lifetime of xdrs in the Xdr class.,0
+76eae43,2016-10-26 16:01:12,Avoid dynamic memory allocation for fixed length array.,0
+523ebdb,2016-10-26 16:56:45,Manage the lifetime of EpetraVector::_map with a UniquePtr.,0
+d961c3d,2016-10-26 17:19:45,Merge pull request #1142 from jwpeterson/guard_petsc,0
+0927af7,2016-10-27 07:27:31,Merge pull request #1107 from roystgnr/point_neighbor_coupling,0
+9ba8fb4,2016-10-27 09:21:09,fix for distcheck,0
+85dbadd,2016-10-27 09:28:26,fix for --disable-optional,0
+b890605,2016-10-27 09:59:34,fix for --disable-amr,0
+186335f,2016-10-27 10:14:32,Test updated traffic collection script.,0
+11b1944,2016-10-27 12:53:32,Merge pull request #1143 from jwpeterson/uniquify,0
+82e3be9,2016-10-27 16:19:41,Deprecate ImplicitSystem::get_linear_solver().,0
+7cf702d,2016-10-27 16:55:32,Fix scripting atavism,0
+03266f4,2016-10-27 16:56:52,Fix unique_id setting in all_tri(),0
+6f9c020,2016-10-27 16:57:51,Fix heisenbug in all_tri(),0
+bd5447c,2016-10-27 20:54:01,Merge pull request #1144 from roystgnr/fix_all_tri,0
+d04985b,2016-10-28 08:39:36,fix shim constructor for when fparser is not available,0
+4cd8af3,2016-10-28 14:36:49,Merge pull request #1145 from jwpeterson/get_linear_solver,0
+93954d7,2016-10-28 14:59:45,Add TRI3  QUAD4 cases to Szabab case statements.,0
+406d9cb,2016-10-28 15:37:17,Fix for new UniquePtr member in ENABLE_SLEPC case,0
+753e29d,2016-10-28 16:30:26,Merge pull request #1147 from roystgnr/enable_slepc_fix,0
+ca11037,2016-10-28 21:19:45,Merge pull request #1148 from jwpeterson/szabab,0
+c067132,2016-10-31 08:32:50,Update citations.,0
+f493d85,2016-10-31 09:10:18,Update traffic.,0
+0fff089,2016-11-01 08:48:25,Update citations.,0
+78a89d6,2016-11-01 08:54:49,Update statistics for Oct 2016.,0
+88b953b,2016-11-01 09:27:20,Regenerate publications website.,0
+3099d33,2016-11-02 12:48:16,build_InfFE in FEMContext when necessary,0
+326387c,2016-11-02 12:49:07,Adding Elem::is_mid_infinite_edge_node(),0
+8e3a0a9,2016-11-02 12:49:51,infinite-edge-node-aware parent_bracketing_nodes,0
+66cdacf,2016-11-02 12:56:37,Remove overzealous InfFE assert,0
+7d98795,2016-11-02 13:02:05,radial_pts option in init_radial_shape_functions,0
+3f4fda1,2016-11-02 13:03:19,InfFE::reinit() should support pts argument,0
+08f4bd8,2016-11-02 13:04:22,InfFE::combine_base_radial() without qrules,0
+e81ba90,2016-11-02 14:52:22,Fixes for --disable-ifem configuration,0
+3a90559,2016-11-02 16:19:27,Try local projections when needed on InfFE,0
+87ffa2d,2016-11-07 08:19:43,Update citations.,0
+3f3e1b1,2016-11-07 08:24:55,Update traffic.,0
+5b5c132,2016-11-07 10:46:03,ifdef to handle --disable-periodic case,0
+7f27a6b,2016-11-07 10:57:58,get() underlying pointer before testing smart ptr,0
+a70dae9,2016-11-07 13:08:51,Use TOLERANCE in systems_of_equations_ex3,0
+c71a4fe,2016-11-08 12:16:17,Using os_unfair_lock on mac OS X Sierra,0
+bf49639,2016-11-08 14:56:12,Merge pull request #1154 from libMesh/andrsd/sierra-spin-lock,0
+08f7bb7,2016-11-09 15:17:13,Allow virtual methods for edge_fe_reinit() and elem_fe_reinit(),0
+ecd5682,2016-11-10 09:38:59,Merge pull request #1152 from roystgnr/auto_ptr_fix,0
+7d4ce47,2016-11-10 09:40:35,Merge pull request #1150 from roystgnr/adaptive_inf_fem,0
+846bb4f,2016-11-10 09:40:57,Merge pull request #1151 from roystgnr/disable_periodic_fix,0
+657124d,2016-11-10 09:41:06,Merge pull request #1153 from roystgnr/variable_systems_ex3_tol,0
+ff59ce1,2016-11-10 10:52:25,NonlinearImplicitSystem::ComputeVectorSubspace as an abstract class,0
+ec82973,2016-11-10 13:25:15,Merge pull request #1155 from balborian/patch-1,0
+c9d4d1a,2016-11-10 16:35:57,Update .mailmap.,0
+5d7e734,2016-11-10 16:56:56,Merge pull request #1156 from balborian/patch-2,0
+4fdf0da,2016-11-14 08:00:55,Update traffic.,0
+e0d761f,2016-11-14 11:08:02,"Fix ""maybe uninitialized"" warning from GCC 5.3.0.",0
+d9d8ce5,2016-11-14 12:17:52,Avoid deprecated-declaration warnings in nanoflann examples.,0
+690a8bb,2016-11-14 13:21:44,Merge pull request #1157 from jwpeterson/fix_warning,0
+d25b578,2016-11-14 15:38:07,Don't try to run CLOUGH with threads,0
+b2a36db,2016-11-14 16:20:40,Enable 1D HERMITE elements of arbitrary p,0
+1a8f034,2016-11-14 16:21:46,1D hp tests in examples,0
+b2af793,2016-11-14 16:23:41,Avoid unused variable warnings in opt mode,0
+0e38687,2016-11-15 07:56:25,Merge pull request #1158 from roystgnr/adaptivity_ex4_changes,0
+9b31174,2016-11-16 10:10:34,Report the unique_id in Elem::get_info().,0
+559d5d7,2016-11-16 10:11:25,Write out elements connected to local elements,0
+ac6c6d9,2016-11-16 10:14:54,Fix spacing/indentation in splitter app.,0
+34418c0,2016-11-16 10:19:09,Remove unnecessary headers from splitter app.,0
+27e4b01,2016-11-16 13:40:14,Fix for/if statement spacing.,0
+09a5dcd,2016-11-16 13:54:00,Make writing files from splitter app the default.,0
+657ffed,2016-11-16 15:12:31,Add CheckpointIO unit test.,0
+8be6824,2016-11-16 15:17:54,Run bootstrap.,0
+de27e8d,2016-11-17 12:24:36,Merge pull request #1160 from jwpeterson/checkpoint_split_ghosting_functor_merge,0
+fb99e38,2016-11-18 08:17:31,Print the physical point when inverse_map() fails.,0
+505537f,2016-11-18 08:42:46,Add support for --redirect-output command line option.,0
+d418ee9,2016-11-18 11:17:11,Terminology fix in comment,0
+4bf4ec5,2016-11-18 12:13:40,Prefix libMesh Parallel:: macros with LIBMESH_,0
+243c47e,2016-11-18 12:23:33,Removed overzealous assert,0
+9c782a6,2016-11-18 13:27:16,Fix GetPot off-by-1 bug.,0
+dd47a1b,2016-11-18 15:01:09,Merge pull request #1162 from roystgnr/libmesh_prefix_macros,0
+66dc3ee,2016-11-18 16:11:13,Merge pull request #1161 from dknez/remove_assert,0
+57be7d8,2016-11-18 16:23:55,Merge pull request #1163 from jwpeterson/redirect_output,0
+d6dfcf5,2016-11-18 23:22:42,Update citations.,0
+273f3c8,2016-11-18 23:51:53,Update traffic.,0
+dfdd1a7,2016-11-21 11:50:44,MeshBase option to stop delete_remote_elements(),0
+998e24a,2016-11-21 15:13:46,Approximation order option in adaptivity ex4,0
+1201497,2016-11-21 15:14:29,Comment on why we turn off Clough-Tocher threads,0
+3e3994a,2016-11-21 16:12:29,Support 1D runs in adaptivity_ex4,0
+e806015,2016-11-21 16:12:49,Do a p=4 1D run in adaptivity_ex4,0
+72be577,2016-11-22 11:46:14,Checkpoint unit test assumes ReplicatedMesh,0
+7adf183,2016-11-22 12:00:14,Put renamed Mesh subclasses in renamed headers,0
+ebead48,2016-11-22 12:03:05,Add replicated/distributed headers to build system,0
+9691890,2016-11-22 12:03:33,Old headers are now shims for new headers,0
+452e086,2016-11-22 12:29:47,Merge pull request #1166 from roystgnr/adaptivity_ex4_coverage,0
+ac467ee,2016-11-22 12:49:55,Re-bootstrap,0
+e9c2975,2016-11-22 12:50:54,Use new header names in library sources,0
+e1a76f1,2016-11-22 12:53:28,Use replicated_mesh.h in unit tests,0
+2938f12,2016-11-22 12:55:39,Use replicated_mesh.h in examples,0
+796b7cd,2016-11-22 13:01:32,Examples use ReplicatedMesh/DistributedMesh names,0
+190b366,2016-11-22 13:31:45,Merge pull request #1164 from roystgnr/no_remote_removal_option,0
+75391d1,2016-11-22 14:01:18,Use new names in unit tests,0
+277f563,2016-11-22 14:01:41,include parallel_mesh.h in code using ParallelMesh,0
+53d4a7a,2016-11-22 14:02:36,Move shim classes into shim headers,0
+90816df,2016-11-22 14:17:32,Merge pull request #1167 from roystgnr/checkpoint_unit_fix,0
+33125a8,2016-11-27 19:44:40,Update traffic.,0
+cf59a6a,2016-11-27 19:51:14,Update citations.,0
+45402ad,2016-11-28 08:15:30,Update citations.,0
+0205902,2016-11-28 08:22:26,Update LOC count for November 2016.,0
+6634b72,2016-11-28 10:38:55,Merge pull request #1168 from roystgnr/fix_header_names,0
+da48147,2016-11-28 11:23:35,Rename parallel/serial_mesh.C,0
+4fb224e,2016-11-28 11:23:53,Re-bootstrap,0
+bc1ab16,2016-11-28 12:18:34,Use static lookup table for Elem names in GMVIO.,0
+5113c24,2016-11-28 13:39:10,Merge pull request #1170 from roystgnr/rename_mesh_sources,0
+75775b3,2016-11-28 15:41:33,Add GMV node map for Hex27.,0
+28c4689,2016-11-28 16:39:34,Merge branch 'gmv',0
+977829a,2016-11-28 16:59:08,Fix unused variable warning in ParsedFEMFunction,0
+5c1ba6f,2016-11-28 17:06:55,Add GetPot::get_subsection_names() method,0
+f076f35,2016-11-28 17:07:10,Unit tests for GetPot::get_subsection_names(),0
+42f5721,2016-11-29 09:56:10,Ignore missing override warnings from VTK headers.,0
+0839239,2016-11-29 10:11:05,Fix for VTK 7.1 compatibility.,0
+f67b842,2016-11-29 14:04:45,Merge pull request #1173 from jwpeterson/vtk_71,0
+c2833ad,2016-11-29 16:44:01,Merge pull request #1171 from roystgnr/unused_variable_warning_fix,0
+72b3fb7,2016-12-01 08:32:21,Merge pull request #1172 from roystgnr/getpot_subsections,0
+f0fa117,2016-12-01 08:43:37,Update statistics for Nov 2016.,0
+0d32937,2016-12-01 08:54:28,Regenerate PDFs.,0
+a720837,2016-12-01 09:09:37,Set up SLEPc defines for major  minor  subminor version numbers.,0
+9461ccb,2016-12-01 09:15:58,Run bootstrap.,0
+4f098cf,2016-12-01 09:26:09,Implement SLEPC_VERSION_LESS_THAN macro with new defines.,0
+7bc4279,2016-12-01 13:34:48,Fix Trilinos ifdefs.,0
+3bb3113,2016-12-01 14:15:23,Add configure test for Epetra_CombineMode.h.,0
+55f1ff6,2016-12-01 14:18:36,Run bootstrap.,0
+6b62fb8,2016-12-01 14:39:39,Merge pull request #1175 from jwpeterson/slepc_version_detect,0
+e39b579,2016-12-02 08:38:29,Merge pull request #1176 from jwpeterson/trilinos_check,0
+4636ea5,2016-12-02 16:04:01,Do not set VTK_LEGACY_REMOVE.,0
+ef77864,2016-12-05 08:14:33,Merge pull request #1177 from jwpeterson/vtk_fix,0
+c65f552,2016-12-05 08:42:43,Update citations.,0
+cbab3c3,2016-12-05 09:08:15,Update LOC count for December 2016.,0
+9fb26a9,2016-12-05 11:32:35,Add PointLocatorBase::locate_node(),0
+0352833,2016-12-05 11:33:42,Add PointLocatorTest unit tests,0
+20fb0e9,2016-12-05 11:34:30,Build and run PointLocatorTest,0
+58ed2f7,2016-12-05 11:34:40,Re-bootstrap,0
+f88d1e9,2016-12-05 12:19:11,Merge in NEWS file updates from 1.1.0 branch.,0
+4cfac82,2016-12-05 12:20:07,Update configure.ac version to 1.2.0-pre.,0
+1b95fd3,2016-12-05 12:22:28,Run bootstrap.,0
+d5d2f32,2016-12-05 15:08:55,Add tolerance option to locate_node(),0
+5e16786,2016-12-06 13:01:13,Fix about-to-be-ambiguous overload,0
+6b058d5,2016-12-06 13:03:16,Add dof_indices(Node*) overload,0
+460d742,2016-12-06 13:04:51,Add DofMap::is_evaluable(Node) overload,0
+4c8b88a,2016-12-06 13:28:10,Add code for initializing/finalizing vtkMPIController.,0
+521d984,2016-12-06 13:50:39,Add configure test for vtkMPIController support in VTK.,0
+76d360d,2016-12-06 13:56:00,Run bootstrap.,0
+e9f8df6,2016-12-06 14:01:30,Don't AC_SUBST or AC_DEFINE unless working VTK is found.,0
+937515f,2016-12-06 14:23:30,Enable evaluable predicate on Nodes,0
+844c5e4,2016-12-06 14:23:46,Add evaluable_nodes iterators,0
+ede081b,2016-12-06 15:41:25,Merge pull request #1178 from roystgnr/locate_node,0
+74a7ec0,2016-12-06 16:40:22,Ignore warnings from VTK header.,0
+5518d83,2016-12-07 08:39:07,Update configure test for VTK-5.x.,0
+7a4c729,2016-12-07 08:41:22,Run bootstrap.,0
+f2142a8,2016-12-07 12:13:11,Fix shadowing issue in CheckpointIO::build_elem_list().,0
+3e8292b,2016-12-07 12:19:28,find_point_neighbors() can only be called on active elements.,0
+f5ff7f2,2016-12-07 12:28:33,Clear neighbors every time now that we aren't always calling find_point_neighbors().,0
+5129e93,2016-12-07 13:48:20,Only write current-level elements in write_connectivity().,0
+9fea023,2016-12-07 14:00:41,Merge pull request #1181 from jwpeterson/vtk_mpi,0
+ab18980,2016-12-07 15:47:23,Merge pull request #1180 from roystgnr/evaluable_node,0
+7b2002a,2016-12-07 15:52:48,Actually overwrite constraints when users request,0
+9c90583,2016-12-08 08:19:47,Merge pull request #1182 from jwpeterson/checkpoint_io_fix,0
+a6b6a26,2016-12-08 08:52:09,Doxygen: Playing around with PREDEFINED option.,0
+54f2666,2016-12-08 09:58:32,Doxygen: Properly escape math.,0
+7c2e7c7,2016-12-08 11:33:49,Merge pull request #1183 from roystgnr/overwrite_constraints,0
+7d4768b,2016-12-08 11:39:52,Bugfix for FEMContext::pre_fe_reinit SCALAR case,0
+b3edfb2,2016-12-08 13:12:31,Doxygen: Add \brief descriptions for classes in geom.,0
+8c6448b,2016-12-08 14:44:39,Doxygen: Remove libmesh_final directives before calling Doxygen.,0
+e2a0ccb,2016-12-08 14:46:00,Run bootstrap.,0
+a631d2a,2016-12-08 14:55:15,Merge pull request #1185 from roystgnr/fem_context_scalar_fix,0
+e20b8b2,2016-12-08 15:40:28,"Revert ""Doxygen: Playing around with PREDEFINED option.""",0
+47e49a4,2016-12-08 16:06:45,Mark new iterator functions libmesh_override.,0
+a61bbec,2016-12-08 16:20:46,Add historic authorship information.,0
+cc9f581,2016-12-08 22:16:53,Merge pull request #1186 from jwpeterson/doxygen_fixes,0
+31e773e,2016-12-08 22:26:08,Fix typo.,0
+d32ff19,2016-12-09 10:12:51,Reduce the number of dot threads used by Doxygen.,0
+bc0e0c7,2016-12-09 12:28:54,Update traffic.,0
+b357727,2016-12-09 12:56:24,More historical authorship information.,0
+6212445,2016-12-10 19:39:28,int -> PetscBLASInt in BLAS/LAPACK routines.,0
+1bf2423,2016-12-10 20:11:08,Remove duplicate type information from documentation.,0
+c3659b1,2016-12-10 20:14:24,The _pivots array should use PetscBLASInt when PETSc is available.,0
+2154abc,2016-12-11 00:11:51,Use PetscBLASInt when calling SLEPc wrapped BLAS too.,0
+743fd75,2016-12-11 20:02:17,Merge pull request #1188 from jwpeterson/petsc_blas_int,0
+2f3dfee,2016-12-11 20:04:46,Update traffic.,0
+67c1f05,2016-12-12 09:32:24,Use only VTK header that's needed,0
+a3341f0,2016-12-12 16:14:05,Merge pull request #1189 from pbauman/vtk-header-fix,0
+3ee1d6c,2016-12-15 10:24:48,Fix gmsh numbering and node ordering for PRISM15. (Resolves #1191),0
+eca6c9a,2016-12-15 10:58:52,AdjointRefinement ghosted adjoint compatibility,0
+91f5741,2016-12-16 07:49:39,Merge pull request #1193 from roystgnr/adjoint_refinement_ghosted_fix,0
+3670e8a,2016-12-16 16:55:52,Use vector  not map  for xda_systems,0
+b46e08f,2016-12-16 17:02:22,Use pointer argument in read_SCALAR_dofs,0
+c0b9852,2016-12-16 17:05:07,read_serialized_blocked_dof_objects NULL handling,0
+ff7aed9,2016-12-16 17:09:21,Use pointer in templated read_serialized_vector,0
+4fd552c,2016-12-16 17:13:03,Always read past additional vector data,0
+862c0c7,2016-12-19 08:11:50,Update traffic.,0
+1bb0b5d,2016-12-19 14:22:33,Merge pull request #1194 from roystgnr/fix_multisystem_reads,0
+b0ff744,2016-12-20 08:27:36,Merge pull request #1192 from lindsayad/gmsh_prism_1191,0
+34e880d,2016-12-20 08:36:15,Update citations.,0
+9a646d1,2016-12-20 16:19:01,Increase the target_bin_size in TreeNode beyond a specified refinement level,0
+d94ac5d,2016-12-21 11:27:08,Merge pull request #1196 from dknez/target_bin_size_increase,0
+26a697d,2016-12-21 22:42:53,Resolved issue with linear dependence in inverse_map().,0
+2824584,2016-12-24 10:41:02,Update citations.,0
+8e0497f,2016-12-24 10:46:04,Update traffic.,0
+fa406e1,2017-01-03 09:15:10,Update traffic.,0
+63e648b,2017-01-03 09:20:24,Update citations.,0
+2a16c4c,2017-01-03 10:37:32,Add extra trilinos package search paths,0
+8a41433,2017-01-03 10:50:25,Update statistics for December 2016.,0
+ad18418,2017-01-03 12:39:47,Merge pull request #1202 from rppawlo/issue_1201,0
+1556c24,2017-01-04 09:19:40,Add libmesh_isinf() helper function.,0
+6c7743e,2017-01-04 09:23:41,Use libmesh_isinf() in InfFE::inverse_map().,0
+92fa593,2017-01-05 11:43:04,Test UniquePtr  not AutoPtr,0
+388553e,2017-01-05 12:40:22,Merge pull request #1203 from jwpeterson/ifem_isinf,0
+13f28c9,2017-01-05 12:52:55,Move GitHub traffic data into CSV files.,0
+21ac9c4,2017-01-05 15:11:58,Loosen tolerance on straight-line check in Edge3::volume().,0
+bf300b0,2017-01-05 15:32:58,Re-bootstrap,0
+7f99a80,2017-01-05 15:35:14,Avoid unnecessary calculations in straight-line case.,0
+07e5d51,2017-01-05 17:06:01,Better CheckpointIO error message,0
+82528fd,2017-01-05 17:09:59,parallel apparently might not be 0 or 1!,0
+c43122e,2017-01-06 09:32:45,CheckpointIO test barrier between read and write,0
+082e88d,2017-01-06 09:37:58,Merge pull request #1204 from roystgnr/unique_ptr_test,0
+36a0964,2017-01-06 09:39:06,Merge pull request #1206 from roystgnr/checkpoint_io_error_message,0
+ae5f457,2017-01-09 09:19:58,Update traffic.,0
+195f412,2017-01-09 13:20:25,Merge pull request #1205 from jwpeterson/edge3_vol_fix,0
+7c9228f,2017-01-10 08:41:57,Update citations.,0
+5ea7fe1,2017-01-10 10:52:36,Fix issue with errno.h inclusion in a namespace.,0
+628b5d9,2017-01-10 11:08:17,Update configure test for errno.h issue.,0
+ceee626,2017-01-10 11:09:49,Run bootstrap.,0
+5c0fe61,2017-01-10 14:02:24,Update LOC count for January 2017.,0
+2dbe38f,2017-01-10 14:03:20,Merge pull request #1209 from jwpeterson/errno_fix,0
+ea6803a,2017-01-10 14:46:15,Reorder paths starting with /lib to the end of the list.,0
+e61b691,2017-01-10 15:17:06,Fix regexes which were too greedy.,0
+80d4a22,2017-01-11 10:55:46,Merge pull request #1210 from jwpeterson/reorder_libs,0
+bc46eac,2017-01-11 16:29:59,Merge pull request #1207 from roystgnr/checkpoint_test_barrier,0
+fe105ad,2017-01-12 08:21:42,Fix documentation typos and wording in include/geom.,0
+3eadd78,2017-01-12 08:36:02,Update citations.,0
+b36673c,2017-01-12 09:24:56,Update copyright notice for 2017.,0
+ec5c76f,2017-01-12 10:17:26,Fix documentation typos and wording in include/partitioning.,0
+d0fac29,2017-01-12 11:27:10,Fix documentation typos and wording in include/quadrature.,0
+b7bfe3d,2017-01-12 13:06:33,Use Gauss quadrature in 1D for QConical.,0
+b0e6395,2017-01-12 13:52:39,Use Gauss quadrature in 1D for QGrundmann_Moller.,0
+0d33d7e,2017-01-12 14:43:29,Merge branch 'spellcheck',0
+8fd59cb,2017-01-12 22:29:16,Optionally skip lower dimensional element in element counting in TreeNode,0
+d5c3f9a,2017-01-13 13:07:39,Merge pull request #1211 from dknez/tree_node_elem_count,0
+5b98917,2017-01-13 15:27:08,regex_match is in namespace std.,0
+17ad994,2017-01-13 16:17:12,Run bootstrap.,0
+e241435,2017-01-13 16:17:40,Merge branch 'regex_test',0
+00d5f17,2017-01-16 08:15:52,Update traffic.,0
+0ef555e,2017-01-16 08:22:20,Update citations.,0
+61b4b46,2017-01-18 17:11:41,More robust caching with Clough-Tocher elements,0
+4376a57,2017-01-19 08:24:24,distcheck fix,0
+7138f9d,2017-01-19 10:14:25,Update citations.,0
+86e715b,2017-01-19 12:33:05,Use the -fno-limit-debug-info flag in dbg/devel mode for clang.,0
+7c83307,2017-01-19 12:51:53,Run bootstrap.,0
+0c296b1,2017-01-21 23:30:18,Only serialize the mesh to processor 0 for Exodus,0
+12eb1e3,2017-01-22 16:22:43,Update traffic.,0
+61a2cbb,2017-01-22 16:27:34,Merge pull request #1212 from roystgnr/clough_caching,0
+b2c2cf7,2017-01-22 16:27:49,Merge pull request #1213 from jwpeterson/clang_dbg,0
+3770f87,2017-01-23 13:28:03,For char and unsigned char parameters  convert to int before printing to avoid displaying unprintable characters.,0
+b8bda48,2017-01-23 14:11:24,n_edge_conds() can be parallel_only: don't skip it,0
+fadfe2b,2017-01-23 15:21:01,Only processors which gathered reset_remote_elem,0
+ac346b7,2017-01-24 10:44:36,Use C++ style casts.,0
+1e95a6f,2017-01-24 10:45:00,Merge branch 'brianmoose/param',0
+3e184fa,2017-01-24 15:16:16,More accurate echo in example run script messages,0
+fa49336,2017-01-24 17:05:13,Add a barrier() to ~LibMeshInit,0
+a30b871,2017-01-24 17:08:10,Use libmesh_call_mpi() in LibMeshInit code,0
+d58277d,2017-01-25 09:00:19,Add '-Wunused -Wunused-parameter' for clang in all modes.,0
+07639a3,2017-01-25 09:55:46,Fix unused parameter warnings found with new flags.,0
+7fe245f,2017-01-25 10:32:13,Fix new unused-variable warnings in contrib.,0
+3613df9,2017-01-25 12:43:28,Merge pull request #1217 from jwpeterson/clang_unused,0
+8352e5b,2017-01-25 13:54:51,DEBUG is not defined in devel mode.,0
+b8e71c0,2017-01-27 07:45:46,Merge pull request #1221 from jwpeterson/mesh_to_zero,0
+1ef35a4,2017-01-27 08:00:11,Merge pull request #1218 from roystgnr/message_tweak,0
+20a9288,2017-01-27 08:00:34,Merge pull request #1219 from roystgnr/libmeshinit_tweaks,0
+1862113,2017-01-29 19:51:21,Update traffic.,0
+e8917f2,2017-01-31 08:53:50,Add MeshTools::paranoid_n_levels(),0
+5df1bf5,2017-01-31 08:56:06,Use paranoid_n_levels() in broadcast(),0
+2833a07,2017-01-31 12:14:38,MeshCommunication::send_coarse_ghosts(),0
+2ed63e3,2017-01-31 12:16:03,Use send_coarse_ghosts() after coarsening,0
+6afd568,2017-01-31 12:19:36,Merge pull request #1223 from roystgnr/paranoid_n_levels,0
+31ac36d,2017-01-31 13:30:49,Update citations.,0
+40b4393,2017-01-31 14:47:53,Merge pull request #1224 from roystgnr/send_coarse_ghosts,0
+9f6a0c7,2017-01-31 16:46:36,MeshTools::n*levels was broken on empty meshes,0
+a1727d6,2017-01-31 19:29:56,Merge pull request #1225 from roystgnr/zero_level_meshes,0
+4c1a343,2017-02-01 10:32:22,Avoid vtkSmartPointer include,0
+4c0e873,2017-02-01 11:02:14,Make sync_node_data_by_element_id robust,0
+f7e1304,2017-02-01 14:27:48,Ensure new nodes are created with valid id+proc_id,0
+dbb1ab6,2017-02-01 15:32:36,Fix all_second_order() with DistributedMesh,0
+dd4b6f6,2017-02-01 16:20:02,Update statistics for Jan 2017.,0
+ed0a97e,2017-02-01 17:13:35,Change node processor_id() during refinement,0
+93a9497,2017-02-01 17:15:17,Sync processor_id() on newly-changed nodes,0
+30c76b4,2017-02-01 22:32:17,Communicate ghosted elements *before* coarsening,0
+87db081,2017-02-02 07:16:47,Fixup receive_packed_range call,0
+d28ac22,2017-02-02 15:17:40,Merge pull request #1227 from roystgnr/distributed_mesh_fixes,0
+00ec25c,2017-02-02 15:40:20,Small changes to splitter to change the way the filenames are output,0
+be0ecd4,2017-02-03 07:25:57,Change the way Splitter prints out progress,0
+cc49a53,2017-02-04 15:07:41,Merge pull request #1228 from friedmud/splitter_filename,0
+7c41153,2017-02-06 08:18:09,Update LOC count for Feb 2017.,0
+4d9ca29,2017-02-06 08:26:53,Update traffic.,0
+2e25cb2,2017-02-06 08:35:22,Update citations.,0
+8289df6,2017-02-06 13:00:58,Use std::size_t  which is equivalent to vector<T>::size_type.,0
+1c8b107,2017-02-06 13:01:21,Fix 'clever' for-loop increments.,0
+f64c717,2017-02-06 13:01:29,Use std::size_t in examples.,0
+c54e822,2017-02-06 14:43:59,Merge pull request #1226 from roystgnr/vtk_dumb_pointer,0
+8488c31,2017-02-07 08:05:05,Merge pull request #1229 from jwpeterson/size_t,0
+8d74337,2017-02-07 19:30:36,Add Eigen optimizations for DenseVector::l2_norm()  l1_norm()  linfty_norm().,0
+ce8533f,2017-02-08 10:06:54,Merge pull request #1230 from jwpeterson/dense_vector_eigen,0
+21f4452,2017-02-08 14:20:06,Loosening adjoints_ex3 tolerance,0
+43e9ef9,2017-02-08 15:41:18,add flag to ES::reinit to skip internal refine/coarsen calls,0
+c4b3b00,2017-02-08 15:41:55,unit test for preserving refinement flags post-reinit,0
+dfa102b,2017-02-08 16:57:16,More debug-mode tests,0
+d620383,2017-02-08 17:02:47,Fix BoundaryInfo::operator=,0
+9ae43d2,2017-02-08 17:12:43,Merge pull request #1232 from roystgnr/adjoint_tolerance_tweak,0
+099af27,2017-02-09 08:12:52,Merge pull request #1234 from roystgnr/boundary_info_fix,0
+a735399,2017-02-09 10:15:01,Ignore warnings about misleading indentation,0
+78e8c2b,2017-02-09 10:15:34,Use ignore/restore_warnings.h with Eigen,0
+49eae67,2017-02-09 10:26:08,Ignore CppUnit warnings in Trilinos unit test,0
+4b96823,2017-02-09 12:56:30,Merge pull request #1233 from tradowsk/eq-sys-preserve-refine-flags,0
+7400474,2017-02-10 11:09:16,Merge pull request #1235 from roystgnr/ignore_eigen_warnings,0
+39759cb,2017-02-10 13:13:08,Merge pull request #1236 from roystgnr/ignore_trilinos_warnings,0
+c001fff,2017-02-10 15:32:49,Add MeshBase::is_replicated(),0
+d27e2a5,2017-02-10 16:04:35,Use MeshBase::is_replicated() in CheckpointIO,0
+b96b760,2017-02-10 16:06:44,Use is_replicated() in MeshRefinement,0
+be12536,2017-02-10 17:04:09,Fix disable_refine_on_reinit() test with parmesh,0
+7feffb3,2017-02-10 19:53:53,Merge pull request #1237 from roystgnr/fix_new_test,0
+84b1df9,2017-02-12 20:35:44,Small optimization in TreeNode,0
+1109a2b,2017-02-13 08:20:41,Use std::vector::assign.,0
+265c189,2017-02-13 08:22:49,Merge branch 'tree_node_opt',0
+3c8c1f3,2017-02-13 08:32:46,Update traffic.,0
+4d30d2e,2017-02-13 09:15:47,Ignore -Wmisleading-indentation on GCC 6+ only,0
+e39052b,2017-02-13 10:16:39,Merge pull request #1239 from roystgnr/gcc_6_only,0
+bce2ab7,2017-02-13 11:44:04,Add FirstOrderUnsteadySolver::prepare_accel,0
+97b5f74,2017-02-13 11:48:08,Add FirstOrderUnsteadySolver::compute_second_order_eqns,0
+d7aab05,2017-02-13 12:52:40,First order TimeSolvers now handle second order vars,0
+8dee99d,2017-02-13 22:24:42,Add Eigen-based optimization for DenseVector<T>::dot().,0
+2ddcb00,2017-02-14 09:45:32,Use DistributedMesh temporary ids even in serial,0
+044cb32,2017-02-14 12:17:15,Update citations.,0
+4c1c8de,2017-02-14 15:45:18,Allow users to control if the matrix and RHS should be zeroed out,0
+2005cdf,2017-02-15 08:06:20,Merge pull request #1241 from roystgnr/serialized_distributed,0
+7a02ada,2017-02-15 09:22:34,Add UnsteadySolver::is_<first second>_order_var,0
+74e55da,2017-02-15 09:27:48,Cache map from second order vars to vel vars,0
+c32e55e,2017-02-15 09:28:15,Add UnsteadySolver::get_second_order_dot_var API and impls,0
+28dc361,2017-02-15 10:31:42,Helper functions for checking for SCALAR vars,0
+389e7dd,2017-02-15 11:05:17,Add tests for first order TimeSolver for second order problems,0
+84de531,2017-02-15 12:16:13,AbaqusIO: Allow the shorter string 'S3' instead of 'S3R'.,0
+ca8a577,2017-02-15 13:28:07,AbaqusIO: Support generated elsets and nsets.,0
+1f277f6,2017-02-16 08:13:45,Merge pull request #1243 from jwpeterson/abaqus_io_generate,0
+2b398a6,2017-02-16 08:16:50,Merge pull request #1242 from libMesh/andrsd/zero-m-rhs-impl-sys,0
+8e2a145,2017-02-16 08:22:39,Check for early returns for zero length vectors.,0
+dd7c4e5,2017-02-16 08:41:26,Remove PetscMatrix::update_preallocation_and_zero().,0
+a94f67d,2017-02-16 08:50:20,systems_of_equations_ex8 does not actually use update_preallocation_and_zero().,0
+6fece55,2017-02-16 09:21:32,Officially deprecate unofficially deprecated Elem functions.,0
+a1304b2,2017-02-16 09:31:59,Officially deprecate unofficially deprecated MeshBase functions.,0
+8adffcd,2017-02-16 10:02:28,Document the virtual-non-const-plus-non-virtual-const design.,0
+403cf08,2017-02-16 10:23:45,Officially deprecate old Mesh constructors.,0
+32a146d,2017-02-16 10:30:56,Don't delete_remote_elements() inappropriately,0
+6be3553,2017-02-16 10:49:37,Remove deprecated MeshData from transient_ex2.,0
+b98c4f0,2017-02-16 12:08:01,Fix comment typo in misc_ex2 Makefile.am.,0
+8ab09b2,2017-02-16 12:20:55,"Added ""dot"" vars are 1st order time evolving",0
+38be6e4,2017-02-16 13:46:51,Updated TimeSolver test classes with libmesh_override FTW,0
+77ea387,2017-02-16 13:50:35,Update CLEANFILES list for misc_ex2.,0
+7f5f568,2017-02-16 13:54:23,Update TimeSolver test class naming,0
+1fdc5e7,2017-02-16 13:54:38,misc_ex2: Use Exodus file extension recognized by Paraview.,0
+2942d3e,2017-02-16 13:55:34,Run bootstrap.,0
+14327e3,2017-02-16 13:56:34,Use new time_evolving API in TimeSolver tests,0
+ae4a475,2017-02-16 13:58:02,Add TimeSolver testing class,0
+4f679c3,2017-02-16 13:59:36,Test Newmark using first order style,0
+bcf9f09,2017-02-16 14:45:14,Merge pull request #1244 from jwpeterson/dense_vector_eigen,0
+0ff7189,2017-02-16 14:45:47,Merge pull request #1245 from jwpeterson/update_preallocation_and_zero,0
+bb0d1e4,2017-02-16 14:46:03,Merge pull request #1247 from jwpeterson/deprecate,0
+5fb00de,2017-02-16 15:18:27,misc_ex2: Update/fix typos in documentation.,0
+07d700e,2017-02-16 15:28:07,Merge pull request #1246 from roystgnr/fix_mistaken_distribution,0
+3f717ec,2017-02-17 08:55:21,Remove MeshData from misc_ex2.,0
+384a1df,2017-02-17 12:29:01,Move BoundingBox to its own header,0
+b112c9b,2017-02-17 12:29:20,Re-bootstrap,0
+4a72aaf,2017-02-17 15:23:47,Remove MeshData from BoundaryInfo interfaces.,0
+41d70ae,2017-02-17 15:27:46,Remove MeshData from VTKIO interfaces.,0
+88fc41f,2017-02-17 15:31:03,Remove MeshData from TetgenIO interfaces.,0
+e3e349d,2017-02-17 15:36:38,Remove MeshData from UNVIO interfaces.,0
+19f6fd2,2017-02-17 15:39:44,Remove MeshData from meshtool.C,0
+d9d5ad2,2017-02-17 15:41:33,Remove MeshData from libmesh_documentation.h,0
+14fb52d,2017-02-17 15:45:26,Remove all files associated with the MeshData class.,0
+3914720,2017-02-17 15:46:48,Update Makefile.am files after removing MeshData files.,0
+6e1e9d0,2017-02-17 15:48:08,Run bootstrap.,0
+14495d6,2017-02-17 15:49:21,Remove spurious mesh_data.h inclusion from misc_ex5.,0
+c98a94a,2017-02-17 15:57:54,Add Elem::loose_bounding_box(),0
+6be8e6a,2017-02-17 15:59:27,Remove MeshData from Mesh classes.,0
+8de3f92,2017-02-17 16:00:34,Remove MeshData output from misc_ex2 docs.,0
+f871834,2017-02-17 16:01:28,Fix typo.,0
+a1ecb8c,2017-02-17 16:04:10,Remove MeshData from EquationSystems.,0
+72c8d8a,2017-02-17 16:06:50,Fix warning that only shows up in dbg mode with --enable-complex.,0
+7d6c85e,2017-02-17 16:11:07,Fix unused variable warning in opt mode.,0
+4d6596a,2017-02-17 16:50:31,Use BoundingBox in TreeNode,0
+a9f3153,2017-02-17 16:58:02,enable_out_of_mesh_mode() on non-affine elements,0
+a11ed30,2017-02-17 16:58:15,Don't bother with linear searches,0
+1bcfd5c,2017-02-17 21:26:48,Enable out_of_mesh_mode on distributed meshes,0
+b802fd4,2017-02-17 21:32:04,out_of_mesh_mode for distributed System::point_*(),0
+86e0866,2017-02-17 21:51:31,Fix MeshTools::BoundingBox backwards compatibility,0
+a009c2c,2017-02-18 11:17:32,Merge pull request #1248 from jwpeterson/mesh_data,0
+6275cd6,2017-02-18 11:17:48,Merge pull request #1250 from jwpeterson/rm_mesh_data,0
+ce8e207,2017-02-18 11:27:35,Fix a few more unsigned int/size_t mismatches in for loops.,0
+8f1d562,2017-02-18 12:01:44,Avoid calls to virtual DenseVector::size() when possible.,0
+fa60866,2017-02-18 12:20:31,Switch to signed integer loops in DenseVector.,0
+b35efd1,2017-02-18 16:24:25,Add clang-specific vectorization pragmas.,0
+c41c552,2017-02-19 13:58:53,Update traffic.,0
+b2a2a42,2017-02-19 13:59:52,Merge pull request #1251 from jwpeterson/dv_size,0
+4442284,2017-02-19 20:59:25,Merge pull request #1249 from roystgnr/loose_bounding_box,0
+77d898f,2017-02-21 08:35:59,Update citations.,0
+7df0c59,2017-02-21 09:14:16,Clean up citations.,0
+78ce08d,2017-02-21 23:33:22,Update and tinyurl-ize links.,0
+383d013,2017-02-22 09:07:18,GmshIO: Allow multiple lower-dimensional elements for BCs.,0
+addb90f,2017-02-22 09:18:43,Fix 'missing override' warnings for Elem::loose_bounding_box().,0
+e8c36aa,2017-02-22 09:23:23,Fix unused variable warning after MeshData removal.,0
+07002be,2017-02-22 10:12:43,BoundaryInfo::regenerate_id_sets(),0
+f51178a,2017-02-22 10:14:15,Call regenerate_id_sets() when appropriate,0
+052e7d0,2017-02-22 12:11:47,Update citation counts for plot.,0
+61a1128,2017-02-22 12:14:25,Update statistics PDFs for SIAM CSE 2017.,0
+84d2c36,2017-02-22 12:20:20,Move tick marks to Jan of each year  suppress month in label.,0
+01f811b,2017-02-22 12:28:32,Remove preprints from papers plot.,0
+9c978ee,2017-02-22 12:33:05,Add 2017 to mailing list traffic plot.,0
+a625727,2017-02-22 12:40:32,Set up tick locations automatically.,0
+7ad28b6,2017-02-22 12:47:05,Update x-axis in LOC plot.,0
+6723f13,2017-02-22 12:50:35,Merge branch 'stats',0
+8e44359,2017-02-22 14:53:00,Merge pull request #1254 from jwpeterson/gmsh_fix,0
+d95730c,2017-02-22 14:55:55,Update citations.,0
+906a2fd,2017-02-22 15:48:21,Regenerate publications webpage.,0
+bf25955,2017-02-22 16:30:24,Bibtex: Format author names consistently.,0
+81ac107,2017-02-24 08:55:48,Bibtex: use endash between co-discoverers' names.,0
+cd82b51,2017-02-24 13:16:38,More permanent links for some dissertations.,0
+539535c,2017-02-25 10:35:02,Update citations.,0
+f78df65,2017-02-26 17:15:26,Update traffic.,0
+585a762,2017-02-28 08:21:36,Update fem_system_ex3 to new TimeSolver API,0
+1a7787c,2017-02-28 10:52:42,Use *parallel* max_elem_id in assert code,0
+0a3c3c7,2017-02-28 11:05:42,Update citations.,0
+443d504,2017-02-28 11:49:27,Merge pull request #1255 from roystgnr/boundary_info_caches,0
+8873df1,2017-02-28 13:51:31,Add Euler(2)Solver options to fem_system_ex3,0
+fc4d865,2017-02-28 13:59:48,Fix DistributedMesh build_node_list_from_side_list,0
+344de3a,2017-02-28 14:09:44,FirstOrderUnsteadySolver::add_dot_var_dirichlet_bcs and use it in init(),0
+0a094af,2017-02-28 15:19:53,More documentation on new FirstOrderUnsteadySolver capability,0
+8b2c19d,2017-03-01 09:58:17,Rework design of variable time-order handling,0
+95efd5f,2017-03-01 10:01:11,Avoid race condition in non-blocking send,0
+1ed6e19,2017-03-01 10:29:50,Merge pull request #1257 from roystgnr/pmax_elem_id,0
+9edd8ba,2017-03-01 11:41:57,Fix BC construction for velocity variables,0
+14ef5bd,2017-03-01 11:58:20,Update statistics for February 2017.,0
+6858d69,2017-03-01 13:08:14,Bibtex: Use address field for InProceedings.,0
+7913dc7,2017-03-01 17:11:23,Bibtex: Use consistent title capitalization.,0
+5843427,2017-03-03 09:15:49,Ignore third party placement-new warnings in GCC6,0
+0202ed8,2017-03-03 09:16:10,Ignore warnings from TBB,0
+898387e,2017-03-04 17:28:05,Update traffic.,0
+0ed9901,2017-03-04 17:33:00,Update citations.,0
+02b04ff,2017-03-07 08:41:29,Update citations.,0
+36b55dd,2017-03-07 12:47:30,Add SubdomainPartitioner.,0
+e611583,2017-03-07 12:49:07,Add new files to lists and update Makefile.am.,0
+92e500a,2017-03-07 12:50:32,Run boostrap.,0
+7a72b9e,2017-03-07 15:01:03,Set fixed unique_id values in mesh extrusion,0
+40d344c,2017-03-07 15:01:57,Set remote_elem links during mesh extrusion,0
+1f15528,2017-03-07 15:57:19,Synchronize next_side_id in build_extrusion(),0
+9372792,2017-03-07 16:31:24,Cleaning up the VTK parts,0
+81d93eb,2017-03-07 20:17:48,Merge pull request #1258 from roystgnr/node_bcid_fix,0
+254afb3,2017-03-07 21:20:31,Handle empty semilocal meshes in mesh extrusion,0
+44784e6,2017-03-08 09:24:11,Merge pull request #1265 from roystgnr/distributed_extrusion,0
+d7c02d4,2017-03-08 09:46:54,Merge pull request #1264 from acbauer/vtk_improvements,0
+942f9b3,2017-03-08 10:01:52,Consistent naming for NewtonSolver private member,0
+740e4d1,2017-03-08 10:02:22,Accessor for LinearSolver used by NewtonSolver,0
+739ea5a,2017-03-08 10:07:06,Merge pull request #1262 from roystgnr/tbb_warnings,0
+2148606,2017-03-08 10:12:31,Use SPARSELU for linear solver for fem_system_ex3/Euler(2)Solver,0
+7007ab3,2017-03-08 10:32:59,Update citations.,0
+1b1bb81,2017-03-08 12:48:38,Add unit test of SubdomainPartitioner.,0
+2fe687e,2017-03-08 12:51:09,Add new file to unit test Makefile.am.,0
+b86f1ce,2017-03-08 12:52:57,Run bootstrap.,0
+3076ba5,2017-03-08 13:14:50,Remove recently deprecated code from unit tests.,0
+6c6c080,2017-03-08 16:30:22,Update citations.,0
+86e8dba,2017-03-08 16:37:22,ParmetisPartitioner: Slight refactor resize+fill -> assign.,0
+e3e2e0c,2017-03-08 19:11:43,Merge pull request #1266 from jwpeterson/subdomain_partitioner,0
+ca26a44,2017-03-08 22:31:02,Bug fix for Tri6::loose_bounding_box ()  for-loop indices should start at 1.,0
+0a19455,2017-03-09 07:55:51,Merge pull request #1272 from dknez/tri6_bb_fix,0
+d963d52,2017-03-09 07:58:05,Merge pull request #1270 from jwpeterson/parmetis_refactor,0
+2e2bbe2,2017-03-09 11:00:04,Add new SubdomainPartitioner.,0
+e76ba9a,2017-03-09 11:08:20,Rename and document BoundingBox::intersect(),0
+668d345,2017-03-09 15:34:23,Document BoundingBox functions,0
+00a97e8,2017-03-09 15:35:01,BoundingBox intersections and unions,0
+13a1d58,2017-03-09 15:49:39,Fix Cell::loose_bounding_box(),0
+fb489e7,2017-03-09 15:50:48,Clean up BoundingBox API,0
+2e795d7,2017-03-09 15:55:18,More convenient variable names for ParaView viewing,0
+990c73d,2017-03-09 16:16:53,Restructure how fem_system_ex3 gets run,0
+b919962,2017-03-09 16:22:20,Update Makefile.am files.,0
+70a995a,2017-03-09 16:23:30,Run boostrap.,0
+56f5845,2017-03-09 16:51:48,Elem::loose_bounding_box() tests,0
+7d2e97b,2017-03-09 16:52:11,Build and run Elem tests,0
+b846ebe,2017-03-09 16:53:55,Add unit_tests-* to noinst_PROGRAMS,0
+9ea6fae,2017-03-09 17:00:50,Re-bootstrap,0
+4c56255,2017-03-09 17:26:16,Quad8::loose_bounding_box bugfix,0
+89ef9e2,2017-03-09 22:11:54,Disallow renumbering in unit test,0
+85f09bb,2017-03-09 22:12:50,Distributed-compatible BoundaryInfo unit tests,0
+d2fcc55,2017-03-09 22:13:46,Better document BoundaryInfo::n_boundary_ids(),0
+7f1fefb,2017-03-10 07:23:57,Merge pull request #1274 from roystgnr/bounding_box_fixes,0
+c2362a3,2017-03-10 07:24:15,Merge pull request #1275 from roystgnr/distributed_mesh_tests,0
+431b151,2017-03-10 08:38:59,Restore (deprecated) old intersect() API name,0
+07142a1,2017-03-10 09:55:36,Fix C++11 code merged in by #1276.,0
+d2096b2,2017-03-10 10:53:43,Added pyramid_face_map info to exodusII_io_helper.C.,0
+d7a08b2,2017-03-10 11:06:17,Add predicated iterators for iterating over sets of subdomains.,0
+6e211be,2017-03-10 11:43:02,Merge pull request #1276 from pbauman/second-orders-vars-first-order-timesolver-rebase,0
+5c2884b,2017-03-10 12:37:09,Merge pull request #1277 from dknez/ExodusII_pyramid_sidesets,0
+c8923a6,2017-03-10 15:59:27,Make extra_ghost_elements save child elems,0
+f53a245,2017-03-12 13:26:03,Fix infinite recursion warning in BoundingBox.,0
+f65b73f,2017-03-12 13:26:03,Fix infinite recursion warning in BoundingBox.,0
+9930194,2017-03-12 15:47:47,Update traffic.,0
+dee3c44,2017-03-13 08:44:22,Skip neighbors and neighbor offspring which are not in the range.,0
+152bd2a,2017-03-13 10:14:46,Only allocate some Metis data structures on processor 0.,0
+e1e2465,2017-03-13 14:19:36,libmesh_assert_valid_dof_ids one System at a time,0
+1259e7b,2017-03-13 14:19:55,Only assert_valid_dof_ids that we already set,0
+03cd28e,2017-03-13 14:23:53,Replace vectormap::find() with vectormap::count() calls.,0
+700ea3f,2017-03-13 16:15:49,All vectormap algorithms can be implemented with std::lower_bound().,0
+6c108b0,2017-03-13 16:41:34,Add unit tests of vectormap::find() and count().,0
+b39b5ad,2017-03-13 16:43:27,Fix more C++11 scoped enumeration syntax in unit tests.,0
+bdbc825,2017-03-14 08:42:29,Update citations.,0
+1f18edc,2017-03-14 08:58:31,Merge pull request #1278 from jwpeterson/partitioning,0
+6913ec4,2017-03-14 08:58:55,Merge pull request #1282 from jwpeterson/fix_vectormap,0
+8d77a19,2017-03-14 09:43:35,Update citations.,0
+8506d21,2017-03-14 12:19:10,Merge pull request #1279 from roystgnr/assert_one_system,0
+481334a,2017-03-14 12:19:28,Merge pull request #1280 from roystgnr/extra_ghost_children,0
+06319fe,2017-03-15 08:26:18,Fix 64-bit indices regression.,0
+95e714f,2017-03-15 10:23:51,Merge pull request #1283 from jwpeterson/fix_64_bit,0
+fbe8f63,2017-03-15 12:41:48,Update citations.,0
+30405be,2017-03-15 12:50:34,Regenerate publications webpage.,0
+283fa11,2017-03-15 13:41:27,distcheck fix,0
+662db9e,2017-03-15 14:38:44,Run contrib/bin/reindent.sh in src.,0
+c803980,2017-03-15 15:41:37,Run contrib/bin/reindent.sh in include.,0
+becfd49,2017-03-15 16:14:26,Add missing semi-colons after class definition.,0
+14f3473,2017-03-15 16:19:15,Run contrib/bin/reindent.sh on examples.,0
+d38e313,2017-03-15 16:22:11,Run contrib/bin/reindent.sh on tests.,0
+d7e7942,2017-03-16 08:20:37,Merge pull request #1284 from jwpeterson/reindent,0
+554299d,2017-03-16 11:15:42,Update citations.,0
+c009784,2017-03-16 12:09:48,Bibtex: Fix formatting  use tinyurls.,0
+4bc1418,2017-03-17 09:32:04,Use uniform spacing in if-statements.,0
+d9e0f25,2017-03-17 11:28:14,Use uniform spacing in for-loops.,0
+07d1ee1,2017-03-17 11:37:42,Use uniform spacing in while-loops.,0
+dcffbdb,2017-03-17 12:33:18,contrib/bin/detab.sh can now be run on multiple files.,0
+f5516e5,2017-03-17 12:41:35,Update automake version number to 1.2.0-rc1.,0
+1297351,2017-03-17 12:43:34,Run bootstrap.,0
+8f90490,2017-03-17 12:50:42,Update NEWS file for 1.2.0 release.,0
+548a2ad,2017-03-17 16:55:44,Merge pull request #1285 from jwpeterson/if_for_while,0
+9dd3d3c,2017-03-20 16:53:01,Revert new METIS neighbor code until we can fix it,0
+a5c565b,2017-04-03 15:00:23,Add support for Intel 2017 compilers.,0
+8161753,2017-04-04 10:40:40,Fix ExodusII_IO::write_timestep() in single precision case.,0
+35f1554,2017-04-04 13:12:00,Initial attempt to fix Metis bug introduced in 1f18edc.,0
+b07aa68,2017-04-05 09:32:27,Fix ExodusII_IO::copy_* on distributed meshes,0
+35e31ee,2017-04-06 00:37:29,PetscDiffSolver: fix solution vector locking issue with SNES solve.,0
+16529a7,2017-04-07 12:29:28,update assert to check only active elements,0
+1566d39,2017-04-10 12:10:01,distcheck fix,0
+1b86eed,2017-04-12 10:10:35,Disallow remote element removal during Mesh copy,0
+b43536a,2017-04-18 14:36:27,Fix -Winconsistent-missing-override warning.,0
+82ac9dc,2017-04-18 15:32:42,Avoid deprecated use of public Mesh::boundary_info member.,0
+4ca0bba,2017-04-20 10:37:39,Add incrementing copy constructor to ReferenceCounter class.,0
+fff84c0,2017-04-20 11:28:00,Include CITATION file with distributed tarballs.,0
+a8a3e47,2017-04-20 13:54:07,Update automake version number to 1.2.0-rc2.,0
+e074050,2017-04-20 13:55:31,Run bootstrap.,0
+5a2884d,2017-04-24 09:14:13,Run bootstrap.,0
+8dde50e,2017-04-24 16:22:50,Fix Tri3::contains_point().,0
+77789e7,2017-04-25 10:11:34,fix for --disable-optional && make installcheck,0
+cadf917,2017-04-26 08:53:12,Update automake version number to 1.2.0.,0
+d10f57d,2017-04-26 08:58:24,Run bootstrap.,0
+ccdc1ad,2017-04-28 14:08:27,Update NEWS file to include latest bug fixes.,0

@@ -1,0 +1,26 @@
+hash,time,message,buggy
+1ed63fb,6/9/2017 19:29,Initialize v8.4.3,0
+03d11cf,6/12/2017 9:39,Fix blank,1
+35a82ab,6/14/2017 10:04,Fix text,1
+0f4b61d,6/14/2017 11:49,ubu_intel13.1 has also a problem with Tmpiio#25 . Exclude this host ...,0
+e0f8cef,6/15/2017 21:51,fix broken gwfockmix support,1
+d251264,6/15/2017 23:07,Set default value of rcut for HSE06,0
+9f20ce5,6/16/2017 21:24,Modify tolerance for ubu intel 13.1,0
+d998216,6/26/2017 8:48,Merge branch 'hotfix-8.4' of gitlab:trunk/abinit into hotfix-8.4,0
+5a1368b,7/19/2017 20:34,Extract invariant to avoid internal compiler error with intel2013_sp1.1.106,0
+ec6dca3,8/2/2017 13:49,Make LDA+U+SO and LocalEx+SO calculations compatible with nspden=1,0
+7c77adc,8/2/2017 18:53,Update ref for modified test (NC+SO+LDAU) + adjust some array sizes,0
+218fc96,8/3/2017 10:05,Merge branch 'hotfix-8.4' of abinit-gitlab:trunk/abinit into quickfixes,0
+7cdb759,8/3/2017 14:50,Adjust tolerance for new test,0
+5912a6b,8/7/2017 7:46,Merge gmatteo/hotfix-18 into _gmatteo,0
+53ba7b3,8/8/2017 10:54,Make the reading of density files compatible with nspinor=2/nspden=1,0
+ff76d3f,8/9/2017 15:50,Implement reading of a density file with spin conversion (can convert every nspden case),0
+5ba030e,8/10/2017 14:57,Ref file because now reding of density is correct with PAW+SO,0
+f022776,8/10/2017 16:34,Avoid some numerical instabilities for non-collinear magnetism wit hzero magnetization,0
+dad6fc9,8/10/2017 18:16,Add a new test suite (for future use  not now): HPC,0
+182ad5a,8/11/2017 10:55,Shorten too long lines,0
+b17549e,8/11/2017 11:13,Deactivate change in initrhoij because it produces some test instabilities (and because it seems not mandatory),0
+6378cb8,8/11/2017 13:34,Merge torrent/quickfixes into _torrent-8.4,0
+f74dba1,8/11/2017 15:53,First steps of the finalization of v8.4.3.,0
+98eb699,8/12/2017 5:38,Minor update obtained by applying abi_yml2html.py,0
+db1dfc7,8/12/2017 5:41,Apply abilint,0

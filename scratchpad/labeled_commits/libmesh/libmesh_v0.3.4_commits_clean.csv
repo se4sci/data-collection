@@ -1,0 +1,59 @@
+hash,time,message,buggy
+14dc6e9,2003-03-24 18:16:12,changed int to unsigned int for srand,0
+1c7e1ae,2003-03-25 04:26:55,Added some documentation.,0
+0a7b376,2003-03-25 15:19:02,fixed shared library linking on the IBM,0
+89243ad,2003-03-25 21:06:59,fix for xlC,0
+e5e6193,2003-03-26 01:08:15,added virtual bool Elem::infinite().  Will add inf_elem_iterators soon.,0
+868c69a,2003-03-26 05:07:31,linker fix for cxx,0
+6ff9291,2003-03-26 13:55:24,replaced unnecessary }  with } in examples,0
+b3cb54f,2003-03-26 14:18:35,fixed (hacked?) configure for the IBM Power4,0
+02bc647,2003-03-26 14:26:35,fixed (hacked?) configure for the IBM Power4,0
+6a19c7a,2003-03-26 14:27:36,fixed (hacked?) configure for the IBM Power4,0
+98abf6a,2003-03-26 14:29:35,OK  fixed for the last time?,0
+c259398,2003-03-26 14:41:42,sorry to keep doing this... there is no autoconf on the IBM.,0
+859b965,2003-03-26 14:47:48,sorry to keep doing this... there is no autoconf on the IBM.,0
+e6401ee,2003-03-26 14:51:38,sorry to keep doing this... there is no autoconf on the IBM.,0
+ddf972b,2003-03-26 17:09:56,final tweak for IBM xlC,0
+fb850fc,2003-03-27 01:24:32,sorry to keep doing this... there is no autoconf on the IBM.,0
+b56812f,2003-03-27 18:30:05,Added prism6 to unv_support. I also added it to write_gmv  where it is treated as a phex8.,0
+6c99922,2003-03-28 20:38:07,minor optimizations in iinline point methods. print more useful information when a call to inverse_map fails,0
+5c09610,2003-03-29 12:45:33,- moved the FEInterface::is_inf_elem to private.  There is no public need   anymore since bool Elem::infinite(). This clears up  the use of InfFE. - thought about the worth of inf_elem_iterator  and really do not need   them.  Would be straightforward to implement  so if anybody needs   them  tell me.,0
+639bd2c,2003-04-01 14:19:49,various changes to InfFE: - fixed bug that occured only with higher-order base approximation - changed internal dof & node numbering scheme completely - added inverse_map() - split implementation files for better overview,0
+b24115f,2003-04-02 14:55:13,moved the hanging node condtraint computation out of dof_map into the individual FE types.  This allows each FE type to implement its own constraint calculation  and the DofMap does not need to know anything about it.,0
+816881f,2003-04-02 15:18:05,added #include<map>,0
+ca7104e,2003-04-02 21:58:46,Added configure tests for hash_map and others.  Will start using these when available for performance-critical applications (like the find_neighbors() and point location methods,0
+7e69b1f,2003-04-02 22:34:37,compiler optimizations,0
+6f8c950,2003-04-02 22:37:17,fixes for SGI,0
+522b968,2003-04-03 00:52:58,optimization options for xlC,0
+8eab73b,2003-04-03 14:17:25,- added _build_ support for 2D infinite elements - fixed nodal_soln for infinite elements - added static member libMesh::zero.  May not be really necessary    but want to be on the safe side: who knows what the default   constructor of std::complex does with only one double passed in. - added container class FEComputeData.  Serves as a hide for   I/O to customized FE classes.  E.g. for the notorious infinite   elements  the compute_data()  using FEComputeData  is the physically   correct counterpart to shape(),0
+599016d,2003-04-05 02:25:42,- cleaned up the EquationSystems::read() and write() to   (a) handle multiple vectors  if desired    (b) delegated tasks to SystemBase that SystemBase can do   (c) added get_info() for SystemBase  two more inline methods in EqnSysBase    (d) fixed a silly bug in FrequencySystem that did allocate additional       vectors  but omitted to assign values,0
+23fa027,2003-04-05 02:27:35,forgot to add this one...,0
+7b9185f,2003-04-05 12:16:35,"fixes for HP.  Ben  was it IBM or SGI that did not like this ""FE<Dim-1 ...>""?  I fixed that for HP  perhaps the other compilers are now happy  too.",0
+52913e7,2003-04-06 16:59:00,technically  an iterator and a const_iterator are different types of objects  and comparisons between the two are not allowed.  fixed two instances of this,0
+2938e02,2003-04-06 17:01:27,oops...  did not mean to check these in!  undid the change,0
+6ff230f,2003-04-07 18:34:49,added libMesh::msg() and libMesh::err() as parallel-aware replacements for std::cout and std::cerr  respectively.  This is much like the message and error_message functionality in s3  but without the macros,0
+eb2d1f7,2003-04-08 03:21:35,Added command-line parsing for true/false flags via the libMesh::on_command_line() method.  This is used to enable run-time switching between solver packages.  For example  if you have PETSc and LASPACK installed you can switch between them like this:,0
+5c89ad5,2003-04-08 03:33:21,updated the dependencies for command-line parsing,0
+0ca79ec,2003-04-08 12:46:07,fixed doc bug,0
+fab0cad,2003-04-08 22:54:10,forget libMesh::msg() et. al  found a way to reroute std::cout so that messages do not appear from non-processor 0 processors.,0
+b489176,2003-04-09 01:20:25,forget libMesh::msg() et. al  found a way to reroute std::cout so that messages do not appear from non-processor 0 processors.,0
+56b7f91,2003-04-09 02:30:28,Added a build_solution_vector overload in equation_systems which can be used to build (locally) the global solution for a single variable in a single system.  I cant remember why I wanted to do that  the code is untested and has error() in the beginning.  Testing to come.,0
+d36d854,2003-04-09 03:25:00,fixed a missing std:: in getpot.h,0
+0187a7e,2003-04-09 14:08:39,added NewmarkSystem derived from SystemBase and an example 8 to show how NewmarkSystem can be used,0
+6c057b0,2003-04-09 15:27:40,uhps  forgot to check in header file,0
+68a9091,2003-04-09 16:22:00,forgot the .C-file too,0
+f6597a2,2003-04-09 19:27:00,* Ben once said  EquationSystems should take care of time stepping.   so i changed ex8 to make use of the EquationSystems features (flag    param) * added two macros that keep instantiation data in (almost) one place    for the two templated classes EquationSystems<> and FE<>.  This   was already done with InfFE<>. * cleaned NewmarkSystem of some unnecessary member data,0
+2faea96,2003-04-09 19:29:24,forgot to add .depend and fix .cvsignore... here it is.  -),0
+670efee,2003-04-11 10:46:18,improved compatibility with infinite elements.  Sorry John  when i added the if-test  i did not think that conventional FE may still need it. Right now  i think this is something we both can live with  -),0
+3fed62c,2003-04-11 19:09:32,just moved a few lines,0
+538e613,2003-04-11 23:57:05,small compatibility enhancements: - explicitly assigning values to the FEFamily entries helps in   identifying the family  whether a .dat file was produced with or   without enabled ifem - for the EquationSystems<T> I/O it actually does not matter   what System type it handles  and what system type it loads.   So  changed the error (in case of system type mismatch) to a simple std::out - added in FrequencySystem the EquationSystems::parameter n_frequencies,0
+f7b6610,2003-04-18 13:16:41,Changed targets in the example programs from ex1 to ./ex1  for example.  This fixes the problem of not having . in your path  which was pointed out by Denis.  Thanks.,0
+a257c77,2003-04-18 13:25:17,updated config.guess and config.sub from ftp.gnu.org/pub/gnu/config,0
+fa1c98d,2003-04-18 14:03:05,check for strstream if sstream is not found,0
+63f1e9b,2003-04-18 14:11:29,fixed aclocal  was printing incorrect comments for locale and sstream #defines,0
+3e564af,2003-04-18 15:46:32,Added a bool argument secure to FEInterface::inverse_map and respective methods in FE and InfFE. If secure is false we do not bother about convergence of the newton algorithm in inverse_map (e.g. when checking if an element contains a certain point).,0
+d403113,2003-04-18 17:10:38,added a missing #ifdef ENABLE_INFINITE_ELEMENTS,0
+7245f1c,2003-04-18 19:02:23,removed const problem from getpot,0
+eec0334,2003-04-19 01:58:32,Added an additional acronym.,0
+035b6c5,2003-04-21 15:22:20,implemented matrix/vector product in LaspackVector  now successfully runs ex8,0
+5c8eeb3,2003-04-21 15:22:21,This commit was manufactured by cvs2svn to create tag 'libmesh-0_3_4'.,0

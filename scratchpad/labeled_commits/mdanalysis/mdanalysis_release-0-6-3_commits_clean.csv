@@ -1,0 +1,51 @@
+hash,time,message,buggy
+1fc9243,2010-05-25 23:12:49,principleAxes fix and additional nucleic acid selections,0
+9b802c7,2010-05-27 00:36:27,minor doc fixes,0
+6756523,2010-05-27 00:36:38,provide assert_() in case numpy is <1.3 so that some of the tests pass,0
+7480855,2010-05-27 00:36:49,Merge branch 'topic/examples',0
+e7e20e4,2010-05-27 00:37:07,selection writer for VMD  PyMol  CHARMM  Gromacs working - use get_writer() to encapsulate the choosing of an appropriate writer   based on filename or default format (should be implemented similarly for   the single frame writers) and corresponding changes in AtomGroup class - write comments (or not  if commentfmt is None) - can write a preamble comment - use the selection writer for LeafletFinder instead of the simple   VMD writer,0
+32679ee,2010-05-27 12:02:16,analysis: added native contacts analysis (from AdK/lib/python/AdK/contacts.py),0
+787a5a7,2010-05-27 12:02:32,additional requirements (I thought this was added already but must have lost it),0
+c2ef173,2010-05-27 12:02:57,asUniverse() convenience method added to unify input - useful for analysis input: either take a universe  a single   filename (PDB)  or a tuple (topology trajectory) and return   a universe - imported at top level (SUBJECT TO CHANGE!) - also more reST doc for AtomGroup,0
+ceca351,2010-05-27 12:03:11,contacts analysis: working and added reST docs,0
+ff38143,2010-05-27 12:03:24,reST docs for top __init__ & canonical licence blurb header,0
+521e328,2010-05-27 15:18:50,changed minimum requirement to python 2.4 (Most of MDAnalysis probably still works on 2.3 but we have not tested it and there is also new code that uses with_statement  set  etc.),0
+652fec1,2010-05-27 15:19:01,reST docs for top __init__ & canonical licence blurb header,0
+8fa51e0,2010-06-16 14:56:46,GROParser added. GROReader to follow.,0
+e24330f,2010-06-17 00:19:18,Issue #32: sort of fixed (check if a DCD has size 0 and raise IOError  instead of segfaulting,0
+59e188c,2010-06-17 00:35:03,added testcase for Issue 32 (empty dcd segfault Universe),0
+3f067a6,2010-06-17 17:30:41,moved SelectionError into top level,0
+4aaeaae,2010-06-17 17:30:48,example scripts improvements and additions - added examples for simple and fancy rms fitting - added graph for the simple fitting - fixed: filename for g(r) example,0
+d78b52d,2010-06-18 00:37:33,analysis module: added rms fitting (with optionally selection derived from a sequence alignment),0
+aae6305,2010-06-18 00:37:39,Universe init -  commented out debugging messages when building topology - changed vanilla exceptions to either NotImplementedError or ValueError (until   we define better custom exceptions),0
+fc2a737,2010-06-23 14:58:19,PSFParser to allow for EXT formatted PSF and selection updates to allow for nucleic acid xstal structure resname codes,0
+22959c7,2010-06-23 20:26:24,fixed rms_fitting bug,0
+a111720,2010-06-25 01:52:00,analysis contacts: dcd --> trajectory (although will break for XTC at the moment if no reference structures supplied),0
+c3822a2,2010-06-25 01:52:07,trajectory reader improvements: slices - XTC/TRR reader can do simple slices by sequential iteration - moved some functionality from DCDReader into the base class TrjReader - added explicitly required methods to TrjReader (cf Trajectory API)   mostly with NotImplementedError - enabled reverse iteration for the DCDReader (but disabled for XTC/TRR   because it would require re-seeking every single frame from the beginning) - UnitTests for slices,0
+3683440,2010-06-25 14:29:16,FIXED: trajectory IObase.convert_time_from_native() did the opposite,0
+71c4b8c,2010-06-28 19:54:43,"unified parser/coordinate reader entry points - use a two-stage process to clean up the messy loading in Universe   1. determine file type with a ""guess_format()"" function (currently will      simply look at the file extension)   2. look up known file formats (in the sub-modules' top level there are      approriate dictionaries that connect format to the appropriate reader)   3. return the appropriate parser (get_parser_for()) or reader (get_reader_for())   4. load - add new formats to      topology._topology_parsers      coordinates._trajectory_reader - PDBParser: made the first failure for wrong extension more general  but we should not   really get there anymore because we use guess_format/get_parser_for - updated CHANGELOG",0
+daa6a4e,2010-06-28 20:13:00,parser/coordinate entry points: FIXED: would not allow building of psf-only universe (but now issue a warning),0
+87cd8dd,2010-06-29 10:18:40,FIXED Issue 33: principleAxes() return values are confusing - new principalAxes() method (correct name  too  as a bonus) that returns   the three eigenvectors directly and does not require unpacking - kept old method bu deprecated it,0
+bb29716,2010-06-29 11:08:01,Added working GROReader and TestGROReader  and fixed Timestep.numatoms issue,0
+30997e1,2010-06-29 19:12:10,additional tests for coordinate readers - more GRO tests  coordinates and distances fail at the moment because the GRO reader   does not convert units (TO BE FIXED) - more tests for PDB files - use GRO parser for the XTC and TRR tests instead of PDB (a bit faster and more native),0
+1ea6c00,2010-06-30 01:31:02,FIXED Issue 34: fixed unitcell for XTC/TRR - box vectors were extracted wrongly - moved rad2deg  _angle  _veclength into coordinates.core (for further use) - added test case,0
+71ab28d,2010-06-30 01:31:10,"use attribute ""issue"" to mark tests relating to recorded problems so that we can run them separately",0
+3b2d102,2010-06-30 01:31:16,GRO reader: unitcell and unit conversion - added unit conversion so that the GROReader behaves like all the other readers: it   automatically converts the distances to Angstroem - read unitcell (according to the file format specs)  requires special Timestep   class with the appropriate dimensions property to do the conversion - added some docs to the trajectory API to better explain what is expected of   Timesteps (this was not properly documented) - added more test cases for GRO (note that the precision for comparisons goes down   to a single decimal in some cases  eg when subtracting positions!) - minor clean up in various readers: removed explicit setting of the units attribute: this   is a class attribute and set in the class declaration  no need to set it again in __init__.,0
+7377130,2010-06-30 01:57:19,GRO reader: fixed case with only 3 entries for the unitcell,0
+7d963e3,2010-06-30 02:19:11,added dt managed attribute to all Readers - computes time between frames in ps - round to 4 decimals to get nice and tidy numbers (the unit conversion   can introduce some small and spurious numerical contamination),0
+6f0c4db,2010-06-30 02:19:18,GRO reader: fix of fix .. should have run the tests after r341,0
+ad58ced,2010-06-30 14:02:46,added AUTHORS file,0
+dddc184,2010-06-30 14:07:53,Create branch release-0-6-3,0
+8bc82f7,2010-06-30 14:29:52,release 0.6.3 docs  version set to 0.6.3-rc1,0
+86b01a6,2010-06-30 14:57:44,FIXED: adk_oplsaa.gro test file was not included and some tests failed if done from a non-developer install,0
+6d88101,2010-06-30 16:46:55,reduced precision for distance tests from default to 5 decimals so that they also pass on 32 bit,0
+0779e45,2010-07-01 16:34:19,minor doc improvements,0
+c5d4f27,2010-07-08 09:52:57,mass-guessing for the PDBParser (unknown are set to 0!) and fixed backbone_dihedral in examples,0
+301f0f2,2010-07-08 09:53:04,updated scripts in examples,0
+dde8566,2010-07-08 09:53:10,added basic XYZ trajectory reader with compression support. See coordinates/XYZ.py for more details,0
+0e88bd6,2010-07-08 09:53:17,standard documentation update - added Phil Fowler as author - reformatting and update of the README  with links to the wiki - minor doc fixes - schedule release for 07/08/2010 - AUTHORS file included in distribution,0
+728b674,2010-07-08 09:53:24,Trajectory API: optional attribute 'compressed' defined and streamlined guess_format() by introducing get_ext(),0
+1125174,2010-07-08 09:53:31,altered XYZReader class to not use format  also added unit tests for simple and compressed XYZ files (files in tests/data and comments),0
+ffc7753,2010-07-08 09:53:41,release 0.6.3 (updated/reformatted CHANGELOG and bumped version) - included all changes since branching (XYZ reader  fixes) - all unit tests pass (Mac OS X 10.6.4 + MacPorts) for this revision,0
+b4d998b,2010-07-08 10:56:57,Universe and load_new: cleanly load universe from a sole pdb or gro but nothing else - load_new: returns file format and filename or None if no input file (for building   psf-only universes) - load_new: raises TypeError if no reader for the format can be found,0
+f6b38a4,2010-07-08 11:04:52,Create tag release-0-6-3,0

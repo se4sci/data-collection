@@ -1,0 +1,38 @@
+hash,time,message,buggy
+96d649c,2010-06-30 15:01:04,FIXED: adk_oplsaa.gro test file was not included and some tests failed if done from a non-developer install,0
+147b521,2010-06-30 16:45:47,reduced precision for distance tests from default to 5 decimals so that they also pass on 32 bit,0
+4e5b303,2010-07-05 18:15:05,fixed backbone_dihedral in examples,0
+6f0c871,2010-07-05 18:19:26,updated scripts in examples,0
+a439462,2010-07-06 12:50:07,added basic XYZ trajectory reader with compression support. See coordinates/XYZ.py for more details,0
+b577010,2010-07-06 22:36:09,minor doc improvements,0
+2730208,2010-07-06 22:36:14,standard documentation update - added Phil Fowler as author - reformatting and update of the README  with links to the wiki,0
+cbe5042,2010-07-06 22:36:20,Trajectory API: optional attribute 'compressed' defined and streamlined guess_format() by introducing get_ext(),0
+7e5d433,2010-07-08 07:47:47,altered XYZReader class to not use format  also added unit tests for simple and compressed XYZ files,0
+5deb87c,2010-07-08 08:02:10,forgot to svn add testfiles and added comments to tests/__init__.py,0
+fbc7f24,2010-07-08 09:17:42,fixed: AUTHORS file was not included in distribution,0
+3ee5997,2010-07-08 11:45:21,bumped version to 0.6.4-devel and updated CHANGELOG from the release,0
+dccf3cb,2010-07-08 11:52:40,Universe and load_new: cleanly load universe from a sole pdb or gro but nothing else - load_new: returns file format and filename or None if no input file (for building   psf-only universes) - load_new: raises TypeError if no reader for the format can be found,0
+1939985,2010-07-22 13:09:38,Added GROWriter - writes from either a Universe or AtomGroup,0
+91ac199,2010-08-03 18:13:03,FIXED Issue 38: XTC writer broken -  fix provided by Danny Parton - added unit test (passes),0
+2fe94c3,2010-08-03 18:22:21,added Danny's GRO writer to CHANGELOG before this is forgotten,0
+2727bf7,2010-08-22 05:31:06,created MDAnalysis.analysis.distances which simply imports from core.distances - distances are useful analysis functions so most people would expect them under analysis - distances are also used for selections so that is why we keep them in core,0
+12d816e,2010-08-22 05:31:17,Trajectory API: format is now UPPERCASE - the format specifier has been changed to the upper case extension (to be   consistent in naming) - added single frame writers to API definition - new get_writer_for() convenience function - refactored check for compressed file formats into check_compressed_format(),0
+d014d41,2010-08-22 05:31:25,FIXED Issue 37: simulation box were not converted - added coordinates.core.triclinic_box() and triclinic_vectors() to handle conversion - added function convert_dimensions_to_unitcell() to Writers   and added to the requirements of the Trajectory API - GROWriter: introduced a temporary GROWriterStandard class which will replace the current   GROWriter (which got a DeprecationWarning),0
+2c5c85f,2010-08-22 06:36:38,dcd-to-xtc conversion working - added example script dcd2xtc.py - hacked a few fixes into the xdr writer to substitute missing parameters   (maybe need to do something similar of dcd writer...) - not well tested,0
+cf5b272,2010-08-25 01:56:34,Primitive PDB parser that reads simple PDB without a fuzz - added PrimitivePDBReader and parser which just stupidly   read a well-formatted pdb file without raising a stink if the resids   are oddly numbered or multiple atom names occur in the same residue - added permissive=False (default) flag to Universe  True switches on   the primitive readers (right now  only PDB has this distinction) - moved the guess_atom_type/mass/charge functions from PDB into topology.core - added permissive keyword arg to the get_parser_for() and get_reader_for()   functions - added a second dictionary each for the permissive parsers and readers (a bit   of an ugly hack...) - added unit tests for the primitive PDBReader/parser (and all pass),0
+3f7c650,2010-08-25 03:53:38,topology parsing: file format identifier is now UPPER case,0
+13e7f7d,2010-08-30 08:41:11,chain reader added (Issue 39) - universe can read a list of files and concatenate them transparently   on the fly: u = Universe(PSF  [DCD_1  DCD_2  ...]) - only basic Trajectory API implemented (no indexing/slicing!) - can mix any formats (!) - added simple test case,0
+b57f768,2010-09-04 01:16:42,FIXED: AtomGroup.write() failed because it was using lower case file format strings (which were changed in r409),0
+738b306,2010-09-04 01:16:49,GRO writer: cleaned up and write output within try/finally - put all output formatting strings into class-level dict to make things easier   to change - write file in a safe manner  i.e. always close it via finally clause,0
+b8dc525,2010-09-04 16:41:56,selection writing improved - cleaned up AtomGroup.write() by using the coordinates.get_writer_for()   function (the standard way to do this nowadays) - added test case - note that get_writer_for() and get_reader_for() are now imported into   MDAnalysis.coordinates,0
+21e43b3,2010-09-10 13:17:34,Merge branch 'printres',0
+cddddc7,2010-09-10 13:17:48,Merge branch 'printres',0
+52728c8,2010-09-10 14:24:17,make AtomGroup.coordinates() return an array of type numpy.float32 by default - distance array needs float32 and when interfacing with I/O this is also   how coordinates are stored so it makes sense to enforce it at this   crucial entry point - LeafletFinder would raise an error when building the adjacency matrix   because the array returned by coordinates() was float64,0
+5afb44a,2010-09-10 14:24:23,new LeafletFinder example: membrane composition - added memanal-composition.py - cleaned up leaflet.py example (use class from module),0
+7510d9a,2010-09-10 14:28:24,renamed bilayer analysis script to adhere to common scheme membrane-XXX.py,0
+88fe427,2010-09-10 16:04:29,Create branch release-0-6-4,0
+1f627c4,2010-09-10 16:13:26,0.6.4-rc1 release candidate (updated CHANGELOG  too),0
+0100ac6,2010-09-11 14:16:04,0.6.4 release --- final adjustments (including using canonical GROWriter) - release set to 0.6.4 - removed original GROWriter and replaced with GROWriterStandard (should be invisible to most   users because GROWriter could only be used explicitly anyway).   The olf GROWriter functionality of writing the whole universe can be simply obtained by passing   the universe's universe.atoms AtomGroup to the write() method,0
+a4ac796,2010-09-16 10:19:19,fixed 0.6.4 release date,0
+b0ba3be,2010-09-16 10:19:23,release 0.6.4 (no code changes relative to 0.6.4-rc1  only docs),0
+2329ec6,2010-09-16 10:20:42,Create tag release-0-6-4,0

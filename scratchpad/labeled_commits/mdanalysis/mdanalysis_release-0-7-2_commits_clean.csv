@@ -1,0 +1,55 @@
+hash,time,message,buggy
+8f2c67b,2011-02-08 12:13:55,bumped version to 0.7.2-devel for developing,0
+f150c00,2011-02-09 22:44:18,PDB topology parser: use chain as segment id if no other segid defined in the file,0
+4a73b46,2011-02-09 22:44:28,Segment.id is an alias for Segment.name (to make the interface more consistent),0
+1764edd,2011-02-12 20:54:39,copied QCP rotation example to examples directory,0
+db3bd0b,2011-02-12 20:54:52,added accepted MDAnalysis paper as citation - in README  online docs and init - also updated the examples section in the overview - also ask users to cite the Theobald articles for the QCP rotation code,0
+08610ac,2011-02-12 20:55:16,regenerated online docs (0.7.2 with MDAnalysis citation),0
+36e42bc,2011-02-12 21:09:58,updated deprecated usage in potential profile example (and added note that the example requires user editing),0
+014e7ef,2011-02-14 12:06:52,fixed problems with reading an processing triclinic unitcells - Issue 60: fixed reading of CRYST1 (was completely messed up) - Issue 61: order of angles was wrong when converting from a box vectors representation to   box lengths  angles  see e.g. http://en.wikipedia.org/wiki/Lattice_constant   for definitions - Issue 34: revisited old bug and changed test case so that it would catch angle mix up that was   overlooked in the previous fix,0
+e3c5763,2011-02-14 13:53:20,PrimitivePDBWriter writes chainID (from 1st letter of segid),0
+a7fbe07,2011-02-14 19:30:52,new method bbox() for AtomGroup: calculates the orthorhombic bounding box,0
+61bfdfe,2011-02-14 19:31:00,density: use PrimitivePDBReader to get PDB (can do B-factors and does not break as easily),0
+88356e8,2011-02-14 19:31:17,density: corrected docs for density units (and added better error message),0
+cfd2e95,2011-02-15 14:56:56,fixed Online Doc for point selection (reported by Joe),0
+f74ffcb,2011-02-15 14:57:09,rebuilt online docs (0.7.2 with fix for point selection),0
+b946c38,2011-03-09 20:06:32,Issue 64 fixed: universe.trajectory.delta values are rounded when read from the dcd header file (This used to be rounded to 4 decimals but people suggested that the full precision would be better.),0
+23a1bb7,2011-03-11 01:52:59,Support for PDBs with 4 character resnames and segID output when writing (PrimitivePDBWriter) (Issue 63  patch by dcaplan) - When I try to read and write PDBs with 4 character resnames used in NAMD/VMD I end up with an improperly formatted PDB file. This is also an issue with segIDs not being written. - I've made a quick patch where I add support for 4 character resnames and change the format string for the output to write the segID. I also added very simple support for better guessing of atom types since the function guess_atom_type was just returning 0. - I'm still not sure about how to deal with the 2 types of format strings for writing PDBs.,0
+ca81a4d,2011-03-11 03:24:13,synced CHANGELOG with http://code.google.com/p/mdanalysis/w/edit/ReleaseNotes072,0
+154f362,2011-03-16 23:02:29,fixed: Python >=2.5 required (with statement is used),0
+3ac43e7,2011-03-16 23:33:42,fixed: minimum requirment is Python 2.5 - check in setup.py - explicitly say in CHANGELOG that we need Python 2.5,0
+86cf7d9,2011-03-17 00:15:21,fixed Issue 66: supply generated C files so that only developers need Cython - provide generated C files - provide simple setup.py (for users) and setup_developers.py,0
+fa564fe,2011-03-17 12:44:57,MANIFEST fixes: add *.c files to distribution  also make sure that the html docs are included  + some cleanup,0
+1afa771,2011-03-17 12:54:07,fixed AdK testcase: dt and totaltime was broken by fix for Issue 64 - dt is not rounded anymore  hence dt is reported as 0.99999 and not 1.0 - use assert_almost_equal() in test case,0
+71a286b,2011-03-17 13:42:17,fixed XTC/TRR testcase: fix for Issue 64 broke dt and totaltime,0
+44eb889,2011-03-19 05:00:19,fixed: PDB writer would fail if atom type was an integer - use new guess_atom_element() which right now just does the same as guess_atom_type()   to always guess the element from the atomname - improved guess_atom_type() by also checking for names that start with numbers   such as some hydrogen atoms,0
+58644cc,2011-03-19 05:00:34,guess_atom_types(): added more ions (mostly GROMOS) and unit test,0
+61add54,2011-03-19 05:00:51,topology: moved atom types and masses into separate tables - new topology.tables module (can be later expanded to read tables from files) - added more masses and atom types (using CHARMM top_all27 and Gromacs atommass.dat) - added unit tests for masses (note: atomtype/masses test cases are incomplete... TODO)- new functions: get_atom_mass() and guess_atom_element() that do not do much yet  but will allow finer grained control later,0
+3f58920,2011-03-21 00:47:42,added reST docs for topology modules  including the hard-coded tables,0
+a6487d9,2011-03-21 00:48:08,regenerated online docs with new topology reader docs,0
+9ecb534,2011-03-21 18:12:57,new attributes for Atom: radius and bfactor - enhanced Atom object with the radius value (read by the PQR reader) and   added radii() to AtomGroup  this should make it easier to handle PQR files - changed the way that B-factors were stored: they are now also store with   each individual Atom. For compatibility with the old behaviour  AtomGroup.bfactors   is still a (managed) attribute but this will likely be changed to a method in   the 0.8 release to have a more uniform interface - Fixed a bug with the Bio.PDB reader: in the absence of a segid in the file it   would throw an error,0
+1a318b5,2011-03-21 18:13:26,minor reST fixes in doc (more to do... volunteers  anyone?),0
+8ac5acd,2011-03-21 18:13:38,regenerated online docs,0
+1d18048,2011-03-23 02:55:55,added many more residue names from Amber and OPLS/AA to be recognised as protein,0
+818a060,2011-03-23 02:56:03,_angle(v1 v2) should not return nan,0
+319ca59,2011-03-23 02:56:11,"spatial alignment convenience functions added to analysis.align: - rotation_matrix(a b  weights=None) to get the matrix for b = R.a - alignto(mobile  ref  select=""backbone""  mass_weighted=False) to align the Universe of the mobile   AtomGroup - rmsd() is now using qcprot - rms_fit_trj() minor optimizations (preallocate R)",0
+59aa167,2011-03-23 02:56:24,regenerated online docs http://mdanalysis.googlecode.com/svn/trunk/doc/html/index.html,0
+dba1134,2011-03-23 03:03:50,alignto(): doc update,0
+9a368a6,2011-03-23 03:04:00,regenerated online docs http://mdanalysis.googlecode.com/svn/trunk/doc/html/index.html again,0
+c919b8d,2011-03-23 03:38:44,minor doc improvements,0
+3b16db1,2011-03-23 03:38:52,fixed Issue 59 (naveen.michaudagrawal) -- DCDWriter now checks input coordinate array for continguousness - Because DCD's store the data in fortran format  ie a single timestep is (x x x ...  y y y...  z z z...) and through the magic of numpy arrays that's usually transparently handled.,0
+596b8ef,2011-03-23 14:09:56,align module improvements - alignto(): added subselection to transform arbitrary AtomGroups - much more exhaustive documentation (including step-by-step tutorial),0
+d71a514,2011-03-23 14:11:29,regenerated online docs (new analysis.align docs),0
+acdb227,2011-03-24 00:34:45,improved docs for align,0
+12f3fec,2011-03-24 00:34:57,regenerated online docs,0
+bf53397,2011-03-30 18:12:27,minor align docs (rms_fit_trj() is now pretty fast),0
+20253fa,2011-03-30 18:12:33,TrajectoryReader gained new Writer() method that returns an appropriate TrajectoryWriter for the read trajectory,0
+db97ed4,2011-03-30 18:12:41,analysis.align: streamlined rms_fit_trj() and alignto()  use common 'select' interface - consistent usage of 'mobile' and 'reference' set - fasta2select() returns dict with 'mobile' and 'reference' keys (MIGHT BREAK OLD   CODE ... but I don't think anyone used this) - the common select code _process_selection() has a hack to accept the old   'target' key instead of 'mobile' until 0.8 - test cases: added unit test for rmsd() and had to adjust the value for   the rms_fit_trj() test case (not really sure why but at least it's consistent   with what VMD shows),0
+4d43e92,2011-03-30 18:13:44,regenerate online docs (updated Trajectory API and align),0
+e95a78f,2011-03-31 00:25:02,added improved masses and atomtypes detection and white space fixes throughout,0
+e3db494,2011-03-31 00:39:10,CHANGELOG: white space fixes (note: do not edit CHANGELOG through the gcode web interface because whitespace is messed up),0
+ad586dc,2011-03-31 10:46:40,fixed: CRDWriter tests failed because of a bug in the use of the with statement,0
+7fc2d6f,2011-03-31 10:46:47,internally rewired guess_atom_type() to use guess_atom_element() and changed docs accordingly,0
+f089d8f,2011-03-31 12:06:52,release 0.7.2 - bumped release - fixed documentation (made all headings start with text  not a module name) - added documentation to the topology module - bumped developer release to 0.7.3-devel,0
+bd402ab,2011-03-31 12:07:09,online documentation for Release 0.7.2,0
+727c469,2011-03-31 12:08:29,Create tag release-0-7-2,0

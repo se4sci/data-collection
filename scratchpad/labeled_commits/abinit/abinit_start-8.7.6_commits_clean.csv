@@ -1,0 +1,125 @@
+hash,time,message,buggy
+6fd1e8b,2017-10-09 11:26:48,Reset the update that does not work for mpiio t99,0
+3f15c97,2017-10-18 14:49:29,Start support for elpa,0
+f29cd08,2017-10-19 07:56:37,Merge remote-tracking branch 'trunk/develop' into develop,0
+045ac61,2017-10-19 07:57:55,Merge remote-tracking branch 'trunk/develop' into elpa,0
+2eddae4,2017-11-20 10:54:25,Merge remote-tracking branch 'trunk/develop' into develop,0
+05f0c8f,2017-12-01 13:45:15,Debug prtnabla,0
+474dd63,2017-12-06 08:33:14,Bug with large number of atoms ...,0
+efd2ebe,2017-12-29 23:10:28,ajust dist-lite rule to keep hpc psps,0
+0bfba75,2017-12-30 00:05:44,forgot to escape $ with command substitution,0
+507de81,2017-12-30 00:16:45,there is a folder on Psps* dir,0
+7932ddd,2017-12-30 00:32:24,fix path problem...,0
+5586395,2018-02-09 13:32:13,Merge with trunk,0
+ac764c7,2018-02-09 13:32:53,Merge branch 'develop' into elpa,0
+da16aa2,2018-02-09 17:01:24,Use scalapack/elpa in lobpcg when needed. Implementation not tested at all. Just compiled with MPI,0
+119392a,2018-02-13 16:05:17,Finish scalapack implementation. Let test everything,0
+034c756,2018-02-13 16:11:52,As I said...,0
+473d4ce,2018-02-14 08:16:25,Protect slk routines,0
+4859916,2018-02-14 09:08:55,Don't try slk if not compiled with,0
+e4bd44c,2018-02-14 12:37:07,Update Ref of this unstable test,0
+54b0c8b,2018-02-24 21:59:47,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0
+a9f3ab2,2018-02-25 11:16:07,Bug fixed,0
+7791fa3,2018-02-25 21:08:53,Convert lessons/theory/userguide into md,0
+da5f7ea,2018-02-25 21:18:40,Import python code + js + css,0
+c2a8c6f,2018-02-25 23:29:53,mkdocs up and running,0
+127d4bf,2018-02-26 09:10:49,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+86f26b7,2018-02-26 10:08:59,Merge remote-tracking branch 'trunk/develop' into elpa,0
+e5dee57,2018-02-26 11:59:16,Begin to polish md lessons,0
+34bae55,2018-02-26 12:30:21,"Fixes for new bots  - add enable_gw_dpc=""yes"" for atlas_gnu_7.2_fb  - rename atlas_intel_18.0_paral to atlas_intel_18.0_openmpi (confusion with cronos)",0
+77e9e87,2018-02-26 13:17:19,Still working on lessons,0
+966df01,2018-02-26 13:40:24,"fix typo : remove all "" in the new bot sections",0
+cf17efc,2018-02-26 15:14:50,Saving work,0
+91d9c74,2018-02-26 17:10:07,Cleanup in welcome.md,0
+d1c2ad5,2018-02-26 17:38:48,Import unit tests + pip requirements,0
+b036c87,2018-02-26 19:35:11,Begin to move images to new (smart) location,0
+ded3efd,2018-02-26 21:31:54,Finalize image migration,0
+5c3f4e5,2018-02-27 08:24:05,Fix abirules and timana,0
+c6406ef,2018-02-27 09:13:48,Remove ABI_UNUSED since not available for structure type and furthermnore it does a copy which is very bad for structure ! So I'll change abirule's ref.,0
+d288ee0,2018-02-27 10:29:54,Fixes,0
+c5b8f78,2018-02-27 10:34:37,update ref,0
+730b722,2018-02-27 11:35:15,theory,0
+7f02e38,2018-02-27 12:27:55,Fix,0
+697852f,2018-02-27 14:33:09,Regenerate abiref database with betterbib  migrate to new version,0
+b7d47d8,2018-02-27 18:50:11,fix typo on builder name,0
+bfd42ed,2018-02-27 20:26:08,add refs and dialogs in 1-4 lessons,0
+cf8eab9,2018-02-27 22:59:42,Save work,0
+a348bf8,2018-02-28 01:27:50,md lessons,0
+a36da84,2018-02-28 09:19:53,Merge remote-tracking branch 'remotes/biederj/elpa' into _biederj,0
+9605864,2018-02-28 09:29:15,For abirules#04  bypass limitation of ABI_UNUSED by calling a fake write.,0
+21f0e70,2018-02-28 09:41:51,Well  ABI_UNUSED can be used ...,0
+652c4b4,2018-02-28 09:56:40,Use a public component instead of a private one.,0
+7028656,2018-02-28 11:17:04,Complete m_xgScalapack.F90 with robodoc end marker,0
+67b061a,2018-02-28 11:18:55,Update ref for abirules#04,0
+0cbca8d,2018-02-28 11:22:20,Correct information about HAVE_GW_DPC,0
+22ec07f,2018-02-28 14:00:32,md lessons,0
+80cf82f,2018-02-28 22:37:51,mathjax,0
+e0a8ae2,2018-02-28 23:55:16,Reactivate unit tests for mkdocs,0
+1fba1f7,2018-03-01 01:36:39,Convert yaml vars into python modules,0
+effaffb,2018-03-01 03:15:59,Save work,0
+8512a3b,2018-03-01 10:51:29,Add jquery-UI,0
+00299b9,2018-03-01 15:11:29,Remove old harcoded links,0
+d98b5eb,2018-03-01 17:09:28,Cleanup in User-guide,0
+3fd2e2c,2018-03-01 19:24:57,Detach Variables from Yaml.Object,0
+dbff68d,2018-03-01 21:03:17,markdown,0
+3a747c1,2018-03-01 22:01:09,user-guide,0
+557d24a,2018-03-01 22:31:39,variables,0
+06e728e,2018-03-01 23:20:54,Remove default values in calls to Variable.__init__,0
+7457520,2018-03-02 11:35:44,Add links to tutorials flowchart,0
+a6a435d,2018-03-02 12:04:30,Remove obsolete mkdocs code,0
+0297800,2018-03-02 16:59:50,Fix problems reported by Michiel,0
+e81307f,2018-03-02 18:17:32,Remove old files in variables,0
+1807975,2018-03-02 18:56:14,merge mkdocs-variables into variables  remove biblio files,0
+555272e,2018-03-02 19:20:47,Remove html topics  keep yml because I still need them,0
+8d004ac,2018-03-02 19:37:44,Remove pymods,0
+716b29c,2018-03-02 19:52:14,Merge mkdocs-tutorials in tutorial and remove old files,0
+ee23017,2018-03-02 20:05:21,Merge mkdocs-theory into theory,0
+0e2fe55,2018-03-02 20:16:25,Merge mkdocs-user-guide into guide and remove old files,0
+94e0c4a,2018-03-02 20:28:07,Remove known_problems dir,0
+73efbc9,2018-03-02 21:00:10,Remove bzr files  move pseudos to developers section,0
+db8c398,2018-03-02 21:40:04,Remove gallery  interface pseudo docs with mkdocs,0
+e0fff6e,2018-03-02 21:50:45,Rationalize ~README files,0
+c2f2e05,2018-03-02 23:12:30,Remove install_notes  replaced by installation.md,0
+7e30e22,2018-03-03 01:03:44,Deprecate wikilings without namespace,0
+ae52cd4,2018-03-03 02:03:38,Fix links,0
+f060c24,2018-03-03 02:27:12,Fix links,0
+fd45e4f,2018-03-03 12:34:43,Use acknowledgments.md instead of yml version,0
+6bd377a,2018-03-03 12:42:24,Add README -> README.md,0
+aed2a89,2018-03-03 13:06:09,Remove ionmov 30 from docs,0
+cd78d68,2018-03-03 13:13:30,Add README,0
+5b21ca6,2018-03-03 13:56:18,Use wikilinks for pdf files,0
+16f15ac,2018-03-03 15:19:09,Fix internal links (generated_files),0
+67e5439,2018-03-03 16:19:41,Remove remaining 'generated_files/' links,0
+31a3a6d,2018-03-03 17:04:37,Fix internal links  remove site_url in mkdocs.yml,0
+2bf6925,2018-03-03 17:05:01,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into mkdocs,0
+f72bc6a,2018-03-03 18:21:27,Convert spacegrouphelpfile.html into md + html table,0
+d15771c,2018-03-03 20:18:12,Minor fixes,0
+fd5896f,2018-03-03 23:54:10,Add test for variables in test,0
+bb35484,2018-03-04 01:02:13,Cleanup + add tests for vars in tests,0
+460f26b,2018-03-04 02:39:34,Integrate README_ files + ac examples,0
+78d126a,2018-03-04 13:10:09,Fix links  add new entries to Variable,0
+e221d89,2018-03-04 14:35:03,Only 3 broken links reported by linkchecker due to old release notes in site,0
+48d9336,2018-03-04 20:22:03,Import code for variables from abipy,0
+6fe610a,2018-03-04 21:59:39,Use internal list of characteristics to validate user input,0
+253cdaf,2018-03-04 23:33:19,Continue to merge abipy code into variables,0
+a9c54bb,2018-03-05 01:18:06,About to finalize API,0
+5ba400c,2018-03-05 11:55:53,Define topics and relevances in py module  FileFormats was missing in old version,0
+b276c26,2018-03-05 13:04:03,Remove yaml files with index and list of topics,0
+af033d6,2018-03-05 15:55:10,Deactivate docchk and check_forbidden_in_doc_yml  replaced by unitests,0
+8a5f53b,2018-03-05 18:28:22,Add PAW equations,0
+4b1949b,2018-03-05 21:29:13,Add workflow diagram for rf2,0
+825532d,2018-03-05 23:36:25,Fix invalid escape seq in py string,0
+e62275a,2018-03-05 23:50:57,Update top.am to accound for changes in doc directory and README files.,0
+c4ad0b2,2018-03-06 01:12:30,Improve docs,0
+7f69e1d,2018-03-06 01:41:34,Conver yaml into python template,0
+e5bc25d,2018-03-06 02:02:21,polish md topics,0
+b37572a,2018-03-06 02:53:23,Update docs,0
+d4b913a,2018-03-06 03:15:32,Add description to topics,0
+f851ccd,2018-03-06 03:33:18,Detach website from Yaml files for topics,0
+4de2afb,2018-03-06 12:49:44,Replace topic.yml files with _topic.md,0
+53f1334,2018-03-06 14:33:45,Final cleanup,0
+b710cbf,2018-03-06 14:59:17,Fix indentation,0
+7d52069,2018-03-06 21:14:14,Update month of delivery and version number.,0
+4102356,2018-03-06 21:15:35,Apply make parents,0
+dee0d2e,2018-03-06 21:19:58,Update the check_list,0
+0fe04e4,2018-03-06 21:26:18,Initialize v8.7.6,0

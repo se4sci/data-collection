@@ -1,0 +1,398 @@
+hash,time,message,buggy
+4f4f861,2017-03-29 15:14:39,Merge remote-tracking branch 'trunk/develop' into develop,0
+85d6271,2017-04-04 15:02:54,Merge remote-tracking branch 'trunk/develop' into develop,0
+485c3cf,2017-05-02 15:20:00,Merge remote-tracking branch 'trunk/develop' into develop,0
+b8521cf,2017-05-15 09:20:29,wfd_mkrho and nspinor==2,0
+a541cb5,2017-05-15 09:20:48,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+e669ac3,2017-05-15 15:11:03,fix of xc magnetic field for non-collinear case,0
+9e68517,2017-05-15 15:41:15,merge confliscts,0
+fbece6b,2017-05-16 09:37:45,Activate nspinor=2 sections,0
+184711b,2017-05-16 09:48:03,Fix wrong index in calc_sigx_me,0
+2b8f674,2017-05-16 15:40:56,to test with phonons,0
+6497f15,2017-05-17 12:09:40,Fixed spelling error in MSRQ output,0
+b49d64a,2017-05-18 10:44:21,Fixed spelling errors in error statement when nddb =1,0
+4a51b2c,2017-05-18 10:45:22,Added error message when nddb > number of ddb files input by user.,0
+66f57ff,2017-05-18 12:00:55,Cleanup,0
+abcacb1,2017-05-20 15:39:35,Working on vc singularity,0
+b42fea1,2017-05-21 11:24:14,Add treatmento of heads and wings if nspino==2,0
+c424ab6,2017-05-21 12:01:32,Remove DEV_USE_OLDRHOTWG blocks from GW routines,0
+cdf85b5,2017-05-21 15:04:28,Test for HF with SOC,0
+00d4329,2017-05-21 15:19:29,Use abiref ref,0
+6f81be2,2017-05-21 15:53:57,gwpara = 2 in sigma with nspinor =2,0
+0e299d1,2017-05-21 17:33:43,This should fix the SIGSEV under ifort,0
+5b45d5b,2017-05-21 18:28:18,Add datasets with/wo SOC,0
+cf4ae74,2017-05-25 13:05:38,Routine to compute SOC perturbatively,0
+cbd4016,2017-05-26 10:05:23,Treat q-->0 limit in chi0 if nspinor==2,0
+c0660f8,2017-05-26 11:07:55,Merge branch 'use_inversion' into gwsoc,0
+6a34b78,2017-05-26 11:22:59,Update GW ref file after use_inversion merge,0
+9be00af,2017-05-26 15:38:53,Code cleanup,0
+41de37b,2017-05-26 16:21:54,Yet another bug in abilint,0
+da90d34,2017-05-27 01:19:18,Add test with CD and nspinor=2,0
+3ef4e72,2017-05-27 01:25:48,Use abiref output,0
+081ff33,2017-05-27 02:17:34,Remove debug code,0
+8d2b588,2017-05-27 11:06:56,Remove obsolete code,0
+f0b65ec,2017-05-27 12:04:36,Add support for nspden = 1 and nspinor = 2 in GW code,0
+b226c0b,2017-05-27 12:50:40,Change v67mbpt[60] to test HF with nspden 1 and nspden 4 with SOC,0
+570fea2,2017-05-27 12:54:36,abiref ref,0
+3eae4f2,2017-05-27 12:56:45,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+7444b8a,2017-05-27 15:48:45,Cohsex with spinors,0
+f8e7fce,2017-05-27 16:04:35,abiref ref,0
+1a051e3,2017-05-27 23:22:50,Add test for SCR,0
+37bd92d,2017-05-27 23:48:46,Code refactoring,0
+04740de,2017-05-28 00:12:50,Refactoring,0
+bcf8795,2017-05-30 12:31:14,adjustments to calcdensph to include the possibility of complex density arrays  corrections for printmagvtk,0
+64bad97,2017-06-01 11:02:14,Debugging,0
+206fe31,2017-06-04 10:21:26,Fix compilation error,0
+b4e1bd5,2017-06-06 10:58:10,Save work,0
+462d520,2017-06-06 22:25:38,symsigma with nspinor == 2,0
+6f92b00,2017-06-06 23:12:52,Use abiref ref,0
+20932bb,2017-06-07 11:38:53,Add support for symchi and nspinor = 2,0
+b6728f9,2017-06-07 11:48:54,Activate symchi in tests,0
+ff5f6dd,2017-06-07 16:26:49,Add test for Hilbert transform,0
+e087ee7,2017-06-07 16:33:10,Use abiref file,0
+0074391,2017-06-07 17:04:54,Add pseudos for other tests,0
+d791d47,2017-06-07 17:05:03,Merge branch 'gwsoc' of gitlab.abinit.org:gmatteo/abinit into gwsoc,0
+803e9a9,2017-06-13 09:53:33,Increase tols,0
+bba58a3,2017-06-17 12:16:58,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+87f7ac7,2017-06-19 16:48:43,Work around gcc bug on tikal_gnu_5.4_mpich,0
+ffe3236,2017-07-12 14:19:45,Increase tols,0
+badedeb,2017-07-12 14:19:55,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+95a061d,2017-08-18 15:45:02,Merge branch 'npike/abinit-develop' Small bugfixs to anaddb and mrgddb,0
+eb90126,2017-08-28 14:09:36,merge with hotfix-8.4,0
+a0eb914,2017-09-01 16:48:45,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+f87e1a7,2017-09-12 14:39:39,add datatype for the fit data,0
+a7facbc,2017-09-13 14:42:06,reoder subroutines in 78_effpot,0
+f72a126,2017-09-19 12:13:20,remove the dimension for the imaginary part for the IFC (reduce the memory usage),0
+0d14638,2017-09-19 12:35:15,fix dimension in atmfrc array,0
+654d5e5,2017-09-19 13:40:08,remove option in fit_polynomial_coeff_fit,0
+4d30730,2017-09-19 16:16:53,abirules,0
+69d88ee,2017-09-20 00:48:22,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+4e1d93b,2017-09-20 09:55:27,robodoc,0
+f128e7d,2017-09-20 12:59:08,add MC option to the fit process,0
+47fa20a,2017-09-20 13:37:40,Update refs,0
+e9c3b24,2017-09-22 10:34:08,Merge branch 'develop' of gitlab.abinit.org:mverstra/abinit into mjv_eph,0
+a257044,2017-09-22 10:37:04,Reduce memory allocated for wfs in m_phgamma,0
+f145e4b,2017-09-23 17:17:10,merged Matteo and updated some stuff,0
+392870b,2017-09-24 20:19:08,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+36f276c,2017-09-25 11:39:39,trial symmetrization for Danila of the atom resolved PDOS in anaddb,0
+71e2dba,2017-09-25 13:21:34,test: partial dos for q along a path in qspace,0
+6913be2,2017-09-25 16:40:18,update ref files for PHDOS with symmetrized atom specific DOS,0
+00dca18,2017-09-25 17:26:35,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+2713b37,2017-09-27 13:29:25,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+64a06c2,2017-10-02 09:24:30,Merge tag 'start-8.7.0' into Multibinit,0
+e24dc2d,2017-10-02 09:28:57,Merge tag 'start-8.7.0' into develop,0
+c92782b,2017-10-03 11:42:00,change zero to 0 for integer values,0
+ce7324a,2017-10-03 13:57:48,add dipdip_prt input and update tests,0
+e657a95,2017-10-04 10:08:09,add libxml flag for the abiref__gnu_5.3_serial config.ac,0
+7de34da,2017-10-04 11:14:45,remove double quote in specs/testfarm.conf for libxml config,0
+65c397b,2017-10-09 16:01:02,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+d021aa7,2017-10-12 11:21:51,Clarified the calls to xchybrid_ncpp_cc.F90. Should still incorporate better handling of fockaux_ixc,0
+c697736,2017-10-12 13:18:21,Merge branch 'develop' into ace_5,0
+d05e4c9,2017-10-12 13:22:39,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+7708151,2017-10-12 13:56:25,hange fockaux_ixc to auxc_ixc  and fockaux_scal to auxc_scal .,0
+fe1ef0b,2017-10-12 13:59:13,egenerate doc,0
+ee10c24,2017-10-12 14:46:59,Define get_auxc_ixc  and use it throughout.,0
+25f4814,2017-10-12 15:11:28,bcf8795d branch version with Fabio's U matrix rotation option added to dfpt_mkvxc_noncoll,0
+4225071,2017-10-12 15:59:32,missing https for ref file,0
+61be066,2017-10-13 11:07:09,Now compile  and tests execute correctly. Use of auxc_ixc is rationalized  including default value. Fix typo in the doc for auxc_ixc.,0
+65f4c77,2017-10-16 10:09:01,should work with libxc 4.0.1 - small changes in interfaces. Could a bot test be added with a recent version of libxc?,0
+564144d,2017-10-16 10:14:20,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+90734b6,2017-10-16 16:26:10,missing protection of libxc include,0
+0e6dbce,2017-10-16 20:54:08,configure should accept libxc 4 now,0
+4a14566,2017-10-17 11:28:39,third Vxc rotation method added (explicit roation matrix) turns out to be numerically unstable,0
+001b44f,2017-10-17 15:22:44,graphene seems very sensitive for tutorial positron test - normally I did not touch anything which could have triggered this bb error,0
+b2e8803,2017-10-17 15:24:07,graphene seems very sensitive for some tests. One extra line diff on graphene bot  I have simply adjusted the tolerance,0
+a0b4205,2017-10-18 09:27:18,Merge remote-tracking branch 'trunk/develop' into Multibinit,0
+3172d85,2017-10-18 09:42:15,fix dimension of atmfrc in 80/m_tdep_abitype,0
+0ba565a,2017-10-18 14:03:12,Implement downsampling. Dos not compile yet. Also  clean cgtyphf.,0
+c80e380,2017-10-18 14:22:51,Now compile. Also continued to clean : removed cg_typ,0
+44ce7c7,2017-10-18 14:34:43,Change fock_downsampling to fockdownsampling,0
+64910e3,2017-10-18 15:04:14,Document new input variable fockdownsampling.,0
+d1f78f5,2017-10-18 15:28:44,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0
+5e057a4,2017-10-18 15:51:01,Fix bugs. Document nkptns_hf. Also modify nkpthf documentation.,0
+117a19f,2017-10-19 05:22:35,Merge remote-tracking branch 'remotes/gingras.ol/dev_gingras' into _gingras,0
+9dfed68,2017-10-19 05:23:30,Merge branch '_gingras' into develop,0
+63525bd,2017-10-19 05:25:27,Initialize v8.7.1,0
+f199d73,2017-10-19 08:10:03,Allows tests libxc #72 and #73 (not yet ready though) for downsampling the k point grid for the Fock operator,0
+b871ed2,2017-10-19 08:48:22,Now v7#65 works (reference should be updated  though ...).,0
+361db10,2017-10-19 08:57:57,Echo nnsclohf in a more economical way (will need change the references). Clean the debug.,0
+90fad50,2017-10-19 11:23:42,Determine a better nbandhf default value  echo nbandhf and nkpthf when it is useful  import stress bug fix from François  upgrade many refs files  BUT libxc#67 68  69 are not correct ?!,0
+ae1ecee,2017-10-19 12:15:22,Enhanced PSML-related release notes and reviewed the rest of the document,0
+79d9b96,2017-10-19 12:32:18,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+8c231a4,2017-10-19 14:08:01,Fix a bug  and then update the remaining references.,0
+04f8292,2017-10-19 14:19:28,Change communicator names for slk/elpa,0
+4661098,2017-10-19 14:20:12,make debug happy - explicit list of libxc CPP vars we will use,0
+25ac5f3,2017-10-19 14:22:25,Modify test v7#65 to test non-trivial nbandhf.,0
+37a6bd3,2017-10-19 14:39:03,Merge branch 'ace_6' into ace_1,0
+1fad9ee,2017-10-19 15:07:52,bug corrections for stresses in the Fock context: Stresses in PAW now work and parallel calculations also,0
+36bb379,2017-10-19 15:08:02,trial beautification of berryphase new subroutine,0
+998c32d,2017-10-19 15:54:05,Fix compile problem ELPA. Progress in the def of test libxc#72,0
+1ca98cb,2017-10-19 16:02:40,Echo kpthf only when there is some non-zero usefock,0
+f68114d,2017-10-19 18:02:54,paral/t60.in was erroneously disabled because HAVE_ETSF_IO has been removed.,0
+53ae732,2017-10-19 23:11:00,merged trunk provisional,0
+72833e7,2017-10-19 23:38:26,Preliminary version of GKK file,0
+943115e,2017-10-20 08:01:03,Fix a bug with the ordering of loops in smpbz,0
+f1bd22b,2017-10-20 09:27:40,Fix bug in smpbz (taking into account shiftk was incorrect),0
+1a90626,2017-10-20 09:48:20,tolerance corrections for the test farm,0
+604c57d,2017-10-20 09:54:39,Merge remote-tracking branch 'trunk/develop' into develop,0
+1930f03,2017-10-20 09:56:40,Update reference files  with correct ordering of k points.,0
+9fd32d5,2017-10-20 10:00:22,Disable temporarily tests libxc 72 and 73,0
+dadcea4,2017-10-20 10:26:27,Merge branch 'release-8.6.1' into develop,0
+70cd422,2017-10-20 10:33:51,Merge branch 'develop' into ace_6,0
+d2982a8,2017-10-20 12:11:07,Fix memory leak in smpbz   fix incorrect links,0
+4335ab8,2017-10-20 12:13:03,Add fockdownsampling input variable in test v7#70. A real test will come later.,0
+c14815f,2017-10-20 13:06:01,Fix problem with the shifts   use norm conserving for test libxc#72,0
+506f586,2017-10-20 13:10:21,Merge branch 'ace_6' into ace_1,0
+5e4774c,2017-10-20 13:40:41,things in progress (handle with care),0
+40a29c8,2017-10-20 14:03:57,bug correction for Fock forces,0
+78fdb65,2017-10-20 15:42:21,Merge remote-tracking branch 'trunk/develop' into Multibinit,0
+20febdd,2017-10-20 16:51:00,Merge remote-tracking branch 'trunk/develop' into develop,0
+a912a62,2017-10-20 21:31:28,Merge branch 'release-8.6.1' of gitlab:trunk/abinit into release-8.6.1,0
+25ec9a0,2017-10-20 22:06:10,Add E. Bousquet sections to release notes,0
+115b5d4,2017-10-20 23:17:10,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+e6f032e,2017-10-21 05:42:38,Merge branch 'release-8.6.1' into develop,0
+90da232,2017-10-21 05:44:57,Merge gmatteo/develop/f681 into _gmatteo,0
+2ea0c8a,2017-10-21 08:29:52,Merge jollet/develop/20fe into _jollet,0
+26f1999,2017-10-21 22:39:36,shift call output to outwf for ddk fil wrt berry phase output,0
+f9b139a,2017-10-22 00:07:40,fix mem leak,0
+097dc9c,2017-10-23 08:19:46,Fix the echo of kptns_hf,0
+2f99764,2017-10-23 09:25:32,Final version of the tests libxc#72 & 73  to test downsampling.,0
+8a1416d,2017-10-23 09:28:12,Merge branch 'release-8.6.1' into ace_1,0
+63143cf,2017-10-23 09:45:06,Now tests libxc 72&73 work.,0
+4339c04,2017-10-23 10:44:15,Add support for DDk.nc to ddk_init  netcdf output in optic,0
+5efcef6,2017-10-23 12:17:48,Create Refs for libxc #72&73   Create test paral#09. Minor fixes for the sources.,0
+e7318c7,2017-10-23 12:20:54,Clean debugging,0
+e9d2b36,2017-10-23 22:49:00,Fix compilation errors on slaves without netcdf,0
+2c584e0,2017-10-24 12:17:39,Update release notes and minor fixes in the list of contributors,0
+0d24b12,2017-10-24 13:46:14,method 2 for vxc1 is working properly  but poor convergence  method1 contains mistakes  to continue fixing metallic corrections,0
+c0dc19f,2017-10-24 14:28:56,Define new input variablse hybrid_mixing hybrid_mixing_sr hybrid_range_dft hybrid_range_fock,0
+1ab40b6,2017-10-24 14:58:48,Separate hybrid_range into hybrid_range_dft and hybrid_range_fock for the upper routines. Should work ...,0
+6f63d03,2017-10-24 16:08:16,New version for ELPA module,0
+5d41b61,2017-10-24 16:10:55,Replace in all F90 hybrid_range by hyb_range,0
+19157d1,2017-10-24 16:12:08,Replace in all F90 hybrid_range by hyb_range,0
+2ada948,2017-10-24 16:13:09,APply change hybrid once more,0
+bf1a894,2017-10-24 16:15:33,Final application of change,0
+e0145cc,2017-10-24 18:25:39,Change convention for the calculation of J in cRPA: The new convention is coherent with the definition of jpawu in DFT+U calculations in ABINIT.,0
+2865cbd,2017-10-24 21:50:33,Merge mverstra/develop/f9b1 into _mverstra,0
+d6f85b2,2017-10-25 09:19:49,Change default for fockdownsampling in indefo.F90,0
+eb791e1,2017-10-25 09:23:41,merge with the trunk,0
+4038c48,2017-10-25 09:43:32,kpthf becomes kptns_hf also in the echo  so update the references,0
+d73755f,2017-10-25 09:46:16,add stresses calculation for PAW Fock tests,0
+3fcf65e,2017-10-25 10:58:31,Allow the user to modify the parameters for hybrids. Try to avoid printing them unless they have been user defined.,0
+38a201f,2017-10-25 11:13:14,Typos,0
+d7bc1c9,2017-10-25 12:01:38,Special treatment for HSE03 from libxc. All tests pass on my machine.,0
+b4cbe4d,2017-10-25 13:03:39,Now test extensively all definitions of HSEx,0
+08fd643,2017-10-25 13:35:29,Document the new input variables hyb_mixing  hyb_mixing_sr  hyb_range_dft  hyb_range_fock,0
+f4a8441,2017-10-25 13:54:16,update refs files for libxc #72&73,0
+678c8a1,2017-10-25 14:05:32,Merge branch 'ace_1' into ace_2,0
+f010b89,2017-10-25 14:17:45,Switch gga_id(1) and gga_id(2),0
+a55484d,2017-10-25 15:00:38,test reference corrections for PAW Fock stresses,0
+eae2666,2017-10-25 16:34:45,Update references for tests v7/25 78 79 (cRPA),0
+a61664e,2017-10-25 18:20:33,Update refs,0
+92c5f69,2017-10-25 20:45:27,Define tolerances for test libxc#72,0
+14bd0e1,2017-10-26 03:23:21,method 3 for vxc regularization is working  tests ok  metalcor in progress,0
+6f4ee78,2017-10-26 05:34:58,Merge branch 'develop' into ace_1,0
+707d047,2017-10-26 05:39:55,Temporarily allows no test and no doc of the hyb* input variables (but they are present in ace_2).,0
+5ade938,2017-10-26 07:51:52,Minor modifs,0
+f1c3fe0,2017-10-26 07:52:29,Internediate state for drivexc.F90,0
+42bcdae,2017-10-26 07:54:44,Merge branch 'develop' into ace_2,0
+1f9b4b7,2017-10-26 08:24:49,Add two datasets to libxc#72. Also correct a few lines in the on-going implementation of B3LYP.,0
+334764a,2017-10-26 08:26:04,Suppress the hyb_ lines in the reference abirules/t01.out,0
+9bf9c2c,2017-10-26 08:31:08,More accurate documentation of the default for hyb_range_dft and hyb_range_fock,0
+d76f9f0,2017-10-26 09:37:45,Introduce hyb_mixing as optional argument of drivexc  drivexc_main. Also inside xcdata datastructure.,0
+2ba9e5f,2017-10-26 10:09:43,Change typo in crpa tutorial,0
+f0200d1,2017-10-26 10:24:57,Make all input args of xcdata_init optional.,0
+777675a,2017-10-26 11:31:07,Merge amadon/release-8.6.1/2ba9 into _amadon-8.6.1,0
+2b60aeb,2017-10-26 11:35:34,Update the doc  from Bernard Amadon,0
+08bcd85,2017-10-26 13:36:39,add ddb_to_dtset to m_ddb.F90,0
+6a1c8b3,2017-10-26 13:37:30,Merge remote-tracking branch 'trunk/develop' into Multibinit,0
+5dce9a9,2017-10-26 13:41:52,Merge branch 'develop' of gitlab:amartin/abinit into develop,0
+1661cd0,2017-10-26 14:16:11,debug option in mover_effpot,0
+f22a202,2017-10-26 14:40:03,update ref of abichecks/buildsys/Refs/abiref_gnu_5.3_serial.ac (for libxml),0
+f4c5aa3,2017-10-26 14:55:00,New optic.nc format.,0
+90ea85e,2017-10-26 14:55:07,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into ddk,0
+59a1aab,2017-10-26 14:59:12,Implemented the possibility to have optional xc_functionals as argument of drivexc and drivexc_main.,0
+1f4de20,2017-10-26 16:57:35,debug abiref and add transfert from ddb to dtset (header of DDB),0
+8811ebc,2017-10-26 19:24:14,Merge branch 'release-8.6.1' of gitlab:trunk/abinit into release-8.6.1,0
+1530e51,2017-10-26 19:25:02,Merge _amadon-8.6.1/2b60 into release-8.6.1,0
+119e5af,2017-10-26 22:06:20,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+40a708c,2017-10-27 15:01:45,Develop test libxc#25 of many functionals  using the hyb_* input variables. Also code combined Spencer-Alavi and HSE functionals.,0
+d764364,2017-10-27 16:30:45,Several adjutments for the new ELPA module: OK for ELPA 2014  2015  2016  2017,0
+6746f77,2017-10-27 16:33:34,Merge branch 'develop' of abinit-gitlab:trunk/abinit into elpa2017-2,0
+ff1374b,2017-10-27 18:41:22,Merge branch 'release-8.6.1' of abinit-gitlab:trunk/abinit into quickfixes,0
+390a090,2017-10-27 18:43:02,Add a missing file in Psps_for_tests,0
+5feb300,2017-10-28 14:42:43,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0
+4c7c0f0,2017-10-28 15:50:54,abilint,0
+21d6e1f,2017-10-28 17:12:12,Move GW-SOC tests to v8,0
+a6be096,2017-10-28 17:20:31,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into ddk,0
+bb0c4c7,2017-10-28 17:20:48,abilint,0
+270d5c2,2017-10-30 08:56:48,Added python script to calculate Raman spectra from Anaddb output,0
+e7e345c,2017-10-30 14:48:37,Exclude host nag@abiref for test MPIIO 28,0
+d3f3562,2017-10-30 16:26:49,Exclude host nag@abiref for etsf_io # 4.,0
+af29696,2017-10-30 18:15:28,Finalize test libxc 72,0
+528f798,2017-10-30 20:41:45,One more test to be disabled for nag@abiref. However  according to JMB  will work with ABINITv8.7.0 ...,0
+ffc9de6,2017-10-30 20:43:00,Merge branch 'release-8.6.1' into develop,0
+ea56439,2017-10-30 20:43:45,Reenable test v7#80 for nag@abiref in develop,0
+06535f7,2017-10-30 22:06:21,Create new test libxc#74  with a pseudopotential that includes a non-linear core correction,0
+06d1401,2017-10-31 14:32:36,right before merge with trunk,0
+b667700,2017-10-31 15:04:18,merge with trunk  conflicts resolved,0
+e454c75,2017-10-31 15:14:58,There is an erratic problem with nag@abiref for v7#80 even in v8.7.1 . Exclude host ...,0
+79dbc1f,2017-10-31 15:50:38,compilation after merge ok  v8[20] updated for new calden,0
+f95a2be,2017-10-31 16:51:21,Introduce new test libxc#74 with a pseudopotential that has a nonlinear core correction  and fix problems detected.,0
+427aaaf,2017-10-31 19:20:51,Update refs,0
+b2a2b70,2017-10-31 20:48:55,Modify test 72 to make it less sensitive to numerical errors. Also use option -medium.,0
+289fd13,2017-10-31 20:51:15,Fix typo,0
+986b72f,2017-10-31 20:56:03,Merge gmatteo/gwsoc/21d6 into _gmatteo,0
+671f6b3,2017-10-31 21:45:09,Recover the normal default for auxc_ixc (namely  ixc 11),0
+6579eec,2017-10-31 22:14:29,Update ref for libxc#72 due to modif of the input file,0
+522e9b5,2017-10-31 22:16:14,Correct typo,0
+3b2c2c5,2017-10-31 22:20:51,fld options set to -easy for tests libxc 72&74,0
+3c8e95a,2017-10-31 23:21:33,abiauty problem..,0
+0fab725,2017-10-31 23:35:06,abiauty...,0
+e22ff49,2017-10-31 23:40:29,missing deallocations in dfpt_mkvxc_noncoll,0
+2aec0b6,2017-11-01 04:01:23,cleaning up comments etc.,0
+575827b,2017-11-01 06:25:16,Update tolerances for libxc#74,0
+baf266b,2017-11-01 11:36:23,Resolved merge conflicts,0
+6eca741,2017-11-01 12:27:48,Small changes to fortran files,0
+02fa3c5,2017-11-01 12:30:08,fixed small typo,0
+9705408,2017-11-01 13:38:23,pre-mr  before update,0
+73f3fec,2017-11-01 13:38:31,Merge remote-tracking branch 'trunk/develop' into dfpt_noncoll,0
+92e018e,2017-11-01 16:47:02,update configure.ac,0
+256e1b6,2017-11-01 16:53:14,spelling error fixed,0
+9cfe38e,2017-11-01 17:59:25,Slight adjustment of tolerance libxc#74 . Also exclude nag@petrus host for Tlibxc#74,0
+0eb2861,2017-11-02 07:01:47,Update the doc for ixc. Also apply ./generate_doc.py.,0
+41c225b,2017-11-02 09:27:39,Develop the GGA counterpart of B3LYP  for non-linear core corrections.,0
+fd0438b,2017-11-02 09:35:16,Add missing declarations,0
+9ec215e,2017-11-02 09:41:25,Typo,0
+63679a3,2017-11-02 09:47:52,Clean the set up and doc of B3LYP functional,0
+306de4e,2017-11-02 11:05:14,Merge npike/develop/256e into _npike,0
+98bd806,2017-11-02 15:53:11,B3LYP is coded  including the non-linear core correction. Test 74 is adapted.,0
+6678f51,2017-11-02 17:59:10,Tune libxc#72  for portability,0
+770cb5e,2017-11-02 17:59:50,Strangely max2 complained about the previous deallocation coding. Should work now...,0
+a9fc1f8,2017-11-02 18:13:54,Fix an allocation problem. However  max2 is still complaining about test libxc#72. I do not find the bug. So  exclude the host.,0
+e51430e,2017-11-02 20:48:48,Fix inlined ABI_ALLOCATE  exclude host max2 for libxc#74 (deallocation problem)  introduce new input variable ixc_adv,0
+0ca117c,2017-11-02 21:12:27,Document ixc_adv,0
+758a08f,2017-11-03 06:20:34,Correct inlinde ABI_ALLOCATE statement,0
+0db6f02,2017-11-03 08:28:16,Reenable two excluded hosts.,0
+25495b3,2017-11-03 10:18:02,modifications of Raman_spec,0
+c9a650d,2017-11-03 13:03:38,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into ddk,0
+88fb9d0,2017-11-03 13:14:58,small bug fix,0
+3b24460,2017-11-03 13:23:41,output renaming fixed,0
+28d89a2,2017-11-03 22:12:48,Apply generate_doc.py  finalize KNOWN_PROBLEMS and herald.F90,0
+a93a229,2017-11-03 22:17:00,Finalize release_notes.,0
+7ddd352,2017-11-03 22:20:46,Upgrade check_list (features replaced by topics).,0
+59ea89c,2017-11-04 10:00:07,Merge branch 'release-8.6.1' into develop,0
+c2d609f,2017-11-04 10:02:52,Initialize v8.6.2 (in hotfix-8.6),0
+6841b1c,2017-11-04 10:25:21,Merge npike/develop/3b24 into _npike,0
+4e2de5e,2017-11-04 10:26:34,Tune tolerance nline of v3#40,0
+f560a97,2017-11-04 20:55:51,Adjust tolerance for test v8#81,0
+a04fbe8,2017-11-04 21:40:26,Modify test v6#67 for lack of portability on bob openmp,0
+9a28622,2017-11-04 21:44:54,Merge branch 'hotfix-8.6' into develop,0
+6968644,2017-11-05 06:54:30,Merge branch 'develop' into ace_2,0
+5c57453,2017-11-05 09:41:30,Define sigma_mixing as a member of sigparams_t,0
+19b440c,2017-11-05 15:15:14,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into ddk,0
+8e83f02,2017-11-05 21:32:09,Fix typo,0
+e24f6e4,2017-11-05 21:37:03,Correct doc,0
+ad9fa5e,2017-11-06 06:05:48,Read ixc_adv  and prepare its use in calc_sigx_me. Tests execute correctly.,0
+269de61,2017-11-06 06:10:43,Modify tests libxc #41-43  to read ixc_adv. Also references are modified. Tests execute correctly.,0
+25e3733,2017-11-06 06:31:28,Declare ixc_adv 40 for all HF tests in the GW framework.,0
+d466d28,2017-11-06 06:53:45,icutcoul is now set to 5 when HSE is done on top of GW,0
+165921b,2017-11-06 08:23:47,Has to deal with istwfk  then nspinor  for test v8[80],0
+dc0d733,2017-11-06 08:28:04,debug state,0
+2cdae42,2017-11-06 08:43:16,Debug,0
+5dd9ac1,2017-11-06 08:51:14,Debug,0
+d3465aa,2017-11-06 08:59:36,Debug,0
+05d533b,2017-11-06 09:07:22,Debug,0
+bd6bcc7,2017-11-06 09:08:15,Debug,0
+14c72b0,2017-11-06 09:09:39,Debug,0
+4879e91,2017-11-06 09:26:53,Prevent attacking rhotoxc with GGA nspden=4 and requirement of XC kernel,0
+2e4ccc4,2017-11-06 10:10:55,Test v8#80 working.,0
+0b2158b,2017-11-06 11:17:33,Use ixc_adv and related parameters in calc_vhxc_me,0
+d13b598,2017-11-06 11:57:41,Suppress missing links.,0
+c232862,2017-11-06 12:23:58,Optional argument was missing for size_dvxc. Initialize the ixc_adv of calc_vhxc_me using the optional features of libxc.,0
+d0bcda4,2017-11-06 13:08:05,Fix issues linked with optional arguments xc_funcs. Now all tests pass  and the xc_funcs is used systematically  including for the GW part (sigma matrix elements).,0
+e230ee6,2017-11-06 16:18:32,Fix bugs. Now all libxc tests pass,0
+f4a1e6f,2017-11-06 18:20:22,Suppress gwfockmix in libxc#43,0
+ce384f0,2017-11-06 18:24:47,Clean calc_vhxc_me.F90,0
+55b6d81,2017-11-06 18:43:59,Clean gwfockmix.,0
+3c6b520,2017-11-06 19:15:48,Merge branch 'hotfix-8.6' into develop,0
+a9b618c,2017-11-06 19:17:32,Merge branch 'develop' into ace_4,0
+1019b07,2017-11-06 20:52:11,Adjust tolerance for tutorial positron#4,0
+e1a544b,2017-11-06 22:14:59,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into ddk,0
+5a35286,2017-11-07 00:30:10,Finalize netcdf format for optic,0
+46adde8,2017-11-07 06:19:33,Clean the developments for gwcalctyp *5   before merge request.,0
+1803d41,2017-11-07 06:20:24,Merge branch 'ace_4' of gitlab:trunk/abinit into ace_4,0
+8ab7803,2017-11-07 06:38:25,Merge branch 'develop' into ace_4,0
+5eb9b13,2017-11-07 16:52:03,reactivation of abirules tests ( 3 4 6 7 ) + 20,0
+e2fb53a,2017-11-07 17:03:16,abirules : fix reporting,0
+c0e6844,2017-11-07 19:36:55,Changes for DFPT_+PAW+non-coll (warning: does not compile  temporary status),0
+111cff3,2017-11-08 11:44:42,progress in DFPT+NC: use of c pointers (save memory)  store magn. in kxc  add vxc,0
+27748f9,2017-11-08 16:41:19,fix in warningschk.py,0
+665524b,2017-11-09 10:18:55,best outputs for 6 & 7 tests,0
+0d00a56,2017-11-09 11:24:24,use color for output with warningschk.py,0
+30d6361,2017-11-09 11:58:18,avoid duplicating termcolor. py,0
+e1e62be,2017-11-09 12:29:42,try to fix encoding problem,0
+68b5aeb,2017-11-09 14:18:18,easier resolution of the Unicode problem,0
+0632e96,2017-11-09 17:19:09,Added fake -n/--no-split option to makemake,0
+3cffb13,2017-11-09 19:07:24,Now the code compiles,0
+53f8bcc,2017-11-10 15:52:45,"Create main executable ""dummy_tests""  to test whether coding error or bad practice are caught by the test farm.",0
+1741bf2,2017-11-10 16:32:43,Split dummy_tests,0
+a978941,2017-11-10 18:30:10,Development of the new dummy_tests program is complete. Should still be debugged.,0
+03165d3,2017-11-10 18:34:09,Merge beuken/abirules/68b5 into abirules,0
+20eba19,2017-11-10 20:34:50,Now the new executable compile correctly  and all the intentional warnings are detected.,0
+7b74040,2017-11-10 20:35:44,Merge branch 'abirules' of gitlab.abinit.org:trunk/abinit into abirules,0
+49befad,2017-11-10 20:58:43,Fix some conversion errors.,0
+ae1915a,2017-11-10 20:59:15,Merge branch 'abirules' of gitlab:trunk/abinit into abirules,0
+ff0edc6,2017-11-10 21:11:16,Correct conversions,0
+8194749,2017-11-10 21:12:23,Use string dimension 200 for name  instead of 100.,0
+9b39b33,2017-11-10 21:14:50,The pattern 'CHARACTER expression will be truncated in assignment' is eliminated  except when intentional.,0
+9b946c1,2017-11-10 21:16:42,The pattern 'Same actual argument associated with INTENT' is eliminated  except when intentional.,0
+3b9ec60,2017-11-10 21:24:29,Get rid off warning pattern 'Wunused-value' except when intentionally obtained.,0
+bfd4fee,2017-11-11 05:35:30,Fix typo,0
+c7e9d0f,2017-11-11 05:51:03,Change ixc_adv to ixc_sigma in src and doc. Also change ixc_hybrid to ixc_sigma.,0
+1cef202,2017-11-11 05:56:11,Replace ixc_adv by ixc_sigma in Input and Refs files.,0
+e2cc0ef,2017-11-11 06:01:15,Insert missing ifdef MPI.,0
+5a2a704,2017-11-11 07:00:24,Update refs for which there is an intentional warning,0
+0970464,2017-11-11 07:13:54,Chane (temporarily) the ref for abirules#10  in order to have Jean-Michel fix a small issue.,0
+6e64769,2017-11-11 09:50:58,The change ixc_adv to ixc_sigma had not been done everywhere,0
+44f3d86,2017-11-11 10:26:36,Merge pouillon/buildsys-split-prep/0632 into _pouillon,0
+f671c3e,2017-11-11 14:52:07,Merge branch 'develop' into _pouillon,0
+84de797,2017-11-11 15:44:52,Fix typo,0
+bf5a40a,2017-11-11 15:51:04,mv dummy_subroutines.F90 -> m_dummy.F90 and complete missing include statements.,0
+5cebb42,2017-11-11 16:25:21,It was premature to upgrade the reference files for abirules ... abiref_gnu_5.3_debug is not capturing the warnings yet !,0
+03b0914,2017-11-11 21:36:47,Improve the echo of warning for test 10 (from Jean-Michel),0
+b7b0f8a,2017-11-11 21:38:24,Merge branch 'abirules' into develop,0
+dc2a6d0,2017-11-13 10:15:16,Remove useless variables in dfpt_mkvxc_noncoll,0
+d90b8ab,2017-11-13 16:30:39,Cleaning,0
+879dd2c,2017-11-13 18:25:15,DFPT+NC: Bxc computed on the fly  zero limit for Bxc changed,0
+10929d3,2017-11-14 13:55:34,Had to duplicate code in libpaw (this is a shame),0
+22f5cdf,2017-11-14 14:54:56,Error in pawxc (new version),0
+000caad,2017-11-14 14:59:54,Rename dfpt routines in m_pawxc (3->dfpt),0
+b314f96,2017-11-14 15:10:07,Merge branch 'develop' of abinit-gitlab:trunk/abinit into dfpt-nc,0
+8458b7e,2017-11-14 15:39:39,Suppress bxc,0
+0e39750,2017-11-14 15:59:02,XLF v15 does not like c_f_pointer(c_loc),0
+d431ecd,2017-11-14 17:38:37,Use m_xc_non_coll in m_pawxc,0
+cca952a,2017-11-14 17:40:30,ABI_CONTIGUOUS is unknown in stand-alone version of libPAW,0
+9f309d7,2017-11-15 12:13:22,Correction in magnetization rotation (DFPT+PAW),0
+d3af46a,2017-11-15 16:37:38,Better implementation of pawxcm within PAW+NC,0
+fbddeeb,2017-11-15 18:44:28,Adjust a ref file (passed->succeed),0
+6a235bb,2017-11-16 08:31:36,Try to fix portability issue,0
+3666914,2017-11-16 08:36:00,This tolerance should yield even better portability,0
+f43e704,2017-11-16 08:57:01,Merge branch 'ace_4' of gitlab:trunk/abinit into ace_4,0
+635dec2,2017-11-16 09:15:35,Replace ixc_adv by ixc_sigma in all files except references,0
+2348d01,2017-11-16 09:17:12,Replace ixc_adv by ixc_sigma in reference files.,0
+096b9f9,2017-11-16 09:23:53,Clean input files libxc 41 42 43 and adjust to recent use of gwcalctyp,0
+c4b179f,2017-11-16 10:43:53,Another try,0
+4ed2b5f,2017-11-16 12:16:49,There was still some leftover from the treatment of gwcalctyp > 100,0
+edc46fa,2017-11-16 12:30:24,Get rid off mod100 (direct use gwcalctyp). Tests libxc[41:73] pass.,0
+baa4874,2017-11-16 12:35:47,Suppress icutcoul and rcut from libxc#41 42,0
+4a33a83,2017-11-16 14:49:12,Suppress an inadequate restrintion on the use of hybrids@LDA/GGA,0
+9792041,2017-11-16 14:53:57,Merge branch 'develop' into ace_4,0
+c590659,2017-11-17 21:54:14,Switch from graphene_gnu_6.4 to graphene_gnu_6.3,0
+e6ea7ad,2017-11-17 21:56:00,Prepare the release of v8.6.2,0
+624bc89,2017-11-18 16:01:36,Update ref for graphene bot,0
+a17c85b,2017-11-19 06:50:35,Initialize v8.6.3,0
+aba30f9,2017-11-19 06:51:34,Merge branch 'hotfix-8.6' of gitlab:trunk/abinit into hotfix-8.6,0
+6b7581c,2017-11-19 07:16:15,Merge branch 'hotfix-8.6' into develop,0
+0f2f2fc,2017-11-19 07:28:23,Apply src/make parents   (re)generate doc,0
+e2eff3e,2017-11-19 07:31:12,Apply make abiauty,0

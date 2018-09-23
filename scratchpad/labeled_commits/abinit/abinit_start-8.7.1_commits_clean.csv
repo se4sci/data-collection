@@ -1,0 +1,176 @@
+hash,time,message,buggy
+6d32d81,2017-04-04 15:53:23,Integrate FB+JB TDEP code,0
+b78debd,2017-04-05 10:19:31,Correct netcdf support,0
+ca2746a,2017-04-14 09:07:56,Merge branch 'tedi' into develop,0
+e6a5523,2017-04-14 09:21:00,Merge branch 'develop' into tdep,0
+0d50562,2017-04-14 09:36:41,Add a short description for m_xg,0
+4ec33de,2017-07-05 16:00:16,Fix  wf convergence ?,0
+2669110,2017-07-06 06:38:46,Merge remote-tracking branch 'trunk/develop' into develop,0
+4014b27,2017-07-06 13:38:43,Thanks robodoc,0
+a3d86ba,2017-07-06 13:39:08,Merge remote-tracking branch 'refs/remotes/origin/develop' into develop,0
+dcbf286,2017-07-07 10:08:55,abilint headers,0
+123d386,2017-08-22 07:58:23,Merge remote-tracking branch 'trunk/develop' into develop,0
+d4c326d,2017-09-11 11:28:12,may be a little bit slower but better?,0
+e356bd3,2017-09-11 15:07:32,Merge remote-tracking branch 'trunk/develop' into develop,0
+6fe4b6c,2017-09-19 11:04:19,Merge with trunk,0
+ed6ea28,2017-09-19 12:48:46,Update for TDEP,0
+b3df01b,2017-09-19 14:28:08,Switch to abirules,0
+dcbc677,2017-09-21 20:16:53,Interface with TRIQS 1.4,0
+c8efbbd,2017-09-24 05:48:59,"Suppress ""feature file"" from the infos_html  as it is replaced by the ""topics"".",0
+d457638,2017-09-24 05:51:49,Merge branch 'release-8.6.0' into develop,0
+bf6446c,2017-09-24 06:37:51,Features was not completely removed from makefile,0
+466ebc3,2017-09-24 06:38:37,Feature was not completely removed from makefile,0
+d5b243b,2017-09-24 06:39:37,Merge branch 'release-8.6.0' into develop,0
+27b1cec,2017-09-24 18:40:11,Again update of v67mbpt#52 for portability,0
+2f66c19,2017-09-25 06:04:06,Merge branch 'release-8.6.0' into develop,0
+f1a30c5,2017-09-25 08:06:06,Merge remote-tracking branch 'trunk/develop' into develop,0
+b65343e,2017-09-25 09:10:56,Minor improvements in input file,0
+cf49ff9,2017-09-25 13:06:19,Merge branch 'develop' into tdep,0
+b7cd215,2017-09-25 15:07:58,Suppress hybrid_corr (not used),0
+bd6cb5f,2017-09-25 18:53:09,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into dev_gingras,0
+93f2d15,2017-09-26 07:54:48,Prepare the cleaning of the rhohxc routine arguments (removing dtset from the list of args).,0
+3277cae,2017-09-26 08:35:05,Do not mention the frequency of occurrence in case of internal_only variable.,0
+38c2707,2017-09-26 12:25:17,Extract dtset out of the list of args of rhohxc. make tests_in works.,0
+c1208e7,2017-09-26 12:46:53,Convert tsmear to tphysel in vtorhotf.F90,0
+fb4c413,2017-09-26 12:59:38,Clean calc_vhxc_me.F90,0
+8a59f48,2017-09-26 13:23:04,Rely on the nelect from xcdata,0
+39a8038,2017-09-26 13:25:33,Suppress unused hartre1,0
+010a5b8,2017-09-26 13:33:13,Use rprimd instead of gprimd for strhar,0
+f647c3e,2017-09-26 13:42:06,Use rprimd as argument of hartrestr instead of gmet and gprimd,0
+417f178,2017-09-26 13:50:52,Update TDEP version,0
+df51391,2017-09-26 13:52:29,Files removed,0
+2892b0d,2017-09-26 14:26:04,Use rprimd as argument of hartre,0
+0052563,2017-09-26 14:26:35,Fix xclevel determination.,0
+98e2ee9,2017-09-26 14:30:38,All test should pass now. Note tphysel has replaced tsmear for tkinfunc /=0 .,0
+2b6fd11,2017-09-26 14:36:01,Merge branch 'ace_1' into ace_2,0
+85952b5,2017-09-26 14:48:34,abirules,0
+09eadf3,2017-09-26 15:16:08,Extract call hartree from rhohxc.,0
+5d0fe14,2017-09-26 15:59:18,Cleaned the arguments of rhohxc.,0
+efbe69c,2017-09-26 16:10:54,Rename rhohxc to rhotoxc (not for psolver and positro  though),0
+74f5753,2017-09-26 16:12:52,Fix minor stuff,0
+8269bbb,2017-09-26 22:18:06,Fix too long lines,0
+173644d,2017-09-27 08:32:23,Merge remote-tracking branch 'remotes/origin/ace_1' into ace_2,0
+f3350fb,2017-09-27 08:39:28,Fix incorrect args of hartre,0
+22fb242,2017-09-27 11:07:00,Suppress many unused variables,0
+a274e1e,2017-09-27 11:07:33,Merge branch 'release-8.6.0' of gitlab.abinit.org:trunk/abinit into release-8.6.0,0
+9e97733,2017-09-27 11:33:11,Correct type initialisations  to avoid compiler error messages,0
+0671f5e,2017-09-27 11:40:55,Fix compiling issues,0
+b461d1b,2017-09-27 12:15:53,Make qpt an optional argument of hartre.F90,0
+aac1f16,2017-09-27 12:30:25,Tune the timing  because of previous modifs for rhotoxc.F90,0
+b9cb3f5,2017-09-27 12:35:40,Merge branch 'release-8.6.0' into ace_3,0
+e7c34f8,2017-09-27 13:48:11,Fix compile problems.,0
+ebe3838,2017-09-27 13:50:23,Format modif to please the compiler,0
+ae1c682,2017-09-27 13:53:35,Merge remote-tracking branch 'origin/release-8.6.0' into ace_2,0
+32bf632,2017-09-27 13:55:14,One occurrence of qphonon as arg of hartree had been left.,0
+3f05d30,2017-09-27 14:23:13,Correct the args of hartre in respfn,0
+bad4077,2017-09-27 15:13:25,Move the allocation of vhartr,0
+fa52940,2017-09-28 08:44:26,Update two reference files : the rhog extraction allowed to fix a bug !,0
+08273d3,2017-09-28 08:50:07,Merge remote-tracking branch 'remotes/origin/ace_2' into ace_3,0
+399b9b7,2017-09-28 10:13:07,Minor fix,0
+a3d1d25,2017-09-28 10:13:31,Merge branch 'ace_2' of gitlab:trunk/abinit into ace_2,0
+9e180ce,2017-09-28 11:10:23,Minor cleaning  remove unused useri and userr in invars1,0
+3bc9646,2017-09-28 12:38:37,Implement algorithm with a compensating vxc in case of hybrids,0
+b6e9a68,2017-09-28 12:46:22,Fix typos. Now  pass abilint.,0
+e4b3829,2017-09-28 13:34:11,Fixed bugs. Now the compilation is OK. SCF with compensating xc potential is thus coded. Will now test ...,0
+21b82e6,2017-09-28 14:35:03,Allows fockoptmix=11,0
+d60023a,2017-09-28 15:25:04,Adjust tolerance (large !) for v6#94   also eliminate unused variable,0
+8440311,2017-09-28 15:25:58,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0
+7363dc2,2017-09-28 18:35:14,bug correction for stresses in fock calculations,0
+e505aac,2017-09-28 18:36:27,Merge remote-tracking branch 'trunk/develop' into develop,0
+bff7162,2017-09-29 11:35:18,Now the energies are computed correctly. Also  a multiplicative factor has been indluced. Preliminary tests show a value of 2 is to be preferred ?!,0
+7091f3f,2017-09-29 14:40:00,abirules fix,0
+71cf355,2017-09-29 18:06:35,bug correction for stresses in Fock ACE,0
+c1a2977,2017-10-02 12:01:25,Merge branch 'ace_1' into ace_2,0
+76c8565,2017-10-02 14:48:45,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0
+53c5c9a,2017-10-02 16:34:20,bug corrections for abiref serial,0
+5a76c5c,2017-10-02 17:31:08,test seq tsv7_70.out updated,0
+4066879,2017-10-03 09:08:34,Change stop by MSG_ERROR/MSG_BUG,0
+73f735c,2017-10-03 09:24:08,abirules,0
+7799b87,2017-10-03 09:42:00,I didnt do anything ...,0
+95c98ba,2017-10-03 10:03:26,Introduce new input variable chkdilatmx.,0
+29266fd,2017-10-03 10:17:05,Abiauty modification to ignore IF uppercase in IFC and run it from build directory,0
+3df3a71,2017-10-03 10:23:22,Document the new input variable chkdilatmx. Should still make at least one test ...,0
+c6c94e8,2017-10-03 11:00:36,Line length reduction,0
+8d19e5d,2017-10-03 11:04:55,Add header in calling ifc_print,0
+3d8578c,2017-10-03 12:53:31,typo,0
+f1ff83c,2017-10-03 13:01:49,Fix the declrataion and innder document of chkdilatmx,0
+3299d0b,2017-10-03 13:41:53,Line length,0
+913c311,2017-10-03 14:17:20,Missing end marker for robodoc ?,0
+7d1637c,2017-10-03 14:18:29,Merge branch 'develop' into tdep_2ndonly,0
+98b9854,2017-10-03 15:10:24,Remove 3rd order,0
+6da0313,2017-10-03 15:39:40,Fix gub (endif missing),0
+88e920d,2017-10-03 22:59:00,Define message,0
+e9e7ff6,2017-10-04 10:39:31,supress comments and unused variables in fosrt.F90,0
+f6eef3b,2017-10-04 15:02:46,petrus and max2 fix,0
+3f660f0,2017-10-04 15:05:48,Input variables: dmft_solv,0
+d1bfa17,2017-10-05 09:13:54,petrus@nag,0
+70da029,2017-10-05 10:14:45,Petrus is boring,0
+f0c411f,2017-10-05 11:29:18,reset m_lobpcg to trunk version,0
+901d025,2017-10-05 11:58:00,Add testf ubu_triqs,0
+70eec59,2017-10-05 14:33:53,Change testfarm,0
+0f0e002,2017-10-05 18:24:07,Fixed the translation vector L0 used in v1phq_complete,0
+033a5b1,2017-10-05 18:26:47,Allow vxc1 to be printed in dfpt calculations,0
+a44f731,2017-10-06 08:23:08,Merge branch 'ace_2' of gitlab:trunk/abinit into ace_2,0
+0f2f3cd,2017-10-06 09:05:15,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0
+ba7c728,2017-10-06 09:47:55,Merge remote-tracking branch 'trunk/develop' into develop,0
+83e8441,2017-10-07 08:19:50,Merge jollet/develop/e9e7 into _jollet,0
+fd0d3e0,2017-10-07 10:32:15,Merge biederj/tdep_2ndonly/f0c4 into _biederj,0
+6c137fd,2017-10-07 10:34:14,Remove unneeded comment lines  for which robodoc complained.,0
+d56b085,2017-10-07 10:34:35,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0
+ea44f57,2017-10-07 15:23:11,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0
+77b02e6,2017-10-07 16:21:52,Merge antonius/develop/ba7d into _antonius,0
+85792de,2017-10-08 11:11:49,Change ALL http:// by https://www.abinit.org,0
+16362ba,2017-10-08 11:19:05,remove some unicode characters,0
+684806f,2017-10-09 11:42:20,cleaning of Fock2ACE,0
+739c1b1,2017-10-09 14:28:25,Implemented scaling factor for hybrid compensation  but energy double counting is not yet OK.,0
+e29488c,2017-10-09 16:00:07,Fix problems with the doc of chkdilatmx  and ROBODOC.,0
+4bd5468,2017-10-10 08:21:02,Auxiliary XC functional implementation is working : energy is OK  including the double counting one.,0
+c33aa28,2017-10-10 08:25:02,Merge remote-tracking branch 'remotes/jollet/develop' into ace_4,0
+0fb2445,2017-10-10 11:29:55,Create a test for auxiliary functional treatment,0
+51a1789,2017-10-11 10:11:40,Set up new datasets in test v3#42  to test the new input variable chkdilatmx  and also corrected treatment of violations of chkdilatmx constraint.,0
+bc3bbef,2017-10-11 10:56:58,"Correct the numbering in the ""installation notes"" for v8.4 and 8.6.",0
+5523bb4,2017-10-11 11:02:57,Update ref for v3#42  from abiref machine,0
+9ac8b9c,2017-10-11 12:12:14,ntroduce new input variables fockaux_ixc and fockaux_scal   and update the test v7#67 accordingly. Doc for these input variables still to be written.,0
+f7540dd,2017-10-11 12:40:18,Document the new input variables fockaux_ixc and fockaux_scal. Update the documentation.,0
+e802a01,2017-10-11 14:49:43,Fix minor problem for ROBODOC,0
+e7eb231,2017-10-11 15:36:25,Update reference for abirules #01,0
+e840b20,2017-10-12 09:53:44,Merge branch 'chkdilatmx' into release-8.6.0,0
+dce2d62,2017-10-12 09:58:17,Exclude tests 93 & 94 from executing on buda_intel_14.0_mpich (was already excluded from intel_13.0),0
+33ab16b,2017-10-12 10:59:49,"Update ref v3#42  for missing ""s""",0
+6dae63e,2017-10-12 13:12:52,Merge branch 'ace_4' into develop,0
+c7419c8,2017-10-12 13:13:47,Merge branch 'release-8.6.0' into develop,0
+d4335d3,2017-10-12 14:51:43,Change http to https in ref file,0
+6f77382,2017-10-14 21:28:15,Upgrade Abivars.jar : much better help.,0
+9381664,2017-10-15 05:58:40,Apply generate_doc.py,0
+d108a37,2017-10-15 06:30:22,Start the finalization of ABINITv8.6.0,0
+74009fe,2017-10-15 06:33:42,Apply generate_doc.py,0
+d5e8062,2017-10-15 16:12:28,Rerun generate_doc: lots of chages because dict ordering is not guaranteed,0
+e8d3bb3,2017-10-16 00:27:17,Include latex equations,0
+5bf99c8,2017-10-16 01:50:09,Replace png with latex  use svg because it's 2017  24Mb --> 8Mb,0
+d0a1820,2017-10-16 03:07:09,Use wikilink and bibtex entries for citations,0
+0ad0a59,2017-10-16 03:10:51,And now chmod ugo-x for several py modules because only scripts need x bit-flag,0
+c055281,2017-10-17 08:08:11,Regenerate doc  on the basis of Matteo's modifications for theory BSE and MBPT (latex + mathjax),0
+b0cca5f,2017-10-17 08:30:39,Fix references in the abiref.bib file,0
+3c760f4,2017-10-17 08:39:34,Fix anchor problem in bib_acknow.htm,0
+d6955d3,2017-10-17 09:52:49,Start to work on the release_notes,0
+a255043,2017-10-17 12:29:17,Fix typos in topic_DFT+U,0
+3da09be,2017-10-17 12:34:31,Adjust tolerabces for graphene_macports,0
+89406c3,2017-10-17 16:05:00,Scanned the past merge requests  to constitute the release notes for v8.6.0,0
+362cbf2,2017-10-17 20:56:23,Upgrade check list,0
+cf6921f,2017-10-17 20:58:46,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0
+2787fa6,2017-10-17 21:13:54,Finalized a first version of the release_notes for v8.6.0 .,0
+c346e40,2017-10-17 21:20:11,Update contributor file,0
+e4d90dd,2017-10-18 09:42:22,Merge remote-tracking branch 'remotes/gingras.ol/dev_gingras' into _gingras,0
+b72a970,2017-10-18 10:27:48,Backport the modifs done by O. Gingras to switch from TRIQS 1.3 to TRIQS 1.4,0
+aed09b4,2017-10-18 10:42:05,Upgrade of the release_notes  incl. TRIQS 1.4,0
+9dd3248,2017-10-18 11:01:17,Merge branch 'release-8.6.0' into _gingras,0
+35c0fd8,2017-10-18 11:02:33,Apply generate_doc,0
+d1f78f5,2017-10-18 15:28:44,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0
+bc76a7b,2017-10-18 21:34:04,Upgrade check_list.txt,0
+fa3636e,2017-10-18 21:34:32,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0
+2c4b288,2017-10-18 21:38:09,Initialize v8.6.1,0
+588adb5,2017-10-18 21:54:17,Merge branch 'release-8.6.1' into develop,0
+2c260fe,2017-10-19 05:17:57,Merge branch '_gingras' into develop,0
+117a19f,2017-10-19 05:22:35,Merge remote-tracking branch 'remotes/gingras.ol/dev_gingras' into _gingras,0
+9dfed68,2017-10-19 05:23:30,Merge branch '_gingras' into develop,0
+63525bd,2017-10-19 05:25:27,Initialize v8.7.1,0

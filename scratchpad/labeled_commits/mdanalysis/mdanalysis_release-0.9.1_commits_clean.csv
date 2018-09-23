@@ -1,0 +1,25 @@
+hash,time,message,buggy
+bf511f5,3/13/2015 11:27,Removed incorrect test,0
+6dd4ca9,3/13/2015 12:11,Fixed DMSTimestep initial unitcell being wrong,1
+5e98c08,3/13/2015 17:04,fixed failing tests in  test_modelling,1
+5a45de1,3/17/2015 10:58,Shebang lines fixed,1
+2495473,3/17/2015 11:38,fixed comparisons of array to None in distances_parallel,1
+ef89319,3/17/2015 11:41,"changed ""if ts == None"" to ""if ts is None"" (for consistency)",0
+aed54dd,3/17/2015 13:43,Merge tag 'release-0.9.0' into develop,0
+121a42a,3/17/2015 13:55,version updated to 1.0.0-dev and doc regenerated accordingly,0
+8f4d1bf,3/17/2015 14:46,Fixed TRR coordinate access via _y and _z (Issue 224),1
+9b6f051,3/17/2015 14:48,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+e0585ae,3/19/2015 15:05,Added ability to read XYZ files without topology file,0
+685bb52,3/19/2015 18:39,Fixed an incorrect requirement for hbond autocorrel tool,1
+43df53c,3/20/2015 19:06,GAMESS output reader feature added.,0
+708f3ad,3/20/2015 19:06,Simple TestCase for GMSReader with data files was added.,0
+5603471,3/22/2015 17:07,removed undocumented MDAnalysis.builder module,0
+3a9fd6a,3/22/2015 17:14,updated .gitignore,0
+b5efcf0,3/22/2015 22:42,fixed cached decorator breaking function docs,1
+2cc5405,3/23/2015 20:57,Updated the UnitTests pertaining to Issue 224.,0
+4b6ef9d,3/23/2015 21:18,Removed reference to MDAnalysis.builder from setup.py,0
+feff64a,3/24/2015 18:28,XYZ files removed from data-for-tests because Topology reader for GAMESS files was added,0
+b4a70b5,3/24/2015 18:30,Many different code corrections according to code review (on Issue 228). Inculding: testsuites for topology reader were added. testsuites for topology reader were modified.,0
+03305b2,3/26/2015 16:20,TestGMSReader: fixed error (gms.gz data files were not included),0
+ed244dd,3/26/2015 17:16,Merge branch 'feature-GAMESS_Reader' into develop,0
+1f1b48f,3/27/2015 21:29,Version changed to 0.9.1 and doc regenerated,0

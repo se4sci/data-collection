@@ -1,0 +1,67 @@
+hash,time,message,buggy
+c5e9041,2003-02-04 17:33:21,removed *.html from the .cvsignore file.  This probably prevented the footer.html file from getting updated for some of you.  This file is needed as it adds a reference to SourceForge that allows them to monitor the website traffic.,0
+4312a2c,2003-02-04 17:35:33,forgot to replace an @ in the make rule for ex1,0
+c0d3a52,2003-02-05 00:14:26,describe what Mesh/MeshBase offers,0
+d2e8cfa,2003-02-05 20:51:44,corrections for --enable-ifem: InfFE and FE now use identical FEType to ease overall handling  added FEBase::build_InfFE  some typos,0
+4510a6e,2003-02-06 05:41:15,partial fixes for InfFE  removed empty face_infinite.C  added some explanatory comments for invalid calls to n_dofs etc  added an example #5 -- better do not use it (yet)  currently only for debugging InfFE  Had some problems with the build_cube() method  with higher-order HEX elements: too many nodes initialized. Only gcc 295? don't know  haven't tested...,0
+0f7d15d,2003-02-06 06:02:42,Added Jacobi quadrature rules. These rules allow for conical product quadrature to be performed on tris and tets.  Although these types of rules are non-optimal (use more points than necessary and cluster points) they are correct  and easy to construct for high orders.  At this time  if you select anything beyond fifth-order quadrature for tets or tris you will get a conical product Gauss-Jacobi rule.  Other changes include fixing a broken 7 point Gauss quadrature rule which had the wrong weights  and making a few functions in the QBase class virtual instead of pure virtual.  This way you can create concrete quadrature classes without implementing anything for 2 and 3D.  The init_1D function is still pure virtual so you will at least need to define 1D quadrature rules if you create a new class.,0
+b574311,2003-02-06 17:14:01,The map inversion no longer makes assumptions about dimensionality.  Specifically  you can find the inverse map of a point in 3-space that sits on a 1D edge eleement.  This is being used to create more general & efficient hanging node constraints.  Also added the amr example program.,0
+9695e46,2003-02-06 17:58:35,added static build method for quadrature rules (who _needs_ this? - Ifem  & fun  -)  moved example 5 (ifems) to example 6  example 5 now departs from example 4 and dwells on the use of the QBase::build  added namespace QuadratureRules (similar to ElemQuality etc) ,0
+fe1e990,2003-02-06 19:02:58,Added ex7. This example uses complex numbers.,0
+9ba2878,2003-02-06 23:02:56,some optimizations in the Point class.  Removed unnecessary constructor calls.,0
+7490e79,2003-02-06 23:28:48,PerfLog now records the time an object exists and the total time spent in logged methods.  This allows for a more meaninful percentage to be displayed,0
+3843f04,2003-02-07 04:00:42,Removed a couple of unnecessary return  statements.,0
+ea55009,2003-02-07 04:34:16,rearranged some configure tests  reformatted the PerfLog print line,0
+8715f40,2003-02-07 15:21:32,finally understood what the Jacobi quadrature is all about  fixed the QBase::build appropriately  so that it makes more sense  took the liberty to include this gained knowledge in the QJacobi documentation,0
+4a99422,2003-02-07 15:22:17,minor optimizations.  Will add a universal PerfLog that all classes can log to rather than one PerfLog per class,0
+71531c3,2003-02-07 16:19:11,changed gmv_support to write abs() when complex is enabled.,0
+a891cf3,2003-02-07 18:06:00,added laspack in the contrib directory.  This will be used to build non-parallel iterative solvers,0
+9f875d7,2003-02-07 18:07:45,documentation  added run target to examples Makefiles  ComplexDenseMatrix can now add a RealDenseMatrix  but obviously not vice versa,0
+3362bdc,2003-02-07 19:25:46,pretty builds,0
+91ffa81,2003-02-07 22:18:54,added SparseMatrix base class.  This will allow transparent switching between Petsc and Laspack solvers.  LaspackMatrix mostly implemented.,0
+369245b,2003-02-09 22:47:17,"minor documentation fix for namespace Petsc  for --enable-ifem: decreased virtual members in FE classes  so that uniform usage of both FE and InfFE is now possible: see ex6  ex6: included variational form  need thorough testing! fixed ""make examples"" dependency  adjusted to Ben's pretty builds",0
+e36707c,2003-02-10 01:23:15,This may be only temporary (wanted to do patch but cannot  since patch only works on revisions already in the repository) -- Open for discussion  will send email --- Note: library still works with this  but this is definitely not final state Split up SystemData to accomodate for other physical problem classes,0
+83641b1,2003-02-10 03:55:51,Abstracted out PetscMatrix  PetscVector  and PetscInterface.  Added support for LASPACK solvers  uniprocessor real only at the moment.  Should be easy to extend to uniprocessor complex.  Will make SystemBase dynamically switch between solver packages at runtime  most likely tomorrow.,0
+4c98bd8,2003-02-10 04:04:31,removed stray copy/paste error,0
+53d409b,2003-02-10 11:50:57,manicure,0
+2a1a66e,2003-02-10 12:21:08,manicure,0
+9cba32d,2003-02-10 14:31:16,small documentation fixes: doxygen now runs without any complaints  simplified & corrected ex7 param list to be more handle-safe,0
+d8d0fed,2003-02-10 22:03:28,LASPACK solvers now work for real data types.  To use them do ./configure --disable-petsc,0
+340ea83,2003-02-10 22:12:11,LASPACK solvers now work for real data types.  To use them do ./configure --disable-petsc,0
+8c88ff5,2003-02-10 23:42:57,fixed broken LaspackVector assignment operator,0
+9c03490,2003-02-11 00:08:48,IRIX compatibility fixes,0
+5ff91e3,2003-02-11 00:58:24,IRIX compatibility fixes,0
+7b5c3c1,2003-02-11 14:20:25,compatibility fixes,0
+e8510cd,2003-02-11 22:59:35,configure for mpi,0
+6540bb9,2003-02-12 02:03:50,SystemData now became GeneralSystem  this works fine  but EquationSystems currently only handles a GeneralSystem  added FrequencySystem (only an outline!)  documentation,0
+e52e015,2003-02-12 05:41:29,dded the PredicatedIterator class.  The PredicatedIterator is derived from std::iterator and is designed to mimic the usual iteration over the contents of a container. It differs from normal iterators in that op++ automatically advances the iterator to the next item in the container which satisfies the user-supplied predicate.  From the abstract PredicatedIterator base class  several concrete classes have already been defined.  They are currently used in the MeshBase class to iterate over the _elements vector.  Whereas before one would say:,0
+1c322e7,2003-02-13 00:16:48,Changed default behavior of the basic_elem_iterator to return true if the Elem* is not NULL.  Added typedefs for predicated iterators into arrays of Elem*.  Added accessor functions to elem.h to return the begin and end of the neighbors array.  This may be useful when iterating over neighbors and deciding which ones are (are not) on the boundary.,0
+45285d4,2003-02-13 01:49:49,added the DofObject class.  This moves the dof indexing out of the DofMap class and into the Elem and Node objects.  This should be the last big design change necessary to facilitate parallelizing the reamining data structures.,0
+10cb649,2003-02-13 16:34:30,added node iterators,0
+2a8c42d,2003-02-13 17:43:07,IRIX syntax changes,0
+3d84fdf,2003-02-13 22:56:14,removed all unnecessary   from the code,0
+b00d68f,2003-02-14 15:22:51,added the libMesh all-static class for bookkeeping.  Consolidated to one PerfLog for the library.,0
+1aa8540,2003-02-14 17:02:45,added the libMesh all-static class for bookkeeping.  Consolidated to one PerfLog for the library.,0
+aa1a08b,2003-02-14 20:50:39,Changed basic_active_type_elem_iterator to be multiply inherited from active_elem_iterator and type_elem_iterator rather than reimplementing the functionality of either.  May turn out to be really useful for composite predicate iterators  or may be dangerous.  Time will tell.,0
+6d4fe60,2003-02-14 22:37:11,fixed a bug in the DofObject that only allowed for one system,0
+8000555,2003-02-15 05:21:13,fix for multiple systems,0
+d4a35ba,2003-02-17 01:23:02,minor FE optimizations.  Changed DofMap::component stuff to DofMap::variable to be more consistent with all the other classes in the code,0
+d2c7100,2003-02-17 04:05:48,fixed a bug in libMesh that copied argc and argv instead of taking references,0
+79a735c,2003-02-17 05:33:09,one final DofMap::component changed to variable,0
+1535141,2003-02-18 00:49:55,Added multiply-inherited basic_active_pid_elem_iterator. Fixed some virtual inheritance classes which needed to explicitly call their hared parents constructor.,0
+08c57f7,2003-02-18 13:38:20,used the active_pid_elem_iterator to make the DofMap more clear,0
+8818121,2003-02-18 19:43:38,added the DistributedVector class.  This will be used to hide some details in parallelizing the library,0
+16ab5fa,2003-02-19 13:28:41,finished DistributedVector,0
+d763f11,2003-02-20 04:59:58,Templated all the numeric data types to provide a clearer distinction between Real and Complex data types.,0
+f59025b,2003-02-20 05:13:42,minor SGI fixes,0
+a04a884,2003-02-20 12:55:08,fixed some bugs in InfFE,0
+df31347,2003-02-20 15:22:16,documentation,0
+9aaf1a6,2003-02-20 16:30:09,documentation formatting,0
+5f28080,2003-02-20 17:09:30,added compute map to update the radial distances and shape functions independently,0
+e7d01d7,2003-02-20 23:18:16,Silly documentation stuff.  Added the Tet10 embedding matrices at long last for refining those elements.  Will likely release libmesh-0.3.0 tomorrow,0
+084ab07,2003-02-21 18:31:32,redid the Tecplot support so that it writes one file even with complex numbers,0
+51b34ec,2003-02-21 21:03:56,fixed for 0.3.0 release,0
+0a54fa8,2003-02-21 22:40:59,Made the predicate member protected.  There is no reason that the user should be allowed to call it. Also added a make doc command to the upload documentation script so that if there is no documentation  some will get built before you rsync.,0
+05ad08d,2003-02-21 22:50:13,documentation,0
+d48dcb1,2003-02-21 22:57:46,stylesheet fixed,0
+41fdd30,2003-02-21 22:57:47,This commit was manufactured by cvs2svn to create tag 'libmesh-0_3_0'.,0

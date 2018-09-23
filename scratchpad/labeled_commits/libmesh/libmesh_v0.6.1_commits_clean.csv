@@ -1,0 +1,534 @@
+hash,time,message,buggy
+5d382d6,2007-06-05 15:16:33,Added the ability to attch_reference_solution to the exact_error_estimator for purposes of using a comparison to a fine grid solution as an error estimator,0
+bb18aa1,2007-06-05 16:04:13,Added the copy_nodal_solution function.  This allows you to read in a solution and store it while reading in a mesh  and then later  after you have created and initialized an EquationSystems object  copy the nodal solution from the GMVIO object into the EquationSystems and start using it.,0
+e7d1732,2007-06-05 16:09:30,More fixes for --disable-gmv.,0
+0b50940,2007-06-06 15:38:04,Attempted fix for unknown compilers with questionable multimap support,0
+27fe024,2007-06-06 16:52:05,Changes to the following header files to make them pass the contrib/bin/test_headers.sh script.,0
+955d641,2007-06-06 17:15:54,Changed arguments to encript from -W html to --language=html  though it seems both should be correct.,0
+d51d4ec,2007-06-06 17:21:54,Make the create_example_docs script start from ex0 instead of ex1,0
+9bbb649,2007-06-07 21:23:30,Ben is no longer a student.  Added a commented-out entry for Derek.,0
+d315904,2007-06-12 22:21:37,Latest version of examples documentation.  Why is this in CVS again?,0
+46c9aa0,2007-06-15 20:33:39,Utility wrapper for common MPI_ calls,0
+e9907b2,2007-06-15 22:28:54,Run only examples  and in numerical order,0
+1c52274,2007-06-15 22:34:34,Factored out MPI_Allreduce code into Parallel:: methods,0
+d53dd3e,2007-06-17 17:47:33,Added link to final version of LibMesh Paper.,0
+633ecd3,2007-06-17 18:08:58,Added a link to Ben's dissertation  which is a whopping 32Mb!,0
+e131332,2007-06-17 19:24:53,Fixes for when HAVE_MPI is undefined,0
+973134a,2007-06-17 19:25:21,Removed newly-extraneous variable,0
+94c4e9f,2007-06-17 19:46:34,Added overview presentations from ERDC  semiconductors class,0
+8a0dce0,2007-06-17 21:47:46,Moved EWC paper to top  Ben's dissertation after,0
+45a139e,2007-06-17 22:22:33,Added developer pictures to CVS,0
+f7eab59,2007-06-17 22:41:05,Added past developers section,0
+ab05199,2007-06-18 00:23:55,Added blank image  fixed entry for Derek,0
+148b34f,2007-06-18 00:31:36,Emphasize CFDLab development  add Sandia & NASA references,0
+2438a2e,2007-06-18 18:51:58,White background with more muted but color image,0
+6d4dd3e,2007-06-18 18:55:38,Getting more faces in CVS,0
+d1f7219,2007-06-18 18:57:22,*** empty log message ***,0
+b93e0d2,2007-06-18 19:30:31,Added some publications and presentations.,0
+8941511,2007-06-18 19:47:47,Adding more publications.,0
+79d2375,2007-06-18 20:18:23,Added the rest of the publications I had on hand.,0
+ae07423,2007-06-18 21:58:55,Added some more words to the index page  also made the content div have a minimum height.,0
+7bd878f,2007-06-18 22:56:03,Made bg image smaller and over to the side.,0
+74e20fe,2007-06-19 14:20:38,Bugfixes for Node = Point operations,0
+e190ab5,2007-06-19 17:39:04,Only do slanty text on Gecko-enabled browsers.,0
+ff9a18d,2007-06-19 17:52:55,Fixed Parallel localize bug,0
+b3c6f09,2007-06-19 18:09:04,"Use the ""Gecko"" CSS for Konqueror and Opera  even though they do not report NW_IS_GECKO.",0
+e688b99,2007-06-19 18:27:59,Fix to make parallel .bz2 writes reliable,0
+7b7ddcf,2007-06-19 18:29:34,"IE does not support the CSS ""float"" option for images.",0
+ce1838f,2007-06-19 19:17:50,More reliable bz2 handling on parallel runs,0
+f169349,2007-06-19 23:16:01,User can now specify segments for a PSLG explicitly or rely on the implicit PSLG if desired.  Also added an option to turn off mesh smoothing after triangulation. This can be useful e.g. when generating a mesh with multiple segments which you do not want to be violated by a smoother.,0
+ceb2ba0,2007-06-21 20:57:41,Added vector-argument Parallel::min/max,0
+f897a61,2007-06-21 21:24:35,Added recalculate_n_partitions() function to MeshBase.  The number of partitions the mesh thinks it has can be wrong if e.g. you change some of the element processor_ids by hand instead of using a Partitioner.,0
+169ffe0,2007-06-22 18:39:53,Fix for H^2 norm compilation with complex number support,0
+708f194,2007-06-27 20:41:27,Checked in Tim Kroger's diagonal_selection()  select_diagonal()  reselect_diagonal()  and reselect_optimal_diagonal() functions.,0
+045d6b4,2007-06-28 19:51:18,Fix in parent error estimation code,0
+4205e50,2007-07-01 00:43:38,added link for dissertation defense,0
+ad30df4,2007-07-01 01:53:48,We use an AutoPtr outside of the #ifdefs  so we should include auto_ptr.h,0
+e45f52a,2007-07-02 16:10:52,Changes throughout the code to allow it to compile on Solaris using Sun's compiler suite.,0
+3344783,2007-07-02 16:42:52,API changes in PETSc 2.3.3,0
+983d9e6,2007-07-02 17:04:57,More PETSc 2.3.3 API change fixes,0
+de1e86a,2007-07-03 03:46:53,Avoid spurious warning,0
+752474c,2007-07-03 22:51:10,"Added ""-Wno-long-long"" warning to GCC options  some MPI implementations declare long long variables.",0
+f9e3874,2007-07-04 19:03:23,Patch for safely coarsening a perturbed mesh,0
+79c32a8,2007-07-05 18:58:47,fixed for osx  causes gmvread to behave,0
+8752d51,2007-07-06 00:55:26,syntax fix for when MPI is not present,0
+4767f7e,2007-07-06 23:19:44,NASA presentation,0
+2344564,2007-07-12 22:17:58,Reverted broken fix,0
+bcf4bf1,2007-07-16 15:12:36,Added PETSC_VERSION_LESS_THAN macro to make supporting different versions of PETSc easier.,0
+f2c3823,2007-07-16 15:56:50,Added note about the unorthodox splitting of QUAD8s  and added some asserts which should make attaching cell-centered data a little less error-prone.,0
+e5f3feb,2007-07-18 12:01:38,Updated .depend to notice petsc_macro.h,0
+6c0a1ea,2007-08-01 18:56:51,avoid vec.clear() not reducing memory usage,0
+bbe6d53,2007-08-01 22:02:34,Do more tasks in numeric instead of alphabetical order,0
+e13223a,2007-08-02 17:27:19,Initial check-in of (experimental) ContinuationSystem code.  This is basically a new type of System (derived from FEMSystem) which you can in turn derive your own System from.  It will hopefully allow generic arclength continuation for a System parameter of your choice  provided you add the additional required matrix assembly code.  Still probably a good deal of bugs and non-robust code to be worked out  so use with caution.,0
+d499644,2007-08-02 20:02:52,use quadtrees in the point locator for planar 2D meshes,0
+2d864e2,2007-08-02 20:12:59,added a stop() macro which forces a serial run to stop at the desired point until a SIGCONT is recieved,0
+2b4f485,2007-08-03 19:31:11,increased granularity of performance logging  fixed a bug in DofMap::add_neighbors_to_send_list() which caused the _send_list to become excessively large.  Further  this slowed the DofMap::sort_send_list() method considerably.,0
+620bf61,2007-08-03 19:34:18,did not mean to check in these two,0
+4da5ec8,2007-08-03 20:10:52,increased granularity of performance logging  fixed a bug in DofMap::add_neighbors_to_send_list() which caused the _send_list to become excessively large.  Further  this slowed the DofMap::sort_send_list() method considerably.,0
+21b0b3e,2007-08-03 20:12:33,increased granularity of performance logging  fixed a bug in DofMap::add_neighbors_to_send_list() which caused the _send_list to become excessively large.  Further  this slowed the DofMap::sort_send_list() method considerably.,0
+8ff3d72,2007-08-03 20:39:11,increased granularity of performance logging  fixed a bug in DofMap::add_neighbors_to_send_list() which caused the _send_list to become excessively large.  Further  this slowed the DofMap::sort_send_list() method considerably.,0
+5545b9f,2007-08-03 20:40:23,use the NODES method to populate Octree-based PointLocators since it is much  much faster,0
+7356c29,2007-08-03 20:42:45,truly empty nodes array after it is used to populate the tree,0
+d7e1844,2007-08-10 14:53:54,Once the boundary mesh is sync'd  remove all unconnected nodes.,0
+9ab15bb,2007-08-16 17:56:44,"Added ""Euler2"" TimeSolver implementation",0
+dd090ef,2007-08-16 18:01:25,Added Euler2Solver dependencies,0
+ae6c9bb,2007-08-19 20:00:48,put a point_locator in the mesh,0
+f524fc5,2007-08-22 16:17:49,spelling of Nicolson,0
+42383a9,2007-08-22 19:25:28,Updated dependencies,0
+ae4d9cd,2007-08-22 22:55:53,Link to Sandia libMesh slides,0
+128d767,2007-08-23 18:03:44,Print debugging constraint info to any ostream  not just cout,0
+dbd5fe6,2007-08-23 18:07:46,If we're going to spell Phyllis Nicolson's name right  we might as well spell it right everywhere...,0
+cd49c55,2007-08-23 22:11:08,New max_growth parameter  new deltat resizing behavior  some refactoring,0
+c0037f9,2007-08-24 18:23:42,Support upper_tolerance parameter,0
+5b8b856,2007-08-29 17:42:02,Print !quiet output ASAP,0
+ae5ae85,2007-09-04 17:10:02,PerfLog the time spent calculating norms,0
+2d06b35,2007-09-05 18:32:56,Ensure const-correctness on all compilers,0
+a4b6224,2007-09-05 19:02:15,include limits header for std::numeric_limits,0
+d4814ae,2007-09-05 19:10:43,include unistd.h for unlink(),0
+f4457f6,2007-09-05 21:08:35,Fix undersized buffer,0
+fad7738,2007-09-05 23:18:52,Remove odd undef SEEK_* entries,0
+f43e25f,2007-09-06 15:50:40,Avoid infinite template recursion with icc 7.1,0
+1d95c0d,2007-09-07 16:16:53,updated configure to accept command-line options for the compilers and to print the configuration information into libmesh_config.h,0
+b6d1bc0,2007-09-07 18:51:47,updated configure to accept command-line options for the compilers and to print the configuration information into libmesh_config.h,0
+3e85640,2007-09-07 21:48:17,Added ParallelMesh stub,0
+d4d486b,2007-09-07 21:55:51,added a unique namespace for libmesh make variables,0
+aff06c6,2007-09-07 22:03:58,Added stubs for first Mesh parallelization methods,0
+ae54210,2007-09-07 23:11:50,*** empty log message ***,0
+7d58c54,2007-09-07 23:14:49,Added not_local and active_non_local iterators.,0
+5690837,2007-09-08 01:55:27,added new paper,0
+62d2d8a,2007-09-08 02:05:39,updated link,0
+7c996f8,2007-09-09 16:06:04,flush-right logo,0
+50f8bb5,2007-09-09 16:28:13,flush-right logo,0
+505aba0,2007-09-09 19:42:07,updated documentation,0
+b9da12f,2007-09-09 20:02:19,updated documentation,0
+16e2862,2007-09-10 00:03:20,updated documentation,0
+bb6719d,2007-09-10 01:11:35,updated publications,0
+7896e6d,2007-09-10 23:09:19,backslashed quotes being eaten on IRIX and AIX  do not use them,0
+c574fed,2007-09-11 16:44:25,added Dereks USNCCM 2007 presentation,0
+abcffad,2007-09-11 21:11:33,do not include petscconf.  this has bitten me for the last time.,0
+d27ec2d,2007-09-11 21:26:55,get the link/include stuff at configure time,0
+f3d4b78,2007-09-12 18:52:41,Added another USNCCM9 presentation,0
+cd961dd,2007-09-13 21:02:19,Added VTKIO class by Wout Ruijter and configure options to link against VTK if it is available.,0
+db3ed88,2007-09-13 21:05:53,Added CVS ID tags.,0
+6d919d5,2007-09-13 21:17:35,reverted pestc build method.,0
+ab2b2e8,2007-09-13 21:59:04,Do not add -Wno-deprecated as a general CXXFLAG.  It triggers other warnings on C files.,0
+0f8a21f,2007-09-13 22:51:51,Remember to always stop perflogging calculate_norm(),0
+6cbf369,2007-09-17 19:27:47,*** empty log message ***,0
+99ddf22,2007-09-18 22:12:51,Fix for coarsening code with use_old_dof_indices==false,0
+ad44a92,2007-09-18 22:13:40,Refactoring  added estimate_parent_errors support,0
+fc1b554,2007-09-18 23:08:17,Fixed accidental code deletions,0
+7e5fd80,2007-09-19 19:47:37,Reliability bugfixes,0
+431a409,2007-09-19 21:03:21,Added delete_nonlocal_elements implementation,0
+32c1887,2007-09-20 00:09:30,Fixes for VTK tests.,0
+f55504e,2007-09-20 15:53:39,FLIBS should be libmesh_FLIBS  thanks.,0
+509f094,2007-09-20 16:11:38,changed char* to const char*,0
+2cd466f,2007-09-20 16:28:27,Martins new smoothing implementation,0
+f4e2745,2007-09-21 19:55:55,Don't prepare_for_use - it does too much,0
+b15205a,2007-09-21 19:55:56,This commit was manufactured by cvs2svn to create tag 'pre_serialmesh'.,0
+f0dbca6,2007-09-25 19:54:42,Refactored Mesh into SerialMesh  ParallelMesh,0
+7e52a88,2007-09-25 19:59:23,Added SerialMesh  UnstructuredMesh classes to MeshBase tree,0
+b3e72ab,2007-09-25 20:15:45,Fix for ENABLE_PERIODIC && !ENABLE_AMR,0
+11dc5d0,2007-09-25 20:19:45,Can only set _p_level when ENABLE_AMR is off,0
+af3ca23,2007-09-25 20:26:00,Fixes for ENABLE_PERIODIC && !ENABLE_AMR,0
+5f669c5,2007-09-25 20:31:14,Fixed misplaced ifdefs,0
+1fa1d60,2007-09-28 15:45:51,Added assert(),0
+31495b3,2007-09-28 16:27:58,More conservative plot_error arguments,0
+69e51a3,2007-09-28 20:53:34,Add test for gcc ABI demangling (necessary for in-code stack traces),0
+a71cfaa,2007-09-28 20:57:11,Add print_trace() function  supporting #define,0
+699d169,2007-09-28 21:08:17,Move implementations to .C file,0
+491e72a,2007-09-28 22:03:36,print_trace dependencies,0
+c07e362,2007-09-29 18:58:09,Don't compile when we may not have dl functions available,0
+66d7e6c,2007-09-30 04:09:58,Test for dladdr(),0
+1201988,2007-09-30 14:11:38,Additional test to avoid breaking cygwin,0
+115bc83,2007-10-01 18:34:22,Add Elem::set_parent() function for use by MeshModification code,0
+4d8a31c,2007-10-01 18:44:02,Fix stupid bug,0
+1d9dc06,2007-10-01 18:45:37,Reverting bad code,0
+95a1e32,2007-10-01 18:55:18,Make Elem::_parent non-const for use in MeshModification methods,0
+0250b4c,2007-10-01 23:04:38,Fixed parallel bug,0
+8c54786,2007-10-01 23:13:22,More Mesh refactoring - node  element storage details pushed out into SerialMesh and ParallelMesh,0
+71e3906,2007-10-01 23:13:57,New dependencies based on SerialMesh  ParallelMesh refactoring,0
+4ffcd66,2007-10-01 23:17:06,Bugfixes against time when max_elem_id > n_elem,0
+3f76511,2007-10-03 19:27:54,Use namespaced env variables,0
+edbd719,2007-10-03 19:31:28,Fix bug for case VTK,0
+d9f5b90,2007-10-03 19:41:59,Don't try to write twice to files with both .dat and .plt in them,0
+c67e53f,2007-10-03 19:47:35,Write VTK output when requested,0
+8db6dd3,2007-10-03 20:18:23,Added NumericVector<T>::sum(),0
+9c109cf,2007-10-03 20:21:17,Use T (PetscScalar  may be complex) for PetscVector::sum return,0
+50e77e2,2007-10-03 20:31:42,Added has_mesh_data method,0
+0f1a067,2007-10-03 21:02:07,(Hopefully) better configuration and implementation of print_trace(),0
+e7a546f,2007-10-03 21:09:43,Fix make variable namespace,0
+bd3fa6b,2007-10-03 22:09:24,New VTK code from Wout Ruijter,0
+f593b04,2007-10-05 20:33:22,Only need mesh_base.h  not mesh.h,0
+672a835,2007-10-05 20:38:51,fixed for the case of no VTK.,0
+9b13338,2007-10-05 20:39:13,removed extra space,0
+d438c8f,2007-10-05 20:41:51,Only need unstructured_mesh.h  not mesh.h,0
+4dff3a2,2007-10-05 20:41:52,Use UnstructuredMesh instead of Mesh where possible,0
+c9472ec,2007-10-05 20:43:08,Need unstructured_mesh.h  not mesh.h,0
+e5f596f,2007-10-05 20:47:45,Remove unnecessary headers,0
+3818c22,2007-10-05 20:51:40,Removed unnecessary headers,0
+ebc5d2c,2007-10-05 20:54:35,Only need mesh_base.h  not mesh.h,0
+8586f84,2007-10-05 20:55:13,Only need MeshBase  not Mesh,0
+cd75501,2007-10-05 21:02:55,Only need a MeshBase  not Mesh,0
+4069485,2007-10-05 21:06:20,Only need MeshBase  not Mesh,0
+5adb516,2007-10-05 21:11:26,Include mesh_base.h  not mesh.h,0
+fa9f0a2,2007-10-05 21:18:57,Use MeshBase instead of Mesh,0
+15249d6,2007-10-05 21:19:59,Add ENABLE_PARMESH option (disabled by default) to use ParallelMesh as Mesh,0
+61271f5,2007-10-05 21:20:53,Revision number update (ran autoconf after cvs commit configure.in...),0
+db76c0e,2007-10-05 21:37:34,Updated dependencies,0
+d25bc16,2007-10-06 18:56:00,Only need MeshBase  not Mesh,0
+0928614,2007-10-08 21:26:06,Added access to the VTK Unstructured grid  also a test in committing source,0
+d29959a,2007-10-09 13:43:59,no need for the #ifdefs since the vtkUnstructuredGrid is forward declared and only used as a pointer.  This fixes a bug for the case of no VTK support,0
+3ca8701,2007-10-09 13:44:43,cast to a long int to match the print statement.  Alternatively  could change %ld to %d?,0
+98e7ff9,2007-10-09 19:39:11,updated compiler flags for PGI 7.0-7 compilers,0
+bf1415c,2007-10-09 19:40:06,give a hint as to which std::sqrt<>() to call.  Required for pgCC,0
+ddad4c0,2007-10-09 19:43:07,const bool return type is meaningless - replace with bool,0
+61c43ec,2007-10-09 20:45:47,"For the VTK connectivity function  if the user requests a ""subchild"" other than zero  throw an error.  The VTK Hex20 is implemented as a single element.",0
+6daa331,2007-10-09 21:41:35,Do not use char buffer to set filename.,0
+f9062e2,2007-10-11 18:49:21,Added the axes_limit string.  Allows you to specify the limits of the axes used in GNUplot's 2D output.,0
+9ef83f7,2007-10-12 20:29:06,support for Intel v10.0,0
+d55d60d,2007-10-14 16:00:26,added SPAI_LIB in case PETSc is built with SPAI support,0
+0b16019,2007-10-14 19:06:14,updates for intel 10 on itanium,0
+e8bc980,2007-10-14 19:29:45,"Added bibtex-format citations.  Also added ""official"" libMesh citation.",0
+da4cc37,2007-10-14 19:29:46,This commit was manufactured by cvs2svn to create tag 'libmesh-0_6_1-rc1'.,0
+92a53eb,2007-10-14 21:47:03,This code still has a good deal of extraneous comments  etc and shouldn't be used unless you know what you are doing.,0
+1059e99,2007-10-15 07:37:23,Fixes for --enable-complex,0
+3d3b7cc,2007-10-15 07:37:55,Compilation workarounds for --enable-complex,0
+3daf655,2007-10-15 20:14:04,used uint without typedefing it.  Sun compiler caught this,0
+0ad6a7c,2007-10-15 20:33:02,First check-in of the generalized EigenTimeSolver based on Steffen's Slepc solver.  This code is largely untested and probably shouldn't be used yet unless you know what you're doing.,0
+bd4bd1f,2007-10-15 20:48:31,explicit casts to help sun compilers figure out which overloaded std::pow to use,0
+2086387,2007-10-15 20:48:46,Sun Studio support,0
+0ded1b4,2007-10-15 21:02:06,updated config.guess,0
+9e119a0,2007-10-15 21:08:25,#ifdef HAVE_SLEPC,0
+e65fe86,2007-10-15 21:29:59,removed C++-style comment,0
+1275212,2007-10-15 23:06:37,Fixes for --enable-complex,0
+95cdcab,2007-10-15 23:56:45,remove deprecated char*  replaced with const char*,0
+195aa45,2007-10-17 23:34:29,Bugfix for broken 1D Hermites,0
+d9fa464,2007-10-18 20:31:28,Bugfix for 1D Hermites,0
+26e0715,2007-10-18 22:40:47,Include numeric_vector.h  not petsc_vector.h which we may not be compiled to use,0
+adcc169,2007-10-19 20:11:32,Bugfix for 1D Hermites,0
+4534fd7,2007-10-21 20:48:54,updated copyright notice,0
+3d44735,2007-10-22 15:58:51,allow the user to specify which method to use when building a PointLocatorTree from MeshFunction,0
+f8e38fd,2007-10-22 19:57:58,Trying out a different underlying container for ParallelMesh,0
+0c0c202,2007-10-22 22:19:53,Updated dependencies,0
+af406f7,2007-10-22 22:53:18,"Print better description of ""make run""",0
+0eb9a0a,2007-10-22 23:06:31,Bugfixes for mapvector-based ParallelMesh,0
+b097a42,2007-10-22 23:12:11,Added option to set initial Newton tolerance.  Added ability to turn off stepgrowth based on # Newton steps req'd for convergence.,0
+1ccd521,2007-10-22 23:13:42,Only add the matrix B to the system if the user has not already added it.,0
+e801c4d,2007-10-22 23:23:25,Switch to element iterators rather than indexing  for ParallelMesh compatibility,0
+7fa3a52,2007-10-22 23:30:38,Use element iterators instead of indexing for ParallelMesh compatibility,0
+50330c3,2007-10-22 23:43:48,Add a quick comment to mapvector class,0
+f98387d,2007-10-22 23:57:56,Fix for ParallelMesh compatibility,0
+55b27fc,2007-10-23 18:08:04,Don't run ex12 in parallel  MeshData objects don't get set correctly from a parallel Mesh::read().  We should probably fix that someday.,0
+8098bc7,2007-10-23 18:30:23,Removed inadvertently-committed debugging statements,0
+4ca0693,2007-10-23 18:30:24,This commit was manufactured by cvs2svn to create tag 'libmesh-0_6_1'.,0
+4cc3797,2007-10-24 01:38:12,Adding new Parallel:: helper functions  testing out subversion,0
+fd50de2,2007-10-24 02:08:19,Remove inactive branch.,0
+49ec85f,2007-10-24 02:09:53,Remove inactive branch.,0
+6373259,2007-10-24 11:21:49,renaming old tags.,0
+ba4e43d,2007-10-24 11:22:07,Renaming old tags.,0
+ad8af96,2007-10-24 11:22:23,Renaming old tags.,0
+d58df46,2007-10-24 11:22:34,Renaming old tags.,0
+3e906a1,2007-10-24 11:24:24,Renaming tags.,0
+3856160,2007-10-24 11:25:01,Renaming old tags.,0
+238a63a,2007-10-24 11:25:07,Renaming old tags.,0
+b6c4106,2007-10-24 11:25:10,Renaming old tags.,0
+84575eb,2007-10-24 11:25:13,Renaming old tags.,0
+d7df063,2007-10-24 11:25:16,Renaming old tags.,0
+cd44429,2007-10-24 11:25:19,Renaming old tags.,0
+4cb1d21,2007-10-24 11:25:24,Renaming old tags.,0
+755b5c8,2007-10-24 11:25:29,Renaming old tags.,0
+26c6014,2007-10-24 11:25:34,Renaming old tags.,0
+18ecca1,2007-10-24 11:25:37,Renaming old tags.,0
+6eebbd0,2007-10-24 11:25:41,Renaming old tags.,0
+8c4c0c1,2007-10-24 11:25:45,Renaming old tags.,0
+0d1a4e3,2007-10-24 11:25:49,Renaming old tags.,0
+bbb2f92,2007-10-24 11:25:52,Renaming old tags.,0
+250e051,2007-10-24 11:25:54,Renaming old tags.,0
+41f13d4,2007-10-24 11:25:57,Renaming old tags.,0
+4100e46,2007-10-24 11:26:00,Renaming old tags.,0
+8a3b3d4,2007-10-24 11:26:06,Renaming old tags.,0
+d61ce1c,2007-10-24 11:26:09,Renaming old tags.,0
+8947693,2007-10-24 12:39:10,surely this is what you mean -- for (unsigned int i=mysize  i != 0  ++i) is an infinite loop!,0
+c08bc59,2007-10-24 15:01:05,updating documetation to describe svn,0
+1d80010,2007-10-24 15:10:16,formatting,0
+aaa2911,2007-10-24 16:06:18,updated documentation,0
+223340c,2007-10-24 16:15:06,updated documentation,0
+257a082,2007-10-24 16:17:35,updated documentation,0
+1452d2f,2007-10-24 16:58:42,honor keywords in source files,0
+7a84153,2007-10-24 18:24:15,beginnings of a unit test framework,0
+c6b19cd,2007-10-24 18:26:36,honor keywords,0
+87a3fde,2007-10-24 18:27:40,honor keywords,0
+aa03fab,2007-10-24 18:28:19,fixes for allgather and vector_union,0
+dbb1ed3,2007-10-24 18:49:56,added Id,0
+0ba9ab7,2007-10-24 18:56:32,discuss unit tests,0
+8e292a8,2007-10-24 21:27:28,distributed vector regression test,0
+19a1e9c,2007-10-24 21:49:06,unit test for DistributedVector<>::localize(),0
+e677049,2007-10-24 21:49:48,make ::localize() more efficient  still need to handle ::localize_to_one(),0
+153370c,2007-10-24 23:07:21,moved consistent with new config.guess,0
+4307a40,2007-10-24 23:08:53,moved consistent with new config.guess,0
+f259e33,2007-10-24 23:11:18,moved consistent with new config.guess,0
+ba04514,2007-10-25 02:03:16,use templates to test things derived from NumericVector<>.  something wrong with PetscVector<>  though...,0
+e34cad6,2007-10-25 02:04:46,use templates to test things derived from NumericVector<>.  something wrong with PetscVector<>  though...,0
+6841351,2007-10-25 02:25:36,OK  that was subtle.  PETSc must #define VectType  so use NumericVectorType as the template parameter instead,0
+6d09a27,2007-10-25 06:31:33,Support for SLEPc 2.3.3.  It looks like the changes to SLEPc will be similar to those which happen in PETSc.  Whereas SLES went to KSP+PC in PETSC  in SLEPC  we have some of the EPS functionality splitting off into an IP (inner product) object.,0
+9d211d6,2007-10-25 20:05:14,Add wrapper for MPI_Gather,0
+33a4a6b,2007-10-25 20:42:33,move vector_union to vector_allgather  add vector_gather,0
+83858d7,2007-10-25 20:43:30,move vector_union to allgather(vec)   add gather(root vec),0
+95286c1,2007-10-25 20:45:17,offer --cxx option in usage statement.  The option was there  but not displayed in the usage summary.,0
+5c832eb,2007-10-25 21:41:09,Name change from vector_union to allgather,0
+5ce2b67,2007-10-25 21:45:32,Added wrapper for MPI_SendRecv of arbitrary vectors,0
+f4d7aa0,2007-10-26 10:25:20,test new impl,0
+e6d0cc5,2007-10-26 11:03:01,fixed localize_to_one,0
+6eabaf3,2007-10-26 11:03:30,optimze for degerate case,0
+c30d192,2007-10-26 18:27:33,sum  send_receive shouldn't crash with empty vectors,0
+20cac8e,2007-10-26 19:22:10,Updated parallel_mesh dependencies,0
+0e1ec4f,2007-10-26 20:16:45,log some of the potentially more expensive parallel operations,0
+722058c,2007-10-26 21:38:16,Fix tag  swapped proc id bugs,0
+fb02f74,2007-10-28 05:16:50,Parallel renumber_nodes_and_elements,0
+780e0ab,2007-10-28 21:06:05,git-svn-id: file:///Users/petejw/Documents/libmesh_svn_bak@2264 434f946d-2f3d-0410-ba4c-cb9f52fb0dbf,0
+69ce95f,2007-10-29 00:12:47,reserve() space for efficiency since the information we need to do that is freely available.,0
+266606a,2007-10-29 00:26:17,reserve() space for efficiency since the information we need to do that is freely available.,0
+6b73853,2007-10-29 02:34:05,Make sure we iterate over parents before children when necessary,0
+698b4f0,2007-10-29 14:11:17,Remove overzealous warning - we should be able to contract active and delete subactive elements in any order,0
+949caf2,2007-10-29 14:52:57,Removed now-overzealous warning from _coarsen_elements,0
+ceae618,2007-10-29 17:43:46,Updated dependencies,0
+2055314,2007-10-30 16:35:56,Support 1D meshes and set the default mesh color to black.,0
+3b961e7,2007-10-30 19:58:18,Add iteration counters,0
+397ca15,2007-10-30 20:01:57,Count numbers of linear  quasi-Newton iterations,0
+24ec412,2007-10-30 20:57:33,cleanup,0
+dad79e1,2007-10-30 20:59:58,added a method to get the element-weight processor-wise,0
+e185cab,2007-10-30 21:01:01,added a method to get the number of local nodes,0
+cc2a6e0,2007-10-30 21:03:08,add an insert_node() method which parallels the insert_elem(),0
+1cc837b,2007-10-30 21:12:54,add a broadcast,0
+214ed25,2007-10-30 21:19:38,added an untested allgather() method for ParallelMesh,0
+04fcdce,2007-10-31 02:22:19,reserve() the right number  remember to add the element processor_id()  and check global sizes without communication,0
+3c544c9,2007-10-31 10:42:14,set the childrens node keys  add child element to its parent,0
+39f37c8,2007-10-31 10:56:01,set the childrens node keys  add child element to its parent,0
+7b243fb,2007-10-31 10:56:58,documentation,0
+864897b,2007-10-31 14:13:42,test the broadcast,0
+c84a68a,2007-10-31 17:44:43,print a more useful error message,0
+b963d4a,2007-10-31 17:56:53,must be careful with insert_node() in the case of a node with the specified ID already existing.,0
+a521bd2,2007-10-31 17:59:31,MeshCommunication::allgather() now works,0
+eaf9031,2007-10-31 18:21:13,Added print_converged_reason() member function.  This uses the KSPGetConvergedReason(...) functionality of PETSc  and prints a message about why the most recent linear solve converged (or diverged).,0
+a8af7de,2007-10-31 18:26:52,Added the newton_progress_check flag  and made the newton_stepgrowth_aggressiveness a class member.  Also  check for initial linear solve tolerance too loose (solver exits in zero iterations.),0
+a73820a,2007-10-31 21:29:45,Avoid compile bug with --disable-amr and warning with --disable-mpi,0
+f460af1,2007-10-31 21:53:36,Don't reserve more request memory than we'll need,0
+818df5d,2007-10-31 21:57:17,bugfix  remove redundant variable,0
+da092b2,2007-10-31 22:02:32,Remove unnecessary forward declaration,0
+b90dfff,2007-11-01 03:58:31,Request MeshBase references  not Mesh references  with get_mesh(),0
+29a88af,2007-11-01 03:58:59,Return MeshBase references  not Mesh references  from get_mesh,0
+5928315,2007-11-01 17:59:33,Updated dependencies,0
+39023cf,2007-11-01 19:30:30,Added pure virtual read()/write() interface to MeshBase. Note that these could and probably should eventually be concrete implementations in mesh_base.C.  That way a CartesianMesh (i.e. something not derived from UnstructuredMesh) could utilize the same functionality.,0
+01128b5,2007-11-01 19:43:29,The DivaIO class was templated on UnstructuredMesh but MeshBase appears to be good enough.  This code generates output  but we haven't had a working copy of the DIVA viz software for some time  so there's no way to know if it's actually working...,0
+d348ab9,2007-11-01 20:05:24,Loop over only local elements when assembling in serial,0
+2db3ed3,2007-11-02 17:44:31,allgather_bcs() now works,0
+6c2d7db,2007-11-02 19:39:29,Make neighbor setting in 1D reliable,0
+c81d016,2007-11-02 20:50:21,Don't delete unpartitioned elements or their node neighbors,0
+3a26b96,2007-11-03 07:21:36,Optimization in invalidate_dofs,0
+0fb4f91,2007-11-03 07:22:52,Only assign nodes to processors which own *active* elements containing them,0
+ca11ae0,2007-11-03 15:48:45,Add sanity check to look for unpartitioned nodes,0
+2daa0ca,2007-11-03 17:54:05,Assign processor ids to new nodes added by element refinement,0
+945fb80,2007-11-03 18:08:30,Parallelized  refactored DofMap::distribute_dofs,0
+f86b829,2007-11-03 18:43:27,Bugfix for partitioner sanity check,0
+d6e716a,2007-11-03 19:07:19,Another bugfix in the sanity check,0
+ca2a157,2007-11-03 19:37:41,Make sure subactive nodes are partitioned too,0
+3724e08,2007-11-03 20:24:13,Make sure nodes are assigned to a processor where they're active if possible,0
+cd23404,2007-11-03 22:40:38,Compilation fix for --disable-mpi,0
+1215aa7,2007-11-03 22:44:41,Avoid compilation warnings with --disable-mpi,0
+67de81e,2007-11-03 23:21:58,Make print_convergence_reason a base class method (even if only implemented with Petsc for now),0
+2faab5b,2007-11-03 23:22:25,Call print_convergence_reason as a base class method,0
+923b3f2,2007-11-04 00:14:37,Ensure consistently partitioned nodes even on distributed meshes.,0
+05eb3bc,2007-11-04 00:15:37,Refactoring of Mesh allgather()  delete_remote_elements(),0
+e86e5f9,2007-11-04 01:45:11,Bugfix for corner case,0
+2c04cc5,2007-11-04 02:11:31,Don't delete ancestors of undeleted elements,0
+e212c06,2007-11-04 02:26:41,Add type for RemoteElem,0
+3ae2230,2007-11-04 03:05:18,Added static global remote_elem pointer for use with ParallelMesh,0
+2008901,2007-11-04 14:57:59,Do test_level_one in parallel  keeping return value globally valid,0
+b1d5673,2007-11-04 16:50:20,For now  don't try to run AMR examples with ParallelMesh,0
+e646a70,2007-11-04 16:52:02,Implement ParallelMesh::is_serial(),0
+bee431c,2007-11-04 16:52:56,Parallelize meshes (where applicable) in EquationSystems::init(),0
+0becd20,2007-11-04 17:46:20,Updated dependencies,0
+0e8af93,2007-11-04 20:35:19,send_receive for MPI datatypes,0
+5fc497e,2007-11-05 03:06:29,Fixed cut-n-paste assert bug,0
+9fab0ab,2007-11-05 05:42:49,Added remote_neighbors_links method,0
+00340ee,2007-11-05 15:45:22,Set appropriate neighbor pointers to remote_elem when deleting remote elements.,0
+4aeb5c9,2007-11-05 15:45:55,Serialize before doing an EquationSystems::write,0
+c0cf110,2007-11-05 18:49:32,Make load addition parallel-safe,0
+f831441,2007-11-05 18:50:46,Renumber dof objects to shrink their containers after deleting the remote objects,0
+86c9645,2007-11-05 20:03:04,Use EquationSystems::all_gather before a write,0
+79a82d3,2007-11-05 20:29:39,I hate to force a rebuild for a documentation change  but this one is important...,0
+e5633f3,2007-11-05 20:30:09,pedantic const-correctness.,0
+aed82de,2007-11-05 21:40:00,update neighbors after allgather()ing the mesh,0
+4eda032,2007-11-05 23:00:16,Added n_unpartitioned_* methods  fixed ParallelMesh::n_* methods,0
+dcfbaee,2007-11-05 23:15:34,Updated dependencies,0
+a076f07,2007-11-06 00:57:46,Assert a contiguous node numbering before building a nodal solution vector,0
+5395287,2007-11-06 07:11:20,Don't leave ancestor elements unpartitioned - if they're left with processor_id 0 it leads to load imbalance  if they're left with invalid_processor_id it breaks assertions.,0
+ce554e1,2007-11-06 07:22:16,Create unpartitioned elements by default,0
+7765117,2007-11-06 07:23:00,Make n_* functions use cached data,0
+6073424,2007-11-06 07:23:49,Assertion for local add_elem case,0
+c5e18ab,2007-11-06 08:10:39,Implementations for --diable-mpi,0
+fcf8a6e,2007-11-06 08:11:14,Fix for --disable-amr,0
+08726d4,2007-11-06 15:44:03,New add_node method  to allow calling processors to specify via processor_id whether they're adding a local or an unpartitioned node.,0
+61387f7,2007-11-06 15:48:47,add_* should be pure virtual,0
+9b76a6e,2007-11-06 16:31:54,Add optional processor_id argument to add_point,0
+2538276,2007-11-06 16:33:03,Add optional processor_id argument to add_point,0
+f4955aa,2007-11-06 16:33:54,Set processor_id=0 when adding points and elements with a Mesh.read()  so ParallelMesh doesn't get confused.,0
+353c3c1,2007-11-06 16:38:56,send_receive() in --disable-mpi case,0
+72497ec,2007-11-06 23:32:07,MeshBase::add_* API changes  bugfixes.,0
+336b2d5,2007-11-07 00:33:14,"Fix the ""more processors than active elements"" case.",0
+d789e42,2007-11-07 02:03:49,Tiny optimization for send_receive(vector)  addition of send_receive(vector<vector>),0
+26d441a,2007-11-07 04:47:05,Type fixes for send_receive(vector<vector>),0
+0fb7331,2007-11-07 04:48:10,Added DofMap::allgather_recursive_constraints(),0
+6307a13,2007-11-07 05:49:20,Updated dependencies,0
+7986069,2007-11-07 05:49:40,Enable parallel constraint calculations when !mesh.is_serial(),0
+a0e401f,2007-11-07 17:48:43,explicitly check that the mesh is serialized,0
+207becd,2007-11-07 17:49:43,use the point assignment operator,0
+d25926a,2007-11-07 17:50:08,added doi link,0
+9f92c8a,2007-11-07 23:05:55,_next_free_*_id bugfixes,0
+cf48a9c,2007-11-07 23:13:24,Set parent and child links to remote_elem on ghost elements  not just neighbor links,0
+07ca3c9,2007-11-08 05:46:48,Add an assert(!p_level) for now  unless it's fixed that could trigger confusing bugs later.,0
+dc48391,2007-11-08 05:52:12,Parallelized create_parent_error_vector,0
+39269b8,2007-11-08 06:54:04,Added Parallel::min/max (i.e. logical and/or) for type bool Added MPI_Datatype entries for char/unsigned char,0
+58ff5fc,2007-11-08 06:57:08,Parallelized test_unflagged  added make_flags_parallel_consistent,0
+31afb0a,2007-11-08 07:09:38,Use make_flags_parallel_consistent whereever applicable,0
+8e5bd92,2007-11-08 17:13:58,Fall back on returning DistributedVector if PETSc and LASPack aren't enabled  don't just error(),0
+35e9a88,2007-11-08 17:16:50,Updated dependencies,0
+4a58b29,2007-11-08 17:32:26,Allow command-line disabling of LASPACK and PETSc,0
+cabce73,2007-11-08 23:04:25,Don't call compute_children_node_keys  we don't use them anymore.,0
+4e15251,2007-11-08 23:07:26,Remove obsolete Elem::key() and Node::key()  use hashed Point locations as keys for MeshRefinement instead.,0
+ce2c9fc,2007-11-08 23:20:53,Send global error messages to cerr  but only one copy even in parallel,0
+a87887e,2007-11-09 00:30:42,Ignore NFS temp files,0
+6d6c96b,2007-11-09 00:33:07,Update svn:ignore,0
+26236be,2007-11-09 07:19:22,Added renumber_* functions  allow ParallelMesh::add_* to add nonlocal prepartitioned objects.,0
+6e4b032,2007-11-09 07:25:14,More parallel synchronization code for MeshRefinement,0
+eeeb526,2007-11-09 16:51:43,Fix node renumbering  add ghost element synchronization,0
+378ecda,2007-11-09 17:18:47,Clearing mesh is implicitly a type of serialization,0
+311b1ce,2007-11-09 21:02:05,Added more asserts  fixed stupid _is_serial bug,0
+573fffa,2007-11-09 21:03:48,Don't try to allgather unnecessarily - for one thing  it may break on non-parallel meshes whose dofobject ids aren't in blocks by processor!,0
+178f8b4,2007-11-09 21:29:29,Parallelized MeshTools::bounding_box,0
+f13b7bc,2007-11-09 21:32:33,Fix missing header,0
+6897fd1,2007-11-09 22:11:53,Fixed indexing bug in parallel consistency code,0
+5017d08,2007-11-09 22:19:05,Infinite loop bug fix in parallel consistency code,0
+9ea16ea,2007-11-09 22:24:48,Fixed requests bug in make_nodes_parallel_consistent,0
+70d3848,2007-11-09 22:55:59,Fix _new_nodes_map bug  use a more reliable key for n0 n1 n2 large,0
+fb5df03,2007-11-09 23:00:35,Don't try to renumber correctly numbered nodes,0
+62ec51c,2007-11-09 23:02:15,Bugfix in parallel consistency code,0
+32f04ec,2007-11-10 00:18:07,Fix parallel synchronization bugs,0
+be6e2d5,2007-11-10 00:35:34,Updated dependencies,0
+da95a29,2007-11-10 06:53:46,serial ParallelMesh compatibility,0
+a2f8548,2007-11-10 06:54:58,Reenable parallel code for testing of cached code  cache bugfixes,0
+cdff589,2007-11-10 07:04:29,Prototypes for parallel checking code of cached n_* values,0
+38a52de,2007-11-10 07:06:13,Fixes for --disable-amr,0
+a482b04,2007-11-10 07:17:45,Additional parallel debugging code in while loops  bugfix with ParallelMesh,0
+374eb2a,2007-11-10 19:06:33,Added Parallel::verify() method  parallel_only() macro,0
+d4718be,2007-11-10 19:08:26,Disable repartitioning in parallel  add parallel_only() macros where appropriate,0
+1209a30,2007-11-10 19:14:41,Added parallel_only() macros where appropriate,0
+0224ba3,2007-11-10 19:18:03,Added Parallel::verify() for --disable-mpi,0
+397b5e7,2007-11-10 19:41:17,Fixed cut-n-paste bug in assert(),0
+d109f15,2007-11-10 19:42:27,Explicitly serialize for I/O  Don't try to skip AMR examples with ParallelMesh anymore,0
+782a8aa,2007-11-10 19:51:01,Fix for adaptive make_links_to_me_remote,0
+6a8edca,2007-11-10 22:39:21,Fixes for code that might encounter remote_elem,0
+ca5f4cb,2007-11-10 22:40:12,Trivial change for easier debugging,0
+8500336,2007-11-10 22:40:41,Fix for remote_elem encountering code,0
+49bd533,2007-11-10 23:19:53,More remote_elem handling code,0
+a583bd4,2007-11-10 23:35:06,Additional assert(),0
+3130890,2007-11-11 01:03:42,Additional assert(),0
+2fc2f39,2007-11-11 01:30:20,integers are valid Scalars now,0
+7294b11,2007-11-11 02:26:50,Initial cppUnit Commit,0
+2d7dfaf,2007-11-11 04:40:54,Assert valid return value from which_neighbor_am_i,0
+315e76b,2007-11-11 04:41:18,Assert valid return value from which_neighbor_am_i,0
+7295d1e,2007-11-11 04:41:47,Assert valid return value from which_neighbor_am_i,0
+c160760,2007-11-11 04:44:24,Updated dependencies,0
+0c665cd,2007-11-11 07:46:15,Don't error() if which_neighbor_am_i fails  just return invalid_uint,0
+2dbdca3,2007-11-11 07:48:18,New assert_valid_neighbors() test  bugfixes in find_neighbors(),0
+a73a92c,2007-11-11 07:55:22,Test for valid neighbors after a delete_remote_elements(),0
+3928d2f,2007-11-11 08:16:40,Adding some of Ben's old tests to the new system,0
+189fa7c,2007-11-11 08:20:49,Small changes to Makefile,0
+eb0d079,2007-11-11 08:20:57,More assert_valid_neighbors() checks,0
+996af2c,2007-11-11 08:22:13,Fixes in make_links_to_me_remote  assert valid which_neighbor_am_i,0
+1b96f21,2007-11-11 08:34:06,One last Makefile change,0
+4ad0317,2007-11-11 09:15:12,More asserts,0
+998bafc,2007-11-11 17:17:42,Fixes for find_neighbors() with remote_elem,0
+2708f62,2007-11-11 17:18:27,Added assert_valid_parallel_ids() ,0
+f8165a8,2007-11-11 18:09:23,Use macros to pull in inherited tests.,0
+d8d4130,2007-11-11 19:03:15,Redo test structure of Point to get tests from a TypeVectorTestBase,0
+3737bfe,2007-11-11 19:07:18,Added assert_valid_parallel_flags,0
+1c46c1a,2007-11-11 19:50:28,Couple of small changes for unit testing,0
+8b6ccb3,2007-11-11 19:54:26,Add Node tests,0
+d02aa28,2007-11-11 20:11:06,Move Node from Base to Geom,0
+a44c467,2007-11-11 21:32:42,Don't test subactive p levels,0
+85c2d77,2007-11-11 22:01:28,Dof_object_test base,0
+aa52305,2007-11-11 23:59:02,Turn down linear solver settings,0
+f73c1ae,2007-11-12 00:30:41,Added Elem::assert_valid_neighbors,0
+2cc525f,2007-11-12 00:34:23,Updated dependencies for node.h move,0
+ceb6bdb,2007-11-12 00:36:08,Explicit casts from RefinementState -> unsigned int,0
+bd665ab,2007-11-12 00:43:16,Comment out unused variable,0
+a9c4008,2007-11-12 00:47:56,Updated dependencies for moved node.h,0
+f106e6e,2007-11-12 00:50:10,Implemeent UnstructuredMesh::assert_valid_neighbors with Elem::assert_valid_neighbors,0
+b0332ee,2007-11-12 01:14:38,more dof_object tests,0
+b000809,2007-11-12 02:55:54,Fixed MeshTools::n_levels() with non-serial meshes  subactive elements  added local and active n_*_levels() versions,0
+90c8777,2007-11-12 02:57:56,Test parallel validity before renumbering,0
+c1e7006,2007-11-12 02:59:39,Use n_local_levels() for find_neighbors(),0
+68e28e6,2007-11-12 03:28:48,Return a real n_levels  not just the largest level number,0
+7fc6c3f,2007-11-12 03:32:51,Fix in new n_levels code,0
+c2deccf,2007-11-12 03:44:06,Assume parents are only remotified before their children are  there's no good way to delete parents before their children (when child->level() might be called) anyway.,0
+3e3e0e6,2007-11-12 04:17:37,Need to use n_levels in find_neighbors()  or find a better way count levels including ghost elements.,0
+2a90200,2007-11-12 04:24:19,Parallel flag consistency may need to come first (to avoid false positives from outdated ghost element flags) and last (to fix any inconsistency generated by previous flag smoothing operations),0
+de419bf,2007-11-12 04:26:21,Communicate refinement flags and p_level in pack_element.,0
+649d794,2007-11-12 04:31:06,Remove debugging asserts,0
+9555d3b,2007-11-12 07:05:56,Don't prepare requests to be sent to the same processor,0
+746f15a,2007-11-12 07:11:05,Use MeshTools::n_levels() instead of hard-coded level count,0
+86cac0c,2007-11-12 15:14:22,Return NULL pointers to indicate non-existent elements/nodes ,0
+39c62a5,2007-11-12 15:55:59,Allow overwriting remote_elem in Elem::add_child()  this gets done by allgather().  We'll still need to add an optional which_child_am_i argument to add_child  I think  at the moment we're getting children in the right place by luck.,0
+64ebf84,2007-11-12 15:56:44,"""Forgot to allocate memory before copy()"" bug fixed.",0
+8ad68d0,2007-11-12 15:57:28,Disable ex8 with ParallelMesh until we replace that explicit serial loop over every node.,0
+f4932d0,2007-11-12 15:59:10,"Fixed ""tried to double-add ghost child elements"" bug",0
+f2e7bb8,2007-11-12 16:29:02,Updated dependencies,0
+41771fc,2007-11-12 20:25:21,Added index-specified version of Elem::add_child(),0
+13f2c6d,2007-11-12 20:26:13,Add children to fixed positions  in case allgather doesn't receive them in ascending order.,0
+b79ef9d,2007-11-13 00:16:19,Initial checkin of netcdf and exodus source into contrib.,0
+1554795,2007-11-13 03:36:32,Fix for --disable-amr,0
+1c76411,2007-11-13 03:37:54,Fixes and efficiency improvements for --disable-amr,0
+30d8268,2007-11-14 00:18:18,Initial Exodus solution reading steps... can now get timesteps  var names and nodal values for a var,0
+815905d,2007-11-14 18:21:25,ExodusII copy nodal solution,0
+4b318cb,2007-11-14 20:01:03,Exodus solution reading works!,0
+292ee30,2007-11-14 22:53:11,Handle remote_elem,0
+93cdd1b,2007-11-15 01:06:25,do not use MPI_CHAR when MPI_MAX is needed,0
+3c0918b,2007-11-15 01:07:37,fix the build rule to omit all the other libmesh includes,0
+2fce6d4,2007-11-15 01:12:15,add libHilbert hilbert index utility library,0
+7a3397e,2007-11-15 01:12:54,remove .dep,0
+004d299,2007-11-15 01:13:29,add libHilbert hilbert index utility library,0
+560c612,2007-11-15 04:47:34,added parallel sort,0
+23c07c9,2007-11-15 04:48:08,fixed --disable-libHilbert,0
+86d2ad6,2007-11-15 04:48:52,OK to use chars for Parallel::send_receive,0
+f3c88fc,2007-11-15 04:50:01,reorg,0
+07dbd68,2007-11-15 04:55:11,removed,0
+6aee936,2007-11-15 04:58:02,updated .depend,0
+9d1ea2f,2007-11-15 05:34:52,checkin of incomplete global indices routine,0
+9626387,2007-11-15 14:12:54,updated .depend,0
+0c51b6e,2007-11-15 19:44:29,Added reset_remote_elements argument to find_neighbors(),0
+1dbf883,2007-11-15 19:52:16,Delete remote_elem links when doing a Mesh allgather,0
+c4a1fb4,2007-11-15 22:03:50,More fixes for ParallelMesh refinement,0
+de84a36,2007-11-15 22:05:21,Don't finish enforce_constraints_exactly() too early when not all processors are aware of all constraints,0
+85057b1,2007-11-16 19:48:45,Exodus meshes can now be written,0
+0f08b50,2007-11-16 21:44:50,Added clone() virtual copy constructor  all_*_order to MeshBase,0
+d65b0bb,2007-11-16 21:45:33,Make ErrorVector::plot_error() work for MeshBase,0
+c076af2,2007-11-16 22:05:20,Updated dependencies,0
+5facbdd,2007-11-16 22:43:45,Fixed typo in new bounding_box code,0
+f28382a,2007-11-16 22:46:17,can now compute global  partition agnostic node and element indices,0
+6b7786a,2007-11-19 17:27:12,Added header to fix complaints about undefined ostream,0
+ced4c8d,2007-11-19 17:56:27,libMesh can now write solutions to Exodus files,0
+ab59a7a,2007-11-19 21:18:42,fix for pedantic compilers,0
+5b9de0d,2007-11-19 21:20:59,more on global indices,0
+74b6d09,2007-11-20 00:38:19,Fix stupid semicolon bug,0
+ddfdc2f,2007-11-20 01:09:31,Make --disable-exodus and --disable-netcdf work correctly,0
+8e5dfce,2007-11-20 02:33:29,keyword expansion in all source files,0
+0d3bd44,2007-11-20 16:20:12,pedantic compiler corrections,0
+ca48435,2007-11-22 03:38:23,fixed _send_list debacle  I think...,0
+2d1f7f2,2007-11-23 15:15:20,Create a tag for libmesh-0.6.2 - bugfix on top of 0.6.1.,0
+58960a2,2007-11-23 15:16:24,oops,0
+bea2f80,2007-11-23 15:18:40,Resotre 0.6.1.,0
+ae26129,2007-11-23 15:20:16,git-svn-id: file:///Users/petejw/Documents/libmesh_svn_bak@2507 434f946d-2f3d-0410-ba4c-cb9f52fb0dbf,0
+17ebeab,2007-11-23 18:23:29,Rebuilding 0.6.1 tag.,0
+f6525fb,2007-11-23 18:26:12,rebuilding -0.6.1 tag,0
+e918bbf,2007-11-23 18:26:42,ebuilt 0.6.1,0

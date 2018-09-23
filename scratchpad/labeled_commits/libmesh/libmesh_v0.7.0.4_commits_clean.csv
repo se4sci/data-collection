@@ -1,0 +1,115 @@
+hash,time,message,buggy
+40343a5,2010-10-30 18:28:28,Added a new function in RBSystem to simplify adding outputs in the case that there is only one term in the affine expansion of the output.,0
+354ee36,2010-10-31 16:42:07,Restore inadvertent deletion from last point_locator() bugfix,0
+3e47106,2010-10-31 16:57:12,Tagging a 0.7.0.1 release with that last bug fix...,0
+1f1e96f,2010-10-31 17:49:57,Fuentes and Kirk preprints become 2010 publications. Added Griffith preprint link.,0
+7b8ed73,2010-11-01 13:22:29,Fix parse errors,0
+848e27d,2010-11-01 16:52:44,Enhancing API for periodic boundaries,0
+c0c1646,2010-11-02 18:53:18,Changed name of compute_a_posteriori_bounds to compute_max_error_bound and made it public,0
+68607f9,2010-11-03 02:49:32,Add missing header,0
+ca5e481,2010-11-03 02:51:41,"Fix ""make test_headers""",0
+64421c9,2010-11-03 02:58:15,test_headers.sh shouldn't fail silently,0
+69df9fb,2010-11-04 15:43:56,Destructor of Parallel::Request will no longer call MPI_Request_free.  This avoids unwanted freeing of requests when using an std::vector<Request>.  Rather  a new method Request::free() exists now to explicitly allow the user to free a request.,0
+ef19ddd,2010-11-04 15:55:40,Adding libMesh 0.7.0.2 tag with Parallel::Request fix,0
+296d78f,2010-11-08 20:21:35,Fix output filename,0
+823a4ac,2010-11-08 23:56:01,Bugfix for send_list construction on adaptive meshes with extra_hanging_dofs elements,0
+1d2d2e2,2010-11-09 20:45:59,Fixing ExodusII output for element numbering and sidesets in AMR meshes,0
+4e3b4fa,2010-11-09 21:31:34,Bugfix for Real!=double case,0
+6dc407c,2010-11-09 22:53:58,Added --enable-singleprecision and --enable-tripleprecision configure options,0
+fbf2f01,2010-11-09 23:00:46,Add support for writing global variables to the mesh file,0
+05fbc7e,2010-11-09 23:21:50,Use LIBMESH_ prefix for PRECISION macros now,0
+291eeef,2010-11-10 19:33:34,Bugfix for --enable-singleprecision,0
+ab9eba7,2010-11-10 20:05:34,Disable examples that don't work with single precision,0
+89270f5,2010-11-10 22:22:46,Fixing elem_num_map for multiple subdomain cases,0
+cf65699,2010-11-12 20:07:37,Allow keyword='' to parse correctly,0
+3cdd4e5,2010-11-13 20:58:18,Bugfix for disabled ExodusII builds,0
+7b07a8a,2010-11-13 20:59:13,Some (incomplete) fixes for --enable-tripleprecision,0
+539f053,2010-11-13 21:21:20,Added clean_examples target for convenience,0
+fafb131,2010-11-15 17:46:53,Bugfix for configure-time name conflict with mpich2,0
+8bd12a3,2010-11-15 18:50:46,Creating libMesh 0.7.0.3 with the fix for the parallel AMR on Hierarchics bug,0
+bb7d541,2010-11-15 21:16:30,Moved truth_outputs resizing in RBSystem to initialize_RB_system,0
+be0d72e,2010-11-15 21:50:09,Fix unit tests for Real==float case,0
+b568f78,2010-11-15 21:50:47,Set svn:ignore,0
+cf9de6e,2010-11-15 21:52:04,We need a looser TOLERANCE with --enable-singleprecision to pass our quadrature unit tests,0
+606d8c5,2010-11-16 16:35:07,add support for adaptive quadrature rules,0
+f40539b,2010-11-17 17:01:55,Avoid accessing empty string,0
+b28a7f0,2010-11-17 18:38:04,Adding optional matrices of variable weights to SystemNorm,0
+c67ccdf,2010-11-17 23:28:56,Adding level 1 AMR support across periodic boundaries.,0
+3039f31,2010-11-18 00:01:19,Adding an example from Cody to use/test PeriodicBoundaries as well as his new work on their interaction with MeshRefinement,0
+ca25299,2010-11-18 18:03:18,Moved output dual norm calculations from initialize_RB_system into train_reduced_basis.,0
+9c3e157,2010-11-18 22:45:58,Added flag in transient_rb_system to ensure that we only compute projection errors in truth_solve if the truth solve is called during train_reduced_basis. Otherwise this call is unnecessary.,0
+9f26933,2010-11-19 22:07:10,Made RBThetaData::get_mu virtual,0
+b1bf747,2010-11-22 08:48:53,Added support for subset solves.,0
+012da8b,2010-11-22 16:57:44,newlines at end of file,0
+042e497,2010-11-22 16:58:08,libmesh::out --> libMesh::out,0
+ea17330,2010-11-24 07:31:25,Subset stuff didn't compile with PETSc < 3.0.0  fixed this now.,0
+1f824b5,2010-11-30 20:06:28,Correcting example number in ex25 comments  disabling for non-PETSc builds,0
+de78757,2010-11-30 20:54:00,Adding is_identity  set_off_diagonal_weight methods to SystemNorm,0
+1cbf111,2010-11-30 21:09:07,Patch (mostly from Vikram) for AdjointResidualErrorEstimator evaluations using a matrix SystemNorm,0
+e78f56f,2010-11-30 23:04:45,Set svn:ignore,0
+ebc41b6,2010-11-30 23:15:20,Updated svn:ignore,0
+f8dcffc,2010-12-01 15:55:07,Added non-virtual AnalyticFunction::clear(),0
+db93b17,2010-12-02 02:55:43,Allow differing SLEPc/PETSc version numbers - that seems to be the default on Ubuntu right now!,0
+e901c78,2010-12-02 03:03:33,Patch from Boyce Griffith to fix multiple BC ID I/O.,0
+1c27953,2010-12-02 03:54:25,configuration fix from Erik Zeek for PETSc prefix (no PETSC_ARCH) case,0
+912c8b8,2010-12-02 18:02:48,Patch from Boyce Griffith to fix various bugs with multiple BC ID cases.,0
+dfc54e1,2010-12-02 18:14:10,Fix PointLocator for --enable-2D-only,0
+679cd41,2010-12-02 18:46:37,Skip ex2 in 1D,0
+9cafd29,2010-12-02 18:47:11,Minor comment clarification,0
+bad8782,2010-12-02 18:55:09,Skip ex23 in 1D,0
+07737ec,2010-12-02 19:01:22,--enable-1D-only bugfix,0
+c1fe7cc,2010-12-02 19:02:35,Added --enable-1D-only configure option,0
+c0ee668,2010-12-02 19:12:05,Updated svn:ignore,0
+10d53f2,2010-12-02 20:04:04,Create php documentation directly in the doc dir,0
+a53d8cb,2010-12-02 20:04:39,create_example_docs should be slightly more robust now,0
+d0abce8,2010-12-02 20:06:05,Added examples_doc target,0
+61c826c,2010-12-02 20:06:36,Updated documentation for our example programs,0
+685e8bd,2010-12-02 20:14:25,Updated svn:ignore,0
+6f50a1f,2010-12-02 20:19:34,"Make examples docs as part of ""make doc""",0
+0184a91,2010-12-02 20:42:48,Tweaks to ex24,0
+e7e118d,2010-12-02 20:45:02,More example docs updates,0
+3baa7a8,2010-12-06 21:10:56,Support for outputting element variabes to exodus,0
+ba7b730,2010-12-07 16:24:05,Added accessor for temporal_data member in TransientRBSystem.,0
+a1cff82,2010-12-07 16:58:37,Bugfix for --disable-exodus,0
+5e0a4f6,2010-12-07 17:12:54,Regenerated configure with updated comment,0
+fde3ccc,2010-12-08 21:07:01,Fall back on double I/O when ExodusII and XDR binary won't support long double,0
+9b8ffe8,2010-12-09 22:13:44,Periodic boundary conditions can work on a specified variable,0
+d8390b4,2010-12-13 20:22:42,Removing forgotten debug print statement,0
+0bbc191,2010-12-15 21:07:49,Adding accessor in plane class to return a planar point (position) of the plane,0
+d0c2ebd,2010-12-16 20:55:15,Auto regenerated the list of publications.  Miscellaneous additions and status changes  including the first publication for 2011.,0
+8e3ff7b,2011-01-11 16:20:56,Added OStreamProxy shallow copy constructor  removed a couple superfluous semicolons,0
+91c4654,2011-01-11 16:36:50,Adding a few explicit default initializers to initializer lists,0
+a597ce5,2011-01-11 16:56:52,"Bugfix from Aleksej Saushev for non-portable ""=="" in test",0
+6b28b18,2011-01-11 17:44:32,Typo fix,0
+043d905,2011-01-11 17:53:48,Bugfix for recent OStreamProxy change,0
+6c83aec,2011-01-11 19:10:39,Fixed name demangling issue for Mac GCC users,0
+4e6e343,2011-01-11 23:39:30,OStreamProxy: Added some more assignment operators,0
+8a9c972,2011-01-12 17:06:49,Filling out Node initializer list,0
+064366d,2011-01-12 17:07:22,PeriodicBoundary has virtual functions now  might as well add a virtual destructor for safety's sake,0
+3645891,2011-01-12 17:07:58,Filling out Variable initialization list,0
+2fbfa43,2011-01-12 18:53:40,More explicit initializations in constructors  return *this from an operator=,0
+5f32345,2011-01-13 18:20:27,Fixing overzealous (in periodic boundaries case) assertion,0
+d696224,2011-01-13 18:37:07,Reordering a structure slightly  adding explicit initializers to constructor,0
+d2fae1f,2011-01-13 18:40:46,Moving some assignments to initializers for efficiency  adding some explicit initializers for making Weffc++ happy,0
+d1a1efc,2011-01-13 18:53:25,Adding explicit default initializers,0
+87f3ff2,2011-01-13 19:03:25,Added DofObject::operator=,0
+7ffb1d9,2011-01-13 19:05:54,operator++ should return *this,0
+cbdb1db,2011-01-13 20:41:30,Reordered a structure  added some explicit initializers,0
+f6c8b20,2011-01-13 23:55:44,Adding explicit initializers,0
+bde6d5b,2011-01-13 23:58:17,Added explicit initializers  fixed/completed copy/assignment methods,0
+936e7e6,2011-01-17 21:56:25,Support writing information records to the exodusii file,0
+fab1f57,2011-01-19 22:50:51,add the ability for Partitioners to take element weights,0
+3901d57,2011-01-19 23:17:53,Tell exodus about the number of active elements only,0
+a7857fe,2011-01-20 15:17:57,Cleaning up a few warning messages,0
+bd9bcb6,2011-01-20 20:13:24,"Added configure test for C99 ""restrict"" keyword support in C++ compilers.",0
+6c691f6,2011-01-20 20:32:41,fixed a bug where subdomain restricted variables may not be completely numbered in parallel,0
+58c65ca,2011-01-21 19:54:11,Fixing peroidic boundary conditions for selected variables,0
+a643da2,2011-01-27 18:32:00,Fixing incorrect child vertex number for Hex elements - this is the source of the broken 3D AMR sidesets on Hex meshes,0
+8de1bde,2011-02-01 20:49:15,Added adjoint-based-refinement example,0
+7983576,2011-02-03 16:01:00,Update example comment,0
+4614c52,2011-02-03 17:13:51,Added adjoint-based sensitivities example,0
+9c92f70,2011-02-03 17:45:07,"Rename ""main.C"" in examples",0
+3493afd,2011-02-03 17:55:45,set svn:ignore,0
+8aa5c87,2011-02-03 19:13:11,Updated example docs,0
+03f7b2c,2011-02-03 19:40:30,Adding new examples to documentation menus,0
+093dc2d,2011-02-03 19:54:08,Tagging 0.7.0.4 release with Hex AMR boundary id fix,0

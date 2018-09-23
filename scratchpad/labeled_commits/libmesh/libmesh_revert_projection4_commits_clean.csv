@@ -1,0 +1,173 @@
+hash,time,message,buggy
+4c8fa1b,2015-12-09 14:32:53,Redesign Parallel packed_range functions,0
+43f1d0d,2015-12-09 14:39:43,Use new Packing API with Elem* and Node* types,0
+01e74bf,2015-12-09 14:40:31,Type deduction argument for receive_packed_range(),0
+56341df,2015-12-09 14:42:08,Initial unit test for new packed_range code,0
+5fe4bc3,2015-12-09 14:42:37,Build new packed_range unit test,0
+9b000bb,2015-12-09 14:42:49,Re-run bootstrap,0
+e712ee3,2015-12-09 15:07:42,Fix unused variable warnings,0
+ce0cc74,2015-12-09 15:08:00,More packed range unit tests,0
+fe8672f,2015-12-21 14:30:09,Update MeshBase::spatial_dimension().,0
+51c521d,2015-12-21 15:37:40,Set mesh spatial dimension in build_cube().,0
+b60bcca,2015-12-21 15:42:48,Use LIBMESH_DIM rather than mesh.spatial_dimension().,0
+16e2c65,2015-12-21 16:02:36,Add unit test of mesh.spatial_dimension().,0
+7f5e9fa,2015-12-21 16:03:57,Run bootstrap.,0
+2d81016,2016-01-04 21:01:03,Write nodal unique_id values to xda/xdr files,0
+f61fcda,2016-01-07 16:17:16,Add simple slit_mesh_test,0
+f309109,2016-01-07 16:20:13,Re-run bootstrap,0
+20b3b61,2016-01-10 17:21:00,Test refinement + projections on a slit mesh,0
+5c75b6a,2016-01-11 02:13:50,Add testRestart to slit mesh test,0
+71af1a8,2016-01-12 09:11:01,Revert recent changes to system_projection.C,0
+ce27e86,2016-01-13 11:28:56,Add ExodusII_IO::write_as_dimension().,0
+5261124,2016-01-19 08:53:46,Fix dimension==0 issue in build_sphere after clearing mesh.,0
+6990341,2016-01-19 12:17:06,Merge pull request #791 from jwpeterson/fix_build_sphere,0
+b58ad88,2016-01-19 14:02:12,Avoid overwriting file in meshplot,0
+7169d43,2016-01-19 16:27:12,Add configure test for broken errno_t issue.,0
+9fb349f,2016-01-19 16:31:17,Write serial files until we work out that flaw,0
+3029f64,2016-01-19 16:31:34,Run bootstrap.,0
+6b30d2f,2016-01-19 23:36:08,Make FEMSystem numerical jacobians more robust,0
+b1aa773,2016-01-20 09:41:46,Define errno_t on compilers where it is necessary.,0
+5e9a899,2016-01-20 09:45:45,Ignore overlength string warnings from reference_elem.data,0
+d455401,2016-01-20 10:00:13,Disable variadic macro warnings in GCC 5.,0
+71be328,2016-01-20 10:11:07,Avoid overlength string warnings from libmesh_assert calls.,0
+b744311,2016-01-20 10:17:34,NewmarkSolver: fix cache w/o restore bug,0
+072f15f,2016-01-20 10:45:37,Fix overlength string in meshtool.C,0
+91f7b9d,2016-01-20 10:51:58,Use libmesh_error_msg() macro in meshtool.C,0
+df62e17,2016-01-20 11:33:53,Fix overlength string issue in compare.C,0
+fd19b92,2016-01-20 11:36:48,Use libmesh_error_msg() in compare.C,0
+f7421f6,2016-01-20 13:14:31,Set SLEPc solver options for eigenproblems_ex3,0
+14784ad,2016-01-20 13:35:55,Merge pull request #796 from roystgnr/eigenproblem3_options,0
+c17e1dd,2016-01-20 14:24:57,Merge pull request #793 from roystgnr/numerical_jacobians_fix,0
+ca9b3bf,2016-01-20 14:26:44,Merge branch 'spatial_dimension',0
+53edc4c,2016-01-20 14:48:51,Merge pull request #768 from roystgnr/write_node_unique_ids2,0
+0954d1a,2016-01-20 16:01:52,Merge pull request #794 from jwpeterson/gcc_osx_fix3,0
+12cd2fe,2016-01-20 19:12:27,Add GMRES support to EigenSparseLinearSolver.,0
+5bfdaad,2016-01-20 19:12:47,Demonstrate use of Eigen GMRES solver in introduction_ex5.,0
+085a042,2016-01-20 19:13:13,"Revert ""Demonstrate use of Eigen GMRES solver in introduction_ex5.""",0
+b014fc0,2016-01-21 08:00:27,Merge pull request #797 from jwpeterson/eigen_gmres,0
+aecbd98,2016-01-21 09:42:49,Guard unique_id code with ifdefs.,0
+dc45dab,2016-01-21 10:42:38,Add missing ifdef unique_id guards,0
+d4459ec,2016-01-21 12:23:55,Merge pull request #798 from roystgnr/disable_unique_bugfix,0
+d0d4d43,2016-01-21 12:29:44,Add m4 test of C++11 deleted functions.,0
+3ac675e,2016-01-21 12:31:14,Run bootstrap.,0
+6359d95,2016-01-21 12:43:55,Add m4 test of C++11 final keyword.,0
+e2d61ff,2016-01-21 13:31:13,Clarify comment,0
+430658a,2016-01-21 13:32:12,Add LAGRANGE case for side projections,0
+4297ffb,2016-01-21 13:32:45,Add LAGRANGE case for interior projections,0
+5b8f399,2016-01-21 13:41:51,Add libmesh_delete and libmesh_final macro.,0
+ea568fb,2016-01-21 13:51:36,Ignore deprecated warnings from Eigen headers.,0
+c719016,2016-01-21 13:55:13,Mark NumericVector-derived classes as final.,0
+3b567c6,2016-01-21 14:26:09,Merge pull request #799 from libMesh/packed_range_refactor.rebased,0
+6afd0f5,2016-01-21 14:28:21,Mark SparseMatrix subclasses as libmesh_final.,0
+80333f7,2016-01-21 14:31:41,Mark Elem leaf classes as libmesh_final.,0
+54cc396,2016-01-21 14:59:49,Mark QBase subclasses as libmesh_final.,0
+1ebad55,2016-01-21 16:01:03,Bugfix for interior interpolation,0
+98d356b,2016-01-21 16:48:13,Slit mesh restarts may fail without unique_id,0
+f026594,2016-01-21 17:02:24,packed_range output_type fixes,0
+bd29ed1,2016-01-21 17:05:21,One more is_edge() usage fix,0
+d3e1c18,2016-01-22 08:11:41,Merge pull request #802 from roystgnr/packed_range_bugfixes,0
+0023d3a,2016-01-22 08:13:26,Add missing libmesh_override to slit_mesh_test.C,0
+df8ec47,2016-01-22 08:44:51,Merge pull request #804 from jwpeterson/cxx11_m4,0
+3d13a96,2016-01-22 08:46:46,Merge pull request #803 from roystgnr/slit_mesh_unique_id_only,0
+2b01b6d,2016-01-22 16:45:30,Merge pull request #800 from roystgnr/rereoptimize_projections,0
+eeb6fa4,2016-01-23 18:42:24,Optimized the EIM construction code. Before we did multiple L2 projections for all variables in one big system. Now we do a separate L2 projection for each variable. This gives the same results as before but uses less memory.,0
+7699b2d,2016-01-24 15:00:04,Update traffic.,0
+081f85c,2016-01-24 15:19:52,Add configure tests for cxx11 nullptr.,0
+74d460b,2016-01-24 15:21:35,Run bootstrap.,0
+c0f4430,2016-01-24 15:45:15,"Add backwards-compatible ""workaround"" nullptr type.",0
+e6abf95,2016-01-24 15:45:53,Update Makefile.am files using rebuild_XYZ scripts.,0
+cdb192f,2016-01-25 11:00:12,Replace NULL with libmesh_nullptr in examples.,0
+8f8a2fa,2016-01-26 09:44:26,Write case file with iostreams.,0
+4be809c,2016-01-26 10:08:12,Use iostreams in write_scalar_ascii().,0
+cd95b7e,2016-01-26 10:25:56,Use iostreams in write_vector_ascii().,0
+995d1ad,2016-01-26 10:40:04,Use iostreams in write_geometry_ascii().,0
+9c25762,2016-01-26 11:12:56,Final cleanup.,0
+28559ed,2016-01-26 11:19:42,Replace elem_type_to_string() with static map.,0
+898cb00,2016-01-26 13:13:51,Merge branch 'ensight_io',0
+bca60c6,2016-01-26 14:01:05,Removing pthread_unique_id() from Threads,0
+c35b541,2016-01-26 15:24:31,Add Tri6::volume().,0
+eef18ca,2016-01-26 18:31:35,We were storing coarse vectors (including the adjoint) before solving  now solving before saving.,0
+41fe4b0,2016-01-26 19:32:13,Fixed memory leak introduced in PR #773,0
+b1dc6dc,2016-01-26 22:33:57,Merge pull request #807 from dknez/PR_773_memory_leak_fix,0
+701d742,2016-01-27 11:47:55,Merge branch 'tri6_volume',0
+173191e,2016-01-27 13:43:48,Merge pull request #808 from vikramvgarg/adjoint_refinement_solve_before_store,0
+50e3be9,2016-01-27 13:43:53,Add Quad8::volume().,0
+674edce,2016-01-27 16:10:59,Merge branch 'quad8_volume',0
+8998ce2,2016-01-28 08:33:37,Merge pull request #809 from dknez/EIM_refactoring,0
+aa4da80,2016-01-28 09:24:39,Include libmesh_nullptr.h in libmesh_common.h,0
+520e6b6,2016-01-28 09:25:45,Replace NULL with libmesh_nullptr in library.,0
+90e1a5b,2016-01-28 11:52:03,Add notion of time-dependence to FunctionBase,0
+855bbb7,2016-01-28 11:54:02,ConstFunctions are never time-dependent,0
+014dabf,2016-01-28 11:56:09,Add time-dependence detection to ParsedFunction,0
+34ae448,2016-01-28 11:57:44,Unit testing of ParsedFunction time-dependence,0
+fd5ec66,2016-01-28 11:59:42,Add time-dependence detection to CompositeFunction,0
+753a8c5,2016-01-28 12:09:28,Unit testing of CompositeFunction time-dependence,0
+81e41e4,2016-01-28 12:54:37,Add Quad9::volume().,0
+f9e156d,2016-01-28 12:56:30,AutoPtrs should no longer be used for anything.,0
+136a5f3,2016-01-28 14:32:14,Switch to 3x3 quadrature for Quad8::volume().,0
+ea8aada,2016-01-28 15:21:08,Merge branch 'quad9_volume',0
+45f38f8,2016-01-28 15:29:58,Merge pull request #805 from jwpeterson/nullptr,0
+4f85d5b,2016-01-28 15:54:39,Switch to FIFTH order quadrature for Tri6::volume().,0
+024f73b,2016-01-28 16:38:42,Merge branch 'tri6_volume2',0
+9bdeafc,2016-01-28 17:01:29,Switch to more consistent Quad4::volume() implementation.,0
+441e4ba,2016-01-28 17:22:19,Merge branch 'quad4_volume',0
+4a04265,2016-01-28 17:27:57,Merge remote-tracking branch 'permcody/issue_801',0
+fe509f1,2016-01-28 22:04:38,Add Edge4::volume().,0
+b3d4d12,2016-01-28 22:59:40,Merge branch 'edge4_volume',0
+2020d49,2016-01-28 23:08:24,Merge pull request #811 from pbauman/function-base-is-time-dependent,0
+8d2b029,2016-01-29 10:47:21,Add quadrature-based Hex8::volume() implementation.,0
+102c779,2016-01-29 10:47:21,Optimize Hex8::volume() slightly.,0
+f647429,2016-01-29 15:28:58,"Revert ""Add quadrature-based Hex8::volume() implementation.""",0
+4146e58,2016-01-29 15:30:58,Merge branch 'hex8_volume',0
+cc9847b,2016-01-29 17:12:55,Initial volume() optimization for HEX27.,0
+4afb9c1,2016-01-31 22:26:29,Further optimization of Hex27::volume().,0
+4520164,2016-01-31 23:26:25,Update traffic.,0
+8b4624e,2016-01-31 23:26:56,Merge branch 'hex27_volume',0
+25eadfc,2016-02-01 11:17:52,Adding casts to the packed range example.,0
+eb8aee3,2016-02-01 13:08:46,Merge pull request #814 from permcody/packed_range_fixup,0
+a5f8a05,2016-02-01 13:30:28,Wrap pragmas in ifdefs to avoid GCC warnings.,0
+7d7a627,2016-02-01 15:05:14,Merge pull request #816 from jwpeterson/ifdef_pragma,0
+7f09628,2016-02-01 20:02:33,Add Hex20::volume().,0
+0eb0e86,2016-02-01 22:21:31,Precompute quadrature point powers in Hex27::volume().,0
+7375631,2016-02-01 22:36:41,Merge branch 'hex20_volume',0
+2abe922,2016-02-02 09:35:31,Add Tet10::volume().,0
+2465612,2016-02-02 11:26:03,Merge branch 'tet10_volume',0
+294602a,2016-02-02 13:33:01,Add quadrature-based Prism6::volume() implementation.,0
+b211c1b,2016-02-02 14:43:08,Merge branch 'prism6_volume',0
+79ee312,2016-02-02 15:00:56,Hoist computation out of inner loop.,0
+3d63338,2016-02-02 15:24:44,Merge branch 'prism6_optimization',0
+d5a7e7a,2016-02-02 18:06:04,Reduced Basis Change: Add method to plot EIM parameterized functions.,0
+aa0469d,2016-02-02 19:39:04,Merge pull request #817 from dknez/plot_eim_functions,0
+ac21288,2016-02-02 21:22:05,Absolute values for error_per_cell in the elementwise adjoint refinement error estimator,0
+bdd7830,2016-02-02 22:44:25,Add Prism15::volume().,0
+896397b,2016-02-03 00:16:31,Merge branch 'prism15_volume',0
+311deb1,2016-02-03 07:58:17,Merge pull request #818 from vikramvgarg/adjoint_ref_abs_value,0
+23db35c,2016-02-03 12:08:24,Consolidate LAGRANGE projection code,0
+976759f,2016-02-03 12:42:47,Add Prism18::volume().,0
+0a24fce,2016-02-03 13:40:53,Merge branch 'prism18_volume',0
+21b7e99,2016-02-03 13:49:10,Documentation fix.,0
+24c4924,2016-02-03 14:39:11,Handle the LAGRANGE superparametric element case,0
+f1ae44a,2016-02-03 16:24:09,Add quadrature-based volume() implementation for Pyramid5.,0
+7b81856,2016-02-03 16:43:46,"Revert ""Add quadrature-based volume() implementation for Pyramid5.""",0
+7ed920a,2016-02-03 16:52:40,Merge pull request #820 from roystgnr/rerereoptimize_projections,0
+3f7c094,2016-02-03 16:56:34,Merge branch 'pyramid5_volume',0
+f11b072,2016-02-03 22:15:40,Add Pyramid14::volume().,0
+6478a6d,2016-02-03 23:28:12,Fix one_pyramid14.xda.,0
+943b53d,2016-02-04 00:05:13,RB Change: Optimize EIM by storing inner_product * basis functions,0
+b27fce2,2016-02-04 00:17:46,Add Pyramid13::volume().,0
+da9dbe6,2016-02-04 00:49:49,Merge branch 'pyramid_volume',0
+fa76da7,2016-02-04 00:52:42,Fix unused variable warning.,0
+f1e8e65,2016-02-04 08:59:22,RB Change: Fixed EIM truth_solve on hybrid meshes.,0
+04b618f,2016-02-04 09:30:07,Update citations.,0
+fc627bb,2016-02-04 11:42:46,Merge pull request #822 from dknez/optimize_eim,0
+c4f2c94,2016-02-06 16:04:53,Merge branch 'hex8_volume2',0
+4f0a5d5,2016-02-06 16:26:04,Add triple_product(a b c) for TypeVectors.,0
+30f06fd,2016-02-06 16:34:31,Use triple_product in Hex8::volume().,0
+e714b17,2016-02-06 16:41:05,Use triple_product in Pyramid5::volume().,0
+30ef979,2016-02-06 16:47:32,Use triple_product in Tet4::volume().,0
+5bcb1c1,2016-02-06 17:00:19,Use triple_product() in remaining 3D Elem volume() formulas.,0
+52fa120,2016-02-08 08:27:43,Update citations.,0
+da8ace0,2016-02-08 08:36:48,Update traffic.,0
+7ebef78,2016-02-08 08:38:30,Update statistics for February 2016.,0
+173b05a,2016-02-08 08:56:48,Merge pull request #825 from jwpeterson/triple_product,0
+5be2078,2016-02-09 08:45:53,Update citations.,0

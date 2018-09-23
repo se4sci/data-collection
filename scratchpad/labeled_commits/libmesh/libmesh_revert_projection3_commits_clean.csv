@@ -1,0 +1,64 @@
+hash,time,message,buggy
+f798401,10/29/15 12:33,Update NEWS file for 0.9.5 release.,0
+12250cd,10/29/15 14:11,Remove outdated  deprecated classes.,1
+ee7f2c8,10/29/15 14:12,Update Makefile.am's,0
+e4244d9,12/3/15 9:56,Remove quadrature_rules.h from introduction_ex5.,1
+681ac62,12/21/15 14:30,Update meaning of MeshBase::spatial_dimension().,0
+91f62f3,1/12/16 9:11,Revert recent changes to system_projection.C,0
+dc8574b,1/12/16 16:24,Declare mutex only when threads are available,0
+4833e2f,1/12/16 16:25,Use libmesh-independent file error macro,0
+f208e8c,1/12/16 16:30,Make getpot disable mutexes when libmesh is absent,0
+40b4c42,1/13/16 16:55,Merge pull request #777 from dmcdougall/fix_getpot_mutex,0
+d453b81,1/13/16 17:09,Run bootstrap.,0
+7c0e763,1/13/16 17:24,Fix include.,1
+5955948,1/14/16 8:30,Merge pull request #778 from libMesh/updates_from_release,0
+6e58004,1/14/16 9:12,Merge pull request #779 from svallaghe/master,0
+24fd62e,1/14/16 9:38,Set #defines if PETSc is built with SuperLU_dist and/or MUMPS support.,0
+3149c7a,1/14/16 9:40,Run bootstrap.,0
+3c7cf42,1/14/16 9:51,Update LOC count for January 2016.,0
+286862f,1/14/16 10:36,Fix deprecation warning in unit tests.,1
+4c64b1b,1/14/16 11:13,Deprecate PointLocatorList.,0
+ea7c42a,1/14/16 12:36,Fix double leading underscore include guards.,1
+a35c6af,1/14/16 12:47,Fix a few more double leading underscores.,1
+676078b,1/14/16 13:05,Merge pull request #780 from jwpeterson/petsc_m4,0
+0d7d1a3,1/14/16 13:06,Merge pull request #781 from jwpeterson/face_level_mismatch,0
+0c93ef1,1/14/16 13:17,Avoid using double leading underscore preprocessor macro names.,0
+0849b86,1/14/16 13:24,Merge pull request #782 from jwpeterson/deprecate_point_locator_list,0
+8b3d941,1/14/16 14:09,Fix typo.,0
+59b4d49,1/14/16 14:13,Use libmesh_deprecated() macro.,0
+c010d9e,1/14/16 14:22,Update citations.,0
+1d19b76,1/14/16 15:02,copying element subdomain ids when converting triangular mesh for subdivision elements,0
+f38ad6f,1/14/16 15:58,Remove overzealous assertions,0
+2b102ff,1/14/16 15:59,Make meshplot solution file optional,0
+cd139a1,1/14/16 16:32,Merge pull request #783 from jwpeterson/libmesh_date,0
+501a432,1/15/16 13:18,Run contrib/bin/reindent.sh on examples after fixing spacing.,0
+78ba316,1/15/16 13:44,Cosmetic changes in examples/adaptivity.,0
+06b02de,1/15/16 13:50,Cosmetic changes in examples/adjoints.,0
+5cf5c77,1/15/16 13:52,Cosmetic changes in examples/eigenproblems.,0
+d959638,1/15/16 13:54,Cosmetic changes in examples/fem_system.,0
+3bc3cf7,1/15/16 13:57,Cosmetic changes in examples/introduction.,0
+9c93641,1/15/16 13:58,Cosmetic changes in examples/miscellaneous.,0
+3613b41,1/15/16 14:00,Cosmetic changes in examples/optimization.,0
+b8b2112,1/15/16 14:01,Cosmetic changes in examples/reduced_basis.,0
+2ead1a7,1/15/16 14:03,Cosmetic changes in examples/solution_transfer.,0
+d693a1c,1/15/16 14:04,Cosmetic changes in examples/subdomains.,0
+bc42295,1/15/16 14:05,Cosmetic changes in examples/systems_of_equations.,0
+332c271,1/15/16 14:09,Cosmetic changes in examples/transient.,0
+fe8e9f5,1/15/16 14:10,Cosmetic changes in examples/vector_fe.,0
+4.96E+41,1/15/16 15:34,Generalize build_cube(...  gauss_lobatto_grid=true),0
+637224f,1/16/16 10:48,Update citations.,0
+d326eb1,1/18/16 8:55,Update traffic.,0
+ca729e4,1/18/16 8:57,Merge pull request #785 from jwpeterson/gauss_lobatto,0
+c6a8f60,1/18/16 8:57,Merge pull request #786 from jwpeterson/add_space_examples,0
+110d909,1/18/16 9:06,Fix memory leak in vector_fe_ex{2 3 4},1
+f36a810,1/18/16 9:37,ExactSolution::attach_exact_{values derivs} can take const refs.,0
+9c184ed,1/18/16 10:15,Fix postcheck function in misc_ex3.,1
+a2db298,1/18/16 11:00,Update copyright notice for 2016.,0
+a5fc828,1/18/16 14:03,Merge pull request #787 from jwpeterson/fix_memory_leak,0
+57119b1,1/18/16 17:05,Merge pull request #788 from jwpeterson/misc_ex3,0
+dc53c48,1/18/16 18:38,Add EigenSparseMatrix::l1_norm()  linfty_norm().,0
+8.67E+68,1/19/16 7:29,Merge pull request #789 from jwpeterson/eigen_norm,0
+91700ef,1/19/16 8:56,meshplot xda/xdr if requested,0
+6c4da39,1/19/16 9:41,Use libmesh_error_msg in meshplot,0
+2822d3a,1/19/16 10:37,Fix obscure issue with errno_t not being defined.,1
+40ba9c0,1/19/16 11:40,Merge pull request #784 from roystgnr/mesh_only_plot,0

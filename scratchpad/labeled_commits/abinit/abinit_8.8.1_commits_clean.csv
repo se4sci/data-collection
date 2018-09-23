@@ -1,0 +1,35 @@
+hash,time,message,buggy
+a1285bd,4/21/2018 14:04,Initialize v8.8.1,0
+e0097ed,4/22/2018 7:21,Tentative (minor) bug fix  following Guido Petretto.,0
+1fe868f,4/22/2018 7:26,Improve release notes. Also mv release_notes dir to release_notes_obsolete.,0
+5015994,4/22/2018 7:31,Add mail info for Henrique,0
+68b5188,4/22/2018 7:32,Fix typo,1
+5fc1b01,4/22/2018 7:45,Fix typo,1
+bfcfbc4,4/22/2018 10:29,Suppress the need for the old release-notes directory,0
+082d16a,4/23/2018 14:03,Improve doc,0
+b188c9e,4/23/2018 21:31,Fix bug (from Lucas Baguet): tolrde was not read anymore.,1
+dc4b34d,4/23/2018 21:34,Update release notes to mention Lucas Baguet.,0
+504528f,4/24/2018 6:29,Update tests/atompaw/Refs/t04.out,0
+2276db7,4/24/2018 6:31,Merge branch 'release-8.8' of gitlab.abinit.org:trunk/abinit into release-8.8,0
+449ecd6,4/24/2018 8:39,Update tdfpt_04_MPI24.out due to tolrde bug fix,0
+1cd4e40,4/25/2018 13:01,bug fixes,1
+edd44b2,4/27/2018 11:35,Corrections to release notes,1
+62ae47c,4/27/2018 19:27,Merge remote-tracking branch 'remotes/pike/develop' into _pike,0
+bef884e,4/28/2018 6:59,Merge gmatteo/release_notes/edd4 into release-8.8,0
+5ffdd5b,4/29/2018 21:09,Minor corrections to KNOWN_PROBLEMS,1
+f5c3390,4/29/2018 21:45,Minor improvements of doc,0
+b4307e8,4/29/2018 22:01,Fix typo,1
+4e2f881,4/29/2018 22:06,Correct doc inside v7#81 and 82 input files,0
+5e67b70,4/29/2018 22:07,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0
+593a423,4/29/2018 22:11,Improve doc,0
+79f58b0,4/29/2018 22:23,Numerous page numbers are missing ! Fix already several references...,0
+934da87,4/29/2018 22:36,Modify doc,0
+f0ea0a7,4/30/2018 0:12,Add pages to bibtex entries with my hacked version of betterbib,0
+e016a09,4/30/2018 6:25,Merge gmatteo/betterbib/f0ea into release-8.8,0
+f7a6837,4/30/2018 8:29,Fix typo,1
+e41c62e,4/30/2018 9:22,Update information concerning Jonathan Laflamme paper,0
+f90bd45,4/30/2018 9:22,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0
+236d9e4,4/30/2018 11:01,Improve doc for efmas_ntheta.,0
+ac0dce0,4/30/2018 11:55,Typo,1
+bb5f729,4/30/2018 12:20,Improve doc,0
+6218b23,5/1/2018 20:59,Upgrade refs files for v7#80-82,0

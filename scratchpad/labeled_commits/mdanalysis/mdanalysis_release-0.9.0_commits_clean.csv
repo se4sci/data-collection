@@ -1,0 +1,171 @@
+hash,time,message,buggy
+7de22de,2/11/14 16:00,reST fixes in analysis.density,0
+8c7dc34,2/11/14 22:07,Doc regenerated. libxdrfile2 generated doc files added to git,0
+94fed0d,2/12/14 13:51,XTC/TRR-related doc update and cleanup.,0
+a7249de,2/12/14 16:43,libxdrfile2 XTC TRR doc update and cleanup.,0
+d20554a,2/12/14 17:07,Doc update,0
+48d106f,2/13/14 2:09,libxdrfile2 docs: added all exdr symbols,0
+96859f6,2/13/14 2:16,cleaned up docs for XTC and TRR,0
+5eb9899,2/13/14 12:11,TRR doc minor cleanup.,0
+c491437,2/13/14 17:15,Conflicts in documentation solved (Revision f69f2dbd1bd7),0
+bd35685,2/13/14 22:57,minor doc fix for XTC,0
+64c6eba,2/22/14 18:01,Addition of new MDAnalysis.visualization.streamlines namespace.,0
+e2dabb0,2/22/14 19:07,MDAnalysis now correctly initializes the namespace for MDAnalysis.visualization. The 2D streamplot code in MDAnalysis.visualization.streamlines has been added and appears to function properly.,0
+54b2860,2/23/14 9:12,MDAnalysis.visualization.streamlines adjusted in the following ways: -an ImportError with appropriate message should now be raised when a non-standard dependency of this module is not available (rather than a print statement only) -the only non-standard (i.e.  outside of regular MDAnalysis) module requirement has been simplified to matplotlib.nxutils  and ideally this requirement will eventually be removed because it is a deprecated module of matplotlib (and also an analytical rather than plotting use of matplotlib) -the standard dependencies (MDAnalysis  multiprocessing  numpy  scipy) are now imported in separate statements for improved dependency sanity -a substantial amount of extraneous debugging code has been removed (although a bit more clean-up could likely still be done) -the placeholder main() function has been renamed to generate_streamlines() and the workflow may eventually be adjusted (perhaps encapsulated in a class),0
+25afe78,2/23/14 17:21,work on (sphinx) documentation for 2D streamplot visualization code: -mdanalysis/package/doc/sphinx/source/index.rst adjusted to include entry for visualization modules -new visualization_modules.rst entry and package/doc/sphinx/source/documentation_pages/visualization/streamlines.rst for pulling in 2D streamplot documentation automatically -major improvements to the documentation in and related to MDAnalysis.visualization.streamlines  including an inline example of usage / output plot,0
+2eabfad,2/24/14 12:23,#NAME?,0
+7bf1676,2/24/14 12:39,Rebuilt docs to include new MDAnalysis.visualization modules,0
+d79ca74,2/27/14 15:53,-MDAnalysis.visualization namespace properly labelled as experimental in the CHANGELOG and Matthieu Chavent credited in authors list for most recent set of changes -Matthieu Chavent added to AUTHORS file and to authors list in documentation conf.py file -Changed the citation format for Chavent  Reddy et al. (2014) for consistency with MDA formatting standards -Python assertion statements in the 2D / 3D streamplot modules have been removed in cases where they perform type checking on user input  but they remain for algorithm-level integrity checks (i.e.  expected array shapes at different stages) -The 2D streamplot code now raises a more useful ImportError message when a user does not have matplotlib installed,0
+c37ca71,3/13/14 15:46,removed toplevel matplotlib imports,0
+457bf8e,3/18/14 14:47,MDAnalysis.visualization.streamlines_3D adjusted in the following ways: -the assessment of proper grid cube geometries is now less sensitive to floating point equality failure (assertion is now from numpy.testing.assert_almost_equal rather than a conventional equality test) -print statements for debug / progress monitoring have been suppressed (mostly deleted from source code) -the generate_streamlines_3d() function now accepts x y z Cartesian coordinate limits for the analysis instead of automatically calculating the limits of the system  this change is largely motivated by increased consistency with the 2D version of the code in MDAnalysis.visualization.streamlines.generate_streamlines(),0
+257b2aa,3/18/14 15:05,#NAME?,0
+34f925b,3/27/14 17:29,PBC for angle and torsion calculations (fixes Issue 172),0
+ddf5b1d,3/28/14 0:03,Named groups in selections now accepted (Issue 174),0
+1d4c599,3/29/14 2:54,Merge branch 'NamedSel' into develop,0
+719e468,3/29/14 3:52,issubclass vs. isinstance fix (Issue 176),0
+1e17fa6,4/1/14 15:42,Documentation regenerated and version changed to 0.8.1,0
+d48b114,4/2/14 18:25,meta data updates,0
+627e357,4/3/14 10:45,Merge branch 'develop' into issue/172,0
+23b8533,4/3/14 11:03,Fixed up issue172 fix,1
+b2ba39f,4/4/14 18:28,MDAnalysis.visualization.streamlines adjusted in the following ways: -suppression of all print statements via their deletion from source code -the module no longer depends on the deprecated matplotlib.nxutils module and the replacement (matplotlib.path) has been benchmarked as ~equivalent using %timeit in IPython for a real-use biomolecular test case,0
+7c0559a,4/7/14 18:59,CHANGELOG updated for recent 2D streamplot module adjustment.,0
+177d5e9,4/10/14 15:30,bumped release to 0.8.2-dev,0
+bcbed16,4/10/14 18:32,XYZWriter added,0
+bb6e7cd,4/14/14 18:20,Upgrades to TRZReader  much faster now,0
+4bb36e6,4/15/14 1:06,__getstate__() and __setstate__() raise an NotImplementedError for Universe and AtomGroup,0
+9cc9df1,4/15/14 1:20,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+d55c082,4/16/14 19:14,New feature: support PDB altloc records (Issue 170),0
+f113628,4/20/14 0:31,New feature: MOL2 format support,0
+018e0fd,4/20/14 1:07,New feature: capping proteins,0
+eaa6c29,4/23/14 12:01,Added HydrogenBondAutoCorrel (Issue191),0
+2ec07b0,5/26/14 10:48,reST doc additions for Atom and AtomGroup,0
+89c9a68,5/26/14 11:51,regenerated docs with sphinx,0
+8e5bc9f,5/26/14 13:57,fixed residues/segments in Merge(),1
+c76e0b9,5/26/14 14:08,docs: second example for Merge(),0
+2d301d9,5/26/14 14:13,rebuilt html docs,0
+5546063,6/5/14 23:55,fixed setup.py: correctly parse cython strings,1
+0c839dd,6/9/14 12:01,newer version of fastio.h (1.20 from 2009),0
+0a0b3b4,6/9/14 13:43,streams for coordinate topology readers and writers (streamIO),0
+3d24399,6/11/14 15:30,Attempting to improve MDAnalysis readthedocs behaviour based on Mock imports for C-dependencies described here: http://read-the-docs.readthedocs.org/en/latest/faq.html,0
+01fa5b4,6/18/14 16:34,HBond analysis: new distance_type keyword (closes Issue 185),0
+ef365fc,6/18/14 16:39,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+07bdf3e,6/19/14 13:10,updated do_iparams in utils.py for additional function types in gromacs-4.6.x,0
+d4f7749,6/19/14 13:11,extract fep_state for fver >= 79 instead of fver > 79,0
+39e911f,7/1/14 15:24,elements table: additional name guesses (inspired by PROPKA),0
+b3d88bb,7/3/14 22:09,changes to IOError error codes for Windows compatibility (see Issue 150),0
+cad2cf9,7/8/14 19:12,WIP: Issue 187,0
+ff0e5d0,7/8/14 19:58,-resolves Issue 188 regarding Helanal Finish argument: -new unit test for fix: basically raise an Exception to indicate that Finish time specified by user is before the trajectory start time,0
+033b67d,7/22/14 18:02,-MDAnalysis.analysis.helanal.helanal_trajectory docstring modifications: -the begin and finish arguments now also specify that the units are in picoseconds  which is useful information and serves to remind the user that these are times and not frame numbers -now includes information about FinishTimeException  which is raised when the finish time precedes the start time of the trajectory (or its current time stamp) -selective update of this particular html file in the development docs,0
+7b091ab,7/22/14 18:10,CHANGELOG updated to reflect changes to helanal docs.,0
+4f20078,8/8/14 18:10,DCDWriter workaround: new kwarg dt to set time between frames in ps,0
+4ae9f7a,8/30/14 12:14,Reworked Topology system,0
+f583423,9/18/14 9:12,TRJ Reader Fix,0
+d4607f8,9/24/14 10:47,added rotation_matrix() to docs in analysis.align,0
+8ee2f3b,9/30/14 14:05,Added support for LAMMPS data files.,0
+c5182f1,10/4/14 20:11,Unit tests for DATA stuff,0
+a8ed84c,10/17/14 12:07,Vagrant/VirtualBox virtual machines with full feature MDAnalysis,0
+569edac,10/17/14 12:08,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+f99af32,10/18/14 1:21,deprecated topology.LAMMPS.LAMMPSData (now that we have proper Data parsing),0
+2ebcae2,10/21/14 17:32,correct reading/writing of DCD unit cell information (fixes Issue 187),1
+fce34b7,11/13/14 13:52,Improving test coverage for MDA.core.AtomGroup  current at ~92%,0
+bb9e34d,11/19/14 12:35,Unit tests for new issue,0
+dfdbbc4,11/21/14 11:16,improved log_header,0
+b2bdb24,11/21/14 11:43,added define_unpack_real  which defines a data.define_unpack_real method based on the gromacs precision of the tpr file,0
+664e55a,11/21/14 11:44,changed unpack_float to unpack_real in tpr/setting.py and tpr/utils.py,0
+66605cf,11/21/14 12:02,added test case TPR455Double,0
+936a16f,12/1/14 13:13,leaflet finder: more control over sparse vs full,0
+a68d0e6,12/1/14 13:16,merged (only white space in commented out  debug logging in topology/LAMMPSParser.py,0
+0f8e539,12/2/14 11:48,Vagrant/VirtualBox virtual machine: Debian 7.6 Wheezy,0
+2b7ac7d,12/2/14 21:29,Merge branch 'alfred532008-tpr' into Issue/184,0
+157526,12/2/14 21:56,update CHANGELOG (Issue 184 fixed),0
+b6f08a8,12/2/14 22:34,UTF-8 encoding (PEP 263) where necessary,0
+8fdeab5,12/2/14 23:23,updated copyright/author header in comments of source files,0
+544bf59,12/3/14 0:49,added new test case for LAMMPS DATA file,0
+9c90d75,12/3/14 0:51,small changes in LAMMPSParser,1
+8f8c1ee,12/3/14 15:02,maintainer/run_tests.sh: added options and logging to file by default,0
+370150b,12/3/14 15:03,cython-generated files regenerated,0
+8f5c3f7,12/3/14 16:41,Fragments,0
+0fd4509,12/3/14 16:47,tests: include missing test files into package (data/mol2/  data/capping/  LAMMPS DATA),0
+c5316bb,12/4/14 22:53,Fixes for Lammps data parser,1
+ee2f377,12/4/14 22:54,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+a364eef,12/7/14 20:33,Fixes to lammps data parser,1
+2dee173,12/16/14 0:30,Merge branch 'feature_wrap' into develop,0
+228236,1/6/15 22:25,Fixes for Issue 201,1
+a6c31a8,1/7/15 16:54,docs: fixed generated links in selections docs,0
+5e28702,1/7/15 18:58,Unit test for Issue 193,0
+a193ab8,1/7/15 23:33,Fixes Issue193,1
+39502ec,1/9/15 12:01,Topology system update,0
+4d52ef7,1/10/15 12:28,Timestep dimension setting,0
+00952ec,1/11/15 13:10,Fixes Issue203,1
+c856979,1/13/15 15:39,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+ce1cb94,1/13/15 18:09,added PQRWriter and PQRReader update,0
+a6f17fa,1/14/15 17:20,TestDCDWriter.test_with_statement(): more specific except clause,0
+ddb5759,1/14/15 18:28,added unitcell to ALL Timesteps,0
+ac07632,1/15/15 16:37,UnitTests for streamIO functionality,0
+50d65c0,1/15/15 17:22,streamIO docs and CHANGELOG entry,0
+5a3ae86,1/15/15 18:14,regenerated html docs,0
+cfdcdee,1/20/15 17:31,fixed DMS Timestep: unitcell now initialized with 0s instead of Nones,1
+b3d781e,1/20/15 18:05,testing unitcell dimensions with PDBReader,0
+6d5b87a,1/20/15 18:05,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+51f6826,1/20/15 23:16,Updates to TRZ Reader,0
+9091cfd,1/21/15 17:01,maintainer/install_all.sh: added -u option for user installation,0
+d2e255c,1/22/15 19:35,Docs rebuilt to include new hbonds submodule,0
+ab943ca,1/25/15 11:23,"Added ""cached"" decorator (Issue 207)",0
+09b18ed,1/27/15 17:01,XTC and TRR files now write offsets to disk.,0
+759b06b,2/1/15 12:05,Fixes Issue 199: FutureWarning from numpy in pyqcprot,1
+9ab177a,2/1/15 12:11,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+852ebae,2/2/15 11:48,Removed unnecessary if in atomgroup_intersection,0
+9fa476c,2/2/15 11:50,Fixed TRZ reader not iterating properly,1
+bb69988,2/2/15 23:52,Tidying of coordinate modules,0
+c8bde94,2/4/15 19:08,Changed topology reading to be class based,0
+e01b6ec,2/9/15 14:59,Tagged tests from Issue 202 as known failures for now,0
+e61eebb,2/12/15 22:28,added energy units and conversion (fixes Issue 214),0
+9.10E+49,2/14/15 10:02,"Code ""PEP8-fied""",0
+d477d58,2/15/15 9:53,Corrected non-working lipid order example,0
+2e66867,2/15/15 20:20,Corrected setup.py,0
+41aee00,2/15/15 23:04,core.units: additional docs (tiny changes in constants) and more tests,0
+d943895,2/16/15 11:35,Reworked AtomGroup & Topology repr methods,0
+1174293,2/16/15 11:38,fixed UTF-8 Angstrom symbol in core.units,1
+d4cd7d9,2/16/15 11:38,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+61a03b2,2/17/15 8:58,Corrected Emacs and Vim mode lines,0
+3d9b19f,2/17/15 9:03,Sphinx conf.py now specifies secure https mathjax_path. Rebuilt html docs. Should resolve Issue 182.,0
+90ff753,2/17/15 10:57,units: move from __future__ import AFTER the module doc string.,0
+87a1dba,2/17/15 10:58,rebuilt docs with sphinx (to check Issue 182),0
+dfe1c1b,2/17/15 11:04,New property on Atom  partners,0
+61438a0,2/17/15 11:09,Added support for both Unicode and UTF8-encoded version of Angtrom symbol,0
+0fdf484,2/17/15 13:25,core.units: added docs and some cleanup + more tests,0
+b3c6b47,2/17/15 14:39,regenerated docs (lots of reST changes in core.units),0
+c58c80f,2/18/15 0:38,regenerated html docs (for updated DCD docs),0
+e6fc3b2,2/18/15 12:11,Can supply trajectory and topology readers as kwargs for Universe,0
+994e77d,2/19/15 12:11,added custom selection to ContactAnalysis (closes Issue 169),0
+9971441,2/19/15 17:51,new feature AtomGroup.split(level): list of AtomGroups  one for each level of the hierarchy,0
+ff5c5d0,2/19/15 17:56,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+2fc9a84,2/19/15 18:35,Contact analysis: can use centroids of selected atoms per residue (closes Issue 169),0
+199d6bf,2/19/15 19:21,Merge branch 'feature-customreaders' into develop,0
+26be6b8,2/19/15 19:57,Merge remote-tracking branch 'origin/feature-atompartners' into develop,0
+50b05f4,2/21/15 22:59,new AtomGroup.sequence to extract sequence information,0
+04f5132,3/1/15 0:34,Improved performance of creating residuegroup from AG,0
+c7c417d,3/5/15 0:04,Fixes Issue 208,1
+512855d,3/5/15 17:56,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+b6832d6,3/5/15 22:33,GROParser performance update,0
+effea48,3/5/15 22:39,Slight performance tweak to guess_atom_element,0
+4b395f4,3/6/15 0:23,Merge branch 'feature-persistentoffsets' into develop,0
+0dc7c6a,3/6/15 0:25,Fixed GROParser not stripping atom and residue names,1
+e98a82f,3/11/15 17:14,fixed a FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.,1
+dec267d,3/12/15 11:05,maintainer script for coverage reporting,0
+489765f,3/12/15 12:41,reST fixes in the doc strings,0
+dd4a5ab,3/12/15 13:41,reST docs: integrated xdrfile and restructured coordinates section,0
+4788ecc,3/12/15 13:52,corrected version: 0.9.0-dev (used to be 0.8.2-dev),0
+b1f046a,3/12/15 14:18,regenerated html docs,0
+a3edee5,3/12/15 14:20,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+912e92a,3/12/15 16:58,alternative square MDAnalysis logo (for GitHub),0
+fe9d990,3/12/15 18:39,Rewrote AtomGroup.momentOfInertia,0
+69b0099,3/13/15 9:29,Removed offset files in testsuite to avoid side effects from the modification of the trajectories ctime without actual modifications of the files (as ctimes are not guaranteed to be preserved during installation),0
+03975aa,3/13/15 9:49,Version changed to 0.9.0 and Documentation regenerated accordingly,0
+3a72b87,3/13/15 9:52,Changelog update with a release date,0
+1c8cf3d,3/13/15 11:27,Removed incorrect test,0
+a1063ee,3/13/15 12:11,Fixed DMSTimestep initial unitcell being wrong,1
+b5581dc,3/13/15 17:04,fixed failing tests in  test_modelling,1
+d59c895,3/17/15 10:58,Shebang lines fixed,0
+ceefe75,3/17/15 11:53,removed duplicated testcase in test_util and fixed potential segfaulting test,0
+128a5c1,3/17/15 11:54,Documentation regenerated,0

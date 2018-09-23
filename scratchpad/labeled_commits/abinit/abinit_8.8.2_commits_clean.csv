@@ -1,0 +1,28 @@
+hash,time,message,buggy
+8a93390,5/1/2018 21:05,Fix deadlock in SIGMAEPH output if np > 1 and HDF5+MPI-IO,1
+fde75f8,5/2/2018 6:50,Initialize v8.8.2,0
+32ed6ce,5/2/2018 8:21,Merge gmatteo/hdf5_mpio/8a9390 into _gmatteo-8.8,0
+0051c22,5/4/2018 6:25,Fix link to install notes,1
+71ff1a6,5/4/2018 9:29,Remove time reversal symmetry when kptopt=3 or 4 for BZ sampling in respfn,0
+52dfdca,5/4/2018 13:02,Change the Refs impacted by the correction of kptopt=3 in respfn,1
+418f261,5/4/2018 14:07,Continue changing Refs. kptopt in v7/t85 is 3 again (it was changed in the last commit).,0
+9f6ba94,5/4/2018 15:28,Other ref corrections,1
+d7bd23e,5/5/2018 14:05,Other ref corrections again,1
+3b6dfc3,5/14/2018 6:50,Import modifs from Antonius  that were requested to be merge in the trunk instead of release-8.8,0
+aaaac5c,5/14/2018 14:34,Suppress explicit e-mail addresses  for privacy reasons (European law).,0
+320cfb0,5/14/2018 14:53,Making modifictions needed to test using atlas-intal-18.0-openmpi. Not really satisfactory ...,0
+04fa1a7,5/14/2018 16:43,Introduce a threshold for dilatmx at 1.15   that can be bypassed by using chkdilatmx 0.,0
+6c91dbc,5/14/2018 16:46,Warning A.4 of release notes concerning dilatmw threshold at 1.15 .,0
+4bad9c4,5/14/2018 16:48,Warning A.6 about dilatmx threshold .,0
+439d660,5/14/2018 17:26,Fix typo,1
+2a4bd13,5/14/2018 17:54,Upgrade refs for chkdilatmx  also fix typo,0
+4e09ad0,5/14/2018 20:48,Upgrade v1_t77,0
+aeff7c9,5/15/2018 8:09,Improve doc,0
+819ce5c,5/15/2018 8:58,Minor improvement in the doc for developers,0
+4128051,5/15/2018 18:09,bug fixes related to intel ifort 18 issues (from JZwanziger),1
+94fae93,5/15/2018 18:18,Exclude host atlas intel 18 for chain v8#61-65,0
+b7a87c8,5/15/2018 21:19,Part of Joe's modifs had not been backported,0
+de9480f,5/15/2018 22:15,exclude builder intel 18 for v8#61-65,0
+bf43f84,5/17/2018 6:11,Change fftw3 in fftw3-mkl  following Jean-Michel demand.,0
+abd1bc8,5/19/2018 7:53,Initialize to zero in xg_init...,0
+863c412,5/19/2018 11:20,About to finalize v8.8.2,0

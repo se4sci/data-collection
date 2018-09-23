@@ -1,0 +1,24 @@
+hash,time,message,buggy
+af0be0a,2017-04-05 08:55:12,Fix for upcoming MatGetSubMatrix name change in PETSc 3.8.,0
+8dde50e,2017-04-24 16:22:50,Fix Tri3::contains_point().,0
+77789e7,2017-04-25 10:11:34,fix for --disable-optional && make installcheck,0
+cadf917,2017-04-26 08:53:12,Update automake version number to 1.2.0.,0
+d10f57d,2017-04-26 08:58:24,Run bootstrap.,0
+e40cda7,2017-04-26 11:53:20,adding vanilla unpacked 4.4.1.1,0
+a0c5cc2,2017-04-26 12:13:05,disable network tests by default,0
+a80541c,2017-04-26 12:14:02,remove derived files,0
+038a27a,2017-04-26 12:15:46,disable testsets,0
+8bbbbd6,2017-04-26 12:17:32,increase parameter sizes for exodus,0
+1b0e3fa,2017-04-26 12:18:57,adding .gitignore,0
+0e35b08,2017-04-26 12:21:08,bootstrap,0
+0e86de1,2017-04-26 12:21:18,updated symlink,0
+633d900,2017-04-26 12:42:14,require serial test suite for netcdf,0
+97deac3,2017-04-26 12:48:58,remove old netcdf-4.3.1,0
+b9bd43f,2017-04-26 14:51:53,distcheck fix,0
+ccdc1ad,2017-04-28 14:08:27,Update NEWS file to include latest bug fixes.,0
+262c8c4,2017-05-04 13:57:33,Guard all examples to avoid errors with --disable-optional.,0
+cbae660,2017-05-04 15:33:30,Add empty LIBMESH_PARALLEL_FLOAT_OPS macro for --disable-mpi case.,0
+05b2827,2017-06-12 10:58:52,64-bit build fix,0
+3b7a36d,2017-07-25 08:29:54,Update automake version number to 1.2.1.,0
+375f26c,2017-07-25 08:31:35,Run bootstrap.,0
+20a8690,2017-07-25 08:40:16,Update NEWS file for 1.2.1 bugfix release.,0

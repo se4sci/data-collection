@@ -1,0 +1,395 @@
+hash,time,message,buggy
+07bb95f,9/17/2013 16:16,all_tri() refactored to be more general.,0
+32e7709,9/23/2013 13:22,Comment  refactor Prism splittings,0
+86a334b,9/25/2014 9:24,Fix namespace issue,1
+e176d1a,10/29/2014 12:59,Use new BoundaryInfo accessor.,0
+debb7b3,10/28/2015 9:13,Use new Functor style,0
+6fac4fd,10/28/2015 9:17,More perf logging,0
+1e71be5,10/28/2015 11:44,Optimize evaluations at vertex nodes,0
+4e58973,10/28/2015 12:14,Use interpolation on LAGRANGE edges  too,0
+001e5b1,10/29/2015 21:33,Synchronize dofs on formerly-hanging nodes,0
+5d5bff1,10/30/2015 9:48,Clean up from SVN merge.,0
+596ea00,10/30/2015 9:49,Update .mailmap file.,0
+2f8e8b2,10/30/2015 13:44,Copy functors appropriately,0
+6d190d2,10/31/2015 7:43,Merge pull request #696 from roystgnr/reoptimize_projections,0
+8f6dcfb,11/1/2015 10:05,Update traffic.,0
+dceb57a,11/1/2015 10:12,Add missing libmesh_overrides noted by Xujun Zhao.,0
+c7d0e23,11/1/2015 12:23,Clean up AutoPtr atavisms.,0
+f3103cd,11/1/2015 12:58,Fix warnings when !LIBMESH_HAVE_EXODUS_API.,1
+4a8b24f,11/1/2015 13:05,Fix warning when !LIBMESH_HAVE_PARMETIS.,1
+5e2f969,11/1/2015 13:09,Fix warnings when !LIBMESH_HAVE_MPI.,1
+134d833,11/1/2015 13:24,Update statistics for October 2015.,0
+6ae276f,11/1/2015 14:51,Set interior parent only when mesh contains multiple dimensions,0
+e83ab41,11/1/2015 15:48,Implement fixes suggested by cppclean.,0
+7fba562,11/2/2015 9:05,Minor clean-up/reformatting in UCDIO.,0
+d48de0b,11/2/2015 9:42,Add static ElementType lookup tables.,0
+e40e4a9,11/2/2015 11:08,Read/write Elem::subdomain_id() as UCD material id.,0
+55cf08f,11/2/2015 14:12,Merge pull request #700 from jwpeterson/ucd,0
+4a093d2,11/2/2015 15:06,Fix for reduced_basis_ex2.,1
+daba1a8,11/2/2015 15:19,Fix for reduced_basis_ex7.,1
+d28aaf2,11/2/2015 16:44,Fix a few unit tests for complex-enabled builds.,1
+681bab5,11/2/2015 16:44,Fix a few unit tests for complex-enabled builds.,1
+c538f44,11/3/2015 8:30,Merge pull request #702 from jwpeterson/complex_fixes,0
+2682ece,11/3/2015 8:47,Disable reduced_basis_ex6 if libmesh is configured with --enable-blocked-storage.,0
+acc4cc5,11/3/2015 9:39,Better document known failure in reduced_basis_ex7.,0
+2a37a05,11/4/2015 12:21,Ensure the list of ids is unique in BoundaryInfo::add_{side node}().,0
+2a693a9,11/4/2015 12:44,Deprecate vector versions of BoundaryInfo::add_{side node edge}().,0
+fa1808c,11/4/2015 13:33,Add and use typedefs for common BoundaryInfo iterator types.,0
+38a75a5,11/4/2015 14:07,Misc. fixes to mixed_dim_mesh_test.C,0
+f6c56c1,11/4/2015 14:19,Delete commented-out for_each functors.,0
+df89594,11/4/2015 14:55,Refactor remaining std::make_pair uses.,0
+3fd13bd,11/4/2015 21:24,Updated BoundaryInfo::sync so that we can get the node and side id maps that are used internally.,0
+a376eb0,11/5/2015 8:10,Merge pull request #707 from libMesh/boundary_info,0
+88f0f52,11/5/2015 8:15,Merge pull request #708 from dknez/boundary_info_maps,0
+a551607,11/5/2015 8:17,Add required headers to dof_map.h  parsed_function_parameter.h,0
+fbd31c2,11/5/2015 8:43,Update citations.,0
+dc1c476,11/5/2015 9:08,Update statistics.,0
+92aeeb3,11/5/2015 9:55,Merge pull request #701 from jwpeterson/cppclean,0
+0a9b84b,11/5/2015 11:28,Added BoundaryInfo::get_side_and_node_maps() and removed version of BoundaryInfo::sync() that generated these maps. The previous BoundaryInfo::sync() version didn't work properly because the prepare_for_use call invalidates the data.,0
+14ccba3,11/5/2015 13:13,Merge pull request #710 from dknez/boundary_info_maps_correction,0
+61bcc98,11/5/2015 16:37,Use non-const iterators for erasing entries from maps.,0
+2ae09b2,11/6/2015 8:46,Delete cryptic TODO.,0
+be6e1b2,11/6/2015 8:59,Deprecate version of BoundaryInfo::boundary_ids(const Node*) that returns a vector.,0
+8508a6c,11/6/2015 9:29,Deprecate original version of BoundaryInfo::edge_boundary_ids(),0
+ff1ca56,11/6/2015 9:33,Use non-deprecated version BoundaryInfo::edge_boundary_ids().,0
+a6cb3b5,11/6/2015 9:42,Deprecate original version of BoundaryInfo::boundary_ids(elem  side).,0
+f797d45,11/6/2015 9:49,Use non-deprecated version BoundaryInfo::boundary_ids(elem  side).,0
+784e2c1,11/6/2015 9:59,Remove BoundaryInfo::n_boundary_ids(elem  side) copy/paste job.,0
+df15968,11/6/2015 10:08,Remove BoundaryInfo::n_edge_boundary_ids(elem  side) copy/paste job.,0
+bd24ec7,11/6/2015 10:15,Remove copy/paste code in BoundaryInfo::has_boundary_id().,0
+eefe1e9,11/6/2015 10:20,Remove copy/paste code in BoundaryInfo::boundary_id().,0
+c9e8cf8,11/6/2015 10:37,Deprecate BoundaryInfo::raw_boundary_ids().,0
+42d56e0,11/6/2015 10:42,Use non-deprecated version of BoundaryInfo::raw_boundary_ids().,0
+53db001,11/6/2015 10:54,Deprecate BoundaryInfo::raw_edge_boundary_ids().,0
+c91b2e9,11/6/2015 11:06,Use non-deprecated boundary_ids() in Dirichlet constraints code.,0
+9cfa0a6,11/6/2015 11:14,Use non-deprecated boundary_ids() in compute_periodic_node_constraints().,0
+07db58b,11/6/2015 11:19,Use non-deprecated boundary_ids() in primary_boundary_edge_neighbor().,0
+76cddbb,11/6/2015 11:23,Use non-deprecated boundary_ids() in compute_periodic_constraints().,0
+4d1a49e,11/6/2015 12:41,Use non-deprecated boundary_ids() in Elem::topological_neighbor().,0
+237650a,11/6/2015 12:54,Use non-deprecated boundary_ids() in build_extrusion().,0
+c58a48a,11/6/2015 13:00,Use non-deprecated boundary_ids() in all_tri().,0
+cdebdd6,11/6/2015 13:03,Use non-deprecated boundary_ids() in flatten().,0
+d8100ab,11/6/2015 13:07,Use non-deprecated boundary_ids() in stitching_helper().,0
+6.56E+85,11/6/2015 13:23,Use non-deprecated boundary_ids() in create_submesh().,0
+eeec1ef,11/6/2015 13:51,Use non-deprecated boundary_ids() in write_serialized_bcs().,0
+2279842,11/6/2015 13:54,Use non-deprecated boundary_ids() in write_serialized_nodesets().,0
+de1ef52,11/6/2015 13:59,Use non-deprecated boundary_ids() in element pack() routine.,0
+4b44807,11/6/2015 14:05,Use non-deprecated boundary_ids() in node pack() routine.,0
+059fd5e,11/6/2015 14:09,Use non-deprecated boundary_ids() in BoundaryProjectSolution.,0
+218f6c3,11/6/2015 14:18,Use non-deprecated boundary_ids() in systems_of_equations_ex5.,0
+b3109a2,11/6/2015 14:21,Use non-deprecated boundary_ids() in reduced_basis_ex6.,0
+d01d557,11/6/2015 14:32,Use non-deprecated boundary_ids() in primary_boundary_point_neighbor().,0
+0ad0901,11/6/2015 14:38,Deprecate FEMContext::side_boundary_ids().,0
+09ed483,11/6/2015 17:59,Add NewmarkSolver::set_initial_accel_avail,0
+d56b3b8,11/6/2015 18:00,Use set_initial_accel_avail,0
+752f4ad,11/7/2015 14:57,Merge pull request #712 from pbauman/newmark-restart,0
+27b8522,11/9/2015 8:46,Update traffic.,0
+0a1f143,11/9/2015 12:34,remove libtool-2.4.2.tar.gz,0
+002372e,11/9/2015 12:35,add libtool-2.4.6.tar.gz,0
+53f6757,11/9/2015 12:37,Merge pull request #711 from jwpeterson/boundary_ids_set,0
+5f02833,11/9/2015 13:35,build bundled libtool-2.4.6,0
+c5c5b61,11/9/2015 13:36,rebase with libtool-2.4.6,0
+922ef9d,11/10/2015 9:35,Merge pull request #714 from libMesh/libtool_refresh,0
+e15d33e,11/10/2015 9:44,remove automake-1.12.5.tar.gz,0
+b2db07c,11/10/2015 9:45,add automake-1.15.tar.gz,0
+42c1f3d,11/10/2015 9:47,build bundled automake-1.15,0
+e46397d,11/10/2015 11:24,specify serial-tests to get old stdout behavior when running make check  update AC_PREREQ to 2.69  only *need* automake 1.12 or newer to support serial-builds options,0
+24b3f6b,11/10/2015 17:34,ran bootstrap,0
+5f712ea,11/11/2015 12:19,ParallelMesh: unique ids on unpartitioned elements,0
+4102233,11/11/2015 12:21,Add headers to Trilinos files.,0
+3e35519,11/11/2015 12:21,send_recieve: try harder to pick an example T,0
+4d6196b,11/11/2015 12:23,Construct StandardType<pair> with no example,0
+2.89E+101,11/11/2015 12:26,Remove now-redundant assign_unique_ids(),0
+82cb4ba,11/11/2015 12:27,SyncUniqueIds functor,0
+8df90fa,11/11/2015 13:18,Undo deprecation of BoundaryInfo::add_side().,0
+f07b337,11/11/2015 13:48,MeshTools::libmesh_assert_valid_unique_ids,0
+0da82a9,11/11/2015 14:06,Set unique_id in insert_elem  insert_node,0
+a9392a3,11/11/2015 14:07,XdrIO shouldn't create invalid unique_ids,0
+4.30E+285,11/11/2015 14:08,assert_valid_unique_ids() after prepare_for_use(),0
+c530181,11/11/2015 14:11,DofObjectKey typedef,0
+4ff9368,11/11/2015 14:12,Define operator<< for pair<Hilbert unique_id>,0
+79f343d,11/11/2015 14:13,MPI compatible max/min operators for DofObjectKey,0
+a72095b,11/11/2015 15:00,Undo deprecation of BoundaryInfo::add_node().,0
+10a4d44,11/11/2015 15:01,MeshBase::parallel_max_unique_id(),0
+8550ecc,11/11/2015 15:02,set_unique_id() in MeshModification routines,0
+c68bf3f,11/11/2015 15:07,Undo deprecation of BoundaryInfo::add_edge().,0
+8848e5d,11/11/2015 15:16,Switch to boundary_ids (elem  side  vector&).,0
+c5a7d48,11/11/2015 15:56,Switch to boundary_ids (node  vector&).,0
+3e54a5b,11/11/2015 16:02,Switch to edge_boundary_ids (elem  edge  vector&).,0
+7c68b38,11/11/2015 16:10,Switch to raw_boundary_ids(elem  side  vector&).,0
+f693323,11/11/2015 16:16,Switch to raw_edge_boundary_ids(elem  edge  vector&).,0
+204f4f6,11/11/2015 16:25,Switch to non-deprecated boundary_ids() function throughout library.,0
+e6f7f8b,11/11/2015 17:03,Use non-set versions of boundary_ids in examples.,0
+fa57e1f,11/11/2015 17:30,Copy unique_id in copy_nodes_and_elements,0
+250ddf0,11/11/2015 17:30,Reset _next_unique_id after copy_nodes_and_elements,0
+e837376,11/11/2015 17:32,ParallelMesh all_tri(QUAD8) unique_id corner case,0
+6b946d8,11/11/2015 17:34,Sort by (Hilbert unique_id) when possible,0
+0c0f832,11/11/2015 22:12,Added SolverConfiguration::set_options_during_init(). Small add-on to PR #657.,0
+38a90ac,11/12/2015 8:19,Update citations.,0
+e36facd,11/12/2015 8:54,Merge pull request #720 from jwpeterson/redo_boundary_ids,0
+009be39,11/12/2015 9:54,Move ExodusII_IO_Helper::Conversion::get_side_map to C file.,0
+437818c,11/12/2015 10:08,Add ExodusII_IO_Helper::Conversion::invalid_id.,0
+5540f95,11/12/2015 10:53,Add ExodusII_IO_Helper interface to read QA records.,0
+f3dbc3e,11/12/2015 12:39,Add code to detect Cubit 14 from QA records.,0
+2a593be,11/12/2015 13:31,The ElementMaps constructor now takes a Helper reference.,0
+e50f625,11/12/2015 13:43,Use special TRI3 side map to work around Cubit 14 issue.,0
+1dccf5c,11/12/2015 14:35,The TRI3 numbering bug affects both Cubit 14 and 15.,0
+aaa0f78,11/12/2015 14:48,Manually set unique_id in XdrIO reads,0
+d6cae86,11/13/2015 8:50,TAO_CONVERGED_FATOL is going away in the next release of PETSc.,0
+04ce479,11/13/2015 8:51,Merge pull request #722 from jwpeterson/exodus_fix,0
+271674a,11/13/2015 8:58,fatol and frtol will be removed in the next release of PETSc.,0
+c8567af,11/13/2015 9:47,semiverify ParallelMesh unique_ids when enabled,0
+040b212,11/13/2015 9:48,Add missing assertion around semiverify,0
+5fdab57,11/13/2015 12:45,ExodusII output in fem_system_ex4,0
+4f2a19d,11/13/2015 15:31,Removed unused matrix (non_dirichlet_inner_product) from RBConstruction,0
+ade2489,11/15/2015 13:40,Set 'grtol' when calling Tao  frtol is going away.,0
+2b4c720,11/15/2015 13:44,Merge branch 'tao_fix',0
+538c958,11/15/2015 13:57,Update citations.,0
+3edd764,11/15/2015 14:02,Update traffic.,0
+ed27c80,11/15/2015 14:57,Refactor GmshIO code for reading lower-dimensional elements.,0
+d00d419,11/15/2015 16:30,Add Elem::key() interface.,0
+7efa05e,11/15/2015 17:51,Refactor Elem::operator==,0
+b6dffb8,11/16/2015 7:05,Add Elem-specific overrides of Elem::key().,0
+cb58377,11/16/2015 10:00,Use Elem::key() in AbaqusIO.,0
+3e2616b,11/16/2015 11:52,Use Elem::key() in UNVIO.,0
+ef1f0ce,11/16/2015 12:18,Don't let key() hide base class key(side) function.,0
+b9990cf,11/16/2015 22:35,Update citations.,0
+13bbee8,11/16/2015 23:46,Merge pull request #726 from jwpeterson/gmsh_hash,0
+c526bae,11/18/2015 1:00,"Add autoconf tests for variants of ""unordered"" multiset.",0
+3decd85,11/18/2015 1:31,Run bootstrap.,0
+f61fd33,11/18/2015 1:42,Use unordered_multiset in UNVIO.,0
+c0433e5,11/18/2015 3:25,Move Elem hashing stuff to its own header.,0
+0bd160d,11/18/2015 3:26,Update Makefile.am's,0
+f46c9db,11/18/2015 3:28,Run boostrap.,0
+6ddb8ee,11/18/2015 10:11,make_node_unique_ids_parallel_consistent(),0
+bf7efca,11/18/2015 10:12,make_unique_ids...consistent in prepare_for_use,0
+a7aee94,11/18/2015 10:14,Set unique_id when reading from Nemesis files,0
+969c683,11/18/2015 22:02,Option to avoid overzealous neighbor asserts,0
+67a2ebc,11/18/2015 22:06,Avoid overzealous find_neighbors assert,0
+2ec7623,11/18/2015 22:08,Sync unique_ids during Nemesis read,0
+bebdb0d,11/19/2015 9:49,Avoid clear() in DiffSystem class destructors,0
+f2f8e08,11/19/2015 10:45,Switch to unordered_multimap in UNVIO.,0
+b89c257,11/19/2015 11:00,Use unordered_multimap in GmshIO.,0
+3bfad68,11/19/2015 11:07,Use unordered_multimap in AbaqusIO.,0
+fa0ac18,11/19/2015 16:30,Fix SerialMesh::update_parallel_id_counts,1
+92e4c70,11/20/2015 8:14,Merge pull request #730 from jwpeterson/unordered_multiset,0
+78a2aa1,11/20/2015 8:21,Merge pull request #729 from roystgnr/intel_crash_fix,0
+94a700f,11/20/2015 8:23,Update citations.,0
+daada81,11/20/2015 9:58,Fix 64-bit indices regression.,1
+7d6fced,11/20/2015 14:06,Remove atavistic comment,0
+e1234b5,11/20/2015 14:06,Fixup inadvertent whitespace change,1
+f6e8730,11/20/2015 14:47,Avoid hiding Elem::key() with Elem::key(sn) in derived classes.,0
+fc2fb91,11/20/2015 14:47,Compilation fix for --disable-unique-id,0
+0c7ea36,11/20/2015 15:43,Refactor Hex::key(side),0
+17abf52,11/20/2015 15:48,Refactor Hex::side(s),0
+4bd2c96,11/20/2015 15:56,Refactor Tet::key(side),0
+f4d69e8,11/20/2015 15:59,Refactor Tet::side(s),0
+d125c0b,11/20/2015 16:08,Refactor Prism::key(side),0
+c9610e5,11/20/2015 16:13,Refactor Prism::side(s),0
+9a14295,11/20/2015 16:17,Refactor Pyramid::key(side),0
+ae3200e,11/20/2015 16:19,Refactor Pyramid::side(s),0
+a9f57f7,11/20/2015 16:23,Refactor Tri::key(side),0
+4e4c75d,11/20/2015 16:24,Refactor Tri::side(s),0
+804b069,11/20/2015 16:29,Refactor Quad::key(side),0
+4c17cd2,11/20/2015 16:30,Refactor Quad::side(s),0
+0308c5a,11/21/2015 8:03,Merge pull request #731 from jwpeterson/refactor_key,0
+37c577f,11/21/2015 9:08,Fix Elem::key() hiding warnings in infinite elems.,1
+6603bef,11/21/2015 9:27,Refactor InfHex::key(side),0
+56a67b1,11/21/2015 9:30,Add missing libmesh_override.,0
+a9f2bc6,11/21/2015 9:31,Refactor InfQuad::key(side),0
+f5b3ff4,11/21/2015 9:33,Add -Woverloaded-virtual to clang flags.,0
+eb689a3,11/21/2015 9:37,Refactor InfPrism::key(side),0
+edebe2f,11/21/2015 9:42,Refactor InfHex::side(s),0
+38ee631,11/21/2015 9:46,Refactor InfQuad::side(s),0
+000c83f,11/21/2015 9:50,Refactor InfPrism::side(s),0
+29d790d,11/21/2015 9:51,Update citations.,0
+8694554,11/21/2015 11:00,Merge branch 'refactor_key_inf',0
+fa131f1,11/21/2015 11:07,Refactor Quad4::build_side(),0
+6f0ca9a,11/21/2015 11:10,Refactor Quad8::build_side(),0
+f086cff,11/21/2015 11:11,Refactor Quad9::build_side(),0
+f6cda3d,11/21/2015 11:13,Refactor Tri3::build_side(),0
+53a1084,11/21/2015 11:16,Refactor Tri6::build_side(),0
+208129c,11/21/2015 11:20,Refactor Tet4::build_side(),0
+6d32055,11/21/2015 11:20,Refactor Tet10::build_side(),0
+de88520,11/21/2015 11:23,Refactor Hex8::build_side(),0
+ec74353,11/21/2015 11:25,Refactor Hex20::build_side(),0
+f209b12,11/21/2015 11:27,Refactor Hex27::build_side(),0
+59a6c0f,11/21/2015 11:31,Refactor Prism6::build_side(),0
+f2eb62c,11/21/2015 11:35,Refactor Prism15::build_side(),0
+9f449f2,11/21/2015 11:37,Refactor Prism18::build_side(),0
+0df409c,11/21/2015 11:40,Refactor Pyramid5::build_side(),0
+5f9d84c,11/21/2015 11:44,Refactor Pyramid13::build_side(),0
+12099c8,11/21/2015 11:47,Refactor Pyramid14::build_side(),0
+82a0af7,11/21/2015 11:52,Refactor InfQuad4::build_side(),0
+fd08aac,11/21/2015 11:54,Refactor InfQuad6::build_side(),0
+28ddab4,11/21/2015 11:57,Refactor InfHex8::build_side(),0
+4761752,11/21/2015 12:00,Refactor InfHex16::build_side(),0
+312c96a,11/21/2015 12:02,Refactor InfPrism6::build_side(),0
+f1abe4a,11/21/2015 12:05,Refactor InfPrism12::build_side(),0
+a062e04,11/21/2015 12:10,Refactor InfHex18::build_side(),0
+3a3bff3,11/22/2015 9:10,Update traffic.,0
+76a6026,11/22/2015 9:11,Merge pull request #732 from jwpeterson/build_side,0
+67a9842,11/23/2015 9:14,Update citations.,0
+c1030bf,11/23/2015 11:26,Fix DenseMatrix::svd(sigma  U  VT) ,1
+892b71d,11/26/2015 10:18,Update citations.,0
+872fe68,11/26/2015 11:17,Add Quad9::key() function.,0
+5552364,11/26/2015 11:39,Fix Edge3::key() function.,1
+ad244cb,11/26/2015 11:51,Override Pyramid14::key(side),0
+4.95E+13,11/26/2015 11:57,Fix copy-pasted documentation typo.,1
+0c00bbd,11/26/2015 17:09,Override InfQuad6::key(side) for Edge3 side.,0
+10f9b05,11/26/2015 17:20,Simplify InfHex18::key(side).,0
+7128a45,11/26/2015 22:59,Move Quad4::key() to Quad::key().,0
+188def7,11/26/2015 23:10,Move Tri3::key() to Tri::key().,0
+469ccc6,11/30/2015 8:56,Update traffic.,0
+112e592,11/30/2015 9:00,Update views/clones plots.,0
+984297e,11/30/2015 9:00,Merge branch 'stats',0
+be8225f,11/30/2015 9:32,Merge pull request #733 from jwpeterson/key_fixes,0
+3d67a35,11/30/2015 14:15,Add unit test for DenseMatrix::svd().,0
+18f352e,11/30/2015 14:16,Ran bootstrap.,0
+fb1c3d2,11/30/2015 14:41,Let user specify precision in DenseMatrixBase::print_scientific().,0
+8a3c1ef,11/30/2015 14:44,Let user specify precision in DenseVectorBase::print_scientific().,0
+d028b48,11/30/2015 16:38,Fix minor spacing/formatting issues.,1
+ec96e57,11/30/2015 17:12,Merge pull request #734 from jwpeterson/debug_svd,0
+778c90e,11/30/2015 17:13,Merge branch 'auto_set_interior_parent',0
+f481a2e,12/1/2015 10:44,petsc.m4: don't test against uninitialized variable.,0
+1ad5054,12/1/2015 10:48,Ran bootstrap.,0
+41027cc,12/1/2015 15:28,Update statistics for Nov 2015.,0
+28d53ee,12/1/2015 15:49,Merge pull request #735 from jwpeterson/petsc_m4,0
+cdedd46,12/1/2015 16:01,Update citations.,0
+0ddb666,12/1/2015 16:21,Update citations.,0
+8f689e0,12/2/2015 8:03,Extract TBB_VERSION_{MAJOR MINOR} from tbb_stddef.h,0
+ae5c55e,12/2/2015 8:09,Ran bootstrap.,0
+6b11ec8,12/2/2015 8:15,Add TBB_VERSION_LESS_THAN macro to threads.h,0
+12ef191,12/2/2015 12:34,GCC 4.6.3 still warned that there was a hiding issue.,0
+148aa3c,12/2/2015 12:39,Merge pull request #737 from jwpeterson/tbb_m4,0
+2856671,12/2/2015 15:38,DenseMatrixBase::multiply() helper can be static,0
+253174,12/3/2015 8:59,Update citations.,0
+4.09E+70,12/3/2015 11:43,close_to_point needs tol/hmax,0
+050d549,12/3/2015 12:35,Merge pull request #739 from roystgnr/static_multiply,0
+7de27db,12/3/2015 15:25,Merge pull request #740 from roystgnr/C1_coarsening_projection_fix,0
+89f050f,12/3/2015 15:31,Add configure test for PETSc index size mismatch.,0
+493d272,12/3/2015 15:33,Run bootstrap.,0
+be92d55,12/4/2015 9:26,Move libmesh-PETSc type consistency checks out of petsc.m4,0
+f434f93,12/4/2015 9:56,Run bootstrap.,0
+93683af,12/4/2015 11:02,Correct comment re: projection close_to_point tol,1
+04755d9,12/4/2015 11:03,Use larger tolerance when finding old elements,0
+d674668,12/4/2015 11:30,Perform variable substitution at the end of petsc.m4,0
+5b97485,12/4/2015 12:46,Run bootstrap.,0
+71d0997,12/4/2015 15:50,Merge pull request #742 from roystgnr/another_projection_fix,0
+ce374e9,12/4/2015 16:12,If starting the nonlinear solve with a really good initial guess  we dont want to set an absurd linear tolerance,0
+43fa1f4,12/4/2015 16:21,Optimize tree add (un)serialization (#745),0
+9fdc663,12/4/2015 16:26,Merge pull request #741 from jwpeterson/petsc_m4,0
+04df0ac,12/4/2015 16:31,Updated systems_of_equations_ex8.,0
+9af5b1f,12/5/2015 12:18,Merge pull request #743 from dknez/systems_of_equations_ex8_refresh,0
+7f5ad54,12/6/2015 13:55,Update traffic.,0
+c5cbe6f,12/6/2015 13:59,Update citations.,0
+cde372f,12/6/2015 14:05,Update LOC count.,0
+596f26b,12/7/2015 8:13,Update citations.,0
+8b9f266,12/7/2015 10:36,Add DenseMatrix::svd_solve().,0
+70eca2c,12/7/2015 11:01,Merge pull request #744 from vikramvgarg/newtonsolver_tolerance_fix,0
+c9265c0,12/7/2015 16:58,Cache derivatives to files (#745),0
+714ec15,12/8/2015 8:20,Update citations.,0
+4a0d108,12/8/2015 8:26,Merge pull request #746 from jwpeterson/svd_solve,0
+e0e46c9,12/8/2015 9:04,Add feature flag system (#745),0
+a5407a2,12/8/2015 9:55,Fix gcc compile and link errors (#745),1
+c926028,12/10/2015 8:25,Merge pull request #747 from dschwen/cache_ad_745,0
+118ee29,12/11/2015 13:39,clean the proper output file,0
+a517b4b,12/11/2015 17:37,PETSc 3.6.3 still has old TaoSetTolerances options,0
+9c71d0c,12/12/2015 10:38,Merge pull request #749 from pbauman/tao-set-tolerances,0
+6d748ea,12/12/2015 10:47,Update citations.,0
+b7f4a66,12/12/2015 12:45,Set DOT_PATH in Doxyfile.in.,0
+2fbb632,12/12/2015 13:04,"Update Doxygen ""Main Page"" documentation.",0
+220cf25,12/13/2015 14:13,Update traffic.,0
+7fecf64,12/13/2015 14:25,Fix doxygen warnings.,1
+e7c3d30,12/13/2015 20:55,Fix warning about DOT_FONTNAME.,1
+d67dd32,12/13/2015 21:05,Fix indentation on Doxygen mainpage.,1
+7650ed9,12/14/2015 10:53,Widen NewtonSolver immediate-convergence test,0
+0ade62b,12/14/2015 13:45,Don't use LIBMESH_OPTIONS in reduced basis ex5,0
+b81dafc,12/14/2015 15:13,Merge pull request #750 from roystgnr/newton_solver_fix,0
+bbe5924,12/14/2015 15:56,Merge pull request #751 from roystgnr/rb_ex5_no_custom_pc,0
+fe4bdcd,12/15/2015 14:17,Suppress variadic template warnings in GCC.,0
+0d4372d,12/16/2015 9:32,Merge pull request #717 from libMesh/automake_refresh,0
+e61086b,12/16/2015 12:41,Add BounaryInfo::remove_id(),0
+05eee99,12/16/2015 12:42,Remove unused  private functor.,0
+5406bac,12/16/2015 12:45,Move inline functions out of header.,0
+b29c42a,12/16/2015 13:14,Call remove_id() in MeshTools::Modification::change_boundary_id().,0
+d5c4421,12/16/2015 13:42,Add unit test of BoundaryInfo::remove_id().,0
+081f517,12/16/2015 13:48,Run bootstrap.,0
+ebbdf65,12/16/2015 14:16,Clear input vectors passed to BoundaryInfo functions.,0
+3416ef8,12/16/2015 14:25,Fix some documentation/formatting typos.,1
+c5c3ceb,12/16/2015 15:16,Fix warning generated while trying to ignore warnings.,1
+3076be4,12/16/2015 16:45,Merge pull request #754 from jwpeterson/remove_id,0
+eca97f6,12/17/2015 12:19,Update citations.,0
+6c7254e,12/20/2015 16:04,Added SolverConfiguration to NonlinearSolver to match LinearSolver.,0
+b59ec8a,12/20/2015 19:07,Fixed compilation error with --enable-complex  due to DenseMatrix::_svd_solve_lapack,1
+214974a,12/20/2015 19:49,Merge pull request #758 from dknez/nonlinear_solver_config,0
+de28d8c,12/20/2015 22:56,Added shortcut returns in change_boundary_id and change_subdomain_id if old and new IDs are the same,0
+ae10749,12/21/2015 8:25,Update traffic.,0
+5d23511,12/21/2015 9:41,Fix issues with writing Exodus files after deleting nodes.,1
+c6a5e45,12/21/2015 12:57,Update citations.,0
+44daf79,12/21/2015 13:08,Add tests for inverse hyperbolic functions.,0
+fc2e713,12/21/2015 13:15,Run bootstrap.,0
+e3373f7,12/21/2015 13:23,Use inverse hyperbolic trig defines detected by configure.,0
+2cd4042,12/21/2015 13:34,Add tests for complex inverse hyperbolic trig functions.,0
+e209167,12/21/2015 13:41,Run bootstrap.,0
+ea009a1,12/21/2015 16:32,Merge pull request #759 from jwpeterson/fix_exodus,0
+432f3b8,12/21/2015 16:35,Merge pull request #760 from jwpeterson/inv_hyp,0
+315d0e3,12/24/2015 9:24,Reduced Basis change: Should use relative error in EIM greedy,0
+a156d05,12/28/2015 11:05,Update traffic.,0
+5c4aaeb,12/28/2015 11:33,Update citations.,0
+6dabeba,12/30/2015 21:53,Add istream-based GetPot constructor,0
+f2bec40,12/31/2015 16:03,Parse test inputfile from stringstream,0
+5d5618f,12/31/2015 16:58,No longer need GetPot test at .C.in file,0
+b7d6fe8,12/31/2015 16:58,Ran bootstrap,0
+96d98f6,1/1/2016 13:55,Reuse parse_input_stream within parse_input_file,0
+a3e0c86,1/2/2016 8:30,Update citations.,0
+63aea86,1/2/2016 9:35,Update statistics for Dec 2015.,0
+65121aa,1/2/2016 9:48,Merge pull request #762 from pbauman/getpot-stream-constructor,0
+1ced72a,1/2/2016 18:59,Add missing ifdef wrapper,0
+8e9e0e2,1/2/2016 19:00,Add missing #include,0
+0de2950,1/4/2016 8:28,Update traffic.,0
+24fc010,1/4/2016 9:08,Merge pull request #764 from roystgnr/disable_second_fixes,0
+8359cc6,1/4/2016 16:15,Add space around variable declarations in base.,0
+0cf0f7e,1/4/2016 16:17,Add space around variable declarations in error_estimation.,0
+92d2ab8,1/4/2016 16:19,Add space around variable declarations in fe.,0
+ec9c3af,1/4/2016 16:20,Add space around variable declarations in geom.,0
+25b1c44,1/4/2016 16:21,Add space around variable declarations in mesh.,0
+8898515,1/4/2016 16:22,Add space around variable declarations in numerics.,0
+aecfa48,1/4/2016 16:24,Add space around variable declarations in parallel.,0
+bf87145,1/4/2016 16:25,Add space around variable declarations in partitioning.,0
+5b15e81,1/4/2016 16:26,Add space around variable declarations in physics.,0
+0007ad9,1/4/2016 16:27,Add space around variable declarations in quadrature.,0
+f37cf77,1/4/2016 16:28,Add space around variable declarations in reduced_basis.,0
+757dfa7,1/4/2016 16:29,Add space around variable declarations in solution_transfer.,0
+5484cd4,1/4/2016 16:30,Add space around variable declarations in solvers.,0
+e9d9927,1/4/2016 16:30,Add space around variable declarations in systems.,0
+7f486d0,1/4/2016 16:31,Add space around variable declarations in utils.,0
+d718df3,1/4/2016 16:31,Add space around variable declarations in src/apps.,0
+0e58990,1/5/2016 16:18,Update citations.,0
+fe4edd5,1/6/2016 12:00,Merge pull request #766 from jwpeterson/add_space,0
+fceede4,1/6/2016 12:39,Fix a couple issues found while adding unit tests for all_tri().,1
+e8aeec5,1/6/2016 13:07,Add unit tests of MeshTools::Modification::all_tri().,0
+7d532ab,1/6/2016 13:09,Run bootstrap.,0
+78b5988,1/6/2016 15:24,Fix bug when splitting QUAD8s.,1
+2b396a2,1/6/2016 16:21,Merge pull request #719 from roystgnr/hilbert_unique_sort,0
+3e43302,1/6/2016 17:32,./bootstrap is not quite as optional as it once was.,0
+1f05182,1/7/2016 8:42,Update citations.,0
+d59aa14,1/7/2016 9:07,Use __LIBMESH_DATE__ and __LIBMESH_TIME__ in auto_ptr.h,0
+a765e10,1/7/2016 9:21,do not distribute base/getpot_test_input.in now that it is gone,0
+e9e5149,1/7/2016 10:50,we need to keep getpot_test.C now,0
+d645949,1/7/2016 12:35,Remove C++11 features to keep gcc-4.4 happy,0
+3ade6d5,1/7/2016 12:39,clean generated files,0
+9e2ae82,1/8/2016 9:36,fix for PETSc 3.0,1
+3dbc046,1/8/2016 9:52,fix for --disable-mpi,1
+d36cd8e,1/8/2016 10:23,Make Elem::is_child_on_side defined even without AMR.,0
+b9e7691,1/8/2016 10:42,only execute the unit test if PETSc is available and we have a chance of passing,0
+1cbbd37,1/8/2016 12:34,Change operator<<(pair<Hilbert unique_id>) namespace,0
+cc12fc9,1/9/2016 13:10,Added support for reading and writing NodeElems in ExodusII format using the ExodusII SPHERE element.,0
+2eb09fa,1/9/2016 13:30,Merge pull request #211 from libMesh/all_tri_3D_rebased,0
+c72f97b,1/9/2016 19:02,Merge pull request #773 from dknez/exodusII_sphere_element,0
+58298be,1/10/2016 20:50,Update citations.,0
+2ad8427,1/10/2016 20:56,Update traffic.,0
+caf7748,1/11/2016 2:26,Fix BoundaryInfo::sync(ParallelMesh) unique_ids,1
+1a13827,1/12/2016 8:37,Update citations.,0
+5bbe026,1/12/2016 9:11,Revert recent changes to system_projection.C,0
+79f1796,1/12/2016 9:18,Merge pull request #774 from roystgnr/boundaryinfo_unique_id_fix,0

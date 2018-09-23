@@ -1,0 +1,25 @@
+hash,time,message,buggy
+887981c,10/6/2016 10:47,bugfix for virial tally for improper style umbrella from Steven Vandenbrande (U Gent),1
+ef079ae,10/6/2016 11:27,bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS,1
+9507a78,10/6/2016 16:01,USER-DPD: whitespace and indentation fixes,0
+e27ed6c,10/7/2016 14:52,USER-DPD: Added support to use VV integrator with USER-DPD if desired. Includes documentation and examples. NOTE: VV requires very small timesteps under isoenergetic conditions. Consider using fix_shardlow instead  since this VV support is primarily for comparison purposes.,0
+9789f04,10/7/2016 15:55,USER-DPD: update the USER/dpd examples and their reference outputs,0
+a2b0840,10/10/2016 13:40,USER-DPD: Add atom_style compatibility checks in fix_eos_*.cpp files.,0
+bb0bfd5,10/10/2016 23:55,Merge branch 'master' into improper-virial-bugfixes,0
+b00b40b,10/11/2016 8:03,make no-lib should also remove MPIIO and USER-LB packages,0
+3e8e291,10/11/2016 12:42,Merge pull request #213 from akohlmey/improper-virial-bugfixes,0
+803dc57,10/11/2016 12:42,Merge pull request #214 from akohlmey/make-no-lib-no-mpiio,0
+6f11629,10/11/2016 13:39,Merge pull request #207 from timattox/USER-DPD_new_VV_for_DPD,0
+fbf7df1,10/11/2016 13:40,Merge pull request #212 from timattox/USER-DPD_fix_eos_atom_style_checks,0
+0eb7fbf,10/11/2016 15:43,tweaks to new USER-DPD docs,0
+559637f,10/11/2016 16:11,USER-DPD Bugfix: reset_dt() is not called when I thought it should be called. Move the calculation of dtsqrt inside FixShardlow::initial_integrate(),0
+2f07a62,10/11/2016 16:30,Forgot to remove my call to reset_dt(),0
+b758600,10/11/2016 23:50,updates for recent changes to the manual,0
+39a2203,10/11/2016 23:57,correct broken link,1
+adc98e0,10/11/2016 23:58,whitespace cleanup in USER-DPD,0
+6b4ab0a,10/12/2016 0:00,update .gitignore,0
+c24bf51,10/12/2016 0:00,update #include statements for system includes,0
+f8a26dd,10/12/2016 7:26,update Timer::force_timeout() to trigger at next loop iteration,0
+4e3a550,10/12/2016 7:30,Merge pull request #215 from timattox/USER-DPD_bugfix_for_dtsqrt,0
+4a5d9ea,10/12/2016 7:32,Merge pull request #217 from akohlmey/small-fixes,0
+63e71cd,10/12/2016 7:35,patch to add DPD-VV,0

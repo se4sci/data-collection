@@ -1,0 +1,138 @@
+hash,time,message,buggy
+b0bb0c4,2013-02-06 00:51:03,Check version for petsc-dev,0
+52b073a,2013-04-15 09:07:14,DofMap can report if it is capable of using blocked storage,0
+46ff3ed,2013-04-15 09:38:47,support for --enable-blocked-storage,0
+7e846a4,2013-04-15 14:33:29,PETSc BAIJ support,0
+0fb83f8,2013-04-15 15:27:10,trivial formatting,0
+df2b0c5,2013-04-16 09:01:03,extend blocksize option to matrices init()ed without the help of the DofMap,0
+09bec81,2013-04-16 11:37:27,towards add_block_matrix(),0
+633e74c,2013-04-18 21:10:45,Switch some cout/cerr uses to libMesh::out/err,0
+1f54c64,2013-04-20 12:35:49,"Not every node of ""this_mesh"" needs to be stitched.",0
+1b33ceb,2013-04-20 20:44:01,Need to do one final comparison for fuzzy_binary_find.,0
+cb58eeb,2013-04-21 15:40:21,Adding version of Utility::binary_find() that takes a custom comparison object.,0
+5771c42,2013-04-21 15:53:10,Use TOLERANCE while sorting the points  this tolerance is independent of the point matching tolerance asked for by the user.,0
+1c4b6a0,2013-04-22 07:29:34,metis refresh,0
+e80824e,2013-04-22 07:34:28,refresh parmetis,0
+e5fbb39,2013-04-22 07:36:32,generated files,0
+6461d25,2013-04-22 07:50:36,use LIBMESH_TLS instead of __thread,0
+f1c6271,2013-04-22 13:09:42,Merge pull request #96 from roystgnr/libmesh_out_err,0
+1e994fe,2013-04-22 21:19:48,Switching to relative tolerance check (relative to the smallest edge length on the surfaces being stitched) in stitch_meshes().,0
+c0303c7,2013-04-22 22:59:34,Adding misc. MOOSE references.,0
+3ff8588,2013-04-23 07:40:56,Merge pull request #99 from benkirk/metis_refresh,0
+e86d12e,2013-04-23 19:21:44,do not build empty files,0
+9ecc96f,2013-04-23 19:27:56,nevermind  leaving this file will help if some platform requires preprocessor macros for openMP workarounds.  unlikely  but better safe.,0
+4a1c13c,2013-04-24 16:26:32,Regenerate publication webpage.,0
+9654cd8,2013-04-24 16:34:23,Update yearly publication counts.,0
+4716a07,2013-04-25 09:00:14,fix weird NULL comparison,0
+b730f79,2013-04-25 09:00:34,fix unnecessary comma causing issue for some compilers,0
+21d33de,2013-04-25 12:52:52,I cover with pgi-13.4 now too.,0
+bf82ed0,2013-05-01 13:46:43,Workaround for compiler warning.,0
+04521f2,2013-05-01 14:04:54,Fix for older app Makefiles,0
+b466fcc,2013-05-01 21:26:06,Updating statistics for April 2013.,0
+d2d13e7,2013-05-01 21:32:21,Updating Millett 2013 reference.,0
+88e1c91,2013-05-01 21:40:47,Adding Kirk 2013 reference.,0
+1f8be16,2013-05-04 00:31:25,Added Swiler 2013 reference.,0
+e2ebea3,2013-05-08 20:05:02,petsc-3.4: VecType  PCType  and KSPType are now const typedefs,0
+52f950a,2013-05-09 17:03:47,Fix in config comment,0
+f0dbd81,2013-05-09 17:07:07,Add macros for thread-local storage,0
+133ba15,2013-05-15 09:50:45,Merge pull request #102 from jedbrown/jed/petsc-3.4,0
+4aea079,2013-05-20 09:04:37,Added Widmer 2013 reference.,0
+5d66646,2013-05-20 09:20:30,Commiting libmesh_config.h.in changed triggered by 52f950a0.,0
+6091a56,2013-05-20 09:30:51,Updated Bhalla 2013 preprint.,0
+6a11870,2013-05-20 09:36:41,Updated Bittl preprint.,0
+cb6e751,2013-05-21 08:46:23,Got copy of Satou paper  they do use Libmesh.,0
+549e8de,2013-05-21 08:50:19,Boyce Griffith says these papers don't use libmesh :-(,0
+56a9ee4,2013-05-21 09:05:57,Adding Hu et al tech report.,0
+3a43edf,2013-05-21 11:02:22,Fix for -Wshadow warning,0
+74ceb54,2013-05-21 11:40:40,Bugfix for dof_id_type!=unsigned int configs,0
+10744c2,2013-05-21 13:39:48,Merge pull request #91 from benkirk/blocked_matvec,0
+a453f23,2013-05-21 14:19:46,"Remove equivalence between ""SHELL"" and standard element types.",0
+86386ed,2013-05-21 16:46:27,need to use ilu with BAIJ format,0
+c08baf8,2013-05-22 08:50:04,avoid preallocation error that seems to be triggered by blocked matrix storage,0
+20645db,2013-05-22 09:37:31,avoid preallocation error that seems to be triggered by blocked matrix storage,0
+f4fd670,2013-05-22 10:40:25,avoid partial overloading warning (intel 11.1),0
+2d90b97,2013-05-22 12:15:53,BAIJ API seqence for v3.2 & below appears different - disable feature rather than figure this out.,0
+e841a2b,2013-05-22 12:22:21,bump version number,0
+fb7956f,2013-05-22 14:57:38,If we want to force the user to be responsible for parallel consistency (which Roy does - not sure I'm sold) at least we should give them a public member to make it easy.,0
+1f5fe72,2013-05-22 15:08:59,Test for thread_local support,0
+acdb8bd,2013-05-22 15:14:30,Propagate threads.m4 change to configure,0
+68df695,2013-05-22 16:00:37,Fixes for -Wshadow warnings,0
+7dce02a,2013-05-28 16:23:07,Add Fahrenholtz 2013 reference.,0
+fbf41e8,2013-05-29 10:59:33,Fix for compilation error,0
+30ef1b3,2013-05-29 11:35:38,Workaround Eigen::SparseMatrix<T1 T2 short> bug,0
+4856c5f,2013-05-29 13:47:57,Bugfixes for processor_id_type > unsigned int,0
+8591da0,2013-05-29 13:48:35,Fixes for numeric_index_type != unsigned int,0
+2c5649e,2013-05-30 10:08:07,More fixes for dof_id_type != unsigned int,0
+795f97a,2013-06-03 08:38:34,Updating statistics for May 2013.,0
+eb13038,2013-06-03 08:52:05,Fix signed/unsigned warning in debug mode.,0
+cfcbf67,2013-06-03 23:06:54,Added miscellaneous_ex9: Example that demonstrates a discontinuity on an internal mesh interface  which requires the sparsity pattern to be augmented.,0
+3224e60,2013-06-05 15:05:21,Fix for dof_id_type != unsigned int,0
+fac9b2b,2013-06-06 00:07:55,Rb stuff needs a non-const reference to dof_indices.,0
+c3ea18f,2013-06-06 00:08:56,Use accessor API for FEMContext.,0
+52b4023,2013-06-06 00:49:36,Update solvers to use updated FEMContext API.,0
+b72ce0d,2013-06-06 00:52:18,Need non-const versions of these accessors. I'm not convinced this is the right way to go here  but rolling with it for now.,0
+b2d82f4,2013-06-06 00:58:42,Updating reduced_basis to use new FEMContext API's.,0
+72de92c,2013-06-06 01:17:40,Assert on the private data structures.,0
+34266d6,2013-06-06 15:18:08,Update to use new FEMContext API. Also needed a non-const Elem&.,0
+9c757bd,2013-06-06 15:22:41,Return a reference to the QBase instead of a pointer.,0
+ac9dadd,2013-06-06 15:23:39,Now make everything protected/private. The library builds for me  but the examples still need to be updated so likely make check will fail at this point.,0
+a54c4b2,2013-06-06 15:40:47,Updated adjoints_ex1 to use the new FEMContext API.,0
+0a25486,2013-06-06 15:58:52,Fix for PetscInt != PetscErrorCode configurations,0
+e152bb7,2013-06-07 09:08:14,Update adjoint_ex2 for new FEMContext API.,0
+b9c13e2,2013-06-07 09:23:03,Update adjoints_ex3 to use new FEMContext API.,0
+4f1b73e,2013-06-07 09:55:00,Updated adjoint_ex4 to use updated FEMContext API.,0
+1068ade,2013-06-08 15:14:46,Updated adjoints_ex5 to use updated FEMContext API.,0
+8f02d31,2013-06-08 15:38:34,Updated fem_system examples to use updated FEMContext API.,0
+e832afe,2013-06-11 10:09:25,Commit the usage statistics PDFs  not everyone has Matlab/Octave easily accessible.,0
+fcea5fe,2013-06-12 09:18:23,Adding all Moose talks from M&C2013.,0
+0a6375c,2013-06-15 05:13:02,Updated reduced_basis examples to conform to new FEMContext API.,0
+86336a2,2013-06-15 05:22:18,UPdated vector_fe examples to conform to new FEMContext API.,0
+78db499,2013-06-15 15:33:19,Reduced Basis change: Added new assembly classes that contain references to RBConstruction objects. These references are often needed in practice  e.g. to access the mesh.,0
+ea5e42f,2013-06-15 16:43:00,Removed RBEIMAssemblyWithConstruction  since we can actually get the info we need (e.g. boundary ids) from the FEMContext in most cases,0
+7c7cbcc,2013-06-15 16:43:35,Removed RBEIMAssemblyWithConstruction  since we can actually get the info we need (e.g. boundary ids) from the FEMContext in most cases. Also removed elem_assembly_with_construction.h for the same reason.,0
+e0eaaf9,2013-06-16 12:01:34,Added DGFEMContext. Extends FEMContext to enable assembly of DG terms.,0
+f07712f,2013-06-16 12:02:19,Some RB changes related to DGFEMContext  and the changes to Makefile.in etc as well,0
+b8ef5dd,2013-06-17 14:13:48,Updates to DGFEMContext,0
+407bf6a,2013-06-17 14:14:47,Reduced basis updates related to DGFEMContext. Use a DGFEMContext instead of FEMContext for increased generality.,0
+ed7cad4,2013-06-17 14:17:43,Removed miscellaneous_ex9 from this branch,0
+7a596a5,2013-06-18 02:32:19,Bugfix for int!=PetscInt configuraitons,0
+7cf3b30,2013-06-18 03:17:15,be silent when generating .depend  and remove .lo files for clean,0
+80a8f2d,2013-06-18 04:50:56,prepping release files  and updated automation script,0
+11e18c5,2013-06-18 05:10:38,clarify comment,0
+2f79a1e,2013-06-18 06:30:15,updating NEWS for next release,0
+739765f,2013-06-18 16:34:37,Added libmesh_experimental() in the DGFEMContext constructor.,0
+ac674fb,2013-06-18 21:08:50,Bug fixes to DGFEMContext,0
+e30bcfa,2013-06-25 13:17:31,Adding Rossa and Coutinho preprint.,0
+3581ba3,2013-06-27 09:41:14,Fix broken libtool script with install-data-hook commands.,0
+c0d77a4,2013-06-27 10:37:53,Make nCalls column have width 11.,0
+a575f37,2013-06-30 23:30:37,Reduced Basis change: Removed singe_matrix_mode. The purpose of this mode was to provide a low-memory version  which re-assembled matrices rather than storing them. But it wasn't used and therefore wasn't well tested  and it complicated the code for little benefit. If this functionality is desired in the future  better to put it in a subclass.,0
+6769426,2013-07-01 14:35:57,Patch from @dknez to fixed reduced_basis_ex2 for FEMContext API updated.,0
+4318e29,2013-07-01 14:38:47,Patch from @dknez to fix reduced_basis_ex7 for FEMContext API changes.,0
+bddd1de,2013-07-01 22:36:00,Fixes for PetscInt!=int compatibility,0
+3539428,2013-07-02 10:37:20,"Revert ""Now make everything protected/private. The library builds for me """,0
+d25f5fc,2013-07-02 12:53:19,Merge pull request #108 from pbauman/privatize_fem_system,0
+72dcf7d,2013-07-02 15:00:22,Update NEWS for FEMContext API.,0
+948a35e,2013-07-03 15:24:10,Adding Kirk AIAA  Corsini JFE  Widmer JMBBM  and Tahir Acta Materialia papers.,0
+6651e65,2013-07-04 00:47:35,Fixes for *_id_type > int,0
+1a4a619,2013-07-05 15:57:18,Default to 32-bit XdrIO for now,0
+fa7d53d,2013-07-05 16:17:58,unsigned int -> dof_id_type fix,0
+f6c6bca,2013-07-08 08:47:29,Confirmed Corsini paper does use libmesh.,0
+7fa20be,2013-07-08 10:04:58,Merge pull request #111 from libMesh/bigids_fixes,0
+1d60493,2013-07-08 14:47:26,Fix for syntax highlighting,0
+4581e99,2013-07-08 15:01:08,Fix for printing with 1-byte id types,0
+db36276,2013-07-08 15:43:36,Formatting fixes for --with-processor-id-bytes=1,0
+df4eb94,2013-07-08 16:14:39,remove caching from hermites,0
+ea9bca1,2013-07-08 17:19:34,Bugfix for Xdr with non-32-bit dof_id_type,0
+b3281e9,2013-07-09 12:49:53,Avoid unused variable warnings when --disable-blocked-storage,0
+7b807c5,2013-07-09 13:19:56,Dummy change to README to see if I can re-sync the github web interface.,0
+8b72572,2013-07-11 12:52:04,Merge pull request #112 from friedmud/hermite_cache_removal,0
+aaae75d,2013-07-17 13:22:20,Add Vikram to developers page,0
+6b99352,2013-07-18 08:18:46,Adding directories to .gitignore,0
+507071f,2013-07-18 08:32:23,add tests to beautify rule  but not running it yet,0
+bdfb099,2013-07-18 09:08:49,proper quoting of shell variable in tag message,0
+3e7299d,2013-07-18 09:23:56,Merge branch 'master' of https://github.com/libMesh/libmesh,0
+6d96674,2013-07-18 09:28:27,default blocked DOF support to off for 0.9.2 release,0
+e2ca564,2013-07-18 09:47:39,Updated statistics for Jun 2013.,0
+aaeb11c,2013-07-18 10:29:20,Fixing typo in error message.,0
+61d1605,2013-07-18 11:22:44,Make adjoints_ex3 solver verbose,0
+78d9855,2013-07-18 12:10:44,Add absolute_residual_tolerance to adjoints_ex3,0

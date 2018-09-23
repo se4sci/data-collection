@@ -1,0 +1,28 @@
+hash,time,message,buggy
+57d77c5,2017-01-24 12:48:08,Adjust tolerance for bob_gnu_5.3_openmp,0
+311f6bf,2017-01-24 19:28:39,Still a modification of a tolerance for bob°gnu-5.3_openmp,0
+ab95013,2017-01-24 19:31:13,Synchro tolerance for bob with v8.3.1,0
+64549c6,2017-01-26 19:06:15,Allocate cg with mcg ==0 if rank is idle in order to avoid integer overflow or malloc error,0
+8a0ed76,2017-01-26 20:07:12,Improve error message if integer overflow,0
+109a3e1,2017-01-27 12:17:30,Add tests for CG with idle processors  nsppol = 2 and WFK read/write,0
+8a6bdbb,2017-01-27 12:24:48,Use abiref refs,0
+2b1e19e,2017-01-27 13:52:57,Increase tolnlines,0
+8636f17,2017-02-02 14:46:40,Fix doc for rfatpol,0
+bd0bf5d,2017-02-02 14:54:25,Update doc for xred,0
+bef2b02,2017-02-02 14:58:49,Fix typo,0
+1e87c80,2017-02-02 15:18:01,Fix minor maintenance problem.,0
+0e7cf57,2017-02-02 15:27:09,Typo,0
+b7e4221,2017-02-02 15:33:33,Typo,0
+620d968,2017-02-02 15:50:36,Typo in doc,0
+3374e87,2017-02-03 13:06:26,Correct dimension of becij in d2frnl,0
+fb90252,2017-02-05 06:22:46,Merge remote-tracking branch baguetl/hotfix-d2frnl/3374 into _baguetl-8.2.1,0
+860bd13,2017-02-15 13:39:00,Final steps for delivery of v8.2.1,0
+b542cb4,2017-02-16 12:16:29,Update maintainers/check_list.txt,0
+f1fa25c,2017-02-16 12:31:35,Split some lines in chkvars.F90,0
+d233012,2017-02-16 14:02:08,Complete the doc for ionmov=22 LBFGS,0
+6edab64,2017-02-16 16:16:16,First complete version of the release_notes for 8.2.,0
+bcf2d0c,2017-02-16 16:25:56,Minor,0
+eea0ede,2017-02-16 20:41:28,Final update of release_notes.,0
+81590d0,2017-02-16 21:11:23,Silly bug introduced at the last minute in chkvars.F90,0
+783ba5e,2017-02-17 05:29:01,Real finalization of the release notes.,0
+bed9194,2017-02-17 05:42:28,Modify the *.ac files for the new branch hotfix-8.2.2,0

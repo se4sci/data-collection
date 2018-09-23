@@ -1,0 +1,163 @@
+hash,time,message,buggy
+cba0257,2017-08-08 11:38:08,Tuned PSML tests to make them faster,0
+daa003d,2017-08-08 11:38:08,Tuned PSML tests to make them faster,0
+cff70fe,2017-09-13 14:10:01,Merge tag 'start-8.5.3',0
+eb78a36,2017-12-08 14:38:35,added orbmag as an input variable,0
+f5523e3,2017-12-20 13:47:16,debug stress tensor in multibinit and update tests,0
+01415ea,2018-01-11 13:51:39,added orbmag data type  initorbmag.F90 much like initberry.F90,0
+937875a,2018-01-15 15:10:59,added consistency checks for orbmag variable,0
+5d0905a,2018-01-18 09:32:51,changed expibi and qijb_kk to work on arbitrary delta k,0
+dc61d5b,2018-01-18 15:33:33,added chern_number.F90 mainly to test wavefunction overlaps,0
+28ae716,2018-01-19 15:32:50,initial try at chern number calculation  PAW on-site part only,0
+1ce3dd6,2018-01-20 12:58:28,chern number  PAW part fully operational,0
+237450e,2018-01-20 12:59:50,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+a986d8e,2018-01-23 13:18:32,chern_number  both paw and planewave working  first version,0
+b0a9e23,2018-01-24 16:26:02,Chebfi was not compatible with paral_kgb=0,0
+13e33b2,2018-01-24 17:12:59,Improve ELPA detection,0
+6e6912c,2018-01-24 19:05:55,Improve chebfi/paral_kgb/bandpp default values,0
+3b27367,2018-01-25 09:32:57,Slight modif in mpi_setup,0
+878fe2c,2018-01-26 16:09:45,Save a huge amount of memoey in anaddb,0
+2adec8b,2018-01-29 06:19:35,Initialize v8.7.4,0
+9ffe75b,2018-01-29 20:12:32,Fix bug in mkphdos introduced in gitlab version (PJDOSes do not sum up to TOT_PHDOS),0
+5e75622,2018-01-30 02:12:11,Update ref files for PHDOS (DOS_type is now ok and agrees with trunk/master,0
+a48ec6a,2018-01-30 02:52:09,Add more ref files for PHDOS-derived quantities to prepare refactoring,0
+f33fbfb,2018-01-30 14:22:11,Set msqd terms to zero if < tol12,0
+11413d9,2018-01-30 14:22:58,Fix long line,0
+9c41f56,2018-01-30 14:23:00,Merge branch 'phdos' of gitlab.abinit.org:gmatteo/abinit into phdos,0
+654017f,2018-01-30 19:30:05,Fix reallocation error,0
+c835220,2018-01-30 21:24:07,Huge speedup in mkphdos (x20 and even more if gauss and dense ngqpt),0
+c0ffcc5,2018-01-31 17:40:12,Divide in 2 a too long error message,0
+5006138,2018-01-31 17:58:26,abirules-t04 reference changed : 2 lines have been displaced (strange),0
+8300199,2018-01-31 19:39:01,improve error msg in case of PAW overlap,0
+94069db,2018-02-01 08:02:11,abirules/buildsys,0
+2166758,2018-02-01 14:04:05,Use tetra_blochl_weights instead of tetra_get_onewk  should be faster if nprocs == 1,0
+a460ef3,2018-02-01 16:09:42,Discretized density operator Chern number,0
+07a3db9,2018-02-01 16:11:16,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+3f51a27,2018-02-04 06:34:36,Ignore tdep binary,0
+523ad5d,2018-02-04 06:44:24,Clean m_tetrahedron.F90,0
+7eb78d4,2018-02-04 06:58:19,Remove unused arguments,0
+e252950,2018-02-04 07:06:58,Remove unused args,0
+063ee3a,2018-02-04 07:11:40,Remove unused args,0
+d989158,2018-02-04 07:15:38,Remove unused args,0
+94eda6d,2018-02-04 07:19:07,Remove unused arg,0
+b3e975c,2018-02-04 07:21:34,Remove unused args,0
+7501d79,2018-02-04 07:26:35,Remove unused args,0
+b85d3b1,2018-02-04 07:30:57,Remove unused args,0
+5f1283d,2018-02-04 07:33:41,Remove unused args. They have been removed in all routines that do not belong to modules  and for which there is no CPP directive problem.,0
+adeaa33,2018-02-04 10:48:47,chern_number fully working  needs beautification and test,0
+7880bd6,2018-02-04 21:33:43,Fix bug in delta_weights if degenerate tetra,0
+2fd10d6,2018-02-05 05:52:21,Merge branch 'hotfix-8.6' into _torrent,0
+75c7551,2018-02-05 06:47:50,Fix merge,0
+3bf39cf,2018-02-05 12:51:33,clean chern_number.F90  add test,0
+526bbff,2018-02-06 05:40:54,Update refs for abirules # 3 & 4,0
+3687959,2018-02-06 10:40:11,debug sign for the strain coefficients and add new bound process,0
+2e8a257,2018-02-06 10:49:39,update multibinit tests,0
+20bc013,2018-02-06 11:07:31,remove unusable variable and small bug fixed,0
+44ea3cd,2018-02-06 11:30:11,Merge tag '8.7.3' into Multibinit,0
+b4d819d,2018-02-06 11:35:28,abirules,0
+00cd6ac,2018-02-07 10:10:57,document and clean chern_number.F90,0
+c99ae18,2018-02-07 10:11:29,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+a097079,2018-02-07 12:03:30,cleaned robodoc headers in chern_number.F90 and mkpwind_k.F90,0
+356ab03,2018-02-07 19:17:36,Improve fulfilment of abirules,0
+c008c15,2018-02-07 19:27:55,Suppress unused args. Fix problems in doc for orbmag.,0
+647468c,2018-02-07 21:25:00,Suppress unused variables.,0
+c1c529e,2018-02-07 22:13:53,Remove unused variables,0
+3a9b808,2018-02-08 06:15:25,Remove the last big bunch of unused variables.,0
+b0e7a62,2018-02-08 06:17:11,Update reference for abirules#03,0
+7819e2e,2018-02-12 21:39:42,Remove old code in mkphdos,0
+c9e7e5d,2018-02-12 21:39:57,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into phdos,0
+35e86e5,2018-02-12 22:38:11,Have to use to 4-th vertex to make the tests pass,0
+7372928,2018-02-12 22:38:40,This one is ok,0
+2f1bd83,2018-02-12 22:39:28,This one,0
+b2c6d05,2018-02-13 00:58:24,Add --mpi-args to runtests  remove unused variables,0
+8ad76a8,2018-02-14 09:31:57,change the default for the cutoff of anharm IFC,0
+401959a,2018-02-14 12:01:59,Update tolerances  for bob+openmp,0
+b5bcf8b,2018-02-14 12:20:36,Remove some unused arguments.,0
+3447844,2018-02-14 12:37:38,Fix problems due to prior suppression of unused args,0
+c700ab9,2018-02-14 13:11:06,Modifs to pass with abiref_nag_6.2_openmpi : modif nstep for libxc#72  prevent testing paral#25&30   fix problem with shape mismatch for mpiio#42.,0
+3411947,2018-02-14 13:48:37,Suppress unused args,0
+ee84f0f,2018-02-14 14:04:42,Update ref for abirues#4  also upgrade generated_files/varset_gstate.html,0
+548e5d0,2018-02-14 15:02:33,Merge remote-tracking branch 'trunk/develop' into Multibinit,0
+4391844,2018-02-14 15:18:06,Update libxc#72 reference  due to change of nstep15 from 25 to 22.,0
+541918c,2018-02-14 15:28:48,Write explicitly the lower bound for vcount.,0
+5a5732a,2018-02-14 21:07:36,Correct subscript out of range (detected by NAG 6.2),0
+b6990c5,2018-02-15 12:48:52,Merge branch 'develop' into nag62,0
+fa43042,2018-02-15 15:59:40,Merge remote-tracking branch 'trunk/develop' into Multibinit,0
+e069d87,2018-02-16 11:31:54,abirules,0
+0ddde9a,2018-02-19 11:05:36,debug and add nctime for multibinit,0
+e45ce16,2018-02-19 12:04:40,debug when nctime==0,0
+6de29b7,2018-02-19 12:07:40,abirules,0
+8033750,2018-02-20 13:21:40,abirules,0
+5e8c3e2,2018-02-20 13:51:56,remove unused argument,0
+e9ad420,2018-02-20 14:23:51,abirules,0
+81d1154,2018-02-20 17:14:42,Merge tag 'start-8.7.3' of abinit-repo:trunk/abinit into 15-new-psml-api-is-not-supported,0
+3cb57a1,2018-02-20 18:35:12,Ran abilint,0
+f34729d,2018-02-20 18:35:12,Ran abilint,0
+6fb9dda,2018-02-20 18:36:05,Started to upgrade the PSML parser to the new API,0
+845779f,2018-02-20 18:36:05,Started to upgrade the PSML parser to the new API,0
+9c7ddc6,2018-02-20 19:20:44,Removed another set of unused arguments (or treat them properly).,0
+1b25e9f,2018-02-20 20:54:10,There is no generic abi_unused for nctype ...,0
+f88edde,2018-02-20 21:32:54,Suppress unused args  or treat them adequately,0
+4c5571b,2018-02-21 06:41:56,Update the ref file for abirules#4,0
+b2f2fe9,2018-02-21 06:52:48,ABI_UNUSED nctab%,0
+e0428fa,2018-02-21 07:04:39,treat properly optional arg use only for HAVE_BIGDFT,0
+defa316,2018-02-21 07:15:12,treat properly args only used with ABI_ETSF_IO,0
+1c13492,2018-02-21 07:15:54,Merge branch 'docdirs' into develop,0
+7a84cef,2018-02-21 08:36:33,Merge remote-tracking branch 'trunk/develop' into Multibinit,0
+a267e12,2018-02-21 08:51:31,Update ref for abirule#4,0
+ac84092,2018-02-21 08:56:55,Unused args removed,0
+a25de8e,2018-02-21 09:58:37,Removed one more unused arg. Fix a bug.,0
+0e6eeaf,2018-02-21 09:59:23,Merge branch 'abirule4' of gitlab:trunk/abinit into abirule4,0
+5989e94,2018-02-21 13:07:25,Update ref for abirules#4,0
+c6e18c8,2018-02-21 13:18:47,Fully upgraded PSML pseudopotential parser to PSML API 1.1,0
+41cc93d,2018-02-21 13:18:47,Fully upgraded PSML pseudopotential parser to PSML API 1.1,0
+03f2b3d,2018-02-21 13:40:08,Trick to bypass unused argument that is defined in the BIGDFT library,0
+2d2a7b1,2018-02-21 14:55:23,Fully upgraded PSP9 support to PSML API 1.1,0
+ce99cb1,2018-02-21 14:55:23,Fully upgraded PSP9 support to PSML API 1.1,0
+8574268,2018-02-21 15:56:38,ABI_UNUSED cannot be used in m_libpaw_libxc.F90,0
+436ea4d,2018-02-21 16:07:03,Fixed run-time errors caused by the PSML 1.0 -> 1.1 API change,0
+e99b0e2,2018-02-21 16:07:03,Fixed run-time errors caused by the PSML 1.0 -> 1.1 API change,0
+56d45aa,2018-02-21 16:15:12,Merge branch 'psml-new' into '15-new-psml-api-is-not-supported',0
+86b7f7d,2018-02-21 16:16:10,Fix bug,0
+f7e09ee,2018-02-21 16:24:59,Generated new references for the PSML test series,0
+a2cb46c,2018-02-21 16:24:59,Generated new references for the PSML test series,0
+c445b3f,2018-02-21 20:01:40,Imported PSML test references from abiref,0
+1535a93,2018-02-21 20:01:40,Imported PSML test references from abiref,0
+eea025d,2018-02-21 20:47:50,Remove some unused args,0
+b830c46,2018-02-21 21:04:29,Remove more unused args,0
+67e1dd7,2018-02-22 06:26:21,Fix typo,0
+3b5c1ea,2018-02-22 06:54:20,removed more unused args or treated them properly,0
+adb5741,2018-02-22 08:38:42,Fix non-removed args,0
+0c3ada3,2018-02-22 09:00:05,add strain-coupling and anharmonic strain option for the bound process,0
+df78544,2018-02-22 09:01:48,Merge remote-tracking branch 'trunk/develop' into Multibinit,0
+14a5e60,2018-02-22 11:39:50,ABI_UNUSED not to be used with libpaw.,0
+786f840,2018-02-22 12:53:11,replace EELF with ELF,0
+e2ee78e,2018-02-22 13:05:54,Update ref for abirules#4,0
+aa97bc4,2018-02-22 13:30:00,Perhaps last bunch of unused variables has been treated properly ?,0
+5fccb05,2018-02-22 13:41:39,Last update of abirules#4 reference.,0
+87617d2,2018-02-22 19:00:28,Fixed a wrong sign in the derivative of the spherical hermonics for f orbitals. This should affect BSE and chi (for GW) calculations.,0
+5caef87,2018-02-22 19:26:28,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+d50a3d2,2018-02-23 05:47:37,Merge remote-tracking branch 'remotes/petretto/develop' into _petretto,0
+dc01d83,2018-02-23 11:49:26,Removed stale debugging write statement in PSML reader module,0
+1c87f4d,2018-02-23 11:49:26,Removed stale debugging write statement in PSML reader module,0
+cda145b,2018-02-23 12:00:51,Adjusted preprocessed sections in psp9in to conform to the abirules,0
+ed7bfb7,2018-02-23 12:00:51,Adjusted preprocessed sections in psp9in to conform to the abirules,0
+c7d7e71,2018-02-23 12:32:22,Merge branch '15-new-psml-api-is-not-supported' of abinit-repo:pouillon/abinit into 15-new-psml-api-is-not-supported,0
+3311f9f,2018-02-23 12:55:57,Merge branch 'abinit-develop' into hotfix_ylmcd,0
+15d02ca,2018-02-23 13:31:53,Merge tag 'start-8.7.4' into 15-new-psml-api-is-not-supported,0
+92e3e34,2018-02-23 14:28:16,Fixed glitch in psp9in,0
+5fd7f8b,2018-02-23 22:02:46,Merge remote-tracking branch 'remotes/pouillon/15-new-psml-api-is-not-supported' into _pouillon,0
+f134877,2018-02-23 22:13:47,Remove unneeded ABI_UNUSED,0
+366a7da,2018-02-23 22:31:02,Fix conflicts,0
+7d738cc,2018-02-24 05:40:30,Merge branch '_henrique' into develop,0
+0a65084,2018-02-24 08:06:28,Merge branch '_pouillon' into develop,0
+96920fb,2018-02-25 06:53:34,Clean exclude_hosts and exclude_builders  Update KNOWN_PROBLEMS  run ./generate_doc.py.,0
+a661d84,2018-02-25 06:58:35,Apply make parents,0
+9532dc8,2018-02-25 06:59:44,Clean the check_list,0
+9eac909,2018-02-25 08:43:02,Apply abiauty,0
+848d306,2018-02-25 08:47:05,Initialize the release_notes and installation_notes for v8.8,0
+809dce4,2018-02-25 08:49:12,Final update of check_list,0
+20a49e2,2018-02-25 11:22:12,Include modified section for atlas (from JMB),0
+d2df35c,2018-02-25 14:58:10,Suppress duplicated ATLAS section,0
+d3d75fa,2018-02-25 17:06:57,Fix typo,0
+4514fc8,2018-02-25 17:07:51,Merge branch 'develop' of gitlab:trunk/abinit into develop,0

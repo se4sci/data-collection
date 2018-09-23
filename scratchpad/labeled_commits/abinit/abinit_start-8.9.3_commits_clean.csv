@@ -1,0 +1,460 @@
+hash,time,message,buggy
+1c7e242,2017-06-19 20:48:44,fix: allocables declared but not allocated nor used,0
+8755890,2018-01-10 21:14:43,merge upstream,0
+3da8329,2018-01-11 17:25:37,Update TDEP to customize input file and HIST file Create a TestSuite for TDEP with the first test,0
+4ef2e2f,2018-01-11 18:09:36,Change G to Gamma for nice plot with QAgate,0
+34a55aa,2018-01-15 10:52:11,update test,0
+10d1948,2018-01-15 10:53:14,Update ref,0
+b18c062,2018-01-15 10:59:24,Test fixing,0
+eabb7c7,2018-01-15 11:01:21,Test suite,0
+9cbe574,2018-01-18 10:35:11,Flush to see where we are in the run,0
+b37317f,2018-01-19 10:19:30,Add dumping HIST with images,0
+4a04d0a,2018-03-12 15:39:45,Change the way spinat is taken into account in initrhoij.F90,0
+6e55e86,2018-03-17 14:32:08,add spin dynamics branch,0
+bf7640b,2018-03-18 21:37:46,add spin dynamics source code,0
+71b3c42,2018-03-18 22:25:14,save supercell vectors in m_supercell,0
+12dfb28,2018-03-18 22:26:00,clean duplicated m_supercell.F90 file,0
+00fd429,2018-03-19 09:51:32,remove duplicated free in effpot_xml.c,0
+6e2a16b,2018-03-19 20:46:48,first successful compilation for spin dynamics,0
+ffa146d,2018-03-20 18:09:29,merge to multibilit,0
+7dc06e8,2018-03-21 13:55:38,First successful spin dyanmics run!,0
+c0c50ff,2018-04-15 11:41:13,temp,0
+1de5be5,2018-04-15 21:14:50,ongoing: spin_hist,0
+a05e5ca,2018-04-19 14:10:48,reconstruct spin hist file,0
+d4b52d0,2018-04-20 13:51:12,a working version with only the basic things,0
+e4da05c,2018-04-23 16:35:30,add ispin_prim and rvec to spin_terms,0
+27dade5,2018-04-23 16:36:26,add m_spin_reciprocal file,0
+4e9df1c,2018-04-23 16:41:28,resolve conflicts,0
+b56a286,2018-04-23 16:43:46,resolve conflicts,0
+0c4bcb4,2018-04-24 13:21:10,add input variable to disable the precomputation of the data for the fit (save memory),0
+e4d35ac,2018-04-25 14:13:19,debug,0
+c7ca923,2018-04-25 15:32:09,clean print,0
+dddf86d,2018-04-30 15:34:38,clean,0
+4544702,2018-04-30 15:53:03,solve conflicts,0
+f22755c,2018-05-03 12:41:13,Compute Exchange term in dfptnl_pert for nspden=2,0
+5e5bd32,2018-05-03 14:12:04,With nsppol=1 and nsppol=2 with spinmagntarget=0  nonlinear gives the same results (NC and PAW),0
+289d432,2018-05-03 15:06:45,abinit: add input variables for the amplitude of the unstable phonons for ionmov 27,0
+81accf7,2018-05-03 17:06:03,Nonlinear and rf2_dkdk and rf2_dkde are ok with empty bands. However there are restricted to occopt=1. Paral_atom must be 0 in nonlinear,0
+9d7a0d1,2018-05-04 11:35:32,Correct occopt restriction for nonlinear,0
+7f1b270,2018-05-04 13:15:08,Add NONLINEAR keyword for the tests concerned.,0
+4d760a7,2018-05-04 13:30:11,Merge remote-tracking branch 'gitlab_trunk/develop' into nonlinear,0
+09acaac,2018-05-04 14:25:21,Merge branch 'nonlinear' into nonlinear-pol,0
+cda2245,2018-05-08 11:24:31,Remove TR symmetry for kptopt=3 (or 4) in repsfn.,0
+ed0e669,2018-05-09 09:57:05,partial getcprjb  updated orb mag test,0
+dd400a8,2018-05-10 15:57:16,getcprjb and friends compile and run  but very slowly,0
+c05d247,2018-05-12 11:18:11,some speed improvements to getcprjb and friends,0
+5fe4265,2018-05-12 11:19:09,Merge branch 'twisted' into develop,0
+cd2cc59,2018-05-12 13:52:50,developing pjj integral,0
+884f752,2018-05-12 16:13:12,adding pjj  debugging...,0
+86df2e4,2018-05-13 14:39:54,Merge remote-tracking branch 'gitlab_trunk/develop' into nonlinear-pol,0
+6415d91,2018-05-14 10:20:53,Merge remote-tracking branch 'gitlab_trunk/develop' into nonlinear-pol,0
+54c8a9e,2018-05-14 12:12:45,Add tests for nsppol=2,0
+8578e63,2018-05-14 13:17:46,Update ref of new tests,0
+78ba386,2018-05-14 13:30:22,Add comments in v8/t104.in,0
+176d354,2018-05-15 18:46:23,Merge remote-tracking branch 'gitlab_trunk/develop' into nonlinear-pol,0
+f06fb2f,2018-05-15 19:29:22,Adjust tolerances,0
+af7f21c,2018-05-16 09:39:32,Change v8/t103 and v8/t104,0
+676dc5b,2018-05-16 12:57:37,Temporrary commit: NONLINEAR+PAW tests must be improved...,0
+a6380e5,2018-05-16 13:45:26,Improve scalapack support  less communication and custom automode with slk_rankpp,0
+6ddaf5d,2018-05-16 15:11:43,Add test for slk_rankpp,0
+667977b,2018-05-16 16:57:47,Back to small tolerances,0
+5042f9e,2018-05-17 07:55:43,Change NCPU from 8 to 10 so it is being tested on abiref,0
+d34bfcb,2018-05-17 10:11:07,Merge remote-tracking branch 'gitlab_trunk/develop' into nonlinear-pol,0
+c3c70e2,2018-05-17 11:43:26,merge trunk/develop,0
+3ceb725,2018-05-17 13:44:30,merged trunk/devel,0
+8287608,2018-05-17 15:03:43,typo,0
+98767ed,2018-05-17 15:20:33,typo,0
+bf782bf,2018-05-17 16:27:51,Set reference for my test,0
+2b4a01a,2018-05-17 18:52:11,Change refs for NONLINEAR+PAW. Add ground state WF and densities files for limiting numerical noise between different machines,0
+23c5bbc,2018-05-17 20:20:53,Update refs,0
+5483b20,2018-05-18 11:30:13,Split PAW tests of NONLINEAR into two parts,0
+7d0ba78,2018-05-18 12:46:41,change some variables input name and add input variables for ionmov 27,0
+948cdf2,2018-05-18 13:08:24,Update refs,0
+d418e0e,2018-05-18 13:57:38,add chkvar to multibinit and update all the tests (after modification of the name variables),0
+725c355,2018-05-18 14:43:22,Merge remote-tracking branch 'trunk/develop' into Multibinit,0
+73964be,2018-05-18 15:00:27,outvar typo,0
+7d0c6f7,2018-05-18 15:01:28,Fix file to test for paral[31],0
+85720c0,2018-05-18 15:21:46,Color must be non-negative,0
+f8ebead,2018-05-18 15:23:52,Merge remote-tracking branch 'refs/remotes/origin/elpa' into elpa,0
+d86c8b5,2018-05-18 17:14:56,Adjust tolnline for v8/t102 and v8/t104. Reduce tolwfr for v8/t104.,0
+40c4035,2018-05-18 17:51:40,improve error message,0
+7f72a44,2018-05-18 18:52:37,Update refs for v8/t104/t105,0
+0b5aa72,2018-05-18 20:24:19,multibinit:update input variables and tests,0
+f3f9d12,2018-05-19 00:05:47,Change tols for v8/t102-t104-t106. Change ecut for t104-t105,0
+9195235,2018-05-19 13:50:32,Define two new input variables : prtefmas and eph_frohlichm,0
+1cbb5e8,2018-05-19 14:03:08,Place checks on the values of prtefmas and eph_frohlichm,0
+80b9950,2018-05-19 15:07:58,Initialize v8.8.3,0
+405b05a,2018-05-19 16:08:16,Finally  changing ecut/pawecutdg to 3.5/7.0 seems to work well...,0
+5e296d2,2018-05-19 16:21:23,Merge remote-tracking branch 'gitlab_trunk/develop' into nonlinear-pol,0
+631aad1,2018-05-19 17:00:14,Document new input variables eph_frohlichm and prtefmas,0
+33c729a,2018-05-19 17:08:42,Replace EffMass by EffectiveMass in the doc,0
+92c5f79,2018-05-19 17:39:04,Change the routine name print_efmas to print_tr_efmas,0
+b47a904,2018-05-19 22:34:53,Start to work on subroutine print_efmas. Document the coding by Jonathan.,0
+19af27b,2018-05-20 06:23:23,Merge remote-tracking branch baguetl/nonlinear-pol/5e29 into _baguetl,0
+b23bb36,2018-05-20 06:36:04,Fix typo in outvars related to prtefmas,0
+8d31f96,2018-05-20 06:37:34,Merge branch 'develop' into efmas3,0
+e7a573d,2018-05-20 06:51:50,Minor improvement of doc,0
+78faad8,2018-05-21 06:38:57,Suppress degl and treated records for the efmasdeg structured datatype,0
+af87335,2018-05-21 06:48:17,Suppress degenerate recort of efmasdeg,0
+4c3feab,2018-05-21 07:05:11,Replace efmas by efmasdeg in check_degeneracies   suppress record band_range from efmasdeg .,0
+9a30189,2018-05-21 07:30:12,Suppress deg_dim record of efmasdeg. Improve documentation.,0
+58abc87,2018-05-21 09:31:40,Fix typos. Now compile. v8_t55&56 OK.,0
+371bb17,2018-05-21 09:39:17,Eliminate some conversion warnings.,0
+f6bb461,2018-05-21 10:47:19,Fix typo,0
+5ef61be,2018-05-21 11:39:06,Clean args of print_efmas  start to assemble the arrays that will be printed in _EFMAS files.,0
+a4b5fdc,2018-05-21 11:45:35,Switch band and kpt indices of efmasval  to respect usual ordering.,0
+dc1e3ed,2018-05-21 13:24:24,Most arrays are ready in print_efmas,0
+9aef718,2018-05-21 21:34:06,Switch pairs of indices in ch2c and eig2_diag,0
+64e96c6,2018-05-21 21:42:19,Fill eig2_diag_arr,0
+86c400f,2018-05-22 08:55:25,comment modif before trunk merge,0
+f6bb8da,2018-05-22 08:55:36,Merge tag 'start-8.9.2' into Multibinit,0
+544ecc1,2018-05-24 17:22:25,debug SP coupling in multibinit,0
+f51f1a4,2018-05-24 22:01:15,Suppress initialize to zero in src/29_xgTools/m_xg.F90 (apparently not needed),0
+c9f3919,2018-05-25 11:40:39,fix bug in supercell generator,0
+672599c,2018-05-25 16:46:42,change default values for bmass and qmass + update ref,0
+367ebfd,2018-05-27 16:50:59,*_EFMAS.nc can now be written .,0
+533836a,2018-05-27 17:12:19,Also write k point reduced coordinates in _EFMAS.nc .,0
+12ce79d,2018-05-27 17:25:51,Create v8_t57,0
+3250148,2018-05-28 11:37:47,update test,0
+4c86e6d,2018-05-28 13:25:25,debugging,0
+8f051a7,2018-05-28 15:09:09,resolve conflicts,0
+58e0866,2018-05-28 15:46:35,aesthetic spaces and interface modules removed,0
+43be004,2018-05-28 15:46:50,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+ae19e66,2018-05-28 16:22:32,fix xml/ddb not read bug and clean,0
+9568c7a,2018-05-28 17:21:42,fix undeclared variable bug,0
+4b3ade3,2018-05-28 19:51:03,abimkdocs_plugin is also a requirement (local !),0
+11bfe3a,2018-05-28 20:04:46,More correct modif of doc for pip install the requirements of the documentation,0
+0b753bd,2018-05-28 20:31:24,Simpler,0
+67fb9a2,2018-05-28 21:34:41,A dot was lacking in tutorial base 1 .,0
+9063f2c,2018-05-28 21:58:34,Recover the dots that had been removed when switching to mkdocs .,0
+8240277,2018-05-28 22:57:26,Disambiguation,0
+e62bdf2,2018-05-29 00:22:20,Create v8_t57  in preparation of testing Frohlich general expression.,0
+83a7fb5,2018-05-29 14:27:05,modification of initrhoij to restore normal behaviour,0
+f9986b3,2018-05-29 14:29:05,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+7830c7e,2018-05-29 15:00:43,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+823dd06,2018-05-30 11:40:14,adjust tolerance for test on atlas_intel_18.0_openmpi,0
+bff38c3,2018-05-30 12:41:18,Backimport the suppression of incorrect ABI_CONTIGUOUS directives  from Jean-Michel  in order to pass on GCC 8.1,0
+916857c,2018-05-30 13:07:46,"Improve the descirption of usepotzero  and declare it as ""dev"" varset.",0
+b8671d4,2018-05-30 14:40:44,Fix missing word,0
+cd3f1bd,2018-05-30 17:41:30,Backport doc fixes from v8.9.2 .,0
+d86f0c9,2018-05-30 17:42:08,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0
+e9b6cbd,2018-05-30 17:48:33,Merge branch 'release-8.8' into _merge88,0
+c1c9343,2018-05-30 19:13:39,Two more fixes related to ABI_CONTIGUOUS,0
+57ec9f5,2018-05-30 22:51:25,Typo in GW1 tutorial doc,0
+10ce352,2018-05-31 10:09:33,add energy into the goal function (need to be uncomment...),0
+64ac937,2018-05-31 11:04:37,update variables in 57_iovars/chkvars.F90,0
+1c45a88,2018-05-31 11:33:53,Minor modifs to the doc,0
+2dc932b,2018-05-31 12:10:35,The default value for chkprim is now available at echo time  instead of being random.,0
+8ddac04,2018-05-31 12:42:56,Comment out warnings that no normal user can understand. Add suggestions.,0
+4da5a72,2018-05-31 13:52:32,Exclude host buda2_gnu_8.1_openmpi for test mpiio #26 ... Mmm  like Ifort18.0+openmpi ?! Perhaps there is something buggy in openmpi ... or in ABINIT ?!,0
+12c90c7,2018-05-31 13:58:44,Reinstall correct testfarm.conf,0
+7c90f3c,2018-05-31 14:56:08,Insert the proper section for buda2 gcc8.1,0
+1ae0e7a,2018-05-31 14:58:06,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0
+a80b3cd,2018-05-31 14:59:12,update variables in 57_iovars/chkvars.F90,0
+a4b7db6,2018-05-31 15:07:49,Slight modif of the comment.,0
+ae95228,2018-05-31 16:08:15,added xoroshiro128+ as random number generator for spin dynamics in multibinit,0
+0f05216,2018-05-31 17:14:07,add test v8/t16 for spin dynamics in multibinit,0
+b95cc8b,2018-05-31 17:18:20,fix auto test v8/t16,0
+4c9ab2b,2018-05-31 17:29:03,Suppress bot references that are no more nightly tested (or in the on-demand pool). They are not certified anymore...,0
+b107f5d,2018-05-31 17:54:59,fix bug in spin hist when there is no netcdf,0
+a9b3145,2018-05-31 20:21:23,Define buda2 gun 8.1 bot with the tests for plugins,0
+c54d611,2018-05-31 20:24:06,Adjust tolerance for v5_t73,0
+b5f30ff,2018-05-31 20:37:13,Add reference *.ac files for different bots,0
+fb35086,2018-05-31 20:38:21,Merge branch 'release-8.8' of gitlab.abinit.org:trunk/abinit into release-8.8,0
+50cf4b5,2018-05-31 20:44:41,fix netcdf call when doesn't have netcdf,0
+7a972d8,2018-05-31 20:58:03,add include config.h,0
+bd29855,2018-05-31 22:10:28,insert add -A** to robodoc end,0
+169cd1c,2018-05-31 22:47:33,small bug fix,0
+eb015af,2018-05-31 23:43:36,add use m_abi_profile and m_errors,0
+a2fc182,2018-06-01 00:02:19,Merge branch 'release-8.8' into _merge88,0
+18eae13,2018-06-01 00:09:14,more m_abi_profile,0
+dc68c73,2018-06-01 03:25:03,Suppress duplicate declaration of nucdipmom_k  due to merge.,0
+aa90cfb,2018-06-01 09:03:16,use ABI_DEALLOCATE in spindynamics,0
+ee7060b,2018-06-01 09:25:11,Fix MPI isend/ireceive,0
+5934b95,2018-06-01 09:28:22,Check np_slk after knowing the wfoptalg value since value 114 does not need a special value,0
+69d3ccf,2018-06-01 09:28:29,Merge remote-tracking branch 'refs/remotes/origin/elpa' into elpa,0
+9864a3f,2018-06-01 09:28:45,small fix,0
+621e14d,2018-06-01 09:34:05,small fix again,0
+9c992c9,2018-06-01 09:40:16,Merge trunk,0
+1f7ebd7,2018-06-01 12:55:53,"Remove input variable ""supercell"". Also initialize the global default for supercell_latt.",0
+9ab45b3,2018-06-01 13:33:45,Declare ii.,0
+6cc8da2,2018-06-01 14:52:27,merged trunk/develop,0
+c99d7f9,2018-06-01 17:14:48,Exclude host buda2_gnu_8.1_openmpi for v8_t34 (like Nag ...) there is problem with this test ...,0
+7647001,2018-06-01 18:01:09,exclude builder instead of exclude host ...,0
+0a92785,2018-06-01 22:00:03,add licence and documentations,0
+96e2092,2018-06-01 22:43:42,small bug fix in document,0
+80c67b3,2018-06-02 00:25:10,The results of v7_t49 were actually not tested (v7_t48 output files were tested twice !),0
+4532288,2018-06-02 11:39:55,Add refs files for t49,0
+84ba776,2018-06-02 13:46:22,Merge remote-tracking branch 'remotes/amartin/Multibinit' into _amartin,0
+993d799,2018-06-02 15:18:20,Minor modif,0
+ddbaaf7,2018-06-02 16:47:30,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0
+eb164bc,2018-06-02 16:50:59,Merge branch 'release-8.8' into _merge88,0
+c9e3afd,2018-06-02 18:26:35,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+3eadba8,2018-06-02 19:28:36,Merge xuhe/spindynamics/96e2 into _xuhe,0
+b2ebe89,2018-06-02 20:43:55,commented out twisted cprj parts for now,0
+71b6fc5,2018-06-02 20:46:32,Merge remote-tracking branch 'remotes/trunk/develop' into beauty,0
+5482cb5,2018-06-02 20:57:12,Initiate efmas_ncread,0
+24ea270,2018-06-02 21:19:17,change n_cell to ncell due to the upstream change in m_multibinit_dataset,0
+16f642f,2018-06-02 21:31:36,add spin_dynamics related keywords to chkvars,0
+bb8b4f8,2018-06-03 00:15:30,efmas_ncread is complete. Also fixed some incimpleteness issues in print_efmas,0
+7eb9030,2018-06-03 00:19:45,Allocate/deallocate kpt_efmas,0
+d7cfb04,2018-06-03 00:38:08,Define input variable getefmas,0
+66e5faf,2018-06-03 00:44:04,Define input variable irdefmas,0
+a0a9b89,2018-06-03 01:08:12,The efmas_path file is read.,0
+489381c,2018-06-03 13:49:18,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0
+14583c5,2018-06-04 08:44:13,Exclude v8_t34 for buda2_gnu_8.1_mpich3,0
+741bd2a,2018-06-04 09:08:42,Now compiles,0
+81d6c9e,2018-06-04 09:28:27,Now old tests are OK.,0
+b2f6475,2018-06-04 11:27:51,outvar bug,0
+7aef455,2018-06-04 12:34:24,Beautification of variables_abinit.py and bib documents,0
+d441252,2018-06-04 12:37:19,beautified variables_optic.py,0
+3b6ba8d,2018-06-04 13:07:23,smdelta is an integer  so should use intarr. Bug seen and fixed by Jordan Bieder.,0
+4766230,2018-06-04 13:28:30,Merge npike/beauty' into _beauty,0
+f725b6d,2018-06-04 15:04:48,beautified ffield.md,0
+0eb5549,2018-06-04 16:07:03,Beautification job 2018,0
+ead3b99,2018-06-04 19:20:39,Merge sponce/beauty/0eb5 into _beauty,0
+e57c9ed,2018-06-04 19:26:02,Fix merge problem,0
+1c0f610,2018-06-05 15:21:54,Beautification up to gw_invalid_freq,0
+c309fb6,2018-06-05 16:18:35,Merge branch 'develop' of gitlab:trunk/abinit into beauty,0
+5be0e73,2018-06-05 16:23:07,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+5b9f292,2018-06-05 17:14:34,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+52f6371,2018-06-06 11:51:27,beautify nuc.md and add Mossbauer examples,0
+73e770e,2018-06-06 11:54:07,files added for new nuc.md examples,0
+4e208e9,2018-06-06 12:23:26,beautification of the GW 1 tutorial completed,0
+e530036,2018-06-06 13:06:31,beautification of tutorial GW1: test suite has been fixed to be consistent with the new tutorial In total 3 test files have been eliminated,0
+9ec9164,2018-06-06 17:27:46,beautification of tutorial GW2: just a few typos and layout improvements,0
+27f03b3,2018-06-06 22:04:04,Add support for |alias|,0
+0085272,2018-06-07 01:13:54,Add refs  improve topics,0
+807770e,2018-06-07 15:17:40,beautify optic.md,0
+89ddfd8,2018-06-07 15:32:16,further beautification of optic.md and _Optic.md,0
+65b621c,2018-06-07 15:50:55,further tweak of optic.md,0
+6e00616,2018-06-07 17:29:16,Update the TESTINFO section for tests tgw1_?.in as suggested by GMatteo,0
+9dab47d,2018-06-07 21:28:19,Merge jzwanzig/beauty/65b6 into _beauty,0
+b00cf05,2018-06-08 06:39:38,Update ref file for tutorial nuc3,0
+03e19e0,2018-06-08 08:42:20,Change imag into aimag,0
+c21fdc4,2018-06-08 08:42:44,Merge branch '_beauty' of gitlab.abinit.org:trunk/abinit into _beauty,0
+97a4c1a,2018-06-08 09:28:16,beautification of tuto DFPT (RF) 1 and 2  bug in trying to add Petretto2018 reference in abiref.bib  it does not appear in the final http://127.0.0.1:8000/theory/bibliography/ page,0
+b119b19,2018-06-08 11:46:43,Minor changes,0
+258d07b,2018-06-08 15:35:28,final beautification process of tuto DFPT 1 and 2. I've justified the text that  I think  gives a better looking,0
+b00dab5,2018-06-08 20:32:53,Minor changes,0
+35caffd,2018-06-08 21:06:52,Adapt tolerances for tutorial nuc2&3,0
+f280564,2018-06-08 22:24:34,Update ref files due to fix of smdelta problem,0
+8782e75,2018-06-08 22:29:14,Merge remote-tracking branch 'bousquet/beauty' into beauty_gmatteo,0
+0beb390,2018-06-09 00:50:31,Add AbiPy section to rf2 with figures,0
+bd284c7,2018-06-09 02:20:48,Add DFPT cycle plot to rf1,0
+8ee31e5,2018-06-09 06:05:02,Rename section for buda2 using _mpich3,0
+eef58a2,2018-06-09 06:05:31,Rename section for buda2 using _mpich3,0
+68b12df,2018-06-09 06:12:10,Adjust tolerance for tutorial nuc_3,0
+059d58a,2018-06-09 06:13:56,Merge branch 'release-8.8' into _beauty,0
+d380715,2018-06-09 06:47:48,Complete the rename of topics EffMass to EffectiveMass. Prepare ndtset 6 in v8_t57 (not yet activated).,0
+1358a1c,2018-06-09 06:50:05,Use aimag instead of imag,0
+ec60a6d,2018-06-09 06:53:23,Merge branch 'develop' into efmas,0
+b07a8e0,2018-06-09 08:35:19,Fix DOI of Martin et al,0
+376dc49,2018-06-09 08:36:33,Slightly more complete,0
+4d2fb93,2018-06-09 08:38:34,Correct name of reference,0
+e12e1db,2018-06-09 08:43:50,Update ref for v8_t57,0
+9426567,2018-06-09 11:38:09,Merge branch 'develop' into efmas,0
+e62ef76,2018-06-09 11:41:15,fld_options for v8_t57 is medium,0
+0fcf9ec,2018-06-09 14:04:35,EffMass was still present in mkdocs.yml,0
+dfd4112,2018-06-09 14:05:41,Adjust tolerance for v8_t57,0
+81e0adb,2018-06-09 14:13:17,Add AbiPy plots to base3 and base4,0
+bb42ada,2018-06-09 14:51:07,Insert CPP directive for availability of NetCDF,0
+91a78a2,2018-06-09 14:57:07,Fix memory leak. v8_t57 not to be executed on IBM8 (no NetCDF).,0
+12560f9,2018-06-09 15:01:04,Merge branch 'efmas' of gitlab.abinit.org:trunk/abinit into efmas,0
+04dd0c3,2018-06-09 15:01:49,Relax tolerance for v6_t52 .,0
+8d2c08d,2018-06-09 16:50:13,Shorten too long line,0
+8726ac0,2018-06-09 16:53:13,Fix name He Xu,0
+eb02c9f,2018-06-09 17:18:14,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into beauty_gmatteo,0
+0224a17,2018-06-09 22:22:06,update mkroutine script to account for new module obligation,0
+57f6613,2018-06-09 22:23:53,improved text and doc for source code tutorial,0
+bc7ebb8,2018-06-10 00:37:45,Bse tutorial is now in synch with input files,0
+5d03e03,2018-06-10 07:18:17,Enter eph driver with v8_t57. Fix several issues. Frohlich model not yet activated  but all readings are activated.,0
+1726976,2018-06-10 14:09:02,Add link to MDF notebook,0
+1844ad4,2018-06-11 00:17:00,half way through spin.mp update. Also a new figure for AFM FCC Fe  to be tested.,0
+239c30b,2018-06-11 05:55:09,Intermediate commit. Working on m_frohlichmodel.F90 .,0
+fb91d38,2018-06-11 05:59:34,Fix typo,0
+f10d58a,2018-06-11 06:28:24,Fix typos,0
+aadc01f,2018-06-11 06:31:02,Merge branch 'develop' into efmas,0
+ba0c1d2,2018-06-11 10:53:22,Intermediate commit.,0
+575d9ef,2018-06-11 12:09:45,beautification done for the gw variables,0
+478dafd,2018-06-11 12:19:56,Merge remote-tracking branch 'trunk/develop' into beauty,0
+193b707,2018-06-11 13:42:03,Misc corrections,0
+6bfd5c0,2018-06-11 15:29:05,Merge branch 'develop' into _beauty,0
+3a2cb1c,2018-06-11 15:32:20,beautification finished for me,0
+206be3c,2018-06-11 15:46:32,Merge remote-tracking branch 'trunk/develop' into beauty,0
+ac1abfe,2018-06-11 17:50:59,Merge jollet/beauty/206b into _beauty,0
+f22a7d5,2018-06-11 18:06:56,Slightly modify the use of eph_frohlichmodel>1 for the time being.,0
+f2b0404,2018-06-11 18:07:58,Merge branch 'develop' into efmas,0
+5a2af1f,2018-06-11 18:08:11,Merge branch 'efmas' into efmas3,0
+6486b59,2018-06-11 19:06:35,[beautification][2018] Fixed the vdw variable set,0
+057a74f,2018-06-11 19:16:07,Primitive version of m_frohlichmodel.F90  only able to compute the average Frohlich effective mass.,0
+ca8f723,2018-06-11 20:24:06,Merge pouillon/beauty/6486 into _beauty,0
+a2b56e6,2018-06-11 20:48:28,Now m_frohlichmodel compiles,0
+307c305,2018-06-11 22:17:10,frohlichmodel subroutine is OK for effective masses  v8_t57 works.,0
+04b51cc,2018-06-12 00:02:35,update image file format and adapt He Xu name for mkdocs,0
+a29dde1,2018-06-12 00:33:39,save for now. 75% done,0
+b503862,2018-06-12 00:48:38,beautification variables_anaddb.py,0
+3240b62,2018-06-12 06:39:00,Merge petretto/beauty/b503 into _beauty,0
+e82bf10,2018-06-12 07:22:58,Replace the Gaussian quadrature for phi by a normal homogeneous sampling (since the integrand is periodic !),0
+811f78e,2018-06-12 07:36:18,missed a latexable equation  and improved the text,0
+42127b1,2018-06-12 08:35:12,Slight modif of m_frohlichmodel.F90.,0
+c5f6d7f,2018-06-12 10:09:13,Fix problem with Gaussian weights.,0
+5dde482,2018-06-12 10:18:04,Echo the results for electronic part of Frohlich model in the main output file.,0
+2630dae,2018-06-12 10:35:43,corrected references and added ashcroft + mermin. NB: bassani is not used anywhere I think,0
+de4f9c0,2018-06-12 10:43:12,Clean the computation of directions and weights for spherical integration.,0
+6aeaa24,2018-06-12 11:05:47,Beauty AIM  Elastic and fold2bloch tutorials,0
+31398db,2018-06-12 11:38:38,figure for AFM FCC Fe  and gitignore for auxiliary latex build files,0
+6f0bbee,2018-06-12 11:39:32,alphabetize list in gitignore?,0
+292242a,2018-06-12 11:44:02,reduce size of image,0
+d994df5,2018-06-12 11:53:09,call ifc_calcnwrite_nana_terms,0
+d605c91,2018-06-12 11:53:29,merged trunk beauty,0
+f6b533b,2018-06-12 11:58:29,Update the test references with the output files of abiref for tgw1_x tests,0
+292b2f1,2018-06-12 13:52:58,Mode-polarity is computed  and some averages over phonon branches as well. Compil OK as well as test v8_t57.,0
+8bd73bc,2018-06-12 13:58:39,Beautification of DFT+U  DMFT  cRPA and Udet tutorials + DMFT variables.,0
+f2d2d95,2018-06-12 16:59:52,Abinit beautification: DFPT vars and ffield vars,0
+0764bda,2018-06-12 17:05:09,Merge vantroeyeb/beauty/6aea into _beauty,0
+a05ce16,2018-06-12 17:07:01,Merge mverstra/beauty/2922 into _beauty,0
+351c439,2018-06-12 17:10:47,Abinit beautification: DFPT vars and ffield vars,0
+baf69c0,2018-06-12 17:20:48,Abinit beautification: DFPT vars and ffield vars,0
+9339ec6,2018-06-12 17:34:10,The correction to be applied to the ZPR  due to missing q=0 volume  is computed.,0
+e1e46b3,2018-06-12 19:10:37,ZPR from generalized Frohlich is computed. Still  not yet perfect agreement with the simple cubic analytical result.,0
+b78e4db,2018-06-12 20:10:32,Tutorial on positron fixed,0
+738aa3e,2018-06-12 20:36:50,Merge bruneval/beauty/f6b5 into _beauty,0
+baba50d,2018-06-12 20:39:25,Merge amadon/beauty/8bd7 into _beauty,0
+f536909,2018-06-12 20:57:22,Test v8_t57 is finalized.,0
+1e849d9,2018-06-12 21:34:44,There was an error in the input file for v8_t57,0
+8030ed8,2018-06-12 21:36:55,Merge branch 'develop' into efmas3,0
+2e53f4f,2018-06-13 06:16:42,Update tolerances for tutorial gw1_1,0
+3c110b9,2018-06-13 07:17:50,Fix ABI_DEALLOCATE.,0
+3cd32c1,2018-06-13 07:23:51,Update ref for v8_t57,0
+dc4dfcb,2018-06-13 07:25:35,Suppress erroneous comment,0
+7e69723,2018-06-13 08:25:33,ABI_DEALLOCATE statements were missing,0
+40010a3,2018-06-13 09:54:38,Added a bib reference.,0
+8333686,2018-06-13 10:01:23,Suppress duplicate entry Sai2002,0
+7872ad5,2018-06-13 10:02:58,Line exceeded 132 characters.,0
+e9e962c,2018-06-13 10:03:55,Merge branch 'develop' into efmas3,0
+2474bf4,2018-06-13 11:48:09,Towards new paw1 tutorial,0
+96664ee,2018-06-13 12:22:54,Beautification variables-gstate first round,0
+91141af,2018-06-13 12:27:10,Adjust tolerance for v8_t57 on max2,0
+f80938f,2018-06-13 15:45:13,beautification,0
+e6e2e49,2018-06-13 16:14:13,Beautification variables-gstate second round,0
+decd576,2018-06-13 21:15:29,Merge lherbier/beauty/e6e2 into _beauty,0
+d23bcb8,2018-06-13 21:17:04,Merge fnac/beauty/baf6 into _beauty,0
+05ff45a,2018-06-13 21:19:43,Merge bousquet/beauty/f809 into _beauty,0
+bf6fcbe,2018-06-14 08:22:11,Merge branch _beauty/05ff into develop,0
+89fbe31,2018-06-14 11:46:56,Completed all references for ixc variable.,0
+d0351d6,2018-06-14 12:12:07,Finalized beautification of eph and basic,0
+c1b8faf,2018-06-14 16:05:06,paw1 tutorial done,0
+c2a617f,2018-06-14 16:51:47,Beautification variables-gstate third and last round,0
+5e3e4d0,2018-06-14 21:38:25,Merge lherbier/beauty/c2a6 into _beauty,0
+a9c7fdc,2018-06-14 21:42:48,Merge antonius/beauty/d035 into _beauty,0
+e2288eb,2018-06-15 09:08:45,Beauty,0
+27ce80f,2018-06-15 09:16:53,Beauty,0
+7625993,2018-06-15 10:00:56,Beauty,0
+ab7823b,2018-06-15 13:13:58,Merge,0
+1d153be,2018-06-15 13:23:04,Merge trunk,0
+ab61776,2018-06-15 15:01:30,Gregory Geneste s contribution to documentation beautification,0
+bd1d38b,2018-06-15 15:01:39,Remove duplicated bibtex entry (Souvatzis2008) in file doc/abiref.bib that made the ./mksite.py command failed. I made sure I kept the entry which was the same as the command: betterbib-doi2bibtex,0
+bf39ca4,2018-06-15 16:08:59,"Corrected the ""year"" of bibtex entry Cohen and Chelikowsky. I changed the cite command in optic.md so that it now is coherent with the corrected reference.",0
+1b905c7,2018-06-15 16:41:48,I have added reference Sai2002 that was cite in elastic.md but there was no reference in abiref.bib . ./mksite was complaining that this citation was missing.,0
+e0d91c8,2018-06-15 18:18:14,Fix a few references in abiref.bib .,0
+33aba84,2018-06-15 19:12:29,OK  paw2 tutorial done,0
+371f1f2,2018-06-15 19:57:18,paw3 tutorial done,0
+b52036c,2018-06-15 21:21:22,Merge torrent/beauty/371f into develop,0
+96be546,2018-06-15 21:21:56,Merge torrent/geneste_beauty/ab61 into develop,0
+570e642,2018-06-15 21:27:00,Merge biederj/beauty/ab78 into develop,0
+de2d0f8,2018-06-15 21:28:57,Souvatzis2008 mentioned twice. Fixed.,0
+36ca442,2018-06-16 06:08:13,Beautified doc/guide/new_user.md . Start to work on doc/tutorial/index.md. Also some other fixes.,0
+254eaaa,2018-06-16 06:11:14,"Replace ""This lesson"" by ""This tutorial"" and ""lessons"" by ""tutorials"".",0
+124d075,2018-06-16 06:14:27,"Replace ""Lesson"" by ""Tutorial""",0
+5cc457b,2018-06-16 07:11:46,"Replace nearly everywhere ""lesson"" by ""tutorial""",0
+99588ed,2018-06-16 08:13:56,More changes from lesson to tutorial,0
+4f911c6,2018-06-16 08:30:01,'tutorial:' can now be used as namespace (just an alias to 'lesson:' at present).,0
+6347d11,2018-06-16 08:41:30,More replacements of lesson by tutorial,0
+54d5071,2018-06-16 16:45:08,Finish modification to file base3.md for the beautification.,0
+486637d,2018-06-17 05:51:28,Substitute lesson by tutorial in topics,0
+a544b77,2018-06-17 08:16:15,Complete cleaning of tutorials base1  base2 and tddft.,0
+99017b1,2018-06-18 06:27:11,Final modifs for vargeo input variables.,0
+30429cf,2018-06-18 06:48:04,Fix linkchecker problems. Minor improvements as well.,0
+3ad7ba3,2018-06-18 10:40:48,Update for scalapack/elpa,0
+4d4fe61,2018-06-18 10:42:55,One more minor fix of a problem detected by linkchecker.,0
+7100164,2018-06-18 10:54:40,Start finalization of v8.8.3,0
+45c1011,2018-06-18 12:00:24,work on pseudopotentials.md,0
+f328b546,2018-06-18 12:02:47,Beautification of varset='dev'.,0
+350c69e,2018-06-18 12:05:05,Merge remote-tracking branch 'trunk/develop' into beauty,0
+dbbce36,2018-06-18 12:29:10,Merge setten/master/45c1 into _beauty,0
+255bca2,2018-06-18 12:36:26,Merge henrique/beauty/350c into _beauty,0
+efcdc95,2018-06-18 15:42:51,set new ref,0
+c452d3d,2018-06-18 19:08:36,Fix build example reference file for buda2_gnu_8.1,0
+01c3e77,2018-06-19 06:01:48,Merge branch release-8.8/c452,0
+638d9fc,2018-06-19 06:08:48,Merge branch 'release-8.8' into develop,0
+da20450,2018-06-19 06:12:23,Initialize v8.8.4,0
+700b471,2018-06-19 06:17:59,Merge branch 'release-8.8' into develop,0
+b0af3fe,2018-06-19 06:31:34,Update copyright year,0
+1ab3220,2018-06-19 13:41:15,Update number of cpu for scalapack,0
+06ef409,2018-06-19 14:26:58,Backport bug fix for scalapack,0
+7e977a5,2018-06-19 14:53:20,Merge trunk,0
+4bb9e56,2018-06-20 05:34:32,Modify the base4.md file.,0
+e94eb0a,2018-06-20 05:47:06,Small changes to the files.,0
+59c4364,2018-06-20 08:34:31,Error due to backporting,0
+89f6b43,2018-06-20 09:24:51,Fix matrix size for scalapack since not input variable available in this version,0
+6a09ebe,2018-06-20 12:24:30,Fixed typo in tutorial response function 1_4 showing the wrong input file.,0
+e88ef87,2018-06-20 12:52:59,Resolve conflict with doc and merge with trunk,0
+ce1e1cc,2018-06-20 12:54:42,Merge remote-tracking branch 'trunk/develop' into tdep_test,0
+e6dba62,2018-06-20 13:11:37,Set output prefix in tdep,0
+7bad7ba,2018-06-20 13:11:48,Merge remote-tracking branch 'trunk/master',0
+d3a6c88,2018-06-20 14:51:27,Improve testing for tdep,0
+d5ab018,2018-06-20 15:08:02,Merge biederj/master/7bad7ba into _biederj88,0
+ce58850,2018-06-20 15:44:22,Prepared the build system for the restructuring of the source tree,0
+a20e5f8,2018-06-20 15:51:05,Moved symkpt to a new 28_kpoints directory,0
+d33454e,2018-06-20 15:58:47,Moved xgTools and diago to high level,0
+1344b71,2018-06-20 16:09:00,Towards a true low-level in abinit (LLN with Yann),0
+95808db,2018-06-20 16:13:17,Merge remote-tracking branch 'trunk/develop' into split-prep,0
+8aab3e3,2018-06-20 16:14:35,Merge branch 'split_prep' into 'split-prep',0
+9895f1e,2018-06-20 16:27:29,Ran abilint,0
+7103e08,2018-06-20 16:28:02,Fixed typos in source file lists,0
+534e3f8,2018-06-20 16:37:51,Fixed inconsistencies between build system and source tree configurations,0
+0e786ec,2018-06-20 16:45:18,Merge remote-tracking branch 'upstream/develop' into beauty,0
+f06a24d,2018-06-20 16:50:05,Remote Sai2002 that was there twice.,0
+a0f9edd,2018-06-20 16:52:21,Moved 27_linalg to 29_linalg to satisfy dependencies,0
+7a88a80,2018-06-20 17:11:11,Merged 29_linalg into 28_numeric_noabirule to fix circular dependencies,0
+c5bff91,2018-06-20 17:30:45,Fixed defs_datatypes not available when building 43_wvl_wrappers,0
+cd52ad3,2018-06-20 17:47:23,Updated stale references to m_abilasi and m_blas,0
+9716e04,2018-06-20 18:09:05,Moved 66_wannier->71_wannier and 68_vdwxc->66_vdwxc to solve circular dependencies,0
+f572488,2018-06-20 18:35:42,Restored the optional character of TRIQS,0
+5e909e5,2018-06-20 18:36:06,Fixed small inconsistencies related to k-points,0
+dcfd7ac,2018-06-20 18:38:26,Fixed undeclared dependency of mrggkk,0
+7d3e105,2018-06-20 21:13:56,Merge branch 'release-8.8' into _biederj,0
+bcc1b83,2018-06-20 21:43:53,Fixed missing dependency of 44_abitools on netcdf,0
+470ece9,2018-06-20 21:44:46,Merge cote/beauty/e94e into _cote,0
+6a6af6c,2018-06-20 21:46:38,Fix problem with Sai2002,0
+bde40d5,2018-06-20 21:48:09,Merge fgoudreault/develop/6a09 into _cote,0
+2ddeadf,2018-06-20 22:08:42,Fixed missing dependency of macroave on 44_abitools,0
+e43b919,2018-06-20 22:19:27,iMinor modifs.,0
+21f16f6,2018-06-20 22:23:45,Fix by Matthieu of the problem https://forum.abinit.org/viewtopic.php?f=10&t=3872,0
+7d35253,2018-06-21 06:02:13,Merge branch 'develop' into _cote,0
+970fc4c,2018-06-21 06:06:21,Update ref file due to commit 21f16f,0
+b46d9af,2018-06-21 06:07:56,Merge branch '_cote' of gitlab:trunk/abinit into _cote,0
+5341c25,2018-06-21 06:28:19,Merge cote/beauty/f06a into _cote,0
+62c57a9,2018-06-21 06:32:21,Replace homebreq by homebrew,0
+b87669a,2018-06-21 06:35:18,Merge remote-tracking branch 'remotes/origin/release-8.8' into _cote,0
+ea8a936,2018-06-21 11:12:40,Finalize conflict resolution.,0
+9cdb798,2018-06-21 11:20:06,Merge pouillon/split-prep/2dde into _pouillon,0
+6fec2bb,2018-06-21 13:45:54,Fix problems for robodoc,0
+120f2bc,2018-06-21 13:53:48,Fix lines too long,0
+c4c5114,2018-06-21 13:57:02,FPE fixed,0
+25cdbb6,2018-06-21 13:59:37,Update ref,0
+7fc3a77,2018-06-21 15:02:21,Revert change made to test since there were not activated before,0
+6065219,2018-06-21 15:18:54,Adjuste tol with respect to results,0
+d72bbd5,2018-06-21 15:41:47,Fix if then else,0
+d8c6d1b,2018-06-21 15:42:39,Merge remote branch 'origin/tdep_test' into tdep_test,0
+41eade3,2018-06-22 08:24:38,Fix i/o error,0
+53ea4a6,2018-06-22 11:37:55,Fixed failing 'make distcheck',0
+b1f507e,2018-06-23 10:28:19,Merge pouillon/split-prep/53ea into _pouillon2,0
+52a5f19,2018-06-23 10:30:01,Merge commit '120f2bcc2' into _pouillon2,0
+87b6781,2018-06-23 15:00:13,Merge biederj/tdep_test/41ea into _biederj,0
+5d77ec4,2018-06-23 17:24:44,Simple update of date,0
+3a4fa41,2018-06-23 17:58:14,Fix non-existent 20_datashare,0
+6156601,2018-06-23 18:07:14,Apply make abiauty. Fix some missing continuation characters in first column (abirules).,0
+7ab2578,2018-06-23 20:34:42,Subtract 57_iopsp_parser from the control of abiauty.,0
+72bf30f,2018-06-24 06:26:01,Initialize v8.9.3,0

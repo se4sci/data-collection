@@ -1,0 +1,23 @@
+hash,time,message,buggy
+7673ae6,2017-06-03 16:40:03,Init v8.4.2,0
+6aaf8bd,2017-06-05 11:57:55,Improve the doc for Gitlab our GitHub users.,0
+de80b09,2017-06-05 14:22:24,Modifications to allow nightly use of ubu_intel_13.1_openmpi,0
+5d9be5f,2017-06-05 14:49:01,Change sound velocity units for echo from [m/s] to [km/s]  for portability of automatic tests.,0
+9167070,2017-06-05 14:52:01,Change dataset 4 nstep in Tmpiio#26  for portability reasons,0
+b5d3431,2017-06-05 15:23:55,Fix the problem with bigdft_paral not being available ...,0
+fff16f3,2017-06-05 16:15:46,Change tolms to tolkms   also fix problem with input mpiio#26,0
+365cffb,2017-06-05 17:48:50,Update the reference files  due to the switch of unit from m/s to km/s for the sound velocity,0
+eb00d5a,2017-06-05 18:57:38,Update ref for Tv5#84,0
+9c9bde2,2017-06-05 19:04:52,Fix incorrect mpiio#t26.in,0
+2eaa4e0,2017-06-05 20:48:10,Update refs v2#28  v6#80  v8#45  due to m/s being replace by km/s,0
+2963d7a,2017-06-05 22:07:10,Last (?) update : ref for v6#81,0
+58fc5b3,2017-06-06 05:52:33,Update doc for replacement of tolkms by tolms,0
+76abaab,2017-06-06 08:00:17,Merge _gonze-8.4.2/58fc into hotfix-8.4,0
+19636cf,2017-06-06 09:28:52,Tune tests to allow ubu_intel_13.1_openmpi as nightly machine. Unfortunately  test mpiio#26 dataset 3 cannot get good tolwfr.,0
+cfb4e9c,2017-06-06 16:08:39,More modifs to allow ubu_intel_13.1_openmpi,0
+60c45f4,2017-06-06 16:11:37,Definition of eighth was missing in m_libpaw_defs.F90,0
+3623f12,2017-06-06 17:30:21,Merge branch hotfix-8.4/60c4 into _gonze-8.4.2,0
+c07e9cd,2017-06-06 17:32:40,Merge branch 'hotfix-8.4' into _gonze-8.4.2,0
+a10ce32,2017-06-06 17:40:22,Again update tolerances for fluctuating results with paral_kgb on ubu_intel_13.1_openmpi   also fix URL,0
+788dd79,2017-06-06 18:32:27,Disable paral#29 on ubu_intel_13.1_openmpi  as it fluctuates too much ...,0
+14eeaea,2017-06-09 15:51:46,Finalize v8.4.2 : update KNOWN PROBLEMS. Also suppress unneeded exclude_hosts and exclude_builders in t*.in files.,0

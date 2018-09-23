@@ -1,0 +1,44 @@
+hash,time,message,buggy
+a164830,2017-06-03 23:52:01,Started version 0.16.2,0
+805c6c2,2017-06-04 07:23:33,Merge pull request #1381 from MDAnalysis/start-0162,0
+a0d61f9,2017-06-04 15:18:00,change definition of tests (#1382),0
+7652710,2017-06-06 12:12:04,update conda badge (#1386),0
+39ad792,2017-06-09 11:42:19,use correct int types,0
+8641226,2017-06-09 11:49:09,relax test_symmetry test due to lower precision on 32bit,0
+eed7761,2017-06-12 07:58:40,More work on making indexing arrays use intp (#1362),0
+efd9fc5,2017-06-12 14:47:13,Aesthetic fixes to test_gro,0
+6a5fa2c,2017-06-12 15:30:08,Added tests for issue #1395,0
+930bb63,2017-06-12 16:03:51,Added lib.util.ltruncate_integer,0
+abd205b,2017-06-12 17:11:09,Changed coordinate writers to use ltruncate_int,0
+bd3b4df,2017-06-13 09:16:34,deprecated core.Timeseries module,0
+e9784a7,2017-06-13 09:17:54,Deprecated DCDReader.correl,0
+3e4a973,2017-06-13 14:29:24,Merge pull request #1396 from MDAnalysis/issue-1395-gro_resid_truncate,0
+6e6aa9d,2017-06-13 17:03:38,Merge pull request #1393 from MDAnalysis/issue-1362-int_types,0
+ebe2b84,2017-06-13 17:16:12,Merge pull request #1398 from MDAnalysis/issue-1397-group-hash,0
+e3d5818,2017-06-13 19:26:29,Explicitly define __hash__ for groups,0
+0a37e9e,2017-06-15 16:26:13,add deprecation warnings for API changes,0
+fbc1688,2017-06-15 17:18:13,make scipy and matplotlib full dependencies (#1159),0
+4734057,2017-06-15 19:37:48,scipy and matplotlib are imported at top in analysis,0
+12a795e,2017-06-15 20:44:17,removed conditional skipping of tests when scipy or matplotlib are missing,0
+6e0abb0,2017-06-15 23:05:13,mention optional/full dependencies in docs,0
+250ed47,2017-06-16 00:56:12,removed top-level imports of Timeseries,0
+c238a40,2017-06-16 13:55:02,new MDAnalysisTests.core.util.assert_nowarns() function,0
+3de936c,2017-06-16 14:10:29,make instant selectors emit DeprecationWarning,0
+3e57373,2017-06-17 08:24:52,fix sphinx warnings,0
+fae031e,2017-06-17 08:39:52,add getitem warning message,0
+b6646da,2017-06-17 11:15:33,use explicit deprecation warning,0
+785cfc4,2017-06-17 11:30:17,update copyright year,0
+85c0c56,2017-06-17 13:38:24,minor clean ups,0
+e15f1be,2017-06-17 16:49:37,test for no warnings raised by AtomGroup.segid,0
+abc11e6,2017-06-17 16:49:55,minor cleanups in tests,0
+84354d8,2017-06-17 16:52:52,AtomGroup.__getitem__ depreaction warning: added removal release,0
+50f5d5a,2017-06-17 17:03:32,"removed explicit DeprecationWarning for AtomGroup[""name""]",0
+9dc1737,2017-06-17 19:37:12,Use common setup script rather than OS specific ones (#1408),0
+1f36502,2017-06-19 11:01:41,fix int type in asserts in TestDownshiftArrays (#1410),0
+49496c3,2017-06-19 20:51:31,Break build packagewise (#1370),0
+e24da32,2017-06-20 16:18:02,only issue _get_named_atom warning on successful call,0
+f846427,2017-06-24 14:09:41,add @utkbansal to changelog,0
+ae72fe9,2017-06-27 10:14:28,Merge branch 'master' into release-0.16.2,0
+5b55e0e,2017-06-27 11:08:34,Merge pull request #1421 from MDAnalysis/release-0.16.2,0
+3fa9bf7,2017-06-27 11:11:55,Bumped version to 0.16.2 release,0
+ea708b0,2017-06-27 11:16:04,Updated c sources for 0.16.2 release,0

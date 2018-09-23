@@ -1,0 +1,25 @@
+hash,time,message,buggy
+0149cba,10/5/15 9:47,updated VMs,0
+66d73c6,10/5/15 10:19,Make openmp detection work on debian,0
+53cdffa,10/5/15 10:32,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
+256699,10/5/15 14:37,Bumped version to 0.12.1-dev,0
+8fc52ae,10/5/15 14:37,Added wheel options to setup.cfg(s),0
+68df27f,10/5/15 16:51,Merge pull request #471 from kain88-de/openmp-detection,0
+0411d10,10/5/15 16:53,Fixed up CHANGELOG chronology,1
+b7c3522,10/6/15 0:01,Update CHANGELOG with changes in setup.py,0
+7b77951,10/6/15 1:09,new LAMMPS test files,0
+f393a64,10/6/15 1:46,fixed dt for LAMPPS DCD and setting of dt by user,1
+15d577b,10/6/15 3:08,added tests for LAMMPS DCDWriter and exceptions in DCDReader,0
+f5ad35f,10/6/15 11:24,testing flavor of DCDReader/Writer,0
+2a3c00e,10/6/15 13:47,updated docs for LAMMPS trajectory reader (units),0
+9dd05cc,10/6/15 14:03,fixed DCDReader.dt was not in sync with Timestep.dt,1
+893f661,10/6/15 16:07,Merge pull request #472 from MDAnalysis/fix-lammps,0
+f9eb342,10/6/15 16:43,doc fix in LAMMPS DCDWriter,0
+547f365,10/7/15 17:02,Added tests for Issue #476,0
+a1ce396,10/7/15 17:04,Fixed topology.base.guess_atom_element raising IndexError,1
+a626960,10/7/15 23:21,Merge pull request #477 from MDAnalysis/issue-476,0
+92936c7,10/8/15 9:35,Finalised 0.12.1 changes,1
+1b73883,10/8/15 9:39,Docs rebuilt for 0.12.1 release,0
+bd49cc9,10/8/15 10:00,Updated MANIFEST for Tests,0
+fdcbe82,10/9/15 15:05,fixed numpy -> np in LeafletFinder,1
+fb1e050,10/9/15 20:59,Merge branch 'develop' into release-0.12.1rc1,0

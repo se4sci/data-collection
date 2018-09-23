@@ -1,0 +1,847 @@
+hash,time,message,buggy
+97db8f3,2016-03-24 17:13:08,Nonblocking send/receive of packed ranges,0
+86c0b90,2016-04-26 14:27:47,Remove deprecated classes.,0
+3c55043,2016-04-26 14:29:32,Update Makefile.am's,0
+ee8a380,2016-04-26 14:30:39,Run bootstrap.,0
+4fdd498,2016-04-26 14:40:26,Clean up after removing deprecated headers/src.,0
+cdddbce,2016-05-05 09:38:56,Update NEWS file for 0.9.5 -> 1.0.0 release.,0
+e3c6fbc,2016-05-05 15:00:24,Fix warnings about overloaded virtual functions and hiding.,0
+2d49d37,2016-05-05 15:56:56,Make sure all outputs of adaptivity_ex3 are cleaned.,0
+c4723ae,2016-05-05 16:01:10,Run bootstrap.,0
+6eaacc6,2016-05-06 08:58:34,Update citations.,0
+51162aa,2016-05-06 09:15:38,Update citations.,0
+c9f79cf,2016-05-06 10:05:23,Swap libmesh_final with final to work around issue in Emacs reindent script.,0
+faf2fcb,2016-05-06 10:17:59,Fix a few indentation issues found with Emacs 25.1.50.,0
+6762fe1,2016-05-06 10:25:37,Rework macros to be a bit more specific.,0
+fd5bc7d,2016-05-06 13:16:08,Run reindent script in examples.,0
+cf3baa5,2016-05-06 13:33:11,Merge branch 'indent_script',0
+7864a52,2016-05-06 15:05:54,Put libmesh_version.C in src/base to match header.,0
+dfb2f68,2016-05-06 15:08:03,Update libmesh_SOURCES.,0
+df1fe35,2016-05-06 15:09:34,Run bootstrap.,0
+7f7611f,2016-05-06 15:11:12,Remove unused preprocessor tokens from libmesh_version.h,0
+7c1ffb9,2016-05-06 15:21:59,Add LIBMESH_VERSION_LESS_THAN macro.,0
+c017bdb,2016-05-06 15:38:09,Bump the version of libmesh on master to 1.1.0-pre.,0
+9371bdf,2016-05-06 15:39:35,Run bootstrap.,0
+9947d5c,2016-05-06 20:40:04,Merge pull request #922 from jwpeterson/libmesh_version,0
+e033002,2016-05-09 07:55:40,Update traffic.,0
+6ff5d54,2016-05-09 08:10:39,Update citations.,0
+dc7aad5,2016-05-09 08:26:33,Weaken assertion in non-PETSc solves,0
+628a503,2016-05-10 08:33:00,Update citations.,0
+f53d8f9,2016-05-10 16:05:32,Non-MPI parallel packed_range compatibility,0
+8b242f7,2016-05-10 16:07:06,More assertions in packed_range methods,0
+90c0baa,2016-05-10 16:16:51,Enable Parallel Node/Elem operations without MPI,0
+5d3bb3b,2016-05-10 16:21:08,Fix serialized XDR/XDA writing without MPI,0
+5039b5a,2016-05-10 16:34:03,embedding_matrix is only needed if AMR is enabled,0
+cb8a773,2016-05-10 16:35:18,Tet4::key() is needed even when AMR is disabled,0
+cc6e792,2016-05-10 16:36:14,Fix MeshCommunication in --disable-amr case,0
+c726319,2016-05-10 16:36:38,ErrorVector: Only reset p elevation if AMR is enabled,0
+cee6aa3,2016-05-10 16:37:24,ParallelElem should set p flags iff AMR enabled,0
+f9b5603,2016-05-10 16:38:08,Comment out AMR code when AMR is disabled,0
+15ca1a7,2016-05-10 16:39:15,FEMContext algebraic type OLD is only for AMR,0
+046cbc9,2016-05-10 16:40:17,Better LIBMESH_ENABLE_AMR wrapping of examples,0
+bae518e,2016-05-10 21:07:13,Merge pull request #924 from roystgnr/nompi_fixes,0
+7ec01f7,2016-05-10 21:07:21,Merge pull request #925 from roystgnr/noamr_fixes,0
+9a343a8,2016-05-11 12:12:02,Test linking against CppUnit at configure time,0
+d0e3227,2016-05-11 12:13:07,Re-run bootstrap,0
+2fe9450,2016-05-11 15:24:28,Merge pull request #928 from roystgnr/cppunit_link_test,0
+0ef879c,2016-05-12 12:06:19,Serial->Replicated  Parallel->Distributed comments,0
+f82089c,2016-05-12 12:36:02,Forward declarations use new mesh names,0
+b41bae1,2016-05-12 12:38:11,Rename SerialMesh and ParallelMesh,0
+36cd9b9,2016-05-13 16:04:39,Fix horrible bug in nodal unique_id() reading,0
+b9a8272,2016-05-13 16:15:22,Heavier test coverage of unique_id() reads,0
+541d9e2,2016-05-13 16:36:35,Merge pull request #929 from roystgnr/rename_meshes,0
+4b64ce4,2016-05-14 23:19:02,Merge pull request #930 from roystgnr/fix_unique_id_reads,0
+fa5b68b,2016-05-16 07:52:10,Update traffic.,0
+5539651,2016-05-16 16:57:51,ifdef LIBMESH_ENABLE_PERIODIC in examples,0
+88dd558,2016-05-16 16:58:58,ifdef LIBMESH_HAVE_EXODUS_API in examples,0
+6995afb,2016-05-16 16:59:33,Disable optimization_ex1 when --disable-ghosted,0
+f134b73,2016-05-16 17:00:57,converged_reason() support for Laspack  AztecOO,0
+62f8c7f,2016-05-17 08:29:04,Update citations.,0
+0f5abaf,2016-05-17 08:47:41,ParallelMesh and SerialMesh are structs now.,0
+a04c0c0,2016-05-17 08:52:54,Minor change to configure due to running bootstrap.,0
+2fb11b9,2016-05-17 09:19:19,Run contrib/bin/reindent on source.,0
+778abee,2016-05-17 10:40:47,Add another missing ifdef EXODUS in examples,0
+d034c65,2016-05-17 10:47:34,Another example ifdef EXODUS,0
+172c974,2016-05-17 11:22:05,Use PetscViewerPushFormat() in PetscVector.,0
+50cd25f,2016-05-17 11:54:59,Bugfix for LIBMESH_DIM==2,0
+0cb022e,2016-05-17 12:01:30,Avoid shadowing libMesh::out in Parallel::,0
+0a51ec8,2016-05-17 12:13:28,Use PetscViewerPushFormat() in PetscMatrix.,0
+e39e753,2016-05-17 12:21:20,Merge branch 'petsc_3.7',0
+8d254b8,2016-05-17 13:06:29,Make Serial/ParallelMesh shims classes.,0
+c971b7f,2016-05-17 14:00:19,Make default unique_id size in help string match actual default.,0
+bc619b1,2016-05-17 14:02:20,Run bootstrap.,0
+c72b4f1,2016-05-17 14:27:58,Add hash-of-vector implementation for 16-bit data,0
+06ce5f8,2016-05-18 07:59:34,Merge pull request #932 from roystgnr/barebones_fixes,0
+6e010ed,2016-05-18 08:18:05,Merge pull request #935 from jwpeterson/unique_id_doc,0
+e90f999,2016-05-18 08:18:21,Merge pull request #934 from jwpeterson/struct_class,0
+7b42378,2016-05-18 12:56:14,Fix cache_elem_dims() when LIBMESH_DIM==1,0
+8e94cfb,2016-05-18 12:56:47,Disable examples if Mesh dim > LIBMESH_DIM,0
+630fa6d,2016-05-18 13:24:54,Add sanity check for DirichletBoundaries,0
+0086f3c,2016-05-19 10:10:59,Update Tetgen website.,0
+81b4f6c,2016-05-19 14:58:32,Fixes for --enable-single,0
+09de046,2016-05-19 16:17:17,Add configure test for C++11 std::condition_variable.,0
+32c25cc,2016-05-19 16:18:53,Don't enable Trilinos if we can't support it,0
+72d92d3,2016-05-19 16:20:44,Re-run bootstrap,0
+2b8fd8b,2016-05-19 16:23:55,Run bootstrap.,0
+697ebaf,2016-05-20 08:26:58,Merge pull request #939 from roystgnr/barebones_fixes_2,0
+ab36fd4,2016-05-20 08:28:52,Merge pull request #940 from roystgnr/trilinos_double_only,0
+46ca339,2016-05-20 09:03:53,Merge pull request #936 from pbauman/check-dirichlet-bcids,0
+cf2a1f9,2016-05-20 12:16:28,Compute shape functions of base_fe as well.,0
+8a8df2d,2016-05-20 17:27:07,Added support for ExodusII's TRISHELL3 and SHELL4,0
+e0c164e,2016-05-20 17:27:52,Merge pull request #941 from jwpeterson/cxx11_m4,0
+fdf1428,2016-05-20 17:53:39,Update .mailmap,0
+a300214,2016-05-20 17:54:31,Merge branch 'BalticPinguin/inf_elem_fix',0
+68e9f52,2016-05-20 21:55:24,Clarify BoundaryInfo boundary id set definitions,0
+061bc8a,2016-05-20 21:56:10,Fix Dirichlet ID sanity check on DistributedMesh,0
+338f2d9,2016-05-20 22:00:56,Verify that we have a consistent DirichletBoundary,0
+3d7bd67,2016-05-21 07:00:42,Boundary IDs need to be kept consistent,0
+c4b1dcb,2016-05-22 22:16:00,Fix indentation.,0
+c398c85,2016-05-22 22:22:13,Merge pull request #943 from roystgnr/global_dirichlet_id_check,0
+696b79e,2016-05-22 22:30:01,Update traffic.,0
+2c3df28,2016-05-22 22:36:20,Update LOC count for May 2016.,0
+fc901ec,2016-05-23 10:10:44,get_eigen*() should be indexed by dof_id_type,0
+aaca9eb,2016-05-23 11:07:13,Copy edge boundary conditions in all_first_order(),0
+7d57051,2016-05-23 11:08:14,Added MeshTools::libmesh_assert_valid_boundary_ids,0
+7685652,2016-05-23 11:11:49,Call libmesh_assert_valid_boundary_ids(),0
+e964ad0,2016-05-23 15:12:50,Misc fixes suggested on the original PR.,0
+3a8424a,2016-05-23 15:21:40,Move Tri3Shell to its own header file.,0
+dee224c,2016-05-23 15:25:52,Move Quad4Shell to its own header file.,0
+4310f11,2016-05-23 15:27:13,Include newly-created header files.,0
+b187aec,2016-05-23 15:28:36,Update Makefile.am files.,0
+aef0762,2016-05-23 15:30:06,Run bootstrap.,0
+276da62,2016-05-23 16:13:50,Merge pull request #945 from roystgnr/eigenpair_dof_indexing,0
+7a3b770,2016-05-23 16:31:29,Add QUADSHELL4/TRISHELL3 to various FE switch statements.,0
+ecd2823,2016-05-23 16:37:46,Add QUADSHELL4/TRISHELL3 to quadrature switch statements.,0
+8602fdc,2016-05-23 17:08:41,The 'no_author' commits from cvs2svn were probably created by Ben.,0
+74e222c,2016-05-23 17:12:33,More historic CVS/SVN authorship.,0
+558191e,2016-05-23 17:13:50,Derek made a commit as moosebuild.,0
+1e7e69b,2016-05-24 08:35:19,Update citations.,0
+1c7bb91,2016-05-24 08:55:11,Merge pull request #948 from jwpeterson/shell_elements,0
+5f5d897,2016-05-24 12:45:06,adjoints_ex3 seems to need PETSc to converge,0
+643a311,2016-05-24 12:49:40,Add BoundaryInfo::copy_boundary_ids(),0
+53825fd,2016-05-24 13:48:57,Add --enable-cxx11-required configure option.,0
+7ce7261,2016-05-24 13:53:59,Call C++11 test with the 'mandatory' flag if user passes --enable-cxx11-required.,0
+b619244,2016-05-24 13:56:02,Run bootstrap.,0
+29fc162,2016-05-24 14:17:57,Make sure to define LIBMESH_HAVE_CXX11 on the mandatory branch.,0
+7a7e3c1,2016-05-24 16:07:15,Avoid writing trailing whitespace in XDA files.,0
+10d3028,2016-05-24 21:26:13,Merge pull request #950 from roystgnr/adjoints_ex3_petsc_only,0
+1584446,2016-05-24 21:29:31,Don't try p refinement with floats,0
+583b324,2016-05-25 06:13:35,Merge pull request #952 from roystgnr/single_precision_sucks,0
+27ab179,2016-05-25 06:14:23,Copy shellface boundary ids too,0
+ee90d5c,2016-05-25 08:33:07,Fix multiple statements on single line.,0
+7616fc9,2016-05-25 09:22:02,Fix example compilation with --enable-complex,0
+9b85b6d,2016-05-25 09:23:13,Return a custom error code when C++11 is required and the test fails.,0
+374f961,2016-05-25 10:43:22,Merge pull request #953 from jwpeterson/xda_trailing_whitespace,0
+e46c21b,2016-05-25 12:22:17,Merge pull request #951 from jwpeterson/require_cxx11,0
+6ebb37d,2016-05-25 13:08:18,Fix unused variable warning after changes merged in #948.,0
+3ca1edd,2016-05-25 13:26:13,The const versions of Elem::node_{ptr ref} should return const values.,0
+9595015,2016-05-25 13:43:58,Fixes to trishell3_edge_map and quadshell4_edge_map in ExodusII_IO_helper,0
+a7f46a9,2016-05-25 13:46:03,Merge pull request #954 from roystgnr/complex_misc_ex12_fix,0
+4c9d69d,2016-05-25 14:13:36,Use new Elem interfaces in library and examples.,0
+8b1a730,2016-05-25 14:24:42,Use copy_boundary_ids() in all_*_order(),0
+d1f1bab,2016-05-25 14:49:56,Make copy_boundary_ids API less confusing,0
+f0088a7,2016-05-25 14:50:19,Fix const-correctness issue in MeshRefinement::add_node().,0
+ea44e8a,2016-05-25 15:46:16,"reduced_basis_ex7 is a ""SKIP"" if not converged",0
+178a325,2016-05-25 16:14:30,Handle shellface boundary IDs in ParallelElem,0
+7617e6b,2016-05-25 16:19:24,Shells only have 2 faces,0
+b26f56d,2016-05-25 16:21:06,Force reduced_basis_ex7 to use MUMPS LU,0
+12cf72e,2016-05-26 08:21:54,Merge pull request #955 from roystgnr/reduced_basis_ex7_fix,0
+2b4298a,2016-05-26 08:42:55,Update citations.,0
+7515003,2016-05-26 09:29:58,Fix formatting,0
+aef9aec,2016-05-26 10:14:27,Add Elem::child_ptr() const and non-const versions.,0
+ffc8781,2016-05-26 10:45:40,Add all_first_order option to meshtool (#958),0
+265f448,2016-05-26 11:36:30,using mesh with SHELL4 instead of QUAD4 elements for example misc12 + minor fixes,0
+6a585eb,2016-05-26 12:07:01,Merge pull request #947 from roystgnr/copy_edge_bcids,0
+f41130a,2016-05-26 14:23:09,Merge pull request #959 from dschwen/allfirstorder_958,0
+0fc7125,2016-05-26 15:36:40,Add Elem::neighbor_ptr() const and non-const versions.,0
+8d4504a,2016-05-26 22:13:11,Update to MeshFunction::clone(),0
+55dfa19,2016-05-27 08:48:11,Merge pull request #957 from svallaghe/master,0
+c52f4ed,2016-05-27 09:15:15,Merge pull request #960 from dknez/mesh_function_clone_init,0
+f6719ec,2016-05-27 09:40:20,update PR,0
+9f2b79e,2016-05-27 11:02:17,Use slightly smaller meshes in 3D examples,0
+d8a324e,2016-05-27 11:15:08,reduced_basis_ex5 takes too long with Eigen,0
+048d128,2016-05-27 11:16:08,1000 steps of Krylov should be enough for anybody!,0
+89618c9,2016-05-27 11:17:05,Reduce adaptivity_ex3 max_r_steps for hp cases,0
+195859f,2016-05-27 14:36:21,Add sizeof check for size_t (#962),0
+2008ac4,2016-05-27 14:36:31,Rerun bootstrap (#962),0
+184276d,2016-05-27 14:36:36,Build extra operators only if types differ (#962),0
+ffc14f3,2016-05-27 14:55:47,Fix inconsistent tab/space indentation in Makefile.am.,0
+077d8e4,2016-05-27 16:06:35,Remove overzealous assert from set_p_level(),0
+f54eeaa,2016-05-27 16:14:55,Fix type_to_n_foo maps for new ElemTypes,0
+4af45e2,2016-05-27 17:08:05,Don't forget to remove shellface ids,0
+4fd6253,2016-05-27 17:08:37,Bugfix miscellaneous_ex12 in parallel,0
+594b475,2016-05-27 17:12:10,Merge pull request #961 from roystgnr/speedup_make_check,0
+8bb987e,2016-05-27 21:38:29,Merge pull request #956 from roystgnr/pack_shellface_bcids_2,0
+118e41d,2016-05-27 21:38:50,Merge pull request #963 from roystgnr/overzealous_assert_p_coarsening,0
+c9485be,2016-05-28 00:44:08,Merge pull request #964 from dschwen/sizet_962,0
+09efbbd,2016-05-28 00:55:39,Update citations.,0
+ceb2300,2016-05-28 11:52:34,Print error messages to libMesh::err,0
+b44c6a8,2016-05-28 12:22:32,Prevent segfault when printing out error messages in fe_map.C.,0
+f57d677,2016-05-28 13:14:42,Speed up stitch meshes by avoiding unnecessary PointLocator calls.,0
+d0ebf42,2016-05-28 14:57:52,Merge pull request #967 from dknez/stitch_meshes_optimization,0
+a7bdb88,2016-05-28 23:07:50,Switch while loop to for loop,0
+83aaa4d,2016-05-28 23:46:52,Merge pull request #969 from roystgnr/infinite_loops_are_bad,0
+909784e,2016-05-29 00:23:07,Skip optimization_ex2 when running in parallel,0
+7ff949f,2016-05-29 00:23:27,Don't ignore LIBMESH_RUN in examples,0
+848d3f9,2016-05-29 07:51:54,Merge pull request #966 from dknez/stderr_in_fe_map,0
+0b1ab7d,2016-05-29 20:59:46,Merge pull request #970 from roystgnr/optimization_ex2_running,0
+c99c528,2016-05-29 21:49:24,Remove overzealous asserts in FEMContext,0
+483a357,2016-05-30 15:00:14,Updated XdrIO so that it supports edge and shell-face boundary IDs,0
+aef55ad,2016-05-30 15:35:32,Merge pull request #972 from pbauman/femcontext-asserts,0
+936fb06,2016-05-30 16:41:56,Added unit test for edge boundary IDs  including writing/reading with Xdr,0
+aaa2075,2016-05-30 16:55:36,Renamed exceeds_version_* to version_at_least_* in XdrIO,0
+3130bfa,2016-05-30 17:00:45,Merge pull request #973 from dknez/XdrIO_update,0
+0538a7e,2016-05-31 09:22:53,Update traffic.,0
+76ff877,2016-05-31 09:32:02,Delete trailing whitespace.,0
+201eaa9,2016-05-31 10:43:59,We can't check whether an element is_semilocal() unless it is active().,0
+209742c,2016-05-31 11:01:31,Update citations.,0
+8373228,2016-05-31 13:27:26,Add configure test for std::make_unique().,0
+57eaa6d,2016-05-31 13:33:38,Added convergence enum for KSP_DIVERGED_PCSETUP_FAILED (new in PETSc-3.7).,0
+b93d7ce,2016-05-31 13:45:02,Run bootstrap.,0
+4fc4a88,2016-05-31 14:02:30,Add configure test for C++11 std::make_unique<T> workaround.,0
+9df1aaf,2016-05-31 14:22:42,Add libmesh_make_unique macro for different configurations.,0
+311a6ac,2016-05-31 14:42:22,Trilinos fails to give the right values here,0
+27b0d79,2016-05-31 15:07:38,Don't assert identical bcid orderings,0
+c4d7c9f,2016-05-31 15:23:51,Use processor_id_type for processor ID type,0
+d7b87ad,2016-05-31 15:24:35,Use numeric_index_type for numeric index type,0
+d8311f5,2016-05-31 15:25:42,Use dof_id_type for DoF ID type,0
+f21f505,2016-05-31 15:44:17,Add unit test of new libmesh_make_unique macro.,0
+263e029,2016-05-31 16:29:28,Merge pull request #976 from dknez/convergence_enum_update,0
+059956c,2016-05-31 17:16:44,Build MeshFunction from ReplicatedMesh,0
+001abe2,2016-05-31 17:19:22,Assert shellface BCIDs are consistent,0
+ed591e6,2016-05-31 20:15:44,Merge pull request #946 from roystgnr/assert_valid_boundary,0
+9ef52cf,2016-05-31 20:18:00,Merge pull request #981 from roystgnr/mesh_function_from_replicated,0
+42bf76c,2016-05-31 20:20:46,Merge pull request #979 from roystgnr/reduced_basis_bigids,0
+8343734,2016-05-31 20:20:58,Merge pull request #978 from roystgnr/no_adjoints_ex5_for_trilinos,0
+f138cc0,2016-06-01 07:51:09,Updated change_boundary_id to also change shellfaces.,0
+3038bf5,2016-06-01 08:10:01,Merge pull request #980 from jwpeterson/make_unique,0
+1c6494b,2016-06-01 08:39:23,Update statistics for May 2016.,0
+88e5f6b,2016-06-01 09:15:27,Update citations.,0
+01790e7,2016-06-01 09:43:16,Merge pull request #982 from dknez/change_boundary_id_update,0
+3bc01b1,2016-06-01 09:54:15,Add MeshBase::active_semilocal_elements_begin()/end() accessors.,0
+dc1ffe0,2016-06-01 10:22:35,Remove const from Elem::child_neighbor() returning non-const pointer.,0
+3554842,2016-06-01 13:00:00,Merge pull request #975 from jwpeterson/semilocal_predicate,0
+6741d91,2016-06-01 13:40:53,Merge pull request #984 from dknez/stitch_meshes_shellface,0
+8762ca6,2016-06-01 17:52:43,mesh stitcher needs to copy shellface_boundary_ids,0
+ef5f9c9,2016-06-02 08:10:25,Update citations.,0
+bce61d4,2016-06-02 09:10:22,Fix const-correctness issue in BoundaryInfo.,0
+296730d,2016-06-02 09:57:54,Fix const-correctness issue in InfFE::Base::build_elem().,0
+06f06a3,2016-06-02 10:50:30,Fix const-correctness issue in UnstructuredMesh::all_second_order().,0
+a5c4e60,2016-06-02 11:02:12,Add Elem::side_ptr() const and non-const versions.,0
+4dc6802,2016-06-02 11:04:07,Add Elem::build_{side edge}_ptr() const and non-const versions.,0
+897a7a7,2016-06-02 12:03:29,Merge pull request #933 from roystgnr/assorted_warnings_fixes,0
+7e858c7,2016-06-02 14:50:21,Handle NULL elements in EquationSystems::get_solution().,0
+aeacbf3,2016-06-03 09:14:52,Merge pull request #985 from jwpeterson/get_solution_fix,0
+9f9b402,2016-06-03 09:21:03,Fix spacing issues.,0
+49d4848,2016-06-03 09:24:35,Dereference once.,0
+15bf44e,2016-06-03 09:30:55,Create a data structure to track which variables to output.,0
+af6121a,2016-06-03 12:27:09,Single precision sucks,0
+14de9af,2016-06-03 12:27:53,Skip reduced_basis_ex5 with Trilinos,0
+b9337bc,2016-06-03 13:17:40,Merge pull request #987 from jwpeterson/get_solution_refactor,0
+d8ff1ec,2016-06-03 13:28:17,Add configure test of C++11 noexcept.,0
+66237ae,2016-06-03 13:30:14,Run bootstrap.,0
+b798de5,2016-06-03 13:37:34,Add libmesh_noexcept macro.,0
+34edaea,2016-06-03 13:59:13,Add contains_point specialization for tri3 (#990),0
+4df7415,2016-06-03 14:11:01,Remove object-oriented C from misc_ex7.,0
+4ce44d5,2016-06-03 17:27:36,Small optimization and dealing with degenerate triangles (#990),0
+3393e1a,2016-06-04 12:07:27,Corrected edge boundary asserts in XdrIO.,0
+f674c98,2016-06-04 15:39:22,Merge pull request #986 from jwpeterson/elem_interfaces,0
+574025a,2016-06-04 15:39:40,Merge pull request #989 from jwpeterson/cxx11_noexcept,0
+7774650,2016-06-04 15:41:01,Merge pull request #992 from jwpeterson/misc_ex7,0
+17aa0d1,2016-06-04 16:46:59,Merge pull request #988 from roystgnr/examples_requires,0
+bbd9490,2016-06-04 16:55:44,Small optimization in Hex8::volume().,0
+d5ad2c7,2016-06-05 12:44:47,Report the error ID in RBConstruction::check_convergence().,0
+57c3168,2016-06-05 14:44:17,Update traffic.,0
+292628d,2016-06-05 18:20:13,Add TypeVector::cross_norm() and cross_norm_sq().,0
+927e1c1,2016-06-05 18:23:31,Use cross_norm() in various 2D Elem::volume() implementations.,0
+b011753,2016-06-05 19:53:06,Various optimizations in Tri6::volume().,0
+4b7780c,2016-06-06 08:59:30,Merge pull request #995 from jwpeterson/volume_opt,0
+b6371b4,2016-06-06 11:07:17,Add unit test (#990),0
+f3f3317,2016-06-06 11:12:56,Rerun bootstrap (#990),0
+afdba0f,2016-06-06 12:47:57,GCC 5.2.0 warned that is_eof might be used uninitialized.,0
+87c4e34,2016-06-06 12:51:22,GCC 5.2.0 warned that normalize_rb_bound_in_greedy_in was used uninitialized.,0
+a1e89b8,2016-06-06 13:37:36,Add specialization of Elem::contains_point() for Tet4.,0
+453bc83,2016-06-06 14:05:15,Add unit test of new contains_point() routine.,0
+a01c98a,2016-06-06 14:43:21,Merge pull request #993 from dschwen/contains_990,0
+0c50790,2016-06-06 16:57:11,Add TypeTensor::solve().,0
+7334cf1,2016-06-06 17:09:00,Replace inverse/multiply with solve() call in FE::inverse_map().,0
+0c724b0,2016-06-06 17:13:47,Merge pull request #996 from jwpeterson/tet4_contains_point,0
+26f08a5,2016-06-06 17:16:44,Replace inverse/multiply with solve() call in Tet4::contains_point().,0
+ecbc165,2016-06-06 18:52:52,Throw an error in SolverConfiguration::respond_to_solve_failure,0
+ae81844,2016-06-06 19:51:10,Merge pull request #997 from jwpeterson/tt_solve,0
+85759fd,2016-06-08 13:36:57,Dirichlet BC for shellface boundaries,0
+e504394,2016-06-08 14:38:37,removing C++11 syntax,0
+872d411,2016-06-08 16:17:28,Add missing rehash call (#998),0
+51371ae,2016-06-08 22:22:41,Merge pull request #999 from svallaghe/master,0
+4c4137e,2016-06-08 23:20:12,Rename cache dir for derivatives (#998),0
+9ce9148,2016-06-08 23:43:27,Add unit test for auto optimization (#998),0
+4601aa9,2016-06-09 15:12:25,Added a unit test for shellface constraints.,0
+7fb002f,2016-06-09 17:11:18,Merge pull request #1001 from dknez/shellface_constraints_test,0
+88352ad,2016-06-09 22:34:58,Fix test for --enable-parmesh case,0
+e9dc085,2016-06-09 22:35:15,Fix test for --enable-singleprecision case,0
+ffa22d5,2016-06-09 23:14:36,Use lower tolerance testing single-precision SVD,0
+ab37d67,2016-06-10 23:38:08,Merge pull request #1002 from roystgnr/test_fixes,0
+a8f3436,2016-06-13 09:39:16,Merge pull request #1000 from dschwen/adbug_998,0
+0b73942,2016-06-13 10:59:39,Update traffic.,0
+860c103,2016-06-13 12:18:22,Call elem->centroid() instead of computing it manually.,0
+e13e53a,2016-06-13 12:28:06,Can't use C++11 std::iota  can use Utility::iota().,0
+b56a71e,2016-06-15 08:27:14,Update citations.,0
+3898051,2016-06-20 09:15:14,Update traffic.,0
+92beb28,2016-06-20 12:29:20,Update citations.,0
+e0f3925,2016-06-21 08:39:44,Update citations.,0
+73f974d,2016-06-21 16:13:00,Adding configure tests for Boost Move's unique_ptr,0
+25c1de1,2016-06-21 16:20:38,Pass $BOOST_CPPFLAGS when compiling test program.,0
+df0f15b,2016-06-21 16:22:37,Run bootstrap.,0
+6f0dd03,2016-06-21 16:38:18,*Really* fix the shell boundary test,0
+733bc8f,2016-06-21 16:44:38,Silence clang warnings.,0
+eb8786d,2016-06-21 16:51:55,Fix small issue with Boost 1.57 unique_ptr,0
+c9e2f2e,2016-06-21 17:06:48,Fix type mismatch pointed out by Boost 1.57 compiler in adjoints_ex3.,0
+f781f23,2016-06-22 08:28:59,Fix related type mismatch in fem_system_ex3.,0
+c3958bf,2016-06-22 08:32:21,Fix documentation for TypeVector::operator==,0
+7e6e789,2016-06-22 08:37:32,Move loop variale declaration out one more layer.,0
+79d6576,2016-06-22 08:44:33,Merge pull request #1005 from boyceg/fix_unique_ptr,0
+64ad187,2016-06-22 08:46:35,Merge pull request #1007 from pbauman/fix-typevec-docs,0
+3f4c52c,2016-06-22 08:48:56,Merge branch 'fix_unique_ptr',0
+4210108,2016-06-22 13:20:50,Handle a DistributedMesh problem in test,0
+1a1ebf1,2016-06-22 14:23:38,Old BoundaryInfo test now DistributedMesh-friendly,0
+f92f487,2016-06-22 14:42:32,Modify Elems *before* we might delete them,0
+71c2b44,2016-06-22 16:38:09,Merge pull request #1006 from roystgnr/better_parmesh_test_fix,0
+69210f1,2016-06-22 16:55:22,Merge pull request #879 from friedmud/nonblocking_packed_range,0
+efdff82,2016-06-23 08:50:38,Tweak documentation a bit more.,0
+75f3a54,2016-06-24 21:10:17,fix detection of vtk 6.0,0
+bbe9e74,2016-06-27 08:42:30,Update traffic.,0
+5e00851,2016-06-27 09:06:07,Merge pull request #1010 from andreasbuhr/fix_vtk_6,0
+ec45361,2016-06-27 14:12:21,changed default values to be more physical and added a warning.,0
+e257f1a,2016-06-27 18:28:37,Modify point locator to locate points on faces belonging to multiple elements (#1011),0
+8e70531,2016-06-27 18:30:08,Add methods to evaluate multivalued mesh functions at points  e.g. discontinuous FEM on faces (#1011),0
+d61bdde,2016-06-28 10:01:07,Added missing TRISHELL3 cases in FE classes.,0
+5619b65,2016-06-28 10:21:32,Update citations.,0
+0a31cf5,2016-06-28 11:15:21,Update LOC count for June 2016.,0
+914472d,2016-06-29 02:12:08,Add test for discontinuous value of mesh function at faces (#1011),0
+df72c99,2016-06-29 09:40:44,Fixes in ignore/restore_warnings.h,0
+43ac7cc,2016-06-29 09:41:15,Ignore deprecated-declarations warnings from CPPUnit macros.,0
+8fc6bbd,2016-06-29 11:24:54,Merge pull request #1013 from jwpeterson/rm_deprecated,0
+3924549,2016-06-29 14:31:07,Merge pull request #1014 from jwpeterson/deprecated_declarations,0
+6a7f28b,2016-06-29 14:38:22,Update boost subset from 1.55 to 1.61.,0
+f02810a,2016-06-29 14:46:50,Update the list of boost headers to install.,0
+dcfce20,2016-06-29 14:53:42,Update test_boost.cc for boost >= 1.57.,0
+4f286fe,2016-06-29 15:02:23,We no longer use the boost_copy.sh script.,0
+fc98a13,2016-06-29 15:08:59,Update the README instructions for building Boost.,0
+a9cebf4,2016-06-29 15:15:15,Run bootstrap.,0
+5008976,2016-06-29 15:18:47,Bump the minimum required version of boost for libmesh.,0
+c0a9224,2016-06-30 08:51:28,Update citations.,0
+c481ebd,2016-06-30 08:56:23,Merge pull request #1015 from jwpeterson/boost_update,0
+cd9dacc,2016-06-30 12:43:46,Only do asserts if variables are available.,0
+f40a283,2016-06-30 12:45:14,Merge branch 'better_defaults',0
+cef6e67,2016-06-30 14:40:23,Ignore warnings from clang about variadic macros.,0
+27dca2c,2016-06-30 14:41:07,inserted check for second derivatives to account for respective option.,0
+aac88bf,2016-06-30 14:51:14,Fix warning coming from METIS header file via PETSc.,0
+4d806b4,2016-06-30 14:59:09,Merge branch 'fix_warning',0
+630889b,2016-06-30 15:16:23,Merge pull request #1012 from snschune/mesh_function_disc_1011,0
+6ed2665,2016-06-30 16:11:35,Add versions of System::point_{value gradient hessian}() taking an Elem *.,0
+b867d24,2016-06-30 16:23:43,Add discontinuous_gradient and tests (#1011),0
+43337c3,2016-06-30 16:30:21,added check to have infinite elements.,0
+56d54eb,2016-06-30 22:38:57,"Reduced Basis change: Removed ""extra"" interpolation data from EIM.",0
+250baf8,2016-07-01 09:04:31,Merge pull request #1018 from jwpeterson/point_value,0
+9e5547a,2016-07-01 13:23:29,Merge pull request #1019 from dknez/EIM_simplification,0
+ead2942,2016-07-01 23:49:08,Reduced Basis change: Add a mesh function tolerance in RBEIMConstruction.,0
+4b328a1,2016-07-05 09:04:22,Update citations.,0
+95070ab,2016-07-05 09:32:01,Update traffic.,0
+8aed402,2016-07-05 09:34:59,Update statistics for June 2016.,0
+d76ae2e,2016-07-05 10:06:03,Remove deprecated statistics plots.,0
+e0f5909,2016-07-05 10:15:39,Regenerate statistics PDFs.,0
+a58bb96,2016-07-05 10:16:07,Merge branch 'update_statistics',0
+896268d,2016-07-05 10:37:41,Fix type in NetCDF4 source.,0
+9905983,2016-07-05 12:48:20,Merge pull request #1020 from jwpeterson/netcdf4_fix,0
+a433f75,2016-07-06 09:18:37,Ignore CPPUnit warnings from new unit test.,0
+f91b0d9,2016-07-08 12:43:30,distcheck cleanup fix,0
+3180a15,2016-07-08 13:13:40,Got DenseMatrix SVD working with --enable-complex and updated unit test.,0
+c9ec3c4,2016-07-08 17:10:40,Merge pull request #1021 from dknez/svd_complex,0
+6d55dd6,2016-07-11 08:53:58,Update traffic.,0
+b25f261,2016-07-14 09:41:18,Update citations.,0
+2492289,2016-07-14 12:27:27,Update .mailmap.,0
+e8fd5a0,2016-07-14 13:10:00,Merge pull request #1025 from juan42/patch-1,0
+24a63d7,2016-07-14 16:46:28,SNESSetFromOptions already calls KSPSetFromOptions.,0
+488543c,2016-07-14 20:05:03,Fix typo in example,0
+73d8d23,2016-07-15 14:32:03,Merge pull request #1026 from jwpeterson/petsc_set_from_options,0
+9052141,2016-07-17 13:04:10,Add --ldflags to instructions for building libmesh apps by hand.,0
+41c5926,2016-07-17 13:13:37,Update traffic.,0
+d2d11b0,2016-07-18 16:56:06,Fix #if/#ifdef bug.,0
+ae45822,2016-07-18 16:56:56,Call libmesh_convergence_failure() from TypeTensor::solve inverse().,0
+6762318,2016-07-18 17:47:16,Handle exception thrown from TypeTensor::solve in FE::inverse_map().,0
+52610b1,2016-07-19 08:06:29,Merge pull request #1029 from jwpeterson/fix_braindamage,0
+fca1799,2016-07-19 09:15:05,Handle degenerate case in Tet4::contains_point().,0
+955da8c,2016-07-19 10:02:48,Fix unused variable warnings.,0
+ce063db,2016-07-19 10:42:17,Remove deprecated BoundaryInfo::boundary_id() call in build_cube().,0
+0431ff7,2016-07-19 11:09:47,Remove deprecated boundary_id() call from meshbcid.C,0
+c7a630f,2016-07-19 12:32:08,Remove deprecated BoundaryInfo::boundary_id() call from MeshTools::all_subdivision().,0
+45d85ee,2016-07-19 14:52:10,Fix unused variable warnings in examples.,0
+ef95619,2016-07-19 15:15:16,Fix unused variable warnings in ElemCutter.,0
+bf1ef23,2016-07-19 15:35:56,Ignore deprecated-declarations warnings from misc_ex12.,0
+5da77e8,2016-07-19 15:39:33,Ignore deprecated-declarations warnings from Laspack unit test.,0
+0791423,2016-07-19 16:21:43,Remove PointLocatorList.,0
+02e5439,2016-07-19 16:27:20,Update Makefile.ams.,0
+19bce48,2016-07-19 16:28:43,Run bootstrap.,0
+e29c1e5,2016-07-19 21:06:57,Stop GCC 6.1 screaming like a banshee,0
+c3e9b99,2016-07-19 21:12:28,Merge pull request #1030 from jwpeterson/solve_except,0
+06fe812,2016-07-19 21:36:54,Document BoundaryInfo behavior on DistributedMesh,0
+3e861fd,2016-07-20 08:45:06,Fix more unused variable warnings in examples.,0
+b5ea7ec,2016-07-20 11:50:51,Merge pull request #1033 from jwpeterson/rm_point_locator_list,0
+eb03b2d,2016-07-20 11:58:49,Merge pull request #1032 from roystgnr/better_boundary_info_documentation,0
+4733b60,2016-07-20 12:29:54,Merge pull request #1031 from roystgnr/cant_disable_pedantic,0
+b5a2d88,2016-07-20 15:09:16,Fixes for --disable-exceptions.,0
+5755ce4,2016-07-20 16:16:45,Add libmesh_try/catch macros.,0
+dcbdbb2,2016-07-21 08:18:52,Merge pull request #1035 from jwpeterson/disable_except,0
+8dc842f,2016-07-21 10:39:19,Fix Hypre check in petsc.m4.,0
+6c46645,2016-07-21 14:02:43,Merge pull request #1036 from jwpeterson/hypre_lib,0
+6727728,2016-07-22 11:58:40,Don't WRITE_PARALLEL_FILES xdr unless requested,0
+af49932,2016-07-25 07:52:47,Update traffic.,0
+3159040,2016-07-25 08:03:25,Update citations.,0
+6021c17,2016-07-26 08:22:22,Update citations.,0
+7e91f3f,2016-07-26 08:30:49,Use consistent type in ErrorEstimator::reduce_error().,0
+cf2278a,2016-07-26 08:34:57,Use n_active_elem when flagging by elem fraction.,0
+793886d,2016-07-26 16:19:06,Merge pull request #1040 from jwpeterson/junchao_zhang,0
+d1d0042,2016-07-27 19:11:44,Merge pull request #1038 from roystgnr/avoid_parallel_xdr,0
+26629b3,2016-07-29 00:18:15,Update to how we use _use_close_to_point_tol in PointLocatorTree.,0
+1646f38,2016-07-29 07:41:04,Merge pull request #1041 from dknez/out_of_mesh_mode_change,0
+a1bc9c7,2016-07-29 14:16:13,Update citations.,0
+d9914a8,2016-07-30 17:44:16,Bug fix in complex-valued version of DenseMatrix<T>::_svd_helper.,0
+dbfd604,2016-07-30 20:31:00,Merge pull request #1044 from dknez/complex_svd_fix,0
+834b85a,2016-08-01 07:47:22,Update traffic.,0
+e94cb02,2016-08-01 08:34:22,Fix missing variable name when SLEPc is enabled.,0
+2a846fb,2016-08-01 08:48:27,Ignore unused variable warnings from SLEPc.,0
+e766d90,2016-08-01 08:58:27,Ignore macro-redefined warnings from clang.,0
+e1814ed,2016-08-01 09:10:49,Guard Trilinos headers with ignore/restore warnings.,0
+fe99fcc,2016-08-01 10:52:51,Ignore more classes of warnings.,0
+db2df71,2016-08-01 13:03:48,Merge pull request #1045 from jwpeterson/fix_warnings,0
+d13918b,2016-08-02 11:25:49,Adding GhostingFunctor base class,0
+d271fda,2016-08-02 12:17:54,Link and redistribute ghosting_functor.h,0
+3da3ef8,2016-08-02 13:56:07,Keep a set of GhostingFunctors in MeshBase,0
+235aa16,2016-08-02 14:57:02,GhostingFunctor::redistribute() in Mesh redist(),0
+7d09139,2016-08-02 16:38:11,Weaken remote_elem neighbor assertion,0
+e9b5ed5,2016-08-02 16:44:11,Weaken remote_elem children tests,0
+8a3b25c,2016-08-02 17:06:21,Inactive local elements may have remote neighbors,0
+cc5baf2,2016-08-02 17:40:39,Don't compute constraints next to remote_elem,0
+30a4361,2016-08-03 09:16:31,Add active_unpartitioned_elements iterators,0
+8b5d4ee,2016-08-03 09:17:29,Refactor ghosting policy,0
+da62a4c,2016-08-03 10:37:07,Add some tests for manual indexing of dof indices,0
+112f642,2016-08-03 12:27:02,Updates to systems_of_equations_ex8.,0
+21ef197,2016-08-03 13:22:40,New ghosting when redistributing Mesh,0
+c8d0bfe,2016-08-03 13:23:27,Check ghosting_functors during redistribute(),0
+092186b,2016-08-03 15:16:38,Merge pull request #1051 from dknez/systems_of_equations_ex8,0
+24af230,2016-08-03 16:11:58,Merge pull request #1052 from roystgnr/reduce_overghosting,0
+a9b01f6,2016-08-03 16:55:23,query_ghosting_functors for redistribute+delete,0
+3ac5d38,2016-08-03 17:43:29,Warn of future API changes,0
+5606beb,2016-08-03 17:43:58,Add GhostPointNeighbors class,0
+d022f21,2016-08-03 17:47:30,include set header,0
+28774c8,2016-08-03 17:51:35,Compile GhostPointNeighbors code,0
+1961d15,2016-08-04 08:28:02,Merge pull request #1049 from friedmud/dof_reorder,0
+eca4e2e,2016-08-04 08:34:13,Run contrib/bin/reindent.sh on src.,0
+6900d1c,2016-08-04 08:38:11,Make reindent.sh work on multiple files.,0
+282eda6,2016-08-04 09:14:22,Run contrib/bin/reindent on include.,0
+28c9c6d,2016-08-04 09:42:50,Run contrib/bin/reindent on examples.,0
+a2e055a,2016-08-04 10:08:41,Merge branch 'reindent',0
+c439a31,2016-08-04 10:12:19,Fixup dof indices test,0
+8406aac,2016-08-04 10:24:39,Merge remote-tracking branch 'friedmud/dof_reorder',0
+0ef76b2,2016-08-04 12:24:40,Add get_array() capability to PetscVector closes #1050,0
+d6484f3,2016-08-04 13:43:35,Build default GhostingFunctor in MeshBase,0
+3a4d008,2016-08-04 14:54:42,connect_families *after* ghosting functors,0
+55abfe6,2016-08-04 15:15:25,Use ghosting_functors alone for MeshCommunication,0
+1ff3ff5,2016-08-04 16:39:40,Inform ghosting_functors of delete_remote_elements,0
+a68a631,2016-08-05 15:52:34,Merge pull request #1057 from roystgnr/ghosting_functors,0
+00bf409,2016-08-06 11:58:04,Add coupling+algebraic ghosting functors to DofMap,0
+d87767d,2016-08-08 09:53:15,Update traffic.,0
+e93e9bb,2016-08-09 14:11:23,Set _initialize flag to false on clear(),0
+0ec8c7f,2016-08-10 08:55:21,Merge pull request #1060 from dschwen/point_locator_initialized,0
+83c7712,2016-08-10 09:01:45,Update statistics for July 2016.,0
+31fc07b,2016-08-10 11:01:16,DenseMatrix::_evd_lapack() can use simpler dgeev() instead of dgeevx().,0
+ac17843,2016-08-10 11:13:06,Merge pull request #1056 from friedmud/petsc_vector_array,0
+46e6501,2016-08-10 11:31:48,Add unit tests of 3x3 eigenvalue calculations.,0
+867241f,2016-08-10 13:23:28,Quiet down a noisy DofObject unit test.,0
+0550c4e,2016-08-10 16:51:56,Merge pull request #1061 from jwpeterson/evd,0
+58ca287,2016-08-11 08:50:22,Update citations.,0
+ae0b9c0,2016-08-11 11:25:43,Move SparsityPattern code to sparsity_pattern.C,0
+0d50454,2016-08-11 13:35:49,Give coupling functors to SparsityPattern::Build,0
+4cbe9a5,2016-08-11 14:14:27,Implementing wrappers for MPI_Scatter operations,0
+6674810,2016-08-12 14:02:53,Add DenseMatrix routines to compute left and right eigenvectors.,0
+1e205eb,2016-08-12 14:08:24,Add unit test verifying left and right eigenvector calculation.,0
+2668f9e,2016-08-13 10:46:27,We need const iterators for ghosting functors,0
+073e6d7,2016-08-13 10:47:17,CouplingMatrix::operator&=,0
+53f6424,2016-08-13 10:49:33,SparsityPattern::Build with user coupling functors,0
+b2ac23c,2016-08-13 15:47:24,Add DefaultCoupling subclass of GhostingFunctor,0
+b74dc20,2016-08-13 15:59:48,Build DefaultCoupling code,0
+bea14d5,2016-08-13 16:21:07,Re-run autotools,0
+0a8b9ff,2016-08-14 12:15:27,DefaultCoupling needs setters  but not a mesh,0
+5d60180,2016-08-14 12:16:11,Add and use DefaultCoupling in DofMap,0
+89d06ac,2016-08-15 08:46:29,Merge pull request #1063 from jwpeterson/evd_vectors,0
+42b772c,2016-08-15 08:47:11,Merge pull request #1062 from permcody/MPI_scatter,0
+ecc97b4,2016-08-15 08:52:15,Update traffic.,0
+fa43701,2016-08-15 09:00:44,Update citations.,0
+d8545c4,2016-08-15 10:30:04,Add --enable-petsc-required configure option.,0
+03263e7,2016-08-15 10:31:50,Run bootstrap.,0
+a05ec34,2016-08-15 11:32:46,Merge pull request #1065 from jwpeterson/enable_petsc_required,0
+5eefd2e,2016-08-15 11:42:39,Change add/remove_ghosting/coupling_functor APIs,0
+dfcda4f,2016-08-15 12:22:53,Bugfix for #1063,0
+a24df96,2016-08-15 16:37:16,Store MeshBase& in DofMap,0
+f52ae7c,2016-08-15 17:09:50,Unset _dof_coupling in DofMap::clear(),0
+870fa44,2016-08-15 17:10:29,Reset ghosting functor status in DofMap::clear(),0
+693fcfc,2016-08-15 17:11:03,Add default coupling functor to DofMap,0
+c7e0e5e,2016-08-15 22:44:01,Remove now-redundant coupling code,0
+dfef43d,2016-08-16 11:51:47,Handle empty vectors more elegantly,0
+28e9c08,2016-08-16 15:22:50,Update bundled Eigen from 3.2.5 to 3.2.9.,0
+b9471d3,2016-08-17 08:33:17,Merge pull request #1066 from jwpeterson/update_eigen,0
+48898f9,2016-08-17 15:50:24,Never return remote_elem from DefaultCoupling,0
+c762f7a,2016-08-17 15:52:08,We should never be asked to ghost remote_elem,0
+364a3c4,2016-08-19 13:45:11,Add vector of vector scatter implementation Add unit tests,0
+8104ebc,2016-08-22 08:35:44,Update traffic.,0
+fb38dae,2016-08-22 08:46:19,Update citations.,0
+cfdf2f7,2016-08-22 12:15:37,Don't get family trees of remote_elem,0
+cab76ad,2016-08-22 12:16:58,Don't try to remove ghosting functors we don't have,0
+f8d9b02,2016-08-22 12:29:37,Handle remote_elem neighbors higher up,0
+67d86aa,2016-08-22 12:34:38,Factor out handle_vi_vj,0
+f36c301,2016-08-23 14:00:40,Merge pull request #1067 from permcody/issue_1062,0
+ffc2022,2016-08-23 14:25:24,Add merge_ghost_functor_outputs helper,0
+04728c6,2016-08-23 14:26:31,Add DofMap ghosting functor results to send_list,0
+640e04d,2016-08-23 14:37:41,Use merging helper function in SparsityPattern,0
+dc339c1,2016-08-23 14:59:47,Add unit tests for Euler(2)Solver,0
+d3f083b,2016-08-24 09:26:53,Add NewmarkSolver unit test,0
+767cd03,2016-08-24 09:28:04,Add new tests to build system,0
+9d2f18e,2016-08-24 09:32:17,bootstrap,0
+fe32f8b,2016-08-24 09:50:26,Only call elem_fe_reinit in elem_reinit if there's mesh motion,0
+45744d0,2016-08-24 09:58:13,Add initial reinit_func(1.) call in Euler2Solver,0
+0b40def,2016-08-24 10:01:44,Add Euler2Solver unit test for second order,0
+13f6fcb,2016-08-24 10:25:19,Add NewmarkSolver setters for beta  gamma,0
+48ecc26,2016-08-24 10:26:11,Add reinit_func to NewmarkSolver  call in residual,0
+0657125,2016-08-24 10:28:11,Rework NewmarkSolverTest a bit,0
+2dd3138,2016-08-24 10:28:39,Add new NewmarkSolver unit test,0
+a51b5dd,2016-08-24 11:47:02,Merge pull request #1068 from pbauman/scalar-time-solver-test,0
+ee4ad7c,2016-08-24 12:43:49,Don't assume interior_parents() are always part of the same Mesh.,0
+cf98604,2016-08-24 12:59:15,Add iterator typedefs to vectormap.,0
+bdbc506,2016-08-24 13:07:39,Add vectormap::find() const and non-const versions.,0
+d7a5c0b,2016-08-24 13:32:12,Use vectormap::find() to avoid extra lookup.,0
+a89907f,2016-08-24 14:36:53,Make sure that every interior neighbor is actually in the same Mesh.,0
+b1af895,2016-08-24 18:22:09,Remove memory churn in compute_affine_map  improving threading performance,0
+930ced7,2016-08-24 20:50:44,Merge pull request #1071 from jwpeterson/metis_fix,0
+2e18cd8,2016-08-25 11:49:51,Remove atavistic comment,0
+6301341,2016-08-25 11:50:24,PerfLog in DefaultCoupling functor,0
+e4ead07,2016-08-25 11:50:52,Add default algebraic coupling functor to DofMap,0
+2645335,2016-08-25 12:09:41,Update citations.,0
+0879353,2016-08-25 12:32:52,Merge pull request #1072 from friedmud/master,0
+46e29c1,2016-08-25 12:35:38,Remove libmesh_parallel_only() from libMeshInit destructor.,0
+84577d0,2016-08-25 12:54:48,Remove non-functor send_list code for neighbors,0
+d51ffe4,2016-08-25 12:57:01,Simplifly local elements' send_list calculations,0
+cd30c06,2016-08-25 15:15:58,Merge pull request #1074 from jwpeterson/remove_throw,0
+22a9f0b,2016-08-25 15:22:00,Add support for --drop-cerr command line argument.,0
+dd02394,2016-08-25 15:44:01,Fix race condition due to concurrent MPI file writes,0
+17e8803,2016-08-25 16:07:28,Merge pull request #1069 from pbauman/time-solver-fixes,0
+1d44da7,2016-08-25 17:02:49,Merge pull request #1075 from jwpeterson/drop_cerr,0
+8a49ea2,2016-08-25 19:42:10,Better documentation for FEMContext::<elem side edge>_reinit,0
+dda659a,2016-08-25 21:55:39,Merge pull request #1077 from pbauman/femcontext-doc-update,0
+111e82b,2016-08-25 21:56:10,Merge pull request #1076 from dschwen/mpi_ad_cache_race,0
+596820f,2016-08-26 10:33:39,Add BoundaryVolumeSolutionTransfer class.,0
+9294fca,2016-08-26 10:40:38,Update Makefile.am's.,0
+4337505,2016-08-26 10:41:52,Run boostrap.,0
+d651808,2016-08-26 12:52:37,Merge pull request #1078 from jwpeterson/bvst,0
+b74f912,2016-08-26 16:08:30,Remove no-longer-used variable,0
+58850ac,2016-08-26 16:08:47,Add DofMap::is_evaluable(),0
+1f261dc,2016-08-29 08:18:22,Update traffic.,0
+5484a37,2016-08-29 17:08:42,More fine grained ParmetisPartitioner logging,0
+8c6caf3,2016-08-29 17:09:34,Remove or optimize expensive asserts,0
+2f4db00,2016-08-29 17:10:33,GhostingFunctor needs 2 reinit options,0
+3b9f576,2016-08-29 17:15:37,DofMap::*functor APIs need not specify a MeshBase,0
+32bcac7,2016-08-29 17:17:40,Call GhostingFunctor::*reinit() appropriately,0
+3968f59,2016-08-29 17:18:19,Use GhostingFunctor interface in misc ex9,0
+fe89329,2016-08-30 12:41:12,Bugfix for --enable-complex,0
+4c13997,2016-08-30 12:42:20,Removed libmesh_experimental() from RBParameterized.,0
+67bd327,2016-08-31 11:41:48,Handle crack lookup reinit on distributed meshes,0
+039230b,2016-08-31 11:43:14,Reinit crack lookup maps after Mesh redistribute(),0
+8fec741,2016-08-31 11:44:41,misc ex9 Mesh refinement if requested,0
+5b98cbd,2016-08-31 12:37:18,Don't override user refinement settings,0
+ec8f3fb,2016-08-31 14:27:58,Merge pull request #1080 from roystgnr/dont_relimit_refinement,0
+ad9ca43,2016-09-01 15:20:52,connect_children in MeshCommunication,0
+ba3875b,2016-09-01 15:25:26,Update statistics for Aug. 2016.,0
+4c97394,2016-09-01 15:35:54,Add Predicates::evaluable,0
+056c682,2016-09-01 15:36:59,Add Evaluable multi_predicate,0
+4dd4ac0,2016-09-01 15:37:34,Add evaluable_elements_begin()/end(),0
+c8bf64f,2016-09-01 15:39:45,Update citations.,0
+c5f1ee1,2016-09-02 07:51:32,Merge pull request #1081 from roystgnr/connect_children,0
+5c16ded,2016-09-02 09:41:29,Make new TimeSolver tests work on >1 processor,0
+5d00341,2016-09-02 09:42:05,Fix loop range bug in new testScatter,0
+0f9c158,2016-09-02 09:55:19,Add SiblingCoupling functor class,0
+86c0dbc,2016-09-02 09:56:06,Tell autotools about SiblingCoupling source,0
+4b6e66c,2016-09-02 09:56:28,Re-run autoreconf,0
+34d02be,2016-09-02 10:18:57,Use SiblingCoupling with adaptive HP,0
+1bf9f54,2016-09-02 10:21:47,Merge pull request #1082 from roystgnr/fix_tests,0
+74e4a15,2016-09-02 12:50:49,Allow DefaultCoupling to handle PeriodicBoundaries,0
+d818a49,2016-09-02 16:29:38,Do ghosting functor reinit after Mesh contract(),0
+ed63f16,2016-09-02 16:31:54,has_topological_neighbor only needs const PBCs,0
+d4b0569,2016-09-02 16:32:40,Wrap an if(foo) assert() in NDEBUG,0
+0bf9a23,2016-09-02 16:33:46,Elem::active_family_tree_by_topological_neighbor,0
+b8b1350,2016-09-02 16:35:08,Clear invalidated point locators everywhere,0
+087064d,2016-09-02 16:36:41,clear_point_locator before GF::mesh_reinit(),0
+b83d88e,2016-09-02 16:38:46,DefaultCoupling::delete_remote_elements,0
+72165d4,2016-09-02 16:41:27,Use active_family_tree_by_topological_neighbor,0
+d89e9d3,2016-09-02 16:42:55,Clarify comments,0
+2366405,2016-09-02 16:43:10,check_periodic_bcs bool for efficiency,0
+825f0c9,2016-09-02 16:44:12,Set mesh  periodic_boundaries for default functors,0
+630e5e6,2016-09-04 16:24:18,Use write_discontinuous_exodusII to plot stress in systems_of_equations_ex6,0
+9ce7da7,2016-09-06 08:30:39,Update LOC count for September 2016.,0
+ec39897,2016-09-06 08:36:21,Update traffic.,0
+24ec220,2016-09-06 10:15:07,Updated stress plotting in systems_of_equations_ex6.,0
+df987f2,2016-09-06 15:09:55,complemented FEInterface::map to handle infinite elements as well,0
+d057c32,2016-09-06 16:16:50,Delete trailing whitespace  fix formatting.,0
+2fe22cf,2016-09-06 16:23:31,Merge branch 'ifem_map',0
+e608931,2016-09-06 16:26:56,Remove single tab that snuck in to parallel_implementation.h,0
+d1d9fa0,2016-09-07 08:40:27,Use non-deprecated Point::norm().,0
+b17f58f,2016-09-07 10:36:57,Fix several more deprecated Point::size() calls.,0
+c4d03e6d,2016-09-08 09:37:39,Make Abaqus reader more robust to different spacing schemes.,0
+1ee0388,2016-09-09 08:18:52,Save a few lines by removing unnecessary switch statement.,0
+60b9177,2016-09-09 08:21:21,Clean up unnecessary whitespace.,0
+e241f2a,2016-09-09 08:23:09,Use C++ style comments.,0
+de9055e,2016-09-09 08:25:18,Delete unnecessary curly braces.,0
+32b58b6,2016-09-09 08:27:27,Use libmesh_warning() macro.,0
+07726ce,2016-09-09 08:29:26,std::abs() already does the right thing for floats.,0
+1377fb2,2016-09-09 08:30:59,Merge branch 'ifem_delete_interp',0
+831ff86,2016-09-09 10:00:00,Elem::topological_neighbor improvements,0
+ce67b9d,2016-09-09 11:53:43,removed the interpolated parameter form InfFE::inverse_map() and the interpolation scheme therein.,0
+8fd97d0,2016-09-09 15:51:19,Added flagged predicate,0
+d698ff2,2016-09-09 15:51:38,Add Flagged multi_predicate,0
+e036542,2016-09-09 15:52:04,Add MeshBase::flagged_elements_begin()/end(),0
+623a41d,2016-09-12 08:04:16,Update citations.,0
+94969cf,2016-09-12 08:31:06,Update traffic.,0
+85eab11,2016-09-12 08:44:34,Fix some remaining uses of deprecated Point::size() in ifem code.,0
+a06e5b7,2016-09-12 10:43:17,Fix deprecated use of Point::size() in examples.,0
+d56fd5d,2016-09-12 10:52:31,Remove variables which are now unused after updating algorithm.,0
+798f4e5,2016-09-12 11:01:41,Merge branch 'ifem_point_size',0
+827bac3,2016-09-12 13:30:49,Only call ex_update() on files opened for writing.,0
+e9b5f3e,2016-09-12 15:37:04,libmesh_assert() the result of verify() calls,0
+98827a6,2016-09-12 15:55:31,Use proper MPI type for 'unsigned long long' for MPI >= 2.0.,0
+b7bc03e,2016-09-12 16:37:28,Merge pull request #1089 from roystgnr/assert_verify,0
+f12d0c3,2016-09-12 21:23:26,Merge pull request #1090 from jwpeterson/nemesis_fix,0
+928dcba,2016-09-13 09:22:11,Update citations.,0
+b39081c,2016-09-13 11:35:38,pack_range should stop just *after* buffer_size,0
+4220b99,2016-09-13 12:45:28,Add gather and allgather string overloads,0
+0eacbb1,2016-09-13 14:35:18,Add unit tests for gather/allgather string overloads,0
+5d26547,2016-09-13 14:42:41,Add identical_buffer_sizes code path,0
+8fa6d56,2016-09-13 14:46:02,Merge pull request #1091 from roystgnr/pack_big_objects,0
+ecf0bec,2016-09-13 15:32:36,Pass send buffer by const reference,0
+0cfee4c,2016-09-13 16:15:22,Don't call ne_get_node_cmap() if there is nothing to get.,0
+5beeb8e,2016-09-14 05:55:01,Merge pull request #1093 from jwpeterson/nemesis_fix2,0
+763c970,2016-09-14 08:53:17,Merge pull request #1092 from dschwen/allgather_string_buffers,0
+66f311a,2016-09-14 08:54:27,VTKIO isn't perfect  but I wouldn't consider it libmesh_experimental().,0
+d74a456,2016-09-14 10:37:02,Fix logic bug in ParameterVector::clear().,0
+548240b,2016-09-14 14:21:09,Avoid false MeshRefinement libmesh_deprecated(),0
+9551390,2016-09-14 15:06:05,Avoid deprecated API in comment too,0
+d311344,2016-09-14 15:06:45,Remove deprecated make_foo_compatible() argument,0
+fafe337,2016-09-14 15:23:36,Avoid deprecated code in adjoints_ex2.,0
+640da95,2016-09-14 15:28:19,assertion for the MPI1-with-32-bit-long case,0
+4ac71d1,2016-09-14 16:22:30,Merge pull request #1096 from jwpeterson/rm_deprecated,0
+372c62e,2016-09-14 16:56:25,Merge pull request #1097 from roystgnr/avoid_false_deprecation_warning,0
+f6357ad,2016-09-14 16:57:40,Declare TransientEigenSystem,0
+bceb9f9,2016-09-15 08:35:53,Use #ifdef for consistency elsewhere in the library.,0
+337fa42,2016-09-15 08:36:43,Merge branch 'libmesh_eigen',0
+e388a03,2016-09-15 08:58:39,Miscellaneous fixes/updates in Nemesis_IO_Helper.,0
+a3582a2,2016-09-15 11:23:17,Merge pull request #1099 from jwpeterson/try_again,0
+0af2bfc,2016-09-15 12:43:25,In verbose mode  write out sideset names to be sure we read them correctly.,0
+d2b366a,2016-09-15 12:50:39,Add verbose print out of sideset names.,0
+248c7ab,2016-09-15 13:12:00,Print current sideset name while iterating over global sideset ids.,0
+9425e7e,2016-09-15 13:22:21,Write sideset names while writing Nemesis files.,0
+4d3d7c8,2016-09-15 13:41:18,Add code to write nodeset ids from Nemesis.,0
+0fb9f20,2016-09-15 14:10:25,Merge pull request #1101 from jwpeterson/nemesis_fix3,0
+5d5e9d4,2016-09-15 14:23:13,Merge pull request #1098 from roystgnr/mpi1_ulonglong_assert,0
+7c6277d,2016-09-15 14:29:58,Write Mesh block names to file from Nemesis.,0
+f78c561,2016-09-15 16:43:00,Merge pull request #1102 from jwpeterson/nemesis_fix4,0
+ae60f36,2016-09-19 08:40:54,Update traffic.,0
+29b7ab4,2016-09-19 08:58:03,Update citations.,0
+9acb1cc,2016-09-22 09:24:58,Add FlaggedPID multipredicate,0
+59d0f00,2016-09-22 09:25:38,MeshBase::flagged_pid_elements_begin()/end(),0
+b39fe7e,2016-09-22 10:44:49,gather_data() and act_on_data() can be const,0
+a772e9c,2016-09-22 15:30:33,libmesh_assert_*_consistent_proc_ids(),0
+39bc458,2016-09-22 15:48:04,Functor options for excluding from parallel sync,0
+3c416a6,2016-09-22 16:04:42,MeshCommunication new_nodes methods,0
+528034c,2016-09-22 16:06:39,New MeshTools::correct_node_proc_ids algorithm,0
+03ada0b,2016-09-22 16:20:38,Start preparing adaptivity_ex5 for DistributedMesh,0
+af8c378,2016-09-22 16:25:39,Use new_nodes method after refinement,0
+42bcf80,2016-09-22 16:51:03,all_second_order: make only new nodes consistent,0
+6182b7d,2016-09-22 16:52:04,redistribute option: only newly coarsened elements,0
+267cf71,2016-09-23 13:34:53,Refactor DefaultCoupling to allow n_levels,0
+afcc34e,2016-09-23 15:00:57,Accessors for DefaultCoupling members,0
+a43bf61,2016-09-23 15:02:32,Generalize couple_neighbor_dofs -> n_levels,0
+a2e86dc,2016-09-23 15:12:55,DefaultCoupling::n_levels() getter,0
+4f2be84,2016-09-23 15:13:15,Never *shrink* DefaultCoupling::n_levels(),0
+88dd581,2016-09-23 15:26:41,Unit tests for DefaultCoupling non-default options,0
+817cab0,2016-09-23 15:31:33,Build and run DefaultCoupling tests,0
+4813964,2016-09-26 08:39:32,Merge pull request #1064 from roystgnr/algebraic_functors,0
+1e4cd29,2016-09-26 09:00:48,Fix trailing whitespace.,0
+cd48a51,2016-09-26 09:30:57,Change spaces to tabs,0
+fa0a73b,2016-09-26 09:54:27,More tabs -> spaces,0
+cf1cd22,2016-09-26 10:04:11,Update traffic.,0
+e3f837f,2016-09-26 15:03:03,Generalize/modernize systems_of_equations_ex2 3.,0
+7344ccf,2016-09-26 15:36:33,Mark new functions libmesh_override.,0
+e731620,2016-09-26 15:58:04,automake wants to add trailing whitespace to this file  so let it.,0
+df0649f,2016-09-26 16:04:02,Rerun bootstrap after adding default_coupling_test.C,0
+b421875,2016-09-26 16:14:30,Mark one more function libmesh_override.,0
+1a5fd17,2016-09-26 16:23:15,Make new unit test actually compile.,0
+e1114f3,2016-09-27 08:32:45,Update citations.,0
+15c43f8,2016-09-27 08:55:13,Make new unit test run a bit faster.,0
+9191434,2016-09-27 11:10:37,Merge pull request #1105 from jwpeterson/fix_unit_test,0
+527ae1a,2016-09-29 08:21:20,Update citations.,0
+38b2814,2016-10-03 08:24:12,Update traffic.,0
+b957fc1,2016-10-03 08:28:48,Update citations.,0
+07f9dea,2016-10-03 08:38:16,Update statistics for Sep 2016.,0
+cd573e1,2016-10-03 08:49:11,Merge branch 'statistics',0
+d16c9de,2016-10-03 09:37:04,Comments about DirichletBoundary variable ordering,0
+7e90978,2016-10-03 10:03:41,Move DirichletBoundary methods to .C file,0
+59637c0,2016-10-03 10:10:33,Re-bootstrap,0
+3ae8517,2016-10-03 11:30:13,include function_base.h,0
+dccc250,2016-10-03 11:31:45,Add new DirichletBoundary constructors,0
+aa8c038,2016-10-03 11:32:11,Remove unnecessary includes,0
+ea66051,2016-10-03 13:06:02,Add first 2017 paper using libmesh.,0
+550799b,2016-10-03 13:17:13,Weaken asserts in System::point_*(),0
+1b092d9,2016-10-03 13:33:48,Update System::point_value comment,0
+97f1fcc,2016-10-03 13:34:17,More robust locator-based System::point_foo*(),0
+d9cbf8b,2016-10-03 15:31:34,Build DirichletBoundary objects with new APIs,0
+09e337d,2016-10-03 16:27:01,Merge pull request #1108 from roystgnr/better_point_value,0
+72f8aa7,2016-10-04 11:03:38,Add VariableIndexing enum for DirichletBoundary,0
+20902f8,2016-10-04 11:33:41,Use enum API for local-variable-order Dirichlet,0
+1feff40,2016-10-04 11:41:13,Remove old local-variable-order constructors,0
+f241be1,2016-10-05 08:53:38,Use smart pointer in test.,0
+25b44fb,2016-10-05 09:32:43,Merge pull request #1109 from roystgnr/dirichlet_boundary_apis,0
+8dadaf1,2016-10-05 10:26:56,Prefer UniquePtr to manual delete,0
+6b15f93,2016-10-05 11:36:22,Fix recent unit tests with --enable-complex,0
+726ed84,2016-10-05 13:08:55,scatter  specialized gather !HAVE_MPI cases,0
+744796a,2016-10-05 14:30:27,Merge pull request #1113 from roystgnr/complex_test_fixes,0
+ddb9e17,2016-10-05 14:30:40,Merge pull request #1112 from roystgnr/unique_ptr_in_examples,0
+592e325,2016-10-05 14:35:13,Merge pull request #1111 from jwpeterson/unique_test,0
+1190d72,2016-10-05 14:50:38,Merge pull request #1114 from roystgnr/no_mpi_fixes,0
+38b3fb7,2016-10-05 15:51:41,Fix systems_of_equations_ex6 with --enable-complex,0
+5287f23,2016-10-05 16:57:49,Merge pull request #1115 from jwpeterson/sys_ex_2_and_3,0
+6c9894a,2016-10-06 09:50:47,Merge pull request #1116 from roystgnr/more_complex_fixes,0
+241f44f,2016-10-06 10:01:01,Convert base_qrule to UniquePtr.,0
+8a085a6,2016-10-06 10:16:14,Convert radial_qrule to UniquePtr.,0
+c8bbce8,2016-10-06 10:22:27,Convert base_elem to UniquePtr.,0
+175c2b1,2016-10-06 10:30:19,Convert base_fe to UniquePtr.,0
+7c2c4a6,2016-10-06 10:36:44,The InfFE destructor is now empty.,0
+68b9138,2016-10-06 10:46:23,Fix documentation typos.,0
+c922dba,2016-10-06 11:08:12,Delete 'separator' lines from docs.,0
+a3755b7,2016-10-06 11:21:53,Fix some spacing issues.,0
+ba77ca7,2016-10-06 11:37:35,Fix 'should better' usage in docs.,0
+329a3a1,2016-10-06 11:39:53,Merge branch 'inf_unique',0
+01a2569,2016-10-06 17:01:39,Fixes for --disable-amr builds,0
+c25a5ba,2016-10-06 17:01:57,Fixes for --disable-periodic builds,0
+4f2c62d,2016-10-06 17:06:24,Fixes for sizeof(dof_id_type) < sizeof(int),0
+d15c44e,2016-10-07 13:34:26,Use static_cast  not C-style casts,0
+ad378bb,2016-10-07 16:39:39,Merge pull request #1117 from roystgnr/options_fixes,0
+1389b29,2016-10-10 08:24:53,Update traffic.,0
+110f73a,2016-10-11 08:22:53,Fix some spacing and indentation issues.,0
+09874f0,2016-10-11 08:36:25,Fixed bug in InfFE::inverse_map() concerning v being out of range.,0
+a918fc5,2016-10-11 09:21:42,Merge branch 'inf_fe_fix',0
+8a9b9ea,2016-10-12 10:14:27,Update traffic.,0
+89f77a9,2016-10-12 12:52:48,DofMap::gather_constraints() helper function,0
+063b365,2016-10-12 12:53:36,Use gather_constraints in allgather_constraints,0
+e5900ea,2016-10-12 16:16:16,Add an interface for passing the transpose nullspace to PETSc (#1121),0
+ec41aad,2016-10-13 08:21:44,Update citations.,0
+ec6fc49,2016-10-13 12:20:23,Update citations.,0
+6db9e37,2016-10-14 14:24:39,Merge pull request #1120 from roystgnr/scatter_ghost_coupling_constraints,0
+18c7772,2016-10-14 15:30:09,Fix MPI-1 compatibility of scatter/gather API,0
+89a2cc8,2016-10-14 15:30:31,Make send values const,0
+6982579,2016-10-14 15:34:48,Fix two send(set) overloads,0
+37a1c96,2016-10-14 16:30:31,Compilation fixes for send/receive(set),0
+afc9caf,2016-10-14 16:54:56,Disable non-blocking receive(set),0
+ffc3423,2016-10-14 16:55:54,Unit test for set receive + non-blocking send,0
+c610216,2016-10-16 12:36:10,Merge pull request #1123 from roystgnr/parallel_const_tweaks,0
+3d704c2,2016-10-17 08:11:03,Fix 'first day' data bug in website traffic.,0
+f057e8c,2016-10-17 08:17:44,Merge branch 'traffic',0
+0189185,2016-10-18 08:18:36,Update citations.,0
+90240a5,2016-10-18 12:52:26,trivial change to test new JSC buildbot,0
+341949c,2016-10-18 15:25:03,Use a const_cast in one final MPI call,0
+2ab5a7a,2016-10-18 15:31:35,Don't throw an exception in a destructor,0
+ed0f4ac,2016-10-18 15:33:26,Bug (performance) fix for ghosting functor query,0
+b28a173,2016-10-19 08:45:23,Merge pull request #1124 from roystgnr/mpi_const_workaround,0
+183d822,2016-10-19 12:36:57,Merge pull request #1125 from roystgnr/options_fixes_2,0
+59914bf,2016-10-19 15:53:18,Unit test framework for FE types,0
+f25589b,2016-10-19 15:54:22,Build and run new unit tests,0
+34756bf,2016-10-19 15:57:46,Add more Lagrange tests,0
+cae5ff7,2016-10-19 16:02:30,Refactor fe_test.h  add second order tests,0
+a635148,2016-10-19 16:22:50,BERNSTEIN can handle FIRST order on HEX8,0
+429bb34,2016-10-19 16:23:19,Header function definition should be inline,0
+f9e3d0f,2016-10-19 16:26:37,One more BERNSTEIN HEX8 fix,0
+1fcb658,2016-10-19 16:38:44,More BERNSTEIN+FIRST+QUAD4 fixes,0
+3417f2a,2016-10-19 17:03:33,Merge pull request #1122 from snschune/transpose_nullspace_interface_1121,0
+a8e1d2a,2016-10-20 11:57:18,fix for --disable-amr,0
+8fe1dde,2016-10-20 15:17:44,max_order() fix for BERNSTEIN elements,0
+32cdf01,2016-10-20 15:18:52,max_order() fixes for SZABAB elements,0
+ced60b7,2016-10-20 15:19:10,Support FIRST order BERNSTEIN on TRI3,0
+43650aa,2016-10-20 15:19:38,Support FIRST order HIERARCHIC on TRI3,0
+fcc9c9a,2016-10-20 15:19:59,Support FIRST order L2_HIERARCHIC on TRI3,0
+786198f,2016-10-20 15:20:24,Support FIRST order SZABAB on TRI3 and QUAD4,0
+211445c,2016-10-20 15:20:46,Support FIRST order SZABAB on TRI3 and QUAD4,0
+e9fa943,2016-10-20 15:21:26,Bugfix for projections on C1 elements,0
+47438e2,2016-10-20 15:35:08,Test PRISM18  not PRISM15  for LAGRANGE,0
+e19f322,2016-10-20 16:11:59,XYZ elements always calculate_xyz in the map,0
+d659d22,2016-10-20 16:24:43,Project with a gradient in unit test,0
+7c998fa,2016-10-20 16:25:05,Weaken tolerance on gradient tests,0
+da6a8fa,2016-10-20 17:10:37,Instantiate tests for all our other FE types,0
+f16f5fe,2016-10-20 17:17:30,Build and run all FE unit tests,0
+496d665,2016-10-20 17:25:00,Re-bootstrap,0
+8c9c76d,2016-10-20 17:46:24,Fixes for bug in edge flipping,0
+3409e21,2016-10-20 17:46:55,Add some more tests at higher orders,0
+fe62ed2,2016-10-21 08:47:20,Unit test fixes for --enable-complex,0
+4400175,2016-10-21 08:59:50,Add tests on serendipity elements,0
+b752e46,2016-10-21 09:10:48,Use new whitespace standards,0
+ad7ca07,2016-10-21 09:30:12,Sane error message in devel mode too,0
+dbacfa0,2016-10-21 13:32:50,Disable caching in XYZ elements,0
+69f91f2,2016-10-21 13:35:24,Merge pull request #1126 from roystgnr/fe_tests_and_fixes,0
+5faadd8,2016-10-21 14:17:42,Remove all XYZ caching,0
+4ee1704,2016-10-21 15:07:17,Re-enable XYZ on TET unit tests,0
+7cbf9f4,2016-10-21 15:22:50,Test cache in Clough-Tocher code,0
+23b3945,2016-10-21 17:17:06,Adaptivity ex4 should take command line parameters,0
+70797cf,2016-10-21 17:17:36,Test 3rd order CLOUGH too with adaptivity ex4,0
+a7468bf,2016-10-21 22:39:30,Small fix to discontinuous case in ExodusII_IO_Helper::write_elements,0
+444ce73,2016-10-22 07:39:57,Merge pull request #1128 from dknez/discontinuous_exII,0
+fbb3690,2016-10-23 12:30:40,Pass elem->dim() to eval_at_node(),0
+796c3e8,2016-10-23 22:54:21,Add Elem::is_vertex_on_parent(),0
+52ff947,2016-10-23 22:55:25,Bugfix for adaptive refinement of C1 elements,0
+f29b383,2016-10-24 08:53:55,Update traffic.,0
+19d08c2,2016-10-24 09:25:39,switch for tetgen-options added,0
+9cf1512,2016-10-24 09:26:00,Fix trailing/other whitespace issues.,0
+e8cceaa,2016-10-24 09:34:27,Merge branch 'tetgen_switches',0
+f35a4ce,2016-10-24 09:49:35,Fix initialization order warning.,0
+752fa58,2016-10-24 09:52:34,Fix unused variable warning.,0
+2e79612,2016-10-24 09:57:19,Also test Lagrange pyramid FEs.,0
+9c03884,2016-10-24 10:02:06,Ignore warnings from Cppunit header files.,0
+f308bd0,2016-10-24 11:35:43,Merge pull request #1127 from roystgnr/xyz_tests_and_fix,0
+0206b46,2016-10-24 12:20:57,Merge pull request #1131 from jwpeterson/test_pyramids,0
+4b5e9f6,2016-10-24 14:03:49,Update NEWS file for 1.1.0 release.,0
+69c81d0,2016-10-24 14:53:00,Update automake version number to 1.1.0-rc1.,0
+c6fda2d,2016-10-24 14:58:36,Run bootstrap.,0
+bd49147,2016-10-24 16:37:00,Treat empty _dof_coupling as full _dof_coupling,0
+51064b0,2016-10-25 21:42:17,Leave _default_evaluating->_dof_coupling == NULL,0
+bfb6e5e,2016-10-26 00:32:22,Avoid unused variable warning in some configs.,0
+660cd69,2016-10-26 08:58:30,Bugfix merges of NULL+non-null CouplingMatrix,0
+6e5edf0,2016-10-26 11:51:22,fix for distcheck,0
+202491a,2016-10-26 14:15:22,MatSetTransposeNullSpace requires PETSc >= 3.6.,0
+c637943,2016-10-27 09:21:09,fix for distcheck,0
+bd1f7d7,2016-10-27 09:28:26,fix for --disable-optional,0
+01392fb,2016-10-27 09:59:34,fix for --disable-amr,0
+b650cc1,2016-10-27 16:55:32,Fix scripting atavism,0
+6d0821f,2016-10-27 16:56:52,Fix unique_id setting in all_tri(),0
+fcc95b9,2016-10-27 16:57:51,Fix heisenbug in all_tri(),0
+e6dfeb3,2016-10-28 08:39:36,fix shim constructor for when fparser is not available,0
+18beb79,2016-11-07 13:08:51,Use TOLERANCE in systems_of_equations_ex3,0
+db5de76,2016-11-10 10:52:25,NonlinearImplicitSystem::ComputeVectorSubspace as an abstract class,0
+753bb83,2016-11-14 11:08:02,"Fix ""maybe uninitialized"" warning from GCC 5.3.0.",0
+9702b3b,2016-11-14 12:17:52,Avoid deprecated-declaration warnings in nanoflann examples.,0
+19c88a9,2016-11-14 15:38:07,Don't try to run CLOUGH with threads,0
+f0d14b6,2016-11-16 09:00:15,Update automake version number to 1.1.0-rc2.,0
+ddd2645,2016-11-16 09:10:37,Run bootstrap.,0
+2d3f229,2016-11-18 12:13:40,Prefix libMesh Parallel:: macros with LIBMESH_,0
+cb78b9d,2016-11-18 12:23:33,Removed overzealous assert,0
+9ce81d4,2016-11-18 13:27:16,Fix GetPot off-by-1 bug.,0
+e597141,2016-11-22 12:00:14,Put renamed Mesh subclasses in renamed headers,0
+7e810a4,2016-11-22 12:03:05,Add replicated/distributed headers to build system,0
+571a86d,2016-11-22 12:03:33,Old headers are now shims for new headers,0
+0d0e9c4,2016-11-28 11:10:00,Re-bootstrap,0
+d1925b6,2016-11-28 11:10:48,Updated NEWS with new header names,0
+a1879af,2016-12-02 09:09:04,Update libmesh version number to 1.1.0.,0
+941e959,2016-12-02 09:12:03,Run bootstrap.,0

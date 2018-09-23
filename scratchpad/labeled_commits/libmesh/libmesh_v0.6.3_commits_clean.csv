@@ -1,0 +1,462 @@
+hash,time,message,buggy
+c3630ee,2007-11-28 18:47:06,can now write a file in parallel -- the format is identical as existing files  but the node/element ordering is different,0
+609980d,2007-11-28 18:47:55,updated compatible to new doxygen,0
+f6fc13b,2007-11-29 01:07:31,Removed redundant #ifdefs,0
+86d9814,2007-11-29 19:52:44,Add typedefs to fix compilation without MPI,0
+b246152,2007-11-29 21:10:45,Comment out code unavailable with --disable-mpi,0
+e05286c,2007-11-29 21:18:31,Use Parallel::sum for MPI_Allreduce(MPI_SUM),0
+b853e96,2007-11-29 22:15:42,Fix Parallel::verify()  add --disable-mpi null implementations (or errors as appropriate) of send/recv functions,0
+f3f099a,2007-11-29 22:29:50,Fixes for --disable-mpi  Using Parallel:: functions where convenient,0
+09dd179,2007-11-29 22:30:58,Fix for Parallel::verify use Fixes for --disable-mpi,0
+0a02bfd,2007-11-30 00:10:43,robustness -- do not dereference empty vectors  which can happen on all but root_id during Parallel::gather(),0
+eaf9a91,2007-11-30 01:56:49,partition-independent parallel system write now works properly -- still need to test read.,0
+bcf2c33,2007-11-30 02:00:57,assert the obvious when performing send_receive without MPI,0
+1a4b044,2007-11-30 04:11:22,Build with newer autoconf/autoheader/etc,0
+57ba02c,2007-11-30 04:12:48,Added oprof mode,0
+4dfc7cf,2007-11-30 14:09:07,trade a single allreduce for many broadcasts,0
+51a31db,2007-11-30 14:38:51,do not dereference empty objects,0
+ae0bf1d,2007-11-30 15:08:16,Avoid compiler warning with --disable-mpi,0
+b289d71,2007-11-30 19:17:52,Avoid compiler warnings without --enable-complex,0
+6c8e1d4,2007-11-30 19:49:05,do not dereference empty objects,0
+e3ceb2f,2007-11-30 19:49:38,cleanup,0
+d335806,2007-11-30 19:58:27,assert the obvious,0
+1314385,2007-11-30 21:12:20,broadcast a string,0
+5e9515a,2007-11-30 21:13:05,log the systems update,0
+e1c50f8,2007-11-30 21:14:23,can now read and write restart files in parallel.  the ordering is partition-agnostic so as to enable N->M restarting,0
+512dca5,2007-11-30 21:26:01,changed default buffer size to 256000,0
+6bb3117,2007-11-30 21:36:01,use LIBMESHRUN to run ex2,0
+a60c743,2007-11-30 21:39:26,make ex2 more complicated to test coverage of multiple systems with multiple variable types,0
+45e3e21,2007-12-01 20:26:13,libMultiScale & OctMesh,0
+50c8547,2007-12-02 17:57:32,more package descriptions,0
+2227cdc,2007-12-02 18:17:52,more package descriptions,0
+871af32,2007-12-02 18:18:34,more package descriptions,0
+507abfe,2007-12-02 20:27:59,changed LibMesh to libMesh  allow for additional information in developer profile section,0
+dbbd3fa,2007-12-02 21:19:23,bio preprint,0
+2246284,2007-12-03 16:10:14,can now read/write serialized or parallel restart files,0
+20d09fb,2007-12-03 17:52:20,move current xdr stuff to a legacy format to make room for new parallel mesh io,0
+af69e62,2007-12-03 18:19:50,cleaner test syntax,0
+a8b12df,2007-12-03 18:21:08,placeholder for new XdrIO class,0
+bcc3ab5,2007-12-03 19:52:39,working on parallel mesh io,0
+5c780c3,2007-12-03 21:20:16,Don't let processors 1-N quit Mesh::write until processor 0 no longer needs them for MeshTools::n_levels.,0
+720779a,2007-12-03 22:10:24,allow for an optional line-break counter to increase readability,0
+495315e,2007-12-03 22:10:59,serialzed output of distributed nodes now works,0
+d23b608,2007-12-03 22:22:19,Use proper type (signed int) for MPI tags,0
+dd0477f,2007-12-03 22:29:50,Use petscconf PACKAGES_LIBS where available,0
+a669c09,2007-12-04 21:04:15,Return an accurate count of nonlinear iterations  not just the final iteration number,0
+b5313e3,2007-12-05 03:00:13,added a local_level_element_iterator(),0
+0ce5bf0,2007-12-05 03:02:23,make the MeshTools::n_elem() operator take constant element iterators,0
+9817832,2007-12-05 20:53:26,parallel xdr mesh output pretty much works  needs bc support  testing.  disabled by default,0
+2e26123,2007-12-06 16:20:46,change the solver to use a MeshBase  consistent with the EquationSystems,0
+2b80e9d,2007-12-06 19:36:51,created a static array mapping element type to the number of nodes in an element.  this is useful for reading in mesh files or when communicating elements as it allows you to properly size arrays without creating an Elem object,0
+29590a8,2007-12-06 20:36:07,Use INVALID_ELEM rather than a magic number for the size of an array indexed by ElemType,0
+75a448d,2007-12-06 22:10:31,Dependency updates,0
+6011f29,2007-12-06 22:36:17,parallel read of nodes is OK  working on elements,0
+f51f93c,2007-12-07 14:19:45,when adding a child assert that the child knows about its parent,0
+acf04dd,2007-12-07 14:20:36,testing parallel read/write,0
+7725f42,2007-12-07 22:39:30,parallel bc write started,0
+1825b4c,2007-12-08 20:11:12,added data_stream<int>,0
+468f55f,2007-12-08 20:14:31,do not implicitly add nodes to boundary_info,0
+bf546ad,2007-12-09 02:23:50,Added missing implementation for --disable-mpi,0
+7a45d05,2007-12-10 14:27:46,parallel XDR mesh I/O works  performing additional testing,0
+d2fc64b,2007-12-10 18:24:20,added MeshTools::n_p_levels().  Use this to determine whether or not we will write element p levels to file.,0
+797d917,2007-12-10 18:28:43,made Partitioner::set_node_processor_ids() a public & static member.  This allows a partitioning to be read from file and the node processor ids can get fixed without building a partitioner.,0
+94363b8,2007-12-10 18:29:48,write p levels if needed,0
+6e42522,2007-12-12 14:47:47,updated documentation,0
+bc5d064,2007-12-12 14:56:55,removed stray -lz,0
+6b82007,2007-12-12 17:20:39,allow MeshBase::add_point() to add points in non-sequential order,0
+f81feaf,2007-12-12 17:35:57,moved the parallel test,0
+455cdba,2007-12-12 20:20:03,test send  receive  and friends,0
+e8a3728,2007-12-12 20:22:45,replaced MPI_Wait and MPI_Waitall calls with Parallel::wait wrappers,0
+a5f29ad,2007-12-12 22:04:11,placeholder for quadrature tests,0
+04ea158,2007-12-17 03:23:40,Added set_data methods,0
+f8bbe71,2007-12-19 01:11:40,Reposition elem_subresiduals during postprocessing for code like John's that uses them.,0
+ba8bfeb,2008-01-14 21:05:25,assert() to catch cases of non-parents who get put into parent error vector by mistake,0
+4774bc5,2008-01-14 21:06:02,"Restore ""non-coarsenable elements flagged with -1"" behavior to create_parent_error_vector implementation",0
+38e15d9,2008-01-15 16:33:47,The previous histogram function was just ... wrong ... in more ways than one.  Rewrote my initial bad code to make it actually work.  Also added the plot_histogram() function which allows you to write a very small Matlab/Octave script and quickly plot the histogram as a bar graph.,0
+4af3e65,2008-01-15 22:02:22,Fixed a slight bug that sometimes prevented the last entry from being binned.  Generate the histograms in terms of Real's regardless of the datatype of the vector itself.  Also  the behavior is now correct for ErrorVectors too.,0
+7ac00e2,2008-01-16 20:44:48,Ignore oprof output,0
+ea13090,2008-01-16 20:46:43,Ignore oprof output,0
+ba90b0f,2008-01-16 20:47:21,Resize and zero elem_residual before postprocessing,0
+c4a1258,2008-01-16 21:06:00,Fixes for create_parent_error_vector in parallel,0
+19d78da,2008-01-23 15:38:18,explicitly clear and close the objects,0
+6827afd,2008-01-23 20:21:47,Use libmesh_norm(x) instead of x*x/std::norm(x) more widely Make NumericVector<T>::dot(v) have return type T Attempt to fix DistributedVector<std::complex<T> >::min/max,0
+65b3f40,2008-01-23 20:25:39,Better fix for real vs complex DistributedVector::min/max,0
+e489f58,2008-01-23 20:30:28,Fix cut-n-paste error,0
+6b29e49,2008-01-24 00:39:29,More fixes  refactoring for --enable-complex,0
+cfdc428,2008-01-24 07:15:30,Fixes for --enable-complex,0
+9cf8e4f,2008-01-24 20:42:29,Fixes for std::complex<> use,0
+f2fb4f1,2008-01-24 20:45:18,Utility class to compare two types and choose an appropriate return type for operations combining them.,0
+08464c6,2008-01-24 20:47:31,Use Real instead of double where appropriate,0
+8cfbb85,2008-01-24 20:50:16,Use CompareTypes<T T2> to allow TypeVector<T> objects to be operated on with T2-based objects,0
+90d9e49,2008-01-24 21:17:22,Move enable_if  ScalarTraits to compare_types.h Further templatize copy constructor  assign(),0
+e4d491b,2008-01-24 21:24:16,Further templatize add(),0
+9a5f92a,2008-01-24 21:59:20,More templatization  more CompareTypes based return values,0
+69c485b,2008-01-24 22:08:21,Fixed misleading comment,0
+79a0d69,2008-01-24 22:12:21,Fixed misleading/typoed comment,0
+bfafba9,2008-01-24 23:13:09,Fixed size_sq comments to be correct for complex numbers,0
+0029bcc,2008-01-25 14:58:00,Add templated self friend classes so that Object<T1> can access Object<T2>'s protected constructor,0
+ebfddb8,2008-01-25 15:00:22,"Fix norm calculation correctness for complex numbers  use size_sq and new CompareType operators to make ""#ifdef USE_COMPLEX_"" special cases unnecessary",0
+4426a10,2008-01-27 17:02:18,support for std::complex<double> in data_stream.  Still need to figure out long double,0
+ff59350,2008-01-28 21:26:46,David Knezevic's patch to fix an error with SerialMesh when reading files with lower dimensional boundary info elements,0
+b304b13,2008-01-28 22:08:42,testing,0
+1a16593,2008-01-28 22:15:46,Restoring ex18  i.e. application=0 as default,0
+6261bad,2008-01-28 23:01:18,Move forward declarations to where they're actually needed,0
+21e7fee,2008-01-29 23:06:25,Fix bug with active elements  elements in parallel not being properly marked uncoarsenable.,0
+0969f74,2008-02-01 23:12:52,Factored out UnsteadySolver class  moved old solution vector from TimeSolver to get it out of SteadySolver class.,0
+50e832a,2008-02-03 12:36:28,fixed regression in EquationSystems::read() which tried to read .bz2 files instead of their unzipped ASCII counterpart.,0
+5c8d182,2008-02-04 16:46:11,Fixes for --disable-mpi,0
+c10b999,2008-02-04 19:32:17,Updated dependencies for UnsteadySolver,0
+8680235,2008-02-04 21:42:58,Minor fix in cut-n-pasted comment,0
+25d4205,2008-02-04 21:43:22,Minor fix in cut-n-pasted comment,0
+1b39025,2008-02-04 22:22:01,New NormType for compute_norm()  du()  etc.,0
+fc18c57,2008-02-05 20:08:18,Support Intel icc v10.1 on Itanium,0
+5185452,2008-02-05 20:31:33,Added SystemNorm class  switched appropriate APIs to use it,0
+3e2103a,2008-02-05 23:15:13,Fixes for du() API change,0
+039d5bf,2008-02-05 23:18:15,Updated dependencies for enum_norm_type.h and system_norm.h,0
+2ea1ee9,2008-02-06 01:39:34,preliminary interface to the TBB template library for multithreading support.  MeshTools::total_weight() contains an example of a threaded reduction operation.,0
+fb0791e,2008-02-06 02:09:52,Hand off du norm calculations to System::calculate_norm(),0
+625eadc,2008-02-06 03:24:43,Minor bugfix,0
+78e7357,2008-02-06 18:49:06,threaded part of the find global indices method,0
+5b82321,2008-02-06 20:40:40,Override mass_residual to provide a better (Re-independent) nondimensionalization of time,0
+b8ffeb5,2008-02-06 21:54:52,more threaded algorithms,0
+9cbfb5a,2008-02-06 22:00:11,removed stray here,0
+1aebdf4,2008-02-06 23:29:10,Fix reduce_deltat_on_diffsolver_failure bug from UnsteadySolver refactoring,0
+7f2cf36,2008-02-06 23:33:03,Updated .depend for new threading,0
+bf2bb7c,2008-02-06 23:33:40,Make sure dependency list is sorted for consistency  svn diff .depend can get ugly otherwise,0
+2c8b553,2008-02-06 23:51:25,Compatibility updates for old code,0
+1fdcc84,2008-02-07 20:02:26,threaded constraint computation,0
+d8db651,2008-02-07 21:41:59,added atomic reference counting,0
+ecd4376,2008-02-07 22:04:33,MeshTools::weight() fixed for parallel meshes,0
+a7b0910,2008-02-07 22:52:30,include elem.h,0
+cb28af3,2008-02-07 23:24:13,Using LegacyXdrIO,0
+35e43bd,2008-02-07 23:47:09,"Build src/apps programs by default during ""make""",0
+c3510d2,2008-02-08 15:20:42,Switch to LegacyXdrIO,0
+8a35332,2008-02-08 21:49:46,fixed total_weight for non-parallel meshes.  This is needed to work right on processor 0 to broadcast the mesh,0
+77dfa64,2008-02-08 21:50:46,the patch recovery error estimator is now multithreaded,0
+ed0165e,2008-02-08 22:07:12,Fix for MeshTools::total_weight() on ParallelMesh,0
+0a6b707,2008-02-08 22:19:53,Typo fix,0
+aa45a51,2008-02-10 13:12:52,allow perflog to be disabled at runtime,0
+cf25fd2,2008-02-10 13:13:46,multithreaded vector and solution projection,0
+6e32b94,2008-02-10 21:46:47,Typo fix,0
+1ce30da,2008-02-11 00:28:15,make perflog compatible with multithreading,0
+e80a0c8,2008-02-12 23:19:07,"Added ""parameterize.pl""  a script for turning lines like",0
+0a7043e,2008-02-14 00:10:44,Rename from NormType to FEMNormType to avoid name conflicts with PETSc,0
+7c78767,2008-02-14 20:23:15,Compatibility between FEXYZ and ENABLE_SECOND_DERIVATIVES  second derivatives for 1D XYZ shapes.,0
+2c69b5f,2008-02-15 22:56:13,Second derivative calculation support  arbitrary polynomial degree for discontinuous elements,0
+33b25da,2008-02-16 03:34:30,Fix FE<MONOMIAL> support for p > 4,0
+771df5c,2008-02-17 00:30:00,multithreaded sparsity pattern generation,0
+dd3f10f,2008-02-17 00:31:13,default to 1 thread  make the user manually specify the number of threads to avoid mpi/thread contention,0
+2e27de6,2008-02-17 00:31:53,default to 1 thread  make the user manually specify the number of threads to avoid mpi/thread contention,0
+adafefa,2008-02-17 20:41:09,preallocation where possible,0
+2fdbc68,2008-02-18 23:35:25,properly read legacy restart files without command-line hacks  warn for reading potentially incompatible restart files,0
+d158f26,2008-02-18 23:36:49,updated XdrIO to properly handle Xdr  ASCII  gzipped  or bzip2 files transparently,0
+5819a94,2008-02-18 23:37:13,mention TBB,0
+755ebee,2008-02-19 13:48:02,compatiblity fix with gcc 3.2  3.4 and Intel 7.1  8.0  9.0  9.1,0
+7d2cc01,2008-02-19 13:57:39,prevent double-freeing for the case when the user explicitly calls close() and then the destructor does too.,0
+88b352e,2008-02-19 13:58:03,Intel 10.x,0
+7852b41,2008-02-19 21:45:04,SunStudio 12 compatability,0
+970245d,2008-02-19 22:01:50,reverted here() and friends -- the -library=stlport4 option to CC uses the STLPort implementation which has no name clashes,0
+c491148,2008-02-19 23:00:39,reorder the partition flag position,0
+77ea9bd,2008-02-20 14:19:41,do not pollute global namespace  use the new local_level_elements iterators,0
+536f495,2008-02-20 16:36:18,make new xdr file format the default,0
+513bd8b,2008-02-20 17:44:01,only processor 0 should open the file and read the header.  this caused a race when the underlying file was .bz2 and all processors attempted to uzip/unzip it.,0
+313fc16,2008-02-20 17:44:26,do not partition into more pieces than we have active elements,0
+1074dd0,2008-02-20 18:30:12,do not default to new xdr file just yet,0
+86ef9eb,2008-02-21 19:30:40,Fixes for high p 3D monomial shape function calculations,0
+2953b7f,2008-02-22 10:40:42,allow the user to get the global indexing without assigning it  do not forget unpartitioned nodes when creating the bounding box,0
+1cddb9f,2008-02-22 10:41:13,allow the user to get the global indexing without assigning it  do not forget unpartitioned nodes when creating the bounding box,0
+b40ceed,2008-02-22 22:11:28,Added swap() method to PetscMatrix/Vector,0
+e15c566,2008-02-22 22:53:13,Adding PetscDiffSolver class (which still has runtime bugs),0
+159dc59,2008-02-25 01:55:04,Fix for --disable-mpi,0
+016505a,2008-02-25 19:23:21,added unpartitioned element iterators,0
+87c8d27,2008-02-25 19:23:42,added unpartitioned element iterators,0
+349e462,2008-02-25 19:24:09,added unpartitioned element iterators,0
+fea4a79,2008-02-25 19:26:31,make it clear that the begin  end element iterators are unchanged when calling n_elem,0
+7dba52d,2008-02-25 19:27:31,handle the degenerate case where for some reason we try to sort a single item in parallel,0
+ac14725,2008-02-25 22:43:27,Close assembly output before returning it to PETSc,0
+ffff351,2008-02-26 14:25:46,Typo fix in USE_COMPLEX_NUMBERS case,0
+32741b4,2008-02-26 15:52:49,Update to new du() function signature,0
+6f4e09e,2008-02-27 00:04:56,Don't include assembly time in PetscDiffSolver total,0
+2f9c8c7,2008-02-27 00:08:12,Factor out line search from NewtonSolver  add brent_line_search option,0
+2b47b51,2008-02-27 01:25:20,Make Brent's method the default,0
+4239c3e,2008-02-27 18:33:21,added Elem::is_remote(),0
+8f45c53,2008-02-27 18:39:36,refactored the parmetis partitioner to work on parallel meshes.  The assigning of parents to subdomains needs to be fixed still for the case of parallel meshes.  metis is still the default partitioner when mesh.is_serial()  otherwise parmetis is called.,0
+a7bd1a0,2008-02-27 21:36:49,set parent processor ids properly when the mesh is parallelized,0
+2283946,2008-02-28 19:51:12,Changes (based on Lorenzo Botti's) to fix bug with side integrations and adaptive p refinement.,0
+412995b,2008-02-28 21:45:33,Parallel::alltoall()  beginnings of MeshCommunication::redistribute(),0
+acdc0e0,2008-02-28 22:24:57,Parallel::Status class added.  Return status from blocking receives,0
+56c25a0,2008-02-29 15:38:56,optimize Parallel::send_receive() for the case when the source and destination are both the local processor.,0
+239f3c7,2008-02-29 19:32:17,reverted,0
+8f3b4bb,2008-02-29 19:43:06,undo accidental checkin,0
+4c5ad8b,2008-02-29 22:37:29,allow isend() and recv() with user-defined types,0
+78016e6,2008-02-29 22:37:56,node redistribution (the easy part) works,0
+99206a3,2008-03-01 00:24:08,Fix for MPI1 compatibility,0
+452b62a,2008-03-01 01:00:46,Added libMesh exception-throwing  changed error() behavior to throw an exception  replaced libMesh::init() and libMesh::close() with a LibMeshInit object to ensure proper MPI_Abort behavior when an exception is uncaught.,0
+5a5d373,2008-03-01 01:01:52,Space/tab reformatting  Switched to use LibMeshInit instead of libMesh::init()/::close()  removed unnecessary scoping braces,0
+fde1145,2008-03-01 17:36:23,Fix for --disable-mpi,0
+9561c69,2008-03-01 20:10:56,Corrected comments,0
+b9f0188,2008-03-01 20:21:04,Change from libMesh::init()/close() to LibMeshInit,0
+b2e6d8b,2008-03-01 20:21:33,Don't try to use DistributedVector<float>  unless Real == float we don't instantiate it.,0
+e94b137,2008-03-01 20:52:41,Switched from libMesh::init()/close() to LibMeshInit,0
+3bfec7f,2008-03-01 20:55:08,Run tests by default  don't just build them,0
+20e31c9,2008-03-01 21:23:41,Add a suffix to test output file names to make it easy on svn:ignore,0
+2de4225,2008-03-01 21:24:20,Ignore output files,0
+e8a2758,2008-03-01 21:26:10,Run tests by default,0
+803540d,2008-03-01 21:27:40,Ignore run_tests executable  dependency files,0
+96ed85a,2008-03-02 00:57:42,fix for --implicit_neighbor_dofs from Lorenzo Botti,0
+ae67ffb,2008-03-02 01:21:35,it is not deprecated to read an old file -- this was a hasty checkin,0
+5448891,2008-03-02 15:00:32,not deprecated to read an old mesh format,0
+5f18692,2008-03-02 15:00:57,fixed overzealous assert,0
+15adac7,2008-03-03 15:51:52,fix for parallel solution IO.  the code requires objects be iterated in order of increasing id()  which is not always the case.  now we build an ordering to enforce this.,0
+4b353c5,2008-03-03 19:47:22,Allow .bz2 support to be disabled at configure time.,0
+e1ef93a,2008-03-03 20:15:48,allow the Status() struct to determine the size of the message received.,0
+a8e10ff,2008-03-03 20:16:29,node and element redistribution seem to work  need to add bcs and all will be well.,0
+dc47324,2008-03-03 22:06:26,Fix bug from recent commit,0
+93e717d,2008-03-03 22:33:43,redistribution should now work  with BC support,0
+b91c721,2008-03-03 22:35:38,initial checkin had way too small blocksize,0
+6c571f5,2008-03-04 18:38:51,properly count the number of boundary conditions in parallel,0
+7461f0c,2008-03-04 18:40:10,transfer node pid in redistribution,0
+0ba807d,2008-03-04 18:42:09,optional constructor flag in MeshInput/MeshOutput for parallel formats,0
+4062db7,2008-03-04 18:42:39,log the single_partition() member,0
+41738b4,2008-03-04 18:57:03,do not assert valid processor id when reading processor id.,0
+d12fa41,2008-03-05 14:36:22,cleanup  optimizations,0
+75299e8,2008-03-05 14:36:55,log more operations,0
+a9ab1ad,2008-03-05 19:01:26,log output,0
+15fcdb2,2008-03-05 19:07:17,updated logging to use a stack,0
+ea56257,2008-03-05 19:08:02,only disable logging in threaded functions when there is more than one thread,0
+6aee180,2008-03-05 19:23:49,Added header for START_LOG/STOP_LOG declarations,0
+4f2d445,2008-03-05 19:29:28,fix all library code to use new logging scheme,0
+2b7415b,2008-03-05 21:01:22,no need to deprecate old interface -- that was a little agressive,0
+ba699e4,2008-03-06 15:38:42,optimized find_global_indices() to only compute hilbert keys once,0
+cc057b0,2008-03-10 21:33:45,gcc 4.3.0 fixes,0
+159cd58,2008-03-11 16:56:15,fix for --disable-amr,0
+de2a894,2008-03-11 19:21:50,do not copy old dof object before dofs are allocated -- this is a pointless waste of memory.,0
+233c380,2008-03-19 19:59:05,manually complete the send when there is no MPI,0
+90c80c2,2008-03-20 15:45:37,Fix for one more MPI-less Parallel::recv(),0
+b388e84,2008-03-20 15:59:22,fix isend()/recv() pairing for --disable-mpi,0
+91fbd60,2008-03-24 18:04:48,Replace inconvenient characters with underscores in directory names,0
+8290f06,2008-04-02 16:08:37,initial trilinos configuration support,0
+42d3be9,2008-04-03 00:04:07,Removed redundant mpi.h include,0
+f320183,2008-04-03 01:01:34,Move mpi.h include to make conflicts with stdio.h slightly less likely,0
+493c2c3,2008-04-04 16:42:46,Fix GCC configure tests,0
+ea8082d,2008-04-04 20:02:22,First commit of completely broken ePetra vectors from Trilinos,0
+be18ebf,2008-04-04 20:44:38,Comment (and #if) a bunch of stuff out of epetra_vector so it compiles,0
+1e7537a,2008-04-04 20:52:17,Uncomment more of epetra_vector,0
+69dd399,2008-04-04 21:12:11,Add configure option to disable exception throwing  Make PGI --no_exceptions command line option depend on it,0
+998a72d,2008-04-04 21:52:38,Fix for PGI compilers,0
+227fa73,2008-04-04 21:53:23,filled in more of epetra_vector,0
+e6e836e,2008-04-04 22:05:41,epetra_vector.h finished,0
+f968428,2008-04-05 04:52:26,Don't use Opteron-incompatible icc flags on Opterons,0
+a8de118,2008-04-05 04:52:56,Don't use Opteron-incompatible icc flags on Opterons,0
+9877ebd,2008-04-06 21:51:53,google search stuff,0
+818d99d,2008-04-07 22:20:33,More work on epetra_vector,0
+37ca7a8,2008-04-07 23:47:26,More work on epetra_vector,0
+ecafe86,2008-04-07 23:49:18,More work on epetra_vector,0
+2e86ac4,2008-04-11 17:55:30,mention trilinos  update ref for IJNMF CompNS paper,0
+8b9d60e,2008-04-11 23:31:32,Reimplement is_child_on_face  the previous implementation fails with remote_elems around,0
+2202c9d,2008-04-11 23:33:22,Fix bugs with ParallelMesh  add more debugging information in case of future bugs,0
+2b2b46b,2008-04-12 20:14:02,Enable print_trace() to ostreams other than cerr,0
+92dd2f7,2008-04-12 21:58:11,Added ancestor_elements  not_ancestor_elements iterators and supporting machinery,0
+e878c9b,2008-04-12 23:40:23,Adding libmesh_assert() for more useful assert()s  implementation of ENABLE_TRACEFILES option,0
+ea83818,2008-04-12 23:58:04,Added ./configure --enable-tracefiles option,0
+2977c19,2008-04-13 00:21:54,link to the 12-month version of the statistics from the main page,0
+4574514,2008-04-13 00:44:19,Bug fix in set_parent_processor_ids  turn off repartitioning until we've definitely got ParallelMesh working for AMR/C without repartitioning.,0
+6ef08c9,2008-04-13 02:05:22,Changed error() to libmesh_error(),0
+2705a6e,2008-04-13 02:24:40,Switch from assert() to libmesh_assert(),0
+f01de14,2008-04-13 16:43:55,Replace assert() statements with libmesh_assert(),0
+5593a81,2008-04-13 17:23:02,Try for more robust unordered_map  unordered_set includes,0
+fdcc0ef,2008-04-13 17:24:42,Fix for non-tr1 unordered_map typedefs,0
+1191999,2008-04-13 22:24:29,Only compile libmesh_assert_valid() tests if we're going to use them,0
+05f4cb0,2008-04-13 23:53:47,Move assert_valid_neighbors() to MeshTools  add assert_valid_node_procids(),0
+9a7476e,2008-04-14 03:05:20,Fix out of date comment,0
+cd2e6a4,2008-04-14 04:15:15,Remove redundant synchronization from serial runpath  weaken potentially-overzealous DEBUG assertions,0
+c778761,2008-04-15 12:42:48,Fixed mismatched perflog start/stop,0
+7514c3a,2008-04-17 19:12:29,Enable stack trace files when --enable-everything is used,0
+7babae7,2008-04-21 18:27:38,johns defensedoc/html/presentations.php,0
+b81102b,2008-04-21 20:58:16,support for linear pyramids in ExodusII,0
+1552674,2008-04-23 17:30:28,Include <unistd> for getpid(),0
+deb8307,2008-04-23 19:59:24,Print here() messages on every processor,0
+78be00e,2008-04-23 21:14:29,New parallel update function in MeshBase (for MeshRefinement use)  ParallelMesh/SerialMesh implementations,0
+a4754b8,2008-04-23 21:15:39,More debug-mode sanity checks,0
+7be1f39,2008-04-24 05:16:36,Better debug-mode checks,0
+84b7d18,2008-04-24 20:32:21,Fix refine_by_error_fraction for parallel use  exit with errors when trying to use not-yet-fixed methods on parallel meshes.,0
+7d2915b,2008-04-24 22:00:21,Fixes for ParallelMesh,0
+d7e9dc0,2008-04-25 18:41:43,Fix inf_elem_builder behavior with ParallelMesh,0
+8444d1a,2008-04-25 18:44:44,ParallelMesh is getting good enough to actually paralllelize it by default now...,0
+c982147,2008-04-25 21:32:05,Typo fix,0
+7e7109c,2008-04-25 21:44:16,Make parallel node id fixing code public,0
+c2a40c2,2008-04-28 22:17:16,Don't attempt to write ParallelMesh solutions even in METHOD=opt,0
+9992531,2008-04-28 22:18:38,warn about unsupported Mesh I/O but don't error out,0
+3008697,2008-04-30 01:33:05,Removed debug mode test,0
+90a2f51,2008-05-01 06:36:11,FIXME note on an O(n_elem) vector<bool>,0
+49da91f,2008-05-01 06:38:11,Major refactoring  fixes for ParallelMesh synchronization code.,0
+4a8b487,2008-05-01 06:38:56,Fixes for all_second_order() with ParallelMesh,0
+992fedc,2008-05-01 06:39:50,Dependency updates for location_map.h  parallel_ghost_sync.h,0
+6b1ecc4,2008-05-01 14:08:36,Removed unused variables,0
+d4d33c2,2008-05-01 20:13:42,Fix for --disable-amr,0
+3fb1566,2008-05-01 20:14:40,Switch libMesh::init to LibMeshInit  disable amr.cc cleanly when ENABLE_AMR is off,0
+eed303d,2008-05-01 20:43:09,Moved MeshRefinement methods which better fit MeshTools or MeshCommunication  to fix --disable-amr case.,0
+a4c0bda,2008-05-01 20:58:21,Typo fix,0
+fe27109,2008-05-01 21:04:29,New dependencies from MeshRefinement->MeshCommunication/MeshTools refactoring,0
+79c92fb,2008-05-02 06:19:16,Avoid warnings with --disable-amr,0
+ae1bbf9,2008-05-02 06:19:47,New debug mode test,0
+98e506d,2008-05-02 18:41:57,No need for libmesh_assert* method outside of DEBUG mode,0
+1e87d1c,2008-05-02 21:51:55,More valid remote_elem tests,0
+31c8c45,2008-05-02 21:53:09,Comment out potentially broken (but currently completely unnecessary) code in coarsening function,0
+d2a7ccd,2008-05-02 21:53:34,Updated dependency for remote_elem debug tests,0
+9dd91b0,2008-05-02 22:02:37,Turn partitioning of parallel meshes back on,0
+657a732,2008-05-06 18:42:22,Make sure MeshBase::is_serial() is always defined before use,0
+57b1545,2008-05-06 19:45:57,Fix bug with PerfLog use in refactored MeshRefinement::add_point(),0
+69fd350,2008-05-08 13:18:54,Comment on parallelism issues in MeshFunction,0
+1d9412c,2008-05-08 16:36:50,Specializations for Parallel::min/max(std::vector<bool>)  since official MPI standards don't support MIN/MAX ops for char/unsigned char,0
+e1c0c3b,2008-05-08 16:38:59,Use vector<bool> even when we don't care about efficiency  now that Parallel::max/min support them (and now that we know max/min isn't always supported by MPI for char types),0
+8dc8816,2008-05-08 17:23:37,Don't bother to serialize for I/O - the I/O classes should either write a distributed ParallelMesh correctly or refuse to write with a warning at this point.,0
+2810ab8,2008-05-12 04:50:16,More perf_logging  removed unnecessary temp variables,0
+bd98240,2008-05-12 06:41:47,more libmesh_assert_ debugging functions,0
+f219f56,2008-05-12 12:56:32,Switch from is_neighbor to has_neighbor  bugfixes for ParallelMesh,0
+f76b6b0,2008-05-12 12:58:52,find_neighbors fixes for ParallelMesh,0
+48ccc40,2008-05-13 12:50:22,Include missing header,0
+16ea381,2008-05-17 22:17:20,Don't include hilbert.h unless HAVE_LIBHILBERT,0
+51976c1,2008-05-18 17:09:04,Dr. John W. Peterson,0
+2a004f0,2008-05-19 19:36:45,Add option to disable variational smoother (which takes forever for some icc versions to compile),0
+726c226,2008-05-19 20:01:35,Include libmesh's config file so we can see if VSMOOTHER is enabled or not.,0
+3ad5c36,2008-05-19 20:17:33,Try to autodetect mpi compiler wrapper scripts,0
+2a870ce,2008-05-20 23:41:52,Modified to use the grid directly rather than the VTK pointset in VTKIO::read()  this gave an error in a vtu tetmesh read,0
+99060cb,2008-05-21 12:48:51,fixed broken d()/dzeta linear pyramid shape functions,0
+f28a41f,2008-05-22 17:26:43,detect when implicit neighbor dofs is needed.,0
+eb2f186,2008-05-22 20:58:26,add implicit neighbor dofs if requested or if all variables in the system are discontinuous,0
+cb86469,2008-06-02 21:16:43,Don't miss any points because of epsilon differences in location,0
+882a52f,2008-06-03 20:29:27,New paramvalue feature for parameters which are functions of other parameters  prefix reading for slightly more useful functions,0
+06ca187,2008-06-04 13:11:27,Make exodus output only happen on processor 0 (for now)... this used to throw an error when running in parallel.,0
+704ebfb,2008-06-04 22:51:55,Bugfix for commented out lines  lines with parameter prefixes,0
+3d964e5,2008-06-05 15:41:49,Resize FEXYZ _map arrays correctly,0
+3d1428d,2008-06-13 16:10:20,fixed to work with trilinos make install target,0
+6cfbdbe,2008-06-13 18:59:07,remove gcc-4.3 warnings,0
+0b0d030,2008-06-13 19:01:35,put trilinos stuff in trilinos_* files,0
+98eae89,2008-06-13 19:02:19,moved,0
+3248f2e,2008-06-13 19:02:30,moved,0
+b082dd4,2008-06-15 15:42:14,updated config.guess  can build shared libraries on OSX 10.5,0
+1c0bf21,2008-06-15 16:00:43,igore stuff in the contrib/lib,0
+b5f1ac4,2008-06-15 16:02:09,instatiate an EpetraVector when Trilinos is available,0
+d30679a,2008-06-15 16:03:06,placeholder support for AztecLinearSolver,0
+0c44e69,2008-06-16 01:11:52,added initial Epetra sparse matrix implemetation,0
+e8b8c11,2008-06-16 15:21:42,Make the executable linking stage quiet (do not echo the command to the screen.),0
+8c4c2f2,2008-06-16 17:00:33,added error_estimation source subdirectory,0
+1811b0a,2008-06-16 18:38:44,support for mat(i j),0
+0fa87c1,2008-06-16 18:51:16,Added missing #include <vector>,0
+0a49e85,2008-06-16 18:53:26,"Added missing #include ""elem.h""",0
+7b2ded2,2008-06-16 19:10:23,Added #include <memory> for std::allocator,0
+eac4558,2008-06-16 19:14:16,Added missing #include <vector>,0
+fcb9bfd,2008-06-16 19:15:29,Added missing #includes,0
+0dba399,2008-06-16 19:28:54,Comments  bugfix for unrefined islands tests,0
+94f2671,2008-06-16 21:19:40,fix set(i j),0
+45f6333,2008-06-16 21:34:18,Typo fix,0
+f1119e9,2008-06-17 13:08:33,moved to Epetra_FEVector,0
+01f67d7,2008-06-17 16:46:39,added Epetra_Vector test,0
+5ff4563,2008-06-17 17:40:11,localize() works,0
+c5412c1,2008-06-17 18:43:53,updated quadrature test coverage,0
+447efee,2008-06-17 18:48:06,fixed a bug in 5th-order tetrahedral Gaussian Quadrature,0
+2c37a37,2008-06-17 19:47:10,reorg,0
+673e18c,2008-06-17 19:49:18,reorg,0
+dd8e669,2008-06-17 19:50:32,reorg,0
+503f52f,2008-06-20 16:50:27,"Use the ""do/while(0)"" macro trick in case we put these macros in if/else statements later",0
+6a8ac9d,2008-06-20 21:32:06,Make sure rhs is ready for assembly,0
+9083014,2008-06-23 23:40:39,Updates for moved error estimator headers,0
+56e83ef,2008-06-24 17:51:42,Added allow_rules_with_negative_weights flag to QBase.  Default is true (which was the standard behavior) but you can set this to false to use more expensive (but potentially safer) quadrature rules instead.,0
+519e719,2008-06-24 19:29:01,Finished adding Dunavant quadrature rules up through 19th order for TRIs. This is the highest order available which is suitable for use in FEM calculations. Above 19th-order you still get conical product rules up to 23rd.,0
+2051b3c,2008-06-25 15:25:47,Use system.update() instead of localizing the global solution in the PetscNonlinearSolver,0
+a3ff51c,2008-06-25 21:57:54,Added a few tet rules from Keast's 1986 paper.,0
+265679c,2008-06-25 22:05:12,Make .e map to Exodus,0
+9f5632b,2008-06-25 22:10:15,Update help message,0
+3c4b8db,2008-06-26 13:41:06,do not repartition parallel meshes until redistribution is fully integrated,0
+54d6e0c,2008-06-27 20:44:17,moved the Node serialization MPI methods from anonymous namespace to inside the Node class,0
+2ca8afa,2008-06-30 14:25:32,factored out element packing/unpacking for MPI communication,0
+440015c,2008-07-01 21:59:04,Added a new quadrature class for Tets  based on the 1978 paper by Grundmann and Moller.  These rules have negative weights but they are defined for all orders and have a lot less points than conical product rules.,0
+7d0a436,2008-07-01 22:13:14,Removed big commented-out case statement.  This isn't needed for the GM rules...,0
+004d24a,2008-07-01 23:16:06,Keyword substitution fixed for new files.,0
+658027d,2008-07-02 15:40:29,Made the GM rules the default choice for high-order integration over tets when rules with negative weights are allowed.,0
+a2dfed3,2008-07-02 20:33:27,reworked DofObject to store indices more efficiently,0
+dbd2898,2008-07-03 15:42:51,Added some even-order quadrature rules for QUAD elements due to Wissmann  1986.  These rules have all positive weights inside the reference element and fewer points than equal-order tensor-product rules  therefore they appear to be superior in almost every way.  The degree-4 and degree-6 rules can even be shown to contain the minimum number of points required to achieve their respective accuracies.,0
+8d35a3c,2008-07-03 21:07:29,Added Wandzura's 15th  20th  25th  and 30th-order quadrature rules for the triangle.  These rules have all positive weights  all points inside the region of integration  and fewer points than equivalent-order conical product rules.,0
+76ad8b2,2008-07-03 21:17:23,Added extra cases for Wandzura rules.,0
+17344bc,2008-07-07 20:37:23,Added write_timestep to ExodusII_IO,0
+a4b967c,2008-07-07 20:59:56,Removed extra function qualifier.,0
+888239e,2008-07-07 21:04:59,Timestep should have been an int,0
+f1d1b86,2008-07-08 14:32:46,Make initialization in ctor match order of var declarations in class to avoid warning.,0
+c6eed16,2008-07-08 15:41:11,Add iterator methods for iterating through the parameters from the outside  also made Parameter public,0
+7032e25,2008-07-08 17:36:27,Fixes to remove 'unused variable' warnings when compiling in optimized mode with -Wall.,0
+dcb20ac,2008-07-08 17:46:50,Fixes to remove 'unused variable' warnings when compiling in optimized mode with -Wall.,0
+97f3f87,2008-07-08 18:52:52,Fixes to remove unused variables when compiling in optimized mode with -Wall.,0
+09d8a1f,2008-07-08 19:04:53,Avoid declaring variables which are only used for asserts. This prevents a lot of unnecessary warnings when compiling with -Wall in optimized mode.,0
+fce116b,2008-07-08 19:14:50,Avoid declaring variables which are only used for asserts.  This prevents a lot of unnecessary warnings when compiling with -Wall in optimized mode.,0
+56f8d00,2008-07-08 19:35:34,Do not declare variables which are only used in asserts  unless asserts are active.,0
+0e336dd,2008-07-08 19:41:53,Only declare certain variables if asserts are active.,0
+abc503f,2008-07-08 19:55:23,Avoid declaring variables only used in assert statements.,0
+4cf5d10,2008-07-08 20:52:58,Avoid declaring unused variables in when asserts are not active.,0
+896d760,2008-07-08 21:20:40,Avoid declaring variables which are only used for asserts.  This prevents a lot of unnecessary warnings when compiling with -Wall in optimized mode.,0
+672318c,2008-07-08 21:23:50,Moved the uniform error estimator to the new error_estimation directory.,0
+f3eface,2008-07-08 21:48:10,Avoid declaring variables which are only used in assertions unless assertions are active.,0
+201a909,2008-07-09 18:27:50,Added a degree=2  3-point rule for the quadrilateral. An equivalent tensor-product rule would have 4 points.,0
+c24f635,2008-07-09 21:37:48,"Removed the Wissmann rules for QUADs.  They are not usable because our order P rules for QUADs must be able to integrate ""bi-pdic "" i.e. biquadratic  bicubic  etc. polynomials  which actually have terms up to order 2p but are not complete.",0
+b4d80ad,2008-07-10 13:34:46,Fixed issue in DEBUG mode where variables were used but not declared.,0
+677ee2b,2008-07-10 17:35:22,Changed debug -> dbg in list of valid METHOD options.,0
+850cfdd,2008-07-10 18:37:59,Updated the documentation upload targets to reflect the fact that we now use SVN.  In order to rsync/upload files to the sourceforge.net servers  please set the LIBMESH_SVN_USER environment variable to your sourceforge username if your sf username differs from $USER.,0
+66cbd67,2008-07-11 17:45:07,Added Nemesis to contrib.,0
+baa81df,2008-07-14 15:24:52,Added the QMonomial quadrature class.  You can integrate monomial FE bases with fewer points (in general) than are required for Lagrage tensor product bases.  The QMonomial class implements these integration rules for QUAD and HEX elements when available  and falls back on tensor product rules when necessary.,0
+d9c1b73,2008-07-14 15:39:35,Accidentally removed appbinfiles from all target. (oops) Replaced.,0
+3ec00e2,2008-07-14 15:40:06,Updated dependencies for new and moved files.,0
+22b6b14,2008-07-14 22:29:43,Added non tensor-product rules for QUADs through 17th-order.,0
+90b8ee0,2008-07-17 13:36:10,Added 4th order rule for TRIs with 6 points and all positive weights.,0
+09302f9,2008-07-18 15:22:32,Added a degree-7  12 point quadrature rule for TRIs with positive weights.,0
+eb38899,2008-07-20 21:58:18,two of the three papers john found  need to add third,0
+e6cd90b,2008-07-20 23:49:30,publications and presentations,0
+21c4651,2008-07-20 23:52:07,publications and presentations,0
+1a37a4f,2008-07-21 00:03:46,publications and presentations,0
+8e606a9,2008-07-21 00:58:10,updated examples page,0
+3fe2702,2008-07-22 23:44:32,weird query-replace syntax bug?,0
+9c0e700,2008-07-24 21:25:44,recv methods should take a signed integer for processor id since MPI_ANY_SOURCE can be negative!,0
+7c0d891,2008-07-24 21:32:12,better support for intel v10.1 compiler flags  allow --disable-unordered-containers,0
+4d126d1,2008-07-25 01:27:51,Updated dependencies for moved uniform_error_estimator file.,0
+40d5629,2008-07-28 22:48:22,Used multi-precision software (GMP/MPFR/GMPFRXX) to re-compute the Jacobi quadrature rules to higher precision  and extended them at high precision to 43rd order  the hightest order enumeration defined.,0
+0496da1,2008-07-29 13:13:13,Fixed some formatting problems with the new rules.,0
+b02aa3b,2008-07-30 22:09:25,Make the code compile with TRIPLE_PRECISION defined  aka when Real=long double.,0
+9c516b6,2008-07-30 22:11:18,Recomputed 1D Gauss rules to 32 digits of precision using a multi-precision (GMP/MPRF/GMPRFXX) library.,0
+7bff58e,2008-07-31 16:04:51,"Append ""L"" to all long double floating point literals.  This tells the compiler not to truncate the literal to a double (thereby losing precision) before assigning it to a long double.",0
+521bb99,2008-07-31 19:19:11,"Added a 3rd-order accurate rule for triangles with all positive weights.  This replaces a 4 point rule which had a negative weight.  Also  added a few ""L"" tags to floating point literals to get the correct precision when compiling with Real==long double.",0
+149ce2a,2008-08-01 15:15:11,Don't try to automatically instantiate something you've already explicitly instantiated.,0
+ed49347,2008-08-01 16:32:30,Added a few explicit instantiations which Intel 9.1 complained about in devel mode.,0
+8f37059,2008-08-01 19:48:56,Allow systems to be read which have added their own vectors already,0
+7e42f7e,2008-08-01 20:39:54,"Wrote some configure tests which try compiling unordered_map/set in the std:: or std::tr1 namespaces  as well as hash_map/set in the __gnu_cxx:: namespace.  This was needed because just checking for the header files may be insufficient.  Intel compilers can ""see"" these headers but apparently they cannot always compile them.",0
+7eaf171,2008-08-01 20:43:26,Skip a debug-only communication step when in opt mode,0
+f403872,2008-08-01 20:44:59,Close parallel vectors after setting them from file data,0
+49f8bd1,2008-08-02 21:50:10,syntax for SunStudio 12,0
+8dec158,2008-08-05 20:23:10,Include guards.,0
+3170fd7,2008-08-06 20:48:34,Fix from Adam Powell for --disable-exodus,0
+175cdb5,2008-08-06 22:03:40,Fix to make vtk output writer work for parallel runs. Checked on modified equationsystems.write() for ex8 and ex14 using vtk 5.3.0 on debian unstable,0
+8d8f569,2008-08-08 18:58:53,Capture exodus block_id as the subdomain_id of the element,0
+0af9698,2008-08-09 00:33:55,Fix --disable-tracefiles,0
+513bd22,2008-08-09 00:48:31,Simplify (and correct) configure test for GCC ABI name demangling,0
+53aa4dd,2008-08-09 01:02:10,include cstdlib  std::free(),0
+803f90f,2008-08-09 03:20:15,Fixed the Hex27 numbering issue.  Fixed a couple of leaked pointers.,0
+33adeaa,2008-08-09 04:23:30,Fixed one of the more ridiculous uses of arrays of C-style strings.,0
+f5be8e0,2008-08-10 14:28:13,Modified example to include option to export to VTK  the option is off by default,0
+67e5312,2008-08-10 16:14:57,Added cstring include otherwise gcc-4.3 can't find strcpy,0
+ac42a2e,2008-08-10 20:38:50,ex12 works again  additional UNVIO logging,0
+10092d8,2008-08-10 20:59:48,Make write() print an error message until we get around to implementing it.,0
+b6c21f5,2008-08-11 00:17:08,Fixes for --disable-amr,0
+151c830,2008-08-11 04:53:37,Fixes for --enable-complex,0
+4ea39eb,2008-08-11 19:54:46,fix for multithreaded full sparsity assembly,0
+0f6dcf3,2008-08-11 21:31:19,fixed memory leak,0
+f576367,2008-08-12 14:11:55,more logging,0
+0adc3e2,2008-08-14 18:37:01,Tagged libmesh 0.6.3,0
+720065d,2008-08-14 18:52:19,Removed  accidental tagging of 0.6.3,0
+a9b4da3,2008-08-14 18:52:58,Tagged libmesh 0.6.3,0
+aa6a088,2008-08-14 20:25:11,Close START_LOGs,0
+3c63d8b,2008-08-14 20:30:38,Add logs to remaining Parallel::gather/broadcast methods,0
+265675f,2008-08-14 20:40:24,Remove redundant null-setting,0
+81c0501,2008-08-14 21:05:10,Found a regression in previously tagged 0.6.3,0
+4483633,2008-08-14 21:05:48,Tagged libmesh 0.6.3,0
+9a33c02,2008-08-15 20:36:36,Fix for seminorm calculations,0
+9392ea4,2008-08-15 21:26:30,Don't try to use mpi compilers if we've disabled mpi,0
+d41e000,2008-08-18 14:17:43,Retagging to get some last-minute updates to 0.6.3.,0
+afff19e,2008-08-18 14:18:56,Tagged libmesh 0.6.3,0

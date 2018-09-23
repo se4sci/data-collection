@@ -1,0 +1,128 @@
+hash,time,message,buggy
+f1e90a8,2017-09-15 16:03:39,Add possibility of LDA/GGA+U calculation (without spin polarisation in the functional) (usual calculation are LSDA+U or SGGA+U). Need still to modify double counting and compatability with DMFT.,0
+a85c873,2017-09-27 13:40:57,Allow DFT+DMFT calculation to be compatible with usepawu=4 (ie use non magnetic Exc) Need to create another keyword not related to usepawu.,0
+383123b,2017-09-27 15:22:11,Correct condition for dmft_dc is usepawu 14,0
+942659f,2017-09-27 16:07:56,Update references in cRPA after BUG correction.,0
+6fd35ca,2017-10-18 08:05:28,Update cRPA tutorial (to take into account bug in the calculation of J).,0
+bf458bf,2017-10-23 15:28:00,Typos and still working on the cRPA bug on J,0
+d66b0d3,2017-10-23 18:05:45,Typos and bugs,0
+fbeeffc,2017-10-23 18:15:31,Suppress comment in pawpuxinit,0
+eb705e1,2017-10-24 09:58:31,Update Refs for some cRPA tests,0
+4e016d9,2017-10-24 16:20:40,merge with trunk.,0
+f667064,2017-10-24 18:05:28,modify non_magnetic_xc in m_pawpsp,0
+2e66f0b,2017-10-24 18:11:21,Update vtorho after makemake,0
+7325b9d,2018-03-20 09:59:16,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0
+c6f9186,2018-03-20 10:32:42,Initialize v8.7.7,0
+df1b190,2018-03-20 10:44:32,Finalize merge,0
+4f707c1,2018-03-21 16:22:23,Add correct double counting for usepawu=4.,0
+1f2e2b5,2018-03-21 18:34:02,Update tdepes.md,0
+1f91912,2018-03-23 07:57:21,Fix the problem in plot_bs.py script  as well as address of this script in tdepes.md file.,0
+18345a9,2018-03-23 09:19:58,Come back to 1f919,0
+bce88e9,2018-03-23 10:21:35,Restore the master (v8.7.7) in develop,0
+76cc798,2018-03-23 10:27:37,Fix problems with tdepes tutorial and Samuel's script.,0
+66c6214,2018-03-23 10:58:33,Merge remote-tracking branch 'github/master' into develop,0
+ca09613,2018-03-23 11:05:12,Fix the problem with the weights in temperature_final.py .,0
+e6e2392,2018-03-24 11:10:27,Move acrossb and rotmat to m_geometry,0
+2f1f806,2018-03-24 11:22:01,prt_cif  prtposcar --> m_crystal,0
+e08faa5,2018-03-24 11:42:09,Move matr3eigval and matrginv to m_abilasi,0
+d540ec8,2018-03-24 11:50:21,Move sbf8 to m_special_funcs,0
+dbcb603,2018-03-24 12:01:08,hermit --> m_numeric_tools,0
+2024fa9,2018-03-24 12:01:39,abilint,0
+fe4882c,2018-03-24 12:23:44,uniformrandom --> m_numeric_tools,0
+22ccf88,2018-03-24 12:42:53,ctrap and findmin moved to m_numeric_tools,0
+f570585,2018-03-24 13:25:02,Move inupper to m_fstrings,0
+f4c976c,2018-03-24 13:26:50,Seed is inout. Wrong interface in m_use_ga,0
+4be7f90,2018-03-24 13:48:55,abilint,0
+014a241,2018-03-24 14:46:35,outwant  outxml and outqmc are now modules,0
+2088e86,2018-03-24 14:54:05,Fix typo,0
+59ba252,2018-03-24 14:54:26,abilint,0
+b0be99b,2018-03-24 14:54:31,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0
+551b78a,2018-03-24 15:06:27,mv kramerskronig to m_numeric_tools,0
+4e7a588,2018-03-24 15:06:33,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0
+9e6e2b0,2018-03-24 15:31:07,Fxi typos,0
+bc248b0,2018-03-24 15:47:32,fixsym --> m_geometry,0
+1b55275,2018-03-24 16:18:12,Create m_parser module with low-level tools,0
+9f14354,2018-03-24 16:32:05,Move appen/importxyz to m_parser,0
+b2cb232,2018-03-24 16:37:49,Move parsefile to m_parser,0
+98abdd5,2018-03-24 16:50:53,Add missing import,0
+f26d105,2018-03-24 16:58:02,Move write_var_netcdf and create_ncfile to m_nctk (deprecated),0
+bb3d22f,2018-03-24 17:08:18,abilint,0
+335dfaa,2018-03-24 19:50:09,Fix robodoc warnings,0
+6f537eb,2018-03-25 00:53:50,Convert geometry wavefunctions and noncoll into markdown,0
+6ee3e66,2018-03-25 01:10:34,Remove obsolete scripts,0
+3b988aa,2018-03-25 12:37:48,Move find_getdtset to m_dtset,0
+24b9d45,2018-03-25 12:53:36,Move jacobi and lubksb to m_abilasi and deprecate,0
+a8b9c93,2018-03-25 13:05:28,ludcmp must be public,0
+c0c4921,2018-03-25 14:05:53,Move symkchk to m_kpts,0
+a8d8ea4,2018-03-25 14:23:41,Move cspint to m_numeric_tools,0
+8360c0b,2018-03-25 14:30:59,Move INTRPL to m_splines and deprecate,0
+346a1fb,2018-03-25 14:35:01,Delete intrpl,0
+f7a84bb,2018-03-25 14:41:49,export cspint,0
+df8f7a4,2018-03-25 15:06:45,Move blow_pawuj to pawuj_utils,0
+ffad41f,2018-03-25 15:22:49,Move overlap_g to m_cgtools,0
+6f15555,2018-03-25 15:37:04,abilint,0
+2210543,2018-03-25 19:34:06,Remove interp,0
+6ce1dcd,2018-03-25 19:52:48,Add m_bessel module,0
+b3ba462,2018-03-25 20:08:20,Fix typos,0
+7bafed8,2018-03-25 23:25:42,Fix robodoc warnings,0
+cf8a8fe,2018-03-26 00:11:58,Minor changes,0
+e079a8b,2018-03-26 09:50:05,Increase tolnlines in v5[40],0
+b84999c,2018-03-26 10:43:44,Group memana routines in m_memeval,0
+11ea19f,2018-03-26 11:02:58,Add missing import,0
+c315a75,2018-03-26 14:50:43,Encaspulate aim procedures in m_bader.,0
+388844a,2018-03-26 15:12:39,abilint,0
+21a0c60,2018-03-26 20:55:36,Fix robodoc tag,0
+15db058,2018-03-26 22:24:04,Continue to correct links.,0
+aa7dcbf,2018-03-27 08:52:10,More link fixes,0
+6413068,2018-03-27 15:49:50,Fix different links,0
+5b98748,2018-03-27 15:51:46,Move xred2xcart and friends to m_geometry,0
+a793fcf,2018-03-27 16:03:34,Fix Allen1996 reference,0
+2b6648f,2018-03-27 16:32:40,Begin to group procedures in 41_geometry  won't touch spgfinder code,0
+a9032bc,2018-03-27 18:14:10,Fix bigdft compilation,0
+3e4a343,2018-03-27 18:14:40,DOI of a 1998 did not work. Gave working URL.,0
+d6f11ab,2018-03-27 21:40:20,Move metric to m_geometry,0
+12f63a3,2018-03-27 21:49:31,Polish docs,0
+1e477a2,2018-03-27 22:06:56,Change site_url  fix new bibtex entries,0
+8226ca7,2018-03-27 22:51:18,Move zerosym to m_fft,0
+d5ecd99,2018-03-28 00:35:34,Gather eig/occ routines in m_occ,0
+7fe419b,2018-03-28 00:45:29,Fix typo,0
+7e22be9,2018-03-28 01:12:08,Create m_angles module for low-level tools,0
+2606b20,2018-03-28 01:21:37,Fix typos,0
+03a9c0c,2018-03-28 01:36:05,Move chkprimd and dhkdilatmx to m_geometry,0
+fb3f11a,2018-03-28 01:36:17,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0
+eefd630,2018-03-28 01:50:39,export dist2,0
+c01f756,2018-03-28 01:53:23,Version for buildbot,0
+88dd42e,2018-03-28 10:25:30,Merge remote-tracking branch 'remotes/amadon/develop' into _amadon,0
+29f8f94,2018-03-28 10:42:55,Fix bigdft compilation errors,0
+03a5373,2018-03-28 11:20:48,Some fix of the documentation for developers/,0
+09fab58,2018-03-28 11:31:10,Clean the PortabilityNonRegression topic.,0
+013ea2d,2018-03-28 11:35:03,Merge remote-tracking branch 'remotes/gmatteo/mkdocs' into _gonze,0
+d0616eb,2018-03-28 12:42:02,Move dzgedi and dzgefa to m_abilasi and deprecate,0
+1f74884,2018-03-28 12:56:43,abilint,0
+c99d43c,2018-03-28 14:09:10,Modularize tddft,0
+edceb44,2018-03-28 14:19:39,Fix typo,0
+da16248,2018-03-28 14:58:23,Merge branch '_gonze' into develop,0
+e8066f1,2018-03-28 15:20:48,Fix typos in doc,0
+c79306f,2018-03-28 19:49:54,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into abilint,0
+8a44264,2018-03-28 22:50:34,Increase tolred in v8[69],0
+547c78f,2018-03-28 23:18:29,Move symg and getkpgnorm to m_gsphere,0
+df0dca0,2018-03-28 23:51:35,Include getmpw  getph  kpgio  kpgstr  getcut  mkkin  ph1d3d in new module m_kg,0
+99938a8,2018-03-29 01:26:47,Version for buildbot,0
+1752b9d,2018-03-29 13:52:06,Move dotprod_vn to m_cgtools  create m_suscep_stat module,0
+694d8bb,2018-03-29 14:05:02,Move testsusmat to m_dtset,0
+292276a,2018-03-29 14:06:02,abilint,0
+7da2599,2018-03-29 14:06:04,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0
+10c3ed8,2018-03-29 14:40:56,Fix compilation error,0
+5e9e59b,2018-03-29 15:00:43,Mov chkdpr and chkint routines to m_parser,0
+a6724a6,2018-03-29 15:44:57,Abilint,0
+c0e8cbe,2018-03-30 19:38:53,Add section on pseudos and spherical harmonics to theory notes,0
+8b86031,2018-03-31 00:31:54,Remove deprecated wikilink syntax  enforce namespace  add bibtex entries,0
+4075f01,2018-03-31 00:52:53,Deactivate search bar,0
+4d5a8dc,2018-03-31 13:02:14,Begin to group procedures in 64_psp,0
+1fb761c,2018-03-31 13:18:26,move vhtnzc to psp6cc,0
+c50bc40,2018-03-31 13:28:43,Group fhi routines in psp6in,0
+cd30351,2018-03-31 14:23:19,Move clnup routines to gstate,0
+a975d7a,2018-03-31 14:46:41,Move routines inside cgwf,0
+aeef3f1,2018-03-31 15:18:27,abilint,0
+9552ca4,2018-03-31 16:51:47,Merge remote-tracking branch 'remotes/gmatteo/mkdocs' into _gmatteo,0
+90aadfb,2018-03-31 17:27:51,Progress towards the finalization of v8.7.7 .,0

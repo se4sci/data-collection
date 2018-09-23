@@ -1,0 +1,355 @@
+hash,time,message,buggy
+5fe7e81,2/13/2017 10:30,nonlop is now available with choice=54 and signs=2,0
+18c1d13,2/13/2017 10:37,Merge remote-tracking branch 'trunk-gitlab/develop' into nonlop-c54-s2,0
+4305323,2/13/2017 10:47,Merge remote-tracking branch 'usbdisk/nonlop-c54-s2' into nonlop-c54-s2,0
+2c09a85,3/31/2017 19:08,First version for a routine testing nonlop (DFPT vs Finite Differences),0
+45dd2d5,5/11/2017 15:06,bug fix from forum,1
+64054ff,5/16/2017 16:30,port velocity squared to m_phonons.F90,0
+e5c14cf,5/16/2017 17:25,fix file naming conventions,1
+b87fedf,5/16/2017 17:26,fix file naming conventions 2,1
+ea7e42f,5/16/2017 22:22,proposed small modification of input variable html files: copyright in footer and less header except for main allvariables page,0
+943a17f,5/19/2017 13:34,small comments for readability and restore a debug output,0
+1a8b09f,5/21/2017 21:30,first draft supercell refactoring,0
+48ff791,5/22/2017 10:25,complex deallocation stuff,0
+eee5355,5/22/2017 11:33,fixed residual erroneous uses of qphon as ncells,1
+70fde48,5/22/2017 13:39,merged trunk,0
+e930d52,5/22/2017 16:21,robodoc unhappy,0
+42b7a10,5/22/2017 16:34,include thermal_displacement in test and doc file,0
+517b1f4,5/23/2017 9:45,now make it work,0
+62641cd,5/23/2017 10:05,fix deallocates,0
+8cede3d,5/23/2017 11:40,long line chopped,0
+9e0ee39,5/24/2017 9:55,unprotected deallocate crashes a simple Si relaxation run,0
+4c30120,5/24/2017 10:15,forgot to remove debugging junk,1
+5e65d66,5/24/2017 10:30,user warning added,0
+196fb67,5/25/2017 15:25,Imported source-code changes from psml branch,0
+dd4adfc,5/25/2017 15:29,Imported test-suite changes from psml branch,0
+0cc221e,5/25/2017 15:36,Imported build-system changes from psml branch,0
+4977268,5/25/2017 15:41,Imported changes to configure.ac from psml branch,0
+4fd82e4,5/25/2017 15:42,Imported iopsp_parser changes from psml branch,0
+883d997,5/25/2017 15:47,Imported cosmetic fixes from psml branch,0
+8.46E+61,5/25/2017 16:15,Updated LibPSML location on Abiref,0
+f1d0d31,5/25/2017 17:10,bug fix for boltztrap output: energy window was a static default  which does not encompass all of the valence bands by default. Now corrected. For previous outputs it is sufficient to manually increas the 0.4 value in the boltztrap INTRANS file  checking the DOS. The number of electrons and the Fermi energy were already correct.,1
+8efacdb,5/25/2017 21:42,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+71e350c,5/26/2017 14:28,added some outputs for linear optics. Not tested at all yet  should not advertize,0
+ef22e19,5/26/2017 14:31,comment in scfcv,0
+4574574,5/26/2017 14:31,remove intermediate array: blas does not have explicit interfaces,0
+4334754,5/26/2017 15:06,absorption coeff in linear optic output,0
+bfc0c24,5/27/2017 14:27,adapt temp variable,0
+01f250c,6/1/2017 17:52,restore proper order: calculate then output,0
+3a35b24,6/5/2017 14:38,Hard-coded LibPSML location in abiref config files,0
+b161144,6/5/2017 15:00,Hard-coded XMLF90 location in abiref config files,0
+9e2658f,6/8/2017 23:48,prtvclmb works - do not touch anything,0
+a9c81d7,6/8/2017 23:58,clean debug stuff - to the test farms,0
+3e05239,6/9/2017 11:03,optic ref files,0
+85bfe75,6/9/2017 11:07,ref file update,0
+19da2b4,6/9/2017 11:15,still optic ref files,0
+03e64d7,6/9/2017 11:16,always import VH of core charges - should be small and useful,0
+69d0fad,6/9/2017 11:22,even more optic ref files,0
+b50414f,6/9/2017 11:27,final optic ref files,0
+03a3b8c,6/9/2017 17:18,fix alloc conditions - someone knowledgable (Marc) should check all of this ideally,1
+4.40E+06,6/9/2017 17:47,tried to merge trunk : src/78_effpot/m_effective_potential.F90 may need more work,0
+124f03a,6/9/2017 21:53,fixed some interface API stuff with multibinit,1
+cf51500,6/10/2017 21:56,fix v8/06 bug,1
+1faa6a6,6/10/2017 23:40,ref file update,0
+efbcc38,6/11/2017 23:48,remove debug info file 300,0
+c7d2181,7/4/2017 13:07,Add nonlop_dfpt_test directory in scripts,0
+bfcb9ef,7/7/2017 16:55,add input for strten in multibinit and update ref. add no verbose mode for mover.F90,0
+426325a,7/11/2017 10:13,trial phase correction for thermal supercells,0
+6efc172,7/11/2017 16:59,merged trunk and fixed clashes with Alex,0
+f6b946c,7/12/2017 15:51,Choice 54  signs=2 available in nonlop_test,0
+34b564c,7/12/2017 15:54,Merge branch 'develop' of abinit-gitlab:trunk/abinit into misc,0
+c44651f,7/15/2017 23:23,cleaned volume interpolation a bit for cut3d,0
+b8934e0,7/19/2017 10:54,add option to fit process and first version of the bound process,0
+5186581,7/19/2017 11:27,abirules,0
+d99d3c8,7/19/2017 13:47,appa: adapt HIST file reading,0
+ab2b181,7/19/2017 13:54,add appa compilation files to .gitignore,0
+2f89593,7/20/2017 17:00,improve bounding of the anharmonic part,0
+027e66d,7/20/2017 17:02,Merge branch 'develop' of gitlab:amartin/abinit into develop,0
+5b6b198,7/21/2017 17:44,Rewrote random seeding in m_vcoul in a portable way,0
+8f1486f,7/22/2017 10:21,Previously uncommitted typo fix,0
+85b747f,7/23/2017 23:15,Reviewed vcoul_init and fixed abirules violations,0
+98edea3,8/1/2017 15:11,Fixed spurious 4*pi factor back in PSML NLCC component,1
+e933e04,8/1/2017 15:14,Merge tag 'start-8.5.2' into psml-new,0
+675da8d,8/1/2017 15:22,Case 54k was wrong with nonlop_test,0
+96416bf,8/1/2017 15:37,Increased tolerance for PSML tests to make their comparison easier,0
+6ce08cc,8/1/2017 15:42,Updated PSML test references,0
+726c5e1,8/1/2017 15:55,Renamed PSP8 pseudos for PSML tests to avoid clashes,0
+79708ce,8/1/2017 16:21,Generated new pseudos for PSML tests with ONCVPSP-3.3.0+PSML-72,0
+c0a547a,8/1/2017 16:36,Updated test references for ONCVPSP-3.3.0+PSML-72,0
+072a218,8/1/2017 17:23,Had test suite lock file ignored by Git,0
+2a8ff11,8/1/2017 17:28,Had Buildbot's fallbacks version dumper ignored by Git,0
+f89ef9e,8/1/2017 17:31,Merge branch 'psml-new' of abinit-repo:pouillon/abinit into psml-new,0
+d965f82,8/2/2017 14:52,Small correction in nonlop_test,1
+3a7d3fd,8/2/2017 15:24,Removed useylm=1 constraint when reading ATOM PSML pseudos,0
+1c6283f,8/2/2017 15:43,Updated abiref configuration for LibPSML 1.1.5,0
+c894ac5,8/2/2017 16:46,Some modifs in nolop for the case choice=54  signs=2,0
+eda9cc8,8/3/2017 18:02,Imported ATOM PSML pseudos for the psml test series,0
+ed88802,8/3/2017 18:08,Added test cases for ATOM PSML pseudos,0
+5a5a36f,8/3/2017 18:25,Refactored and enhanced the psml test series,0
+df78734,8/8/2017 10:55,Generated new PSML test references with the gnu/5.3/sdebug toolchain,0
+b70a39f,8/8/2017 11:09,Updated Test Farm configuration to match newly deployed LibPSML 1.1.5,0
+08dc9e8,8/11/2017 12:02,first step of the implementation of the ACE method for Fock calculations,0
+db8c612,8/16/2017 8:45,Merge remote-tracking branch 'trunk/develop' into develop,0
+2db2251,8/16/2017 17:48,Nothing changed  only comments.,0
+185d5bb,8/16/2017 17:51,Merge remote-tracking branch 'trunk/develop' into develop,0
+7015cd4,8/17/2017 13:20,The new subroutine dvdb_interpolate_v1scf interpolates the phonon potential to arbitrary q-points. Slower than dvdb_ftinterp_setup and dvdb_ftinterp_qpt but more memory efficient.,0
+dcb3a33,8/17/2017 15:03,Initialize v8.5.3,0
+9d7b61e,8/17/2017 18:02,Update tolerance for tpositron_3.in,0
+c89b4a5,8/18/2017 9:08,Merge branch 'develop' of abigit:trunk/abinit into develop,0
+6d16790,8/18/2017 9:55,"Experiment with MathJax. Make minor modifications : avoid using the ""$"" sign for the prompt. Also  prepend \ on significant $ signs.",0
+5032553,8/18/2017 10:34,Activate use of MathJax in all the HTML generated_files,0
+abe51a3,8/18/2017 12:27,multibinit add bound process,0
+213f0ac,8/18/2017 12:28,Merge tag 'start-8.5.3' into develop,0
+30331cb,8/18/2017 13:17,Allow shortcuts for links with only the section mention.,0
+eba37a4,8/18/2017 16:35,Merge branch 'input-web' into develop,0
+2639ecb,8/21/2017 18:00,Add test to forbid use of vdw-df with PAW,0
+48ecec0,8/22/2017 12:57,hopefully fixed the SOC bug I introduced trying to reuse vh1 arrays for prtvclmb. To be seen if the prtvclmb output is still correct,0
+95f9630,8/22/2017 12:57,intermediate additions for transport calculations in eph,0
+25517aa,8/22/2017 13:42,original form for core density addition in vh1,0
+51d2cc7,8/22/2017 15:08,tests to fix for new output of prtvclmb prtvha,1
+6dbee0e,8/22/2017 15:56,merged trunk and solved some conflicts,0
+4cca9ae,8/22/2017 16:14,Ensure nproc_slk>0,0
+10b2a85,8/22/2017 16:18,Bug fix (test case from R. Cohen): prtden<0 was not compatible with parallelism over atoms,1
+b864a37,8/22/2017 23:29,fix residual bugs for multibinit usage of qphon  and eliminate prtvha which is not dealt with in dvdb output,1
+c785b48,8/23/2017 10:39,update flags for saving of vh*nzc in output files,0
+a4eb856,8/23/2017 13:16,Bug fix: g-vectors were not correctly computed when getcell/=0,1
+96db9d4,8/23/2017 16:42,Bug fix: had tu use blas intead of matmul in m_fock (because of the increment in an array),1
+5b9d0af,8/23/2017 17:58,Another bug fix in m_fock,1
+96ab5d9,8/23/2017 18:15,Add several tests in chkinp for incompatible options,0
+5036c26,8/24/2017 13:54,missing init of fs average of velocities squared,0
+8c68ff8,8/24/2017 18:27,Support for ELPA 2016,0
+b87a7fa,8/24/2017 23:03,abirules,0
+6d2de3b,8/24/2017 23:11,test failure in parallel if some nodes have 0 atoms,0
+8bfff92,8/25/2017 10:03,debug fit process and bound process and update ref,1
+3d982b7,8/25/2017 10:34,segfault fixed,0
+945f867,8/25/2017 12:29,Implemented a new functionality in the eph driver to only interpolate the phonon potential on a fine q-point mesh.,0
+fff1656,8/25/2017 14:30,debug the reading of XML with LIBXML,0
+27ea948,8/25/2017 14:49,Changed a variable name to work around a bug in abilint.,0
+ab2cde7,8/25/2017 15:47,Merge branch 'develop' of abinit-gitlab:trunk/abinit into misc,0
+6087446,8/25/2017 15:48,Bug fix in m_pawang when ixc=0,1
+739822b,8/25/2017 15:55,Bug fix in opernla_ylm (openMP version),1
+2873ee6,8/25/2017 16:06,Again  changed variable names to work around abilint bug.,0
+08cff2b,8/28/2017 9:22,Rationalize the *.css files   change the colors to fit the LOGO and new portal.,0
+e539f1c,8/28/2017 9:29,Fix one link,1
+5fb8407,8/28/2017 9:33,Better format echo of backlinks,0
+ca9e592,8/28/2017 10:00,Tune minor details in the doc,0
+c4836f0,8/28/2017 11:45,Added a new test chain to test the phonon potential interpolation.,0
+f9fa66d,8/28/2017 13:16,Fixed memory leaks.,1
+b56a27c,8/28/2017 13:19,Merge branch 'develop' into input-web,0
+7318f27,8/28/2017 14:17,Merge remote-tracking branch 'trunk/develop' into develop,0
+cca257f,8/28/2017 14:47,ELPA 2017 support (new F2008 API),0
+d1d274e,8/28/2017 17:03,Bug fix in opernld_ylm  concerns only choice=81,1
+c1869c1,8/28/2017 17:52,Merge branch 'develop' of abinit-gitlab:trunk/abinit into misc,0
+525811b,8/28/2017 18:04,Correct an error due to merge,1
+e61e3bb,8/28/2017 18:51,Bug fix in pawdijxc (case pawxcdev=0 only  very rare),1
+2f6d160,8/28/2017 19:19,Had to hack abilint to make the class statement accepted,0
+6d5ec3c,8/28/2017 19:57,make libxc 3 accepted by the build system,0
+bf33404,8/28/2017 22:21,Upgrade tutorial_flowchart_v5.png to v6 . Note : I have tested with python v3.5 on my Mac  and the generate_doc.py script is not ready for python v35 . The output is different than with python v2.7 ...,0
+6a1ce4f,8/28/2017 23:40,Revert a change in m_fock,0
+609f4a0,8/29/2017 6:06,Merge torrent/misc/5258 into _torrent,0
+2f5ca56,8/29/2017 8:26,Fixed test instructions.,1
+81401aa,8/29/2017 8:27,Merge remote-tracking branch 'trunk/develop' into develop,0
+08907fc,8/29/2017 9:24,add new inputs to fit/bound process and debug mover_effpot.F90,0
+ed30b67,8/29/2017 11:47,debug 78_effpot/effpot_xml.c and update tests,1
+e465fe6,8/29/2017 12:16,ELPA implementation improved,0
+ac7f76a,8/29/2017 14:10,2 libxc tests: suppress functionals that do not exist anymore in libxc 3,0
+5fc54cd,8/29/2017 14:49,add input for the dipdip range and update refs,0
+f7b5b25,8/29/2017 14:52,6 libxc tests: suppress functionals that do not exist anymore in libxc 3,0
+4.90E+12,8/29/2017 15:06,Activate support for libXC 3.0 (libXC 2.2 still usuable),0
+d586e4a,8/29/2017 15:51,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+470bf2f,8/30/2017 11:14,Adjustment of the color codes for the doc on Web (with JMB).,0
+2f08b8f,8/30/2017 11:25,Include formabinit.css in infos_html-$(VERSION).tar,0
+7189b3a,8/30/2017 11:47,bug correction for the test farm,1
+ecc5c17,8/30/2017 12:31,Fix bug for punctuation in generate_doc.py,1
+77bd15e,8/30/2017 13:37,bug correction for memory profiling,1
+fa67102,8/30/2017 14:14,Test topics changes using PAW topic,0
+a829c24,8/30/2017 16:22,modification of some topics,0
+28efc6b,8/30/2017 17:08,Merge antonius/develop into _antonius,0
+1588b67,8/30/2017 20:42,Merge torrent/input-web/fa67 into develop,0
+390a2c1,8/30/2017 21:01,Re generate_doc,0
+4008a08,8/30/2017 21:16,Fix minor bugs,1
+8c41f67,8/30/2017 21:55,fix type for i123 variables  and reorder loops in linopt,1
+c9b2cba,8/30/2017 21:57,first try to fix phase in eigenvectors for Zacharias supercell. He tells me they actually fill the matrix in real space for the supercell  to get all real displacement vectors and not worry about the phase...,0
+1d9c11c,8/30/2017 22:00,should fix test v7/48 for properly symmetrized off diagonal linopt element in cubic GaAs - should really be 0,0
+97e55d7,8/30/2017 23:06,reset optic ref file to what is produced on abiref,0
+9.43E+09,8/31/2017 6:24,Merge jollet/develop/77bd into _jollet,0
+07fc2c2,8/31/2017 7:37,Correct all the FAKE links,0
+8f2350b,8/31/2017 8:45,"Separate ""other physical properties"" from ""Analysis/postprocessing""",0
+9fd7b4a,8/31/2017 14:03,Backlinks for the bibtex file.,0
+2de0083,8/31/2017 14:07,hopefully fix dp noise contradictions between platforms for optics code: symcart as real instead of integer form was creating problems with residual eps(omega)  which gave finite arbitrary values for ratios of dielectric matrix components.,0
+fa79b10,8/31/2017 14:09,Fix bug,1
+da1baa8,8/31/2017 16:42,use official topic value for doc in yaml file,0
+ffe30b8,8/31/2017 16:48,fix deallocations for a2f transport stuff,1
+ec0f94e,9/1/2017 0:01,is abiref debug happy yet? The doc on this is not clear yet - lots of constraints are not clear.,0
+ffbed8d,9/1/2017 11:47,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+9013114,9/1/2017 17:42,Add test.topics  fix errors in new docs detected by my scripts,0
+fe7465e,9/1/2017 18:23,modification of the Fock module for ACE implementation,0
+67a76c0,9/4/2017 10:32,Improvment of libXC v3 + C-API implementation,0
+d500301,9/5/2017 11:17,Improve ELPA detection by the build system,0
+47dec75,9/5/2017 13:28,several bug fixed and add some mpi parallelisation,0
+5d87ab8,9/5/2017 15:33,Update DFT+U  DMFT and cRPA topics  as well as lesson_dmft  and related input variables and bibliography.,0
+a082c52,9/5/2017 18:41,Merge tag 'start-8.5.3' into 8.5.2-fixes,0
+5f084eb,9/5/2017 20:04,add filter for respfn and kptopt 1,0
+8d0c4a0,9/6/2017 0:44,add default case kptopt 0 for respfn run flag checker,0
+53425da,9/6/2017 8:48,enforce compliance with kptopt rule for respfn calculations,0
+4490f02,9/6/2017 10:03,update test ref files on abiref,0
+916e5fd,9/6/2017 10:59,modification of the fock type for ACE implementation,0
+ce37dad,9/6/2017 12:58,update ref files and make filter on kptopt more precise : only 1 and 4 are banned for respfn,0
+9fedb72,9/6/2017 13:11,Reduce the size of the abihist_type  (for now  only activate for ionmov 12 and 13),0
+21f19de,9/6/2017 14:11,add itime to the argument prtxfase.F90,0
+e350c71,9/6/2017 16:30,add itime_hist in mover to store the real time step,0
+c5ca798,9/6/2017 16:33,bug correction for the farmtest,1
+c49ca91,9/6/2017 20:07,fix kptopt on gpu test as well,0
+6eef13f,9/7/2017 10:17,found missing allocation for transport a2f,0
+a214e40,9/7/2017 10:17,Merge branch 'develop' of gitlab.abinit.org:mverstra/abinit into develop,0
+3e52ff9,9/7/2017 10:18,bug correction for the test farm- ACE implementation,1
+d2ec176,9/7/2017 14:57,Change the way to deal with the storage of the HIST file  replace abihist_shift by abihit_findIndex,0
+363566c,9/7/2017 16:18,fix parentheses bug,1
+9bfd1ad,9/8/2017 8:27,Merge pouillon/8.5.2-fixes/a082 into _pouillon,0
+95039ef,9/8/2017 8:30,Merge amadon/develop/5d87 into _pouillon,0
+87bb22e,9/8/2017 9:59,replace all the occurences of ihist%ihist+/-i by abihist_findIndex(hist +/-i),0
+0de7931,9/8/2017 11:02,Set spec%nhist for each ionmov except HMC,0
+e3e5ac3,9/8/2017 12:21,increase the number of history stored in the hist to be compatible with tolmxf==0,0
+acc86c7,9/8/2017 12:46,Apply doc/generate_doc.py,0
+3e4cab6,9/8/2017 12:51,Merge mverstra/develop/a214 into _mverstra,0
+707406e,9/8/2017 15:33,Merge jollet/develop/3e52 into _jollet,0
+3360e1a,9/11/2017 9:52,Fix wrong wikilinks,1
+3.44E+64,9/11/2017 9:52,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into docs,0
+b79d671,9/11/2017 13:01,Typos,1
+74a0b54,9/11/2017 13:13,Fix typo,1
+9b14042,9/11/2017 14:11,merged trunk and solved conflicts,0
+f67d6e5,9/11/2017 15:21,Fix bug in input variables search,1
+7e82a30,9/11/2017 18:46,This version should handle getcell and getwfk correctly,0
+57bfe69,9/11/2017 19:18,Simplfy inwffil arguments,0
+667f8a5,9/12/2017 9:05,Fix a bug in setting up fock_common%forces   create test v7#67 for N2 molecule,1
+a5adc14,9/12/2017 10:35,Fix a problem with ixc_fallbackkxc_hyb   create test v7#68 (not yet finalized),1
+730a71a,9/12/2017 11:25,Merge commit '667f8a5' into ace1,0
+38b2e3f,9/12/2017 12:37,bug correction concerning ACE,1
+9e8fed6,9/12/2017 13:04,Test v7#67 is correct this time,0
+c1db4c1,9/12/2017 13:05,Merge remote-tracking branch 'remotes/origin/ace' into ace1,0
+dbd5f72,9/12/2017 13:29,Finalize test v7#68,0
+9912fc4,9/12/2017 13:30,Minor typo fix,1
+f8b09db,9/12/2017 14:19,Create test v7#69. There is a problem ... (PAW + Fock + Spin_polarized),0
+faf21e9,9/12/2017 14:33,update ref v7#67  and fix minor problem in v7#68&69 input files,0
+661479d,9/12/2017 14:43,Merge amartin/new_hist_storage/9b14 into _amartin,0
+b33aa8e,9/12/2017 15:53,Adjust 2 refs due to new getcell treatment,0
+fbef7c0,9/12/2017 15:58,chkinp modified: npfft+openMP,0
+a86a3bb,9/12/2017 16:43,Merge tag 'start-8.5.3' into psml-new,0
+92c3829,9/13/2017 7:58,Fix problems for tests v7#68 and 69. Also start to modify the Fock operator initialization,1
+fbfd12e,9/13/2017 8:26,Fix typo,1
+e3f6e7c,9/13/2017 9:56,Introduces new input variable fockoptmix . Documented  but not yet tested.,0
+417932,9/13/2017 10:00,Recompute the ACE operator only when the cwaveocc have been updated.,0
+2a834e5,9/13/2017 10:17,change of some references for Fock tests,0
+223816c,9/13/2017 10:53,Update another ref file after getcell modifications,0
+da90d0e,9/13/2017 10:58,These lines in m_fock did not compile with xlf,0
+67c171c,9/13/2017 11:12,Upgrade atompaw version (needed after libxc upgrade),0
+e3f449d,9/13/2017 11:23,Fix silly modif,0
+12fcd62,9/13/2017 11:31,oupps  type in fallback.conf,0
+df888cf,9/13/2017 12:38,Tune tests v7#67-69,0
+484fdb4,9/13/2017 12:41,Minor modif,0
+b184f06,9/13/2017 13:36,Tune the tolerances of tests v7#67 and 69,0
+42d270d,9/13/2017 13:41,Update ref files,0
+8c97621,9/13/2017 13:41,Merge branch 'ace_2' of gitlab.abinit.org:trunk/abinit into ace_2,0
+26a92a7,9/13/2017 13:41,Merge branch 'ace_2' of gitlab:trunk/abinit into ace_2,0
+34e3829,9/13/2017 15:59,Place the new tests in tests/libxc instead of tests/v7 (because libxc is used for HSE06 ...),0
+17ab6f6,9/13/2017 16:13,Introduce new input variable focktoldfe,0
+43d6ec4,9/13/2017 16:44,Fixed writing of the perturbed densities and potentials with paral_rf Fixed DVDB interpolation with incommensurate q-point grids.,1
+3399b2f,9/13/2017 16:44,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into docs,0
+023cd65,9/14/2017 6:39,Merge remote-tracking branch 'remotes/jollet/develop' into _jollet,0
+a760501,9/14/2017 7:51,Merge commit '34e3829d' into _gonze_ace,0
+caf99dc,9/14/2017 8:34,Clean code quit electronpositron,0
+769dec0,9/14/2017 9:09,Merge branch _jollet/023c into develop,0
+77e3a3f,9/14/2017 9:14,Merge remote-tracking branch 'trunk/develop' into develop,0
+ef9a086,9/14/2017 9:19,Merge gmatteo/docs/3399 into _gmatteo,0
+b054bf7,9/14/2017 10:00,Fix too long line,1
+26ffd4a,9/14/2017 11:56,Merge branch '_gmatteo' into develop,0
+aa70981,9/14/2017 12:38,Introduce the logcals fock_converged  scf_converged in fock_common   code primitive stopping criteria  based on interation numbers only,0
+d4c592d,9/14/2017 12:50,Use m_fock in scprqt.F90,0
+ff3e8b7,9/14/2017 12:52,Merge branch 'develop' into ace_2,0
+d4481eb,9/14/2017 13:08,Generate_doc   fix missing declarations,0
+a28dee0,9/14/2017 13:10,Now compiles,0
+426be6e,9/14/2017 13:21,Allows to have the old convergence behaviour  for the non-regression tests,0
+9073309,9/14/2017 15:26,Bug fix for nspden=2 from Francois.,1
+922aa31,9/14/2017 15:37,Use a better H potential for test v7#69,0
+7.40E+46,9/14/2017 16:03,Upgrade test v7#69 => now spinpolarized + PAW + Fock works,0
+3d49561,9/14/2017 16:06,Update tolerance for bob positron#4,0
+7bba1c6,9/14/2017 17:52,Preparing to merge,0
+07f5218,9/14/2017 17:53,Merge remote-tracking branch 'trunk/develop' into develop,0
+e3ec033,9/14/2017 18:07,Update references. Also fix a few typos.,0
+f220d7d,9/14/2017 20:15,Update the ref due to fix from Yann,0
+a0abefe,9/14/2017 20:26,Update ref (now  echo tolrde),0
+4504605,9/15/2017 6:04,Update tdfpt_04_MPI24.out for tolrde missing,0
+0a630e2,9/15/2017 7:51,Fix problems,1
+385a49f,9/15/2017 8:38,Rationalize the use of use_ACE. Also discard the use of userid for ACE. Clean the routine fock_create  now called fockbz_create.,0
+c673bff,9/15/2017 9:05,Update ref v7#70 for ACE,0
+9503ab1,9/15/2017 9:25,The ACE works correctly for non-spin-polarized systems (PAW/NC  HF/PBE0/HSE06  incl. relaxation). Still numerical problem with spin-polarized systems.,0
+372e8a4,9/15/2017 9:31,Update ref due to fix,0
+e16940b,9/15/2017 10:47,Merge ace_2/0a63 into develop,0
+9b03c16,9/15/2017 11:01,Create new test libxc#70 for CH non spin polarized,0
+5acb933,9/15/2017 11:08,Try to test ACE for non-spin-polarized CH. Energy seem more or less correct  but not the forces ...,0
+64d7207,9/15/2017 11:24,Typo,1
+de3a719,9/15/2017 11:51,Fix bugs,1
+a16482a,9/15/2017 11:59,When nnsclo_hf=1  can use the usual exit criteria.,0
+20f0efc,9/15/2017 12:33,Tune test libxc#70. At present : Fock and ACE agree on energy  not on forces.,0
+6f4f13a,9/15/2017 12:44,Now tests libxc 70 and 71 show that in the non-spin-polarized case  energy ACE agrees with FOCK  but the forces agree only if NC  not PAW,0
+906c995,9/15/2017 13:24,Update ref for abiref.,0
+9abbb17,9/15/2017 13:33,Update references for psml.,0
+88ef13b,9/15/2017 13:38,Merge branch 'psml-new' of gitlab.abinit.org:pouillon/abinit into psml-new,0
+9f59f37,9/15/2017 13:42,Update tolerances for psml #11,0
+6.80E+73,9/15/2017 13:44,Update psml#06 reference,0
+f735a1a,9/15/2017 13:52,Add a header to psp_dump_outputs.F90,0
+b957bf7,9/15/2017 14:00,Update the references for build examples,0
+9b075be,9/15/2017 15:01,corrections for spin polarised Fock calculations,1
+0b7f9b2,9/15/2017 15:08,Merge remote-tracking branch 'trunk/ace_4' into develop,0
+c2d2b3c,9/15/2017 18:52,BigDFT upgrade (following libXC upgrade) + libPAw improvments,0
+85bff4c,9/15/2017 18:56,Bug fix in m_pawdij (concerns only electronpositron) - Thanks to J. Wiktor,1
+85c2929,9/15/2017 19:38,correct wrong hyperlinks (following website upgrade),1
+d4fba7b,9/16/2017 1:09,Change bigDFT tarball md5,0
+a75c01a,9/16/2017 2:24,Change bigDFT tarball md5,0
+ec6860d,9/16/2017 21:22,Changed m_interp to m_bseinterp,0
+3587fba,9/16/2017 23:17,A format was undefined (*) hence the portability was not optimal,0
+ded38a5,9/16/2017 23:26,Fixes,1
+363b809,9/16/2017 23:28,Merge branch 'ace_2' of gitlab:trunk/abinit into ace_2,0
+28420ef,9/16/2017 23:29,Merge branch 'ace_2' into develop,0
+ff4f9d4,9/17/2017 5:28,Issued abi_yml2html.py   start to finalize v8.4.4,0
+ec12c5d,9/17/2017 6:12,Final update of reference files,0
+13580ea,9/17/2017 6:15,Merge pouillon/psml-new/ec12 into _pouillon,0
+1182070,9/17/2017 8:21,Update all refs for slight change of output,0
+b9ae50c,9/17/2017 13:15,Replace obsolete links for the ftp documents  and the ABINIT papers  by the new links (cf emails with Marc and JMich),0
+873b1cf,9/17/2017 13:21,Improve slightly the previous commit.,0
+ee2a2ff,9/17/2017 17:46,Update ref  due to slight reformatting from Yann  not done for the new test libxc#68,0
+370776f,9/17/2017 21:18,Fix the last problem detected by linkchecker in v8.4.4,1
+ac38696,9/18/2017 8:49,Merge branch 'hotfix-8.4' into develop . Lot of conflicts  and links to be upgraded  see next commit.,0
+0d020fd,9/18/2017 8:57,Upgraded hyperlinks identified by Marc.,0
+366f0e5,9/18/2017 8:59,Apply generate_doc.py,0
+6bebca8,9/18/2017 9:09,reestablish the link with workshop07 for tutorial gspw.,0
+bb666a9,9/18/2017 9:23,Merge branch _pouillon/ee2a2 into develop,0
+be9f4cf,9/18/2017 10:42,bug correction for Fock forces calculation in ACE,1
+8e30131,9/18/2017 13:04,Slight modif  simply format.,0
+994633,9/19/2017 14:34,Bug corrections for spin polarized calculation with Fock ACE,1
+b3e842c,9/19/2017 15:13,Fixed a very silly bug in dvdb_interpolate_and_write.,1
+26969b5,9/19/2017 15:15,Merge remote-tracking branch 'trunk/develop' into develop,0
+58fe65e,9/19/2017 16:56,bug correction for the farm test (abiref),1
+29fae11,9/19/2017 18:00,Add hpc directory in the distribution,0
+70ffe3f,9/20/2017 9:28,bug coorection for Fock ACE,1
+aeaa56b,9/20/2017 11:20,bug for farm test abiref Fock ACE,1
+5a8f89b,9/20/2017 11:21,input file correction userie in libxc/t70.in and t71,0
+c1c0313,9/20/2017 11:22,Merge branch 'develop' of gitlab:jollet/abinit into develop,0
+8394052,9/20/2017 11:39,correction of libxc/t51 and t67 for tolerance for the test farm,1
+014b168,9/20/2017 13:48,Merge branch 'hotfix-8.4' into develop,0
+b2d3a02,9/20/2017 13:50,Merge antonius/develop/2696 into _antonius,0
+613befe,9/20/2017 14:50,reference correction for test paral/t94_MPI4,0
+93b4651,9/20/2017 15:09,Merge remote-tracking branch 'trunk/develop' into develop,0
+80e7b31,9/20/2017 16:17,correction due to the merge,0
+76d09d8,9/20/2017 17:00,correction for reference libxc/t70.out,0
+8f7efab,9/21/2017 6:19,Apply generate_doc.py,0
+1082429,9/21/2017 12:10,Merge jollet/develop/76d0 into _jollet,0
+fa5d83e,9/21/2017 18:48,Apply make parents,0
+28cd049,9/21/2017 18:50,Apply abiauty,0
+ce61a3c,9/21/2017 18:55,Initialize the next release notes and install notes.,0
+9bdfb89,9/21/2017 21:24,add netcdf output for phonons on DOS grid,0
+9ed2be3,9/21/2017 21:25,Merge branch 'develop' of gitlab:mverstra/abinit into develop,0
+4a7c3e3,9/22/2017 8:57,Tune v67mbpt#52 for bob,0
+e02dbf8,9/22/2017 10:22,removed redundant unit definition in netcdf. Thanks Matteo,0
+5.86E+10,9/23/2017 6:01,Merge mverstra/develop/e02d into _mverstra,0
+9ab6e68,9/23/2017 7:58,Merge branch 'develop' of gitlab:trunk/abinit into develop,0

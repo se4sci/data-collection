@@ -1,0 +1,340 @@
+hash,time,message,buggy
+e1570e4,7/14/2016 9:53,add 78_effpot directory,0
+f44fa89,7/14/2016 12:17,add amartin-8.1.2 (bzr),0
+cde4e92,7/14/2016 16:33,add dataset for band2eps,0
+c22926f,7/15/2016 10:20,add reading of qpoint name in band2eps_dataset,0
+9f53b21,7/15/2016 14:38,debug band2eps and update ref v4[51],1
+055911f,7/15/2016 15:19,add epigene test v7[120-123],0
+b855118,8/8/2016 15:53,Preliminary version of FATBANDS.nc file,0
+0481d12,8/9/2016 13:41,fatbands with nc pseudos,0
+5db7866,9/10/2016 21:53,Code cleanup,0
+82a36f3,9/10/2016 22:00,Merge branch 'fatbands' of gitlab.abinit.org:gmatteo/abinit into fatbands,0
+7cc5aa8,9/13/2016 19:01,Merge branch 'develop' into fatbands,0
+1246484,9/13/2016 20:03,Fix CPP options,1
+0a2a8de,9/14/2016 10:58,debut short range part of ifc(canonical coordinates probleme),1
+199e5ca,9/14/2016 12:02,merge trunk/start-8.1.5,0
+070a26a,9/14/2016 13:05,WIP: use RSH in recip_ylm  handle istwfk != 1 case correctly. Present version is buggy:  v3[67] and v3[67] should give the same results but `vimdiff tests/v3/Refs/t66.out  tests/v3/Refs/t67.stdout`,0
+d845efb,9/14/2016 14:31,update tests for epigene,0
+5165d35,9/14/2016 16:00,solve bug (boundary of IFC),1
+457750e,9/14/2016 16:08,Fix intent of mpi_enreg  change partial_dos_fractions API to prepare refactoring,1
+fe300fd,9/14/2016 16:24,Remove hdr% to avoid problems with MPI-FFT,0
+4084df2,9/14/2016 16:41,metric is not called anymore in dos routine --> remove geometry echo from refs,0
+276ae2d,9/14/2016 16:58,Remove call to kpgio  use kg from outscf,0
+777dddc,9/14/2016 17:43,Avoid expensive and useless copies (kg_k  cg_bks),0
+6b6a394,9/14/2016 17:55,Reduce pressure on system malloc.,0
+91d6a48,9/14/2016 19:09,Change mpi_enreg intent to IN,0
+e10abac,9/14/2016 19:10,Remove include statement,0
+94b0cce,9/14/2016 19:50,Protect fatbands_ncwrite with HAVE_NETCDF.,0
+0840a21,9/14/2016 22:33,Only master should write PJDOS files o_O,0
+ac458a8,9/14/2016 23:02,getspin_1stat --> m_cgtools.cg_getspin,0
+e0fd5e8,9/15/2016 12:41,prepare parallelisation of epigene (change some I/O),0
+b1734d3,9/15/2016 14:13,Create new module (m_pjedos) for pjdos routines,0
+f38fcfa,9/15/2016 16:17,update test for epigene (modification in I/O),0
+e96bf4c,9/15/2016 16:55,Pass rc_ylm to recip_ylm to select RSH or CSH,0
+b0c2e88,9/15/2016 18:29,Move recip_ylm to m_pjedos,0
+d7f1dcf,9/16/2016 13:54,Add equations,0
+5a4e992,9/16/2016 14:55,Move besjm to m_special_funcs,0
+a63a143,9/16/2016 15:26,Move init_bess_spl to m_special_funcs to prepare new developments,0
+4d8ff2d,9/16/2016 18:11,Precompute bessel integrals F_{type l}(|k+G|) before calling recip_ylm,0
+bbfcf5a,9/16/2016 18:24,Prepare new version of recip_ylm,0
+52a2fcc,9/16/2016 19:32,Need typat array in recip_ylm,0
+f82e8a7,9/17/2016 13:06,Saving work,0
+b50d4d0,9/17/2016 13:31,Move sphericaldens to m_epjdos,0
+7261d55,9/18/2016 14:24,Working with <P|Psi> has some advantages but then I have to play with Gaunt and I don't have time now,0
+4a25043,9/19/2016 22:16,Correct treatment of istwfk != 1 in recip_ylm,1
+e748783,9/19/2016 22:38,cut3d uses RSH  v3[66] and v3[67] now give the same answer when istwfk /= 1,0
+4605abd,9/19/2016 23:16,Activate new code  update DOS_AT files computed with istwfk != 1,0
+b10e0cd,9/20/2016 0:14,Add support for MPI-FFT to prtdos=3,0
+f758f1a,9/20/2016 0:39,Reactivate v7[6] if nprocs >1,0
+5b6613e,9/20/2016 11:25,optimization for MPI-FFT,0
+e7c5f50,9/20/2016 11:59,Replace wrtout with Fortran write in prtdos routines for efficiency reason,0
+b88cd73,9/20/2016 15:08,Use epjdos_t to store DOSes so that I can pass the object around without having to worry about bound-check,0
+9e6e439,9/20/2016 15:39,Start to use epjdos_t,0
+a5d8732,9/20/2016 16:13,Move m_epjdos to 67_common,0
+485a514,9/20/2016 20:11,pass dos% to tetrahedron and gaus_dos,0
+419c219,9/20/2016 20:47,Pass epjdos to prtfatbands,0
+e892294,9/20/2016 21:49,Begin to work on netcdf file,0
+cb78ae5,9/21/2016 12:03,update test (debug for buildbot) + add stress tensor calculation with effective potential,0
+52a68a9,9/21/2016 12:18,abilint,0
+a121903,9/21/2016 14:31,abiref debug,1
+7ab0b27,9/21/2016 15:26,abiref & intel_16.0_mpich compilation debug,0
+b7021cd,9/21/2016 19:35,fatbands_flag==1 should not try to access dos%fractions_paw1,0
+b0d4dcf,9/21/2016 21:54,Saving work,0
+7838f11,9/21/2016 21:54,Merge branch 'fatbands' of gitlab.abinit.org:gmatteo/abinit into fatbands,0
+2bcaf2e,9/21/2016 21:56,Zero-sized arrays are not needed anymore,0
+a3c816c,9/22/2016 0:48,Add test for prtdos=3 with NC and MPI-FFT (PJDOS with PAW is buggy),0
+9556c3b,9/22/2016 9:31,abiref debug and update ref for epigene,0
+11fe86e,9/22/2016 10:47,update ref for epigene,0
+b9c5813,9/22/2016 11:04,remove write(..) to pass max2 test,0
+928aac8,9/22/2016 12:30,Use softer version of C.psp8 (ecut~25) to improve portability of results,0
+ba61dbc,9/22/2016 13:44,remove unused variables and debug for buda,0
+c86cc14,9/22/2016 14:49,Increase ecut because some bots converge with less iterations,0
+07444b7,9/22/2016 15:27,add tolerance for ubu (mrgddb test) and debug leak memories,0
+711a652,9/22/2016 16:23,abiref_debug,1
+e133bb9,9/23/2016 9:11,small debug (I/O) for buildbot,1
+2b4e26c,9/23/2016 13:41,Disable paral_atom if prtdos >= 2 or pawfatbnd,0
+8f00c97,9/23/2016 15:40,Fix bug if PAW with pawprtdos /= 2 (partial_dos_fractions should not collect partial data),1
+e8027c4,9/23/2016 15:52,Add test for PAW with prtdos=3 in PARALLEL because there are bugs that are triggered only if np > 1,0
+0ed174b,9/23/2016 15:58,debug leak memories (max2),1
+eb70de5,9/24/2016 13:26,Add section to compute mbesslagn from psps/pawtab (not yet activated),0
+7385320,9/24/2016 13:30,Merge branch 'develop' into fatbands,0
+71bfca8,9/24/2016 14:02,abilint,0
+ef82cda,9/24/2016 18:24,Remove fractions_average_m (was equal to fractions_m but duplicates memory),0
+b91be6d,9/24/2016 21:56,Compute Ylm(k G) inside the loop  allocate arrays with npw_k,0
+0d0b419,9/24/2016 23:15,Merge branch 'fatbands' of gitlab.abinit.org:gmatteo/abinit into fatbands,0
+69f79e4,9/24/2016 23:18,initmpi_seq should set me_g0 to 1 not 0,0
+498ac6a,9/25/2016 14:23,Add test with npfft/npspinor and WFK-IO/PJDOS,0
+8bcf244,9/25/2016 14:45,Add reference files,0
+3522124,9/25/2016 16:00,Increase tolnlines  disable show_backtrace because gcc4.9 crashes there if rank > 0,0
+919fe31,9/25/2016 16:16,Temporarily enforce MPI-IO in mpiio[28] (this is a topic branch for fatbands  I'll work on this afterwards),0
+c8caebd,9/25/2016 19:10,Replace Bi with GaAs in mpiio[28],0
+c51fa11,9/25/2016 19:16,Regenerate refs,0
+05271d8,9/26/2016 9:47,small debug leak memories for max2,1
+9c30e13,9/26/2016 10:40,Merge remote-tracking branch 'trunk/develop' into develop,0
+b2652a0,9/26/2016 13:02,Stop at the level of the parser if npband > 1 and pawprtdos /= 2,0
+f2cbc1e,9/26/2016 13:47,pass crystal_t and ebands_t to DOS routines,0
+a56ba05,9/26/2016 13:59,Merge branch 'fatbands' of gitlab.abinit.org:gmatteo/abinit into fatbands,0
+2b99041,9/27/2016 14:38,Now it's possible to have different Lmax-values for each type,0
+750ee86,9/27/2016 15:31,Saving work,0
+571fad1,9/27/2016 15:31,Merge branch 'fatbands' of gitlab.abinit.org:gmatteo/abinit into fatbands,0
+23179a8,9/27/2016 15:35,Fix bugs in gaus_dos  add tests for prtdos 4 5  ref files. There are still bugs: negative IDOS o_O,1
+893a3d1,9/27/2016 16:48,Fix negative IDOS in gaus_dos,1
+5a5150a,9/27/2016 16:57,Add reference files,0
+0833ca0,9/27/2016 20:07,Fix memory leaks in gaus_dos,1
+ccf6d2d,9/27/2016 21:36,Replace get_tetra_weight with tetra_blochl_weights to have cache-friendly loops,0
+a7a1a88,9/28/2016 13:37,Register fform for FATBANDS.nc,0
+746cd75,9/28/2016 14:51,Enforce whitespace between columns in DOS files,0
+b40093c,9/28/2016 16:53,Use ATEXTRA prefix for extra spheres,0
+1658fe7,9/29/2016 13:31,add harmonic and anharmonic type,0
+9f86f8b,10/4/2016 11:59,update ref and change some _init routines,0
+45fdb01,10/4/2016 13:24,bug fixed in the reading of xml,1
+4328248,10/4/2016 14:26,bug fixed in mpi comm,1
+0e0aee1,10/5/2016 10:58,Merge branch 'develop' into fatbands,0
+bc5b165,10/5/2016 11:47,abilint,0
+5e0bd0a,10/8/2016 13:43,Specify intent  add pure attribute to contained functions to aid optimization,0
+e891390,10/8/2016 14:14,Merge branch 'develop' into fatbands,0
+623391a,10/8/2016 22:25,'type pure function' is not supported by abibruty if declaration is not in a module,0
+13f69ef,10/8/2016 22:55,Remove zgedi zgefa,0
+ca50251,10/8/2016 23:03,Move smooth to m_numeric_tools,0
+123fee3,10/8/2016 23:07,Move permutations to m_special_funcs,0
+f2b90d0,10/8/2016 23:11,Move phim to m_special_funcs,0
+03e606a,10/8/2016 23:13,Move ddb_chkname to m_dbb,0
+105bf62,10/8/2016 23:19,clp --> m_special_funcs,0
+e2dd69f,10/8/2016 23:40,coeffs_gausslegint --> m_numeric_tools,0
+11846f4,10/8/2016 23:46,Include lebedev_laikon in m_lebedev,0
+2c32f22,10/9/2016 0:07,abilint,0
+67ebb55,10/9/2016 0:23,Move set_istwfk to m_cgtools,0
+7977232,10/9/2016 0:34,nderiv --> m_numeric_tools,0
+09ded3c,10/9/2016 0:41,Make abibruty happy,0
+284cfdc,10/9/2016 1:19,Add m_sort module providing sort_dp and sort_int,0
+06a9591,10/9/2016 2:06,Fix compilation errors,1
+f6f603e,10/9/2016 10:59,Make robodoc happy,0
+ca84543,10/9/2016 18:45,Increase tolrel in v3[97] (6e-5-->6e-4),0
+1fcf46e,10/10/2016 10:58,Enter final stage of v8.1.5 development. Modified:   KNOWN_PROBLEMS src/51_manage_mpi/herald.F90,0
+78a41bf,10/10/2016 10:59,Merge branch 'develop' of gitlab:trunk/abinit into develop (synchro with 3a44).,0
+17e56a4,10/10/2016 20:16,Implemented the computation of the real part of phonon self-energy for gapped materials.,0
+ba49e26,10/10/2016 23:36,Add reference file for DFTI with OpenMP threads (not tested by buildbot),0
+bbcf478,10/11/2016 14:28,add comm_supercell in MPI_type,0
+3a09bc7,10/12/2016 9:38,bug fix in mpi function,1
+cbadbd9,10/12/2016 9:57,Merge branch 'develop' into fatbands,0
+483794f,10/12/2016 10:47,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+72b52ac,10/12/2016 11:21,change epigene name  now multibinit,0
+15a6dd9,10/12/2016 12:39,remove mpi_enreg for supercell,0
+2598331,10/12/2016 15:53,add crystal structure into effective_potential type,0
+5508921,10/13/2016 13:21,add enable_xml flag in all config.ac for farmtest,0
+288f235,10/13/2016 14:31,add paral test for multibinit,0
+c325cc7,10/13/2016 17:18,add test with dipdip0 for multibinit,0
+35e8c98,10/13/2016 18:10,Clean messages and warning in the PAW dataset reading routine,0
+bc6da8e,10/14/2016 14:47,Merge remote-tracking branch 'trunk/develop' into develop,0
+cc9a72d,10/14/2016 14:48,Changed some coment.,0
+cf1a69f,10/14/2016 15:05,Updated the tests in ElectronPhononCoupling,0
+a4192e5,10/14/2016 18:33,Deactivate FFT balancing (not really efficient and needs comms),0
+a04aa10,10/15/2016 6:38,Upgrade generation of example .ac file for rafael machine. modified:   config/specs/examples.conf,0
+bec1b5f,10/15/2016 6:40,Correct a path to an input file. modified:   lesson_paral_moldyn.html,0
+5ab03c4,10/15/2016 6:54,Merge branch 'develop' of gitlab:/trunk/abinit into develop,0
+456a6bd,10/15/2016 11:34,Prepare compilation on rafael (My mac)  also modify the config message about ETSF_IO modified:   .gitignore config/messages/etsf_io-deprecated.msg config/specs/examples.conf configure.ac,0
+6043d53,10/15/2016 12:55,Merge remote-tracking branch gmatteo/numeric_util/f6f6 into _gmatteo,0
+4d99ed9,10/15/2016 16:45,Prepare merge of gmatteo/statement_functions/09de . Suppress test libxc#82 for gfortran@tikal. Modified:   tests/libxc/Input/t82.in,0
+3edb4ff,10/15/2016 16:48,Merge remote-tracking branch gmatteo/statement_functions/09de into _gmatteo,0
+fa90409,10/15/2016 16:51,Improve description of previous modif. Modified:   tests/libxc/Input/t82.in,0
+dcc5176,10/15/2016 18:31,Merge remote-tracking branch gmatteo/lemaitre2/ca84 into _gmatteo,0
+6de3367,10/15/2016 22:26,Merge branch 'develop' into fatbands,0
+1bdcfda,10/15/2016 23:09,abilint,0
+8f36e72,10/15/2016 23:58,abilint,0
+c6aad11,10/15/2016 23:58,Merge branch 'develop' into make_tests,0
+98a028f,10/16/2016 1:22,make check was broken when code is compiled in top level directory,0
+cf7bb0f,10/16/2016 6:38,Update info about OpenMP. Modified:   lesson_basepar.html,0
+dd9701a,10/16/2016 6:49,Merge remote-tracking branch gmatteo/zenobe/ba49 into _gmatteo,0
+96dece6,10/16/2016 7:02,Merge remote-tracking branch gmatteo/make_tests/98a0 into develop,0
+f03eebb,10/16/2016 7:53,With this examples.conf  abinit works on my Mac. However  I had to disable NetCDF ...  Modified:   ../../../config/specs/examples.conf,0
+168ac01,10/16/2016 7:56,Merge remote-tracking branch trunk/develop/96de into gonze/develop,0
+33c276b,10/16/2016 11:50,Merge branch 'develop' into fatbands,0
+d617188,10/16/2016 13:12,Enforce OMP_NUM_THREADS=1 in make check,0
+cec8ba1,10/16/2016 14:17,Fix typos,1
+7bdd321,10/17/2016 9:04,Merge remote-tracking branch remotes/antonius/develop/cf1a into _antonius,0
+91132cf,10/17/2016 9:14,Fix F90 formats  because non-standard. Modified:   m_phpi.F90,1
+046dbfa,10/17/2016 9:37,Merge branch 'develop' into make_tests,0
+e08f70c,10/17/2016 12:11,modifications for merge request,0
+d8bac32,10/17/2016 12:15,add forgotten files related to the previous commit,0
+9129a1a,10/17/2016 13:26,change unit in newunit in band2eps,0
+d0ccfc3,10/17/2016 14:54,With a brand new git clone  the compil with NetCDF works  and all tests execute correctly. Modified:   examples.conf,0
+c4a1812,10/17/2016 15:05,Update .gitignore . Modified:   .gitignore,0
+571fe25,10/17/2016 15:08,Merge remote-tracking branch remotes/trunk/develop/9113 into gonze/develop,0
+0e4352c,10/17/2016 19:09,Toward PDOS and paral_kgb,0
+3e96929,10/18/2016 0:03,errors corrected,1
+c43441b,10/18/2016 0:16,runtests: Add --use-srun option,0
+6e0a3e2,10/18/2016 9:17,Merge branch 'start-8.1.6' of gitlab:trunk/abinit into develop,0
+e6665e8,10/18/2016 11:06,(debug) mpi in effective_potential_generateDipDip and initilization of local variable in cell9,1
+e23fa01,10/18/2016 17:23,debug: changement of coordinates of the cells for ifc in cell9,1
+49166c3,10/18/2016 19:10,This version of the PDOS works with npkpt/npband/npfft>1 (but not bandpp>1),0
+6481544,10/19/2016 9:59,Deactivate prtdos2 4 in v7[17]. New test I've addede but gauss_dos is buggy,0
+5aa5a47,10/19/2016 10:40,Import Marc changes done in quickfixes 49166c365db8d5e0f23e0ac5932c8e3f398abeb8,0
+34d607c,10/19/2016 11:13,Robodoc is supposed to document the code not to remove it,0
+ac8c453,10/19/2016 11:21,Merge remote-tracking branch 'trunk/develop' into make_tests,0
+dc8c6ce,10/19/2016 12:40,Merge remote-tracking branch remotes/gmatteo/fatbands/34d6 into _gmatteo,0
+4249010,10/19/2016 13:38,runtests.py --reload is now ignored. The database is always generated from scratch. Use --use-cache to load the database from file,0
+538d691,10/19/2016 14:37,Much better logo,0
+3123dc1,10/19/2016 15:41,Modify Tmpiio#27 to make it more robust. First step. Modified:   ../../mpiio/Input/t27.in,0
+2304b81,10/19/2016 16:18,Revert some changes  waiting for Matteos fatband branch,0
+c5d7936,10/19/2016 17:03,Update ref file due to previous commit. Modified:   t27_MPI4.out,0
+e73ac80,10/19/2016 21:04,Merge remote-tracking branch remotes/amartin/develop/e23f into _amartin,0
+c082ff5,10/19/2016 23:59,Merge branch 'develop' of abinit-gitlab:trunk/abinit into quickfixes,0
+efa6d61,10/20/2016 1:07,Change comm in recip_ylm,0
+ec112b9,10/20/2016 1:17,run abilint after merge with trunk,0
+9cd1937,10/20/2016 7:39,Automatic changes upon makemake. Modified:   src/32_util/m_special_funcs.F90   src/78_eph/m_phpi.F90,0
+5ab2b06,10/20/2016 7:41,Merge remote-tracking branch remotes/gmatteo/make_tests/538d into _gmatteo,0
+0f4cfce,10/20/2016 7:51,Typo corrected,1
+f1bdb80,10/20/2016 9:01,Merge branch '_gmatteo' into develop,0
+197213b,10/20/2016 10:17,Test paral#98 failed on max2  only with 10 procs. This should be clarified. Temporarily disable 10 procs execution. Modified:   t95.in  t96.in  t97.in  t98.in,0
+a2417d9,10/20/2016 12:41,change mpi for xml reading in multibinit,0
+9cfe63c,10/20/2016 14:58,Merge remote-tracking branch remotes/amartin/develop/a241 into _amartin,0
+e815275,10/20/2016 16:17,Pass a single MPI comm over plane waves to recip_ylm,0
+f7fa876,10/20/2016 18:53,save work,0
+7116127,10/21/2016 15:17,This version gives the correct PDOS for PAW+kgb,0
+edbb00b,10/21/2016 18:04,pawrhoij is now comnputed when iscf=-3 (was missing),0
+d36bd2a,10/21/2016 20:08,fatbands are ok for kgb/bandpp (except some combinations),0
+f2629c4,10/23/2016 14:46,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
+bb494dd,10/24/2016 11:36,Cleanup,0
+2ad051c,10/24/2016 11:37,Remove shelve_dump,0
+f3c4d66,10/24/2016 11:45,Fix typo,1
+39743fb,10/24/2016 12:13,This should fix PickleException in JobRunnerException,1
+f2a085a,10/24/2016 13:06,Workaround needed to have --rerun working if failures,0
+adfc275,10/24/2016 13:26,Working on looponfail,0
+8716847,10/24/2016 13:42,Invoke make only if files have been changed,0
+4f543c6,10/24/2016 14:13,Minor changes,1
+3c100f6,10/24/2016 15:00,Document new --looponfail option,0
+9af6e95,10/24/2016 16:55,Not all slaves accept set literals,0
+b732dfe,10/24/2016 17:13,Fix bug,1
+19b64a0,10/24/2016 19:26,Doc for eigvec_qp was not correct,0
+5ec089e,10/24/2016 19:39,Remove import commands (removed in py3k),0
+bdbf269,10/25/2016 11:08,Add m_lda_to_qp to SIGRES file,0
+56a66bc,10/25/2016 12:33,Use print function,0
+a99056f,10/25/2016 12:56,Apply changes suggested by 2to3,0
+6811075,10/25/2016 15:12,ctocprj now valid for kgb/bandpp/paral_spinor   fatbands OK,0
+96a70b0,10/25/2016 16:40,Print a clear message when ndtset=1 and getxxx<0,0
+b78ebd5,10/25/2016 16:46,Change a ref file (only blanks),0
+2bc2d4d,10/25/2016 23:01,Increase tolerances for ubu_intel16 with np>2,0
+78710f6,10/26/2016 23:16,Add support for Py3k to buildsys scripts,0
+1722da6,10/27/2016 16:43,Merge remote-tracking branch remotes/gmatteo/ubu_intel16/2bc2 into _gmatteo,0
+bf19be7,10/27/2016 16:51,Merge remote-tracking branch 'remotes/gmatteo/make_tests/7871 into _gmatteo,0
+ee3f320,10/28/2016 16:41,Errors corrected: ctocprj improved for DFT  PW balancing reactivated.,1
+a4891a4,10/28/2016 16:43,Change test ref for gpu#01 (allows to pass on my local workstation),0
+f631a5e,10/28/2016 18:51,Add new variable to control PW load balancing,0
+1980cd2,10/29/2016 0:01,A variable name was too long,0
+67106c3,10/29/2016 0:16,Add new variable in a test,0
+79e3e5d,10/29/2016 18:12,Add v8 directory for tests,0
+126549a,10/29/2016 19:15,testbot: Don't raise if subsuite is empty,0
+06508b5,10/29/2016 21:06,Avoid dict comprehension  added in py2.7 and several slaves still use py2.6,0
+6a9c309,10/31/2016 0:44,Make partial_dos_fractons_paw compatible with spinor parallelization,0
+c182e87,10/31/2016 21:09,Improve docs in m_dvdb,0
+925ecdf,11/1/2016 10:22,Code cleanup in eph,0
+3e9e26a,11/1/2016 11:48,ddk_from_file --> ddk_read_fsvelocities (should be called only if eph_transport),0
+3961d9e,11/1/2016 12:02,eph: Add output of PHDOS in nc format,0
+bda6eeb,11/1/2016 19:54,mrgddb: add command-line interface e.g mrgddb out_DDB in1_DDB in2_DDB ...,0
+651783d,11/2/2016 16:23,New error message for getxxx needs changes in some tests,1
+bc70fc9,11/2/2016 16:37,New pw_unbal_thresh variable added in a test,0
+8264df2,11/3/2016 14:48,Merge remote-tracking branch torrent/quickfixes/bc70 into _torrent,0
+f895cf4,11/3/2016 21:09,* update nag 6.1 config,0
+f4f806a,11/4/2016 16:55,update testfarm.conf ( py3k  nag61+netcdf4/HDF5  intel/openmp),0
+25c1490,11/4/2016 18:47,typos in abiref_nag_6.1 builder,1
+307c8b8,11/4/2016 23:41,duplicate option on abiref_nag_6.1 section,0
+0a7e1e1,11/5/2016 21:05,Prototype for sigma_ph,0
+e37e9b5,11/6/2016 7:18,Prepare finalisation ofr v8.1.6. Modified:   KNOWN_PROBLEMS  src/51_manage_mpi/herald.F90,0
+ebcdcf0,11/6/2016 7:20,Apply abi_yml2html.py. Modified:   html_automatically_generated/allvariables.html html_automatically_generated/varpar.html,0
+5cf1e41,11/6/2016 13:44,Disable dump_config. Users can use abinit -b to get build info,0
+72091b8,11/6/2016 16:34,Helper functions,0
+52aead2,11/6/2016 16:35,Complete dependencies for binaries multibinit and band2eps. Modified:   binaries.conf,0
+33c3357,11/6/2016 17:06,ifc_fourq: add optional arg for displ_red  rationalize module imports,0
+94fb8ae,11/6/2016 21:54,Complete list of dependencies. Modified:   binaries.conf,0
+768b363,11/7/2016 6:09,Complete the dependencies for band2eps. Modified:   binaries.conf,0
+221554a,11/7/2016 8:39,Complete dependencies for band2eps. Modified:   binaries.conf,0
+2bee75a,11/7/2016 11:41,Add section to write vhartr1(G=0) to POT1 files,0
+b4afd52,11/7/2016 16:58,Saving work,0
+2c386fe,11/7/2016 17:17,Complete dependencies for band2eps. Modified:   binaries.conf,0
+6a18c8b,11/7/2016 18:09,Preparing integration of asrq0_t object of ASR(q=0),0
+ddc6723,11/7/2016 18:42,Fix needed to pass the tests with asr 3 4,1
+c8b165d,11/7/2016 19:12,Remove d2asr  uinvers  vtinvers  singular from anaddb and mkphbst. Use asrq0_t,0
+60e4a31,11/7/2016 19:23,This version should pass the tests because it preserves the old behaviour,0
+bd4c55e,11/7/2016 20:26,Add ddb_diagoq to diagonalize IFC(q) directly,0
+1de6977,11/8/2016 5:42,Complete dependencies of band2eps. Modified:   binaries.conf,0
+359a993,11/8/2016 6:03,Complete dependencies of band2eps. Modified:   binaries.conf,0
+4d85982,11/8/2016 8:55,Complete dependencies of band2eps. Modified:   binaries.conf,0
+0baa0b6,11/8/2016 10:45,Add asrq0_apply method to facilitate new developments for ASR treatment,0
+b49ef47,11/8/2016 10:57,Complete dependencies for band2eps. Modified:   binaries.conf,0
+4433361,11/8/2016 11:06,Fix a hyperlink. Modified:   lesson_basepar.html,1
+950d8be,11/8/2016 11:49,Preparing integration of asrq0_t in other anaddb sections,0
+8f110c7,11/8/2016 12:06,Use asrq0 in ddb_to_effective_potential,0
+577c022,11/8/2016 12:13,abilint,0
+8b58d1a,11/8/2016 12:24,Move fxphas_seq to m_cgtools,0
+f34fb5c,11/8/2016 12:35,Move dfpt_phfrq to m_dynmat,0
+24acea6,11/8/2016 12:46,Add missing import,0
+c72fedd,11/8/2016 14:12,Complete dependencies of band2eps. Modified:   binaries.conf,0
+af6bc15,11/8/2016 15:01,Replace asria_corr with asrq0_apply in anaddb and mkphbs. I stop here with this refactoring to minimize conflicts,0
+3ebb0cf,11/8/2016 15:44,Preparing migration to new DVDB format,0
+79daca2,11/8/2016 17:05,Complete dependencies of band2eps. Modified:   binaries.conf,0
+1b78f58,11/8/2016 17:25,m_dvdb: Handle possible IO errors systematically,0
+a348215,11/8/2016 20:56,Complete dependencies of band2eps. Modified:   binaries.conf,0
+22cb963,11/8/2016 21:01,Add vh(G=0) at the end of POT1 files  activate DVDB_FORMAT 2  maintain backward compatibility when reading,0
+f53a4b6,11/8/2016 22:36,abilint,0
+676a355,11/8/2016 22:36,Sketching sigmaph_t object,0
+f8070cd,11/9/2016 6:16,Complete dependencies of band2eps. Modified:   binaries.conf,0
+5756e1a,11/9/2016 8:35,Complete dependencies of band2eps. Modified:   binaries.conf,0
+1ee984c,11/9/2016 12:14,Fix errors on ubu_gnu_4.9_mpich with hdf5 (should check for IO_MODE_ETSF instead of IO_MODE_NETCDF),1
+68bbca3,11/9/2016 13:00,Complete dependencies of band2eps. Modified:   binaries.conf,0
+802b2e2,11/9/2016 13:23,Bypass internal compiler error on gcc4_7,0
+ccf032f,11/9/2016 14:10,Don't enforce hdf5 unless nprocs > 1,0
+c1dc579,11/9/2016 15:22,This should fix the error on ubu_gnu_4.9_mpich in netcdf_default mode,0
+9a63268,11/9/2016 15:51,Complete dependencies of band2eps. Modified:   binaries.conf,0
+8b5fe61,11/9/2016 16:02,Activate datamode before writing (doh),0
+83e180a,11/9/2016 17:03,Must class nctk_open_modify (doh**2),0
+392857,11/9/2016 18:27,Complete dependencies of band2eps. Modified:   binaries.conf,0
+51ebd33,11/9/2016 19:56,One routine and one object to compute them all,0
+ab32507,11/9/2016 22:08,Complete dependencies of band2eps. Modified:   binaries.conf,0
+b2ebf2f,11/9/2016 22:29,Saving work,0
+7b86327,11/10/2016 1:01,Saving work,0
+22c8c41,11/10/2016 6:05,Complete dependencies for band2eps. Modified:   binaries.conf,0
+879dddf,11/10/2016 8:47,Complete dependencies of band2eps. Modified:   binaries.conf,0
+98832b1,11/10/2016 11:24,Complete dependencies of band2eps. Modified:   binaries.conf,0
+e956c44,11/10/2016 13:48,Complete dependencies of band2eps. Modified:   binaries.conf,0
+ea71af7,11/10/2016 14:49,cleaning in buildsys/Refs exclude mpiio#t42.in on NAG 6.1 bot ( issue open ),0
+34a828e,11/10/2016 15:17,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
+76206a8,11/10/2016 15:21,add config.in~ in .gitignore,0
+15a63e3,11/10/2016 15:45,Complete dependencies of band2eps. Modified:   binaries.conf,0
+59ca97b,11/10/2016 18:43,Activate fform=111 (POT1 files with rhog1(: 1) at the end and DVDB version 2,0
+396d983,11/10/2016 19:41,Fix OpenMP link,1
+84fbd41,11/10/2016 19:43,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
+7b0b468,11/10/2016 22:27,Complete dependencies  of band2eps. Modified:   binaries.conf,0
+70e9ca9,11/11/2016 9:59,Complete dependencies of band2eps. Modified:   binaries.conf,0
+fb7c994,11/11/2016 12:20,Complete dependencies of band2eps. Modified:   binaries.conf,0
+5.81E+05,11/11/2016 21:56,Complete dependencies of band2eps. Modified:   binaries.conf,0
+c4f157c,11/12/2016 8:40,Complete dependencies of band2eps. Modified:   binaries.conf,0
+38bfe54,11/12/2016 22:00,Conplete dependencies band2eps. Modified:   binaries.conf,0
+8af9cf3,11/13/2016 7:54,Complete dependencies of band2eps. Modified:   binaries.conf,0
+f06014e,11/14/2016 9:00,Reorder libraries. Modified:   binaries.conf,0
+70c0dce,11/14/2016 10:11,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
+e9a403a,11/14/2016 11:26,Now DFPT in non-collinear magnetism works for magnetisation along the z-axis and small (x y)-plane components (i.e.  small canting).,0
+8984cb6,11/14/2016 11:32,Merge remote-tracking branch 'trunk/develop' into develop,0
+47b9c3e,11/14/2016 22:13,Merge remote-tracking branch beuken/develop/7620 into _beuken,0
+024bb3d,11/15/2016 8:16,Merge branch '_gmatteo' into develop,0
+1bdac1a,11/15/2016 8:19,Merge remote-tracking branch fricci/develop/8984 into _fricci,0
+33e1106,11/15/2016 20:40,Update date. Modified:   ../../KNOWN_PROBLEMS,0

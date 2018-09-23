@@ -1,0 +1,20 @@
+hash,time,message,buggy
+b046885,8/14/2014 14:44,Updated list of changes for 1.0.0,0
+f4c6b6b,8/14/2014 15:08,libHilbert regression fix gets more detail  CAPS,0
+020c51d,8/14/2014 17:00,Incorporate John's suggestions,0
+f2309aa,8/27/2014 13:46,A few more updates for stuff to be in 1.0,0
+3d9141b,9/25/2014 9:39,Udating 0.9.3->1.0.0 changelog with recent changes.,0
+c1d1ad6,10/30/2014 10:05,More updates to NEWS.,0
+5b9c330,11/7/2014 13:27,Fix mis-cast int in NemesisIOHelper,1
+f610726,11/11/2014 12:04,libMeshEnums namespace for backward compatibility,0
+f5e8f98,11/18/2014 10:37,DenseVectorBase::empty()  const T & operator(),0
+63183fd,11/18/2014 10:38,PetscVector<T>::insert specializations,0
+147c8cb,11/18/2014 15:10,Refactor NumericVector::insert(),0
+2f91f3b,11/19/2014 11:24,NumericVector::get refactoring,0
+12efe43,11/21/2014 12:30,NumericVector::add_vector refactoring,0
+01c2ada,11/24/2014 10:23,"Fix Clang warning about ""comparison of integers of different signs"" in assert.",1
+3cb94a6,12/21/2014 20:32,PatchRecoveryEE bugfix from Manav Bhatia,0
+f6b3adc,1/8/2015 9:04,Final changelog update for 0.9.4,0
+7c4f0b0,1/8/2015 9:05,Merge branch 'changelog_update' into 0.9.4,0
+557a9fa,1/8/2015 9:20,preparing for v0.9.4-rc2,0
+cf7bf9a,1/8/2015 9:22,bootstrap for v0.9.4-rc2,0

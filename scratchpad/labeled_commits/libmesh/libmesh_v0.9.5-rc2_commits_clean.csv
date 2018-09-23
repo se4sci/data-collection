@@ -1,0 +1,10 @@
+hash,time,message,buggy
+5e4499d,2015-12-14 13:45:37,Don't use LIBMESH_OPTIONS in reduced basis ex5,0
+3afb43d,2015-12-15 14:17:25,Suppress variadic template warnings in GCC.,0
+037d8c2,2015-12-16 15:16:36,Fix warning generated while trying to ignore warnings.,0
+9560aef,2015-12-21 09:41:27,Fix issues with writing Exodus files after deleting nodes.,0
+7145d63,2016-01-02 18:59:45,Add missing ifdef wrapper,0
+99235f0,2016-01-02 19:00:17,Add missing #include,0
+8ff1d03,2016-01-07 09:07:58,Use __LIBMESH_DATE__ and __LIBMESH_TIME__ in auto_ptr.h,0
+b43a0e1,2016-01-12 12:43:27,Update automake version number to 0.9.5-rc2.,0
+90496b0,2016-01-12 12:51:48,Run bootstrap.,0

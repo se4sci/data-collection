@@ -1,0 +1,17 @@
+hash,time,message,buggy
+93da921,12/30/2013 13:15,PSF Parser Fix,1
+8fe79c9,12/30/2013 15:25,fixed logging in TPRParser,1
+83b2b9e,12/30/2013 15:26,Bonds and bond guessing: non-breaking changes,0
+0b35c6e,12/30/2013 16:22,Bonds: changed to using 0-based atom indices (PDB  guess_bonds()),0
+06a2888,12/30/2013 16:56,test cases for 0-based Atom.number (PSF  TPR  TOP  PDB),0
+074ba807,12/30/2013 17:13,"Revert ""PSF Parser Fix"" (not needed because atom numbering was fixed)",0
+ff1fc01,12/30/2013 17:29,UnitTests for TopologyDict functionality,0
+26b13dc,12/30/2013 17:37,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
+102cbec,12/30/2013 18:19,Version bumped to 0.8.0rc3. Doc fixed and regenerated,0
+2620a49,12/30/2013 18:41,Bond: fixed: repr failed if no coordinates available,0
+cc4aad6,12/30/2013 18:49,TestPSF_bonds.test_bonds_identity(): changed test,0
+cda6616,12/31/2013 10:37,Robust bond identity tests,0
+da6d78f,12/31/2013 17:29,topology/core.py fixed  updated to Py3K convention and cleaned to avoid cyclic imports,0
+638463,12/31/2013 17:33,Duplicated line in selections.rst removed,0
+2a0b4a4,12/31/2013 17:48,Merge remote-tracking branch 'richard/develop' into develop,0
+6ed015c,12/31/2013 18:04,Version updated to 0.8.0rc4. Doc regenerated,0

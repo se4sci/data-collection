@@ -1,0 +1,101 @@
+hash,time,message,buggy
+022957c,2016-12-13 14:37:17,* check libxc 2.2.3,0
+e260a81,2016-12-15 11:16:27,multibinit: change strain-coupling input variables,0
+c4d4f15,2016-12-15 19:25:38,Add cleaning for calculation of effective interaction in cRPA,0
+79aa402,2016-12-16 15:24:24,Update dmft tutorial and add cRPA tutorial.,0
+f350031,2016-12-16 16:06:22,Correct links in cRPA tutorial,0
+a2f464f,2016-12-16 17:28:31,Correct typos in tutorial cRPA,0
+ca392e0,2016-12-20 19:11:47,Fixed a small bug in the ElectronPhononCoupling module that would prevent proper import.,0
+434e51d,2016-12-21 13:48:46,multibinit: add strain coupling in fitting coefficient treatment + update ref + debug,0
+27ea8da,2016-12-21 13:52:28,Merge tag 'start-8.3.0' into develop,0
+dea24a0,2016-12-21 14:48:13,debug test,0
+dcba6ae,2016-12-22 15:52:46,remove etsf_io FB in testfarm.conf,0
+b898d79,2016-12-22 20:49:19,add 2 newbots : tikal_gnu_5.4_mpich & ubu_intel_17.0_openmpi,0
+7fd6c19,2016-12-22 23:09:59,typos in modules for newbots,0
+c77630a,2016-12-22 23:38:21,must recompile psml with gnu 5.4,0
+0e1a852,2016-12-23 10:47:43,Merge branch 'develop' of gitlab:trunk/abinit into libxc223,0
+90049da,2016-12-23 11:30:11,updatei for external fb for newbot ubu_intel_17_openmpi,0
+d4034a6,2016-12-23 13:57:50,Fixed the interpolation of the response potential for computation of the gkk.,0
+130c9ee,2016-12-23 14:00:34,Merge remote-tracking branch 'trunk/develop' into develop,0
+9ae1616,2016-12-24 01:09:25,Customized mixing and screening parameters for PBE0 and HSE,0
+123f0ed,2016-12-24 01:59:01,Checks for gwfockmix.,0
+8061009,2016-12-24 02:19:34,Added docs for the new variable gwfockmix.,0
+4971118,2016-12-24 02:23:19,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
+3603c00,2016-12-24 02:39:16,HTML docs generated.,0
+7c62d4c,2016-12-25 16:25:28,make buildsys happy or not...,0
+dafd718,2016-12-25 16:45:37,make buildsys happy...I hope now,0
+67ccc6d,2016-12-26 13:14:55,libxc/t43.in added to test the gwfockmix variable,0
+d587476,2016-12-26 15:17:25,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0
+e833e96,2016-12-26 16:40:32,libxc/t43 reference updated with gwpc=8,0
+2a85ec8,2016-12-27 22:03:52,libxc/t43 tolerance adjusted to pass the test on cronos.,0
+7d49e1f,2016-12-28 10:19:52,Improves comments in the el-ph ZPR part. Modified:   72_response/dfpt_vtowfk.F90  72_response/eig2stern.F90,0
+507779f,2016-12-29 18:46:14,Abort immediately if IOError in read_rhor,0
+c19778e,2016-12-30 17:59:29,Merge remote-tracking branch wchen/develop/2a85 into _wchen,0
+fe5c02e,2016-12-30 21:17:38,Adjust tolerance for v7#45 on coba2. Modified:   t94.in,0
+467a002,2016-12-31 00:06:38,Replace -openmp by -qopenmp in recent Intel FC versions,0
+dbd4a56,2016-12-31 00:09:34,quickfix in opernlb_ylm: a test on nloalg was erroneous,0
+94d6523,2016-12-31 00:55:06,Change NLO_MINCAT value to save memory,0
+8211f4e,2016-12-31 01:54:59,Suppress useless args in ctocprj,0
+b3642ee,2017-01-02 17:49:34,Only master should write MSQD_T and PHDOS files,0
+e6af034,2017-01-02 19:54:07,Fix misplaced HAVE_NETCDF,0
+70c5403,2017-01-02 23:11:48,Fix formats in isfile,0
+b57742f,2017-01-03 14:16:31,Correct typos  and improve writtings on cRPA tutorial.,0
+fb17c60,2017-01-03 14:32:03,Merge branch 'release-8.2.0' into tuto_crpa,0
+bbe61cd,2017-01-03 18:58:50,Eliminate remaining problem in ctocprj,0
+78520bd,2017-01-04 09:53:36,Merge remote-tracking branch torrent/quickfixes/bbe6 into _torrent-8.2.0,0
+3b1a847,2017-01-04 12:22:09,Upgrade AtomPAW version,0
+01e3213,2017-01-04 14:38:27,Improve tutos dmft and crpa,0
+4e765d5,2017-01-04 19:53:53,Change the way Dij is transfered in to Ekb because the parallelization over atom was incompatible with the parallelization over spins,0
+f174c1b,2017-01-05 00:27:40,Change the way Dij is tranfered in to Ekb - Take 2,0
+fa96642,2017-01-05 17:45:16,Tests cRPA for tuto cRPA: typos,0
+4453903,2017-01-05 19:35:57,Change the way Dij is transfered in to Ekb - Take 3,0
+c2e8ce7,2017-01-06 02:42:18,Change the way Dij is transfered in to Ekb - Take 4,0
+6dacc24,2017-01-06 09:59:13,Merge remote-tracking branch torrent/quickfixes/c2e8 into _torrent-8.2.0,0
+f59e95b,2017-01-06 11:23:21,Adjust tolerance for ubu_intel_openmp. Modified: t94.in,0
+b036f6b,2017-01-06 11:27:37,Merge remote-tracking branch amadon/tuto_crpa/fa96 into _amadon-8.2.0,0
+ab78ae1,2017-01-06 13:44:57,update graphene bot ( OS and MacPorts gcc6+openmpi+OpenBLAS... ),0
+f2006ad,2017-01-06 20:09:30,Improvment of code stability for several pathological cases of procs distribution,0
+7da5b88,2017-01-06 22:08:22,update graphene bot and make buildsys[13] happy,0
+0f03edd,2017-01-06 22:20:16,remove etsf_io in config/specs to make happy buildsys[10],0
+1dc28fb,2017-01-07 01:06:01,Avoid npw=0 and print error message,0
+743eb15,2017-01-07 12:10:58,Errors corrected (thank you test farm~),0
+1f3dbc7,2017-01-09 00:51:52,Corrections to make PAW compatible with spnorb,0
+bc93740,2017-01-09 10:29:44,Merge remote-tracking branch torrent/quickfixes/1f3d into _torrent-8.2.0,0
+73384e7,2017-01-10 11:49:15,psml bugfix: ps_Relativity returns chars not bool,0
+238f1cf,2017-01-10 18:21:25,Fix duplicated import,0
+815110d,2017-01-10 18:39:19,Fix import,0
+2f3a5f5,2017-01-11 00:09:17,Update pspm refs,0
+3f1ebd7,2017-01-11 19:41:54,Correction in NCPP nlcc core correction for hybrid functionals,0
+595b00c,2017-01-12 21:18:50,Merge remote-tracking branch gmatteo/intel17/2f3a into _gmatteo-8.2.0,0
+ebe6324,2017-01-12 23:46:52,Merge remote-tracking branch torrent/quickfixes/3f1e into _torrent-8.2.0,0
+a2f9b91,2017-01-13 01:51:42,Merge branch release-8.2.0/ebe6 into develop,0
+40875b8,2017-01-17 12:49:02,Print error message associated to nf90_create instead of nf90_close,0
+410f3c0,2017-01-17 13:11:20,Stop the code immediately if --netcdf-default without MPI-IO,0
+ae177f2,2017-01-17 15:56:51,cleaning  updated FB  modif of builders,0
+e28637e,2017-01-18 08:10:41,typo,0
+6178b09,2017-01-18 10:42:16,use atlas with bob  back to OpenBLAS with graphene  make buildsys happy,0
+93e2511,2017-01-18 13:33:13,typo,0
+d8dff05,2017-01-18 13:36:01,Merge branch 'intel17' of gitlab:gmatteo/abinit into libxc223,0
+3604115,2017-01-18 15:21:24,New weights for anaddb,0
+1272a4a,2017-01-18 16:46:18,option to activate new weights,0
+a33b57f,2017-01-19 21:32:02,add support for intel 17 change standard optim for intel compiler : remove -xhost too aggressive,0
+10da1fd,2017-01-20 15:56:11,test new fallbacks access,0
+8e7e419,2017-01-20 22:38:28,test new fallbacks access(2),0
+38a3370,2017-01-21 00:43:04,full new fallbacks access,0
+7f17b8c,2017-01-21 09:06:14,Modify tolerance  to prepare merge of bieder/hotfix_cif/e28637e9 . Modified:   t94.in,0
+6af2939,2017-01-21 09:09:04,Merge remote-tracking branch biederj/hotfix_cif/e286 into _biederj-8.2.0,0
+e59d2b8,2017-01-21 15:01:05,fix typo + make buildsys happy,0
+c4ae6a6,2017-01-21 22:49:33,add new bots with ABI-FBKS + make buildsys happy,0
+c049616,2017-01-22 06:53:53,Adjust tolerances for tests/mpiio #28 with ubu_intel_15,0
+209a694,2017-01-22 06:58:13,Merge branch release-8.2.0/6af2 into develop,0
+600b500,2017-01-22 12:01:02,fix typo for buildsys check,0
+4c431f2,2017-01-22 21:27:49,Update tolerances for new bots tikal_intel15_serial  ubu_intel15_mpich  ubu_intel16_openmp  ubu_intel17_openmpi .,0
+6132de1,2017-01-22 21:46:52,In view of new bots + upgraded ones  modify testfarm.conf  for ubu_intel15_mpich  ubu_intel16_openmp  bob_gnu5.3_openmp  graphene_gnu6.2_macports  tikal_gnu5.4_mpich,0
+8949eda,2017-01-23 06:46:57,Modify or update refs files in abichecks/buildsys/Refs,0
+910058b,2017-01-23 11:14:23,Final update of files  to finalize v8.2.0 (no doc yet  though ...),0
+c5d2fb8,2017-01-23 11:24:04,Merge remote-tracking branch beuken/libxc223/600b  into _beuken,0
+15c9d20,2017-01-23 11:39:57,Merge branch 'release-8.2.0' into _beuken  and solve conflicts.,0
+ff84c2f,2017-01-23 19:37:16,Update ubu_intel_15.0_mpich.ac,0
+eea010e,2017-01-23 19:38:40,Update tolerance for ubu_intel_15.0_mpich . Modified:   v7/Input/t94.in,0
+661937d,2017-01-23 21:18:25,Update KNOWN_PROBLEMS,0
+4dcb20c,2017-01-24 10:48:20,Update configure.ac files for v8.3.1,0

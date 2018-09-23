@@ -1,0 +1,24 @@
+hash,time,message,buggy
+e9678d9,5/9/16 8:26,Fixes for --disable-mpi builds.,1
+2d5c072,5/10/16 16:34,Fixes for --disable-amr builds.,1
+6d69175,5/11/16 12:12,Test linking against CppUnit at configure time,0
+eaa6b2c,5/13/16 16:04,Fix horrible bug in nodal unique_id() reading,1
+a938c54,5/16/16 16:57,Fixes for assorted odd build configurations,0
+2b14063,5/17/16 8:52,Minor change to configure due to running bootstrap.,1
+aeafb76,5/18/16 12:56,More odd-configuration-case fixes.,0
+1067011,5/20/16 12:16,Compute shape functions of base_fe as well.,0
+d671515,5/20/16 21:55,Fix BoundaryInfo documentation and boundary loops in examples.,1
+4533f7e,5/23/16 10:10,get_eigen*() should be indexed by dof_id_type,0
+a58827d,5/24/16 12:45,adjoints_ex3 seems to need PETSc to converge,0
+2146ff0,5/24/16 21:29,Don't try p refinement with floats,0
+ed82ab6,5/25/16 9:22,Fix example compilation with --enable-complex,1
+c672bc1,5/27/16 14:50,Call clone->init() in MeshFunction::clone().,0
+91ec8b1,5/27/16 16:06,Remove overzealous assert from set_p_level(),0
+fdb5dba,5/29/16 21:49,Remove overzealous asserts in FEMContext,0
+579b508,5/31/16 14:42,Trilinos fails to give the right values here,0
+fd8177d,5/31/16 15:23,Fixes for 64-bit indices builds with SLEPc enabled.,1
+89520de,6/3/16 12:27,Skip more examples in non-standard configurations.,0
+3479cf5,6/6/16 12:27,Update automake version number to 1.0.0-rc2.,0
+48f78a0,6/6/16 12:30,Run bootstrap.,0
+a18edc1,6/6/16 12:47,GCC 5.2.0 warned that is_eof might be used uninitialized.,0
+b7216f0,6/6/16 12:51,GCC 5.2.0 warned that normalize_rb_bound_in_greedy_in was used uninitialized.,0
