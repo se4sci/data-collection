@@ -1,0 +1,33 @@
+hash,time,message,buggy
+fa84a0f,2017-02-19T16:11:03,Split too long lines (that do not appear well on the Web site).,0.0
+ce6959c,2017-02-19T16:38:36,Improves formatting of selected pages of the doc,0.0
+db6eeca,2017-02-20T14:37:05,Small change in the build system (improve compilation on exotic architectures),0.0
+788388d,2017-02-22T21:11:39,Add v8 directory to buildsys,0.0
+c9feb9a,2017-02-22T22:27:51,Small modifs in abinit_vars.yml  and update of vardev and varrlx.,0.0
+926240.0,2017-02-23T01:36:42,Fix problem with test#10 of buildsys  related to FCFLAGS_FIXEDFORM  and other FCFLAGS_* . Fix borrowed from torrent/wvl-paw-forces.,1.0
+2618022.0,2017-02-23T11:12:18,Merge remote-tracking branch gmatteo/hotfix-runtests/7883 into hotfix-8.2.2,0.0
+1f74147,2017-02-23T14:23:47,The modification of env. variables should pass the tests now,0.0
+751dc2e,2017-02-23T16:09:46,Change ref files for configuration files,0.0
+4071796.0,2017-02-27T14:23:21,Update the install notes (was severely outdated). Minor improvement of the release notes formatting.,0.0
+8cb9d43,2017-02-27T14:31:04,Suppress unallowed calls to file function (newunit is not compatible with F2008),0.0
+1cf50ea,2017-02-27T14:40:33,Update doc  incl. features  statistics  and release notes.,0.0
+e2784ff,2017-02-27T14:49:24,Update year 2015 to 2016 (I),0.0
+5ac6d66,2017-02-27T14:56:01,Update year 2015 to 2016 (II),0.0
+67e315f,2017-02-27T15:04:40,Update year 2015 to 2016 (III),0.0
+5be3a56,2017-02-27T15:11:14,Update years for a first batch of python files,0.0
+02a9ebc,2017-02-27T15:13:57,Update year 2015 to 2016,0.0
+aef2062,2017-02-27T15:18:36,Update year 2016 to 2017 (I),0.0
+2a07d4a,2017-02-27T15:26:14,Update year 2016 to 2017 (II),0.0
+4fe0149,2017-02-27T15:37:13,Update year 2016 to 2017 (III),0.0
+2620000.0,2017-02-27T15:38:55,Update year 2016 to 2017,0.0
+8061983.0,2017-02-27T15:43:05,Update years 2016 to 2017 (IV),0.0
+d387a17,2017-02-27T15:59:02,Update year 2016 to 2017 (V),0.0
+b8cbe65,2017-02-27T16:21:35,Update contributor list,0.0
+ded633e,2017-02-27T16:35:10,Fix README as links,1.0
+d3232af,2017-02-27T16:37:53,Modify script to take into account README links,0.0
+4a4dae8,2017-02-27T16:45:08,Now handle libtetra as libpaw in some scripts,0.0
+194e41b,2017-02-28T10:03:12,Merge remote-tracking branch torrent/quickfixes/4a4d into _torrent-8.2.2,0.0
+ae6b95e,2017-02-28T10:11:13,Update KNOWN_PROBLEMS,0.0
+57fd8c1,2017-02-28T12:16:22,Had to (re)import from Marc the declarations for FCFLAGS_* in environment.conf,0.0
+bd4dcfc,2017-02-28T12:18:46,Merge branch '_torrent-8.2.2' into hotfix-8.2.2,0.0
+cf6296e,2017-02-28T14:36:45,Initialize v8.2.3 production,0.0

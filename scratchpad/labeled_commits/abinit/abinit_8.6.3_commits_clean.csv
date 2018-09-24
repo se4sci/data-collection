@@ -1,0 +1,4 @@
+hash,time,message,buggy
+624bc89,2017-11-18T16:01:36,Update ref for graphene bot,0.0
+a17c85b,2017-11-19T06:50:35,Initialize v8.6.3,0.0
+aba30f9,2017-11-19T06:51:34,Merge branch 'hotfix-8.6' of gitlab:trunk/abinit into hotfix-8.6,0.0

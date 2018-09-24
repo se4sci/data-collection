@@ -1,460 +1,460 @@
 hash,time,message,buggy
-c506d9a,2013-02-02 16:53:03,direct link,0
-4d2da6b,2013-02-02 19:01:18,allow ./bootstrap --build-autotools,0
-c6e16ca,2013-02-03 08:54:14,copyright info  fix for barebones build,0
-c01b0d5,2013-02-03 08:54:50,copyright info,0
-7e50eab,2013-02-03 09:11:51,fix for 1D  complex configurations,0
-c3cb34d,2013-02-03 09:22:35,massive comment-only fix for copyright consistency,0
-1ee9b03,2013-02-03 13:58:33,adding netcdf-4.2.1.1 source tree,0
-6c2d859,2013-02-03 18:04:19,rebaseline netcdf generated files,0
-0e06408,2013-02-03 18:08:30,updating configure.ac to use silent rules  color tests,0
-a289695,2013-02-03 18:10:39,add a .gitignore here to support in-tree builds,0
-6716d4d,2013-02-03 18:18:49,update .gitignore for make  make check,0
-e97660f,2013-02-03 18:25:24,update .gitignore for make check,0
-25e2698,2013-02-03 18:37:04,disable tests requiring network access,0
-5b0912f,2013-02-03 20:11:06,symlinks for easier version management,0
-beaa35b,2013-02-03 20:19:40,support building legacy netcdf (v3) and new (v4) from source,0
-d3949d4,2013-02-03 20:34:38,adding exodus-5.22b source tree,0
-bbb517f,2013-02-03 20:35:10,symlinks for easy version handling,0
-7103fb8,2013-02-03 21:36:51,new Makefile.am for a new exodus,0
-bb0e5f8,2013-02-03 21:38:31,allow for old (v5.09) and new (v5.22) exodus trees,0
-e65f789,2013-02-03 21:39:22,new Makefile.in for a new exodus,0
-25d039c,2013-02-03 21:49:24,get defaults working properly by specifying a version,0
-ed08e95,2013-02-03 21:56:29,fix for --disable-optional,0
-504eed7,2013-02-03 22:10:52,gotta figure out a way not to recurse into v4 for configuration when we do not want to build v4  but still have make dist work...,0
-f2661c3,2013-02-03 23:06:07,fix for --enable-complex,0
-f495444,2013-02-04 06:21:38,fix for --enable-complex,0
-0dd148f,2013-02-04 10:38:53,Directly use the __DEPRECATED token to avoid warnings about deprecated headers coming from VTK.  This works for GCC  and the __DEPRECATED token has been used at least as far back as GCC 4.2.,0
-0f77129,2013-02-04 10:54:07,Removing deprecated OStringStream and OFStream classes.,0
-b848041,2013-02-04 11:03:10,allow for --disable-nested to  uh  disable nesting,0
-60a60e7,2013-02-04 11:16:35,case statement is clearer,0
-a33bd96,2013-02-04 12:10:24,updating nemesis configuration,0
-fb53563,2013-02-04 14:44:30,build new version of nemesis,0
-b4da774,2013-02-04 15:05:21,Changes in adaptivity_ex2.C for -Wshadow.,0
-e17c79e,2013-02-04 15:08:09,Changes in adaptivity_ex3.C for -Wshadow.,0
-729541a,2013-02-04 15:13:44,Changes in adaptivity_ex5.C for -Wshadow.,0
-b657617,2013-02-04 15:16:38,Changes in adjoints_ex1 for -Wshadow.,0
-e6f444c,2013-02-04 15:24:13,Changes in adjoints_ex2 for -Wshadow.,0
-cccdb62,2013-02-04 15:27:29,Changes in adjoints_ex3 for -Wshadow.,0
-2b9c717,2013-02-04 15:42:59,Changes in adjoints_ex4 for -Wshadow.,0
-d94b0f0,2013-02-04 15:49:54,support for --enable-nemesis=new,0
-ba6afdd,2013-02-04 15:57:11,Don't include deprecated o_string_stream header.,0
-0dc8e2e,2013-02-04 15:58:55,Fixes for unused variable warnings.,0
-f957dea,2013-02-04 15:59:47,Changes in adjoints_ex5 for -Wshadow.,0
-6ccd84e,2013-02-04 16:03:28,Changes in fem_system_ex1 for -Wshadow.,0
-85a7e97,2013-02-04 16:07:05,Changes in fem_system_ex2 for -Wshadow.,0
-eb616e8,2013-02-04 16:12:52,Changes in miscellaneous_ex3 for -Wshadow.,0
-fe3039d,2013-02-04 16:13:25,Changes in type_vector.h for -Wshadow.,0
-213e204,2013-02-04 16:20:05,fix for initing / seting up preconditioners with adaptivity,0
-1b4c2a7,2013-02-04 16:22:10,Changes in miscellaneous_ex4.C for -Wshadow.,0
-2375c2c,2013-02-04 16:25:53,Changes in miscellaneous_ex7.C for -Wshadow.,0
-0392b90,2013-02-04 16:27:52,Changes in reduced_basis_ex1 for -Wshadow.,0
-95d8003,2013-02-04 16:29:56,Changes in reduced_basis_ex3 for -Wshadow.,0
-1a5db52,2013-02-04 16:32:44,Changes in reduced_basis_ex4 for -Wshadow.,0
-3847f57,2013-02-04 16:35:50,Changes in reduced_basis_ex5 for -Wshadow.,0
-5bcca40,2013-02-04 16:39:33,Changes in transient_ex1 for -Wshadow.,0
-5e0f961,2013-02-04 16:48:57,Changes in vector_fe_ex2 for -Wshadow.,0
-14f5c71,2013-02-04 16:54:52,Changes in vector_fe_ex3 for -Wshadow.,0
-d99e3fc,2013-02-04 17:13:32,Changes in reduced_basis_ex6 for -Wshadow.,0
-ee78cfe,2013-02-04 17:32:41,configure test for HDF5,0
-68afe25,2013-02-04 17:47:56,more rigorous configuring,0
-e7961ef,2013-02-04 17:55:01,more rigorous configuring,0
-2138e36,2013-02-04 22:46:46,fix for PETSc 3.1 and older,0
-2b4e114,2013-02-05 06:58:51,updating release notes,0
-8d5522e,2013-02-05 08:49:01,The PETSc XXXDestroy() imbroglio occurred around PETSc 3.1.1.,0
-197b57f,2013-02-05 08:59:20,fix for --enable-singleprecision,0
-6e1c876,2013-02-05 11:27:32,Mark MemorySolutionHistory as still experimental,0
-08196e1,2013-02-05 12:33:32,Adding Vikram's and Andreas theses,0
-5043d5a,2013-02-05 12:57:10,Updating publications.,0
-ea1c143,2013-02-05 14:33:52,Fix for --disable-amr,0
-bf037da,2013-02-06 10:45:19,rebuild makefile after rebase conflict,0
-9d7303f,2013-02-06 11:12:38,Merge pull request #40 from benkirk/exodus_refresh,0
-19650fa,2013-02-06 12:23:51,bump version number,0
-84da4b4,2013-02-06 14:37:05,prevent netcdf from running most of the testsuite (keep examples only) when doing make check,0
-977d77b,2013-02-06 14:45:20,This shouldn't need more than 1 Newton step,0
-f610c46,2013-02-06 14:46:33,Merge branch 'master' of ssh://github.com/libMesh/libmesh,0
-90c8733,2013-02-06 15:50:06,Fix for handling compiler vars with spaces,0
-ce703f9,2013-02-07 08:37:43,Use VTK_LEGACY_REMOVE.  Thanks  cato-  for the idea.,0
-fe85fae,2013-02-07 09:27:58,Standardizing spacing  formatting  indentation  etc.,0
-6bac31a,2013-02-07 11:40:53,Hoist function calls out of loop conditionals.,0
-b277d0a,2013-02-07 11:56:50,We are using a vtkDoubleArray  so don't convert the mesh point coordinates to single precision unnecessarily.,0
-243753e,2013-02-07 14:28:22,Again  don't degrade to single precision when double is available.,0
-4f2b016,2013-02-07 15:28:42,Making reading work  adding support for 2D and 1D element types.,0
-bc56be9,2013-02-08 12:35:21,Fixes for our Epetra vector interface,0
-b597e16,2013-02-09 09:59:06,Added point_curl method to FEMContext.,0
-7ec1a2c,2013-02-09 11:41:38,Instantiate point_curl method.,0
-b596857,2013-02-09 22:38:38,Merge pull request #41 from pbauman/point_curl,0
-6bede26,2013-02-11 10:42:54,small optimization for dtk adapter,0
-bedeb9b,2013-02-11 11:05:31,Use standard assertion,0
-e5b8928,2013-02-11 11:18:35,Make sure to POSIX-sort new headers too,0
-0cebec1,2013-02-11 11:21:48,Fix the direction on that example assertion...,0
-32c0667,2013-02-11 12:29:52,Terse complex compatibility  moved assert,0
-077b63b,2013-02-11 16:36:21,Save a few lines of code,0
-44a2360,2013-02-12 10:42:32,default to new versions,0
-700dfe7,2013-02-12 10:43:11,properly set CPPFLAGS,0
-d215b13,2013-02-12 10:44:11,push optional includes/libs to subpackages,0
-fef9612,2013-02-12 10:47:51,configure for recent changes,0
-ce75a9e,2013-02-12 13:10:03,fix for older HDF5-1.8.x installations,0
-3c7dd28,2013-02-12 13:40:07,look for Tpetra_config.h,0
-c07e91a,2013-02-12 13:40:38,conditionally specify -DNOT_NETCFD4,0
-6fb0008,2013-02-12 13:43:55,conditionally specify -DNOT_NETCFD4,0
-26dbb09,2013-02-12 13:47:19,fix for new exodus when netcdf4 unavailable,0
-23b3460,2013-02-12 13:59:30,fix for older HDF5 installations,0
-4695b09,2013-02-12 14:27:29,increase parameter sizes for exodus,0
-fa394b9,2013-02-12 14:27:54,more informative message when falling back to NetCDF v3 API,0
-44d5653,2013-02-12 14:39:48,undo LIBS,0
-1176d7c,2013-02-12 14:50:43,dos2unix was required on this file to get Solaris Studio to compile it!!,0
-392a51e,2013-02-13 11:25:09,need automake 1.12 for properly bundling netcdf  it seems for Ubuntu-LTS,0
-fb4c1c5,2013-02-13 11:49:29,fix for build_testsets false & in-tree builds,0
-59d8da4,2013-02-13 11:53:50,updated .gitignore for in-tree builds,0
-5a05641,2013-02-13 13:30:30,Fix multithreaded qoi derivative assembly,0
-944c3f9,2013-02-14 08:18:35,do not commit BUILT_SOURCES,0
-9b92334,2013-02-14 08:35:04,proper static linking by using NetCDFs pkg-config script,0
-530a642,2013-02-14 12:43:56,igore BUILT_SOURCES,0
-c307b52,2013-02-14 12:58:12,more robust tecplot binary blob handling for static libraries,0
-ea92d11,2013-02-14 13:31:30,yet another tecplot symlink,0
-724de09,2013-02-14 16:06:50,Changes in inf_fe_map.C for -Wshadow.,0
-5ef166f,2013-02-14 16:41:41,Changes in condensed_eigen_system.C for -Wshadow.,0
-28dcc41,2013-02-15 09:36:22,GetPot can accept more constness of arguments,0
-070515a,2013-02-15 09:38:02,LibMeshInit can accept more argument constness,0
-285ebaa,2013-02-15 11:14:40,Adding citations and webpage generation script.,0
-9644c5f,2013-02-15 14:14:53,fallback to rpc/xdr.h when looking for xdr.,0
-1aa5d5f,2013-02-15 14:16:46,trump --enable-petsc with --disable-mpi,0
-cfd23fa,2013-02-15 14:16:55,Merge branch 'master' of https://github.com/libMesh/libmesh,0
-e15fef7,2013-02-15 14:24:26,use <rpc/xdr.h> when it is there,0
-1249c5d,2013-02-15 15:24:49,more fine-grained fallback for --disable-mpi,0
-d03f946,2013-02-17 13:31:49,adding eigen-3.1.2 to contrib,0
-13fa33d,2013-02-17 13:37:11,add eigen-3.1.2 unsupported API,0
-e04db6d,2013-02-17 14:52:47,Merge pull request #45 from benkirk/eigen,0
-e3bd55d,2013-02-17 15:20:52,get contributed Eigen into build system,0
-4df7f73,2013-02-18 08:07:49,Adding list of bibtex templates.,0
-917425b,2013-02-18 13:16:57,Adding Octave scripts for making libmesh usage statistics plots.,0
-0a87dfb,2013-02-19 11:12:56,Merge pull request #48 from dmcdougall/fix_ex4docs,0
-2821092,2013-02-19 13:01:54,Remove superfluous comment.,0
-30979a2,2013-02-20 08:41:26,fix comment,0
-58660f4,2013-02-20 12:36:43,initial file infrastructure for supporting Eigen sparse linear solvers,0
-55b015f,2013-02-20 16:27:12,working vector implementation,0
-a45d9e9,2013-02-20 16:27:28,working vector implementation,0
-26e617b,2013-02-21 07:58:12,intiial vector  partial implemenation,0
-fac4f53,2013-02-21 08:48:25,EigenSparseVector initial implementation,0
-58e7066,2013-02-21 09:27:59,Merge pull request #49 from friedmud/perf_log,0
-1f36987,2013-02-21 09:35:46,EigenSparseMatrix initial implementation,0
-887fb9d,2013-02-21 09:37:34,allow access to PerfData objects,0
-2771aa8,2013-02-21 10:14:58,forgot to remove a libmesh_not_implemented(),0
-e7bad10,2013-02-21 10:15:36,hackery to avoid MatType collision,0
-da6a476,2013-02-21 10:43:11,initial linear solver support,0
-f25d185,2013-02-21 11:05:28,fix for --enable-complex,0
-f99de5a,2013-02-21 11:49:58,Merge pull request #50 from benkirk/eigen_solver_package,0
-2670578,2013-02-21 14:03:42,leave laspack ahead of eigen until the latter implementation is more complete,0
-8fbff28,2013-02-21 15:45:44,simpler fix for MatType debacle (#44),0
-19b1278,2013-02-22 08:27:08,use AC_CHECK_HEADERS to make sure Eigen is usable,0
-1641936,2013-02-22 08:31:44,Fix for ML/PETSc coupling debacle.,0
-7e0aebd,2013-02-22 09:52:28,initial infrastructure to support radial basis functions as an alternative MeshfreeInterpolation scheme,0
-91495d5,2013-02-22 10:07:38,Wendland Radial Basis Function,0
-ae8bcc1,2013-02-22 10:59:59,Taking libmesh-specific comment out of eigen.m4,0
-0bf6d60,2013-02-22 11:09:06,beginnings of Radial Basis Interpolation implementation,0
-a4ea4f2,2013-02-22 11:47:21,Bugfix for enableeigen='' case,0
-2512591,2013-02-22 12:23:08,Remember to re-bootstrap...,0
-2387a7e,2013-02-22 13:35:02,Make sure we're using C++ to test for Eigen,0
-1ea8004,2013-02-26 23:19:27,Compatibility with the API changes since petsc-3.3.0 release.,0
-93ebd35,2013-02-27 15:06:53,initialize the bounding box,0
-0725495,2013-02-27 16:01:29,use normalized radius,0
-03e7f73,2013-02-27 16:02:33,initial radial basis interpolation implementation,0
-edb9926,2013-02-28 14:03:36,"Use automake's ""skipped test"" code when apropos",0
-8b7cec8,2013-02-28 14:04:31,Less misleading Euler2Solver comment,0
-9f01631,2013-02-28 14:27:29,Fix bug in NewtonSolver |du|/|u| printing,0
-96ca8dd,2013-02-28 14:38:53,Clearer comments on _residual vs _time_derivative,0
-a7db13b,2013-03-04 13:11:24,Fixes for disabling RTTI,0
-0514f89,2013-03-04 16:54:07,Our netcdf subpackage may need detected HDF5 info,0
-45b61d8,2013-03-04 17:43:03,Added some preprints from Feb 2013.,0
-c83c3b1,2013-03-05 08:28:29,demo RBI with misc/ex8,0
-5545850,2013-03-05 09:19:44,Updating statistics for Feb 2013.,0
-fe79f62,2013-03-05 13:02:11,If we didn't find HDF5  unset HDF5 variables,0
-1754fef,2013-03-06 08:25:02,LASPACK is OK,0
-cda31e1,2013-03-06 08:27:10,preserve return code,0
-191e891,2013-03-06 15:38:16,Fixing weird file permissions on contrib header files.,0
-88e0f46,2013-03-08 11:16:52,Merging in a feature from PECOS petsc.m4,0
-055e8cf,2013-03-10 19:07:09,prevnt using tbb:thread when TBB configuration has failed,0
-b7101bd,2013-03-12 09:06:27,Adding ANL tech. report.,0
-2a15238,2013-03-18 00:06:19,enable fractional powers for inverse distance interpolation,0
-5ddc836,2013-03-18 11:18:57,Merge pull request #52 from friedmud/fractional_power,0
-c586aad,2013-03-18 11:49:24,Fixing a few warnings,0
-0129974,2013-03-18 11:58:29,Merge pull request #53 from andrsd/warnings,0
-ce0b7cd,2013-03-18 15:14:51,mark constructors as experimental,0
-1c51785,2013-03-18 15:30:56,fix for --enable-complex,0
-d4bb399,2013-03-19 09:10:41,Merge pull request #54 from benkirk/radial_basis,0
-de23017,2013-03-19 11:31:48,accidentally introduced a C++11 construct,0
-f4100c1,2013-03-19 12:47:45,accidentally introduced a C++11 construct  round 2,0
-ced4b74,2013-03-19 14:16:01,silly std::cerr,0
-26a3a57,2013-03-19 15:58:00,graceful exit,0
-65862c1,2013-03-19 16:07:54,PGI does not like us bypassing our direct base class to import from a grandparent,0
-f55b093,2013-03-20 12:37:02,More eigen.m4 flexibility,0
-2f856d8,2013-03-20 12:51:52,Define another testable variable  HAVE_EIGEN,0
-d217e23,2013-03-20 13:44:24,fix cut & paste bug that caused constraining DOFs to be multiply added.,0
-6b52e1d,2013-03-20 18:02:55,initial infrastructure for user-specified element refinement selection,0
-c4c4c3b,2013-03-21 13:45:52,Merge pull request #55 from benkirk/user_spec_refinement,0
-82361d2,2013-03-21 15:30:55,implement roys suggestions,0
-c5298f1,2013-03-21 16:01:38,must always make flags parallel consistent  even for serial meshes  if the user is allowed to do direct flagging,0
-41471cb,2013-03-21 16:02:00,forgot to AC_SUBST a var,0
-7c7e008,2013-03-21 16:57:15,Minimum version number test option for eigen.m4,0
-4cd29b4,2013-03-27 12:07:33,Document and assert DoF/DofObject proc id identity,0
-9d27fae,2013-03-27 14:00:07,Patch based on Manav Bhatia's type-mixing methods,0
-5d50ea9,2013-03-27 14:14:31,Patch from Manav Bhatia: gmsh format 2.2 support,0
-eb81773,2013-03-27 14:32:41,"Manav's proposed ""fix"" for UnsteadySolver AMR",0
-df040c9,2013-03-27 14:43:55,Patch from Manav Bhatia: templated read datatypes,0
-0fe1181,2013-03-27 15:36:13,Default template parameters to avoid API breakage,0
-3aa6dcb,2013-03-28 13:19:46,Merge pull request #60 from permcody/parallel_fixes,0
-bc5c5af,2013-03-28 14:02:23,Merge pull request #61 from roystgnr/manav_unsteady,0
-f83ab71,2013-03-28 14:06:22,Adding standard type implementations for MPI blocking send/receive,0
-03f1f4c,2013-03-28 14:13:20,Singletons for each reference element type.,0
-5a298fa,2013-03-28 14:44:34,shell script to create static reference element strings from files.,0
-5481b81,2013-03-28 14:47:39,include *.data in the source file list,0
-2381a25,2013-03-28 14:48:07,reference element data,0
-9843afa,2013-03-28 14:49:22,implement reference element data,0
-99c86ae,2013-03-28 15:08:26,implements reading from static strings rather than file,0
-b8b8819,2013-03-28 15:11:38,Correct fix for UnsteadySolver::reinit(),0
-306139b,2013-03-28 15:19:12,fix generated file,0
-842a699,2013-03-28 15:25:29,remove temporary cruft,0
-622869b,2013-03-28 15:36:08,newline,0
-8af8278,2013-03-28 17:23:24,Warn about inconsistent flags,0
-00fa0ee,2013-03-29 06:11:54,Merge pull request #58 from roystgnr/manav_gmsh,0
-ff377e2,2013-03-29 08:15:01,return a reference per Roys suggestion,0
-6624f32,2013-03-29 08:52:28,Merge pull request #56 from roystgnr/dof_proc_id_check,0
-8fb2a3e,2013-03-29 12:08:08,Fixes for external-to-libMesh getpot usage,0
-74d7a65,2013-03-29 12:44:04,Merge pull request #66 from permcody/more_parallel_fixes,0
-47a20ac,2013-03-29 13:34:36,Adding the non-blocking send/receive functions,0
-bf16a84,2013-03-29 14:20:50,implement missing 1D reference elements,0
-3bdab67,2013-03-29 14:23:59,predictable sorting,0
-8fbb2b2,2013-03-29 14:29:13,implement remaining reference elements,0
-1656a2f,2013-03-29 15:02:44,initial infrastruture to support #64 -- better singleton support,0
-080f130,2013-03-29 15:04:52,Merge pull request #57 from roystgnr/manav_dense_numerics,0
-3cca949,2013-03-29 16:57:04,Let's print a bit more from this quiet example,0
-db3b47f,2013-03-29 17:09:04,reimplement RemoteElem derived from Singleton,0
-71fa9b9,2013-03-29 18:00:45,mark RemoteElem constructor as private to force the create() usage,0
-dde02a2,2013-03-30 09:11:29,Merge pull request #67 from benkirk/singletons,0
-a97e846,2013-03-30 09:25:36,Merge pull request #59 from roystgnr/manav_templated_read,0
-39fb599,2013-03-30 11:39:11,reimplement using Singleton,0
-b42537a,2013-03-30 11:41:20,remove redundant test,0
-615cc3a,2013-03-30 11:44:02,remove print statement,0
-8707a01,2013-03-30 13:26:34,Merge pull request #68 from benkirk/singletons,0
-bc6a8b2,2013-03-30 14:28:47,extend Dereks idea to initialization as well,0
-4f968af,2013-03-30 15:53:51,Merge pull request #69 from friedmud/template_shims,0
-8b8dd34,2013-03-30 16:17:05,add shims for newly templated functions instead of using default template arguments,0
-eda1aab,2013-03-30 17:55:54,reimplement using Singleton::Setup,0
-78cc22a,2013-03-30 17:56:12,Elem::reference_elem(),0
-c85ef0d,2013-03-30 18:07:56,defer initialization until requested,0
-af82a7a,2013-03-30 18:18:13,clarify comment,0
-1ec7cac,2013-03-30 23:29:24,add the ability to override the radius for radial basis interpolation,0
-86ea3d9,2013-04-01 10:12:18,Merge pull request #65 from roystgnr/getpot_updates,0
-0876766,2013-04-01 10:12:34,Merge pull request #63 from roystgnr/refinement_flag_warnings,0
-009544c,2013-04-01 10:21:29,Merge pull request #62 from benkirk/reference_elem,0
-aac77e1,2013-04-01 13:24:17,#include <sstream>,0
-a18fed1,2013-04-02 09:51:59,implement ExodusII Fortran API (#35),0
-5064820,2013-04-02 09:56:46,install the forbind/include/exodusII.inc as well,0
-86fae52,2013-04-02 15:22:50,Updating statistics for March 2013.,0
-896bd8d,2013-04-02 16:20:52,add beautify make rule to remove trailing whitespace.  Have not applied it to the source tree yet.,0
-4583624,2013-04-02 16:26:18,optional communicator to mesh constructor.  defaults to CommWorld  not used ATM.,0
-6a352a6,2013-04-02 17:46:40,run make beautify,0
-08f78db,2013-04-02 17:48:08,run make beautify  propagated to generated files,0
-5d23136,2013-04-02 18:03:45,make beautify,0
-6ba7aba,2013-04-02 21:37:25,begin using per-object communicators in mesh classes,0
-79abd82,2013-04-03 07:02:49,Merge pull request #72 from benkirk/remote_elem_undo,0
-7fabc7a,2013-04-03 08:30:27,make sure Singleton::create() works properly  temporary fix if not to help debugging...,0
-dee0e7b,2013-04-03 08:31:28,typo,0
-4b83930,2013-04-03 09:17:38,libMesh::ParalellObject base class for all things that require their own communicator reference.,0
-30c0367,2013-04-03 09:50:59,derive key data structures from ParallelObject,0
-96fe476,2013-04-03 10:56:55,refactor DofMap as a ParallelObject,0
-b4b05c4,2013-04-03 11:09:54,Adding Gunther_2012.  Moving Oden et al out of preprints.,0
-7ccb87e,2013-04-03 11:24:20,refactor BoundaryInfo as a ParallelObject,0
-487ffae,2013-04-03 11:24:41,refactor ExodusIO/NemesisIO as ParallelObjects,0
-dc1d823,2013-04-03 11:28:31,refactor to use per-object decomp info,0
-650c270,2013-04-03 11:44:03,refactor XdrIO as a ParallelObject,0
-36d6903,2013-04-03 12:06:14,Merge pull request #73 from roystgnr/initialization_order_defiasco,0
-f07969c,2013-04-03 12:08:10,refactor ExodusIO/NemesisIO as ParallelObjects,0
-d38e0ad,2013-04-03 12:08:55,refactor MeshBase as a ParallelObject,0
-12e09be,2013-04-03 12:13:51,refactor ParallelMesh as a ParallelObject,0
-7a6ec9a,2013-04-03 12:36:49,refactor MeshCommunication with ParallelObject  and fallout,0
-3ef65be,2013-04-03 12:42:56,refactor partitioning,0
-0fcdcb8,2013-04-03 12:52:31,refactor MeshTools,0
-6180daf,2013-04-03 12:53:05,Fix the static initialization order fiasco,0
-bcb7ede,2013-04-03 12:58:22,Added Kalashnikova WCCM reference.,0
-987c70f,2013-04-03 13:05:35,clarify comment,0
-2430450,2013-04-03 13:42:28,Fix cut-n-paste typo,0
-9e48d52,2013-04-03 14:01:14,refactor MeshRefinement as a ParallelObject,0
-64d6250,2013-04-03 14:01:25,refactor MeshRefinement as a ParallelObject,0
-a15d0a7,2013-04-03 14:01:56,refactor misc mesh-related classes as ParallelObjects,0
-aece01b,2013-04-03 14:03:15,refactor EquationSystems  System  and friends as ParallelObjects,0
-95b1686,2013-04-03 14:31:08,refactor reduced basis construction as ParallelObjects,0
-342bbbe,2013-04-03 14:40:47,refactor miscellaneous mesh functions,0
-4b888fc,2013-04-03 15:15:23,refactor miscellaneous mesh I/O functions,0
-acf1ad1,2013-04-03 16:00:43,refactor CondensedEigenSystem as ParallelObjects,0
-3fd1458,2013-04-03 16:12:02,miscellaneous fixes from the richer optional dependency stack I have on my mac,0
-b2116e3,2013-04-03 20:06:10,petsc vector compiles,0
-1aa7e04,2013-04-03 20:27:36,laspack vector communicated,0
-64d5a28,2013-04-03 20:37:51,epetra vector compiling,0
-577f241,2013-04-03 21:27:09,eigen and distributed vectors communicated,0
-006906b,2013-04-03 22:08:39,when calling NumericVector::build pass in the communicator so the vectors get created properly,0
-e2f78ea,2013-04-03 22:55:17,make sure that everywhere a petsc vector is created a comm gets passed in,0
-fe9229b,2013-04-03 23:09:44,fix up places where we make epetra vectors,0
-198de91,2013-04-04 08:59:08,temporary fix for Slepc until the matrices are ParallelObjects,0
-a7f4ad7,2013-04-04 09:34:08,need an assignment operator.  Just assert that assignment is a no-op since we cannot redefine our communicator reference.,0
-0f7c182,2013-04-04 09:56:00,first pass refactoring SparseMatrix and friends as ParallelObjects - still need to address SparseShellMatrix<>,0
-e4c7599,2013-04-04 10:00:59,fixed some misses,0
-1ebd26a,2013-04-04 10:02:05,fixed some misses,0
-40be2bd,2013-04-04 11:22:11,removed old cruf,0
-0b02826,2013-04-04 11:23:00,require a communicator  and fallout,0
-7d0a661,2013-04-04 11:59:20,require communicators,0
-9a9f4e0,2013-04-04 11:59:37,use our size,0
-2c20ff8,2013-04-04 11:59:50,ErrorEstimator is now a ParallelObject,0
-1316f9c,2013-04-04 12:14:33,refactor RBEvaluation as ParallelObject,0
-e419974,2013-04-04 12:44:56,refactor Preconditioners as ParallelObject,0
-37d4e34,2013-04-04 12:53:03,misc other fixes,0
-2c1e982,2013-04-04 13:11:43,refactor LinearSolvers as ParallelObjects  misc other too,0
-90368c8,2013-04-04 13:35:55,Adding a FakeCommunicator class,0
-ccb764f,2013-04-04 13:35:55,Adding a FakeCommunicator class,0
-12ff376,2013-04-04 13:53:11,Add --enable-default-comm-world argument,0
-5fbca56,2013-04-04 14:08:51,Just move tiny FakeCommunicator into parallel.h,0
-68abf15,2013-04-04 14:08:51,Just move tiny FakeCommunicator into parallel.h,0
-264e002,2013-04-04 14:27:59,restore default constructor argument,0
-f30618f,2013-04-04 14:48:22,SolutionTransfer as ParallelObject,0
-74ab676,2013-04-04 15:17:09,Communicator_World -> this->communicator() fixes,0
-60aa807,2013-04-04 15:17:51,Add missing header for START_/STOP_LOG,0
-6a3b0d4,2013-04-04 15:18:33,perflog isn't in libmesh.h anymore,0
-1a2aaa4,2013-04-04 15:18:54,Implement DISABLE_COMM_WORLD,0
-8abb413,2013-04-04 16:12:18,misc refactoring,0
-83bc6ab,2013-04-04 16:33:02,Bugfixes for the enable-default-comm-world case,0
-418aa90,2013-04-04 16:41:54,fix inconsistent comms,0
-bc4c975,2013-04-04 19:45:54,Fix some doxygen comment mistakes,0
-a50c70c,2013-04-04 19:49:20,checkpoint the days work,0
-69100ec,2013-04-04 19:55:13,Merge pull request #75 from dmcdougall/fix_docs,0
-c99b851,2013-04-05 08:19:01,refactor EigenSolver<> as ParallelObject,0
-2e7f44a,2013-04-05 08:45:40,misc fixes,0
-bd6bf5a,2013-04-05 08:56:46,misc fixes,0
-472494f,2013-04-05 09:19:22,missed one...,0
-0623ee4,2013-04-05 09:19:34,iterators - whew!,0
-96bef19,2013-04-05 09:33:02,libmesh_parallel_only(),0
-03b6ff9,2013-04-05 09:58:45,code compiles without parallel_only(),0
-b71ea07,2013-04-05 10:15:55,remove libMesh::n_processors() and libMesh::processor_id() from default function arguments,0
-8dc243b,2013-04-05 10:20:23,oops - didnt mean to commit temporary removal of parallel_only(),0
-d7e2e09,2013-04-05 10:24:08,clarify comment,0
-670d422,2013-04-05 12:49:22,temporary commit.  the entire library compiles without default constructors.  will begin reimplementing defaults until examples work.,0
-c4e5525,2013-04-05 12:57:57,restore NumericVector<>::build() default argument,0
-40cb759,2013-04-05 13:09:13,fix for SLEPc config,0
-844bbb7,2013-04-05 13:12:47,naming uniformity,0
-a86cb5f,2013-04-05 13:14:03,naming uniformity,0
-81f700b,2013-04-05 13:32:19,working to find minimal required default constructors for examples,0
-46024ee,2013-04-05 13:46:25,working to find minimal required default constructors for examples,0
-ec31e89,2013-04-05 13:59:23,use local communicator,0
-971bdd4,2013-04-05 13:59:41,working to find minimal required default constructors for examples,0
-4d1f0bc,2013-04-05 14:04:36,working to find minimal required default constructors for examples,0
-e7817a4,2013-04-05 14:09:42,missed some default constructors,0
-2e577fd,2013-04-05 14:16:31,working to find minimal required default constructors for examples,0
-3f8fe0c,2013-04-05 14:23:23,working to find minimal required default constructors for examples,0
-738b79c,2013-04-05 14:28:24,working to find minimal required default constructors for examples,0
-e9601cd,2013-04-05 14:30:50,working to find minimal required default constructors for examples,0
-4d78330,2013-04-05 14:44:51,fix for opt mode,0
-3ab18c1,2013-04-05 17:19:59,One line bug fix for CondensedEigenSystem from Shiyuan Gu,0
-675d6bc,2013-04-08 08:21:41,Merge pull request #77 from permcody/parallel,0
-1dc52ab,2013-04-08 08:54:54,Initial implementation of broadcasting vector of strings and map containing strings,0
-6aa967e,2013-04-08 08:55:19,Broadcast strings with the mesh,0
-b10df29,2013-04-08 10:38:22,Merge pull request #3 from friedmud/comm_dtk_fix,0
-58ca137,2013-04-08 11:16:29,fixup dtk with new communicators,0
-4141fc6,2013-04-08 13:13:14,Merge pull request #76 from benkirk/communicators,0
-663e35f,2013-04-08 15:18:34,fix for rebase,0
-b37a9a4,2013-04-08 18:07:26,Use explicit init.comm in examples,0
-bd89181,2013-04-08 19:41:34,Fixing missing oprof mode in Make.common,0
-81cf4ba,2013-04-08 19:55:41,ErrorEstimator backwards compatibility fix,0
-933b960,2013-04-08 20:03:29,Fix atavism,0
-9f6781e,2013-04-09 01:00:16,examples fix for --disable-default-comm-world,0
-cabf134,2013-04-09 01:04:49,Fix another CommWorld-using example,0
-4bf6877,2013-04-09 01:09:28,Fix accidental omission of fem_system_ex2 Mesh dim,0
-383219c,2013-04-09 01:19:05,Fix PetscNonlinearSolver for non-default comm,0
-76f0428,2013-04-09 01:29:28,Example SumShellMatrix creation should use a comm,0
-e9a3a7f,2013-04-09 01:33:37,Add communicator for miscellaneous_ex6 SerialMesh,0
-1a7d32c,2013-04-09 01:38:39,miscellaneous_ex7 --disable-default-comm-world fix,0
-28a1d98,2013-04-09 06:16:53,Merge pull request #82 from roystgnr/petsc_commworld_fix,0
-a0f26ea,2013-04-09 06:22:21,Merge pull request #80 from permcody/make_common_fix,0
-227f0fb,2013-04-09 07:36:15,Merge pull request #83 from benkirk/fix_nompi,0
-21e8478,2013-04-09 07:50:41,Merge pull request #70 from benkirk/exodus_fortran,0
-29eb898,2013-04-09 08:18:32,fix for --disable-optional,0
-1f79b58,2013-04-09 08:24:39,Merge pull request #81 from roystgnr/error_estimator_compat,0
-742bcfd,2013-04-09 08:41:14,For --disable-mpi  we define COMM_WORLD as an int in libmesh_common.h  where for chicken-and-egg reasons it is difficult to include all of parallel.h.  Correspondingly  later things freak when trying to construct a Parallel::communicator from an int  as that constructor is not defined.  This implements that constructor.,0
-2425403,2013-04-09 10:19:31,Remove now-unnecessary #include,0
-d35058a,2013-04-09 10:31:00,reduced_basis --disable-default-comm-world fixes,0
-81ce5ab,2013-04-09 11:53:28,Optionally disable default CommWorld args,0
-f479807,2013-04-09 13:10:22,Merge pull request #79 from roystgnr/examples_fixes,0
-c3b99de,2013-04-09 14:21:37,Add and use LibMeshInit::communicator() accessor,0
-fd41d47,2013-04-09 17:56:40,Add LIBMESH_CAN_DEFAULT_TO_COMMWORLD macro,0
-593141c,2013-04-09 23:39:11,The new Mesh constuctors take communicator& first,0
-7cd7a82,2013-04-09 23:43:52,Missed a couple Mesh creations in previous commit,0
-f15e97b,2013-04-10 00:32:48,Reorder one more communicator argument,0
-27b9e3a,2013-04-10 00:33:48,Fix bugs caught by disable-default-comm-world,0
-97001cf,2013-04-10 00:34:30,Make apps disable-default-comm-world compatible,0
-d5d29fb,2013-04-10 00:41:38,miscellaneous_ex8 constructor API compatibility,0
-c112ea2,2013-04-10 06:51:14,Merge pull request #85 from roystgnr/disable_default_args,0
-a839508,2013-04-10 07:54:00,Minor documentation fix,0
-f2e71e5,2013-04-10 09:37:58,add CommWorld status to config_summary.m4,0
-f30e914,2013-04-10 09:39:16,Merge pull request #86 from benkirk/remove_global_parallel,0
-23f8832,2013-04-10 09:44:06,Moderate improvement/reordering of verbose print statements.,0
-8f586b2,2013-04-10 09:50:48,Generalize stitch meshes to still do stitching if there are multiple boundary IDs on a side.,0
-b017c80,2013-04-10 10:14:28,Refactor two copy-paste loops into 1.,0
-f1a02e1,2013-04-10 11:29:52,explicitly disable e.g. Parallel::send() without CommWorld,0
-c0a9014,2013-04-10 12:00:31,stitch_mesh now uses sorted arrays of points rather than an N^2 algorithm for matching points on the stitch surfaces.,0
-31bcb47,2013-04-10 12:00:40,Merge pull request #87 from roystgnr/short_comm,0
-89d0841,2013-04-10 12:29:14,If we don't dupe it  we don't free it,0
-f3198f5,2013-04-10 13:47:25,F77 compiler detection bugfix,0
-61e2ae7,2013-04-10 13:49:28,Propagate compiler.m4 change to configure,0
-f54cd36,2013-04-10 13:55:57,Turn communicator() into comm(),0
-721d5c9,2013-04-10 14:08:34,GMV name conflict fix for compilation with clang++,0
-a803e20,2013-04-10 14:12:20,trivial communicator->comm change,0
-6d53a2c,2013-04-10 14:35:18,Avoid deprecated API,0
-9b587e3,2013-04-10 14:36:42,Fix assorted clang warnings,0
-9c4072a,2013-04-11 11:56:22,switch default from tecplot binary bits to compile from source,0
-68715cd,2013-04-11 11:57:29,automake will use CXXFLAGS when compiling  although our summary does not report what they are.  update that,0
-1d5b52a,2013-04-11 11:57:38,generated file,0
-0372761,2013-04-11 16:06:25,Removing unecessary loops over the entire mesh and geometric searching. Speeds up stitch_meshes by orders of magnitude.,0
-96fc8b0,2013-04-11 18:57:18,header prerequisites,0
-51b6d96,2013-04-12 15:51:55,Fixing one more small issue with stitch_meshes  internal sidesets were not being copied over to the final  stitched-together mesh.,0
-713a249,2013-04-12 16:03:18,As suggested by @dknez  passing the tol parameter down into the comparison objects used in stitch_meshes.,0
-d63ab8e,2013-04-14 12:52:44,Merge pull request #89 from jwpeterson/stitch_mesh,0
-3bdc82e,2013-04-14 19:18:47,coordinate offset for Exodus output,0
-914721b,2013-04-15 09:05:52,Adding Opstal  Lee  Bhatia references.,0
-0542490,2013-04-15 09:13:44,whitespace-only commit for m4 cruft,0
-1cb9180,2013-04-15 10:36:37,Merge pull request #90 from friedmud/exodus_offset,0
-e66b55a,2013-04-15 11:24:11,mark coordinate offset as deprecated,0
-b9afb25,2013-04-16 14:28:17,Test compiler features using our devel flags,0
-bf2b335,2013-04-16 15:04:33,Fixes for petsc-without-MPI,0
-dec406e,2013-04-16 15:45:45,Add string_to_enum specialization,0
-6ab4487,2013-04-16 15:52:32,Use enum_to_string when printing SolverTypes,0
-f220599,2013-04-16 16:16:31,Disable a few examples with Eigen/Trilinos,0
-2dd416d,2013-04-17 10:38:21,Missed a enum_to_string specialization,0
-37a8f08,2013-04-17 10:40:06,And a string_to_enum specialization,0
-0e5752c,2013-04-17 10:48:33,Don't forget the #include for that enum,0
-1a8eae7,2013-04-17 14:04:24,Examples must init libMesh *before* using our APIs,0
-6f37207,2013-04-17 16:51:21,"Use recursive $(MAKE) in ""make doc""",0
-04d038b,2013-04-17 17:05:02,Propagate Makefile.am change through bootstrap,0
-2e4cf36,2013-04-17 17:06:33,"""make doc"" from best examples METHOD available",0
-3076803,2013-04-18 06:52:54,Merge pull request #93 from roystgnr/make_doc_fixes,0
-7ae9817,2013-04-18 13:48:55,refresh eigen to 3.1.3,0
-9682fd4,2013-04-18 13:49:53,update symlink,0
-de73930,2013-04-18 13:50:31,remove eigen 3.1.2,0
-8642579,2013-04-18 13:52:44,generated file,0
-8239d27,2013-04-18 14:02:17,include unsupported/Eigen,0
-41e9331,2013-04-18 14:38:51,Merge pull request #95 from benkirk/eigen_refresh,0
-364f52b,2013-04-18 16:06:21,Actually tell the user what nodeset/sideset name did not exist before erroring out.,0
-abd31dd,2013-04-18 16:16:48,Fix for uninitialized/leaking EpetraVector::_map,0
-b8af5de,2013-04-18 17:11:12,Make sure to include the right multimap header,0
-42c0ccb,2013-04-18 17:11:37,test_headers with libMesh compiler options,0
-ed4b583,2013-04-18 17:14:35,Propagate test_headers change through bootstrap,0
-1e567bd,2013-04-18 21:11:55,properly handle the XCode (no Fortran anywhere) case,0
-a550be9,2013-04-19 10:07:54,Fixing documentation in UnstructuredMesh::write().,0
-13a577f,2013-04-19 10:11:52,Ignore more output files from examples,0
-fe1def5,2013-04-19 10:30:34,Upgrade version number to 0.9.1,0
-81b6099,2013-04-19 10:54:10,Adding 0.9.0->0.9.1 changelog to NEWS,0
-611f041,2013-04-19 11:58:47,Incorporate Ben's changelog suggestions,0
-62f366b,2013-04-19 17:16:49,Added adjoints_ex5 doc  updating others,0
-8df377d,2013-04-20 12:35:49,"Not every node of ""this_mesh"" needs to be stitched.",0
-81a3c77,2013-04-20 20:44:01,Need to do one final comparison for fuzzy_binary_find.,0
-bfe3e4e,2013-04-21 15:40:21,Adding version of Utility::binary_find() that takes a custom comparison object.,0
-48864c9,2013-04-21 15:53:10,Use TOLERANCE while sorting the points  this tolerance is independent of the point matching tolerance asked for by the user.,0
-e0c5496,2013-04-22 21:19:48,Switching to relative tolerance check (relative to the smallest edge length on the surfaces being stitched) in stitch_meshes().,0
+c506d9a,2013-02-02T16:53:03,direct link,0.0
+4d2da6b,2013-02-02T19:01:18,allow ./bootstrap --build-autotools,0.0
+c6e16ca,2013-02-03T08:54:14,copyright info  fix for barebones build,0.0
+c01b0d5,2013-02-03T08:54:50,copyright info,0.0
+7e50eab,2013-02-03T09:11:51,fix for 1D  complex configurations,1.0
+c3cb34d,2013-02-03T09:22:35,massive comment-only fix for copyright consistency,0.0
+1ee9b03,2013-02-03T13:58:33,adding netcdf-4.2.1.1 source tree,0.0
+6c2d859,2013-02-03T18:04:19,rebaseline netcdf generated files,0.0
+0.0,2013-02-03T18:08:30,updating configure.ac to use silent rules  color tests,0.0
+a289695,2013-02-03T18:10:39,add a .gitignore here to support in-tree builds,0.0
+6716d4d,2013-02-03T18:18:49,update .gitignore for make  make check,0.0
+e97660f,2013-02-03T18:25:24,update .gitignore for make check,0.0
+25e2698,2013-02-03T18:37:04,disable tests requiring network access,0.0
+5b0912f,2013-02-03T20:11:06,symlinks for easier version management,0.0
+beaa35b,2013-02-03T20:19:40,support building legacy netcdf (v3) and new (v4) from source,0.0
+d3949d4,2013-02-03T20:34:38,adding exodus-5.22b source tree,0.0
+bbb517f,2013-02-03T20:35:10,symlinks for easy version handling,0.0
+7103fb8,2013-02-03T21:36:51,new Makefile.am for a new exodus,0.0
+bb0e5f8,2013-02-03T21:38:31,allow for old (v5.09) and new (v5.22) exodus trees,0.0
+e65f789,2013-02-03T21:39:22,new Makefile.in for a new exodus,0.0
+25d039c,2013-02-03T21:49:24,get defaults working properly by specifying a version,0.0
+ed08e95,2013-02-03T21:56:29,fix for --disable-optional,1.0
+504eed7,2013-02-03T22:10:52,gotta figure out a way not to recurse into v4 for configuration when we do not want to build v4  but still have make dist work...,0.0
+f2661c3,2013-02-03T23:06:07,fix for --enable-complex,1.0
+f495444,2013-02-04T06:21:38,fix for --enable-complex,1.0
+0dd148f,2013-02-04T10:38:53,Directly use the __DEPRECATED token to avoid warnings about deprecated headers coming from VTK.  This works for GCC  and the __DEPRECATED token has been used at least as far back as GCC 4.2.,0.0
+0f77129,2013-02-04T10:54:07,Removing deprecated OStringStream and OFStream classes.,0.0
+b848041,2013-02-04T11:03:10,allow for --disable-nested to  uh  disable nesting,0.0
+60a60e7,2013-02-04T11:16:35,case statement is clearer,0.0
+a33bd96,2013-02-04T12:10:24,updating nemesis configuration,0.0
+fb53563,2013-02-04T14:44:30,build new version of nemesis,0.0
+b4da774,2013-02-04T15:05:21,Changes in adaptivity_ex2.C for -Wshadow.,0.0
+e17c79e,2013-02-04T15:08:09,Changes in adaptivity_ex3.C for -Wshadow.,0.0
+729541a,2013-02-04T15:13:44,Changes in adaptivity_ex5.C for -Wshadow.,0.0
+b657617,2013-02-04T15:16:38,Changes in adjoints_ex1 for -Wshadow.,0.0
+e6f444c,2013-02-04T15:24:13,Changes in adjoints_ex2 for -Wshadow.,0.0
+cccdb62,2013-02-04T15:27:29,Changes in adjoints_ex3 for -Wshadow.,0.0
+2b9c717,2013-02-04T15:42:59,Changes in adjoints_ex4 for -Wshadow.,0.0
+d94b0f0,2013-02-04T15:49:54,support for --enable-nemesis=new,0.0
+ba6afdd,2013-02-04T15:57:11,Don't include deprecated o_string_stream header.,0.0
+0dc8e2e,2013-02-04T15:58:55,Fixes for unused variable warnings.,1.0
+f957dea,2013-02-04T15:59:47,Changes in adjoints_ex5 for -Wshadow.,0.0
+6ccd84e,2013-02-04T16:03:28,Changes in fem_system_ex1 for -Wshadow.,0.0
+85a7e97,2013-02-04T16:07:05,Changes in fem_system_ex2 for -Wshadow.,0.0
+eb616e8,2013-02-04T16:12:52,Changes in miscellaneous_ex3 for -Wshadow.,0.0
+fe3039d,2013-02-04T16:13:25,Changes in type_vector.h for -Wshadow.,0.0
+2.13e+206,2013-02-04T16:20:05,fix for initing / seting up preconditioners with adaptivity,1.0
+1b4c2a7,2013-02-04T16:22:10,Changes in miscellaneous_ex4.C for -Wshadow.,0.0
+2375c2c,2013-02-04T16:25:53,Changes in miscellaneous_ex7.C for -Wshadow.,0.0
+0392b90,2013-02-04T16:27:52,Changes in reduced_basis_ex1 for -Wshadow.,0.0
+95d8003,2013-02-04T16:29:56,Changes in reduced_basis_ex3 for -Wshadow.,0.0
+1a5db52,2013-02-04T16:32:44,Changes in reduced_basis_ex4 for -Wshadow.,0.0
+3847f57,2013-02-04T16:35:50,Changes in reduced_basis_ex5 for -Wshadow.,0.0
+5bcca40,2013-02-04T16:39:33,Changes in transient_ex1 for -Wshadow.,0.0
+5e0f961,2013-02-04T16:48:57,Changes in vector_fe_ex2 for -Wshadow.,0.0
+14f5c71,2013-02-04T16:54:52,Changes in vector_fe_ex3 for -Wshadow.,0.0
+d99e3fc,2013-02-04T17:13:32,Changes in reduced_basis_ex6 for -Wshadow.,0.0
+ee78cfe,2013-02-04T17:32:41,configure test for HDF5,0.0
+68afe25,2013-02-04T17:47:56,more rigorous configuring,0.0
+e7961ef,2013-02-04T17:55:01,more rigorous configuring,0.0
+2.138e+39,2013-02-04T22:46:46,fix for PETSc 3.1 and older,0.0
+2b4e114,2013-02-05T06:58:51,updating release notes,0.0
+8d5522e,2013-02-05T08:49:01,The PETSc XXXDestroy() imbroglio occurred around PETSc 3.1.1.,0.0
+197b57f,2013-02-05T08:59:20,fix for --enable-singleprecision,1.0
+6e1c876,2013-02-05T11:27:32,Mark MemorySolutionHistory as still experimental,0.0
+81960.0,2013-02-05T12:33:32,Adding Vikram's and Andreas theses,0.0
+5043d5a,2013-02-05T12:57:10,Updating publications.,0.0
+ea1c143,2013-02-05T14:33:52,Fix for --disable-amr,1.0
+bf037da,2013-02-06T10:45:19,rebuild makefile after rebase conflict,0.0
+9d7303f,2013-02-06T11:12:38,Merge pull request #40 from benkirk/exodus_refresh,0.0
+19650fa,2013-02-06T12:23:51,bump version number,0.0
+84da4b4,2013-02-06T14:37:05,prevent netcdf from running most of the testsuite (keep examples only) when doing make check,0.0
+977d77b,2013-02-06T14:45:20,This shouldn't need more than 1 Newton step,0.0
+f610c46,2013-02-06T14:46:33,Merge branch 'master' of ssh://github.com/libMesh/libmesh,0.0
+90c8733,2013-02-06T15:50:06,Fix for handling compiler vars with spaces,1.0
+ce703f9,2013-02-07T08:37:43,Use VTK_LEGACY_REMOVE.  Thanks  cato-  for the idea.,0.0
+fe85fae,2013-02-07T09:27:58,Standardizing spacing  formatting  indentation  etc.,0.0
+6bac31a,2013-02-07T11:40:53,Hoist function calls out of loop conditionals.,0.0
+b277d0a,2013-02-07T11:56:50,We are using a vtkDoubleArray  so don't convert the mesh point coordinates to single precision unnecessarily.,0.0
+243753e,2013-02-07T14:28:22,Again  don't degrade to single precision when double is available.,0.0
+4f2b016,2013-02-07T15:28:42,Making reading work  adding support for 2D and 1D element types.,0.0
+bc56be9,2013-02-08T12:35:21,Fixes for our Epetra vector interface,1.0
+b597e16,2013-02-09T09:59:06,Added point_curl method to FEMContext.,0.0
+7ec1a2c,2013-02-09T11:41:38,Instantiate point_curl method.,0.0
+b596857,2013-02-09T22:38:38,Merge pull request #41 from pbauman/point_curl,0.0
+6bede26,2013-02-11T10:42:54,small optimization for dtk adapter,0.0
+bedeb9b,2013-02-11T11:05:31,Use standard assertion,0.0
+e5b8928,2013-02-11T11:18:35,Make sure to POSIX-sort new headers too,0.0
+0cebec1,2013-02-11T11:21:48,Fix the direction on that example assertion...,1.0
+32c0667,2013-02-11T12:29:52,Terse complex compatibility  moved assert,0.0
+077b63b,2013-02-11T16:36:21,Save a few lines of code,0.0
+44a2360,2013-02-12T10:42:32,default to new versions,0.0
+700dfe7,2013-02-12T10:43:11,properly set CPPFLAGS,0.0
+d215b13,2013-02-12T10:44:11,push optional includes/libs to subpackages,0.0
+fef9612,2013-02-12T10:47:51,configure for recent changes,0.0
+ce75a9e,2013-02-12T13:10:03,fix for older HDF5-1.8.x installations,1.0
+3c7dd28,2013-02-12T13:40:07,look for Tpetra_config.h,0.0
+c07e91a,2013-02-12T13:40:38,conditionally specify -DNOT_NETCFD4,0.0
+6fb0008,2013-02-12T13:43:55,conditionally specify -DNOT_NETCFD4,0.0
+26dbb09,2013-02-12T13:47:19,fix for new exodus when netcdf4 unavailable,1.0
+23b3460,2013-02-12T13:59:30,fix for older HDF5 installations,1.0
+4695b09,2013-02-12T14:27:29,increase parameter sizes for exodus,0.0
+fa394b9,2013-02-12T14:27:54,more informative message when falling back to NetCDF v3 API,0.0
+44d5653,2013-02-12T14:39:48,undo LIBS,0.0
+1176d7c,2013-02-12T14:50:43,dos2unix was required on this file to get Solaris Studio to compile it!!,0.0
+392a51e,2013-02-13T11:25:09,need automake 1.12 for properly bundling netcdf  it seems for Ubuntu-LTS,0.0
+fb4c1c5,2013-02-13T11:49:29,fix for build_testsets false & in-tree builds,1.0
+59d8da4,2013-02-13T11:53:50,updated .gitignore for in-tree builds,0.0
+5a05641,2013-02-13T13:30:30,Fix multithreaded qoi derivative assembly,1.0
+944c3f9,2013-02-14T08:18:35,do not commit BUILT_SOURCES,0.0
+9b92334,2013-02-14T08:35:04,proper static linking by using NetCDFs pkg-config script,0.0
+530a642,2013-02-14T12:43:56,igore BUILT_SOURCES,0.0
+c307b52,2013-02-14T12:58:12,more robust tecplot binary blob handling for static libraries,0.0
+ea92d11,2013-02-14T13:31:30,yet another tecplot symlink,0.0
+724de09,2013-02-14T16:06:50,Changes in inf_fe_map.C for -Wshadow.,0.0
+5ef166f,2013-02-14T16:41:41,Changes in condensed_eigen_system.C for -Wshadow.,0.0
+28dcc41,2013-02-15T09:36:22,GetPot can accept more constness of arguments,0.0
+070515a,2013-02-15T09:38:02,LibMeshInit can accept more argument constness,0.0
+285ebaa,2013-02-15T11:14:40,Adding citations and webpage generation script.,0.0
+9644c5f,2013-02-15T14:14:53,fallback to rpc/xdr.h when looking for xdr.,0.0
+1aa5d5f,2013-02-15T14:16:46,trump --enable-petsc with --disable-mpi,0.0
+cfd23fa,2013-02-15T14:16:55,Merge branch 'master' of https://github.com/libMesh/libmesh,0.0
+e15fef7,2013-02-15T14:24:26,use <rpc/xdr.h> when it is there,0.0
+1249c5d,2013-02-15T15:24:49,more fine-grained fallback for --disable-mpi,0.0
+d03f946,2013-02-17T13:31:49,adding eigen-3.1.2 to contrib,0.0
+13fa33d,2013-02-17T13:37:11,add eigen-3.1.2 unsupported API,0.0
+e04db6d,2013-02-17T14:52:47,Merge pull request #45 from benkirk/eigen,0.0
+e3bd55d,2013-02-17T15:20:52,get contributed Eigen into build system,0.0
+4df7f73,2013-02-18T08:07:49,Adding list of bibtex templates.,0.0
+917425b,2013-02-18T13:16:57,Adding Octave scripts for making libmesh usage statistics plots.,0.0
+0a87dfb,2013-02-19T11:12:56,Merge pull request #48 from dmcdougall/fix_ex4docs,0.0
+2821092.0,2013-02-19T13:01:54,Remove superfluous comment.,0.0
+30979a2,2013-02-20T08:41:26,fix comment,1.0
+58660f4,2013-02-20T12:36:43,initial file infrastructure for supporting Eigen sparse linear solvers,0.0
+55b015f,2013-02-20T16:27:12,working vector implementation,0.0
+a45d9e9,2013-02-20T16:27:28,working vector implementation,0.0
+26e617b,2013-02-21T07:58:12,intiial vector  partial implemenation,0.0
+fac4f53,2013-02-21T08:48:25,EigenSparseVector initial implementation,0.0
+58e7066,2013-02-21T09:27:59,Merge pull request #49 from friedmud/perf_log,0.0
+1f36987,2013-02-21T09:35:46,EigenSparseMatrix initial implementation,0.0
+887fb9d,2013-02-21T09:37:34,allow access to PerfData objects,0.0
+2771aa8,2013-02-21T10:14:58,forgot to remove a libmesh_not_implemented(),0.0
+e7bad10,2013-02-21T10:15:36,hackery to avoid MatType collision,0.0
+da6a476,2013-02-21T10:43:11,initial linear solver support,0.0
+f25d185,2013-02-21T11:05:28,fix for --enable-complex,1.0
+f99de5a,2013-02-21T11:49:58,Merge pull request #50 from benkirk/eigen_solver_package,0.0
+2670578.0,2013-02-21T14:03:42,leave laspack ahead of eigen until the latter implementation is more complete,0.0
+8fbff28,2013-02-21T15:45:44,simpler fix for MatType debacle (#44),0.0
+19b1278,2013-02-22T08:27:08,use AC_CHECK_HEADERS to make sure Eigen is usable,0.0
+1641936.0,2013-02-22T08:31:44,Fix for ML/PETSc coupling debacle.,1.0
+7e0aebd,2013-02-22T09:52:28,initial infrastructure to support radial basis functions as an alternative MeshfreeInterpolation scheme,0.0
+91495d5,2013-02-22T10:07:38,Wendland Radial Basis Function,0.0
+ae8bcc1,2013-02-22T10:59:59,Taking libmesh-specific comment out of eigen.m4,0.0
+0bf6d60,2013-02-22T11:09:06,beginnings of Radial Basis Interpolation implementation,0.0
+a4ea4f2,2013-02-22T11:47:21,Bugfix for enableeigen='' case,1.0
+2512591.0,2013-02-22T12:23:08,Remember to re-bootstrap...,0.0
+2387a7e,2013-02-22T13:35:02,Make sure we're using C++ to test for Eigen,0.0
+1ea8004,2013-02-26T23:19:27,Compatibility with the API changes since petsc-3.3.0 release.,0.0
+93ebd35,2013-02-27T15:06:53,initialize the bounding box,0.0
+725495.0,2013-02-27T16:01:29,use normalized radius,0.0
+03e7f73,2013-02-27T16:02:33,initial radial basis interpolation implementation,0.0
+edb9926,2013-02-28T14:03:36,"Use automake's ""skipped test"" code when apropos",0.0
+8b7cec8,2013-02-28T14:04:31,Less misleading Euler2Solver comment,0.0
+9f01631,2013-02-28T14:27:29,Fix bug in NewtonSolver |du|/|u| printing,1.0
+96ca8dd,2013-02-28T14:38:53,Clearer comments on _residual vs _time_derivative,0.0
+a7db13b,2013-03-04T13:11:24,Fixes for disabling RTTI,1.0
+0514f89,2013-03-04T16:54:07,Our netcdf subpackage may need detected HDF5 info,0.0
+45b61d8,2013-03-04T17:43:03,Added some preprints from Feb 2013.,0.0
+c83c3b1,2013-03-05T08:28:29,demo RBI with misc/ex8,0.0
+5545850.0,2013-03-05T09:19:44,Updating statistics for Feb 2013.,0.0
+fe79f62,2013-03-05T13:02:11,If we didn't find HDF5  unset HDF5 variables,0.0
+1754fef,2013-03-06T08:25:02,LASPACK is OK,0.0
+cda31e1,2013-03-06T08:27:10,preserve return code,0.0
+191e891,2013-03-06T15:38:16,Fixing weird file permissions on contrib header files.,0.0
+88e0f46,2013-03-08T11:16:52,Merging in a feature from PECOS petsc.m4,0.0
+055e8cf,2013-03-10T19:07:09,prevnt using tbb:thread when TBB configuration has failed,0.0
+b7101bd,2013-03-12T09:06:27,Adding ANL tech. report.,0.0
+2a15238,2013-03-18T00:06:19,enable fractional powers for inverse distance interpolation,0.0
+5ddc836,2013-03-18T11:18:57,Merge pull request #52 from friedmud/fractional_power,0.0
+c586aad,2013-03-18T11:49:24,Fixing a few warnings,1.0
+129974.0,2013-03-18T11:58:29,Merge pull request #53 from andrsd/warnings,0.0
+ce0b7cd,2013-03-18T15:14:51,mark constructors as experimental,0.0
+1c51785,2013-03-18T15:30:56,fix for --enable-complex,1.0
+d4bb399,2013-03-19T09:10:41,Merge pull request #54 from benkirk/radial_basis,0.0
+de23017,2013-03-19T11:31:48,accidentally introduced a C++11 construct,0.0
+f4100c1,2013-03-19T12:47:45,accidentally introduced a C++11 construct  round 2,0.0
+ced4b74,2013-03-19T14:16:01,silly std::cerr,0.0
+26a3a57,2013-03-19T15:58:00,graceful exit,0.0
+65862c1,2013-03-19T16:07:54,PGI does not like us bypassing our direct base class to import from a grandparent,0.0
+f55b093,2013-03-20T12:37:02,More eigen.m4 flexibility,0.0
+2f856d8,2013-03-20T12:51:52,Define another testable variable  HAVE_EIGEN,0.0
+d217e23,2013-03-20T13:44:24,fix cut & paste bug that caused constraining DOFs to be multiply added.,1.0
+6b52e1d,2013-03-20T18:02:55,initial infrastructure for user-specified element refinement selection,0.0
+c4c4c3b,2013-03-21T13:45:52,Merge pull request #55 from benkirk/user_spec_refinement,0.0
+82361d2,2013-03-21T15:30:55,implement roys suggestions,0.0
+c5298f1,2013-03-21T16:01:38,must always make flags parallel consistent  even for serial meshes  if the user is allowed to do direct flagging,0.0
+41471cb,2013-03-21T16:02:00,forgot to AC_SUBST a var,0.0
+7c7e008,2013-03-21T16:57:15,Minimum version number test option for eigen.m4,0.0
+4cd29b4,2013-03-27T12:07:33,Document and assert DoF/DofObject proc id identity,0.0
+9d27fae,2013-03-27T14:00:07,Patch based on Manav Bhatia's type-mixing methods,0.0
+5d50ea9,2013-03-27T14:14:31,Patch from Manav Bhatia: gmsh format 2.2 support,0.0
+eb81773,2013-03-27T14:32:41,"Manav's proposed ""fix"" for UnsteadySolver AMR",0.0
+df040c9,2013-03-27T14:43:55,Patch from Manav Bhatia: templated read datatypes,0.0
+0fe1181,2013-03-27T15:36:13,Default template parameters to avoid API breakage,0.0
+3aa6dcb,2013-03-28T13:19:46,Merge pull request #60 from permcody/parallel_fixes,0.0
+bc5c5af,2013-03-28T14:02:23,Merge pull request #61 from roystgnr/manav_unsteady,0.0
+f83ab71,2013-03-28T14:06:22,Adding standard type implementations for MPI blocking send/receive,0.0
+03f1f4c,2013-03-28T14:13:20,Singletons for each reference element type.,0.0
+5a298fa,2013-03-28T14:44:34,shell script to create static reference element strings from files.,0.0
+5481b81,2013-03-28T14:47:39,include *.data in the source file list,0.0
+2381a25,2013-03-28T14:48:07,reference element data,0.0
+9843afa,2013-03-28T14:49:22,implement reference element data,0.0
+99c86ae,2013-03-28T15:08:26,implements reading from static strings rather than file,0.0
+b8b8819,2013-03-28T15:11:38,Correct fix for UnsteadySolver::reinit(),0.0
+306139b,2013-03-28T15:19:12,fix generated file,1.0
+842a699,2013-03-28T15:25:29,remove temporary cruft,0.0
+622869b,2013-03-28T15:36:08,newline,0.0
+8af8278,2013-03-28T17:23:24,Warn about inconsistent flags,0.0
+00fa0ee,2013-03-29T06:11:54,Merge pull request #58 from roystgnr/manav_gmsh,0.0
+ff377e2,2013-03-29T08:15:01,return a reference per Roys suggestion,0.0
+6624f32,2013-03-29T08:52:28,Merge pull request #56 from roystgnr/dof_proc_id_check,0.0
+8fb2a3e,2013-03-29T12:08:08,Fixes for external-to-libMesh getpot usage,1.0
+74d7a65,2013-03-29T12:44:04,Merge pull request #66 from permcody/more_parallel_fixes,0.0
+47a20ac,2013-03-29T13:34:36,Adding the non-blocking send/receive functions,0.0
+bf16a84,2013-03-29T14:20:50,implement missing 1D reference elements,0.0
+3bdab67,2013-03-29T14:23:59,predictable sorting,0.0
+8fbb2b2,2013-03-29T14:29:13,implement remaining reference elements,0.0
+1656a2f,2013-03-29T15:02:44,initial infrastruture to support #64 -- better singleton support,0.0
+080f130,2013-03-29T15:04:52,Merge pull request #57 from roystgnr/manav_dense_numerics,0.0
+3cca949,2013-03-29T16:57:04,Let's print a bit more from this quiet example,0.0
+db3b47f,2013-03-29T17:09:04,reimplement RemoteElem derived from Singleton,0.0
+71fa9b9,2013-03-29T18:00:45,mark RemoteElem constructor as private to force the create() usage,0.0
+dde02a2,2013-03-30T09:11:29,Merge pull request #67 from benkirk/singletons,0.0
+a97e846,2013-03-30T09:25:36,Merge pull request #59 from roystgnr/manav_templated_read,0.0
+39fb599,2013-03-30T11:39:11,reimplement using Singleton,0.0
+b42537a,2013-03-30T11:41:20,remove redundant test,0.0
+615cc3a,2013-03-30T11:44:02,remove print statement,0.0
+8707a01,2013-03-30T13:26:34,Merge pull request #68 from benkirk/singletons,0.0
+bc6a8b2,2013-03-30T14:28:47,extend Dereks idea to initialization as well,0.0
+4f968af,2013-03-30T15:53:51,Merge pull request #69 from friedmud/template_shims,0.0
+8b8dd34,2013-03-30T16:17:05,add shims for newly templated functions instead of using default template arguments,0.0
+eda1aab,2013-03-30T17:55:54,reimplement using Singleton::Setup,0.0
+78cc22a,2013-03-30T17:56:12,Elem::reference_elem(),0.0
+c85ef0d,2013-03-30T18:07:56,defer initialization until requested,0.0
+af82a7a,2013-03-30T18:18:13,clarify comment,0.0
+1ec7cac,2013-03-30T23:29:24,add the ability to override the radius for radial basis interpolation,0.0
+86ea3d9,2013-04-01T10:12:18,Merge pull request #65 from roystgnr/getpot_updates,0.0
+876766.0,2013-04-01T10:12:34,Merge pull request #63 from roystgnr/refinement_flag_warnings,0.0
+009544c,2013-04-01T10:21:29,Merge pull request #62 from benkirk/reference_elem,0.0
+aac77e1,2013-04-01T13:24:17,#include <sstream>,0.0
+a18fed1,2013-04-02T09:51:59,implement ExodusII Fortran API (#35),0.0
+5064820.0,2013-04-02T09:56:46,install the forbind/include/exodusII.inc as well,0.0
+86fae52,2013-04-02T15:22:50,Updating statistics for March 2013.,0.0
+896bd8d,2013-04-02T16:20:52,add beautify make rule to remove trailing whitespace.  Have not applied it to the source tree yet.,0.0
+4583624.0,2013-04-02T16:26:18,optional communicator to mesh constructor.  defaults to CommWorld  not used ATM.,0.0
+6a352a6,2013-04-02T17:46:40,run make beautify,0.0
+08f78db,2013-04-02T17:48:08,run make beautify  propagated to generated files,0.0
+5d23136,2013-04-02T18:03:45,make beautify,0.0
+6ba7aba,2013-04-02T21:37:25,begin using per-object communicators in mesh classes,0.0
+79abd82,2013-04-03T07:02:49,Merge pull request #72 from benkirk/remote_elem_undo,0.0
+7fabc7a,2013-04-03T08:30:27,make sure Singleton::create() works properly  temporary fix if not to help debugging...,1.0
+dee0e7b,2013-04-03T08:31:28,typo,0.0
+4b83930,2013-04-03T09:17:38,libMesh::ParalellObject base class for all things that require their own communicator reference.,0.0
+30c0367,2013-04-03T09:50:59,derive key data structures from ParallelObject,0.0
+96fe476,2013-04-03T10:56:55,refactor DofMap as a ParallelObject,0.0
+b4b05c4,2013-04-03T11:09:54,Adding Gunther_2012.  Moving Oden et al out of preprints.,0.0
+7ccb87e,2013-04-03T11:24:20,refactor BoundaryInfo as a ParallelObject,0.0
+487ffae,2013-04-03T11:24:41,refactor ExodusIO/NemesisIO as ParallelObjects,0.0
+dc1d823,2013-04-03T11:28:31,refactor to use per-object decomp info,0.0
+650c270,2013-04-03T11:44:03,refactor XdrIO as a ParallelObject,0.0
+36d6903,2013-04-03T12:06:14,Merge pull request #73 from roystgnr/initialization_order_defiasco,0.0
+f07969c,2013-04-03T12:08:10,refactor ExodusIO/NemesisIO as ParallelObjects,0.0
+d38e0ad,2013-04-03T12:08:55,refactor MeshBase as a ParallelObject,0.0
+12e09be,2013-04-03T12:13:51,refactor ParallelMesh as a ParallelObject,0.0
+7a6ec9a,2013-04-03T12:36:49,refactor MeshCommunication with ParallelObject  and fallout,0.0
+3ef65be,2013-04-03T12:42:56,refactor partitioning,0.0
+0fcdcb8,2013-04-03T12:52:31,refactor MeshTools,0.0
+6180daf,2013-04-03T12:53:05,Fix the static initialization order fiasco,1.0
+bcb7ede,2013-04-03T12:58:22,Added Kalashnikova WCCM reference.,0.0
+987c70f,2013-04-03T13:05:35,clarify comment,0.0
+2430450.0,2013-04-03T13:42:28,Fix cut-n-paste typo,1.0
+9e48d52,2013-04-03T14:01:14,refactor MeshRefinement as a ParallelObject,0.0
+64d6250,2013-04-03T14:01:25,refactor MeshRefinement as a ParallelObject,0.0
+a15d0a7,2013-04-03T14:01:56,refactor misc mesh-related classes as ParallelObjects,0.0
+aece01b,2013-04-03T14:03:15,refactor EquationSystems  System  and friends as ParallelObjects,0.0
+95b1686,2013-04-03T14:31:08,refactor reduced basis construction as ParallelObjects,0.0
+342bbbe,2013-04-03T14:40:47,refactor miscellaneous mesh functions,0.0
+4b888fc,2013-04-03T15:15:23,refactor miscellaneous mesh I/O functions,0.0
+acf1ad1,2013-04-03T16:00:43,refactor CondensedEigenSystem as ParallelObjects,0.0
+3fd1458,2013-04-03T16:12:02,miscellaneous fixes from the richer optional dependency stack I have on my mac,0.0
+b2116e3,2013-04-03T20:06:10,petsc vector compiles,0.0
+1aa7e04,2013-04-03T20:27:36,laspack vector communicated,0.0
+64d5a28,2013-04-03T20:37:51,epetra vector compiling,0.0
+577f241,2013-04-03T21:27:09,eigen and distributed vectors communicated,0.0
+006906b,2013-04-03T22:08:39,when calling NumericVector::build pass in the communicator so the vectors get created properly,0.0
+e2f78ea,2013-04-03T22:55:17,make sure that everywhere a petsc vector is created a comm gets passed in,0.0
+fe9229b,2013-04-03T23:09:44,fix up places where we make epetra vectors,0.0
+198de91,2013-04-04T08:59:08,temporary fix for Slepc until the matrices are ParallelObjects,1.0
+a7f4ad7,2013-04-04T09:34:08,need an assignment operator.  Just assert that assignment is a no-op since we cannot redefine our communicator reference.,0.0
+0f7c182,2013-04-04T09:56:00,first pass refactoring SparseMatrix and friends as ParallelObjects - still need to address SparseShellMatrix<>,0.0
+e4c7599,2013-04-04T10:00:59,fixed some misses,1.0
+1ebd26a,2013-04-04T10:02:05,fixed some misses,1.0
+40be2bd,2013-04-04T11:22:11,removed old cruf,0.0
+0b02826,2013-04-04T11:23:00,require a communicator  and fallout,0.0
+7d0a661,2013-04-04T11:59:20,require communicators,0.0
+9a9f4e0,2013-04-04T11:59:37,use our size,0.0
+2c20ff8,2013-04-04T11:59:50,ErrorEstimator is now a ParallelObject,0.0
+1316f9c,2013-04-04T12:14:33,refactor RBEvaluation as ParallelObject,0.0
+e419974,2013-04-04T12:44:56,refactor Preconditioners as ParallelObject,0.0
+37d4e34,2013-04-04T12:53:03,misc other fixes,0.0
+2c1e982,2013-04-04T13:11:43,refactor LinearSolvers as ParallelObjects  misc other too,0.0
+90368c8,2013-04-04T13:35:55,Adding a FakeCommunicator class,0.0
+ccb764f,2013-04-04T13:35:55,Adding a FakeCommunicator class,0.0
+12ff376,2013-04-04T13:53:11,Add --enable-default-comm-world argument,0.0
+5fbca56,2013-04-04T14:08:51,Just move tiny FakeCommunicator into parallel.h,0.0
+68abf15,2013-04-04T14:08:51,Just move tiny FakeCommunicator into parallel.h,0.0
+26400.0,2013-04-04T14:27:59,restore default constructor argument,0.0
+f30618f,2013-04-04T14:48:22,SolutionTransfer as ParallelObject,0.0
+74ab676,2013-04-04T15:17:09,Communicator_World -> this->communicator() fixes,0.0
+60aa807,2013-04-04T15:17:51,Add missing header for START_/STOP_LOG,0.0
+6a3b0d4,2013-04-04T15:18:33,perflog isn't in libmesh.h anymore,0.0
+1a2aaa4,2013-04-04T15:18:54,Implement DISABLE_COMM_WORLD,0.0
+8abb413,2013-04-04T16:12:18,misc refactoring,0.0
+83bc6ab,2013-04-04T16:33:02,Bugfixes for the enable-default-comm-world case,1.0
+418aa90,2013-04-04T16:41:54,fix inconsistent comms,1.0
+bc4c975,2013-04-04T19:45:54,Fix some doxygen comment mistakes,1.0
+a50c70c,2013-04-04T19:49:20,checkpoint the days work,0.0
+69100ec,2013-04-04T19:55:13,Merge pull request #75 from dmcdougall/fix_docs,0.0
+c99b851,2013-04-05T08:19:01,refactor EigenSolver<> as ParallelObject,0.0
+2e7f44a,2013-04-05T08:45:40,misc fixes,1.0
+bd6bf5a,2013-04-05T08:56:46,misc fixes,1.0
+472494f,2013-04-05T09:19:22,missed one...,1.0
+0623ee4,2013-04-05T09:19:34,iterators - whew!,0.0
+96bef19,2013-04-05T09:33:02,libmesh_parallel_only(),0.0
+03b6ff9,2013-04-05T09:58:45,code compiles without parallel_only(),0.0
+b71ea07,2013-04-05T10:15:55,remove libMesh::n_processors() and libMesh::processor_id() from default function arguments,0.0
+8dc243b,2013-04-05T10:20:23,oops - didnt mean to commit temporary removal of parallel_only(),0.0
+d7e2e09,2013-04-05T10:24:08,clarify comment,0.0
+670d422,2013-04-05T12:49:22,temporary commit.  the entire library compiles without default constructors.  will begin reimplementing defaults until examples work.,0.0
+c4e5525,2013-04-05T12:57:57,restore NumericVector<>::build() default argument,1.0
+40cb759,2013-04-05T13:09:13,fix for SLEPc config,0.0
+844bbb7,2013-04-05T13:12:47,naming uniformity,0.0
+a86cb5f,2013-04-05T13:14:03,naming uniformity,0.0
+81f700b,2013-04-05T13:32:19,working to find minimal required default constructors for examples,0.0
+46024ee,2013-04-05T13:46:25,working to find minimal required default constructors for examples,0.0
+ec31e89,2013-04-05T13:59:23,use local communicator,0.0
+971bdd4,2013-04-05T13:59:41,working to find minimal required default constructors for examples,0.0
+4d1f0bc,2013-04-05T14:04:36,working to find minimal required default constructors for examples,0.0
+e7817a4,2013-04-05T14:09:42,missed some default constructors,0.0
+2e577fd,2013-04-05T14:16:31,working to find minimal required default constructors for examples,0.0
+3f8fe0c,2013-04-05T14:23:23,working to find minimal required default constructors for examples,0.0
+738b79c,2013-04-05T14:28:24,working to find minimal required default constructors for examples,0.0
+e9601cd,2013-04-05T14:30:50,working to find minimal required default constructors for examples,0.0
+4d78330,2013-04-05T14:44:51,fix for opt mode,1.0
+3ab18c1,2013-04-05T17:19:59,One line bug fix for CondensedEigenSystem from Shiyuan Gu,1.0
+675d6bc,2013-04-08T08:21:41,Merge pull request #77 from permcody/parallel,0.0
+1dc52ab,2013-04-08T08:54:54,Initial implementation of broadcasting vector of strings and map containing strings,0.0
+6aa967e,2013-04-08T08:55:19,Broadcast strings with the mesh,0.0
+b10df29,2013-04-08T10:38:22,Merge pull request #3 from friedmud/comm_dtk_fix,0.0
+58ca137,2013-04-08T11:16:29,fixup dtk with new communicators,1.0
+4141fc6,2013-04-08T13:13:14,Merge pull request #76 from benkirk/communicators,0.0
+663e35f,2013-04-08T15:18:34,fix for rebase,0.0
+b37a9a4,2013-04-08T18:07:26,Use explicit init.comm in examples,0.0
+bd89181,2013-04-08T19:41:34,Fixing missing oprof mode in Make.common,1.0
+81cf4ba,2013-04-08T19:55:41,ErrorEstimator backwards compatibility fix,1.0
+933b960,2013-04-08T20:03:29,Fix atavism,1.0
+9f6781e,2013-04-09T01:00:16,examples fix for --disable-default-comm-world,1.0
+cabf134,2013-04-09T01:04:49,Fix another CommWorld-using example,1.0
+4bf6877,2013-04-09T01:09:28,Fix accidental omission of fem_system_ex2 Mesh dim,1.0
+383219c,2013-04-09T01:19:05,Fix PetscNonlinearSolver for non-default comm,1.0
+76f0428,2013-04-09T01:29:28,Example SumShellMatrix creation should use a comm,0.0
+e9a3a7f,2013-04-09T01:33:37,Add communicator for miscellaneous_ex6 SerialMesh,0.0
+1a7d32c,2013-04-09T01:38:39,miscellaneous_ex7 --disable-default-comm-world fix,0.0
+28a1d98,2013-04-09T06:16:53,Merge pull request #82 from roystgnr/petsc_commworld_fix,0.0
+a0f26ea,2013-04-09T06:22:21,Merge pull request #80 from permcody/make_common_fix,0.0
+227f0fb,2013-04-09T07:36:15,Merge pull request #83 from benkirk/fix_nompi,0.0
+21e8478,2013-04-09T07:50:41,Merge pull request #70 from benkirk/exodus_fortran,0.0
+29eb898,2013-04-09T08:18:32,fix for --disable-optional,1.0
+1f79b58,2013-04-09T08:24:39,Merge pull request #81 from roystgnr/error_estimator_compat,0.0
+742bcfd,2013-04-09T08:41:14,For --disable-mpi  we define COMM_WORLD as an int in libmesh_common.h  where for chicken-and-egg reasons it is difficult to include all of parallel.h.  Correspondingly  later things freak when trying to construct a Parallel::communicator from an int  as that constructor is not defined.  This implements that constructor.,0.0
+2425403.0,2013-04-09T10:19:31,Remove now-unnecessary #include,0.0
+d35058a,2013-04-09T10:31:00,reduced_basis --disable-default-comm-world fixes,0.0
+81ce5ab,2013-04-09T11:53:28,Optionally disable default CommWorld args,0.0
+f479807,2013-04-09T13:10:22,Merge pull request #79 from roystgnr/examples_fixes,0.0
+c3b99de,2013-04-09T14:21:37,Add and use LibMeshInit::communicator() accessor,0.0
+fd41d47,2013-04-09T17:56:40,Add LIBMESH_CAN_DEFAULT_TO_COMMWORLD macro,0.0
+593141c,2013-04-09T23:39:11,The new Mesh constuctors take communicator& first,0.0
+7cd7a82,2013-04-09T23:43:52,Missed a couple Mesh creations in previous commit,0.0
+f15e97b,2013-04-10T00:32:48,Reorder one more communicator argument,0.0
+27b9e3a,2013-04-10T00:33:48,Fix bugs caught by disable-default-comm-world,1.0
+97001cf,2013-04-10T00:34:30,Make apps disable-default-comm-world compatible,0.0
+d5d29fb,2013-04-10T00:41:38,miscellaneous_ex8 constructor API compatibility,0.0
+c112ea2,2013-04-10T06:51:14,Merge pull request #85 from roystgnr/disable_default_args,0.0
+a839508,2013-04-10T07:54:00,Minor documentation fix,1.0
+f2e71e5,2013-04-10T09:37:58,add CommWorld status to config_summary.m4,0.0
+f30e914,2013-04-10T09:39:16,Merge pull request #86 from benkirk/remove_global_parallel,0.0
+23f8832,2013-04-10T09:44:06,Moderate improvement/reordering of verbose print statements.,0.0
+8f586b2,2013-04-10T09:50:48,Generalize stitch meshes to still do stitching if there are multiple boundary IDs on a side.,0.0
+b017c80,2013-04-10T10:14:28,Refactor two copy-paste loops into 1.,0.0
+f1a02e1,2013-04-10T11:29:52,explicitly disable e.g. Parallel::send() without CommWorld,0.0
+c0a9014,2013-04-10T12:00:31,stitch_mesh now uses sorted arrays of points rather than an N^2 algorithm for matching points on the stitch surfaces.,0.0
+31bcb47,2013-04-10T12:00:40,Merge pull request #87 from roystgnr/short_comm,0.0
+89d0841,2013-04-10T12:29:14,If we don't dupe it  we don't free it,0.0
+f3198f5,2013-04-10T13:47:25,F77 compiler detection bugfix,1.0
+61e2ae7,2013-04-10T13:49:28,Propagate compiler.m4 change to configure,0.0
+f54cd36,2013-04-10T13:55:57,Turn communicator() into comm(),0.0
+721d5c9,2013-04-10T14:08:34,GMV name conflict fix for compilation with clang++,0.0
+a803e20,2013-04-10T14:12:20,trivial communicator->comm change,0.0
+6d53a2c,2013-04-10T14:35:18,Avoid deprecated API,0.0
+9b587e3,2013-04-10T14:36:42,Fix assorted clang warnings,1.0
+9c4072a,2013-04-11T11:56:22,switch default from tecplot binary bits to compile from source,0.0
+68715cd,2013-04-11T11:57:29,automake will use CXXFLAGS when compiling  although our summary does not report what they are.  update that,0.0
+1d5b52a,2013-04-11T11:57:38,generated file,0.0
+372761.0,2013-04-11T16:06:25,Removing unecessary loops over the entire mesh and geometric searching. Speeds up stitch_meshes by orders of magnitude.,0.0
+96fc8b0,2013-04-11T18:57:18,header prerequisites,0.0
+51b6d96,2013-04-12T15:51:55,Fixing one more small issue with stitch_meshes  internal sidesets were not being copied over to the final  stitched-together mesh.,1.0
+713a249,2013-04-12T16:03:18,As suggested by @dknez  passing the tol parameter down into the comparison objects used in stitch_meshes.,0.0
+d63ab8e,2013-04-14T12:52:44,Merge pull request #89 from jwpeterson/stitch_mesh,0.0
+3bdc82e,2013-04-14T19:18:47,coordinate offset for Exodus output,0.0
+914721b,2013-04-15T09:05:52,Adding Opstal  Lee  Bhatia references.,0.0
+542490.0,2013-04-15T09:13:44,whitespace-only commit for m4 cruft,0.0
+1cb9180,2013-04-15T10:36:37,Merge pull request #90 from friedmud/exodus_offset,0.0
+e66b55a,2013-04-15T11:24:11,mark coordinate offset as deprecated,0.0
+b9afb25,2013-04-16T14:28:17,Test compiler features using our devel flags,0.0
+bf2b335,2013-04-16T15:04:33,Fixes for petsc-without-MPI,1.0
+dec406e,2013-04-16T15:45:45,Add string_to_enum specialization,0.0
+6ab4487,2013-04-16T15:52:32,Use enum_to_string when printing SolverTypes,0.0
+f220599,2013-04-16T16:16:31,Disable a few examples with Eigen/Trilinos,0.0
+2dd416d,2013-04-17T10:38:21,Missed a enum_to_string specialization,0.0
+37a8f08,2013-04-17T10:40:06,And a string_to_enum specialization,0.0
+0e5752c,2013-04-17T10:48:33,Don't forget the #include for that enum,0.0
+1a8eae7,2013-04-17T14:04:24,Examples must init libMesh *before* using our APIs,0.0
+6f37207,2013-04-17T16:51:21,"Use recursive $(MAKE) in ""make doc""",0.0
+04d038b,2013-04-17T17:05:02,Propagate Makefile.am change through bootstrap,0.0
+2e4cf36,2013-04-17T17:06:33,"""make doc"" from best examples METHOD available",0.0
+3076803.0,2013-04-18T06:52:54,Merge pull request #93 from roystgnr/make_doc_fixes,0.0
+7ae9817,2013-04-18T13:48:55,refresh eigen to 3.1.3,0.0
+9682fd4,2013-04-18T13:49:53,update symlink,0.0
+de73930,2013-04-18T13:50:31,remove eigen 3.1.2,0.0
+8642579.0,2013-04-18T13:52:44,generated file,0.0
+8239d27,2013-04-18T14:02:17,include unsupported/Eigen,0.0
+41e9331,2013-04-18T14:38:51,Merge pull request #95 from benkirk/eigen_refresh,0.0
+364f52b,2013-04-18T16:06:21,Actually tell the user what nodeset/sideset name did not exist before erroring out.,1.0
+abd31dd,2013-04-18T16:16:48,Fix for uninitialized/leaking EpetraVector::_map,0.0
+b8af5de,2013-04-18T17:11:12,Make sure to include the right multimap header,0.0
+42c0ccb,2013-04-18T17:11:37,test_headers with libMesh compiler options,0.0
+ed4b583,2013-04-18T17:14:35,Propagate test_headers change through bootstrap,0.0
+1e567bd,2013-04-18T21:11:55,properly handle the XCode (no Fortran anywhere) case,0.0
+a550be9,2013-04-19T10:07:54,Fixing documentation in UnstructuredMesh::write().,1.0
+13a577f,2013-04-19T10:11:52,Ignore more output files from examples,0.0
+fe1def5,2013-04-19T10:30:34,Upgrade version number to 0.9.1,0.0
+81b6099,2013-04-19T10:54:10,Adding 0.9.0->0.9.1 changelog to NEWS,0.0
+611f041,2013-04-19T11:58:47,Incorporate Ben's changelog suggestions,0.0
+62f366b,2013-04-19T17:16:49,Added adjoints_ex5 doc  updating others,0.0
+8df377d,2013-04-20T12:35:49,"Not every node of ""this_mesh"" needs to be stitched.",0.0
+81a3c77,2013-04-20T20:44:01,Need to do one final comparison for fuzzy_binary_find.,0.0
+bfe3e4e,2013-04-21T15:40:21,Adding version of Utility::binary_find() that takes a custom comparison object.,0.0
+48864c9,2013-04-21T15:53:10,Use TOLERANCE while sorting the points  this tolerance is independent of the point matching tolerance asked for by the user.,0.0
+e0c5496,2013-04-22T21:19:48,Switching to relative tolerance check (relative to the smallest edge length on the surfaces being stitched) in stitch_meshes().,0.0

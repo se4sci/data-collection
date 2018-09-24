@@ -1,29 +1,29 @@
 hash,time,message,buggy
-cadb75b,2010-05-01 03:57:38,reSTified docs and added stub for flag to convert Gromacs nm to A,0
-c5b7c4a,2010-05-01 05:27:04,Gromacs trajectories fixes and improvements - FIXED: trr/xtc tests failed (on Mac OS X) when MDAnalysis was properly installed as a egg directory but not as a developer install: - forgot to include the trr and xtc files in the package - learned that xdrfile_open() segfaults (at least Mac OS X) if there is no file: added additional check to prevent that - Gromacs XDR reader now behave like DCDReader: (1) raise IOError when done  (2) continue raising with repeated next() - for some reason  TRR files can (always??) return status exdrINT at end of file  catch this in _read_next_timestep() - regenerated swig files from libxdrfile.i (only minor doc things),0
-94995d3,2010-05-01 05:27:11,notes on what to do when unittests are not running,0
-5cc4ef5,2010-05-01 20:36:51,bumped release but include devel,0
-cb62c94,2010-05-01 20:36:57,fixed syntax error in test cases (lost the commit somewhere...),0
-5a66788,2010-05-01 20:37:02,self_distance_array() docs: clarified input/output requirements (different from distance_array()!,0
-24827d9,2010-05-01 20:37:07,unittests: new tests for distance_array() and self_distance_array() - added distance array tests  including known failures with copy=False - classified the XTC/TRR tests as slow - updated docs on testing considerably - moved filenames needed for all unittests into separate module NOTE: test target values were obtaine on my Macbook running python 2.6  OS X 10.6.3  this version of MDAnalysis  the should probably be checked against independent evidence such as VMD measure().,0
-6ba94a7,2010-05-05 03:04:10,libxdr: added function to count the number of frames in a trajectory - read_xtc_numframes() and read_trr_numframes() do the brain-damaged thing and   iterate through all frames  in particular for trr one should be able to do better - maybe cache the frame offsets and in this way implement random access (LOOS seems to be doing   something like this) - added a few simple test cases,0
-b1eace6,2010-05-05 03:04:20,added numframes to TrjReader as a cached attribute - can get numframes for XTC/TRR but takes a long time when accessed the first time - added test cases - broke correl test case into individual test cases,0
-1d76f09,2010-05-05 22:08:20,trajectory API: additions - delta and skip_timestep added (compute for XDR trj  hard-code for   single frame formats  read as usual from DCD header) - units: describe the length and time units used (for possible   later automatic conversions) - deprecated DCDReader.dcd_header(): not part of API and not really   supported for XDR  also broken  see Issue 27,0
-52a3d0d,2010-05-05 22:08:28,trajectory API: derive from base classes - base classes for Reader  Writer  Timestep in coordinates.base: all other Reader/Writer   derive from them  the API is not full spelled out in the base classes  though: see   the comments in the code and the description in the module doc string - added units to all Readers/Writers (purely informative at the moment)  note   that we write Angstrom - added format attribute to all classes - moved DCD.Timestep to base - note: DCDReader and DCDWriter have become new-style classes (inherit from base.Reader <- object...) - moved some common methods into the base classes (eg __del__  __len__  __repr__) but not the full   API - CRDWriter: reorganized so that write() opens and closes the file  similar as PDBWriter    also made all the individual writing methods private,0
-d93d7b2,2010-05-05 22:08:37,units and unit conversion added - simple conversion facility for units (length  time) in core.units (taken from my hop package) - flag[convert_gromacs_lengths] is set to True: the XTC and TRR reader (tested) and writer (untested)   automatically convert to the base units - define MDAnalysis base units as ps and Angstrom (in flags[]) - added test cases (all pass),0
-575da3c,2010-05-05 22:08:45,updated CHANGELOG with units,0
-9ec2423,2010-05-21 17:18:42,updated libxdrfile AUTHORS (OB messed with the original files...),0
-4c5ced7,2010-05-21 17:18:50,KDTree: fixed compiler warning: comparison between signed and unsigned integer expressions,0
-e8ccb16,2010-05-21 17:19:00,FIXED Issue 16: can easy_install from tar file but at the prices of copying c_numpy.pxd into each subdirectory  easy_install breaks if these are symbolic or hard links,0
-ffa0408,2010-05-21 17:19:10,setup.py improvements - better waning if numpy not found (which we need even for RUNNING setup.py!) - added setuptools dependencies for numpy (moot...) and nose (as a tests option),0
-6541096,2010-05-21 17:19:17,pruned some top-level imports (especially rms_fitting)  probably breaks some 0.5.x scripts,0
-e05c273,2010-05-21 17:21:47,prepare 0.6.2 release,0
-3678d2e,2010-05-21 17:28:46,code cleanup for 0.6.2 - removed delaunay code from the release - removed experimental HBond code,0
-abd036b,2010-05-21 17:28:56,bumped version to 0.6.1-rc1,0
-7cc5777,2010-05-26 00:14:19,provide assert_() in case numpy is <1.3 so that some of the tests pass,0
-fdf6982,2010-05-26 00:14:28,minor doc fixes,0
-4b17366,2010-05-26 00:14:36,fixed: PrincipleAxes() returned garbage (ported from trunk r294,0
-14eef4e,2010-05-26 20:09:13,added biopython to requirements and updated CHANGELOG,0
-37aaf04,2010-05-27 14:47:55,reST docs for top __init__ & canonical licence blurb header,0
-a214ac0,2010-05-27 14:48:03,release 0.6.2 (increased version number),0
-9b8ffe9,2010-05-27 14:49:19,Create tag release-0-6-2,0
+cadb75b,2010-05-01T03:57:38,reSTified docs and added stub for flag to convert Gromacs nm to A,0.0
+c5b7c4a,2010-05-01T05:27:04,Gromacs trajectories fixes and improvements - FIXED: trr/xtc tests failed (on Mac OS X) when MDAnalysis was properly installed as a egg directory but not as a developer install: - forgot to include the trr and xtc files in the package - learned that xdrfile_open() segfaults (at least Mac OS X) if there is no file: added additional check to prevent that - Gromacs XDR reader now behave like DCDReader: (1) raise IOError when done  (2) continue raising with repeated next() - for some reason  TRR files can (always??) return status exdrINT at end of file  catch this in _read_next_timestep() - regenerated swig files from libxdrfile.i (only minor doc things),0.0
+94995d3,2010-05-01T05:27:11,notes on what to do when unittests are not running,0.0
+5cc4ef5,2010-05-01T20:36:51,bumped release but include devel,0.0
+cb62c94,2010-05-01T20:36:57,fixed syntax error in test cases (lost the commit somewhere...),1.0
+5a66788,2010-05-01T20:37:02,self_distance_array() docs: clarified input/output requirements (different from distance_array()!,0.0
+24827d9,2010-05-01T20:37:07,unittests: new tests for distance_array() and self_distance_array() - added distance array tests  including known failures with copy=False - classified the XTC/TRR tests as slow - updated docs on testing considerably - moved filenames needed for all unittests into separate module NOTE: test target values were obtaine on my Macbook running python 2.6  OS X 10.6.3  this version of MDAnalysis  the should probably be checked against independent evidence such as VMD measure().,0.0
+6ba94a7,2010-05-05T03:04:10,libxdr: added function to count the number of frames in a trajectory - read_xtc_numframes() and read_trr_numframes() do the brain-damaged thing and   iterate through all frames  in particular for trr one should be able to do better - maybe cache the frame offsets and in this way implement random access (LOOS seems to be doing   something like this) - added a few simple test cases,0.0
+b1eace6,2010-05-05T03:04:20,added numframes to TrjReader as a cached attribute - can get numframes for XTC/TRR but takes a long time when accessed the first time - added test cases - broke correl test case into individual test cases,0.0
+1d76f09,2010-05-05T22:08:20,trajectory API: additions - delta and skip_timestep added (compute for XDR trj  hard-code for   single frame formats  read as usual from DCD header) - units: describe the length and time units used (for possible   later automatic conversions) - deprecated DCDReader.dcd_header(): not part of API and not really   supported for XDR  also broken  see Issue 27,0.0
+52a3d0d,2010-05-05T22:08:28,trajectory API: derive from base classes - base classes for Reader  Writer  Timestep in coordinates.base: all other Reader/Writer   derive from them  the API is not full spelled out in the base classes  though: see   the comments in the code and the description in the module doc string - added units to all Readers/Writers (purely informative at the moment)  note   that we write Angstrom - added format attribute to all classes - moved DCD.Timestep to base - note: DCDReader and DCDWriter have become new-style classes (inherit from base.Reader <- object...) - moved some common methods into the base classes (eg __del__  __len__  __repr__) but not the full   API - CRDWriter: reorganized so that write() opens and closes the file  similar as PDBWriter    also made all the individual writing methods private,0.0
+d93d7b2,2010-05-05T22:08:37,units and unit conversion added - simple conversion facility for units (length  time) in core.units (taken from my hop package) - flag[convert_gromacs_lengths] is set to True: the XTC and TRR reader (tested) and writer (untested)   automatically convert to the base units - define MDAnalysis base units as ps and Angstrom (in flags[]) - added test cases (all pass),0.0
+575da3c,2010-05-05T22:08:45,updated CHANGELOG with units,0.0
+9ec2423,2010-05-21T17:18:42,updated libxdrfile AUTHORS (OB messed with the original files...),0.0
+4c5ced7,2010-05-21T17:18:50,KDTree: fixed compiler warning: comparison between signed and unsigned integer expressions,0.0
+e8ccb16,2010-05-21T17:19:00,FIXED Issue 16: can easy_install from tar file but at the prices of copying c_numpy.pxd into each subdirectory  easy_install breaks if these are symbolic or hard links,1.0
+ffa0408,2010-05-21T17:19:10,setup.py improvements - better waning if numpy not found (which we need even for RUNNING setup.py!) - added setuptools dependencies for numpy (moot...) and nose (as a tests option),0.0
+6541096.0,2010-05-21T17:19:17,pruned some top-level imports (especially rms_fitting)  probably breaks some 0.5.x scripts,0.0
+e05c273,2010-05-21T17:21:47,prepare 0.6.2 release,0.0
+3678d2e,2010-05-21T17:28:46,code cleanup for 0.6.2 - removed delaunay code from the release - removed experimental HBond code,0.0
+abd036b,2010-05-21T17:28:56,bumped version to 0.6.1-rc1,0.0
+7cc5777,2010-05-26T00:14:19,provide assert_() in case numpy is <1.3 so that some of the tests pass,0.0
+fdf6982,2010-05-26T00:14:28,minor doc fixes,0.0
+4b17366,2010-05-26T00:14:36,fixed: PrincipleAxes() returned garbage (ported from trunk r294,1.0
+14eef4e,2010-05-26T20:09:13,added biopython to requirements and updated CHANGELOG,0.0
+37aaf04,2010-05-27T14:47:55,reST docs for top __init__ & canonical licence blurb header,0.0
+a214ac0,2010-05-27T14:48:03,release 0.6.2 (increased version number),0.0
+9b8ffe9,2010-05-27T14:49:19,Create tag release-0-6-2,0.0

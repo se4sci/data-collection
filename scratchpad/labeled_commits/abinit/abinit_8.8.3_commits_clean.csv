@@ -1,33 +1,33 @@
 hash,time,message,buggy
-7dc2ddb,2018-05-19 15:10:52,Initialize v8.8.3,0
-e7a573d,2018-05-20 06:51:50,Minor improvement of doc,0
-f51f1a4,2018-05-24 22:01:15,Suppress initialize to zero in src/29_xgTools/m_xg.F90 (apparently not needed),0
-bff38c3,2018-05-30 12:41:18,Backimport the suppression of incorrect ABI_CONTIGUOUS directives  from Jean-Michel  in order to pass on GCC 8.1,0
-916857c,2018-05-30 13:07:46,"Improve the descirption of usepotzero  and declare it as ""dev"" varset.",0
-b8671d4,2018-05-30 14:40:44,Fix missing word,0
-cd3f1bd,2018-05-30 17:41:30,Backport doc fixes from v8.9.2 .,0
-d86f0c9,2018-05-30 17:42:08,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0
-c1c9343,2018-05-30 19:13:39,Two more fixes related to ABI_CONTIGUOUS,0
-57ec9f5,2018-05-30 22:51:25,Typo in GW1 tutorial doc,0
-1c45a88,2018-05-31 11:33:53,Minor modifs to the doc,0
-2dc932b,2018-05-31 12:10:35,The default value for chkprim is now available at echo time  instead of being random.,0
-8ddac04,2018-05-31 12:42:56,Comment out warnings that no normal user can understand. Add suggestions.,0
-4da5a72,2018-05-31 13:52:32,Exclude host buda2_gnu_8.1_openmpi for test mpiio #26 ... Mmm  like Ifort18.0+openmpi ?! Perhaps there is something buggy in openmpi ... or in ABINIT ?!,0
-12c90c7,2018-05-31 13:58:44,Reinstall correct testfarm.conf,0
-7c90f3c,2018-05-31 14:56:08,Insert the proper section for buda2 gcc8.1,0
-1ae0e7a,2018-05-31 14:58:06,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0
-a4b7db6,2018-05-31 15:07:49,Slight modif of the comment.,0
-4c9ab2b,2018-05-31 17:29:03,Suppress bot references that are no more nightly tested (or in the on-demand pool). They are not certified anymore...,0
-a9b3145,2018-05-31 20:21:23,Define buda2 gun 8.1 bot with the tests for plugins,0
-c54d611,2018-05-31 20:24:06,Adjust tolerance for v5_t73,0
-b5f30ff,2018-05-31 20:37:13,Add reference *.ac files for different bots,0
-fb35086,2018-05-31 20:38:21,Merge branch 'release-8.8' of gitlab.abinit.org:trunk/abinit into release-8.8,0
-80c67b3,2018-06-02 00:25:10,The results of v7_t49 were actually not tested (v7_t48 output files were tested twice !),0
-4532288,2018-06-02 11:39:55,Add refs files for t49,0
-993d799,2018-06-02 15:18:20,Minor modif,0
-ddbaaf7,2018-06-02 16:47:30,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0
-3b6ba8d,2018-06-04 13:07:23,smdelta is an integer  so should use intarr. Bug seen and fixed by Jordan Bieder.,0
-f280564,2018-06-08 22:24:34,Update ref files due to fix of smdelta problem,0
-8ee31e5,2018-06-09 06:05:02,Rename section for buda2 using _mpich3,0
-7100164,2018-06-18 10:54:40,Start finalization of v8.8.3,0
-c452d3d,2018-06-18 19:08:36,Fix build example reference file for buda2_gnu_8.1,0
+7dc2ddb,2018-05-19T15:10:52,Initialize v8.8.3,0.0
+e7a573d,2018-05-20T06:51:50,Minor improvement of doc,0.0
+f51f1a4,2018-05-24T22:01:15,Suppress initialize to zero in src/29_xgTools/m_xg.F90 (apparently not needed),0.0
+bff38c3,2018-05-30T12:41:18,Backimport the suppression of incorrect ABI_CONTIGUOUS directives  from Jean-Michel  in order to pass on GCC 8.1,1.0
+916857c,2018-05-30T13:07:46,"Improve the descirption of usepotzero  and declare it as ""dev"" varset.",0.0
+b8671d4,2018-05-30T14:40:44,Fix missing word,1.0
+cd3f1bd,2018-05-30T17:41:30,Backport doc fixes from v8.9.2 .,1.0
+d86f0c9,2018-05-30T17:42:08,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0.0
+c1c9343,2018-05-30T19:13:39,Two more fixes related to ABI_CONTIGUOUS,1.0
+57ec9f5,2018-05-30T22:51:25,Typo in GW1 tutorial doc,0.0
+1c45a88,2018-05-31T11:33:53,Minor modifs to the doc,0.0
+2dc932b,2018-05-31T12:10:35,The default value for chkprim is now available at echo time  instead of being random.,0.0
+8ddac04,2018-05-31T12:42:56,Comment out warnings that no normal user can understand. Add suggestions.,0.0
+4da5a72,2018-05-31T13:52:32,Exclude host buda2_gnu_8.1_openmpi for test mpiio #26 ... Mmm  like Ifort18.0+openmpi ?! Perhaps there is something buggy in openmpi ... or in ABINIT ?!,1.0
+12c90c7,2018-05-31T13:58:44,Reinstall correct testfarm.conf,0.0
+7c90f3c,2018-05-31T14:56:08,Insert the proper section for buda2 gcc8.1,0.0
+1ae0e7a,2018-05-31T14:58:06,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0.0
+a4b7db6,2018-05-31T15:07:49,Slight modif of the comment.,0.0
+4c9ab2b,2018-05-31T17:29:03,Suppress bot references that are no more nightly tested (or in the on-demand pool). They are not certified anymore...,0.0
+a9b3145,2018-05-31T20:21:23,Define buda2 gun 8.1 bot with the tests for plugins,0.0
+c54d611,2018-05-31T20:24:06,Adjust tolerance for v5_t73,0.0
+b5f30ff,2018-05-31T20:37:13,Add reference *.ac files for different bots,0.0
+fb35086,2018-05-31T20:38:21,Merge branch 'release-8.8' of gitlab.abinit.org:trunk/abinit into release-8.8,0.0
+80c67b3,2018-06-02T00:25:10,The results of v7_t49 were actually not tested (v7_t48 output files were tested twice !),0.0
+4532288.0,2018-06-02T11:39:55,Add refs files for t49,0.0
+993d799,2018-06-02T15:18:20,Minor modif,0.0
+ddbaaf7,2018-06-02T16:47:30,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0.0
+3b6ba8d,2018-06-04T13:07:23,smdelta is an integer  so should use intarr. Bug seen and fixed by Jordan Bieder.,1.0
+f280564,2018-06-08T22:24:34,Update ref files due to fix of smdelta problem,1.0
+8ee31e5,2018-06-09T06:05:02,Rename section for buda2 using _mpich3,0.0
+7100164.0,2018-06-18T10:54:40,Start finalization of v8.8.3,0.0
+c452d3d,2018-06-18T19:08:36,Fix build example reference file for buda2_gnu_8.1,1.0

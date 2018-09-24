@@ -1,0 +1,258 @@
+hash,time,message,buggy
+ccc3d4d,2018-04-16T09:26:18,update orbmag in prep for twisted cprj,0.0
+8c5011d,2018-04-16T09:32:01,Merge branch 'develop' into twisted,0.0
+6152060.0,2018-04-17T13:46:02,switch nucdipmom_k from pointer to allocatable array,0.0
+dbaa5cc,2018-04-17T13:49:23,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0.0
+2a7509e,2018-04-25T11:15:49,planewave kinetic energy in orbmag starts working,0.0
+34fee28,2018-04-25T12:17:54,converted chern_number smat from ikpt ikpt storage to ikpt indx indx,0.0
+f1f14e9,2018-04-25T13:50:38,convert orbmag to ikpt bdx gdx indexing,0.0
+ae304d0,2018-05-01T15:36:30,kinetic energy now largely working in orbmag,0.0
+c3c7a77,2018-05-01T15:37:26,Merge branch 'twisted' into develop,0.0
+c3f7758,2018-05-02T09:27:18,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+187fe48,2018-05-03T11:51:24,Set max_nprocs=2 for effective mass calculations in which there are at least two k points for all data sets.,0.0
+1bbad89,2018-05-03T18:43:28,Activate again max_nprocs=2,0.0
+b82eb24,2018-05-03T18:44:01,Merge branch 'efmas2' into efmas3,0.0
+81d5280,2018-05-03T18:57:04,Convert message to msg,0.0
+742d10c,2018-05-03T19:03:53,Modifs for parallelism of efmas,0.0
+71ff1a6,2018-05-04T09:29:27,Remove time reversal symmetry when kptopt=3 or 4 for BZ sampling in respfn,0.0
+1376ccc,2018-05-04T09:53:43,trying to improve performance of twisted kinetic energy,0.0
+8bedebe,2018-05-04T11:51:05,orbmag kinetic energy fully functional,0.0
+52dfdca,2018-05-04T13:02:50,Change the Refs impacted by the correction of kptopt=3 in respfn,0.0
+4bc3e57,2018-05-04T13:17:59,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+418f261,2018-05-04T14:07:27,Continue changing Refs. kptopt in v7/t85 is 3 again (it was changed in the last commit).,0.0
+9f6ba94,2018-05-04T15:28:01,Other ref corrections,0.0
+93433df,2018-05-04T21:35:53,Introduce eig2_diag_cart   prepare the splitting of the big loop for parallelism   clean,0.0
+0ed41ce,2018-05-04T21:55:55,Rename efmasfr to efmasval   introduce new record eig2_diag in efmasval datastructure,0.0
+1c02c08,2018-05-05T10:29:37,The main loop is split in two disjoint loops. v7_t80-82 and v8_t55-56 pass.,0.0
+dfca621,2018-05-05T10:36:52,The first part is now isolated from the second part.,0.0
+a7b1899,2018-05-05T11:12:05,efmas_main split in two subroutines efmas_main and efmas_analysis . Declarations in efmas_main are cleaned,0.0
+89f154f,2018-05-05T11:42:02,efmas_analysis is now cleaned.,0.0
+3566450.0,2018-05-05T11:46:27,Now call the two parts,0.0
+d7bd23e,2018-05-05T14:05:34,Other ref corrections again,0.0
+92f77e4,2018-05-05T21:33:08,Fix minor problems,1.0
+023c9d7,2018-05-05T21:40:59,Fix list of args,1.0
+5ccf5a3,2018-05-05T21:49:30,Fix minor issues,1.0
+fd9f1f7,2018-05-06T06:24:40,Initialize v8.9.1,0.0
+a75ceb8,2018-05-06T10:30:46,update from git pull trunk develop,0.0
+a018663,2018-05-06T15:08:21,Fixed bug in DDB interpolation,1.0
+962e33b,2018-05-06T15:15:53,Resolved conflict,0.0
+bec1618,2018-05-06T17:19:11,Fixed trailing white spaces,1.0
+07cf63c,2018-05-06T22:12:44,Prototyping integration between abisrc and buildsys,0.0
+6fdf722,2018-05-07T10:37:23,Correction of Spelling Errors,0.0
+5447a12,2018-05-07T10:38:23,Add python script to calculate derived elastic properties,0.0
+7d0dfd9,2018-05-08T20:50:59,Rm moddiel_csrb  modularize newrho and newvtr,0.0
+0af5acb,2018-05-08T20:51:08,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into abilint2,0.0
+3867070.0,2018-05-08T21:23:22,Modulariza vtorho and vtowfk,0.0
+81a8417,2018-05-08T22:08:32,Modularize setvtr,0.0
+55441b1,2018-05-08T22:18:31,Mv ionion_ routines inside m_setvtr,0.0
+06be663,2018-05-08T22:35:41,mkrho.F90 -> m_mkrho.F90,0.0
+1dc1196,2018-05-08T22:51:18,initro -> m_mkrho  mkresi ->energy  strhar ->stress,0.0
+7c2cce7,2018-05-08T23:01:54,Mv cgq_builder to m_vtorho,0.0
+836533a,2018-05-08T23:13:52,Mv prtrhomxmn to m_mkrho,0.0
+1765898.0,2018-05-08T23:24:38,Abilint,0.0
+4a5ef77,2018-05-08T23:47:11,Mv etotfor in scfcv,0.0
+c9f7300,2018-05-09T00:03:52,Fix typos,1.0
+2.612e+47,2018-05-09T00:19:01,gstate.F90 -> m_gstate.F90 and gstateimg.F90 -> m_gstateimg.F90,0.0
+45e1f68,2018-05-09T00:32:03,Fix import,1.0
+349297a,2018-05-09T00:32:42,Mv subdiago to m_cgtool,0.0
+e7b13db,2018-05-09T00:43:18,Mv pw_orthon to cg_tools,0.0
+a4e821a,2018-05-09T00:55:22,Fix import,1.0
+38fcea0,2018-05-09T00:57:28,Mv wf_mixing to scfcv,0.0
+f50d0e6,2018-05-09T01:13:02,mv getshell to m_shell and pass comm instead of mpi_enreg,0.0
+93ec518,2018-05-09T01:25:06,Fix compilation error,1.0
+aef1fac,2018-05-09T01:43:45,Create m_Forces and m_stress  mv fresidrps to m_forces,0.0
+2f096be,2018-05-09T02:00:10,Fix compilation errors,1.0
+4a4ead1,2018-05-09T02:05:21,Mv fresid to m_forceS,0.0
+04b7573,2018-05-09T02:18:27,Fix compilation error,1.0
+20d193f,2018-05-09T03:08:47,Mv prtxfase to mover,0.0
+97a0919,2018-05-09T06:30:35,Merge remote-tracking branch release-8.8/d7bd23 into _merge-8.8,0.0
+bf250f9,2018-05-09T14:08:07,Cosmetic changes,0.0
+ba49260,2018-05-09T22:48:11,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into abilint2,0.0
+3bced66,2018-05-09T22:59:58,Modularize vdw_dftd[2 3] routines,0.0
+e39c41c,2018-05-09T23:11:39,Mv constrf inside m_forces,0.0
+966f881,2018-05-09T23:23:24,Create m_energy module,0.0
+0da5198,2018-05-09T23:42:54,Group xfpack and xfh routines,0.0
+47143c2,2018-05-09T23:58:08,Create m_xfpack,0.0
+958dc9a,2018-05-10T00:10:27,Fix compilation errors,1.0
+c187c99,2018-05-10T01:11:49,Mv xfh_update inside m_xfpack,0.0
+f17dd8b,2018-05-10T01:59:36,Create m_pred_delocint,0.0
+e6ba537,2018-05-10T02:51:12,Fix compilation error,1.0
+d2d56ad,2018-05-10T03:08:08,pred_bfgs.F90 -> m_pred_bfgs.F90,0.0
+740f95a,2018-05-10T03:11:34,Mv pred_lbfgs.F90 inside m_bfgs,0.0
+e530807,2018-05-10T03:25:30,Remove stale file,0.0
+5fcb485,2018-05-10T03:37:22,Creare m_ddb_diel  remove ddb_hybrid,0.0
+d2e18e4,2018-05-10T14:31:20,Modularize initylmg,0.0
+323007.0,2018-05-10T15:06:44,Fix compilation errors,1.0
+6b7cab1,2018-05-10T15:10:50,Modularize mkffnl,0.0
+8834741.0,2018-05-10T15:23:53,Fix compilation errors,1.0
+a15bd3a,2018-05-10T15:25:52,Mv ddkten inside nonlop_pl,0.0
+94c689b,2018-05-10T17:17:02,Modularize getgh1c,0.0
+fc479a2,2018-05-10T17:35:42,fix compilation errors,1.0
+a324980,2018-05-10T21:40:39,Increase nstep to 150 in paral[72],0.0
+15d13e7,2018-05-11T00:13:05,Increase ecut in paral[72],0.0
+354f611,2018-05-11T00:50:14,Modularize atm2fft,0.0
+355bc55,2018-05-11T00:56:28,Create m_pspini,0.0
+ab6d681,2018-05-11T01:13:18,Fix compilation errors,1.0
+e95f732,2018-05-11T01:16:33,Mv pspatm inside m_pspini,0.0
+df05e67,2018-05-11T01:32:14,Fix compilation errors,1.0
+531deea,2018-05-11T01:41:08,Modularize mover and nonlinear,0.0
+73b3cf4,2018-05-11T01:53:37,Fix typos,1.0
+960a0a8,2018-05-12T14:41:56,Add python code to parse compiler warnings,0.0
+5992639.0,2018-05-12T15:04:25,Mv initmv to m_nonlinear,0.0
+5b724b1,2018-05-12T15:27:37,Mv uderiv inside m_elpolariz,0.0
+e2f82d2,2018-05-12T15:43:09,Mv mkgrid_fft to m_fft_mesh,0.0
+bce1269,2018-05-12T15:51:27,Modularize evdw_wannier,0.0
+79966df,2018-05-12T16:10:31,Modularize relaxpol,0.0
+696e4c1,2018-05-12T18:25:46,Mv dfpt_sydy and dfpt_sygra to m_dynmat,0.0
+aca7428,2018-05-12T19:44:17,Create m_alloc_hamilt_gpu module,0.0
+975dc10,2018-05-12T20:54:15,abilint,0.0
+96874d0,2018-05-12T20:54:35,Merge branch 'abilint2' of gitlab.abinit.org:gmatteo/abinit into abilint2,0.0
+d85b61f,2018-05-12T21:20:02,Mv dfpt_prtene to m_dfpt_looppert,0.0
+f2ce6d7,2018-05-12T21:34:21,Mv dftp_dyout inside m_respfn_driver,0.0
+ca1c854,2018-05-12T21:46:41,Mv d2kindstr2 inside dfpt_eltfrkin,0.0
+717228a,2018-05-12T21:53:15,Mv corrmetalwf1 inside dfpt_vtowfk,0.0
+865915c,2018-05-13T00:36:45,Update docs for pawprtwf,0.0
+9545700000.0,2018-05-13T00:48:06,Fix py2.7 issue,1.0
+be4044c,2018-05-13T01:02:06,Create m_dfpt_vtowkf,0.0
+f640053,2018-05-13T01:28:24,Create m_dfpt_scfcv,0.0
+ebad985,2018-05-13T01:28:32,Merge branch 'abilint2' of gitlab.abinit.org:gmatteo/abinit into abilint2,0.0
+de5562f,2018-05-13T01:36:13,Mv qmatrix inside m_dfpt_scfcv,0.0
+d7cc58b,2018-05-13T01:48:39,Version for buildbot,0.0
+4f7f466,2018-05-13T15:13:50,Group all dfptff routines in new module mm_dfpt_fef,0.0
+ba243cf,2018-05-13T15:26:50,Fix compilation error,1.0
+4657469.0,2018-05-13T15:51:43,Mv dfpt_etot inside m_dfpt_scfsv,0.0
+0ac1e0e,2018-05-13T16:12:34,Create new module m_dfpt_mkrho,0.0
+f600f6f,2018-05-13T16:16:08,Mv dfpt_accrho inside m_dfpt_mkrho,0.0
+9492c3c,2018-05-13T19:50:47,Modularize dfpt_cgwf,0.0
+9a70816,2018-05-13T20:05:03,Modularize dfpt_vtorho,0.0
+b5f6fef,2018-05-13T20:09:42,Rename file,0.0
+0654a88,2018-05-13T20:24:09,Modularize getghc,0.0
+318a9e9,2018-05-13T21:54:27,abilint,0.0
+518f574,2018-05-13T22:12:07,Fix compilation error,1.0
+9450ddd,2018-05-13T23:58:31,Mv mpi_enreg routines to m_mpinfo,0.0
+6a58851,2018-05-14T00:10:49,Fix compilation errors,1.0
+b4fc5af,2018-05-14T00:14:44,Create m_rhotoxc module,0.0
+5d89f74,2018-05-14T00:26:21,abilint,0.0
+02fa20d,2018-05-14T00:56:07,Mv proc_distrb_cycle to m_mpinfo,0.0
+651daf9,2018-05-14T01:10:13,Fix compilation errors,1.0
+0e1e3a1,2018-05-14T01:10:26,Improve docs,0.0
+7.852e+83,2018-05-14T01:10:30,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0.0
+68e4f43,2018-05-14T01:22:18,Create m_mpi_setup module,0.0
+6a4933c,2018-05-14T01:27:01,Create m_mpi_setup and include compute_kgb_indicator  finddistrproc,0.0
+bdbea27,2018-05-14T01:41:48,Create m_xciit and m_xcpositron,0.0
+ea7f1f4,2018-05-14T01:56:40,Create m_drivexc module,0.0
+1353d09,2018-05-14T02:10:16,Fix compilation error,1.0
+c067ebe,2018-05-14T02:14:27,Don't know why but abilint replaces USE macros in m_pawxc,0.0
+ae9473a,2018-05-14T02:32:29,I didn't know abilit is also a CPP-wannabe,0.0
+e3659e4,2018-05-14T02:50:36,Squashed commit of the following:,0.0
+3b6dfc3,2018-05-14T06:50:49,Import modifs from Antonius  that were requested to be merge in the trunk instead of release-8.8,0.0
+02eebac,2018-05-14T09:25:40,Merge branch 'release-8.8' into _antonius,0.0
+6c71cbd,2018-05-14T09:27:48,Merge antonius/develop/bec161 into _antonius,0.0
+4d41433,2018-05-14T10:09:25,Fix abibruty error,1.0
+ef28ef8,2018-05-14T10:11:05,Merge branch 'abilint2' into abilint,0.0
+50ac2a8,2018-05-14T11:27:22,Mv check_kxc and echo_xc_name to m_drivexc,0.0
+ac5e544,2018-05-14T11:39:14,Mv size_dvxc to m_drivexc,0.0
+cda470f,2018-05-14T11:47:28,Create m_xcpbe,0.0
+f88ad84,2018-05-14T12:11:22,Mv xcmult to m_drivexc,0.0
+449321b,2018-05-14T12:14:30,Upgrade of refs for v8.9.1,0.0
+58b1f7e,2018-05-14T12:31:51,Mv mkdenpos to m_drivexc,0.0
+0d563a4,2018-05-14T12:56:42,Fix compilation errors,1.0
+1abe7ab,2018-05-14T13:21:45,Create m_xchcth module,0.0
+1c9ab8b,2018-05-14T14:00:03,Group LDA-like routines in m_xclda,0.0
+aaaac5c,2018-05-14T14:34:41,Suppress explicit e-mail addresses  for privacy reasons (European law).,0.0
+62ab38f,2018-05-14T14:38:40,Mv drivexc inside m_drivexc,0.0
+a48fe7d,2018-05-14T14:40:59,Squashed commit of the following:,0.0
+320cfb0,2018-05-14T14:53:19,Making modifictions needed to test using atlas-intal-18.0-openmpi. Not really satisfactory ...,0.0
+bbf09a3,2018-05-14T15:02:18,Merge commit gmatteo/abilint2/f600f6fe' into _gmatteo,0.0
+04fa1a7,2018-05-14T16:43:36,Introduce a threshold for dilatmx at 1.15   that can be bypassed by using chkdilatmx 0.,0.0
+6c91dbc,2018-05-14T16:46:45,Warning A.4 of release notes concerning dilatmw threshold at 1.15 .,0.0
+4bad9c4,2018-05-14T16:48:17,Warning A.6 about dilatmx threshold .,0.0
+439d660,2018-05-14T17:26:48,Fix typo,1.0
+2a4bd13,2018-05-14T17:54:40,Upgrade refs for chkdilatmx  also fix typo,1.0
+4e09ad0,2018-05-14T20:48:02,Upgrade v1_t77,0.0
+b854148,2018-05-14T23:08:38,Merge branch 'abilint2' into abilint,0.0
+04ca3ad,2018-05-14T23:27:03,Create m_gammapositron  move rhohxcpositron to m_electronpositron,0.0
+dd3f723,2018-05-14T23:38:07,Fix import,1.0
+adb6f8b,2018-05-14T23:46:33,Modularize diisrelax and isokinetic,0.0
+2c67ddd,2018-05-14T23:56:40,Fix compilation errors,1.0
+6769a53,2018-05-15T00:03:45,Modularize pred_nose and pred_srkna14,0.0
+674cca0,2018-05-15T00:38:22,Mv isotemp to m_pred_isothermal,0.0
+423433c,2018-05-15T00:54:33,Modularize pred_verlet and pred_velverlet,0.0
+2a50d27,2018-05-15T01:08:55,Modularize pred_langevin  pred_moldyn,0.0
+422214d,2018-05-15T01:20:02,Create low-level module for pred modules,0.0
+497bd46,2018-05-15T01:31:37,Fix typos,1.0
+249928b,2018-05-15T06:29:40,Merge gmatteo/abilint2/a48f into _gmatteo,0.0
+9078994.0,2018-05-15T06:32:48,Merge branch 'release-8.8' into _gmatteo,0.0
+0bca613,2018-05-15T07:52:51,Exclude host atlas intel 18 for chain v8#61-65,0.0
+aeff7c9,2018-05-15T08:09:52,Improve doc,0.0
+819ce5c,2018-05-15T08:58:24,Minor improvement in the doc for developers,0.0
+904567c,2018-05-15T14:24:15,Merge branch 'release-8.8' into develop,0.0
+9d2e443,2018-05-15T14:32:24,Minor changes,0.0
+f8041bb,2018-05-15T14:32:56,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into abilint,0.0
+ddf6913,2018-05-15T15:01:17,Merge pred_simple and prec_simple  modularize pred_steepdesc,0.0
+ca2c7e0,2018-05-15T15:52:25,Minor changes,0.0
+1fbbfc7,2018-05-15T15:58:15,Modularize m_chebfi,0.0
+d5cc74b,2018-05-15T16:25:33,Cosmetic changes,0.0
+a1a3ec6,2018-05-15T16:36:25,Modularize rayleigh_ritz,0.0
+8e4b5d9,2018-05-15T16:47:01,Fix compilation errors,1.0
+4128051.0,2018-05-15T18:09:38,bug fixes related to intel ifort 18 issues (from JZwanziger),1.0
+94fae93,2018-05-15T18:18:30,Exclude host atlas intel 18 for chain v8#61-65,0.0
+7a7ee71,2018-05-15T18:20:22,Modularize m_chkinp,0.0
+435bc17,2018-05-15T18:28:33,Modularize nonlop [pl  ylm  test],0.0
+a9cd0c4,2018-05-15T18:38:59,Fix compilation errors,1.0
+5ee82fb,2018-05-15T20:53:21,Merge branch 'release-8.8' into _intel18,0.0
+b7a87c8,2018-05-15T21:19:57,Part of Joe's modifs had not been backported,0.0
+de9480f,2018-05-15T22:15:04,exclude builder intel 18 for v8#61-65,0.0
+d434345,2018-05-15T23:32:49,Modularize nonlop,0.0
+e51841d,2018-05-15T23:58:07,Fix compilation errors,1.0
+b1f8a85,2018-05-15T23:58:56,Mv dfpt_atm2fft to m_atm2fft,0.0
+6029461.0,2018-05-16T00:46:30,Create m_smatrix,0.0
+6f2f6c7,2018-05-16T00:51:00,Create m_berrytk and include polcart,0.0
+12ea23e,2018-05-16T01:12:20,Fix compilation errors,1.0
+1cda155,2018-05-16T01:23:35,Modularize predict[string  steepest  neb  pimd],0.0
+689f1d2,2018-05-16T01:42:33,Fix compilation errors,1.0
+b63451e,2018-05-16T02:28:00,Fix roboidiot marker,1.0
+303e43b,2018-05-16T07:18:00,"Missing efmas_analysis in ""use"" declaration",0.0
+cde29c2,2018-05-16T11:43:14,Adjust tol for v8_t91. Step back to nprocs=1 for v7_t81 and v8_t56. Parallelism to be implemented later.,0.0
+4c43204,2018-05-16T11:50:41,Merge branch 'develop' into efmas3,0.0
+97ff356,2018-05-16T11:51:32,Merge branch 'release-8.8' into efmas3,0.0
+a925573,2018-05-16T12:45:38,Mv nonlop_gpu inside m_nonlop,0.0
+61b2557,2018-05-16T15:14:14,Create m_mklocl,0.0
+2289dfa,2018-05-16T15:45:26,abilint,0.0
+636fb8a,2018-05-16T16:03:41,Modularize ddb_elast ddb_internalstr ddb_piezo,0.0
+645293b,2018-05-16T16:17:17,Fix typo,1.0
+21be0c6,2018-05-16T17:06:31,Modularize odamix,0.0
+b02ae6d,2018-05-16T17:21:28,Mv prtxvf to m_predtk,0.0
+9f4c682,2018-05-16T21:04:54,Modularize outvars routines,0.0
+baee06f,2018-05-16T21:17:16,Fix typos,1.0
+bf43f84,2018-05-17T06:11:08,Change fftw3 in fftw3-mkl  following Jean-Michel demand.,0.0
+cad9797,2018-05-17T06:16:43,Merge branch 'release-8.8' into efmas3,0.0
+70a9f6f,2018-05-17T10:23:23,Mv newfermie1 inside m_dfpt_scfcv,0.0
+9b6a68a,2018-05-17T10:32:01,Mv predictimg to m_gstateimg,0.0
+ec9e8e8,2018-05-17T10:43:03,Modularize pimd_langevin and pimd_nosehoover,0.0
+10bb0b8,2018-05-17T10:55:59,Fix compilation errors,1.0
+812a566,2018-05-17T11:24:53,m_metstr.F90 and m_mkffkg.F90,0.0
+8e1d639,2018-05-17T11:50:39,abilint,0.0
+7ea6cbe,2018-05-17T14:22:06,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into abilint,0.0
+4491171.0,2018-05-17T15:45:14,Mv opernl routines to m_opernl module,0.0
+60a5428,2018-05-17T16:01:19,Fix typo,1.0
+c0bf903,2018-05-17T16:01:37,Minor changes,0.0
+30f0070,2018-05-17T16:14:02,Create m_common with setup1  prteigrs and scprqt,0.0
+378ab84,2018-05-17T16:14:12,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0.0
+ef3b76c,2018-05-17T21:53:12,Mv prtene to m_common,0.0
+5b6fc24,2018-05-18T13:18:41,Mv dfpt_mkvxcgga inside m_dfpt_mkvxc,0.0
+cf54e05,2018-05-18T13:47:58,Create m_xchybrid module,0.0
+24b0c2d,2018-05-18T14:04:11,hybrid_corr is not used and does not compile --> if 0,0.0
+2bb03b3,2018-05-18T15:24:43,Create m_xctk with xcden and xcpot,0.0
+edfb053,2018-05-18T21:44:34,abilint,0.0
+510cadd,2018-05-18T21:57:28,Create m_dfpt_rhotov,0.0
+77ae4db,2018-05-18T22:10:38,Fix compilation errors,1.0
+51e60f1,2018-05-18T22:11:10,Mv dfpt_gatherdy to m_respfn_driver,0.0
+45eea2d,2018-05-19T07:10:54,Merge branch '_intel18' into develop,0.0
+3961127.0,2018-05-19T07:15:16,Merge remote-tracking branch 'remotes/gmatteo/abilint' into _gmatteo,0.0
+abd1bc8,2018-05-19T07:53:06,Initialize to zero in xg_init...,0.0
+863c412,2018-05-19T11:20:20,About to finalize v8.8.2,0.0
+0d3f423,2018-05-19T13:00:35,Merge branch 'release-8.8' into develop,0.0
+7dc2ddb,2018-05-19T15:10:52,Initialize v8.8.3,0.0
+dab5701,2018-05-19T15:35:31,Merge branch 'release-8.8' into develop,0.0
+c60c559,2018-05-19T16:04:29,Insignificant automatic change.,0.0

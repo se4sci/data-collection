@@ -1,0 +1,162 @@
+hash,time,message,buggy
+7a45c72,2016-10-27T18:31:06,Allow extended Lagrangian on non-scalar collective variables,0.0
+f6f2170,2016-12-19T11:28:24,first draft,0.0
+a1b441a,2016-12-19T12:02:12,draft the parallel_* constructs based on lambdas,0.0
+ca30c1e,2016-12-19T13:08:09,got fix_momentum_kokkos to compile,1.0
+c7ac9e7,2016-12-19T13:17:22,preemptive changes for Kokkos+CUDA,0.0
+2ba424e,2016-12-19T15:11:52,USER-DPD: Whitespace cleanup to pair_dpd_fdt_energy.cpp,0.0
+590f317,2016-12-20T11:03:16,fix_momentum_kokkos: don't override init(),1.0
+c4e02a5,2016-12-20T11:17:11,USER-DPD: more whitespace fixes,0.0
+386c12c,2016-12-20T16:09:29,start porting my Few class into this code,0.0
+2ceee6b,2016-12-20T16:19:17,install kokkos_few  and remove Int,0.0
+b2b33cc,2016-12-20T16:30:21,start working on fix_momentum Kokkos+CUDA,1.0
+8b5e15e,2016-12-20T16:30:50,add a Makefile for the White testbed,0.0
+992becc,2016-12-21T08:00:42,silence warning about partial x2lamda overload,0.0
+01e3a31,2016-12-21T08:01:06,put Few in the global namespace...,0.0
+d9a0f57,2016-12-21T08:01:19,get fix_momentum_kokkos to compile on White,0.0
+d1a55ad,2016-12-21T08:07:19,add kokkos_few.h to .gitignore for /src,0.0
+41c9357,2016-12-21T08:53:27,allow constructing Few from C array,0.0
+7fb4faa,2016-12-21T08:53:57,draft CUDA-callable version of Domain::unmap,0.0
+ea76041,2016-12-21T08:54:40,CUDA-friendly fix_momentum_kokkos angular,0.0
+54963ba,2016-12-21T08:55:33,allow fix momentum angular with CUDA,1.0
+f3327ca,2016-12-21T09:21:11,allow constructing Few from array on device,0.0
+9161bd9,2016-12-21T09:50:29,fixed bug with pair hybrid/overaly and manybody potentials finding the right skip neighbor method,1.0
+800ff43,2016-12-21T09:51:10,Merge pull request #304 from timattox/USER-DPD_whitespace,0.0
+62dea1b,2016-12-21T09:53:32,21Dec16 patch,0.0
+7559bc9,2016-12-21T10:21:55,workaround CUDA View::reference_type,0.0
+ae8d882,2016-12-21T10:57:18,need to sync new velocities back to host,0.0
+4c33f31,2016-12-21T10:57:44,Merge branch 'debug-cuda' into fix-momentum-kokkos,0.0
+304f65b,2016-12-21T12:23:32,Merge pull request #2 from ibaned/fix-momentum-kokkos,0.0
+06ae280,2016-12-22T10:05:01,ensure velocity is marked as modified before syncing,0.0
+b3557bf,2016-12-22T10:45:31,add missing return in comm_tiled_kokkos,0.0
+994f36b,2016-12-22T10:45:57,"silence ""implicit dereference"" warning",0.0
+9a0007a,2016-12-22T10:49:28,rename region_block_kokkos inside(),0.0
+ba96fcc,2016-12-22T16:21:05,USER-DPD: update reference output to reflect changes from commit eff7238,0.0
+fa435fb,2016-12-22T17:05:49,USER-DPD: remove unused variable  and convert some constants to MY_EPSILON,0.0
+3faa57a,2016-12-22T17:15:09,USER-DPD: Several updates to *_rx files: 1) Added MY_EPSILON to handle machine precision checks 2) Removed error checks for DPD-RX  enabled use with DPD-E simulations 3) Expanded the EOS functional form to allow corrections    in the thermo file or on the command line 4) Updated naming convention from fraction to mixWtSite* 5) Changed the name of getParams() method to getMixingWeights() 6) getMixingWeights() now handles fractional and molecular weighting 7) Added optional argument (fractional or molecular) to pair_style command 8) Added argument to specify the exp6 parameter scaling method    NOTE: Requires additional arguments in the pair coefficients     thus command line areguments are NOT backward-compatible.,0.0
+781daad,2016-12-22T17:31:17,USER-DPD: update documentation for changes in commit 3faa57,0.0
+c301d70,2016-12-22T17:32:41,USER-DPD: update example input and output (see commits 3faa57 and eff7238),0.0
+4f19525,2016-12-23T10:13:01,Fixing bug with Kokkos and reading restart files,1.0
+27172c4,2016-12-23T10:47:08,Fixing Kokkos bug when many atom types,1.0
+a1036f2,2016-12-23T11:36:59,USER-DPD: bugfix for new PairExp6rx::polynomialScaling() function.,0.0
+eca9539,2016-12-23T11:38:48,Disallowing full neighborlist for pair_tersoff_kokkos styles until a bugfix is released,0.0
+371df8e,2016-12-23T13:08:34,repair sync bugs in fix_momentum_kokkos,0.0
+634eb35,2016-12-24T16:09:18,synchronize pppm/cg with pppm and remove block on triclinic,0.0
+6ab7161,2016-12-27T13:17:02,Fix seg fault for gyration collective variable,0.0
+f553e23,2016-12-27T13:17:34,Update Colvars library to version 2016-12-22,0.0
+925f427,2016-12-27T14:26:43,Fix typo,1.0
+b0263e8,2016-12-27T17:16:32,Fix missing force with extended-Lagrangian mass,1.0
+616ca1d,2016-12-28T16:17:07,Fix nvk implemented.,1.0
+68814d4,2016-12-28T16:26:05,Made documentation changes to fix nvk,0.0
+94c4f8f,2016-12-28T17:03:37,add authorship attribution,0.0
+aa146e9,2016-12-28T19:06:35,Moved fix_nvk to USER-MISC  updated documentation to reflect move,0.0
+b0ebd3e,2016-12-28T23:12:16,Merge pull request #1 from akohlmey/pull-310,0.0
+7d057d4,2017-01-02T13:02:48,make it more explicit  that master needs to be updated and feature branches should be created from master,0.0
+391ab76,2017-01-02T17:55:02,Finally updated the github tutorial.,0.0
+4d98bbd,2017-01-02T18:08:14,Almost done with the tutorial now,0.0
+2c7fea1,2017-01-02T18:15:08,Second update round to text and images  a third will follow after succesful merge.,0.0
+18b12ef,2017-01-02T18:25:36,Small changes to tutorial text.,0.0
+4f096db,2017-01-02T18:53:28,Updated some inconsistent text.,0.0
+4f45d39,2017-01-03T02:34:11,Add warning formatting,0.0
+4cfe122,2017-01-03T09:04:10,fix warning about enum comparisons,1.0
+b10d0c1,2017-01-03T11:24:48,Initializing pointers in neighbor.cpp,0.0
+37d5567,2017-01-03T11:54:14,Fixed bug in lamda_box_corners function,1.0
+a7c5905,2017-01-03T15:15:29,prevent implicit dereference of s_CTEMP,0.0
+17bdb57,2017-01-03T16:08:38,try PairTableKokkos : public PairTable,0.0
+b46629e,2017-01-04T08:06:55,Merge pull request #5 from ibaned/kokkos-fixes,0.0
+a1ac861,2017-01-04T08:24:11,PairTableKokkos : public PairTable,0.0
+aebc8ea,2017-01-04T10:51:31,move enum to pair.h,0.0
+7cff343,2017-01-04T10:57:52,fix allocation regressions in PairTableKokkos,1.0
+fe14158,2017-01-04T13:13:56,"some formatting updates and text rewrites in the ""do not use git add -a"" section",0.0
+d059b5d,2017-01-04T14:06:17,fix crash in create_kokkos_tables,1.0
+933b288,2017-01-04T14:31:23,Added explaination for assignee  changes pushed by others and collaborator.,0.0
+42bbeb3,2017-01-04T16:04:05,NULLing pointers after delete,0.0
+0bcbcca,2017-01-04T17:28:22,Highlighted the assignee  maintainer changes  and mentioned LAMMPS collaborator,0.0
+53a1de1,2017-01-05T13:01:34,fix several GPU memory bugs in pair_table_kokkos,1.0
+267f05e,2017-01-05T14:06:54,protect PairTable dtor with copymode,0.0
+b9144d6,2017-01-05T20:22:15,"Revert ""move enum to pair.h""",0.0
+9bf7712,2017-01-05T20:46:05,make PairTable::allocate() virtual,0.0
+6af56e6,2017-01-06T08:31:02,polish the introduction  some more clarifications  corrections and formatting improvements,0.0
+f6a8195,2017-01-06T09:57:27,pair TIP4P bug fix for cutoffs >> box size,0.0
+d4e8d47,2017-01-06T09:58:01,Merge pull request #306 from timattox/USER-DPD_updates,0.0
+41a6a30,2017-01-06T09:58:20,Merge pull request #309 from giacomofiorin/colvars-2016-12-22,0.0
+5.656e+93,2017-01-06T10:00:33,Merge pull request #313 from stanmoore1/kokkos_bugfixes,0.0
+4673770.0,2017-01-06T10:01:17,Merge pull request #314 from stanmoore1/fix-momentum-kokkos,0.0
+9b348d5,2017-01-06T10:01:57,Merge pull request #315 from Pakketeretet2/github-tutorial-update,0.0
+3ac5845,2017-01-06T10:02:22,Merge pull request #310 from EfremBraun/master,0.0
+12c4fa2,2017-01-06T10:03:05,Merge pull request #318 from andeplane/initialize_pointers,0.0
+ebbf60b,2017-01-06T10:03:32,Merge pull request #319 from andeplane/domain_bug,0.0
+83da5d3,2017-01-06T10:10:09,Merge pull request #323 from akohlmey/pppm-cg-triclinic,0.0
+63f2025,2017-01-06T10:10:59,Merge pull request #324 from ibaned/pair-table-kokkos-inherit,0.0
+142770c,2017-01-06T10:38:32,enable pppm/tip4p to work with triclinic,0.0
+51fa33a,2017-01-06T11:14:48,patch 6Jan17,0.0
+1310438.0,2017-01-06T11:40:32,Merge pull request #1 from akohlmey/pull-315,0.0
+1a9f2df,2017-01-06T11:44:00,Updated text and images on reverse pull requests,0.0
+9d46670,2017-01-06T11:44:14,Updated text and images on reverse pull requests,0.0
+9587225.0,2017-01-06T11:44:16,Merge branch 'github-tutorial-update' of https://github.com/Pakketeretet2/lammps into github-tutorial-update,0.0
+4d0a6d8,2017-01-06T11:51:42,Merged Axel's suggestions and updated text,0.0
+eb1c6a2,2017-01-06T11:54:30,typo fixed,1.0
+ccd09e3,2017-01-06T19:04:26,Updated images of succesful merge.,0.0
+20a4e36,2017-01-06T21:30:13,reduce warning when processing manual with sphinx,0.0
+51e52b4,2017-01-06T21:30:33,remove obsolete warning about fix rigid image flag restrictions,0.0
+09af780,2017-01-06T21:31:39,remove misleading comments,0.0
+a9f0b7d,2017-01-09T10:39:46,Updating Kokkos lib,0.0
+9250a55,2017-01-09T12:24:30,Adding enable_lambda to KOKKOS_CUDA_OPTIONS,0.0
+ebd25cc,2017-01-09T12:40:33,Updating docs for Kokkos package,0.0
+c31f1e9,2017-01-09T13:36:40,add fix mscg command  example  lib,1.0
+20f8a8c,2017-01-09T14:38:09,Merge branch 'master' into github-tutorial-update,0.0
+1a81da0,2017-01-09T17:03:06,print the last input line  when error->all() is called,0.0
+e5ac49d,2017-01-09T17:13:46,Merge branch 'master' into collected-small-bugfixes,0.0
+33412c7,2017-01-09T17:50:49,correct some formatting issues with USER-NC-DUMP,0.0
+0db2a07,2017-01-09T17:51:19,another workaround for duplicate labels (which sphinx does not like),0.0
+d014e00,2017-01-09T17:51:38,ignore some newly added styles from packages.,0.0
+d06688b,2017-01-10T12:11:20,USER-DPD: fix a typo in the DPD-H example input  update reference output.,0.0
+95706ac,2017-01-10T12:29:22,import contributed code for computes coord/atom and orientorder/atom,0.0
+92d15d4,2017-01-10T12:52:37,replace string compare with enums  fix memory leak  formatting cleanup,0.0
+7839c33,2017-01-10T13:05:00,Fixing compile error with Kokkos CUDA Makefiles,1.0
+ee9e7cf,2017-01-10T13:22:36,Fixing Kokkos CUDA Makefile issue,1.0
+622d926,2017-01-10T13:41:35,adapt example inputs for TAD and PRD to the change in compute coord/atom,0.0
+7162caf,2017-01-10T14:46:30,Squelching output from Makefile,0.0
+1d0e600,2017-01-10T23:47:14,formatting improvements and small corrections for timer settings and output discussions,0.0
+34cb402,2017-01-11T07:46:07,make formatting comment consistent,0.0
+9f4e5e0,2017-01-11T09:11:35,fix a CUDA constructor warning,1.0
+6950a99,2017-01-11T19:49:58,"Revert ""remove obsolete warning about fix rigid image flag restrictions""",0.0
+8e1cf66,2017-01-11T20:59:40,apply bugfix to fix wall/gran by eric_lyster@agilent.com on lammps-users,0.0
+0b081b0,2017-01-11T21:05:32,whitespace cleanup,0.0
+1229f6f,2017-01-12T10:15:18,Updated the reference for the flow/gauss method  the new reference is much more comprehensive,0.0
+c94030d,2017-01-12T13:37:53,put pair_lj_coul in kokkos_type.h,0.0
+630783c,2017-01-12T16:22:24,Fixing neighbor bug,1.0
+daf766d,2017-01-12T16:22:38,Fixing Kokkos neighbor bug,1.0
+e8e03dd,2017-01-12T23:44:33,Updated the reference for the flow/gauss method  the new reference is much more comprehensive,0.0
+2540fc2,2017-01-12T23:54:52,Merge branch 'flow_gauss_changeRef' of github.com:sstrong99/lammps into pull-334,0.0
+c59bcf3,2017-01-13T08:10:51,change $MKLROOT to $(MKLROOT) as reported by @WeiLiPenguin,0.0
+b2f67fe,2017-01-13T08:12:10,Merge branch 'collected-small-bugfixes' of github.com:akohlmey/lammps into collected-small-bugfixes,0.0
+04fe071,2017-01-13T12:13:43,Merge pull request #6 from ibaned/cuda-lj-ctor-warning,0.0
+7849871.0,2017-01-13T13:32:15,Protect from divide by zero in mpi_timings() when printing results. e.g. If neighbor list(s) are never rebuilt  the Neigh time will be zero.,0.0
+aa0b327,2017-01-13T14:26:10,Merge branch 'bugfix_dividebyzero' of https://github.com/timattox/lammps_USER-DPD into collected-small-bugfixes,0.0
+61cff85,2017-01-13T14:35:35,avoid not only division by zero  but also computing variance for short runs with insufficient resolution,0.0
+98ceb6f,2017-01-13T18:11:23,add missing html files to lammps.book,0.0
+fa00e05,2017-01-14T15:39:37,Make fix_rx request its own neighbor list,0.0
+b220850,2017-01-14T16:16:02,Removing neighbor list hack in fix_qeq_reax_kokkos,0.0
+5821fe8,2017-01-14T17:06:23,correct out-of-bounds accesses,0.0
+4a09399,2017-01-14T17:13:22,during setup  checking timestep doesn't seem to be sufficient. comparing bins and stencil point  too.,0.0
+473a3eb,2017-01-15T12:05:19,fix for bug with compute rdf with pair reax/c. we must not copy a neighbor list  if newton settings are not compatible,1.0
+f3a82f4,2017-01-16T08:42:23,Included a flag to prevent multiple open_socket calls if run is included multiple times in the LAMMPS input,0.0
+5abd6e5,2017-01-16T11:08:48,reordering operations in Pair::init_style() to avoid segfaults w/o a kspace style,0.0
+3f46b6d,2017-01-16T11:15:54,fix bugs from incorrect code synchronization,0.0
+0a2b78a,2017-01-16T15:47:02,rather than adjusting the communication cutoff  we just print out the minimum value needed and error out,0.0
+2f13365,2017-01-16T17:08:00,avoid spurious error message  when no storage fix is active/used,0.0
+5cd856c,2017-01-17T09:02:56,fix spring doc page update,1.0
+c9bea60,2017-01-17T09:03:46,Merge pull request #326 from Pakketeretet2/github-tutorial-update,0.0
+d8bc590,2017-01-17T09:04:12,Merge pull request #327 from stanmoore1/kokkos_lib_update,0.0
+74a661a,2017-01-17T09:05:19,Merge pull request #328 from akohlmey/print-last-command-on-error,0.0
+252e07e,2017-01-17T09:08:00,Merge pull request #330 from akohlmey/collected-small-bugfixes,0.0
+1b9e50c,2017-01-17T09:08:14,Merge pull request #331 from timattox/USER-DPD_fix_example_typo,0.0
+973bef4,2017-01-17T09:11:45,Merge pull request #332 from akohlmey/coord-atom-orientorder-atom-enhancements,0.0
+c19d201,2017-01-17T09:12:22,Merge pull request #334 from sstrong99/flow_gauss_changeRef,0.0
+8c5b108,2017-01-17T09:13:27,Merge pull request #340 from stanmoore1/fix_rx_neighborlist,0.0
+cd7bdf9,2017-01-17T09:13:47,Merge pull request #341 from stanmoore1/qeq_kk_neighlist,0.0
+83408b1,2017-01-17T09:14:03,Merge pull request #342 from epfl-cosmo/ipi-multiinit-bug,0.0
+ad4d299,2017-01-17T09:33:25,Merge pull request #335 from stanmoore1/neighbor_fixes,0.0
+c52a263,2017-01-17T09:36:28,Merge pull request #339 from akohlmey/fixes-for-srp-example,0.0
+d2fc88a,2017-01-17T10:14:53,patch 17Jan17,0.0

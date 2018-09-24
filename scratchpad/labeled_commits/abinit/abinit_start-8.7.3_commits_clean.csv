@@ -1,0 +1,185 @@
+hash,time,message,buggy
+a75a1ca,2017-10-31T09:43:38,debug nfixcoeff in m_fitpolynome,0.0
+653e574,2017-10-31T09:48:49,update test multibinit,0.0
+dd8dc80,2017-10-31T12:13:20,update ref,0.0
+c22d403,2017-11-06T10:34:46,debug on farmtest,0.0
+1b2841f,2017-11-08T09:40:04,update branch,0.0
+84437c7,2017-11-08T09:41:09,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+c8502bb,2017-11-10T13:34:10,add symetries for the strain in the coefficients generator,0.0
+ff640c7,2017-11-10T14:50:03,non-collinear phonons at q!=0  partially tested,0.0
+aa9d3d5,2017-11-12T14:42:02,cplex=2 further modifications for phonons and magnetic field  spinalign flag  ek0 fix to vefiy (wf filtering is not properly working  problem with parallelization for rfmagn),1.0
+761bece,2017-11-15T16:26:07,add strain variable for the polynome (anharmonic part of the eff pot),0.0
+a54977b,2017-11-15T16:36:20,add the compare function for the coefficient,0.0
+895654d,2017-11-16T12:53:43,Define new test libxc#44. Still to be really setup,0.0
+6a7e154,2017-11-16T14:08:20,A first version of libxc#44 : restricted to HSE06 at present.,0.0
+04a46a5,2017-11-16T14:34:56,Second phase for test libxc#44 : G0W0 on top of scHSE06 in the KS basis.,0.0
+3ad90e2,2017-11-16T15:21:03,Merge branch 'ace_4' into g0w0_at_hyb,0.0
+8f9e1ab,2017-11-16T16:04:12,(re)generate the documentation. Also start to develop the modification of the sigx matrix elements,0.0
+1a86abd,2017-11-16T17:21:30,before merging with the branch of Marc,0.0
+00892bf,2017-11-16T18:09:27,conflicts resolved  compilation OK  added cplex argument to all rotation routines,0.0
+fbe89bb,2017-11-17T09:21:13,Implementation of the G0W0 @ scHybrid(planewave) completed. To be debugged.,0.0
+a82d951,2017-11-17T10:21:08,Minor fixes  now compile.,1.0
+a8b5099,2017-11-17T10:56:28,Fix definition of usefock inside setup_sigma. Now tests libxc[41:74] pass or succeed.,1.0
+06db88c,2017-11-17T11:58:41,first layer of cplex=2 generalization for m_xc_noncoll.F90,0.0
+4b5a908,2017-11-17T13:53:37,rot method (3)  cplex=2 case finilized,0.0
+263c2dc,2017-11-17T15:28:55,Set up final test. Also found one bug. Not yet working.,0.0
+dc6e29b,2017-11-17T17:26:32,rot method 2 cplex=2 generalization,0.0
+de369fe,2017-11-17T17:41:17,compilation OK,0.0
+419e2f6,2017-11-18T14:11:40,q=0 rotation=2 and 3 bfield tests OK,0.0
+dd5f30c,2017-11-18T19:32:02,zeeman term in a separate module,0.0
+ecc438f,2017-11-19T10:45:45,kinetic energy bug for rfmagn resolved,0.0
+05ed080,2017-11-20T10:52:11,update ref + change mpi for ifc in Multibinit,0.0
+b92c6d8,2017-11-20T11:24:39,Merge tag 'start-8.7.2' into Multibinit,0.0
+b4ea86e,2017-11-20T14:04:14,LDA-1/2 calculation,0.0
+2a16f0a,2017-11-20T14:05:25,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+1043462.0,2017-11-20T15:04:46,Debugging.,0.0
+6e+66,2017-11-20T15:15:59,XC testing routine added  cplex=2 seems OK,0.0
+ae7fd29,2017-11-20T16:00:08,pre-MR  removed spinalign  clean up some write's,0.0
+68bb9a8,2017-11-20T23:40:24,vxc noncoll debug and cplex=2 in progress,0.0
+2d7df1b,2017-11-21T01:03:16,problem with definition of bxc  the sign is missing,0.0
+e922020,2017-11-21T16:54:08,removed comments,0.0
+45a543f,2017-11-25T14:57:06,Clean the debugging sections.,0.0
+00bbf4b,2017-11-25T15:57:15,dvdb_interpolate_and_write: only master should close ount,0.0
+cd2fad6,2017-11-25T21:03:40,Bug correction in 67_common/setvtr.F90 for constrained mag. moments  the loop on ispden was from 2-->4 instead of 1-->4 (line 616). This does not affect the automatic tests.,1.0
+0cbd5f7,2017-11-25T21:53:33,Generalize the GW@hybrid(planewave) coding to the different ways to specify the hybrids. Also finalize a new test v7#68  and upgrade libxc#44.,0.0
+7f3dfd0,2017-11-25T22:12:57,Update input libxc#44 to HSE06. However  the PW and KS do not agree at the level of HSE06. Still a bug.,0.0
+67117ec,2017-11-26T07:47:57,Now both G0W0@HSE06 and G0W0@PBE0(-1/3) work  with C.psp8 pseudo.,0.0
+b1a1947,2017-11-26T09:34:19,Merge gmatteo/invalid_close/00bb into _gmatteo,0.0
+8c49206,2017-11-26T09:47:41,Adjust fld_options,0.0
+5d3861a,2017-11-26T18:11:52,Update tolerances vor tests libxc#44 and v7#68 .,0.0
+d4f20c6,2017-11-26T19:08:23,Merge branch 'develop' into _g0w0,0.0
+612abb1,2017-11-26T19:13:07,Update tolerance,0.0
+283c5b0,2017-11-26T19:23:22,Update tolerance.,0.0
+91929d0,2017-11-26T23:31:36,Final (?) tuning of tolerances  for graphene.,0.0
+918f1b6,2017-11-27T07:08:34,Define new test case libxc#45  G0W0@HSE06  with a non-linear XC core correction.,0.0
+464151f,2017-11-27T07:24:13,Complete the documentation,0.0
+1e5512f,2017-11-27T07:26:44,(Re)generate documentation,0.0
+22726eb,2017-11-27T09:28:02,Fix typo,1.0
+1d95099,2017-11-27T10:14:44,Update ref,0.0
+be5f4e3,2017-11-27T14:52:52,multibinit set mpi for the coefficient generator and clean code,0.0
+85bd4c6,2017-11-27T18:17:31,Tune tolerance for libxc#45,0.0
+48e4fbb,2017-11-28T15:15:59,bugfix in rotation_method=1  magnetization initialization for rfmagn  xyz output in printmagvtk,0.0
+10ec0dc,2017-11-28T15:33:54,debug bound process,0.0
+a477e68,2017-11-29T01:12:23,harmonic zeeman potentail test in GS + minor changes,0.0
+fcf5a24,2017-11-29T10:59:35,adjust the number of body in the bound process,0.0
+f0fb453,2017-11-30T13:34:01,debug the fit process (remove the minus) and update test,0.0
+509559e,2017-11-30T16:08:38,Fix a bug related to the ordering of atoms in Fock,0.0
+ccb6f65,2017-12-01T16:55:45,nuclear dipole moment Hamiltonian in k space  computed in mknucdipmom_k and added to gs_hamk. Applied in getghc.F90,0.0
+42a929b,2017-12-01T16:57:18,multibinit: add tolerance to the fit process and update ref,0.0
+0c65cd0,2017-12-02T20:54:52,non-coll q-dependent magnetic field works for n^1 and mz^1  problems with mx^1 and my^1  to test Kramer's degeneracy breaking,0.0
+8b2240a,2017-12-04T09:35:14,updated nuclear magnetic dipole code and test,0.0
+95f91bb,2017-12-04T12:06:44,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+bdbbcc7,2017-12-04T14:00:02,added input variable documentation,0.0
+b66266d,2017-12-04T17:29:07,add cutoff with the size of the supercell in the fit,0.0
+5d598fc,2017-12-04T18:15:56,Correction of a bug for magntization constraint in the collinear case (only one component of the potential was updated with the constraint). Small beautification/extra comments in calcdensph.F90 and mag_constr.F90 and change of the reference file of v7/Refs/t05.out (the final result is the same  only the starting energy is different than the previous Ref file with the bug).,0.0
+df76a9e,2017-12-04T18:20:39,pre-merge  debug stuff commented  todo: pq/mq generalization,0.0
+633f074,2017-12-04T19:00:37,Merge remote-tracking branch 'trunk/develop' into dfpt_noncoll,0.0
+b7c4b12,2017-12-04T20:11:04,NC diagonal response Fe tests 66-68 added,0.0
+0df3dd9,2017-12-05T10:48:44,debug bound process,0.0
+8e26c79,2017-12-06T13:40:07,Interpolate DEN if iscf > 0 and in_ngfft /= file_ngfft,0.0
+949abd7,2017-12-06T15:42:10,Add tests for DEN interpolation if SCF,0.0
+1111c97,2017-12-06T18:15:35,bug corrections for LDA-1/2,1.0
+c35ea3d,2017-12-06T18:16:26,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+4f48335,2017-12-06T20:52:47,Try to deactivate pw_unbal_thresh6,0.0
+5f06c6a,2017-12-06T21:56:23,Read WFK from DT1,0.0
+ab3b3f5,2017-12-07T11:48:13,Update refs,0.0
+3b575a8,2017-12-07T13:02:57,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+2b23864,2017-12-07T16:52:59,bug correction for parallelism with LDA-1/2,1.0
+966038e,2017-12-08T10:38:47,Merge jzwanzig/develop into _jzwanzig,0.0
+e2aba47,2017-12-08T11:10:51,fix for new NAG 6.2 ( from MT ),1.0
+cd11819,2017-12-08T12:59:18,convert nucdipmom_k to complex type and explicit BLAS call for speed,0.0
+10dfd90,2017-12-08T13:03:40,several first layers of +q/-q generalization,0.0
+f1545d3,2017-12-08T14:45:44,Merge gmatteo/scf_read_rhor into develop,0.0
+00b681d,2017-12-08T16:05:46,add test v8/t32.in for LDA-1/2 calculation.,0.0
+bd94212,2017-12-08T16:14:10,update builder abiref_nag_6.2_openmpi,0.0
+cae79c6,2017-12-10T15:53:37,Merge branch '_jzwanzig' into develop,0.0
+3e744d1,2017-12-11T10:03:45,add test v8/t31,0.0
+541894e,2017-12-11T12:34:52,kramers_deg default=true  some minor bugfixes,0.0
+898720a,2017-12-11T13:18:19,debug mpi scatter,0.0
+a6ef81f,2017-12-11T13:29:24,bug correction for the farm test,0.0
+9291045.0,2017-12-11T14:00:50,"Replace ""tribe"" by ""relevance"".",0.0
+5b9c7a9,2017-12-11T14:27:00,Fix the case where there are more than 10 tests that use one input variable  but none in the tuto list.,1.0
+98ee63c,2017-12-11T14:40:53,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+c9925d9,2017-12-11T15:50:30,all {-q} arguments in dpft_scfcv made optional  some debug related to initialization of rhor1_pq rhor1_mq etc.,0.0
+80a9d11,2017-12-11T15:53:56,higher tolerance in dpft tests,0.0
+e403523,2017-12-11T17:03:35,Change of the default value of magcon_lambda to 0.01,0.0
+59968b0,2017-12-11T18:44:24,tol adjusted in dfpt tests,0.0
+6.77e+76,2017-12-11T20:23:41,removed new tests  small change in mkvxc_noncoll,0.0
+a9960e1,2017-12-11T22:57:30,Merge remote-tracking branch 'trunk/develop' into dfpt_noncoll,0.0
+995fcc3,2017-12-12T10:15:13,correction of test v8/t32 for libxc,1.0
+3a9fec5,2017-12-13T09:49:56,add new routine for the bound process and debug mpi_scatter call in polynomial_Coeff,0.0
+67784d1,2017-12-13T14:35:11,+q/-q independent simultaneous calculation  nstep=1 with rfmagn is OK,0.0
+5510cda,2017-12-13T14:52:04,Merge remote-tracking branch 'amartin/Multibinit' into develop,0.0
+15d30e1,2017-12-13T17:35:51,debug writeout removed  kramers_deg=true,0.0
+51595c0,2017-12-14T10:07:35,Merge amartin/Multibinit/3a9f into _amartin,0.0
+09c20dd,2017-12-14T10:11:19,Tune tolerance for v3#40 for bob_gnu_5.3_openmp,0.0
+991ae86,2017-12-14T10:27:29,"Update Abivars.jar by replacing ""tribe"" by ""relevance"".",0.0
+37719f5,2017-12-14T10:59:13,Merge branch 'relevance' into develop,0.0
+c24128c,2017-12-14T13:13:17,Update the reference files for identification of problems wit test abirules # 3 4  6  7  10  20,0.0
+d2266f5,2017-12-14T13:32:29,debug unit problem for some output files (bug found on petrus_nag_5.3_openmpi),0.0
+9486864.0,2017-12-14T14:38:13,Replace tribe by relevance in abi_check.py,0.0
+7fc03eb,2017-12-14T14:38:57,Merge branch 'abirules' of gitlab:trunk/abinit into abirules,0.0
+c1a0d95,2017-12-14T15:02:06,change status in the call of open_file,0.0
+e7e0401,2017-12-14T17:03:51,use enable_netcdf_default for NAG 6.2,0.0
+ee2a672,2017-12-14T17:04:37,Merge remote-tracking branch 'amartin/Multibinit' into develop,0.0
+21649c2,2017-12-14T17:23:30,Merge amartin/Multibinit into _amartin,0.0
+cf1610f,2017-12-14T17:24:14,Merge branch 'develop' into _amartin,0.0
+355d122,2017-12-14T17:26:02,Import the switch from tribe to relevance for abi_check.py from the abirules branch (where it should not have been made ...),0.0
+cda4f26,2017-12-14T21:08:24,Update references for tests abirules#3&4 in case of paral executable,0.0
+cd29bbe,2017-12-15T06:08:58,Merge sprokh/dfpt_noncoll/15d3 into _sprokh,0.0
+ef00a89,2017-12-15T22:22:24,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0.0
+89490d9,2017-12-15T22:29:53,fix problem with abirules tests 3 & 4,1.0
+ace5426,2017-12-18T08:01:27,Merge bousquet/hotfix-8.6/e403 into _bousquet-8.6,0.0
+9d99c94,2017-12-18T15:07:43,Merge branch 'hotfix-8.6' into _hotfix,0.0
+5fcd1d8,2017-12-18T15:09:07,Merge branch 'develop' into abirules,0.0
+09c8333,2017-12-18T15:11:30,Merge beuken/develop/8949 into abirules,0.0
+bebd730,2017-12-18T18:16:03,Tune tolerance for positron_3 on bob_openmp,0.0
+f71feae,2017-12-18T20:37:39,Update abichecks/abirules/Refs #03&04   due to new sorting.,0.0
+5cf031b,2017-12-18T22:00:34,Start to finalize version v8.6.3,0.0
+0dcb3c1,2017-12-19T00:02:11,+q/-q static case debuged  dbg flags cleaned  todo: check tests and fetch news from trunk,0.0
+d2c3630,2017-12-19T03:50:35,Fix 'CHARACTER expression will be truncated in assignment' problem,1.0
+fefb229,2017-12-19T03:54:38,Fix 'CHARACTER expression will be truncated in assignment' using the same fixes than in v8.7,1.0
+0fe1e8c,2017-12-19T03:59:29,Fix 'Same actual argument associated with INTENT' like in v8.7,0.0
+0b90946,2017-12-19T04:02:56,Update references for test abirules #03&04,0.0
+da4eb65,2017-12-19T04:09:31,Merge branch 'hotfix-8.6' into _hotfix,0.0
+f9777fa,2017-12-19T04:18:44,Fix more 'CHARACTER expression will be truncated in assignment',1.0
+fce84d0,2017-12-19T04:20:56,Merge branch 'hotfix-8.6' into _hotfix,0.0
+0091bd4,2017-12-19T04:23:59,Merge branch '_hotfix' into abirules,0.0
+c56c3ca,2017-12-19T04:26:34,Fix 'Character length of actual argument shorter than of dummy argument',1.0
+9e39d14,2017-12-19T04:38:52,Clean m_fit_polynomial_coeff.F90,0.0
+997ee5a,2017-12-19T04:45:30,Merge branch 'hotfix-8.6' into _hotfix,0.0
+13b8e66,2017-12-19T04:48:04,Merge branch '_hotfix' into abirules,0.0
+7f1bed3,2017-12-19T06:09:43,Clean m_fit_polynomial_coeff.F90 (contained computeNorder and getCoeffFromList that were also in m_polynomial_coeff  due to confilct not correctly resolved),0.0
+9d8736f,2017-12-19T06:14:02,Merge remote-tracking branch 'remotes/sprokh/dfpt_noncoll' into _sprokh,0.0
+e3c8973,2017-12-19T06:14:38,Merge branch 'develop' into _sprokh,0.0
+4341f81,2017-12-19T06:23:57,Import latest m_fit_polynomial_coeff.F90 from amartin branch.,0.0
+556c01f,2017-12-19T10:36:19,Merge branch 'abirules' into develop,0.0
+998c604,2017-12-19T14:15:32,fix abiref_debug conf for new abirules,1.0
+d91b182,2017-12-19T14:16:57,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0.0
+ca7cca8,2017-12-19T14:57:01,make abicheck happy,0.0
+84fe9da,2017-12-19T15:27:30,typo for abiref_debug,0.0
+67c4a9c,2017-12-19T16:07:34,Import modifs from JMB  in order to allow the bot abiref_gnu_5.3_debug to test abirules #3  4 and others.,0.0
+a3bd320,2017-12-19T17:23:34,Fix the problems for abiref_debug,1.0
+d83242d,2017-12-19T19:15:05,Final update of abichecks/buildsys/Refs/abiref_nag_6.2_openmpi.ac ?,0.0
+3f4fe45,2017-12-19T21:01:02,Merge branch 'master' into develop,0.0
+4629461.0,2017-12-19T21:02:48,Initialize v8.6.4,0.0
+acc5a68,2017-12-20T05:42:22,Update refs for abirules #3&4,0.0
+3700000000000000.0,2017-12-20T05:54:11,Clean : suppress useless docs/features,0.0
+19f144f,2017-12-20T06:10:11,Rename doc/input_variables to doc/variables,0.0
+72b75a5,2017-12-20T06:13:05,Apply generate_doc.py,0.0
+6a2e3f6,2017-12-20T06:36:59,Rename doc/users to doc/guide,0.0
+972a00e,2017-12-20T09:19:06,Change the names of directories in doc/config/specs/documents.conf,0.0
+cfd8012,2017-12-20T10:01:50,Was still some occurences of users  replaced by guide.,0.0
+af7c311,2017-12-20T11:32:04,Rename input_variables to variables and users to guide in abirules/Ref/t01.out,0.0
+236b80f,2017-12-20T12:29:07,Apply generate_doc.py,0.0
+504505e,2017-12-20T12:39:46,Apply make parents,0.0
+20a7a51,2017-12-20T12:41:19,Apply make abiauty,0.0
+61244c3,2017-12-20T14:58:50,Complete the dependencies of dummy_tests,0.0
+cbff0a2,2017-12-20T16:33:20,Typo,1.0
+79cb096,2017-12-20T16:35:43,Merge branch 'hotfix-8.6' into develop,0.0
+55a9ddc,2017-12-20T19:09:22,Complete dummy_tests dependencies,0.0
+d2d82c2,2017-12-20T21:21:18,Still dependencies for dummy_tests.,0.0
+82110d5,2017-12-21T06:23:23,Complete the dependencies of tdep (dummy_tests is now completed).,0.0
+fe1d83a,2017-12-21T13:12:32,More dependencies for tdep.,0.0
+f0fda3d,2017-12-21T16:58:20,Complete tdep dependencies (works on my computer).,0.0
+d6b0247,2017-12-21T20:55:12,Initialize v8.7.3,0.0

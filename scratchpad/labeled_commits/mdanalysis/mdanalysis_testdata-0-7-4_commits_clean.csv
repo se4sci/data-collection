@@ -1,0 +1,5 @@
+hash,time,message,buggy
+0bdb579,2011-09-07T17:58:14,MDAnalysisTestData: only data for tests (separated from the library). See Issue 28 for details.,0.0
+8403dcd,2011-09-07T18:20:49,split-off tests/data files into separate package,0.0
+3f989cb,2011-09-07T21:44:34,fixed: XYZ_psf was not made available,1.0
+1d65d5c,2011-09-13T15:42:18,MDAnalysisTestData release 0.7.4,0.0

@@ -1,0 +1,194 @@
+<html><head><title>devtools.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="sourcestyles.css" />
+</head><body link="blue" vlink="blue">
+<h3>File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/doc/tests/pymods/devtools.py</h3>
+<SCRIPT>
+defaultStatus = "File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/doc/tests/pymods/devtools.py";
+top.document.title  = "devtools.py";
+</SCRIPT>
+<pre><span class="default"></span><a name="1"><font size=-1>1     </font></a><span class="default"></span><span class="keyword">from </span><span class="default">__future__ </span><span class="keyword">import </span><span class="default">print_function, division, absolute_import </span><span class="comment">#, unicode_literals</span>
+<a name="2"><font size=-1>2     </font></a><span class="comment"></span>
+<a name="3"><font size=-1>3     </font></a><span class="comment"></span><span class="keyword">import </span><span class="default">os</span>
+<a name="4"><font size=-1>4     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">time</span>
+<a name="5"><font size=-1>5     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">errno</span>
+<a name="6"><font size=-1>6     </font></a><span class="default"></span>
+<a name="7"><font size=-1>7     </font></a><span class="default"></span>
+<a name="8"><font size=-1>8     </font></a><span class="default"></span><span class="keyword">def <a href="dictionary_D.html#86524">number_of_cpus</a></span><span class="default">():</span>
+<a name="9"><font size=-1>9     </font></a><span class="default">    </span><span class="string">&quot;&quot;&quot;</span>
+<a name="10"><font size=-1>10     </font></a><span class="string">    Number of virtual or physical CPUs on this system, i.e.</span>
+<a name="11"><font size=-1>11     </font></a><span class="string">    user/real as output by time(1) when called with an optimally scaling userspace-only program</span>
+<a name="12"><font size=-1>12     </font></a><span class="string">    Return -1 if ncpus cannot be detected</span>
+<a name="13"><font size=-1>13     </font></a><span class="string">    taken from:</span>
+<a name="14"><font size=-1>14     </font></a><span class="string">    http://stackoverflow.com/questions/1006289/how-to-find-out-the-number-of-cpus-in-python</span>
+<a name="15"><font size=-1>15     </font></a><span class="string">    &quot;&quot;&quot;</span>
+<a name="16"><font size=-1>16     </font></a><span class="string">    </span><span class="keyword">import </span><span class="default">os,re,subprocess</span>
+<a name="17"><font size=-1>17     </font></a><span class="default"></span>
+<a name="18"><font size=-1>18     </font></a><span class="default">    </span><span class="comment"># Python 2.6+</span>
+<a name="19"><font size=-1>19     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="20"><font size=-1>20     </font></a><span class="default">        </span><span class="keyword">import </span><span class="default">multiprocessing</span>
+<a name="21"><font size=-1>21     </font></a><span class="default">        </span><span class="keyword">return </span><span class="default">multiprocessing.<a href="dictionary_C.html#44758">cpu_count</a>()</span>
+<a name="22"><font size=-1>22     </font></a><span class="default">    </span><span class="keyword">except </span><span class="default">(ImportError, NotImplementedError):</span>
+<a name="23"><font size=-1>23     </font></a><span class="default">        </span><span class="keyword">pass</span>
+<a name="24"><font size=-1>24     </font></a><span class="keyword"></span>
+<a name="25"><font size=-1>25     </font></a><span class="keyword">    </span><span class="comment"># POSIX</span>
+<a name="26"><font size=-1>26     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="27"><font size=-1>27     </font></a><span class="default">        <a href="dictionary_D.html#97603">res</a> = int(os.<a href="dictionary_S.html#128768">sysconf</a>(</span><span class="string">'SC_NPROCESSORS_ONLN'</span><span class="default">))</span>
+<a name="28"><font size=-1>28     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_D.html#97603">res</a> </span><span class="default">&gt; </span><span class="number">0</span><span class="default">: </span><span class="keyword">return <a href="dictionary_D.html#97603">res</a></span>
+<a name="29"><font size=-1>29     </font></a><span class="keyword">    except </span><span class="default">(AttributeError, ValueError):</span>
+<a name="30"><font size=-1>30     </font></a><span class="default">        </span><span class="keyword">pass</span>
+<a name="31"><font size=-1>31     </font></a><span class="keyword"></span>
+<a name="32"><font size=-1>32     </font></a><span class="keyword">    </span><span class="comment"># Windows</span>
+<a name="33"><font size=-1>33     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="34"><font size=-1>34     </font></a><span class="default">        <a href="dictionary_D.html#97603">res</a> = int(os.environ[</span><span class="string">'NUMBER_OF_PROCESSORS'</span><span class="default">])</span>
+<a name="35"><font size=-1>35     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_D.html#97603">res</a> </span><span class="default">&gt; </span><span class="number">0</span><span class="default">: </span><span class="keyword">return <a href="dictionary_D.html#97603">res</a></span>
+<a name="36"><font size=-1>36     </font></a><span class="keyword">    except </span><span class="default">(KeyError, ValueError):</span>
+<a name="37"><font size=-1>37     </font></a><span class="default">        </span><span class="keyword">pass</span>
+<a name="38"><font size=-1>38     </font></a><span class="keyword"></span>
+<a name="39"><font size=-1>39     </font></a><span class="keyword">    </span><span class="comment"># jython</span>
+<a name="40"><font size=-1>40     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="41"><font size=-1>41     </font></a><span class="default">        </span><span class="keyword">from </span><span class="default">java.lang </span><span class="keyword">import </span><span class="default">Runtime</span>
+<a name="42"><font size=-1>42     </font></a><span class="default">        <a href="dictionary_D.html#99255">runtime</a> = Runtime.<a href="dictionary_G.html#60922">getRuntime</a>()</span>
+<a name="43"><font size=-1>43     </font></a><span class="default">        <a href="dictionary_D.html#97603">res</a> = <a href="dictionary_D.html#99255">runtime</a>.<a href="dictionary_A.html#35513">availableProcessors</a>()</span>
+<a name="44"><font size=-1>44     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_D.html#97603">res</a> </span><span class="default">&gt; </span><span class="number">0</span><span class="default">: </span><span class="keyword">return <a href="dictionary_D.html#97603">res</a></span>
+<a name="45"><font size=-1>45     </font></a><span class="keyword">    except </span><span class="default">ImportError:</span>
+<a name="46"><font size=-1>46     </font></a><span class="default">        </span><span class="keyword">pass</span>
+<a name="47"><font size=-1>47     </font></a><span class="keyword"></span>
+<a name="48"><font size=-1>48     </font></a><span class="keyword">    </span><span class="comment"># BSD</span>
+<a name="49"><font size=-1>49     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="50"><font size=-1>50     </font></a><span class="default">        <a href="dictionary_D.html#128769">sysctl</a> = subprocess.Popen([</span><span class="string">'sysctl'</span><span class="default">, </span><span class="string">'-n'</span><span class="default">, </span><span class="string">'hw.ncpu'</span><span class="default">], stdout=subprocess.PIPE)</span>
+<a name="51"><font size=-1>51     </font></a><span class="default">        <a href="dictionary_D.html#100179">scStdout</a> = <a href="dictionary_D.html#128769">sysctl</a>.<a href="dictionary_C.html#42704">communicate</a>()[</span><span class="number">0</span><span class="default">]</span>
+<a name="52"><font size=-1>52     </font></a><span class="default">        <a href="dictionary_D.html#97603">res</a> = int(<a href="dictionary_D.html#100179">scStdout</a>)</span>
+<a name="53"><font size=-1>53     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_D.html#97603">res</a> </span><span class="default">&gt; </span><span class="number">0</span><span class="default">: </span><span class="keyword">return <a href="dictionary_D.html#97603">res</a></span>
+<a name="54"><font size=-1>54     </font></a><span class="keyword">    except </span><span class="default">(OSError, ValueError):</span>
+<a name="55"><font size=-1>55     </font></a><span class="default">        </span><span class="keyword">pass</span>
+<a name="56"><font size=-1>56     </font></a><span class="keyword"></span>
+<a name="57"><font size=-1>57     </font></a><span class="keyword">    </span><span class="comment"># Linux</span>
+<a name="58"><font size=-1>58     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="59"><font size=-1>59     </font></a><span class="default">        <a href="dictionary_D.html#97603">res</a> = open(</span><span class="string">'/proc/cpuinfo'</span><span class="default">).<a href="dictionary_R.html#95963">read</a>().<a href="dictionary_C.html#44632">count</a>(</span><span class="string">'processor\t:'</span><span class="default">)</span>
+<a name="60"><font size=-1>60     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_D.html#97603">res</a> </span><span class="default">&gt; </span><span class="number">0</span><span class="default">: </span><span class="keyword">return <a href="dictionary_D.html#97603">res</a></span>
+<a name="61"><font size=-1>61     </font></a><span class="keyword">    except </span><span class="default">IOError:</span>
+<a name="62"><font size=-1>62     </font></a><span class="default">        </span><span class="keyword">pass</span>
+<a name="63"><font size=-1>63     </font></a><span class="keyword"></span>
+<a name="64"><font size=-1>64     </font></a><span class="keyword">    </span><span class="comment"># Solaris</span>
+<a name="65"><font size=-1>65     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="66"><font size=-1>66     </font></a><span class="default">        <a href="dictionary_D.html#94843">pseudoDevices</a> = os.listdir(</span><span class="string">'/devices/pseudo/'</span><span class="default">)</span>
+<a name="67"><font size=-1>67     </font></a><span class="default">        <a href="dictionary_D.html#54476">expr</a> = re.compile(</span><span class="string">'^cpuid@[0-9]+$'</span><span class="default">)</span>
+<a name="68"><font size=-1>68     </font></a><span class="default">        <a href="dictionary_D.html#97603">res</a> = </span><span class="number">0</span>
+<a name="69"><font size=-1>69     </font></a><span class="number">        </span><span class="keyword">for <a href="dictionary_D.html#92877">pd</a> in <a href="dictionary_D.html#94843">pseudoDevices</a></span><span class="default">:</span>
+<a name="70"><font size=-1>70     </font></a><span class="default">            </span><span class="keyword">if <a href="dictionary_D.html#54476">expr</a></span><span class="default">.match(<a href="dictionary_D.html#92877">pd</a>) </span><span class="keyword">is not None</span><span class="default">:</span>
+<a name="71"><font size=-1>71     </font></a><span class="default">                <a href="dictionary_D.html#97603">res</a> += </span><span class="number">1</span>
+<a name="72"><font size=-1>72     </font></a><span class="number">        </span><span class="keyword">if <a href="dictionary_D.html#97603">res</a> </span><span class="default">&gt; </span><span class="number">0</span><span class="default">: </span><span class="keyword">return <a href="dictionary_D.html#97603">res</a></span>
+<a name="73"><font size=-1>73     </font></a><span class="keyword">    except </span><span class="default">OSError:</span>
+<a name="74"><font size=-1>74     </font></a><span class="default">        </span><span class="keyword">pass</span>
+<a name="75"><font size=-1>75     </font></a><span class="keyword"></span>
+<a name="76"><font size=-1>76     </font></a><span class="keyword">    </span><span class="comment"># Other UNIXes (heuristic)</span>
+<a name="77"><font size=-1>77     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="78"><font size=-1>78     </font></a><span class="default">        </span><span class="keyword">try</span><span class="default">:</span>
+<a name="79"><font size=-1>79     </font></a><span class="default">            <a href="dictionary_D.html#49068">dmesg</a> = open(</span><span class="string">'/var/run/dmesg.boot'</span><span class="default">).<a href="dictionary_R.html#95963">read</a>()</span>
+<a name="80"><font size=-1>80     </font></a><span class="default">        </span><span class="keyword">except </span><span class="default">IOError:</span>
+<a name="81"><font size=-1>81     </font></a><span class="default">            <a href="dictionary_D.html#49070">dmesgProcess</a> = subprocess.Popen([</span><span class="string">'dmesg'</span><span class="default">], stdout=subprocess.PIPE)</span>
+<a name="82"><font size=-1>82     </font></a><span class="default">            <a href="dictionary_D.html#49068">dmesg</a> = <a href="dictionary_D.html#49070">dmesgProcess</a>.<a href="dictionary_C.html#42704">communicate</a>()[</span><span class="number">0</span><span class="default">]</span>
+<a name="83"><font size=-1>83     </font></a><span class="default"></span>
+<a name="84"><font size=-1>84     </font></a><span class="default">        <a href="dictionary_D.html#97603">res</a> = </span><span class="number">0</span>
+<a name="85"><font size=-1>85     </font></a><span class="number">        </span><span class="keyword">while </span><span class="string">'\ncpu' </span><span class="default">+ str(<a href="dictionary_D.html#97603">res</a>) + </span><span class="string">':' </span><span class="keyword">in <a href="dictionary_D.html#49068">dmesg</a></span><span class="default">:</span>
+<a name="86"><font size=-1>86     </font></a><span class="default">            <a href="dictionary_D.html#97603">res</a> += </span><span class="number">1</span>
+<a name="87"><font size=-1>87     </font></a><span class="number"></span>
+<a name="88"><font size=-1>88     </font></a><span class="number">        </span><span class="keyword">if <a href="dictionary_D.html#97603">res</a> </span><span class="default">&gt; </span><span class="number">0</span><span class="default">: </span><span class="keyword">return <a href="dictionary_D.html#97603">res</a></span>
+<a name="89"><font size=-1>89     </font></a><span class="keyword">    except </span><span class="default">OSError:</span>
+<a name="90"><font size=-1>90     </font></a><span class="default">        </span><span class="keyword">pass</span>
+<a name="91"><font size=-1>91     </font></a><span class="keyword"></span>
+<a name="92"><font size=-1>92     </font></a><span class="keyword">    return </span><span class="default">-</span><span class="number">1</span>
+<a name="93"><font size=-1>93     </font></a><span class="number">    </span><span class="comment">#raise Exception('Cannot determine number of CPUs on this system')</span>
+<a name="94"><font size=-1>94     </font></a><span class="comment"></span>
+<a name="95"><font size=-1>95     </font></a><span class="comment"></span>
+<a name="96"><font size=-1>96     </font></a><span class="comment"></span><span class="keyword">class <a href="dictionary_D.html#7313">FileLockException</a></span><span class="default">(Exception):</span>
+<a name="97"><font size=-1>97     </font></a><span class="default">    </span><span class="string">&quot;&quot;&quot;Exception raised by FileLock.&quot;&quot;&quot;</span>
+<a name="98"><font size=-1>98     </font></a><span class="string"></span>
+<a name="99"><font size=-1>99     </font></a><span class="string"></span>
+<a name="100"><font size=-1>100     </font></a><span class="string"></span><span class="keyword">class <a href="dictionary_D.html#7311">FileLock</a></span><span class="default">(object):</span>
+<a name="101"><font size=-1>101     </font></a><span class="default">    </span><span class="string">&quot;&quot;&quot; A file locking mechanism that has context-manager support so</span>
+<a name="102"><font size=-1>102     </font></a><span class="string">        you can use it in a with statement. This should be relatively cross</span>
+<a name="103"><font size=-1>103     </font></a><span class="string">        compatible as it doesn't rely on msvcrt or fcntl for the locking.</span>
+<a name="104"><font size=-1>104     </font></a><span class="string">        Taken from http://www.evanfosmark.com/2009/01/cross-platform-file-locking-support-in-python/</span>
+<a name="105"><font size=-1>105     </font></a><span class="string">    &quot;&quot;&quot;</span>
+<a name="106"><font size=-1>106     </font></a><span class="string">    <a href="dictionary_D.html#6896">Error</a> </span><span class="default">= <a href="dictionary_D.html#7313">FileLockException</a></span>
+<a name="107"><font size=-1>107     </font></a><span class="default"></span>
+<a name="108"><font size=-1>108     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_D.html#17101">__init__</a></span><span class="default">(<a href="dictionary_D.html#109042">self</a>, <a href="dictionary_D.html#56205">file_name</a>, <a href="dictionary_D.html#131092">timeout</a>=</span><span class="number">10</span><span class="default">, <a href="dictionary_D.html#47377">delay</a>=</span><span class="number">.05</span><span class="default">):</span>
+<a name="109"><font size=-1>109     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot; Prepare the file locker. Specify the file to lock and optionally</span>
+<a name="110"><font size=-1>110     </font></a><span class="string">            the maximum timeout and the delay between each attempt to lock.</span>
+<a name="111"><font size=-1>111     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="112"><font size=-1>112     </font></a><span class="string">        <a href="dictionary_D.html#109042">self</a></span><span class="default">.<a href="dictionary_D.html#56217">file_name</a> = <a href="dictionary_D.html#56205">file_name</a></span>
+<a name="113"><font size=-1>113     </font></a><span class="default">        <a href="dictionary_D.html#109042">self</a>.<a href="dictionary_D.html#77498">lockfile</a> = os.path.abspath(<a href="dictionary_D.html#56205">file_name</a>) + </span><span class="string">&quot;.lock&quot;</span>
+<a name="114"><font size=-1>114     </font></a><span class="string">        <a href="dictionary_D.html#109042">self</a></span><span class="default">.<a href="dictionary_D.html#131158">timeout</a> = float(<a href="dictionary_D.html#131092">timeout</a>)</span>
+<a name="115"><font size=-1>115     </font></a><span class="default">        <a href="dictionary_D.html#109042">self</a>.<a href="dictionary_D.html#47386">delay</a> = float(<a href="dictionary_D.html#47377">delay</a>)</span>
+<a name="116"><font size=-1>116     </font></a><span class="default">        <a href="dictionary_D.html#109042">self</a>.<a href="dictionary_D.html#69509">is_locked</a> = </span><span class="keyword">False</span>
+<a name="117"><font size=-1>117     </font></a><span class="keyword"></span>
+<a name="118"><font size=-1>118     </font></a><span class="keyword">        if </span><span class="default">(<a href="dictionary_D.html#109042">self</a>.<a href="dictionary_D.html#47386">delay</a> &gt; <a href="dictionary_D.html#109042">self</a>.<a href="dictionary_D.html#131158">timeout</a> </span><span class="keyword">or</span>
+<a name="119"><font size=-1>119     </font></a><span class="keyword">            <a href="dictionary_D.html#109042">self</a></span><span class="default">.<a href="dictionary_D.html#47386">delay</a>   &lt;= </span><span class="number">0 </span><span class="keyword">or</span>
+<a name="120"><font size=-1>120     </font></a><span class="keyword">            <a href="dictionary_D.html#109042">self</a></span><span class="default">.<a href="dictionary_D.html#131158">timeout</a> &lt;= </span><span class="number">0</span><span class="default">):</span>
+<a name="121"><font size=-1>121     </font></a><span class="default">            <a href="dictionary_D.html#52523">err_msg</a> = </span><span class="string">&quot;delay and timeout must be positive with delay &lt;= timeout&quot;</span>
+<a name="122"><font size=-1>122     </font></a><span class="string">            </span><span class="keyword">raise </span><span class="default">ValueError(<a href="dictionary_D.html#52523">err_msg</a>)</span>
+<a name="123"><font size=-1>123     </font></a><span class="default"></span>
+<a name="124"><font size=-1>124     </font></a><span class="default">    @classmethod</span>
+<a name="125"><font size=-1>125     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_D.html#7226">FakeLock</a></span><span class="default">(<a href="dictionary_D.html#41070">cls</a>, <a href="dictionary_D.html#56206">file_name</a>, <a href="dictionary_D.html#131093">timeout</a>=</span><span class="number">10</span><span class="default">, <a href="dictionary_D.html#47378">delay</a>=</span><span class="number">.05</span><span class="default">):</span>
+<a name="126"><font size=-1>126     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;Returns a fake lock file.&quot;&quot;&quot;</span>
+<a name="127"><font size=-1>127     </font></a><span class="string">        <a href="dictionary_D.html#55268">fake</a> </span><span class="default">= <a href="dictionary_D.html#41070">cls</a>(<a href="dictionary_D.html#56206">file_name</a>, timeout=<a href="dictionary_D.html#131093">timeout</a>, delay=<a href="dictionary_D.html#47378">delay</a>)</span>
+<a name="128"><font size=-1>128     </font></a><span class="default"></span>
+<a name="129"><font size=-1>129     </font></a><span class="default">        </span><span class="keyword">def <a href="dictionary_D.html#85478">nop</a></span><span class="default">():</span>
+<a name="130"><font size=-1>130     </font></a><span class="default">            </span><span class="string">&quot;&quot;&quot;Monkey patch.&quot;&quot;&quot;</span>
+<a name="131"><font size=-1>131     </font></a><span class="string"></span>
+<a name="132"><font size=-1>132     </font></a><span class="string">        <a href="dictionary_D.html#55268">fake</a></span><span class="default">.<a href="dictionary_A.html#31015">acquire</a> = <a href="dictionary_D.html#85478">nop</a></span>
+<a name="133"><font size=-1>133     </font></a><span class="default">        <a href="dictionary_D.html#55268">fake</a>.<a href="dictionary_R.html#96850">release</a> = <a href="dictionary_D.html#85478">nop</a></span>
+<a name="134"><font size=-1>134     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_D.html#55268">fake</a></span>
+<a name="135"><font size=-1>135     </font></a><span class="keyword"></span>
+<a name="136"><font size=-1>136     </font></a><span class="keyword">    def <a href="dictionary_D.html#31016">acquire</a></span><span class="default">(<a href="dictionary_D.html#109041">self</a>):</span>
+<a name="137"><font size=-1>137     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot; Acquire the lock, if possible. If the lock is in use, it check again</span>
+<a name="138"><font size=-1>138     </font></a><span class="string">            every `wait` seconds. It does this until it either gets the lock or</span>
+<a name="139"><font size=-1>139     </font></a><span class="string">            exceeds `timeout` number of seconds, in which case it throws</span>
+<a name="140"><font size=-1>140     </font></a><span class="string">            an exception.</span>
+<a name="141"><font size=-1>141     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="142"><font size=-1>142     </font></a><span class="string">        <a href="dictionary_D.html#126680">start_time</a> </span><span class="default">= time.time()</span>
+<a name="143"><font size=-1>143     </font></a><span class="default">        </span><span class="keyword">while True</span><span class="default">:</span>
+<a name="144"><font size=-1>144     </font></a><span class="default">            </span><span class="keyword">try</span><span class="default">:</span>
+<a name="145"><font size=-1>145     </font></a><span class="default">                <a href="dictionary_D.html#109041">self</a>.<a href="dictionary_D.html#55485">fd</a> = os.open(<a href="dictionary_D.html#109041">self</a>.<a href="dictionary_D.html#77498">lockfile</a>, os.O_CREAT|os.O_EXCL|os.O_RDWR)</span>
+<a name="146"><font size=-1>146     </font></a><span class="default">                </span><span class="keyword">break</span>
+<a name="147"><font size=-1>147     </font></a><span class="keyword">            except </span><span class="default">OSError </span><span class="keyword">as <a href="dictionary_D.html#50701">e</a></span><span class="default">:</span>
+<a name="148"><font size=-1>148     </font></a><span class="default">                </span><span class="keyword">if <a href="dictionary_D.html#50701">e</a></span><span class="default">.<a href="dictionary_E.html#52597">errno</a> != errno.EEXIST:</span>
+<a name="149"><font size=-1>149     </font></a><span class="default">                    </span><span class="keyword">raise</span>
+<a name="150"><font size=-1>150     </font></a><span class="keyword">                if </span><span class="default">(time.time() - <a href="dictionary_D.html#126680">start_time</a>) &gt;= <a href="dictionary_D.html#109041">self</a>.<a href="dictionary_D.html#131158">timeout</a>:</span>
+<a name="151"><font size=-1>151     </font></a><span class="default">                    </span><span class="keyword">raise <a href="dictionary_D.html#7313">FileLockException</a></span><span class="default">(</span><span class="string">&quot;Timeout occured.&quot;</span><span class="default">)</span>
+<a name="152"><font size=-1>152     </font></a><span class="default">                time.sleep(<a href="dictionary_D.html#109041">self</a>.<a href="dictionary_D.html#47386">delay</a>)</span>
+<a name="153"><font size=-1>153     </font></a><span class="default"></span>
+<a name="154"><font size=-1>154     </font></a><span class="default">        <a href="dictionary_D.html#109041">self</a>.<a href="dictionary_D.html#69509">is_locked</a> = </span><span class="keyword">True</span>
+<a name="155"><font size=-1>155     </font></a><span class="keyword"></span>
+<a name="156"><font size=-1>156     </font></a><span class="keyword">    def <a href="dictionary_D.html#96852">release</a></span><span class="default">(<a href="dictionary_D.html#109040">self</a>):</span>
+<a name="157"><font size=-1>157     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot; Get rid of the lock by deleting the lockfile.</span>
+<a name="158"><font size=-1>158     </font></a><span class="string">            When working in a `with` statement, this gets automatically</span>
+<a name="159"><font size=-1>159     </font></a><span class="string">            called at the end.</span>
+<a name="160"><font size=-1>160     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="161"><font size=-1>161     </font></a><span class="string">        </span><span class="keyword">if <a href="dictionary_D.html#109040">self</a></span><span class="default">.<a href="dictionary_D.html#69509">is_locked</a>:</span>
+<a name="162"><font size=-1>162     </font></a><span class="default">            os.close(<a href="dictionary_D.html#109040">self</a>.<a href="dictionary_D.html#55485">fd</a>)</span>
+<a name="163"><font size=-1>163     </font></a><span class="default">            os.unlink(<a href="dictionary_D.html#109040">self</a>.<a href="dictionary_D.html#77498">lockfile</a>)</span>
+<a name="164"><font size=-1>164     </font></a><span class="default">            <a href="dictionary_D.html#109040">self</a>.<a href="dictionary_D.html#69509">is_locked</a> = </span><span class="keyword">False</span>
+<a name="165"><font size=-1>165     </font></a><span class="keyword"></span>
+<a name="166"><font size=-1>166     </font></a><span class="keyword">    def <a href="dictionary_D.html#15253">__enter__</a></span><span class="default">(<a href="dictionary_D.html#109044">self</a>):</span>
+<a name="167"><font size=-1>167     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot; Activated when used in the with statement.</span>
+<a name="168"><font size=-1>168     </font></a><span class="string">            Should automatically acquire a lock to be used in the with block.</span>
+<a name="169"><font size=-1>169     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="170"><font size=-1>170     </font></a><span class="string">        </span><span class="keyword">if not <a href="dictionary_D.html#109044">self</a></span><span class="default">.<a href="dictionary_D.html#69509">is_locked</a>: <a href="dictionary_D.html#109044">self</a>.<a href="dictionary_D.html#31016">acquire</a>()</span>
+<a name="171"><font size=-1>171     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_D.html#109044">self</a></span>
+<a name="172"><font size=-1>172     </font></a><span class="keyword"></span>
+<a name="173"><font size=-1>173     </font></a><span class="keyword">    def <a href="dictionary_D.html#15495">__exit__</a></span><span class="default">(<a href="dictionary_D.html#109043">self</a>, <a href="dictionary_D.html#133143">type</a>, <a href="dictionary_D.html#135603">value</a>, <a href="dictionary_D.html#132419">traceback</a>):</span>
+<a name="174"><font size=-1>174     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot; Activated at the end of the with statement.</span>
+<a name="175"><font size=-1>175     </font></a><span class="string">            It automatically releases the lock if it isn't locked.</span>
+<a name="176"><font size=-1>176     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="177"><font size=-1>177     </font></a><span class="string">        </span><span class="keyword">if <a href="dictionary_D.html#109043">self</a></span><span class="default">.<a href="dictionary_D.html#69509">is_locked</a>: <a href="dictionary_D.html#109043">self</a>.<a href="dictionary_D.html#96852">release</a>()</span>
+<a name="178"><font size=-1>178     </font></a><span class="default"></span>
+<a name="179"><font size=-1>179     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_D.html#15031">__del__</a></span><span class="default">(<a href="dictionary_D.html#109045">self</a>):</span>
+<a name="180"><font size=-1>180     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot; Make sure that the FileLock instance doesn't leave a lockfile</span>
+<a name="181"><font size=-1>181     </font></a><span class="string">            lying around.</span>
+<a name="182"><font size=-1>182     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="183"><font size=-1>183     </font></a><span class="string">        <a href="dictionary_D.html#109045">self</a></span><span class="default">.<a href="dictionary_D.html#96852">release</a>()</span>
+<a name="184"><font size=-1>184     </font></a><span class="default"></span>
+</pre></body></html>

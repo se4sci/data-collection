@@ -1,0 +1,8 @@
+hash,time,message,buggy
+c2d609f,2017-11-04T10:02:52,Initialize v8.6.2 (in hotfix-8.6),0.0
+a04fbe8,2017-11-04T21:40:26,Modify test v6#67 for lack of portability on bob openmp,0.0
+8e83f02,2017-11-05T21:32:09,Fix typo,1.0
+e24f6e4,2017-11-05T21:37:03,Correct doc,0.0
+d13b598,2017-11-06T11:57:41,Suppress missing links.,0.0
+c590659,2017-11-17T21:54:14,Switch from graphene_gnu_6.4 to graphene_gnu_6.3,0.0
+e6ea7ad,2017-11-17T21:56:00,Prepare the release of v8.6.2,0.0

@@ -1,80 +1,80 @@
 hash,time,message,buggy
-a45a073,2017-03-28 08:51:49,Multibinit:add generator for 2 3 and 4th order coefficients,0
-c34d5d2,2017-03-28 08:52:14,Multibinit:add generator for 2 3 and 4th order coefficients,0
-bde3aa0,2017-03-28 16:55:51,multibinit: improve the reading of coefficient from XML and update ref,0
-c545fa0,2017-04-07 13:27:31,multibinit: add confinement potential type,0
-6c16042,2017-04-07 15:24:00,Multibinit: remove print of supercell positions in the output and update ref,0
-447254f,2017-04-18 08:55:35,Merge tag 'start-8.3.3' into develop,0
-c607ae6,2017-04-28 12:54:21,Typos,0
-cc118a3,2017-04-28 12:57:18,Merge remote-tracking branch remotes/origin/_jollet/3373 into trunk_gonze,0
-f171552,2017-04-28 14:09:08,Move tests v7#68 and 69 to 78 and 79 . Also correct typos.,0
-b3368ca,2017-04-28 14:33:41,Add test libxc#51 . Also correct typos and upload v7#78 and 79 replacing 68 and 69,0
-b0db6f0,2017-04-28 14:50:18,Continue to create Tlibxc#51 (PBE0 using libxc),0
-8d68c12,2017-04-28 14:58:23,Create tests libxc #52 and 53  for HSE06 NC  NSE03 NC and HSE06 PAW,0
-01c5f61,2017-04-28 14:59:26,Input files for tests libxc 52 and 53,0
-89fc631,2017-04-28 15:54:43,Fix a bug in Fock parallel  with metallic occupations   document the LibXC options for hybrid functionals,0
-0af52f0,2017-04-28 16:11:20,Fix minor problems in input files,0
-e444775,2017-05-01 13:47:40,libxc#51 input file (PBE0) : fix doc and also value,0
-38eebc0,2017-05-01 14:15:03,Add Refs files for libxc#51 and 52 . Also tune input files for libxc#52 and 53. Disable libxc#53 (HSE06+PAW)  because it stops at present.,0
-206f110,2017-05-02 08:52:40,Fix typos and incoherencies in the doc  related to densfor_pred .,0
-4aac718,2017-05-02 08:59:09,Suppress useless section,0
-5c141d5,2017-05-02 09:06:07,Reenable Tlibxc#53 + fix typo,0
-6160091,2017-05-02 11:38:43,Modify test libxc#53  and provide ref   fix typos in docs  and correct other stuff for densfor_pred,0
-8a8106e,2017-05-02 12:39:23,Correct the position of densfor_pred in the echo .,0
-8c5d315,2017-05-02 12:52:53,Fix erroneously removed lines,0
-a0930b3,2017-05-02 13:03:53,Fix incorrect filter in check_kxc (my fault)  adjust tolerance for Tv7#94,0
-74f9f68,2017-05-02 15:40:12,Implement correction to forces for hybrid functionals  non-zero values of densfor_pred.,0
-8c7aeff,2017-05-02 16:10:29,Defines a third dataset in Tlibxc#53  that works for densfor_pred=6,0
-261d0fb,2017-05-03 09:19:23,Fix bug  that was preventing the kxc to be stored,0
-b1f8dca,2017-05-05 15:53:36,added symmetry comment to elastic tutorial,0
-81edbe1,2017-05-08 12:12:18,Initialize v8.5.0,0
-b43e9d2,2017-05-08 14:21:01,Complete statistics for v8.4,0
-afa1bc9,2017-05-09 07:51:09,Merge branch 'release-8.4.0' into develop,0
-ea8ff1d,2017-05-11 14:27:29,multibinit: add initialization for the fit and add restartxf -3,0
-8834c5c,2017-05-11 14:27:44,multibinit: add initialization for the fit and add restartxf -3,0
-ca6a0f4,2017-05-11 14:36:31,Merge tag 'start-8.5.0' into develop,0
-ce41d53,2017-05-11 14:56:55,multibinit: quick fix after the merge of the trunk,0
-69adb39,2017-05-13 11:15:47,modification to support gcc 7.1,0
-84d6a97,2017-05-13 11:25:24,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0
-586214b,2017-05-13 22:09:03,reactivate scalapack on graphene,0
-5700e38,2017-05-14 22:53:13,preparation to support hpc,0
-a711ffb,2017-05-16 16:49:16,multibinit: first implementation of the fit process,0
-044c8c3,2017-05-16 16:55:10,quick fix in mover  remove useless error message,0
-37613ec,2017-05-16 21:52:01,continue preparation to support hpc,0
-22a40c5,2017-05-16 22:33:37,cleaning,0
-7f4b5b3,2017-05-17 13:38:19,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0
-85025af,2017-05-18 10:13:27,fix depends for macrcoave bigDFT fallback no more actived by default,0
-27e4092,2017-05-19 11:38:35,check sync github,0
-3cd6844,2017-05-21 19:50:00,Remove spatial inversion only if nspden == 4 AND pawspnorb > 0,0
-87a6b01,2017-05-21 20:27:16,Remove inversion only if usepaw == 1 and ...,0
-dab45dd,2017-05-22 13:39:25,Update v7[5] to account for new spgroup and minor numerical diffs,0
-f22be08,2017-05-24 11:23:18,multibinit: debug fit process,0
-365ec09,2017-05-24 11:59:17,multibinit: update tests after adding stress term,0
-af9af74,2017-05-24 14:42:57,Merge branch develop/7f4b into trunk_gonze,0
-67b14ed,2017-05-24 15:02:17,multibinit: quick fixes for the xml related to the coefficients,0
-352bcf1,2017-05-24 15:58:47,multibinit: quick fixes in the reading of the XML with fortran,0
-53c5f26,2017-05-25 10:40:55,Merge branch release-8.4.1/0e35 (init v8.4.1) into develop,0
-33bc7fa,2017-05-27 07:05:12,Merge amartin/develop/352bcf18 into _amartin,0
-e858047,2017-05-27 10:09:22,Merge branch release-8.4.1/92b1 into develop,0
-fcc88ef,2017-05-27 10:11:26,Merge gmatteo/use_inversion/dab4 into _gmatteo,0
-ea60c18,2017-05-27 11:08:27,Merge branch _amartin/33bc into develop,0
-b8faddf,2017-05-27 12:53:57,Merge branch _gmatteo/fcc8 into develop,0
-fc7ac71,2017-05-28 06:02:29,Merge gmatteo/hotfix_out1dm/d9db into _gmatteo-8.4.1,0
-7572702,2017-05-28 06:15:23,The merge in rhohxc.F90 had not been done properly.,0
-4724c40,2017-05-28 08:41:13,Merge branch '_gmatteo-8.4.1' into develop,0
-bd06205,2017-05-28 11:35:02,Adjust tolerance for libxc#52,0
-0d58095,2017-05-28 19:15:38,Merge branch trunk_gonze/bd06 into develop,0
-1673f5c,2017-05-29 16:28:59,Add directive to undo vectorization in compute_migdal_energy in 68_dmft/m_energy,0
-19cb693,2017-05-30 12:49:20,Suppress optimization of compute_migdal_energy for intel compilers.,0
-a011ef1,2017-06-01 05:19:39,Merge branch release-8.4.1/476e into develop,0
-569b0d9,2017-06-01 08:41:54,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0
-7ac8d8a,2017-06-01 15:09:28,Update several ref *.ac files,0
-e683a01,2017-06-02 06:58:14,Upgrade testfarm *.ac reference files,0
-01a177d,2017-06-02 06:58:53,The gnu compiler version has chaned for graphene machine,0
-183420b,2017-06-03 07:05:51,Merge branch release-8.4.1/7db5 into develop,0
-fae338f,2017-06-03 07:16:05,Merge branch release-8.4.1/082f into develop,0
-9171237,2017-06-03 07:18:20,Reenable tests of multibinit on ubu_intel_17.0_openmpi  inside v8.5.0 ...,0
-e35f883,2017-06-03 12:17:00,Update some links,0
-26a7f0e,2017-06-03 16:54:52,Merge branch hotfix-8.4/7673 into develop,0
-4ed583e,2017-06-04 05:51:24,Modifs to finalize v8.5.0,0
-1977e81,2017-06-04 20:59:10,Add missing section in tests.conf  concerning bigdft_paral,0
+a45a073,2017-03-28T08:51:49,Multibinit:add generator for 2 3 and 4th order coefficients,0.0
+c34d5d2,2017-03-28T08:52:14,Multibinit:add generator for 2 3 and 4th order coefficients,0.0
+bde3aa0,2017-03-28T16:55:51,multibinit: improve the reading of coefficient from XML and update ref,0.0
+c545fa0,2017-04-07T13:27:31,multibinit: add confinement potential type,0.0
+6c16042,2017-04-07T15:24:00,Multibinit: remove print of supercell positions in the output and update ref,0.0
+447254f,2017-04-18T08:55:35,Merge tag 'start-8.3.3' into develop,0.0
+c607ae6,2017-04-28T12:54:21,Typos,0.0
+cc118a3,2017-04-28T12:57:18,Merge remote-tracking branch remotes/origin/_jollet/3373 into trunk_gonze,0.0
+f171552,2017-04-28T14:09:08,Move tests v7#68 and 69 to 78 and 79 . Also correct typos.,0.0
+b3368ca,2017-04-28T14:33:41,Add test libxc#51 . Also correct typos and upload v7#78 and 79 replacing 68 and 69,0.0
+b0db6f0,2017-04-28T14:50:18,Continue to create Tlibxc#51 (PBE0 using libxc),0.0
+8d68c12,2017-04-28T14:58:23,Create tests libxc #52 and 53  for HSE06 NC  NSE03 NC and HSE06 PAW,0.0
+01c5f61,2017-04-28T14:59:26,Input files for tests libxc 52 and 53,0.0
+89fc631,2017-04-28T15:54:43,Fix a bug in Fock parallel  with metallic occupations   document the LibXC options for hybrid functionals,1.0
+0af52f0,2017-04-28T16:11:20,Fix minor problems in input files,1.0
+e444775,2017-05-01T13:47:40,libxc#51 input file (PBE0) : fix doc and also value,0.0
+38eebc0,2017-05-01T14:15:03,Add Refs files for libxc#51 and 52 . Also tune input files for libxc#52 and 53. Disable libxc#53 (HSE06+PAW)  because it stops at present.,0.0
+206f110,2017-05-02T08:52:40,Fix typos and incoherencies in the doc  related to densfor_pred .,1.0
+4aac718,2017-05-02T08:59:09,Suppress useless section,0.0
+5c141d5,2017-05-02T09:06:07,Reenable Tlibxc#53 + fix typo,0.0
+6160091.0,2017-05-02T11:38:43,Modify test libxc#53  and provide ref   fix typos in docs  and correct other stuff for densfor_pred,1.0
+8a8106e,2017-05-02T12:39:23,Correct the position of densfor_pred in the echo .,1.0
+8c5d315,2017-05-02T12:52:53,Fix erroneously removed lines,1.0
+a0930b3,2017-05-02T13:03:53,Fix incorrect filter in check_kxc (my fault)  adjust tolerance for Tv7#94,1.0
+74f9f68,2017-05-02T15:40:12,Implement correction to forces for hybrid functionals  non-zero values of densfor_pred.,1.0
+8c7aeff,2017-05-02T16:10:29,Defines a third dataset in Tlibxc#53  that works for densfor_pred=6,0.0
+261d0fb,2017-05-03T09:19:23,Fix bug  that was preventing the kxc to be stored,1.0
+b1f8dca,2017-05-05T15:53:36,added symmetry comment to elastic tutorial,0.0
+81edbe1,2017-05-08T12:12:18,Initialize v8.5.0,0.0
+b43e9d2,2017-05-08T14:21:01,Complete statistics for v8.4,0.0
+afa1bc9,2017-05-09T07:51:09,Merge branch 'release-8.4.0' into develop,0.0
+ea8ff1d,2017-05-11T14:27:29,multibinit: add initialization for the fit and add restartxf -3,0.0
+8834c5c,2017-05-11T14:27:44,multibinit: add initialization for the fit and add restartxf -3,0.0
+ca6a0f4,2017-05-11T14:36:31,Merge tag 'start-8.5.0' into develop,0.0
+ce41d53,2017-05-11T14:56:55,multibinit: quick fix after the merge of the trunk,0.0
+69adb39,2017-05-13T11:15:47,modification to support gcc 7.1,0.0
+84d6a97,2017-05-13T11:25:24,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0.0
+586214b,2017-05-13T22:09:03,reactivate scalapack on graphene,0.0
+5.7e+41,2017-05-14T22:53:13,preparation to support hpc,0.0
+a711ffb,2017-05-16T16:49:16,multibinit: first implementation of the fit process,0.0
+044c8c3,2017-05-16T16:55:10,quick fix in mover  remove useless error message,1.0
+37613ec,2017-05-16T21:52:01,continue preparation to support hpc,0.0
+22a40c5,2017-05-16T22:33:37,cleaning,0.0
+7f4b5b3,2017-05-17T13:38:19,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0.0
+85025af,2017-05-18T10:13:27,fix depends for macrcoave bigDFT fallback no more actived by default,1.0
+27e4092,2017-05-19T11:38:35,check sync github,0.0
+3cd6844,2017-05-21T19:50:00,Remove spatial inversion only if nspden == 4 AND pawspnorb > 0,1.0
+87a6b01,2017-05-21T20:27:16,Remove inversion only if usepaw == 1 and ...,1.0
+dab45dd,2017-05-22T13:39:25,Update v7[5] to account for new spgroup and minor numerical diffs,0.0
+f22be08,2017-05-24T11:23:18,multibinit: debug fit process,0.0
+365ec09,2017-05-24T11:59:17,multibinit: update tests after adding stress term,0.0
+af9af74,2017-05-24T14:42:57,Merge branch develop/7f4b into trunk_gonze,0.0
+67b14ed,2017-05-24T15:02:17,multibinit: quick fixes for the xml related to the coefficients,1.0
+352bcf1,2017-05-24T15:58:47,multibinit: quick fixes in the reading of the XML with fortran,1.0
+53c5f26,2017-05-25T10:40:55,Merge branch release-8.4.1/0e35 (init v8.4.1) into develop,0.0
+33bc7fa,2017-05-27T07:05:12,Merge amartin/develop/352bcf18 into _amartin,0.0
+e858047,2017-05-27T10:09:22,Merge branch release-8.4.1/92b1 into develop,0.0
+fcc88ef,2017-05-27T10:11:26,Merge gmatteo/use_inversion/dab4 into _gmatteo,0.0
+ea60c18,2017-05-27T11:08:27,Merge branch _amartin/33bc into develop,0.0
+b8faddf,2017-05-27T12:53:57,Merge branch _gmatteo/fcc8 into develop,0.0
+fc7ac71,2017-05-28T06:02:29,Merge gmatteo/hotfix_out1dm/d9db into _gmatteo-8.4.1,0.0
+7572702.0,2017-05-28T06:15:23,The merge in rhohxc.F90 had not been done properly.,0.0
+4724c40,2017-05-28T08:41:13,Merge branch '_gmatteo-8.4.1' into develop,0.0
+bd06205,2017-05-28T11:35:02,Adjust tolerance for libxc#52,0.0
+0d58095,2017-05-28T19:15:38,Merge branch trunk_gonze/bd06 into develop,0.0
+1673f5c,2017-05-29T16:28:59,Add directive to undo vectorization in compute_migdal_energy in 68_dmft/m_energy,0.0
+19cb693,2017-05-30T12:49:20,Suppress optimization of compute_migdal_energy for intel compilers.,0.0
+a011ef1,2017-06-01T05:19:39,Merge branch release-8.4.1/476e into develop,0.0
+569b0d9,2017-06-01T08:41:54,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0.0
+7ac8d8a,2017-06-01T15:09:28,Update several ref *.ac files,0.0
+e683a01,2017-06-02T06:58:14,Upgrade testfarm *.ac reference files,0.0
+01a177d,2017-06-02T06:58:53,The gnu compiler version has chaned for graphene machine,0.0
+183420b,2017-06-03T07:05:51,Merge branch release-8.4.1/7db5 into develop,0.0
+fae338f,2017-06-03T07:16:05,Merge branch release-8.4.1/082f into develop,0.0
+9171237.0,2017-06-03T07:18:20,Reenable tests of multibinit on ubu_intel_17.0_openmpi  inside v8.5.0 ...,0.0
+e35f883,2017-06-03T12:17:00,Update some links,0.0
+26a7f0e,2017-06-03T16:54:52,Merge branch hotfix-8.4/7673 into develop,0.0
+4ed583e,2017-06-04T05:51:24,Modifs to finalize v8.5.0,0.0
+1.977e+84,2017-06-04T20:59:10,Add missing section in tests.conf  concerning bigdft_paral,0.0

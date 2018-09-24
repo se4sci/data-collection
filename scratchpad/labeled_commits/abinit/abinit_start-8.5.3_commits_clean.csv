@@ -1,769 +1,769 @@
 hash,time,message,buggy
-8c509e2,2017-06-02 09:38:14,multibinit: debugged the fit process and add headers to the routines,0
-068baf9,2017-06-02 11:56:05,multibinit: add check in the fit process for strten,0
-6cef01b,2017-06-02 11:56:33,Merge remote-tracking branch 'trunk/develop' into develop,0
-951c596,2017-06-06 12:24:01,multibinit: add option in order to fix some coeff in the fit process,0
-c9ccd38,2017-06-09 10:21:42,"Commit of a new directory ""input-web"" in the directory doc  to manage input variables with ABINIT features.",0
-50f40d1,2017-06-09 10:28:08,2 files removed in doc/input-web,0
-f1ffd58,2017-06-14 14:58:49,Update with input-web,0
-736df84,2017-06-20 12:27:38,multibinit: add single file for the xml and new generator of coefficients and update ref,0
-daa0def,2017-06-20 14:11:08,multibinit: print rprimd in column in the XML and update ref,0
-c9b9d0c,2017-06-20 15:27:18,small fix in the MPI of the fit process,0
-86fbb31,2017-06-21 09:14:26,small debug for farmtest,0
-304b0de,2017-06-22 10:48:33,add distribution of the memory for the fit process in MPI,0
-857ab3c,2017-06-22 12:24:43,small bug fixed for farmtest,0
-755565b,2017-06-22 19:40:35,Merge trunk/develop,0
-fc8dfba,2017-06-23 13:44:39,modification of pawpsp for LDA-1/2 calculation,0
-ee48e94,2017-06-23 13:55:22,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
-5e36608,2017-06-26 11:04:59,modification for LDA-1/2,0
-36fe3f8,2017-06-27 10:17:22,Add mdtemp in HIST file since it can be usefull for post-process,0
-7f43940,2017-06-27 12:01:24,mise à jour temp_tddft dans playground,0
-8c5072b,2017-06-27 12:07:42,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-5c42117,2017-06-27 14:49:12,Put back the archives (will be suppressed later),0
-5bb4eae,2017-06-27 15:31:37,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-7d27527,2017-06-27 16:08:29,ajout de abiref.bib,0
-d2e883d,2017-06-27 16:20:45,nettoyage input-web et playground,0
-2820a9d,2017-06-27 21:08:39,"Update Abivars.jar : compacted the ""Default"" box.",0
-b8bb10f,2017-06-28 08:41:46,Merge branch 'develop' into input-web,0
-6a24ba0,2017-06-28 08:43:25,Issue python abi_yml2html.py,0
-16b0f81,2017-06-28 14:31:58,Allow links to be created automatically from content of template. Also mv DOC_EFIELD_BEC_DIEL to documents.,0
-dc9e9ec,2017-06-28 14:34:18,Copy the needed files in the new playground.,0
-c607fef,2017-06-28 15:37:10,Create yml_templates  read yml_templates/template_varhtml.yml,0
-ab72083,2017-06-28 16:11:06,Code the treament of varbas.html . Not yet debugged.,0
-4a70269,2017-06-28 16:48:47,improve memory distribution in the fit process of multibinit,0
-e5a49fa,2017-06-28 17:52:36,Merge branch 'input-web' of gitlab:/trunk/abinit into input-web,0
-c2bb412,2017-06-28 21:09:13,A first version for generation of varbas.html from varbas.ylm is working.,0
-1baac62,2017-06-29 08:56:41,Merge remote-tracking branch 'trunk/develop' into develop,0
-7e0bbc3,2017-06-29 10:47:23,add v8[13-14] automatic tests for the fit process of multibinit,0
-cd7dbcb,2017-06-30 14:53:06,Reordered methods writing the DDB.,0
-78c4d5e,2017-06-30 14:54:12,Merge remote-tracking branch 'trunk/develop' into develop,0
-5450e7a,2017-06-30 15:19:59,création des fichiers temp_recursion et temp_Wavelets,0
-7db11d0,2017-06-30 15:21:56,debug fit process of multibinit and update refs for tests,0
-e131d18,2017-06-30 15:23:37,Use the file sections.yml as a generic file to contain all information on specific var* files.,0
-7f0398d,2017-06-30 16:01:11,Write a function that read a yml file  with proper treatment of the echo.,0
-e25f659,2017-06-30 16:23:06,"The writing of the ""normal"" var* files is rationalized.",0
-2e27a29,2017-06-30 16:49:41,"Complete the sections.yml file with the ""default"" section   complete the definition of the Section class.",0
-5a1a1f2,2017-06-30 16:54:01,add paral test for the fit process of multibinit,0
-f525ac4,2017-06-30 20:09:06,Now works on the test case sections.yml  containing default. Should be more tested  though  allowing to overwrite the default..,0
-a763c6b,2017-06-30 21:02:52,Defined ddb_hdr_type and some of its subroutines.,0
-844dd15,2017-06-30 23:26:37,respfn now initializes a ddb_hdr and calls ddb_hdr_open_write,0
-36a1b3c,2017-07-01 06:33:31,"Use the getattr function instead of my ""extract ..."" function (suggested by Matteo !)",0
-fd57331,2017-07-01 07:14:23,Merge remote-tracking branch 'remotes/jollet/input-web' into input-web,0
-0364633,2017-07-01 07:25:19,Upgrade the playground to the modifs made by François.,0
-da0b7d9,2017-07-01 09:57:36,Fixing too many deallocations.,0
-fbdb574,2017-07-01 10:26:20,Fixing deallocations.,0
-a960b7f,2017-07-01 14:52:19,Still fixing the deallocations.,0
-1551fdb,2017-07-01 15:55:04,Again  fixing deallocations.,0
-bcfcb69,2017-07-02 11:46:17,Fixing deallocation...,0
-d903c9a,2017-07-02 13:54:44,Creature comfort make it painless.,0
-773ed76,2017-07-02 14:59:27,Debugging...,0
-c31cee8,2017-07-02 16:32:12,signs of life,0
-915f301,2017-07-02 18:14:36,Now the specials.html is generated like the var*.html files.,0
-e2b0505,2017-07-03 05:58:05,Fixed bugs,0
-5b21d05,2017-07-03 06:17:18,"Start to simplify the ""topics"" section.",0
-925b630,2017-07-03 06:22:25,Clean !,0
-43602ec,2017-07-03 08:33:58,Simplify,0
-3b79c8a,2017-07-03 08:46:14,Simplify again,0
-d9aa85d,2017-07-03 09:07:24,Simplify !,0
-bfe3d44,2017-07-03 09:12:48,Simplify,0
-c309c7b,2017-07-03 09:44:23,Simplify,0
-0cea3a3,2017-07-03 09:49:24,Explain better the content of the sections.yml file.,0
-ef0c924,2017-07-03 10:44:09,add paral test for the fit process,0
-c2ae76b,2017-07-03 10:52:38,Initiate the new generation of topic files,0
-82d8cb5,2017-07-03 11:00:03,add constraint to the tests related to the fit process : HAVE_NETCDF,0
-c8752a3,2017-07-03 11:02:39,Looking for signs of life.,0
-e2373d9,2017-07-03 11:59:15,Born in a diamond mine,0
-8a23f46,2017-07-03 12:41:12,Merge remote-tracking branch 'trunk/develop' into develop,0
-ff96395,2017-07-03 14:20:55,Fixing non-ascii characters.,0
-97b289c,2017-07-03 14:36:32,quick fixes for the new paral tests,0
-3cb5ca9,2017-07-03 16:16:57,Continue to work on the automatic generation of the topic files,0
-01809b0,2017-07-03 17:41:11,Debugging ascii problem.,0
-934d7b3,2017-07-03 18:12:54,The automatic generation of the file topic_DFT+U.html file seem to work.,0
-21053ef,2017-07-03 20:26:17,topic_DFT+U.html and topic_hf.html are now OK,0
-dfb9160,2017-07-04 05:39:56,Generates the list of topics automatically using the new implementation.,0
-0df0fe6,2017-07-04 06:07:19,The new machinery to treat topics is now in place. Need translating the old files  and then cleaning the script (old sections are still generated !),0
-4b8bac3,2017-07-04 08:41:13,Merge branch 'develop' into input-web,0
-3b49f61,2017-07-04 09:01:53,Constitution of the table of content flexibility checked.,0
-d99b7c2,2017-07-04 09:05:58,"Remove references to ""sec3"" for input variables and to ""sec4"" for input files",0
-1fef02d,2017-07-04 09:57:41,"Add the possibility to have an ""Examples"" section.",0
-b99c6b3,2017-07-04 10:15:42,Transfer list_of_topics.yml to yml_templates,0
-d6469f8,2017-07-04 10:26:43,Start to update the doc/input_variables directory,0
-d9c0182,2017-07-04 10:29:17,mv tests_dirs.yml -> yml_templates/tests_dirs.yml,0
-9208729,2017-07-04 10:35:45,The new mechanism should be working correctly in doc/input_variables,0
-a404bd1,2017-07-04 10:37:20,Fix,0
-7e6fc8f,2017-07-04 10:56:44,Big upgrade of the generated files.,0
-a1c046a,2017-07-04 11:01:57,New topic files automatically generated.,0
-b0c738a,2017-07-04 11:09:05,Made topics visible.,0
-b2559d1,2017-07-04 11:13:44,Minor modif with spaces,0
-2149a1e,2017-07-04 11:15:59,Minor fixes,0
-8a8062d,2017-07-04 11:17:51,Minor fix,0
-c38a65b,2017-07-04 11:22:10,Remove the old playground_OLD directory,0
-dc53b2c,2017-07-04 11:22:52,mv the playground directory to playground_OLD2,0
-d163f70,2017-07-04 11:23:55,Create the new playground (for bibliography),0
-3e730d0,2017-07-04 11:36:29,Clean the scripts  start to suppress the old mechanism,0
-2bc4061,2017-07-04 12:07:01,Continue the cleaning,0
-a676566,2017-07-04 12:11:23,Remove tocontent_header for topics  not needed anymore,0
-39248f2,2017-07-04 12:25:20,Minor fix,0
-b936314,2017-07-04 12:28:04,Clean the automatically generated directory,0
-80b50f3,2017-07-04 12:30:04,rm xc.html,0
-9f0e1f7,2017-07-04 12:37:40,Merge remote-tracking branch 'trunk/develop' into develop,0
-df6c662,2017-07-04 12:39:46,Minor modifs,0
-053125d,2017-07-04 12:51:50,Transfer abi_yml2html.py to yml_files (as well as other needed file),0
-a293020,2017-07-04 13:00:05,Problem solved.,0
-a1ed350,2017-07-04 13:05:18,Suppress the html_template directory  and perform additional cleaning.,0
-2ab3d76,2017-07-04 13:21:33,Fix minor problem with abi_checks.py,0
-ddff785,2017-07-04 13:28:12,modification of m_pawpsp.F90 for LDA-1/2,0
-9707328,2017-07-04 13:36:53,commit avant merge Xavier,0
-d8a456b,2017-07-04 13:37:49,Straightened the content of specials yml file.,0
-85f8b0d,2017-07-04 13:37:57,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-1c13ce4,2017-07-04 13:57:23,Define list_topics_class.yml . Now  most of the data are outside the script.,0
-86a1363,2017-07-04 14:12:50,Debugging libpaw.,0
-4b7cf68,2017-07-04 14:27:46,still debugging.,0
-d2c3ef7,2017-07-04 14:36:42,Reverted m_pawtab,0
-3b0490a,2017-07-04 14:58:17,Sweeeeet home alabamaaaa,0
-f84107f,2017-07-04 15:06:53,I'm a liar don't doubt my sincerity,0
-5d693da,2017-07-04 15:32:49,Minimal,0
-12b53f2,2017-07-04 15:57:49,Bla bla,0
-ba809a9,2017-07-04 16:08:32,Meh,0
-3d09017,2017-07-04 16:26:17,Debugging decoding.,0
-676d7a2,2017-07-04 17:10:06,debugging libpaw,0
-622df06,2017-07-04 17:10:17,ajout des fichiers topic_,0
-ef180ae,2017-07-04 17:21:12,Still debugging m_pawtab,0
-0f8d43e,2017-07-04 21:53:50,Merge remote-tracking branch 'remotes/jollet/input-web' into input-web,0
-7d76df3,2017-07-04 22:03:36,Add many files in the yml_files directory  from the playground,0
-554e717,2017-07-04 22:16:02,Files have been transferred from playground to input_variables,0
-0814fd9,2017-07-04 22:20:14,Archive the latest playground.,0
-122403a,2017-07-05 07:45:36,Merge biederj/develop/8a23 into _biederj,0
-a19cd1d,2017-07-05 09:27:39,small fix in fit process (remove coeffs supperior to 1E10),0
-fc01350,2017-07-05 09:27:50,Merge remote-tracking branch 'trunk/develop' into develop,0
-bee2e8c,2017-07-05 11:26:01,Reverting.,0
-3b5323a,2017-07-05 11:30:12,Merge remote-tracking branch 'trunk/develop' into develop,0
-6e2259c,2017-07-05 12:04:28,Gave up on pawtab_copy and used a cheap replacement.,0
-b3dbcf1,2017-07-05 14:34:47,Replaced several calls to ddb_io_out with the functions of ddb_hdr.,0
-2eef72a,2017-07-05 17:00:09,reorder some routines in 78_effpot and update all the routine headers,0
-22a06dd,2017-07-05 17:40:10,creation du fichier topic_PIMD + liens vers les inputs tests,0
-bc023a6,2017-07-05 23:19:59,Suppress the old playgrounds. Also fix minor issues.,0
-70e13fd,2017-07-05 23:25:37,Automatically regenerate the topic files. The list_internal_links.js is now cleaned.,0
-da05c3b,2017-07-06 02:49:01,Create a python reader of bibtex file  also writer of yaml (just to test).,0
-91c8201,2017-07-06 09:55:02,Added option argument fullinit to ddb_hdr_open_write,0
-c0f4f44,2017-07-06 09:56:58,move find_bound from m_effective_potential.F90 to m_phonon_supercell.F90,0
-a737881,2017-07-06 10:30:07,"Replace ""newtopic"" by ""topic""",0
-97c2c03,2017-07-06 10:31:50,Fix newtopic to topic.,0
-e96c5a5,2017-07-06 12:44:55,multibinit: add possibility to read ASCII MD file,0
-a683176,2017-07-06 17:57:18,The script abi_bib2yml.py also produces now the file abiref.txt  for checking purposes. Also  the abiref.bib has been straightened : e.g. the IDs now all use four-digits years.,0
-d42a9f0,2017-07-07 05:41:04,iMore verifications done by abi_bib2yml.py . Treatment of phdthesis  masterthesis. Also some fixes in the initial database.,0
-6c46e7c,2017-07-07 08:03:54,Merge amartin/develop/e96c into _amartin,0
-70ea13b,2017-07-07 09:23:50,Create first version of generate_doc.py  that should replace abi_yml2html.py in the future .,0
-8f507ac,2017-07-07 10:01:37,The new script generated_doc.py reproduces the previous automatically generated files.,0
-9084fd0,2017-07-07 10:08:36,Clean and simplify,0
-add73d1,2017-07-07 10:33:30,Define paths for yml and html files.,0
-c042e90,2017-07-07 10:44:01,"Create new directory ""topics""",0
-6bb0af1,2017-07-07 11:12:16,Use shorter names for the directory (html_automatically_generated => html_generated),0
-c9fce34,2017-07-07 11:16:53,add README.md files,0
-3b49237,2017-07-07 11:28:24,Activates the change of directory,0
-6d0ccb8,2017-07-07 12:15:29,The splitting seems OK. Tests have been done.,0
-5105d7c,2017-07-07 12:48:28,Able to read and treat the bibtex file.,0
-73a1526,2017-07-07 13:03:56,Store the body of the bibtex items. For later reordering without modification.,0
-ea0af22,2017-07-07 23:54:14,Successfully made use of ddb_hdr for reading and writing. Need to clean up.,0
-e3d7edd,2017-07-08 16:33:22,Corrected the reading of usepaw in the DDB.,0
-83419de,2017-07-08 19:35:06,Fixed a test.,0
-c82e60b,2017-07-09 15:45:32,Fixed reading ntypat.,0
-83c11ae,2017-07-10 17:50:01,Printing debug information.,0
-96ca26a,2017-07-10 18:51:48,debugging,0
-7fce3e1,2017-07-10 21:06:12,Properly initialized nblok,0
-e79fc8b,2017-07-10 21:45:21,Removed debug printing.,0
-aaf42f9,2017-07-11 09:39:07,The generation of the bibtex.html files is OK.,0
-46b133b,2017-07-11 10:25:16,The bibliography.html is now generated.,0
-bc29071,2017-07-11 10:31:43,Remove unneeded files,0
-8b6039c,2017-07-11 10:35:11,Correct the place for list_topics_class.yml,0
-f0fc931,2017-07-11 10:55:25,Fixing abirules and robodoc.,0
-981a60e,2017-07-11 10:58:37,Cleaning up.,0
-35cb4df,2017-07-11 11:20:56,Clean,0
-e45a79b,2017-07-11 11:35:06,Minor formatting modifications.,0
-2b4ea70,2017-07-11 12:35:29,Complete the bibliography database with papers mentioned in the acknowledgment section.,0
-646debd,2017-07-11 12:58:33,Treatment of the French accents. Not fully succesfull ...,0
-913c5ed,2017-07-11 13:17:46,Activate automatic creation of links to bibliography.html file.,0
-a2d48cc,2017-07-11 13:37:14,Complete references in PIMD topic.,0
-976f1cd,2017-07-11 15:47:03,Many small corrections  as well as start to constitute the list of backlinks.,0
-219b5af,2017-07-11 16:06:55,The list of backlists start to work. Formatting to be corrected  though ...,0
-e7f8995,2017-07-11 20:01:37,Rearranged several subroutines.,0
-4b3cac1,2017-07-11 20:35:20,Fixed some more stuff.,0
-6538e2f,2017-07-11 22:15:31,Fixed reading 3rd order derivatives.,0
-0fb6b34,2017-07-12 09:42:57,Fixed thmeig,0
-267e241,2017-07-12 09:57:43,Treat specials characters correctly.,0
-ec06877,2017-07-12 12:49:15,Save fold2bloch results in netcdf format  add cut3d option to convert from Fortran to Netcdf,0
-34c5daa,2017-07-12 12:49:28,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into fold2bloch,0
-f7d1f2b,2017-07-12 15:30:23,Fix command line interface for fold2bloch,0
-c6ff8d2,2017-07-12 16:06:38,This time  the accentuations are treated correctly.,0
-3522673,2017-07-12 21:27:18,Fix many small problems in both the bibtex and the python script.,0
-a13da6a,2017-07-12 21:28:35,Reorder the abiref.bib,0
-c375f78,2017-07-13 05:30:07,Introduce alphabetic labelling in bibliography.html file. Fix minot issues in abiref.bib.,0
-6353cc2,2017-07-13 06:55:37,Clarify+clean the directory structure inside the doc dorectory. Also set up README.md files.,0
-3dc7c9c,2017-07-13 11:58:15,Corrected argument declarations in thmeig.,0
-cf1ddfe,2017-07-13 14:33:33,Fixed call to crystal_init.,0
-e67f6b0,2017-07-13 15:56:53,Debugging,0
-8c4bca4,2017-07-13 17:44:00,Temporarily reverted functions ddb_from_file and rdddb9 for debugging.,0
-2a5d42f,2017-07-13 18:03:47,Made use of ddb_hdr more carefully in rdddb9 to find bug.,0
-02574a6,2017-07-13 22:40:52,Reverted again.,0
-f0d2926,2017-07-14 05:38:01,Coded the section on references in each topic  However  does not work yet ...,0
-500ce59,2017-07-14 05:51:36,Fix bug. The accented characters are OK again.,0
-74481c8,2017-07-14 06:33:05,Constitute a function bibtex2html,0
-14c3cc4,2017-07-14 06:34:55,Use ibtex2html to improve the reference section of the topic files.,0
-7391852,2017-07-14 12:36:36,Trying to sanitize cyrstal initialization.,0
-611c562,2017-07-14 14:10:35,Hopeless attempt to evince the cause of the bug.,0
-a8d368a,2017-07-14 14:17:42,Reverted a bit more in anaddb.,0
-1a4e7ed,2017-07-14 14:25:36,Change the location of the symbolic link to tests (to ease further compatibility with the Web delivery),0
-3b03dea,2017-07-14 15:11:45,Passed mpi communicator to ddb_hdr_open_read.,0
-21f51ab,2017-07-14 15:14:58,Fixed a typo.,0
-9d5bb68,2017-07-14 16:18:43,THe lesson base1 is generated automatically. However  links are not yet correct ...,0
-587f526,2017-07-14 16:21:24,Fixed another typo,0
-f3b45ae,2017-07-14 17:58:46,Fixed ntypat in anaddb.,0
-add4d05,2017-07-14 19:32:45,Reverted the reading of the ddb to the new ddb_hdr interface.,0
-21250e8,2017-07-14 20:36:47,Must go back to previous commit to fix error.,0
-3a28367,2017-07-14 21:56:53,All the links work in the generated lesson_base1.html file.,0
-630c1fe,2017-07-14 22:10:35,Create two more references  related to input variables einterp.,0
-fdb3eae,2017-07-15 05:28:23,Provides also reference output files for the tuto* tests inside the infos_html tar.gz,0
-30e5367,2017-07-15 05:42:50,Include correct links to referecne files for tutorial_base1,0
-bfa60f0,2017-07-15 05:49:19,Restructure dirs for tutorial,0
-77c80d5,2017-07-15 05:50:13,Fix,0
-5376c7a,2017-07-15 05:51:40,Correct,0
-9f48074,2017-07-15 05:55:40,Fix link,0
-47036f9,2017-07-15 09:33:31,Set up automatic translation procedure for the lesson_*.html files,0
-4294378,2017-07-15 10:31:53,Generate a dozen of html files using the new mechanism.,0
-02a9b25,2017-07-15 10:40:22,"Copy all complementary directories in ""documents""",0
-151da90,2017-07-15 10:59:43,Treat correctly the links indicated by src= .,0
-aa89044,2017-07-15 11:14:11,Reverting rdddb9 to ddb_hdr.,0
-8b0799c,2017-07-15 11:14:49,Fix subtitle printing.,0
-94220fb,2017-07-15 11:34:08,Use correctly the comments in HTML .,0
-e747efd,2017-07-15 11:56:20,Introduce the markers for intro and body in all the lesson*html files,0
-30d95a1,2017-07-15 12:06:41,Reverted ddb_from_file to ddb_hdr.,0
-4e2cabf,2017-07-15 16:47:45,Fixed ddbun in ddb_from_file.,0
-366ad1f,2017-07-15 18:22:40,Removed some debugging features. Final check before merging back into develop.,0
-cef325c,2017-07-15 19:24:47,Create all the other lesson_*.html files (also *.yml). Also correct many special characters !,0
-12a0fff,2017-07-15 20:35:25,"Change ""initial"" by ""origin""",0
-8824b16,2017-07-15 20:40:14,Merge branch 'secondrevert' into develop,0
-34205f5,2017-07-15 21:07:07,Generate also the welcome file  now names lesson_welcome.html,0
-e5c9a48,2017-07-15 21:21:03,Change the default link to the lesson_*html files.,0
-4d8504d,2017-07-15 21:23:39,Suppress unneeded files lesson* in doc/tutorial,0
-cee81b5,2017-07-15 21:27:24,The doc/tutorial/future_origin_files is not needed anumore as well,0
-8072fe4,2017-07-15 21:33:35,create theory/documents   and also move the bse and gw theory files from tutorial to theory,0
-a50f62a,2017-07-15 21:52:50,Reorder the sections in the generate_doc.py file,0
-e9530bb,2017-07-16 07:38:11,Create theory/origin_files with corresponding content.,0
-013a3e3,2017-07-16 08:13:12,Create a function assemble_html  presently used for tuto / lesson .,0
-748c6ca,2017-07-16 08:18:45,Apply the new version of the script.,0
-b1dbc0f,2017-07-16 08:27:23,Code the assembly of the theory.html files,0
-a19a850,2017-07-16 08:41:43,Generated html files in the theory directory,0
-9b418c4,2017-07-16 09:18:11,Fix many links. Also other minor modifications.,0
-0b1317c,2017-07-16 09:44:44,"Define a global class ""components""  that supercedes the old ""section"" and ""topic"" classes.",0
-8b0c0df,2017-07-16 10:41:04,Restructure generate_doc.py  create pymods/lib_to_assemble_html  define the authors in topics.,0
-dd839e7,2017-07-16 10:54:11,Minor modifs,0
-f9a1c9a,2017-07-16 10:54:44,Define pymods/lib_to_assemble_html.py,0
-39b2e14,2017-07-16 11:06:27,More flexible,0
-dd24924,2017-07-16 12:16:27,Define the possibility fo have supplementary components for assemble_html,0
-534786a,2017-07-16 17:34:00,The new generation of files in bibliography dir works.,0
-39e2de0,2017-07-16 18:16:40,Define function finalize_html,0
-97f6431,2017-07-16 18:23:12,Use finalize_html to finalize the topics,0
-d8fc3a7,2017-07-16 18:29:02,finalize_html is used to generate the all_topics file  and fix one problem.,0
-72d143a,2017-07-16 19:18:57,Use finalize_html for the var*.html files,0
-f51bf45,2017-07-16 21:25:10,Use assemble_html for input_variables files,0
-18eef73,2017-07-16 21:52:45,Cleaned up the interface of thmeig.,0
-83ba6de,2017-07-17 07:03:19,"Change ""section"" to ""varfile"" everywhere. Less ambiguous ...",0
-8f5f346,2017-07-17 07:27:21,Set up users/origin_files/abinit_help.yml from users/abinit_help.html,0
-1a82339,2017-07-17 07:38:45,Generate automatically users/generated_files/help_abinit.html,0
-20dcee9,2017-07-17 08:15:07,Now generate all help files automatically. Still to be tuned !,0
-3f5486d,2017-07-17 10:13:22,Attempting to recover old behavior of thmeig modifying crystal.,0
-8c5365a,2017-07-17 11:05:06,Put back a useless call to ddb_hdr_open_read for debugging.,0
-abfa1e2,2017-07-17 15:01:41,Reverted again anaddb and thmeig.,0
-b8649bf,2017-07-17 19:25:29,reverting m_ddb_hdr.,0
-ebfbf97,2017-07-17 20:23:15,Restored anaddb also.,0
-d09f09a,2017-07-17 20:37:22,Start to correct many minor issues,0
-365ee05,2017-07-17 21:49:19,Continue to fix bugs in script  or in old html files ...,0
-8c0c3b7,2017-07-17 22:00:12,Reverted m_ddb also.,0
-6045c6e,2017-07-18 06:18:23,Minor corrections.,0
-563215c,2017-07-18 09:49:00,Trying to fix speed of sound calculation.,0
-004f76b,2017-07-18 10:47:46,Modified final value of spherical average in ifc_speedofsound.,0
-3f3efbe,2017-07-18 11:20:25,Define allowed_link_seeds to gather all the link seeds,0
-3c227cb,2017-07-18 11:54:58,Define links to files in test directory,0
-1ffbb16,2017-07-18 13:18:53,Now the links to files in tests/*/Input and tests/*.Refs work.,0
-5d9c480,2017-07-18 13:54:59,"what ABINIT does file is now inside ""users"" dir  and treated as a help file.",0
-7b0d710,2017-07-18 13:56:13,Add the automatically created what ABINIT does files,0
-ed444a6,2017-07-18 14:18:24,Detect when there are two bibtex with the same reference,0
-281e699,2017-07-18 14:23:25,Restored the new interface of thmeig.,0
-59c43e2,2017-07-18 14:27:39,Regenerated the reference for the test [v8][t45] since I modified the computation of the spherical average of speed of sound (subroutine ifc_speedofsound). The numerical result should be more stable  but I needed to update the reference so that the test succeeds on abiref.,0
-4ea8d20,2017-07-18 14:27:56,Minor fixes,0
-0bb2628,2017-07-18 15:32:13,Used a more stringent convergence criterion in test [v8][t45].,0
-2ed2732,2017-07-18 15:46:48,Generates automatically the list of generated files.,0
-1ab0c44,2017-07-18 15:50:01,Merge remote-tracking branch 'trunk/develop' into develop,0
-806a54e,2017-07-18 15:51:26,Set aside the old html files.,0
-6813543,2017-07-18 16:53:10,Corrected the calculation of the mean absolute error in the spherical avergave of speed of sound. Regenerated corresponding test.,0
-b6e2cd0,2017-07-18 17:03:13,cleaning for LDA-1/2,0
-e9843ec,2017-07-18 18:04:36,Work on reenabling tests of all variables,0
-da144d5,2017-07-18 19:06:32,Modified the reference file for the test according to abiref. This is a bit of a cheat  but the error reported by this machine was:  t45.out passed: absolute error 0.005 < 1.1  relative error 0.0005465 < 0.12 [file=t45.out],0
-ba19c43,2017-07-18 21:01:05,Merge branch 'develop' of abigit:trunk/abinit into develop,0
-3c09975,2017-07-19 08:25:18,Fix typo,0
-53f12f6,2017-07-19 09:50:41,correction of html links for topics,0
-d6f27d9,2017-07-19 10:22:21,Shorten the running messages issued by generate_doc.py,0
-5bdd9f5,2017-07-19 10:28:16,"Replace ""class"" by ""tribe""",0
-5c839ce,2017-07-19 10:30:05,Fix minor bug,0
-d9dbde4,2017-07-19 10:55:40,bug correction for merge-request,0
-63de7a2,2017-07-19 11:11:31,Shorten the beginning of the var files. Also fix numerous small typos/links.,0
-b5b287f,2017-07-19 11:16:56,Improve the heade rof the generated files in the bibliography directory,0
-c63e1b1,2017-07-19 11:30:02,Fix many links,0
-9395f96,2017-07-19 11:45:25,An line of alphabetical links is defined for allvariables.html.,0
-e2939f6,2017-07-19 11:47:30,Clean,0
-c6f20ba,2017-07-19 11:49:19,Merge remote-tracking branch 'jollet/input-web' into input-web,0
-0289755,2017-07-19 11:58:25,link corrections,0
-ee3069b,2017-07-19 11:59:12,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-54047cf,2017-07-19 12:29:54,Pass assumed-length chars to MPI wrappers,0
-a0b6a80,2017-07-19 12:30:27,abi_check.py is OK,0
-2d0e1d1,2017-07-19 13:09:21,bug in html links,0
-fc837c4,2017-07-19 13:13:57,Start restructure generate_doc.py,0
-0a0bd8a,2017-07-19 13:59:58,Rename theory_XXX.yml to theorydoc_XXX  and also fix numerous links.,0
-4a63d47,2017-07-19 14:09:30,Change bibhtml.yml to bibfiles.yml,0
-851f266,2017-07-19 14:18:36,Internal renaming,0
-a891227,2017-07-19 15:20:52,Restructure the parsing of generate_doc.py,0
-b4dacde,2017-07-19 15:26:03,Clean unneeded part of code,0
-5cfd169,2017-07-19 15:43:35,More cleaning,0
-5b3597f,2017-07-19 15:47:27,"Fix closing of ""balises"" remarked by JMB",0
-87fe7fa,2017-07-19 17:32:32,bug correction for the test farm.,0
-74b1e37,2017-07-19 17:45:43,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-5a1368b,2017-07-19 20:34:17,Extract invariant to avoid internal compiler error with intel2013_sp1.1.106,0
-19d1ffb,2017-07-20 07:45:58,Merge gmatteo/assumed-length/5404 into _gmatteo,0
-2da9b8a,2017-07-20 08:12:42,Remove errors detected by linkchecker for bibliography,0
-0eb3f4b,2017-07-20 08:39:02,Correct links in abinit_vars.yml,0
-0a230ac,2017-07-20 08:43:27,Upgrade abifre.bib  and clean theory dir,0
-8fe0297,2017-07-20 08:47:35,Fix links,0
-e022dfa,2017-07-20 09:02:42,Fix problems detected by linkchecker in tutorial doc,0
-479b633,2017-07-20 09:19:08,Fix links in turtorial dir,0
-5ad515f,2017-07-20 09:54:43,Fix links in users dir,0
-8c348cd,2017-07-20 10:01:05,"Regenerated all ""generated_files""",0
-f26567c,2017-07-20 10:07:41,Merge jollet/develop/87fe into _jollet,0
-bf563f4,2017-07-20 10:12:34,Clean stuff due to contamination with input-web branch.,0
-41c7af8,2017-07-20 10:20:56,link correction for topics,0
-5ecc5d9,2017-07-20 10:47:47,Continue to fix links  in tutorial and theory,0
-e6ff205,2017-07-20 10:52:35,Regenerated files,0
-648a72a,2017-07-20 11:01:55,html link corrections in topics,0
-b88be39,2017-07-20 11:13:57,More links fixed,0
-1de62c5,2017-07-20 11:14:26,Regenerated files,0
-08a898d,2017-07-20 11:16:05,Merge jollet/input-web' into input-web,0
-1543101,2017-07-20 11:21:47,This list_internal_links.js was needed in the current status.,0
-99b7073,2017-07-20 11:33:47,add files in topis,0
-3487a40,2017-07-20 11:35:15,Merge jollet/input-web' into input-web,0
-ca4d2dc,2017-07-20 11:47:18,Fix links in bibliography file,0
-1be8ce2,2017-07-20 12:14:34,Many link fixed,0
-9fcc60c,2017-07-20 12:15:06,Regenerate html files,0
-e3fab77,2017-07-20 12:33:29,Fix several links,0
-9e07ffa,2017-07-20 13:01:16,Fix bugs that created problems for link,0
-e5ffa87,2017-07-20 13:04:33,Fix links in topics dir,0
-f68460c,2017-07-20 13:08:45,More links fixed. Likely final ...,0
-65e8134,2017-07-20 13:27:14,Update links,0
-c623fdc,2017-07-20 13:38:43,Fix the problem to make the infos_html tar.gz file,0
-3602954,2017-07-20 13:52:58,Reference fixes. Also correct a title.,0
-74b7a55,2017-07-20 14:42:12,add references in topics+ vdw topic,0
-414310e,2017-07-20 14:52:09,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-b45ad75,2017-07-20 15:04:48,Creat the help for the script generate_doc.py,0
-65bba6b,2017-07-20 15:05:45,Merge jollet/input-web into input-web,0
-41ba523,2017-07-20 17:51:37,Minor fixes  after merge with François.,0
-a12c654,2017-07-20 19:27:37,Fix URL,0
-90398d5,2017-07-20 20:23:17,Regenerate the doc,0
-f4f15ec,2017-07-20 20:51:52,Correct fix this time ?!,0
-b5ac882,2017-07-21 07:28:46,Merge branch 'input-web' into _merge_input-web (for security checking),0
-540d55e,2017-07-21 07:34:31,Remove unneeded files.,0
-fc6d555,2017-07-21 17:17:50,add DMFT  CRPA and TransPath in the topics,0
-e9cb5b9,2017-07-22 06:49:36,Merge jollet/input-web into input-web,0
-dd66075,2017-07-22 07:18:45,Add the old ABINIT_CPC.tar.gz,0
-f9233e4,2017-07-24 10:23:37,Rm ABINIT_CPC.tar.gz that was there only for communicating it to Francois.,0
-d3563bf,2017-07-24 11:54:22,Removed unnecessary call to ddb_hdr_open_read in anaddb.,0
-f25866c,2017-07-24 13:50:38,Import lesson on temperature-dependence of the electronic structure from the wiki.,0
-b9bdad1,2017-07-24 15:14:23,Add fancier display of the input variables,0
-7f0902c,2017-07-24 15:52:59,Imported the text of the tdepes lesson inside abinit/doc.,0
-096d87c,2017-07-24 16:07:26,Minor fix,0
-adc3fed,2017-07-24 18:42:14,add new topics,0
-32e4519,2017-07-24 21:58:50,Merge jollet/input-web into input-web,0
-ba2672f,2017-07-25 08:12:26,Merge biederj/input_web/b9bd into _biederj,0
-da58ec9,2017-07-25 08:29:09,Apply generate_doc.py,0
-2c7b2e9,2017-07-25 08:54:36,Add figures in doc/tutorial/documents/lesson_tdepes  also clean doc/tutorial/documents/theory_*  actually duplicated in doc/theory ...,0
-eef1000,2017-07-25 10:06:52,Modify the constitution of list of lessons and topics. Also add figs and eqs for tutorial tdepes.,0
-ee51469,2017-07-25 10:12:14,Clean,0
-e48bdf3,2017-07-25 10:25:42,Improve comment. Fix equation in lesson_tdepes.,0
-05ccb3f,2017-07-25 10:33:04,Update the ref for abirules#01,0
-2a934c5,2017-07-25 11:26:43,"Order the ""Howto"" list using the keywords instead of the names",0
-aa27190,2017-07-25 11:45:56,Improve an error message in check_forbidden_in_doc_yml.py  and clean one of the references.,0
-81743fc,2017-07-25 11:49:55,Merge input-web into _biederj,0
-7926287,2017-07-25 16:13:17,Start to clean references in DMFT tutorial.,0
-fc78bcf,2017-07-25 18:05:59,add topics DFPT  GWls and El-ph,0
-ac719c2,2017-07-25 18:12:08,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-3a15aaf,2017-07-26 08:50:55,Fix several problems due to the change of name temp to tdepes  hf to hybrids then to Hybrids. Should pass the tests on abiref_debug,0
-a66e83c,2017-07-26 08:57:30,Merge _biederj into input-web,0
-aa4438c,2017-07-26 08:59:56,Merge jollet/input-web into input-web,0
-269c2fe,2017-07-26 09:54:37,"Define ""misc"" bibtex entrey   correct ""masterthesis"" to ""mastersthesis""    fix several typos.",0
-1f5768f,2017-07-26 10:16:03,Fix a bug in the ordering of the title/subtitle in the lists of files. Also miscellaneous fixes.,0
-68fde11,2017-07-26 10:53:57,Fix typo,0
-9ec5fd6,2017-07-26 11:33:03,Fix issues in lesson_DMFT. Also add the needed references.,0
-eafa725,2017-07-26 11:34:21,Merge develop into input-web,0
-9f6b2ae,2017-07-26 12:19:56,abi_checks.py checks the topic name and tribe provided for each input variable. One error was detected. Apparently  still 133 input variables that do not have yet a topic+tribe.,0
-5bfe812,2017-07-26 12:47:10,Improve capture of errors in yml files.,0
-e60969a,2017-07-26 13:08:43,Suppress the doku2html function  not appropriate.,0
-ede9a40,2017-07-26 13:13:19,Reinstall some error messages  lost due to overwriting.,0
-4abdbe4,2017-07-26 13:25:19,Create the function read_yaml,0
-2d1ef75,2017-07-26 13:58:52,Allow the use of the | separator to make links  as in dokuwiki.,0
-05fecd1,2017-07-26 14:22:57,Anaddb can now write interpolated DDB files.,0
-84d6928,2017-07-26 14:34:58,add topics temperature dependence of eigenenergies ad finite electric field.,0
-224e797,2017-07-26 14:38:31,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-49acb9f,2017-07-26 14:52:38,Work on dokuwiki syntax,0
-8297489,2017-07-26 15:29:35,Restored a line I had accidentally removed.,0
-019c175,2017-07-26 15:30:27,Deal with namespaces,0
-3f6380d,2017-07-26 15:51:22,"Use upper case for all ""characteristic"" of input variables.",0
-999cc13,2017-07-26 15:59:01,Test the dokuwiki features of the links. It works ...,0
-e044434,2017-07-27 08:29:30,Intermediate step towards the constitution of the varset: namespace,0
-1ca8096,2017-07-27 08:49:10,Now the varset: namespace is activated.,0
-cbebdf3,2017-07-27 10:04:17,Added a test for prtddb variable.,0
-36dd43a,2017-07-27 10:14:02,"""specials"" has been replaced by ""externals""  which is more accurate. Also  the namespace varset:   is OK.",0
-e83a619,2017-07-27 10:27:38,Minor fixes,0
-8c8fddb,2017-07-27 11:01:09,Allos sections in links  using the dokuwiki style #,0
-96eee24,2017-07-27 11:20:53,Properly closed all files in anaddb.,0
-a8920b1,2017-07-27 11:23:11,Merge remote-tracking branch 'trunk/develop' into develop,0
-2bb4a1d,2017-07-27 12:33:52,Moved the documentation of prtddb to the new yaml source file.,0
-db0f392,2017-07-27 13:47:56,The mechanism for creating sections and indexing them works.,0
-49d1119,2017-07-27 14:11:52,"Add a few bib items  and also define the ""unpublished"" bibtex item.",0
-be2abf1,2017-07-27 14:20:44,Clean lesson_ucalc_crpa,0
-fc6d388,2017-07-27 14:25:11,Merge jollet/input-web into input-web,0
-46886c6,2017-07-27 14:55:51,add topics GW  BSE and Random stopping power,0
-7994782,2017-07-27 14:58:43,Merge jollet/input-web into input-web,0
-d3e7e4c,2017-07-27 14:59:58,Order the bibliography file,0
-da2815c,2017-07-27 16:14:23,"Replace ""ldau"" by ""dftu""",0
-2af2c6b,2017-07-27 18:19:53,"Introduce a new field ""executables"" in Abivars.jar",0
-afac0f9,2017-07-27 18:46:01,add topic Electric Field Gradient,0
-42b5dd0,2017-07-27 18:54:15,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-213c61b,2017-07-27 21:08:20,Small script  will be used as template to modify a bunch of files,0
-880371a,2017-07-27 21:09:27,Merge jollet/input-web into input-web,0
-9b64284,2017-07-27 21:17:45,"Add the ""executables"" field in abinit_vars.yml",0
-05f2f14,2017-07-27 21:24:23,Minor modif of Abivars.jar,0
-30c5c21,2017-07-27 21:25:09,Clean,0
-f209417,2017-07-27 21:28:58,Apply generate_doc.py,0
-dfc1a5a,2017-07-27 21:45:39,Fix several problems detected by the test farm.,0
-dc57b5b,2017-07-28 05:26:07,"Change ""varfile"" to ""varset"" in Abivars.jar and abinit_vars.yml (not yet in generate_doc.py)",0
-f8d2979,2017-07-28 05:44:12,Prepare the future ...,0
-5fe45a8,2017-07-28 06:18:59,Work on filemodifier.py to allow inserting sections,0
-93a83bc,2017-07-28 07:51:11,Fix varfile=>varset in generated_doc.py  and apply it,0
-7fe89b2,2017-07-28 08:16:05,Continue to work on filemodifier.py. lesson_spin.yml_new is the present resulting file ...,0
-c9d373e,2017-07-28 08:27:12,Continue the rename of varfiles to varsets,0
-eb49b62,2017-07-28 08:54:49,Fix minor problems with links and other things  detected by the test farm,0
-27d7847,2017-07-28 09:56:40,Update link,0
-53206de,2017-07-28 11:18:49,Extrernal dokulinks are treated correctly.,0
-2ff4c7f,2017-07-28 12:59:38,Tune the doc of the generate_doc.py script.,0
-4f428c8,2017-07-28 15:30:42,add anaddb_vars.yml file,0
-cef8aa6,2017-07-28 16:16:49,Suppress parentheses in latex2html. Not yet finalized.,0
-ca583e3,2017-07-28 20:29:34,Correct the permissions. Strange to see that they had changed ...,0
-df7eeff,2017-07-28 20:30:51,Merge jollet/input-web into input-web,0
-eaa0ea2,2017-07-28 20:33:22,Apply generate_doc.py,0
-899711f,2017-07-28 20:36:32,Update the reference for abichecks t01.out,0
-ffe22f8,2017-07-28 21:03:28,Remove blanks ...,0
-57667a0,2017-07-28 21:11:29,Add the treatment of \textit,0
-4bd2815,2017-07-28 21:12:34,Apply generate_doc.py,0
-bbd7f4c,2017-07-28 21:20:37,rename list_external to list_externalvars,0
-199ed08,2017-07-28 22:07:00,Add quotes in the abivarname field,0
-40cfafd,2017-07-29 06:26:37,Merge antonius/develop/2bb4 into _antonius,0
-c9b669d,2017-07-29 06:27:55,Apply generate_doc.py,0
-2d9bac4,2017-07-29 06:53:25,Make some test of the use of the inputvar@executable notation,0
-c0dd9b6,2017-07-29 11:15:29,All anaddb variables in abivars.yml,0
-f3da1f9,2017-07-29 11:34:30,Suppress the @codename inside the varset files.,0
-48e7a36,2017-07-29 11:43:25,Create varaim.html and varoptic.html (still empty)  and taylor the header of these files as well as varanaddb.html,0
-231d9e6,2017-07-29 11:54:23,Prepare correct links to varanaddb,0
-0281cd1,2017-07-29 12:03:13,Apply generate_doc.py : the links to variables @anaddb seem correct ...,0
-116120f,2017-07-29 13:07:34,Reorder the  input variables according to the alphabet,0
-19fe6e7,2017-07-29 20:58:19,Improves abicheck.py  to detect more problems. Also fix a few of them.,0
-a318c66,2017-07-29 21:29:34,Add warning header at the top of each generate HTML file.,0
-aea1e3d,2017-07-30 07:49:51,abi_check.py detection capabilities improved.,0
-a39fddb,2017-07-30 10:13:18,Merge branch 'develop' into input-web,0
-666cb08,2017-07-30 10:31:41,Introduce Executable in the echo of varsets  also made characteristics optional.,0
-1d4d178,2017-07-30 15:45:07,Cound the length of variables  and warn if longer than 20 characters.,0
-5b3b426,2017-07-30 15:51:30,SUppress input variable gwls_second_model_parameter : not used  in an unused part of ABINIT  and too long name !,0
-9dca142,2017-07-30 16:12:16,Shorten gwls_dielectric_model to gwls_diel_model,0
-74995e5,2017-07-30 16:20:56,Shorten gwls_sternheimer_kmax to gwls_stern_kmax,0
-acd29fc,2017-07-30 16:29:28,"Define a flag ""strict"" in abi_check.py  in order to be able to merge into develop.",0
-8191c93,2017-07-30 19:16:37,Most of the links to help_anaddb.html#XXX are now correct.,0
-4c87220,2017-07-31 07:46:07,"Suppress ""executables"" from the entries in abinit_vars.yml   update Abivars.jar for this modification  and also allows the recognition of namespace: and @namespace .",0
-173c0b9,2017-07-31 08:19:52,Reenable strict=1 in abi_checks.py,0
-358cd92,2017-07-31 08:29:38,Add links for the dipdip variable,0
-93072ab,2017-07-31 11:23:41,Set strict=0  for the test farm.,0
-6a85635,2017-07-31 11:44:00,Fix typo,0
-e0ee30b,2017-07-31 12:07:42,Anoth typo,0
-bd94723,2017-07-31 13:44:03,Suppress the linke with gwls_second_model_parameter,0
-55e878b,2017-07-31 13:50:45,Fix links  problems detected with linkchecker.,0
-03bbac8,2017-07-31 14:39:52,Fix links,0
-f0f37b4,2017-07-31 16:45:05,add topic Bader and Optic,0
-3820da0,2017-07-31 20:58:10,Adjust one tolerance  update docchk.py .,0
-896a9df,2017-07-31 21:02:13,Update ref file for test abirules #01.,0
-4221fb6,2017-07-31 21:05:35,Keep strict=1 in input-web branch (after merge of _input-web).,0
-9a3796b,2017-07-31 21:07:10,Merge jollet/input-web into input-web,0
-5dcd07c,2017-08-01 06:40:13,Apply generate_doc.py,0
-91729f9,2017-08-01 12:03:17,Minor fixes  for errors detected by linkchecker. Also update abichecks/abirules/Refs/t01.out.,0
-feadb87,2017-08-01 12:13:30,Apply generate_doc.py,0
-8e192ed,2017-08-01 12:15:40,Fix small3* (should be small)  detected by JMichel,0
-6471025,2017-08-01 18:04:36,add topics anaddbCommon  anaddbSpec and anaddbEPC,0
-890fe4e,2017-08-01 18:05:41,Merge remote-tracking branch 'trunk/input-web' into input-web,0
-ec6dca3,2017-08-02 13:49:31,Make LDA+U+SO and LocalEx+SO calculations compatible with nspden=1,0
-449829c,2017-08-02 14:26:31,add a link in electron-phonon topics,0
-7c77adc,2017-08-02 18:53:35,Update ref for modified test (NC+SO+LDAU) + adjust some array sizes,0
-218fc96,2017-08-03 10:05:04,Merge branch 'hotfix-8.4' of abinit-gitlab:trunk/abinit into quickfixes,0
-7cdb759,2017-08-03 14:50:45,Adjust tolerance for new test,0
-e1ac608,2017-08-04 12:33:31,Add the help file for fold2bloch (had been forgotten !),0
-d6c79b8,2017-08-04 12:47:52,Complete help_fold2bloch.yml,0
-f7f3d6a,2017-08-04 13:03:37,The help file for fold2bloch looks allright.,0
-a77d2a6,2017-08-04 13:05:42,Merge jollet/input-web into input-web,0
-fc4d49d,2017-08-04 13:12:12,Complete the list of links (for fold2bloch),0
-f29aea8,2017-08-04 15:55:12,Fix many links related to aim,0
-ec82568,2017-08-04 16:12:57,Correct even more links,0
-dd49620,2017-08-04 16:13:30,Back to the normal,0
-e41056b,2017-08-04 20:20:03,Add tests/v5/Input/t22.in that ghad been erased incorrectly ?!,0
-0e97d1a,2017-08-04 20:25:27,Fix incorrect link,0
-ec488c7,2017-08-04 21:28:34,Fix a link  and update a reference,0
-554480e,2017-08-04 21:29:31,Switch from max 18 characters to max 20 characters,0
-327ca97,2017-08-05 07:17:04,Change the name of varsets in abinit_vars.yml and Abivars.jar.,0
-652b05f,2017-08-05 08:56:31,Continue to replace varfile by varset.,0
-41fff5e,2017-08-05 08:58:32,Apply generate_doc.py,0
-eae1e29,2017-08-05 09:01:39,Suppress all var*.html files,0
-aafdf02,2017-08-05 10:24:38,Generate varset_* files. Also prepare the modification of all links to shortcuts.,0
-474b034,2017-08-05 10:44:08,Translate many links to shortcut.,0
-054a1c8,2017-08-05 11:28:16,Shorten more links,0
-7166623,2017-08-05 16:07:59,Shorten more links,0
-89956c6,2017-08-05 16:11:49,Shorten and fix some links,0
-817237c,2017-08-05 16:45:29,More shortcuts,0
-01531b6,2017-08-05 16:53:20,More shortening and fixes,0
-f7e6af6,2017-08-05 17:13:42,More shortening and fixes. All input variables should be addressed with shortcuts now !,0
-3646ba2,2017-08-05 18:12:46,Reestablish full flow of generate_doc.py,0
-6ffeeae,2017-08-05 18:26:43,Fix wrong URLs detected by linkchecker,0
-320619e,2017-08-05 19:23:07,FIx more links,0
-b3e3cdd,2017-08-06 06:04:15,FInalize lesson_spin with tags. Also minor modif in table of content.,0
-6e0eb74,2017-08-06 06:15:37,Analysis tool lesson,0
-fd14749,2017-08-06 06:35:13,Lesson base1,0
-631b3eb,2017-08-06 06:44:54,Lesson2 + fix,0
-2876952,2017-08-06 06:49:52,Lesson_base3,0
-abcc470,2017-08-06 06:56:25,Lesson_base4,0
-7515011,2017-08-06 07:04:56,Lesson basic paral,0
-0ac8731,2017-08-06 07:15:05,Lesson_bse,0
-6879fc7,2017-08-06 07:32:05,Lesson_elastic,0
-c6c3dd4,2017-08-06 09:59:11,Add numeral tag (for compatibility with other mechanisms),0
-9d9e9ca,2017-08-06 10:08:12,Lesson_eph,0
-f095393,2017-08-06 10:15:17,Lesson_eph,0
-8a2ef72,2017-08-06 10:24:10,Lesson fold2bloch  also better spacing after hr,0
-abf825f,2017-08-06 10:40:01,Lesson_gw1,0
-4833c35,2017-08-06 10:43:03,Lesson_gw2,0
-84999aa,2017-08-06 10:47:17,Lesson_nlo,0
-c63b0e8,2017-08-06 14:19:38,Lesson_nucl  and update  ref for abirules #01,0
-0584606,2017-08-06 14:23:15,Lesson_optic,0
-87d6173,2017-08-06 14:27:04,Lesson_paral_dfpt,0
-c3e7397,2017-08-06 14:37:52,Lesson_paral_gspw,0
-37a26fd,2017-08-06 14:45:21,Lesson_gswvl,0
-c07ac35,2017-08-06 14:51:25,Lesson_paral_mbt,0
-7c74153,2017-08-06 18:47:54,Fix update of abirules/Refs/t01.out,0
-9029918,2017-08-07 06:22:08,Add flowchart v3,0
-5912a6b,2017-08-07 07:46:03,Merge gmatteo/hotfix-18 into _gmatteo,0
-adc1523,2017-08-07 08:02:01,Lesson_paral_moldyn,0
-5b8cb2b,2017-08-07 08:09:34,Lesson_paral_string,0
-c3867eb,2017-08-07 08:27:40,Lesson_paw1 and add Kresse1999,0
-6f76210,2017-08-07 08:41:54,Lesson_paw2,0
-c972a9e,2017-08-07 08:47:30,Lesson_paw3,0
-de56f41,2017-08-07 08:58:17,"Lesson_DFPT1   and start to rename ""repsonse-function"" to DFPT",0
-39c7983,2017-08-07 09:03:48,Lesson_rf2,0
-078f6d5,2017-08-07 09:15:59,Lesson_source_code. Add warning.,0
-505da1d,2017-08-07 09:36:08,Lesson_casida  also add three references,0
-604f737,2017-08-07 09:39:40,Lesson_tdepes,0
-c1e70eb,2017-08-07 09:47:44,Lesson_ucalc_crpa,0
-1f7f604,2017-08-07 09:49:32,Order the bibtex file,0
-3b75b99,2017-08-07 09:53:10,Lesson_udet,0
-bdff3be,2017-08-07 09:59:23,Lesson_wannier90,0
-586d7cf,2017-08-07 10:40:39,_paral_string becomes _paral_images,0
-8c11c2f,2017-08-07 11:41:00,Update tutorial_flowchart,0
-622cda0,2017-08-07 11:51:38,Help_aim,0
-efa4e34,2017-08-07 12:00:35,Help_anaddb,0
-878cfb7,2017-08-07 12:09:51,Fix recognition of links,0
-8d88c60,2017-08-07 12:15:01,Help_cut3d,0
-da0fe33,2017-08-07 12:19:29,Help_fold2bloch,0
-9652448,2017-08-07 12:22:57,Help_mrgddb,0
-720a958,2017-08-07 12:30:30,Help_mrgscr,0
-137a94f,2017-08-07 12:47:01,Help_new_user,0
-a25a9aa,2017-08-07 12:52:38,Help_optic,0
-d583256,2017-08-07 13:03:48,Help_respfn,0
-adb6094,2017-08-07 13:15:00,Rename what_ABINIT_does,0
-9513290,2017-08-07 13:19:19,Fix link,0
-75430c8,2017-08-07 13:25:43,Help_features,0
-832bf30,2017-08-07 14:32:02,First version of the script for a table of content with two levels,0
-53d6352,2017-08-07 15:11:57,Complete generation of table of content with a second level. Also improve browsing using table of content.,0
-88ee7bd,2017-08-07 16:02:33,Theorydoc_mbt,0
-3693131,2017-08-07 18:25:24,Update tutorial_flowchart,0
-88a725e,2017-08-07 18:26:15,Merge branch 'input-web' of gitlab:/trunk/abinit into input-web,0
-4b273a3,2017-08-07 18:27:10,Apply generate_doc.py,0
-b636778,2017-08-07 20:29:12,Adjust click for flowchart,0
-eb5c990,2017-08-07 20:42:35,Rename bibliography dir as biblio   bibliography.html as bib_biblio.html   bibtex.html as bib_bibtex.html   acknowledgments.html as bib_acknow.html,0
-ad2dcd6,2017-08-07 21:19:47,Introduce namespace bib:,0
-026ab27,2017-08-07 21:37:58,Links with the namespace bib: are recognized. Use shortcuts for lessons_gw*,0
-490b3af,2017-08-07 21:48:13,Fix different typos,0
-d000db2,2017-08-08 05:40:26,Fix typo,0
-a358b5f,2017-08-08 05:46:13,Fix ref and typo,0
-5863f14,2017-08-08 06:09:08,"Improve help_features.html . Also fix creation of links ("" "" was missing)",0
-8e3935f,2017-08-08 06:19:17,Minor improvements of some topics.,0
-8dbd47f,2017-08-08 07:53:54,Theorydoc bse and mbt,0
-683cffe,2017-08-08 07:55:13,Merge branch 'input-web' of gitlab:trunk/abinit into input-web,0
-6950a89,2017-08-08 07:56:30,Apply generate_doc.py,0
-15ee0bd,2017-08-08 08:00:20,Minor fixes,0
-f4ccdf6,2017-08-08 09:21:15,Work on the list of topics,0
-455a7d7,2017-08-08 09:53:07,Improves formatting,0
-53ba7b3,2017-08-08 10:54:41,Make the reading of density files compatible with nspinor=2/nspden=1,0
-8a6354a,2017-08-08 15:59:53,New topics  with a more complete structuration... Not yet final  though ...,0
-5bde747,2017-08-08 18:58:18,HTML files : new topics  and also delete two old topics.,0
-868ec47,2017-08-08 19:06:43,Update list of internal links,0
-e1f290b,2017-08-08 19:11:24,Remove lotf  slab  alch  jell from the list of allowed tribes.,0
-d0764dc,2017-08-08 19:16:39,Fix link,0
-5ce1785,2017-08-08 20:47:21,"Suppress the ""GW"" characteristics  not appropriate anymore",0
-2747f52,2017-08-08 20:52:24,"Get rid of ""BETHE-SALPETER"" characteristics  now unappropriate.",0
-046b136,2017-08-08 20:56:36,Get rid off TDDFT characteristics  unappropriate.,0
-2ab94f4,2017-08-08 21:04:23,Remove the now unappropriate RESPFN characteristics,0
-8acf2f0,2017-08-08 21:07:47,Suppress now unappropriate NONLINEAR characteristics,0
-bdb6991,2017-08-08 21:17:01,Fix link,0
-f746f93,2017-08-08 21:20:00,Update help_abinit.*,0
-0384549,2017-08-08 21:50:00,THe topic_UnitCell is now complete.,0
-72ed4bd,2017-08-09 05:13:45,Add topic_UnitCell.*,0
-5b91734,2017-08-09 08:29:38,Improves topic_UnitCell,0
-f2f039c,2017-08-09 10:08:45,New topic AtomTypes. Also tune topic UnitCell.,0
-929ebe2,2017-08-09 10:15:03,Change echo of links in the table of content,0
-53b4fa9,2017-08-09 11:35:23,"New topic SmartSymmetrizer. Suppress the ""SYMMETRISER"" characteristics of input variables.",0
-9a4ea47,2017-08-09 12:18:39,Finalize SmartSymm topic  and complete crystal topic (not yet cleaned).,0
-e0c0771,2017-08-09 12:56:34,Topic AtomManipulator. Also many other small modifs.,0
-a978a8b,2017-08-09 13:28:40,Remove GEOMETRY_BUILDER from the list of characteristics. Replace geometry builder by atom manipulator in the doc. Clean help_abinit.yml.,0
-cbdb0f2,2017-08-09 13:39:26,Clean topic crystal + other minor issues.,0
-65264a9,2017-08-09 13:59:26,Many small fixes,0
-b401c17,2017-08-09 14:31:45,More cleaning/improvements for the topics.,0
-e5bb60f,2017-08-09 14:36:25,Change effmass to effmass_free,0
-e360602,2017-08-09 14:41:26,Change effass to effmass_free in the tests,0
-5050bed,2017-08-09 14:48:03,Replace effmass by effmass_free also in the yml files.,0
-ff76d3f,2017-08-09 15:50:26,Implement reading of a density file with spin conversion (can convert every nspden case),0
-1af7fb3,2017-08-09 16:13:00,Many small fixes,0
-bb69b4f,2017-08-09 17:46:44,Fix one remaining effmass,0
-caa750e,2017-08-09 17:47:51,Another fix for effmass,0
-315fddf,2017-08-09 18:10:56,Convert more effmass to effmass_free,0
-2a30fad,2017-08-09 19:01:03,Update abichecks/abirules/Refs/t01.out,0
-4374ebb,2017-08-09 20:43:47,Work on topic ElecBandStructure and ElecDOS,0
-99661cb,2017-08-09 21:03:59,COmpeting the topics ElecDOS,0
-030a8e9,2017-08-09 21:10:52,More improvement of topic ElecBandStructure,0
-dbd65f0,2017-08-09 21:21:06,Work on topic recursion,0
-c648366,2017-08-09 21:21:51,Apply generate_doc.py,0
-c892461,2017-08-09 21:32:51,Rename topic SCF to SCFControl,0
-34f1e10,2017-08-10 06:07:15,"Distribute the input variables initially contained in the topic ""convergency"" amon four more detailed topics",0
-30ff29c,2017-08-10 06:22:44,Tune Planewaves and SCFAlgorithms topics.,0
-47621f5,2017-08-10 08:07:41,Rename ChargedCell to Coulomb. Improve SCFAlgorithms.,0
-6f8e087,2017-08-10 08:44:16,Tune the topics SCFControl and TuningSpeed,0
-fa3693a,2017-08-10 09:13:37,Clean topic multidtset and activate topic ForcesStresses,0
-ed7e44f,2017-08-10 11:51:51,Improve the topics PseudosPAW and AtomTypes.,0
-6ac18fc,2017-08-10 12:35:02,Create DeltaSCF topic. Mention Jia2017 reference.,0
-d21f118,2017-08-10 12:54:36,Treat superscript translation from .tex to HTML,0
-c8cd9d7,2017-08-10 13:03:18,Split lib_to_assemble.py,0
-2218751,2017-08-10 13:07:26,Final names ...,0
-133a480,2017-08-10 13:14:09,"Rename ""How to"" to ""Topic"" in the doc of input variables",0
-e248927,2017-08-10 14:14:17,Capture incorrect topic and tribe in input variables. Also minor style correction .,0
-5ba030e,2017-08-10 14:57:54,Ref file because now reding of density is correct with PAW+SO,0
-8e5343d,2017-08-10 15:36:26,Backlinks to topic pages working.,0
-7cba348,2017-08-10 16:12:03,Minor improvements  import some information present in the feature file.,0
-f022776,2017-08-10 16:34:35,Avoid some numerical instabilities for non-collinear magnetism wit hzero magnetization,0
-dad6fc9,2017-08-10 18:16:43,Add a new test suite (for future use  not now): HPC,0
-042f03b,2017-08-10 20:53:58,Link topic Bader.,0
-be3e291,2017-08-11 05:20:10,Fixes for the infos tar.gz  from Jean-Michel. Also miscellaneous improvements of topics.,0
-ee05de1,2017-08-11 06:13:17,Improves the topic_Optic  and related files.,0
-71ca315,2017-08-11 06:21:43,Creat additional topics related to DFPT,0
-f950c6a,2017-08-11 08:27:45,Define new topics Elastic  Phonons  PhononBands  Temperature  to replace DFPT and anaddb ones,0
-7cc0c7b,2017-08-11 08:36:04,Add ConstrainedPol topic  and other minor improvements,0
-f08a334,2017-08-11 08:59:00,Depopulate anaddbSpec.,0
-d21cab5,2017-08-11 09:03:17,Finalize Constrainedpol topic,0
-e3b9fc4,2017-08-11 09:29:45,Suppress topic anaddbSpec (after having transferred elsewhere the links to example files),0
-b0ce4ca,2017-08-11 09:51:42,Complete the content of topic Elastic,0
-182ad5a,2017-08-11 10:55:58,Shorten too long lines,0
-b17549e,2017-08-11 11:13:21,Deactivate change in initrhoij because it produces some test instabilities (and because it seems not mandatory),0
-502c7e8,2017-08-11 13:17:21,Add topic PhononWidth. Clean PhononBands.,0
-6378cb8,2017-08-11 13:34:12,Merge torrent/quickfixes into _torrent-8.4,0
-2f9cf88,2017-08-11 14:04:59,Create ElPhonTransport. Rename ElPhon to ElPhonInt.,0
-45633d2,2017-08-11 14:17:40,Renamed TDep to TDepES,0
-77caecb,2017-08-11 14:33:57,Add new tutorial on electron-positron annihilation (from J. Wiktor + M. Torrent),0
-cdfcce8,2017-08-11 14:41:56,Add forgotten files,0
-89baac1,2017-08-11 14:45:13,Clean ElPhonInt and ElPhonTransport.,0
-cbf7c11,2017-08-11 14:54:21,Suppress anaddbEPC  entirely redistributed.,0
-4cd74bd,2017-08-11 15:22:57,Add test section in input files   correct issue: pos. and elec. densities were inverted,0
-ad1213d,2017-08-11 15:30:41,Redistribute input variables that were mentioned in topic anaddbCommon  and suppress the latter.,0
-26dba86,2017-08-11 15:37:25,Add first version of ref files for new positron tutorial,0
-4d9f764,2017-08-11 15:42:12,Continue cleaning.,0
-f74dba1,2017-08-11 15:53:14,First steps of the finalization of v8.4.3.,0
-8c9973b,2017-08-11 15:54:16,Reeaxmine topics up to topic_PAW,0
-2a9e7c9,2017-08-11 16:44:58,Improve printing of density and energy for electron-positron,0
-eb786e4,2017-08-11 17:35:08,Copy abiref reference files  correct a division by zero,0
-93ae1eb,2017-08-11 19:27:19,Changes needed after a first round on the testfarm,0
-1a3faad,2017-08-11 21:34:45,Fix a remaining problem with backlinks in topics,0
-f5346a0,2017-08-11 21:47:21,Update Abivars.jar with a reduced list of characteristics.,0
-d817493,2017-08-12 00:50:06,Some ref files modified,0
-5c83d5a,2017-08-12 02:58:31,Adjust tolerances and inputs of tests,0
-98eb699,2017-08-12 05:38:02,Minor update obtained by applying abi_yml2html.py,0
-db1dfc7,2017-08-12 05:41:53,Apply abilint,0
-596ff88,2017-08-12 06:20:03,Capture erroneous topics from input files.,0
-21f0cc4,2017-08-12 07:02:15,All topics mentioned in input files exist.,0
-469a1d1,2017-08-12 11:53:02,Merge branch 'master' into develop : import hotfix-8.4   with merge requests iid 163  180  181  182.,0
-b6fd137,2017-08-12 12:14:06,Adjust tolerance,0
-2afa9c4,2017-08-12 12:14:48,Merge branch 'hotfix-8.4' of abinit-gitlab:trunk/abinit into tutopositron,0
-c78fa79,2017-08-12 12:54:10,Initialize v8.4.4,0
-e22d43d,2017-08-12 14:13:23,Merge branch 'develop' into input-web,0
-8d06942,2017-08-12 14:51:47,Create topic GeoConstraints,0
-177cd82,2017-08-12 16:40:25,Fix topics for some input files. Start to prepare finding inputvariables in input files.,0
-e66aac7,2017-08-12 16:41:22,Had not yet stored GeoConstraints ...,0
-2547498,2017-08-13 01:05:22,Improve tpositron_7 test (portability issue),0
-cbadb0b,2017-08-13 02:27:32,Continue to try to make a test portable,0
-5347f34,2017-08-13 07:56:26,Generate the list of input variables for each test. Not fully debugged though.,0
-914b0e8,2017-08-13 10:42:12,Accumulate statistics.,0
-6b7c4fe,2017-08-13 11:52:45,Continue to try to make a test portable,0
-e19765e,2017-08-13 13:00:18,Continue to try to make a test portable,0
-37888bd,2017-08-13 14:18:34,Update (again) ref file,0
-57c0725,2017-08-13 14:20:06,Continue to try to make a test portable,0
-717e894,2017-08-13 16:05:21,Complete the coding of the usage report. Will then apply.,0
-f2fb7d0,2017-08-13 16:27:13,Now mention the links to tests using the input variables.,0
-175216e,2017-08-13 16:55:37,Slight adjustment.,0
-b8c9f74,2017-08-13 16:57:05,Another adjustment.,0
-a0762f3,2017-08-13 17:51:43,Create varset_stats . Minor typo modifications.,0
-e2571b5,2017-08-13 18:22:35,Make table of content of varset_stats. Also minor modifs.,0
-31ae020,2017-08-13 18:27:43,Clean generate_doc.py,0
-39c689e,2017-08-13 18:53:57,Mention the number of tests per executable in the stats. Also minor modif for blanks in other varsets.,0
-6f96c2b,2017-08-13 20:46:47,Adjust some tolerances,0
-477ce55,2017-08-14 07:09:10,Finalize varset_stats. Also fix typo occurrence (was often occurence),0
-4dde2ab,2017-08-14 20:52:07,Clean topic k-points,0
-bc0f257,2017-08-15 10:05:22,Topics in section 6 of lesson_features have been cleaned and checked.,0
-17d4777,2017-08-15 10:06:19,Create q-points topic,0
-899789e,2017-08-15 10:23:00,Sec 7 of lesson_features has been reviewed/completed.,0
-4b51c72,2017-08-15 10:29:14,The introduction of all existing topics has been reviewed.,0
-6edba42,2017-08-15 14:29:29,Add topic_Susceptibility   add Veithen2002,0
-0fbabbc,2017-08-15 15:20:22,Create SelfEnergy topic,0
-79b6b2b,2017-08-15 15:44:42,Create topic SelfEnergy,0
-db84a17,2017-08-15 16:03:23,Create topics SelfEnergy and FrquencyMeshMBPT,0
-6abe1f3,2017-08-15 16:13:18,"Suppress the shortlinks to ""GW"" characteristics  as non existent anymore.",0
-b1b187b,2017-08-15 16:50:06,Create the Abipy topic,0
-22cbb48,2017-08-15 16:58:14,Establish links to Abipy and APPA,0
-d946805,2017-08-15 16:59:02,Create the Abipy and APPA topics,0
-3ed2d24,2017-08-15 17:11:03,Create topic DensityPotential,0
-9c28cac,2017-08-15 17:19:39,Create topic_Band2eps,0
-336a095,2017-08-15 17:36:43,Create Band2eps and FileFormats topics,0
-24c616e,2017-08-15 17:43:48,Create the topic Verification,0
-3f144a5,2017-08-15 17:48:11,Create Verification topic,0
-604d8d6,2017-08-15 18:07:57,Create topic PortabilityNonRegression,0
-c94ce1f,2017-08-15 18:23:15,Create Git and PortabilityNonRegression topic,0
-5c89d8c,2017-08-15 18:38:42,Merge torrent/tutopositron into _torrent_tutopositron,0
-de5e879,2017-08-15 18:47:21,Merge branch '_torrent_tutopositron' into input-web,0
-2c8699a,2017-08-16 05:55:55,Transform all the full links with href to shortcuts (to have the correct target).,0
-18073f4,2017-08-16 06:09:49,Translate lesson_positron to yml,0
-827c114,2017-08-16 06:41:06,Add tutorial_flowchart_v5.png  clean the other version  and update lesson_welcome,0
-9197d9d,2017-08-16 06:50:33,Update topic_positron  complete lesson_welcome for positron lesson.,0
-cf073f7,2017-08-16 06:59:40,Minor adjustments in typo,0
-b461871,2017-08-16 08:55:00,Fix incoherent allocation of amass,0
-560cd9c,2017-08-16 09:26:00,Better output for docchk.py  update ref,0
-9eb3a23,2017-08-16 09:29:09,Adjust tolerance for positron tutorial test,0
-521ee90,2017-08-16 14:03:12,One more acknowledgment. Also update ref positron_4,0
-f4741a0,2017-08-16 14:04:54,Also update input file to try to reach portability,0
-d383e5a,2017-08-16 18:53:04,Try to find a setting for the test tutorial_positron_4 that is sufficiently portable. Try now ntime=4. Should come with appropriate modif of lesson_positron ...,0
-5b59842,2017-08-17 05:55:58,Tune the text of the positron tutorial  taking into account modifications that were needed to make it portable.,0
-7d3028b,2017-08-17 06:38:11,Start finalization of v8.5.2,0
-65249e5,2017-08-17 10:32:36,Again update tolerance  here for bob,0
-dcb3a33,2017-08-17 15:03:57,Initialize v8.5.3,0
+8c509e2,2017-06-02T09:38:14,multibinit: debugged the fit process and add headers to the routines,0.0
+068baf9,2017-06-02T11:56:05,multibinit: add check in the fit process for strten,0.0
+6cef01b,2017-06-02T11:56:33,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+951c596,2017-06-06T12:24:01,multibinit: add option in order to fix some coeff in the fit process,0.0
+c9ccd38,2017-06-09T10:21:42,"Commit of a new directory ""input-web"" in the directory doc  to manage input variables with ABINIT features.",0.0
+50f40d1,2017-06-09T10:28:08,2 files removed in doc/input-web,0.0
+f1ffd58,2017-06-14T14:58:49,Update with input-web,0.0
+736df84,2017-06-20T12:27:38,multibinit: add single file for the xml and new generator of coefficients and update ref,0.0
+daa0def,2017-06-20T14:11:08,multibinit: print rprimd in column in the XML and update ref,0.0
+c9b9d0c,2017-06-20T15:27:18,small fix in the MPI of the fit process,1.0
+86fbb31,2017-06-21T09:14:26,small debug for farmtest,0.0
+304b0de,2017-06-22T10:48:33,add distribution of the memory for the fit process in MPI,0.0
+857ab3c,2017-06-22T12:24:43,small bug fixed for farmtest,1.0
+755565b,2017-06-22T19:40:35,Merge trunk/develop,0.0
+fc8dfba,2017-06-23T13:44:39,modification of pawpsp for LDA-1/2 calculation,0.0
+ee48e94,2017-06-23T13:55:22,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+5e36608,2017-06-26T11:04:59,modification for LDA-1/2,0.0
+36fe3f8,2017-06-27T10:17:22,Add mdtemp in HIST file since it can be usefull for post-process,0.0
+7f43940,2017-06-27T12:01:24,mise à jour temp_tddft dans playground,0.0
+8c5072b,2017-06-27T12:07:42,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+5c42117,2017-06-27T14:49:12,Put back the archives (will be suppressed later),0.0
+5bb4eae,2017-06-27T15:31:37,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+7d27527,2017-06-27T16:08:29,ajout de abiref.bib,0.0
+d2e883d,2017-06-27T16:20:45,nettoyage input-web et playground,0.0
+2820a9d,2017-06-27T21:08:39,"Update Abivars.jar : compacted the ""Default"" box.",0.0
+b8bb10f,2017-06-28T08:41:46,Merge branch 'develop' into input-web,0.0
+6a24ba0,2017-06-28T08:43:25,Issue python abi_yml2html.py,0.0
+16b0f81,2017-06-28T14:31:58,Allow links to be created automatically from content of template. Also mv DOC_EFIELD_BEC_DIEL to documents.,0.0
+dc9e9ec,2017-06-28T14:34:18,Copy the needed files in the new playground.,0.0
+c607fef,2017-06-28T15:37:10,Create yml_templates  read yml_templates/template_varhtml.yml,0.0
+ab72083,2017-06-28T16:11:06,Code the treament of varbas.html . Not yet debugged.,0.0
+4a70269,2017-06-28T16:48:47,improve memory distribution in the fit process of multibinit,0.0
+e5a49fa,2017-06-28T17:52:36,Merge branch 'input-web' of gitlab:/trunk/abinit into input-web,0.0
+c2bb412,2017-06-28T21:09:13,A first version for generation of varbas.html from varbas.ylm is working.,0.0
+1baac62,2017-06-29T08:56:41,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+7e0bbc3,2017-06-29T10:47:23,add v8[13-14] automatic tests for the fit process of multibinit,0.0
+cd7dbcb,2017-06-30T14:53:06,Reordered methods writing the DDB.,0.0
+78c4d5e,2017-06-30T14:54:12,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+5450e7a,2017-06-30T15:19:59,création des fichiers temp_recursion et temp_Wavelets,0.0
+7db11d0,2017-06-30T15:21:56,debug fit process of multibinit and update refs for tests,0.0
+e131d18,2017-06-30T15:23:37,Use the file sections.yml as a generic file to contain all information on specific var* files.,0.0
+7f0398d,2017-06-30T16:01:11,Write a function that read a yml file  with proper treatment of the echo.,0.0
+e25f659,2017-06-30T16:23:06,"The writing of the ""normal"" var* files is rationalized.",0.0
+2e27a29,2017-06-30T16:49:41,"Complete the sections.yml file with the ""default"" section   complete the definition of the Section class.",0.0
+5a1a1f2,2017-06-30T16:54:01,add paral test for the fit process of multibinit,0.0
+f525ac4,2017-06-30T20:09:06,Now works on the test case sections.yml  containing default. Should be more tested  though  allowing to overwrite the default..,0.0
+a763c6b,2017-06-30T21:02:52,Defined ddb_hdr_type and some of its subroutines.,0.0
+844dd15,2017-06-30T23:26:37,respfn now initializes a ddb_hdr and calls ddb_hdr_open_write,0.0
+36a1b3c,2017-07-01T06:33:31,"Use the getattr function instead of my ""extract ..."" function (suggested by Matteo !)",0.0
+fd57331,2017-07-01T07:14:23,Merge remote-tracking branch 'remotes/jollet/input-web' into input-web,0.0
+364633.0,2017-07-01T07:25:19,Upgrade the playground to the modifs made by François.,0.0
+da0b7d9,2017-07-01T09:57:36,Fixing too many deallocations.,1.0
+fbdb574,2017-07-01T10:26:20,Fixing deallocations.,1.0
+a960b7f,2017-07-01T14:52:19,Still fixing the deallocations.,1.0
+1551fdb,2017-07-01T15:55:04,Again  fixing deallocations.,1.0
+bcfcb69,2017-07-02T11:46:17,Fixing deallocation...,1.0
+d903c9a,2017-07-02T13:54:44,Creature comfort make it painless.,0.0
+773ed76,2017-07-02T14:59:27,Debugging...,0.0
+c31cee8,2017-07-02T16:32:12,signs of life,0.0
+915f301,2017-07-02T18:14:36,Now the specials.html is generated like the var*.html files.,0.0
+e2b0505,2017-07-03T05:58:05,Fixed bugs,1.0
+5b21d05,2017-07-03T06:17:18,"Start to simplify the ""topics"" section.",0.0
+925b630,2017-07-03T06:22:25,Clean !,0.0
+43602ec,2017-07-03T08:33:58,Simplify,0.0
+3b79c8a,2017-07-03T08:46:14,Simplify again,0.0
+d9aa85d,2017-07-03T09:07:24,Simplify !,0.0
+bfe3d44,2017-07-03T09:12:48,Simplify,0.0
+c309c7b,2017-07-03T09:44:23,Simplify,0.0
+0cea3a3,2017-07-03T09:49:24,Explain better the content of the sections.yml file.,0.0
+ef0c924,2017-07-03T10:44:09,add paral test for the fit process,0.0
+c2ae76b,2017-07-03T10:52:38,Initiate the new generation of topic files,0.0
+82d8cb5,2017-07-03T11:00:03,add constraint to the tests related to the fit process : HAVE_NETCDF,0.0
+c8752a3,2017-07-03T11:02:39,Looking for signs of life.,0.0
+e2373d9,2017-07-03T11:59:15,Born in a diamond mine,0.0
+8a23f46,2017-07-03T12:41:12,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+ff96395,2017-07-03T14:20:55,Fixing non-ascii characters.,1.0
+97b289c,2017-07-03T14:36:32,quick fixes for the new paral tests,1.0
+3cb5ca9,2017-07-03T16:16:57,Continue to work on the automatic generation of the topic files,0.0
+01809b0,2017-07-03T17:41:11,Debugging ascii problem.,0.0
+934d7b3,2017-07-03T18:12:54,The automatic generation of the file topic_DFT+U.html file seem to work.,0.0
+21053ef,2017-07-03T20:26:17,topic_DFT+U.html and topic_hf.html are now OK,0.0
+dfb9160,2017-07-04T05:39:56,Generates the list of topics automatically using the new implementation.,0.0
+0df0fe6,2017-07-04T06:07:19,The new machinery to treat topics is now in place. Need translating the old files  and then cleaning the script (old sections are still generated !),0.0
+4b8bac3,2017-07-04T08:41:13,Merge branch 'develop' into input-web,0.0
+3b49f61,2017-07-04T09:01:53,Constitution of the table of content flexibility checked.,0.0
+d99b7c2,2017-07-04T09:05:58,"Remove references to ""sec3"" for input variables and to ""sec4"" for input files",0.0
+1fef02d,2017-07-04T09:57:41,"Add the possibility to have an ""Examples"" section.",0.0
+b99c6b3,2017-07-04T10:15:42,Transfer list_of_topics.yml to yml_templates,0.0
+d6469f8,2017-07-04T10:26:43,Start to update the doc/input_variables directory,0.0
+d9c0182,2017-07-04T10:29:17,mv tests_dirs.yml -> yml_templates/tests_dirs.yml,0.0
+9208729.0,2017-07-04T10:35:45,The new mechanism should be working correctly in doc/input_variables,0.0
+a404bd1,2017-07-04T10:37:20,Fix,1.0
+7e6fc8f,2017-07-04T10:56:44,Big upgrade of the generated files.,0.0
+a1c046a,2017-07-04T11:01:57,New topic files automatically generated.,0.0
+b0c738a,2017-07-04T11:09:05,Made topics visible.,0.0
+b2559d1,2017-07-04T11:13:44,Minor modif with spaces,0.0
+2149a1e,2017-07-04T11:15:59,Minor fixes,1.0
+8a8062d,2017-07-04T11:17:51,Minor fix,1.0
+c38a65b,2017-07-04T11:22:10,Remove the old playground_OLD directory,0.0
+dc53b2c,2017-07-04T11:22:52,mv the playground directory to playground_OLD2,0.0
+d163f70,2017-07-04T11:23:55,Create the new playground (for bibliography),0.0
+3e730d0,2017-07-04T11:36:29,Clean the scripts  start to suppress the old mechanism,0.0
+2bc4061,2017-07-04T12:07:01,Continue the cleaning,0.0
+a676566,2017-07-04T12:11:23,Remove tocontent_header for topics  not needed anymore,0.0
+39248f2,2017-07-04T12:25:20,Minor fix,1.0
+b936314,2017-07-04T12:28:04,Clean the automatically generated directory,0.0
+80b50f3,2017-07-04T12:30:04,rm xc.html,0.0
+9f0e1f7,2017-07-04T12:37:40,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+df6c662,2017-07-04T12:39:46,Minor modifs,0.0
+053125d,2017-07-04T12:51:50,Transfer abi_yml2html.py to yml_files (as well as other needed file),0.0
+a293020,2017-07-04T13:00:05,Problem solved.,0.0
+a1ed350,2017-07-04T13:05:18,Suppress the html_template directory  and perform additional cleaning.,0.0
+2ab3d76,2017-07-04T13:21:33,Fix minor problem with abi_checks.py,1.0
+ddff785,2017-07-04T13:28:12,modification of m_pawpsp.F90 for LDA-1/2,0.0
+9707328.0,2017-07-04T13:36:53,commit avant merge Xavier,0.0
+d8a456b,2017-07-04T13:37:49,Straightened the content of specials yml file.,0.0
+85f8b0d,2017-07-04T13:37:57,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+1c13ce4,2017-07-04T13:57:23,Define list_topics_class.yml . Now  most of the data are outside the script.,0.0
+86a1363,2017-07-04T14:12:50,Debugging libpaw.,0.0
+4b7cf68,2017-07-04T14:27:46,still debugging.,0.0
+d2c3ef7,2017-07-04T14:36:42,Reverted m_pawtab,0.0
+3b0490a,2017-07-04T14:58:17,Sweeeeet home alabamaaaa,0.0
+f84107f,2017-07-04T15:06:53,I'm a liar don't doubt my sincerity,0.0
+5d693da,2017-07-04T15:32:49,Minimal,0.0
+12b53f2,2017-07-04T15:57:49,Bla bla,0.0
+ba809a9,2017-07-04T16:08:32,Meh,0.0
+3d09017,2017-07-04T16:26:17,Debugging decoding.,0.0
+676d7a2,2017-07-04T17:10:06,debugging libpaw,0.0
+622df06,2017-07-04T17:10:17,ajout des fichiers topic_,0.0
+ef180ae,2017-07-04T17:21:12,Still debugging m_pawtab,0.0
+0f8d43e,2017-07-04T21:53:50,Merge remote-tracking branch 'remotes/jollet/input-web' into input-web,0.0
+7d76df3,2017-07-04T22:03:36,Add many files in the yml_files directory  from the playground,0.0
+554e717,2017-07-04T22:16:02,Files have been transferred from playground to input_variables,0.0
+0814fd9,2017-07-04T22:20:14,Archive the latest playground.,0.0
+122403a,2017-07-05T07:45:36,Merge biederj/develop/8a23 into _biederj,0.0
+a19cd1d,2017-07-05T09:27:39,small fix in fit process (remove coeffs supperior to 1E10),1.0
+fc01350,2017-07-05T09:27:50,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+bee2e8c,2017-07-05T11:26:01,Reverting.,0.0
+3b5323a,2017-07-05T11:30:12,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+6e2259c,2017-07-05T12:04:28,Gave up on pawtab_copy and used a cheap replacement.,0.0
+b3dbcf1,2017-07-05T14:34:47,Replaced several calls to ddb_io_out with the functions of ddb_hdr.,0.0
+2eef72a,2017-07-05T17:00:09,reorder some routines in 78_effpot and update all the routine headers,0.0
+22a06dd,2017-07-05T17:40:10,creation du fichier topic_PIMD + liens vers les inputs tests,0.0
+bc023a6,2017-07-05T23:19:59,Suppress the old playgrounds. Also fix minor issues.,0.0
+70e13fd,2017-07-05T23:25:37,Automatically regenerate the topic files. The list_internal_links.js is now cleaned.,0.0
+da05c3b,2017-07-06T02:49:01,Create a python reader of bibtex file  also writer of yaml (just to test).,0.0
+91c8201,2017-07-06T09:55:02,Added option argument fullinit to ddb_hdr_open_write,0.0
+c0f4f44,2017-07-06T09:56:58,move find_bound from m_effective_potential.F90 to m_phonon_supercell.F90,0.0
+a737881,2017-07-06T10:30:07,"Replace ""newtopic"" by ""topic""",0.0
+97c2c03,2017-07-06T10:31:50,Fix newtopic to topic.,1.0
+e96c5a5,2017-07-06T12:44:55,multibinit: add possibility to read ASCII MD file,0.0
+a683176,2017-07-06T17:57:18,The script abi_bib2yml.py also produces now the file abiref.txt  for checking purposes. Also  the abiref.bib has been straightened : e.g. the IDs now all use four-digits years.,0.0
+d42a9f0,2017-07-07T05:41:04,iMore verifications done by abi_bib2yml.py . Treatment of phdthesis  masterthesis. Also some fixes in the initial database.,0.0
+6c46e7c,2017-07-07T08:03:54,Merge amartin/develop/e96c into _amartin,0.0
+70ea13b,2017-07-07T09:23:50,Create first version of generate_doc.py  that should replace abi_yml2html.py in the future .,0.0
+8f507ac,2017-07-07T10:01:37,The new script generated_doc.py reproduces the previous automatically generated files.,0.0
+9084fd0,2017-07-07T10:08:36,Clean and simplify,0.0
+add73d1,2017-07-07T10:33:30,Define paths for yml and html files.,0.0
+c042e90,2017-07-07T10:44:01,"Create new directory ""topics""",0.0
+6bb0af1,2017-07-07T11:12:16,Use shorter names for the directory (html_automatically_generated => html_generated),0.0
+c9fce34,2017-07-07T11:16:53,add README.md files,0.0
+3b49237,2017-07-07T11:28:24,Activates the change of directory,0.0
+6d0ccb8,2017-07-07T12:15:29,The splitting seems OK. Tests have been done.,0.0
+5105d7c,2017-07-07T12:48:28,Able to read and treat the bibtex file.,0.0
+73a1526,2017-07-07T13:03:56,Store the body of the bibtex items. For later reordering without modification.,0.0
+ea0af22,2017-07-07T23:54:14,Successfully made use of ddb_hdr for reading and writing. Need to clean up.,0.0
+e3d7edd,2017-07-08T16:33:22,Corrected the reading of usepaw in the DDB.,0.0
+83419de,2017-07-08T19:35:06,Fixed a test.,1.0
+c82e60b,2017-07-09T15:45:32,Fixed reading ntypat.,1.0
+83c11ae,2017-07-10T17:50:01,Printing debug information.,0.0
+96ca26a,2017-07-10T18:51:48,debugging,0.0
+7fce3e1,2017-07-10T21:06:12,Properly initialized nblok,0.0
+e79fc8b,2017-07-10T21:45:21,Removed debug printing.,0.0
+aaf42f9,2017-07-11T09:39:07,The generation of the bibtex.html files is OK.,0.0
+46b133b,2017-07-11T10:25:16,The bibliography.html is now generated.,0.0
+bc29071,2017-07-11T10:31:43,Remove unneeded files,0.0
+8b6039c,2017-07-11T10:35:11,Correct the place for list_topics_class.yml,0.0
+f0fc931,2017-07-11T10:55:25,Fixing abirules and robodoc.,1.0
+981a60e,2017-07-11T10:58:37,Cleaning up.,0.0
+35cb4df,2017-07-11T11:20:56,Clean,0.0
+e45a79b,2017-07-11T11:35:06,Minor formatting modifications.,0.0
+2b4ea70,2017-07-11T12:35:29,Complete the bibliography database with papers mentioned in the acknowledgment section.,0.0
+646debd,2017-07-11T12:58:33,Treatment of the French accents. Not fully succesfull ...,0.0
+913c5ed,2017-07-11T13:17:46,Activate automatic creation of links to bibliography.html file.,0.0
+a2d48cc,2017-07-11T13:37:14,Complete references in PIMD topic.,0.0
+976f1cd,2017-07-11T15:47:03,Many small corrections  as well as start to constitute the list of backlinks.,0.0
+219b5af,2017-07-11T16:06:55,The list of backlists start to work. Formatting to be corrected  though ...,0.0
+e7f8995,2017-07-11T20:01:37,Rearranged several subroutines.,0.0
+4b3cac1,2017-07-11T20:35:20,Fixed some more stuff.,1.0
+6538e2f,2017-07-11T22:15:31,Fixed reading 3rd order derivatives.,1.0
+0fb6b34,2017-07-12T09:42:57,Fixed thmeig,1.0
+2.67e+243,2017-07-12T09:57:43,Treat specials characters correctly.,0.0
+ec06877,2017-07-12T12:49:15,Save fold2bloch results in netcdf format  add cut3d option to convert from Fortran to Netcdf,0.0
+34c5daa,2017-07-12T12:49:28,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into fold2bloch,0.0
+f7d1f2b,2017-07-12T15:30:23,Fix command line interface for fold2bloch,1.0
+c6ff8d2,2017-07-12T16:06:38,This time  the accentuations are treated correctly.,0.0
+3522673.0,2017-07-12T21:27:18,Fix many small problems in both the bibtex and the python script.,1.0
+a13da6a,2017-07-12T21:28:35,Reorder the abiref.bib,0.0
+c375f78,2017-07-13T05:30:07,Introduce alphabetic labelling in bibliography.html file. Fix minot issues in abiref.bib.,0.0
+6353cc2,2017-07-13T06:55:37,Clarify+clean the directory structure inside the doc dorectory. Also set up README.md files.,0.0
+3dc7c9c,2017-07-13T11:58:15,Corrected argument declarations in thmeig.,0.0
+cf1ddfe,2017-07-13T14:33:33,Fixed call to crystal_init.,1.0
+e67f6b0,2017-07-13T15:56:53,Debugging,0.0
+8c4bca4,2017-07-13T17:44:00,Temporarily reverted functions ddb_from_file and rdddb9 for debugging.,0.0
+2a5d42f,2017-07-13T18:03:47,Made use of ddb_hdr more carefully in rdddb9 to find bug.,0.0
+02574a6,2017-07-13T22:40:52,Reverted again.,0.0
+f0d2926,2017-07-14T05:38:01,Coded the section on references in each topic  However  does not work yet ...,0.0
+500ce59,2017-07-14T05:51:36,Fix bug. The accented characters are OK again.,1.0
+74481c8,2017-07-14T06:33:05,Constitute a function bibtex2html,0.0
+14c3cc4,2017-07-14T06:34:55,Use ibtex2html to improve the reference section of the topic files.,0.0
+7391852.0,2017-07-14T12:36:36,Trying to sanitize cyrstal initialization.,0.0
+611c562,2017-07-14T14:10:35,Hopeless attempt to evince the cause of the bug.,0.0
+a8d368a,2017-07-14T14:17:42,Reverted a bit more in anaddb.,0.0
+1a4e7ed,2017-07-14T14:25:36,Change the location of the symbolic link to tests (to ease further compatibility with the Web delivery),0.0
+3b03dea,2017-07-14T15:11:45,Passed mpi communicator to ddb_hdr_open_read.,0.0
+21f51ab,2017-07-14T15:14:58,Fixed a typo.,0.0
+9d5bb68,2017-07-14T16:18:43,THe lesson base1 is generated automatically. However  links are not yet correct ...,0.0
+587f526,2017-07-14T16:21:24,Fixed another typo,0.0
+f3b45ae,2017-07-14T17:58:46,Fixed ntypat in anaddb.,1.0
+add4d05,2017-07-14T19:32:45,Reverted the reading of the ddb to the new ddb_hdr interface.,0.0
+2125000000000.0,2017-07-14T20:36:47,Must go back to previous commit to fix error.,0.0
+3a28367,2017-07-14T21:56:53,All the links work in the generated lesson_base1.html file.,0.0
+630c1fe,2017-07-14T22:10:35,Create two more references  related to input variables einterp.,0.0
+fdb3eae,2017-07-15T05:28:23,Provides also reference output files for the tuto* tests inside the infos_html tar.gz,0.0
+30e5367,2017-07-15T05:42:50,Include correct links to referecne files for tutorial_base1,0.0
+bfa60f0,2017-07-15T05:49:19,Restructure dirs for tutorial,0.0
+77c80d5,2017-07-15T05:50:13,Fix,1.0
+5376c7a,2017-07-15T05:51:40,Correct,1.0
+9f48074,2017-07-15T05:55:40,Fix link,1.0
+47036f9,2017-07-15T09:33:31,Set up automatic translation procedure for the lesson_*.html files,0.0
+4294378.0,2017-07-15T10:31:53,Generate a dozen of html files using the new mechanism.,0.0
+02a9b25,2017-07-15T10:40:22,"Copy all complementary directories in ""documents""",0.0
+151da90,2017-07-15T10:59:43,Treat correctly the links indicated by src= .,0.0
+aa89044,2017-07-15T11:14:11,Reverting rdddb9 to ddb_hdr.,0.0
+8b0799c,2017-07-15T11:14:49,Fix subtitle printing.,1.0
+94220fb,2017-07-15T11:34:08,Use correctly the comments in HTML .,0.0
+e747efd,2017-07-15T11:56:20,Introduce the markers for intro and body in all the lesson*html files,0.0
+30d95a1,2017-07-15T12:06:41,Reverted ddb_from_file to ddb_hdr.,0.0
+4e2cabf,2017-07-15T16:47:45,Fixed ddbun in ddb_from_file.,1.0
+366ad1f,2017-07-15T18:22:40,Removed some debugging features. Final check before merging back into develop.,0.0
+cef325c,2017-07-15T19:24:47,Create all the other lesson_*.html files (also *.yml). Also correct many special characters !,0.0
+12a0fff,2017-07-15T20:35:25,"Change ""initial"" by ""origin""",0.0
+8824b16,2017-07-15T20:40:14,Merge branch 'secondrevert' into develop,0.0
+34205f5,2017-07-15T21:07:07,Generate also the welcome file  now names lesson_welcome.html,0.0
+e5c9a48,2017-07-15T21:21:03,Change the default link to the lesson_*html files.,0.0
+4d8504d,2017-07-15T21:23:39,Suppress unneeded files lesson* in doc/tutorial,0.0
+cee81b5,2017-07-15T21:27:24,The doc/tutorial/future_origin_files is not needed anumore as well,0.0
+8072fe4,2017-07-15T21:33:35,create theory/documents   and also move the bse and gw theory files from tutorial to theory,0.0
+a50f62a,2017-07-15T21:52:50,Reorder the sections in the generate_doc.py file,0.0
+e9530bb,2017-07-16T07:38:11,Create theory/origin_files with corresponding content.,0.0
+013a3e3,2017-07-16T08:13:12,Create a function assemble_html  presently used for tuto / lesson .,0.0
+748c6ca,2017-07-16T08:18:45,Apply the new version of the script.,0.0
+b1dbc0f,2017-07-16T08:27:23,Code the assembly of the theory.html files,0.0
+a19a850,2017-07-16T08:41:43,Generated html files in the theory directory,0.0
+9b418c4,2017-07-16T09:18:11,Fix many links. Also other minor modifications.,1.0
+0b1317c,2017-07-16T09:44:44,"Define a global class ""components""  that supercedes the old ""section"" and ""topic"" classes.",0.0
+8b0c0df,2017-07-16T10:41:04,Restructure generate_doc.py  create pymods/lib_to_assemble_html  define the authors in topics.,0.0
+dd839e7,2017-07-16T10:54:11,Minor modifs,0.0
+f9a1c9a,2017-07-16T10:54:44,Define pymods/lib_to_assemble_html.py,0.0
+39b2e14,2017-07-16T11:06:27,More flexible,0.0
+dd24924,2017-07-16T12:16:27,Define the possibility fo have supplementary components for assemble_html,0.0
+534786a,2017-07-16T17:34:00,The new generation of files in bibliography dir works.,0.0
+39e2de0,2017-07-16T18:16:40,Define function finalize_html,0.0
+97f6431,2017-07-16T18:23:12,Use finalize_html to finalize the topics,0.0
+d8fc3a7,2017-07-16T18:29:02,finalize_html is used to generate the all_topics file  and fix one problem.,0.0
+72d143a,2017-07-16T19:18:57,Use finalize_html for the var*.html files,0.0
+f51bf45,2017-07-16T21:25:10,Use assemble_html for input_variables files,0.0
+18eef73,2017-07-16T21:52:45,Cleaned up the interface of thmeig.,0.0
+83ba6de,2017-07-17T07:03:19,"Change ""section"" to ""varfile"" everywhere. Less ambiguous ...",0.0
+8f5f346,2017-07-17T07:27:21,Set up users/origin_files/abinit_help.yml from users/abinit_help.html,0.0
+1a82339,2017-07-17T07:38:45,Generate automatically users/generated_files/help_abinit.html,0.0
+20dcee9,2017-07-17T08:15:07,Now generate all help files automatically. Still to be tuned !,0.0
+3f5486d,2017-07-17T10:13:22,Attempting to recover old behavior of thmeig modifying crystal.,0.0
+8c5365a,2017-07-17T11:05:06,Put back a useless call to ddb_hdr_open_read for debugging.,0.0
+abfa1e2,2017-07-17T15:01:41,Reverted again anaddb and thmeig.,0.0
+b8649bf,2017-07-17T19:25:29,reverting m_ddb_hdr.,0.0
+ebfbf97,2017-07-17T20:23:15,Restored anaddb also.,0.0
+d09f09a,2017-07-17T20:37:22,Start to correct many minor issues,0.0
+365ee05,2017-07-17T21:49:19,Continue to fix bugs in script  or in old html files ...,1.0
+8c0c3b7,2017-07-17T22:00:12,Reverted m_ddb also.,0.0
+6045c6e,2017-07-18T06:18:23,Minor corrections.,0.0
+563215c,2017-07-18T09:49:00,Trying to fix speed of sound calculation.,1.0
+004f76b,2017-07-18T10:47:46,Modified final value of spherical average in ifc_speedofsound.,0.0
+3f3efbe,2017-07-18T11:20:25,Define allowed_link_seeds to gather all the link seeds,0.0
+3c227cb,2017-07-18T11:54:58,Define links to files in test directory,0.0
+1ffbb16,2017-07-18T13:18:53,Now the links to files in tests/*/Input and tests/*.Refs work.,0.0
+5d9c480,2017-07-18T13:54:59,"what ABINIT does file is now inside ""users"" dir  and treated as a help file.",0.0
+7b0d710,2017-07-18T13:56:13,Add the automatically created what ABINIT does files,0.0
+ed444a6,2017-07-18T14:18:24,Detect when there are two bibtex with the same reference,0.0
+281e699,2017-07-18T14:23:25,Restored the new interface of thmeig.,0.0
+59c43e2,2017-07-18T14:27:39,Regenerated the reference for the test [v8][t45] since I modified the computation of the spherical average of speed of sound (subroutine ifc_speedofsound). The numerical result should be more stable  but I needed to update the reference so that the test succeeds on abiref.,0.0
+4ea8d20,2017-07-18T14:27:56,Minor fixes,1.0
+0bb2628,2017-07-18T15:32:13,Used a more stringent convergence criterion in test [v8][t45].,0.0
+2ed2732,2017-07-18T15:46:48,Generates automatically the list of generated files.,0.0
+1ab0c44,2017-07-18T15:50:01,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+806a54e,2017-07-18T15:51:26,Set aside the old html files.,0.0
+6813543.0,2017-07-18T16:53:10,Corrected the calculation of the mean absolute error in the spherical avergave of speed of sound. Regenerated corresponding test.,0.0
+b6e2cd0,2017-07-18T17:03:13,cleaning for LDA-1/2,0.0
+e9843ec,2017-07-18T18:04:36,Work on reenabling tests of all variables,0.0
+da144d5,2017-07-18T19:06:32,Modified the reference file for the test according to abiref. This is a bit of a cheat  but the error reported by this machine was:  t45.out passed: absolute error 0.005 < 1.1  relative error 0.0005465 < 0.12 [file=t45.out],0.0
+ba19c43,2017-07-18T21:01:05,Merge branch 'develop' of abigit:trunk/abinit into develop,0.0
+3c09975,2017-07-19T08:25:18,Fix typo,0.0
+53f12f6,2017-07-19T09:50:41,correction of html links for topics,0.0
+d6f27d9,2017-07-19T10:22:21,Shorten the running messages issued by generate_doc.py,0.0
+5bdd9f5,2017-07-19T10:28:16,"Replace ""class"" by ""tribe""",0.0
+5c839ce,2017-07-19T10:30:05,Fix minor bug,1.0
+d9dbde4,2017-07-19T10:55:40,bug correction for merge-request,1.0
+63de7a2,2017-07-19T11:11:31,Shorten the beginning of the var files. Also fix numerous small typos/links.,0.0
+b5b287f,2017-07-19T11:16:56,Improve the heade rof the generated files in the bibliography directory,0.0
+c63e1b1,2017-07-19T11:30:02,Fix many links,1.0
+9395f96,2017-07-19T11:45:25,An line of alphabetical links is defined for allvariables.html.,0.0
+e2939f6,2017-07-19T11:47:30,Clean,0.0
+c6f20ba,2017-07-19T11:49:19,Merge remote-tracking branch 'jollet/input-web' into input-web,0.0
+289755.0,2017-07-19T11:58:25,link corrections,1.0
+ee3069b,2017-07-19T11:59:12,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+54047cf,2017-07-19T12:29:54,Pass assumed-length chars to MPI wrappers,0.0
+a0b6a80,2017-07-19T12:30:27,abi_check.py is OK,0.0
+2d0e1d1,2017-07-19T13:09:21,bug in html links,1.0
+fc837c4,2017-07-19T13:13:57,Start restructure generate_doc.py,0.0
+0a0bd8a,2017-07-19T13:59:58,Rename theory_XXX.yml to theorydoc_XXX  and also fix numerous links.,0.0
+4a63d47,2017-07-19T14:09:30,Change bibhtml.yml to bibfiles.yml,0.0
+851f266,2017-07-19T14:18:36,Internal renaming,0.0
+a891227,2017-07-19T15:20:52,Restructure the parsing of generate_doc.py,0.0
+b4dacde,2017-07-19T15:26:03,Clean unneeded part of code,0.0
+5cfd169,2017-07-19T15:43:35,More cleaning,0.0
+5b3597f,2017-07-19T15:47:27,"Fix closing of ""balises"" remarked by JMB",1.0
+87fe7fa,2017-07-19T17:32:32,bug correction for the test farm.,1.0
+74b1e37,2017-07-19T17:45:43,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+5a1368b,2017-07-19T20:34:17,Extract invariant to avoid internal compiler error with intel2013_sp1.1.106,0.0
+19d1ffb,2017-07-20T07:45:58,Merge gmatteo/assumed-length/5404 into _gmatteo,0.0
+2da9b8a,2017-07-20T08:12:42,Remove errors detected by linkchecker for bibliography,0.0
+0eb3f4b,2017-07-20T08:39:02,Correct links in abinit_vars.yml,1.0
+0a230ac,2017-07-20T08:43:27,Upgrade abifre.bib  and clean theory dir,0.0
+8fe0297,2017-07-20T08:47:35,Fix links,1.0
+e022dfa,2017-07-20T09:02:42,Fix problems detected by linkchecker in tutorial doc,0.0
+479b633,2017-07-20T09:19:08,Fix links in turtorial dir,1.0
+5ad515f,2017-07-20T09:54:43,Fix links in users dir,1.0
+8c348cd,2017-07-20T10:01:05,"Regenerated all ""generated_files""",0.0
+f26567c,2017-07-20T10:07:41,Merge jollet/develop/87fe into _jollet,0.0
+bf563f4,2017-07-20T10:12:34,Clean stuff due to contamination with input-web branch.,0.0
+41c7af8,2017-07-20T10:20:56,link correction for topics,0.0
+5ecc5d9,2017-07-20T10:47:47,Continue to fix links  in tutorial and theory,1.0
+e6ff205,2017-07-20T10:52:35,Regenerated files,0.0
+648a72a,2017-07-20T11:01:55,html link corrections in topics,0.0
+b88be39,2017-07-20T11:13:57,More links fixed,0.0
+1de62c5,2017-07-20T11:14:26,Regenerated files,0.0
+08a898d,2017-07-20T11:16:05,Merge jollet/input-web' into input-web,0.0
+1543101.0,2017-07-20T11:21:47,This list_internal_links.js was needed in the current status.,0.0
+99b7073,2017-07-20T11:33:47,add files in topis,0.0
+3487a40,2017-07-20T11:35:15,Merge jollet/input-web' into input-web,0.0
+ca4d2dc,2017-07-20T11:47:18,Fix links in bibliography file,1.0
+1be8ce2,2017-07-20T12:14:34,Many link fixed,1.0
+9fcc60c,2017-07-20T12:15:06,Regenerate html files,0.0
+e3fab77,2017-07-20T12:33:29,Fix several links,1.0
+9e07ffa,2017-07-20T13:01:16,Fix bugs that created problems for link,1.0
+e5ffa87,2017-07-20T13:04:33,Fix links in topics dir,1.0
+f68460c,2017-07-20T13:08:45,More links fixed. Likely final ...,1.0
+65e8134,2017-07-20T13:27:14,Update links,0.0
+c623fdc,2017-07-20T13:38:43,Fix the problem to make the infos_html tar.gz file,1.0
+3602954.0,2017-07-20T13:52:58,Reference fixes. Also correct a title.,0.0
+74b7a55,2017-07-20T14:42:12,add references in topics+ vdw topic,0.0
+414310e,2017-07-20T14:52:09,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+b45ad75,2017-07-20T15:04:48,Creat the help for the script generate_doc.py,0.0
+65bba6b,2017-07-20T15:05:45,Merge jollet/input-web into input-web,0.0
+41ba523,2017-07-20T17:51:37,Minor fixes  after merge with François.,1.0
+a12c654,2017-07-20T19:27:37,Fix URL,1.0
+90398d5,2017-07-20T20:23:17,Regenerate the doc,0.0
+f4f15ec,2017-07-20T20:51:52,Correct fix this time ?!,0.0
+b5ac882,2017-07-21T07:28:46,Merge branch 'input-web' into _merge_input-web (for security checking),0.0
+540d55e,2017-07-21T07:34:31,Remove unneeded files.,0.0
+fc6d555,2017-07-21T17:17:50,add DMFT  CRPA and TransPath in the topics,0.0
+e9cb5b9,2017-07-22T06:49:36,Merge jollet/input-web into input-web,0.0
+dd66075,2017-07-22T07:18:45,Add the old ABINIT_CPC.tar.gz,0.0
+f9233e4,2017-07-24T10:23:37,Rm ABINIT_CPC.tar.gz that was there only for communicating it to Francois.,0.0
+d3563bf,2017-07-24T11:54:22,Removed unnecessary call to ddb_hdr_open_read in anaddb.,0.0
+f25866c,2017-07-24T13:50:38,Import lesson on temperature-dependence of the electronic structure from the wiki.,0.0
+b9bdad1,2017-07-24T15:14:23,Add fancier display of the input variables,0.0
+7f0902c,2017-07-24T15:52:59,Imported the text of the tdepes lesson inside abinit/doc.,0.0
+096d87c,2017-07-24T16:07:26,Minor fix,1.0
+adc3fed,2017-07-24T18:42:14,add new topics,0.0
+32e4519,2017-07-24T21:58:50,Merge jollet/input-web into input-web,0.0
+ba2672f,2017-07-25T08:12:26,Merge biederj/input_web/b9bd into _biederj,0.0
+da58ec9,2017-07-25T08:29:09,Apply generate_doc.py,0.0
+2c7b2e9,2017-07-25T08:54:36,Add figures in doc/tutorial/documents/lesson_tdepes  also clean doc/tutorial/documents/theory_*  actually duplicated in doc/theory ...,0.0
+eef1000,2017-07-25T10:06:52,Modify the constitution of list of lessons and topics. Also add figs and eqs for tutorial tdepes.,0.0
+ee51469,2017-07-25T10:12:14,Clean,0.0
+e48bdf3,2017-07-25T10:25:42,Improve comment. Fix equation in lesson_tdepes.,1.0
+05ccb3f,2017-07-25T10:33:04,Update the ref for abirules#01,0.0
+2a934c5,2017-07-25T11:26:43,"Order the ""Howto"" list using the keywords instead of the names",0.0
+aa27190,2017-07-25T11:45:56,Improve an error message in check_forbidden_in_doc_yml.py  and clean one of the references.,0.0
+81743fc,2017-07-25T11:49:55,Merge input-web into _biederj,0.0
+7926287.0,2017-07-25T16:13:17,Start to clean references in DMFT tutorial.,0.0
+fc78bcf,2017-07-25T18:05:59,add topics DFPT  GWls and El-ph,0.0
+ac719c2,2017-07-25T18:12:08,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+3a15aaf,2017-07-26T08:50:55,Fix several problems due to the change of name temp to tdepes  hf to hybrids then to Hybrids. Should pass the tests on abiref_debug,1.0
+a66e83c,2017-07-26T08:57:30,Merge _biederj into input-web,0.0
+aa4438c,2017-07-26T08:59:56,Merge jollet/input-web into input-web,0.0
+269c2fe,2017-07-26T09:54:37,"Define ""misc"" bibtex entrey   correct ""masterthesis"" to ""mastersthesis""    fix several typos.",0.0
+1f5768f,2017-07-26T10:16:03,Fix a bug in the ordering of the title/subtitle in the lists of files. Also miscellaneous fixes.,1.0
+68fde11,2017-07-26T10:53:57,Fix typo,0.0
+9ec5fd6,2017-07-26T11:33:03,Fix issues in lesson_DMFT. Also add the needed references.,1.0
+eafa725,2017-07-26T11:34:21,Merge develop into input-web,0.0
+9f6b2ae,2017-07-26T12:19:56,abi_checks.py checks the topic name and tribe provided for each input variable. One error was detected. Apparently  still 133 input variables that do not have yet a topic+tribe.,0.0
+5bfe812,2017-07-26T12:47:10,Improve capture of errors in yml files.,0.0
+e60969a,2017-07-26T13:08:43,Suppress the doku2html function  not appropriate.,0.0
+ede9a40,2017-07-26T13:13:19,Reinstall some error messages  lost due to overwriting.,0.0
+4abdbe4,2017-07-26T13:25:19,Create the function read_yaml,0.0
+2d1ef75,2017-07-26T13:58:52,Allow the use of the | separator to make links  as in dokuwiki.,0.0
+05fecd1,2017-07-26T14:22:57,Anaddb can now write interpolated DDB files.,0.0
+84d6928,2017-07-26T14:34:58,add topics temperature dependence of eigenenergies ad finite electric field.,0.0
+224e797,2017-07-26T14:38:31,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+49acb9f,2017-07-26T14:52:38,Work on dokuwiki syntax,0.0
+8297489.0,2017-07-26T15:29:35,Restored a line I had accidentally removed.,0.0
+019c175,2017-07-26T15:30:27,Deal with namespaces,0.0
+3f6380d,2017-07-26T15:51:22,"Use upper case for all ""characteristic"" of input variables.",0.0
+999cc13,2017-07-26T15:59:01,Test the dokuwiki features of the links. It works ...,0.0
+e044434,2017-07-27T08:29:30,Intermediate step towards the constitution of the varset: namespace,0.0
+1ca8096,2017-07-27T08:49:10,Now the varset: namespace is activated.,0.0
+cbebdf3,2017-07-27T10:04:17,Added a test for prtddb variable.,0.0
+36dd43a,2017-07-27T10:14:02,"""specials"" has been replaced by ""externals""  which is more accurate. Also  the namespace varset:   is OK.",0.0
+e83a619,2017-07-27T10:27:38,Minor fixes,1.0
+8c8fddb,2017-07-27T11:01:09,Allos sections in links  using the dokuwiki style #,0.0
+96eee24,2017-07-27T11:20:53,Properly closed all files in anaddb.,0.0
+a8920b1,2017-07-27T11:23:11,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+2bb4a1d,2017-07-27T12:33:52,Moved the documentation of prtddb to the new yaml source file.,0.0
+db0f392,2017-07-27T13:47:56,The mechanism for creating sections and indexing them works.,0.0
+49d1119,2017-07-27T14:11:52,"Add a few bib items  and also define the ""unpublished"" bibtex item.",0.0
+be2abf1,2017-07-27T14:20:44,Clean lesson_ucalc_crpa,0.0
+fc6d388,2017-07-27T14:25:11,Merge jollet/input-web into input-web,0.0
+46886c6,2017-07-27T14:55:51,add topics GW  BSE and Random stopping power,0.0
+7994782.0,2017-07-27T14:58:43,Merge jollet/input-web into input-web,0.0
+d3e7e4c,2017-07-27T14:59:58,Order the bibliography file,0.0
+da2815c,2017-07-27T16:14:23,"Replace ""ldau"" by ""dftu""",0.0
+2af2c6b,2017-07-27T18:19:53,"Introduce a new field ""executables"" in Abivars.jar",0.0
+afac0f9,2017-07-27T18:46:01,add topic Electric Field Gradient,0.0
+42b5dd0,2017-07-27T18:54:15,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+213c61b,2017-07-27T21:08:20,Small script  will be used as template to modify a bunch of files,0.0
+880371a,2017-07-27T21:09:27,Merge jollet/input-web into input-web,0.0
+9b64284,2017-07-27T21:17:45,"Add the ""executables"" field in abinit_vars.yml",0.0
+05f2f14,2017-07-27T21:24:23,Minor modif of Abivars.jar,0.0
+30c5c21,2017-07-27T21:25:09,Clean,0.0
+f209417,2017-07-27T21:28:58,Apply generate_doc.py,0.0
+dfc1a5a,2017-07-27T21:45:39,Fix several problems detected by the test farm.,1.0
+dc57b5b,2017-07-28T05:26:07,"Change ""varfile"" to ""varset"" in Abivars.jar and abinit_vars.yml (not yet in generate_doc.py)",0.0
+f8d2979,2017-07-28T05:44:12,Prepare the future ...,0.0
+5fe45a8,2017-07-28T06:18:59,Work on filemodifier.py to allow inserting sections,0.0
+93a83bc,2017-07-28T07:51:11,Fix varfile=>varset in generated_doc.py  and apply it,1.0
+7fe89b2,2017-07-28T08:16:05,Continue to work on filemodifier.py. lesson_spin.yml_new is the present resulting file ...,0.0
+c9d373e,2017-07-28T08:27:12,Continue the rename of varfiles to varsets,0.0
+eb49b62,2017-07-28T08:54:49,Fix minor problems with links and other things  detected by the test farm,1.0
+27d7847,2017-07-28T09:56:40,Update link,0.0
+53206de,2017-07-28T11:18:49,Extrernal dokulinks are treated correctly.,0.0
+2ff4c7f,2017-07-28T12:59:38,Tune the doc of the generate_doc.py script.,0.0
+4f428c8,2017-07-28T15:30:42,add anaddb_vars.yml file,0.0
+cef8aa6,2017-07-28T16:16:49,Suppress parentheses in latex2html. Not yet finalized.,0.0
+ca583e3,2017-07-28T20:29:34,Correct the permissions. Strange to see that they had changed ...,0.0
+df7eeff,2017-07-28T20:30:51,Merge jollet/input-web into input-web,0.0
+eaa0ea2,2017-07-28T20:33:22,Apply generate_doc.py,0.0
+899711f,2017-07-28T20:36:32,Update the reference for abichecks t01.out,0.0
+ffe22f8,2017-07-28T21:03:28,Remove blanks ...,0.0
+57667a0,2017-07-28T21:11:29,Add the treatment of \textit,0.0
+4bd2815,2017-07-28T21:12:34,Apply generate_doc.py,0.0
+bbd7f4c,2017-07-28T21:20:37,rename list_external to list_externalvars,0.0
+199ed08,2017-07-28T22:07:00,Add quotes in the abivarname field,0.0
+40cfafd,2017-07-29T06:26:37,Merge antonius/develop/2bb4 into _antonius,0.0
+c9b669d,2017-07-29T06:27:55,Apply generate_doc.py,0.0
+2d9bac4,2017-07-29T06:53:25,Make some test of the use of the inputvar@executable notation,0.0
+c0dd9b6,2017-07-29T11:15:29,All anaddb variables in abivars.yml,0.0
+f3da1f9,2017-07-29T11:34:30,Suppress the @codename inside the varset files.,0.0
+48e7a36,2017-07-29T11:43:25,Create varaim.html and varoptic.html (still empty)  and taylor the header of these files as well as varanaddb.html,0.0
+231d9e6,2017-07-29T11:54:23,Prepare correct links to varanaddb,0.0
+0281cd1,2017-07-29T12:03:13,Apply generate_doc.py : the links to variables @anaddb seem correct ...,0.0
+116120f,2017-07-29T13:07:34,Reorder the  input variables according to the alphabet,0.0
+19fe6e7,2017-07-29T20:58:19,Improves abicheck.py  to detect more problems. Also fix a few of them.,1.0
+a318c66,2017-07-29T21:29:34,Add warning header at the top of each generate HTML file.,0.0
+aea1e3d,2017-07-30T07:49:51,abi_check.py detection capabilities improved.,0.0
+a39fddb,2017-07-30T10:13:18,Merge branch 'develop' into input-web,0.0
+666cb08,2017-07-30T10:31:41,Introduce Executable in the echo of varsets  also made characteristics optional.,0.0
+1d4d178,2017-07-30T15:45:07,Cound the length of variables  and warn if longer than 20 characters.,0.0
+5b3b426,2017-07-30T15:51:30,SUppress input variable gwls_second_model_parameter : not used  in an unused part of ABINIT  and too long name !,0.0
+9dca142,2017-07-30T16:12:16,Shorten gwls_dielectric_model to gwls_diel_model,0.0
+7499500000.0,2017-07-30T16:20:56,Shorten gwls_sternheimer_kmax to gwls_stern_kmax,0.0
+acd29fc,2017-07-30T16:29:28,"Define a flag ""strict"" in abi_check.py  in order to be able to merge into develop.",0.0
+8191c93,2017-07-30T19:16:37,Most of the links to help_anaddb.html#XXX are now correct.,1.0
+4c87220,2017-07-31T07:46:07,"Suppress ""executables"" from the entries in abinit_vars.yml   update Abivars.jar for this modification  and also allows the recognition of namespace: and @namespace .",0.0
+173c0b9,2017-07-31T08:19:52,Reenable strict=1 in abi_checks.py,0.0
+358cd92,2017-07-31T08:29:38,Add links for the dipdip variable,0.0
+93072ab,2017-07-31T11:23:41,Set strict=0  for the test farm.,0.0
+6a85635,2017-07-31T11:44:00,Fix typo,0.0
+e0ee30b,2017-07-31T12:07:42,Anoth typo,0.0
+bd94723,2017-07-31T13:44:03,Suppress the linke with gwls_second_model_parameter,0.0
+55e878b,2017-07-31T13:50:45,Fix links  problems detected with linkchecker.,1.0
+03bbac8,2017-07-31T14:39:52,Fix links,1.0
+f0f37b4,2017-07-31T16:45:05,add topic Bader and Optic,0.0
+3820da0,2017-07-31T20:58:10,Adjust one tolerance  update docchk.py .,0.0
+896a9df,2017-07-31T21:02:13,Update ref file for test abirules #01.,0.0
+4221fb6,2017-07-31T21:05:35,Keep strict=1 in input-web branch (after merge of _input-web).,0.0
+9a3796b,2017-07-31T21:07:10,Merge jollet/input-web into input-web,0.0
+5dcd07c,2017-08-01T06:40:13,Apply generate_doc.py,0.0
+91729f9,2017-08-01T12:03:17,Minor fixes  for errors detected by linkchecker. Also update abichecks/abirules/Refs/t01.out.,1.0
+feadb87,2017-08-01T12:13:30,Apply generate_doc.py,0.0
+8e192ed,2017-08-01T12:15:40,Fix small3* (should be small)  detected by JMichel,1.0
+6471025.0,2017-08-01T18:04:36,add topics anaddbCommon  anaddbSpec and anaddbEPC,0.0
+890fe4e,2017-08-01T18:05:41,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+ec6dca3,2017-08-02T13:49:31,Make LDA+U+SO and LocalEx+SO calculations compatible with nspden=1,0.0
+449829c,2017-08-02T14:26:31,add a link in electron-phonon topics,0.0
+7c77adc,2017-08-02T18:53:35,Update ref for modified test (NC+SO+LDAU) + adjust some array sizes,0.0
+218fc96,2017-08-03T10:05:04,Merge branch 'hotfix-8.4' of abinit-gitlab:trunk/abinit into quickfixes,0.0
+7cdb759,2017-08-03T14:50:45,Adjust tolerance for new test,0.0
+e1ac608,2017-08-04T12:33:31,Add the help file for fold2bloch (had been forgotten !),0.0
+d6c79b8,2017-08-04T12:47:52,Complete help_fold2bloch.yml,0.0
+f7f3d6a,2017-08-04T13:03:37,The help file for fold2bloch looks allright.,0.0
+a77d2a6,2017-08-04T13:05:42,Merge jollet/input-web into input-web,0.0
+fc4d49d,2017-08-04T13:12:12,Complete the list of links (for fold2bloch),0.0
+f29aea8,2017-08-04T15:55:12,Fix many links related to aim,1.0
+ec82568,2017-08-04T16:12:57,Correct even more links,0.0
+dd49620,2017-08-04T16:13:30,Back to the normal,0.0
+e41056b,2017-08-04T20:20:03,Add tests/v5/Input/t22.in that ghad been erased incorrectly ?!,0.0
+0e97d1a,2017-08-04T20:25:27,Fix incorrect link,1.0
+ec488c7,2017-08-04T21:28:34,Fix a link  and update a reference,1.0
+554480e,2017-08-04T21:29:31,Switch from max 18 characters to max 20 characters,0.0
+327ca97,2017-08-05T07:17:04,Change the name of varsets in abinit_vars.yml and Abivars.jar.,0.0
+652b05f,2017-08-05T08:56:31,Continue to replace varfile by varset.,0.0
+41fff5e,2017-08-05T08:58:32,Apply generate_doc.py,0.0
+eae1e29,2017-08-05T09:01:39,Suppress all var*.html files,0.0
+aafdf02,2017-08-05T10:24:38,Generate varset_* files. Also prepare the modification of all links to shortcuts.,0.0
+474b034,2017-08-05T10:44:08,Translate many links to shortcut.,0.0
+054a1c8,2017-08-05T11:28:16,Shorten more links,0.0
+7166623.0,2017-08-05T16:07:59,Shorten more links,0.0
+89956c6,2017-08-05T16:11:49,Shorten and fix some links,1.0
+817237c,2017-08-05T16:45:29,More shortcuts,0.0
+01531b6,2017-08-05T16:53:20,More shortening and fixes,0.0
+f7e6af6,2017-08-05T17:13:42,More shortening and fixes. All input variables should be addressed with shortcuts now !,0.0
+3646ba2,2017-08-05T18:12:46,Reestablish full flow of generate_doc.py,0.0
+6ffeeae,2017-08-05T18:26:43,Fix wrong URLs detected by linkchecker,1.0
+320619e,2017-08-05T19:23:07,FIx more links,1.0
+b3e3cdd,2017-08-06T06:04:15,FInalize lesson_spin with tags. Also minor modif in table of content.,0.0
+6e0eb74,2017-08-06T06:15:37,Analysis tool lesson,0.0
+fd14749,2017-08-06T06:35:13,Lesson base1,0.0
+631b3eb,2017-08-06T06:44:54,Lesson2 + fix,0.0
+2876952.0,2017-08-06T06:49:52,Lesson_base3,0.0
+abcc470,2017-08-06T06:56:25,Lesson_base4,0.0
+7515011.0,2017-08-06T07:04:56,Lesson basic paral,0.0
+0ac8731,2017-08-06T07:15:05,Lesson_bse,0.0
+6879fc7,2017-08-06T07:32:05,Lesson_elastic,0.0
+c6c3dd4,2017-08-06T09:59:11,Add numeral tag (for compatibility with other mechanisms),0.0
+9d9e9ca,2017-08-06T10:08:12,Lesson_eph,0.0
+f095393,2017-08-06T10:15:17,Lesson_eph,0.0
+8a2ef72,2017-08-06T10:24:10,Lesson fold2bloch  also better spacing after hr,0.0
+abf825f,2017-08-06T10:40:01,Lesson_gw1,0.0
+4833c35,2017-08-06T10:43:03,Lesson_gw2,0.0
+84999aa,2017-08-06T10:47:17,Lesson_nlo,0.0
+c63b0e8,2017-08-06T14:19:38,Lesson_nucl  and update  ref for abirules #01,0.0
+584606.0,2017-08-06T14:23:15,Lesson_optic,0.0
+87d6173,2017-08-06T14:27:04,Lesson_paral_dfpt,0.0
+c3e7397,2017-08-06T14:37:52,Lesson_paral_gspw,0.0
+37a26fd,2017-08-06T14:45:21,Lesson_gswvl,0.0
+c07ac35,2017-08-06T14:51:25,Lesson_paral_mbt,0.0
+7c74153,2017-08-06T18:47:54,Fix update of abirules/Refs/t01.out,1.0
+9029918.0,2017-08-07T06:22:08,Add flowchart v3,0.0
+5912a6b,2017-08-07T07:46:03,Merge gmatteo/hotfix-18 into _gmatteo,0.0
+adc1523,2017-08-07T08:02:01,Lesson_paral_moldyn,0.0
+5b8cb2b,2017-08-07T08:09:34,Lesson_paral_string,0.0
+c3867eb,2017-08-07T08:27:40,Lesson_paw1 and add Kresse1999,0.0
+6f76210,2017-08-07T08:41:54,Lesson_paw2,0.0
+c972a9e,2017-08-07T08:47:30,Lesson_paw3,0.0
+de56f41,2017-08-07T08:58:17,"Lesson_DFPT1   and start to rename ""repsonse-function"" to DFPT",0.0
+39c7983,2017-08-07T09:03:48,Lesson_rf2,0.0
+078f6d5,2017-08-07T09:15:59,Lesson_source_code. Add warning.,0.0
+505da1d,2017-08-07T09:36:08,Lesson_casida  also add three references,0.0
+604f737,2017-08-07T09:39:40,Lesson_tdepes,0.0
+c1e70eb,2017-08-07T09:47:44,Lesson_ucalc_crpa,0.0
+1f7f604,2017-08-07T09:49:32,Order the bibtex file,0.0
+3b75b99,2017-08-07T09:53:10,Lesson_udet,0.0
+bdff3be,2017-08-07T09:59:23,Lesson_wannier90,0.0
+586d7cf,2017-08-07T10:40:39,_paral_string becomes _paral_images,0.0
+8c11c2f,2017-08-07T11:41:00,Update tutorial_flowchart,0.0
+622cda0,2017-08-07T11:51:38,Help_aim,0.0
+efa4e34,2017-08-07T12:00:35,Help_anaddb,0.0
+878cfb7,2017-08-07T12:09:51,Fix recognition of links,0.0
+8d88c60,2017-08-07T12:15:01,Help_cut3d,0.0
+da0fe33,2017-08-07T12:19:29,Help_fold2bloch,0.0
+9652448.0,2017-08-07T12:22:57,Help_mrgddb,0.0
+720a958,2017-08-07T12:30:30,Help_mrgscr,0.0
+137a94f,2017-08-07T12:47:01,Help_new_user,0.0
+a25a9aa,2017-08-07T12:52:38,Help_optic,0.0
+d583256,2017-08-07T13:03:48,Help_respfn,0.0
+adb6094,2017-08-07T13:15:00,Rename what_ABINIT_does,0.0
+9513290.0,2017-08-07T13:19:19,Fix link,1.0
+75430c8,2017-08-07T13:25:43,Help_features,0.0
+832bf30,2017-08-07T14:32:02,First version of the script for a table of content with two levels,0.0
+53d6352,2017-08-07T15:11:57,Complete generation of table of content with a second level. Also improve browsing using table of content.,0.0
+88ee7bd,2017-08-07T16:02:33,Theorydoc_mbt,0.0
+3693131.0,2017-08-07T18:25:24,Update tutorial_flowchart,0.0
+88a725e,2017-08-07T18:26:15,Merge branch 'input-web' of gitlab:/trunk/abinit into input-web,0.0
+4b273a3,2017-08-07T18:27:10,Apply generate_doc.py,0.0
+b636778,2017-08-07T20:29:12,Adjust click for flowchart,0.0
+eb5c990,2017-08-07T20:42:35,Rename bibliography dir as biblio   bibliography.html as bib_biblio.html   bibtex.html as bib_bibtex.html   acknowledgments.html as bib_acknow.html,0.0
+ad2dcd6,2017-08-07T21:19:47,Introduce namespace bib:,0.0
+026ab27,2017-08-07T21:37:58,Links with the namespace bib: are recognized. Use shortcuts for lessons_gw*,0.0
+490b3af,2017-08-07T21:48:13,Fix different typos,1.0
+d000db2,2017-08-08T05:40:26,Fix typo,1.0
+a358b5f,2017-08-08T05:46:13,Fix ref and typo,1.0
+5863f14,2017-08-08T06:09:08,"Improve help_features.html . Also fix creation of links ("" "" was missing)",0.0
+8e3935f,2017-08-08T06:19:17,Minor improvements of some topics.,0.0
+8dbd47f,2017-08-08T07:53:54,Theorydoc bse and mbt,0.0
+683cffe,2017-08-08T07:55:13,Merge branch 'input-web' of gitlab:trunk/abinit into input-web,0.0
+6950a89,2017-08-08T07:56:30,Apply generate_doc.py,0.0
+15ee0bd,2017-08-08T08:00:20,Minor fixes,1.0
+f4ccdf6,2017-08-08T09:21:15,Work on the list of topics,0.0
+455a7d7,2017-08-08T09:53:07,Improves formatting,0.0
+53ba7b3,2017-08-08T10:54:41,Make the reading of density files compatible with nspinor=2/nspden=1,0.0
+8a6354a,2017-08-08T15:59:53,New topics  with a more complete structuration... Not yet final  though ...,0.0
+5bde747,2017-08-08T18:58:18,HTML files : new topics  and also delete two old topics.,0.0
+868ec47,2017-08-08T19:06:43,Update list of internal links,0.0
+e1f290b,2017-08-08T19:11:24,Remove lotf  slab  alch  jell from the list of allowed tribes.,0.0
+d0764dc,2017-08-08T19:16:39,Fix link,1.0
+5ce1785,2017-08-08T20:47:21,"Suppress the ""GW"" characteristics  not appropriate anymore",0.0
+2747f52,2017-08-08T20:52:24,"Get rid of ""BETHE-SALPETER"" characteristics  now unappropriate.",0.0
+046b136,2017-08-08T20:56:36,Get rid off TDDFT characteristics  unappropriate.,0.0
+2ab94f4,2017-08-08T21:04:23,Remove the now unappropriate RESPFN characteristics,0.0
+8acf2f0,2017-08-08T21:07:47,Suppress now unappropriate NONLINEAR characteristics,0.0
+bdb6991,2017-08-08T21:17:01,Fix link,1.0
+f746f93,2017-08-08T21:20:00,Update help_abinit.*,0.0
+384549.0,2017-08-08T21:50:00,THe topic_UnitCell is now complete.,0.0
+72ed4bd,2017-08-09T05:13:45,Add topic_UnitCell.*,0.0
+5b91734,2017-08-09T08:29:38,Improves topic_UnitCell,0.0
+f2f039c,2017-08-09T10:08:45,New topic AtomTypes. Also tune topic UnitCell.,0.0
+929ebe2,2017-08-09T10:15:03,Change echo of links in the table of content,0.0
+53b4fa9,2017-08-09T11:35:23,"New topic SmartSymmetrizer. Suppress the ""SYMMETRISER"" characteristics of input variables.",0.0
+9a4ea47,2017-08-09T12:18:39,Finalize SmartSymm topic  and complete crystal topic (not yet cleaned).,0.0
+e0c0771,2017-08-09T12:56:34,Topic AtomManipulator. Also many other small modifs.,0.0
+a978a8b,2017-08-09T13:28:40,Remove GEOMETRY_BUILDER from the list of characteristics. Replace geometry builder by atom manipulator in the doc. Clean help_abinit.yml.,0.0
+cbdb0f2,2017-08-09T13:39:26,Clean topic crystal + other minor issues.,0.0
+65264a9,2017-08-09T13:59:26,Many small fixes,0.0
+b401c17,2017-08-09T14:31:45,More cleaning/improvements for the topics.,0.0
+e5bb60f,2017-08-09T14:36:25,Change effmass to effmass_free,0.0
+e360602,2017-08-09T14:41:26,Change effass to effmass_free in the tests,0.0
+5050bed,2017-08-09T14:48:03,Replace effmass by effmass_free also in the yml files.,0.0
+ff76d3f,2017-08-09T15:50:26,Implement reading of a density file with spin conversion (can convert every nspden case),0.0
+1af7fb3,2017-08-09T16:13:00,Many small fixes,1.0
+bb69b4f,2017-08-09T17:46:44,Fix one remaining effmass,1.0
+caa750e,2017-08-09T17:47:51,Another fix for effmass,1.0
+315fddf,2017-08-09T18:10:56,Convert more effmass to effmass_free,0.0
+2a30fad,2017-08-09T19:01:03,Update abichecks/abirules/Refs/t01.out,0.0
+4374ebb,2017-08-09T20:43:47,Work on topic ElecBandStructure and ElecDOS,0.0
+99661cb,2017-08-09T21:03:59,COmpeting the topics ElecDOS,0.0
+030a8e9,2017-08-09T21:10:52,More improvement of topic ElecBandStructure,0.0
+dbd65f0,2017-08-09T21:21:06,Work on topic recursion,0.0
+c648366,2017-08-09T21:21:51,Apply generate_doc.py,0.0
+c892461,2017-08-09T21:32:51,Rename topic SCF to SCFControl,0.0
+34f1e10,2017-08-10T06:07:15,"Distribute the input variables initially contained in the topic ""convergency"" amon four more detailed topics",0.0
+30ff29c,2017-08-10T06:22:44,Tune Planewaves and SCFAlgorithms topics.,0.0
+47621f5,2017-08-10T08:07:41,Rename ChargedCell to Coulomb. Improve SCFAlgorithms.,0.0
+6f8e087,2017-08-10T08:44:16,Tune the topics SCFControl and TuningSpeed,0.0
+fa3693a,2017-08-10T09:13:37,Clean topic multidtset and activate topic ForcesStresses,0.0
+ed7e44f,2017-08-10T11:51:51,Improve the topics PseudosPAW and AtomTypes.,0.0
+6ac18fc,2017-08-10T12:35:02,Create DeltaSCF topic. Mention Jia2017 reference.,0.0
+d21f118,2017-08-10T12:54:36,Treat superscript translation from .tex to HTML,0.0
+c8cd9d7,2017-08-10T13:03:18,Split lib_to_assemble.py,0.0
+2218751.0,2017-08-10T13:07:26,Final names ...,0.0
+133a480,2017-08-10T13:14:09,"Rename ""How to"" to ""Topic"" in the doc of input variables",0.0
+e248927,2017-08-10T14:14:17,Capture incorrect topic and tribe in input variables. Also minor style correction .,0.0
+5ba030e,2017-08-10T14:57:54,Ref file because now reding of density is correct with PAW+SO,0.0
+8e5343d,2017-08-10T15:36:26,Backlinks to topic pages working.,0.0
+7cba348,2017-08-10T16:12:03,Minor improvements  import some information present in the feature file.,0.0
+f022776,2017-08-10T16:34:35,Avoid some numerical instabilities for non-collinear magnetism wit hzero magnetization,0.0
+dad6fc9,2017-08-10T18:16:43,Add a new test suite (for future use  not now): HPC,0.0
+042f03b,2017-08-10T20:53:58,Link topic Bader.,0.0
+be3e291,2017-08-11T05:20:10,Fixes for the infos tar.gz  from Jean-Michel. Also miscellaneous improvements of topics.,1.0
+ee05de1,2017-08-11T06:13:17,Improves the topic_Optic  and related files.,0.0
+71ca315,2017-08-11T06:21:43,Creat additional topics related to DFPT,0.0
+f950c6a,2017-08-11T08:27:45,Define new topics Elastic  Phonons  PhononBands  Temperature  to replace DFPT and anaddb ones,0.0
+7cc0c7b,2017-08-11T08:36:04,Add ConstrainedPol topic  and other minor improvements,0.0
+f08a334,2017-08-11T08:59:00,Depopulate anaddbSpec.,0.0
+d21cab5,2017-08-11T09:03:17,Finalize Constrainedpol topic,0.0
+e3b9fc4,2017-08-11T09:29:45,Suppress topic anaddbSpec (after having transferred elsewhere the links to example files),0.0
+b0ce4ca,2017-08-11T09:51:42,Complete the content of topic Elastic,0.0
+182ad5a,2017-08-11T10:55:58,Shorten too long lines,0.0
+b17549e,2017-08-11T11:13:21,Deactivate change in initrhoij because it produces some test instabilities (and because it seems not mandatory),0.0
+502c7e8,2017-08-11T13:17:21,Add topic PhononWidth. Clean PhononBands.,0.0
+6378cb8,2017-08-11T13:34:12,Merge torrent/quickfixes into _torrent-8.4,0.0
+2f9cf88,2017-08-11T14:04:59,Create ElPhonTransport. Rename ElPhon to ElPhonInt.,0.0
+45633d2,2017-08-11T14:17:40,Renamed TDep to TDepES,0.0
+77caecb,2017-08-11T14:33:57,Add new tutorial on electron-positron annihilation (from J. Wiktor + M. Torrent),0.0
+cdfcce8,2017-08-11T14:41:56,Add forgotten files,0.0
+89baac1,2017-08-11T14:45:13,Clean ElPhonInt and ElPhonTransport.,0.0
+cbf7c11,2017-08-11T14:54:21,Suppress anaddbEPC  entirely redistributed.,0.0
+4cd74bd,2017-08-11T15:22:57,Add test section in input files   correct issue: pos. and elec. densities were inverted,0.0
+ad1213d,2017-08-11T15:30:41,Redistribute input variables that were mentioned in topic anaddbCommon  and suppress the latter.,0.0
+26dba86,2017-08-11T15:37:25,Add first version of ref files for new positron tutorial,0.0
+4d9f764,2017-08-11T15:42:12,Continue cleaning.,0.0
+f74dba1,2017-08-11T15:53:14,First steps of the finalization of v8.4.3.,0.0
+8c9973b,2017-08-11T15:54:16,Reeaxmine topics up to topic_PAW,0.0
+2a9e7c9,2017-08-11T16:44:58,Improve printing of density and energy for electron-positron,0.0
+eb786e4,2017-08-11T17:35:08,Copy abiref reference files  correct a division by zero,0.0
+93ae1eb,2017-08-11T19:27:19,Changes needed after a first round on the testfarm,0.0
+1a3faad,2017-08-11T21:34:45,Fix a remaining problem with backlinks in topics,1.0
+f5346a0,2017-08-11T21:47:21,Update Abivars.jar with a reduced list of characteristics.,0.0
+d817493,2017-08-12T00:50:06,Some ref files modified,0.0
+5c83d5a,2017-08-12T02:58:31,Adjust tolerances and inputs of tests,0.0
+98eb699,2017-08-12T05:38:02,Minor update obtained by applying abi_yml2html.py,0.0
+db1dfc7,2017-08-12T05:41:53,Apply abilint,0.0
+596ff88,2017-08-12T06:20:03,Capture erroneous topics from input files.,0.0
+21f0cc4,2017-08-12T07:02:15,All topics mentioned in input files exist.,0.0
+469a1d1,2017-08-12T11:53:02,Merge branch 'master' into develop : import hotfix-8.4   with merge requests iid 163  180  181  182.,0.0
+b6fd137,2017-08-12T12:14:06,Adjust tolerance,0.0
+2afa9c4,2017-08-12T12:14:48,Merge branch 'hotfix-8.4' of abinit-gitlab:trunk/abinit into tutopositron,0.0
+c78fa79,2017-08-12T12:54:10,Initialize v8.4.4,0.0
+e22d43d,2017-08-12T14:13:23,Merge branch 'develop' into input-web,0.0
+8d06942,2017-08-12T14:51:47,Create topic GeoConstraints,0.0
+177cd82,2017-08-12T16:40:25,Fix topics for some input files. Start to prepare finding inputvariables in input files.,1.0
+e66aac7,2017-08-12T16:41:22,Had not yet stored GeoConstraints ...,0.0
+2547498.0,2017-08-13T01:05:22,Improve tpositron_7 test (portability issue),0.0
+cbadb0b,2017-08-13T02:27:32,Continue to try to make a test portable,0.0
+5347f34,2017-08-13T07:56:26,Generate the list of input variables for each test. Not fully debugged though.,0.0
+914b0e8,2017-08-13T10:42:12,Accumulate statistics.,0.0
+6b7c4fe,2017-08-13T11:52:45,Continue to try to make a test portable,0.0
+e19765e,2017-08-13T13:00:18,Continue to try to make a test portable,0.0
+37888bd,2017-08-13T14:18:34,Update (again) ref file,0.0
+57c0725,2017-08-13T14:20:06,Continue to try to make a test portable,0.0
+717e894,2017-08-13T16:05:21,Complete the coding of the usage report. Will then apply.,0.0
+f2fb7d0,2017-08-13T16:27:13,Now mention the links to tests using the input variables.,0.0
+175216e,2017-08-13T16:55:37,Slight adjustment.,0.0
+b8c9f74,2017-08-13T16:57:05,Another adjustment.,0.0
+a0762f3,2017-08-13T17:51:43,Create varset_stats . Minor typo modifications.,0.0
+e2571b5,2017-08-13T18:22:35,Make table of content of varset_stats. Also minor modifs.,0.0
+31ae020,2017-08-13T18:27:43,Clean generate_doc.py,0.0
+39c689e,2017-08-13T18:53:57,Mention the number of tests per executable in the stats. Also minor modif for blanks in other varsets.,0.0
+6f96c2b,2017-08-13T20:46:47,Adjust some tolerances,0.0
+477ce55,2017-08-14T07:09:10,Finalize varset_stats. Also fix typo occurrence (was often occurence),0.0
+4dde2ab,2017-08-14T20:52:07,Clean topic k-points,0.0
+bc0f257,2017-08-15T10:05:22,Topics in section 6 of lesson_features have been cleaned and checked.,0.0
+17d4777,2017-08-15T10:06:19,Create q-points topic,0.0
+899789e,2017-08-15T10:23:00,Sec 7 of lesson_features has been reviewed/completed.,0.0
+4b51c72,2017-08-15T10:29:14,The introduction of all existing topics has been reviewed.,0.0
+6edba42,2017-08-15T14:29:29,Add topic_Susceptibility   add Veithen2002,0.0
+0fbabbc,2017-08-15T15:20:22,Create SelfEnergy topic,0.0
+79b6b2b,2017-08-15T15:44:42,Create topic SelfEnergy,0.0
+db84a17,2017-08-15T16:03:23,Create topics SelfEnergy and FrquencyMeshMBPT,0.0
+6abe1f3,2017-08-15T16:13:18,"Suppress the shortlinks to ""GW"" characteristics  as non existent anymore.",0.0
+b1b187b,2017-08-15T16:50:06,Create the Abipy topic,0.0
+22cbb48,2017-08-15T16:58:14,Establish links to Abipy and APPA,0.0
+d946805,2017-08-15T16:59:02,Create the Abipy and APPA topics,0.0
+3ed2d24,2017-08-15T17:11:03,Create topic DensityPotential,0.0
+9c28cac,2017-08-15T17:19:39,Create topic_Band2eps,0.0
+336a095,2017-08-15T17:36:43,Create Band2eps and FileFormats topics,0.0
+24c616e,2017-08-15T17:43:48,Create the topic Verification,0.0
+3f144a5,2017-08-15T17:48:11,Create Verification topic,0.0
+604d8d6,2017-08-15T18:07:57,Create topic PortabilityNonRegression,0.0
+c94ce1f,2017-08-15T18:23:15,Create Git and PortabilityNonRegression topic,0.0
+5c89d8c,2017-08-15T18:38:42,Merge torrent/tutopositron into _torrent_tutopositron,0.0
+de5e879,2017-08-15T18:47:21,Merge branch '_torrent_tutopositron' into input-web,0.0
+2c8699a,2017-08-16T05:55:55,Transform all the full links with href to shortcuts (to have the correct target).,0.0
+18073f4,2017-08-16T06:09:49,Translate lesson_positron to yml,0.0
+827c114,2017-08-16T06:41:06,Add tutorial_flowchart_v5.png  clean the other version  and update lesson_welcome,0.0
+9197d9d,2017-08-16T06:50:33,Update topic_positron  complete lesson_welcome for positron lesson.,0.0
+cf073f7,2017-08-16T06:59:40,Minor adjustments in typo,0.0
+b461871,2017-08-16T08:55:00,Fix incoherent allocation of amass,1.0
+560cd9c,2017-08-16T09:26:00,Better output for docchk.py  update ref,0.0
+9eb3a23,2017-08-16T09:29:09,Adjust tolerance for positron tutorial test,0.0
+521ee90,2017-08-16T14:03:12,One more acknowledgment. Also update ref positron_4,0.0
+f4741a0,2017-08-16T14:04:54,Also update input file to try to reach portability,0.0
+d383e5a,2017-08-16T18:53:04,Try to find a setting for the test tutorial_positron_4 that is sufficiently portable. Try now ntime=4. Should come with appropriate modif of lesson_positron ...,0.0
+5b59842,2017-08-17T05:55:58,Tune the text of the positron tutorial  taking into account modifications that were needed to make it portable.,0.0
+7d3028b,2017-08-17T06:38:11,Start finalization of v8.5.2,0.0
+6524900000.0,2017-08-17T10:32:36,Again update tolerance  here for bob,0.0
+dcb3a33,2017-08-17T15:03:57,Initialize v8.5.3,0.0

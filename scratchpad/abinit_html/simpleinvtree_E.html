@@ -1,0 +1,1852 @@
+<!DOCTYPE html><html><head><title>Simple Invocation Tree [E]</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script src="jquery-3.3.1.min.js" type="text/javascript"></script><script src="d3.js" type="text/javascript"></script><script src="d3pie.min.js" type="text/javascript"></script><script src="plotly.min.js" type="text/javascript"></script><link href="reportCSS.css" type="text/css" rel="stylesheet" /><script src="reportJS.js" type="text/javascript"></script><script src="table_of_contents.js" type="text/javascript"></script></head><body bgcolor="#ffffff" TEXT="#000000"><nav id="main-nav" class="nav"><div id="upper-nav"><img id=und-icon src="understand-logo.png" alt="Understand"></div><div class="navbar" style="position:relative;z-index:1003"><button onclick="pageToTop()" id="pagedesc" title="Return to top of page"><span id="descText">abinit - Simple Invocation Tree</span></button></div><div id="lower-nav" class=navbar><div id="main-dropdown-html" class="dropdown" tabindex="0"><button id="dropdown-button" class="dropbtn">Contents <img id="dropdown-icon" src="ToCdropdown.png" style="height:12px"></button><div id="dropdown-buffer" class="dropdown-border" style="height:120px;width:300px;"></div><div id="nav-dropdown-content" class="dropdown-content"><a href="table_of_contents.html">Table of Contents</a><txt style="font-size: 12px; text-align: center">Enable javascript to use dropdown contents and other features.</txt></div></div><div class="rightspacer" id="rightspacer"><button id="buttonRight" onclick="scrollTableRight()"><img id="imgRight" src="ToCdropdown.png" /></button><button id="buttonLeft"  onclick="scrollTableLeft()" ><img id="imgLeft" src="ToCdropdown.png"  /></button></div><div class="navCenter">
+<a href="simpleinvtree_&.html">&</a><a href="simpleinvtree_A.html">A</a><a2>B</a2><a href="simpleinvtree_C.html">C</a><a href="simpleinvtree_D.html">D</a><a href="simpleinvtree_E.html">E</a><a href="simpleinvtree_F.html">F</a><a href="simpleinvtree_G.html">G</a><a href="simpleinvtree_H.html">H</a><a href="simpleinvtree_I.html">I</a><a href="simpleinvtree_J.html">J</a><a2>K</a2><a href="simpleinvtree_L.html">L</a><a href="simpleinvtree_M.html">M</a><a href="simpleinvtree_N.html">N</a><a href="simpleinvtree_O.html">O</a><a href="simpleinvtree_P.html">P</a><a2>Q</a2><a href="simpleinvtree_R.html">R</a><a href="simpleinvtree_S.html">S</a><a href="simpleinvtree_T.html">T</a><a href="simpleinvtree_U.html">U</a><a href="simpleinvtree_V.html">V</a><a href="simpleinvtree_W.html">W</a><a href="simpleinvtree_X.html">X</a><a href="simpleinvtree_Y.html">Y</a><a2>Z</a2></div></div></nav>
+<script type="text/javascript">navbar();</script>
+<div id="main-content"><pre>
+<a href="dictionary_E.html#6200">Elastic_debye.Debye_temperature</a>
+| builtins.range
+| builtins.len
+| <a href="dictionary_E.html#57337">Elastic_debye.find_gcd</a>
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| <a href="dictionary_C.html#40603">close</a>
+
+<a href="dictionary_E.html#57333">Elastic_debye.find_file</a>
+| nt.listdir
+| genericpath.isfile
+| <a href="dictionary_E.html#51994">endswith</a>
+| builtins.open
+| builtins.enumerate
+| builtins.print
+| sys.exit
+
+<a href="dictionary_E.html#60498">Elastic_debye.gather_from_ANADDB</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| builtins.open
+| builtins.enumerate
+| builtins.range
+| linecache.getline
+| <a href="dictionary_S.html#126011">split</a>
+| builtins.float
+| builtins.len
+| <a href="dictionary_R.html#97321">replace</a>
+| <a href="dictionary_U.html#133798">unique</a>
+| builtins.int
+| <a href="dictionary_A.html#32463">append</a>
+
+<a href="dictionary_E.html#60499">Elastic_debye.gather_from_OUTCAR</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| builtins.open
+| builtins.enumerate
+| linecache.getline
+| <a href="dictionary_S.html#126011">split</a>
+| builtins.range
+| builtins.len
+| <a href="dictionary_A.html#32463">append</a>
+| builtins.float
+| builtins.list
+
+<a href="dictionary_E.html#63803">Elastic_debye.gruneisen</a>
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| <a href="dictionary_C.html#40603">close</a>
+
+<a href="4281.html"><b>Elastic_debye.py</b></a>
+| builtins.len
+| builtins.print
+| sys.exit
+| <a href="dictionary_S.html#126718">startswith</a>
+| <a href="dictionary_E.html#57333">Elastic_debye.find_file</a>
+| <a href="dictionary_E.html#60499">Elastic_debye.gather_from_OUTCAR</a>
+| <a href="dictionary_E.html#125602">Elastic_debye.sound_velocities</a>
+| <a href="dictionary_E.html#6200">Elastic_debye.Debye_temperature</a>
+| <a href="dictionary_E.html#63803">Elastic_debye.gruneisen</a>
+| <a href="dictionary_E.html#130808">Elastic_debye.thermal_cond</a>
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| <a href="dictionary_C.html#40603">close</a>
+| <a href="dictionary_E.html#60498">Elastic_debye.gather_from_ANADDB</a>
+
+<a href="dictionary_E.html#125602">Elastic_debye.sound_velocities</a>
+| <a href="dictionary_I.html#68773">inv</a>
+| builtins.range
+| builtins.len
+| sqrt
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| <a href="dictionary_C.html#40603">close</a>
+
+<a href="dictionary_E.html#130808">Elastic_debye.thermal_cond</a>
+| builtins.range
+| builtins.len
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| <a href="dictionary_C.html#40603">close</a>
+
+<a href="dictionary_E.html#16526">ElectronPhononCoupling.core.DdbFile.DdbFile.__init__</a>
+| <a href="dictionary_P.html#93580">pop</a>
+| builtins.super
+| builtins.super.__init__
+
+<a href="dictionary_E.html#18548">ElectronPhononCoupling.core.ddbfile.DdbFile.__init__</a>
+| <a href="dictionary_P.html#93580">pop</a>
+| builtins.super
+| builtins.super.__init__
+
+<a href="dictionary_E.html#37880">ElectronPhononCoupling.core.DdbFile.DdbFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#37886">ElectronPhononCoupling.core.ddbfile.DdbFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#43075">ElectronPhononCoupling.core.DdbFile.DdbFile.compute_dynmat</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_A.html#32630">arange</a>
+| <a href="dictionary_E.html#61939">ElectronPhononCoupling.core.DdbFile.DdbFile.get_mass_scaled_dynmat_cart</a>
+| <a href="dictionary_E.html#51018">eigh</a>
+| sqrt
+| builtins.enumerate
+| warnings.warn
+| <a href="dictionary_S.html#124798">sign</a>
+
+<a href="dictionary_E.html#43076">ElectronPhononCoupling.core.ddbfile.DdbFile.compute_dynmat</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_A.html#32630">arange</a>
+| <a href="dictionary_E.html#61940">ElectronPhononCoupling.core.ddbfile.DdbFile.get_mass_scaled_dynmat_cart</a>
+| <a href="dictionary_E.html#51018">eigh</a>
+| sqrt
+| builtins.enumerate
+| warnings.warn
+| <a href="dictionary_S.html#124798">sign</a>
+
+<a href="dictionary_E.html#61135">ElectronPhononCoupling.core.DdbFile.DdbFile.get_bose</a>
+| <a href="dictionary_E.html#43075">ElectronPhononCoupling.core.DdbFile.DdbFile.compute_dynmat</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| builtins.len
+| builtins.enumerate
+| <a href="dictionary_E.html#61135">ElectronPhononCoupling.core.DdbFile.DdbFile.get_bose</a>
+
+<a href="dictionary_E.html#61136">ElectronPhononCoupling.core.ddbfile.DdbFile.get_bose</a>
+| <a href="dictionary_E.html#43076">ElectronPhononCoupling.core.ddbfile.DdbFile.compute_dynmat</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| builtins.len
+| builtins.enumerate
+| <a href="dictionary_E.html#61136">ElectronPhononCoupling.core.ddbfile.DdbFile.get_bose</a>
+
+<a href="dictionary_E.html#60982">ElectronPhononCoupling.core.DdbFile.DdbFile.get_E2D_cart</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#60983">ElectronPhononCoupling.core.ddbfile.DdbFile.get_E2D_cart</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#61939">ElectronPhononCoupling.core.DdbFile.DdbFile.get_mass_scaled_dynmat_cart</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_A.html#32630">arange</a>
+| sqrt
+| <a href="dictionary_T.html#132690">transpose</a>
+| conjugate
+
+<a href="dictionary_E.html#61940">ElectronPhononCoupling.core.ddbfile.DdbFile.get_mass_scaled_dynmat_cart</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_A.html#32630">arange</a>
+| sqrt
+| <a href="dictionary_T.html#132690">transpose</a>
+| conjugate
+
+<a href="dictionary_E.html#62259">ElectronPhononCoupling.core.DdbFile.DdbFile.get_reduced_displ</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#43075">ElectronPhononCoupling.core.DdbFile.DdbFile.compute_dynmat</a>
+| builtins.range
+| sqrt
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#62261">ElectronPhononCoupling.core.ddbfile.DdbFile.get_reduced_displ</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#43076">ElectronPhononCoupling.core.ddbfile.DdbFile.compute_dynmat</a>
+| builtins.range
+| sqrt
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#62263">ElectronPhononCoupling.core.DdbFile.DdbFile.get_reduced_displ_squared</a>
+| <a href="dictionary_E.html#43075">ElectronPhononCoupling.core.DdbFile.DdbFile.compute_dynmat</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_A.html#32630">arange</a>
+| <a href="dictionary_C.html#43395">conj</a>
+
+<a href="dictionary_E.html#62264">ElectronPhononCoupling.core.ddbfile.DdbFile.get_reduced_displ_squared</a>
+| <a href="dictionary_E.html#43076">ElectronPhononCoupling.core.ddbfile.DdbFile.compute_dynmat</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_A.html#32630">arange</a>
+| <a href="dictionary_C.html#43395">conj</a>
+
+<a href="dictionary_E.html#69374">ElectronPhononCoupling.core.DdbFile.DdbFile.is_gamma-getter</a>
+| <a href="dictionary_A.html#31852">allclose</a>
+
+<a href="dictionary_E.html#69375">ElectronPhononCoupling.core.ddbfile.DdbFile.is_gamma-getter</a>
+| <a href="dictionary_A.html#31852">allclose</a>
+
+<a href="dictionary_E.html#96096">ElectronPhononCoupling.core.DdbFile.DdbFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#96104">ElectronPhononCoupling.core.ddbfile.DdbFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#98914">ElectronPhononCoupling.core.DdbFile.DdbFile.rprim-setter</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_I.html#68773">inv</a>
+| <a href="dictionary_M.html#79078">matrix</a>
+
+<a href="dictionary_E.html#98915">ElectronPhononCoupling.core.ddbfile.DdbFile.rprim-setter</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_I.html#68773">inv</a>
+| <a href="dictionary_M.html#79078">matrix</a>
+
+<a href="dictionary_E.html#123304">ElectronPhononCoupling.core.DdbFile.DdbFile.set_amu</a>
+| <a href="dictionary_A.html#34518">array</a>
+
+<a href="dictionary_E.html#123305">ElectronPhononCoupling.core.ddbfile.DdbFile.set_amu</a>
+| <a href="dictionary_A.html#34518">array</a>
+
+<a href="dictionary_E.html#61396">ElectronPhononCoupling.core.degenerate.get_degen</a>
+| builtins.list
+| builtins.range
+| builtins.float
+| <a href="dictionary_E.html#70662">ElectronPhononCoupling.core.degenerate.iter_spin_band_eig</a>
+| <a href="dictionary_I.html#69974">isclose</a>
+| <a href="dictionary_A.html#32463">append</a>
+
+<a href="dictionary_E.html#70662">ElectronPhononCoupling.core.degenerate.iter_spin_band_eig</a>
+| builtins.range
+| builtins.sorted
+| <a href="dictionary_I.html#67250">index</a>
+| <a href="dictionary_C.html#41698">cmp</a>
+
+<a href="dictionary_E.html#78349">ElectronPhononCoupling.core.degenerate.make_average</a>
+| builtins.range
+| copy.copy
+| builtins.len
+
+<a href="dictionary_E.html#128726">ElectronPhononCoupling.core.degenerate.symmetrize_fan_degen</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_O.html#87959">ones</a>
+| <a href="dictionary_I.html#65947">identity</a>
+| builtins.range
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#16370">ElectronPhononCoupling.core.EigFile.EigFile.__init__</a>
+| builtins.super
+| builtins.super.__init__
+
+<a href="dictionary_E.html#16950">ElectronPhononCoupling.core.eigfile.EigFile.__init__</a>
+| builtins.super
+| builtins.super.__init__
+
+<a href="dictionary_E.html#37878">ElectronPhononCoupling.core.EigFile.EigFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#37883">ElectronPhononCoupling.core.eigfile.EigFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#61398">ElectronPhononCoupling.core.EigFile.EigFile.get_degen</a>
+| builtins.list
+| builtins.range
+| builtins.float
+| <a href="dictionary_E.html#70663">ElectronPhononCoupling.core.EigFile.EigFile.iter_spin_band_eig</a>
+| <a href="dictionary_I.html#69974">isclose</a>
+| <a href="dictionary_A.html#32463">append</a>
+
+<a href="dictionary_E.html#61399">ElectronPhononCoupling.core.eigfile.EigFile.get_degen</a>
+| builtins.list
+| builtins.range
+| builtins.float
+| <a href="dictionary_E.html#70664">ElectronPhononCoupling.core.eigfile.EigFile.iter_spin_band_eig</a>
+| <a href="dictionary_I.html#69974">isclose</a>
+| <a href="dictionary_A.html#32463">append</a>
+
+<a href="dictionary_E.html#61510">ElectronPhononCoupling.core.EigFile.EigFile.get_fermi_function</a>
+| builtins.len
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.enumerate
+| <a href="dictionary_E.html#61513">ElectronPhononCoupling.core.EigFile.EigFile.get_fermi_function_T0</a>
+| builtins.range
+| exp
+
+<a href="dictionary_E.html#61511">ElectronPhononCoupling.core.eigfile.EigFile.get_fermi_function</a>
+| builtins.len
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.enumerate
+| <a href="dictionary_E.html#61514">ElectronPhononCoupling.core.eigfile.EigFile.get_fermi_function_T0</a>
+| builtins.range
+| exp
+
+<a href="dictionary_E.html#61513">ElectronPhononCoupling.core.EigFile.EigFile.get_fermi_function_T0</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_W.html#137977">where</a>
+
+<a href="dictionary_E.html#61514">ElectronPhononCoupling.core.eigfile.EigFile.get_fermi_function_T0</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_W.html#137977">where</a>
+
+<a href="dictionary_E.html#70663">ElectronPhononCoupling.core.EigFile.EigFile.iter_spin_band_eig</a>
+| builtins.range
+| builtins.sorted
+| <a href="dictionary_I.html#67250">index</a>
+| <a href="dictionary_C.html#41698">cmp</a>
+
+<a href="dictionary_E.html#70664">ElectronPhononCoupling.core.eigfile.EigFile.iter_spin_band_eig</a>
+| builtins.range
+| builtins.sorted
+| <a href="dictionary_I.html#67250">index</a>
+| <a href="dictionary_C.html#41698">cmp</a>
+
+<a href="dictionary_E.html#78355">ElectronPhononCoupling.core.EigFile.EigFile.make_average</a>
+| <a href="dictionary_E.html#61398">ElectronPhononCoupling.core.EigFile.EigFile.get_degen</a>
+| builtins.range
+| copy.copy
+| builtins.len
+
+<a href="dictionary_E.html#78356">ElectronPhononCoupling.core.eigfile.EigFile.make_average</a>
+| <a href="dictionary_E.html#61399">ElectronPhononCoupling.core.eigfile.EigFile.get_degen</a>
+| builtins.range
+| copy.copy
+| builtins.len
+
+<a href="dictionary_E.html#96093">ElectronPhononCoupling.core.EigFile.EigFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+
+<a href="dictionary_E.html#96100">ElectronPhononCoupling.core.eigfile.EigFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+
+<a href="dictionary_E.html#128728">ElectronPhononCoupling.core.EigFile.EigFile.symmetrize_fan_degen</a>
+| <a href="dictionary_E.html#61398">ElectronPhononCoupling.core.EigFile.EigFile.get_degen</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_O.html#87959">ones</a>
+| <a href="dictionary_I.html#65947">identity</a>
+| builtins.range
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#128729">ElectronPhononCoupling.core.eigfile.EigFile.symmetrize_fan_degen</a>
+| <a href="dictionary_E.html#61399">ElectronPhononCoupling.core.eigfile.EigFile.get_degen</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_O.html#87959">ones</a>
+| <a href="dictionary_I.html#65947">identity</a>
+| builtins.range
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#37882">ElectronPhononCoupling.core.Eigr2dFile.Eigr2dFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#37884">ElectronPhononCoupling.core.eigr2dfile.Eigr2dFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#96098">ElectronPhononCoupling.core.Eigr2dFile.Eigr2dFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#96102">ElectronPhononCoupling.core.eigr2dfile.Eigr2dFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#16729">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.__init__</a>
+| builtins.list
+| builtins.len
+| <a href="dictionary_E.html#124000">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_weights</a>
+| <a href="dictionary_E.html#124002">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_weights_fine</a>
+| <a href="dictionary_E.html#10553">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer</a>
+| <a href="dictionary_E.html#39726">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_gamma</a>
+| <a href="dictionary_E.html#96170">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.read_zero_files</a>
+| <a href="dictionary_E.html#123889">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_temp_range</a>
+| <a href="dictionary_E.html#123748">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_omega_range</a>
+| <a href="dictionary_E.html#123870">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_smearing</a>
+| <a href="dictionary_E.html#123838">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_rootname</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#57330">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.find_fermi_level</a>
+| <a href="dictionary_E.html#123530">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_fermi_level</a>
+
+<a href="dictionary_E.html#17656">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.__init__</a>
+| builtins.list
+| builtins.len
+| <a href="dictionary_E.html#124001">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_weights</a>
+| <a href="dictionary_E.html#124003">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_weights_fine</a>
+| <a href="dictionary_E.html#10553">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer</a>
+| <a href="dictionary_E.html#39727">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_gamma</a>
+| <a href="dictionary_E.html#96171">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.read_zero_files</a>
+| <a href="dictionary_E.html#123890">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_temp_range</a>
+| <a href="dictionary_E.html#123749">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_omega_range</a>
+| <a href="dictionary_E.html#123871">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_smearing</a>
+| <a href="dictionary_E.html#123839">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_rootname</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#57331">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.find_fermi_level</a>
+| <a href="dictionary_E.html#123531">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_fermi_level</a>
+
+<a href="dictionary_E.html#31113">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.active_worker-getter</a>
+| builtins.bool
+
+<a href="dictionary_E.html#31114">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.active_worker-getter</a>
+| builtins.bool
+
+<a href="dictionary_E.html#5025">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.BRD_dat-getter</a>
+| builtins.str
+
+<a href="dictionary_E.html#5026">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.BRD_dat-getter</a>
+| builtins.str
+
+<a href="dictionary_E.html#39726">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_gamma</a>
+| <a href="dictionary_R.html#96111">read_nonzero_files</a>
+
+<a href="dictionary_E.html#39727">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_gamma</a>
+| <a href="dictionary_R.html#96111">read_nonzero_files</a>
+
+<a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| builtins.len
+| warnings.warn
+
+<a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| builtins.len
+| warnings.warn
+
+<a href="dictionary_E.html#43044">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_ddw_active_zpr</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43045">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_ddw_active_zpr</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43047">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_dynamical_td_broadening</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43049">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_dynamical_td_broadening</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43050">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_dynamical_td_renormalization</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43052">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_dynamical_td_renormalization</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43053">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_dynamical_td_renormalization_double_grid</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43055">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_dynamical_td_renormalization_double_grid</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43056">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_dynamical_zp_broadening</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43058">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_dynamical_zp_broadening</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43059">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_dynamical_zp_renormalization</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43061">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_dynamical_zp_renormalization</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43062">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_dynamical_zp_renormalization_double_grid</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43063">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_dynamical_zp_renormalization_double_grid</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43064">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_dynamical_zp_renormalization_modes</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43065">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_dynamical_zp_renormalization_modes</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43067">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_dynamical_zp_renormalization_modes_double_grid</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43069">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_dynamical_zp_renormalization_modes_double_grid</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43089">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_td_broadening</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43091">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_td_broadening</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43092">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_td_broadening_nosplit</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43094">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_td_broadening_nosplit</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43095">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_td_renormalization</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43097">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_td_renormalization</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43098">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_td_renormalization_nosplit</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43100">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_td_renormalization_nosplit</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43101">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_zp_broadening</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43102">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_zp_broadening</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43104">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_zp_broadening</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43105">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_zp_broadening</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43106">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_zp_broadening_nosplit</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43108">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_zp_broadening_nosplit</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43109">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_zp_renormalization</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43111">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_zp_renormalization</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43112">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_zp_renormalization_modes</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43114">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_zp_renormalization_modes</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43115">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_static_zp_renormalization_nosplit</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43117">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_static_zp_renormalization_nosplit</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43118">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_td_self_energy</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43120">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_td_self_energy</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43121">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_td_self_energy_active</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43122">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_td_self_energy_active</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43123">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_td_self_energy_double_grid</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43125">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_td_self_energy_double_grid</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43126">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_td_self_energy_static</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43128">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_td_self_energy_static</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43129">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_td_self_energy_static_double_grid</a>
+| <a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43130">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_td_self_energy_static_double_grid</a>
+| <a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43132">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_td_self_energy_static_double_grid</a>
+| <a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43133">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_td_self_energy_static_double_grid</a>
+| <a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43134">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_td_spectral_function</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+| <a href="dictionary_O.html#87959">ones</a>
+
+<a href="dictionary_E.html#43136">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_td_spectral_function</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+| <a href="dictionary_O.html#87959">ones</a>
+
+<a href="dictionary_E.html#43143">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_zp_self_energy</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43145">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_zp_self_energy</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43146">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_zp_self_energy_active</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43147">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_zp_self_energy_active</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43148">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_zp_self_energy_double_grid</a>
+| <a href="dictionary_E.html#39808">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43150">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_zp_self_energy_double_grid</a>
+| <a href="dictionary_E.html#39809">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.check_temperatures</a>
+| <a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43151">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_zp_self_energy_fan_active</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43153">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_zp_self_energy_fan_active</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43154">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_zp_self_energy_static</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43156">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_zp_self_energy_static</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#43157">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_zp_self_energy_static_double_grid</a>
+| <a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43159">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_zp_self_energy_static_double_grid</a>
+| <a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+
+<a href="dictionary_E.html#43160">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.compute_zp_spectral_function</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+| <a href="dictionary_O.html#87959">ones</a>
+
+<a href="dictionary_E.html#43162">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.compute_zp_spectral_function</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+| <a href="dictionary_O.html#87959">ones</a>
+
+<a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#61782">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.get_iqpts</a>
+
+<a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#61783">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.get_iqpts</a>
+
+<a href="dictionary_E.html#57330">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.find_fermi_level</a>
+| <a href="dictionary_E.html#60500">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.gather_qpt_function</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+| <a href="dictionary_E.html#123530">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_fermi_level</a>
+
+<a href="dictionary_E.html#57331">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.find_fermi_level</a>
+| <a href="dictionary_E.html#60501">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.gather_qpt_function</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+| <a href="dictionary_E.html#123531">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_fermi_level</a>
+
+<a href="dictionary_E.html#60500">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.gather_qpt_function</a>
+| <a href="dictionary_E.html#60502">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.gather_qpt_function_me</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.list
+| builtins.enumerate
+| <a href="dictionary_E.html#60999">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.get_active_ranks</a>
+| builtins.len
+| <a href="dictionary_R.html#96478">recv</a>
+| <a href="dictionary_S.html#122806">send</a>
+
+<a href="dictionary_E.html#60501">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.gather_qpt_function</a>
+| <a href="dictionary_E.html#60503">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.gather_qpt_function_me</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.list
+| builtins.enumerate
+| <a href="dictionary_E.html#61000">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.get_active_ranks</a>
+| builtins.len
+| <a href="dictionary_R.html#96478">recv</a>
+| <a href="dictionary_S.html#122806">send</a>
+
+<a href="dictionary_E.html#60502">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.gather_qpt_function_me</a>
+| builtins.len
+| <a href="dictionary_E.html#123609">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_iqpt</a>
+| builtins.print
+| <a href="dictionary_A.html#34518">array</a>
+| builtins.getattr
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.list
+| builtins.enumerate
+
+<a href="dictionary_E.html#60503">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.gather_qpt_function_me</a>
+| builtins.len
+| <a href="dictionary_E.html#123610">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_iqpt</a>
+| builtins.print
+| <a href="dictionary_A.html#34518">array</a>
+| builtins.getattr
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.list
+| builtins.enumerate
+
+<a href="dictionary_E.html#60504">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.gather_qpt_info</a>
+| <a href="dictionary_E.html#60506">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.gather_qpt_info_me</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.enumerate
+| builtins.zip
+| <a href="dictionary_E.html#60999">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.get_active_ranks</a>
+| builtins.len
+| <a href="dictionary_R.html#96478">recv</a>
+| <a href="dictionary_S.html#122806">send</a>
+
+<a href="dictionary_E.html#60505">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.gather_qpt_info</a>
+| <a href="dictionary_E.html#60507">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.gather_qpt_info_me</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.enumerate
+| builtins.zip
+| <a href="dictionary_E.html#61000">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.get_active_ranks</a>
+| builtins.len
+| <a href="dictionary_R.html#96478">recv</a>
+| <a href="dictionary_S.html#122806">send</a>
+
+<a href="dictionary_E.html#60506">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.gather_qpt_info_me</a>
+| builtins.len
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.enumerate
+| <a href="dictionary_E.html#123471">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_ddb</a>
+| <a href="dictionary_R.html#96289">real</a>
+
+<a href="dictionary_E.html#60507">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.gather_qpt_info_me</a>
+| builtins.len
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.enumerate
+| <a href="dictionary_E.html#123472">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_ddb</a>
+| <a href="dictionary_R.html#96289">real</a>
+
+<a href="dictionary_E.html#60999">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.get_active_ranks</a>
+| builtins.min
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#61000">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.get_active_ranks</a>
+| builtins.min
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#61782">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.get_iqpts</a>
+| builtins.min
+| builtins.list
+| builtins.range
+| <a href="dictionary_A.html#32463">append</a>
+
+<a href="dictionary_E.html#61783">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.get_iqpts</a>
+| builtins.min
+| builtins.list
+| builtins.range
+| <a href="dictionary_A.html#32463">append</a>
+
+<a href="dictionary_E.html#84051">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.nc_output-getter</a>
+| builtins.str
+
+<a href="dictionary_E.html#84052">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.nc_output-getter</a>
+| builtins.str
+
+<a href="dictionary_E.html#85437">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.nomegase-getter</a>
+| builtins.len
+
+<a href="dictionary_E.html#85438">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.nomegase-getter</a>
+| builtins.len
+
+<a href="dictionary_E.html#86273">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.ntemp-getter</a>
+| builtins.len
+
+<a href="dictionary_E.html#86274">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.ntemp-getter</a>
+| builtins.len
+
+<a href="dictionary_E.html#96170">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.read_zero_files</a>
+| <a href="dictionary_R.html#96169">read_zero_files</a>
+| <a href="dictionary_B.html#37900">broadcast_zero_files</a>
+
+<a href="dictionary_E.html#96171">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.read_zero_files</a>
+| <a href="dictionary_R.html#96169">read_zero_files</a>
+| <a href="dictionary_B.html#37900">broadcast_zero_files</a>
+
+<a href="dictionary_E.html#97059">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.ren_dat-getter</a>
+| builtins.str
+
+<a href="dictionary_E.html#97060">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.ren_dat-getter</a>
+| builtins.str
+
+<a href="dictionary_E.html#123471">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_ddb</a>
+| <a href="dictionary_R.html#96054">read_ddb</a>
+
+<a href="dictionary_E.html#123472">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_ddb</a>
+| <a href="dictionary_R.html#96054">read_ddb</a>
+
+<a href="dictionary_E.html#123609">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_iqpt</a>
+| <a href="dictionary_E.html#123613">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_iqpt_fine</a>
+| <a href="dictionary_E.html#123611">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_iqpt_coarse</a>
+
+<a href="dictionary_E.html#123610">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_iqpt</a>
+| <a href="dictionary_E.html#123614">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_iqpt_fine</a>
+| <a href="dictionary_E.html#123612">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_iqpt_coarse</a>
+
+<a href="dictionary_E.html#123611">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_iqpt_coarse</a>
+| <a href="dictionary_R.html#96111">read_nonzero_files</a>
+
+<a href="dictionary_E.html#123612">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_iqpt_coarse</a>
+| <a href="dictionary_R.html#96111">read_nonzero_files</a>
+
+<a href="dictionary_E.html#123613">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_iqpt_fine</a>
+| <a href="dictionary_R.html#96111">read_nonzero_files</a>
+
+<a href="dictionary_E.html#123614">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_iqpt_fine</a>
+| <a href="dictionary_R.html#96111">read_nonzero_files</a>
+
+<a href="dictionary_E.html#123748">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_omega_range</a>
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#123749">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_omega_range</a>
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#123889">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_temp_range</a>
+| builtins.list
+| builtins.len
+| builtins.all
+| builtins.isinstance
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#123890">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_temp_range</a>
+| builtins.list
+| builtins.len
+| builtins.all
+| builtins.isinstance
+| <a href="dictionary_A.html#32630">arange</a>
+
+<a href="dictionary_E.html#124000">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_weights</a>
+| <a href="dictionary_A.html#34518">array</a>
+| builtins.sum
+
+<a href="dictionary_E.html#124001">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_weights</a>
+| <a href="dictionary_A.html#34518">array</a>
+| builtins.sum
+
+<a href="dictionary_E.html#124002">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_weights_fine</a>
+| <a href="dictionary_A.html#34518">array</a>
+| builtins.sum
+
+<a href="dictionary_E.html#124003">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_weights_fine</a>
+| <a href="dictionary_A.html#34518">array</a>
+| builtins.sum
+
+<a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+| <a href="dictionary_E.html#128518">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function_me</a>
+| <a href="dictionary_E.html#60999">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.get_active_ranks</a>
+| builtins.len
+| <a href="dictionary_R.html#96478">recv</a>
+| <a href="dictionary_S.html#122806">send</a>
+
+<a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+| <a href="dictionary_E.html#128519">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function_me</a>
+| <a href="dictionary_E.html#61000">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.get_active_ranks</a>
+| builtins.len
+| <a href="dictionary_R.html#96478">recv</a>
+| <a href="dictionary_S.html#122806">send</a>
+
+<a href="dictionary_E.html#128518">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function_me</a>
+| <a href="dictionary_E.html#123609">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.set_iqpt</a>
+| builtins.print
+| builtins.getattr
+| copy.copy
+| builtins.len
+
+<a href="dictionary_E.html#128519">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function_me</a>
+| <a href="dictionary_E.html#123610">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.set_iqpt</a>
+| builtins.print
+| builtins.getattr
+| copy.copy
+| builtins.len
+
+<a href="dictionary_E.html#128520">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+| <a href="dictionary_E.html#49014">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128516">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#128521">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_functions_double_grid</a>
+| <a href="dictionary_E.html#49015">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.distribute_workload</a>
+| <a href="dictionary_E.html#128517">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.sum_qpt_function</a>
+
+<a href="dictionary_E.html#139048">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.write_broadening</a>
+| <a href="dictionary_E.html#44859">ElectronPhononCoupling.core.util.create_directory</a>
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| builtins.enumerate
+| <a href="dictionary_E.html#58879">ElectronPhononCoupling.core.util.formatted_array_lines</a>
+| builtins.range
+
+<a href="dictionary_E.html#139050">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.write_broadening</a>
+| <a href="dictionary_E.html#44859">ElectronPhononCoupling.core.util.create_directory</a>
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| builtins.enumerate
+| <a href="dictionary_E.html#58879">ElectronPhononCoupling.core.util.formatted_array_lines</a>
+| builtins.range
+
+<a href="dictionary_E.html#139114">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.write_netcdf</a>
+| <a href="dictionary_E.html#44859">ElectronPhononCoupling.core.util.create_directory</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| warnings.warn
+| <a href="dictionary_C.html#44786">createDimension</a>
+| <a href="dictionary_C.html#44801">createVariable</a>
+| <a href="dictionary_C.html#40603">close</a>
+
+<a href="dictionary_E.html#139116">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.write_netcdf</a>
+| <a href="dictionary_E.html#44859">ElectronPhononCoupling.core.util.create_directory</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| warnings.warn
+| <a href="dictionary_C.html#44786">createDimension</a>
+| <a href="dictionary_C.html#44801">createVariable</a>
+| <a href="dictionary_C.html#40603">close</a>
+
+<a href="dictionary_E.html#139148">ElectronPhononCoupling.core.epcanalyzer.EpcAnalyzer.write_renormalization</a>
+| <a href="dictionary_E.html#44859">ElectronPhononCoupling.core.util.create_directory</a>
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| builtins.enumerate
+| <a href="dictionary_E.html#58879">ElectronPhononCoupling.core.util.formatted_array_lines</a>
+| builtins.range
+
+<a href="dictionary_E.html#139150">ElectronPhononCoupling.core.EpcAnalyzer.EpcAnalyzer.write_renormalization</a>
+| <a href="dictionary_E.html#44859">ElectronPhononCoupling.core.util.create_directory</a>
+| builtins.open
+| <a href="dictionary_W.html#138951">write</a>
+| builtins.enumerate
+| <a href="dictionary_E.html#58879">ElectronPhononCoupling.core.util.formatted_array_lines</a>
+| builtins.range
+
+<a href="dictionary_E.html#16926">ElectronPhononCoupling.core.epcfile.EpcFile.__init__</a>
+| <a href="dictionary_E.html#96099">ElectronPhononCoupling.core.epcfile.EpcFile.read_nc</a>
+
+<a href="dictionary_E.html#17358">ElectronPhononCoupling.core.EpcFile.EpcFile.__init__</a>
+| <a href="dictionary_E.html#96101">ElectronPhononCoupling.core.EpcFile.EpcFile.read_nc</a>
+
+<a href="dictionary_E.html#96099">ElectronPhononCoupling.core.epcfile.EpcFile.read_nc</a>
+| genericpath.exists
+
+<a href="dictionary_E.html#96101">ElectronPhononCoupling.core.EpcFile.EpcFile.read_nc</a>
+| genericpath.exists
+
+<a href="dictionary_E.html#37879">ElectronPhononCoupling.core.fanfile.FanFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#37881">ElectronPhononCoupling.core.FanFile.FanFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#96094">ElectronPhononCoupling.core.fanfile.FanFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#96097">ElectronPhononCoupling.core.FanFile.FanFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#61130">ElectronPhononCoupling.core.functions.get_bose</a>
+| builtins.len
+| <a href="dictionary_Z.html#142026">zeros</a>
+| builtins.float
+| builtins.enumerate
+| exp
+
+<a href="dictionary_E.html#37885">ElectronPhononCoupling.core.gkkfile.GkkFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#37887">ElectronPhononCoupling.core.GkkFile.GkkFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#61648">ElectronPhononCoupling.core.gkkfile.GkkFile.get_gkk2_DW_mode</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_G.html#62260">get_reduced_displ</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+| builtins.range
+| <a href="dictionary_C.html#43395">conj</a>
+| <a href="dictionary_R.html#96289">real</a>
+
+<a href="dictionary_E.html#61649">ElectronPhononCoupling.core.GkkFile.GkkFile.get_gkk2_DW_mode</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_G.html#62260">get_reduced_displ</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+| builtins.range
+| <a href="dictionary_C.html#43395">conj</a>
+| <a href="dictionary_R.html#96289">real</a>
+
+<a href="dictionary_E.html#61651">ElectronPhononCoupling.core.gkkfile.GkkFile.get_gkk_mode</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_G.html#62260">get_reduced_displ</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#61652">ElectronPhononCoupling.core.GkkFile.GkkFile.get_gkk_mode</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_G.html#62260">get_reduced_displ</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#61653">ElectronPhononCoupling.core.gkkfile.GkkFile.get_gkk_squared</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| conjugate
+
+<a href="dictionary_E.html#61654">ElectronPhononCoupling.core.GkkFile.GkkFile.get_gkk_squared</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| conjugate
+
+<a href="dictionary_E.html#61810">ElectronPhononCoupling.core.gkkfile.GkkFile.get_kpt_gkk_squared</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| conjugate
+
+<a href="dictionary_E.html#61811">ElectronPhononCoupling.core.GkkFile.GkkFile.get_kpt_gkk_squared</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| conjugate
+
+<a href="dictionary_E.html#96103">ElectronPhononCoupling.core.gkkfile.GkkFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_E.html#51175">einsum</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_R.html#97734">reshape</a>
+
+<a href="dictionary_E.html#96105">ElectronPhononCoupling.core.GkkFile.GkkFile.read_nc</a>
+| builtins.super
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_E.html#51175">einsum</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_R.html#97734">reshape</a>
+
+<a href="dictionary_E.html#16320">ElectronPhononCoupling.core.gsrfile.GsrFile.__init__</a>
+| builtins.super
+| builtins.super.__init__
+
+<a href="dictionary_E.html#37876">ElectronPhononCoupling.core.gsrfile.GsrFile.broadcast</a>
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_A.html#34518">array</a>
+| <a href="dictionary_E.html#51356">empty</a>
+| <a href="dictionary_B.html#5145">Bcast</a>
+
+<a href="dictionary_E.html#96091">ElectronPhononCoupling.core.gsrfile.GsrFile.read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+
+<a href="dictionary_E.html#60461">ElectronPhononCoupling.core.mpi.master_only.g</a>
+| <a href="dictionary_E.html#81176">ElectronPhononCoupling.core.mpi.mpi_abort_if_exception</a>
+| <a href="dictionary_E.html#54831">ElectronPhononCoupling.core.mpi.master_only.f</a>
+
+<a href="dictionary_E.html#81176">ElectronPhononCoupling.core.mpi.mpi_abort_if_exception</a>
+| sys.exc_info
+| traceback.print_exception
+| <a href="dictionary_A.html#4697">Abort</a>
+
+<a href="dictionary_E.html#60460">ElectronPhononCoupling.core.mpi.mpi_watch.g</a>
+| <a href="dictionary_E.html#81176">ElectronPhononCoupling.core.mpi.mpi_abort_if_exception</a>
+| <a href="dictionary_E.html#54830">ElectronPhononCoupling.core.mpi.mpi_watch.f</a>
+
+<a href="dictionary_E.html#16361">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.__init__</a>
+| <a href="4286.html"><b>DdbFile.py</b></a>
+| <a href="4287.html"><b>EigFile.py</b></a>
+| <a href="4288.html"><b>Eigr2dFile.py</b></a>
+| <a href="4291.html"><b>FanFile.py</b></a>
+| <a href="4292.html"><b>GkkFile.py</b></a>
+| builtins.list
+
+<a href="dictionary_E.html#37899">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.broadcast_zero_files</a>
+| <a href="dictionary_B.html#37877">broadcast</a>
+| <a href="dictionary_G.html#61397">get_degen</a>
+
+<a href="dictionary_E.html#57329">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.find_fermi_level</a>
+| <a href="dictionary_E.html#61960">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_max_val</a>
+| <a href="dictionary_E.html#61990">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_min_cond</a>
+
+<a href="dictionary_E.html#61145">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_broadening</a>
+| <a href="dictionary_G.html#61134">get_bose</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_G.html#61509">get_fermi_function</a>
+| <a href="dictionary_G.html#61512">get_fermi_function_T0</a>
+| <a href="dictionary_E.html#61505">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_gkk2_active</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| <a href="dictionary_O.html#87957">ones</a>
+| <a href="dictionary_S.html#124798">sign</a>
+| builtins.range
+| <a href="dictionary_E.html#47552">ElectronPhononCoupling.core.mathutil.delta_lorentzian</a>
+| <a href="dictionary_E.html#96516">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.reduce_array</a>
+| <a href="dictionary_M.html#78354">make_average</a>
+| <a href="dictionary_E.html#62341">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_se_indices</a>
+
+<a href="dictionary_E.html#61462">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_eta</a>
+| <a href="dictionary_G.html#61512">get_fermi_function_T0</a>
+| builtins.len
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.enumerate
+| builtins.abs
+| <a href="dictionary_E.html#51173">einsum</a>
+
+<a href="dictionary_E.html#61503">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw</a>
+| builtins.dict
+| <a href="dictionary_E.html#61506">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_sternheimer</a>
+| <a href="dictionary_E.html#61504">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_active</a>
+
+<a href="dictionary_E.html#61504">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_active</a>
+| <a href="dictionary_G.html#61134">get_bose</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_G.html#61509">get_fermi_function</a>
+| <a href="dictionary_E.html#61505">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_gkk2_active</a>
+| <a href="dictionary_G.html#61512">get_fermi_function_T0</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| <a href="dictionary_O.html#87957">ones</a>
+| <a href="dictionary_E.html#96516">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.reduce_array</a>
+| <a href="dictionary_E.html#61462">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_eta</a>
+| builtins.range
+
+<a href="dictionary_E.html#61505">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_gkk2_active</a>
+| <a href="dictionary_G.html#61650">get_gkk_mode</a>
+| <a href="dictionary_G.html#61647">get_gkk2_DW_mode</a>
+| <a href="dictionary_G.html#62262">get_reduced_displ_squared</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| <a href="dictionary_S.html#128727">symmetrize_fan_degen</a>
+
+<a href="dictionary_E.html#61506">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_sternheimer</a>
+| <a href="dictionary_G.html#62262">get_reduced_displ_squared</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| <a href="dictionary_G.html#61134">get_bose</a>
+| <a href="dictionary_O.html#87957">ones</a>
+| <a href="dictionary_E.html#96516">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.reduce_array</a>
+
+<a href="dictionary_E.html#61960">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_max_val</a>
+| <a href="dictionary_E.html#62075">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_occ_kq_nospin</a>
+| builtins.zip
+
+<a href="dictionary_E.html#61990">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_min_cond</a>
+| <a href="dictionary_E.html#62075">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_occ_kq_nospin</a>
+| builtins.zip
+
+<a href="dictionary_E.html#62075">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_occ_kq_nospin</a>
+| builtins.any
+
+<a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+| builtins.dict
+| <a href="dictionary_E.html#61506">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_sternheimer</a>
+| <a href="dictionary_E.html#61504">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw_active</a>
+| <a href="dictionary_E.html#61503">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_fan_ddw</a>
+| <a href="dictionary_M.html#78354">make_average</a>
+| <a href="dictionary_E.html#62341">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_se_indices</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+
+<a href="dictionary_E.html#62526">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_td_self_energy</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62527">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_td_self_energy_active</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62528">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_td_self_energy_sternheimer</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62535">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdb_dynamical</a>
+| <a href="dictionary_E.html#61145">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_broadening</a>
+
+<a href="dictionary_E.html#62544">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdb_static</a>
+| <a href="dictionary_E.html#61145">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_broadening</a>
+
+<a href="dictionary_E.html#62545">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdb_static_nosplit</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_G.html#62262">get_reduced_displ_squared</a>
+| <a href="dictionary_G.html#61134">get_bose</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| <a href="dictionary_A.html#32630">arange</a>
+| builtins.enumerate
+| <a href="dictionary_M.html#78354">make_average</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#62546">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdr_ddw_active</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62554">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdr_dynamical</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62555">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdr_dynamical_active</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62562">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdr_static</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62563">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdr_static_nosplit</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62564">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_tdr_static_sternheimer</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62927">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zp_fan_active</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+
+<a href="dictionary_E.html#62934">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zp_self_energy</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62935">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zp_self_energy_active</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62936">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zp_self_energy_sternheimer</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62945">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpb_dynamical</a>
+| <a href="dictionary_E.html#61145">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_broadening</a>
+
+<a href="dictionary_E.html#62954">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpb_static</a>
+| <a href="dictionary_E.html#61145">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_broadening</a>
+
+<a href="dictionary_E.html#62955">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpb_static_nosplit</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| <a href="dictionary_G.html#62262">get_reduced_displ_squared</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+| builtins.sum
+| builtins.any
+| <a href="dictionary_W.html#137750">warn</a>
+| <a href="dictionary_M.html#78354">make_average</a>
+
+<a href="dictionary_E.html#62956">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_ddw_active</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62961">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_dynamical</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62962">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_dynamical_active</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62963">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_dynamical_active_modes</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62964">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_dynamical_modes</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62974">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_static</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62975">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_static_modes</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62976">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_static_sternheimer</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#62977">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_zpr_static_sternheimer_modes</a>
+| <a href="dictionary_E.html#62356">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_self_energy</a>
+
+<a href="dictionary_E.html#64173">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.has_active-getter</a>
+| builtins.bool
+
+<a href="dictionary_E.html#85436">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.nomegase-getter</a>
+| builtins.len
+
+<a href="dictionary_E.html#86272">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.ntemp-getter</a>
+| builtins.len
+
+<a href="dictionary_E.html#96053">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.read_ddb</a>
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_S.html#123303">set_amu</a>
+| <a href="dictionary_C.html#43074">compute_dynmat</a>
+
+<a href="dictionary_E.html#96110">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.read_nonzero_files</a>
+| <a href="dictionary_R.html#96092">read_nc</a>
+| <a href="dictionary_S.html#123303">set_amu</a>
+| <a href="dictionary_C.html#43074">compute_dynmat</a>
+
+<a href="dictionary_E.html#96168">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.read_zero_files</a>
+| <a href="dictionary_R.html#96092">read_nc</a>
+
+<a href="dictionary_E.html#96516">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.reduce_array</a>
+| <a href="dictionary_E.html#62341">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.get_se_indices</a>
+| builtins.bool
+| <a href="dictionary_S.html#127910">strip</a>
+| <a href="dictionary_E.html#51173">einsum</a>
+
+<a href="dictionary_E.html#134441">ElectronPhononCoupling.core.qptanalyzer.QptAnalyzer.use_gkk-getter</a>
+| builtins.bool
+
+<a href="dictionary_E.html#44859">ElectronPhononCoupling.core.util.create_directory</a>
+| posixpath.dirname
+| genericpath.exists
+| nt.system
+
+<a href="dictionary_E.html#58879">ElectronPhononCoupling.core.util.formatted_array_lines</a>
+| format
+
+<a href="dictionary_E.html#60464">ElectronPhononCoupling.core.util.report_runtime.g</a>
+| <a href="dictionary_G.html#60650">get</a>
+| <a href="dictionary_E.html#81176">ElectronPhononCoupling.core.mpi.mpi_abort_if_exception</a>
+| datetime.datetime.now
+| builtins.print
+| builtins.str
+| builtins.str.split
+| <a href="dictionary_B.html#5082">Barrier</a>
+| <a href="dictionary_E.html#54985">ElectronPhononCoupling.core.util.report_runtime.f</a>
+
+<a href="dictionary_E.html#43040">ElectronPhononCoupling.interface.compute.compute</a>
+| builtins.list
+| <a href="4289.html"><b>EpcAnalyzer.py</b></a>
+| <a href="dictionary_C.html#43124">compute_td_self_energy_double_grid</a>
+| <a href="dictionary_C.html#43119">compute_td_self_energy</a>
+| <a href="dictionary_C.html#43135">compute_td_spectral_function</a>
+| <a href="dictionary_C.html#43149">compute_zp_self_energy_double_grid</a>
+| <a href="dictionary_C.html#43144">compute_zp_self_energy</a>
+| <a href="dictionary_C.html#43161">compute_zp_spectral_function</a>
+| <a href="dictionary_C.html#43054">compute_dynamical_td_renormalization_double_grid</a>
+| <a href="dictionary_C.html#43051">compute_dynamical_td_renormalization</a>
+| <a href="dictionary_C.html#43068">compute_dynamical_zp_renormalization_modes_double_grid</a>
+| <a href="dictionary_C.html#43060">compute_dynamical_zp_renormalization</a>
+| <a href="dictionary_C.html#43048">compute_dynamical_td_broadening</a>
+| <a href="dictionary_C.html#43057">compute_dynamical_zp_broadening</a>
+| <a href="dictionary_C.html#43096">compute_static_td_renormalization</a>
+| <a href="dictionary_C.html#43110">compute_static_zp_renormalization</a>
+| <a href="dictionary_C.html#43113">compute_static_zp_renormalization_modes</a>
+| <a href="dictionary_C.html#43090">compute_static_td_broadening</a>
+| <a href="dictionary_C.html#43103">compute_static_zp_broadening</a>
+| <a href="dictionary_C.html#43099">compute_static_td_renormalization_nosplit</a>
+| <a href="dictionary_C.html#43116">compute_static_zp_renormalization_nosplit</a>
+| <a href="dictionary_C.html#43093">compute_static_td_broadening_nosplit</a>
+| <a href="dictionary_C.html#43107">compute_static_zp_broadening_nosplit</a>
+| <a href="dictionary_W.html#139115">write_netcdf</a>
+| <a href="dictionary_W.html#139149">write_renormalization</a>
+| <a href="dictionary_W.html#139049">write_broadening</a>
+
+<a href="dictionary_E.html#43043">ElectronPhononCoupling.interface.compute_cumulant.compute_cumulant</a>
+| builtins.list
+| <a href="4289.html"><b>EpcAnalyzer.py</b></a>
+| <a href="dictionary_C.html#43124">compute_td_self_energy_double_grid</a>
+| <a href="dictionary_C.html#43119">compute_td_self_energy</a>
+| <a href="dictionary_C.html#43135">compute_td_spectral_function</a>
+| <a href="dictionary_C.html#43149">compute_zp_self_energy_double_grid</a>
+| <a href="dictionary_C.html#43144">compute_zp_self_energy</a>
+| <a href="dictionary_C.html#43161">compute_zp_spectral_function</a>
+| <a href="dictionary_C.html#43131">compute_td_self_energy_static_double_grid</a>
+| <a href="dictionary_C.html#43127">compute_td_self_energy_static</a>
+| <a href="dictionary_C.html#43158">compute_zp_self_energy_static_double_grid</a>
+| <a href="dictionary_C.html#43155">compute_zp_self_energy_static</a>
+| <a href="dictionary_C.html#43152">compute_zp_self_energy_fan_active</a>
+| <a href="dictionary_C.html#43054">compute_dynamical_td_renormalization_double_grid</a>
+| <a href="dictionary_C.html#43051">compute_dynamical_td_renormalization</a>
+| <a href="dictionary_C.html#43060">compute_dynamical_zp_renormalization</a>
+| <a href="dictionary_C.html#43048">compute_dynamical_td_broadening</a>
+| <a href="dictionary_C.html#43057">compute_dynamical_zp_broadening</a>
+| <a href="dictionary_C.html#43096">compute_static_td_renormalization</a>
+| <a href="dictionary_C.html#43110">compute_static_zp_renormalization</a>
+| <a href="dictionary_C.html#43113">compute_static_zp_renormalization_modes</a>
+| <a href="dictionary_C.html#43090">compute_static_td_broadening</a>
+| <a href="dictionary_C.html#43103">compute_static_zp_broadening</a>
+| <a href="dictionary_C.html#43099">compute_static_td_renormalization_nosplit</a>
+| <a href="dictionary_C.html#43116">compute_static_zp_renormalization_nosplit</a>
+| <a href="dictionary_C.html#43093">compute_static_td_broadening_nosplit</a>
+| <a href="dictionary_C.html#43107">compute_static_zp_broadening_nosplit</a>
+| <a href="dictionary_W.html#139115">write_netcdf</a>
+| <a href="dictionary_W.html#139149">write_renormalization</a>
+| <a href="dictionary_W.html#139049">write_broadening</a>
+
+<a href="dictionary_E.html#4844">ElectronPhononCoupling.tests.EPCTest.EPCTest.AssertClose</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| <a href="dictionary_S.html#124067">setdefault</a>
+| numpy.testing.nose_tools.utils.assert_allclose
+
+<a href="dictionary_E.html#4845">ElectronPhononCoupling.tests.epctest.EPCTest.AssertClose</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| <a href="dictionary_S.html#124067">setdefault</a>
+| numpy.testing.nose_tools.utils.assert_allclose
+
+<a href="dictionary_E.html#39790">ElectronPhononCoupling.tests.EPCTest.EPCTest.check_reference_exists</a>
+| genericpath.exists
+
+<a href="dictionary_E.html#39791">ElectronPhononCoupling.tests.epctest.EPCTest.check_reference_exists</a>
+| genericpath.exists
+
+<a href="dictionary_E.html#96431">ElectronPhononCoupling.tests.EPCTest.EPCTest.recover_tmpdir</a>
+| genericpath.exists
+| nt.mkdir
+| shutil.copytree
+
+<a href="dictionary_E.html#96432">ElectronPhononCoupling.tests.epctest.EPCTest.recover_tmpdir</a>
+| genericpath.exists
+| nt.mkdir
+| shutil.copytree
+
+<a href="dictionary_E.html#123268">ElectronPhononCoupling.tests.EPCTest.EPCTest.setUp</a>
+| tempfile.mkdtemp
+| posixpath.join
+| posixpath.split
+
+<a href="dictionary_E.html#123269">ElectronPhononCoupling.tests.epctest.EPCTest.setUp</a>
+| tempfile.mkdtemp
+| posixpath.join
+| posixpath.split
+
+<a href="dictionary_E.html#129780">ElectronPhononCoupling.tests.EPCTest.EPCTest.tearDown</a>
+| shutil.rmtree
+
+<a href="dictionary_E.html#129781">ElectronPhononCoupling.tests.epctest.EPCTest.tearDown</a>
+| shutil.rmtree
+
+<a href="dictionary_E.html#60573">ElectronPhononCoupling.tests.generate.generate_all_data_for_tests</a>
+| builtins.print
+| <a href="dictionary_E.html#11883">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2</a>
+| <a href="dictionary_E.html#60568">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.generate</a>
+| <a href="dictionary_E.html#11884">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4</a>
+| <a href="dictionary_E.html#60567">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.generate</a>
+| <a href="dictionary_E.html#11882">ElectronPhononCoupling.tests.test_LiF_double_grid.Test_LiF_double_grid</a>
+| <a href="dictionary_E.html#60566">ElectronPhononCoupling.tests.test_LiF_double_grid.Test_LiF_double_grid.generate</a>
+
+<a href="dictionary_E.html#60593">ElectronPhononCoupling.tests.SETest.SETest.generate_ref</a>
+| <a href="4314.html"><b>compute.py</b></a>
+| <a href="dictionary_E.html#60357">ElectronPhononCoupling.tests.SETest.SETest.generate_ref.function</a>
+
+<a href="dictionary_E.html#60594">ElectronPhononCoupling.tests.setest.SETest.generate_ref</a>
+| <a href="4314.html"><b>compute.py</b></a>
+| <a href="dictionary_E.html#60373">ElectronPhononCoupling.tests.setest.SETest.generate_ref.function</a>
+
+<a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+| copy.copy
+| update
+| <a href="dictionary_E.html#93220">ElectronPhononCoupling.tests.SETest.pjoin</a>
+
+<a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+| copy.copy
+| update
+| <a href="dictionary_E.html#93224">ElectronPhononCoupling.tests.setest.pjoin</a>
+
+<a href="dictionary_E.html#62521">ElectronPhononCoupling.tests.SETest.SETest.get_td_se</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62522">ElectronPhononCoupling.tests.setest.SETest.get_td_se</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62523">ElectronPhononCoupling.tests.SETest.SETest.get_td_se_double_grid</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62525">ElectronPhononCoupling.tests.setest.SETest.get_td_se_double_grid</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62530">ElectronPhononCoupling.tests.SETest.SETest.get_td_sf</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62531">ElectronPhononCoupling.tests.setest.SETest.get_td_sf</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62533">ElectronPhononCoupling.tests.SETest.SETest.get_tdb_dyn</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62534">ElectronPhononCoupling.tests.setest.SETest.get_tdb_dyn</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62537">ElectronPhononCoupling.tests.SETest.SETest.get_tdb_stat</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62538">ElectronPhononCoupling.tests.SETest.SETest.get_tdb_stat</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62539">ElectronPhononCoupling.tests.setest.SETest.get_tdb_stat</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62540">ElectronPhononCoupling.tests.setest.SETest.get_tdb_stat</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62542">ElectronPhononCoupling.tests.SETest.SETest.get_tdb_stat_nosplit</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62543">ElectronPhononCoupling.tests.setest.SETest.get_tdb_stat_nosplit</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62549">ElectronPhononCoupling.tests.SETest.SETest.get_tdr_dyn</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62550">ElectronPhononCoupling.tests.setest.SETest.get_tdr_dyn</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62551">ElectronPhononCoupling.tests.SETest.SETest.get_tdr_dyn_double_grid</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62553">ElectronPhononCoupling.tests.setest.SETest.get_tdr_dyn_double_grid</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62557">ElectronPhononCoupling.tests.SETest.SETest.get_tdr_stat</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62558">ElectronPhononCoupling.tests.setest.SETest.get_tdr_stat</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62560">ElectronPhononCoupling.tests.SETest.SETest.get_tdr_stat_nosplit</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62561">ElectronPhononCoupling.tests.setest.SETest.get_tdr_stat_nosplit</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62929">ElectronPhononCoupling.tests.SETest.SETest.get_zp_se</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62930">ElectronPhononCoupling.tests.setest.SETest.get_zp_se</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62931">ElectronPhononCoupling.tests.SETest.SETest.get_zp_se_double_grid</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62933">ElectronPhononCoupling.tests.setest.SETest.get_zp_se_double_grid</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62938">ElectronPhononCoupling.tests.SETest.SETest.get_zp_sf</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62939">ElectronPhononCoupling.tests.setest.SETest.get_zp_sf</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62941">ElectronPhononCoupling.tests.SETest.SETest.get_zpb_dyn</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62942">ElectronPhononCoupling.tests.SETest.SETest.get_zpb_dyn</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62943">ElectronPhononCoupling.tests.setest.SETest.get_zpb_dyn</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62944">ElectronPhononCoupling.tests.setest.SETest.get_zpb_dyn</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62947">ElectronPhononCoupling.tests.SETest.SETest.get_zpb_stat</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62948">ElectronPhononCoupling.tests.SETest.SETest.get_zpb_stat</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62949">ElectronPhononCoupling.tests.setest.SETest.get_zpb_stat</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62950">ElectronPhononCoupling.tests.setest.SETest.get_zpb_stat</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62952">ElectronPhononCoupling.tests.SETest.SETest.get_zpb_stat_nosplit</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62953">ElectronPhononCoupling.tests.setest.SETest.get_zpb_stat_nosplit</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62959">ElectronPhononCoupling.tests.SETest.SETest.get_zpr_dyn</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62960">ElectronPhononCoupling.tests.setest.SETest.get_zpr_dyn</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62966">ElectronPhononCoupling.tests.SETest.SETest.get_zpr_stat</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62967">ElectronPhononCoupling.tests.setest.SETest.get_zpr_stat</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62969">ElectronPhononCoupling.tests.SETest.SETest.get_zpr_stat_mode</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62970">ElectronPhononCoupling.tests.setest.SETest.get_zpr_stat_mode</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62972">ElectronPhononCoupling.tests.SETest.SETest.get_zpr_stat_nosplit</a>
+| <a href="dictionary_E.html#61812">ElectronPhononCoupling.tests.SETest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#62973">ElectronPhononCoupling.tests.setest.SETest.get_zpr_stat_nosplit</a>
+| <a href="dictionary_E.html#61813">ElectronPhononCoupling.tests.setest.SETest.get_kwargs</a>
+
+<a href="dictionary_E.html#99143">ElectronPhononCoupling.tests.SETest.SETest.run_compare_nc</a>
+| <a href="4314.html"><b>compute.py</b></a>
+| <a href="dictionary_E.html#60356">ElectronPhononCoupling.tests.SETest.SETest.run_compare_nc.function</a>
+| <a href="dictionary_R.html#97321">replace</a>
+| <a href="dictionary_C.html#39789">check_reference_exists</a>
+| <a href="dictionary_A.html#4843">AssertClose</a>
+
+<a href="dictionary_E.html#99144">ElectronPhononCoupling.tests.setest.SETest.run_compare_nc</a>
+| <a href="4314.html"><b>compute.py</b></a>
+| <a href="dictionary_E.html#60372">ElectronPhononCoupling.tests.setest.SETest.run_compare_nc.function</a>
+| <a href="dictionary_R.html#97321">replace</a>
+| <a href="dictionary_C.html#39789">check_reference_exists</a>
+| <a href="dictionary_A.html#4843">AssertClose</a>
+
+<a href="dictionary_E.html#60566">ElectronPhononCoupling.tests.test_LiF_double_grid.Test_LiF_double_grid.generate</a>
+| builtins.print
+| <a href="dictionary_G.html#60592">generate_ref</a>
+
+<a href="dictionary_E.html#130349">ElectronPhononCoupling.tests.test_LiF_double_grid.Test_LiF_double_grid.test_td_se_double_grid</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130356">ElectronPhononCoupling.tests.test_LiF_double_grid.Test_LiF_double_grid.test_tdr_dyn_double_grid</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130370">ElectronPhononCoupling.tests.test_LiF_double_grid.Test_LiF_double_grid.test_zp_se_double_grid</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#60568">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.generate</a>
+| builtins.print
+| <a href="dictionary_G.html#60592">generate_ref</a>
+
+<a href="dictionary_E.html#130348">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_td_se</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130350">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_td_sf</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130353">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_tdb_stat_nosplit</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130355">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_tdr_dyn</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130357">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_tdr_stat</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130358">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_tdr_static_nosplit</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130369">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_zp_se</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130371">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_zp_sf</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130374">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_zpb_stat_nosplit</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130376">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_zpr_dyn</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130377">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_zpr_stat</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130379">ElectronPhononCoupling.tests.test_LiF_g2.Test_LiF_g2.test_zpr_stat_nosplit</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#60567">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.generate</a>
+| builtins.print
+| <a href="dictionary_G.html#60592">generate_ref</a>
+
+<a href="dictionary_E.html#130351">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.test_tdb_dyn</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130352">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.test_tdb_stat</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130354">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.test_tdr_dyn</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130372">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.test_zpb_dyn</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130373">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.test_zpb_stat</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130375">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.test_zpr_dyn</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#130378">ElectronPhononCoupling.tests.test_LiF_g4.Test_LiF_g4.test_zpr_stat_mode</a>
+| <a href="dictionary_R.html#99142">run_compare_nc</a>
+
+<a href="dictionary_E.html#44030">ElectronPhononCoupling.util.ddb_converter.convert_ddb_to_netcdf</a>
+| <a href="dictionary_E.html#6195">ElectronPhononCoupling.util.ddb_converter.DdbFileConverter</a>
+| <a href="dictionary_R.html#96154">read_txt</a>
+| <a href="dictionary_W.html#139112">write_nc</a>
+
+<a href="dictionary_E.html#96095">ElectronPhononCoupling.util.ddb_converter.DdbFileConverter.read_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| builtins.len
+| <a href="dictionary_Z.html#142029">zeros</a>
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#96155">ElectronPhononCoupling.util.ddb_converter.DdbFileConverter.read_txt</a>
+| <a href="dictionary_Z.html#142026">zeros</a>
+| builtins.open
+| <a href="dictionary_F.html#57261">find</a>
+| builtins.int
+| <a href="dictionary_S.html#126011">split</a>
+| <a href="dictionary_R.html#97321">replace</a>
+| builtins.float
+| <a href="dictionary_A.html#32630">arange</a>
+| builtins.complex
+| <a href="dictionary_A.html#34518">array</a>
+| builtins.range
+| <a href="dictionary_O.html#87959">ones</a>
+
+<a href="dictionary_E.html#139113">ElectronPhononCoupling.util.ddb_converter.DdbFileConverter.write_nc</a>
+| <a href="dictionary_D.html#6167">Dataset</a>
+| <a href="dictionary_C.html#44786">createDimension</a>
+| <a href="dictionary_C.html#44801">createVariable</a>
+| <a href="dictionary_Z.html#142029">zeros</a>
+| builtins.range
+| <a href="dictionary_E.html#51175">einsum</a>
+
+<a href="dictionary_E.html#84042">ElectronPhononCoupling.util.ncutil.nc_copy</a>
+| iteritems
+| <a href="dictionary_C.html#44786">createDimension</a>
+| builtins.len
+| <a href="dictionary_C.html#44801">createVariable</a>
+
+<a href="dictionary_E.html#96517">ElectronPhononCoupling.util.reduce_kpoints.reduce_dim</a>
+| builtins.len
+| <a href="dictionary_D.html#6167">Dataset</a>
+| <a href="dictionary_E.html#84042">ElectronPhononCoupling.util.ncutil.nc_copy</a>
+| <a href="dictionary_C.html#44786">createDimension</a>
+| <a href="dictionary_I.html#67250">index</a>
+| <a href="dictionary_C.html#44801">createVariable</a>
+| <a href="dictionary_T.html#129353">take</a>
+
+<a href="dictionary_E.html#96518">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints</a>
+| <a href="dictionary_E.html#51994">endswith</a>
+| <a href="dictionary_E.html#96519">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints_eig</a>
+| <a href="dictionary_E.html#96520">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints_eigr2d</a>
+| <a href="dictionary_E.html#96522">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints_gkk</a>
+| <a href="dictionary_E.html#96521">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints_fan</a>
+
+<a href="dictionary_E.html#96519">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints_eig</a>
+| <a href="dictionary_E.html#96517">ElectronPhononCoupling.util.reduce_kpoints.reduce_dim</a>
+
+<a href="dictionary_E.html#96520">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints_eigr2d</a>
+| <a href="dictionary_E.html#96517">ElectronPhononCoupling.util.reduce_kpoints.reduce_dim</a>
+
+<a href="dictionary_E.html#96521">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints_fan</a>
+| <a href="dictionary_E.html#96517">ElectronPhononCoupling.util.reduce_kpoints.reduce_dim</a>
+
+<a href="dictionary_E.html#96522">ElectronPhononCoupling.util.reduce_kpoints.reduce_kpoints_gkk</a>
+| <a href="dictionary_E.html#96517">ElectronPhononCoupling.util.reduce_kpoints.reduce_dim</a>
+
+<a href="dictionary_E.html#128725">ElectronPhononCoupling.util.symmetrize.symmetrize_array</a>
+| <a href="dictionary_C.html#44368">copy</a>
+| <a href="dictionary_A.html#32630">arange</a>
+| <a href="dictionary_R.html#97734">reshape</a>
+| <a href="dictionary_T.html#129353">take</a>
+| <a href="dictionary_A.html#35526">average</a>
+| <a href="dictionary_P.html#94988">put</a>
+
+<a href="4226.html"><b>etsf_specs.py</b></a>
+| logging.getLogger
+| builtins.str
+| <a href="dictionary_W.html#137773">warning</a>
+| <a href="dictionary_D.html#6923">doc.tests.pymods.etsf_specs.EtsfAttribute</a>
+| <a href="dictionary_D.html#6925">doc.tests.pymods.etsf_specs.EtsfDimension</a>
+| <a href="dictionary_D.html#6931">doc.tests.pymods.etsf_specs.EtsfVariable</a>
+| <a href="dictionary_D.html#12391">doc.tests.pymods.etsf_specs.VariableWithUnits</a>
+| builtins.range
+
+<a href="4428.html"><b>etsf_specs.py</b></a>
+| logging.getLogger
+| builtins.str
+| <a href="dictionary_W.html#137773">warning</a>
+| <a href="dictionary_T.html#6924">tests.pymods.etsf_specs.EtsfAttribute</a>
+| <a href="dictionary_T.html#6926">tests.pymods.etsf_specs.EtsfDimension</a>
+| <a href="dictionary_T.html#6932">tests.pymods.etsf_specs.EtsfVariable</a>
+| <a href="dictionary_T.html#12392">tests.pymods.etsf_specs.VariableWithUnits</a>
+| builtins.range
+</pre>
+<p>
+<div class="footer"><b>Generated:</b> September 24, 2018 10:24:24 AM EDT</div><center><p><div class="scitools-tag">Scientific Toolworks, Inc.<br></div><div class="scitools-link"><A target="_blank" href="mailto:support@scitools.com">support@scitools.com</A><br><A href="http://www.scitools.com">www.scitools.com</A></div></center></div></body></html>

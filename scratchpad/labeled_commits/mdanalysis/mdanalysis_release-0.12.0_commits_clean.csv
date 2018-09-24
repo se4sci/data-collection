@@ -1,131 +1,131 @@
 hash,time,message,buggy
-0cebefa,2015-09-07 20:44:27,Bumped version to 0.11.1-dev,0
-6b64424,2015-09-08 09:43:24,Added docs link to README,0
-f9cfb61,2015-09-08 10:14:44,Added small example to Readme,0
-ef3fa23,2015-09-08 18:02:41,Use numpy with abreviation np consistently,0
-48a4641,2015-09-08 19:45:24,Merge pull request #421 from kain88-de/numpy-to-np,0
-c2dfd61,2015-09-08 20:23:27,Fix 'from numpy import ...',0
-c12ec88,2015-09-09 17:48:07,use links through mdanalysis.org,0
-e99650e,2015-09-09 21:23:55,Use current branch to build docs,0
-5261390,2015-09-09 21:24:34,Activate sphinx.ext.napoleon for numpy-style docs,0
-de7b4e1,2015-09-09 22:29:22,Add failing test to read PDB trajectory,0
-6bf440e,2015-09-09 22:33:05,Fix missing occupancy in PrimitivePDBReader,0
-1bb22bd,2015-09-10 07:46:05,Default to occupancy=1 if not given in PDB,0
-f4bbc95,2015-09-11 16:43:23,automatic develop doc deployment (#386),0
-29d9e89,2015-09-11 16:59:17,README: updated doc badges,0
-890c4ce,2015-09-11 18:27:51,Add occupancy information to Atom/AtomGroup,0
-4bdfa3d,2015-09-11 19:11:57,Add test for occupancy field,0
-b7a7a07,2015-09-11 19:24:53,Added frame seeking to XYZReader,0
-f8bdc80,2015-09-11 19:45:03,Merge pull request #423 from kain88-de/docs,0
-b7a549e,2015-09-11 19:46:24,Fixed Compressed test,0
-734b259,2015-09-11 22:51:22,Use numpy style doc strings,0
-6c94fc8,2015-09-11 22:57:53,Add changes to changelog,0
-0a81b3f,2015-09-12 09:04:55,Merge pull request #430 from MDAnalysis/issue/386,0
-f6a8bb0,2015-09-12 09:07:26,Merge pull request #425 from kain88-de/pdb-reading,0
-8874af6,2015-09-12 09:38:46,Changed AtomGroup.occupancy to occupancies,0
-4488c59,2015-09-12 10:05:42,Added set_occupancies,0
-df0a40e,2015-09-12 10:26:30,Merge pull request #432 from MDAnalysis/extra-occupancy,0
-af0ce22,2015-09-12 10:31:02,Merge branch 'develop' into feature-XYZimprovements,0
-04b7a20,2015-09-12 11:35:03,Merge pull request #428 from MDAnalysis/feature-XYZimprovements,0
-80bc2a2,2015-09-12 14:19:28,doc deployment: added travis build_ext step,0
-007c859,2015-09-12 14:19:28,doc deployment: only run if first job,0
-30a4c1d,2015-09-12 15:20:18,doc deployment: only fetch shallow doc branch for speed-up,0
-c3f3a63,2015-09-12 17:20:20,Merge pull request #433 from MDAnalysis/issue/386,0
-d4bc077,2015-09-13 17:47:02,Fixes #434: trying to write empty AtomGroup gives clear message.,0
-9c7b927,2015-09-14 10:14:37,README: changed Google Group badges,0
-04d0ec7,2015-09-14 11:31:47,Added change to changelog.,0
-d4351b1,2015-09-14 23:39:16,Merge pull request #435 from dotsdl/issue-434,0
-6ef55d9,2015-09-15 08:26:46,Removed _topology_coordinates_readers dict from coordinates,0
-ef3f62e,2015-09-15 22:31:14,Merge pull request #436 from MDAnalysis/feature-topologycoordinates,0
-5a2f6ba,2015-09-16 15:11:37,PSA updated: new metrics  Hausdorff/nearest neigh analysis and plotting  additional functions/features,0
-bc13c02,2015-09-16 15:20:47,Fixed psa.py conflicts (numpy --> np),0
-f1cecf5,2015-09-17 12:23:28,Added ability to slice Reader object using lists and arrays of integers (Issue #437),0
-3bb5ec6,2015-09-17 15:20:57,Added enhancements to PSA in CHANGELOG,0
-3af46b2,2015-09-17 15:21:44,Added new DIMS AdK trajectory to test data,0
-a68bf3a,2015-09-17 15:26:46,Added DCD2 (DIMS AdK transition) to datafiles,0
-8e55200,2015-09-18 07:36:31,Added more tests for Reading fancy indexing,0
-4a5caf6,2015-09-18 15:14:22,Minor tweaks to nearest neighbor plotting method,0
-3492ae6,2015-09-18 15:16:06,Added basic tests for PSA,0
-8a23524,2015-09-18 17:22:55,"Revert ""Added DCD2 (DIMS AdK transition) to datafiles""",0
-673fbeb,2015-09-18 17:58:22,PSA.HP/PSA.NN now properties  fixed NN plot method,0
-e029273,2015-09-18 18:09:43,Added back DCD2 to datafiles,0
-9cc3e4d,2015-09-18 18:23:22,Added seaborn to 'extras_require' in setup.py  try/except for seaborn imports in PSA plotting methods,0
-c913236,2015-09-18 18:29:15,Updated CHANGELOG for PSA tests and new AdK DIMS DCD test file,0
-e2b99d8,2015-09-18 18:38:23,'PSA' now 'PSAnalysis' (less namespace confusion)  added import for psa.py in test_analysis.py,0
-6583416,2015-09-18 18:41:10,Added note about PSA --> PSAnalysis in CHANGELOG,0
-b0374da,2015-09-18 18:43:17,Instances of PSA --> PSAnalysis,0
-2c3ad5a,2015-09-21 09:53:13,Made 'get_psa_pairs' a property,0
-83b6d98,2015-09-21 10:47:58,Updated documentation for psa_pairs  nearest_neighbors  hausdorff_pairs properties in PSAnalysis,0
-0ef949c,2015-09-21 11:00:04,psa_pairs  nearest_neighbors  hausdorff_pairs are properties whose corresponding instance variables (_psa_pairs  _NN  and _HP) are now removed from the API,0
-2ae4ae6,2015-09-21 11:52:51,Added note directives to docs for getter methods (where analyses must be performed prior) in PSAnalysis,0
-915c0fd,2015-09-21 16:39:33,Merge pull request #439 from MDAnalysis/feature-fancytrajindex,0
-4a3f08c,2015-09-21 18:48:58,Merge pull request #442 from MDAnalysis/fix-coverage,0
-58484f5,2015-09-21 19:06:06,Merge pull request #438 from sseyler/develop,0
-e045b66,2015-09-21 23:30:50,Fixed converagerc for coverage 4.0,0
-45c56be,2015-09-22 00:14:35,Added sseyler to CHANGELOG,0
-3c86189,2015-09-22 00:15:42,Fixed duplicate named test,0
-608feef,2015-09-22 00:24:17,Merge branch 'develop' into feature-fancytrajindex,0
-bb27ff0,2015-09-23 15:29:59,Added test for lib.mdamath.make_whole,0
-c5ac7ab,2015-09-23 15:44:21,Fix for issue with lib.mdamath.make_whole,0
-25ea3da,2015-09-23 20:52:40,Merge pull request #445 from MDAnalysis/make_whole_fix,0
-a785e44,2015-09-24 15:25:20,Improved AG IndexError message,0
-42da026,2015-09-25 21:15:48,Added tests for Issue #446,0
-0444b62,2015-09-25 21:30:12,Fixed Issue #446,0
-7ba130e,2015-09-26 10:25:12,Added extra tests for Atom comparison,0
-fb05bc8,2015-09-26 10:37:32,Removed cmp from Atom,0
-495ba5d,2015-09-26 10:39:12,Removed cmp from LAMMPSParser,0
-c87c1f9,2015-09-26 17:41:08,Removed weakref system from Atom.universe. Atoms now hold a strong/real reference to the Universe,0
-0f31aa7,2015-09-27 17:37:06,Added tests for moving Universe out of scope,0
-0df8542,2015-09-28 09:54:48,AtomGroup.universe now raises NoDataError on failure,0
-98fb034,2015-09-28 09:55:08,Merge branch 'issue-297' of github.com:MDAnalysis/mdanalysis into issue-297,0
-b8238e2,2015-09-28 14:50:02,Added AtomGroup picklability test  fixed cosmetics,0
-11851bf,2015-09-28 17:33:24,Merge pull request #448 from MDAnalysis/issue-446,0
-0ff135a,2015-09-28 17:34:20,Merge pull request #449 from MDAnalysis/issue-297,0
-a811877,2015-09-28 18:44:23,added semantic versioning to CHANGELOG rules,0
-42607eb,2015-09-28 18:49:31,AtomGroup.sequence() works again for atoms,0
-5b27b50,2015-09-28 23:46:47,Merge pull request #452 from MDAnalysis/issue/451,0
-60c4a3d,2015-09-29 09:21:47,Update the TPR parser for pbx100 and pbx103,0
-35c4302,2015-09-29 12:18:36,Added test for Issue #454,0
-83f4b65,2015-09-29 12:40:52,Fixes #454,0
-4304634,2015-09-29 13:20:15,Merge pull request #457 from MDAnalysis/issue-454,0
-c06d8e6,2015-09-29 17:52:29,Add tests for pbx100 and pbx103,0
-f4c3830,2015-09-30 11:25:38,Update the doc for pbx100 and pbx103 support,0
-5a7d0e5,2015-10-01 08:25:46,Merge pull request #458 from jbarnoud/update-tpr,0
-e1519b8,2015-10-01 10:54:56,Update author lists and change logs,0
-54488a7,2015-10-01 13:25:43,Add test for all Gromacs bonded interactions,0
-a2a4b8a,2015-10-01 13:31:09,Make the TPR parser read all bonded interactions,0
-3240a38,2015-10-01 13:38:40,Test for issue #352 now pass,0
-3c5c3b6,2015-10-01 15:29:39,Merge pull request #463 from jbarnoud/tpr-interactions,0
-10914e0,2015-10-01 21:48:52,Introduce basic setup.cfg and parsing,0
-67f9d28,2015-10-01 22:50:54,use configparser in setup.py,0
-8ee415c,2015-10-01 22:51:21,Handle extensions in own function,0
-b463295,2015-10-01 23:12:08,Clean up setup.py a little bit,0
-8e0e8a9,2015-10-01 23:12:24,comment non default values,0
-1306516,2015-10-01 23:13:44,Use system installed setup_tools,0
-e4f3483,2015-10-02 00:06:18,Make error message clearer in tests for TPR parser,0
-ca780ce,2015-10-02 00:11:16,Include all TPR test files in setup.py,0
-54c6d2c,2015-10-02 01:32:59,Merge pull request #467 from jbarnoud/tpr-doc,0
-c05ec1e,2015-10-02 09:09:08,Update CHANGELOG to reflect #463,0
-2065c30,2015-10-02 09:32:20,Update the doc to reflect #463,0
-3771433,2015-10-02 09:33:59,Moved many extensions files alongside the python code (Issue #444),0
-339c110,2015-10-02 13:00:06,Merge pull request #468 from MDAnalysis/issue-444,0
-e7249b2,2015-10-03 16:34:23,Add scipy as extra requirement agai.,0
-5d35199,2015-10-03 16:39:45,Add Richard as maintainer and give devel list for support,0
-08fee3a,2015-10-03 19:05:27,Some general clean up in setup.py,0
-7c3ff3f,2015-10-03 19:11:22,Update SUMMARY.txt,0
-1250037,2015-10-03 19:26:22,Use proper config wrapper class,0
-2ed613c,2015-10-03 19:49:03,reorder setup() parameters,0
-b6c895f,2015-10-03 20:02:34,Remove flake8 config,0
-f4185f6,2015-10-03 22:17:33,Merge pull request #465 from kain88-de/setup-config,0
-8c7dfa0,2015-10-04 00:17:46,Split test_coordinates into different files,0
-6214712,2015-10-04 00:21:24,apply yapf with PEP8 settings,0
-e44331c,2015-10-04 07:59:50,Merge pull request #469 from kain88-de/test_coordinate,0
-6fcd3c6,2015-10-04 08:47:22,Get tests running again,0
-2a0470b,2015-10-04 12:13:42,use find_packages in setup,0
-84ce31e,2015-10-04 12:38:18,Replace izip with six.moves zip,0
-7abd190,2015-10-04 13:17:07,Use tempdir instead of tempfile,0
-e596de2,2015-10-04 13:33:42,add tempdir install to travis and setup.py,0
-97b071f,2015-10-04 18:28:50,Bumped version to 0.12.0,0
-04b7258,2015-10-04 18:38:17,Rebuilt docs for 0.12.0 release,0
-957b263,2015-10-04 21:37:57,Updated MANIFEST for 0.12.0 release,0
-2d2ae28,2015-10-05 10:12:46,Final fix(tm) to MANIFEST,0
+0cebefa,2015-09-07T20:44:27,Bumped version to 0.11.1-dev,0.0
+6b64424,2015-09-08T09:43:24,Added docs link to README,0.0
+f9cfb61,2015-09-08T10:14:44,Added small example to Readme,0.0
+ef3fa23,2015-09-08T18:02:41,Use numpy with abreviation np consistently,0.0
+48a4641,2015-09-08T19:45:24,Merge pull request #421 from kain88-de/numpy-to-np,0.0
+c2dfd61,2015-09-08T20:23:27,Fix 'from numpy import ...',1.0
+c12ec88,2015-09-09T17:48:07,use links through mdanalysis.org,0.0
+e99650e,2015-09-09T21:23:55,Use current branch to build docs,0.0
+5261390.0,2015-09-09T21:24:34,Activate sphinx.ext.napoleon for numpy-style docs,0.0
+de7b4e1,2015-09-09T22:29:22,Add failing test to read PDB trajectory,0.0
+6bf440e,2015-09-09T22:33:05,Fix missing occupancy in PrimitivePDBReader,1.0
+1bb22bd,2015-09-10T07:46:05,Default to occupancy=1 if not given in PDB,0.0
+f4bbc95,2015-09-11T16:43:23,automatic develop doc deployment (#386),0.0
+29d9e89,2015-09-11T16:59:17,README: updated doc badges,0.0
+890c4ce,2015-09-11T18:27:51,Add occupancy information to Atom/AtomGroup,0.0
+4bdfa3d,2015-09-11T19:11:57,Add test for occupancy field,0.0
+b7a7a07,2015-09-11T19:24:53,Added frame seeking to XYZReader,0.0
+f8bdc80,2015-09-11T19:45:03,Merge pull request #423 from kain88-de/docs,0.0
+b7a549e,2015-09-11T19:46:24,Fixed Compressed test,1.0
+734b259,2015-09-11T22:51:22,Use numpy style doc strings,0.0
+6c94fc8,2015-09-11T22:57:53,Add changes to changelog,0.0
+0a81b3f,2015-09-12T09:04:55,Merge pull request #430 from MDAnalysis/issue/386,0.0
+f6a8bb0,2015-09-12T09:07:26,Merge pull request #425 from kain88-de/pdb-reading,0.0
+8874af6,2015-09-12T09:38:46,Changed AtomGroup.occupancy to occupancies,0.0
+4488c59,2015-09-12T10:05:42,Added set_occupancies,0.0
+df0a40e,2015-09-12T10:26:30,Merge pull request #432 from MDAnalysis/extra-occupancy,0.0
+af0ce22,2015-09-12T10:31:02,Merge branch 'develop' into feature-XYZimprovements,0.0
+04b7a20,2015-09-12T11:35:03,Merge pull request #428 from MDAnalysis/feature-XYZimprovements,0.0
+80bc2a2,2015-09-12T14:19:28,doc deployment: added travis build_ext step,0.0
+007c859,2015-09-12T14:19:28,doc deployment: only run if first job,0.0
+30a4c1d,2015-09-12T15:20:18,doc deployment: only fetch shallow doc branch for speed-up,0.0
+c3f3a63,2015-09-12T17:20:20,Merge pull request #433 from MDAnalysis/issue/386,0.0
+d4bc077,2015-09-13T17:47:02,Fixes #434: trying to write empty AtomGroup gives clear message.,1.0
+9c7b927,2015-09-14T10:14:37,README: changed Google Group badges,0.0
+04d0ec7,2015-09-14T11:31:47,Added change to changelog.,0.0
+d4351b1,2015-09-14T23:39:16,Merge pull request #435 from dotsdl/issue-434,0.0
+6ef55d9,2015-09-15T08:26:46,Removed _topology_coordinates_readers dict from coordinates,0.0
+ef3f62e,2015-09-15T22:31:14,Merge pull request #436 from MDAnalysis/feature-topologycoordinates,0.0
+5a2f6ba,2015-09-16T15:11:37,PSA updated: new metrics  Hausdorff/nearest neigh analysis and plotting  additional functions/features,0.0
+bc13c02,2015-09-16T15:20:47,Fixed psa.py conflicts (numpy --> np),1.0
+f1cecf5,2015-09-17T12:23:28,Added ability to slice Reader object using lists and arrays of integers (Issue #437),0.0
+3bb5ec6,2015-09-17T15:20:57,Added enhancements to PSA in CHANGELOG,0.0
+3af46b2,2015-09-17T15:21:44,Added new DIMS AdK trajectory to test data,0.0
+a68bf3a,2015-09-17T15:26:46,Added DCD2 (DIMS AdK transition) to datafiles,0.0
+8e55200,2015-09-18T07:36:31,Added more tests for Reading fancy indexing,0.0
+4a5caf6,2015-09-18T15:14:22,Minor tweaks to nearest neighbor plotting method,0.0
+3492ae6,2015-09-18T15:16:06,Added basic tests for PSA,0.0
+8a23524,2015-09-18T17:22:55,"Revert ""Added DCD2 (DIMS AdK transition) to datafiles""",0.0
+673fbeb,2015-09-18T17:58:22,PSA.HP/PSA.NN now properties  fixed NN plot method,0.0
+e029273,2015-09-18T18:09:43,Added back DCD2 to datafiles,0.0
+9cc3e4d,2015-09-18T18:23:22,Added seaborn to 'extras_require' in setup.py  try/except for seaborn imports in PSA plotting methods,0.0
+c913236,2015-09-18T18:29:15,Updated CHANGELOG for PSA tests and new AdK DIMS DCD test file,0.0
+e2b99d8,2015-09-18T18:38:23,PSA' now 'PSAnalysis' (less namespace confusion)  added import for psa.py in test_analysis.py,0.0
+6583416.0,2015-09-18T18:41:10,Added note about PSA --> PSAnalysis in CHANGELOG,0.0
+b0374da,2015-09-18T18:43:17,Instances of PSA --> PSAnalysis,0.0
+2c3ad5a,2015-09-21T09:53:13,Made 'get_psa_pairs' a property,0.0
+83b6d98,2015-09-21T10:47:58,Updated documentation for psa_pairs  nearest_neighbors  hausdorff_pairs properties in PSAnalysis,0.0
+0ef949c,2015-09-21T11:00:04,psa_pairs  nearest_neighbors  hausdorff_pairs are properties whose corresponding instance variables (_psa_pairs  _NN  and _HP) are now removed from the API,0.0
+2ae4ae6,2015-09-21T11:52:51,Added note directives to docs for getter methods (where analyses must be performed prior) in PSAnalysis,0.0
+915c0fd,2015-09-21T16:39:33,Merge pull request #439 from MDAnalysis/feature-fancytrajindex,0.0
+4a3f08c,2015-09-21T18:48:58,Merge pull request #442 from MDAnalysis/fix-coverage,0.0
+58484f5,2015-09-21T19:06:06,Merge pull request #438 from sseyler/develop,0.0
+e045b66,2015-09-21T23:30:50,Fixed converagerc for coverage 4.0,1.0
+45c56be,2015-09-22T00:14:35,Added sseyler to CHANGELOG,0.0
+3c86189,2015-09-22T00:15:42,Fixed duplicate named test,1.0
+608feef,2015-09-22T00:24:17,Merge branch 'develop' into feature-fancytrajindex,0.0
+bb27ff0,2015-09-23T15:29:59,Added test for lib.mdamath.make_whole,0.0
+c5ac7ab,2015-09-23T15:44:21,Fix for issue with lib.mdamath.make_whole,1.0
+25ea3da,2015-09-23T20:52:40,Merge pull request #445 from MDAnalysis/make_whole_fix,0.0
+a785e44,2015-09-24T15:25:20,Improved AG IndexError message,0.0
+42da026,2015-09-25T21:15:48,Added tests for Issue #446,0.0
+0444b62,2015-09-25T21:30:12,Fixed Issue #446,1.0
+7ba130e,2015-09-26T10:25:12,Added extra tests for Atom comparison,0.0
+fb05bc8,2015-09-26T10:37:32,Removed cmp from Atom,0.0
+495ba5d,2015-09-26T10:39:12,Removed cmp from LAMMPSParser,0.0
+c87c1f9,2015-09-26T17:41:08,Removed weakref system from Atom.universe. Atoms now hold a strong/real reference to the Universe,0.0
+0f31aa7,2015-09-27T17:37:06,Added tests for moving Universe out of scope,0.0
+0df8542,2015-09-28T09:54:48,AtomGroup.universe now raises NoDataError on failure,0.0
+98fb034,2015-09-28T09:55:08,Merge branch 'issue-297' of github.com:MDAnalysis/mdanalysis into issue-297,0.0
+b8238e2,2015-09-28T14:50:02,Added AtomGroup picklability test  fixed cosmetics,0.0
+11851bf,2015-09-28T17:33:24,Merge pull request #448 from MDAnalysis/issue-446,0.0
+0ff135a,2015-09-28T17:34:20,Merge pull request #449 from MDAnalysis/issue-297,0.0
+a811877,2015-09-28T18:44:23,added semantic versioning to CHANGELOG rules,0.0
+42607eb,2015-09-28T18:49:31,AtomGroup.sequence() works again for atoms,0.0
+5b27b50,2015-09-28T23:46:47,Merge pull request #452 from MDAnalysis/issue/451,0.0
+60c4a3d,2015-09-29T09:21:47,Update the TPR parser for pbx100 and pbx103,0.0
+35c4302,2015-09-29T12:18:36,Added test for Issue #454,0.0
+83f4b65,2015-09-29T12:40:52,Fixes #454,1.0
+4304634.0,2015-09-29T13:20:15,Merge pull request #457 from MDAnalysis/issue-454,0.0
+c06d8e6,2015-09-29T17:52:29,Add tests for pbx100 and pbx103,0.0
+f4c3830,2015-09-30T11:25:38,Update the doc for pbx100 and pbx103 support,0.0
+5a7d0e5,2015-10-01T08:25:46,Merge pull request #458 from jbarnoud/update-tpr,0.0
+e1519b8,2015-10-01T10:54:56,Update author lists and change logs,0.0
+54488a7,2015-10-01T13:25:43,Add test for all Gromacs bonded interactions,0.0
+a2a4b8a,2015-10-01T13:31:09,Make the TPR parser read all bonded interactions,0.0
+3240a38,2015-10-01T13:38:40,Test for issue #352 now pass,1.0
+3c5c3b6,2015-10-01T15:29:39,Merge pull request #463 from jbarnoud/tpr-interactions,0.0
+10914.0,2015-10-01T21:48:52,Introduce basic setup.cfg and parsing,0.0
+67f9d28,2015-10-01T22:50:54,use configparser in setup.py,0.0
+8ee415c,2015-10-01T22:51:21,Handle extensions in own function,0.0
+b463295,2015-10-01T23:12:08,Clean up setup.py a little bit,0.0
+8e0e8a9,2015-10-01T23:12:24,comment non default values,0.0
+1306516.0,2015-10-01T23:13:44,Use system installed setup_tools,0.0
+e4f3483,2015-10-02T00:06:18,Make error message clearer in tests for TPR parser,0.0
+ca780ce,2015-10-02T00:11:16,Include all TPR test files in setup.py,0.0
+54c6d2c,2015-10-02T01:32:59,Merge pull request #467 from jbarnoud/tpr-doc,0.0
+c05ec1e,2015-10-02T09:09:08,Update CHANGELOG to reflect #463,0.0
+2065c30,2015-10-02T09:32:20,Update the doc to reflect #463,0.0
+3771433.0,2015-10-02T09:33:59,Moved many extensions files alongside the python code (Issue #444),0.0
+339c110,2015-10-02T13:00:06,Merge pull request #468 from MDAnalysis/issue-444,0.0
+e7249b2,2015-10-03T16:34:23,Add scipy as extra requirement agai.,0.0
+5d35199,2015-10-03T16:39:45,Add Richard as maintainer and give devel list for support,0.0
+08fee3a,2015-10-03T19:05:27,Some general clean up in setup.py,0.0
+7c3ff3f,2015-10-03T19:11:22,Update SUMMARY.txt,0.0
+1250037.0,2015-10-03T19:26:22,Use proper config wrapper class,0.0
+2ed613c,2015-10-03T19:49:03,reorder setup() parameters,0.0
+b6c895f,2015-10-03T20:02:34,Remove flake8 config,0.0
+f4185f6,2015-10-03T22:17:33,Merge pull request #465 from kain88-de/setup-config,0.0
+8c7dfa0,2015-10-04T00:17:46,Split test_coordinates into different files,0.0
+6214712.0,2015-10-04T00:21:24,apply yapf with PEP8 settings,0.0
+e44331c,2015-10-04T07:59:50,Merge pull request #469 from kain88-de/test_coordinate,0.0
+6fcd3c6,2015-10-04T08:47:22,Get tests running again,0.0
+2a0470b,2015-10-04T12:13:42,use find_packages in setup,0.0
+84ce31e,2015-10-04T12:38:18,Replace izip with six.moves zip,0.0
+7abd190,2015-10-04T13:17:07,Use tempdir instead of tempfile,0.0
+e596de2,2015-10-04T13:33:42,add tempdir install to travis and setup.py,0.0
+97b071f,2015-10-04T18:28:50,Bumped version to 0.12.0,0.0
+04b7258,2015-10-04T18:38:17,Rebuilt docs for 0.12.0 release,0.0
+957b263,2015-10-04T21:37:57,Updated MANIFEST for 0.12.0 release,0.0
+2d2ae28,2015-10-05T10:12:46,Final fix(tm) to MANIFEST,1.0

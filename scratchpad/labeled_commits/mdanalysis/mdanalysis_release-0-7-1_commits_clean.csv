@@ -1,63 +1,63 @@
 hash,time,message,buggy
-0d30f46,2010-11-02 12:46:44,started 0.7.1 development,0
-97e5ab6,2010-11-03 12:46:17,fixed race conditions in test suite - any tests that relied on values of the internal flags have been   changed so that they set behaviour through keyword arguments instead    of manipulating flags - affects gromacs conversion of length (GRO  XTC  TRR) with the convert_gromacs_length   flag and the use of the permissive PDB reader (permissive_pdb_reader flag) - tests could fail when they were performed in parallel and different test threads   changed the global flags - added a fes tests to check for the default values but DO NOT USE THE FLAGS during   testing,0
-2e778c0,2010-11-03 18:40:28,names() for AG,0
-c47fadb,2010-11-03 18:40:35,new COntactAnalysis1 class,0
-3ce0098,2010-11-03 18:40:40,upgraded ez_setup.py to 0.6c11,0
-aec4310,2010-11-03 18:45:56,fixed: tests for crd files would fail (added crds to setup.py distribution),0
-c1a04e4,2010-11-03 20:10:50,contact analsysis: added docs and matrix plotting,0
-5fc635e,2010-11-03 21:11:09,Fix for issue 51: bolean correction from and to or for various flot32/64 checks etc.,0
-094b90a,2010-11-03 22:24:57,added Joe Goose to AUTHORS and documented fix of Issue 51 in CHANGELOG (picked from the 0.7.0 release branch),0
-4784f04,2010-11-03 23:39:44,contacts: can write figures by suppling filename and more docs,0
-4af4a34,2010-11-04 00:22:01,selection update for nucleicxstal 0.7.1 only,0
-4a637c2,2010-11-05 04:15:54,"documentation enhancements and configuration changes - added overview (not finished) and page on selections (goes beyond the current   online docs and includes the docs on instant selectors) - maded analysis modules separate pages (otherwise the analysis page becomes very   long and cluttered) - renamed the top level file to index because that makes it easier to serve it   via apache - configuration file changes     - bumped version/release     - put authors in one variable and also added Joe     - removed most of the special sphinx modules  only kept autodoc and intersphinx        add the others peicewise when needed (also might help to reduce weird sphinx       errors)     - added links for intersphinx (but commented out during development because       loading the objects.inv always takes a while)     - removed all path fiddling  simply use full import names in docs. This works well       but keep in mind that this obtains the docs from imported modules  works best       with developer installation (i.e. ""python setup.py develop"") - ""make html"" works fine for me",0
-22a353d,2010-11-05 21:00:44,dihedral analysis for AtomGroupmust use a hard-specific selection to get correct dihedral value,0
-653ee5d,2010-11-06 01:47:36,-Sphinx .rst source changes in this commit  but not supplying the built html -not everything is formatted/fully consistent but at least we are grabbing more docs -a few syntax warning do pop up during the build by they are not exceptions and allow the index file to be made,0
-e1f4c14,2010-11-07 19:18:58,The Makefile in /doc/sphinx/ has been modified to put all output in the doc/html/ folder. Simply use the command: 'make html'. Newly included sphinx .rst documentation (source only  not including built html): -modules in /MDAnalysis/core/,0
-43be61e,2010-11-18 15:42:05,Sphinx source updated to include documentation from modules in: MDAnalysis/KDTree (except for the CKDTree module which has no docstrings),0
-cd44261,2010-12-17 15:22:00,Writer class: fixed repr even if no numatoms provided,0
-1ca2520,2010-12-17 15:25:59,enabled inter-sphinx links to numpy and scipy,0
-49e815e,2010-12-17 15:26:11,FIXED: Issue 53 (ChainedReader failed when accessing dt),0
-bf16cd7,2011-01-05 19:21:16,generated docs with sphinx,0
-5dcee4a,2011-01-05 19:49:11,added mime types for serving docs from googlecode  see Issue 44,0
-7ad7cd9,2011-01-10 15:16:09,docs fixes (see Paul Rigor's email and Comment 5 in Issue 26 (http://code.google.com/p/mdanalysis/issues/detail?id=26#c5)),0
-70c1dd8,2011-01-10 15:16:22,regenerate docs (make html) with sphinx 1.05,0
-85e9399,2011-01-10 19:46:10,transformation improvements - added align_principalAxis() method to AtomGroup - added two helpers to transformations - added transform(4x4matrix) to AtomGroup - also made AtomGroup.dihedral() raise ValueError if the group has not   4 members.,0
-464f2d6,2011-01-10 19:46:17,bumped docs version info to 0.7.1 and added docs (invisible) to functions in AG.dihedral(),0
-c15845c,2011-01-10 19:46:26,regenerated docs (now show that they are for 0.7.1),0
-c691a1d,2011-01-10 19:47:06,updated/beautified docs - added Trajectory API - added intro to core - wenth through DCD and XYZ,0
-535cabd,2011-01-10 19:47:20,regenerated sphinx docs,0
-dd94415,2011-01-19 10:22:50,new example: monitor multimeric state of helical TM peptides (Jan Domanski),0
-8014ed7,2011-01-24 02:50:21,Amber support,0
-a535558,2011-01-25 11:30:03,updated CHANGELOG and bumped numpy version requirement to 1.0.3 (histogramming code??),0
-6975481,2011-01-28 10:56:42,fixed: some tests did not remove temporary files - added forgotten import os so that files get properly unlinked - problem was silently ignored because I had put it in an indiscriminate   try...except: pass block... d'oh - now only pass if os.unlink(temp) produces OSError  otherwise raise,0
-1fff1b0,2011-01-28 10:56:48,fixed Issue 58 (analysis.align.rms_fit_try) - messed up a horrible if/elif construct - fix reported by Joshua Adelman - added unit test (and marked as slow) - updated CHANGELOG NOTE: The rms_fit_trj() function should be rewritten for       - speed       - better handling of trajectory formats,0
-6fcb061,2011-01-28 17:09:03,added online docs to CHANGELOG (Tyler),0
-4e42355,2011-01-28 17:09:12,density module - generate volumetric data from trajectories - Density class and density_from_* functions for water/protein/... densities - originally from hops.sitemaps - added docs - added a few custom Exceptions and Warnings at top level - improved docs for units (which are central to the Density class) - uses GridDataFormats from https://github.com/orbeckst/GridDataFormats   (added as a requirement for the analysis module in setup.py  can be downloaded   from PyPi),0
-8188862,2011-01-28 17:09:29,regenerated 0.7.1 docs with new density  analysis module,0
-f66c5ab,2011-01-28 17:21:31,density: friendly error message if GridDataFormats are not installed,0
-6b16151,2011-02-01 04:18:18,fast RMSD aligner  based on Douglas Theobald's QCP method - contributed by Joshua Adelman from his pyqcprot package   https://github.com/synapticarbors/pyqcprot - new module: core.qcprot - used as a drop-in replacement for core.rms_fitting.rms_rotation_matrix()    rms_rotation_matrix() is deprecated and scheduled for removal in 0.8 - added test case for qcprot (using Josh's example.py) - analysis.align.rms_fit_trj() got additional functionality (thanks to   qcprot):   - can do mass-weighted RMSD fit with new mass_weighted=True keyword   - can write the RMSD timeseries to a text file (rmsdfile keyword),0
-d353a88,2011-02-01 04:19:23,docs for qcprot (and also distances),0
-01cef05,2011-02-01 04:19:56,generated docs with sphinx (includes QCP rotation and distances module (which had been missing)),0
-c2dd672,2011-02-01 04:35:39,docs again (small issue in analysis.align and set all svn properties on docs),0
-559c64d,2011-02-01 17:09:04,added HIE residue (Amber) to protein selections and updated some docs,0
-b2c933b,2011-02-01 17:09:12,work on Amber TRJ format - enhanced the Trajectory API: readers must be able to accept (and   ignore) any keywords. This is necessary to pass the number of atoms   to the Amber TRJ reader  which needs it - updated all readers to accept **kwargs if they hadn't done so already - made the TRJReader work with or without box in the trajectory   (reads the first frame and looks for box information - documented the quirks of the TRJ reader - Amber TRJ reader can also read compressed files - introduced a registry for formats that can do compressed files   (MDAnalysis.coordinates._compressed_formats),0
-11eca03,2011-02-01 17:40:49,added testcase for Amber TRJ (thanks to Ranjit Vijayan!),0
-a263b11,2011-02-02 12:59:15,protein selections: added ACE and NME (Amber termini),0
-a21bf73,2011-02-02 13:06:18,PBC Amber test cases - PBC Amber trajectory (provided by Ranjit Vijayan) - various fixes to bugs uncovered by testcases - added functionality to the FORTRANReader class - more Amber formatted TRJ tests - example conversion Amber -> DCD,0
-60f478b,2011-02-02 14:37:14,test_atomgroup.py: added assert_() that is missing in numpy 1.2 and earlier: lead to 4 failed tests,0
-399eff1,2011-02-04 01:28:47,CHANGELOG AMBER,0
-d26b368,2011-02-05 22:59:01,Amber top parser: convert charge to MDAnalysis base unit e,0
-94c09f1,2011-02-05 23:04:26,added PQR support,0
-e9a3556,2011-02-06 00:11:50,added PQR and Amber TRJ docs,0
-4c664d4,2011-02-06 00:12:15,regenerated online docs (PQR and TRJ added),0
-dc58ca8,2011-02-06 14:30:02,docs: added table of all supported coordinate formats and linked it from top page,0
-fbe6c82,2011-02-06 14:30:23,regenerated docs: added table of supported coordinate formats,0
-b60c129,2011-02-06 14:52:13,docs on iteration and slices in the Trajectory API,0
-e37557f,2011-02-06 14:52:29,regenerated online docs (coordinates),0
-22eb49f,2011-02-07 03:38:05,density: new density_from_PDB() function (uses BFactorDensityCreator to make a density from crystal waters  checked with 1IFC.),0
-ae0d4f5,2011-02-07 03:38:19,updated units docs,0
-6adfc95,2011-02-07 03:38:29,simple example for block averaging,0
-e6a43ac,2011-02-07 03:38:50,regenerated online docs,0
-da03548,2011-02-08 11:59:59,prepared 0.7.1 release - bumped version to 0.7.1 - updated README with various package licences - updated contacts - removed doc/DevelopmentBranch.txt (outdated) and   added short README to point user to docs - fixed: pqr must be included in test cases,0
-6947085,2011-02-08 12:10:36,Create tag release-0-7-1,0
+0d30f46,2010-11-02T12:46:44,started 0.7.1 development,0.0
+97e5ab6,2010-11-03T12:46:17,fixed race conditions in test suite - any tests that relied on values of the internal flags have been   changed so that they set behaviour through keyword arguments instead    of manipulating flags - affects gromacs conversion of length (GRO  XTC  TRR) with the convert_gromacs_length   flag and the use of the permissive PDB reader (permissive_pdb_reader flag) - tests could fail when they were performed in parallel and different test threads   changed the global flags - added a fes tests to check for the default values but DO NOT USE THE FLAGS during   testing,1.0
+2e778c0,2010-11-03T18:40:28,names() for AG,0.0
+c47fadb,2010-11-03T18:40:35,new COntactAnalysis1 class,0.0
+3ce0098,2010-11-03T18:40:40,upgraded ez_setup.py to 0.6c11,0.0
+aec4310,2010-11-03T18:45:56,fixed: tests for crd files would fail (added crds to setup.py distribution),1.0
+c1a04e4,2010-11-03T20:10:50,contact analsysis: added docs and matrix plotting,0.0
+5fc635e,2010-11-03T21:11:09,Fix for issue 51: bolean correction from and to or for various flot32/64 checks etc.,1.0
+094b90a,2010-11-03T22:24:57,added Joe Goose to AUTHORS and documented fix of Issue 51 in CHANGELOG (picked from the 0.7.0 release branch),0.0
+4784f04,2010-11-03T23:39:44,contacts: can write figures by suppling filename and more docs,0.0
+4af4a34,2010-11-04T00:22:01,selection update for nucleicxstal 0.7.1 only,0.0
+4a637c2,2010-11-05T04:15:54,"documentation enhancements and configuration changes - added overview (not finished) and page on selections (goes beyond the current   online docs and includes the docs on instant selectors) - maded analysis modules separate pages (otherwise the analysis page becomes very   long and cluttered) - renamed the top level file to index because that makes it easier to serve it   via apache - configuration file changes     - bumped version/release     - put authors in one variable and also added Joe     - removed most of the special sphinx modules  only kept autodoc and intersphinx        add the others peicewise when needed (also might help to reduce weird sphinx       errors)     - added links for intersphinx (but commented out during development because       loading the objects.inv always takes a while)     - removed all path fiddling  simply use full import names in docs. This works well       but keep in mind that this obtains the docs from imported modules  works best       with developer installation (i.e. ""python setup.py develop"") - ""make html"" works fine for me",0.0
+22a353d,2010-11-05T21:00:44,dihedral analysis for AtomGroupmust use a hard-specific selection to get correct dihedral value,0.0
+653ee5d,2010-11-06T01:47:36,-Sphinx .rst source changes in this commit  but not supplying the built html -not everything is formatted/fully consistent but at least we are grabbing more docs -a few syntax warning do pop up during the build by they are not exceptions and allow the index file to be made,0.0
+e1f4c14,2010-11-07T19:18:58,The Makefile in /doc/sphinx/ has been modified to put all output in the doc/html/ folder. Simply use the command: 'make html'. Newly included sphinx .rst documentation (source only  not including built html): -modules in /MDAnalysis/core/,0.0
+43be61e,2010-11-18T15:42:05,Sphinx source updated to include documentation from modules in: MDAnalysis/KDTree (except for the CKDTree module which has no docstrings),0.0
+cd44261,2010-12-17T15:22:00,Writer class: fixed repr even if no numatoms provided,0.0
+1ca2520,2010-12-17T15:25:59,enabled inter-sphinx links to numpy and scipy,0.0
+49e815e,2010-12-17T15:26:11,FIXED: Issue 53 (ChainedReader failed when accessing dt),1.0
+bf16cd7,2011-01-05T19:21:16,generated docs with sphinx,0.0
+5dcee4a,2011-01-05T19:49:11,added mime types for serving docs from googlecode  see Issue 44,0.0
+7ad7cd9,2011-01-10T15:16:09,docs fixes (see Paul Rigor's email and Comment 5 in Issue 26 (http://code.google.com/p/mdanalysis/issues/detail?id=26#c5)),0.0
+70c1dd8,2011-01-10T15:16:22,regenerate docs (make html) with sphinx 1.05,0.0
+85e9399,2011-01-10T19:46:10,transformation improvements - added align_principalAxis() method to AtomGroup - added two helpers to transformations - added transform(4x4matrix) to AtomGroup - also made AtomGroup.dihedral() raise ValueError if the group has not   4 members.,0.0
+464f2d6,2011-01-10T19:46:17,bumped docs version info to 0.7.1 and added docs (invisible) to functions in AG.dihedral(),0.0
+c15845c,2011-01-10T19:46:26,regenerated docs (now show that they are for 0.7.1),0.0
+c691a1d,2011-01-10T19:47:06,updated/beautified docs - added Trajectory API - added intro to core - wenth through DCD and XYZ,0.0
+535cabd,2011-01-10T19:47:20,regenerated sphinx docs,0.0
+dd94415,2011-01-19T10:22:50,new example: monitor multimeric state of helical TM peptides (Jan Domanski),0.0
+8014ed7,2011-01-24T02:50:21,Amber support,0.0
+a535558,2011-01-25T11:30:03,updated CHANGELOG and bumped numpy version requirement to 1.0.3 (histogramming code??),0.0
+6975481.0,2011-01-28T10:56:42,fixed: some tests did not remove temporary files - added forgotten import os so that files get properly unlinked - problem was silently ignored because I had put it in an indiscriminate   try...except: pass block... d'oh - now only pass if os.unlink(temp) produces OSError  otherwise raise,1.0
+1fff1b0,2011-01-28T10:56:48,fixed Issue 58 (analysis.align.rms_fit_try) - messed up a horrible if/elif construct - fix reported by Joshua Adelman - added unit test (and marked as slow) - updated CHANGELOG NOTE: The rms_fit_trj() function should be rewritten for       - speed       - better handling of trajectory formats,1.0
+6fcb061,2011-01-28T17:09:03,added online docs to CHANGELOG (Tyler),0.0
+4e42355,2011-01-28T17:09:12,density module - generate volumetric data from trajectories - Density class and density_from_* functions for water/protein/... densities - originally from hops.sitemaps - added docs - added a few custom Exceptions and Warnings at top level - improved docs for units (which are central to the Density class) - uses GridDataFormats from https://github.com/orbeckst/GridDataFormats   (added as a requirement for the analysis module in setup.py  can be downloaded   from PyPi),0.0
+8188862.0,2011-01-28T17:09:29,regenerated 0.7.1 docs with new density  analysis module,0.0
+f66c5ab,2011-01-28T17:21:31,density: friendly error message if GridDataFormats are not installed,0.0
+6b16151,2011-02-01T04:18:18,fast RMSD aligner  based on Douglas Theobald's QCP method - contributed by Joshua Adelman from his pyqcprot package   https://github.com/synapticarbors/pyqcprot - new module: core.qcprot - used as a drop-in replacement for core.rms_fitting.rms_rotation_matrix()    rms_rotation_matrix() is deprecated and scheduled for removal in 0.8 - added test case for qcprot (using Josh's example.py) - analysis.align.rms_fit_trj() got additional functionality (thanks to   qcprot):   - can do mass-weighted RMSD fit with new mass_weighted=True keyword   - can write the RMSD timeseries to a text file (rmsdfile keyword),0.0
+d353a88,2011-02-01T04:19:23,docs for qcprot (and also distances),0.0
+01cef05,2011-02-01T04:19:56,generated docs with sphinx (includes QCP rotation and distances module (which had been missing)),0.0
+c2dd672,2011-02-01T04:35:39,docs again (small issue in analysis.align and set all svn properties on docs),0.0
+559c64d,2011-02-01T17:09:04,added HIE residue (Amber) to protein selections and updated some docs,0.0
+b2c933b,2011-02-01T17:09:12,work on Amber TRJ format - enhanced the Trajectory API: readers must be able to accept (and   ignore) any keywords. This is necessary to pass the number of atoms   to the Amber TRJ reader  which needs it - updated all readers to accept **kwargs if they hadn't done so already - made the TRJReader work with or without box in the trajectory   (reads the first frame and looks for box information - documented the quirks of the TRJ reader - Amber TRJ reader can also read compressed files - introduced a registry for formats that can do compressed files   (MDAnalysis.coordinates._compressed_formats),0.0
+11eca03,2011-02-01T17:40:49,added testcase for Amber TRJ (thanks to Ranjit Vijayan!),0.0
+a263b11,2011-02-02T12:59:15,protein selections: added ACE and NME (Amber termini),0.0
+a21bf73,2011-02-02T13:06:18,PBC Amber test cases - PBC Amber trajectory (provided by Ranjit Vijayan) - various fixes to bugs uncovered by testcases - added functionality to the FORTRANReader class - more Amber formatted TRJ tests - example conversion Amber -> DCD,0.0
+60f478b,2011-02-02T14:37:14,test_atomgroup.py: added assert_() that is missing in numpy 1.2 and earlier: lead to 4 failed tests,0.0
+399eff1,2011-02-04T01:28:47,CHANGELOG AMBER,0.0
+d26b368,2011-02-05T22:59:01,Amber top parser: convert charge to MDAnalysis base unit e,0.0
+94c09f1,2011-02-05T23:04:26,added PQR support,0.0
+e9a3556,2011-02-06T00:11:50,added PQR and Amber TRJ docs,0.0
+4c664d4,2011-02-06T00:12:15,regenerated online docs (PQR and TRJ added),0.0
+dc58ca8,2011-02-06T14:30:02,docs: added table of all supported coordinate formats and linked it from top page,0.0
+fbe6c82,2011-02-06T14:30:23,regenerated docs: added table of supported coordinate formats,0.0
+b60c129,2011-02-06T14:52:13,docs on iteration and slices in the Trajectory API,0.0
+e37557f,2011-02-06T14:52:29,regenerated online docs (coordinates),0.0
+22eb49f,2011-02-07T03:38:05,density: new density_from_PDB() function (uses BFactorDensityCreator to make a density from crystal waters  checked with 1IFC.),0.0
+ae0d4f5,2011-02-07T03:38:19,updated units docs,0.0
+6adfc95,2011-02-07T03:38:29,simple example for block averaging,0.0
+e6a43ac,2011-02-07T03:38:50,regenerated online docs,0.0
+da03548,2011-02-08T11:59:59,prepared 0.7.1 release - bumped version to 0.7.1 - updated README with various package licences - updated contacts - removed doc/DevelopmentBranch.txt (outdated) and   added short README to point user to docs - fixed: pqr must be included in test cases,0.0
+6947085.0,2011-02-08T12:10:36,Create tag release-0-7-1,0.0

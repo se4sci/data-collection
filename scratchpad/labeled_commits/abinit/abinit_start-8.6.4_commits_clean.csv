@@ -1,0 +1,27 @@
+hash,time,message,buggy
+a04fbe8,2017-11-04T21:40:26,Modify test v6#67 for lack of portability on bob openmp,0.0
+8e83f02,2017-11-05T21:32:09,Fix typo,1.0
+e24f6e4,2017-11-05T21:37:03,Correct doc,1.0
+d13b598,2017-11-06T11:57:41,Suppress missing links.,0.0
+c590659,2017-11-17T21:54:14,Switch from graphene_gnu_6.4 to graphene_gnu_6.3,0.0
+e6ea7ad,2017-11-17T21:56:00,Prepare the release of v8.6.2,0.0
+624bc89,2017-11-18T16:01:36,Update ref for graphene bot,0.0
+a17c85b,2017-11-19T06:50:35,Initialize v8.6.3,0.0
+aba30f9,2017-11-19T06:51:34,Merge branch 'hotfix-8.6' of gitlab:trunk/abinit into hotfix-8.6,0.0
+00bbf4b,2017-11-25T15:57:15,dvdb_interpolate_and_write: only master should close ount,0.0
+cd2fad6,2017-11-25T21:03:40,Bug correction in 67_common/setvtr.F90 for constrained mag. moments  the loop on ispden was from 2-->4 instead of 1-->4 (line 616). This does not affect the automatic tests.,1.0
+b1a1947,2017-11-26T09:34:19,Merge gmatteo/invalid_close/00bb into _gmatteo,0.0
+5d598fc,2017-12-04T18:15:56,Correction of a bug for magntization constraint in the collinear case (only one component of the potential was updated with the constraint). Small beautification/extra comments in calcdensph.F90 and mag_constr.F90 and change of the reference file of v7/Refs/t05.out (the final result is the same  only the starting energy is different than the previous Ref file with the bug).,1.0
+e403523,2017-12-11T17:03:35,Change of the default value of magcon_lambda to 0.01,0.0
+ace5426,2017-12-18T08:01:27,Merge bousquet/hotfix-8.6/e403 into _bousquet-8.6,0.0
+5cf031b,2017-12-18T22:00:34,Start to finalize version v8.6.3,0.0
+d2c3630,2017-12-19T03:50:35,Fix 'CHARACTER expression will be truncated in assignment' problem,1.0
+fefb229,2017-12-19T03:54:38,Fix 'CHARACTER expression will be truncated in assignment' using the same fixes than in v8.7,1.0
+0fe1e8c,2017-12-19T03:59:29,Fix 'Same actual argument associated with INTENT' like in v8.7,0.0
+0b90946,2017-12-19T04:02:56,Update references for test abirules #03&04,0.0
+f9777fa,2017-12-19T04:18:44,Fix more 'CHARACTER expression will be truncated in assignment',1.0
+c56c3ca,2017-12-19T04:26:34,Fix 'Character length of actual argument shorter than of dummy argument',1.0
+67c4a9c,2017-12-19T16:07:34,Import modifs from JMB  in order to allow the bot abiref_gnu_5.3_debug to test abirules #3  4 and others.,0.0
+a3bd320,2017-12-19T17:23:34,Fix the problems for abiref_debug,1.0
+d83242d,2017-12-19T19:15:05,Final update of abichecks/buildsys/Refs/abiref_nag_6.2_openmpi.ac ?,0.0
+4629461.0,2017-12-19T21:02:48,Initialize v8.6.4,0.0

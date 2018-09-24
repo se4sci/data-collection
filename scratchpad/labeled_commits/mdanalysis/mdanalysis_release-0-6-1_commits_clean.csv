@@ -1,14 +1,14 @@
 hash,time,message,buggy
-01369f4,2010-04-06 18:35:43,reverted pyrex for-loop syntax to be compatible with old pyrex 9.6.x,0
-0adf5d2,2010-04-06 18:47:50,removed empty python dir (should have done this with the 0.6.0 release),0
-d06aa63,2010-04-08 16:59:48,FIXED: problem in PDB.PDBWriter  also bumped version as we are working towards 0.6.1,0
-96b2148,2010-04-26 15:16:22,updated INSTALL: easy_install is mostly working,0
-81ed228,2010-04-26 15:16:28,FIXES Issue #22 (Universe.dimensions broken),0
-f196e19,2010-04-30 21:42:55,Merge branch 'orbeckst',0
-ef40fc0,2010-04-30 22:08:33,added patches that were lost in the last orbeckst -> trunk merge - crucial fix of old pyrex loops in src/dcd/dcdtimeseries.pyx - experimental HBond.py re-added - fixed date in CHANGELOG...,0
-ea2ae9b,2010-04-30 22:28:49,Create branch release-0-6-1,0
-0e4728c,2010-04-30 22:34:03,release 0.6.1 - bumped version - cleaned up CHANGELOG - removed experimental HBonds.py,0
-ea8f40c,2010-05-01 03:48:18,Gromacs trajectories fixes and improvements - FIXED: trr/xtc tests failed (on Mac OS X) when MDAnalysis was properly installed   as a egg directory but not as a developer install:   - forgot to include the trr and xtc files in the package   - learned that xdrfile_open() segfaults (at least Mac OS X) if     there is no file: added additional check to prevent that - Gromacs XDR reader now behave like DCDReader:   (1) raise IOError when done    (2) continue raising with repeated next() - for some reason  TRR files can (always??) return status exdrINT at end of file  catch   this in _read_next_timestep() - regenerated swig files from libxdrfile.i (only minor doc things),0
-f99d3aa,2010-05-01 04:37:59,notes on what to do when unittests are not running,0
-2371a6b,2010-05-01 05:11:15,unittests: fixed doc string :-p,0
-222fcb1,2010-05-01 15:51:17,Create tag release-0-6-1,0
+01369f4,2010-04-06T18:35:43,reverted pyrex for-loop syntax to be compatible with old pyrex 9.6.x,0.0
+0adf5d2,2010-04-06T18:47:50,removed empty python dir (should have done this with the 0.6.0 release),0.0
+d06aa63,2010-04-08T16:59:48,FIXED: problem in PDB.PDBWriter  also bumped version as we are working towards 0.6.1,1.0
+96b2148,2010-04-26T15:16:22,updated INSTALL: easy_install is mostly working,0.0
+81ed228,2010-04-26T15:16:28,FIXES Issue #22 (Universe.dimensions broken),1.0
+f196e19,2010-04-30T21:42:55,Merge branch 'orbeckst',0.0
+ef40fc0,2010-04-30T22:08:33,added patches that were lost in the last orbeckst -> trunk merge - crucial fix of old pyrex loops in src/dcd/dcdtimeseries.pyx - experimental HBond.py re-added - fixed date in CHANGELOG...,0.0
+ea2ae9b,2010-04-30T22:28:49,Create branch release-0-6-1,0.0
+0e4728c,2010-04-30T22:34:03,release 0.6.1 - bumped version - cleaned up CHANGELOG - removed experimental HBonds.py,0.0
+ea8f40c,2010-05-01T03:48:18,Gromacs trajectories fixes and improvements - FIXED: trr/xtc tests failed (on Mac OS X) when MDAnalysis was properly installed   as a egg directory but not as a developer install:   - forgot to include the trr and xtc files in the package   - learned that xdrfile_open() segfaults (at least Mac OS X) if     there is no file: added additional check to prevent that - Gromacs XDR reader now behave like DCDReader:   (1) raise IOError when done    (2) continue raising with repeated next() - for some reason  TRR files can (always??) return status exdrINT at end of file  catch   this in _read_next_timestep() - regenerated swig files from libxdrfile.i (only minor doc things),0.0
+f99d3aa,2010-05-01T04:37:59,notes on what to do when unittests are not running,0.0
+2371a6b,2010-05-01T05:11:15,unittests: fixed doc string :-p,0.0
+222fcb1,2010-05-01T15:51:17,Create tag release-0-6-1,0.0

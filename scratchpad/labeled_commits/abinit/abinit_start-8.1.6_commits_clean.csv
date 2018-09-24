@@ -1,92 +1,92 @@
 hash,time,message,buggy
-30136c6,2016-09-07 18:42:14,Small improvments in getgh1c/getgh2c,0
-a90d329,2016-09-09 11:24:11,fixed conflict,0
-8e0be24,2016-09-11 12:05:08,outkss now uses its own version of calc_vkb,0
-085520f,2016-09-11 12:33:43,Remove inclvkb==1,0
-b0e6079,2016-09-11 13:22:24,Pass crystal_t to prepare new version,0
-626eccf,2016-09-11 14:17:25,Code cleanup,0
-57640d8,2016-09-11 14:24:33,Use ntypat as last dimension,0
-26f0c55,2016-09-11 15:10:38,Change API to prepare new version,0
-f56cd1c,2016-09-11 18:21:04,Before changes,0
-9f15416,2016-09-11 21:13:08,Initialize psps%mproj,0
-2b6f0a0,2016-09-11 21:48:04,Code cleanup,0
-42528ee,2016-09-11 22:59:11,Saving work,0
-9356163,2016-09-11 23:59:28,Saving work,0
-8d48be6,2016-09-12 00:09:50,Allocate arrays with psps%lnmax  use indlmn to loop,0
-69641cc,2016-09-12 01:11:51,Preliminary support for nproj > 1,0
-b72170d,2016-09-13 18:46:15,m_commutator_vkbr --> m_vkbr,0
-6609968,2016-09-13 19:08:03,abiref: Update ref files after phase-of-the-moon-effects,0
-8c22d23,2016-09-13 19:15:46,Activate inclvkb 2 in v67mbpt[40] (GW with psp8 pseudos),0
-83a4309,2016-09-13 19:51:12,Merge branch 'develop' into commutator,0
-f4366ce,2016-09-14 13:48:10,Now DFPT+non-collinear work with non-polarized systems without Vxc (FR  MT  EB),0
-a7a1b90,2016-09-14 15:12:08,Changes in dfpt_mkvxc_noncoll,0
-240bfcd,2016-09-14 16:05:19,DFPT+noncoll now OK for non magnetic cases,0
-fec7624,2016-09-14 18:27:12,Improvement of density accumulation routine,0
-e4b4578,2016-09-16 14:54:18,Added the eph_routine  to compute all the gkk elements on a k-point grid for a given q-point grid. Added two variables to control the tasks when optdriver==7:     prtphdos     eph_task I still need to document those.,0
-2ae7181,2016-09-20 14:28:09,Update abinit to TRIQS/CTHYB interface for version 1.3 of TRIQS and CTHYB,0
-1d8cff2,2016-09-20 14:30:19,Update doc concerning TRIQS/CTHYB (input variable: dmft_solv),0
-7ab8055,2016-09-20 15:12:38,Merge branch 'develop' into triqs,0
-eaa894b,2016-09-20 21:11:58,Replace read(*) with read_string,0
-9544b0a,2016-09-21 10:43:29,fix the error message in the general case  and restricts it to dmft calculations,0
-865ee35,2016-09-21 10:47:18,Merge branch 'develop' into quickfix,0
-2614e2e,2016-09-21 11:31:35,cut3d: replace read(* ...) with read(std_in  ...) everywhere,0
-3df2c96,2016-09-21 12:25:21,Fix autoparal=1 error in m_paw_dmft,0
-abc57d0,2016-09-21 14:18:11,trypo corrected,0
-073346e,2016-09-21 14:20:29,Merge branch 'develop' of abinit-gitlab:trunk/abinit into develop,0
-3452bc7,2016-09-21 15:26:34,Added the input variable ddb_shiftq.,0
-03a22ea,2016-09-21 15:36:31,An error was introduced in getgh1c  corrected,0
-9073974,2016-09-21 15:55:08,Adjustements to make automatic tests happy - take 1,0
-4684872,2016-09-21 16:27:49,Fix an hyperlink. Modified:   lesson_basepar.html,0
-8c9e3eb,2016-09-21 16:41:00,Fix remaining read(std_in  *),0
-564d5b2,2016-09-21 18:01:45,Added documentation to 3 new variables:     eph_task     ddb_shiftq     prtphdos,0
-75155ef,2016-09-21 19:41:24,Adjustements to make automatic tests happy - take 2 (update ref due to change of tolerance in rhohxc),0
-fec30e4,2016-09-21 19:41:58,Merge branch 'develop' of abinit-gitlab:trunk/abinit into dfpt-noncoll,0
-174d3ba,2016-09-21 20:26:19,Add new module m_dens for density-related tools. Extract hirshfeld code from cut3d,0
-65d93c3,2016-09-21 20:28:02,git add m_dens.F90,0
-14c0b74,2016-09-21 20:50:08,Remove stray write  update v3[61],0
-f9783e5,2016-09-21 21:03:41,Alleviate problem on bob_openmp fro testv2#33. Modified:   t33.in  t33.out,0
-bff1193,2016-09-22 07:16:45,Merge remote-tracking branch amadon/triqs/7ab8 into _amadon,0
-7142873,2016-09-22 09:53:23,Merge remote-tracking branch amadon/quickfix/3df2 into _amadon,0
-30c3199,2016-09-22 10:16:49,Update MPI-FORUM hyperlink in tutorial,0
-55b052b,2016-09-22 10:17:34,Update MPI-FORUM hyperlink in tutorial,0
-2874373,2016-09-22 10:54:08,Merge remote-tracking branch 'trunk/develop' into develop,0
-72f1f26,2016-09-22 17:37:16,Merge remote-tracking branch torrent/develop/30c3 into _torrent,0
-121b065,2016-09-22 22:20:30,Merge remote-tracking branch torrent/dfpt-noncoll/55b0 into _torrent,0
-2048a87,2016-09-22 22:24:26,Change slightly the tolerance for v6#94. Modified:   t94.in,0
-568cfe8,2016-09-22 22:43:55,Perform consistency check on toleracens in chkinp,0
-4525b8c,2016-09-23 07:49:57,Merge remote-tracking branch gmatteo/cut3d_prompt/14c0 into _gmatteo,0
-6afaa09,2016-09-23 08:21:04,Merge remote-tracking branch 'trunk/develop' into develop,0
-0baf65f,2016-09-23 08:53:58,Fixed a bug introduced after merging with trunk.,0
-ee9ed95,2016-09-23 16:34:15,Fixed the k-point parallelism in eph_gkk.,0
-a087687,2016-09-23 17:42:51,Merge remote-tracking branch gmatteo/scprqt/568c into _gmatteo,0
-22449a7,2016-09-24 09:11:56,Fixed writing of gkk files in a parallel environment.,0
-8e72e76,2016-09-24 09:12:31,Merge remote-tracking branch 'trunk/develop' into develop,0
-8f29bf3,2016-09-24 15:54:56,Change intent of MPI_type in low-level routines (inout --> in),0
-96e7134,2016-09-24 17:17:11,Replace inout intent with in in other low-level routines,0
-6a81c46,2016-09-24 17:17:50,Remove defs_xc.F90,0
-c1b3edd,2016-09-26 14:11:45,DFPT in non-collinear magnetism works with ixc=0  before trunk merge.,0
-407d48d,2016-09-26 14:26:38,Fixed some conflict with the trunk.,0
-fdaf676,2016-09-26 15:25:20,Move boltztrap routines to m_ebands  add ref files for v6[11],0
-674bbd9,2016-09-26 15:36:42,Pass ebands and crystal to ebands_prtblztrp,0
-db341a0,2016-09-26 15:56:06,abilint,0
-85b095a,2016-09-26 16:29:24,Fixed some conflict with the trunk.,0
-5f5b1a9,2016-10-02 07:23:22,Fix hyperlinks Modified:   abinit_vars.yml lesson_paral_gspw.html acknowledgments.html,0
-58007cd,2016-10-02 07:31:58,Change of tols for tests  or adjutment if input. Modified:   t80.in ../../v6/Input/t94.in,0
-f27ca2a,2016-10-02 11:40:03,Update ref due to previous modif. Modified:   t80.out,0
-187584c,2016-10-02 16:13:12,Applied yml to html. Also correct one more link. Modified:   html_automatically_generated/vardev.html tutorial/lesson_dmft.html,0
-4e6f23d,2016-10-02 18:59:16,Merge gmatteo/boltztrap/db34 into _gmatteo,0
-e6d69b4,2016-10-03 17:46:07,Now DFPT works with AFM collinear systems (like Cr2O3) with full ixc,0
-44784c6,2016-10-04 13:07:29,Merge remote-tracking branch 'trunk/develop' into develop,0
-ba1ac3c,2016-10-04 16:24:26,The non-collinear DFPT now works with full Vxc1 and rho1 compared with magnetic collinear systems,0
-606903a,2016-10-06 13:44:24,Started coding phonon self-energy.,0
-adadaed,2016-10-06 13:52:45,"Revert ""Started coding phonon self-energy.""",0
-a7ac58a,2016-10-06 14:45:10,Fixed abirules. Corrected some memory leaks.,0
-f86889a,2016-10-06 18:40:00,Fixed the last memory leak problem...I think.,0
-8738074,2016-10-07 21:47:00,Explain how to solve ImportError exceptions raised by abimem.py,0
-7e5f027,2016-10-08 06:09:11,Merge remote-tracking branch fricci/develop/ba1a into _fricci,0
-0b2294f,2016-10-08 10:49:32,Merge remote-tracking branch gmatteo/abimem/8738 into _gmatteo,0
-210b262,2016-10-08 16:12:03,Move chkneu to m_dtset and rename it (dtset_chkneu),0
-9159bff,2016-10-08 17:04:52,Replace dataset intent from inout to in in low-level procedures,0
-72a4c86,2016-10-08 17:16:36,Abilint,0
-3a44f67,2016-10-08 17:17:18,Remove my log file,0
-c7380e9,2016-10-11 06:18:40,Initialize v8.1.6 development.,0
+30136c6,2016-09-07T18:42:14,Small improvments in getgh1c/getgh2c,0.0
+a90d329,2016-09-09T11:24:11,fixed conflict,0.0
+8e0be24,2016-09-11T12:05:08,outkss now uses its own version of calc_vkb,0.0
+085520f,2016-09-11T12:33:43,Remove inclvkb==1,0.0
+b0e6079,2016-09-11T13:22:24,Pass crystal_t to prepare new version,0.0
+626eccf,2016-09-11T14:17:25,Code cleanup,0.0
+57640d8,2016-09-11T14:24:33,Use ntypat as last dimension,0.0
+26f0c55,2016-09-11T15:10:38,Change API to prepare new version,0.0
+f56cd1c,2016-09-11T18:21:04,Before changes,0.0
+9f15416,2016-09-11T21:13:08,Initialize psps%mproj,0.0
+2b6f0a0,2016-09-11T21:48:04,Code cleanup,0.0
+42528ee,2016-09-11T22:59:11,Saving work,0.0
+9356163.0,2016-09-11T23:59:28,Saving work,0.0
+8d48be6,2016-09-12T00:09:50,Allocate arrays with psps%lnmax  use indlmn to loop,0.0
+69641cc,2016-09-12T01:11:51,Preliminary support for nproj > 1,0.0
+b72170d,2016-09-13T18:46:15,m_commutator_vkbr --> m_vkbr,0.0
+6609968.0,2016-09-13T19:08:03,abiref: Update ref files after phase-of-the-moon-effects,0.0
+8c22d23,2016-09-13T19:15:46,Activate inclvkb 2 in v67mbpt[40] (GW with psp8 pseudos),0.0
+83a4309,2016-09-13T19:51:12,Merge branch 'develop' into commutator,0.0
+f4366ce,2016-09-14T13:48:10,Now DFPT+non-collinear work with non-polarized systems without Vxc (FR  MT  EB),0.0
+a7a1b90,2016-09-14T15:12:08,Changes in dfpt_mkvxc_noncoll,0.0
+240bfcd,2016-09-14T16:05:19,DFPT+noncoll now OK for non magnetic cases,0.0
+fec7624,2016-09-14T18:27:12,Improvement of density accumulation routine,0.0
+e4b4578,2016-09-16T14:54:18,Added the eph_routine  to compute all the gkk elements on a k-point grid for a given q-point grid. Added two variables to control the tasks when optdriver==7:     prtphdos     eph_task I still need to document those.,0.0
+2ae7181,2016-09-20T14:28:09,Update abinit to TRIQS/CTHYB interface for version 1.3 of TRIQS and CTHYB,0.0
+1d8cff2,2016-09-20T14:30:19,Update doc concerning TRIQS/CTHYB (input variable: dmft_solv),0.0
+7ab8055,2016-09-20T15:12:38,Merge branch 'develop' into triqs,0.0
+eaa894b,2016-09-20T21:11:58,Replace read(*) with read_string,0.0
+9544b0a,2016-09-21T10:43:29,fix the error message in the general case  and restricts it to dmft calculations,0.0
+865ee35,2016-09-21T10:47:18,Merge branch 'develop' into quickfix,0.0
+2614e2e,2016-09-21T11:31:35,cut3d: replace read(* ...) with read(std_in  ...) everywhere,0.0
+3df2c96,2016-09-21T12:25:21,Fix autoparal=1 error in m_paw_dmft,1.0
+abc57d0,2016-09-21T14:18:11,trypo corrected,0.0
+073346e,2016-09-21T14:20:29,Merge branch 'develop' of abinit-gitlab:trunk/abinit into develop,0.0
+3452bc7,2016-09-21T15:26:34,Added the input variable ddb_shiftq.,0.0
+03a22ea,2016-09-21T15:36:31,An error was introduced in getgh1c  corrected,1.0
+9073974.0,2016-09-21T15:55:08,Adjustements to make automatic tests happy - take 1,0.0
+4684872.0,2016-09-21T16:27:49,Fix an hyperlink. Modified:   lesson_basepar.html,1.0
+8c9e3eb,2016-09-21T16:41:00,Fix remaining read(std_in  *),1.0
+564d5b2,2016-09-21T18:01:45,Added documentation to 3 new variables:     eph_task     ddb_shiftq     prtphdos,0.0
+75155ef,2016-09-21T19:41:24,Adjustements to make automatic tests happy - take 2 (update ref due to change of tolerance in rhohxc),0.0
+fec30e4,2016-09-21T19:41:58,Merge branch 'develop' of abinit-gitlab:trunk/abinit into dfpt-noncoll,0.0
+174d3ba,2016-09-21T20:26:19,Add new module m_dens for density-related tools. Extract hirshfeld code from cut3d,0.0
+65d93c3,2016-09-21T20:28:02,git add m_dens.F90,0.0
+14c0b74,2016-09-21T20:50:08,Remove stray write  update v3[61],0.0
+f9783e5,2016-09-21T21:03:41,Alleviate problem on bob_openmp fro testv2#33. Modified:   t33.in  t33.out,0.0
+bff1193,2016-09-22T07:16:45,Merge remote-tracking branch amadon/triqs/7ab8 into _amadon,0.0
+7142873.0,2016-09-22T09:53:23,Merge remote-tracking branch amadon/quickfix/3df2 into _amadon,0.0
+30c3199,2016-09-22T10:16:49,Update MPI-FORUM hyperlink in tutorial,0.0
+55b052b,2016-09-22T10:17:34,Update MPI-FORUM hyperlink in tutorial,0.0
+2874373.0,2016-09-22T10:54:08,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+72f1f26,2016-09-22T17:37:16,Merge remote-tracking branch torrent/develop/30c3 into _torrent,0.0
+121b065,2016-09-22T22:20:30,Merge remote-tracking branch torrent/dfpt-noncoll/55b0 into _torrent,0.0
+2048a87,2016-09-22T22:24:26,Change slightly the tolerance for v6#94. Modified:   t94.in,0.0
+568cfe8,2016-09-22T22:43:55,Perform consistency check on toleracens in chkinp,0.0
+4525b8c,2016-09-23T07:49:57,Merge remote-tracking branch gmatteo/cut3d_prompt/14c0 into _gmatteo,0.0
+6afaa09,2016-09-23T08:21:04,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+0baf65f,2016-09-23T08:53:58,Fixed a bug introduced after merging with trunk.,1.0
+ee9ed95,2016-09-23T16:34:15,Fixed the k-point parallelism in eph_gkk.,1.0
+a087687,2016-09-23T17:42:51,Merge remote-tracking branch gmatteo/scprqt/568c into _gmatteo,0.0
+22449a7,2016-09-24T09:11:56,Fixed writing of gkk files in a parallel environment.,1.0
+8e+148,2016-09-24T09:12:31,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+8f29bf3,2016-09-24T15:54:56,Change intent of MPI_type in low-level routines (inout --> in),0.0
+96e7134,2016-09-24T17:17:11,Replace inout intent with in in other low-level routines,0.0
+6a81c46,2016-09-24T17:17:50,Remove defs_xc.F90,0.0
+c1b3edd,2016-09-26T14:11:45,DFPT in non-collinear magnetism works with ixc=0  before trunk merge.,0.0
+407d48d,2016-09-26T14:26:38,Fixed some conflict with the trunk.,0.0
+fdaf676,2016-09-26T15:25:20,Move boltztrap routines to m_ebands  add ref files for v6[11],0.0
+674bbd9,2016-09-26T15:36:42,Pass ebands and crystal to ebands_prtblztrp,0.0
+db341a0,2016-09-26T15:56:06,abilint,0.0
+85b095a,2016-09-26T16:29:24,Fixed some conflict with the trunk.,1.0
+5f5b1a9,2016-10-02T07:23:22,Fix hyperlinks Modified:   abinit_vars.yml lesson_paral_gspw.html acknowledgments.html,1.0
+58007cd,2016-10-02T07:31:58,Change of tols for tests  or adjutment if input. Modified:   t80.in ../../v6/Input/t94.in,0.0
+f27ca2a,2016-10-02T11:40:03,Update ref due to previous modif. Modified:   t80.out,0.0
+187584c,2016-10-02T16:13:12,Applied yml to html. Also correct one more link. Modified:   html_automatically_generated/vardev.html tutorial/lesson_dmft.html,0.0
+4e6f23d,2016-10-02T18:59:16,Merge gmatteo/boltztrap/db34 into _gmatteo,0.0
+e6d69b4,2016-10-03T17:46:07,Now DFPT works with AFM collinear systems (like Cr2O3) with full ixc,0.0
+44784c6,2016-10-04T13:07:29,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+ba1ac3c,2016-10-04T16:24:26,The non-collinear DFPT now works with full Vxc1 and rho1 compared with magnetic collinear systems,0.0
+606903a,2016-10-06T13:44:24,Started coding phonon self-energy.,0.0
+adadaed,2016-10-06T13:52:45,"Revert ""Started coding phonon self-energy.""",0.0
+a7ac58a,2016-10-06T14:45:10,Fixed abirules. Corrected some memory leaks.,1.0
+f86889a,2016-10-06T18:40:00,Fixed the last memory leak problem...I think.,1.0
+8738074.0,2016-10-07T21:47:00,Explain how to solve ImportError exceptions raised by abimem.py,0.0
+7e5f027,2016-10-08T06:09:11,Merge remote-tracking branch fricci/develop/ba1a into _fricci,0.0
+0b2294f,2016-10-08T10:49:32,Merge remote-tracking branch gmatteo/abimem/8738 into _gmatteo,0.0
+210b262,2016-10-08T16:12:03,Move chkneu to m_dtset and rename it (dtset_chkneu),0.0
+9159bff,2016-10-08T17:04:52,Replace dataset intent from inout to in in low-level procedures,0.0
+72a4c86,2016-10-08T17:16:36,Abilint,0.0
+3a44f67,2016-10-08T17:17:18,Remove my log file,0.0
+c7380e9,2016-10-11T06:18:40,Initialize v8.1.6 development.,0.0

@@ -1,0 +1,65 @@
+hash,time,message,buggy
+1544b51,2017-03-29T01:18:24,Support mixed Python use by honoring Python GIL,0.0
+6f1bbd3,2017-04-03T18:08:15,protect fix ave/histo from segfaulting on non-existing computes  fixes or variables,1.0
+28e8691,2017-04-04T12:35:26,Made fix adapt work with bond_harmonic.,1.0
+03a6f52,2017-04-04T13:30:49,Made every keyword for user-manifold work as advertised.,0.0
+b6bc33b,2017-04-04T13:31:22,Merge branch 'user_manifold_fix' into user-manifold-fix-every-keyword,0.0
+e190eb1,2017-04-04T17:54:33,remove debug printf,0.0
+874944f,2017-04-04T19:37:17,Made fix adapt support bond harmonic.,1.0
+8993daa,2017-04-04T19:54:22,Minor update to docu,0.0
+497a5d8,2017-04-04T20:03:57,Merge branch 'master' into user-cgdna,0.0
+1725832.0,2017-04-06T11:08:57,address issue where uninstalling an empty package will erase all code in src,0.0
+62b9fa2,2017-04-07T15:11:26,when computing only rotational temperature  we must not subtract the default n-dim extra DOFs,0.0
+d635742,2017-04-07T15:29:56,propagate global package installation bugfix to explicit package scripts,0.0
+1ad7d85,2017-04-10T09:57:54,Added forgotten #include string to bond_harmonic.cpp,0.0
+f19f558,2017-04-10T10:06:03,Removed changed bond_harmonic from wrong position.,0.0
+8051b12,2017-04-10T18:39:37,Updated to 1.33 from 1.32,0.0
+b9177fd,2017-04-10T18:40:30,Updated to 1.108 from 1.103,0.0
+3d3d106,2017-04-10T18:41:36,README for updated header files from VMD 1.9.3,0.0
+84ea8a7,2017-04-10T20:43:24,correct link for dispersion parameter how-to and reformat,0.0
+4c4a3fe,2017-04-11T08:24:06,Merge pull request #439 from rbberger/python_mixed_use_support,0.0
+ccc9367,2017-04-11T08:24:32,Merge pull request #442 from akohlmey/small-updates-and-bugfixes,0.0
+b9d844c,2017-04-11T08:25:09,Merge pull request #444 from ohenrich/user-cgdna,0.0
+06cebb9,2017-04-11T08:27:31,Merge pull request #445 from Pakketeretet2/extract_for_bond,0.0
+76fd936,2017-04-11T08:27:53,Merge pull request #443 from Pakketeretet2/user-manifold-fix-every-keyword,0.0
+49dd944,2017-04-11T08:35:09,fix gcmc updates from Aidan  trimming of output for replica commands,0.0
+4da8c1c,2017-04-11T09:00:37,patch 11Apr17,0.0
+961096f,2017-04-12T11:17:15,Prevent segfault if Python was never initialized,0.0
+cb867ea,2017-04-12T13:58:23,Merge pull request #450 from rbberger/python_destruction_fix,0.0
+2f32fb7,2017-04-13T11:19:48,patch 13Apr17,0.0
+dd90c86,2017-04-17T17:40:21,refactor msi2lmp documentation to emphasize lack of active development,0.0
+dec36e9,2017-04-17T17:40:57,fix typos and remove trailing whitespace,0.0
+481927f,2017-04-17T17:49:49,correct 'thrid' instead of 'third',0.0
+4bad52f,2017-04-17T17:52:06,fix typos,1.0
+73c210b,2017-04-18T11:20:23,Merge branch 'unstable' of https://github.com/ketankhare/lammps into small-fixes-and-updates,0.0
+dee3536,2017-04-18T11:42:31,update VMD molfile plugin headers and move them to lib/molfile (where they belong),0.0
+8d39010,2017-04-18T11:44:23,update .gitignore and Purge.list for recent changes,0.0
+25e8ed6,2017-04-18T11:46:19,whitespace cleanup in VMD plugin headers,0.0
+dfa9815,2017-04-18T17:07:28,update for fix gle docs from michele ceriotti,1.0
+f0681f7,2017-04-20T14:42:01,add support for USER-TALLY to pair styles hybrid and hybrid/overlay,0.0
+4e41136,2017-04-21T14:01:38,add support to pair_modify to selectively disable compute/tally callbacks in sub-styles for pair hybrid and hybrid/overlay,0.0
+396e0b5,2017-04-21T14:02:17,correct broken link in html bond doc overview,0.0
+8f14511,2017-04-21T16:46:27,avoid division by zero by initializing unset (=automatic) g_ewald parameters to some number > 0.,0.0
+197ce45,2017-04-21T17:27:08,avoid division by zero also for ewald/disp,0.0
+0ac22e0,2017-04-22T21:50:27,turn errors from manybody potentials for */tally computes into warnings,0.0
+ddc1e4e,2017-04-25T13:27:20,detect and refuse to run pair style srp together with fix rigid,0.0
+8910ec6,2017-04-25T13:48:51,Updating Kokkos lib to 2.03.00,0.0
+cc6104a,2017-04-25T14:11:36,Merge branch 'master' into kokkos_update,0.0
+d73d70f,2017-04-26T08:15:42,Adding ubuf union to Kokkos atom_vec styles,0.0
+0565b1d,2017-04-26T10:49:20,Fixing auto_sync logic bug in modify_kokkos,0.0
+8f9cb35,2017-04-26T15:34:12,correct units for some improper force constants in docs,0.0
+3e60f79,2017-04-26T17:24:25,remove cg/cmm style name aliases,0.0
+949d61e,2017-04-26T19:26:27,rename examples folder for USER-CGSDK package,0.0
+af74874,2017-04-26T19:27:13,rename references to USER-CG-CMM to USER-CGSDK,0.0
+5c7a631,2017-04-26T19:29:39,rename USER-CG-CMM folder to USER-CGSDK,0.0
+548c589,2017-04-26T19:35:54,update the README for USER-CGSDK,0.0
+cd435c0,2017-04-26T19:44:25,change references from cg_cmm to lj_sdk and from cmm to sdk,0.0
+b8cb80b,2017-04-26T19:46:10,rename files in GPU library from cg_cmm to lj_sdk,0.0
+f5cf1f1,2017-05-03T08:37:20,Merge pull request #464 from akohlmey/rename-cg-cmm-to-cgsdk,0.0
+7f49ee8,2017-05-03T15:33:22,print warning about minimization energy with fix box/relax,0.0
+addd87c,2017-05-04T11:22:20,new Section package and start doc pages and build scripts,0.0
+dcc5472,2017-05-04T11:23:23,Merge pull request #452 from akohlmey/small-fixes-and-updates,0.0
+fbddfe2,2017-05-04T11:23:39,Merge pull request #455 from stanmoore1/kokkos_update,0.0
+f08e206,2017-05-04T11:23:55,Merge pull request #457 from stanmoore1/kokkos_ubuf,0.0
+6499cfc,2017-05-04T11:24:11,Merge pull request #458 from stanmoore1/kokkos_sync_bugfix,0.0
+51c6d50,2017-05-04T11:46:58,patch 4May17,0.0

@@ -1,0 +1,206 @@
+hash,time,message,buggy
+0bb87a0,2016-08-24T15:41:14,First step introduce T-dep in optical properties,0.0
+ed2515f,2016-08-25T11:25:51,After .rej of patch,0.0
+64bd99a,2016-08-25T11:26:14,New file missing,0.0
+d5c28c3,2016-08-25T16:01:32,Wrong patch...,1.0
+24f20eb,2016-08-25T16:12:12,Mistakes yet again,0.0
+65fbb07,2016-08-25T16:21:41,Yet again mistakes,1.0
+5b32317,2016-08-25T19:52:18,Memory leak in optic,1.0
+a59c8c7,2016-10-28T13:54:49,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into tdepoptic,0.0
+c749c1d,2016-10-28T14:15:27,Missing amu in crystal_init (BTW : why is amu the first argument in crystal_init ?),0.0
+15f1d04,2016-10-28T14:30:36,Coupling with lifetime not supported yet,0.0
+536d49e,2016-10-28T14:49:43,Fix issue with DOS + order eigenvalues for printing,1.0
+037838c,2016-10-28T19:54:59,Use xgeev only with ep_renorm included...,0.0
+d6f7345,2016-10-28T20:53:24,Reading with new NetCDF routines,0.0
+3e14136,2016-10-28T21:27:49,Adding tests for the T-dep of optical properties,0.0
+b656bd0,2016-10-28T21:41:59,Solve part of the memory issues + anti-resonant contributions for Bi-lanczos,0.0
+371e3c7,2016-10-31T14:06:57,Memory leak fixed,1.0
+a79f27f,2016-10-31T17:13:50,Make test farm happy (?),0.0
+4077cc3,2016-11-04T12:04:07,Use netcdf3 file instead of netcdf4,0.0
+29c4339,2016-11-04T13:47:18,Upgrade refs from abiref,0.0
+d9a7948,2016-11-04T18:54:48,Increase tolerances of t51,0.0
+9944c18,2016-11-04T18:55:57,Remove debugging flush call,0.0
+cc31139,2016-11-07T11:40:17,Allows to read netcdf sequential files with xmpi_comm_size=1,0.0
+54f9f76,2016-11-07T11:48:21,Remove old code for renormalization,0.0
+442daa5,2016-12-17T09:23:24,small typos,0.0
+feb1bd3,2016-12-17T09:24:08,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+6c21ff2,2016-12-20T15:48:34,2 comments and a change of error to warning,0.0
+04cb1b4,2016-12-20T15:48:52,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+659a4fb,2017-02-03T15:31:45,improve error message for failing to find full k grid,0.0
+28388b8,2017-02-03T16:38:41,make qrefine a vector(3) to refine differently along each direction. Simple. Ref file may change numerically  but should not in principle,0.0
+550166b,2017-02-03T16:40:08,removed vim backup files which should be ignored,0.0
+14c0e64,2017-02-03T16:43:22,ignore backup files for vim,0.0
+63f74b8,2017-02-06T15:25:12,parallel io for std_out and iout needs to be homogenized in anaddb,0.0
+74cd36c,2017-02-10T15:45:09,pre-patch from Marc,0.0
+2d77567,2017-02-10T15:46:08,Merge branch 'develop' of gitlab:mverstra/abinit into develop,0.0
+71f6225,2017-02-10T16:25:24,Updated the ElectronPhononCoupling module to fix a bug.,0.0
+a00ead4,2017-02-10T16:59:42,consistency check for output of IFC from anaddb,0.0
+dc7db05,2017-02-10T16:59:48,Merge branch 'develop' of gitlab:mverstra/abinit into develop,0.0
+99615fe,2017-02-14T16:12:16,output better average of the speed of sound and Debye T instead of fitting DOS,0.0
+8f71aad,2017-02-14T17:47:06,output MSQD to files in thermo,0.0
+f07d3ae,2017-02-17T09:33:32,separate calc and print of vsound  so that parallel anaddb runs as well,0.0
+818a2b6,2017-02-17T14:24:22,merged trunk,0.0
+1356f4b,2017-02-17T17:06:09,update output ref files for small q sound velocity checks,0.0
+35418de,2017-02-22T14:19:20,ensure minimum 1 point in each direction for thermodynamics binning,0.0
+5b01f77,2017-02-22T14:20:55,only print out estimators for speed of sound once a good grid is found,0.0
+ac4ca32,2017-03-05T14:27:38,Re-activate outkss with netcdf  re-activate tests in etsf_io (a.k.a. netcdf),0.0
+578d4af,2017-03-06T12:03:36,Get rid of etsf_io API in outkss,0.0
+cedaba7,2017-03-06T16:11:16,Rename etsf_io subsuite to netcdf (a.k.a netcdf files based on the etsf_io specifications if available),0.0
+e175abc,2017-03-06T16:51:05,added prtmagvtk routine template  test shows wierd segfault for nspden4,0.0
+475c945,2017-03-07T16:27:41,improve TDEP output of ifc  and start transport stuff in eph,0.0
+4a95e70,2017-03-07T16:37:30,square root missing,0.0
+ae99059,2017-03-08T13:19:35,rolled back gstate,0.0
+5213b13,2017-03-08T15:52:18,density printing routine moved to 32_util/m_pptools  added some printing (to verify),0.0
+78bbf64,2017-03-08T17:33:48,output converged DW factors to file  and update TDEP output as well,0.0
+4eb3f1e,2017-03-09T13:03:10,routine moved again to 54_abiutil to allow for mpi_enreg type  tests ok (Cr2O3 MnO) for norm_conserving with npfft=1 and /=1 and nspden=1 2 4,0.0
+07f5b92,2017-03-09T13:05:13,Merge remote-tracking branch 'trunk/develop' into prtmagvtk to incorporate latest updates,0.0
+bf407e7,2017-03-09T13:15:35,Merge branch 'hmc' into develop (incorporating Hybrid Monte Carlo and Velocity Verlet),0.0
+03bd747,2017-03-09T14:48:50,Merge branch 'prtmagvtk' into develop (added debugged version of density/magnetization printing in vtk format),0.0
+dc25f4b,2017-03-16T09:35:16,add T dependent average linewidth,0.0
+f83f7a4,2017-03-16T09:35:49,add FD and BE distributions to special functions,0.0
+f7abc45,2017-03-19T14:27:10,output potentials in DFPT case,0.0
+57ec69f,2017-03-19T14:27:33,Merge branch 'develop' of gitlab:mverstra/abinit into develop,0.0
+7faa013,2017-03-20T00:14:17,add dfpt pot outputs for fabio,0.0
+bbe8b5e,2017-03-20T13:00:43,correct for failing tests,0.0
+410ace2,2017-03-20T14:34:56,yet more tests for the arguments of FD and BE distributions,0.0
+250569a,2017-03-20T16:01:47,update ref files and re-remove leading - sign for speed of sound. It should now be stable and accurate enough to be tested,0.0
+899b62a,2017-03-20T17:41:30,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+a37249e,2017-03-20T17:54:16,mod ref files for new output of speed of sound and Debye T,0.0
+6f45873,2017-03-20T22:03:37,additional blank line removed,0.0
+32ea767,2017-03-22T00:36:17,Zeeman perturbation  comp OK  prelim tests OK  more checks todo,0.0
+d498319,2017-03-22T11:26:44,single precision constants are evil,0.0
+44ac801,2017-03-24T23:58:47,put SI unit velocities and temperatures on a non-diffed line to ease tests,0.0
+454d280,2017-03-25T00:07:56,missing ref file changes,0.0
+25c58dd,2017-03-25T14:20:01,merged trunk,0.0
+4c1fb74,2017-03-25T23:42:23,Fix typo,0.0
+6052935.0,2017-03-29T10:18:27,Make DFT-D3 work with libXC versions of revPBE and PBE0,0.0
+3426c61,2017-03-29T13:43:09,start dfpt dbg,0.0
+628e755,2017-03-29T13:43:33,Merge remote-tracking branch 'trunk/develop' into dfpt,0.0
+8fb98f9,2017-03-29T15:02:36,merge with trunk ok,0.0
+7935eb0,2017-03-31T14:35:59,Improve m_xg for openmp,0.0
+2cf8354,2017-03-31T14:40:39,semi tuned version,0.0
+28a7bc5,2017-03-31T14:46:10,Merge remote-tracking branch 'trunk/develop' into tedi,0.0
+5957745.0,2017-04-04T14:06:20,changed vtorho  to separate potential  added rfmagn input flag  rfuser now corresponds to ipert natom+6 and natom+7,0.0
+5cfc26b,2017-04-04T14:38:21,Merge remote-tracking branch 'trunk/develop' into dfpt,0.0
+aacb305,2017-04-04T14:57:17,fixed input varibales docs,0.0
+9619c79,2017-04-05T11:57:06,removed debug info from calcdensph,0.0
+73028a8,2017-04-05T13:30:13,fixed dimension of 1st order potential,0.0
+7924390.0,2017-04-11T14:41:31,Fixed attempts by eph to compute DOS when there is only 1 k-point.,0.0
+b438a85,2017-04-11T14:42:17,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0.0
+fb0aeaa,2017-04-11T16:59:10,Merge remote-tracking branch 'trunk/develop' into dfpt,0.0
+a333e4f,2017-04-11T18:59:35,fixed gs Zeeman bug  changed several lines related to constrained magnetization in setvtr  debug template for dynamic magnetic charges,0.0
+7561647.0,2017-04-11T22:04:48,resolving mag constraint test problems: non-significant differences at initial scf steps,0.0
+9acc729,2017-04-12T23:55:18,setvtr rollback,0.0
+8be1a33,2017-04-13T00:07:40,tests adjusted,0.0
+42d05d5,2017-04-14T07:54:13,Initialize v8.3.3 development,0.0
+8471aa3,2017-04-14T09:07:56,Add a short description for m_xg,0.0
+f591df4,2017-04-17T13:36:44,Initialize v8.3.3,0.0
+e647925,2017-04-18T17:39:10,vdw people please check this - input variable checks appeared incorrect,0.0
+7603baa,2017-04-19T12:00:12,Fix misplaced endif,0.0
+ff856de,2017-04-19T12:01:01,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0.0
+f239f8c,2017-04-19T12:30:29,Continue to use etsf_io as name of the test subsuite (modifs in the build system scripts are needed),0.0
+84d4590,2017-04-19T12:32:12,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into netcdf,0.0
+c3d97c7,2017-04-19T14:06:22,Merge ygillet/tdepoptic and solve conflits.,0.0
+8280788.0,2017-04-19T14:31:13,Fix compilation error,0.0
+3821eda,2017-04-19T15:12:46,added new test in v8 for rfmagn,0.0
+36754d0,2017-04-19T15:14:10,Merge remote-tracking branch 'trunk/develop' into dfpt,0.0
+58633eb,2017-04-19T15:15:31,Fix compilation error,0.0
+5268c1d,2017-04-19T17:10:02,corrected the new calculation of the mean squared displacement from the gaussian or tetrahedron DOS,0.0
+022c63a,2017-04-19T17:24:15,Merge branch 'develop' of gitlab:mverstra/abinit into develop,0.0
+03c6a2d,2017-04-19T17:26:01,small edits and comments in the code,0.0
+c070910,2017-04-19T17:58:58,test adjusted,0.0
+b96d735,2017-04-19T18:40:21,Allocate exc_vl only if needed,0.0
+bc0138e,2017-04-19T19:05:04,tol num lines adjusted,0.0
+6aa7d65,2017-04-20T11:14:15,test updated  y.a.t,0.0
+e0b0022,2017-04-20T12:03:08,v8[20] test adjustment  added enter into fermi correction for metals with bfield - to test,0.0
+e372cbb,2017-04-20T16:20:04,for testing : clone shiva_py3K -> inca_py3k,0.0
+f834168,2017-04-20T17:47:57,should have fixed the new debye waller except for a factor of pi...,0.0
+2a507ac,2017-04-20T19:05:53,nspden=1 version for DFPT+GGA (MT+ BDorado),0.0
+eaede9b,2017-04-20T19:13:23,Eliminate temporary comment,0.0
+1b927c3,2017-04-21T09:56:37,tested and confirmed prtdos Debye Waller stuff is consistent with the harmonic thermo outputs  but converges much faster. NB: units are in bohr^2  whereas the old one was in Angstrom^2. At some point should remove the harmonic_thermo routine,0.0
+c33ec51,2017-04-21T10:17:00,removed iavfrq input variable - just always calculate the Cv weighted average freq if thmflag==1,0.0
+b1ff333,2017-04-21T18:14:32,Back to work on DFPT+PAW+GGA (MT + BDorado),0.0
+d1dc95e,2017-04-21T23:50:30,Add complex case (nspden=1) to PAW+DFPT+GGA,0.0
+5d6e4c9,2017-04-22T02:04:06,adjusted collinear case (metalic)  tests ok  comparison with finite field results ok,0.0
+ec00d76,2017-04-22T07:05:37,Merge remote-tracking branch biederj/develop/8471 into _biederj,0.0
+751b5ed,2017-04-22T08:55:37,Add end marker for Robodoc   also add (partially) robodoc headers,0.0
+5d52b0c,2017-04-22T09:25:07,Merge branch develop/84d4 into _biederj,0.0
+b86a307,2017-04-22T10:17:26,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+9e5ec53,2017-04-23T15:54:37,magnetic energy calculation added to rhotov and corresponding interface for etot,0.0
+db55c73,2017-04-23T17:13:13,small adjustments related to calcdensphr interface,0.0
+1a6daf6,2017-04-23T22:13:24,first layer noncoll generalization for metals  output for frmagn dfpt,0.0
+fe8d935,2017-04-24T00:32:34,nspden=2 for DFPT+PAW+GGA,0.0
+094f28f,2017-04-24T07:16:40,Merge remote-tracking branch antonius/develop/b86a into _antonius,0.0
+2806ec3,2017-04-24T18:56:38,Some modifs to prevent array overflow,0.0
+6cb4f7f,2017-04-24T19:47:32,strange crash during printing of 1st order wf on ibm8 machine only  for now set prtwf to -1 in input to circumvent the problem,0.0
+b4ea8bf,2017-04-25T08:45:20,Fix accumulation error in lobpcg2 to reach very low residu,0.0
+9e6a3bf,2017-04-25T16:42:49,harmonic thermodynamics output now from prtdos in anaddb. Should get rid of the histogram method soon,0.0
+3dab835,2017-04-26T10:36:24,update modifications for stresses in the Fock term for PAW,0.0
+3a0da20,2017-04-26T14:18:12,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+eac9330,2017-04-26T14:31:44,bug correction for merge,0.0
+185c789,2017-04-26T15:16:04,bug correction for merge,0.0
+e978dd6,2017-04-26T16:41:58,Two bug fixes: a copy was wrong in effpot_mover  improvment of zheevd using MAGMA (from dominic on the forum),0.0
+1eee007,2017-04-26T16:51:16,bug correction for merge (again...),0.0
+d66519b,2017-04-27T10:49:05,merged trunk,0.0
+fd8a3e2,2017-04-27T11:50:55,Clarify that eph renormalization in BSE and optic is still under development,0.0
+2420eb7,2017-04-27T11:51:27,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into tdepoptic,0.0
+7fdc74e,2017-04-27T11:56:29,bug corrections for the test farm (abiref),0.0
+160c626,2017-04-27T13:59:27,bug correction for the test farm (abiref v7 t70),0.0
+7953c9b,2017-04-27T15:37:01,bug correction for the test farm (ibm8),0.0
+1639305.0,2017-04-27T15:55:22,first ref file fixes: do not echo Debye freq and temp twice,0.0
+871a00e,2017-04-27T16:36:06,if clause not adapted to ln2sinh function,0.0
+1016213.0,2017-04-27T16:36:34,restore trunk copy of ddb_diel,0.0
+4e4a051,2017-04-27T17:58:30,1st version of Kxc with nkxc=7 for nspden=1,0.0
+b7fa252,2017-04-27T18:16:41,bug correction for the test farm (ibm8 v7 t65),0.0
+450cb01,2017-04-28T10:25:12,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+fa8eef6,2017-04-28T11:34:55,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+3373673.0,2017-04-28T11:53:41,Merge remote-tracking branch jollet/develop/b7fa into _jollet,0.0
+ab8b9bb,2017-04-28T13:35:34,Merge remote-tracking branch gmatteo/tdepoptic/2420 into _gmatteo,0.0
+0b365d9,2017-04-28T16:11:12,2nd version of Kxc with nkxc=7 for nspden=1,0.0
+d6aa0f3,2017-04-29T21:45:25,update ref files and correct testing for arguments of thermodynamical potentials,0.0
+ec95cbd,2017-04-29T23:21:30,fix tests again for thermo argument evaluations,0.0
+8d292d0,2017-05-01T11:37:26,corrected allocation bounds for thermo potentials,0.0
+21dabac,2017-05-01T12:36:52,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+ae5fd53,2017-05-01T12:49:46,make happy buildsys[2] : lines to long,0.0
+b18ff45,2017-05-01T20:56:03,Refactored ElectronPhononCoupling.,0.0
+7c0c072,2017-05-01T21:58:39,Write amu in crystal_ncwrite  add addition entries in GRUNS.nc to facilitate post-processing.,0.0
+f9fdbd5,2017-05-02T07:27:10,Fixed some comments.,0.0
+7cdb740,2017-05-02T10:16:36,Update tol for inca_gnu_6.3_py3k,0.0
+c4b7c0b,2017-05-02T12:30:49,Extract routine to write non-analytical terms,0.0
+95ef578,2017-05-02T15:18:54,Merge remote-tracking branch 'trunk/develop' into dfpt,0.0
+acfc265,2017-05-02T15:28:18,Merge remote-tracking branch biederj/develop/450c into _biederj,0.0
+29c79b8,2017-05-02T18:04:01,Add LO-TO terms to GRUNS.nc,0.0
+c8303dd,2017-05-02T23:00:53,max2 bot error fixed,0.0
+1e32b9f,2017-05-03T08:46:47,Merge remote-tracking branch sprokh/dfpt/95ef into _sprokh,0.0
+81be80b,2017-05-03T13:46:26,Add routine to compute LOTO terms  add data to PHBST.nc file,0.0
+11b5b3f,2017-05-03T17:33:36,filter to avoid underflow in coba2 buildbot,0.0
+ee837fa,2017-05-03T18:04:19,comment call to out1dm for VCLMB for the moment - fails on buda with 4 mpifft procs,0.0
+25dbf70,2017-05-03T20:28:29,update config of graphene ( MacPorts ) : gcc 6.3 + scalapack,0.0
+64eacea,2017-05-03T21:32:00,thanks Matteo,0.0
+58ad125,2017-05-03T22:09:42,remove ref file line for VCLMB_1DM which was commented in previous commit,0.0
+f701547,2017-05-04T13:58:07,Save memory for GGA spin-pol Kxc : nkxc=23 => nkxc=19,0.0
+eb9bac7,2017-05-04T19:21:06,Improvments in Kxc-GGA implementation,0.0
+023b052,2017-05-04T23:37:33,Merge branch 'develop' of abinit-gitlab:trunk/abinit into dfpt-paw,0.0
+c7f7295,2017-05-05T08:23:22,do not compare files which are not output...,0.0
+3aee28b,2017-05-05T10:26:27,difference between FREE and DEALLOCATE?,0.0
+938c2e1,2017-05-05T11:36:27,max2 happy now?,0.0
+8878756.0,2017-05-05T11:37:39,string for error message was wrong - why is ngqpt allocated with more than 3 entries???,0.0
+d0d3209,2017-05-05T12:00:25,Merge remote branch 'remotes/antonius/develop' into _antonius,0.0
+3476c3c,2017-05-05T17:34:31,Merge remote-tracking branch beuken/develop/25db into _beuken,0.0
+5931941.0,2017-05-05T17:45:57,Adjust the number of iterations of 1 test,0.0
+22ea073,2017-05-06T00:45:39,Fixed a bug in ElectronPhononCoupling affecting MPI runs.,0.0
+b0934ca,2017-05-06T00:46:35,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+192b1c6,2017-05-06T06:05:48,Modify refs for build-examples,0.0
+83e97aa,2017-05-06T06:23:56,Update herald.F90 and KNOWN_PROBLEMS to finalize v8.2.3,0.0
+8b557ce,2017-05-06T06:45:49,Merge remote-tracking branch mverstra/develop/8878 into _mverstra,0.0
+cb6b604,2017-05-06T08:47:52,Update vargs.html,0.0
+7db7b78,2017-05-06T11:12:45,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gruns,0.0
+fb7ce98,2017-05-06T14:55:00,Merge branch 'hotfix-8.2' into _hotfix-8.2,0.0
+dd983fe,2017-05-06T21:08:48,Merge branch _antonius/b093 into develop,0.0
+2e42bc8,2017-05-06T21:11:06,Merge remote-tracking branch gmatteo/gruns/7db7 into _gmatteo,0.0
+6c3370a,2017-05-07T06:45:39,Merge branch 'dfpt_5931' into _torrent,0.0
+b438e6c,2017-05-08T07:16:06,Update ref (strange that this was not needed before),0.0
+5f1d46b,2017-05-08T09:30:54,Update tests/v3/Refs/t18.out and other files (also due to make abilint),0.0
+3f2912b,2017-05-08T09:34:36,Apply make parents,0.0
+6b7f874,2017-05-08T09:37:51,apply make abiauty,0.0
+5dfb3c1,2017-05-08T09:44:10,Initialize the next release notes  install notes  features,0.0

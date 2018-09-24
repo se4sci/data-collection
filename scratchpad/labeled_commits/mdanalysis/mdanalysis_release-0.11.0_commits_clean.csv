@@ -1,339 +1,339 @@
 hash,time,message,buggy
-d2f6900,2015-05-25 22:51:37,fixed requirement for numpy (>=1.4.0) in setup.py,0
-56f75a7,2015-05-29 09:15:09,Split out Timestep tests into own file,0
-8026e6c,2015-05-29 10:42:19,Changed Timestep constructor to only accept integer argument (defines size of Timestep),0
-60cfb5a,2015-06-01 18:58:07,Version changed to 0.11.0 and doc regenerated,0
-aae0e6a,2015-06-02 11:46:10,Added eq to base.Timestep,0
-ef342a8,2015-06-02 11:52:27,Fixup,0
-1c15903,2015-06-02 12:50:57,Merge branch 'develop' into feature-newtimestepconstructor,0
-d78cdb0,2015-06-02 13:16:24,Start of doc update,0
-35ffd18,2015-06-02 14:41:28,New module to analize water dynamics. This module have five new analysis methods: Hydrogen Bond Lifetime (HBL) Water Orientation Relaxation (WOR) Angular Distribution (AD) Mean Square Displacement (MSD) Surivival Probability (SP),0
-21895ef,2015-06-03 13:01:50,Temporarily adding verbose to travis,0
-9d831e6,2015-06-04 02:51:42,Lightweight serialization of AtomGroups by reutilization of built Universes,0
-e299f1f,2015-06-06 21:13:48,Added DL_Poly CONFIG parser,0
-4455e7d,2015-06-06 21:19:37,Fixed missing docs for DLPolyParser,0
-9dcc7c3,2015-06-07 18:20:37,Added DL_Poly History reader and parser,0
-3cb7145,2015-06-08 09:03:32,TEST ALL THE THINGS,0
-1066788,2015-06-08 10:55:28,Added frame seeking to HISTORY reader,0
-ea4749b,2015-06-08 11:02:41,pep8 pass,0
-d2c7d5f,2015-06-08 11:05:17,Updated topology docs,0
-8b6c051,2015-06-08 12:01:41,Merge pull request #299 from MDAnalysis/feature-dlpolyreader,0
-ef107d5,2015-06-08 12:45:28,Update README.rst,0
-ba7ddc0,2015-06-09 11:09:24,Merge branch 'develop' into feature-newtimestepconstructor,0
-79038a7,2015-06-09 15:15:21,Added corrected suggestions in #295. Documentation fixed and updated.,0
-2a745e6,2015-06-09 15:50:08,Merge branch 'feature-watdyn' into develop,0
-b27bcda,2015-06-09 16:37:18,Solved merge conflict.,0
-eea8478,2015-06-10 08:46:32,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-61070c1,2015-06-10 13:45:04,Merge pull request #300 from alejob/develop,0
-94d8fda,2015-06-10 15:11:11,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-bf50264,2015-06-10 15:32:56,cleanup in AUTHOR and CHANGELOG files,0
-eacddb5,2015-06-10 16:21:48,Added version information and CHANGELOG update.,0
-4a3ed3e,2015-06-10 21:01:25,Will squash,0
-85f7b7d,2015-06-11 08:46:45,More docs  what fun!,0
-0e27adc,2015-06-11 11:55:21,Merge branch 'develop' into feature-newtimestepconstructor,0
-4d630e8,2015-06-11 12:27:36,More docs to squash,0
-0d6b32d,2015-06-11 17:49:22,Added RMSF analysis class analysis.rms.RMSF (closes Issue #288),0
-36ecc1d,2015-06-11 18:10:35,Fix for TRZWriter issue,0
-7078b8b,2015-06-11 18:43:02,HydrogenBondAnalysis checks selections (fixes #296),0
-a8cf183,2015-06-11 21:51:29,HydrogenBondAnalysis test improvements,0
-fef6b89,2015-06-11 22:22:04,HydrogenBondAnalysis allows frames without donors/acceptors,0
-2d11f4e,2015-06-11 22:59:40,waterdynamics cosmetic improvements,0
-8be82f6,2015-06-11 23:33:40,distances.contact_matrix() minor improvements,0
-e9daa84,2015-06-12 00:04:20,Merge pull request #303 from MDAnalysis/feature-issue296,0
-e9c013f,2015-06-12 09:04:11,Added tests for Issue #304,0
-c3124c0,2015-06-12 09:41:00,Merge branch 'develop' into feature-trzboxfix,0
-cafb7ec,2015-06-12 12:09:00,use pythonic check for empty atomgroups,0
-760eeb4,2015-06-13 18:06:40,Merge branch 'develop' into feature-newtimestepconstructor,0
-18b2983,2015-06-13 19:50:01,Merge pull request #294 from richardjgowers/feature-newtimestepconstructor,0
-d77bd84,2015-06-14 18:57:37,-adjusted test_analysis.py to replace a relative import with an absolute import so that both nosetests test_analysis:Test_Helanal and nosetests test_analysis.py:Test_Helanal call signatures work,0
-fd50fb7,2015-06-15 11:06:37,Fixes for TRZWriter when handling non TRZ Timestep,0
-d3f506b,2015-06-15 11:12:08,Merge branch 'develop' into feature-trzboxfix,0
-c074991,2015-06-15 11:31:30,-added new test_imports.py module to enforce the ban on relative imports in unit testing modules (Issue #189) -manually repaired unit testing modules caught by above unit testing of import statements,0
-07f8799,2015-06-15 11:40:32,Updated CHANGELOG to reflect resolution of Issue #189.,0
-4dd4447,2015-06-15 12:40:08,More tests for TRZ,0
-d63b0f5,2015-06-15 12:41:26,Merge branch 'develop' into feature-trzboxfix,0
-2e5a821,2015-06-15 13:27:00,Merge pull request #311 from MDAnalysis/feature-trzboxfix,0
-3a1b23d,2015-06-15 13:31:08,Added verbose to travis to debug #312,0
-4a96fdf,2015-06-15 15:50:36,Bugfix to ProgressMeter.,0
-1e82466,2015-06-15 16:15:39,Merge pull request #305 from dotsdl/issue-288,0
-72fe0c1,2015-06-15 16:59:40,Merge pull request #313 from dotsdl/bugfix-ProgressMeter,0
-2da4b76,2015-06-15 17:22:33,README: badges for google groups,0
-4fa5ea8,2015-06-15 22:27:13,HydrogenBondAnalysis: small improvements,0
-d421e8b,2015-06-15 23:04:34,Merge pull request #316 from MDAnalysis/feature-hbonds,0
-67b3a26,2015-06-16 01:54:54,README: fixed link/text in footnote,0
-993ee19,2015-06-16 10:35:33,Cleaned up Reader classes,0
-fbceab4,2015-06-16 14:57:34,Merge pull request #317 from MDAnalysis/feature-unified_iter,0
-84e3882,2015-06-16 15:03:40,Closes Issue #310,0
-d759299,2015-06-16 15:40:25,whitespace formatting,0
-8aa711e,2015-06-16 16:05:42,Moved MDAnalysis.KDTree to MDAnalysis.lib.KDTree,0
-90f41d2,2015-06-16 23:54:56,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-2c4c1fe,2015-06-19 08:53:48,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-53ce9b1,2015-06-19 13:39:15,minimal tests for KDTree,0
-1e1e9b9,2015-06-19 13:39:45,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-8a46174,2015-06-19 15:08:50,Changes to KDTree move  following review,0
-a7533f7,2015-06-19 15:10:28,Merge branch 'develop' into feature-Issue287,0
-cf6c690,2015-06-19 16:18:50,Merge pull request #318 from MDAnalysis/feature-Issue287,0
-e722cee,2015-06-19 16:21:02,Removed Python 2.6 travis temporarily,0
-67e7e5c,2015-06-19 17:11:57,Fixed XYZ format acting as standalone topology & coordinates,0
-4696809,2015-06-19 17:14:22,KD-Tree: added/fixed tests and minor upgrades in package,0
-feb7b2e,2015-06-20 09:12:13,Added more tests for core.util,0
-363b05b,2015-06-20 15:17:03,Move core.transformations to lib.transformations,0
-74699a9,2015-06-20 16:08:50,Merge pull request #320 from MDAnalysis/feature-transformationsmove,0
-685b8d8,2015-06-21 18:09:58,Added DLPoly test files to MDAnalysisTest setup,0
-280e313,2015-06-22 11:23:12,Merge pull request #321 from MDAnalysis/feature-pickleAtomGroup,0
-19c2b7c,2015-06-22 11:30:54,Addressed comments on pull-request #321,0
-8059156,2015-06-22 12:43:59,Fixed up XYZReaderAsTopology test,0
-c8fa3c9,2015-06-22 13:54:06,Merge branch 'develop' into issue-310-fin,0
-412584c,2015-06-22 14:18:31,Tests can now detect memleaks on a test-by-test basis (closes #323),0
-bac7291,2015-06-22 14:46:03,Merge pull request #322 from MDAnalysis/issue-310-fin,0
-ac6c3b2,2015-06-22 14:50:52,Excluded test files from coverage,0
-be79240,2015-06-22 14:57:43,Added tests for deleting topology from Universe,0
-44a72e7,2015-06-22 18:07:51,Merge pull request #324 from MDAnalysis/issue323,0
-aaab2df,2015-06-23 01:31:13,Leak detection now works even if the offending objects aren't deleted in tearDown,0
-dc8e276,2015-06-23 02:11:10,require numpy >= 1.5 (to streamline tests),0
-21d48cc,2015-06-23 02:54:10,test_imports: test each test_*.py file individually,0
-4a3bdd1,2015-06-23 03:17:46,reST fixes throughout,0
-d480d3b,2015-06-23 03:22:29,regenerated html docs for 0.11.0-devel,0
-77b4b52,2015-06-23 09:43:31,Touched up SingleFrameReader tests,0
-ffe3724,2015-06-23 12:08:30,fixed reST/LaTeX in PSA (closes #325),0
-32d98f0,2015-06-23 12:08:49,rebuilt html docs with sphinx,0
-b6cdd0a,2015-06-23 12:25:07,docs: new References page,0
-db49272,2015-06-24 02:41:41,Overhaul of the test subsystem.,0
-5dcf427,2015-06-24 14:22:54,Fixed bug and added DivisionByZero exception in analysis/waterdinamics.py in SurvivalProbability class.,0
-49b1eac,2015-06-25 10:43:56,updated __all__ in analysis/__init__ (related to #328),0
-6c7e7b3,2015-06-25 11:52:38,Update waterdynamics.py,0
-22cd0b8,2015-06-25 11:57:47,Update waterdynamics.py,0
-38d03cd,2015-06-25 13:29:15,Merge pull request #327 from cyanezstange/develop,0
-07ee64d,2015-06-25 14:34:51,Merge pull request #1 from alejob/patch-1,0
-7069b71,2015-06-25 14:37:34,Add new author.,0
-4f5a0d9,2015-06-25 14:41:19,Merge pull request #2 from cyanezstange/patch-1,0
-09bb511,2015-06-25 21:07:58,Merge pull request #330 from MDAnalysis/feature-utilmove,0
-7536bb8,2015-06-25 22:35:36,Moved core.util to lib.util,0
-0a6b404,2015-06-26 08:34:10,Moved core.log to lib.log,0
-bc3fea0,2015-06-26 08:59:04,Moved exceptions into their own file,0
-b9ba4ad,2015-06-26 09:17:58,Moved core.units to MDAnalysis.units,0
-1b775d1,2015-06-26 09:35:18,Moved core.units to MDAnalysis.units,0
-71a3e67,2015-06-29 17:40:54,docs: purged last remnants of Google Code links,0
-6ead85a,2015-06-29 19:01:47,fixed parsing of PDB header data for PrimitivePDBReader (closes #332),0
-d0bec3d,2015-06-29 20:08:49,Merge pull request #334 from MDAnalysis/issues/332,0
-f3f2a97,2015-07-01 10:01:23,Added HoomdXMLParser and basic test,0
-699876d,2015-07-01 10:15:54,Compressed xml test data  amended docs,0
-c99fece,2015-07-02 01:38:09,more relative imports (minor),0
-74aad51,2015-07-02 01:45:22,rebuilt html docs with sphinx,0
-fcccca7,2015-07-02 01:45:29,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-b23dae5,2015-07-02 08:39:28,Start of Timestep API solidification (Issue #250),0
-520ed5a,2015-07-03 12:05:23,More of Issue #250,0
-0842afa,2015-07-06 11:43:32,Small tidy up to coordinates/DCD,0
-df76273,2015-07-08 14:12:20,Merge pull request #335 from khuston/HoomdXMLParser,0
-d1480cf,2015-07-08 19:26:25,Merge pull request #340 from MDAnalysis/feature-TestOverhaul,0
-61d4aa8,2015-07-08 23:20:21,Code changes for moving core.distances to lib.distances,0
-9335107,2015-07-08 23:25:18,Doc changes for core.distances move,0
-50b4434,2015-07-08 23:32:48,Added docs for new module,0
-6a1a004,2015-07-09 00:07:13,Merge pull request #339 from MDAnalysis/feature-distancesmove,0
-9bad485,2015-07-09 03:09:15,Fixed wrong knownfailure import,0
-77d3b04,2015-07-09 03:37:12,Addressed comments on PR #340,0
-4a28364,2015-07-09 03:54:57,"Fixed treatment of ""label"" argument. Cleaned up.",0
-650d8d9,2015-07-09 08:44:03,Merge branch 'develop' into issue-250,0
-076cebc,2015-07-09 08:49:53,removed references to 2.6 in travis,0
-3b95cb9,2015-07-09 10:05:38,Finished work on Issue #250,0
-7140970,2015-07-09 11:50:57,Trying new nosetests,0
-c84eacf,2015-07-09 11:50:57,Added new memleak testing to travis testing,0
-30b11a0,2015-07-09 17:52:28,Fixes nose call that caused coverage misreporting (#341),0
-263bcc8,2015-07-10 01:24:16,Increasing nose's version to try to definitely solve the coverage problem,0
-07e3e56,2015-07-10 09:40:14,Updated travis to use container based system,0
-cef7ac9,2015-07-10 12:01:03,Checking travis' nose version.,0
-9999939,2015-07-10 14:24:45,Merge pull request #343 from MDAnalysis/feature-buildmatrix,0
-1bb0bf5,2015-07-10 18:13:23,Coverage now works with the new test system,0
-0aa31f8,2015-07-10 19:13:48,Merge branch 'feature-newtestrun' into develop,0
-e74822f,2015-07-11 11:44:55,Work on Issue #213,0
-ded57cd,2015-07-11 14:44:34,Merge pull request #346 from MDAnalysis/issue-250,0
-33be121,2015-07-11 17:48:17,Merge branch 'develop' into issue-250,0
-19ea07b,2015-07-11 17:56:15,Added 'global' selction keyword (closes #268) and deprecation warning for 'fullgroup'.,0
-7c9c304,2015-07-11 22:22:02,Extra tests for from_coordinates Timestep constructor,0
-4c960f5,2015-07-12 12:30:00,Docs updates for Timestep,0
-6275409,2015-07-12 21:01:15,Rebuilt docs,0
-ebf05d4,2015-07-13 13:36:13,Added dt and time_offset to Timestep API,0
-185a084,2015-07-13 15:46:32,Closes Issues #306 and #307,0
-700a7a5,2015-07-13 20:46:09,Merge pull request #349 from MDAnalysis/feature-timesteptimes,0
-ef886c3,2015-07-13 21:01:03,Updated outdated topology docs,0
-d79d462,2015-07-13 21:16:59,Updates to Timestep API docs,0
-6e89d46,2015-07-15 09:16:12,Updated coordinates docs,0
-c3333ce,2015-07-15 12:50:30,tests: renamed test_selections --> test_atomselections,0
-2f5cdcd,2015-07-15 12:51:31,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-73c03cd,2015-07-15 16:06:58,MDAnalysis.selection testing (partially addresses #353),0
-38c08f8,2015-07-15 16:23:20,Fix for TPRParser,0
-d93d357,2015-07-15 16:32:53,Merge pull request #354 from MDAnalysis/feature-testselectionwriters,0
-6313163,2015-07-15 16:53:16,Marked test as knownfailure,0
-45f9c9e,2015-07-16 10:59:44,Moved mathematical functions from lib.util to lib.mdamath,0
-592403b,2015-07-16 14:25:33,Added SelectionWriter for Jmol.,0
-fe00c53,2015-07-16 14:27:51,Added function lib.mdamath.make_whole,0
-4e6a04b,2015-07-17 13:03:54,Added tests for Jmol selection writer.,0
-4688e49,2015-07-17 14:40:40,docs for new Jmol selection writer,0
-27d10b0,2015-07-17 18:50:32,Final updates to make_whole following review,0
-9ca6ee6,2015-07-18 00:39:57,analysis.nuclinfo fix and more tests,0
-59c3ebd,2015-07-18 00:44:56,Merge pull request #355 from MDAnalysis/feature-make_whole,0
-354aae7,2015-07-18 01:18:08,test for all selection writers (closes issue #353),0
-1106ba2,2015-07-18 01:20:54,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-606454d,2015-07-18 09:03:13,Updated distance calculation docs,0
-0e36461,2015-07-19 16:40:18,Updated Reader API,0
-552d67d,2015-07-19 17:45:56,Added use of time_offset and dt to tests,0
-4b3e50b,2015-07-19 19:40:32,Final changes following review,0
-7f78d4e,2015-07-19 19:59:45,Merge pull request #357 from MDAnalysis/feature-readercleanup,0
-c2c8dfe,2015-07-19 22:22:12,Added triclinic_dimensions to timestep,0
-44e2fa5,2015-07-20 20:09:11,Merge pull request #358 from MDAnalysis/feature-triclinic_dimensions,0
-5bdbb47,2015-07-21 11:43:01,Closes Issue 310: Fixed doc mentions of 1-based frames to 0-based.,0
-d4be148,2015-07-21 17:32:42,regenerated online docs with sphinx,0
-71a4aa2,2015-07-21 18:10:22,updated Trajectory API history,0
-6fea232,2015-07-21 21:52:05,Doc fixup,0
-a5ecea1,2015-07-22 11:12:01,Fixed usage of format kwarg with Readers,0
-1474a2a,2015-07-22 12:22:48,Fixup of last,0
-a3bd9af,2015-07-23 15:22:09,test that deprecated old module imports are still working,0
-35476b1,2015-07-23 15:44:32,added import stub core.parallel,0
-c11f573,2015-07-23 16:07:23,moved core.qcprot to lib.qcprot,0
-9b2817d,2015-07-24 00:01:19,reST fixes,0
-33ad091,2015-07-24 00:01:51,rebuilt docs with sphinx,0
-5897563,2015-07-24 00:06:09,more reST fix (in qcprot),0
-ce8657d,2015-07-25 15:04:19,MDAnalysis.analysis.distances.contact_matrix docstring has been updated to reflect the data type of the input and the details of the operation of the progress meter.,0
-b76d506,2015-07-26 01:09:13,Fixes parallel builds in travis. nose>=1.3.7 now required.,0
-e9929f5,2015-07-26 02:22:19,Updated the nose>=1.3.7 requirement in setup.py too.,0
-b1165fe,2015-07-26 14:22:02,Everything now expects nose>=1.3.7.,0
-2a830bf,2015-07-26 18:54:03,Merge pull request #367 from MDAnalysis/parallel-test,0
-bd5f775,2015-07-27 22:44:55,More tests,0
-ff821bd,2015-07-29 23:55:06,Changed AtomGroup methods to properties,0
-28bcf01,2015-07-29 23:57:43,Doc update to AtomGroup,0
-25e209f,2015-07-30 00:07:54,Updated tests for new properties,0
-2c49099,2015-07-30 13:38:48,Renamed atom.number to atom.index,0
-841be3d,2015-07-30 16:58:16,Port contact_matrix_no_pbc to cython,0
-af65ed5,2015-08-02 23:25:32,Add test for contac-matrix with pbc,0
-949ccea,2015-08-03 13:20:52,Use correct axis in contact_matrix_no_pbc,0
-9fac3a1,2015-08-03 15:15:07,Add sparse PBC test for contact-matrix,0
-2b92835,2015-08-03 15:15:59,Port contact_matrix_pbc to cython,0
-c79efaa,2015-08-03 16:15:22,Merge pull request #374 from MDAnalysis/feature-atomgroup_properties,0
-026f7fc,2015-08-04 07:26:01,Use symmetry in contact-matrix calculation.,0
-cf7a0d4,2015-08-04 07:31:56,Remove progressbar for sparse contact-matrix,0
-b106b6a,2015-08-04 07:56:03,Diagonal elements in contact-matrix are always true,0
-b26a602,2015-08-04 09:24:37,Refactor contact-matrix tests,0
-ac0acb0,2015-08-04 09:31:20,Clean up contact-matrix cython code.,0
-ebfd790,2015-08-04 11:12:01,Add test for general pbc conditions in contact-matrix,0
-484e0a6,2015-08-04 11:27:55,Handle PBC correctly for contact-matrix sparse,0
-f74f0b8,2015-08-04 11:35:58,Add author/changelog information,0
-3d2c416,2015-08-04 11:52:13,Update docstring of contact_matrix,0
-4c34d7e,2015-08-04 19:48:06,Update CHANGELOG,0
-14efd69,2015-08-04 19:48:54,update doc file for analysis.distances,0
-d043dd1,2015-08-05 08:54:03,Merge pull request #375 from kain88-de/cython-contact-map,0
-c3aa3f6,2015-08-05 13:12:22,Merge pull request #379 from kain88-de/dcd-new-removal,0
-827296c,2015-08-05 13:51:04,Replace new with types,0
-2033232,2015-08-06 09:32:41,Changed Python requirement in setup to 2.7,0
-0d72817,2015-08-06 12:42:10,moved __version__ to MDAnalysis.version,0
-fda6c20,2015-08-06 12:47:09,primitive test for lib.log start_logging()/stop_logging(),0
-4c8191a,2015-08-06 12:47:18,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0
-bd3b41c,2015-08-06 13:11:42,hole module: update URLs to Oliver Smarts new site: http://www.smartsci.uk/hole/,0
-e799580,2015-08-06 13:40:17,HOLE: fixes that CPOINT was ignored,0
-82a821b,2015-08-06 23:33:12,Switched to n_atoms  n_residues  n_segments  n_frames.,0
-e833ad4,2015-08-07 00:17:13,Added corresponding changes for n_... to c sources.,0
-991a340,2015-08-07 01:28:37,Changes for Issue #373,0
-cea16be,2015-08-07 11:06:07,Merge pull request #387 from MDAnalysis/issue-376,0
-daa6fa4,2015-08-07 13:51:01,Doc fixup,0
-be942b2,2015-08-07 17:52:58,fixed spurious test failures in Timestep API tests,0
-c08fa10,2015-08-08 09:24:52,Merge pull request #390 from MDAnalysis/issue/366,0
-97b6dd4,2015-08-08 09:26:39,Removed duplicate file,0
-ac6595d,2015-08-08 16:23:29,Made DeprecationWarnings always loud,0
-f1024c1,2015-08-08 16:24:53,Updated tests following selectAtoms deprecation,0
-a42f9f2,2015-08-08 16:26:30,Updated CHANGELOG,0
-b15647b,2015-08-09 00:29:36,Merge pull request #391 from MDAnalysis/feature-LOUDDEPRECATION,0
-caf13f0,2015-08-09 14:11:52,Use scikit-learn KDTree in around selection,0
-ad3b14e,2015-08-09 16:19:10,Port Sphericallayer selection for new KDTree,0
-33fd533,2015-08-09 16:22:00,port sphericalzoneselection for new KDTree,0
-2734036,2015-08-09 16:44:50,resolved conflicts when merging PR #388,0
-2559f60,2015-08-09 16:45:10,Merge branch 'PR/388' into develop,0
-d22da53,2015-08-09 16:46:23,Remove KDTree module,0
-df56711,2015-08-09 16:58:58,test_topology: fixed deprecated import from core.distances --> lib.distances,0
-1c57d4a,2015-08-09 17:10:25,Merge pull request #394 from MDAnalysis/feature-global_keyword,0
-0b97156,2015-08-09 17:45:15,maintainer scripts updates,0
-df74125,2015-08-09 17:47:43,regenerated distances_parallel.c,0
-5b22367,2015-08-09 23:43:17,reST fixes (version  AtomGroup  topology  helanal),0
-90f8581,2015-08-09 23:49:27,regenerated html docs with sphinx (big API changes),0
-80bc389,2015-08-10 00:13:58,added docs for Hoomd XML topology parser,0
-6a24aa0,2015-08-10 00:33:01,Switched 'fullgroup' deprecation method to class decoration.,0
-0cdeed9,2015-08-10 01:54:57,Updated the CHANGELOG.,0
-96f813a,2015-08-10 22:15:36,updated CHANGELOG entry for #376,0
-7f8a0e3,2015-08-13 14:52:05,Added a crude fixer for selectatoms change in MDA 0.11 and a corresponding simple test file.,0
-6b2215f,2015-08-13 18:43:11,Added new fixer for converting atomgroup methods to properties. Updated the test file to contain suitable test cases.,0
-e84bc32,2015-08-13 19:05:32,New fixer added to deal with atomgroup count methods changing from camelcase to new property names. Added corresponding test code lines..,0
-3a16ced,2015-08-14 14:39:05,Added new fixer for MDAnalysis module displacements in 0.11. Passes for new tests added  though I presume this won't tolerate importing MDAnalysis as MDA  etc.,0
-5bb869e,2015-08-14 15:50:28,New ten2eleven.py module to run MDA 0.10 to 0.11 conversions directly on the command line without copying modules elsewhere. New fixes package directory for holding the fixes.,0
-3be2479,2015-08-14 17:33:20,Fixed docstrings for fixes now that copying to standard library dir is no longer needed.,0
-5291c97,2015-08-16 17:47:32,Re add AtomNeighborsearch class,0
-91a1789,2015-08-16 18:22:53,Use new AtomNeighborSearch in hbond_analysis,0
-f6e1306,2015-08-16 18:24:30,Use new AtomNeighborSearch in pdbqt test,0
-885fa28,2015-08-17 07:41:31,Switch to BioPython KDTree in AtomNeighborSearch,0
-7ed58b8,2015-08-17 07:51:04,Use Bio.KDTree for selections,0
-b9dc1f9,2015-08-19 13:46:53,Added test_dt to TestTimestepInterface and added @known_failure decorator,0
-dd9fbdc,2015-08-19 17:21:28,Merge pull request #398 from khuston/TestTimeUnits,0
-a298fd6,2015-08-20 12:55:02,Added doc update to renaming of calc_torsions,0
-15f4b39,2015-08-20 16:17:05,Incorporated new fixer covering part of the changes introduced by Issue#373 -- methods to properties returning an object. Crude test examples also updated.,0
-7de8cb2,2015-08-20 17:08:03,New fixer dealing with torsion to dihedral conversions (Issue#373) involving AtomGroup / atom / universe. Crude examples for testing also added.,0
-223e381,2015-08-22 11:00:41,Fixes Issue #389,0
-ca72ee9,2015-08-22 11:05:07,Fixup of last,0
-103f922,2015-08-22 11:28:51,Merge pull request #399 from MDAnalysis/feature-camelCaseApocalypse,0
-ef5ad0d,2015-08-22 17:01:09,Added new fixer for various camelcase conversions in MDAnalysis 0.11  along with some simple test cases.,0
-ed81f17,2015-08-23 08:52:59,Add MDAnalysis.KDTree again,0
-06e2f88,2015-08-23 09:12:17,Added tests for Issue #396,0
-975b4b2,2015-08-23 09:13:50,Add doc-string for AtomNeighborSearch,0
-318c20a,2015-08-23 09:22:01,Add KDTree removal to CHANGELOG,0
-0b37120,2015-08-23 09:48:49,Fixes for Issue #396,0
-d0fea1a,2015-08-23 10:58:46,Merge pull request #400 from MDAnalysis/issue-396,0
-e93f249,2015-08-23 20:29:59,Wrong import in test_pdbqt.py,0
-8fdd717,2015-08-24 14:01:41,Add NeighborSearch to lib init,0
-c3f375d,2015-08-24 14:14:57,Add more documentation for NeighborSearch,0
-3023fa9,2015-08-24 22:39:38,Update sphinx documentation that KDTree is removed,0
-80078fe,2015-08-24 23:06:33,Fix circular import.,0
-248b489,2015-08-24 23:13:36,Merge pull request #395 from kain88-de/sklearn-kdtree,0
-5d34981,2015-08-26 16:07:35,Fixes for Issue #397,0
-19f87dd,2015-08-26 18:03:44,WIP Issue #336,0
-13bac79,2015-08-26 20:46:38,Added .gz to tests,0
-290b531,2015-08-26 21:10:19,Fixed failing test,0
-89eebd3,2015-08-27 12:12:34,Added a fixer and corresponding test code for conversion of numframes to n_frames in MDA 0.11 release.,0
-331f6f4,2015-08-27 12:21:43,Fixed ChainReader and format kwarg,0
-4f26066,2015-08-27 12:38:53,Updated changelog,0
-6d9d0fb,2015-08-27 12:44:32,Added compressed filename checks to get_reader,0
-5a1f046,2015-08-27 14:44:24,Added Error tests,0
-2070abf,2015-08-27 15:58:27,Reader _get_dt method  causes problems,0
-030227f,2015-08-28 01:46:56,Merge pull request #403 from MDAnalysis/issue-336,0
-320c3d9,2015-08-28 15:45:51,Added new fixer for torsion to dihedral class name changes along with a set of simple tests.,0
-8fe58a8,2015-08-28 16:14:54,Added new fixer and associated test code for MDA 0.11 calc_torsions() -> calc_dihedrals() conversion.,0
-1c6fcfa,2015-08-28 23:34:42,Fixes issue #385,0
-04ed968,2015-08-29 11:56:02,Tidied some imports in lib/util,0
-ddd287b,2015-08-29 11:57:36,Replaced dunderscore trajectory from Universe,0
-c457cfc,2015-08-29 12:42:31,Merge pull request #405 from MDAnalysis/tidyup,0
-7cdff97,2015-08-31 10:32:30,Added deprecation warnings to use of old singular setters for AtomGroups,0
-e059ad9,2015-08-31 12:08:56,Fixed failing test,0
-6d8a712,2015-08-31 12:27:34,Fixed circular reference to reader causing memleak,0
-0019fe9,2015-08-31 13:12:07,Merge pull request #407 from MDAnalysis/Issue397,0
-e044ddd,2015-08-31 20:17:37,Merge pull request #406 from dotsdl/issue-385,0
-cb21359,2015-09-02 11:10:33,Added new fixer for atomgroup method set_plural conversions along with some crude tests.,0
-63541a4,2015-09-02 12:22:25,Adjusted agsetterpluralization fixer to handle more pathological test case that was causing issues in the unit tests.,0
-ed31912,2015-09-04 10:22:18,Missed camelCase fix,0
-06fbc36,2015-09-04 10:37:53,Merge pull request #408 from MDAnalysis/missedcamelcase,0
-145f31f,2015-09-04 10:42:31,Fix for align_principalAxis,0
-08f46bf,2015-09-04 10:47:24,Test for align_principalAxis,0
-3b67793,2015-09-04 11:26:07,Merge pull request #1 from richardjgowers/master,0
-30ab3db,2015-09-04 11:28:25,Initial efforts to place warning comments before .frame lines. Still needs work to deal with parentheses in prefix  etc.,0
-ccef352,2015-09-04 11:30:28,Richard's extra align_principalAxis camelcase fix.,0
-ca45456,2015-09-04 14:01:52,Some fixes for TopologyGroup,0
-dbd7cc6,2015-09-04 14:44:18,Merge pull request #409 from MDAnalysis/TG_fixes,0
-674c992,2015-09-04 16:21:38,Merge branch 'ten2eleven-master' into develop,0
-88ac396,2015-09-04 16:38:38,Updates to .frame fixers and test code.,0
-394b789,2015-09-05 10:24:11,Moved ten2eleven fixes to inside package,0
-cdd3f80,2015-09-05 16:47:54,Merge pull request #414 from MDAnalysis/issue249,0
-d37794f,2015-09-05 16:58:50,Merge pull request #413 from MDAnalysis/feature-merged-ten2eleven,0
-1a6f769,2015-09-05 18:16:43,Merge now merges bonded topology,0
-a2e4e20,2015-09-05 23:14:38,Fixed documentation for AtomGroup in light of 0.11.0 changes.,0
-d23e7c0,2015-09-06 08:44:38,Merge pull request #416 from dotsdl/doc-scan-0.11.0,0
-b545146,2015-09-06 10:04:18,Tidying changelog for Issue #415,0
-8fedf34,2015-09-06 10:18:00,Added notes to CHANGELOG on how to survive API changes (#415),0
-5807229,2015-09-06 12:44:32,Excluded migration from coverage,0
-d1ed4b1,2015-09-06 12:56:17,Merge pull request #417 from MDAnalysis/exclude_migration,0
-5313e06,2015-09-07 10:36:56,Finalised CHANGELOG for 0.11.0,0
-7545242,2015-09-07 11:59:30,Updated version number to 0.11.0,0
-de97ccc,2015-09-07 12:15:56,Rebuilt docs for 0.11.0 release,0
+d2f6900,2015-05-25T22:51:37,fixed requirement for numpy (>=1.4.0) in setup.py,1.0
+56f75a7,2015-05-29T09:15:09,Split out Timestep tests into own file,0.0
+8026e6c,2015-05-29T10:42:19,Changed Timestep constructor to only accept integer argument (defines size of Timestep),0.0
+60cfb5a,2015-06-01T18:58:07,Version changed to 0.11.0 and doc regenerated,0.0
+aae0e6a,2015-06-02T11:46:10,Added eq to base.Timestep,0.0
+ef342a8,2015-06-02T11:52:27,Fixup,1.0
+1c15903,2015-06-02T12:50:57,Merge branch 'develop' into feature-newtimestepconstructor,0.0
+d78cdb0,2015-06-02T13:16:24,Start of doc update,0.0
+35ffd18,2015-06-02T14:41:28,New module to analize water dynamics. This module have five new analysis methods: Hydrogen Bond Lifetime (HBL) Water Orientation Relaxation (WOR) Angular Distribution (AD) Mean Square Displacement (MSD) Surivival Probability (SP),0.0
+21895ef,2015-06-03T13:01:50,Temporarily adding verbose to travis,0.0
+9d831e6,2015-06-04T02:51:42,Lightweight serialization of AtomGroups by reutilization of built Universes,0.0
+e299f1f,2015-06-06T21:13:48,Added DL_Poly CONFIG parser,0.0
+4455e7d,2015-06-06T21:19:37,Fixed missing docs for DLPolyParser,1.0
+9dcc7c3,2015-06-07T18:20:37,Added DL_Poly History reader and parser,0.0
+3cb7145,2015-06-08T09:03:32,TEST ALL THE THINGS,0.0
+1066788.0,2015-06-08T10:55:28,Added frame seeking to HISTORY reader,0.0
+ea4749b,2015-06-08T11:02:41,pep8 pass,0.0
+d2c7d5f,2015-06-08T11:05:17,Updated topology docs,0.0
+8b6c051,2015-06-08T12:01:41,Merge pull request #299 from MDAnalysis/feature-dlpolyreader,0.0
+ef107d5,2015-06-08T12:45:28,Update README.rst,0.0
+ba7ddc0,2015-06-09T11:09:24,Merge branch 'develop' into feature-newtimestepconstructor,0.0
+79038a7,2015-06-09T15:15:21,Added corrected suggestions in #295. Documentation fixed and updated.,1.0
+2a745e6,2015-06-09T15:50:08,Merge branch 'feature-watdyn' into develop,0.0
+b27bcda,2015-06-09T16:37:18,Solved merge conflict.,0.0
+eea8478,2015-06-10T08:46:32,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+61070c1,2015-06-10T13:45:04,Merge pull request #300 from alejob/develop,0.0
+94d8fda,2015-06-10T15:11:11,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+bf50264,2015-06-10T15:32:56,cleanup in AUTHOR and CHANGELOG files,0.0
+eacddb5,2015-06-10T16:21:48,Added version information and CHANGELOG update.,0.0
+4a3ed3e,2015-06-10T21:01:25,Will squash,0.0
+85f7b7d,2015-06-11T08:46:45,More docs  what fun!,0.0
+0e27adc,2015-06-11T11:55:21,Merge branch 'develop' into feature-newtimestepconstructor,0.0
+4d630e8,2015-06-11T12:27:36,More docs to squash,0.0
+0d6b32d,2015-06-11T17:49:22,Added RMSF analysis class analysis.rms.RMSF (closes Issue #288),1.0
+36ecc1d,2015-06-11T18:10:35,Fix for TRZWriter issue,1.0
+7078b8b,2015-06-11T18:43:02,HydrogenBondAnalysis checks selections (fixes #296),1.0
+a8cf183,2015-06-11T21:51:29,HydrogenBondAnalysis test improvements,0.0
+fef6b89,2015-06-11T22:22:04,HydrogenBondAnalysis allows frames without donors/acceptors,0.0
+2d11f4e,2015-06-11T22:59:40,waterdynamics cosmetic improvements,0.0
+8be82f6,2015-06-11T23:33:40,distances.contact_matrix() minor improvements,0.0
+e9daa84,2015-06-12T00:04:20,Merge pull request #303 from MDAnalysis/feature-issue296,0.0
+e9c013f,2015-06-12T09:04:11,Added tests for Issue #304,0.0
+c3124c0,2015-06-12T09:41:00,Merge branch 'develop' into feature-trzboxfix,0.0
+cafb7ec,2015-06-12T12:09:00,use pythonic check for empty atomgroups,0.0
+760eeb4,2015-06-13T18:06:40,Merge branch 'develop' into feature-newtimestepconstructor,0.0
+18b2983,2015-06-13T19:50:01,Merge pull request #294 from richardjgowers/feature-newtimestepconstructor,0.0
+d77bd84,2015-06-14T18:57:37,-adjusted test_analysis.py to replace a relative import with an absolute import so that both nosetests test_analysis:Test_Helanal and nosetests test_analysis.py:Test_Helanal call signatures work,0.0
+fd50fb7,2015-06-15T11:06:37,Fixes for TRZWriter when handling non TRZ Timestep,1.0
+d3f506b,2015-06-15T11:12:08,Merge branch 'develop' into feature-trzboxfix,0.0
+c074991,2015-06-15T11:31:30,-added new test_imports.py module to enforce the ban on relative imports in unit testing modules (Issue #189) -manually repaired unit testing modules caught by above unit testing of import statements,0.0
+07f8799,2015-06-15T11:40:32,Updated CHANGELOG to reflect resolution of Issue #189.,0.0
+4dd4447,2015-06-15T12:40:08,More tests for TRZ,0.0
+d63b0f5,2015-06-15T12:41:26,Merge branch 'develop' into feature-trzboxfix,0.0
+2e5a821,2015-06-15T13:27:00,Merge pull request #311 from MDAnalysis/feature-trzboxfix,0.0
+3a1b23d,2015-06-15T13:31:08,Added verbose to travis to debug #312,0.0
+4a96fdf,2015-06-15T15:50:36,Bugfix to ProgressMeter.,1.0
+1e82466,2015-06-15T16:15:39,Merge pull request #305 from dotsdl/issue-288,0.0
+72fe0c1,2015-06-15T16:59:40,Merge pull request #313 from dotsdl/bugfix-ProgressMeter,0.0
+2da4b76,2015-06-15T17:22:33,README: badges for google groups,0.0
+4fa5ea8,2015-06-15T22:27:13,HydrogenBondAnalysis: small improvements,0.0
+d421e8b,2015-06-15T23:04:34,Merge pull request #316 from MDAnalysis/feature-hbonds,0.0
+67b3a26,2015-06-16T01:54:54,README: fixed link/text in footnote,0.0
+993ee19,2015-06-16T10:35:33,Cleaned up Reader classes,0.0
+fbceab4,2015-06-16T14:57:34,Merge pull request #317 from MDAnalysis/feature-unified_iter,0.0
+84e3882,2015-06-16T15:03:40,Closes Issue #310,1.0
+d759299,2015-06-16T15:40:25,whitespace formatting,0.0
+8aa711e,2015-06-16T16:05:42,Moved MDAnalysis.KDTree to MDAnalysis.lib.KDTree,0.0
+90f41d2,2015-06-16T23:54:56,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+2c4c1fe,2015-06-19T08:53:48,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+53ce9b1,2015-06-19T13:39:15,minimal tests for KDTree,0.0
+1e1e9b9,2015-06-19T13:39:45,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+8a46174,2015-06-19T15:08:50,Changes to KDTree move  following review,0.0
+a7533f7,2015-06-19T15:10:28,Merge branch 'develop' into feature-Issue287,0.0
+cf6c690,2015-06-19T16:18:50,Merge pull request #318 from MDAnalysis/feature-Issue287,0.0
+e722cee,2015-06-19T16:21:02,Removed Python 2.6 travis temporarily,0.0
+67e7e5c,2015-06-19T17:11:57,Fixed XYZ format acting as standalone topology & coordinates,0.0
+4696809.0,2015-06-19T17:14:22,KD-Tree: added/fixed tests and minor upgrades in package,1.0
+feb7b2e,2015-06-20T09:12:13,Added more tests for core.util,0.0
+363b05b,2015-06-20T15:17:03,Move core.transformations to lib.transformations,0.0
+74699a9,2015-06-20T16:08:50,Merge pull request #320 from MDAnalysis/feature-transformationsmove,0.0
+685b8d8,2015-06-21T18:09:58,Added DLPoly test files to MDAnalysisTest setup,0.0
+280e313,2015-06-22T11:23:12,Merge pull request #321 from MDAnalysis/feature-pickleAtomGroup,0.0
+19c2b7c,2015-06-22T11:30:54,Addressed comments on pull-request #321,0.0
+8059156.0,2015-06-22T12:43:59,Fixed up XYZReaderAsTopology test,1.0
+c8fa3c9,2015-06-22T13:54:06,Merge branch 'develop' into issue-310-fin,0.0
+412584c,2015-06-22T14:18:31,Tests can now detect memleaks on a test-by-test basis (closes #323),0.0
+bac7291,2015-06-22T14:46:03,Merge pull request #322 from MDAnalysis/issue-310-fin,0.0
+ac6c3b2,2015-06-22T14:50:52,Excluded test files from coverage,0.0
+be79240,2015-06-22T14:57:43,Added tests for deleting topology from Universe,0.0
+44a72e7,2015-06-22T18:07:51,Merge pull request #324 from MDAnalysis/issue323,0.0
+aaab2df,2015-06-23T01:31:13,Leak detection now works even if the offending objects aren't deleted in tearDown,0.0
+dc8e276,2015-06-23T02:11:10,require numpy >= 1.5 (to streamline tests),0.0
+21d48cc,2015-06-23T02:54:10,test_imports: test each test_*.py file individually,0.0
+4a3bdd1,2015-06-23T03:17:46,reST fixes throughout,0.0
+d480d3b,2015-06-23T03:22:29,regenerated html docs for 0.11.0-devel,0.0
+77b4b52,2015-06-23T09:43:31,Touched up SingleFrameReader tests,0.0
+ffe3724,2015-06-23T12:08:30,fixed reST/LaTeX in PSA (closes #325),1.0
+32d98f0,2015-06-23T12:08:49,rebuilt html docs with sphinx,0.0
+b6cdd0a,2015-06-23T12:25:07,docs: new References page,0.0
+db49272,2015-06-24T02:41:41,Overhaul of the test subsystem.,0.0
+5dcf427,2015-06-24T14:22:54,Fixed bug and added DivisionByZero exception in analysis/waterdinamics.py in SurvivalProbability class.,1.0
+49b1eac,2015-06-25T10:43:56,updated __all__ in analysis/__init__ (related to #328),0.0
+6c7e7b3,2015-06-25T11:52:38,Update waterdynamics.py,0.0
+22cd0b8,2015-06-25T11:57:47,Update waterdynamics.py,0.0
+38d03cd,2015-06-25T13:29:15,Merge pull request #327 from cyanezstange/develop,0.0
+07ee64d,2015-06-25T14:34:51,Merge pull request #1 from alejob/patch-1,0.0
+7069b71,2015-06-25T14:37:34,Add new author.,0.0
+4f5a0d9,2015-06-25T14:41:19,Merge pull request #2 from cyanezstange/patch-1,0.0
+09bb511,2015-06-25T21:07:58,Merge pull request #330 from MDAnalysis/feature-utilmove,0.0
+7536bb8,2015-06-25T22:35:36,Moved core.util to lib.util,0.0
+0a6b404,2015-06-26T08:34:10,Moved core.log to lib.log,0.0
+bc3fea0,2015-06-26T08:59:04,Moved exceptions into their own file,0.0
+b9ba4ad,2015-06-26T09:17:58,Moved core.units to MDAnalysis.units,0.0
+1b775d1,2015-06-26T09:35:18,Moved core.units to MDAnalysis.units,0.0
+71a3e67,2015-06-29T17:40:54,docs: purged last remnants of Google Code links,0.0
+6ead85a,2015-06-29T19:01:47,fixed parsing of PDB header data for PrimitivePDBReader (closes #332),1.0
+d0bec3d,2015-06-29T20:08:49,Merge pull request #334 from MDAnalysis/issues/332,0.0
+f3f2a97,2015-07-01T10:01:23,Added HoomdXMLParser and basic test,0.0
+699876d,2015-07-01T10:15:54,Compressed xml test data  amended docs,0.0
+c99fece,2015-07-02T01:38:09,more relative imports (minor),0.0
+74aad51,2015-07-02T01:45:22,rebuilt html docs with sphinx,0.0
+fcccca7,2015-07-02T01:45:29,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+b23dae5,2015-07-02T08:39:28,Start of Timestep API solidification (Issue #250),1.0
+520ed5a,2015-07-03T12:05:23,More of Issue #250,1.0
+0842afa,2015-07-06T11:43:32,Small tidy up to coordinates/DCD,0.0
+df76273,2015-07-08T14:12:20,Merge pull request #335 from khuston/HoomdXMLParser,0.0
+d1480cf,2015-07-08T19:26:25,Merge pull request #340 from MDAnalysis/feature-TestOverhaul,0.0
+61d4aa8,2015-07-08T23:20:21,Code changes for moving core.distances to lib.distances,0.0
+9335107.0,2015-07-08T23:25:18,Doc changes for core.distances move,0.0
+50b4434,2015-07-08T23:32:48,Added docs for new module,0.0
+6a1a004,2015-07-09T00:07:13,Merge pull request #339 from MDAnalysis/feature-distancesmove,0.0
+9bad485,2015-07-09T03:09:15,Fixed wrong knownfailure import,1.0
+77d3b04,2015-07-09T03:37:12,Addressed comments on PR #340,1.0
+4a28364,2015-07-09T03:54:57,"Fixed treatment of ""label"" argument. Cleaned up.",1.0
+650d8d9,2015-07-09T08:44:03,Merge branch 'develop' into issue-250,0.0
+076cebc,2015-07-09T08:49:53,removed references to 2.6 in travis,0.0
+3b95cb9,2015-07-09T10:05:38,Finished work on Issue #250,1.0
+7140970.0,2015-07-09T11:50:57,Trying new nosetests,0.0
+c84eacf,2015-07-09T11:50:57,Added new memleak testing to travis testing,0.0
+30b11a0,2015-07-09T17:52:28,Fixes nose call that caused coverage misreporting (#341),1.0
+263bcc8,2015-07-10T01:24:16,Increasing nose's version to try to definitely solve the coverage problem,0.0
+7e+59,2015-07-10T09:40:14,Updated travis to use container based system,0.0
+cef7ac9,2015-07-10T12:01:03,Checking travis' nose version.,0.0
+9999939.0,2015-07-10T14:24:45,Merge pull request #343 from MDAnalysis/feature-buildmatrix,0.0
+1bb0bf5,2015-07-10T18:13:23,Coverage now works with the new test system,0.0
+0aa31f8,2015-07-10T19:13:48,Merge branch 'feature-newtestrun' into develop,0.0
+e74822f,2015-07-11T11:44:55,Work on Issue #213,1.0
+ded57cd,2015-07-11T14:44:34,Merge pull request #346 from MDAnalysis/issue-250,0.0
+33be121,2015-07-11T17:48:17,Merge branch 'develop' into issue-250,0.0
+19ea07b,2015-07-11T17:56:15,Added 'global' selction keyword (closes #268) and deprecation warning for 'fullgroup'.,1.0
+7c9c304,2015-07-11T22:22:02,Extra tests for from_coordinates Timestep constructor,0.0
+4c960f5,2015-07-12T12:30:00,Docs updates for Timestep,0.0
+6275409.0,2015-07-12T21:01:15,Rebuilt docs,0.0
+ebf05d4,2015-07-13T13:36:13,Added dt and time_offset to Timestep API,0.0
+185a084,2015-07-13T15:46:32,Closes Issues #306 and #307,1.0
+700a7a5,2015-07-13T20:46:09,Merge pull request #349 from MDAnalysis/feature-timesteptimes,0.0
+ef886c3,2015-07-13T21:01:03,Updated outdated topology docs,0.0
+d79d462,2015-07-13T21:16:59,Updates to Timestep API docs,0.0
+6e89d46,2015-07-15T09:16:12,Updated coordinates docs,0.0
+c3333ce,2015-07-15T12:50:30,tests: renamed test_selections --> test_atomselections,0.0
+2f5cdcd,2015-07-15T12:51:31,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+73c03cd,2015-07-15T16:06:58,MDAnalysis.selection testing (partially addresses #353),0.0
+38c08f8,2015-07-15T16:23:20,Fix for TPRParser,1.0
+d93d357,2015-07-15T16:32:53,Merge pull request #354 from MDAnalysis/feature-testselectionwriters,0.0
+6313163.0,2015-07-15T16:53:16,Marked test as knownfailure,0.0
+45f9c9e,2015-07-16T10:59:44,Moved mathematical functions from lib.util to lib.mdamath,0.0
+592403b,2015-07-16T14:25:33,Added SelectionWriter for Jmol.,0.0
+fe00c53,2015-07-16T14:27:51,Added function lib.mdamath.make_whole,0.0
+4e6a04b,2015-07-17T13:03:54,Added tests for Jmol selection writer.,0.0
+4.688e+52,2015-07-17T14:40:40,docs for new Jmol selection writer,0.0
+27d10b0,2015-07-17T18:50:32,Final updates to make_whole following review,0.0
+9ca6ee6,2015-07-18T00:39:57,analysis.nuclinfo fix and more tests,1.0
+59c3ebd,2015-07-18T00:44:56,Merge pull request #355 from MDAnalysis/feature-make_whole,0.0
+354aae7,2015-07-18T01:18:08,test for all selection writers (closes issue #353),1.0
+1106ba2,2015-07-18T01:20:54,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+606454d,2015-07-18T09:03:13,Updated distance calculation docs,0.0
+0.0,2015-07-19T16:40:18,Updated Reader API,0.0
+552d67d,2015-07-19T17:45:56,Added use of time_offset and dt to tests,0.0
+4b3e50b,2015-07-19T19:40:32,Final changes following review,0.0
+7f78d4e,2015-07-19T19:59:45,Merge pull request #357 from MDAnalysis/feature-readercleanup,0.0
+c2c8dfe,2015-07-19T22:22:12,Added triclinic_dimensions to timestep,0.0
+44e2fa5,2015-07-20T20:09:11,Merge pull request #358 from MDAnalysis/feature-triclinic_dimensions,0.0
+5bdbb47,2015-07-21T11:43:01,Closes Issue 310: Fixed doc mentions of 1-based frames to 0-based.,1.0
+d4be148,2015-07-21T17:32:42,regenerated online docs with sphinx,0.0
+71a4aa2,2015-07-21T18:10:22,updated Trajectory API history,0.0
+6fea232,2015-07-21T21:52:05,Doc fixup,0.0
+a5ecea1,2015-07-22T11:12:01,Fixed usage of format kwarg with Readers,1.0
+1474a2a,2015-07-22T12:22:48,Fixup of last,1.0
+a3bd9af,2015-07-23T15:22:09,test that deprecated old module imports are still working,0.0
+35476b1,2015-07-23T15:44:32,added import stub core.parallel,0.0
+c11f573,2015-07-23T16:07:23,moved core.qcprot to lib.qcprot,0.0
+9b2817d,2015-07-24T00:01:19,reST fixes,1.0
+33ad091,2015-07-24T00:01:51,rebuilt docs with sphinx,0.0
+5897563.0,2015-07-24T00:06:09,more reST fix (in qcprot),1.0
+ce8657d,2015-07-25T15:04:19,MDAnalysis.analysis.distances.contact_matrix docstring has been updated to reflect the data type of the input and the details of the operation of the progress meter.,0.0
+b76d506,2015-07-26T01:09:13,Fixes parallel builds in travis. nose>=1.3.7 now required.,1.0
+e9929f5,2015-07-26T02:22:19,Updated the nose>=1.3.7 requirement in setup.py too.,0.0
+b1165fe,2015-07-26T14:22:02,Everything now expects nose>=1.3.7.,0.0
+2a830bf,2015-07-26T18:54:03,Merge pull request #367 from MDAnalysis/parallel-test,0.0
+bd5f775,2015-07-27T22:44:55,More tests,0.0
+ff821bd,2015-07-29T23:55:06,Changed AtomGroup methods to properties,0.0
+28bcf01,2015-07-29T23:57:43,Doc update to AtomGroup,0.0
+25e209f,2015-07-30T00:07:54,Updated tests for new properties,0.0
+2c49099,2015-07-30T13:38:48,Renamed atom.number to atom.index,0.0
+841be3d,2015-07-30T16:58:16,Port contact_matrix_no_pbc to cython,0.0
+af65ed5,2015-08-02T23:25:32,Add test for contac-matrix with pbc,0.0
+949ccea,2015-08-03T13:20:52,Use correct axis in contact_matrix_no_pbc,0.0
+9fac3a1,2015-08-03T15:15:07,Add sparse PBC test for contact-matrix,0.0
+2b92835,2015-08-03T15:15:59,Port contact_matrix_pbc to cython,0.0
+c79efaa,2015-08-03T16:15:22,Merge pull request #374 from MDAnalysis/feature-atomgroup_properties,0.0
+026f7fc,2015-08-04T07:26:01,Use symmetry in contact-matrix calculation.,0.0
+cf7a0d4,2015-08-04T07:31:56,Remove progressbar for sparse contact-matrix,0.0
+b106b6a,2015-08-04T07:56:03,Diagonal elements in contact-matrix are always true,0.0
+b26a602,2015-08-04T09:24:37,Refactor contact-matrix tests,0.0
+ac0acb0,2015-08-04T09:31:20,Clean up contact-matrix cython code.,0.0
+ebfd790,2015-08-04T11:12:01,Add test for general pbc conditions in contact-matrix,0.0
+484e0a6,2015-08-04T11:27:55,Handle PBC correctly for contact-matrix sparse,0.0
+f74f0b8,2015-08-04T11:35:58,Add author/changelog information,0.0
+3d2c416,2015-08-04T11:52:13,Update docstring of contact_matrix,0.0
+4c34d7e,2015-08-04T19:48:06,Update CHANGELOG,0.0
+14efd69,2015-08-04T19:48:54,update doc file for analysis.distances,0.0
+d043dd1,2015-08-05T08:54:03,Merge pull request #375 from kain88-de/cython-contact-map,0.0
+c3aa3f6,2015-08-05T13:12:22,Merge pull request #379 from kain88-de/dcd-new-removal,0.0
+827296c,2015-08-05T13:51:04,Replace new with types,0.0
+2033232.0,2015-08-06T09:32:41,Changed Python requirement in setup to 2.7,0.0
+0d72817,2015-08-06T12:42:10,moved __version__ to MDAnalysis.version,0.0
+fda6c20,2015-08-06T12:47:09,primitive test for lib.log start_logging()/stop_logging(),0.0
+4c8191a,2015-08-06T12:47:18,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+bd3b41c,2015-08-06T13:11:42,hole module: update URLs to Oliver Smarts new site: http://www.smartsci.uk/hole/,0.0
+e799580,2015-08-06T13:40:17,HOLE: fixes that CPOINT was ignored,1.0
+82a821b,2015-08-06T23:33:12,Switched to n_atoms  n_residues  n_segments  n_frames.,0.0
+e833ad4,2015-08-07T00:17:13,Added corresponding changes for n_... to c sources.,0.0
+991a340,2015-08-07T01:28:37,Changes for Issue #373,1.0
+cea16be,2015-08-07T11:06:07,Merge pull request #387 from MDAnalysis/issue-376,0.0
+daa6fa4,2015-08-07T13:51:01,Doc fixup,0.0
+be942b2,2015-08-07T17:52:58,fixed spurious test failures in Timestep API tests,1.0
+c08fa10,2015-08-08T09:24:52,Merge pull request #390 from MDAnalysis/issue/366,0.0
+97b6dd4,2015-08-08T09:26:39,Removed duplicate file,0.0
+ac6595d,2015-08-08T16:23:29,Made DeprecationWarnings always loud,0.0
+f1024c1,2015-08-08T16:24:53,Updated tests following selectAtoms deprecation,0.0
+a42f9f2,2015-08-08T16:26:30,Updated CHANGELOG,0.0
+b15647b,2015-08-09T00:29:36,Merge pull request #391 from MDAnalysis/feature-LOUDDEPRECATION,0.0
+caf13f0,2015-08-09T14:11:52,Use scikit-learn KDTree in around selection,0.0
+ad3b14e,2015-08-09T16:19:10,Port Sphericallayer selection for new KDTree,0.0
+33fd533,2015-08-09T16:22:00,port sphericalzoneselection for new KDTree,0.0
+2734036.0,2015-08-09T16:44:50,resolved conflicts when merging PR #388,1.0
+2559f60,2015-08-09T16:45:10,Merge branch 'PR/388' into develop,0.0
+d22da53,2015-08-09T16:46:23,Remove KDTree module,0.0
+df56711,2015-08-09T16:58:58,test_topology: fixed deprecated import from core.distances --> lib.distances,1.0
+1c57d4a,2015-08-09T17:10:25,Merge pull request #394 from MDAnalysis/feature-global_keyword,0.0
+0b97156,2015-08-09T17:45:15,maintainer scripts updates,0.0
+df74125,2015-08-09T17:47:43,regenerated distances_parallel.c,0.0
+5b22367,2015-08-09T23:43:17,reST fixes (version  AtomGroup  topology  helanal),1.0
+90f8581,2015-08-09T23:49:27,regenerated html docs with sphinx (big API changes),0.0
+80bc389,2015-08-10T00:13:58,added docs for Hoomd XML topology parser,0.0
+6a24aa0,2015-08-10T00:33:01,Switched 'fullgroup' deprecation method to class decoration.,0.0
+0cdeed9,2015-08-10T01:54:57,Updated the CHANGELOG.,0.0
+96f813a,2015-08-10T22:15:36,updated CHANGELOG entry for #376,0.0
+7f8a0e3,2015-08-13T14:52:05,Added a crude fixer for selectatoms change in MDA 0.11 and a corresponding simple test file.,0.0
+6b2215f,2015-08-13T18:43:11,Added new fixer for converting atomgroup methods to properties. Updated the test file to contain suitable test cases.,0.0
+e84bc32,2015-08-13T19:05:32,New fixer added to deal with atomgroup count methods changing from camelcase to new property names. Added corresponding test code lines..,0.0
+3a16ced,2015-08-14T14:39:05,Added new fixer for MDAnalysis module displacements in 0.11. Passes for new tests added  though I presume this won't tolerate importing MDAnalysis as MDA  etc.,0.0
+5bb869e,2015-08-14T15:50:28,New ten2eleven.py module to run MDA 0.10 to 0.11 conversions directly on the command line without copying modules elsewhere. New fixes package directory for holding the fixes.,0.0
+3be2479,2015-08-14T17:33:20,Fixed docstrings for fixes now that copying to standard library dir is no longer needed.,1.0
+5291c97,2015-08-16T17:47:32,Re add AtomNeighborsearch class,0.0
+91a1789,2015-08-16T18:22:53,Use new AtomNeighborSearch in hbond_analysis,0.0
+f6e1306,2015-08-16T18:24:30,Use new AtomNeighborSearch in pdbqt test,0.0
+885fa28,2015-08-17T07:41:31,Switch to BioPython KDTree in AtomNeighborSearch,0.0
+7ed58b8,2015-08-17T07:51:04,Use Bio.KDTree for selections,0.0
+b9dc1f9,2015-08-19T13:46:53,Added test_dt to TestTimestepInterface and added @known_failure decorator,0.0
+dd9fbdc,2015-08-19T17:21:28,Merge pull request #398 from khuston/TestTimeUnits,0.0
+a298fd6,2015-08-20T12:55:02,Added doc update to renaming of calc_torsions,0.0
+15f4b39,2015-08-20T16:17:05,Incorporated new fixer covering part of the changes introduced by Issue#373 -- methods to properties returning an object. Crude test examples also updated.,1.0
+7de8cb2,2015-08-20T17:08:03,New fixer dealing with torsion to dihedral conversions (Issue#373) involving AtomGroup / atom / universe. Crude examples for testing also added.,1.0
+223e381,2015-08-22T11:00:41,Fixes Issue #389,1.0
+ca72ee9,2015-08-22T11:05:07,Fixup of last,1.0
+103f922,2015-08-22T11:28:51,Merge pull request #399 from MDAnalysis/feature-camelCaseApocalypse,0.0
+ef5ad0d,2015-08-22T17:01:09,Added new fixer for various camelcase conversions in MDAnalysis 0.11  along with some simple test cases.,0.0
+ed81f17,2015-08-23T08:52:59,Add MDAnalysis.KDTree again,0.0
+06e2f88,2015-08-23T09:12:17,Added tests for Issue #396,0.0
+975b4b2,2015-08-23T09:13:50,Add doc-string for AtomNeighborSearch,0.0
+318c20a,2015-08-23T09:22:01,Add KDTree removal to CHANGELOG,0.0
+0b37120,2015-08-23T09:48:49,Fixes for Issue #396,1.0
+d0fea1a,2015-08-23T10:58:46,Merge pull request #400 from MDAnalysis/issue-396,0.0
+e93f249,2015-08-23T20:29:59,Wrong import in test_pdbqt.py,0.0
+8fdd717,2015-08-24T14:01:41,Add NeighborSearch to lib init,0.0
+c3f375d,2015-08-24T14:14:57,Add more documentation for NeighborSearch,0.0
+3023fa9,2015-08-24T22:39:38,Update sphinx documentation that KDTree is removed,0.0
+80078fe,2015-08-24T23:06:33,Fix circular import.,1.0
+248b489,2015-08-24T23:13:36,Merge pull request #395 from kain88-de/sklearn-kdtree,0.0
+5d34981,2015-08-26T16:07:35,Fixes for Issue #397,1.0
+19f87dd,2015-08-26T18:03:44,WIP Issue #336,1.0
+13bac79,2015-08-26T20:46:38,Added .gz to tests,0.0
+290b531,2015-08-26T21:10:19,Fixed failing test,0.0
+89eebd3,2015-08-27T12:12:34,Added a fixer and corresponding test code for conversion of numframes to n_frames in MDA 0.11 release.,0.0
+331f6f4,2015-08-27T12:21:43,Fixed ChainReader and format kwarg,1.0
+4f26066,2015-08-27T12:38:53,Updated changelog,0.0
+6d9d0fb,2015-08-27T12:44:32,Added compressed filename checks to get_reader,0.0
+5a1f046,2015-08-27T14:44:24,Added Error tests,0.0
+2070abf,2015-08-27T15:58:27,Reader _get_dt method  causes problems,0.0
+030227f,2015-08-28T01:46:56,Merge pull request #403 from MDAnalysis/issue-336,0.0
+320c3d9,2015-08-28T15:45:51,Added new fixer for torsion to dihedral class name changes along with a set of simple tests.,0.0
+8fe58a8,2015-08-28T16:14:54,Added new fixer and associated test code for MDA 0.11 calc_torsions() -> calc_dihedrals() conversion.,0.0
+1c6fcfa,2015-08-28T23:34:42,Fixes issue #385,1.0
+04ed968,2015-08-29T11:56:02,Tidied some imports in lib/util,0.0
+ddd287b,2015-08-29T11:57:36,Replaced dunderscore trajectory from Universe,0.0
+c457cfc,2015-08-29T12:42:31,Merge pull request #405 from MDAnalysis/tidyup,0.0
+7cdff97,2015-08-31T10:32:30,Added deprecation warnings to use of old singular setters for AtomGroups,0.0
+e059ad9,2015-08-31T12:08:56,Fixed failing test,0.0
+6d8a712,2015-08-31T12:27:34,Fixed circular reference to reader causing memleak,1.0
+0019fe9,2015-08-31T13:12:07,Merge pull request #407 from MDAnalysis/Issue397,0.0
+e044ddd,2015-08-31T20:17:37,Merge pull request #406 from dotsdl/issue-385,0.0
+cb21359,2015-09-02T11:10:33,Added new fixer for atomgroup method set_plural conversions along with some crude tests.,0.0
+63541a4,2015-09-02T12:22:25,Adjusted agsetterpluralization fixer to handle more pathological test case that was causing issues in the unit tests.,0.0
+ed31912,2015-09-04T10:22:18,Missed camelCase fix,1.0
+06fbc36,2015-09-04T10:37:53,Merge pull request #408 from MDAnalysis/missedcamelcase,0.0
+145f31f,2015-09-04T10:42:31,Fix for align_principalAxis,1.0
+08f46bf,2015-09-04T10:47:24,Test for align_principalAxis,0.0
+3b67793,2015-09-04T11:26:07,Merge pull request #1 from richardjgowers/master,0.0
+30ab3db,2015-09-04T11:28:25,Initial efforts to place warning comments before .frame lines. Still needs work to deal with parentheses in prefix  etc.,0.0
+ccef352,2015-09-04T11:30:28,Richard's extra align_principalAxis camelcase fix.,0.0
+ca45456,2015-09-04T14:01:52,Some fixes for TopologyGroup,1.0
+dbd7cc6,2015-09-04T14:44:18,Merge pull request #409 from MDAnalysis/TG_fixes,0.0
+674c992,2015-09-04T16:21:38,Merge branch 'ten2eleven-master' into develop,0.0
+88ac396,2015-09-04T16:38:38,Updates to .frame fixers and test code.,0.0
+394b789,2015-09-05T10:24:11,Moved ten2eleven fixes to inside package,0.0
+cdd3f80,2015-09-05T16:47:54,Merge pull request #414 from MDAnalysis/issue249,0.0
+d37794f,2015-09-05T16:58:50,Merge pull request #413 from MDAnalysis/feature-merged-ten2eleven,0.0
+1a6f769,2015-09-05T18:16:43,Merge now merges bonded topology,0.0
+a2e4e20,2015-09-05T23:14:38,Fixed documentation for AtomGroup in light of 0.11.0 changes.,0.0
+d23e7c0,2015-09-06T08:44:38,Merge pull request #416 from dotsdl/doc-scan-0.11.0,0.0
+b545146,2015-09-06T10:04:18,Tidying changelog for Issue #415,0.0
+8fedf34,2015-09-06T10:18:00,Added notes to CHANGELOG on how to survive API changes (#415),0.0
+5807229.0,2015-09-06T12:44:32,Excluded migration from coverage,0.0
+d1ed4b1,2015-09-06T12:56:17,Merge pull request #417 from MDAnalysis/exclude_migration,0.0
+5313000000.0,2015-09-07T10:36:56,Finalised CHANGELOG for 0.11.0,0.0
+7545242.0,2015-09-07T11:59:30,Updated version number to 0.11.0,0.0
+de97ccc,2015-09-07T12:15:56,Rebuilt docs for 0.11.0 release,0.0

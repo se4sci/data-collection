@@ -1,0 +1,29 @@
+hash,time,message,buggy
+3800a84,2015-03-27T17:33:21,added Alex Nesterenko (comconadin) to CHANGELOG and sphinx docs,0.0
+1763454.0,2015-03-27T22:49:07,version changed to 0.9.2-dev. Documentation regenerated accordingly,0.0
+0fce209,2015-03-28T08:35:45,Fixed Documentational for recent changes,0.0
+3ab7d34,2015-03-28T22:01:44,topology docs clean-up/extension,0.0
+61b23db,2015-03-28T22:07:30,regenerated html docs with sphinx,0.0
+9577966.0,2015-04-03T18:28:34,updated top-level README,0.0
+b893bf5,2015-04-03T18:30:18,updated top-level README (and added top level LICENSE),0.0
+9dc9c0e,2015-04-03T18:30:38,Merge branch 'master' into develop,0.0
+0765aec,2015-04-07T02:09:58,Atoms can now set/get force & velocity,0.0
+26ca924,2015-04-07T02:28:32,Fixed up docs on new Atom methods,0.0
+bd147ee,2015-04-07T18:17:24,removed applications,0.0
+21225ce,2015-04-07T18:40:41,move to GitHub: updated top level information,0.0
+1d4e8bc,2015-04-08T12:57:23,-replaced the old MDAnalysis webpage URL with the new (post-github) webpage URL in all MDA package files ending in .py,0.0
+507fa30,2015-04-08T15:01:06,-replaced old issue links with new github issue links (except for attachment links) in .py files in MDA project,0.0
+f3c4b33,2015-04-08T15:09:37,-updated links to issue attachments after move to github -- these still seem to depend on google in some way though.,0.0
+2a0fb78,2015-04-08T15:20:27,-updated wiki links in .py files to reflect move to github,0.0
+dde819a,2015-04-08T18:37:39,more Google Code link cleanup,0.0
+9ead510,2015-04-09T00:40:28,fixed imports in TPR parser,1.0
+9f7711a,2015-04-09T01:13:46,regenerated online docs (now with new URLs),0.0
+3ed4450,2015-04-09T01:22:42,changed URLs in sphinx docs from Google Code to GitHub,0.0
+37d4fdb,2015-04-09T10:17:48,Tidying of topology related things,0.0
+88e7694,2015-04-10T12:33:24,Added wrap method to AtomGroup,0.0
+c9cc016,2015-04-12T20:11:03,Fixes to documentation,0.0
+4287276.0,2015-04-12T20:12:35,Merge pull request #246 from MDAnalysis/feature-wrap,0.0
+f8edb8a,2015-04-16T11:02:48,AtomGroup instant selectors now raise AttributeError (Issue #220),0.0
+30a1d5c,2015-04-16T16:58:44,Merge branch 'develop' of github.com:MDAnalysis/mdanalysis into develop,0.0
+01f3a9c,2015-04-19T21:19:19,test_selections.py tests updated to properly close trajectory objects (was causing unit tests to fail on some systems due to open file descriptor limit),0.0
+1f8e35f,2015-04-20T16:26:15,Version number set to 0.9.2  date in CHANGELOG updated and Documentation regenerated,0.0

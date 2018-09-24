@@ -1,115 +1,115 @@
 hash,time,message,buggy
-b059c46,2012-01-26 17:04:52,small changes to start testing,0
-9fcfe41,2012-01-27 14:52:05,Small adjustments to get it working.  analysis/hbonds.py: fixed a bug when calling save_table  coordinates/XYZ.py: added two dummy variables  core/util.py: changed RegEx to detect GLYCAM style residue names,0
-61b4691,2012-01-30 13:33:42,Added further defaule values to hbonds.py and fixed minor errors in XYZ.py,0
-bf98edd,2012-01-30 14:11:14,Final changes before giving out pull request:  core/util.py: adjustments to work with ALL GLYCAM_06 residue names  analysis/hbonds.py: reverted DEFAULT_{ACCEPTORS DONORS} to original,0
-2056877,2012-02-15 23:34:28,updated coordinate module docs,0
-d2523b1,2012-02-17 14:46:40,improved docs for AtomGroup and Timestep,0
-262a933,2012-02-17 16:47:05,Merge branch 'master' of https://code.google.com/p/mdanalysis,0
-8239120,2012-02-17 16:51:19,regenerated HTML (online) docs,0
-7ee2d25,2012-02-20 16:22:05,updated Ben Hall's analysis packages,0
-e4ddfea,2012-02-24 14:05:55,hbonds.py: _get_bonded_hydrogens now also takes distance to donor atom into account to avoid choosing hydrogens that are close by by index  but not bonded,0
-a4d50ae,2012-02-28 01:29:14,fixed: hbond analysis generate_table(),0
-0c2a707,2012-02-28 02:24:04,fixed  maintainer/change_release.sh,0
-58f1ba9,2012-02-29 09:44:39,Version bumped to 0.7.6-devel maintainer/change_release.sh fixed,0
-b4cd3b2,2012-02-29 10:11:46,Added: test running script,0
-8116017,2012-03-07 22:34:56,new AtomGroup.moveto() method (+test),0
-d3f7100,2012-03-07 22:40:15,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
-a8a280c,2012-03-10 14:42:12,fixes issue #99 	Infinite loop when writing single frame,0
-f53cff4,2012-03-10 14:53:19,Merge branch 'Issue/99/pdb-writer' into develop,0
-6220bcd,2012-03-10 16:24:45,minor fixes to coordinates code and docs,0
-88bc68f,2012-03-23 15:29:21,HydrogenBondAnalysis: fixed acceptors  doc improvements,0
-2d46c0e,2012-03-23 16:00:57,resphinxed docs,0
-c25ea38,2012-03-23 23:21:59,HydrogenBondAnalysis.run(): do not return results anymore,0
-8dcc038,2012-03-24 19:04:43,ProgressMeter: fixed docs,0
-1a44a23,2012-03-24 19:09:41,hbond analysis: possibly fixed bug and added ProgressMeter,0
-8e3a410,2012-03-24 19:17:29,Merge branch 'orbeckst/hbonds' into develop,0
-d565fb8,2012-03-25 15:12:10,HBond analysis: better detection of bonded hydrogens,0
-c61e39f,2012-04-04 10:20:44,Merge remote-tracking branch 'mdanalysis/master',0
-1c1a7e5,2012-04-06 17:15:57,analysis/hbonds.py: changed DEFAULT_DONORS and DEFAULT_ACCEPTORS to a dict  to allow switching to different forcefields,0
-696ccd5,2012-04-06 18:02:17,merged mdanalysis/develop,0
-7af7fc4,2012-04-10 12:41:25,merged with d565fb8bf98f of orbeckst/hbonds,0
-92d1ae9,2012-04-11 16:41:20,Built table with values for GLYCAM06 force field  DEFAULT_... tuples not yet updated,0
-2747eaf,2012-04-19 12:37:41,added changes to accomodate the switch to multiple available force fields,0
-1127d73,2012-04-19 14:53:55,removed some wrong atom types from DEFAULT_ACCEPTORS,0
-d564da1,2012-04-20 11:16:59,hydrogen bond analysis: Lukas Grossar's patches for the heuristic H-detection,0
-4e440eb,2012-04-24 10:00:54,removed CHO and EAM for resnames recognized as protein,0
-4e59491,2012-04-26 18:07:02,patch for the heuristic H-detection   * _get_bonded_hydrogens_list() was changed so that any hydrogens found     also have to be within a maximum distance of the donor   * the maximum distance is stored in the defaultdict HydrogenBondAnalysis.r_cov      covalent H-donor distances are hard coded for N  O  S  P  anything else gets     a default value of 1.5 A.,0
-178af90,2012-05-01 13:31:01,fixes for PDB and GRO writer,0
-936af56,2012-05-03 16:11:43,implemented count_by_time in HydrogenBondAnalysis,0
-da8e05b,2012-05-03 16:22:18,fixed Universe.load_new() raised a NameError,0
-c401ddd,2012-05-04 14:26:58,added count_by_type and count_by_type_correlation to analysis/hbonds.py,0
-1b5b8e4,2012-05-07 14:24:32,merged orbeckst/hbonds into Lukas Grossars development branch,0
-24171ce,2012-05-07 17:13:45,fixed NameError in AtomGroup.__contains__,0
-dccc668,2012-05-07 17:15:21,Merge branch 'develop' into Issue/103/develop,0
-2e59a03,2012-05-07 19:20:33,HBond analysis enhancements (H-detection and count_by_type_*),0
-0f2d36e,2012-05-07 23:09:13,hbond analysis: fixes and new feature: start:stop:step,0
-a847635,2012-05-07 23:24:10,hbond analysis: use tuples directly as keys,0
-04bbe28,2012-05-10 16:48:10,analysis/hbonds.py  - fixed a merge error  - changed implementation of count_by_type_correlation to match    count_by_type,0
-77594ec,2012-05-18 15:35:11,hbonds: removed doubled r_cov and doc improvements,0
-9ccc544,2012-05-18 15:40:26,Merge remote-tracking branch 'lukasgrossar/develop' into Issue/103/develop,0
-d97c7df,2012-05-21 09:35:12,analysis/hbonds.py - renamed count_by_type_correlation --> timesteps_by_type,0
-3fbb15c,2012-05-21 14:07:52,analysis.hbonds.py - slicing doesn't work for XYZ files  so I needed to comment it,0
-98d55e0,2012-05-21 15:30:18,analysis/hbonds.py - always initialize the dicts in _update_selection_{1 2} as empty to   avoid problems in _donor_lookup_table_{byindex byres},0
-2d2427e,2012-05-22 16:49:38,fixes Issue 105: MultiPDB support and writing of single PDB frames,0
-eb213a2,2012-05-25 18:41:26,test AMBER trajectories for Issue 109,0
-557491b,2012-05-27 17:40:33,fixed test case test_atomgroup:TestWritePDB.test_write_universe,0
-86b41e2,2012-05-27 21:18:53,NetCDFReader working (Issue 109),0
-c44d844,2012-05-29 16:54:49,NetCDFWriter working (closes Issue 109),0
-50c3f62,2012-05-29 17:07:00,Merge branch 'Issue/109' into develop,0
-0bd5b1a,2012-05-29 18:14:03,documentation fixes and small things in the AMBER NCDF Reader/Writer,0
-58730f8,2012-05-29 18:15:39,regenerated online docs (new AMBER readers  omitted LAMMPS R/W  pdb extensions),0
-3c68292,2012-05-29 19:27:14,Empty AtomGroup allowed (Issue 12),0
-a81dcdb,2012-05-30 09:40:17,forgot to include the test cases for Issue 109 in package,0
-5f8b06c,2012-05-30 09:42:13,deleted testsuite/MDAnalysisTests.egg-info,0
-cc73f72,2012-05-30 10:05:43,NCDFReader (Issue 109): load coordinates right away,0
-fe7292d,2012-05-30 14:30:06,data files and test case for Issue 107,0
-8a71081,2012-05-30 16:22:35,fixes Issue 107: read NAMD/VMD space separated PSF files,0
-daa117f,2012-05-30 16:31:00,Merge branch 'Issue/107' into develop,0
-e58958c,2012-05-30 18:38:35,minor fixes for PrimitivePDBWriter,0
-e81a933,2012-05-31 11:03:33,UnitTests for Issue 101,0
-d25969a,2012-05-31 11:16:09,fixes Issue 101,0
-e0f7a07,2012-05-31 11:18:11,use null-vectors for non-periodic/empty unit cells in Gromacs trajectories,0
-14e523e,2012-05-31 13:40:50,updated position property,0
-80fd2c3,2012-05-31 15:46:35,added unit tests for Atom.position and AtomGroup.positions,0
-d5d6df4,2012-06-01 14:17:34,positions/velocities in AtomGroup: docs  tests,0
-ce5a658,2012-06-01 14:31:56,regenerated online docs (changes in AtomGroup),0
-f3ae146,2012-06-01 15:11:13,removed experimental AtomGroup.moveto(),0
-ca96458,2012-06-01 15:13:07,regenerated online docs (removed moveto() and generally nicer),0
-b92cad3,2012-06-01 15:22:47,removed test for moveto(),0
-f1b64de,2012-06-03 14:20:08,Merged Lukas Grossar's HbondAnalysis improvements (fixes issue 103),0
-8aa93ba,2012-06-03 16:59:40,Velocities may now be accessed from GRO files as AtomGroup.velocities() or Atom.velocity   A velocity unit test was included with this commit to verify that both the AtomGroup and Atom-specific velocity reading functionalities are preserved for GRO files. This implementation uses the ts._velocities attribute. Addresses Issue 102.,0
-17b28b1,2012-06-03 17:15:48,Dealing with CHANGELOG conflict resolution.,0
-6298104,2012-06-04 15:53:55,notes on netcdf installation and projected release date for 0.7.6,0
-6033416,2012-06-04 17:02:00,Trajectory API: partial implementation of Reader.__getitem__(),0
-0d129b4,2012-06-04 17:21:30,HbondAnalysis: use new standard slicing,0
-1de7eaf,2012-06-04 17:25:51,Merge Lukas Grossar's HydrogenBondAnalysis (Issue 103),0
-963ad0b,2012-06-04 17:58:02,PrimitivePDBReader: fixed: __getitem__ and __iter__ returned None for single frame,0
-5d67a2b,2012-06-04 19:08:34,single frame reader fixes,0
-f5786eb,2012-06-04 19:47:37,updated CHANGELOG,0
-a66a34b,2012-06-05 11:39:06,addition of nucleic acid analysis,0
-35118f6,2012-06-05 16:37:46,removed experimental moveto() method from CHANGELOG (should have done this previously...),0
-e7371cd,2012-06-06 10:10:58,initial test case for Issue 100,0
-ab1b66b,2012-06-06 20:20:46,updated nuclinfo,0
-7d82467,2012-06-06 20:23:17,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
-bbe4dcf,2012-06-06 20:40:09,Fixed Amber TOPParser for both 10 and 12 formats,0
-bfd9d36,2012-06-07 18:01:14,additional nuclinfo testcase,0
-1bd901d,2012-06-07 18:01:45,fixes Issue 112 (alig.fasta2select used outdated Biopython),0
-2f2f6f0,2012-06-07 18:08:26,merged origin/develop into local develop,0
-91ff415,2012-06-07 18:37:42,fixed for nuclinfo docs and testcases,0
-fe1683f,2012-06-07 18:46:18,added docs to TOPParser,0
-35b8c76,2012-06-07 18:47:17,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
-48d78c1,2012-06-07 18:51:11,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0
-4339386,2012-06-08 11:31:01,fixed type selection,0
-d4610a5,2012-06-12 01:19:30,hbonds: fixed NH1NH2 --> NH1  NH2,0
-435430e,2012-06-16 18:12:35,fixes Issue 111 (qcprot would sometimes return NAN),0
-6a76463,2012-06-17 20:37:19,fixes Issue 113 (ClustalW would not be run in align.fasta2select()),0
-ee773d0,2012-06-26 09:11:22,version number changed to 0.7.6,0
-fdb8809,2012-06-26 11:24:46,HTML doc regenerated doc + corrected a few mistakes.,0
-9161c1a,2012-06-26 11:37:23,MDAnalysisTests.egg-info added to .gitignore,0
-6ba4667,2012-06-26 17:43:39,MANIFEST.in files corrected,0
-8ca4bd2,2012-07-03 19:29:07,HydrogenBond analysis: fixes and tests (Issue 103),0
-ae2fe77,2012-07-04 10:08:15,Documation regenerated,0
-93808b3,2012-07-04 10:53:46,Merge branch 'release-0.7.6',0
-e2b9522,2012-07-04 21:14:44,removed '(in development)' inside CHANGELOG,0
-365d54c,2012-07-04 21:15:39,Merge branch 'release-0.7.6',0
+b059c46,2012-01-26T17:04:52,small changes to start testing,0.0
+9fcfe41,2012-01-27T14:52:05,Small adjustments to get it working.  analysis/hbonds.py: fixed a bug when calling save_table  coordinates/XYZ.py: added two dummy variables  core/util.py: changed RegEx to detect GLYCAM style residue names,0.0
+61b4691,2012-01-30T13:33:42,Added further defaule values to hbonds.py and fixed minor errors in XYZ.py,0.0
+bf98edd,2012-01-30T14:11:14,Final changes before giving out pull request:  core/util.py: adjustments to work with ALL GLYCAM_06 residue names  analysis/hbonds.py: reverted DEFAULT_{ACCEPTORS DONORS} to original,0.0
+2056877.0,2012-02-15T23:34:28,updated coordinate module docs,0.0
+d2523b1,2012-02-17T14:46:40,improved docs for AtomGroup and Timestep,0.0
+262a933,2012-02-17T16:47:05,Merge branch 'master' of https://code.google.com/p/mdanalysis,0.0
+8239120.0,2012-02-17T16:51:19,regenerated HTML (online) docs,0.0
+7ee2d25,2012-02-20T16:22:05,updated Ben Hall's analysis packages,0.0
+e4ddfea,2012-02-24T14:05:55,hbonds.py: _get_bonded_hydrogens now also takes distance to donor atom into account to avoid choosing hydrogens that are close by by index  but not bonded,0.0
+a4d50ae,2012-02-28T01:29:14,fixed: hbond analysis generate_table(),1.0
+0c2a707,2012-02-28T02:24:04,fixed  maintainer/change_release.sh,1.0
+58f1ba9,2012-02-29T09:44:39,Version bumped to 0.7.6-devel maintainer/change_release.sh fixed,0.0
+b4cd3b2,2012-02-29T10:11:46,Added: test running script,0.0
+8116017.0,2012-03-07T22:34:56,new AtomGroup.moveto() method (+test),0.0
+d3f7100,2012-03-07T22:40:15,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0.0
+a8a280c,2012-03-10T14:42:12,fixes issue #99 	Infinite loop when writing single frame,1.0
+f53cff4,2012-03-10T14:53:19,Merge branch 'Issue/99/pdb-writer' into develop,0.0
+6220bcd,2012-03-10T16:24:45,minor fixes to coordinates code and docs,0.0
+88bc68f,2012-03-23T15:29:21,HydrogenBondAnalysis: fixed acceptors  doc improvements,0.0
+2d46c0e,2012-03-23T16:00:57,resphinxed docs,0.0
+c25ea38,2012-03-23T23:21:59,HydrogenBondAnalysis.run(): do not return results anymore,0.0
+8dcc038,2012-03-24T19:04:43,ProgressMeter: fixed docs,0.0
+1a44a23,2012-03-24T19:09:41,hbond analysis: possibly fixed bug and added ProgressMeter,0.0
+8e3a410,2012-03-24T19:17:29,Merge branch 'orbeckst/hbonds' into develop,0.0
+d565fb8,2012-03-25T15:12:10,HBond analysis: better detection of bonded hydrogens,0.0
+c61e39f,2012-04-04T10:20:44,Merge remote-tracking branch 'mdanalysis/master',0.0
+1c1a7e5,2012-04-06T17:15:57,analysis/hbonds.py: changed DEFAULT_DONORS and DEFAULT_ACCEPTORS to a dict  to allow switching to different forcefields,0.0
+696ccd5,2012-04-06T18:02:17,merged mdanalysis/develop,0.0
+7af7fc4,2012-04-10T12:41:25,merged with d565fb8bf98f of orbeckst/hbonds,0.0
+92d1ae9,2012-04-11T16:41:20,Built table with values for GLYCAM06 force field  DEFAULT_... tuples not yet updated,0.0
+2747eaf,2012-04-19T12:37:41,added changes to accomodate the switch to multiple available force fields,0.0
+1127d73,2012-04-19T14:53:55,removed some wrong atom types from DEFAULT_ACCEPTORS,0.0
+d564da1,2012-04-20T11:16:59,hydrogen bond analysis: Lukas Grossar's patches for the heuristic H-detection,0.0
+4e440eb,2012-04-24T10:00:54,removed CHO and EAM for resnames recognized as protein,0.0
+4e59491,2012-04-26T18:07:02,patch for the heuristic H-detection   * _get_bonded_hydrogens_list() was changed so that any hydrogens found     also have to be within a maximum distance of the donor   * the maximum distance is stored in the defaultdict HydrogenBondAnalysis.r_cov      covalent H-donor distances are hard coded for N  O  S  P  anything else gets     a default value of 1.5 A.,1.0
+178af90,2012-05-01T13:31:01,fixes for PDB and GRO writer,1.0
+936af56,2012-05-03T16:11:43,implemented count_by_time in HydrogenBondAnalysis,0.0
+da8e05b,2012-05-03T16:22:18,fixed Universe.load_new() raised a NameError,1.0
+c401ddd,2012-05-04T14:26:58,added count_by_type and count_by_type_correlation to analysis/hbonds.py,0.0
+1b5b8e4,2012-05-07T14:24:32,merged orbeckst/hbonds into Lukas Grossars development branch,0.0
+24171ce,2012-05-07T17:13:45,fixed NameError in AtomGroup.__contains__,1.0
+dccc668,2012-05-07T17:15:21,Merge branch 'develop' into Issue/103/develop,0.0
+2e59a03,2012-05-07T19:20:33,HBond analysis enhancements (H-detection and count_by_type_*),0.0
+0f2d36e,2012-05-07T23:09:13,hbond analysis: fixes and new feature: start:stop:step,0.0
+a847635,2012-05-07T23:24:10,hbond analysis: use tuples directly as keys,0.0
+04bbe28,2012-05-10T16:48:10,analysis/hbonds.py  - fixed a merge error  - changed implementation of count_by_type_correlation to match    count_by_type,0.0
+77594ec,2012-05-18T15:35:11,hbonds: removed doubled r_cov and doc improvements,0.0
+9ccc544,2012-05-18T15:40:26,Merge remote-tracking branch 'lukasgrossar/develop' into Issue/103/develop,0.0
+d97c7df,2012-05-21T09:35:12,analysis/hbonds.py - renamed count_by_type_correlation --> timesteps_by_type,0.0
+3fbb15c,2012-05-21T14:07:52,analysis.hbonds.py - slicing doesn't work for XYZ files  so I needed to comment it,0.0
+98d55e0,2012-05-21T15:30:18,analysis/hbonds.py - always initialize the dicts in _update_selection_{1 2} as empty to   avoid problems in _donor_lookup_table_{byindex byres},0.0
+2d2427e,2012-05-22T16:49:38,fixes Issue 105: MultiPDB support and writing of single PDB frames,1.0
+eb213a2,2012-05-25T18:41:26,test AMBER trajectories for Issue 109,0.0
+557491b,2012-05-27T17:40:33,fixed test case test_atomgroup:TestWritePDB.test_write_universe,1.0
+86b41e2,2012-05-27T21:18:53,NetCDFReader working (Issue 109),0.0
+c44d844,2012-05-29T16:54:49,NetCDFWriter working (closes Issue 109),0.0
+50c3f62,2012-05-29T17:07:00,Merge branch 'Issue/109' into develop,0.0
+0bd5b1a,2012-05-29T18:14:03,documentation fixes and small things in the AMBER NCDF Reader/Writer,0.0
+58730f8,2012-05-29T18:15:39,regenerated online docs (new AMBER readers  omitted LAMMPS R/W  pdb extensions),0.0
+3c68292,2012-05-29T19:27:14,Empty AtomGroup allowed (Issue 12),0.0
+a81dcdb,2012-05-30T09:40:17,forgot to include the test cases for Issue 109 in package,0.0
+5f8b06c,2012-05-30T09:42:13,deleted testsuite/MDAnalysisTests.egg-info,0.0
+cc73f72,2012-05-30T10:05:43,NCDFReader (Issue 109): load coordinates right away,0.0
+fe7292d,2012-05-30T14:30:06,data files and test case for Issue 107,0.0
+8a71081,2012-05-30T16:22:35,fixes Issue 107: read NAMD/VMD space separated PSF files,1.0
+daa117f,2012-05-30T16:31:00,Merge branch 'Issue/107' into develop,0.0
+e58958c,2012-05-30T18:38:35,minor fixes for PrimitivePDBWriter,0.0
+e81a933,2012-05-31T11:03:33,UnitTests for Issue 101,0.0
+d25969a,2012-05-31T11:16:09,fixes Issue 101,1.0
+e0f7a07,2012-05-31T11:18:11,use null-vectors for non-periodic/empty unit cells in Gromacs trajectories,0.0
+14e523e,2012-05-31T13:40:50,updated position property,0.0
+80fd2c3,2012-05-31T15:46:35,added unit tests for Atom.position and AtomGroup.positions,0.0
+d5d6df4,2012-06-01T14:17:34,positions/velocities in AtomGroup: docs  tests,0.0
+ce5a658,2012-06-01T14:31:56,regenerated online docs (changes in AtomGroup),0.0
+f3ae146,2012-06-01T15:11:13,removed experimental AtomGroup.moveto(),0.0
+ca96458,2012-06-01T15:13:07,regenerated online docs (removed moveto() and generally nicer),0.0
+b92cad3,2012-06-01T15:22:47,removed test for moveto(),0.0
+f1b64de,2012-06-03T14:20:08,Merged Lukas Grossar's HbondAnalysis improvements (fixes issue 103),0.0
+8aa93ba,2012-06-03T16:59:40,Velocities may now be accessed from GRO files as AtomGroup.velocities() or Atom.velocity   A velocity unit test was included with this commit to verify that both the AtomGroup and Atom-specific velocity reading functionalities are preserved for GRO files. This implementation uses the ts._velocities attribute. Addresses Issue 102.,0.0
+17b28b1,2012-06-03T17:15:48,Dealing with CHANGELOG conflict resolution.,0.0
+6298104.0,2012-06-04T15:53:55,notes on netcdf installation and projected release date for 0.7.6,0.0
+6033416.0,2012-06-04T17:02:00,Trajectory API: partial implementation of Reader.__getitem__(),0.0
+0d129b4,2012-06-04T17:21:30,HbondAnalysis: use new standard slicing,0.0
+1de7eaf,2012-06-04T17:25:51,Merge Lukas Grossar's HydrogenBondAnalysis (Issue 103),0.0
+963ad0b,2012-06-04T17:58:02,PrimitivePDBReader: fixed: __getitem__ and __iter__ returned None for single frame,0.0
+5d67a2b,2012-06-04T19:08:34,single frame reader fixes,0.0
+f5786eb,2012-06-04T19:47:37,updated CHANGELOG,0.0
+a66a34b,2012-06-05T11:39:06,addition of nucleic acid analysis,0.0
+35118f6,2012-06-05T16:37:46,removed experimental moveto() method from CHANGELOG (should have done this previously...),0.0
+e7371cd,2012-06-06T10:10:58,initial test case for Issue 100,0.0
+ab1b66b,2012-06-06T20:20:46,updated nuclinfo,0.0
+7d82467,2012-06-06T20:23:17,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0.0
+bbe4dcf,2012-06-06T20:40:09,Fixed Amber TOPParser for both 10 and 12 formats,1.0
+bfd9d36,2012-06-07T18:01:14,additional nuclinfo testcase,0.0
+1bd901d,2012-06-07T18:01:45,fixes Issue 112 (alig.fasta2select used outdated Biopython),1.0
+2f2f6f0,2012-06-07T18:08:26,merged origin/develop into local develop,0.0
+91ff415,2012-06-07T18:37:42,fixed for nuclinfo docs and testcases,1.0
+fe1683f,2012-06-07T18:46:18,added docs to TOPParser,0.0
+35b8c76,2012-06-07T18:47:17,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0.0
+48d78c1,2012-06-07T18:51:11,Merge branch 'develop' of https://code.google.com/p/mdanalysis into develop,0.0
+4339386.0,2012-06-08T11:31:01,fixed type selection,1.0
+d4610a5,2012-06-12T01:19:30,hbonds: fixed NH1NH2 --> NH1  NH2,0.0
+435430e,2012-06-16T18:12:35,fixes Issue 111 (qcprot would sometimes return NAN),1.0
+6a76463,2012-06-17T20:37:19,fixes Issue 113 (ClustalW would not be run in align.fasta2select()),1.0
+ee773d0,2012-06-26T09:11:22,version number changed to 0.7.6,0.0
+fdb8809,2012-06-26T11:24:46,HTML doc regenerated doc + corrected a few mistakes.,0.0
+9161c1a,2012-06-26T11:37:23,MDAnalysisTests.egg-info added to .gitignore,0.0
+6ba4667,2012-06-26T17:43:39,MANIFEST.in files corrected,0.0
+8ca4bd2,2012-07-03T19:29:07,HydrogenBond analysis: fixes and tests (Issue 103),0.0
+ae2fe77,2012-07-04T10:08:15,Documation regenerated,0.0
+93808b3,2012-07-04T10:53:46,Merge branch 'release-0.7.6',0.0
+e2b9522,2012-07-04T21:14:44,removed '(in development)' inside CHANGELOG,0.0
+365d54c,2012-07-04T21:15:39,Merge branch 'release-0.7.6',0.0

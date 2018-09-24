@@ -1,21 +1,21 @@
 hash,time,message,buggy
-0c9cf46,2012-02-03 12:49:44,new builder module: helper for creating CHARMM-ready structures,0
-ecfd6e4,2012-02-11 01:45:06,Writers do not modify coordinates in place anymore,0
-02319ba,2012-02-11 01:45:56,changed generic Exceptions to specific ones in DCD module,0
-e29e049,2012-02-12 00:26:53,updated PyPI summary with MDAnalysisTests,0
-c453b40,2012-02-12 01:02:37,Merge branch 'build',0
-54d8b90,2012-02-12 01:10:49,bumped release to 0.7.6-devel,0
-ed23f7d,2012-02-12 14:12:11,doc improvements (GNM and Universe),0
-b2589df,2012-02-12 14:15:58,regenerated online docs (includes MDAnalysis.analysis.gnm),0
-e686a9f,2012-02-12 14:41:35,testsuite: prepared setup.py for PyPI,0
-a862751,2012-02-12 21:35:18,maintainer scripts,0
-359cae0,2012-02-15 22:44:19,delaunay stuff deleted,0
-9d515b3,2012-02-15 22:52:53,"A few changes in sphinx configuration to make it more close to the default configuration. doc/Makefile fixed so ""make clean"" actually cleans something",0
-450ad43,2012-02-15 22:58:58,doc/sphinx/source/logos/LICENSE deleted to avoid lintian warnings. doc/sphinx/source/logos/AUTHORS was already fixed to include link to CC License text,0
-948d06d,2012-02-15 23:03:07,Version number changed back to 0.7.5.1,0
-b5f587f,2012-02-15 23:03:58,C files regenerated,0
-2787fb0,2012-02-15 23:06:20,MDAnalysisTests.egg_info added,0
-fb9ba38,2012-02-15 23:11:54,fixes issue #95,0
-740db3d,2012-02-15 23:11:54,fixes issue #95,0
-2c4dcde,2012-02-16 15:29:44,Merge branch 'master' of https://code.google.com/p/mdanalysis,0
-7387d8e,2012-02-16 15:55:37,MANIFEST.in corrected in testsuite to include license and related files,0
+0c9cf46,2012-02-03T12:49:44,new builder module: helper for creating CHARMM-ready structures,0.0
+ecfd6e4,2012-02-11T01:45:06,Writers do not modify coordinates in place anymore,0.0
+02319ba,2012-02-11T01:45:56,changed generic Exceptions to specific ones in DCD module,0.0
+e29e049,2012-02-12T00:26:53,updated PyPI summary with MDAnalysisTests,0.0
+c453b40,2012-02-12T01:02:37,Merge branch 'build',0.0
+54d8b90,2012-02-12T01:10:49,bumped release to 0.7.6-devel,0.0
+ed23f7d,2012-02-12T14:12:11,doc improvements (GNM and Universe),0.0
+b2589df,2012-02-12T14:15:58,regenerated online docs (includes MDAnalysis.analysis.gnm),0.0
+e686a9f,2012-02-12T14:41:35,testsuite: prepared setup.py for PyPI,0.0
+a862751,2012-02-12T21:35:18,maintainer scripts,0.0
+359cae0,2012-02-15T22:44:19,delaunay stuff deleted,0.0
+9d515b3,2012-02-15T22:52:53,"A few changes in sphinx configuration to make it more close to the default configuration. doc/Makefile fixed so ""make clean"" actually cleans something",0.0
+450ad43,2012-02-15T22:58:58,doc/sphinx/source/logos/LICENSE deleted to avoid lintian warnings. doc/sphinx/source/logos/AUTHORS was already fixed to include link to CC License text,0.0
+948d06d,2012-02-15T23:03:07,Version number changed back to 0.7.5.1,0.0
+b5f587f,2012-02-15T23:03:58,C files regenerated,0.0
+2787fb0,2012-02-15T23:06:20,MDAnalysisTests.egg_info added,0.0
+fb9ba38,2012-02-15T23:11:54,fixes issue #95,1.0
+740db3d,2012-02-15T23:11:54,fixes issue #95,1.0
+2c4dcde,2012-02-16T15:29:44,Merge branch 'master' of https://code.google.com/p/mdanalysis,0.0
+7387d8e,2012-02-16T15:55:37,MANIFEST.in corrected in testsuite to include license and related files,0.0

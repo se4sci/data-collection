@@ -1,52 +1,52 @@
 hash,time,message,buggy
-cfae8d2,2016-08-23 18:38:00,"Revert ""Removed Bazaar dependency and updated warnings in makemake""",0
-436a344,2016-08-23 18:38:00,"Revert ""[buildsys] Imported CPP option fixer""",0
-fd0390b,2016-08-23 18:38:01,"Revert ""[buildsys] Upgraded CPP options in test scripts""",0
-80f847d,2016-08-23 18:38:01,"Revert ""[buildsys] Upgraded CPP options in test inputs""",0
-d024975,2016-08-23 18:38:01,"Revert ""[buildsys] Re-upgraded CPP options in build-system internals after including recent ones""",0
-00ba060,2016-08-23 18:38:01,"Revert ""[buildsys] Re-upgraded CPP options in the source code after including recent ones""",0
-8a35ceb,2016-08-23 18:38:01,"Revert ""Made sure ViM swap files are ignored within the Abinit source tree""",0
-2987238,2016-08-23 18:38:01,"Revert ""[buildsys] Upgraded CPP options in build-system internals""",0
-27ca728,2016-08-23 18:38:01,"Revert ""[buildsys] Removed stale references to obsolete CPP options""",0
-8d2ae6f,2016-08-23 18:38:02,"Revert ""[buildsys] Upgraded CPP options in source code""",0
-9243553,2017-01-26 15:44:25,Upgraded PSML support to v1.0.1 API,0
-dba7260,2017-01-31 14:42:14,Merge remote-tracking branch 'trunk/release-8.2.1',0
-d0d0884,2017-01-31 15:12:42,Restored damages caused by the latest merge,0
-23d6722,2017-01-31 17:24:20,Fixed typo calling new PSML routine,0
-90cfbb6,2017-02-08 13:33:34,Upgraded PSML pseudos to version 1.0 of the format,0
-6eb9d58,2017-05-25 22:46:03,backport of Boltztrap fix of default energy window for DOS,0
-849915c,2017-05-26 10:19:20,anaddb thermo should be in production now,0
-8e6d67f,2017-05-26 10:27:02,add buffer,0
-d156353,2017-05-26 10:27:25,update release notes,0
-92b18cb,2017-05-26 11:51:32,update ref file,0
-c43ccfd,2017-05-27 13:02:02,Minor fixes,0
-af63efe,2017-05-27 16:52:18,Fix missing files (some input files) in the infos_html-x.y.z.tar.gz archive.,0
-8f12a5a,2017-05-27 17:35:52,Had introduced erroneously blank spaces in a makefile ...,0
-d9db084,2017-05-27 19:55:21,fix bug in out1dm reported by NAG: cnly me_fft == 0 should close temp_unit,0
-688499e,2017-05-28 08:45:09,Merge gmatteo/hotfix_out1dm/d9db into release-8.4.1,0
-272828c,2017-05-29 17:27:06,Stop the code if istwfk /= 1 and SCGW,0
-42b73d4,2017-05-30 12:53:38,Merge gmatteo/hotfix_scgw_istwfk/2728 into _gmatteo-8.4.1,0
-62d8f54,2017-05-30 17:32:57,Merge branch 'master' of abinit-repo:trunk/abinit,0
-f615451,2017-05-30 17:36:35,Restored identity between trunk and pouillon master branches,0
-2be541a,2017-05-30 17:38:18,Fixed ELPA2016 detection issue found thanks to EasyBuild,0
-5587524,2017-05-30 19:23:24,Improvement of the release notes.,0
-f2fd699,2017-05-30 19:27:21,Quick fix for vdw D3: chkinp test was to restrictive,0
-67556ad,2017-05-30 20:58:31,Merge branch _gmatteo-8.4.1/42b7 into release-8.4.1,0
-1665793,2017-05-30 21:03:23,Merge pouillon/hotfix-elpa2016/2be5 into _pouillon-8.4.1,0
-e797074,2017-05-31 14:20:22,Test: suppressing non-symmorphic symmetries for berryopt/=0 and kptopt/=3,0
-56a7038,2017-05-31 14:59:42,Cancle previous change,0
-faadc4b,2017-05-31 21:30:16,Merge torrent/quickfixes/56a7 into _torrent-8.4.1,0
-476e794,2017-06-01 05:18:06,Backport to v8.4.1 the fix for intel17 from Bernard Amadon (merge request 157),0
-5a31644,2017-06-01 05:44:51,Update release_notes-v8.4 (minor fixes).,0
-950aeab,2017-06-02 12:58:18,Quickfix: paral_kgb=1 shoulkd be ignored for DFPT (was OK in previous versions),0
-70274a8,2017-06-02 13:56:54,tests and input var description,0
-d0dbb1b,2017-06-02 17:18:23,Merge remote-tracking branch 'trunk/release-8.4.1' into release-8.4.1,0
-297d4fc,2017-06-02 21:35:22,Update the release notes,0
-247fc64,2017-06-02 21:58:12,Update files in order to finalize v8.4.1,0
-8065ef0,2017-06-02 21:59:43,apply python abi_yml2html.py,0
-7db5877,2017-06-02 22:00:56,Update to finalize v8.4.1,0
-082f456,2017-06-03 07:13:32,Suppress multibilint tests on ubu_intel_17.0_openmpi  because the problem had been fixed only in v8.5.0  not in v8.4.1 .,0
-ee2ce55,2017-06-03 12:20:38,Update some links,0
-6eadc99,2017-06-03 12:21:51,Update Boltztrap link,0
-ba91693,2017-06-03 12:25:11,Update the generated html files,0
-7673ae6,2017-06-03 16:40:03,Init v8.4.2,0
+cfae8d2,2016-08-23T18:38:00,"Revert ""Removed Bazaar dependency and updated warnings in makemake""",1.0
+436a344,2016-08-23T18:38:00,"Revert ""[buildsys] Imported CPP option fixer""",1.0
+fd0390b,2016-08-23T18:38:01,"Revert ""[buildsys] Upgraded CPP options in test scripts""",1.0
+80f847d,2016-08-23T18:38:01,"Revert ""[buildsys] Upgraded CPP options in test inputs""",1.0
+d024975,2016-08-23T18:38:01,"Revert ""[buildsys] Re-upgraded CPP options in build-system internals after including recent ones""",1.0
+00ba060,2016-08-23T18:38:01,"Revert ""[buildsys] Re-upgraded CPP options in the source code after including recent ones""",1.0
+8a35ceb,2016-08-23T18:38:01,"Revert ""Made sure ViM swap files are ignored within the Abinit source tree""",1.0
+2987238.0,2016-08-23T18:38:01,"Revert ""[buildsys] Upgraded CPP options in build-system internals""",1.0
+27ca728,2016-08-23T18:38:01,"Revert ""[buildsys] Removed stale references to obsolete CPP options""",1.0
+8d2ae6f,2016-08-23T18:38:02,"Revert ""[buildsys] Upgraded CPP options in source code""",1.0
+9243553.0,2017-01-26T15:44:25,Upgraded PSML support to v1.0.1 API,1.0
+dba7260,2017-01-31T14:42:14,Merge remote-tracking branch 'trunk/release-8.2.1',0.0
+d0d0884,2017-01-31T15:12:42,Restored damages caused by the latest merge,1.0
+23d6722,2017-01-31T17:24:20,Fixed typo calling new PSML routine,0.0
+90cfbb6,2017-02-08T13:33:34,Upgraded PSML pseudos to version 1.0 of the format,0.0
+6eb9d58,2017-05-25T22:46:03,backport of Boltztrap fix of default energy window for DOS,1.0
+849915c,2017-05-26T10:19:20,anaddb thermo should be in production now,0.0
+8e6d67f,2017-05-26T10:27:02,add buffer,0.0
+d156353,2017-05-26T10:27:25,update release notes,0.0
+92b18cb,2017-05-26T11:51:32,update ref file,0.0
+c43ccfd,2017-05-27T13:02:02,Minor fixes,1.0
+af63efe,2017-05-27T16:52:18,Fix missing files (some input files) in the infos_html-x.y.z.tar.gz archive.,1.0
+8f12a5a,2017-05-27T17:35:52,Had introduced erroneously blank spaces in a makefile ...,1.0
+d9db084,2017-05-27T19:55:21,fix bug in out1dm reported by NAG: cnly me_fft == 0 should close temp_unit,1.0
+688499e,2017-05-28T08:45:09,Merge gmatteo/hotfix_out1dm/d9db into release-8.4.1,0.0
+272828c,2017-05-29T17:27:06,Stop the code if istwfk /= 1 and SCGW,0.0
+42b73d4,2017-05-30T12:53:38,Merge gmatteo/hotfix_scgw_istwfk/2728 into _gmatteo-8.4.1,0.0
+62d8f54,2017-05-30T17:32:57,Merge branch 'master' of abinit-repo:trunk/abinit,0.0
+f615451,2017-05-30T17:36:35,Restored identity between trunk and pouillon master branches,0.0
+2be541a,2017-05-30T17:38:18,Fixed ELPA2016 detection issue found thanks to EasyBuild,1.0
+5587524.0,2017-05-30T19:23:24,Improvement of the release notes.,0.0
+f2fd699,2017-05-30T19:27:21,Quick fix for vdw D3: chkinp test was to restrictive,1.0
+67556ad,2017-05-30T20:58:31,Merge branch _gmatteo-8.4.1/42b7 into release-8.4.1,0.0
+1665793.0,2017-05-30T21:03:23,Merge pouillon/hotfix-elpa2016/2be5 into _pouillon-8.4.1,0.0
+e797074,2017-05-31T14:20:22,Test: suppressing non-symmorphic symmetries for berryopt/=0 and kptopt/=3,0.0
+56a7038,2017-05-31T14:59:42,Cancle previous change,1.0
+faadc4b,2017-05-31T21:30:16,Merge torrent/quickfixes/56a7 into _torrent-8.4.1,0.0
+476e794,2017-06-01T05:18:06,Backport to v8.4.1 the fix for intel17 from Bernard Amadon (merge request 157),1.0
+5a31644,2017-06-01T05:44:51,Update release_notes-v8.4 (minor fixes).,0.0
+950aeab,2017-06-02T12:58:18,Quickfix: paral_kgb=1 shoulkd be ignored for DFPT (was OK in previous versions),1.0
+70274a8,2017-06-02T13:56:54,tests and input var description,0.0
+d0dbb1b,2017-06-02T17:18:23,Merge remote-tracking branch 'trunk/release-8.4.1' into release-8.4.1,0.0
+297d4fc,2017-06-02T21:35:22,Update the release notes,0.0
+247fc64,2017-06-02T21:58:12,Update files in order to finalize v8.4.1,0.0
+8065ef0,2017-06-02T21:59:43,apply python abi_yml2html.py,0.0
+7db5877,2017-06-02T22:00:56,Update to finalize v8.4.1,0.0
+082f456,2017-06-03T07:13:32,Suppress multibilint tests on ubu_intel_17.0_openmpi  because the problem had been fixed only in v8.5.0  not in v8.4.1 .,0.0
+ee2ce55,2017-06-03T12:20:38,Update some links,0.0
+6eadc99,2017-06-03T12:21:51,Update Boltztrap link,0.0
+ba91693,2017-06-03T12:25:11,Update the generated html files,0.0
+7673ae6,2017-06-03T16:40:03,Init v8.4.2,0.0

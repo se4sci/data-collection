@@ -1,431 +1,431 @@
 hash,time,message,buggy
-f784f07,2016-07-26 15:28:31,Set up branch with load balancing code from master,0
-fc6270e,2016-07-29 16:35:03,Docs for load balance changes,0
-85f5862,2016-07-29 16:39:17,Comments,0
-66b4c9b,2016-08-01 18:58:52,implement modified version of balance and fix balance according to steve's suggestions and requirements,0
-b8ae885,2016-08-01 18:59:37,update documentation according to the modified implementation based on iain bethune's contributed code,0
-cc77679,2016-08-02 01:17:53,implement wall clock based load balancing cost function support,0
-db734c3,2016-08-02 01:24:00,disable debug output and include bond cost as well,0
-85cafde,2016-08-02 06:41:30,whitespace cleanup,0
-7d08d99,2016-08-02 06:42:30,improve c++-11 compliance. replace variable size stack allocation.,0
-f76f2c8,2016-08-02 07:32:44,minor tweaks and comment fixes,0
-0b0db20,2016-08-02 08:09:39,make it so that dynamic load balancing only uses the timing since the last balancing,0
-3cf6715,2016-08-02 16:53:12,be a bit more paranoid about initializing data structures,0
-eb273ab,2016-08-02 16:54:03,fix elusive uninitialized data bug reported by valgrind,0
-a5d38c0,2016-08-02 23:19:26,prototype implementation for extensible imbalance scheme,0
-34b34d8,2016-08-03 13:43:39,complete implementation for group based imbalance class,0
-23a4891,2016-08-03 18:34:24,re-factored balance command now works with group and time weights,0
-4114baf,2016-08-04 02:02:34,proof-of-concept implementation for neighbor list based balancing with yet unsolved problems,0
-8d38db0,2016-08-04 08:03:38,convert weight array from class member to local pointer to temporary storage,0
-b20108b,2016-08-04 08:04:21,incorporate refactored weighting into fix balance,0
-332d682,2016-08-04 08:18:55,remove unused class member,0
-2574891,2016-08-04 08:28:40,fix optional argument scanning bug,0
-c6699e1,2016-08-06 13:21:32,rewrote balancing to use per-atom data stored via fix property/atom,0
-bb40f63,2016-08-06 14:39:09,we cannot add a fix while creating a fix. move fix addintion to Fix::init(),0
-460bc14,2016-08-06 14:40:24,correct string hanlding with building custom property label,0
-4a536d7,2016-08-06 14:40:58,simplify and correct logic to pass weight to balancer algorithms,0
-ecc136b,2016-08-06 15:11:30,plug small memory leak,0
-b954283,2016-08-06 15:47:01,properly handle the case of neighbor lists never been computed before,0
-7e0dc7a,2016-08-06 19:30:17,whitespace cleanup,0
-7f20afe,2016-08-06 19:31:09,convert from using fix property/atom to using fix store,0
-0902b60,2016-08-06 22:48:59,add new imbalance module store  which allows to store weights in an atom property,0
-33a98d7,2016-08-06 22:49:23,remove upper limit for weigh factor on neighbor list and time weights,0
-fec59ee,2016-08-06 23:31:42,update documentation for refactored load-balancing,0
-17c1d3a,2016-08-08 14:55:58,Fix typo,0
-1976314,2016-08-10 20:52:49,improve the weight assignment algorithm for compute time based balancing,0
-8492212,2016-08-13 01:58:37,fix bug found by coverity scan,0
-40fd97b,2016-08-13 01:59:27,silence warnings about cases  that cannot happen,0
-243137d,2016-08-22 15:23:16,undo obsoleted changes to group command by iain bethune,0
-74b1caf,2016-08-22 15:46:01,undo changes that belong to a different branch or are redundant,0
-89fc866,2016-08-23 15:45:00,Fixing bug on Macs,0
-d007fac,2016-08-23 16:07:26,Fixing Kokkos output for number of OpenMP threads,0
-7bf1d9b,2016-08-23 22:17:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15489 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-7646321,2016-08-23 22:21:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15490 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-1e1f68c,2016-08-23 22:41:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15491 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-662335d,2016-08-23 22:44:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15492 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-647ffab,2016-08-23 22:45:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15493 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-a411023,2016-08-24 20:25:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15495 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-29d04c1,2016-08-24 20:31:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15496 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-e96ac8e,2016-08-25 16:55:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15497 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-bfb01b8,2016-08-25 16:59:45,Fixing compiler warning,0
-67958a8,2016-08-25 17:03:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15499 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-484e726,2016-08-25 17:15:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15500 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-b2470fd,2016-08-25 17:19:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15501 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-3366136,2016-08-26 15:43:13,Fixing Kokkos memory issue,0
-cc4b2dd,2016-08-26 15:50:25,Changing default,0
-8a7fecb,2016-08-26 16:32:11,Cleaning up code,0
-56628fe,2016-08-26 18:17:16,Adding Kokkos warning,0
-5348c1c,2016-08-26 18:37:44,Adding Kokkos warning,0
-646d5bb,2016-08-26 20:03:55,Added check for undefined hbonds,0
-90e6032,2016-08-27 22:18:45,new fix flow/gauss command,0
-18d05e0,2016-08-27 22:37:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15509 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-5714890,2016-08-27 22:40:11,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15510 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-4f49acf,2016-08-27 22:40:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15511 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-0ec1040,2016-08-27 22:41:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15513 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-fc4e631,2016-08-27 22:41:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15514 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-57b24b5,2016-08-27 23:07:03,updated USER-MANIFOLD doc pages,0
-a62bae7,2016-08-27 23:07:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15517 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-236241b,2016-08-27 23:09:15,sync with Git,0
-2993aec,2016-08-29 22:52:03,sync with Git,0
-958e3e6,2016-08-29 23:49:20,sync with Git,0
-dbaaf4d,2016-08-30 17:52:49,Removing aggressive_vectorization flag due to safety issue,0
-ba444a4,2016-08-30 19:33:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15522 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-76acb8c,2016-08-30 23:18:07,Fixing Kokkos memory issue,0
-10edfa2,2016-08-31 06:42:00,Merge branch 'integration' into weighted-balancing,0
-82859c4,2016-08-31 15:57:02,Merge branch 'integration' into weighted-balancing,0
-93401a8,2016-08-31 15:58:33,reintroduce pointer nullification for fix balance,0
-eac7217,2016-08-31 16:34:51,Merge remote-tracking branch 'lammps-rw/integration' into weighted-balancing,0
-9d8027c,2016-08-31 19:25:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15524 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-8f64398,2016-08-31 19:25:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15525 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-e3d0a32,2016-08-31 20:10:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15526 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-083ff54,2016-08-31 20:26:15,small bug fixes,0
-93c6c26,2016-08-31 21:08:32,sync with Git,0
-bcb2e6d,2016-08-31 21:10:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15529 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-ae45849,2016-08-31 21:11:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15530 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-fab2f01,2016-08-31 22:20:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15531 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f94bbc0,2016-08-31 22:21:11,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15532 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-159d722,2016-09-01 01:55:31,removing searchindex.js,0
-3769f90,2016-09-01 01:58:35,chunk doc pages,0
-0f7873c,2016-09-01 08:26:08,Merge branch 'integration' into weighted-balancing,0
-b4785cd,2016-09-01 20:53:40,Adding Kokkos version of PPPM,0
-a4914bc,2016-09-01 21:01:23,Adding Kokkos version of PPPM,0
-519a3ee,2016-09-01 21:45:00,Adding Kokkos version of PPPM,0
-fc80281,2016-09-02 22:45:29,Fixing bugs in per-atom,0
-688b1f1,2016-09-06 14:06:59,Fixing bug in Kokkos ReaxFF,0
-c21cf03,2016-09-06 16:33:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15540 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-1e11d2d,2016-09-06 16:38:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15541 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-4282107,2016-09-06 16:39:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15543 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-626ae8d,2016-09-06 16:52:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15544 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f9c1068,2016-09-06 16:53:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15545 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-56945a5,2016-09-06 21:55:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15547 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-74d0bc4,2016-09-06 22:05:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15548 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-5568320,2016-09-06 22:05:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15549 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-83f1396,2016-09-06 22:09:41,Reverting optimizations that hurt performance on some compilers,0
-5277242,2016-09-06 22:56:36,GH changes to doc pages,0
-06bac16,2016-09-06 22:58:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15553 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f67a972,2016-09-06 23:01:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15554 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-1ad033e,2016-09-06 23:02:50,Updating Kokkos lib,0
-39be418,2016-09-06 23:06:32,Updating Kokkos lib,0
-bf0c18a,2016-09-06 23:19:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15557 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-d369461,2016-09-07 15:49:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15558 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-ee4a1f0,2016-09-07 16:12:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15559 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-06b7d56,2016-09-07 17:17:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15560 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-b190abe,2016-09-08 20:20:32,sync with GH,0
-1dd7a13,2016-09-08 20:37:31,sync with GH,0
-99d5bf8,2016-09-10 19:48:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15563 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-a8d7ca3,2016-09-10 20:19:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15564 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-d913f5e,2016-09-12 21:09:35,Fixing Kokkos bugs,0
-fd5363f,2016-09-13 20:42:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15566 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-4230521,2016-09-13 20:43:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15567 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-342421b,2016-09-13 20:43:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15568 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-9f31183,2016-09-13 21:00:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15569 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-babaa83,2016-09-13 22:55:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15570 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-9d0e853,2016-09-13 22:58:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15571 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-b3fa207,2016-09-13 23:05:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15572 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-206f4e1,2016-09-13 23:06:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15573 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-90e22a7,2016-09-14 14:04:02,Merge branch 'integration' into weighted-balancing,0
-40b6882,2016-09-14 14:06:25,update html docs to be used with latest version of converter tools,0
-0f6d21a,2016-09-14 15:27:51,sync with Git,0
-b29782d,2016-09-14 15:33:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15577 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-b23e9f0,2016-09-14 19:29:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15579 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-cf33c0e,2016-09-15 16:59:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15580 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-2049fa7,2016-09-15 17:18:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15581 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-e14eab6,2016-09-15 21:01:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15582 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-54b2f3c,2016-09-15 21:02:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15583 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-6fd60f5,2016-09-16 16:20:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15588 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-7d77aea,2016-09-16 16:24:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15589 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-5336ec0,2016-09-16 16:26:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15590 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-ed53235,2016-09-16 16:29:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15591 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-484122b,2016-09-16 19:21:34,sync with GH,0
-900c839,2016-09-18 00:06:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15595 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-5583030,2016-09-20 14:52:43,sync with GH,0
-8b80d0c,2016-09-20 16:09:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15598 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-df0ed58,2016-09-20 16:12:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15599 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-af4a423,2016-09-20 16:14:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15600 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-4f941ab,2016-09-20 16:19:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15601 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-ed9f136,2016-09-20 16:20:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15602 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f81f0da,2016-09-20 16:20:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15603 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-ce36766,2016-09-20 16:21:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15604 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f1d3637,2016-09-20 16:26:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15605 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f86bd1f,2016-09-20 16:35:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15607 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-8944d48,2016-09-20 16:36:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15608 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-fe73c3e,2016-09-20 17:25:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15610 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-26b9b95,2016-09-20 18:04:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15611 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-3eee584,2016-09-20 18:08:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15612 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f8c8434,2016-09-20 22:39:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15613 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f1183cb,2016-09-21 11:28:15,Remove old copies of IPython notebooks,0
-a4c8c9b,2016-09-21 11:35:00,Strip IPython notebooks of output,0
-d3406df,2016-09-21 12:07:24,Updated instructions in IPython notebooks,0
-71f7dde,2016-09-21 15:26:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15614 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-72c5792,2016-09-21 15:40:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15615 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-0bcd901,2016-09-21 20:38:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15616 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-d7c6f57,2016-09-21 20:50:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15617 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-03c5ce6,2016-09-21 21:22:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15618 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-e7fb82a,2016-09-21 21:22:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15619 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-c382759,2016-09-21 21:25:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15620 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-a1364ad,2016-09-21 21:26:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15621 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-fc434b3,2016-09-21 21:29:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15622 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-0329aaa,2016-09-21 22:14:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15623 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-ca5ad04,2016-09-21 22:15:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15624 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-26e16ed,2016-09-21 22:31:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15625 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-6dd4480,2016-09-21 22:31:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15626 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-32872a7,2016-09-22 02:22:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15628 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-d0bbf3f,2016-09-22 02:22:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15629 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-c22df8d,2016-09-22 14:05:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15630 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-32cec47,2016-09-22 15:45:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15631 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-31e4170,2016-09-22 15:46:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15632 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-23781d6,2016-09-23 10:37:21,added respa to fix_flow_gauss  not fully understood yet,0
-08f0bf9,2016-09-23 14:37:53,new verion of balance weighting,0
-2a30b76,2016-09-23 16:49:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15633 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-3ce178d,2016-09-23 18:12:47,now understand how respa works in lammps,0
-e96ebb2,2016-09-23 18:57:16,adjusted default respa level to be outermost,0
-f718c54,2016-09-23 21:04:56,sync with GH,0
-8662662,2016-09-23 21:14:00,fix ti/spring,0
-c2cd439,2016-09-23 22:24:27,first draft of documentation for respa,0
-756cac0,2016-09-23 22:59:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15636 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-8a6e5ed,2016-09-23 22:59:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15637 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-da480bd,2016-09-23 23:00:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15638 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-24ff008,2016-09-23 23:06:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15639 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-50d5945,2016-09-23 23:06:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15640 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-c87f9ae,2016-09-26 11:59:30,Merge remote-tracking branch 'akohlmey/integration' into ipython-update-and-cleanup,0
-7453a4f,2016-09-26 14:39:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15642 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-5769c10,2016-09-26 14:39:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15643 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-47b52ed,2016-09-26 15:19:48,Merge branch 'integration' into balance2,0
-c31b026,2016-09-26 15:20:22,Merge branch 'integration' into weighted-balancing,0
-fb64ae6,2016-09-26 16:23:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15645 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-d0aa13b,2016-09-26 16:53:18,Fix broken link in Section_packages.txt,0
-67d4c07,2016-09-26 16:56:24,Do not escape underscore inside preformat blocks,0
-2c5f6e1,2016-09-26 18:13:18,fix a broken link that slipped through the cracks in the previous cleanup,0
-7732548,2016-09-26 18:14:32,correct issues related to the addition of fix cmap,0
-158599f,2016-09-26 18:25:36,Merge branch 'balance2' into weighted-balancing,0
-2af5c75,2016-09-26 18:32:01,correct issue from merge,0
-69a8842,2016-09-26 18:33:50,update load balance weights documentation for fix balance and balance,0
-8a951f9,2016-09-26 18:43:03,fix typo,0
-877a504,2016-09-26 18:44:25,Fix typo in Section_howto.txt,0
-a327711,2016-09-26 18:47:21,Add filter which merges preformatted sections,0
-53eac44,2016-09-26 23:32:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15646 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f280bd3,2016-09-26 23:34:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15647 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f9677e6,2016-09-27 10:52:27,released version of weighted balancing,0
-a3a3af6,2016-09-27 10:53:56,Merge branch 'balance' into integration,0
-063307c,2016-09-27 15:05:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15648 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-2b88050,2016-09-27 15:06:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15649 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-b68e954,2016-09-27 15:06:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15650 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-4363318,2016-09-27 15:08:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15651 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-9a2f738,2016-09-27 15:32:57,sync with SVN,0
-3570521,2016-09-27 15:34:08,enable multi-processor NEB replicas,0
-96f31d6,2016-09-27 15:35:41,Merge pull request #43 from akohlmey/doc-fixes,0
-829d11e,2016-09-27 15:36:10,Merge pull request #44 from rbberger/doc-fixes,0
-995ecea,2016-09-27 16:02:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15652 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-b66039b,2016-09-27 16:43:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15653 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-d1b8ffd,2016-09-27 16:49:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15656 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-2ae966c,2016-09-27 16:49:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15657 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-e1c6b6b,2016-09-27 17:01:45,correctly handle exceptions raised from subprocess module,0
-f9c2049,2016-09-27 17:12:17,need to ignore new fix cmap sources,0
-3333e4b,2016-09-27 17:21:42,Put snap before zbl to get more helpful error message,0
-1adf385,2016-09-27 17:36:02,correct bug and synchronize fix addforce respa level init with other fixes,0
-8c1d003,2016-09-27 18:20:06,correct typo in Make.py,0
-56b0856,2016-09-27 21:16:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15661 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-6fedf8d,2016-09-27 21:18:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15662 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-3486b7d,2016-09-27 21:24:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15663 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-1cfa49f,2016-09-27 21:28:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15664 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-1fbddc9,2016-09-27 21:31:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15665 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f82e0c5,2016-09-27 21:31:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15666 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-45e50b4,2016-09-27 21:37:17,sync with GH,0
-1ec3987,2016-09-28 14:36:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15669 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-f511c17,2016-09-28 14:37:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15670 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-446e7e7,2016-09-28 16:33:30,patch for allowing prd command to work with sorted atoms,0
-596b260,2016-09-28 16:36:04,Merge pull request #45 from akohlmey/small-bugfixes,0
-f6c77c3,2016-09-28 22:08:28,support dynamic groups with run style respa,0
-6897cc8,2016-09-28 22:29:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15671 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-bdd0f66,2016-09-28 22:32:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15672 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-1898254,2016-09-28 22:32:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15673 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0
-78a22be,2016-09-28 22:36:54,sync Make.py and fix addforce change with GHub,0
-a315dcd,2016-09-29 08:33:35,remove dead code,0
-5b2becd,2016-09-29 10:37:09,Merge branch 'integration' into new-master,0
-f7b5afe,2016-09-29 15:51:34,Merge pull request #184 from akohlmey/dynamic-groups-for-respa,0
-c88acc9,2016-09-29 22:59:46,make reader for target geometry file more resilient,0
-0eeb240,2016-09-30 07:22:47,whitespace cleanup  fix bug in looking for empty strings  improve read performance and handling of comments,0
-4337f2c,2016-09-30 07:39:12,include charmm22 and charmm36 cmap files and include date added signature,0
-cb7bd27,2016-09-30 07:39:45,flag header as C++ to emacs,0
-6d20006,2016-09-30 08:15:44,update colvars library to version 2016-09-30,0
-d4b074d,2016-09-30 09:09:44,enable dynamic groups for fix dt/reset,0
-b9d0f96,2016-09-30 09:17:55,change purge target in Makefile  also fixed one issue with Make.py,0
-91edee2,2016-09-30 09:20:25,Merge pull request #186 from akohlmey/small-bugfixes,0
-e2c7aca,2016-09-30 09:21:00,Merge pull request #187 from akohlmey/colvars-update-2016-09-30,0
-5bb85b4,2016-09-30 09:38:50,remove unused variable,0
-d45e333,2016-09-30 11:11:32,restrict choice of weight factors and guarantee that weights are >= 0.001,0
-035279d,2016-10-01 06:26:14,correct logic bug in bufix for fix tmd,0
-a3e05a2,2016-10-01 06:34:45,permission cleanup,0
-1985db4,2016-10-01 23:05:05,correct designation of meam supporting USER-OMP and meam/spline not,0
-c2e11df,2016-10-02 20:33:20,import updated charmm2lammps.pl script from Rober Latour,0
-3b94627,2016-10-03 06:52:30,properly handle -nohints flag  make -cmap flag take version as option. step version number,0
-690f913,2016-10-03 06:58:51,rebuild charmm2lammps example output files with updated tools,0
-45d2cc2,2016-10-03 07:03:42,permission update for ch2lmp tool folder,0
-6e719f2,2016-10-03 07:07:28,remove trailing whitespace,0
-03766db,2016-10-03 16:28:59,apply bugfix for MEAM provided by Wolfgang Verestek on lammps-users,0
-c3ff881,2016-10-03 17:57:33,added XOR operator to variable command,0
-e079362,2016-10-03 17:58:36,Merge pull request #190 from akohlmey/small-bufixes-and-enhancements,0
-ab92529,2016-10-03 17:59:21,Merge pull request #191 from akohlmey/updated-charmm2lammps,0
-11c2892,2016-10-04 09:49:09,Merge branch 'restrict-weights-and-weight-factors' of https://github.com/akohlmey/lammps,0
-91be47a,2016-10-04 11:43:12,Revert type checking commit from July,0
-e2caf5c,2016-10-04 13:57:21,Fix code path which allows passing a C++ ptr to PyLammps,0
-4381db8,2016-10-04 14:33:26,correct the bug discovered by stan due to uninitialized scale factors for eam/alloy/omp and eam/fs/omp,0
-c46be7d,2016-10-05 10:33:39,changes to imbalance weight factors,0
-6a97211,2016-10-05 10:54:08,Merge pull request #192 from rbberger/python-interface-bugfix,0
-030df74,2016-10-05 10:54:36,Merge pull request #193 from akohlmey/eam-bugfix,0
-d31121b,2016-10-05 15:22:48,USER-DPD: bugfix in unpack_comm_hybrid()  now works with hybrid atom style,0
-02bfa89,2016-10-05 15:46:20,adjustments to balancing weights and factors  also XOR op for formulas  if  dump_modify thresh,0
-c07a01c,2016-10-05 18:11:52,import updated README file for charmm2lammps.pl with CMAP support,0
-f32819d,2016-10-05 18:13:46,added tweak to write out the command line used for the conversion to the beginning of the LAMMPS input,0
-326fdf2,2016-10-05 18:20:09,added 1GB1 example from Robert Latour and update 1AC7 example files,0
-969d3cf,2016-10-05 18:25:40,Colvars update: make ABF check that the colvar isn't using already subtractAppliedForce,0
-8809a60,2016-10-05 18:26:21,Colvars update: issue a warning that cannot be ignored regarding total forces,0
-d7d321a,2016-10-05 18:41:45,some more updates to the README file to reflect the inclusion of the CMAP example and renamed file names,0
-f9f955d,2016-10-05 22:34:44,update include statement format,0
-d133167,2016-10-06 09:32:50,Merge branch 'master' of https://github.com/albapa/lammps into small-changes,0
-4921dc1,2016-10-06 10:47:08,bugfix for virial tally for improper style umbrella from Steven Vandenbrande (U Gent),0
-887981c,2016-10-06 10:47:08,bugfix for virial tally for improper style umbrella from Steven Vandenbrande (U Gent),0
-22ce671,2016-10-06 11:16:59,improved whitespace handling in msi2lmp for force fields and topologies,0
-83bcdb6,2016-10-06 11:27:18,bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS,0
-ef079ae,2016-10-06 11:27:18,bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS,0
-0853cdb,2016-10-06 11:47:08,update reference data files for updated/corrected clayff parameters,0
-fd16118,2016-10-06 12:02:41,removed dump_modify command,0
-8ea0633,2016-10-06 12:15:48,add NETCDF libs (as defined in QUIP) to the linking line if QUIP was built with NETCDF support,0
-493873f,2016-10-06 13:00:46,clean up doc src,0
-0f45cd6,2016-10-06 13:02:27,Merge pull request #196 from akohlmey/charmm-cmap-updates,0
-c213457,2016-10-06 13:02:52,Merge pull request #197 from giacomofiorin/colvars_2016-10-05,0
-e1e9a5c,2016-10-06 13:49:47,USER-DPD: math corrections in pair_exp6_rx.cpp (by Jim Larentzos),0
-27e76a7,2016-10-06 14:27:27,Merge branch 'USER-DPD_hybrid_atom_bugfix' of https://github.com/timattox/lammps_USER-DPD into small-changes,0
-60a031e,2016-10-06 14:28:08,Merge branch 'USER-DPD_pair_exp6_rx_mathfix' of https://github.com/timattox/lammps_USER-DPD into small-changes,0
-b3d2fb9,2016-10-06 15:47:41,new fix wall/gran/region command  REBO bug fix  new example log files,0
-0b5d715,2016-10-06 15:48:18,collected documentation updates and corrections from LAMMPS-ICMS,0
-54fc194,2016-10-06 15:49:24,Merge pull request #199 from akohlmey/small-changes,0
-e9fed80,2016-10-06 15:49:44,Merge pull request #202 from akohlmey/doc-formatting-fixes,0
-9507a78,2016-10-06 16:01:32,USER-DPD: whitespace and indentation fixes,0
-f92618a,2016-10-06 17:21:38,"Revert ""bugfix for virial tally for improper style umbrella from Steven Vandenbrande (U Gent)""",0
-19984c9,2016-10-06 17:23:10,"Revert ""bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS""",0
-e78b426,2016-10-06 20:23:06,Fix issue with external links containing anchors,0
-7f3a7c5,2016-10-06 20:33:24,Fix broken link,0
-615a2da,2016-10-06 21:48:06,Migrate changes from GRANULAR to USER-OMP,0
-49c45ab,2016-10-07 09:44:57,edited documentation,0
-72ac073,2016-10-07 09:50:00,edited documentation,0
-e27ed6c,2016-10-07 14:52:23,USER-DPD: Added support to use VV integrator with USER-DPD if desired. Includes documentation and examples. NOTE: VV requires very small timesteps under isoenergetic conditions. Consider using fix_shardlow instead  since this VV support is primarily for comparison purposes.,0
-9789f04,2016-10-07 15:55:35,USER-DPD: update the USER/dpd examples and their reference outputs,0
-e01e90e,2016-10-08 10:45:22,workaround for double free issue when using USER-COLVARS with lammps code loaded as shared library into a standalone executable,0
-683689c,2016-10-08 11:00:23,revert to previous style conventions for size_t constants,0
-dd192ca,2016-10-10 09:15:42,whitespace cleanup,0
-fca6d72,2016-10-10 09:16:21,completed synchronization with non-threaded version,0
-144e6a8,2016-10-10 09:40:09,whitespace cleanup,0
-a2b0840,2016-10-10 13:40:33,USER-DPD: Add atom_style compatibility checks in fix_eos_*.cpp files.,0
-467bcad,2016-10-10 13:57:37,Merge pull request #204 from rbberger/fix-user-omp,0
-27dac02,2016-10-10 13:58:16,Merge pull request #209 from akohlmey/static-double-deallocation-workaround,0
-ed8cc82,2016-10-10 13:59:01,Merge pull request #211 from akohlmey/add-respa-to-fix-flow-gauss,0
-e70d530,2016-10-10 13:59:27,Merge pull request #203 from rbberger/txt2rst-external-link-fix,0
-bb0bfd5,2016-10-10 23:55:36,Merge branch 'master' into improper-virial-bugfixes,0
-b00b40b,2016-10-11 08:03:59,make no-lib should also remove MPIIO and USER-LB packages,0
-04f5ead,2016-10-11 12:39:52,added LAST option to dump_modify thresh  more restart info printed out to screen,0
-3e8e291,2016-10-11 12:42:08,Merge pull request #213 from akohlmey/improper-virial-bugfixes,0
-803dc57,2016-10-11 12:42:53,Merge pull request #214 from akohlmey/make-no-lib-no-mpiio,0
-6f11629,2016-10-11 13:39:25,Merge pull request #207 from timattox/USER-DPD_new_VV_for_DPD,0
-fbf7df1,2016-10-11 13:40:00,Merge pull request #212 from timattox/USER-DPD_fix_eos_atom_style_checks,0
-0eb7fbf,2016-10-11 15:43:59,tweaks to new USER-DPD docs,0
-559637f,2016-10-11 16:11:29,USER-DPD Bugfix: reset_dt() is not called when I thought it should be called. Move the calculation of dtsqrt inside FixShardlow::initial_integrate(),0
-2f07a62,2016-10-11 16:30:41,Forgot to remove my call to reset_dt(),0
-ecb03dd,2016-10-11 23:03:18,import lammps-netcdf code as USER-NC-DUMP package,0
-69cb831,2016-10-11 23:39:37,import dump nc and dump nc/mpiio from lammps-netcdf as USER-NC-DUMP package by lars pastewka,0
-b758600,2016-10-11 23:50:45,updates for recent changes to the manual,0
-e10ea91,2016-10-11 23:51:42,add doc file to toctree,0
-39a2203,2016-10-11 23:57:40,correct broken link,0
-adc98e0,2016-10-11 23:58:36,whitespace cleanup in USER-DPD,0
-6b4ab0a,2016-10-12 00:00:21,update .gitignore,0
-c24bf51,2016-10-12 00:00:53,update #include statements for system includes,0
-da66c1e,2016-10-12 00:07:52,update #include directives to match current LAMMPS coding conventions,0
-2e8edbd,2016-10-12 06:53:37,USER-SMD was missing from PACKLIB variable,0
-f8a26dd,2016-10-12 07:26:03,update Timer::force_timeout() to trigger at next loop iteration,0
-4e3a550,2016-10-12 07:30:10,Merge pull request #215 from timattox/USER-DPD_bugfix_for_dtsqrt,0
-4a5d9ea,2016-10-12 07:32:08,Merge pull request #217 from akohlmey/small-fixes,0
-63e71cd,2016-10-12 07:35:47,patch to add DPD-VV,0
-4958e11,2016-10-12 15:46:46,USER-DPD bugfix: Properly initialize the local temperature averaging array.,0
-fcb5271,2016-10-12 15:56:45,USER-DPD: Initialize the dpdThetaLocal array consistently in fix_rx,0
-0b426da,2016-10-12 18:36:38,do not require the LAMMPS shared library when loading the python wrapper from inside LAMMPS,0
-e4ff812,2016-10-13 08:22:08,fix typo,0
-95cca1b,2016-10-13 11:40:44,Allow building other targets without Python3 and virtualenv,0
-2c8a7a3,2016-10-13 16:55:53,bug fix for fix GCMC w/ fix shake  enhance of fix wall/gran/region with restarting,0
-40f2310,2016-10-13 16:56:19,Merge pull request #218 from timattox/USER-DPD_fix_rx_init_bugfix,0
-5aefb2a,2016-10-13 16:58:35,Merge pull request #219 from akohlmey/python-no-double-load,0
-d11363c,2016-10-13 17:00:23,Merge pull request #220 from rbberger/fix-doc-makefile,0
-411ecca,2016-10-14 07:27:14,plug memory leak,0
-d07703e,2016-10-14 07:27:40,re-apply bugfix from two years ago,0
-c9c66ca,2016-10-14 07:28:25,replace unsafe code,0
-deceb9d,2016-10-14 07:31:52,remove assignment without effect,0
-f67975f,2016-10-14 07:37:06,apply proper initialization and remove redundant variable declaration,0
-909ec2c,2016-10-14 11:48:24,remove unused class members,0
-e77e1f6,2016-10-14 19:40:51,replace complex solution to implement a soft exit with simpler one,0
-e7825ba,2016-10-15 07:30:07,import fix halt prototype code with corrections for soft exit,0
-c5513c4,2016-10-17 19:56:18,provide an accessor for names of LAMMPS variables,0
-954d536,2016-10-18 09:27:01,added bondmax method to fix halt,0
-003581c,2016-10-18 11:16:28,final changes to fix halt,0
-6eadd45,2016-10-18 11:16:44,Merge branch 'halt2',0
-394c3bb,2016-10-18 12:20:49,add Timer::reset_timeout() API  that allows restoring the previous timeout setting after a forced timeout,0
-1f1c872,2016-10-18 12:21:27,"add support for ""error continue"" option  which resets the timer timeout setting after a soft exit",0
-713b2af,2016-10-18 12:58:25,Merge pull request #221 from akohlmey/collected-bugfixes,0
-2106dce,2016-10-18 13:11:40,new fix halt command  other sundry small bug fixes,0
-3e88fb5,2016-10-18 13:54:15,Merge branch 'master' into collected-bugfixes,0
-2c5ea9f,2016-10-18 14:05:08,reapply changes to the timer class that got lost somehow,0
-1f7693f,2016-10-18 14:06:43,fix typo,0
-a752966,2016-10-18 14:07:05,Merge branch 'collected-bugfixes' of github.com:akohlmey/lammps into collected-bugfixes,0
-4502d32,2016-10-18 14:45:06,updated Makefile.lammps for NetCDF support based on suggestions from lars pastewka,0
-ae77664,2016-10-18 14:45:25,forgot to include USER-NC-DUMP in PACKUSER variable,0
-2b47fa6,2016-10-18 15:05:30,update Makefile.lammps and add README according to suggestions by lars pastewka,0
-6e54443,2016-10-18 15:11:22,make plain nc dump style a compile time option as well,0
-27796b4,2016-10-18 15:32:20,avoid distracting error output,0
-5a6dea7,2016-10-18 15:36:18,Merge branch 'master' into user-nc-dump,0
-7b7cb29,2016-10-18 22:26:47,add mixing for pair styles gauss and gauss/cut contributed by andrew jewett. also add support for write_data.,0
-019bc0b,2016-10-19 07:39:03,fix typos in Makefile.lammps for NetCDF support,0
-ccca642,2016-10-19 08:08:52,fix typo,0
-efc7b23,2016-10-19 08:33:59,Merge pull request #216 from akohlmey/user-nc-dump,0
-e0ed218,2016-10-19 08:36:52,Merge pull request #224 from akohlmey/get-vars,0
-393337e,2016-10-19 08:37:32,Merge pull request #226 from akohlmey/pair-gauss-mixing,0
-58141e0,2016-10-19 08:41:44,text edit,0
-0891ed8,2016-10-19 08:56:19,Merge pull request #228 from akohlmey/correct-prd-for-bigbig,0
-b0cf1de,2016-10-19 08:57:54,Merge pull request #229 from akohlmey/small-corrections,0
-3d25478,2016-10-19 08:58:22,Merge branch 'master' of github.com:lammps/lammps,0
-86f5b51,2016-10-19 09:05:25,recognize any word starting with FP as FPRIME style table,0
-566effc,2016-10-19 09:08:20,account for new fix halt properly in PDF and online docs,0
-2634468,2016-10-19 10:42:02,dead code removal,0
-1a10857,2016-10-19 10:43:25,make PRD code compatible with -DLAMMPS_BIGBIG,0
-ffb8eb3,2016-10-19 10:44:38,"Revert ""recognize any word starting with FP as FPRIME style table""",0
-9954d5d,2016-10-19 10:47:07,forgot pair table change,0
-e835992,2016-10-19 15:58:50,update packages section in manual with information about USER-NC-DUMP,0
-8c3f5cb,2016-10-20 09:27:26,support generation of manual in ePUB format,0
-f022f6d,2016-10-20 14:40:18,fix various formatting and broken link issues identified by ebook-convert,0
-2cf77ff,2016-10-20 16:16:17,Add support for ebook generation in ePUB and mobi format,0
-a957227,2016-10-20 16:27:00,"Revert ""support generation of manual in ePUB format""",0
-6cd6c10,2016-10-20 19:27:18,Merge branch 'collected-small-changes' into collected-doc-fixes,0
-a2e34aa,2016-10-21 11:55:36,make certain  that atom->maxspecial is incremented with extra special space,0
-ed3f02f,2016-10-21 12:04:48,ignore generated PDF and ePUB files,0
-6742fb6,2016-10-21 12:05:21,remove mobi file format creation from makefile and explain it in README instead,0
-607246f,2016-10-21 13:25:53,ignore mobi file as well,0
-991034b,2016-10-21 13:54:34,have bond style table exit when bond length is outside table range,0
-db36c8b,2016-10-21 14:51:09,stop with error  if molecule command requires special bond auto-generation before box is defined,0
-bc44988,2016-10-23 15:18:25,correct typo in write_dump docs,0
-4f69d91,2016-10-24 08:12:08,Merge pull request #230 from akohlmey/manual-in-ebook-format,0
-477ddaf,2016-10-24 08:15:08,Merge pull request #232 from akohlmey/small-bugfixes,0
-ad57a17,2016-10-24 16:48:20,Add C-linkage wrapper for colvarscript (useful with ctypes),0
-c243093,2016-10-24 17:05:47,Fix wall forces and subtractAppliedForce for extended-Lagrangian ABF,0
-be2d155,2016-10-24 17:08:36,Minor changes and fixes not relevant to LAMMPS,0
-e02505c,2016-10-24 17:11:09,Add ensemble-biased metadynamics (Fabrizio Marinelli  NIH),0
-7b89e47,2016-10-24 17:12:28,apply corrections to issues reported by static code analysis,0
-512c413,2016-10-24 17:13:21,whitespace cleanup,0
-182141b,2016-10-24 17:13:34,Make SMP parallelism for Colvars optional,0
-ba6d152,2016-10-24 17:34:28,Merge branch 'colvars-2016-10-24' of https://github.com/giacomofiorin/lammps into colvars-update,0
-f8367e3,2016-10-24 17:49:53,update documentation pdf for updated colvars lib,0
-9c81ad1,2016-10-25 09:45:55,doc page changes,0
-eca96e2,2016-10-25 09:46:07,Merge branch 'doc',0
-6b33499,2016-10-25 10:30:34,Merge pull request #231 from akohlmey/collected-doc-fixes,0
-ad5f7c4,2016-10-25 10:32:41,Merge pull request #238 from giacomofiorin/colvars-2016-10-24,0
-efaa8fe,2016-10-25 10:32:55,Merge pull request #239 from akohlmey/static-analysis-fixes,0
-52dd9ae,2016-10-25 11:55:09,Merge branch 'master' into collected-doc-fixes,0
-1a436bd,2016-10-25 11:58:42,Merge branch 'collected-doc-fixes' of github.com:akohlmey/lammps into collected-doc-fixes,0
-63eada2,2016-10-25 12:12:48,fix issue with docs for orientorder/atom compute reported by @andeplane,0
-d9891ab,2016-10-27 09:34:04,new library functions,0
+f784f07,2016-07-26T15:28:31,Set up branch with load balancing code from master,0.0
+fc6270e,2016-07-29T16:35:03,Docs for load balance changes,0.0
+85f5862,2016-07-29T16:39:17,Comments,0.0
+66b4c9b,2016-08-01T18:58:52,implement modified version of balance and fix balance according to steve's suggestions and requirements,0.0
+b8ae885,2016-08-01T18:59:37,update documentation according to the modified implementation based on iain bethune's contributed code,0.0
+cc77679,2016-08-02T01:17:53,implement wall clock based load balancing cost function support,0.0
+db734c3,2016-08-02T01:24:00,disable debug output and include bond cost as well,0.0
+85cafde,2016-08-02T06:41:30,whitespace cleanup,0.0
+7d08d99,2016-08-02T06:42:30,improve c++-11 compliance. replace variable size stack allocation.,0.0
+f76f2c8,2016-08-02T07:32:44,minor tweaks and comment fixes,0.0
+0b0db20,2016-08-02T08:09:39,make it so that dynamic load balancing only uses the timing since the last balancing,0.0
+3cf6715,2016-08-02T16:53:12,be a bit more paranoid about initializing data structures,0.0
+eb273ab,2016-08-02T16:54:03,fix elusive uninitialized data bug reported by valgrind,1.0
+a5d38c0,2016-08-02T23:19:26,prototype implementation for extensible imbalance scheme,0.0
+34b34d8,2016-08-03T13:43:39,complete implementation for group based imbalance class,0.0
+23a4891,2016-08-03T18:34:24,re-factored balance command now works with group and time weights,0.0
+4114baf,2016-08-04T02:02:34,proof-of-concept implementation for neighbor list based balancing with yet unsolved problems,0.0
+8d38db0,2016-08-04T08:03:38,convert weight array from class member to local pointer to temporary storage,0.0
+b20108b,2016-08-04T08:04:21,incorporate refactored weighting into fix balance,0.0
+332d682,2016-08-04T08:18:55,remove unused class member,0.0
+2574891.0,2016-08-04T08:28:40,fix optional argument scanning bug,1.0
+c6699e1,2016-08-06T13:21:32,rewrote balancing to use per-atom data stored via fix property/atom,0.0
+bb40f63,2016-08-06T14:39:09,we cannot add a fix while creating a fix. move fix addintion to Fix::init(),1.0
+460bc14,2016-08-06T14:40:24,correct string hanlding with building custom property label,0.0
+4a536d7,2016-08-06T14:40:58,simplify and correct logic to pass weight to balancer algorithms,0.0
+ecc136b,2016-08-06T15:11:30,plug small memory leak,1.0
+b954283,2016-08-06T15:47:01,properly handle the case of neighbor lists never been computed before,0.0
+7e0dc7a,2016-08-06T19:30:17,whitespace cleanup,0.0
+7f20afe,2016-08-06T19:31:09,convert from using fix property/atom to using fix store,1.0
+0902b60,2016-08-06T22:48:59,add new imbalance module store  which allows to store weights in an atom property,0.0
+33a98d7,2016-08-06T22:49:23,remove upper limit for weigh factor on neighbor list and time weights,0.0
+fec59ee,2016-08-06T23:31:42,update documentation for refactored load-balancing,0.0
+17c1d3a,2016-08-08T14:55:58,Fix typo,0.0
+1976314.0,2016-08-10T20:52:49,improve the weight assignment algorithm for compute time based balancing,0.0
+8492212.0,2016-08-13T01:58:37,fix bug found by coverity scan,1.0
+40fd97b,2016-08-13T01:59:27,silence warnings about cases  that cannot happen,0.0
+243137d,2016-08-22T15:23:16,undo obsoleted changes to group command by iain bethune,0.0
+74b1caf,2016-08-22T15:46:01,undo changes that belong to a different branch or are redundant,0.0
+89fc866,2016-08-23T15:45:00,Fixing bug on Macs,1.0
+d007fac,2016-08-23T16:07:26,Fixing Kokkos output for number of OpenMP threads,1.0
+7bf1d9b,2016-08-23T22:17:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15489 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+7646321.0,2016-08-23T22:21:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15490 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+1e1f68c,2016-08-23T22:41:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15491 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+662335d,2016-08-23T22:44:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15492 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+647ffab,2016-08-23T22:45:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15493 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+a411023,2016-08-24T20:25:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15495 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+29d04c1,2016-08-24T20:31:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15496 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+e96ac8e,2016-08-25T16:55:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15497 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+bfb01b8,2016-08-25T16:59:45,Fixing compiler warning,1.0
+67958a8,2016-08-25T17:03:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15499 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+484e726,2016-08-25T17:15:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15500 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+b2470fd,2016-08-25T17:19:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15501 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+3366136.0,2016-08-26T15:43:13,Fixing Kokkos memory issue,1.0
+cc4b2dd,2016-08-26T15:50:25,Changing default,0.0
+8a7fecb,2016-08-26T16:32:11,Cleaning up code,0.0
+56628fe,2016-08-26T18:17:16,Adding Kokkos warning,0.0
+5348c1c,2016-08-26T18:37:44,Adding Kokkos warning,0.0
+646d5bb,2016-08-26T20:03:55,Added check for undefined hbonds,0.0
+90e6032,2016-08-27T22:18:45,new fix flow/gauss command,1.0
+18d05e0,2016-08-27T22:37:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15509 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+5714890.0,2016-08-27T22:40:11,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15510 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+4f49acf,2016-08-27T22:40:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15511 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+0ec1040,2016-08-27T22:41:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15513 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+fc4e631,2016-08-27T22:41:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15514 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+57b24b5,2016-08-27T23:07:03,updated USER-MANIFOLD doc pages,0.0
+a62bae7,2016-08-27T23:07:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15517 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+236241b,2016-08-27T23:09:15,sync with Git,0.0
+2993aec,2016-08-29T22:52:03,sync with Git,0.0
+958000000000.0,2016-08-29T23:49:20,sync with Git,0.0
+dbaaf4d,2016-08-30T17:52:49,Removing aggressive_vectorization flag due to safety issue,0.0
+ba444a4,2016-08-30T19:33:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15522 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+76acb8c,2016-08-30T23:18:07,Fixing Kokkos memory issue,1.0
+10edfa2,2016-08-31T06:42:00,Merge branch 'integration' into weighted-balancing,0.0
+82859c4,2016-08-31T15:57:02,Merge branch 'integration' into weighted-balancing,0.0
+93401a8,2016-08-31T15:58:33,reintroduce pointer nullification for fix balance,1.0
+eac7217,2016-08-31T16:34:51,Merge remote-tracking branch 'lammps-rw/integration' into weighted-balancing,0.0
+9d8027c,2016-08-31T19:25:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15524 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+8f64398,2016-08-31T19:25:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15525 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+e3d0a32,2016-08-31T20:10:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15526 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+083ff54,2016-08-31T20:26:15,small bug fixes,1.0
+93c6c26,2016-08-31T21:08:32,sync with Git,0.0
+bcb2e6d,2016-08-31T21:10:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15529 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+ae45849,2016-08-31T21:11:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15530 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+fab2f01,2016-08-31T22:20:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15531 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f94bbc0,2016-08-31T22:21:11,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15532 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+159d722,2016-09-01T01:55:31,removing searchindex.js,0.0
+3769f90,2016-09-01T01:58:35,chunk doc pages,0.0
+0f7873c,2016-09-01T08:26:08,Merge branch 'integration' into weighted-balancing,0.0
+b4785cd,2016-09-01T20:53:40,Adding Kokkos version of PPPM,0.0
+a4914bc,2016-09-01T21:01:23,Adding Kokkos version of PPPM,0.0
+519a3ee,2016-09-01T21:45:00,Adding Kokkos version of PPPM,0.0
+fc80281,2016-09-02T22:45:29,Fixing bugs in per-atom,1.0
+688b1f1,2016-09-06T14:06:59,Fixing bug in Kokkos ReaxFF,1.0
+c21cf03,2016-09-06T16:33:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15540 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+1e11d2d,2016-09-06T16:38:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15541 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+4282107.0,2016-09-06T16:39:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15543 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+626ae8d,2016-09-06T16:52:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15544 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f9c1068,2016-09-06T16:53:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15545 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+56945a5,2016-09-06T21:55:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15547 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+74d0bc4,2016-09-06T22:05:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15548 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+5568320.0,2016-09-06T22:05:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15549 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+83f1396,2016-09-06T22:09:41,Reverting optimizations that hurt performance on some compilers,0.0
+5277242.0,2016-09-06T22:56:36,GH changes to doc pages,0.0
+06bac16,2016-09-06T22:58:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15553 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f67a972,2016-09-06T23:01:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15554 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+1ad033e,2016-09-06T23:02:50,Updating Kokkos lib,0.0
+39be418,2016-09-06T23:06:32,Updating Kokkos lib,0.0
+bf0c18a,2016-09-06T23:19:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15557 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+d369461,2016-09-07T15:49:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15558 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+ee4a1f0,2016-09-07T16:12:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15559 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+06b7d56,2016-09-07T17:17:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15560 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+b190abe,2016-09-08T20:20:32,sync with GH,0.0
+1dd7a13,2016-09-08T20:37:31,sync with GH,0.0
+99d5bf8,2016-09-10T19:48:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15563 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+a8d7ca3,2016-09-10T20:19:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15564 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+d913f5e,2016-09-12T21:09:35,Fixing Kokkos bugs,1.0
+fd5363f,2016-09-13T20:42:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15566 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+4230521.0,2016-09-13T20:43:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15567 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+342421b,2016-09-13T20:43:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15568 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+9f31183,2016-09-13T21:00:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15569 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+babaa83,2016-09-13T22:55:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15570 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+9d0e853,2016-09-13T22:58:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15571 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+b3fa207,2016-09-13T23:05:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15572 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+206f4e1,2016-09-13T23:06:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15573 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+90e22a7,2016-09-14T14:04:02,Merge branch 'integration' into weighted-balancing,0.0
+40b6882,2016-09-14T14:06:25,update html docs to be used with latest version of converter tools,0.0
+0f6d21a,2016-09-14T15:27:51,sync with Git,0.0
+b29782d,2016-09-14T15:33:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15577 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+b23e9f0,2016-09-14T19:29:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15579 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+cf33c0e,2016-09-15T16:59:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15580 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+2049fa7,2016-09-15T17:18:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15581 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+e14eab6,2016-09-15T21:01:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15582 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+54b2f3c,2016-09-15T21:02:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15583 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+6fd60f5,2016-09-16T16:20:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15588 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+7d77aea,2016-09-16T16:24:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15589 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+5336ec0,2016-09-16T16:26:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15590 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+ed53235,2016-09-16T16:29:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15591 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+484122b,2016-09-16T19:21:34,sync with GH,0.0
+900c839,2016-09-18T00:06:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15595 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+5583030.0,2016-09-20T14:52:43,sync with GH,0.0
+8b80d0c,2016-09-20T16:09:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15598 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+df0ed58,2016-09-20T16:12:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15599 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+af4a423,2016-09-20T16:14:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15600 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+4f941ab,2016-09-20T16:19:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15601 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+ed9f136,2016-09-20T16:20:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15602 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f81f0da,2016-09-20T16:20:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15603 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+ce36766,2016-09-20T16:21:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15604 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f1d3637,2016-09-20T16:26:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15605 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f86bd1f,2016-09-20T16:35:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15607 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+8944d48,2016-09-20T16:36:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15608 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+fe73c3e,2016-09-20T17:25:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15610 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+26b9b95,2016-09-20T18:04:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15611 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+3eee584,2016-09-20T18:08:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15612 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f8c8434,2016-09-20T22:39:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15613 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f1183cb,2016-09-21T11:28:15,Remove old copies of IPython notebooks,0.0
+a4c8c9b,2016-09-21T11:35:00,Strip IPython notebooks of output,0.0
+d3406df,2016-09-21T12:07:24,Updated instructions in IPython notebooks,0.0
+71f7dde,2016-09-21T15:26:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15614 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+72c5792,2016-09-21T15:40:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15615 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+0bcd901,2016-09-21T20:38:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15616 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+d7c6f57,2016-09-21T20:50:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15617 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+03c5ce6,2016-09-21T21:22:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15618 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+e7fb82a,2016-09-21T21:22:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15619 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+c382759,2016-09-21T21:25:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15620 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+a1364ad,2016-09-21T21:26:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15621 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+fc434b3,2016-09-21T21:29:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15622 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+0329aaa,2016-09-21T22:14:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15623 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+ca5ad04,2016-09-21T22:15:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15624 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+26e16ed,2016-09-21T22:31:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15625 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+6dd4480,2016-09-21T22:31:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15626 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+32872a7,2016-09-22T02:22:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15628 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+d0bbf3f,2016-09-22T02:22:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15629 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+c22df8d,2016-09-22T14:05:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15630 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+32cec47,2016-09-22T15:45:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15631 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+31e4170,2016-09-22T15:46:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15632 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+23781d6,2016-09-23T10:37:21,added respa to fix_flow_gauss  not fully understood yet,0.0
+08f0bf9,2016-09-23T14:37:53,new verion of balance weighting,0.0
+2a30b76,2016-09-23T16:49:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15633 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+3ce178d,2016-09-23T18:12:47,now understand how respa works in lammps,0.0
+e96ebb2,2016-09-23T18:57:16,adjusted default respa level to be outermost,0.0
+f718c54,2016-09-23T21:04:56,sync with GH,0.0
+8662662.0,2016-09-23T21:14:00,fix ti/spring,1.0
+c2cd439,2016-09-23T22:24:27,first draft of documentation for respa,0.0
+756cac0,2016-09-23T22:59:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15636 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+8a6e5ed,2016-09-23T22:59:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15637 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+da480bd,2016-09-23T23:00:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15638 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+24ff008,2016-09-23T23:06:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15639 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+50d5945,2016-09-23T23:06:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15640 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+c87f9ae,2016-09-26T11:59:30,Merge remote-tracking branch 'akohlmey/integration' into ipython-update-and-cleanup,0.0
+7453a4f,2016-09-26T14:39:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15642 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+5769c10,2016-09-26T14:39:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15643 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+47b52ed,2016-09-26T15:19:48,Merge branch 'integration' into balance2,0.0
+c31b026,2016-09-26T15:20:22,Merge branch 'integration' into weighted-balancing,0.0
+fb64ae6,2016-09-26T16:23:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15645 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+d0aa13b,2016-09-26T16:53:18,Fix broken link in Section_packages.txt,1.0
+67d4c07,2016-09-26T16:56:24,Do not escape underscore inside preformat blocks,0.0
+2c5f6e1,2016-09-26T18:13:18,fix a broken link that slipped through the cracks in the previous cleanup,1.0
+7732548.0,2016-09-26T18:14:32,correct issues related to the addition of fix cmap,1.0
+158599f,2016-09-26T18:25:36,Merge branch 'balance2' into weighted-balancing,0.0
+2af5c75,2016-09-26T18:32:01,correct issue from merge,1.0
+69a8842,2016-09-26T18:33:50,update load balance weights documentation for fix balance and balance,0.0
+8a951f9,2016-09-26T18:43:03,fix typo,0.0
+877a504,2016-09-26T18:44:25,Fix typo in Section_howto.txt,1.0
+a327711,2016-09-26T18:47:21,Add filter which merges preformatted sections,0.0
+53eac44,2016-09-26T23:32:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15646 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f280bd3,2016-09-26T23:34:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15647 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f9677e6,2016-09-27T10:52:27,released version of weighted balancing,0.0
+a3a3af6,2016-09-27T10:53:56,Merge branch 'balance' into integration,0.0
+063307c,2016-09-27T15:05:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15648 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+2b88050,2016-09-27T15:06:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15649 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+b68e954,2016-09-27T15:06:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15650 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+4363318.0,2016-09-27T15:08:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15651 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+9a2f738,2016-09-27T15:32:57,sync with SVN,0.0
+3570521.0,2016-09-27T15:34:08,enable multi-processor NEB replicas,0.0
+96f31d6,2016-09-27T15:35:41,Merge pull request #43 from akohlmey/doc-fixes,0.0
+829d11e,2016-09-27T15:36:10,Merge pull request #44 from rbberger/doc-fixes,0.0
+995ecea,2016-09-27T16:02:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15652 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+b66039b,2016-09-27T16:43:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15653 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+d1b8ffd,2016-09-27T16:49:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15656 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+2ae966c,2016-09-27T16:49:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15657 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+e1c6b6b,2016-09-27T17:01:45,correctly handle exceptions raised from subprocess module,0.0
+f9c2049,2016-09-27T17:12:17,need to ignore new fix cmap sources,1.0
+3333e4b,2016-09-27T17:21:42,Put snap before zbl to get more helpful error message,0.0
+1adf385,2016-09-27T17:36:02,correct bug and synchronize fix addforce respa level init with other fixes,1.0
+8c1d003,2016-09-27T18:20:06,correct typo in Make.py,0.0
+56b0856,2016-09-27T21:16:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15661 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+6fedf8d,2016-09-27T21:18:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15662 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+3486b7d,2016-09-27T21:24:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15663 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+1cfa49f,2016-09-27T21:28:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15664 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+1fbddc9,2016-09-27T21:31:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15665 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f82e0c5,2016-09-27T21:31:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15666 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+45e50b4,2016-09-27T21:37:17,sync with GH,0.0
+1ec3987,2016-09-28T14:36:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15669 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+f511c17,2016-09-28T14:37:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15670 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+4.46e+16,2016-09-28T16:33:30,patch for allowing prd command to work with sorted atoms,0.0
+596b260,2016-09-28T16:36:04,Merge pull request #45 from akohlmey/small-bugfixes,0.0
+f6c77c3,2016-09-28T22:08:28,support dynamic groups with run style respa,0.0
+6897cc8,2016-09-28T22:29:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15671 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+bdd0f66,2016-09-28T22:32:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15672 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+1898254.0,2016-09-28T22:32:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15673 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0.0
+78a22be,2016-09-28T22:36:54,sync Make.py and fix addforce change with GHub,1.0
+a315dcd,2016-09-29T08:33:35,remove dead code,0.0
+5b2becd,2016-09-29T10:37:09,Merge branch 'integration' into new-master,0.0
+f7b5afe,2016-09-29T15:51:34,Merge pull request #184 from akohlmey/dynamic-groups-for-respa,0.0
+c88acc9,2016-09-29T22:59:46,make reader for target geometry file more resilient,0.0
+0eeb240,2016-09-30T07:22:47,whitespace cleanup  fix bug in looking for empty strings  improve read performance and handling of comments,0.0
+4337f2c,2016-09-30T07:39:12,include charmm22 and charmm36 cmap files and include date added signature,0.0
+cb7bd27,2016-09-30T07:39:45,flag header as C++ to emacs,0.0
+6d20006,2016-09-30T08:15:44,update colvars library to version 2016-09-30,0.0
+d4b074d,2016-09-30T09:09:44,enable dynamic groups for fix dt/reset,0.0
+b9d0f96,2016-09-30T09:17:55,change purge target in Makefile  also fixed one issue with Make.py,0.0
+91edee2,2016-09-30T09:20:25,Merge pull request #186 from akohlmey/small-bugfixes,0.0
+e2c7aca,2016-09-30T09:21:00,Merge pull request #187 from akohlmey/colvars-update-2016-09-30,0.0
+5bb85b4,2016-09-30T09:38:50,remove unused variable,0.0
+d45e333,2016-09-30T11:11:32,restrict choice of weight factors and guarantee that weights are >= 0.001,0.0
+035279d,2016-10-01T06:26:14,correct logic bug in bufix for fix tmd,0.0
+a3e05a2,2016-10-01T06:34:45,permission cleanup,0.0
+1985db4,2016-10-01T23:05:05,correct designation of meam supporting USER-OMP and meam/spline not,0.0
+c2e11df,2016-10-02T20:33:20,import updated charmm2lammps.pl script from Rober Latour,0.0
+3b94627,2016-10-03T06:52:30,properly handle -nohints flag  make -cmap flag take version as option. step version number,0.0
+690f913,2016-10-03T06:58:51,rebuild charmm2lammps example output files with updated tools,0.0
+45d2cc2,2016-10-03T07:03:42,permission update for ch2lmp tool folder,0.0
+6e719f2,2016-10-03T07:07:28,remove trailing whitespace,0.0
+03766db,2016-10-03T16:28:59,apply bugfix for MEAM provided by Wolfgang Verestek on lammps-users,1.0
+c3ff881,2016-10-03T17:57:33,added XOR operator to variable command,0.0
+e079362,2016-10-03T17:58:36,Merge pull request #190 from akohlmey/small-bufixes-and-enhancements,0.0
+ab92529,2016-10-03T17:59:21,Merge pull request #191 from akohlmey/updated-charmm2lammps,0.0
+11c2892,2016-10-04T09:49:09,Merge branch 'restrict-weights-and-weight-factors' of https://github.com/akohlmey/lammps,0.0
+91be47a,2016-10-04T11:43:12,Revert type checking commit from July,0.0
+e2caf5c,2016-10-04T13:57:21,Fix code path which allows passing a C++ ptr to PyLammps,1.0
+4381db8,2016-10-04T14:33:26,correct the bug discovered by stan due to uninitialized scale factors for eam/alloy/omp and eam/fs/omp,0.0
+c46be7d,2016-10-05T10:33:39,changes to imbalance weight factors,0.0
+6a97211,2016-10-05T10:54:08,Merge pull request #192 from rbberger/python-interface-bugfix,0.0
+030df74,2016-10-05T10:54:36,Merge pull request #193 from akohlmey/eam-bugfix,0.0
+d31121b,2016-10-05T15:22:48,USER-DPD: bugfix in unpack_comm_hybrid()  now works with hybrid atom style,0.0
+02bfa89,2016-10-05T15:46:20,adjustments to balancing weights and factors  also XOR op for formulas  if  dump_modify thresh,0.0
+c07a01c,2016-10-05T18:11:52,import updated README file for charmm2lammps.pl with CMAP support,0.0
+f32819d,2016-10-05T18:13:46,added tweak to write out the command line used for the conversion to the beginning of the LAMMPS input,0.0
+326fdf2,2016-10-05T18:20:09,added 1GB1 example from Robert Latour and update 1AC7 example files,0.0
+969d3cf,2016-10-05T18:25:40,Colvars update: make ABF check that the colvar isn't using already subtractAppliedForce,0.0
+8809a60,2016-10-05T18:26:21,Colvars update: issue a warning that cannot be ignored regarding total forces,0.0
+d7d321a,2016-10-05T18:41:45,some more updates to the README file to reflect the inclusion of the CMAP example and renamed file names,0.0
+f9f955d,2016-10-05T22:34:44,update include statement format,0.0
+d133167,2016-10-06T09:32:50,Merge branch 'master' of https://github.com/albapa/lammps into small-changes,0.0
+4921dc1,2016-10-06T10:47:08,bugfix for virial tally for improper style umbrella from Steven Vandenbrande (U Gent),1.0
+887981c,2016-10-06T10:47:08,bugfix for virial tally for improper style umbrella from Steven Vandenbrande (U Gent),1.0
+22ce671,2016-10-06T11:16:59,improved whitespace handling in msi2lmp for force fields and topologies,0.0
+83bcdb6,2016-10-06T11:27:18,bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS,1.0
+ef079ae,2016-10-06T11:27:18,bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS,1.0
+0853cdb,2016-10-06T11:47:08,update reference data files for updated/corrected clayff parameters,0.0
+fd16118,2016-10-06T12:02:41,removed dump_modify command,0.0
+8ea0633,2016-10-06T12:15:48,add NETCDF libs (as defined in QUIP) to the linking line if QUIP was built with NETCDF support,0.0
+493873f,2016-10-06T13:00:46,clean up doc src,0.0
+0f45cd6,2016-10-06T13:02:27,Merge pull request #196 from akohlmey/charmm-cmap-updates,0.0
+c213457,2016-10-06T13:02:52,Merge pull request #197 from giacomofiorin/colvars_2016-10-05,0.0
+e1e9a5c,2016-10-06T13:49:47,USER-DPD: math corrections in pair_exp6_rx.cpp (by Jim Larentzos),0.0
+27e76a7,2016-10-06T14:27:27,Merge branch 'USER-DPD_hybrid_atom_bugfix' of https://github.com/timattox/lammps_USER-DPD into small-changes,0.0
+60a031e,2016-10-06T14:28:08,Merge branch 'USER-DPD_pair_exp6_rx_mathfix' of https://github.com/timattox/lammps_USER-DPD into small-changes,0.0
+b3d2fb9,2016-10-06T15:47:41,new fix wall/gran/region command  REBO bug fix  new example log files,1.0
+0b5d715,2016-10-06T15:48:18,collected documentation updates and corrections from LAMMPS-ICMS,0.0
+54fc194,2016-10-06T15:49:24,Merge pull request #199 from akohlmey/small-changes,0.0
+e9fed80,2016-10-06T15:49:44,Merge pull request #202 from akohlmey/doc-formatting-fixes,0.0
+9507a78,2016-10-06T16:01:32,USER-DPD: whitespace and indentation fixes,0.0
+f92618a,2016-10-06T17:21:38,"Revert ""bugfix for virial tally for improper style umbrella from Steven Vandenbrande (U Gent)""",1.0
+19984c9,2016-10-06T17:23:10,"Revert ""bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS""",1.0
+e78b426,2016-10-06T20:23:06,Fix issue with external links containing anchors,1.0
+7f3a7c5,2016-10-06T20:33:24,Fix broken link,1.0
+615a2da,2016-10-06T21:48:06,Migrate changes from GRANULAR to USER-OMP,0.0
+49c45ab,2016-10-07T09:44:57,edited documentation,0.0
+72ac073,2016-10-07T09:50:00,edited documentation,0.0
+e27ed6c,2016-10-07T14:52:23,USER-DPD: Added support to use VV integrator with USER-DPD if desired. Includes documentation and examples. NOTE: VV requires very small timesteps under isoenergetic conditions. Consider using fix_shardlow instead  since this VV support is primarily for comparison purposes.,0.0
+9789f04,2016-10-07T15:55:35,USER-DPD: update the USER/dpd examples and their reference outputs,0.0
+e01e90e,2016-10-08T10:45:22,workaround for double free issue when using USER-COLVARS with lammps code loaded as shared library into a standalone executable,0.0
+683689c,2016-10-08T11:00:23,revert to previous style conventions for size_t constants,0.0
+dd192ca,2016-10-10T09:15:42,whitespace cleanup,0.0
+fca6d72,2016-10-10T09:16:21,completed synchronization with non-threaded version,0.0
+144e6a8,2016-10-10T09:40:09,whitespace cleanup,0.0
+a2b0840,2016-10-10T13:40:33,USER-DPD: Add atom_style compatibility checks in fix_eos_*.cpp files.,0.0
+467bcad,2016-10-10T13:57:37,Merge pull request #204 from rbberger/fix-user-omp,0.0
+27dac02,2016-10-10T13:58:16,Merge pull request #209 from akohlmey/static-double-deallocation-workaround,0.0
+ed8cc82,2016-10-10T13:59:01,Merge pull request #211 from akohlmey/add-respa-to-fix-flow-gauss,0.0
+e70d530,2016-10-10T13:59:27,Merge pull request #203 from rbberger/txt2rst-external-link-fix,0.0
+bb0bfd5,2016-10-10T23:55:36,Merge branch 'master' into improper-virial-bugfixes,0.0
+b00b40b,2016-10-11T08:03:59,make no-lib should also remove MPIIO and USER-LB packages,0.0
+04f5ead,2016-10-11T12:39:52,added LAST option to dump_modify thresh  more restart info printed out to screen,0.0
+3e+299,2016-10-11T12:42:08,Merge pull request #213 from akohlmey/improper-virial-bugfixes,0.0
+803dc57,2016-10-11T12:42:53,Merge pull request #214 from akohlmey/make-no-lib-no-mpiio,0.0
+6f11629,2016-10-11T13:39:25,Merge pull request #207 from timattox/USER-DPD_new_VV_for_DPD,0.0
+fbf7df1,2016-10-11T13:40:00,Merge pull request #212 from timattox/USER-DPD_fix_eos_atom_style_checks,0.0
+0eb7fbf,2016-10-11T15:43:59,tweaks to new USER-DPD docs,0.0
+559637f,2016-10-11T16:11:29,USER-DPD Bugfix: reset_dt() is not called when I thought it should be called. Move the calculation of dtsqrt inside FixShardlow::initial_integrate(),1.0
+2f07a62,2016-10-11T16:30:41,Forgot to remove my call to reset_dt(),0.0
+ecb03dd,2016-10-11T23:03:18,import lammps-netcdf code as USER-NC-DUMP package,0.0
+69cb831,2016-10-11T23:39:37,import dump nc and dump nc/mpiio from lammps-netcdf as USER-NC-DUMP package by lars pastewka,0.0
+b758600,2016-10-11T23:50:45,updates for recent changes to the manual,0.0
+e10ea91,2016-10-11T23:51:42,add doc file to toctree,0.0
+39a2203,2016-10-11T23:57:40,correct broken link,0.0
+adc98e0,2016-10-11T23:58:36,whitespace cleanup in USER-DPD,0.0
+6b4ab0a,2016-10-12T00:00:21,update .gitignore,0.0
+c24bf51,2016-10-12T00:00:53,update #include statements for system includes,0.0
+da66c1e,2016-10-12T00:07:52,update #include directives to match current LAMMPS coding conventions,0.0
+2e8edbd,2016-10-12T06:53:37,USER-SMD was missing from PACKLIB variable,0.0
+f8a26dd,2016-10-12T07:26:03,update Timer::force_timeout() to trigger at next loop iteration,0.0
+4e3a550,2016-10-12T07:30:10,Merge pull request #215 from timattox/USER-DPD_bugfix_for_dtsqrt,0.0
+4a5d9ea,2016-10-12T07:32:08,Merge pull request #217 from akohlmey/small-fixes,0.0
+63e71cd,2016-10-12T07:35:47,patch to add DPD-VV,0.0
+495800000000000.0,2016-10-12T15:46:46,USER-DPD bugfix: Properly initialize the local temperature averaging array.,0.0
+fcb5271,2016-10-12T15:56:45,USER-DPD: Initialize the dpdThetaLocal array consistently in fix_rx,0.0
+0b426da,2016-10-12T18:36:38,do not require the LAMMPS shared library when loading the python wrapper from inside LAMMPS,0.0
+e4ff812,2016-10-13T08:22:08,fix typo,0.0
+95cca1b,2016-10-13T11:40:44,Allow building other targets without Python3 and virtualenv,0.0
+2c8a7a3,2016-10-13T16:55:53,bug fix for fix GCMC w/ fix shake  enhance of fix wall/gran/region with restarting,0.0
+40f2310,2016-10-13T16:56:19,Merge pull request #218 from timattox/USER-DPD_fix_rx_init_bugfix,1.0
+5aefb2a,2016-10-13T16:58:35,Merge pull request #219 from akohlmey/python-no-double-load,0.0
+d11363c,2016-10-13T17:00:23,Merge pull request #220 from rbberger/fix-doc-makefile,0.0
+411ecca,2016-10-14T07:27:14,plug memory leak,0.0
+d07703e,2016-10-14T07:27:40,re-apply bugfix from two years ago,1.0
+c9c66ca,2016-10-14T07:28:25,replace unsafe code,0.0
+deceb9d,2016-10-14T07:31:52,remove assignment without effect,0.0
+f67975f,2016-10-14T07:37:06,apply proper initialization and remove redundant variable declaration,0.0
+909ec2c,2016-10-14T11:48:24,remove unused class members,0.0
+e77e1f6,2016-10-14T19:40:51,replace complex solution to implement a soft exit with simpler one,0.0
+e7825ba,2016-10-15T07:30:07,import fix halt prototype code with corrections for soft exit,1.0
+c5513c4,2016-10-17T19:56:18,provide an accessor for names of LAMMPS variables,0.0
+954d536,2016-10-18T09:27:01,added bondmax method to fix halt,0.0
+003581c,2016-10-18T11:16:28,final changes to fix halt,0.0
+6eadd45,2016-10-18T11:16:44,Merge branch 'halt2',0.0
+394c3bb,2016-10-18T12:20:49,add Timer::reset_timeout() API  that allows restoring the previous timeout setting after a forced timeout,0.0
+1f1c872,2016-10-18T12:21:27,"add support for ""error continue"" option  which resets the timer timeout setting after a soft exit",0.0
+713b2af,2016-10-18T12:58:25,Merge pull request #221 from akohlmey/collected-bugfixes,0.0
+2106dce,2016-10-18T13:11:40,new fix halt command  other sundry small bug fixes,1.0
+3e88fb5,2016-10-18T13:54:15,Merge branch 'master' into collected-bugfixes,0.0
+2c5ea9f,2016-10-18T14:05:08,reapply changes to the timer class that got lost somehow,0.0
+1f7693f,2016-10-18T14:06:43,fix typo,0.0
+a752966,2016-10-18T14:07:05,Merge branch 'collected-bugfixes' of github.com:akohlmey/lammps into collected-bugfixes,0.0
+4502d32,2016-10-18T14:45:06,updated Makefile.lammps for NetCDF support based on suggestions from lars pastewka,0.0
+ae77664,2016-10-18T14:45:25,forgot to include USER-NC-DUMP in PACKUSER variable,0.0
+2b47fa6,2016-10-18T15:05:30,update Makefile.lammps and add README according to suggestions by lars pastewka,0.0
+6e54443,2016-10-18T15:11:22,make plain nc dump style a compile time option as well,0.0
+27796b4,2016-10-18T15:32:20,avoid distracting error output,0.0
+5a6dea7,2016-10-18T15:36:18,Merge branch 'master' into user-nc-dump,0.0
+7b7cb29,2016-10-18T22:26:47,add mixing for pair styles gauss and gauss/cut contributed by andrew jewett. also add support for write_data.,0.0
+019bc0b,2016-10-19T07:39:03,fix typos in Makefile.lammps for NetCDF support,0.0
+ccca642,2016-10-19T08:08:52,fix typo,0.0
+efc7b23,2016-10-19T08:33:59,Merge pull request #216 from akohlmey/user-nc-dump,0.0
+e0ed218,2016-10-19T08:36:52,Merge pull request #224 from akohlmey/get-vars,0.0
+393337e,2016-10-19T08:37:32,Merge pull request #226 from akohlmey/pair-gauss-mixing,0.0
+58141.0,2016-10-19T08:41:44,text edit,0.0
+0891ed8,2016-10-19T08:56:19,Merge pull request #228 from akohlmey/correct-prd-for-bigbig,0.0
+b0cf1de,2016-10-19T08:57:54,Merge pull request #229 from akohlmey/small-corrections,0.0
+3d25478,2016-10-19T08:58:22,Merge branch 'master' of github.com:lammps/lammps,0.0
+86f5b51,2016-10-19T09:05:25,recognize any word starting with FP as FPRIME style table,0.0
+566effc,2016-10-19T09:08:20,account for new fix halt properly in PDF and online docs,0.0
+2634468.0,2016-10-19T10:42:02,dead code removal,0.0
+1a10857,2016-10-19T10:43:25,make PRD code compatible with -DLAMMPS_BIGBIG,0.0
+ffb8eb3,2016-10-19T10:44:38,"Revert ""recognize any word starting with FP as FPRIME style table""",0.0
+9954d5d,2016-10-19T10:47:07,forgot pair table change,0.0
+e835992,2016-10-19T15:58:50,update packages section in manual with information about USER-NC-DUMP,0.0
+8c3f5cb,2016-10-20T09:27:26,support generation of manual in ePUB format,0.0
+f022f6d,2016-10-20T14:40:18,fix various formatting and broken link issues identified by ebook-convert,1.0
+2cf77ff,2016-10-20T16:16:17,Add support for ebook generation in ePUB and mobi format,0.0
+a957227,2016-10-20T16:27:00,"Revert ""support generation of manual in ePUB format""",0.0
+6cd6c10,2016-10-20T19:27:18,Merge branch 'collected-small-changes' into collected-doc-fixes,0.0
+a2e34aa,2016-10-21T11:55:36,make certain  that atom->maxspecial is incremented with extra special space,0.0
+ed3f02f,2016-10-21T12:04:48,ignore generated PDF and ePUB files,0.0
+6742fb6,2016-10-21T12:05:21,remove mobi file format creation from makefile and explain it in README instead,0.0
+607246f,2016-10-21T13:25:53,ignore mobi file as well,0.0
+991034b,2016-10-21T13:54:34,have bond style table exit when bond length is outside table range,0.0
+db36c8b,2016-10-21T14:51:09,stop with error  if molecule command requires special bond auto-generation before box is defined,0.0
+bc44988,2016-10-23T15:18:25,correct typo in write_dump docs,0.0
+4f69d91,2016-10-24T08:12:08,Merge pull request #230 from akohlmey/manual-in-ebook-format,0.0
+477ddaf,2016-10-24T08:15:08,Merge pull request #232 from akohlmey/small-bugfixes,0.0
+ad57a17,2016-10-24T16:48:20,Add C-linkage wrapper for colvarscript (useful with ctypes),0.0
+c243093,2016-10-24T17:05:47,Fix wall forces and subtractAppliedForce for extended-Lagrangian ABF,0.0
+be2d155,2016-10-24T17:08:36,Minor changes and fixes not relevant to LAMMPS,0.0
+e02505c,2016-10-24T17:11:09,Add ensemble-biased metadynamics (Fabrizio Marinelli  NIH),0.0
+7b89e47,2016-10-24T17:12:28,apply corrections to issues reported by static code analysis,0.0
+512c413,2016-10-24T17:13:21,whitespace cleanup,0.0
+182141b,2016-10-24T17:13:34,Make SMP parallelism for Colvars optional,0.0
+ba6d152,2016-10-24T17:34:28,Merge branch 'colvars-2016-10-24' of https://github.com/giacomofiorin/lammps into colvars-update,0.0
+f8367e3,2016-10-24T17:49:53,update documentation pdf for updated colvars lib,0.0
+9c81ad1,2016-10-25T09:45:55,doc page changes,0.0
+eca96e2,2016-10-25T09:46:07,Merge branch 'doc',0.0
+6b33499,2016-10-25T10:30:34,Merge pull request #231 from akohlmey/collected-doc-fixes,0.0
+ad5f7c4,2016-10-25T10:32:41,Merge pull request #238 from giacomofiorin/colvars-2016-10-24,0.0
+efaa8fe,2016-10-25T10:32:55,Merge pull request #239 from akohlmey/static-analysis-fixes,0.0
+52dd9ae,2016-10-25T11:55:09,Merge branch 'master' into collected-doc-fixes,0.0
+1a436bd,2016-10-25T11:58:42,Merge branch 'collected-doc-fixes' of github.com:akohlmey/lammps into collected-doc-fixes,0.0
+63eada2,2016-10-25T12:12:48,fix issue with docs for orientorder/atom compute reported by @andeplane,1.0
+d9891ab,2016-10-27T09:34:04,new library functions,0.0

@@ -1,0 +1,7 @@
+hash,time,message,buggy
+f72cd52,2016-07-09T15:01:57,Just a test modified:   KNOWN_PROBLEMS,0.0
+e39d1c0,2016-07-09T15:11:24,Merge branch 'develop' into 'develop',0.0
+67cc9a3,2016-07-09T16:34:30,Imported fix for Intel 16 compiler  from Jordan. modified:   m_BathOperator.F90,1.0
+a7dd3b8,2016-07-09T20:24:09,Adjust tolerance for ubu_intel_16.0_mpich modified:   t06.in,0.0
+f2f8295,2016-07-09T20:30:47,Merge branch 'develop' into 'develop',0.0
+b63191b,2016-07-10T06:03:54,Init 8.1.4 modified:   KNOWN_PROBLEMS,1.0

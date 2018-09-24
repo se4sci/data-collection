@@ -1,0 +1,171 @@
+hash,time,message,buggy
+149f37e,2017-01-26T19:08:59,Corrected reference to Fig.1,0.0
+ed0a347,2017-01-30T10:31:50,Merge branch 'master' into user-cgdna,0.0
+0efd209,2017-02-09T11:50:03,Merge branch 'master' into user-cgdna,0.0
+458b674,2017-02-22T20:03:41,Corrected comment in 3' to 5' directionality check.,0.0
+3626496.0,2017-02-22T20:06:49,Corrected comment in 3' to 5' directionality check,0.0
+4cfe623,2017-03-10T21:30:03,Correct a typo in the fix_halt.txt documentation.,0.0
+27b1c33,2017-03-14T10:39:06,updated the NEMD discussion in the how-to documentation about flow/gauss,0.0
+580f6b5,2017-03-14T10:44:31,Add neigh/qeq option to Kokkos,0.0
+23b8287,2017-03-14T11:36:44,Updated documentation and simple setup tool,0.0
+7a75cd1,2017-03-14T11:39:09,Minor updates in documentation and setup tool  merge before upgrade to oxDNA2,0.0
+fdc390a,2017-03-14T14:08:14,Tweaking docs for Kokkos package,0.0
+ec1778b,2017-03-15T11:10:04,add pair_zhou,0.0
+c3ce374,2017-03-15T11:34:01,Added fix filter/corotate.,0.0
+f9468f4,2017-03-15T13:10:58,Merge pull request #412 from timattox/master_typofix,0.0
+4c77838,2017-03-15T13:11:26,Merge pull request #414 from sstrong99/flow-gauss-doc-addition,0.0
+b1c5912,2017-03-15T13:12:08,Merge pull request #415 from stanmoore1/kk_qeq,0.0
+3a2da51,2017-03-15T13:12:43,Merge pull request #413 from ohenrich/user-cgdna,0.0
+0d8f74f,2017-03-15T18:54:41,Merge branch 'filter_corotate' of https://github.com/lukin17/lammps into pull-416,0.0
+0262a54,2017-03-15T21:56:39,Fix Python 3 compatibility by encoding strings passed as c_char_p,1.0
+a210867,2017-03-15T22:13:06,Fixes lammps_create_atoms library function and its Python interface variant,1.0
+79cae51,2017-03-15T22:20:30,Document property 'uses_exceptions' of Python interface,0.0
+29550d4,2017-03-15T22:31:14,Fix dump cfg in viz_atomeye.py example,1.0
+eb29ef3,2017-03-15T22:43:00,Fix space/tab error in pizza/gl.py,1.0
+36da922,2017-03-15T22:55:51,Fix dump cfg in vizplotgui_atomeye.py example,1.0
+ef940d2,2017-03-16T01:38:05,Improve Python 3 compatibility of pizza tools and simplify read_snapshot code,0.0
+cda8213,2017-03-16T01:41:28,Added Python matplotlib plot example,0.0
+bdb7669,2017-03-16T09:44:07,Fixed coding style.,0.0
+2f5e711,2017-03-16T10:00:12,Merge remote-tracking branch 'upstream/master' into filter_corotate,0.0
+db0281b,2017-03-16T12:14:09,Merge branch 'filter_corotate' of https://github.com/lukin17/lammps into pull-416,0.0
+1995f43,2017-03-16T14:24:28,fix some more code formatting issues  add newline at EOF,0.0
+bed2883,2017-03-16T15:02:50,simplify and shorten examples for fix filter/corotate and combine into a single folder,0.0
+f604f86,2017-03-16T15:08:17,add fix filter/corotate to some administrative files,1.0
+070ce33,2017-03-16T18:35:04,improve memory usage reporting in info and output class,0.0
+efb2a94,2017-03-16T21:51:14,Add utility to detect duplicate anchors in documentation files,0.0
+f893104,2017-03-16T22:21:55,Add anchor_check to doc Makefile,0.0
+1bb9c7d,2017-03-16T22:36:13,Remove some duplicate anchors in documentation,0.0
+621d7d5,2017-03-16T23:05:03,Correct off-by-one error in line number reported,0.0
+ac82d04,2017-03-16T23:12:49,ignore package pair style,0.0
+411c069,2017-03-17T02:36:41,BUGFIX: Prevent possible deadlock in Irregular::create_atom and create_data,1.0
+8e75616,2017-03-17T02:55:41,In irregular.cpp use simpler and slightly faster MPI_Reduce_scatter_block(),0.0
+d31c591,2017-03-17T09:40:39,Remove unneeded restart_peratom flags,0.0
+a91b851,2017-03-17T11:14:59,Merge pull request #416 from lukin17/filter_corotate,0.0
+a936b7b,2017-03-17T11:16:58,Merge pull request #419 from rbberger/python_fixes,0.0
+53a3877,2017-03-17T11:17:28,Merge pull request #420 from rbberger/doc_anchor_check,0.0
+fcc3b3b,2017-03-17T11:18:08,Merge pull request #421 from akohlmey/memory-output,0.0
+7ca5dce,2017-03-17T11:18:52,Merge pull request #423 from timattox/master_bugfix_irregular,0.0
+9f35b76,2017-03-17T11:19:04,Merge pull request #424 from timattox/dpd_restart_fix,0.0
+4a90bca,2017-03-17T11:29:23,patch 17Mar17,0.0
+7fb741d,2017-03-17T11:35:59,"Revert ""In irregular.cpp use simpler and slightly faster MPI_Reduce_scatter_block()""",0.0
+ae5ebf6,2017-03-17T11:40:09,add support for MPI_Request_free() to MPI STUBS library,0.0
+5be32f5,2017-03-18T20:48:49,remove pair_zhou from Makefile.list,0.0
+da81531,2017-03-18T20:54:12,move pair_zhou to USER-MISC and update USER-MISC/README,0.0
+2ab77ca,2017-03-18T21:01:40,adapt to LAMMPS coding style,0.0
+d04ea86,2017-03-18T21:21:25,add examples for pair_zhou,0.0
+b6ecfb9,2017-03-18T21:22:02,deleted pair_zhou in main/src (moved to USER-MISC),0.0
+52987a3,2017-03-18T22:32:39,Started writing pair_zhou.txt,0.0
+d496c0f,2017-03-20T08:57:29,Merge pull request #426 from dstelter92/master,0.0
+5b842f0,2017-03-20T09:15:48,Teff and exchange bugfix  as per Greg Dignon to match python examples,0.0
+5c39dfd,2017-03-20T09:22:09,re-ran example with fixed exchanges,0.0
+554531a,2017-03-20T13:51:36,update permissions,0.0
+f0c6ed0,2017-03-20T16:24:38,remove xmovie,0.0
+ecf1762,2017-03-20T16:25:06,more permission fixes,0.0
+0a6b33c,2017-03-20T16:27:00,remove duplicate paragraph in nose-hoover fix docs,0.0
+2218a9d,2017-03-20T16:32:04,emphasize that the online manual is following the latest development version,0.0
+0d0c2b6,2017-03-20T16:32:16,correct stan's email address,0.0
+3b44c3f,2017-03-20T16:55:14,remove non-ASCII characters from doc source files,0.0
+03828b5,2017-03-20T16:57:32,adapt binary2txt.cpp source to current coding conventions,0.0
+a42b0b7,2017-03-20T17:04:16,update colvars abf integrate tool from git repo,0.0
+e110d69,2017-03-20T17:17:35,remove obsolete tools and files,0.0
+47d6451,2017-03-20T17:18:24,fix compilation for pymol_asphere tool,0.0
+82d952a,2017-03-20T17:26:19,mention NumPy dependency instead of Numeric for python tools,0.0
+0c9cd11,2017-03-20T18:25:11,have the relevant LAMMPS version embedded into top part of the html manual,0.0
+6482df6,2017-03-20T18:57:30,remove references to deleted tools. update/clarify section on restart2data,0.0
+145e682,2017-03-21T08:18:21,Merge pull request #427 from akohlmey/small-updates-and-corrections,0.0
+dcede30,2017-03-21T08:56:37,changes for next patch  2d disc options for spheres  fix external upgrade  bug fixes for fix ave/chunk for density calcs  Aidan doc page citation deconvolution,0.0
+734e639,2017-03-21T14:12:00,correct typo reported on lammps-users,0.0
+c5d561a,2017-03-22T12:00:32,pair_zhou docs: add equation  add link in section_commands and pairs,0.0
+43f2725,2017-03-22T14:05:16,Merge branch 'add-pair-zhou' of https://github.com/tonnamb/lammps into pull-417,0.0
+cb90596,2017-03-22T14:39:46,a few more small changes to integrate pair style zhou properly,0.0
+3ec16f3,2017-03-22T14:40:30,fully integrate support for doc_anchor_check into docs makefile,0.0
+1275970.0,2017-03-22T14:57:37,Cleanup of a few more references to obsoleted and removed tools like xmovie,0.0
+a14d582,2017-03-22T15:00:57,correct inconsistent anchors,0.0
+a79aef6,2017-03-22T15:00:57,correct inconsistent anchors,0.0
+66eb9c2,2017-03-22T15:01:11,remove reference to removed section on VMD scripts,0.0
+43a304f,2017-03-22T15:01:11,remove reference to removed section on VMD scripts,0.0
+dc1d93a,2017-03-22T15:08:09,some more whitespace cleanup,0.0
+ef3f323,2017-03-22T15:12:43,"Revert ""remove reference to removed section on VMD scripts""",0.0
+3070b04,2017-03-22T15:12:47,"Revert ""correct inconsistent anchors""",0.0
+1db5834,2017-03-22T15:12:49,"Revert ""Cleanup of a few more references to obsoleted and removed tools like xmovie""",0.0
+1ea9a14,2017-03-22T15:55:34,Add Tonnam and Ya names,0.0
+daae76c,2017-03-22T15:59:00,Add names Tonnam and Ya to README,0.0
+7435084.0,2017-03-22T15:59:10,Verified oxDNA with modified nucleotide layout,0.0
+af0b5b0,2017-03-22T16:23:29,Removed dead code,0.0
+bf560e7,2017-03-22T16:56:40,edit description and add related commands and default,0.0
+6d395ec,2017-03-23T10:08:47,change name zhou to momb in docs  fix grammar,0.0
+1075be7,2017-03-23T10:18:15,rename zhou to momb in examples,0.0
+df8dbec,2017-03-23T10:22:49,rename pair_zhou to pair_momb in src and change class name from PairZhou to PairMomb,0.0
+343c9ed,2017-03-23T10:24:13,change zhou to momb in src/USER-MISC/README,0.0
+02e6590,2017-03-23T11:03:00,add example log file generated from 17Nov16 version of lammps  make minimize and run short in system.in,0.0
+b88a749,2017-03-23T11:38:33,rename a couple more references to pair style zhou into momb,0.0
+865b41e,2017-03-23T11:50:10,make pair style momb example follow LAMMPS conventions more closely,0.0
+568b67e,2017-03-23T12:00:53,include citation for reference paper into pair style momb,0.0
+9ecc5c8,2017-03-23T14:12:37,Merge branch 'fix-airebo-morse' of https://github.com/v0i0/lammps into pull-431,0.0
+5c9892c,2017-03-23T14:14:49,apply airebo/m bugfix also to USER-OMP version,0.0
+a72efbe,2017-03-23T15:18:23,whitespace cleanup,0.0
+47cade2,2017-03-23T15:19:02,re-arranged functions to make it easier to compare with non-threaded. port bugfixes to airebo to USER-OMP,0.0
+44841f6,2017-03-23T15:31:27,fix ave/chunk fixes  2d disc option  fix_modify dynamic/dof,1.0
+2cdcd6d,2017-03-23T16:03:25,remove one more reference to xmovie,0.0
+f127e42,2017-03-23T17:37:49,Fix airebo/morse,0.0
+47cebb0,2017-03-23T17:43:27,And getting it right...,0.0
+8820315.0,2017-03-23T17:57:02,Merge branch 'master' into updates-for-stable,0.0
+277b93c,2017-03-24T09:41:30,Merge pull request #417 from tonnamb/add-pair-zhou,0.0
+f5a85d6,2017-03-24T10:01:23,Merge pull request #429 from akohlmey/updates-for-stable,0.0
+e6fcaef,2017-03-24T10:03:29,Merge pull request #431 from v0i0/fix-airebo-morse,0.0
+394e9b4,2017-03-24T13:53:07,new CHARMM pair styles with force swithing/shifting,0.0
+3dfe450,2017-03-24T15:17:51,24Mar17 patch sync with SVN,0.0
+04fd038,2017-03-27T13:46:57,Fixed a bug with equal-style variables as manifold params.,1.0
+3feffbe,2017-03-27T13:49:53,Removed diagnostics.,0.0
+c041727,2017-03-27T14:28:50,remove dead code and reduce trivial compiler warnings (clang++),0.0
+87ea9ba,2017-03-27T14:29:13,bugfix for library interface,0.0
+da90967,2017-03-27T14:30:21,update .gitignore for newly added files,0.0
+61e7595,2017-03-27T14:59:58,remove references to xmovie  streamline dump and viz descriptions,0.0
+a241b2d,2017-03-27T15:00:19,fix problems with references,1.0
+5feeb79,2017-03-27T15:16:28,one more line of dead code removed,0.0
+443ea13,2017-03-28T02:05:05,add image flag packing/unpacking to library/python interface,0.0
+fc51c38,2017-03-28T02:22:45,add some docs for the special treatment of image flags,0.0
+28bdebd,2017-03-28T07:50:48,avoid segfault when calling PPPM*::memory_usage() before grid communication is initialized,0.0
+f8da9a8,2017-03-28T11:00:22,synchronize dump custom/vtk documentation with that of dump custom,0.0
+ee55a98,2017-03-28T11:22:10,Changed the check on initial and final temperature to <= 0 for both.,0.0
+1dfd61f,2017-03-28T12:33:45,Merge pull request #432 from Pakketeretet2/user_manifold_fix,0.0
+111d350,2017-03-28T12:34:46,fix gcmc units change for chemical potential,1.0
+61f3ff1,2017-03-28T12:35:33,Merge branch 'master' of github.com:lammps/lammps,0.0
+7e9f05b,2017-03-28T12:49:09,Merge pull request #433 from akohlmey/fixes-for-stable,0.0
+80e5111,2017-03-28T12:50:13,Merge pull request #434 from akohlmey/imgflags-in-library,0.0
+645f56c,2017-03-28T12:51:17,Merge pull request #436 from Pakketeretet2/better_incorrect_input_handling_nh,0.0
+9f6e126,2017-03-28T12:52:26,Merge pull request #437 from ohenrich/user-cgdna,0.0
+0637f23,2017-03-28T13:12:23,patch 28Mar17,0.0
+4b9d0a9,2017-03-28T13:26:12,sync with SVN,0.0
+ef6070c,2017-03-28T14:35:58,remove executable permissions for potential files,0.0
+1d8f0c7,2017-03-28T14:37:30,Merge branch 'master' into fixes-for-stable,0.0
+8afed61,2017-03-28T18:16:36,Upgrade to oxDNA2,0.0
+604afeb,2017-03-28T18:22:02,Update to oxDNA2,0.0
+66a6375,2017-03-28T18:58:31,Resolved merge conflict,0.0
+5c1f546,2017-03-28T19:08:24,Removed contribution line from header files,0.0
+1544b51,2017-03-29T01:18:24,Support mixed Python use by honoring Python GIL,0.0
+c733204,2017-03-29T08:28:03,Updated lammps.book and install script,0.0
+ac1aa9e,2017-03-29T11:18:04,Updated README,0.0
+4466d9f,2017-03-30T09:34:35,Merge pull request #440 from ohenrich/user-cgdna,0.0
+ae56b9a,2017-03-30T10:07:27,patch 31Mar17 for stable release,0.0
+6f1bbd3,2017-04-03T18:08:15,protect fix ave/histo from segfaulting on non-existing computes  fixes or variables,1.0
+28e8691,2017-04-04T12:35:26,Made fix adapt work with bond_harmonic.,1.0
+03a6f52,2017-04-04T13:30:49,Made every keyword for user-manifold work as advertised.,0.0
+b6bc33b,2017-04-04T13:31:22,Merge branch 'user_manifold_fix' into user-manifold-fix-every-keyword,0.0
+e190eb1,2017-04-04T17:54:33,remove debug printf,0.0
+874944f,2017-04-04T19:37:17,Made fix adapt support bond harmonic.,1.0
+8993daa,2017-04-04T19:54:22,Minor update to docu,0.0
+497a5d8,2017-04-04T20:03:57,Merge branch 'master' into user-cgdna,0.0
+1725832.0,2017-04-06T11:08:57,address issue where uninstalling an empty package will erase all code in src,0.0
+62b9fa2,2017-04-07T15:11:26,when computing only rotational temperature  we must not subtract the default n-dim extra DOFs,0.0
+d635742,2017-04-07T15:29:56,propagate global package installation bugfix to explicit package scripts,0.0
+1ad7d85,2017-04-10T09:57:54,Added forgotten #include string to bond_harmonic.cpp,0.0
+f19f558,2017-04-10T10:06:03,Removed changed bond_harmonic from wrong position.,0.0
+84ea8a7,2017-04-10T20:43:24,correct link for dispersion parameter how-to and reformat,1.0
+4c4a3fe,2017-04-11T08:24:06,Merge pull request #439 from rbberger/python_mixed_use_support,0.0
+ccc9367,2017-04-11T08:24:32,Merge pull request #442 from akohlmey/small-updates-and-bugfixes,0.0
+b9d844c,2017-04-11T08:25:09,Merge pull request #444 from ohenrich/user-cgdna,0.0
+06cebb9,2017-04-11T08:27:31,Merge pull request #445 from Pakketeretet2/extract_for_bond,0.0
+76fd936,2017-04-11T08:27:53,Merge pull request #443 from Pakketeretet2/user-manifold-fix-every-keyword,0.0
+49dd944,2017-04-11T08:35:09,fix gcmc updates from Aidan  trimming of output for replica commands,1.0
+4da8c1c,2017-04-11T09:00:37,patch 11Apr17,0.0

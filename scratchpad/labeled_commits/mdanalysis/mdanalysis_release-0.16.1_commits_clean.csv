@@ -1,78 +1,78 @@
 hash,time,message,buggy
-bcba124,2016-12-14 16:50:22,switched sphinx theme to alabaster with MDAnalysis styling,0
-a8ea036,2017-03-19 11:11:07,Remove windows end of lines,0
-352ec80,2017-03-19 11:26:11,Avoid isinstance(something  int),0
-a8f5157,2017-03-19 12:43:37,Numpyfy docstrings,0
-2793519,2017-03-20 15:15:30,Update guessers.py,0
-0015d69,2017-04-08 19:15:24,always use py3 division,0
-c3130ca,2017-04-08 19:44:32,use absolute imports,0
-d776d73,2017-04-08 22:53:43,fix integer division,0
-2aad424,2017-04-09 09:03:59,fix division errors,0
-5bb6a9b,2017-04-09 09:27:48,fix test errors,0
-924340a,2017-04-10 07:46:02,Start of v0.16.1 (#1296),0
-445d679,2017-04-10 16:43:46,Merge pull request #1293 from MDAnalysis/lint-division,0
-b2561a1,2017-04-10 18:16:44,remove duplicate imports,0
-2521d78,2017-04-11 00:03:20,Merge pull request #1294 from MDAnalysis/lint-absolut-import,0
-0faa8a0,2017-04-12 13:59:13,Universe now works with StringIO objects (#1254),0
-b87a20a,2017-04-12 13:59:56,Fix changelog (#1304),0
-46cc08f,2017-04-13 12:11:37,Enable more pylint warnings (#1302),0
-9ba5078,2017-04-13 13:19:18,changes string.uppercase to string.ascii_uppercase for py3 compatibility (#1309),0
-a3c2fca,2017-04-13 13:22:46,Residues with the same residue ids are not merged by default (#1307),0
-3ecd7bf,2017-04-13 17:44:48,speed up xyz reader,0
-7527a92,2017-04-13 17:46:27,speed up PQR,0
-97c1cc5,2017-04-13 17:53:47,speed up pdb reading,0
-74997bd,2017-04-13 17:56:07,speed up pdbqt,0
-dfad88c,2017-04-17 10:12:26,Fix doc warnings in MDAnalysis package,0
-317dedf,2017-04-17 10:13:10,fix errors in rst files,0
-322bbb9,2017-04-17 10:13:37,turn doc warnings into errors,0
-d249fd7,2017-04-17 10:13:45,update travis file,0
-373c1fb,2017-04-17 10:22:44,remove pylint warnings,0
-7a76828,2017-04-17 10:27:06,update mathjax cdn,0
-c9f76b2,2017-04-17 10:29:30,update CHANGELOG,0
-ca30efa,2017-04-17 23:41:37,Merge pull request #1312 from MDAnalysis/doc-warnings,0
-68e4c17,2017-04-25 18:17:47,replace .. SeeAlso:: with numpy section (#1314),0
-ce48911,2017-04-26 16:08:59,wateranalysis: Fixed case when no water molecules in selection.,0
-2c47978,2017-04-27 02:18:43,Changed dt to include step in Universe.transfer_to_memory() (#1321),0
-5c6700b,2017-04-27 12:26:38,wateranalysis: Formatted according to PEP8,0
-d5bc8f5,2017-04-28 16:10:44,Fix hbond cannot deal with atoms too far (PR #1325),0
-401c366,2017-04-29 18:21:21,Fix #1324 (encore required reader with timeseries capabilities),0
-ac27e28,2017-05-01 21:05:13,PQRParser now reads icodes (#1328),0
-c1e751e,2017-05-02 00:15:39,"fixed docs for PDBParser ""conect"" keyword (#1329)",0
-bb9bb57,2017-05-03 21:11:15,fix doc deploy,0
-4f3d59c,2017-05-04 16:18:07,fixed remaining sphinx warnings and doc touchups,0
-e25d2c7,2017-05-04 18:13:30,sphinx: make sphinx fail on warnings and be verbose (local sphinx Makefile),0
-afe690b,2017-05-05 09:29:18,Merge pull request #1333 from QuantumEntangledAndy/Issue1331,0
-7817f96,2017-05-05 09:37:35,Fix small rendering errors in the doc,0
-ce80e91,2017-05-05 11:07:00,Fixes Issue 1331 This handles the case where number of items is exactly divisible by number of items per line. Previously the code would always round up  where instead it should only round up when not exactly divisible.,0
-ecc3919,2017-05-05 14:41:05,more reST fixes,0
-d5667ae,2017-05-07 12:42:39,Merge pull request #1247 from MDAnalysis/minor-fixes,0
-c1db033,2017-05-07 20:09:41,use consistent formatting,0
-303574b,2017-05-08 12:59:42,Fixes issue #1330 (#1332),0
-36be0d9,2017-05-08 22:28:22,changed OAuth token for doc deployment from Travis CI (#1338),0
-1c8f87d,2017-05-10 23:36:38,fix start  stop  step values of AnalysisBase (#1340),0
-429795a,2017-05-12 20:20:45,remove failing cron build job,0
-1f9a31f,2017-05-14 02:37:32,hbond analysis: fixed incorrect residue handling with trailing numbers (#1339),0
-f189758,2017-05-14 20:10:27,Fixed Issue #1347 (#1348),0
-8cd7603,2017-05-16 13:29:52,documentation updates and fixes,0
-26149a1,2017-05-16 13:34:14,numpy-docs for visualization module (#1346),0
-bf4733d,2017-05-16 15:27:22,maintainer/deploy scripts,0
-c9f5cd0,2017-05-16 20:48:08,added OC1 and OC2 to default list of hydrogen bond acceptors,0
-a59cd63,2017-05-16 22:05:27,re-enable cron job,0
-5f2e0f1,2017-05-17 23:49:51,removed Mock class from sphinx/conf.py,0
-5da4146,2017-05-18 11:12:15,use sphinx-readable CSS with alabaster,0
-dc2dd7e,2017-05-19 08:01:17,FIX: rmsf.run should return itself,0
-8bb6f4a,2017-05-19 23:08:19,update changelog,0
-dc8b90c,2017-05-21 01:54:09,improved selection exporter docs,0
-f6bc486,2017-05-21 16:08:58,Merge pull request #1358 from MDAnalysis/issue-1104-selection-writer-docs,0
-13f2192,2017-05-21 18:19:31,add comments,0
-ad5ff75,2017-05-23 21:48:06,Merge pull request #1126 from MDAnalysis/new-sphinx-style,0
-afcd606,2017-05-23 22:32:42,changed URL for docs to new http://docs.mdanalysis.org,0
-e12a647,2017-05-26 01:49:38,Merge pull request #1367 from MDAnalysis/reader-speed-boost,0
-b60c924,2017-05-26 08:15:00,Use Timestep API more in reader speed boost,0
-0b499e9,2017-05-26 15:45:26,remove * imports in align docs,0
-2e2ad9f,2017-05-28 15:42:18,Fix weights deprecations (#1356),0
-5222fc3,2017-06-03 09:33:13,Updated PCA Tutorial (#1379),0
-6f906c0,2017-06-03 18:32:51,Updated CHANGELOG for issue #1378 (#1380),0
-34f2370,2017-06-03 20:45:57,Finalised version 0.16.1,0
-dfb09d6,2017-06-03 20:48:53,Merge branch 'develop',0
-723cd89,2017-06-03 21:36:24,Updated c sources for 0.16.1,0
+bcba124,2016-12-14T16:50:22,switched sphinx theme to alabaster with MDAnalysis styling,0.0
+a8ea036,2017-03-19T11:11:07,Remove windows end of lines,0.0
+352ec80,2017-03-19T11:26:11,Avoid isinstance(something  int),0.0
+a8f5157,2017-03-19T12:43:37,Numpyfy docstrings,0.0
+2793519.0,2017-03-20T15:15:30,Update guessers.py,0.0
+0015d69,2017-04-08T19:15:24,always use py3 division,0.0
+c3130ca,2017-04-08T19:44:32,use absolute imports,0.0
+d776d73,2017-04-08T22:53:43,fix integer division,1.0
+2aad424,2017-04-09T09:03:59,fix division errors,1.0
+5bb6a9b,2017-04-09T09:27:48,fix test errors,1.0
+924340a,2017-04-10T07:46:02,Start of v0.16.1 (#1296),0.0
+445d679,2017-04-10T16:43:46,Merge pull request #1293 from MDAnalysis/lint-division,0.0
+b2561a1,2017-04-10T18:16:44,remove duplicate imports,0.0
+2521d78,2017-04-11T00:03:20,Merge pull request #1294 from MDAnalysis/lint-absolut-import,0.0
+0faa8a0,2017-04-12T13:59:13,Universe now works with StringIO objects (#1254),0.0
+b87a20a,2017-04-12T13:59:56,Fix changelog (#1304),0.0
+46cc08f,2017-04-13T12:11:37,Enable more pylint warnings (#1302),0.0
+9ba5078,2017-04-13T13:19:18,changes string.uppercase to string.ascii_uppercase for py3 compatibility (#1309),0.0
+a3c2fca,2017-04-13T13:22:46,Residues with the same residue ids are not merged by default (#1307),0.0
+3ecd7bf,2017-04-13T17:44:48,speed up xyz reader,0.0
+7527a92,2017-04-13T17:46:27,speed up PQR,0.0
+97c1cc5,2017-04-13T17:53:47,speed up pdb reading,0.0
+74997bd,2017-04-13T17:56:07,speed up pdbqt,0.0
+dfad88c,2017-04-17T10:12:26,Fix doc warnings in MDAnalysis package,0.0
+317dedf,2017-04-17T10:13:10,fix errors in rst files,1.0
+322bbb9,2017-04-17T10:13:37,turn doc warnings into errors,0.0
+d249fd7,2017-04-17T10:13:45,update travis file,0.0
+373c1fb,2017-04-17T10:22:44,remove pylint warnings,0.0
+7a76828,2017-04-17T10:27:06,update mathjax cdn,0.0
+c9f76b2,2017-04-17T10:29:30,update CHANGELOG,0.0
+ca30efa,2017-04-17T23:41:37,Merge pull request #1312 from MDAnalysis/doc-warnings,0.0
+68e4c17,2017-04-25T18:17:47,replace .. SeeAlso:: with numpy section (#1314),0.0
+ce48911,2017-04-26T16:08:59,wateranalysis: Fixed case when no water molecules in selection.,0.0
+2c47978,2017-04-27T02:18:43,Changed dt to include step in Universe.transfer_to_memory() (#1321),0.0
+5c6700b,2017-04-27T12:26:38,wateranalysis: Formatted according to PEP8,0.0
+d5bc8f5,2017-04-28T16:10:44,Fix hbond cannot deal with atoms too far (PR #1325),1.0
+401c366,2017-04-29T18:21:21,Fix #1324 (encore required reader with timeseries capabilities),1.0
+ac27e28,2017-05-01T21:05:13,PQRParser now reads icodes (#1328),0.0
+c1e751e,2017-05-02T00:15:39,"fixed docs for PDBParser ""conect"" keyword (#1329)",1.0
+bb9bb57,2017-05-03T21:11:15,fix doc deploy,0.0
+4f3d59c,2017-05-04T16:18:07,fixed remaining sphinx warnings and doc touchups,1.0
+e25d2c7,2017-05-04T18:13:30,sphinx: make sphinx fail on warnings and be verbose (local sphinx Makefile),0.0
+afe690b,2017-05-05T09:29:18,Merge pull request #1333 from QuantumEntangledAndy/Issue1331,0.0
+7817f96,2017-05-05T09:37:35,Fix small rendering errors in the doc,1.0
+ce80e91,2017-05-05T11:07:00,Fixes Issue 1331 This handles the case where number of items is exactly divisible by number of items per line. Previously the code would always round up  where instead it should only round up when not exactly divisible.,1.0
+ecc3919,2017-05-05T14:41:05,more reST fixes,1.0
+d5667ae,2017-05-07T12:42:39,Merge pull request #1247 from MDAnalysis/minor-fixes,0.0
+c1db033,2017-05-07T20:09:41,use consistent formatting,0.0
+303574b,2017-05-08T12:59:42,Fixes issue #1330 (#1332),1.0
+36be0d9,2017-05-08T22:28:22,changed OAuth token for doc deployment from Travis CI (#1338),0.0
+1c8f87d,2017-05-10T23:36:38,fix start  stop  step values of AnalysisBase (#1340),1.0
+429795a,2017-05-12T20:20:45,remove failing cron build job,0.0
+1f9a31f,2017-05-14T02:37:32,hbond analysis: fixed incorrect residue handling with trailing numbers (#1339),0.0
+f189758,2017-05-14T20:10:27,Fixed Issue #1347 (#1348),1.0
+8cd7603,2017-05-16T13:29:52,documentation updates and fixes,0.0
+26149a1,2017-05-16T13:34:14,numpy-docs for visualization module (#1346),0.0
+bf4733d,2017-05-16T15:27:22,maintainer/deploy scripts,0.0
+c9f5cd0,2017-05-16T20:48:08,added OC1 and OC2 to default list of hydrogen bond acceptors,0.0
+a59cd63,2017-05-16T22:05:27,re-enable cron job,0.0
+5f2e0f1,2017-05-17T23:49:51,removed Mock class from sphinx/conf.py,0.0
+5da4146,2017-05-18T11:12:15,use sphinx-readable CSS with alabaster,0.0
+dc2dd7e,2017-05-19T08:01:17,FIX: rmsf.run should return itself,1.0
+8bb6f4a,2017-05-19T23:08:19,update changelog,0.0
+dc8b90c,2017-05-21T01:54:09,improved selection exporter docs,0.0
+f6bc486,2017-05-21T16:08:58,Merge pull request #1358 from MDAnalysis/issue-1104-selection-writer-docs,0.0
+13f2192,2017-05-21T18:19:31,add comments,0.0
+ad5ff75,2017-05-23T21:48:06,Merge pull request #1126 from MDAnalysis/new-sphinx-style,0.0
+afcd606,2017-05-23T22:32:42,changed URL for docs to new http://docs.mdanalysis.org,0.0
+e12a647,2017-05-26T01:49:38,Merge pull request #1367 from MDAnalysis/reader-speed-boost,0.0
+b60c924,2017-05-26T08:15:00,Use Timestep API more in reader speed boost,0.0
+0b499e9,2017-05-26T15:45:26,remove * imports in align docs,0.0
+2e2ad9f,2017-05-28T15:42:18,Fix weights deprecations (#1356),1.0
+5222fc3,2017-06-03T09:33:13,Updated PCA Tutorial (#1379),0.0
+6f906c0,2017-06-03T18:32:51,Updated CHANGELOG for issue #1378 (#1380),0.0
+34f2370,2017-06-03T20:45:57,Finalised version 0.16.1,0.0
+dfb09d6,2017-06-03T20:48:53,Merge branch 'develop',0.0
+723cd89,2017-06-03T21:36:24,Updated c sources for 0.16.1,0.0

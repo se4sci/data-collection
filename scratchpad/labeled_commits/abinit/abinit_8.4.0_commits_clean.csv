@@ -1,0 +1,24 @@
+hash,time,message,buggy
+a7eb669,2017-05-08T12:09:05,Initialize the .ac files for v8.4.0,0.0
+671d8d6,2017-05-09T07:48:07,Complete statistics for v8.4,0.0
+9180457.0,2017-05-18T11:13:56,Small change in a openMP directive,0.0
+90bb16e,2017-05-19T15:38:51,Small change in PIMD linear constraint computation,0.0
+42dc28a,2017-05-19T16:20:02,Update ref file due to previous change,0.0
+20e7ec1,2017-05-21T14:45:04,Update basic doc files  in sync with update of Web pages.,0.0
+f90e8d1,2017-05-21T14:50:59,Merge remote-tracking branch torrent/quickfixes/42dc into _torrent-8.4.0,0.0
+acd2c63,2017-05-21T15:45:24,Update link,0.0
+e32d0ec,2017-05-21T19:25:59,Minor fix of a link,1.0
+e9e44a6,2017-05-22T12:04:42,Use HTML encoded name for &. optic input on the web-site has weird   at the end,0.0
+f780413,2017-05-22T16:21:14,Fix file names in toptic_3.files,1.0
+1f02dd6,2017-05-23T06:05:36,Merge remote-tracking branch gmatteo/optic_doc/f780 into _gmatteo-8.4.0,0.0
+8f5d6aa,2017-05-24T09:16:48,Add error message when npfft > 1 and nthreads >1,1.0
+c11d351,2017-05-24T09:37:26,Merge remote-tracking branch bieder/hotfix-npfft/8f5d into _bieder,0.0
+3f1ef61,2017-05-24T09:46:11,Updated KNOWN_PROBLEMS  for finalization of v8.4.0,0.0
+f84f60f,2017-05-24T11:45:16,Merge branch '_bieder' into release-8.4.0,0.0
+ea1f475,2017-05-24T14:17:53,Fix typos,1.0
+a6cd4cd,2017-05-24T16:09:28,Constitute the release notes. Not yet completed.,0.0
+1831518.0,2017-05-25T07:39:05,First complete draft of the release notes.,0.0
+9fce7df,2017-05-25T07:41:52,update contributor list for Floran Altvater,0.0
+8cffa6e,2017-05-25T07:44:12,More contribs (Naccarato  Prokhorenko),0.0
+365065b,2017-05-25T07:44:52,G. Geneste,0.0
+185eccd,2017-05-25T08:11:42,Wei Chen did introduce the gwfockmix input variable,0.0

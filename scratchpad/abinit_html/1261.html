@@ -1,0 +1,261 @@
+<html><head><title>eigfile.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="sourcestyles.css" />
+</head><body link="blue" vlink="blue">
+<h3>File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/scripts/post_processing/ElectronPhononCoupling/ElectronPhononCoupling/core/eigfile.py</h3>
+<SCRIPT>
+defaultStatus = "File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/scripts/post_processing/ElectronPhononCoupling/ElectronPhononCoupling/core/eigfile.py";
+top.document.title  = "eigfile.py";
+</SCRIPT>
+<pre><span class="default"></span><a name="1"><font size=-1>1     </font></a><span class="default"></span><span class="keyword">from </span><span class="default">__future__ </span><span class="keyword">import </span><span class="default">print_function</span>
+<a name="2"><font size=-1>2     </font></a><span class="default"></span>
+<a name="3"><font size=-1>3     </font></a><span class="default"><a href="dictionary_E.html#11473">__author__</a> = </span><span class="string">&quot;Gabriel Antonius&quot;</span>
+<a name="4"><font size=-1>4     </font></a><span class="string"></span>
+<a name="5"><font size=-1>5     </font></a><span class="string"></span><span class="keyword">from </span><span class="default">copy </span><span class="keyword">import </span><span class="default">copy</span>
+<a name="6"><font size=-1>6     </font></a><span class="default"></span>
+<a name="7"><font size=-1>7     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">numpy </span><span class="keyword">as <a href="dictionary_E.html#82810">np</a></span>
+<a name="8"><font size=-1>8     </font></a><span class="keyword">import </span><span class="default">netCDF4 </span><span class="keyword">as </span><span class="default">nc</span>
+<a name="9"><font size=-1>9     </font></a><span class="default"></span>
+<a name="10"><font size=-1>10     </font></a><span class="default"></span><span class="keyword">from </span><span class="default">. </span><span class="keyword">import </span><span class="default">EpcFile</span>
+<a name="11"><font size=-1>11     </font></a><span class="default"></span>
+<a name="12"><font size=-1>12     </font></a><span class="default"></span><span class="keyword">from </span><span class="default">.constants </span><span class="keyword">import <a href="dictionary_E.html#128952">tol6</a></span><span class="default">, <a href="dictionary_E.html#68317">kb_HaK</a></span>
+<a name="13"><font size=-1>13     </font></a><span class="default"></span>
+<a name="14"><font size=-1>14     </font></a><span class="default"></span><span class="keyword">from </span><span class="default">.mpi </span><span class="keyword">import </span><span class="default">MPI, <a href="dictionary_E.html#39544">comm</a>, <a href="dictionary_E.html#122000">size</a>, <a href="dictionary_E.html#92632">rank</a>, <a href="dictionary_E.html#78157">mpi_watch</a></span>
+<a name="15"><font size=-1>15     </font></a><span class="default"></span>
+<a name="16"><font size=-1>16     </font></a><span class="default"><a href="dictionary_E.html#11107">__all__</a> = [</span><span class="string">'EigFile'</span><span class="default">]</span>
+<a name="17"><font size=-1>17     </font></a><span class="default"></span>
+<a name="18"><font size=-1>18     </font></a><span class="default"></span>
+<a name="19"><font size=-1>19     </font></a><span class="default"></span><span class="keyword">class <a href="dictionary_E.html#3744">EigFile</a></span><span class="default">(<a href="dictionary_E.html#3834">EpcFile</a>):</span>
+<a name="20"><font size=-1>20     </font></a><span class="default"></span>
+<a name="21"><font size=-1>21     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_E.html#13914">__init__</a></span><span class="default">(<a href="dictionary_E.html#105214">self</a>, *<a href="dictionary_E.html#30315">args</a>, **<a href="dictionary_E.html#70528">kwargs</a>):</span>
+<a name="22"><font size=-1>22     </font></a><span class="default">        super(<a href="dictionary_E.html#3744">EigFile</a>, <a href="dictionary_E.html#105214">self</a>).__init__(*<a href="dictionary_E.html#30315">args</a>, **<a href="dictionary_E.html#70528">kwargs</a>)</span>
+<a name="23"><font size=-1>23     </font></a><span class="default">        <a href="dictionary_E.html#105214">self</a>.<a href="dictionary_E.html#3470">EIG</a> = </span><span class="keyword">None</span>
+<a name="24"><font size=-1>24     </font></a><span class="keyword">        <a href="dictionary_E.html#105214">self</a></span><span class="default">.<a href="dictionary_E.html#44310">degen</a> = </span><span class="keyword">None</span>
+<a name="25"><font size=-1>25     </font></a><span class="keyword"></span>
+<a name="26"><font size=-1>26     </font></a><span class="keyword">    def <a href="dictionary_E.html#93064">read_nc</a></span><span class="default">(<a href="dictionary_E.html#105204">self</a>, <a href="dictionary_E.html#55069">fname</a>=</span><span class="keyword">None</span><span class="default">):</span>
+<a name="27"><font size=-1>27     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;Open the Eig.nc file and read it.&quot;&quot;&quot;</span>
+<a name="28"><font size=-1>28     </font></a><span class="string">        <a href="dictionary_E.html#55069">fname</a> </span><span class="default">= <a href="dictionary_E.html#55069">fname</a> </span><span class="keyword">if <a href="dictionary_E.html#55069">fname</a> else <a href="dictionary_E.html#105204">self</a></span><span class="default">.<a href="dictionary_F.html#55190">fname</a></span>
+<a name="29"><font size=-1>29     </font></a><span class="default"></span>
+<a name="30"><font size=-1>30     </font></a><span class="default">        super(<a href="dictionary_E.html#3744">EigFile</a>, <a href="dictionary_E.html#105204">self</a>).<a href="dictionary_R.html#93056">read_nc</a>(<a href="dictionary_E.html#55069">fname</a>)</span>
+<a name="31"><font size=-1>31     </font></a><span class="default"></span>
+<a name="32"><font size=-1>32     </font></a><span class="default">        </span><span class="keyword">with <a href="dictionary_N.html#80999">nc</a></span><span class="default">.<a href="dictionary_D.html#3131">Dataset</a>(<a href="dictionary_E.html#55069">fname</a>, </span><span class="string">'r'</span><span class="default">) </span><span class="keyword">as <a href="dictionary_E.html#95537">root</a></span><span class="default">:</span>
+<a name="33"><font size=-1>33     </font></a><span class="default"></span>
+<a name="34"><font size=-1>34     </font></a><span class="default">            </span><span class="comment"># nspin, nkpt, nband</span>
+<a name="35"><font size=-1>35     </font></a><span class="comment">            <a href="dictionary_E.html#105204">self</a></span><span class="default">.<a href="dictionary_E.html#3470">EIG</a> = <a href="dictionary_E.html#95537">root</a>.<a href="dictionary_V.html#133596">variables</a>[</span><span class="string">'Eigenvalues'</span><span class="default">][:,:,:] </span>
+<a name="36"><font size=-1>36     </font></a><span class="default"></span>
+<a name="37"><font size=-1>37     </font></a><span class="default">            </span><span class="comment"># nkpt, 3</span>
+<a name="38"><font size=-1>38     </font></a><span class="comment">            <a href="dictionary_E.html#105204">self</a></span><span class="default">.<a href="dictionary_E.html#5614">Kptns</a> = <a href="dictionary_E.html#95537">root</a>.<a href="dictionary_V.html#133596">variables</a>[</span><span class="string">'Kptns'</span><span class="default">][:,:]</span>
+<a name="39"><font size=-1>39     </font></a><span class="default"></span>
+<a name="40"><font size=-1>40     </font></a><span class="default">    @<a href="dictionary_E.html#78157">mpi_watch</a></span>
+<a name="41"><font size=-1>41     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_E.html#34847">broadcast</a></span><span class="default">(<a href="dictionary_E.html#105213">self</a>):</span>
+<a name="42"><font size=-1>42     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;Broadcast the data from master to all workers.&quot;&quot;&quot;</span>
+<a name="43"><font size=-1>43     </font></a><span class="string">        <a href="dictionary_E.html#39544">comm</a></span><span class="default">.<a href="dictionary_B.html#2046">Barrier</a>()</span>
+<a name="44"><font size=-1>44     </font></a><span class="default"></span>
+<a name="45"><font size=-1>45     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_E.html#92632">rank</a> </span><span class="default">== </span><span class="number">0</span><span class="default">:</span>
+<a name="46"><font size=-1>46     </font></a><span class="default">            <a href="dictionary_E.html#45270">dim</a> = <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_A.html#31482">array</a>([<a href="dictionary_E.html#105213">self</a>.<a href="dictionary_E.html#83139">nspin</a>, <a href="dictionary_E.html#105213">self</a>.<a href="dictionary_E.html#81886">nkpt</a>, <a href="dictionary_E.html#105213">self</a>.<a href="dictionary_E.html#80919">nband</a>], dtype=<a href="dictionary_E.html#82810">np</a>.int)</span>
+<a name="47"><font size=-1>47     </font></a><span class="default">        </span><span class="keyword">else</span><span class="default">:</span>
+<a name="48"><font size=-1>48     </font></a><span class="default">            <a href="dictionary_E.html#45270">dim</a> = <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_E.html#48320">empty</a>(</span><span class="number">3</span><span class="default">, dtype=<a href="dictionary_E.html#82810">np</a>.int)</span>
+<a name="49"><font size=-1>49     </font></a><span class="default"></span>
+<a name="50"><font size=-1>50     </font></a><span class="default">        <a href="dictionary_E.html#39544">comm</a>.<a href="dictionary_B.html#2109">Bcast</a>([<a href="dictionary_E.html#45270">dim</a>, MPI.<a href="dictionary_I.html#5008">INT</a>])</span>
+<a name="51"><font size=-1>51     </font></a><span class="default"></span>
+<a name="52"><font size=-1>52     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_E.html#92632">rank</a> </span><span class="default">!= </span><span class="number">0</span><span class="default">:</span>
+<a name="53"><font size=-1>53     </font></a><span class="default">            <a href="dictionary_E.html#105213">self</a>.<a href="dictionary_E.html#3470">EIG</a> = <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_E.html#48320">empty</a>(<a href="dictionary_E.html#45270">dim</a>, dtype=<a href="dictionary_E.html#82810">np</a>.float64)</span>
+<a name="54"><font size=-1>54     </font></a><span class="default">            <a href="dictionary_E.html#105213">self</a>.<a href="dictionary_E.html#5614">Kptns</a> = <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_E.html#48320">empty</a>((<a href="dictionary_E.html#45270">dim</a>[</span><span class="number">1</span><span class="default">],</span><span class="number">3</span><span class="default">), dtype=<a href="dictionary_E.html#82810">np</a>.float64)</span>
+<a name="55"><font size=-1>55     </font></a><span class="default"></span>
+<a name="56"><font size=-1>56     </font></a><span class="default">        <a href="dictionary_E.html#39544">comm</a>.<a href="dictionary_B.html#2109">Bcast</a>([<a href="dictionary_E.html#105213">self</a>.<a href="dictionary_E.html#3470">EIG</a>, MPI.<a href="dictionary_D.html#3102">DOUBLE</a>])</span>
+<a name="57"><font size=-1>57     </font></a><span class="default">        <a href="dictionary_E.html#39544">comm</a>.<a href="dictionary_B.html#2109">Bcast</a>([<a href="dictionary_E.html#105213">self</a>.<a href="dictionary_E.html#5614">Kptns</a>, MPI.<a href="dictionary_D.html#3102">DOUBLE</a>])</span>
+<a name="58"><font size=-1>58     </font></a><span class="default"></span>
+<a name="59"><font size=-1>59     </font></a><span class="default">    @property</span>
+<a name="60"><font size=-1>60     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_E.html#83139">nspin</a></span><span class="default">(<a href="dictionary_E.html#105205">self</a>):</span>
+<a name="61"><font size=-1>61     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_E.html#105205">self</a></span><span class="default">.<a href="dictionary_E.html#3470">EIG</a>.<a href="dictionary_S.html#121254">shape</a>[</span><span class="number">0</span><span class="default">] </span><span class="keyword">if <a href="dictionary_E.html#105205">self</a></span><span class="default">.<a href="dictionary_E.html#3470">EIG</a> </span><span class="keyword">is not None else None</span>
+<a name="62"><font size=-1>62     </font></a><span class="keyword"></span>
+<a name="63"><font size=-1>63     </font></a><span class="keyword">    </span><span class="default">@property</span>
+<a name="64"><font size=-1>64     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_E.html#81886">nkpt</a></span><span class="default">(<a href="dictionary_E.html#105206">self</a>):</span>
+<a name="65"><font size=-1>65     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_E.html#105206">self</a></span><span class="default">.<a href="dictionary_E.html#3470">EIG</a>.<a href="dictionary_S.html#121254">shape</a>[</span><span class="number">1</span><span class="default">] </span><span class="keyword">if <a href="dictionary_E.html#105206">self</a></span><span class="default">.<a href="dictionary_E.html#3470">EIG</a> </span><span class="keyword">is not None else None</span>
+<a name="66"><font size=-1>66     </font></a><span class="keyword"></span>
+<a name="67"><font size=-1>67     </font></a><span class="keyword">    </span><span class="default">@property</span>
+<a name="68"><font size=-1>68     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_E.html#80919">nband</a></span><span class="default">(<a href="dictionary_E.html#105207">self</a>):</span>
+<a name="69"><font size=-1>69     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_E.html#105207">self</a></span><span class="default">.<a href="dictionary_E.html#3470">EIG</a>.<a href="dictionary_S.html#121254">shape</a>[</span><span class="number">2</span><span class="default">] </span><span class="keyword">if <a href="dictionary_E.html#105207">self</a></span><span class="default">.<a href="dictionary_E.html#3470">EIG</a> </span><span class="keyword">is not None else None</span>
+<a name="70"><font size=-1>70     </font></a><span class="keyword"></span>
+<a name="71"><font size=-1>71     </font></a><span class="keyword">    def <a href="dictionary_E.html#67628">iter_spin_band_eig</a></span><span class="default">(<a href="dictionary_E.html#105209">self</a>, <a href="dictionary_E.html#63325">ikpt</a>):</span>
+<a name="72"><font size=-1>72     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;</span>
+<a name="73"><font size=-1>73     </font></a><span class="string">        Iterator over spin index, band index, and eigenvalues at one k-point.</span>
+<a name="74"><font size=-1>74     </font></a><span class="string">        Yields tuples (ispin, iband, eig) in order of increasing eig.</span>
+<a name="75"><font size=-1>75     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="76"><font size=-1>76     </font></a><span class="string">        <a href="dictionary_E.html#83133">nspin</a></span><span class="default">, <a href="dictionary_E.html#81853">nkpt</a>, <a href="dictionary_E.html#80891">nband</a> = <a href="dictionary_E.html#105209">self</a>.<a href="dictionary_E.html#3470">EIG</a>.<a href="dictionary_S.html#121254">shape</a></span>
+<a name="77"><font size=-1>77     </font></a><span class="default">        <a href="dictionary_E.html#97120">sbe</a> = [(<a href="dictionary_E.html#67171">ispin</a>, </span><span class="number">0</span><span class="default">, <a href="dictionary_E.html#105209">self</a>.<a href="dictionary_E.html#3470">EIG</a>[<a href="dictionary_E.html#67171">ispin</a>,<a href="dictionary_E.html#63325">ikpt</a>,</span><span class="number">0</span><span class="default">]) </span><span class="keyword">for <a href="dictionary_E.html#67171">ispin</a> in </span><span class="default">range(<a href="dictionary_E.html#83133">nspin</a>)]</span>
+<a name="78"><font size=-1>78     </font></a><span class="default">        <a href="dictionary_E.html#38669">cmp_sbe</a> = </span><span class="keyword">lambda </span><span class="default">sbe1, sbe2: <a href="dictionary_C.html#38662">cmp</a>(sbe1[</span><span class="number">2</span><span class="default">], sbe2[</span><span class="number">2</span><span class="default">])</span>
+<a name="79"><font size=-1>79     </font></a><span class="default">        </span><span class="keyword">while <a href="dictionary_E.html#97120">sbe</a></span><span class="default">:</span>
+<a name="80"><font size=-1>80     </font></a><span class="default">            <a href="dictionary_E.html#77190">min_sbe</a> = sorted(<a href="dictionary_E.html#97120">sbe</a>, cmp=<a href="dictionary_E.html#38669">cmp_sbe</a>)[</span><span class="number">0</span><span class="default">]</span>
+<a name="81"><font size=-1>81     </font></a><span class="default">            </span><span class="keyword">yield <a href="dictionary_E.html#77190">min_sbe</a></span>
+<a name="82"><font size=-1>82     </font></a><span class="keyword">    </span>
+<a name="83"><font size=-1>83     </font></a><span class="keyword">            <a href="dictionary_E.html#62418">i</a> </span><span class="default">= <a href="dictionary_E.html#97120">sbe</a>.<a href="dictionary_I.html#64214">index</a>(<a href="dictionary_E.html#77190">min_sbe</a>)</span>
+<a name="84"><font size=-1>84     </font></a><span class="default">            <a href="dictionary_E.html#67171">ispin</a>, <a href="dictionary_E.html#62705">iband</a>, <a href="dictionary_E.html#47899">eig</a> = <a href="dictionary_E.html#77190">min_sbe</a></span>
+<a name="85"><font size=-1>85     </font></a><span class="default">    </span>
+<a name="86"><font size=-1>86     </font></a><span class="default">            </span><span class="keyword">if <a href="dictionary_E.html#62705">iband</a> </span><span class="default">== <a href="dictionary_E.html#80891">nband</a> - </span><span class="number">1</span><span class="default">:</span>
+<a name="87"><font size=-1>87     </font></a><span class="default">                </span><span class="keyword">del <a href="dictionary_E.html#97120">sbe</a></span><span class="default">[<a href="dictionary_E.html#62418">i</a>]</span>
+<a name="88"><font size=-1>88     </font></a><span class="default">            </span><span class="keyword">else</span><span class="default">:</span>
+<a name="89"><font size=-1>89     </font></a><span class="default">                <a href="dictionary_E.html#97120">sbe</a>[<a href="dictionary_E.html#62418">i</a>] = (<a href="dictionary_E.html#67171">ispin</a>, <a href="dictionary_E.html#62705">iband</a>+</span><span class="number">1</span><span class="default">, <a href="dictionary_E.html#105209">self</a>.<a href="dictionary_E.html#3470">EIG</a>[<a href="dictionary_E.html#67171">ispin</a>, <a href="dictionary_E.html#63325">ikpt</a>, <a href="dictionary_E.html#62705">iband</a>+</span><span class="number">1</span><span class="default">])</span>
+<a name="90"><font size=-1>90     </font></a><span class="default">    </span>
+<a name="91"><font size=-1>91     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_E.html#58363">get_degen</a></span><span class="default">(<a href="dictionary_E.html#105212">self</a>):</span>
+<a name="92"><font size=-1>92     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;</span>
+<a name="93"><font size=-1>93     </font></a><span class="string">        Compute the degeneracy of the bands.</span>
+<a name="94"><font size=-1>94     </font></a><span class="string">    </span>
+<a name="95"><font size=-1>95     </font></a><span class="string">        Returns</span>
+<a name="96"><font size=-1>96     </font></a><span class="string">        -------</span>
+<a name="97"><font size=-1>97     </font></a><span class="string">        degen: 2D list (nkpt, )</span>
+<a name="98"><font size=-1>98     </font></a><span class="string">            For each k-point, contains a list of groups of (s, n) tuples</span>
+<a name="99"><font size=-1>99     </font></a><span class="string">            which are degenerated.</span>
+<a name="100"><font size=-1>100     </font></a><span class="string">            For example, if there is only a single spin (spin unpolarized case)</span>
+<a name="101"><font size=-1>101     </font></a><span class="string">            and two k-points, and at the first k-point there are two triplets,</span>
+<a name="102"><font size=-1>102     </font></a><span class="string">            then the output is</span>
+<a name="103"><font size=-1>103     </font></a><span class="string">                [[[(0,1), (0,2), (0,3)],  [(0,4), (0,5), (0,6)]], []]</span>
+<a name="104"><font size=-1>104     </font></a><span class="string">    </span>
+<a name="105"><font size=-1>105     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="106"><font size=-1>106     </font></a><span class="string">        <a href="dictionary_E.html#83134">nspin</a></span><span class="default">, <a href="dictionary_E.html#81854">nkpt</a>, <a href="dictionary_E.html#80892">nband</a> = <a href="dictionary_E.html#105212">self</a>.<a href="dictionary_E.html#3470">EIG</a>.<a href="dictionary_S.html#121254">shape</a></span>
+<a name="107"><font size=-1>107     </font></a><span class="default">    </span>
+<a name="108"><font size=-1>108     </font></a><span class="default">        <a href="dictionary_E.html#44290">degen</a> = list()</span>
+<a name="109"><font size=-1>109     </font></a><span class="default">        </span><span class="keyword">for <a href="dictionary_E.html#63327">ikpt</a> in </span><span class="default">range(<a href="dictionary_E.html#81854">nkpt</a>):</span>
+<a name="110"><font size=-1>110     </font></a><span class="default">    </span>
+<a name="111"><font size=-1>111     </font></a><span class="default">            <a href="dictionary_E.html#69599">kpt_degen</a> = list()</span>
+<a name="112"><font size=-1>112     </font></a><span class="default">            <a href="dictionary_E.html#60635">group</a> = list()</span>
+<a name="113"><font size=-1>113     </font></a><span class="default">            <a href="dictionary_E.html#72014">last_ispin</a>, <a href="dictionary_E.html#72011">last_iband</a>, <a href="dictionary_E.html#72006">last_eig</a> = </span><span class="number">0</span><span class="default">, </span><span class="number">0</span><span class="default">, -float(</span><span class="string">'inf'</span><span class="default">)</span>
+<a name="114"><font size=-1>114     </font></a><span class="default">    </span>
+<a name="115"><font size=-1>115     </font></a><span class="default">            </span><span class="keyword">for <a href="dictionary_E.html#97121">sbe</a> in <a href="dictionary_E.html#105212">self</a></span><span class="default">.<a href="dictionary_E.html#67628">iter_spin_band_eig</a>(<a href="dictionary_E.html#63327">ikpt</a>):</span>
+<a name="116"><font size=-1>116     </font></a><span class="default">                <a href="dictionary_E.html#67173">ispin</a>, <a href="dictionary_E.html#62707">iband</a>, <a href="dictionary_E.html#47900">eig</a> = <a href="dictionary_E.html#97121">sbe</a></span>
+<a name="117"><font size=-1>117     </font></a><span class="default">    </span>
+<a name="118"><font size=-1>118     </font></a><span class="default">                </span><span class="keyword">if <a href="dictionary_E.html#82810">np</a></span><span class="default">.<a href="dictionary_I.html#66938">isclose</a>(<a href="dictionary_E.html#72006">last_eig</a>, <a href="dictionary_E.html#47900">eig</a>, rtol=</span><span class="number">1e-12</span><span class="default">, atol=</span><span class="number">1e-5</span><span class="default">):</span>
+<a name="119"><font size=-1>119     </font></a><span class="default">                    </span><span class="keyword">if not <a href="dictionary_E.html#60635">group</a></span><span class="default">:</span>
+<a name="120"><font size=-1>120     </font></a><span class="default">                        <a href="dictionary_E.html#60635">group</a>.<a href="dictionary_A.html#29427">append</a>((<a href="dictionary_E.html#72014">last_ispin</a>, <a href="dictionary_E.html#72011">last_iband</a>))</span>
+<a name="121"><font size=-1>121     </font></a><span class="default">                    <a href="dictionary_E.html#60635">group</a>.<a href="dictionary_A.html#29427">append</a>((<a href="dictionary_E.html#67173">ispin</a>, <a href="dictionary_E.html#62707">iband</a>))</span>
+<a name="122"><font size=-1>122     </font></a><span class="default">    </span>
+<a name="123"><font size=-1>123     </font></a><span class="default">                </span><span class="keyword">else</span><span class="default">:</span>
+<a name="124"><font size=-1>124     </font></a><span class="default">                    </span><span class="keyword">if <a href="dictionary_E.html#60635">group</a></span><span class="default">:</span>
+<a name="125"><font size=-1>125     </font></a><span class="default">                        <a href="dictionary_E.html#69599">kpt_degen</a>.<a href="dictionary_A.html#29427">append</a>(<a href="dictionary_E.html#60635">group</a>)</span>
+<a name="126"><font size=-1>126     </font></a><span class="default">                        <a href="dictionary_E.html#60635">group</a> = list()</span>
+<a name="127"><font size=-1>127     </font></a><span class="default">    </span>
+<a name="128"><font size=-1>128     </font></a><span class="default">                <a href="dictionary_E.html#72014">last_ispin</a>, <a href="dictionary_E.html#72011">last_iband</a>, <a href="dictionary_E.html#72006">last_eig</a> = <a href="dictionary_E.html#67173">ispin</a>, <a href="dictionary_E.html#62707">iband</a>, <a href="dictionary_E.html#47900">eig</a></span>
+<a name="129"><font size=-1>129     </font></a><span class="default">    </span>
+<a name="130"><font size=-1>130     </font></a><span class="default">            <a href="dictionary_E.html#44290">degen</a>.<a href="dictionary_A.html#29427">append</a>(<a href="dictionary_E.html#69599">kpt_degen</a>)</span>
+<a name="131"><font size=-1>131     </font></a><span class="default"></span>
+<a name="132"><font size=-1>132     </font></a><span class="default">        <a href="dictionary_E.html#105212">self</a>.<a href="dictionary_E.html#44310">degen</a> = <a href="dictionary_E.html#44290">degen</a></span>
+<a name="133"><font size=-1>133     </font></a><span class="default">    </span>
+<a name="134"><font size=-1>134     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_E.html#44290">degen</a></span>
+<a name="135"><font size=-1>135     </font></a><span class="keyword"></span>
+<a name="136"><font size=-1>136     </font></a><span class="keyword">    def <a href="dictionary_E.html#75320">make_average</a></span><span class="default">(<a href="dictionary_E.html#105208">self</a>, <a href="dictionary_E.html#31328">arr</a>):</span>
+<a name="137"><font size=-1>137     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot; </span>
+<a name="138"><font size=-1>138     </font></a><span class="string">        Average a quantity over degenerated states.</span>
+<a name="139"><font size=-1>139     </font></a><span class="string">        Does not work with spin yet.</span>
+<a name="140"><font size=-1>140     </font></a><span class="string">    </span>
+<a name="141"><font size=-1>141     </font></a><span class="string">        Arguments</span>
+<a name="142"><font size=-1>142     </font></a><span class="string">        ---------</span>
+<a name="143"><font size=-1>143     </font></a><span class="string">    </span>
+<a name="144"><font size=-1>144     </font></a><span class="string">        arr: numpy.ndarray(..., nkpt, nband)</span>
+<a name="145"><font size=-1>145     </font></a><span class="string">            An array of any dimension, of which the two last indicies are</span>
+<a name="146"><font size=-1>146     </font></a><span class="string">            the kpoint and the band.</span>
+<a name="147"><font size=-1>147     </font></a><span class="string">    </span>
+<a name="148"><font size=-1>148     </font></a><span class="string">        Returns</span>
+<a name="149"><font size=-1>149     </font></a><span class="string">        -------</span>
+<a name="150"><font size=-1>150     </font></a><span class="string">    </span>
+<a name="151"><font size=-1>151     </font></a><span class="string">        arr: numpy.ndarray(..., nkpt, nband)</span>
+<a name="152"><font size=-1>152     </font></a><span class="string">            The array with the values of degenerated bands averaged.</span>
+<a name="153"><font size=-1>153     </font></a><span class="string">    </span>
+<a name="154"><font size=-1>154     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="155"><font size=-1>155     </font></a><span class="string"></span>
+<a name="156"><font size=-1>156     </font></a><span class="string">        </span><span class="keyword">if not <a href="dictionary_E.html#105208">self</a></span><span class="default">.<a href="dictionary_E.html#44310">degen</a>:</span>
+<a name="157"><font size=-1>157     </font></a><span class="default">            <a href="dictionary_E.html#105208">self</a>.<a href="dictionary_E.html#58363">get_degen</a>()</span>
+<a name="158"><font size=-1>158     </font></a><span class="default"></span>
+<a name="159"><font size=-1>159     </font></a><span class="default">        <a href="dictionary_E.html#81852">nkpt</a>, <a href="dictionary_E.html#80890">nband</a> = <a href="dictionary_E.html#31328">arr</a>.<a href="dictionary_S.html#121254">shape</a>[-</span><span class="number">2</span><span class="default">:]</span>
+<a name="160"><font size=-1>160     </font></a><span class="default">    </span>
+<a name="161"><font size=-1>161     </font></a><span class="default">        </span><span class="keyword">for <a href="dictionary_E.html#63324">ikpt</a> in </span><span class="default">range(<a href="dictionary_E.html#81852">nkpt</a>):</span>
+<a name="162"><font size=-1>162     </font></a><span class="default">            </span><span class="keyword">for <a href="dictionary_E.html#60634">group</a> in <a href="dictionary_E.html#105208">self</a></span><span class="default">.<a href="dictionary_E.html#44310">degen</a>[<a href="dictionary_E.html#63324">ikpt</a>]:</span>
+<a name="163"><font size=-1>163     </font></a><span class="default">                <a href="dictionary_E.html#32483">average</a> = copy(<a href="dictionary_E.html#31328">arr</a>[...,<a href="dictionary_E.html#63324">ikpt</a>,<a href="dictionary_E.html#60634">group</a>[</span><span class="number">0</span><span class="default">][</span><span class="number">1</span><span class="default">]])</span>
+<a name="164"><font size=-1>164     </font></a><span class="default">                </span><span class="keyword">for <a href="dictionary_E.html#67170">ispin</a></span><span class="default">, <a href="dictionary_E.html#62704">iband</a> </span><span class="keyword">in <a href="dictionary_E.html#60634">group</a></span><span class="default">[</span><span class="number">1</span><span class="default">:]:</span>
+<a name="165"><font size=-1>165     </font></a><span class="default">                    <a href="dictionary_E.html#32483">average</a> += <a href="dictionary_E.html#31328">arr</a>[...,<a href="dictionary_E.html#63324">ikpt</a>,<a href="dictionary_E.html#62704">iband</a>]</span>
+<a name="166"><font size=-1>166     </font></a><span class="default">    </span>
+<a name="167"><font size=-1>167     </font></a><span class="default">                <a href="dictionary_E.html#32483">average</a> /= len(<a href="dictionary_E.html#60634">group</a>)</span>
+<a name="168"><font size=-1>168     </font></a><span class="default">                </span><span class="keyword">for <a href="dictionary_E.html#67170">ispin</a></span><span class="default">, <a href="dictionary_E.html#62704">iband</a> </span><span class="keyword">in <a href="dictionary_E.html#60634">group</a></span><span class="default">:</span>
+<a name="169"><font size=-1>169     </font></a><span class="default">                    <a href="dictionary_E.html#31328">arr</a>[...,<a href="dictionary_E.html#63324">ikpt</a>,<a href="dictionary_E.html#62704">iband</a>] = <a href="dictionary_E.html#32483">average</a></span>
+<a name="170"><font size=-1>170     </font></a><span class="default">    </span>
+<a name="171"><font size=-1>171     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_E.html#31328">arr</a></span>
+<a name="172"><font size=-1>172     </font></a><span class="keyword"></span>
+<a name="173"><font size=-1>173     </font></a><span class="keyword">    def <a href="dictionary_E.html#125693">symmetrize_fan_degen</a></span><span class="default">(<a href="dictionary_E.html#105203">self</a>, <a href="dictionary_E.html#52346">fan_epc</a>):</span>
+<a name="174"><font size=-1>174     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;</span>
+<a name="175"><font size=-1>175     </font></a><span class="string">        Enforce coupling terms to be zero on the diagonal</span>
+<a name="176"><font size=-1>176     </font></a><span class="string">        and in degenerate states subset.</span>
+<a name="177"><font size=-1>177     </font></a><span class="string">    </span>
+<a name="178"><font size=-1>178     </font></a><span class="string">        Arguments</span>
+<a name="179"><font size=-1>179     </font></a><span class="string">        ---------</span>
+<a name="180"><font size=-1>180     </font></a><span class="string">        fan_epc: np.ndarray, shape=(nkpt,nband,nband,nmode)</span>
+<a name="181"><font size=-1>181     </font></a><span class="string">            The coupling matrix V_ij V_ji</span>
+<a name="182"><font size=-1>182     </font></a><span class="string">    </span>
+<a name="183"><font size=-1>183     </font></a><span class="string">        Returns</span>
+<a name="184"><font size=-1>184     </font></a><span class="string">        -------</span>
+<a name="185"><font size=-1>185     </font></a><span class="string">    </span>
+<a name="186"><font size=-1>186     </font></a><span class="string">        fan_epc_symmetrized: np.ndarray, shape=(nkpt,nband,nband,nmode)</span>
+<a name="187"><font size=-1>187     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="188"><font size=-1>188     </font></a><span class="string">        </span><span class="keyword">if not <a href="dictionary_E.html#105203">self</a></span><span class="default">.<a href="dictionary_E.html#44310">degen</a>:</span>
+<a name="189"><font size=-1>189     </font></a><span class="default">            <a href="dictionary_E.html#105203">self</a>.<a href="dictionary_E.html#58363">get_degen</a>()</span>
+<a name="190"><font size=-1>190     </font></a><span class="default"></span>
+<a name="191"><font size=-1>191     </font></a><span class="default">        <a href="dictionary_E.html#81851">nkpt</a>, <a href="dictionary_E.html#80889">nband</a>, <a href="dictionary_E.html#76392">mband</a>, <a href="dictionary_E.html#81939">nmode</a> = <a href="dictionary_E.html#52346">fan_epc</a>.<a href="dictionary_S.html#121254">shape</a></span>
+<a name="192"><font size=-1>192     </font></a><span class="default">     </span>
+<a name="193"><font size=-1>193     </font></a><span class="default">        <a href="dictionary_E.html#84467">offdiag</a> = <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_Z.html#138993">zeros</a>((<a href="dictionary_E.html#81851">nkpt</a>, <a href="dictionary_E.html#80889">nband</a>, <a href="dictionary_E.html#80889">nband</a>))</span>
+<a name="194"><font size=-1>194     </font></a><span class="default">        <a href="dictionary_E.html#84467">offdiag</a>[:] =  <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_O.html#84923">ones</a>((<a href="dictionary_E.html#80889">nband</a>, <a href="dictionary_E.html#80889">nband</a>)) - <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_I.html#62911">identity</a>(<a href="dictionary_E.html#80889">nband</a>)</span>
+<a name="195"><font size=-1>195     </font></a><span class="default">    </span>
+<a name="196"><font size=-1>196     </font></a><span class="default">        </span><span class="keyword">for <a href="dictionary_E.html#63323">ikpt</a> in </span><span class="default">range(<a href="dictionary_E.html#81851">nkpt</a>):</span>
+<a name="197"><font size=-1>197     </font></a><span class="default">            </span><span class="keyword">for <a href="dictionary_E.html#60633">group</a> in <a href="dictionary_E.html#105203">self</a></span><span class="default">.<a href="dictionary_E.html#44310">degen</a>[<a href="dictionary_E.html#63323">ikpt</a>]:</span>
+<a name="198"><font size=-1>198     </font></a><span class="default">                </span><span class="keyword">for <a href="dictionary_E.html#44313">degi</a> in <a href="dictionary_E.html#60633">group</a></span><span class="default">:</span>
+<a name="199"><font size=-1>199     </font></a><span class="default">                    </span><span class="keyword">for <a href="dictionary_E.html#44316">degj</a> in <a href="dictionary_E.html#60633">group</a></span><span class="default">:</span>
+<a name="200"><font size=-1>200     </font></a><span class="default">                        <a href="dictionary_E.html#63052">ieig</a>, <a href="dictionary_E.html#67932">jeig</a> = <a href="dictionary_E.html#44313">degi</a>[</span><span class="number">1</span><span class="default">], <a href="dictionary_E.html#44316">degj</a>[</span><span class="number">1</span><span class="default">]</span>
+<a name="201"><font size=-1>201     </font></a><span class="default">                        <a href="dictionary_E.html#84467">offdiag</a>[<a href="dictionary_E.html#63323">ikpt</a>][<a href="dictionary_E.html#63052">ieig</a>][<a href="dictionary_E.html#67932">jeig</a>] = </span><span class="number">0</span>
+<a name="202"><font size=-1>202     </font></a><span class="number">    </span>
+<a name="203"><font size=-1>203     </font></a><span class="number">        <a href="dictionary_E.html#52349">fan_epc_sym</a> </span><span class="default">= <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_E.html#48139">einsum</a>(</span><span class="string">'ijkl,ijk-&gt;ijkl'</span><span class="default">, <a href="dictionary_E.html#52346">fan_epc</a>, <a href="dictionary_E.html#84467">offdiag</a>)</span>
+<a name="204"><font size=-1>204     </font></a><span class="default">    </span>
+<a name="205"><font size=-1>205     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_E.html#52349">fan_epc_sym</a></span>
+<a name="206"><font size=-1>206     </font></a><span class="keyword"></span>
+<a name="207"><font size=-1>207     </font></a><span class="keyword">    def <a href="dictionary_E.html#58478">get_fermi_function_T0</a></span><span class="default">(<a href="dictionary_E.html#105210">self</a>, <a href="dictionary_E.html#78466">mu</a>):</span>
+<a name="208"><font size=-1>208     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;</span>
+<a name="209"><font size=-1>209     </font></a><span class="string">        Get the Fermi function for T=0.</span>
+<a name="210"><font size=-1>210     </font></a><span class="string">        Returns: occ[nspin,nkpt,nband]</span>
+<a name="211"><font size=-1>211     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="212"><font size=-1>212     </font></a><span class="string">        <a href="dictionary_E.html#84413">occ</a> </span><span class="default">= <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_Z.html#138993">zeros</a>((<a href="dictionary_E.html#105210">self</a>.<a href="dictionary_E.html#83139">nspin</a>, <a href="dictionary_E.html#105210">self</a>.<a href="dictionary_E.html#81886">nkpt</a>, <a href="dictionary_E.html#105210">self</a>.<a href="dictionary_E.html#80919">nband</a>))</span>
+<a name="213"><font size=-1>213     </font></a><span class="default">        <a href="dictionary_E.html#84413">occ</a>[<a href="dictionary_E.html#82810">np</a>.<a href="dictionary_W.html#134941">where</a>(<a href="dictionary_E.html#105210">self</a>.<a href="dictionary_E.html#3470">EIG</a> &lt; <a href="dictionary_E.html#78466">mu</a>)] = </span><span class="number">1.0</span>
+<a name="214"><font size=-1>214     </font></a><span class="number">        <a href="dictionary_E.html#84413">occ</a></span><span class="default">[<a href="dictionary_E.html#82810">np</a>.<a href="dictionary_W.html#134941">where</a>(<a href="dictionary_E.html#105210">self</a>.<a href="dictionary_E.html#3470">EIG</a> &gt; <a href="dictionary_E.html#78466">mu</a>)] = </span><span class="number">0.0</span>
+<a name="215"><font size=-1>215     </font></a><span class="number">        </span><span class="keyword">return <a href="dictionary_E.html#84413">occ</a></span>
+<a name="216"><font size=-1>216     </font></a><span class="keyword"></span>
+<a name="217"><font size=-1>217     </font></a><span class="keyword">    def <a href="dictionary_E.html#58475">get_fermi_function</a></span><span class="default">(<a href="dictionary_E.html#105211">self</a>, <a href="dictionary_E.html#78467">mu</a>, <a href="dictionary_E.html#126849">temperatures</a>):</span>
+<a name="218"><font size=-1>218     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;</span>
+<a name="219"><font size=-1>219     </font></a><span class="string">        Compute the Fermi function for the occupations,</span>
+<a name="220"><font size=-1>220     </font></a><span class="string">        given a chemical potential.</span>
+<a name="221"><font size=-1>221     </font></a><span class="string">        &quot;&quot;&quot;</span>
+<a name="222"><font size=-1>222     </font></a><span class="string"></span>
+<a name="223"><font size=-1>223     </font></a><span class="string">        <a href="dictionary_E.html#83232">ntemp</a> </span><span class="default">= len(<a href="dictionary_E.html#126849">temperatures</a>)</span>
+<a name="224"><font size=-1>224     </font></a><span class="default">        <a href="dictionary_E.html#84414">occ</a> = <a href="dictionary_E.html#82810">np</a>.<a href="dictionary_Z.html#138993">zeros</a>((<a href="dictionary_E.html#105211">self</a>.<a href="dictionary_E.html#83139">nspin</a>, <a href="dictionary_E.html#105211">self</a>.<a href="dictionary_E.html#81886">nkpt</a>, <a href="dictionary_E.html#105211">self</a>.<a href="dictionary_E.html#80919">nband</a>, <a href="dictionary_E.html#83232">ntemp</a>))</span>
+<a name="225"><font size=-1>225     </font></a><span class="default"></span>
+<a name="226"><font size=-1>226     </font></a><span class="default">        </span><span class="keyword">for <a href="dictionary_E.html#67493">itemp</a></span><span class="default">, <a href="dictionary_E.html#8589">T</a> </span><span class="keyword">in </span><span class="default">enumerate(<a href="dictionary_E.html#126849">temperatures</a>):</span>
+<a name="227"><font size=-1>227     </font></a><span class="default"></span>
+<a name="228"><font size=-1>228     </font></a><span class="default">            </span><span class="keyword">if <a href="dictionary_E.html#8589">T</a> </span><span class="default">&lt; <a href="dictionary_E.html#128952">tol6</a>:</span>
+<a name="229"><font size=-1>229     </font></a><span class="default">                <a href="dictionary_E.html#84414">occ</a>[...,<a href="dictionary_E.html#67493">itemp</a>] = <a href="dictionary_E.html#105211">self</a>.<a href="dictionary_E.html#58478">get_fermi_function_T0</a>(<a href="dictionary_E.html#78467">mu</a>)</span>
+<a name="230"><font size=-1>230     </font></a><span class="default">                </span><span class="keyword">continue</span>
+<a name="231"><font size=-1>231     </font></a><span class="keyword"></span>
+<a name="232"><font size=-1>232     </font></a><span class="keyword">            <a href="dictionary_E.html#34199">beta</a> </span><span class="default">= </span><span class="number">1. </span><span class="default">/ (<a href="dictionary_E.html#68317">kb_HaK</a> * <a href="dictionary_E.html#8589">T</a>)</span>
+<a name="233"><font size=-1>233     </font></a><span class="default"></span>
+<a name="234"><font size=-1>234     </font></a><span class="default">            </span><span class="comment">#occ[...,itemp] = 1. / (np.exp(beta * (self.EIG - mu)) + 1)</span>
+<a name="235"><font size=-1>235     </font></a><span class="comment"></span>
+<a name="236"><font size=-1>236     </font></a><span class="comment">            </span><span class="keyword">for <a href="dictionary_E.html#67172">ispin</a> in </span><span class="default">range(<a href="dictionary_E.html#105211">self</a>.<a href="dictionary_E.html#83139">nspin</a>):</span>
+<a name="237"><font size=-1>237     </font></a><span class="default">                </span><span class="keyword">for <a href="dictionary_E.html#63326">ikpt</a> in </span><span class="default">range(<a href="dictionary_E.html#105211">self</a>.<a href="dictionary_E.html#81886">nkpt</a>):</span>
+<a name="238"><font size=-1>238     </font></a><span class="default">                    </span><span class="keyword">for <a href="dictionary_E.html#62706">iband</a> in </span><span class="default">range(<a href="dictionary_E.html#105211">self</a>.<a href="dictionary_E.html#80919">nband</a>):</span>
+<a name="239"><font size=-1>239     </font></a><span class="default"></span>
+<a name="240"><font size=-1>240     </font></a><span class="default">                        <a href="dictionary_E.html#34210">betaE</a> = <a href="dictionary_E.html#34199">beta</a> * (<a href="dictionary_E.html#105211">self</a>.<a href="dictionary_E.html#3470">EIG</a>[<a href="dictionary_E.html#67172">ispin</a>,<a href="dictionary_E.html#63326">ikpt</a>,<a href="dictionary_E.html#62706">iband</a>] - <a href="dictionary_E.html#78467">mu</a>)</span>
+<a name="241"><font size=-1>241     </font></a><span class="default"></span>
+<a name="242"><font size=-1>242     </font></a><span class="default">                        </span><span class="keyword">if <a href="dictionary_E.html#34210">betaE</a> </span><span class="default">&lt; -</span><span class="number">20</span><span class="default">:</span>
+<a name="243"><font size=-1>243     </font></a><span class="default">                            <a href="dictionary_E.html#84414">occ</a>[<a href="dictionary_E.html#67172">ispin</a>,<a href="dictionary_E.html#63326">ikpt</a>,<a href="dictionary_E.html#62706">iband</a>,<a href="dictionary_E.html#67493">itemp</a>] = </span><span class="number">1</span>
+<a name="244"><font size=-1>244     </font></a><span class="number">                        </span><span class="keyword">elif <a href="dictionary_E.html#34210">betaE</a> </span><span class="default">&gt; </span><span class="number">20</span><span class="default">:</span>
+<a name="245"><font size=-1>245     </font></a><span class="default">                            <a href="dictionary_E.html#84414">occ</a>[<a href="dictionary_E.html#67172">ispin</a>,<a href="dictionary_E.html#63326">ikpt</a>,<a href="dictionary_E.html#62706">iband</a>,<a href="dictionary_E.html#67493">itemp</a>] = </span><span class="number">0</span>
+<a name="246"><font size=-1>246     </font></a><span class="number">                        </span><span class="keyword">else</span><span class="default">:</span>
+<a name="247"><font size=-1>247     </font></a><span class="default">                            <a href="dictionary_E.html#84414">occ</a>[<a href="dictionary_E.html#67172">ispin</a>,<a href="dictionary_E.html#63326">ikpt</a>,<a href="dictionary_E.html#62706">iband</a>,<a href="dictionary_E.html#67493">itemp</a>] = </span><span class="number">1.</span><span class="default">/(<a href="dictionary_E.html#82810">np</a>.exp(<a href="dictionary_E.html#34210">betaE</a>)+</span><span class="number">1</span><span class="default">)</span>
+<a name="248"><font size=-1>248     </font></a><span class="default"></span>
+<a name="249"><font size=-1>249     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_E.html#84414">occ</a></span>
+<a name="250"><font size=-1>250     </font></a><span class="keyword"> </span>
+<a name="251"><font size=-1>251     </font></a><span class="keyword"></span>
+</pre></body></html>

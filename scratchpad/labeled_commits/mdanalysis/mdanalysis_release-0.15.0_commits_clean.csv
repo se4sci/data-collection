@@ -1,169 +1,169 @@
 hash,time,message,buggy
-eaf6da3,2016-02-09 16:59:28,Improved  Best-like contact analysis (Issue #702),0
-88dc958,2016-02-10 12:13:20,Revert to changes to contacts.py - removed a dependancy on pandas  update tests,0
-25655f1,2016-02-10 12:49:28,Arguments refactored  numpy-style docs,0
-4d5c798,2016-02-10 14:17:18,Refactor universe identity check between groups  optional scipy.sparse import,0
-a07c6ee,2016-02-10 15:29:53,Add test files to package  rename test class for contacts,0
-98b9c11,2016-02-11 14:12:11,Contact analysis: move the example to cookbook - remove accidentally included CoordinateNeighborSearch  - single test class in test_contacts.py  remove test_contacts_best.py ,0
-91538dd,2016-02-11 15:24:56,Correct typo in tests,0
-605118c,2016-02-11 16:27:18,Fixed module import,0
-c4df4b5,2016-02-11 16:55:14,Fixed module imports (ii),0
-b2262d4,2016-02-11 17:12:11,Fixed imports (iii),0
-502503a,2016-02-11 20:49:27,PEP8 Changes,0
-0b90ebd,2016-02-11 21:09:24,Numpy-style doc-strings,0
-f6e372a,2016-02-11 21:22:38,Don't superposition for RMSD on default,0
-8675b63,2016-02-11 21:38:16,Add tests for rmsd function,0
-c853f16,2016-02-11 21:41:15,Add changelog,0
-16fe0f7,2016-02-11 23:57:16,fix align tests,0
-15cc3a4,2016-02-12 11:15:06,Single class that supports both cutoff and best-hummer contacts - scipy.sparse will cause an ImportException - updated tests (appear to be passing...),0
-485c0c4,2016-02-12 17:49:31,Clean-up docs  bzip conf files,0
-cad0d59,2016-02-13 16:13:58,Trying to make the new Contacts class as close to ContactAnalysis1 class...,0
-094b7f2,2016-02-14 17:56:52,Re-link to gro.bz2 files in setup.py,0
-5588e15,2016-02-14 19:03:30,Moved all the remaining methods from ContactAnalysis1 to Contacts,0
-17dec2d,2016-02-14 19:19:42,Deprecate the old ContactAnalysis1 class - checked if tests pass,0
-4f949b9,2016-02-16 18:20:42,update align tutorial to new rmsd behavior,0
-104ae48,2016-02-16 18:20:57,correct align function,0
-2124355,2016-02-23 17:06:34,Corrected docs  moved things around - general feature cleanup,0
-0b31850,2016-02-24 13:06:35,improvements for distances,0
-0e3811e,2016-02-24 13:35:33,doc string upgrades in analysis.contacts,0
-b8c0245,2016-02-24 15:14:11,Test and docstring cleanup - numpy style docs  - renamed a few methods  - @staticmethod annotation in tests,0
-d261919,2016-02-24 15:24:09,added back ContactAnalysis,0
-b0007f4,2016-02-25 12:20:23,Upated CHANGELOG  brought back the old ContactAnalysis class,0
-7d98d48,2016-02-26 10:44:26,Remove any self calls from load method  to make it nice and static,0
-d2288c1,2016-02-28 13:56:53,Bumped version to 0.14.1-dev0,0
-a4ee46b,2016-02-29 10:31:53,Merge branch 'issue-702-contacts' into develop,0
-5c4324f,2016-02-29 17:27:08,added missing function/class docs,0
-c824225,2016-02-29 20:52:41,Merge pull request #748 from MDAnalysis/issue-746-missing-docs,0
-e579339,2016-03-01 15:55:17,First draft of CONTRIBUTING file,0
-41038e1,2016-03-01 15:57:14,Fixed code getting mashed in md,0
-5b6471d,2016-03-01 16:03:15,Moved .github to correct location (repo root),0
-0016335,2016-03-01 17:01:36,Merge pull request #750 from MDAnalysis/issue-508-contributingrst,0
-3aacb27,2016-03-01 18:11:12,Refactor Contacts class,0
-e068ce6,2016-03-01 22:52:58,conda build scripts,0
-953c06d,2016-03-04 18:17:46,Added tests for Issue #755,0
-da35a5c,2016-03-04 18:20:45,Fixes for Issue #755,0
-094115a,2016-03-06 23:13:53,Update shear test numbers to pass with MKL,0
-1a6343d,2016-03-06 23:17:44,Remove dependencies and conda pinning.,0
-267068e,2016-03-06 23:22:09,Add CHANGELOG entry,0
-622ebf3,2016-03-07 08:30:30,Merge pull request #758 from kain88-de/shear-test,0
-9927b6a,2016-03-08 08:32:25,Add anaconda badge,0
-778b5a5,2016-03-08 08:35:17,Add changelog,0
-05a8aa6,2016-03-08 14:26:40,Merge pull request #714 from kain88-de/rmsd,0
-e1b4182,2016-03-08 19:02:45,Fix citations in docs,0
-0e4c042,2016-03-08 19:49:05,Move changelog into to new version,0
-22d17a9,2016-03-09 12:14:18,ensure HEADER and TITLE occur just once in a PDB file,0
-33b563b,2016-03-11 09:59:55,Merge pull request #761 from abhinavgupta94/develop,0
-f552580,2016-03-12 10:53:21,metadata update: link download_url to GitHub releases,0
-1fb1a06,2016-03-12 23:38:34,added explict imports,0
-247424b,2016-03-13 09:32:59,Merge pull request #769 from abhinavgupta94/issue-766-no-import-star,0
-ac15aed,2016-03-15 16:25:42,Make Travis run tests on OSX.,0
-e39ace4,2016-03-16 12:01:08,Merge pull request #771 from Endle/develop,0
-abf7aa7,2016-03-17 19:23:03,update release script.,0
-5d871af,2016-03-18 08:14:03,Update tests and add new tests,0
-861caef,2016-03-18 13:14:08,"Updated change_release.sh to improve regex (original change of ""dev|rc*[0-9]"" to ""dev*[0-9]|rc*[0-9]"")",0
-e3a345d,2016-03-18 16:56:23,Merge pull request #751 from kain88-de/conda,0
-ea126c8,2016-03-19 04:05:14,added tests for exception raise in GROParser,0
-4e5d502,2016-03-19 21:56:12,setup.py writes authors.py in package,0
-b27e41d,2016-03-19 23:03:41,Merge pull request #779 from jdetle/develop,0
-c7a1ba0,2016-03-19 23:05:22,Add missing Lennard van der Felzt in AUTHORS,0
-1c2e62f,2016-03-19 23:10:24,Sphinx uses __authors__,0
-2937b74,2016-03-20 00:53:26,Generate authors.py from AUTHORS for the tests,0
-5b1aadf,2016-03-20 01:03:53,Test that __authors__ is defined,0
-eee3cee,2016-03-20 01:40:16,Update CHANGELOGs for __authors__,0
-a68eedf,2016-03-20 02:12:24,Wrap the imports of authors.py,0
-33ac4f6,2016-03-20 02:40:43,Issue 724 - Removing assert statments from test units,0
-3de4db6,2016-03-20 09:48:03,Merge pull request #787 from jbarnoud/issue-784-dynamic-authors,0
-33e15b6,2016-03-20 11:06:06,Started tests for nuclinfo,0
-c7a1593,2016-03-20 14:26:54,Remove relative imports introduced in #787,0
-2cc1cc3,2016-03-20 16:17:58,Merge pull request #791 from jbarnoud/issue-784-dynamic-authors,0
-feefee6,2016-03-20 23:38:13,Merge pull request #789 from pedrishi/issue724,0
-0de57c8,2016-03-21 18:03:25,Dynamic author list works on python 3,0
-c282d66,2016-03-21 18:11:12,Merge pull request #783 from fiona-naughton/develop,0
-93b5841,2016-03-21 19:01:31,Wrap dynamic author list generation in setup.py,0
-bddbd81,2016-03-21 19:53:13,Merge pull request #794 from jbarnoud/issue-784-dynamic-authors-py3,0
-50629b7,2016-03-22 23:08:24,Changed bare except in GROParser to try and fix coverage detection,0
-9b3167d,2016-03-26 21:27:07,Add tests for gnm.,0
-7a329b9,2016-03-27 20:41:11,Merge pull request #806 from jbarnoud/issue-804-coverage,0
-7306f17,2016-03-27 21:00:56,Activate coverage report for analyses,0
-58f13b1,2016-03-27 21:17:49,Merge pull request #805 from jbarnoud/issue-804-coverage,0
-f067101,2016-03-27 22:54:16,Update the README to reflect #804,0
-1a0943c,2016-03-30 18:55:57,Added exception test for units.py (part of #597),0
-45846d8,2016-03-31 12:23:57,Updated comments in init to reflect nose test docs [skip ci],0
-b739cec,2016-03-31 22:36:30,Merge pull request #811 from jdetle/develop,0
-8d1dc54,2016-04-02 15:31:31,Eliminated Biopython PDB Reader/Writer and Parser (#777),0
-ee9210f,2016-04-02 16:44:48,Merge pull request #803 from Endle/develop,0
-a9751d8,2016-04-04 13:09:25,cleanup related to BioPDB removal (#777),0
-fdd5dca,2016-04-05 21:40:32,A Universe now holds onto its initialization kwargs.,0
-de62a9b,2016-04-06 13:00:47,Added tests for Issue #816,0
-ac9afb9,2016-04-06 13:08:38,Fixes issue #816,0
-b443a4d,2016-04-06 13:21:56,Removed list appending for MOL2 coordinate reading,0
-07fc902,2016-04-06 13:32:27,MOL2 Writer no longer requires substructure,0
-f19cdcc,2016-04-06 13:36:37,Finished Issue #816,0
-fdec854,2016-04-06 13:40:14,Merge branch 'develop' into issue-816,0
-86d1eae,2016-04-07 15:46:28,Merge pull request #817 from MDAnalysis/issue-816,0
-78331d5,2016-04-08 22:04:45,Merge pull request #796 from MDAnalysis/groparser-coveragefix,0
-d73c18a,2016-04-10 15:24:26,All deprecations on AtomGroup and friends getters and setters. (#698),0
-e952945,2016-04-11 17:29:47,tests for issue #820,0
-06b275b,2016-04-11 17:45:41,Fixes Issue #820,0
-cf1e6b6,2016-04-11 18:10:53,fix for simple rms.rmsd() (Issue #822),0
-3f1f36d,2016-04-12 10:18:16,Removed some use of deprecated methods,0
-868fa85,2016-04-12 14:03:15,fix rms tests,0
-928e885,2016-04-12 14:19:54,Add more rmsd test,0
-d072377,2016-04-12 15:01:27,update changelog,0
-3084ad3,2016-04-13 19:41:55,removed supporting code for Bio.PDBReader and cleanup,0
-96c9272,2016-04-13 19:45:10,Merge pull request #823 from MDAnalysis/issue-822-simple-rmsd-broken,0
-66115e1,2016-04-14 18:30:17,Updated rms.py and tests to account for weighting,0
-0ebbbe6,2016-04-16 20:21:37,Update CHANGELOG,0
-8c84df8,2016-04-16 21:51:14,add tempdir module,0
-2e1bd18,2016-04-16 21:52:05,Update all tests to use MDAnalysisTests tempdir,0
-21060d5,2016-04-16 22:03:23,Update CHANGELOG and LICENSE,0
-0492d9a,2016-04-16 22:13:07,replace string interpolation with format(),0
-330db1c,2016-04-17 22:47:33,Removed use of Residue.name and Segment.id,0
-6131849,2016-04-17 22:50:53,fixup,0
-d2aff33,2016-04-17 23:01:59,fix pos warnings (#828),0
-432498e,2016-04-18 09:29:15,Merge pull request #826 from jdetle/rmsd-weighting,0
-aa7e871,2016-04-18 09:31:21,Merge pull request #821 from MDAnalysis/issue-820-grovels,0
-6a47ed7,2016-04-18 10:57:40,Deprecation warnings now only appear once per deprecated feature,0
-a4c31d4,2016-04-18 16:39:43,Merge pull request #829 from MDAnalysis/warnonce,0
-9e049f6,2016-04-19 06:30:35,Merge pull request #825 from MDAnalysis/depremovals,0
-964a4b4,2016-04-19 16:52:55,doc fixes for removal of Bio.PDBParser,0
-d2ed400,2016-04-19 19:25:21,Merge branch 'develop' into issue-755-atomTSview,0
-a7def5f,2016-04-19 19:27:44,Fixed failing tests for Issue #755,0
-9ce60e6,2016-04-21 19:30:40,Merge pull request #827 from kain88-de/include-tempdir,0
-ba2fd3a,2016-04-21 23:10:10,Merge remote-tracking branch 'origin/contact-improvements' into develop,0
-aad5e1a,2016-04-22 01:40:24,removed tests related to permissive PDBReader,0
-ed9ece5,2016-04-24 13:51:07,Added zero-based indices for donors and acceptors in HBond Analysis  updated docs to reflect change. Added deprecation warning for the 1-based index.,0
-2de1290,2016-04-24 18:36:59,Merge pull request #832 from MDAnalysis/issue-777-remove-BioPDB,0
-719a391,2016-04-24 18:40:10,Merge branch 'develop' into issue-755-atomTSview,0
-2bd06e5,2016-04-24 23:14:58,Merge pull request #756 from MDAnalysis/issue-755-atomTSview,0
-2567a1a,2016-04-25 08:23:52,Merge pull request #809 from BartBruininks/issue597_units_unittest_Raises,0
-c231374,2016-04-27 16:44:46,Updated CHANGELOG,0
-218a9c3,2016-04-27 17:44:03,Added ENT file extension to PDBReader  Writer and Parser. Updated tests to check succesful loading of PDB file from ENT extension. Updated CHANGELOG  allowed for reading of .ent files in testsuite  shortened '.ent' testfile. Updated docs to show ent extension supported by trajectory readers/writers and topology parser. Changed name of truncated ENT test file to reflect testing purpose.,0
-5ccd344,2016-04-29 23:56:53,Merge pull request #835 from jdetle/issue-834,0
-2bea8be,2016-05-02 20:33:26,Updated tests  fixed some issues in docs,0
-9142426,2016-05-02 21:08:48,Updated docs [skip ci],0
-7a77bf1,2016-05-05 10:17:08,Fix a regression with PDB files on python 3,0
-a7fb274,2016-05-05 15:49:09,Merge pull request #840 from jbarnoud/pdb-p3-regression,0
-222e0d9,2016-05-06 19:10:13,remove tempdir requirement,0
-94ce366,2016-05-06 19:14:10,remove tempdir from conda scripts,0
-f914568,2016-05-06 20:02:55,Merge pull request #844 from kain88-de/tempdir-removal,0
-730bc3d,2016-05-06 20:41:50,Added real trajectory test,0
-58687ec,2016-05-06 20:41:50,Added real trajectory test,0
-3892406,2016-05-07 11:06:19,Fixed up test,0
-64596fc,2016-05-07 12:14:05,Tidied hbond_analysis slightly,0
-439901f,2016-05-07 19:13:25,Merge pull request #1 from richardjgowers/hbonds,0
-b750c24,2016-05-09 09:14:07,Merge pull request #833 from jdetle/hbonds,0
-d989f27,2016-05-11 11:08:36,Amber trj format (#847),0
-0269cf0,2016-05-12 12:22:08,First draft of faster pdb reading,0
-48571e1,2016-05-12 15:17:33,Updated to handle CRYST entries that precede model headers,0
-ea70fd4,2016-05-12 16:25:29,For issue #850,0
-5928dbc,2016-05-12 17:07:39,Fixup,0
-fa5d50b,2016-05-12 17:49:26,tests for standalone PDBReader,0
-1a4c7cb,2016-05-13 14:00:33,Added tests for compressed PDB file seeking and reading,0
-aa27b03,2016-05-13 15:57:43,Merge pull request #849 from MDAnalysis/issue-848-fasterpdb,0
-35a7e72,2016-05-15 11:18:25,Fixed HistoryReader using 1 based frame indices,0
-9839461,2016-05-15 11:23:38,Fixed tests for issue #851,0
-dc522c4,2016-05-15 12:05:47,Fixed frame numbering on rewind,0
-69039df,2016-05-15 17:10:47,Merge pull request #852 from MDAnalysis/issue-851-dlpfix,0
-f906b94,2016-05-15 21:14:48,Finalised 0.15.0 release,0
-cc64b45,2016-05-15 21:19:55,Merged 0.15.0 release into master,0
+eaf6da3,2016-02-09T16:59:28,Improved  Best-like contact analysis (Issue #702),0.0
+88dc958,2016-02-10T12:13:20,Revert to changes to contacts.py - removed a dependancy on pandas  update tests,0.0
+25655f1,2016-02-10T12:49:28,Arguments refactored  numpy-style docs,0.0
+4d5c798,2016-02-10T14:17:18,Refactor universe identity check between groups  optional scipy.sparse import,0.0
+a07c6ee,2016-02-10T15:29:53,Add test files to package  rename test class for contacts,0.0
+98b9c11,2016-02-11T14:12:11,Contact analysis: move the example to cookbook - remove accidentally included CoordinateNeighborSearch  - single test class in test_contacts.py  remove test_contacts_best.py,0.0
+91538dd,2016-02-11T15:24:56,Correct typo in tests,0.0
+605118c,2016-02-11T16:27:18,Fixed module import,1.0
+c4df4b5,2016-02-11T16:55:14,Fixed module imports (ii),1.0
+b2262d4,2016-02-11T17:12:11,Fixed imports (iii),1.0
+502503a,2016-02-11T20:49:27,PEP8 Changes,0.0
+0b90ebd,2016-02-11T21:09:24,Numpy-style doc-strings,0.0
+f6e372a,2016-02-11T21:22:38,Don't superposition for RMSD on default,0.0
+8675b63,2016-02-11T21:38:16,Add tests for rmsd function,0.0
+c853f16,2016-02-11T21:41:15,Add changelog,0.0
+16fe0f7,2016-02-11T23:57:16,fix align tests,1.0
+15cc3a4,2016-02-12T11:15:06,Single class that supports both cutoff and best-hummer contacts - scipy.sparse will cause an ImportException - updated tests (appear to be passing...),0.0
+485c0c4,2016-02-12T17:49:31,Clean-up docs  bzip conf files,0.0
+cad0d59,2016-02-13T16:13:58,Trying to make the new Contacts class as close to ContactAnalysis1 class...,0.0
+094b7f2,2016-02-14T17:56:52,Re-link to gro.bz2 files in setup.py,0.0
+5.588e+18,2016-02-14T19:03:30,Moved all the remaining methods from ContactAnalysis1 to Contacts,0.0
+17dec2d,2016-02-14T19:19:42,Deprecate the old ContactAnalysis1 class - checked if tests pass,0.0
+4f949b9,2016-02-16T18:20:42,update align tutorial to new rmsd behavior,0.0
+104ae48,2016-02-16T18:20:57,correct align function,0.0
+2124355.0,2016-02-23T17:06:34,Corrected docs  moved things around - general feature cleanup,0.0
+0b31850,2016-02-24T13:06:35,improvements for distances,0.0
+0e3811e,2016-02-24T13:35:33,doc string upgrades in analysis.contacts,0.0
+b8c0245,2016-02-24T15:14:11,Test and docstring cleanup - numpy style docs  - renamed a few methods  - @staticmethod annotation in tests,0.0
+d261919,2016-02-24T15:24:09,added back ContactAnalysis,0.0
+b0007f4,2016-02-25T12:20:23,Upated CHANGELOG  brought back the old ContactAnalysis class,0.0
+7d98d48,2016-02-26T10:44:26,Remove any self calls from load method  to make it nice and static,0.0
+d2288c1,2016-02-28T13:56:53,Bumped version to 0.14.1-dev0,0.0
+a4ee46b,2016-02-29T10:31:53,Merge branch 'issue-702-contacts' into develop,0.0
+5c4324f,2016-02-29T17:27:08,added missing function/class docs,0.0
+c824225,2016-02-29T20:52:41,Merge pull request #748 from MDAnalysis/issue-746-missing-docs,0.0
+e579339,2016-03-01T15:55:17,First draft of CONTRIBUTING file,0.0
+410380.0,2016-03-01T15:57:14,Fixed code getting mashed in md,1.0
+5b6471d,2016-03-01T16:03:15,Moved .github to correct location (repo root),0.0
+16335.0,2016-03-01T17:01:36,Merge pull request #750 from MDAnalysis/issue-508-contributingrst,0.0
+3aacb27,2016-03-01T18:11:12,Refactor Contacts class,0.0
+e068ce6,2016-03-01T22:52:58,conda build scripts,0.0
+953c06d,2016-03-04T18:17:46,Added tests for Issue #755,0.0
+da35a5c,2016-03-04T18:20:45,Fixes for Issue #755,1.0
+094115a,2016-03-06T23:13:53,Update shear test numbers to pass with MKL,0.0
+1a6343d,2016-03-06T23:17:44,Remove dependencies and conda pinning.,0.0
+267068e,2016-03-06T23:22:09,Add CHANGELOG entry,0.0
+622ebf3,2016-03-07T08:30:30,Merge pull request #758 from kain88-de/shear-test,0.0
+9927b6a,2016-03-08T08:32:25,Add anaconda badge,0.0
+778b5a5,2016-03-08T08:35:17,Add changelog,0.0
+05a8aa6,2016-03-08T14:26:40,Merge pull request #714 from kain88-de/rmsd,0.0
+e1b4182,2016-03-08T19:02:45,Fix citations in docs,0.0
+0e4c042,2016-03-08T19:49:05,Move changelog into to new version,0.0
+22d17a9,2016-03-09T12:14:18,ensure HEADER and TITLE occur just once in a PDB file,0.0
+33b563b,2016-03-11T09:59:55,Merge pull request #761 from abhinavgupta94/develop,0.0
+f552580,2016-03-12T10:53:21,metadata update: link download_url to GitHub releases,0.0
+1fb1a06,2016-03-12T23:38:34,added explict imports,0.0
+247424b,2016-03-13T09:32:59,Merge pull request #769 from abhinavgupta94/issue-766-no-import-star,0.0
+ac15aed,2016-03-15T16:25:42,Make Travis run tests on OSX.,0.0
+e39ace4,2016-03-16T12:01:08,Merge pull request #771 from Endle/develop,0.0
+abf7aa7,2016-03-17T19:23:03,update release script.,0.0
+5d871af,2016-03-18T08:14:03,Update tests and add new tests,0.0
+861caef,2016-03-18T13:14:08,"Updated change_release.sh to improve regex (original change of ""dev|rc*[0-9]"" to ""dev*[0-9]|rc*[0-9]"")",0.0
+e3a345d,2016-03-18T16:56:23,Merge pull request #751 from kain88-de/conda,0.0
+ea126c8,2016-03-19T04:05:14,added tests for exception raise in GROParser,0.0
+4e5d502,2016-03-19T21:56:12,setup.py writes authors.py in package,0.0
+b27e41d,2016-03-19T23:03:41,Merge pull request #779 from jdetle/develop,0.0
+c7a1ba0,2016-03-19T23:05:22,Add missing Lennard van der Felzt in AUTHORS,0.0
+1c2e62f,2016-03-19T23:10:24,Sphinx uses __authors__,0.0
+2937b74,2016-03-20T00:53:26,Generate authors.py from AUTHORS for the tests,0.0
+5b1aadf,2016-03-20T01:03:53,Test that __authors__ is defined,0.0
+eee3cee,2016-03-20T01:40:16,Update CHANGELOGs for __authors__,0.0
+a68eedf,2016-03-20T02:12:24,Wrap the imports of authors.py,0.0
+33ac4f6,2016-03-20T02:40:43,Issue 724 - Removing assert statments from test units,0.0
+3de4db6,2016-03-20T09:48:03,Merge pull request #787 from jbarnoud/issue-784-dynamic-authors,0.0
+33e15b6,2016-03-20T11:06:06,Started tests for nuclinfo,0.0
+c7a1593,2016-03-20T14:26:54,Remove relative imports introduced in #787,0.0
+2cc1cc3,2016-03-20T16:17:58,Merge pull request #791 from jbarnoud/issue-784-dynamic-authors,0.0
+feefee6,2016-03-20T23:38:13,Merge pull request #789 from pedrishi/issue724,0.0
+0de57c8,2016-03-21T18:03:25,Dynamic author list works on python 3,0.0
+c282d66,2016-03-21T18:11:12,Merge pull request #783 from fiona-naughton/develop,0.0
+93b5841,2016-03-21T19:01:31,Wrap dynamic author list generation in setup.py,0.0
+bddbd81,2016-03-21T19:53:13,Merge pull request #794 from jbarnoud/issue-784-dynamic-authors-py3,0.0
+50629b7,2016-03-22T23:08:24,Changed bare except in GROParser to try and fix coverage detection,0.0
+9b3167d,2016-03-26T21:27:07,Add tests for gnm.,0.0
+7a329b9,2016-03-27T20:41:11,Merge pull request #806 from jbarnoud/issue-804-coverage,0.0
+7306f17,2016-03-27T21:00:56,Activate coverage report for analyses,0.0
+58f13b1,2016-03-27T21:17:49,Merge pull request #805 from jbarnoud/issue-804-coverage,0.0
+f067101,2016-03-27T22:54:16,Update the README to reflect #804,0.0
+1a0943c,2016-03-30T18:55:57,Added exception test for units.py (part of #597),0.0
+45846d8,2016-03-31T12:23:57,Updated comments in init to reflect nose test docs [skip ci],0.0
+b739cec,2016-03-31T22:36:30,Merge pull request #811 from jdetle/develop,0.0
+8d1dc54,2016-04-02T15:31:31,Eliminated Biopython PDB Reader/Writer and Parser (#777),0.0
+ee9210f,2016-04-02T16:44:48,Merge pull request #803 from Endle/develop,0.0
+a9751d8,2016-04-04T13:09:25,cleanup related to BioPDB removal (#777),0.0
+fdd5dca,2016-04-05T21:40:32,A Universe now holds onto its initialization kwargs.,0.0
+de62a9b,2016-04-06T13:00:47,Added tests for Issue #816,0.0
+ac9afb9,2016-04-06T13:08:38,Fixes issue #816,1.0
+b443a4d,2016-04-06T13:21:56,Removed list appending for MOL2 coordinate reading,0.0
+07fc902,2016-04-06T13:32:27,MOL2 Writer no longer requires substructure,0.0
+f19cdcc,2016-04-06T13:36:37,Finished Issue #816,0.0
+fdec854,2016-04-06T13:40:14,Merge branch 'develop' into issue-816,0.0
+86d1eae,2016-04-07T15:46:28,Merge pull request #817 from MDAnalysis/issue-816,0.0
+78331d5,2016-04-08T22:04:45,Merge pull request #796 from MDAnalysis/groparser-coveragefix,0.0
+d73c18a,2016-04-10T15:24:26,All deprecations on AtomGroup and friends getters and setters. (#698),0.0
+e952945,2016-04-11T17:29:47,tests for issue #820,0.0
+06b275b,2016-04-11T17:45:41,Fixes Issue #820,1.0
+cf1e6b6,2016-04-11T18:10:53,fix for simple rms.rmsd() (Issue #822),1.0
+3f1f36d,2016-04-12T10:18:16,Removed some use of deprecated methods,0.0
+868fa85,2016-04-12T14:03:15,fix rms tests,1.0
+928e885,2016-04-12T14:19:54,Add more rmsd test,0.0
+d072377,2016-04-12T15:01:27,update changelog,0.0
+3084ad3,2016-04-13T19:41:55,removed supporting code for Bio.PDBReader and cleanup,0.0
+96c9272,2016-04-13T19:45:10,Merge pull request #823 from MDAnalysis/issue-822-simple-rmsd-broken,0.0
+661150.0,2016-04-14T18:30:17,Updated rms.py and tests to account for weighting,0.0
+0ebbbe6,2016-04-16T20:21:37,Update CHANGELOG,0.0
+8c84df8,2016-04-16T21:51:14,add tempdir module,0.0
+2e1bd18,2016-04-16T21:52:05,Update all tests to use MDAnalysisTests tempdir,0.0
+21060d5,2016-04-16T22:03:23,Update CHANGELOG and LICENSE,0.0
+0492d9a,2016-04-16T22:13:07,replace string interpolation with format(),0.0
+330db1c,2016-04-17T22:47:33,Removed use of Residue.name and Segment.id,0.0
+6131849.0,2016-04-17T22:50:53,fixup,1.0
+d2aff33,2016-04-17T23:01:59,fix pos warnings (#828),1.0
+432498e,2016-04-18T09:29:15,Merge pull request #826 from jdetle/rmsd-weighting,0.0
+aa7e871,2016-04-18T09:31:21,Merge pull request #821 from MDAnalysis/issue-820-grovels,0.0
+6a47ed7,2016-04-18T10:57:40,Deprecation warnings now only appear once per deprecated feature,0.0
+a4c31d4,2016-04-18T16:39:43,Merge pull request #829 from MDAnalysis/warnonce,0.0
+9e049f6,2016-04-19T06:30:35,Merge pull request #825 from MDAnalysis/depremovals,0.0
+964a4b4,2016-04-19T16:52:55,doc fixes for removal of Bio.PDBParser,0.0
+d2ed400,2016-04-19T19:25:21,Merge branch 'develop' into issue-755-atomTSview,0.0
+a7def5f,2016-04-19T19:27:44,Fixed failing tests for Issue #755,1.0
+9ce60e6,2016-04-21T19:30:40,Merge pull request #827 from kain88-de/include-tempdir,0.0
+ba2fd3a,2016-04-21T23:10:10,Merge remote-tracking branch 'origin/contact-improvements' into develop,0.0
+aad5e1a,2016-04-22T01:40:24,removed tests related to permissive PDBReader,0.0
+ed9ece5,2016-04-24T13:51:07,Added zero-based indices for donors and acceptors in HBond Analysis  updated docs to reflect change. Added deprecation warning for the 1-based index.,0.0
+2de1290,2016-04-24T18:36:59,Merge pull request #832 from MDAnalysis/issue-777-remove-BioPDB,0.0
+719a391,2016-04-24T18:40:10,Merge branch 'develop' into issue-755-atomTSview,0.0
+2bd06e5,2016-04-24T23:14:58,Merge pull request #756 from MDAnalysis/issue-755-atomTSview,0.0
+2567a1a,2016-04-25T08:23:52,Merge pull request #809 from BartBruininks/issue597_units_unittest_Raises,0.0
+c231374,2016-04-27T16:44:46,Updated CHANGELOG,0.0
+218a9c3,2016-04-27T17:44:03,Added ENT file extension to PDBReader  Writer and Parser. Updated tests to check succesful loading of PDB file from ENT extension. Updated CHANGELOG  allowed for reading of .ent files in testsuite  shortened '.ent' testfile. Updated docs to show ent extension supported by trajectory readers/writers and topology parser. Changed name of truncated ENT test file to reflect testing purpose.,0.0
+5ccd344,2016-04-29T23:56:53,Merge pull request #835 from jdetle/issue-834,0.0
+2bea8be,2016-05-02T20:33:26,Updated tests  fixed some issues in docs,1.0
+9142426.0,2016-05-02T21:08:48,Updated docs [skip ci],0.0
+7a77bf1,2016-05-05T10:17:08,Fix a regression with PDB files on python 3,1.0
+a7fb274,2016-05-05T15:49:09,Merge pull request #840 from jbarnoud/pdb-p3-regression,0.0
+222e0d9,2016-05-06T19:10:13,remove tempdir requirement,0.0
+94ce366,2016-05-06T19:14:10,remove tempdir from conda scripts,0.0
+f914568,2016-05-06T20:02:55,Merge pull request #844 from kain88-de/tempdir-removal,0.0
+730bc3d,2016-05-06T20:41:50,Added real trajectory test,0.0
+58687ec,2016-05-06T20:41:50,Added real trajectory test,0.0
+3892406.0,2016-05-07T11:06:19,Fixed up test,1.0
+64596fc,2016-05-07T12:14:05,Tidied hbond_analysis slightly,0.0
+439901f,2016-05-07T19:13:25,Merge pull request #1 from richardjgowers/hbonds,0.0
+b750c24,2016-05-09T09:14:07,Merge pull request #833 from jdetle/hbonds,0.0
+d989f27,2016-05-11T11:08:36,Amber trj format (#847),0.0
+0269cf0,2016-05-12T12:22:08,First draft of faster pdb reading,0.0
+485710.0,2016-05-12T15:17:33,Updated to handle CRYST entries that precede model headers,0.0
+ea70fd4,2016-05-12T16:25:29,For issue #850,0.0
+5928dbc,2016-05-12T17:07:39,Fixup,1.0
+fa5d50b,2016-05-12T17:49:26,tests for standalone PDBReader,0.0
+1a4c7cb,2016-05-13T14:00:33,Added tests for compressed PDB file seeking and reading,0.0
+aa27b03,2016-05-13T15:57:43,Merge pull request #849 from MDAnalysis/issue-848-fasterpdb,0.0
+35a7e72,2016-05-15T11:18:25,Fixed HistoryReader using 1 based frame indices,1.0
+9839461.0,2016-05-15T11:23:38,Fixed tests for issue #851,1.0
+dc522c4,2016-05-15T12:05:47,Fixed frame numbering on rewind,1.0
+69039df,2016-05-15T17:10:47,Merge pull request #852 from MDAnalysis/issue-851-dlpfix,0.0
+f906b94,2016-05-15T21:14:48,Finalised 0.15.0 release,0.0
+cc64b45,2016-05-15T21:19:55,Merged 0.15.0 release into master,0.0

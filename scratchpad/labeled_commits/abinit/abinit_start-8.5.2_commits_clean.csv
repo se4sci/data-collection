@@ -1,0 +1,175 @@
+hash,time,message,buggy
+da842fe,2017-04-27T23:29:08,Write dielectric tensor to anaddb.nc when only DDE are present,0.0
+94e3583,2017-05-02T10:15:08,Add imgmov in _HIST file if nimage is used and correct the tutorial on string method,0.0
+c1e36f6,2017-05-23T17:54:01,Added test for nlflag=2  nlflag=3,0.0
+4d43142,2017-05-24T08:24:25,Update test so it can run,0.0
+dfd85ee,2017-05-24T09:20:23,Merge branch 'hotfix-npfft' into develop,0.0
+94ddb5f,2017-05-24T09:20:52,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+d09aebc,2017-05-29T13:59:19,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+6aaf8bd,2017-06-05T11:57:55,Improve the doc for Gitlab our GitHub users.,0.0
+73ff716,2017-06-05T11:58:45,Merge branch hotfix-8.4/6aaf into develop,0.0
+de80b09,2017-06-05T14:22:24,Modifications to allow nightly use of ubu_intel_13.1_openmpi,0.0
+5d9be5f,2017-06-05T14:49:01,Change sound velocity units for echo from [m/s] to [km/s]  for portability of automatic tests.,0.0
+9167070.0,2017-06-05T14:52:01,Change dataset 4 nstep in Tmpiio#26  for portability reasons,0.0
+b5d3431,2017-06-05T15:23:55,Fix the problem with bigdft_paral not being available ...,1.0
+fff16f3,2017-06-05T16:15:46,Change tolms to tolkms   also fix problem with input mpiio#26,0.0
+365cffb,2017-06-05T17:48:50,Update the reference files  due to the switch of unit from m/s to km/s for the sound velocity,0.0
+eb00d5a,2017-06-05T18:57:38,Update ref for Tv5#84,0.0
+9c9bde2,2017-06-05T19:04:52,Fix incorrect mpiio#t26.in,1.0
+2eaa4e0,2017-06-05T20:48:10,Update refs v2#28  v6#80  v8#45  due to m/s being replace by km/s,0.0
+2963d7a,2017-06-05T22:07:10,Last (?) update : ref for v6#81,0.0
+58fc5b3,2017-06-06T05:52:33,Update doc for replacement of tolkms by tolms,0.0
+76abaab,2017-06-06T08:00:17,Merge _gonze-8.4.2/58fc into hotfix-8.4,0.0
+aceca21,2017-06-06T08:17:17,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+19636cf,2017-06-06T09:28:52,Tune tests to allow ubu_intel_13.1_openmpi as nightly machine. Unfortunately  test mpiio#26 dataset 3 cannot get good tolwfr.,0.0
+cfb4e9c,2017-06-06T16:08:39,More modifs to allow ubu_intel_13.1_openmpi,0.0
+60c45f4,2017-06-06T16:11:37,Definition of eighth was missing in m_libpaw_defs.F90,0.0
+3623f12,2017-06-06T17:30:21,Merge branch hotfix-8.4/60c4 into _gonze-8.4.2,0.0
+c07e9cd,2017-06-06T17:32:40,Merge branch 'hotfix-8.4' into _gonze-8.4.2,0.0
+a10ce32,2017-06-06T17:40:22,Again update tolerances for fluctuating results with paral_kgb on ubu_intel_13.1_openmpi   also fix URL,0.0
+788dd79,2017-06-06T18:32:27,Disable paral#29 on ubu_intel_13.1_openmpi  as it fluctuates too much ...,0.0
+43be4cc,2017-06-07T05:28:30,Merge branch hotfix-8.4/788d into develop,0.0
+94816c3,2017-06-08T14:21:39,Merge with trunk,0.0
+e1174ce,2017-06-08T23:28:48,Implemented Frolich interaction corrections to treat the long-ranged part of the phonon coupling potential.,0.0
+14eeaea,2017-06-09T15:51:46,Finalize v8.4.2 : update KNOWN PROBLEMS. Also suppress unneeded exclude_hosts and exclude_builders in t*.in files.,0.0
+15484fa,2017-06-09T16:34:18,Merge remote-tracking branch 'trunk/develop' into develop,0.0
+5fc795e,2017-06-09T16:42:16,Edited the function description for the long-range part of the phonon potential.,0.0
+1ed63fb,2017-06-09T19:29:08,Initialize v8.4.3,0.0
+ae26db9,2017-06-09T19:34:54,Merge branch hotfix-8.4/1ed6 into develop,0.0
+f800011,2017-06-09T19:37:21,Fix conflict inside KNOWN_PROBLEMS,0.0
+d602cfa,2017-06-10T17:45:58,Attempt to corrected a bug related to the treatment of the long-range part of the phonon potential.,0.0
+9a6029f,2017-06-11T11:06:52,Fixed dvdb_free.,1.0
+6ff1360,2017-06-11T12:46:32,Trying to figure out a bug...,1.0
+bf2115b,2017-06-11T13:42:02,Debugging...,0.0
+b2cb362,2017-06-11T15:34:45,Still debugging.,0.0
+f5c3ce6,2017-06-11T16:32:09,Debugging  again.,0.0
+b5492db,2017-06-11T16:40:29,Debugging in progress...,0.0
+9673ecf,2017-06-11T19:02:27,Commented some debug flag after a miracle resolution of the bug.,0.0
+833108c,2017-06-11T20:53:56,Debugging. Added comments in v1phq_symmetrize.,0.0
+03d11cf,2017-06-12T09:39:41,Fix blank,1.0
+a073178,2017-06-12T10:23:12,Add the dir input-web from FJ,0.0
+95ce7c1,2017-06-12T10:41:20,Blank,0.0
+a67242a,2017-06-12T10:46:53,Debugging. I think I found the bug in dvdb_ftinterp_qpt.,0.0
+ca097e8,2017-06-12T11:53:10,Beautified the implementation of the long-range part of the phonon potential for Fourier interpolation.,0.0
+918d4ff,2017-06-12T13:26:12,Fixed argument declaration in v1r_long_range.,1.0
+aa12142,2017-06-12T18:10:15,Merge remote-tracking branch biederj/image_hist/9481 into _biederj,0.0
+6c2ba20,2017-06-14T09:09:14,Merge antonius/develop/918d into _antonius,0.0
+b8b4482,2017-06-14T09:27:21,Text improvements,0.0
+303f63d,2017-06-14T09:38:07,Remove unneeded bzr_helpers,0.0
+bb006e4,2017-06-14T09:47:23,Rename dos_to_unix.csh -> suppress_windows_ctrl-M.csh,0.0
+35a82ab,2017-06-14T10:04:44,Fix text,1.0
+0f4b61d,2017-06-14T11:49:09,ubu_intel13.1 has also a problem with Tmpiio#25 . Exclude this host ...,0.0
+1186d67,2017-06-14T11:51:59,Merge branch _antonius/6c2b into develop,0.0
+8ac3384,2017-06-14T15:39:35,update of the new branch input-web,0.0
+e0f8cef,2017-06-15T21:51:45,fix broken gwfockmix support,1.0
+d251264,2017-06-15T23:07:00,Set default value of rcut for HSE06,0.0
+2968b99,2017-06-16T08:23:23,Reinitialize the branch input-web,0.0
+7a80082,2017-06-16T08:24:37,Merge jollet/input-web/8ac3 into input-web,0.0
+44be88f,2017-06-16T08:27:52,Fix typo,1.0
+0cf6555,2017-06-16T08:30:39,The files doc/input-web/*~ should not be under git control,0.0
+58823c2,2017-06-16T11:24:03,Init playground for creating the new Web pages for topics.,0.0
+12da452,2017-06-16T11:35:16,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+89e37ca,2017-06-16T11:41:26,Merge hotfix-8.4/d251 into develop,0.0
+449b4d0,2017-06-16T11:49:44,Fix a bug in abi_yml2html.py (generation of the specials.html file). Improve the doc  and fix other minor problems with the input variable doc.,1.0
+ff92d24,2017-06-16T11:55:26,Merge develop/89e3 into input-web,0.0
+3ad07a6,2017-06-16T11:59:32,Merge develop/449b into input-web,0.0
+a84855c,2017-06-16T12:19:08,"Improve comments in abi_yml2html.py  also init generation of ""topics"" files.",0.0
+ca7ecc2,2017-06-16T12:37:32,"Define two ""topic"" files.",0.0
+8157b39,2017-06-16T13:43:57,The generation of topic.html file works  with only simple flat list given,0.0
+e9cff81,2017-06-16T13:45:50,Fix minor problem,1.0
+9df3803,2017-06-16T15:41:14,This version is debugged. Still quite primitive (only one pair of topic_name+topic_class per input variable),0.0
+a41401f,2017-06-16T15:45:27,Create a new template  for DFT+U.html,0.0
+118725c,2017-06-16T16:01:28,Works now to generate two different topic files.,0.0
+8af8e38,2017-06-16T16:07:26,add test-input,0.0
+86928eb,2017-06-16T16:11:02,Merge remote-tracking branch 'remotes/trunk/input-web' into input-web,0.0
+cec0d42,2017-06-16T16:22:17,reference files updated,0.0
+f836b98,2017-06-16T16:24:43,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0.0
+45e8db9,2017-06-16T16:26:15,Merge branch 'develop' of gitlab.abinit.org:fnac/abinit into develop,0.0
+9f20ce5,2017-06-16T21:24:17,Modify tolerance for ubu intel 13.1,0.0
+76bd7f3,2017-06-17T11:46:21,update test,0.0
+c1eb70f,2017-06-19T09:39:22,Generate automatically a Web page for the list of topics  from a  topics.yml file. Cross links automatically generated.,0.0
+2022408.0,2017-06-19T09:46:15,mise à jour avant merge,0.0
+a8f8a2d,2017-06-19T09:46:34,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+0ca3345,2017-06-19T10:20:55,"Restructure the infos_html tar.gz (to ease the links to the input files). Also add short description for each ""How to""",0.0
+4b86c8f,2017-06-19T14:10:14,update test,0.0
+1e83663,2017-06-19T14:56:21,The mechanism to refer to input files is now operative  with automatic creation of links.,0.0
+9cec0e5,2017-06-19T15:00:48,Minor modif,0.0
+0886dcc,2017-06-19T15:06:36,Make the .html file easier to read,0.0
+3e43e6c,2017-06-19T15:53:09,List of input files is constituted  with the proper format (one line per directory),0.0
+ddc40fa,2017-06-19T15:54:26,Test,0.0
+7b756ac,2017-06-19T16:02:57,Now can treat an incomplete .yml database .,0.0
+ac848de,2017-06-19T16:32:29,merge avec Xavier,0.0
+e028a9e,2017-06-19T16:35:05,merge avec XavierMerge remote-tracking branch 'trunk/input-web' into input-web,0.0
+fb0f362,2017-06-19T16:36:27,update test,0.0
+03102a4,2017-06-19T18:27:20,Test new abinit_vars_out.yml file. Also clean the new version of abi_yml2html.py,0.0
+1cf03d9,2017-06-19T20:35:56,COmplete the declaration of yaml object in variables.py  adjust abi_yml2html.py.,0.0
+cab4dfd,2017-06-19T20:41:05,"Suppress duplicate sentence in abinit_vars.yml. Also prepare reading of ""topics"" field.",0.0
+8ec53e7,2017-06-19T20:42:10,One more minor adjustment.,0.0
+52f8281,2017-06-20T05:38:14,Reenginieering in order to allow the multiplicity of topics.,0.0
+05195d5,2017-06-20T05:57:22,Clean,0.0
+0aaac1e,2017-06-20T06:09:48,Coded multiple topics. Not yet debugged.,0.0
+dfd3cd6,2017-06-20T06:46:27,"Multitopics is working : the input variable xyzfile is now mentioned in both ""crystal"" and ""DFT+U"" (for demonstrating purposes ...).",0.0
+283b00f,2017-06-20T06:52:51,Check,0.0
+e76fa90,2017-06-20T07:33:10,Added temp_PAW_settings.html   for further testing. Also created topics_table_of_content.js   so that the temp_* files are as light as possible.,0.0
+706696a,2017-06-20T09:35:22,merge avec Xavier,0.0
+b3df3d0,2017-06-20T11:48:39,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+9d2c273,2017-06-20T17:39:58,modification of doc/playground,0.0
+d26e78a,2017-06-20T17:41:13,modification doc/playground,0.0
+a75cc3c,2017-06-21T06:13:03,Adjust tolerance for fnac modif.,0.0
+601b9c2,2017-06-21T16:48:59,mise a jour des topics input variables,0.0
+d914805,2017-06-22T18:05:08,add new templates for the features of the input variables,0.0
+f324e66,2017-06-23T05:50:39,Correct the topic_class and topic_name for xyzfile (they had been switched),0.0
+59c4079,2017-06-23T06:13:52,The echo of internal input variables in the automatically_generated topics files missed the % sign.,0.0
+974116a,2017-06-23T06:25:16,Still one fix of incorrect switch  for xyzfile variable.,0.0
+6f90fd6,2017-06-24T21:54:36,Use a newly generated Abivars.jar,0.0
+d79917b,2017-06-24T21:55:17,Complete the previous commit  with the lib directory  as well as the original Abivars.jar,0.0
+bdae52f,2017-06-25T06:24:58,Add the original abinit_vars.yml  for further reference  as well as the small size abinit_vars_playXG.yml .,0.0
+534be84,2017-06-26T06:18:26,Import the new Abivars.jar (modified varnale to abivarname   definition to mnemonics),0.0
+651109a,2017-06-26T07:54:46,Automatic update,0.0
+093cd21,2017-06-26T08:16:56,Prepare the switch of names.,0.0
+290667c,2017-06-26T08:29:03,Complete the new Abivars.jar with the accompanying lib. Update accordinagly the names in abinit_vars.yml.,0.0
+bfab037,2017-06-26T08:37:33,Update abi_yml2html.py wrt change of names  and update acordingly the automatically generated files.,0.0
+163df08,2017-06-26T08:40:02,remove unneeded files,0.0
+d998216,2017-06-26T08:48:19,Merge branch 'hotfix-8.4' of gitlab:trunk/abinit into hotfix-8.4,0.0
+8123966.0,2017-06-26T08:54:20,Merge branch develop/163d into input-web,0.0
+707b1b8,2017-06-26T09:55:46,Prepare the change varname to abivarname and definition to menmonics.,0.0
+0b33813,2017-06-26T10:02:20,Test the new Abivars.jar and abi_yml2html.py => OK,0.0
+f8ba896,2017-06-26T10:17:53,The names (abivarname and mnemonics) have been updated in all files.,0.0
+6c8bbcc,2017-06-26T10:26:48,The old names (varname and definition) are not used anymore.,0.0
+07c3e49,2017-06-26T10:42:28,Fix typo,1.0
+76da6ba,2017-06-26T10:47:27,Update remaning files.,0.0
+3f1656f,2017-06-26T11:16:59,merge avec Xavier,0.0
+6ac422a,2017-06-26T12:38:49,Now abi_yml2html.py works with topics: name_class(1)  name_class(2) ...,0.0
+6f7a686,2017-06-26T12:50:15,Clean abi_yml2html.py (disable topic_class and topic_name  in favour of topics),0.0
+5642760.0,2017-06-26T12:51:20,Update abinit_vars_playXG.yml,0.0
+186ebf6,2017-06-26T13:36:42,mise à jour avec topics,0.0
+f921446,2017-06-26T16:05:35,Merge remote-tracking branch 'trunk/input-web' into input-web,0.0
+f5cbc86,2017-06-26T16:21:29,modification of add_topic.py,0.0
+964180b,2017-06-26T21:41:09,Upgrade Abivars.jar : accomodate Topics now.,0.0
+2.19e+63,2017-06-26T21:44:12,Merge branch 'input-web' of gitlab:/trunk/abinit into input-web,0.0
+ddbf1ac,2017-06-26T21:46:19,The new Abivars.jar works (so OK for Topics)  in agreement with the minimal abinit_vars.yml,0.0
+6efeaf1,2017-06-26T21:48:20,Merge remote-tracking branch 'remotes/jollet/input-web' into input-web,0.0
+7bff9ac,2017-06-27T08:04:48,"The whole ""topics"" machinery works correctly (apparently). The new abinit_vars.yml includes the topics  can be edited  and can generate the html files.",0.0
+40bd01d,2017-06-27T09:00:31,Define make_topics_visible in abi_yml2html.py . The development can be merged in develop.,0.0
+3ad5d82,2017-06-27T11:28:56,Make topics non visible,0.0
+f5819fb,2017-06-27T11:39:01,All the modifications for topics are imported in input_variables directory.,0.0
+9822963.0,2017-06-27T11:56:26,"Rename directories ""playground"" and ""input-web"" with the suffix ""OLD"".",0.0
+a205447,2017-06-27T12:00:35,Merge remote-tracking branch 'origin/hotfix-8.4' into develop,0.0
+5b7ad86,2017-06-27T12:03:58,Merge remote-tracking branch 'remotes/origin/input-web' into develop,0.0
+12bdd2c,2017-06-27T12:08:13,variables.py had not been upgraded to use topics instead of topic_name and topic_class,0.0
+6037f02,2017-06-27T12:13:42,Merge remote-tracking branch 'origin/input-web' into develop,0.0
+1122846.0,2017-06-27T12:22:06,Fix incorrect links,1.0
+bcef32d,2017-06-27T12:30:20,Introduce three new files to contain the input variables : varbse.html  vardmft.html  varvdw.html,0.0
+68ff70f,2017-06-27T12:42:09,Create the three new files varbse.html  vardmft.html and varvdw.html,0.0
+1f121d7,2017-06-27T12:54:01,Assign adequate input variables to varbse  vardmft or varvdw .,0.0
+b8bd5ac,2017-06-27T14:30:24,Fix many small errors in the mnemos .,1.0
+41d0260,2017-06-27T14:32:31,Update files due to fix of mnemos typos.,0.0
+3813377.0,2017-06-27T14:42:25,Update reference abichecks/abirules/Refs/t01.out file .,0.0
+b5827c7,2017-06-27T14:44:23,Suppress archive directories.,0.0
+34e87c7,2017-06-27T21:20:47,Try to format correctly the reference log file for abichecks#01 .,0.0
+9d35cb8,2017-06-27T21:25:30,Fix outdated doc for vdw_xc,1.0
+8806c64,2017-06-27T21:33:54,Correct links to vardmft and varbse in the tutorials.,0.0
+be87ed5,2017-06-28T06:03:46,Fix many links (erroneous change gw => bse   http => httpsi   other fixes),1.0
+7eea01f,2017-06-28T08:37:56,Fix wrong link. Fix other minor issue with link.,1.0
+9e41232,2017-07-02T16:19:11,Minor updates  to finalize v8.5.1 .,0.0
+f05c397,2017-07-04T06:13:41,Initialize v8.5.2,0.0

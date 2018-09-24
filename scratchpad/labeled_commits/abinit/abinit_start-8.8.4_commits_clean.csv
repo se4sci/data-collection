@@ -1,0 +1,60 @@
+hash,time,message,buggy
+8a93390,2018-05-01T21:05:11,Fix deadlock in SIGMAEPH output if np > 1 and HDF5+MPI-IO,1.0
+32ed6ce,2018-05-02T08:21:26,Merge gmatteo/hdf5_mpio/8a9390 into _gmatteo-8.8,0.0
+0051c22,2018-05-04T06:25:13,Fix link to install notes,1.0
+71ff1a6,2018-05-04T09:29:27,Remove time reversal symmetry when kptopt=3 or 4 for BZ sampling in respfn,0.0
+52dfdca,2018-05-04T13:02:50,Change the Refs impacted by the correction of kptopt=3 in respfn,0.0
+418f261,2018-05-04T14:07:27,Continue changing Refs. kptopt in v7/t85 is 3 again (it was changed in the last commit).,0.0
+9f6ba94,2018-05-04T15:28:01,Other ref corrections,0.0
+d7bd23e,2018-05-05T14:05:34,Other ref corrections again,0.0
+3b6dfc3,2018-05-14T06:50:49,Import modifs from Antonius  that were requested to be merge in the trunk instead of release-8.8,0.0
+aaaac5c,2018-05-14T14:34:41,Suppress explicit e-mail addresses  for privacy reasons (European law).,0.0
+320cfb0,2018-05-14T14:53:19,Making modifictions needed to test using atlas-intal-18.0-openmpi. Not really satisfactory ...,0.0
+04fa1a7,2018-05-14T16:43:36,Introduce a threshold for dilatmx at 1.15   that can be bypassed by using chkdilatmx 0.,0.0
+6c91dbc,2018-05-14T16:46:45,Warning A.4 of release notes concerning dilatmw threshold at 1.15 .,0.0
+4bad9c4,2018-05-14T16:48:17,Warning A.6 about dilatmx threshold .,0.0
+439d660,2018-05-14T17:26:48,Fix typo,1.0
+2a4bd13,2018-05-14T17:54:40,Upgrade refs for chkdilatmx  also fix typo,0.0
+4e09ad0,2018-05-14T20:48:02,Upgrade v1_t77,0.0
+aeff7c9,2018-05-15T08:09:52,Improve doc,0.0
+819ce5c,2018-05-15T08:58:24,Minor improvement in the doc for developers,0.0
+4128051.0,2018-05-15T18:09:38,bug fixes related to intel ifort 18 issues (from JZwanziger),1.0
+94fae93,2018-05-15T18:18:30,Exclude host atlas intel 18 for chain v8#61-65,0.0
+b7a87c8,2018-05-15T21:19:57,Part of Joe's modifs had not been backported,0.0
+de9480f,2018-05-15T22:15:04,exclude builder intel 18 for v8#61-65,0.0
+bf43f84,2018-05-17T06:11:08,Change fftw3 in fftw3-mkl  following Jean-Michel demand.,0.0
+abd1bc8,2018-05-19T07:53:06,Initialize to zero in xg_init...,0.0
+863c412,2018-05-19T11:20:20,About to finalize v8.8.2,0.0
+7dc2ddb,2018-05-19T15:10:52,Initialize v8.8.3,0.0
+e7a573d,2018-05-20T06:51:50,Minor improvement of doc,0.0
+f51f1a4,2018-05-24T22:01:15,Suppress initialize to zero in src/29_xgTools/m_xg.F90 (apparently not needed),0.0
+bff38c3,2018-05-30T12:41:18,Backimport the suppression of incorrect ABI_CONTIGUOUS directives  from Jean-Michel  in order to pass on GCC 8.1,0.0
+916857c,2018-05-30T13:07:46,"Improve the descirption of usepotzero  and declare it as ""dev"" varset.",0.0
+b8671d4,2018-05-30T14:40:44,Fix missing word,0.0
+cd3f1bd,2018-05-30T17:41:30,Backport doc fixes from v8.9.2 .,0.0
+d86f0c9,2018-05-30T17:42:08,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0.0
+c1c9343,2018-05-30T19:13:39,Two more fixes related to ABI_CONTIGUOUS,1.0
+57ec9f5,2018-05-30T22:51:25,Typo in GW1 tutorial doc,0.0
+1c45a88,2018-05-31T11:33:53,Minor modifs to the doc,0.0
+2dc932b,2018-05-31T12:10:35,The default value for chkprim is now available at echo time  instead of being random.,0.0
+8ddac04,2018-05-31T12:42:56,Comment out warnings that no normal user can understand. Add suggestions.,0.0
+4da5a72,2018-05-31T13:52:32,Exclude host buda2_gnu_8.1_openmpi for test mpiio #26 ... Mmm  like Ifort18.0+openmpi ?! Perhaps there is something buggy in openmpi ... or in ABINIT ?!,0.0
+12c90c7,2018-05-31T13:58:44,Reinstall correct testfarm.conf,0.0
+7c90f3c,2018-05-31T14:56:08,Insert the proper section for buda2 gcc8.1,0.0
+1ae0e7a,2018-05-31T14:58:06,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0.0
+a4b7db6,2018-05-31T15:07:49,Slight modif of the comment.,0.0
+4c9ab2b,2018-05-31T17:29:03,Suppress bot references that are no more nightly tested (or in the on-demand pool). They are not certified anymore...,0.0
+a9b3145,2018-05-31T20:21:23,Define buda2 gun 8.1 bot with the tests for plugins,0.0
+c54d611,2018-05-31T20:24:06,Adjust tolerance for v5_t73,0.0
+b5f30ff,2018-05-31T20:37:13,Add reference *.ac files for different bots,0.0
+fb35086,2018-05-31T20:38:21,Merge branch 'release-8.8' of gitlab.abinit.org:trunk/abinit into release-8.8,0.0
+80c67b3,2018-06-02T00:25:10,The results of v7_t49 were actually not tested (v7_t48 output files were tested twice !),0.0
+4532288.0,2018-06-02T11:39:55,Add refs files for t49,0.0
+993d799,2018-06-02T15:18:20,Minor modif,0.0
+ddbaaf7,2018-06-02T16:47:30,Merge branch 'release-8.8' of gitlab:trunk/abinit into release-8.8,0.0
+3b6ba8d,2018-06-04T13:07:23,smdelta is an integer  so should use intarr. Bug seen and fixed by Jordan Bieder.,0.0
+f280564,2018-06-08T22:24:34,Update ref files due to fix of smdelta problem,0.0
+8ee31e5,2018-06-09T06:05:02,Rename section for buda2 using _mpich3,0.0
+7100164.0,2018-06-18T10:54:40,Start finalization of v8.8.3,0.0
+c452d3d,2018-06-18T19:08:36,Fix build example reference file for buda2_gnu_8.1,1.0
+da20450,2018-06-19T06:12:23,Initialize v8.8.4,0.0

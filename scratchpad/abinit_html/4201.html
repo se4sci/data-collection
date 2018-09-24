@@ -1,0 +1,110 @@
+<html><head><title>check-libpaw.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="sourcestyles.css" />
+</head><body link="blue" vlink="blue">
+<h3>File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/doc/abichecks/scripts/check-libpaw.py</h3>
+<SCRIPT>
+defaultStatus = "File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/doc/abichecks/scripts/check-libpaw.py";
+top.document.title  = "check-libpaw.py";
+</SCRIPT>
+<pre><span class="default"></span><a name="1"><font size=-1>1     </font></a><span class="default"></span><span class="comment">#!/usr/bin/env python</span>
+<a name="2"><font size=-1>2     </font></a><span class="comment"># encoding=utf8  </span>
+<a name="3"><font size=-1>3     </font></a><span class="comment"></span><span class="keyword">from </span><span class="default">__future__ </span><span class="keyword">import </span><span class="default">unicode_literals, division, print_function, absolute_import</span>
+<a name="4"><font size=-1>4     </font></a><span class="default"></span>
+<a name="5"><font size=-1>5     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">tempfile</span>
+<a name="6"><font size=-1>6     </font></a><span class="default"></span><span class="keyword">from </span><span class="default">subprocess </span><span class="keyword">import </span><span class="default">Popen</span>
+<a name="7"><font size=-1>7     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">string</span>
+<a name="8"><font size=-1>8     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">glob,os</span>
+<a name="9"><font size=-1>9     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">re</span>
+<a name="10"><font size=-1>10     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">sys</span>
+<a name="11"><font size=-1>11     </font></a><span class="default"></span><span class="comment">#reload(sys)  </span>
+<a name="12"><font size=-1>12     </font></a><span class="comment"></span><span class="keyword">try</span><span class="default">:</span>
+<a name="13"><font size=-1>13     </font></a><span class="default">    sys.<a href="dictionary_S.html#124075">setdefaultencoding</a>(</span><span class="string">'utf8'</span><span class="default">)</span>
+<a name="14"><font size=-1>14     </font></a><span class="default"></span><span class="keyword">except </span><span class="default">AttributeError:</span>
+<a name="15"><font size=-1>15     </font></a><span class="default">    </span><span class="keyword">pass</span>
+<a name="16"><font size=-1>16     </font></a><span class="keyword">from </span><span class="default">shutil </span><span class="keyword">import </span><span class="default">rmtree</span>
+<a name="17"><font size=-1>17     </font></a><span class="default"></span>
+<a name="18"><font size=-1>18     </font></a><span class="default"></span><span class="comment"># ---------------------------------------------------------------------------- #</span>
+<a name="19"><font size=-1>19     </font></a><span class="comment"></span><span class="keyword">def <a href="dictionary_C.html#30861">abitest</a></span><span class="default">(<a href="dictionary_C.html#30768">abenv</a>, *<a href="dictionary_C.html#33346">args</a>, **<a href="dictionary_C.html#73553">kwargs</a>):</span>
+<a name="20"><font size=-1>20     </font></a><span class="default">  </span><span class="keyword">return <a href="dictionary_C.html#78205">main</a></span><span class="default">(home_dir=<a href="dictionary_C.html#30768">abenv</a>.<a href="dictionary_H.html#65057">home_dir</a>)</span>
+<a name="21"><font size=-1>21     </font></a><span class="default"></span>
+<a name="22"><font size=-1>22     </font></a><span class="default"></span><span class="keyword">def <a href="dictionary_C.html#78205">main</a></span><span class="default">(<a href="dictionary_C.html#65043">home_dir</a>=</span><span class="string">&quot;&quot;</span><span class="default">):</span>
+<a name="23"><font size=-1>23     </font></a><span class="default">  </span><span class="comment"># create tarball</span>
+<a name="24"><font size=-1>24     </font></a><span class="comment">  </span><span class="default">sys.stdout.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot;Creating tarball...\n&quot;</span><span class="default">)</span>
+<a name="25"><font size=-1>25     </font></a><span class="default"></span>
+<a name="26"><font size=-1>26     </font></a><span class="default">  </span><span class="keyword">if <a href="dictionary_C.html#65043">home_dir</a></span><span class="default">!=</span><span class="string">&quot;&quot;</span><span class="default">:</span>
+<a name="27"><font size=-1>27     </font></a><span class="default">    <a href="dictionary_C.html#37151">bdir</a> = os.path.join(<a href="dictionary_C.html#65043">home_dir</a>,</span><span class="string">&quot;bindings&quot;</span><span class="default">)</span>
+<a name="28"><font size=-1>28     </font></a><span class="default">    <a href="dictionary_C.html#41613">cmd</a> = </span><span class="string">&quot;cd &quot;</span><span class="default">+<a href="dictionary_C.html#37151">bdir</a>+</span><span class="string">&quot; &amp;&amp; ./configure &amp;&amp; make libpaw-bindings &amp;&amp; cp libpaw/*tar.gz /tmp&quot;</span>
+<a name="29"><font size=-1>29     </font></a><span class="string">  </span><span class="keyword">else</span><span class="default">:</span>
+<a name="30"><font size=-1>30     </font></a><span class="default">    <a href="dictionary_C.html#41613">cmd</a> = </span><span class="string">&quot;cd bindings &amp;&amp; ../../bindings/configure &amp;&amp; make libpaw-bindings &amp;&amp; cp libpaw/*tar.gz /tmp&quot;</span>
+<a name="31"><font size=-1>31     </font></a><span class="string">  <a href="dictionary_C.html#89869">ou</a> </span><span class="default">= tempfile.TemporaryFile()</span>
+<a name="32"><font size=-1>32     </font></a><span class="default">  <a href="dictionary_C.html#52434">er</a> = tempfile.TemporaryFile()</span>
+<a name="33"><font size=-1>33     </font></a><span class="default"></span>
+<a name="34"><font size=-1>34     </font></a><span class="default">  <a href="dictionary_C.html#94506">process</a> = Popen(<a href="dictionary_C.html#41613">cmd</a>, shell=</span><span class="keyword">True</span><span class="default">, stdout=<a href="dictionary_C.html#89869">ou</a>, stderr=<a href="dictionary_C.html#52434">er</a>)</span>
+<a name="35"><font size=-1>35     </font></a><span class="default">  <a href="dictionary_C.html#94506">process</a>.<a href="dictionary_W.html#137676">wait</a>()</span>
+<a name="36"><font size=-1>36     </font></a><span class="default">  <a href="dictionary_C.html#94506">process</a>.<a href="dictionary_C.html#42704">communicate</a>()</span>
+<a name="37"><font size=-1>37     </font></a><span class="default">  <a href="dictionary_C.html#95792">rc</a>=<a href="dictionary_C.html#94506">process</a>.<a href="dictionary_R.html#98216">returncode</a></span>
+<a name="38"><font size=-1>38     </font></a><span class="default">  </span><span class="keyword">if <a href="dictionary_C.html#95792">rc</a> </span><span class="default">!= </span><span class="number">0</span><span class="default">:</span>
+<a name="39"><font size=-1>39     </font></a><span class="default">     <a href="dictionary_C.html#89869">ou</a>.<a href="dictionary_S.html#100772">seek</a>(</span><span class="number">0</span><span class="default">)</span>
+<a name="40"><font size=-1>40     </font></a><span class="default">     <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_S.html#100772">seek</a>(</span><span class="number">0</span><span class="default">)</span>
+<a name="41"><font size=-1>41     </font></a><span class="default">     sys.stdout.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot;%s\n&quot; </span><span class="default">% <a href="dictionary_C.html#89869">ou</a>.<a href="dictionary_R.html#95963">read</a>())</span>
+<a name="42"><font size=-1>42     </font></a><span class="default">     sys.stderr.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot;%s\n&quot; </span><span class="default">% <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_R.html#95963">read</a>())</span>
+<a name="43"><font size=-1>43     </font></a><span class="default">     <a href="dictionary_C.html#89869">ou</a>.<a href="dictionary_C.html#40603">close</a>()</span>
+<a name="44"><font size=-1>44     </font></a><span class="default">     <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_C.html#40603">close</a>()</span>
+<a name="45"><font size=-1>45     </font></a><span class="default">     <a href="dictionary_C.html#98221">retval</a> = </span><span class="number">1</span>
+<a name="46"><font size=-1>46     </font></a><span class="number">     </span><span class="keyword">return <a href="dictionary_C.html#98221">retval</a></span>
+<a name="47"><font size=-1>47     </font></a><span class="keyword"></span>
+<a name="48"><font size=-1>48     </font></a><span class="keyword">  <a href="dictionary_C.html#89869">ou</a></span><span class="default">.<a href="dictionary_C.html#40603">close</a>()</span>
+<a name="49"><font size=-1>49     </font></a><span class="default">  <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_C.html#40603">close</a>()</span>
+<a name="50"><font size=-1>50     </font></a><span class="default">  sys.stdout.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot; done...\n&quot;</span><span class="default">)</span>
+<a name="51"><font size=-1>51     </font></a><span class="default">	</span>
+<a name="52"><font size=-1>52     </font></a><span class="default">  </span><span class="comment"># test tarball</span>
+<a name="53"><font size=-1>53     </font></a><span class="comment">  </span><span class="default">sys.stdout.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot;\nTesting tarball...\n&quot;</span><span class="default">)</span>
+<a name="54"><font size=-1>54     </font></a><span class="default"></span>
+<a name="55"><font size=-1>55     </font></a><span class="default">  <a href="dictionary_C.html#41613">cmd</a> = </span><span class="string">&quot;cd /tmp;libpaw=`ls libpaw*.tar.gz`; tar xzf $libpaw; cd libpaw; make&quot;</span>
+<a name="56"><font size=-1>56     </font></a><span class="string">  <a href="dictionary_C.html#89869">ou</a> </span><span class="default">= tempfile.TemporaryFile()</span>
+<a name="57"><font size=-1>57     </font></a><span class="default">  <a href="dictionary_C.html#52434">er</a> = tempfile.TemporaryFile()</span>
+<a name="58"><font size=-1>58     </font></a><span class="default"></span>
+<a name="59"><font size=-1>59     </font></a><span class="default">  <a href="dictionary_C.html#94506">process</a> = Popen(<a href="dictionary_C.html#41613">cmd</a>, shell=</span><span class="keyword">True</span><span class="default">, stdout=<a href="dictionary_C.html#89869">ou</a>, stderr=<a href="dictionary_C.html#52434">er</a>)</span>
+<a name="60"><font size=-1>60     </font></a><span class="default">  <a href="dictionary_C.html#94506">process</a>.<a href="dictionary_W.html#137676">wait</a>()</span>
+<a name="61"><font size=-1>61     </font></a><span class="default">  <a href="dictionary_C.html#94506">process</a>.<a href="dictionary_C.html#42704">communicate</a>()</span>
+<a name="62"><font size=-1>62     </font></a><span class="default">  <a href="dictionary_C.html#95792">rc</a>=<a href="dictionary_C.html#94506">process</a>.<a href="dictionary_R.html#98216">returncode</a></span>
+<a name="63"><font size=-1>63     </font></a><span class="default">  </span><span class="keyword">if <a href="dictionary_C.html#95792">rc</a> </span><span class="default">!= </span><span class="number">0</span><span class="default">:</span>
+<a name="64"><font size=-1>64     </font></a><span class="default">     <a href="dictionary_C.html#89869">ou</a>.<a href="dictionary_S.html#100772">seek</a>(</span><span class="number">0</span><span class="default">)</span>
+<a name="65"><font size=-1>65     </font></a><span class="default">     <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_S.html#100772">seek</a>(</span><span class="number">0</span><span class="default">)</span>
+<a name="66"><font size=-1>66     </font></a><span class="default">     sys.stdout.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot;%s\n&quot; </span><span class="default">% <a href="dictionary_C.html#89869">ou</a>.<a href="dictionary_R.html#95963">read</a>())</span>
+<a name="67"><font size=-1>67     </font></a><span class="default">     sys.stderr.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot;%s\n&quot; </span><span class="default">% <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_R.html#95963">read</a>())</span>
+<a name="68"><font size=-1>68     </font></a><span class="default">     <a href="dictionary_C.html#89869">ou</a>.<a href="dictionary_C.html#40603">close</a>()</span>
+<a name="69"><font size=-1>69     </font></a><span class="default">     <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_C.html#40603">close</a>()</span>
+<a name="70"><font size=-1>70     </font></a><span class="default">     <a href="dictionary_C.html#98221">retval</a> = </span><span class="number">1</span>
+<a name="71"><font size=-1>71     </font></a><span class="number">     </span><span class="keyword">return <a href="dictionary_C.html#98221">retval</a></span>
+<a name="72"><font size=-1>72     </font></a><span class="keyword"></span>
+<a name="73"><font size=-1>73     </font></a><span class="keyword">  <a href="dictionary_C.html#89869">ou</a></span><span class="default">.<a href="dictionary_S.html#100772">seek</a>(</span><span class="number">0</span><span class="default">)</span>
+<a name="74"><font size=-1>74     </font></a><span class="default">  <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_S.html#100772">seek</a>(</span><span class="number">0</span><span class="default">)</span>
+<a name="75"><font size=-1>75     </font></a><span class="default">  sys.stdout.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot;%s\n&quot; </span><span class="default">% <a href="dictionary_C.html#89869">ou</a>.<a href="dictionary_R.html#95963">read</a>())</span>
+<a name="76"><font size=-1>76     </font></a><span class="default"></span><span class="comment"># sys.stderr.write(&quot;%s\n&quot; % er.read())</span>
+<a name="77"><font size=-1>77     </font></a><span class="comment">  <a href="dictionary_C.html#89869">ou</a></span><span class="default">.<a href="dictionary_C.html#40603">close</a>()</span>
+<a name="78"><font size=-1>78     </font></a><span class="default">  <a href="dictionary_C.html#52434">er</a>.<a href="dictionary_C.html#40603">close</a>()</span>
+<a name="79"><font size=-1>79     </font></a><span class="default"></span>
+<a name="80"><font size=-1>80     </font></a><span class="default">  </span><span class="comment"># cleaning</span>
+<a name="81"><font size=-1>81     </font></a><span class="comment">  <a href="dictionary_C.html#98221">retval</a> </span><span class="default">= </span><span class="number">0</span>
+<a name="82"><font size=-1>82     </font></a><span class="number">  </span><span class="keyword">try</span><span class="default">:</span>
+<a name="83"><font size=-1>83     </font></a><span class="default">    rmtree(</span><span class="string">&quot;/tmp/libpaw&quot;</span><span class="default">)</span>
+<a name="84"><font size=-1>84     </font></a><span class="default">    <a href="dictionary_C.html#54881">f</a> = glob.glob(</span><span class="string">&quot;/tmp/libpaw*.tar.gz&quot;</span><span class="default">)</span>
+<a name="85"><font size=-1>85     </font></a><span class="default">    os.remove(<a href="dictionary_C.html#54881">f</a>[</span><span class="number">0</span><span class="default">])</span>
+<a name="86"><font size=-1>86     </font></a><span class="default">  </span><span class="keyword">except</span><span class="default">:</span>
+<a name="87"><font size=-1>87     </font></a><span class="default">    sys.stderr.<a href="dictionary_W.html#138951">write</a>(</span><span class="string">&quot;cleaning error&quot;</span><span class="default">)</span>
+<a name="88"><font size=-1>88     </font></a><span class="default">    <a href="dictionary_C.html#98221">retval</a> = </span><span class="number">1</span>
+<a name="89"><font size=-1>89     </font></a><span class="number">  </span>
+<a name="90"><font size=-1>90     </font></a><span class="number">  </span><span class="keyword">return <a href="dictionary_C.html#98221">retval</a></span>
+<a name="91"><font size=-1>91     </font></a><span class="keyword"></span>
+<a name="92"><font size=-1>92     </font></a><span class="keyword">if <a href="dictionary_&.html#19202">__name__</a> </span><span class="default">== </span><span class="string">&quot;__main__&quot;</span><span class="default">:</span>
+<a name="93"><font size=-1>93     </font></a><span class="default">  </span><span class="keyword">if </span><span class="default">len(sys.argv) == </span><span class="number">1</span><span class="default">: </span>
+<a name="94"><font size=-1>94     </font></a><span class="default">    <a href="dictionary_C.html#65051">home_dir</a> = </span><span class="string">&quot;.&quot;</span>
+<a name="95"><font size=-1>95     </font></a><span class="string">  </span><span class="keyword">else</span><span class="default">:</span>
+<a name="96"><font size=-1>96     </font></a><span class="default">    <a href="dictionary_C.html#65051">home_dir</a> = sys.argv[</span><span class="number">1</span><span class="default">] </span>
+<a name="97"><font size=-1>97     </font></a><span class="default"></span>
+<a name="98"><font size=-1>98     </font></a><span class="default">  <a href="dictionary_C.html#54258">exit_status</a> = <a href="dictionary_C.html#78205">main</a>(<a href="dictionary_C.html#65051">home_dir</a>)</span>
+<a name="99"><font size=-1>99     </font></a><span class="default">  sys.exit(<a href="dictionary_C.html#54258">exit_status</a>)</span>
+<a name="100"><font size=-1>100     </font></a><span class="default"></span>
+</pre></body></html>

@@ -1,0 +1,52 @@
+hash,time,message,buggy
+e5f3a77,2017-09-23T11:26:17,Initialize v8.6.0,0.0
+c8efbbd,2017-09-24T05:48:59,"Suppress ""feature file"" from the infos_html  as it is replaced by the ""topics"".",0.0
+466ebc3,2017-09-24T06:38:37,Feature was not completely removed from makefile,0.0
+27b1cec,2017-09-24T18:40:11,Again update of v67mbpt#52 for portability,0.0
+b65343e,2017-09-25T09:10:56,Minor improvements in input file,0.0
+3277cae,2017-09-26T08:35:05,Do not mention the frequency of occurrence in case of internal_only variable.,0.0
+22fb242,2017-09-27T11:07:00,Suppress many unused variables,0.0
+a274e1e,2017-09-27T11:07:33,Merge branch 'release-8.6.0' of gitlab.abinit.org:trunk/abinit into release-8.6.0,0.0
+9e97733,2017-09-27T11:33:11,Correct type initialisations  to avoid compiler error messages,1.0
+e7c34f8,2017-09-27T13:48:11,Fix compile problems.,1.0
+ebe3838,2017-09-27T13:50:23,Format modif to please the compiler,0.0
+d60023a,2017-09-28T15:25:04,Adjust tolerance (large !) for v6#94   also eliminate unused variable,0.0
+8440311.0,2017-09-28T15:25:58,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0.0
+95c98ba,2017-10-03T10:03:26,Introduce new input variable chkdilatmx.,0.0
+3df3a71,2017-10-03T10:23:22,Document the new input variable chkdilatmx. Should still make at least one test ...,0.0
+f1ff83c,2017-10-03T13:01:49,Fix the declrataion and innder document of chkdilatmx,1.0
+6da0313,2017-10-03T15:39:40,Fix gub (endif missing),1.0
+88e920d,2017-10-03T22:59:00,Define message,0.0
+85792de,2017-10-08T11:11:49,Change ALL http:// by https://www.abinit.org,0.0
+16362ba,2017-10-08T11:19:05,remove some unicode characters,0.0
+e29488c,2017-10-09T16:00:07,Fix problems with the doc of chkdilatmx  and ROBODOC.,1.0
+51a1789,2017-10-11T10:11:40,Set up new datasets in test v3#42  to test the new input variable chkdilatmx  and also corrected treatment of violations of chkdilatmx constraint.,0.0
+bc3bbef,2017-10-11T10:56:58,"Correct the numbering in the ""installation notes"" for v8.4 and 8.6.",1.0
+5523bb4,2017-10-11T11:02:57,Update ref for v3#42  from abiref machine,0.0
+e840b20,2017-10-12T09:53:44,Merge branch 'chkdilatmx' into release-8.6.0,0.0
+dce2d62,2017-10-12T09:58:17,Exclude tests 93 & 94 from executing on buda_intel_14.0_mpich (was already excluded from intel_13.0),0.0
+33ab16b,2017-10-12T10:59:49,"Update ref v3#42  for missing ""s""",0.0
+6f77382,2017-10-14T21:28:15,Upgrade Abivars.jar : much better help.,0.0
+9381664.0,2017-10-15T05:58:40,Apply generate_doc.py,0.0
+d108a37,2017-10-15T06:30:22,Start the finalization of ABINITv8.6.0,0.0
+74009fe,2017-10-15T06:33:42,Apply generate_doc.py,0.0
+d5e8062,2017-10-15T16:12:28,Rerun generate_doc: lots of chages because dict ordering is not guaranteed,0.0
+e8d3bb3,2017-10-16T00:27:17,Include latex equations,0.0
+5bf99c8,2017-10-16T01:50:09,Replace png with latex  use svg because it's 2017  24Mb --> 8Mb,0.0
+d0a1820,2017-10-16T03:07:09,Use wikilink and bibtex entries for citations,0.0
+0ad0a59,2017-10-16T03:10:51,And now chmod ugo-x for several py modules because only scripts need x bit-flag,0.0
+c055281,2017-10-17T08:08:11,Regenerate doc  on the basis of Matteo's modifications for theory BSE and MBPT (latex + mathjax),1.0
+b0cca5f,2017-10-17T08:30:39,Fix references in the abiref.bib file,1.0
+3c760f4,2017-10-17T08:39:34,Fix anchor problem in bib_acknow.htm,0.0
+d6955d3,2017-10-17T09:52:49,Start to work on the release_notes,0.0
+a255043,2017-10-17T12:29:17,Fix typos in topic_DFT+U,1.0
+3da09be,2017-10-17T12:34:31,Adjust tolerabces for graphene_macports,1.0
+89406c3,2017-10-17T16:05:00,Scanned the past merge requests  to constitute the release notes for v8.6.0,0.0
+362cbf2,2017-10-17T20:56:23,Upgrade check list,0.0
+cf6921f,2017-10-17T20:58:46,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0.0
+2787fa6,2017-10-17T21:13:54,Finalized a first version of the release_notes for v8.6.0 .,0.0
+c346e40,2017-10-17T21:20:11,Update contributor file,0.0
+b72a970,2017-10-18T10:27:48,Backport the modifs done by O. Gingras to switch from TRIQS 1.3 to TRIQS 1.4,0.0
+aed09b4,2017-10-18T10:42:05,Upgrade of the release_notes  incl. TRIQS 1.4,0.0
+bc76a7b,2017-10-18T21:34:04,Upgrade check_list.txt,0.0
+fa3636e,2017-10-18T21:34:32,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0.0

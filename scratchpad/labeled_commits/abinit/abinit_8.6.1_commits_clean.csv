@@ -1,23 +1,23 @@
 hash,time,message,buggy
-2c4b288,2017-10-18 21:38:09,Initialize v8.6.1,0
-ae1ecee,2017-10-19 12:15:22,Enhanced PSML-related release notes and reviewed the rest of the document,0
-04f8292,2017-10-19 14:19:28,Change communicator names for slk/elpa,0
-f1bd22b,2017-10-20 09:27:40,Fix bug in smpbz (taking into account shiftk was incorrect),0
-a912a62,2017-10-20 21:31:28,Merge branch 'release-8.6.1' of gitlab:trunk/abinit into release-8.6.1,0
-25ec9a0,2017-10-20 22:06:10,Add E. Bousquet sections to release notes,0
-2c584e0,2017-10-24 12:17:39,Update release notes and minor fixes in the list of contributors,0
-e0145cc,2017-10-24 18:25:39,Change convention for the calculation of J in cRPA: The new convention is coherent with the definition of jpawu in DFT+U calculations in ABINIT.,0
-eae2666,2017-10-25 16:34:45,Update references for tests v7/25 78 79 (cRPA),0
-2ba9e5f,2017-10-26 10:09:43,Change typo in crpa tutorial,0
-777675a,2017-10-26 11:31:07,Merge amadon/release-8.6.1/2ba9 into _amadon-8.6.1,0
-2b60aeb,2017-10-26 11:35:34,Update the doc  from Bernard Amadon,0
-8811ebc,2017-10-26 19:24:14,Merge branch 'release-8.6.1' of gitlab:trunk/abinit into release-8.6.1,0
-1530e51,2017-10-26 19:25:02,Merge _amadon-8.6.1/2b60 into release-8.6.1,0
-ff1374b,2017-10-27 18:41:22,Merge branch 'release-8.6.1' of abinit-gitlab:trunk/abinit into quickfixes,0
-390a090,2017-10-27 18:43:02,Add a missing file in Psps_for_tests,0
-e7e345c,2017-10-30 14:48:37,Exclude host nag@abiref for test MPIIO 28,0
-d3f3562,2017-10-30 16:26:49,Exclude host nag@abiref for etsf_io # 4.,0
-528f798,2017-10-30 20:41:45,One more test to be disabled for nag@abiref. However  according to JMB  will work with ABINITv8.7.0 ...,0
-28d89a2,2017-11-03 22:12:48,Apply generate_doc.py  finalize KNOWN_PROBLEMS and herald.F90,0
-a93a229,2017-11-03 22:17:00,Finalize release_notes.,0
-7ddd352,2017-11-03 22:20:46,Upgrade check_list (features replaced by topics).,0
+2c4b288,2017-10-18T21:38:09,Initialize v8.6.1,0.0
+ae1ecee,2017-10-19T12:15:22,Enhanced PSML-related release notes and reviewed the rest of the document,0.0
+04f8292,2017-10-19T14:19:28,Change communicator names for slk/elpa,0.0
+f1bd22b,2017-10-20T09:27:40,Fix bug in smpbz (taking into account shiftk was incorrect),1.0
+a912a62,2017-10-20T21:31:28,Merge branch 'release-8.6.1' of gitlab:trunk/abinit into release-8.6.1,0.0
+25ec9a0,2017-10-20T22:06:10,Add E. Bousquet sections to release notes,0.0
+2c584e0,2017-10-24T12:17:39,Update release notes and minor fixes in the list of contributors,0.0
+e0145cc,2017-10-24T18:25:39,Change convention for the calculation of J in cRPA: The new convention is coherent with the definition of jpawu in DFT+U calculations in ABINIT.,0.0
+eae2666,2017-10-25T16:34:45,Update references for tests v7/25 78 79 (cRPA),0.0
+2ba9e5f,2017-10-26T10:09:43,Change typo in crpa tutorial,0.0
+777675a,2017-10-26T11:31:07,Merge amadon/release-8.6.1/2ba9 into _amadon-8.6.1,0.0
+2b60aeb,2017-10-26T11:35:34,Update the doc  from Bernard Amadon,0.0
+8811ebc,2017-10-26T19:24:14,Merge branch 'release-8.6.1' of gitlab:trunk/abinit into release-8.6.1,0.0
+1.53e+54,2017-10-26T19:25:02,Merge _amadon-8.6.1/2b60 into release-8.6.1,0.0
+ff1374b,2017-10-27T18:41:22,Merge branch 'release-8.6.1' of abinit-gitlab:trunk/abinit into quickfixes,0.0
+390a090,2017-10-27T18:43:02,Add a missing file in Psps_for_tests,1.0
+e7e345c,2017-10-30T14:48:37,Exclude host nag@abiref for test MPIIO 28,0.0
+d3f3562,2017-10-30T16:26:49,Exclude host nag@abiref for etsf_io # 4.,0.0
+528f798,2017-10-30T20:41:45,One more test to be disabled for nag@abiref. However  according to JMB  will work with ABINITv8.7.0 ...,0.0
+28d89a2,2017-11-03T22:12:48,Apply generate_doc.py  finalize KNOWN_PROBLEMS and herald.F90,0.0
+a93a229,2017-11-03T22:17:00,Finalize release_notes.,0.0
+7ddd352,2017-11-03T22:20:46,Upgrade check_list (features replaced by topics).,0.0

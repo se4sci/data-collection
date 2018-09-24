@@ -1,0 +1,423 @@
+<html><head><title>xyaptu.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="sourcestyles.css" />
+</head><body link="blue" vlink="blue">
+<h3>File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/tests/pymods/xyaptu.py</h3>
+<SCRIPT>
+defaultStatus = "File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/tests/pymods/xyaptu.py";
+top.document.title  = "xyaptu.py";
+</SCRIPT>
+<pre><span class="default"></span><a name="1"><font size=-1>1     </font></a><span class="default"></span><span class="string">&quot;XYAPTU: Lightweight XML/HTML Document Template Engine for Python. Taken from http://code.activestate.com/recipes/162292/&quot;</span>
+<a name="2"><font size=-1>2     </font></a><span class="string"></span><span class="keyword">from </span><span class="default">__future__ </span><span class="keyword">import </span><span class="default">print_function, division, absolute_import </span><span class="comment">#, unicode_literals</span>
+<a name="3"><font size=-1>3     </font></a><span class="comment"></span>
+<a name="4"><font size=-1>4     </font></a><span class="comment"><a href="dictionary_T.html#18239">__version__</a> </span><span class="default">= </span><span class="string">'1.0.0'</span>
+<a name="5"><font size=-1>5     </font></a><span class="string"><a href="dictionary_T.html#11477">__author__</a></span><span class="default">= [</span>
+<a name="6"><font size=-1>6     </font></a><span class="default">  </span><span class="string">'Alex Martelli (aleax@aleax.it)'</span><span class="default">,</span>
+<a name="7"><font size=-1>7     </font></a><span class="default">  </span><span class="string">'Mario Ruggier (mario@ruggier.org)'</span>
+<a name="8"><font size=-1>8     </font></a><span class="string"></span><span class="default">]</span>
+<a name="9"><font size=-1>9     </font></a><span class="default"><a href="dictionary_T.html#11958">__copyright__</a> = </span><span class="string">'(c) Python Style Copyright. All Rights Reserved. No Warranty.'</span>
+<a name="10"><font size=-1>10     </font></a><span class="string"><a href="dictionary_T.html#12076">__dependencies__</a> </span><span class="default">= [</span><span class="string">'YAPTU 1.2, http://aspn.activestate.com/ASPN/Python/Cookbook/Recipe/52305'</span><span class="default">]</span>
+<a name="11"><font size=-1>11     </font></a><span class="default"><a href="dictionary_T.html#13137">__history__</a>= {</span>
+<a name="12"><font size=-1>12     </font></a><span class="default">  </span><span class="string">'1.0.0' </span><span class="default">: </span><span class="string">'2002/11/13: First Released Version'</span><span class="default">,</span>
+<a name="13"><font size=-1>13     </font></a><span class="default">}</span>
+<a name="14"><font size=-1>14     </font></a><span class="default"></span>
+<a name="15"><font size=-1>15     </font></a><span class="default"></span><span class="comment">####################################################</span>
+<a name="16"><font size=-1>16     </font></a><span class="comment"></span>
+<a name="17"><font size=-1>17     </font></a><span class="comment"></span><span class="keyword">import </span><span class="default">sys, re, string</span>
+<a name="18"><font size=-1>18     </font></a><span class="default"></span>
+<a name="19"><font size=-1>19     </font></a><span class="default"></span><span class="keyword">try</span><span class="default">:</span>
+<a name="20"><font size=-1>20     </font></a><span class="default">    </span><span class="keyword">from </span><span class="default">cStringIO </span><span class="keyword">import </span><span class="default">StringIO</span>
+<a name="21"><font size=-1>21     </font></a><span class="default"></span><span class="keyword">except </span><span class="default">ImportError:</span>
+<a name="22"><font size=-1>22     </font></a><span class="default">    </span><span class="keyword">from </span><span class="default">io </span><span class="keyword">import </span><span class="default">StringIO</span>
+<a name="23"><font size=-1>23     </font></a><span class="default"></span>
+<a name="24"><font size=-1>24     </font></a><span class="default"></span>
+<a name="25"><font size=-1>25     </font></a><span class="default"></span><span class="keyword">from </span><span class="default">.yaptu </span><span class="keyword">import <a href="dictionary_T.html#41111">copier</a></span>
+<a name="26"><font size=-1>26     </font></a><span class="keyword"></span>
+<a name="27"><font size=-1>27     </font></a><span class="keyword">class <a href="dictionary_T.html#137814">xcopier</a></span><span class="default">(<a href="dictionary_T.html#41111">copier</a>):</span>
+<a name="28"><font size=-1>28     </font></a><span class="default">    </span><span class="string">' xcopier class, inherits from yaptu.copier '</span>
+<a name="29"><font size=-1>29     </font></a><span class="string"></span>
+<a name="30"><font size=-1>30     </font></a><span class="string">    </span><span class="keyword">def <a href="dictionary_T.html#14206">__init__</a></span><span class="default">(<a href="dictionary_T.html#106924">self</a>, <a href="dictionary_T.html#46050">dns</a>, <a href="dictionary_T.html#92484">rExpr</a>=</span><span class="keyword">None</span><span class="default">, <a href="dictionary_T.html#92486">rOpen</a>=</span><span class="keyword">None</span><span class="default">, <a href="dictionary_T.html#92482">rClose</a>=</span><span class="keyword">None</span><span class="default">, <a href="dictionary_T.html#92480">rClause</a>=</span><span class="keyword">None</span><span class="default">,</span>
+<a name="31"><font size=-1>31     </font></a><span class="default">                 <a href="dictionary_T.html#86834">ouf</a>=sys.stdout, <a href="dictionary_T.html#43357">dbg</a>=</span><span class="number">0</span><span class="default">, <a href="dictionary_T.html#43363">dbgOuf</a>=sys.stdout):</span>
+<a name="32"><font size=-1>32     </font></a><span class="default">        </span><span class="string">' set default regular expressions required by yaptu.copier '</span>
+<a name="33"><font size=-1>33     </font></a><span class="string"></span>
+<a name="34"><font size=-1>34     </font></a><span class="string">        </span><span class="comment"># Default regexps for yaptu delimeters (what xyaptu tags are first converted to)</span>
+<a name="35"><font size=-1>35     </font></a><span class="comment">        # These must be in sync with what is output in self._x2y_translate</span>
+<a name="36"><font size=-1>36     </font></a><span class="comment">        <a href="dictionary_T.html#24680">_reExpression</a> </span><span class="default">= re.compile(</span><span class="string">'_:@([^:@]+)@:_'</span><span class="default">)</span>
+<a name="37"><font size=-1>37     </font></a><span class="default">        <a href="dictionary_T.html#24682">_reOpen</a>       = re.compile(</span><span class="string">'\++yaptu '</span><span class="default">)</span>
+<a name="38"><font size=-1>38     </font></a><span class="default">        <a href="dictionary_T.html#24678">_reClose</a>      = re.compile(</span><span class="string">'--yaptu'</span><span class="default">)</span>
+<a name="39"><font size=-1>39     </font></a><span class="default">        <a href="dictionary_T.html#24676">_reClause</a>     = re.compile(</span><span class="string">'==yaptu '</span><span class="default">)</span>
+<a name="40"><font size=-1>40     </font></a><span class="default"></span>
+<a name="41"><font size=-1>41     </font></a><span class="default">        <a href="dictionary_T.html#92484">rExpr</a>         = <a href="dictionary_T.html#92484">rExpr</a>  </span><span class="keyword">or <a href="dictionary_T.html#24680">_reExpression</a></span>
+<a name="42"><font size=-1>42     </font></a><span class="keyword">        <a href="dictionary_T.html#92486">rOpen</a>         </span><span class="default">= <a href="dictionary_T.html#92486">rOpen</a>  </span><span class="keyword">or <a href="dictionary_T.html#24682">_reOpen</a></span>
+<a name="43"><font size=-1>43     </font></a><span class="keyword">        <a href="dictionary_T.html#92482">rClose</a>        </span><span class="default">= <a href="dictionary_T.html#92482">rClose</a> </span><span class="keyword">or <a href="dictionary_T.html#24678">_reClose</a></span>
+<a name="44"><font size=-1>44     </font></a><span class="keyword">        <a href="dictionary_T.html#92480">rClause</a>       </span><span class="default">= <a href="dictionary_T.html#92480">rClause</a> </span><span class="keyword">or <a href="dictionary_T.html#24676">_reClause</a></span>
+<a name="45"><font size=-1>45     </font></a><span class="keyword"></span>
+<a name="46"><font size=-1>46     </font></a><span class="keyword">        </span><span class="comment"># Debugging</span>
+<a name="47"><font size=-1>47     </font></a><span class="comment">        <a href="dictionary_T.html#106924">self</a></span><span class="default">.<a href="dictionary_T.html#43361">dbg</a> = <a href="dictionary_T.html#43357">dbg</a></span>
+<a name="48"><font size=-1>48     </font></a><span class="default">        <a href="dictionary_T.html#106924">self</a>.<a href="dictionary_T.html#43365">dbgOuf</a> = <a href="dictionary_T.html#43363">dbgOuf</a></span>
+<a name="49"><font size=-1>49     </font></a><span class="default">        <a href="dictionary_T.html#24441">_preproc</a> = <a href="dictionary_T.html#106924">self</a>.<a href="dictionary_T.html#24375">_preProcess</a></span>
+<a name="50"><font size=-1>50     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_T.html#43357">dbg</a></span><span class="default">: <a href="dictionary_T.html#24441">_preproc</a> = <a href="dictionary_T.html#106924">self</a>.<a href="dictionary_T.html#24377">_preProcessDbg</a></span>
+<a name="51"><font size=-1>51     </font></a><span class="default"></span>
+<a name="52"><font size=-1>52     </font></a><span class="default">        </span><span class="comment"># Call super init</span>
+<a name="53"><font size=-1>53     </font></a><span class="comment">        <a href="dictionary_T.html#41111">copier</a></span><span class="default">.<a href="dictionary_T.html#14205">__init__</a>(<a href="dictionary_T.html#106924">self</a>, <a href="dictionary_T.html#92484">rExpr</a>, <a href="dictionary_T.html#46050">dns</a>, <a href="dictionary_T.html#92486">rOpen</a>, <a href="dictionary_T.html#92482">rClose</a>, <a href="dictionary_T.html#92480">rClause</a>,</span>
+<a name="54"><font size=-1>54     </font></a><span class="default">                        preproc=<a href="dictionary_T.html#24441">_preproc</a>, handle=<a href="dictionary_T.html#106924">self</a>.<a href="dictionary_T.html#22242">_handleBadExps</a>, ouf=<a href="dictionary_T.html#86834">ouf</a>)</span>
+<a name="55"><font size=-1>55     </font></a><span class="default"></span>
+<a name="56"><font size=-1>56     </font></a><span class="default"></span>
+<a name="57"><font size=-1>57     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_T.html#137816">xcopy</a></span><span class="default">(<a href="dictionary_T.html#106913">self</a>, <a href="dictionary_T.html#65110">input</a>=</span><span class="keyword">None</span><span class="default">):</span>
+<a name="58"><font size=-1>58     </font></a><span class="default">        </span><span class="string">'''</span>
+<a name="59"><font size=-1>59     </font></a><span class="string">        Converts the value of the input stream (or contents of input filename)</span>
+<a name="60"><font size=-1>60     </font></a><span class="string">        from xyaptu format to yaptu format, and invokes yaptu.copy</span>
+<a name="61"><font size=-1>61     </font></a><span class="string">        '''</span>
+<a name="62"><font size=-1>62     </font></a><span class="string"></span>
+<a name="63"><font size=-1>63     </font></a><span class="string">        </span><span class="comment"># Read the input</span>
+<a name="64"><font size=-1>64     </font></a><span class="comment">        <a href="dictionary_T.html#64467">inf</a> </span><span class="default">= <a href="dictionary_T.html#65110">input</a></span>
+<a name="65"><font size=-1>65     </font></a><span class="default">        </span><span class="keyword">try</span><span class="default">:</span>
+<a name="66"><font size=-1>66     </font></a><span class="default">            <a href="dictionary_T.html#65143">inputText</a> = <a href="dictionary_T.html#64467">inf</a>.<a href="dictionary_R.html#92927">read</a>()</span>
+<a name="67"><font size=-1>67     </font></a><span class="default">        </span><span class="keyword">except </span><span class="default">AttributeError:</span>
+<a name="68"><font size=-1>68     </font></a><span class="default">            <a href="dictionary_T.html#64467">inf</a> = open(<a href="dictionary_T.html#65110">input</a>)</span>
+<a name="69"><font size=-1>69     </font></a><span class="default">            </span><span class="keyword">if <a href="dictionary_T.html#64467">inf</a> is None</span><span class="default">:</span>
+<a name="70"><font size=-1>70     </font></a><span class="default">                </span><span class="keyword">raise </span><span class="default">ValueError(</span><span class="string">&quot;Can't open file (%s)&quot; </span><span class="default">% <a href="dictionary_T.html#65110">input</a>)</span>
+<a name="71"><font size=-1>71     </font></a><span class="default">            <a href="dictionary_T.html#65143">inputText</a> = <a href="dictionary_T.html#64467">inf</a>.<a href="dictionary_R.html#92927">read</a>()</span>
+<a name="72"><font size=-1>72     </font></a><span class="default">        </span><span class="keyword">try</span><span class="default">:</span>
+<a name="73"><font size=-1>73     </font></a><span class="default">            <a href="dictionary_T.html#64467">inf</a>.<a href="dictionary_C.html#37567">close</a>()</span>
+<a name="74"><font size=-1>74     </font></a><span class="default">        </span><span class="keyword">except</span><span class="default">:</span>
+<a name="75"><font size=-1>75     </font></a><span class="default">            </span><span class="keyword">pass</span>
+<a name="76"><font size=-1>76     </font></a><span class="keyword"></span>
+<a name="77"><font size=-1>77     </font></a><span class="keyword">        </span><span class="comment"># Translate (xyaptu) input to (yaptu) input, and call yaptu.copy()</span>
+<a name="78"><font size=-1>78     </font></a><span class="comment"></span>
+<a name="79"><font size=-1>79     </font></a><span class="comment">        <a href="dictionary_T.html#138802">yinf</a> </span><span class="default">= StringIO(<a href="dictionary_T.html#106913">self</a>.<a href="dictionary_T.html#26965">_x2y_translate</a>(<a href="dictionary_T.html#65143">inputText</a>))</span>
+<a name="80"><font size=-1>80     </font></a><span class="default">        <a href="dictionary_T.html#106913">self</a>.<a href="dictionary_C.html#41332">copy</a>(inf=<a href="dictionary_T.html#138802">yinf</a>)</span>
+<a name="81"><font size=-1>81     </font></a><span class="default">        <a href="dictionary_T.html#138802">yinf</a>.<a href="dictionary_C.html#37567">close</a>()</span>
+<a name="82"><font size=-1>82     </font></a><span class="default"></span>
+<a name="83"><font size=-1>83     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_T.html#26965">_x2y_translate</a></span><span class="default">(<a href="dictionary_T.html#106915">self</a>, <a href="dictionary_T.html#137770">xStr</a>):</span>
+<a name="84"><font size=-1>84     </font></a><span class="default">        </span><span class="string">' Converts xyaptu markup in input string to yaptu delimeters '</span>
+<a name="85"><font size=-1>85     </font></a><span class="string"></span>
+<a name="86"><font size=-1>86     </font></a><span class="string">        </span><span class="comment"># Define regexps to match xml elements on.</span>
+<a name="87"><font size=-1>87     </font></a><span class="comment">        # The variations (all except for py-expr, py-close) we look for are:</span>
+<a name="88"><font size=-1>88     </font></a><span class="comment">        # &lt;py-elem code=&quot;{python code}&quot; /&gt; |</span>
+<a name="89"><font size=-1>89     </font></a><span class="comment">        # &lt;py-elem code=&quot;{python code}&quot;&gt;ignored text&lt;/py-elem&gt; |</span>
+<a name="90"><font size=-1>90     </font></a><span class="comment">        # &lt;py-elem&gt;{python code}&lt;/py-elem&gt;</span>
+<a name="91"><font size=-1>91     </font></a><span class="comment"></span>
+<a name="92"><font size=-1>92     </font></a><span class="comment">        # ${py-expr} | $py-expr | &lt;py-expr code=&quot;pvkey&quot; /&gt;</span>
+<a name="93"><font size=-1>93     </font></a><span class="comment">        <a href="dictionary_T.html#92825">reExpr</a> </span><span class="default">= re.compile(</span><span class="string">r'''</span>
+<a name="94"><font size=-1>94     </font></a><span class="string">          \$\{([^}]+)\} |  # ${py-expr}</span>
+<a name="95"><font size=-1>95     </font></a><span class="string">          \$([_\w]+) | # $py-expr</span>
+<a name="96"><font size=-1>96     </font></a><span class="string">          &lt;py-expr\s+code\s*=\s*&quot;([^&quot;]*)&quot;\s*/&gt; |</span>
+<a name="97"><font size=-1>97     </font></a><span class="string">          &lt;py-expr\s+code\s*=\s*&quot;([^&quot;]*)&quot;\s*&gt;[^&lt;]*&lt;/py-expr&gt; |</span>
+<a name="98"><font size=-1>98     </font></a><span class="string">          &lt;py-expr\s*&gt;([^&lt;]*)&lt;/py-expr\s*&gt;</span>
+<a name="99"><font size=-1>99     </font></a><span class="string">        '''</span><span class="default">, re.VERBOSE)</span>
+<a name="100"><font size=-1>100     </font></a><span class="default"></span>
+<a name="101"><font size=-1>101     </font></a><span class="default">        </span><span class="comment"># &lt;py-line code=&quot;pvkeys=pageVars.keys()&quot;/&gt;</span>
+<a name="102"><font size=-1>102     </font></a><span class="comment">        <a href="dictionary_T.html#92827">reLine</a> </span><span class="default">= re.compile(</span><span class="string">r'''</span>
+<a name="103"><font size=-1>103     </font></a><span class="string">          &lt;py-line\s+code\s*=\s*&quot;([^&quot;]*)&quot;\s*/&gt; |</span>
+<a name="104"><font size=-1>104     </font></a><span class="string">          &lt;py-line\s+code\s*=\s*&quot;([^&quot;]*)&quot;\s*&gt;[^&lt;]*&lt;/py-line&gt; |</span>
+<a name="105"><font size=-1>105     </font></a><span class="string">          &lt;py-line\s*&gt;([^&lt;]*)&lt;/py-line\s*&gt;</span>
+<a name="106"><font size=-1>106     </font></a><span class="string">        '''</span><span class="default">, re.VERBOSE)</span>
+<a name="107"><font size=-1>107     </font></a><span class="default"></span>
+<a name="108"><font size=-1>108     </font></a><span class="default">        </span><span class="comment"># &lt;py-open code=&quot;for k in pageVars.keys():&quot; /&gt;</span>
+<a name="109"><font size=-1>109     </font></a><span class="comment">        <a href="dictionary_T.html#92829">reOpen</a> </span><span class="default">= re.compile(</span><span class="string">r'''</span>
+<a name="110"><font size=-1>110     </font></a><span class="string">          &lt;py-open\s+code\s*=\s*&quot;([^&quot;]*)&quot;\s*/&gt; |</span>
+<a name="111"><font size=-1>111     </font></a><span class="string">          &lt;py-open\s+code\s*=\s*&quot;([^&quot;]*)&quot;\s*&gt;[^&lt;]*&lt;/py-open\s*&gt; |</span>
+<a name="112"><font size=-1>112     </font></a><span class="string">          &lt;py-open\s*&gt;([^&lt;]*)&lt;/py-open\s*&gt;</span>
+<a name="113"><font size=-1>113     </font></a><span class="string">        '''</span><span class="default">, re.VERBOSE)</span>
+<a name="114"><font size=-1>114     </font></a><span class="default"></span>
+<a name="115"><font size=-1>115     </font></a><span class="default">        </span><span class="comment"># &lt;py-clause code=&quot;else:&quot; /&gt;</span>
+<a name="116"><font size=-1>116     </font></a><span class="comment">        <a href="dictionary_T.html#92821">reClause</a> </span><span class="default">= re.compile(</span><span class="string">r'''</span>
+<a name="117"><font size=-1>117     </font></a><span class="string">          &lt;py-clause\s+code\s*=\s*&quot;([^&quot;]*)&quot;\s*/&gt; |</span>
+<a name="118"><font size=-1>118     </font></a><span class="string">          &lt;py-clause\s+code\s*=\s*&quot;([^&quot;]*)&quot;\s*&gt;[^&lt;]*&lt;/py-clause\s*&gt; |</span>
+<a name="119"><font size=-1>119     </font></a><span class="string">          &lt;py-clause\s*&gt;([^&lt;]*)&lt;/py-clause\s*&gt;</span>
+<a name="120"><font size=-1>120     </font></a><span class="string">        '''</span><span class="default">, re.VERBOSE)</span>
+<a name="121"><font size=-1>121     </font></a><span class="default"></span>
+<a name="122"><font size=-1>122     </font></a><span class="default">        </span><span class="comment"># &lt;py-close /&gt;</span>
+<a name="123"><font size=-1>123     </font></a><span class="comment">        <a href="dictionary_T.html#92823">reClose</a> </span><span class="default">= re.compile(</span><span class="string">r'''</span>
+<a name="124"><font size=-1>124     </font></a><span class="string">          &lt;py-close\s*/&gt; |</span>
+<a name="125"><font size=-1>125     </font></a><span class="string">          &lt;py-close\s*&gt;.*&lt;/py-close\s*&gt;</span>
+<a name="126"><font size=-1>126     </font></a><span class="string">        '''</span><span class="default">, re.VERBOSE)</span>
+<a name="127"><font size=-1>127     </font></a><span class="default"></span>
+<a name="128"><font size=-1>128     </font></a><span class="default">        </span><span class="comment"># Call-back functions for re substitutions</span>
+<a name="129"><font size=-1>129     </font></a><span class="comment">        # These must be in sync with what is expected in self.__init__</span>
+<a name="130"><font size=-1>130     </font></a><span class="comment">        </span><span class="keyword">def <a href="dictionary_T.html#95240">rexpr</a></span><span class="default">(<a href="dictionary_T.html#75918">match</a>,<a href="dictionary_T.html#106918">self</a>=<a href="dictionary_T.html#106918">self</a>):</span>
+<a name="131"><font size=-1>131     </font></a><span class="default">            </span><span class="keyword">return </span><span class="string">'_:@%s@:_' </span><span class="default">% <a href="dictionary_T.html#75918">match</a>.<a href="dictionary_G.html#60672">group</a>(<a href="dictionary_T.html#75918">match</a>.<a href="dictionary_L.html#72034">lastindex</a>)</span>
+<a name="132"><font size=-1>132     </font></a><span class="default">        </span><span class="keyword">def <a href="dictionary_T.html#95443">rline</a></span><span class="default">(<a href="dictionary_T.html#75917">match</a>,<a href="dictionary_T.html#106917">self</a>=<a href="dictionary_T.html#106917">self</a>):</span>
+<a name="133"><font size=-1>133     </font></a><span class="default">            </span><span class="keyword">return </span><span class="string">'\n++yaptu %s #\n--yaptu \n' </span><span class="default">% <a href="dictionary_T.html#75917">match</a>.<a href="dictionary_G.html#60672">group</a>(<a href="dictionary_T.html#75917">match</a>.<a href="dictionary_L.html#72034">lastindex</a>)</span>
+<a name="134"><font size=-1>134     </font></a><span class="default">        </span><span class="keyword">def <a href="dictionary_T.html#95654">ropen</a></span><span class="default">(<a href="dictionary_T.html#75916">match</a>,<a href="dictionary_T.html#106916">self</a>=<a href="dictionary_T.html#106916">self</a>):</span>
+<a name="135"><font size=-1>135     </font></a><span class="default">            </span><span class="keyword">return </span><span class="string">'\n++yaptu %s \n' </span><span class="default">% <a href="dictionary_T.html#75916">match</a>.<a href="dictionary_G.html#60672">group</a>(<a href="dictionary_T.html#75916">match</a>.<a href="dictionary_L.html#72034">lastindex</a>)</span>
+<a name="136"><font size=-1>136     </font></a><span class="default">        </span><span class="keyword">def <a href="dictionary_T.html#92786">rclause</a></span><span class="default">(<a href="dictionary_T.html#75920">match</a>,<a href="dictionary_T.html#106920">self</a>=<a href="dictionary_T.html#106920">self</a>):</span>
+<a name="137"><font size=-1>137     </font></a><span class="default">            </span><span class="keyword">return </span><span class="string">'\n==yaptu %s \n' </span><span class="default">% <a href="dictionary_T.html#75920">match</a>.<a href="dictionary_G.html#60672">group</a>(<a href="dictionary_T.html#75920">match</a>.<a href="dictionary_L.html#72034">lastindex</a>)</span>
+<a name="138"><font size=-1>138     </font></a><span class="default">        </span><span class="keyword">def <a href="dictionary_T.html#92788">rclose</a></span><span class="default">(<a href="dictionary_T.html#75919">match</a>,<a href="dictionary_T.html#106919">self</a>=<a href="dictionary_T.html#106919">self</a>):</span>
+<a name="139"><font size=-1>139     </font></a><span class="default">            </span><span class="keyword">return </span><span class="string">'\n--yaptu \n'</span>
+<a name="140"><font size=-1>140     </font></a><span class="string"></span>
+<a name="141"><font size=-1>141     </font></a><span class="string">        </span><span class="comment"># Substitutions</span>
+<a name="142"><font size=-1>142     </font></a><span class="comment">        <a href="dictionary_T.html#137770">xStr</a> </span><span class="default">= <a href="dictionary_T.html#92825">reExpr</a>.sub(<a href="dictionary_T.html#95240">rexpr</a>, <a href="dictionary_T.html#137770">xStr</a>)</span>
+<a name="143"><font size=-1>143     </font></a><span class="default">        <a href="dictionary_T.html#137770">xStr</a> = <a href="dictionary_T.html#92827">reLine</a>.sub(<a href="dictionary_T.html#95443">rline</a>, <a href="dictionary_T.html#137770">xStr</a>)</span>
+<a name="144"><font size=-1>144     </font></a><span class="default">        <a href="dictionary_T.html#137770">xStr</a> = <a href="dictionary_T.html#92829">reOpen</a>.sub(<a href="dictionary_T.html#95654">ropen</a>, <a href="dictionary_T.html#137770">xStr</a>)</span>
+<a name="145"><font size=-1>145     </font></a><span class="default">        <a href="dictionary_T.html#137770">xStr</a> = <a href="dictionary_T.html#92821">reClause</a>.sub(<a href="dictionary_T.html#92786">rclause</a>, <a href="dictionary_T.html#137770">xStr</a>)</span>
+<a name="146"><font size=-1>146     </font></a><span class="default">        <a href="dictionary_T.html#137770">xStr</a> = <a href="dictionary_T.html#92823">reClose</a>.sub(<a href="dictionary_T.html#92788">rclose</a>, <a href="dictionary_T.html#137770">xStr</a>)</span>
+<a name="147"><font size=-1>147     </font></a><span class="default"></span>
+<a name="148"><font size=-1>148     </font></a><span class="default">        </span><span class="comment"># When in debug mode, keep a copy of intermediate template format</span>
+<a name="149"><font size=-1>149     </font></a><span class="comment">        </span><span class="keyword">if <a href="dictionary_T.html#106915">self</a></span><span class="default">.<a href="dictionary_T.html#43361">dbg</a>:</span>
+<a name="150"><font size=-1>150     </font></a><span class="default">            <a href="dictionary_T.html#25291">_sep</a> = </span><span class="string">'====================\n'</span>
+<a name="151"><font size=-1>151     </font></a><span class="string">            <a href="dictionary_T.html#106915">self</a></span><span class="default">.<a href="dictionary_T.html#43365">dbgOuf</a>.<a href="dictionary_W.html#135915">write</a>(</span><span class="string">'%sIntermediate YAPTU format:\n%s\n%s' </span><span class="default">% (<a href="dictionary_T.html#25291">_sep</a>, <a href="dictionary_T.html#137770">xStr</a>, <a href="dictionary_T.html#25291">_sep</a>))</span>
+<a name="152"><font size=-1>152     </font></a><span class="default"></span>
+<a name="153"><font size=-1>153     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_T.html#137770">xStr</a></span>
+<a name="154"><font size=-1>154     </font></a><span class="keyword"></span>
+<a name="155"><font size=-1>155     </font></a><span class="keyword">    </span><span class="comment"># Handle expressions that do not evaluate</span>
+<a name="156"><font size=-1>156     </font></a><span class="comment">    </span><span class="keyword">def <a href="dictionary_T.html#22242">_handleBadExps</a></span><span class="default">(<a href="dictionary_T.html#106923">self</a>, <a href="dictionary_T.html#96498">s</a>):</span>
+<a name="157"><font size=-1>157     </font></a><span class="default">        </span><span class="string">' Handle expressions that do not evaluate '</span>
+<a name="158"><font size=-1>158     </font></a><span class="string">        </span><span class="keyword">if <a href="dictionary_T.html#106923">self</a></span><span class="default">.<a href="dictionary_T.html#43361">dbg</a>:</span>
+<a name="159"><font size=-1>159     </font></a><span class="default">            <a href="dictionary_T.html#106923">self</a>.<a href="dictionary_T.html#43365">dbgOuf</a>.<a href="dictionary_W.html#135915">write</a>(</span><span class="string">'!!! ERROR: failed to evaluate expression: %s \n' </span><span class="default">% <a href="dictionary_T.html#96498">s</a>)</span>
+<a name="160"><font size=-1>160     </font></a><span class="default">        </span><span class="keyword">return </span><span class="string">'***! %s !***' </span><span class="default">% <a href="dictionary_T.html#96498">s</a></span>
+<a name="161"><font size=-1>161     </font></a><span class="default"></span>
+<a name="162"><font size=-1>162     </font></a><span class="default">    </span><span class="comment"># Preprocess code</span>
+<a name="163"><font size=-1>163     </font></a><span class="comment">    </span><span class="keyword">def <a href="dictionary_T.html#24375">_preProcess</a></span><span class="default">(<a href="dictionary_T.html#106922">self</a>, <a href="dictionary_T.html#96497">s</a>, <a href="dictionary_T.html#135006">why</a>):</span>
+<a name="164"><font size=-1>164     </font></a><span class="default">        </span><span class="string">' Preprocess embedded python statements and expressions '</span>
+<a name="165"><font size=-1>165     </font></a><span class="string">        </span><span class="keyword">return <a href="dictionary_T.html#106922">self</a></span><span class="default">.<a href="dictionary_T.html#26975">_xmlDecode</a>(<a href="dictionary_T.html#96497">s</a>)</span>
+<a name="166"><font size=-1>166     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_T.html#24377">_preProcessDbg</a></span><span class="default">(<a href="dictionary_T.html#106921">self</a>, <a href="dictionary_T.html#96496">s</a>, <a href="dictionary_T.html#135005">why</a>):</span>
+<a name="167"><font size=-1>167     </font></a><span class="default">        </span><span class="string">' Preprocess embedded python statements and expressions '</span>
+<a name="168"><font size=-1>168     </font></a><span class="string">        <a href="dictionary_T.html#106921">self</a></span><span class="default">.<a href="dictionary_T.html#43365">dbgOuf</a>.<a href="dictionary_W.html#135915">write</a>(</span><span class="string">'!!! DBG: %s %s \n' </span><span class="default">% (<a href="dictionary_T.html#96496">s</a>, <a href="dictionary_T.html#135005">why</a>))</span>
+<a name="169"><font size=-1>169     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_T.html#106921">self</a></span><span class="default">.<a href="dictionary_T.html#26975">_xmlDecode</a>(<a href="dictionary_T.html#96496">s</a>)</span>
+<a name="170"><font size=-1>170     </font></a><span class="default"></span>
+<a name="171"><font size=-1>171     </font></a><span class="default">    </span><span class="comment"># Decode utility for XML/HTML special characters</span>
+<a name="172"><font size=-1>172     </font></a><span class="comment">    <a href="dictionary_T.html#26973">_xmlCodes</a> </span><span class="default">= [</span>
+<a name="173"><font size=-1>173     </font></a><span class="default">      [</span><span class="string">'&quot;'</span><span class="default">, </span><span class="string">'&amp;quot;'</span><span class="default">],</span>
+<a name="174"><font size=-1>174     </font></a><span class="default">      [</span><span class="string">'&gt;'</span><span class="default">, </span><span class="string">'&amp;gt;'</span><span class="default">],</span>
+<a name="175"><font size=-1>175     </font></a><span class="default">      [</span><span class="string">'&lt;'</span><span class="default">, </span><span class="string">'&amp;lt;'</span><span class="default">],</span>
+<a name="176"><font size=-1>176     </font></a><span class="default">      [</span><span class="string">'&amp;'</span><span class="default">, </span><span class="string">'&amp;amp;'</span><span class="default">],</span>
+<a name="177"><font size=-1>177     </font></a><span class="default">    ]</span>
+<a name="178"><font size=-1>178     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_T.html#26975">_xmlDecode</a></span><span class="default">(<a href="dictionary_T.html#106914">self</a>, <a href="dictionary_T.html#96495">s</a>):</span>
+<a name="179"><font size=-1>179     </font></a><span class="default">        </span><span class="string">' Returns the ASCII decoded version of the given HTML string. '</span>
+<a name="180"><font size=-1>180     </font></a><span class="string">        <a href="dictionary_T.html#38968">codes</a> </span><span class="default">= <a href="dictionary_T.html#106914">self</a>.<a href="dictionary_T.html#26973">_xmlCodes</a></span>
+<a name="181"><font size=-1>181     </font></a><span class="default">        </span><span class="keyword">for <a href="dictionary_T.html#38842">code</a> in <a href="dictionary_T.html#38968">codes</a></span><span class="default">:</span>
+<a name="182"><font size=-1>182     </font></a><span class="default">            </span><span class="comment">#s = string.replace(s, code[1], code[0])</span>
+<a name="183"><font size=-1>183     </font></a><span class="comment">            <a href="dictionary_T.html#96495">s</a> </span><span class="default">= <a href="dictionary_T.html#96495">s</a>.<a href="dictionary_R.html#94285">replace</a>(<a href="dictionary_T.html#38842">code</a>[</span><span class="number">1</span><span class="default">], <a href="dictionary_T.html#38842">code</a>[</span><span class="number">0</span><span class="default">])</span>
+<a name="184"><font size=-1>184     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_T.html#96495">s</a></span>
+<a name="185"><font size=-1>185     </font></a><span class="keyword"></span>
+<a name="186"><font size=-1>186     </font></a><span class="keyword"></span>
+<a name="187"><font size=-1>187     </font></a><span class="keyword"></span><span class="comment">####################################################</span>
+<a name="188"><font size=-1>188     </font></a><span class="comment"></span>
+<a name="189"><font size=-1>189     </font></a><span class="comment"></span><span class="keyword">if <a href="dictionary_&.html#16166">__name__</a></span><span class="default">==</span><span class="string">'__main__'</span><span class="default">:</span>
+<a name="190"><font size=-1>190     </font></a><span class="default"></span>
+<a name="191"><font size=-1>191     </font></a><span class="default">    </span><span class="comment">##################################################</span>
+<a name="192"><font size=-1>192     </font></a><span class="comment">    # Document Name Space (a dictionary, normally prepared by runtime application,</span>
+<a name="193"><font size=-1>193     </font></a><span class="comment">    # and that serves as the substitution namespace for instantiating a doc template).</span>
+<a name="194"><font size=-1>194     </font></a><span class="comment">    #</span>
+<a name="195"><font size=-1>195     </font></a><span class="comment">    <a href="dictionary_T.html#3071">DNS</a> </span><span class="default">= {</span>
+<a name="196"><font size=-1>196     </font></a><span class="default">      </span><span class="string">'pageTitle' </span><span class="default">: </span><span class="string">'Event Log (xyaptu test page)'</span><span class="default">,</span>
+<a name="197"><font size=-1>197     </font></a><span class="default">      </span><span class="string">'baseUrl' </span><span class="default">: </span><span class="string">'http://xproject.sourceforge.net/'</span><span class="default">,</span>
+<a name="198"><font size=-1>198     </font></a><span class="default">      </span><span class="string">'sid' </span><span class="default">: </span><span class="string">'a1b2c3xyz'</span><span class="default">,</span>
+<a name="199"><font size=-1>199     </font></a><span class="default">      </span><span class="string">'session' </span><span class="default">: </span><span class="number">1</span><span class="default">,</span>
+<a name="200"><font size=-1>200     </font></a><span class="default">      </span><span class="string">'userName' </span><span class="default">: </span><span class="string">'mario'</span><span class="default">,</span>
+<a name="201"><font size=-1>201     </font></a><span class="default">      </span><span class="string">'startTime' </span><span class="default">: </span><span class="string">'12:31:42'</span><span class="default">,</span>
+<a name="202"><font size=-1>202     </font></a><span class="default">      </span><span class="string">'AllComputerCaptions' </span><span class="default">: </span><span class="string">'No'</span><span class="default">,</span>
+<a name="203"><font size=-1>203     </font></a><span class="default">      </span><span class="string">'ComputerCaption' </span><span class="default">: </span><span class="string">'mymachine01'</span><span class="default">,</span>
+<a name="204"><font size=-1>204     </font></a><span class="default">      </span><span class="string">'LogSeverity' </span><span class="default">: [</span><span class="string">'Info'</span><span class="default">, </span><span class="string">'Warning'</span><span class="default">, </span><span class="string">'Error' </span><span class="default">],</span>
+<a name="205"><font size=-1>205     </font></a><span class="default">      </span><span class="string">'LogFileType' </span><span class="default">: </span><span class="string">'Application'</span><span class="default">,</span>
+<a name="206"><font size=-1>206     </font></a><span class="default">      </span><span class="string">'logTimeStamp' </span><span class="default">: </span><span class="string">'Event Log Dump written on 25 May 2001 at 13:55'</span><span class="default">,</span>
+<a name="207"><font size=-1>207     </font></a><span class="default">      </span><span class="string">'logHeadings' </span><span class="default">: [</span><span class="string">'Type'</span><span class="default">, </span><span class="string">'Date'</span><span class="default">, </span><span class="string">'Time'</span><span class="default">, </span><span class="string">'Source'</span><span class="default">, </span><span class="string">'Category'</span><span class="default">, </span><span class="string">'Computer'</span><span class="default">, </span><span class="string">'Message'</span><span class="default">] ,</span>
+<a name="208"><font size=-1>208     </font></a><span class="default">      </span><span class="string">'logEntries' </span><span class="default">: [</span>
+<a name="209"><font size=-1>209     </font></a><span class="default">        [</span><span class="string">'Info'</span><span class="default">, </span><span class="string">'14/05/2001'</span><span class="default">, </span><span class="string">'15:26'</span><span class="default">, </span><span class="string">'MsiInstaller'</span><span class="default">, </span><span class="string">'0'</span><span class="default">, </span><span class="string">'PC01'</span><span class="default">, </span><span class="string">'winzip80 install ok...'</span><span class="default">],</span>
+<a name="210"><font size=-1>210     </font></a><span class="default">        [</span><span class="string">'Warning'</span><span class="default">, </span><span class="string">'16/05/2001'</span><span class="default">, </span><span class="string">'02:43'</span><span class="default">, </span><span class="string">'EventSystem'</span><span class="default">, </span><span class="string">'4'</span><span class="default">, </span><span class="string">'PC02'</span><span class="default">, </span><span class="string">'COM+ failed...'</span><span class="default">],</span>
+<a name="211"><font size=-1>211     </font></a><span class="default">        [</span><span class="string">'Error'</span><span class="default">, </span><span class="string">'22/05/2001'</span><span class="default">, </span><span class="string">'11:35'</span><span class="default">, </span><span class="string">'rasctrs'</span><span class="default">, </span><span class="string">'0'</span><span class="default">, </span><span class="string">'PC03'</span><span class="default">, </span><span class="string">'...'</span><span class="default">, </span><span class="string">' ** EXTRA ** ' </span><span class="default">],</span>
+<a name="212"><font size=-1>212     </font></a><span class="default">      ]</span>
+<a name="213"><font size=-1>213     </font></a><span class="default">    }</span>
+<a name="214"><font size=-1>214     </font></a><span class="default"></span>
+<a name="215"><font size=-1>215     </font></a><span class="default">    </span><span class="comment"># and a function...</span>
+<a name="216"><font size=-1>216     </font></a><span class="comment">    </span><span class="keyword">def <a href="dictionary_T.html#78610">my_current_time</a></span><span class="default">():</span>
+<a name="217"><font size=-1>217     </font></a><span class="default">        </span><span class="keyword">import </span><span class="default">time</span>
+<a name="218"><font size=-1>218     </font></a><span class="default">        </span><span class="keyword">return </span><span class="default">str(time.clock())</span>
+<a name="219"><font size=-1>219     </font></a><span class="default">    <a href="dictionary_T.html#3071">DNS</a>[</span><span class="string">'my_current_time'</span><span class="default">] = <a href="dictionary_T.html#78610">my_current_time</a></span>
+<a name="220"><font size=-1>220     </font></a><span class="default"></span>
+<a name="221"><font size=-1>221     </font></a><span class="default">    </span><span class="string">'''</span>
+<a name="222"><font size=-1>222     </font></a><span class="string">    # To use functions defined in an external library</span>
+<a name="223"><font size=-1>223     </font></a><span class="string">    import externalFunctionsLib</span>
+<a name="224"><font size=-1>224     </font></a><span class="string">    dict['fcn'] = externalFunctionsLib</span>
+<a name="225"><font size=-1>225     </font></a><span class="string">    # which will therefore permit to call functions with:</span>
+<a name="226"><font size=-1>226     </font></a><span class="string">    ${fcn.somefun()}</span>
+<a name="227"><font size=-1>227     </font></a><span class="string">    '''</span>
+<a name="228"><font size=-1>228     </font></a><span class="string"></span>
+<a name="229"><font size=-1>229     </font></a><span class="string">    </span><span class="comment">##################################################</span>
+<a name="230"><font size=-1>230     </font></a><span class="comment">    # Sample page template that uses the xyaptu tags and pcdata expressions.</span>
+<a name="231"><font size=-1>231     </font></a><span class="comment">    # Note that:</span>
+<a name="232"><font size=-1>232     </font></a><span class="comment">    #  - source code indentation here is irrelevant for xyaptu</span>
+<a name="233"><font size=-1>233     </font></a><span class="comment">    #  - xyaptu tags may span more than one source line</span>
+<a name="234"><font size=-1>234     </font></a><span class="comment">    #</span>
+<a name="235"><font size=-1>235     </font></a><span class="comment">    <a href="dictionary_T.html#126892">templateString</a> </span><span class="default">= </span><span class="string">'''&lt;html&gt;</span>
+<a name="236"><font size=-1>236     </font></a><span class="string">   &lt;head&gt;</span>
+<a name="237"><font size=-1>237     </font></a><span class="string">    &lt;title&gt;$pageTitle&lt;/title&gt;</span>
+<a name="238"><font size=-1>238     </font></a><span class="string">   &lt;/head&gt;</span>
+<a name="239"><font size=-1>239     </font></a><span class="string">   &lt;body bgcolor=&quot;#FFFFFF&quot; text=&quot;#000000&quot;&gt;</span>
+<a name="240"><font size=-1>240     </font></a><span class="string"></span>
+<a name="241"><font size=-1>241     </font></a><span class="string">    &lt;py-open code=&quot;if session:&quot;/&gt;</span>
+<a name="242"><font size=-1>242     </font></a><span class="string">     Logged on as $userName, since &lt;py-expr&gt;startTime&lt;/py-expr&gt;</span>
+<a name="243"><font size=-1>243     </font></a><span class="string">     (&lt;a href=&quot;$baseUrl?sid=$sid&amp;amp;linkto=Logout&quot;&gt;Logout?&lt;/a&gt;)</span>
+<a name="244"><font size=-1>244     </font></a><span class="string">    &lt;py-close/&gt;</span>
+<a name="245"><font size=-1>245     </font></a><span class="string">    &lt;hr&gt;</span>
+<a name="246"><font size=-1>246     </font></a><span class="string">    &lt;h1&gt;${pageTitle}&lt;/h1&gt;</span>
+<a name="247"><font size=-1>247     </font></a><span class="string">    &lt;hr&gt;</span>
+<a name="248"><font size=-1>248     </font></a><span class="string">    &lt;p&gt;${a bad expression}&lt;/p&gt;</span>
+<a name="249"><font size=-1>249     </font></a><span class="string">    &lt;p&gt;</span>
+<a name="250"><font size=-1>250     </font></a><span class="string">     &lt;b&gt;Filtering Event Log With:&lt;/b&gt;&lt;br&gt;</span>
+<a name="251"><font size=-1>251     </font></a><span class="string">     All Computers: $AllComputerCaptions &lt;br&gt;</span>
+<a name="252"><font size=-1>252     </font></a><span class="string">     Computer Name: $ComputerCaption &lt;br&gt;</span>
+<a name="253"><font size=-1>253     </font></a><span class="string">     Log Severity:</span>
+<a name="254"><font size=-1>254     </font></a><span class="string">      &lt;py-open code=&quot;for LG in LogSeverity:&quot;/&gt;</span>
+<a name="255"><font size=-1>255     </font></a><span class="string">        $LG</span>
+<a name="256"><font size=-1>256     </font></a><span class="string">      &lt;py-close/&gt;</span>
+<a name="257"><font size=-1>257     </font></a><span class="string">      &lt;br&gt;</span>
+<a name="258"><font size=-1>258     </font></a><span class="string">     Log File Type: &lt;py-expr code=&quot;LogFileType&quot; /&gt;</span>
+<a name="259"><font size=-1>259     </font></a><span class="string">    &lt;/p&gt;</span>
+<a name="260"><font size=-1>260     </font></a><span class="string">    &lt;hr&gt;</span>
+<a name="261"><font size=-1>261     </font></a><span class="string">    &lt;p&gt;$logTimeStamp&lt;/p&gt;</span>
+<a name="262"><font size=-1>262     </font></a><span class="string"></span>
+<a name="263"><font size=-1>263     </font></a><span class="string">    &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;</span>
+<a name="264"><font size=-1>264     </font></a><span class="string"></span>
+<a name="265"><font size=-1>265     </font></a><span class="string">     &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;</span>
+<a name="266"><font size=-1>266     </font></a><span class="string">      &lt;py-open code = &quot;for h in logHeadings:&quot; &gt; code attribute takes precedence</span>
+<a name="267"><font size=-1>267     </font></a><span class="string">       over this text, which is duly ignored &lt;/py-open&gt;</span>
+<a name="268"><font size=-1>268     </font></a><span class="string">       &lt;th&gt;$h&lt;/th&gt;</span>
+<a name="269"><font size=-1>269     </font></a><span class="string">      &lt;py-close/&gt;</span>
+<a name="270"><font size=-1>270     </font></a><span class="string">     &lt;/tr&gt;</span>
+<a name="271"><font size=-1>271     </font></a><span class="string"></span>
+<a name="272"><font size=-1>272     </font></a><span class="string">     &lt;py-line code = &quot;numH=len(logHeadings)&quot; /&gt;</span>
+<a name="273"><font size=-1>273     </font></a><span class="string"></span>
+<a name="274"><font size=-1>274     </font></a><span class="string">     &lt;py-open code=&quot;for logentry in logEntries:&quot;/&gt;</span>
+<a name="275"><font size=-1>275     </font></a><span class="string">      &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;</span>
+<a name="276"><font size=-1>276     </font></a><span class="string">       &lt;py-open&gt;for i in range(0,len(logentry)):&lt;/py-open&gt;</span>
+<a name="277"><font size=-1>277     </font></a><span class="string">        &lt;py-open code=&quot;if i &amp;lt; numH:&quot; /&gt;</span>
+<a name="278"><font size=-1>278     </font></a><span class="string">         &lt;td&gt;${logentry[i]}&lt;/td&gt;</span>
+<a name="279"><font size=-1>279     </font></a><span class="string">        &lt;py-clause code=&quot;else:&quot; /&gt;</span>
+<a name="280"><font size=-1>280     </font></a><span class="string">         &lt;td bgcolor=&quot;#cc0000&quot;&gt;Oops! &lt;!-- There's more log entry fields than headings! --&gt;&lt;/td&gt;</span>
+<a name="281"><font size=-1>281     </font></a><span class="string">        &lt;py-close/&gt;</span>
+<a name="282"><font size=-1>282     </font></a><span class="string">       &lt;py-close&gt;### close (this is ignored) &lt;/py-close&gt;</span>
+<a name="283"><font size=-1>283     </font></a><span class="string">      &lt;/tr&gt;</span>
+<a name="284"><font size=-1>284     </font></a><span class="string">     &lt;py-close/&gt;</span>
+<a name="285"><font size=-1>285     </font></a><span class="string"></span>
+<a name="286"><font size=-1>286     </font></a><span class="string">    &lt;/table&gt;</span>
+<a name="287"><font size=-1>287     </font></a><span class="string">    &lt;hr&gt;</span>
+<a name="288"><font size=-1>288     </font></a><span class="string">    Current time: ${my_current_time()}</span>
+<a name="289"><font size=-1>289     </font></a><span class="string">    &lt;hr&gt;</span>
+<a name="290"><font size=-1>290     </font></a><span class="string">   &lt;/body&gt;</span>
+<a name="291"><font size=-1>291     </font></a><span class="string">  &lt;/html&gt;</span>
+<a name="292"><font size=-1>292     </font></a><span class="string">    '''</span>
+<a name="293"><font size=-1>293     </font></a><span class="string"></span>
+<a name="294"><font size=-1>294     </font></a><span class="string">    </span><span class="comment">##################################################</span>
+<a name="295"><font size=-1>295     </font></a><span class="comment">    # Set a filelike object to templateString</span>
+<a name="296"><font size=-1>296     </font></a><span class="comment">    <a href="dictionary_T.html#126890">templateStream</a> </span><span class="default">= StringIO(<a href="dictionary_T.html#126892">templateString</a>)</span>
+<a name="297"><font size=-1>297     </font></a><span class="default"></span>
+<a name="298"><font size=-1>298     </font></a><span class="default">    </span><span class="comment">##################################################</span>
+<a name="299"><font size=-1>299     </font></a><span class="comment">    # Initialise an xyaptu xcopier, and call xcopy</span>
+<a name="300"><font size=-1>300     </font></a><span class="comment">    <a href="dictionary_T.html#137824">xcp</a> </span><span class="default">= <a href="dictionary_T.html#137814">xcopier</a>(<a href="dictionary_T.html#3071">DNS</a>)</span>
+<a name="301"><font size=-1>301     </font></a><span class="default">    <a href="dictionary_T.html#137824">xcp</a>.<a href="dictionary_X.html#137815">xcopy</a>(<a href="dictionary_T.html#126890">templateStream</a>)</span>
+<a name="302"><font size=-1>302     </font></a><span class="default"></span>
+<a name="303"><font size=-1>303     </font></a><span class="default"></span>
+<a name="304"><font size=-1>304     </font></a><span class="default">    </span><span class="comment">##################################################</span>
+<a name="305"><font size=-1>305     </font></a><span class="comment">    # Test DBG 1</span>
+<a name="306"><font size=-1>306     </font></a><span class="comment">    # Set dbg ON (writing dbg statements on output stream)</span>
+<a name="307"><font size=-1>307     </font></a><span class="comment">    </span><span class="string">'''</span>
+<a name="308"><font size=-1>308     </font></a><span class="string">    xcp = xcopier(DNS, dbg=1)</span>
+<a name="309"><font size=-1>309     </font></a><span class="string">    xcp.xcopy(templateStream)</span>
+<a name="310"><font size=-1>310     </font></a><span class="string">    '''</span>
+<a name="311"><font size=-1>311     </font></a><span class="string"></span>
+<a name="312"><font size=-1>312     </font></a><span class="string">    </span><span class="comment">##################################################</span>
+<a name="313"><font size=-1>313     </font></a><span class="comment">    # Test DBG 2</span>
+<a name="314"><font size=-1>314     </font></a><span class="comment">    # Write dbg statements to a separate dbg stream</span>
+<a name="315"><font size=-1>315     </font></a><span class="comment">    </span><span class="string">'''</span>
+<a name="316"><font size=-1>316     </font></a><span class="string">    dbgStream = StringIO()</span>
+<a name="317"><font size=-1>317     </font></a><span class="string">    dbgStream.write('DBG info: \n')</span>
+<a name="318"><font size=-1>318     </font></a><span class="string">    xcp = xcopier(DNS, dbg=1, dbgOuf=dbgStream)</span>
+<a name="319"><font size=-1>319     </font></a><span class="string">    xcp.xcopy(templateStream)</span>
+<a name="320"><font size=-1>320     </font></a><span class="string">    print dbgStream.getvalue()</span>
+<a name="321"><font size=-1>321     </font></a><span class="string">    dbgStream.close()</span>
+<a name="322"><font size=-1>322     </font></a><span class="string">    '''</span>
+<a name="323"><font size=-1>323     </font></a><span class="string"></span>
+<a name="324"><font size=-1>324     </font></a><span class="string"></span><span class="comment">####################################################</span>
+<a name="325"><font size=-1>325     </font></a><span class="comment"></span>
+<a name="326"><font size=-1>326     </font></a><span class="comment"><a href="dictionary_T.html#12133">__doc__</a> </span><span class="default">= </span><span class="string">&quot;&quot;&quot;</span>
+<a name="327"><font size=-1>327     </font></a><span class="string">Xyaptu is python-centric, in the sense that the XML tags offered reflect python constructs</span>
+<a name="328"><font size=-1>328     </font></a><span class="string">(such as python expressions, statements, opening and closing blocks) and not particularly</span>
+<a name="329"><font size=-1>329     </font></a><span class="string">constructs typically identified in web page templates. The advantage is simplicity, while</span>
+<a name="330"><font size=-1>330     </font></a><span class="string">still keeping all the options open for the HTML or XML document designer.</span>
+<a name="331"><font size=-1>331     </font></a><span class="string"></span>
+<a name="332"><font size=-1>332     </font></a><span class="string">The primary requirements of xyaptu are:</span>
+<a name="333"><font size=-1>333     </font></a><span class="string"></span>
+<a name="334"><font size=-1>334     </font></a><span class="string">(a) expression evaluation, e.g. variable substitutions, function calls (b) loop over, and</span>
+<a name="335"><font size=-1>335     </font></a><span class="string">format, a python data sequence (c) xyaptu mark-up must pass through an XML parser, to</span>
+<a name="336"><font size=-1>336     </font></a><span class="string">naturally allow using XML tools of choice, such as XSLT, for generation of page templates</span>
+<a name="337"><font size=-1>337     </font></a><span class="string">(d) but, since HTML is not XML, page templates need not otherwise be XML compliant. In</span>
+<a name="338"><font size=-1>338     </font></a><span class="string">some future time xhtml may be the norm for web pages, but as yet eb design tools currently</span>
+<a name="339"><font size=-1>339     </font></a><span class="string">in wide use do not produce XML compliant output. Thus, non-XML page templates, such as</span>
+<a name="340"><font size=-1>340     </font></a><span class="string">HTML, must still be considered as valid input. (For the implementation, this implies that</span>
+<a name="341"><font size=-1>341     </font></a><span class="string">xyaptu tags be matched using regular expressions, and not by parsing HTML or XML.) (e)</span>
+<a name="342"><font size=-1>342     </font></a><span class="string">simplicity of use, with minimum learning and runtime overhead (f) separation of</span>
+<a name="343"><font size=-1>343     </font></a><span class="string">presentation and application logic</span>
+<a name="344"><font size=-1>344     </font></a><span class="string"></span>
+<a name="345"><font size=-1>345     </font></a><span class="string">There are only 5 XML tags, to handle python statements (expression, line, block open,</span>
+<a name="346"><font size=-1>346     </font></a><span class="string">block continuation clause, block close). Python expressions are also mapped to a 'pcdata'</span>
+<a name="347"><font size=-1>347     </font></a><span class="string">token, to allow the use of python expressions also in places where tags are not allowed,</span>
+<a name="348"><font size=-1>348     </font></a><span class="string">i.e. in attribute values. XML special characters (&lt; &gt; &amp; &quot;) must be encoded (&lt; &gt; &amp; &quot;) to be</span>
+<a name="349"><font size=-1>349     </font></a><span class="string">used in python code. This, unfortunately, is unavoidable.</span>
+<a name="350"><font size=-1>350     </font></a><span class="string"></span>
+<a name="351"><font size=-1>351     </font></a><span class="string">Xyaptu may be run in debug mode, and debug output may be sent to either the specified</span>
+<a name="352"><font size=-1>352     </font></a><span class="string">output filelike object, or to any writable filelike object. Please see the module</span>
+<a name="353"><font size=-1>353     </font></a><span class="string">self-test for sample code. When in debug mode, the intermediate format of the template is</span>
+<a name="354"><font size=-1>354     </font></a><span class="string">also copied to the debug stream (done in copier._x2y_translate). As a default behaviour,</span>
+<a name="355"><font size=-1>355     </font></a><span class="string">expressions that do not evaluate are written out (surrounded with '! ' and ' !') to the</span>
+<a name="356"><font size=-1>356     </font></a><span class="string">specified output stream, and, if in debug mode, an error message is written out to the</span>
+<a name="357"><font size=-1>357     </font></a><span class="string">debug stream (which defaults to the output stream). To change this behaviour (and that of</span>
+<a name="358"><font size=-1>358     </font></a><span class="string">debug in general) you would need to override the methods _handleBadExps and _preprocessDbg</span>
+<a name="359"><font size=-1>359     </font></a><span class="string">in a sublcassed xyaptu.</span>
+<a name="360"><font size=-1>360     </font></a><span class="string"></span>
+<a name="361"><font size=-1>361     </font></a><span class="string">Mark-up syntax: A template may contain anything acceptable to targeted clients will</span>
+<a name="362"><font size=-1>362     </font></a><span class="string">accept, plus the following xyaptu tags and 1 expression, to mark-up python expressions and</span>
+<a name="363"><font size=-1>363     </font></a><span class="string">statements:</span>
+<a name="364"><font size=-1>364     </font></a><span class="string"></span>
+<a name="365"><font size=-1>365     </font></a><span class="string">&lt;py-expr code=&quot;pvkey&quot; /&gt; -- expression &lt;py-line code=&quot;pvkeys=pVars.keys()&quot; /&gt; -- line</span>
+<a name="366"><font size=-1>366     </font></a><span class="string">statement &lt;py-open code=&quot;if inSession:&quot;/&gt; -- block open &lt;py-clause code=&quot;else:&quot;/&gt; -- block</span>
+<a name="367"><font size=-1>367     </font></a><span class="string">continuation clause &lt;py-close/&gt; -- block close</span>
+<a name="368"><font size=-1>368     </font></a><span class="string"></span>
+<a name="369"><font size=-1>369     </font></a><span class="string">$pyvar | ${pyexpr} -- for simple interpolation of python variables, expressions, or</span>
+<a name="370"><font size=-1>370     </font></a><span class="string">function calls (the second syntax option is for expressions that may contain spaces or</span>
+<a name="371"><font size=-1>371     </font></a><span class="string">other characters not allowed in variable names)</span>
+<a name="372"><font size=-1>372     </font></a><span class="string"></span>
+<a name="373"><font size=-1>373     </font></a><span class="string">The advantage of pcdata tokens over XML tags is that they may be used anywhere, including</span>
+<a name="374"><font size=-1>374     </font></a><span class="string">within XML attribute values, e.g.: &lt;a href=&quot;http://host/$language/topic&quot;&gt;topic&lt;/a&gt;</span>
+<a name="375"><font size=-1>375     </font></a><span class="string"></span>
+<a name="376"><font size=-1>376     </font></a><span class="string">Alternate mark-up tag syntax: Because most web browsers by default do not display</span>
+<a name="377"><font size=-1>377     </font></a><span class="string">attribute values, but they do show element values, as a convenience for those who like to</span>
+<a name="378"><font size=-1>378     </font></a><span class="string">preview page templates in web browsers, an alternate tag syntax is provided. The five tag</span>
+<a name="379"><font size=-1>379     </font></a><span class="string">examples above therefore become:</span>
+<a name="380"><font size=-1>380     </font></a><span class="string"></span>
+<a name="381"><font size=-1>381     </font></a><span class="string">&lt;py-expr&gt;pvkey -- expression &lt;py-line&gt;pvkeys=pVars.keys() -- line statement &lt;py-open&gt;if</span>
+<a name="382"><font size=-1>382     </font></a><span class="string">inSession: -- block open &lt;py-clause&gt;else: -- block continuation clause &lt;py-close&gt;# close</span>
+<a name="383"><font size=-1>383     </font></a><span class="string">-- block close (content is ignored)</span>
+<a name="384"><font size=-1>384     </font></a><span class="string"></span>
+<a name="385"><font size=-1>385     </font></a><span class="string">Note that, in the case that a &quot;code&quot; attribute is specified, then _that_ code is executed,</span>
+<a name="386"><font size=-1>386     </font></a><span class="string">and element content, if any, is ignored.</span>
+<a name="387"><font size=-1>387     </font></a><span class="string"></span>
+<a name="388"><font size=-1>388     </font></a><span class="string">Usage: (1) A runtime application prepares the document namespace in the form of a python</span>
+<a name="389"><font size=-1>389     </font></a><span class="string">dictionary. (2) An xyaptu xcopier is initialised with this dictionary: from xyaptu import</span>
+<a name="390"><font size=-1>390     </font></a><span class="string">xcopier xcp = xcopier(DNS) (3) The xcopy method of this xcopier instance may be called</span>
+<a name="391"><font size=-1>391     </font></a><span class="string">with either the name of a page template file, or a filehandle, to instantiate the page</span>
+<a name="392"><font size=-1>392     </font></a><span class="string">template within this namespace: xcp.xcopy( templateFileName | templateFileHandle ) For</span>
+<a name="393"><font size=-1>393     </font></a><span class="string">page templates available as strings in memory, use StringIO: from cStringIO import</span>
+<a name="394"><font size=-1>394     </font></a><span class="string">StringIO pageTemplateStream = StringIO(pageTemplateString) xcp.xcopy(pageTemplateStream)</span>
+<a name="395"><font size=-1>395     </font></a><span class="string">(4) Output is by default sent to sys.stdout. A different output stream may be specified at</span>
+<a name="396"><font size=-1>396     </font></a><span class="string">initialisation, as the value of an 'ouf' parameter: xcp = xcopier(DNS, ouf=myOutputStream)</span>
+<a name="397"><font size=-1>397     </font></a><span class="string">(5) Debugging may be turned on by initialising xyaptu with a 'dbg=1' switch. Debug output</span>
+<a name="398"><font size=-1>398     </font></a><span class="string">is sent to the specified output stream unless a separate stream is specified by the dbgOuf</span>
+<a name="399"><font size=-1>399     </font></a><span class="string">parameter, also at initialisation time.</span>
+<a name="400"><font size=-1>400     </font></a><span class="string"></span>
+<a name="401"><font size=-1>401     </font></a><span class="string">For a full working example, see the module self-test source.</span>
+<a name="402"><font size=-1>402     </font></a><span class="string"></span>
+<a name="403"><font size=-1>403     </font></a><span class="string">Enhancements to consider:</span>
+<a name="404"><font size=-1>404     </font></a><span class="string"></span>
+<a name="405"><font size=-1>405     </font></a><span class="string">Add support for XML namespaces (py:expr, py:line, ...)</span>
+<a name="406"><font size=-1>406     </font></a><span class="string">For each python statement (open, close, ...), yaptu adds an extra blank line. To be</span>
+<a name="407"><font size=-1>407     </font></a><span class="string">'faithful' to the template source, it would be better if this is not so.</span>
+<a name="408"><font size=-1>408     </font></a><span class="string">Do not process xyaptu mark-up when this is inside an XML comment in the source document</span>
+<a name="409"><font size=-1>409     </font></a><span class="string">template</span>
+<a name="410"><font size=-1>410     </font></a><span class="string">Add possibility to include xyaptu mark-up as verbatim document content, i.e. to be able to</span>
+<a name="411"><font size=-1>411     </font></a><span class="string">write out ${pyexpr} as is.</span>
+<a name="412"><font size=-1>412     </font></a><span class="string">&quot;&quot;&quot;</span>
+<a name="413"><font size=-1>413     </font></a><span class="string"></span>
+</pre></body></html>

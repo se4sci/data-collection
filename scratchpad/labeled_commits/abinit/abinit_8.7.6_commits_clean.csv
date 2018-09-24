@@ -1,157 +1,157 @@
 hash,time,message,buggy
-e42d154,2017-01-31 19:39:48,symsigma in EPH  gspline_t for gaussian DOS  add tmesh variable,0
-e2d1261,2017-02-04 12:29:36,Refactoring,0
-991e115,2017-02-04 13:49:47,Use different format for results,0
-5670b02,2017-02-04 14:11:42,abilint,0
-e4b812a,2017-02-04 15:38:16,Add gaps,0
-f02c24f,2017-02-04 16:38:05,Fix abirules,0
-f0fa866,2017-02-04 16:46:58,Move edos computation to eph_phgamma,0
-54f12db,2017-02-04 17:01:44,Update EPH refs,0
-bb53ddd,2017-02-05 13:02:05,Parallelization over q-points and bands,0
-2c562c1,2017-02-05 18:41:35,Add routine to dump v1(q nu)(r),0
-8da3826,2017-02-07 14:47:05,Refactoring output routines,0
-4fe8a6a,2017-02-09 17:28:41,Continue refactoring,0
-4f63f62,2017-02-09 17:31:52,Merge branch 'release-8.2.1' of gitlab.abinit.org:trunk/abinit into eph,0
-bae1498,2017-03-25 23:19:34,Minor changes,0
-de12ee5,2017-03-25 23:24:04,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-fb8caa7,2017-03-26 00:10:44,Fix typo,0
-a014521,2017-04-19 12:08:21,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-7941c19,2017-05-13 10:41:57,Merge remote-tracking branch 'origin' into eph,0
-ce7a826,2017-05-13 11:31:41,abilint,0
-371f660,2017-05-27 16:33:12,Merge remote-tracking branch 'origin' into eph,0
-461c2fc,2017-06-15 22:10:22,Merge branch 'hotfix-8.4' into develop,0
-5ccbe7e,2017-06-15 23:07:39,Merge branch 'develop' into hotfix-8.4,0
-ed1bff2,2017-06-19 12:52:55,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-5ca341a,2017-07-12 15:41:28,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-73d1fcc,2017-09-01 18:31:26,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-c57ce3d,2017-09-20 02:42:16,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph and solve conflicts in a2fw_solve_gap,0
-e5ddf35,2017-09-24 20:19:54,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-ab2b5ee,2017-09-27 13:30:27,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-c0a22b9,2017-10-16 11:32:05,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-9e48c89,2017-10-19 12:35:52,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-58c876a,2017-10-26 22:08:03,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-2fb6f8d,2017-10-28 18:45:08,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-e10f448,2017-10-28 19:33:45,abilint,0
-49db121,2017-10-30 19:43:25,Add a2f values to EPH.nc,0
-8a2ebd9,2017-11-05 15:18:12,workaround for internal compiler error with gcc <= 4.8,0
-ecb6672,2017-11-05 15:18:20,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-b2c316e,2017-11-07 10:09:02,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-4953f06,2017-11-20 12:55:37,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-bc2f29b,2017-11-25 13:27:07,Write a2ftr to EPH.nc  add autoparal section in eph  fix bug in call to complete_gamma if nsppol=2,0
-532a961,2017-11-25 16:28:10,Enclose a2ftr code inside if (dt%eph_transport > 0),0
-bdf6976,2017-11-25 16:28:45,Merge remote-tracking branch 'origin/invalid_close' into eph,0
-905f54c,2017-11-27 14:03:56,Fix autoparal in eph,0
-56f1822,2017-11-28 11:36:11,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
-ca23894,2017-11-28 12:32:08,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
-3bf17d3,2017-12-09 23:49:15,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-34dcf3b,2017-12-22 12:52:53,abilint,0
-536da1c,2017-12-22 12:52:58,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-7083367,2018-01-02 14:55:47,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-0a31cf6,2018-02-04 21:37:27,Minor changes,0
-d12e15b,2018-02-04 21:41:03,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-97a3926,2018-02-11 15:08:47,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-bf35c55,2018-02-12 21:34:34,Fix conflict,0
-c57905f,2018-02-14 21:36:06,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-5373a6c,2018-02-19 13:27:36,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-da03c6e,2018-02-26 18:41:37,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
-284a52c,2018-03-02 22:02:12,Add kcalc2ibz to SIGEPH.nc,0
-12379bc,2018-03-04 19:44:02,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-c4e67e4,2018-03-06 15:27:55,Use the new weight distribution of the Fourier components of the force constants done by Guido Pettreto as default. Extensive benchmarks in the phonon database shows that in most materials it solves issues of the phonon interpolation near Gamma while not decrasing the quality in other materials.,0
-79ced62,2018-03-06 20:59:08,Merge branch 'mkdocs' of gitlab.abinit.org:gmatteo/abinit into eph,0
-0fe04e4,2018-03-06 21:26:18,Initialize v8.7.6,0
-c2940b8,2018-03-06 22:22:21,Cleanup,0
-3bcbf03,2018-03-06 22:22:27,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-21ea48e,2018-03-07 05:26:32,Activatee the new weights only if nqshift is 0.,0
-223c72a,2018-03-07 10:38:10,Add doc/index.md --> guide/new_user,0
-86c6a05,2018-03-07 14:34:20,Merge branch 'develop' of gitlab.abinit.org:wchen/abinit into develop,0
-66e8f73,2018-03-07 15:51:34,Start to play with the *.md files.,0
-e0818ec,2018-03-07 18:33:25,Fix warnings encountered with mksite.py WARNING: Don't know how to handle wikilink token . Also  miscellaneous fixes.,0
-153e627,2018-03-07 20:53:48,Update section [atlas_intel_18.0_openmpi]  from Jean-Michel.,0
-6c968a3,2018-03-07 20:54:36,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
-6214254,2018-03-07 20:54:50,Merge branch 'develop' into mkdocs,0
-e122728,2018-03-07 21:07:22,Merge remote-tracking branch 'remotes/henrique/phgamma' into _henrique,0
-2df2400,2018-03-07 21:14:04,Implement the correct determination of new_wght,0
-31a192d,2018-03-07 21:35:17,Report on the problem encountered with Ifort 18.0 .,0
-9334b54,2018-03-08 00:34:42,Fix wrong displayed value of Fock fraction when using customized hyb_mixing(_sr),0
-2e4e5e6,2018-03-08 00:36:52,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
-dc84c14,2018-03-08 00:52:26,Fix the display issue for the range-separation parameter,0
-668c63b,2018-03-08 06:05:22,Treat better tolerance of recounting of weights on atoms  for interatomic force constants,0
-fa46d30,2018-03-08 06:06:12,Merge branch 'develop' into _henrique,0
-8a9ddd3,2018-03-08 06:08:35,Previous fix was not fully correct.,0
-0f8b92c,2018-03-08 12:50:39,Two modifications to bypass problem with new weight switch.,0
-5262cb0,2018-03-08 13:18:23,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
-6c6a40e,2018-03-08 13:21:14,Add more metadata to netcdf files,0
-919c967,2018-03-08 13:21:24,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-4528607,2018-03-08 16:34:48,Take care of ibrav=-1 case.,0
-1657d69,2018-03-08 16:48:15,Update a series of reference files  due to the change of determination of the weights for the computation of the IFCs.,0
-6ec31b1,2018-03-08 16:57:13,Partial update of the input and reference files of the tests affected by the change of meaning of brav,0
-1bfd3ac,2018-03-08 17:30:35,Document brav=-1,0
-e1e1642,2018-03-08 17:47:39,Fix typo,0
-b3a0e55,2018-03-08 17:47:49,Merge branch '_henrique' of gitlab:trunk/abinit into _henrique,0
-95138bd,2018-03-08 18:32:08,Synch metavars in netcdf files,0
-821a583,2018-03-08 22:29:14,Fix typo,0
-8df0b4b,2018-03-09 06:26:16,Update references for brav=-1,0
-0492af7,2018-03-09 06:27:08,Modifs to deal with brav=-1,0
-1a7d275,2018-03-09 06:27:24,Merge branch '_henrique' of gitlab:trunk/abinit into _henrique,0
-c217605,2018-03-09 11:35:37,Upgrade refs,0
-7f8d606,2018-03-09 15:24:25,Update tolerances. Also reduced the one for v8#45 _GRUN_DOS and _GRUN_QPATH  hoping more stable result from new algorithm for brav=1,0
-d9c52e9,2018-03-09 20:58:32,Two more update of tols,0
-631c969,2018-03-09 22:53:02,EPH.nc --> A2F.nc (move to new format),0
-1f3b254,2018-03-10 05:46:09,Merge branch '_henrique' into develop,0
-61cba83,2018-03-10 05:50:35,Merge branch 'mkdocs' into develop,0
-733a2b8,2018-03-10 05:54:36,Merge remote-tracking branch 'remotes/wchen/develop' into develop,0
-89cb0c6,2018-03-10 11:59:16,Add ph_ variabies for A2F.nc,0
-07e6ff7,2018-03-10 12:08:30,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-0bc286e,2018-03-10 14:08:12,Increase EPH_WTOL,0
-3610a1a,2018-03-10 14:10:42,Add gwa.pdf to theory.extra,0
-78dc281,2018-03-12 11:20:42,Improve eph docs,0
-87f7eb7,2018-03-13 00:40:12,Fix invalid escape sequence,0
-5574d65,2018-03-13 20:57:01,Fix edit on github link,0
-a07f748,2018-03-14 14:21:25,Use zcut as input variable,0
-3e0352e,2018-03-14 16:53:19,Increase tols,0
-025cbf3,2018-03-15 01:09:24,Fix links to robodoc,0
-98189c7,2018-03-15 01:09:51,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into mkdocs,0
-3bff772,2018-03-15 11:42:37,Use MD in tdepes.md lesson,0
-3f89097,2018-03-15 13:54:18,Use ieig2rf 5  update input files for script  improve docs,0
-05bcec7,2018-03-15 16:43:39,Use sigma broadening in DW if ediff < tol6,0
-7c17df7,2018-03-16 08:51:17,Update refs files for the tutorial tdepes,0
-6c16b98,2018-03-16 08:52:59,Augment ecut 5 to 10  in order to reproduce the second figure of Samuel's tutorial.,0
-b56944c,2018-03-16 09:45:40,Minor modifs,0
-772dee5,2018-03-16 10:11:36,Add references+links,0
-06d52b9,2018-03-16 10:59:23,"Translate ""tribe"" to ""relevance"" whenever needed.",0
-fe78f37,2018-03-16 11:22:36,Fix incorrect directories or other typos.,0
-f077e42,2018-03-16 12:01:31,Write adiabatic results to ab_out,0
-ac048f9,2018-03-16 21:50:52,Execute tdepes only in the NETCDF case.,0
-9a73ac1,2018-03-17 06:29:14,Make the test on the lowest argument of an exponential more robust,0
-a48a810,2018-03-17 06:30:20,Merge branch '_gmatteo' of gitlab.abinit.org:trunk/abinit into _gmatteo,0
-46679a9,2018-03-17 07:09:55,Fix issues in the .md files  linked to the message of JMB.,0
-ceddc6d,2018-03-17 09:01:05,Fix of a subset of borken links detected by linchecker.,0
-205df8e,2018-03-17 13:07:28,Clean the tutorials tdepes.,0
-afd2877,2018-03-18 05:28:13,Partial rewriting of the tdepes tutorial.,0
-006e823,2018-03-18 06:26:38,v8.6 release notes are integrated  not yet fully formatted.,0
-79c54a1,2018-03-18 06:54:06,Release notes for v8.6 are now better formatted. Not all hyperlinks have been established  but this is sufficient for now.,0
-6d7c490,2018-03-18 08:59:12,Treat explicitly the computation of the q-point grid.,0
-27ab0c0,2018-03-18 10:50:32,tdepes_3 has been cleaned.,0
-e844bb3,2018-03-18 13:35:27,Further work on tdepes.,0
-35c40dd,2018-03-18 15:43:22,Improve docs,0
-d425205,2018-03-18 16:25:24,Fix problem with tdepes_2 . Also define depes_4_plot_bs.in.,0
-d1732a6,2018-03-18 16:55:10,The first cleaning of the tutorial is completed. Checks still to be done.,0
-6e34f1a,2018-03-18 17:04:15,Update tdepes_4 input and output files,0
-c4d3c03,2018-03-18 17:29:24,Fix typos,0
-09d5b8d,2018-03-18 18:18:34,Fix problem with tdepes_2,0
-74a1b96,2018-03-18 18:21:24,Update of ref for tdepes_4 (was obtained on my Mac initially).,0
-2cf99dc,2018-03-18 18:24:07,Tests depes are independent of each other.,0
-225ae78,2018-03-18 18:58:20,Minor modifs of the tdepes lesson.,0
-b54c04e,2018-03-18 18:59:56,Merge branch '_gmatteo' of gitlab:trunk/abinit into _gmatteo,0
-b6d62c8,2018-03-18 19:25:55,Add the authors of the input files for the tutorespfn.,0
-938aa37,2018-03-18 21:45:11,Miscellaneous fixes.,0
-0f5462a,2018-03-18 23:18:49,Tutorial rf1 has been cleaned and upgraded. Also help for respfn. Also added a few references in the bib file.,0
-b2b7eb8,2018-03-19 05:36:37,NaN for v8#09 on graphene are back  despite the previous correction ?! Disentangled the unrelated tests v8#07-11  then exclude builder for v8#09.,0
-44ef382,2018-03-19 06:24:53,Cleaning of the rf2 tutorial (with associated new entries for abiref.bib).,0
-bd40442,2018-03-19 06:35:03,Minor adjustment.,0
-58f9315,2018-03-19 09:10:56,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0
-45ad551,2018-03-19 15:27:54,Use IBZ in DW if symsigma,0
-8d2c600,2018-03-19 15:46:41,Update refs,0
-41fe4d1,2018-03-19 17:47:53,Allowed for free-form link flags statements in configure options,0
-bdbfff7,2018-03-19 19:39:53,Increase tolrel  use brav@anaddb,0
-3f08cdd,2018-03-20 06:07:55,Merge remote-tracking branch 'remotes/pouillon/buildsys-relax-parsing' into _gmatteo,0
+e42d154,2017-01-31T19:39:48,symsigma in EPH  gspline_t for gaussian DOS  add tmesh variable,0.0
+e2d1261,2017-02-04T12:29:36,Refactoring,0.0
+9.91e+117,2017-02-04T13:49:47,Use different format for results,0.0
+5670b02,2017-02-04T14:11:42,abilint,0.0
+e4b812a,2017-02-04T15:38:16,Add gaps,0.0
+f02c24f,2017-02-04T16:38:05,Fix abirules,1.0
+f0fa866,2017-02-04T16:46:58,Move edos computation to eph_phgamma,0.0
+54f12db,2017-02-04T17:01:44,Update EPH refs,0.0
+bb53ddd,2017-02-05T13:02:05,Parallelization over q-points and bands,0.0
+2c562c1,2017-02-05T18:41:35,Add routine to dump v1(q nu)(r),0.0
+8da3826,2017-02-07T14:47:05,Refactoring output routines,0.0
+4fe8a6a,2017-02-09T17:28:41,Continue refactoring,0.0
+4f63f62,2017-02-09T17:31:52,Merge branch 'release-8.2.1' of gitlab.abinit.org:trunk/abinit into eph,0.0
+bae1498,2017-03-25T23:19:34,Minor changes,0.0
+de12ee5,2017-03-25T23:24:04,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+fb8caa7,2017-03-26T00:10:44,Fix typo,1.0
+a014521,2017-04-19T12:08:21,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+7941c19,2017-05-13T10:41:57,Merge remote-tracking branch 'origin' into eph,0.0
+ce7a826,2017-05-13T11:31:41,abilint,0.0
+371f660,2017-05-27T16:33:12,Merge remote-tracking branch 'origin' into eph,0.0
+461c2fc,2017-06-15T22:10:22,Merge branch 'hotfix-8.4' into develop,0.0
+5ccbe7e,2017-06-15T23:07:39,Merge branch 'develop' into hotfix-8.4,0.0
+ed1bff2,2017-06-19T12:52:55,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+5ca341a,2017-07-12T15:41:28,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+73d1fcc,2017-09-01T18:31:26,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+c57ce3d,2017-09-20T02:42:16,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph and solve conflicts in a2fw_solve_gap,0.0
+e5ddf35,2017-09-24T20:19:54,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+ab2b5ee,2017-09-27T13:30:27,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+c0a22b9,2017-10-16T11:32:05,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+9e48c89,2017-10-19T12:35:52,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+58c876a,2017-10-26T22:08:03,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+2fb6f8d,2017-10-28T18:45:08,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+e10f448,2017-10-28T19:33:45,abilint,0.0
+49db121,2017-10-30T19:43:25,Add a2f values to EPH.nc,0.0
+8a2ebd9,2017-11-05T15:18:12,workaround for internal compiler error with gcc <= 4.8,0.0
+ecb6672,2017-11-05T15:18:20,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+b2c316e,2017-11-07T10:09:02,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+4953f06,2017-11-20T12:55:37,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+bc2f29b,2017-11-25T13:27:07,Write a2ftr to EPH.nc  add autoparal section in eph  fix bug in call to complete_gamma if nsppol=2,0.0
+532a961,2017-11-25T16:28:10,Enclose a2ftr code inside if (dt%eph_transport > 0),0.0
+bdf6976,2017-11-25T16:28:45,Merge remote-tracking branch 'origin/invalid_close' into eph,0.0
+905f54c,2017-11-27T14:03:56,Fix autoparal in eph,1.0
+56f1822,2017-11-28T11:36:11,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0.0
+ca23894,2017-11-28T12:32:08,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0.0
+3bf17d3,2017-12-09T23:49:15,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+34dcf3b,2017-12-22T12:52:53,abilint,0.0
+536da1c,2017-12-22T12:52:58,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+7083367.0,2018-01-02T14:55:47,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+0a31cf6,2018-02-04T21:37:27,Minor changes,0.0
+d12e15b,2018-02-04T21:41:03,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+97a3926,2018-02-11T15:08:47,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+bf35c55,2018-02-12T21:34:34,Fix conflict,1.0
+c57905f,2018-02-14T21:36:06,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+5373a6c,2018-02-19T13:27:36,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+da03c6e,2018-02-26T18:41:37,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0.0
+284a52c,2018-03-02T22:02:12,Add kcalc2ibz to SIGEPH.nc,0.0
+12379bc,2018-03-04T19:44:02,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+c4e67e4,2018-03-06T15:27:55,Use the new weight distribution of the Fourier components of the force constants done by Guido Pettreto as default. Extensive benchmarks in the phonon database shows that in most materials it solves issues of the phonon interpolation near Gamma while not decrasing the quality in other materials.,0.0
+79ced62,2018-03-06T20:59:08,Merge branch 'mkdocs' of gitlab.abinit.org:gmatteo/abinit into eph,0.0
+0fe04e4,2018-03-06T21:26:18,Initialize v8.7.6,0.0
+c2940b8,2018-03-06T22:22:21,Cleanup,0.0
+3bcbf03,2018-03-06T22:22:27,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+21ea48e,2018-03-07T05:26:32,Activatee the new weights only if nqshift is 0.,0.0
+223c72a,2018-03-07T10:38:10,Add doc/index.md --> guide/new_user,0.0
+86c6a05,2018-03-07T14:34:20,Merge branch 'develop' of gitlab.abinit.org:wchen/abinit into develop,0.0
+66e8f73,2018-03-07T15:51:34,Start to play with the *.md files.,0.0
+e0818ec,2018-03-07T18:33:25,Fix warnings encountered with mksite.py WARNING: Don't know how to handle wikilink token . Also  miscellaneous fixes.,1.0
+153e627,2018-03-07T20:53:48,Update section [atlas_intel_18.0_openmpi]  from Jean-Michel.,0.0
+6c968a3,2018-03-07T20:54:36,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+6214254.0,2018-03-07T20:54:50,Merge branch 'develop' into mkdocs,0.0
+e122728,2018-03-07T21:07:22,Merge remote-tracking branch 'remotes/henrique/phgamma' into _henrique,0.0
+2df2400,2018-03-07T21:14:04,Implement the correct determination of new_wght,0.0
+31a192d,2018-03-07T21:35:17,Report on the problem encountered with Ifort 18.0 .,0.0
+9334b54,2018-03-08T00:34:42,Fix wrong displayed value of Fock fraction when using customized hyb_mixing(_sr),1.0
+2000000000000000.0,2018-03-08T00:36:52,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0.0
+dc84c14,2018-03-08T00:52:26,Fix the display issue for the range-separation parameter,1.0
+668c63b,2018-03-08T06:05:22,Treat better tolerance of recounting of weights on atoms  for interatomic force constants,0.0
+fa46d30,2018-03-08T06:06:12,Merge branch 'develop' into _henrique,0.0
+8a9ddd3,2018-03-08T06:08:35,Previous fix was not fully correct.,1.0
+0f8b92c,2018-03-08T12:50:39,Two modifications to bypass problem with new weight switch.,0.0
+5262cb0,2018-03-08T13:18:23,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+6c6a40e,2018-03-08T13:21:14,Add more metadata to netcdf files,0.0
+919c967,2018-03-08T13:21:24,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+4528607.0,2018-03-08T16:34:48,Take care of ibrav=-1 case.,0.0
+1657d69,2018-03-08T16:48:15,Update a series of reference files  due to the change of determination of the weights for the computation of the IFCs.,0.0
+6ec31b1,2018-03-08T16:57:13,Partial update of the input and reference files of the tests affected by the change of meaning of brav,0.0
+1bfd3ac,2018-03-08T17:30:35,Document brav=-1,0.0
+e1e1642,2018-03-08T17:47:39,Fix typo,1.0
+b3a0e55,2018-03-08T17:47:49,Merge branch '_henrique' of gitlab:trunk/abinit into _henrique,0.0
+95138bd,2018-03-08T18:32:08,Synch metavars in netcdf files,0.0
+821a583,2018-03-08T22:29:14,Fix typo,0.0
+8df0b4b,2018-03-09T06:26:16,Update references for brav=-1,0.0
+0492af7,2018-03-09T06:27:08,Modifs to deal with brav=-1,0.0
+1a7d275,2018-03-09T06:27:24,Merge branch '_henrique' of gitlab:trunk/abinit into _henrique,0.0
+c217605,2018-03-09T11:35:37,Upgrade refs,0.0
+7f8d606,2018-03-09T15:24:25,Update tolerances. Also reduced the one for v8#45 _GRUN_DOS and _GRUN_QPATH  hoping more stable result from new algorithm for brav=1,0.0
+d9c52e9,2018-03-09T20:58:32,Two more update of tols,0.0
+631c969,2018-03-09T22:53:02,EPH.nc --> A2F.nc (move to new format),0.0
+1f3b254,2018-03-10T05:46:09,Merge branch '_henrique' into develop,0.0
+61cba83,2018-03-10T05:50:35,Merge branch 'mkdocs' into develop,0.0
+733a2b8,2018-03-10T05:54:36,Merge remote-tracking branch 'remotes/wchen/develop' into develop,0.0
+89cb0c6,2018-03-10T11:59:16,Add ph_ variabies for A2F.nc,0.0
+07e6ff7,2018-03-10T12:08:30,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+0bc286e,2018-03-10T14:08:12,Increase EPH_WTOL,0.0
+3610a1a,2018-03-10T14:10:42,Add gwa.pdf to theory.extra,0.0
+78dc281,2018-03-12T11:20:42,Improve eph docs,0.0
+87f7eb7,2018-03-13T00:40:12,Fix invalid escape sequence,1.0
+5574d65,2018-03-13T20:57:01,Fix edit on github link,1.0
+a07f748,2018-03-14T14:21:25,Use zcut as input variable,0.0
+3e0352e,2018-03-14T16:53:19,Increase tols,0.0
+025cbf3,2018-03-15T01:09:24,Fix links to robodoc,1.0
+98189c7,2018-03-15T01:09:51,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into mkdocs,0.0
+3bff772,2018-03-15T11:42:37,Use MD in tdepes.md lesson,0.0
+3f89097,2018-03-15T13:54:18,Use ieig2rf 5  update input files for script  improve docs,0.0
+05bcec7,2018-03-15T16:43:39,Use sigma broadening in DW if ediff < tol6,0.0
+7c17df7,2018-03-16T08:51:17,Update refs files for the tutorial tdepes,0.0
+6c16b98,2018-03-16T08:52:59,Augment ecut 5 to 10  in order to reproduce the second figure of Samuel's tutorial.,0.0
+b56944c,2018-03-16T09:45:40,Minor modifs,0.0
+772dee5,2018-03-16T10:11:36,Add references+links,0.0
+06d52b9,2018-03-16T10:59:23,"Translate ""tribe"" to ""relevance"" whenever needed.",0.0
+fe78f37,2018-03-16T11:22:36,Fix incorrect directories or other typos.,1.0
+f077e42,2018-03-16T12:01:31,Write adiabatic results to ab_out,0.0
+ac048f9,2018-03-16T21:50:52,Execute tdepes only in the NETCDF case.,0.0
+9a73ac1,2018-03-17T06:29:14,Make the test on the lowest argument of an exponential more robust,0.0
+a48a810,2018-03-17T06:30:20,Merge branch '_gmatteo' of gitlab.abinit.org:trunk/abinit into _gmatteo,0.0
+46679a9,2018-03-17T07:09:55,Fix issues in the .md files  linked to the message of JMB.,1.0
+ceddc6d,2018-03-17T09:01:05,Fix of a subset of borken links detected by linchecker.,1.0
+205df8e,2018-03-17T13:07:28,Clean the tutorials tdepes.,0.0
+afd2877,2018-03-18T05:28:13,Partial rewriting of the tdepes tutorial.,0.0
+006e823,2018-03-18T06:26:38,v8.6 release notes are integrated  not yet fully formatted.,0.0
+79c54a1,2018-03-18T06:54:06,Release notes for v8.6 are now better formatted. Not all hyperlinks have been established  but this is sufficient for now.,0.0
+6d7c490,2018-03-18T08:59:12,Treat explicitly the computation of the q-point grid.,0.0
+27ab0c0,2018-03-18T10:50:32,tdepes_3 has been cleaned.,0.0
+e844bb3,2018-03-18T13:35:27,Further work on tdepes.,0.0
+35c40dd,2018-03-18T15:43:22,Improve docs,0.0
+d425205,2018-03-18T16:25:24,Fix problem with tdepes_2 . Also define depes_4_plot_bs.in.,1.0
+d1732a6,2018-03-18T16:55:10,The first cleaning of the tutorial is completed. Checks still to be done.,0.0
+6e34f1a,2018-03-18T17:04:15,Update tdepes_4 input and output files,0.0
+c4d3c03,2018-03-18T17:29:24,Fix typos,1.0
+09d5b8d,2018-03-18T18:18:34,Fix problem with tdepes_2,1.0
+74a1b96,2018-03-18T18:21:24,Update of ref for tdepes_4 (was obtained on my Mac initially).,0.0
+2cf99dc,2018-03-18T18:24:07,Tests depes are independent of each other.,0.0
+225ae78,2018-03-18T18:58:20,Minor modifs of the tdepes lesson.,0.0
+b54c04e,2018-03-18T18:59:56,Merge branch '_gmatteo' of gitlab:trunk/abinit into _gmatteo,0.0
+b6d62c8,2018-03-18T19:25:55,Add the authors of the input files for the tutorespfn.,0.0
+938aa37,2018-03-18T21:45:11,Miscellaneous fixes.,0.0
+0f5462a,2018-03-18T23:18:49,Tutorial rf1 has been cleaned and upgraded. Also help for respfn. Also added a few references in the bib file.,0.0
+b2b7eb8,2018-03-19T05:36:37,NaN for v8#09 on graphene are back  despite the previous correction ?! Disentangled the unrelated tests v8#07-11  then exclude builder for v8#09.,0.0
+44ef382,2018-03-19T06:24:53,Cleaning of the rf2 tutorial (with associated new entries for abiref.bib).,0.0
+bd40442,2018-03-19T06:35:03,Minor adjustment.,0.0
+58f9315,2018-03-19T09:10:56,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0.0
+45ad551,2018-03-19T15:27:54,Use IBZ in DW if symsigma,0.0
+8d2c600,2018-03-19T15:46:41,Update refs,0.0
+41fe4d1,2018-03-19T17:47:53,Allowed for free-form link flags statements in configure options,0.0
+bdbfff7,2018-03-19T19:39:53,Increase tolrel  use brav@anaddb,0.0
+3f08cdd,2018-03-20T06:07:55,Merge remote-tracking branch 'remotes/pouillon/buildsys-relax-parsing' into _gmatteo,0.0

@@ -1,0 +1,180 @@
+<html><head><title>paradev.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="sourcestyles.css" />
+</head><body link="blue" vlink="blue">
+<h3>File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/developers/various/paradev.py</h3>
+<SCRIPT>
+defaultStatus = "File: /Users/rkrsn/vcs/se4sci/data-collection/scratchpad/sources/abinit/developers/various/paradev.py";
+top.document.title  = "paradev.py";
+</SCRIPT>
+<pre><span class="default"></span><a name="1"><font size=-1>1     </font></a><span class="default"></span><span class="comment">#!/usr/bin/env python</span>
+<a name="2"><font size=-1>2     </font></a><span class="comment"></span><span class="string">&quot;&quot;&quot;</span>
+<a name="3"><font size=-1>3     </font></a><span class="string">This script runs the given abinit input file with different number of processors </span>
+<a name="4"><font size=-1>4     </font></a><span class="string">and compare the results</span>
+<a name="5"><font size=-1>5     </font></a><span class="string">&quot;&quot;&quot;</span>
+<a name="6"><font size=-1>6     </font></a><span class="string"></span><span class="keyword">from </span><span class="default">__future__ </span><span class="keyword">import </span><span class="default">print_function, division</span>
+<a name="7"><font size=-1>7     </font></a><span class="default"></span>
+<a name="8"><font size=-1>8     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">sys</span>
+<a name="9"><font size=-1>9     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">os</span>
+<a name="10"><font size=-1>10     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">argparse </span>
+<a name="11"><font size=-1>11     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">warnings</span>
+<a name="12"><font size=-1>12     </font></a><span class="default"></span><span class="keyword">import </span><span class="default">tempfile</span>
+<a name="13"><font size=-1>13     </font></a><span class="default"></span>
+<a name="14"><font size=-1>14     </font></a><span class="default"></span><span class="keyword">from <a href="dictionary_C.html#39137">collections</a> import </span><span class="default">namedtuple</span>
+<a name="15"><font size=-1>15     </font></a><span class="default"></span>
+<a name="16"><font size=-1>16     </font></a><span class="default"></span>
+<a name="17"><font size=-1>17     </font></a><span class="default"></span><span class="keyword">def <a href="dictionary_P.html#34895">browse_localpath</a></span><span class="default">(<a href="dictionary_P.html#53693">filepath</a>):</span>
+<a name="18"><font size=-1>18     </font></a><span class="default">    </span><span class="string">&quot;&quot;&quot;</span>
+<a name="19"><font size=-1>19     </font></a><span class="string">    Open filepath in the default browser.</span>
+<a name="20"><font size=-1>20     </font></a><span class="string"></span>
+<a name="21"><font size=-1>21     </font></a><span class="string">    .. warning: This code is not portable since we should pass a url.</span>
+<a name="22"><font size=-1>22     </font></a><span class="string">    &quot;&quot;&quot;</span>
+<a name="23"><font size=-1>23     </font></a><span class="string">    </span><span class="keyword">import </span><span class="default">webbrowser</span>
+<a name="24"><font size=-1>24     </font></a><span class="default">    </span><span class="keyword">if not <a href="dictionary_P.html#53693">filepath</a></span><span class="default">.<a href="dictionary_S.html#123682">startswith</a>(</span><span class="string">&quot;file://&quot;</span><span class="default">): <a href="dictionary_P.html#53693">filepath</a> = </span><span class="string">&quot;file://&quot; </span><span class="default">+ <a href="dictionary_P.html#53693">filepath</a></span>
+<a name="25"><font size=-1>25     </font></a><span class="default"></span>
+<a name="26"><font size=-1>26     </font></a><span class="default">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="27"><font size=-1>27     </font></a><span class="default">        webbrowser.open(<a href="dictionary_P.html#53693">filepath</a>)</span>
+<a name="28"><font size=-1>28     </font></a><span class="default">    </span><span class="keyword">except </span><span class="default">webbrowser.Error </span><span class="keyword">as <a href="dictionary_P.html#50733">exc</a></span><span class="default">:</span>
+<a name="29"><font size=-1>29     </font></a><span class="default">        </span><span class="comment"># Warn the user and ignore the exception.</span>
+<a name="30"><font size=-1>30     </font></a><span class="comment">        </span><span class="default">warnings.warn(str(<a href="dictionary_P.html#50733">exc</a>))</span>
+<a name="31"><font size=-1>31     </font></a><span class="default"></span>
+<a name="32"><font size=-1>32     </font></a><span class="default"></span>
+<a name="33"><font size=-1>33     </font></a><span class="default"></span><span class="keyword">def <a href="dictionary_P.html#75358">make_html_diff</a></span><span class="default">(<a href="dictionary_P.html#56559">fromfile</a>, <a href="dictionary_P.html#128652">tofile</a>):</span>
+<a name="34"><font size=-1>34     </font></a><span class="default">    </span><span class="keyword">import </span><span class="default">difflib</span>
+<a name="35"><font size=-1>35     </font></a><span class="default"></span>
+<a name="36"><font size=-1>36     </font></a><span class="default">    </span><span class="keyword">with </span><span class="default">open(<a href="dictionary_P.html#56559">fromfile</a>) </span><span class="keyword">as <a href="dictionary_P.html#52592">fh</a></span><span class="default">: <a href="dictionary_P.html#56598">fromlines</a> = <a href="dictionary_P.html#52592">fh</a>.<a href="dictionary_R.html#93222">readlines</a>()</span>
+<a name="37"><font size=-1>37     </font></a><span class="default">    </span><span class="keyword">with </span><span class="default">open(<a href="dictionary_P.html#128652">tofile</a>) </span><span class="keyword">as <a href="dictionary_P.html#52592">fh</a></span><span class="default">: <a href="dictionary_P.html#129018">tolines</a> = <a href="dictionary_P.html#52592">fh</a>.<a href="dictionary_R.html#93222">readlines</a>()</span>
+<a name="38"><font size=-1>38     </font></a><span class="default"></span>
+<a name="39"><font size=-1>39     </font></a><span class="default">    <a href="dictionary_P.html#45126">diff</a> = difflib.HtmlDiff().make_file(<a href="dictionary_P.html#56598">fromlines</a>, <a href="dictionary_P.html#129018">tolines</a>, <a href="dictionary_P.html#56559">fromfile</a>, <a href="dictionary_P.html#128652">tofile</a>, context=</span><span class="keyword">True</span><span class="default">, numlines=</span><span class="number">3</span><span class="default">)</span>
+<a name="40"><font size=-1>40     </font></a><span class="default"></span>
+<a name="41"><font size=-1>41     </font></a><span class="default">    </span><span class="comment"># writelines because diff is a generator</span>
+<a name="42"><font size=-1>42     </font></a><span class="comment">    <a href="dictionary_P.html#9761">_</a></span><span class="default">, <a href="dictionary_P.html#128359">tmp_path</a> = tempfile.mkstemp(text=</span><span class="keyword">True</span><span class="default">, suffix=</span><span class="string">&quot;.html&quot;</span><span class="default">)</span>
+<a name="43"><font size=-1>43     </font></a><span class="default">    </span><span class="keyword">with </span><span class="default">open(<a href="dictionary_P.html#128359">tmp_path</a>, </span><span class="string">&quot;w&quot;</span><span class="default">) </span><span class="keyword">as <a href="dictionary_P.html#52592">fh</a></span><span class="default">: <a href="dictionary_P.html#52592">fh</a>.<a href="dictionary_W.html#136151">writelines</a>(<a href="dictionary_P.html#45126">diff</a>)</span>
+<a name="44"><font size=-1>44     </font></a><span class="default"></span>
+<a name="45"><font size=-1>45     </font></a><span class="default">    </span><span class="keyword">return <a href="dictionary_P.html#128359">tmp_path</a></span>
+<a name="46"><font size=-1>46     </font></a><span class="keyword"></span>
+<a name="47"><font size=-1>47     </font></a><span class="keyword"></span>
+<a name="48"><font size=-1>48     </font></a><span class="keyword">def <a href="dictionary_P.html#54365">find_nextout</a></span><span class="default">(<a href="dictionary_P.html#95517">root</a>=</span><span class="string">&quot;.&quot;</span><span class="default">):</span>
+<a name="49"><font size=-1>49     </font></a><span class="default">    </span><span class="string">&quot;&quot;&quot;</span>
+<a name="50"><font size=-1>50     </font></a><span class="string">    Returns the path the next output file. Assumes Abinit conventions + gmatteo's convention </span>
+<a name="51"><font size=-1>51     </font></a><span class="string">    for the extension i.e. run.abo, run.aboA ...</span>
+<a name="52"><font size=-1>52     </font></a><span class="string">    This function is the most complicated of the entire module!</span>
+<a name="53"><font size=-1>53     </font></a><span class="string">    &quot;&quot;&quot;</span>
+<a name="54"><font size=-1>54     </font></a><span class="string">    </span><span class="keyword">from </span><span class="default">string </span><span class="keyword">import </span><span class="default">ascii_letters</span>
+<a name="55"><font size=-1>55     </font></a><span class="default">    <a href="dictionary_P.html#95517">root</a> = os.path.abspath(<a href="dictionary_P.html#95517">root</a>)</span>
+<a name="56"><font size=-1>56     </font></a><span class="default">                                                                                                               </span>
+<a name="57"><font size=-1>57     </font></a><span class="default">    </span><span class="comment"># Find all files with extensions `.abo?`</span>
+<a name="58"><font size=-1>58     </font></a><span class="comment">    <a href="dictionary_P.html#36446">chars</a></span><span class="default">, <a href="dictionary_P.html#55986">found</a> = [], </span><span class="keyword">False</span>
+<a name="59"><font size=-1>59     </font></a><span class="keyword">    for <a href="dictionary_P.html#51797">f</a> in </span><span class="default">os.listdir(<a href="dictionary_P.html#95517">root</a>):</span>
+<a name="60"><font size=-1>60     </font></a><span class="default">        <a href="dictionary_P.html#61414">head</a>, <a href="dictionary_P.html#51478">ext</a> = os.path.splitext(<a href="dictionary_P.html#51797">f</a>)</span>
+<a name="61"><font size=-1>61     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_P.html#51478">ext</a></span><span class="default">.<a href="dictionary_S.html#123682">startswith</a>(</span><span class="string">&quot;.abo&quot;</span><span class="default">):</span>
+<a name="62"><font size=-1>62     </font></a><span class="default">            <a href="dictionary_P.html#55986">found</a> = </span><span class="keyword">True</span>
+<a name="63"><font size=-1>63     </font></a><span class="keyword">            if </span><span class="default">len(<a href="dictionary_P.html#51478">ext</a>) &gt; </span><span class="number">4</span><span class="default">: <a href="dictionary_P.html#36446">chars</a>.<a href="dictionary_A.html#29427">append</a>(<a href="dictionary_P.html#51478">ext</a>[-</span><span class="number">1</span><span class="default">])</span>
+<a name="64"><font size=-1>64     </font></a><span class="default"></span>
+<a name="65"><font size=-1>65     </font></a><span class="default">    </span><span class="keyword">if not <a href="dictionary_P.html#55986">found</a></span><span class="default">:</span>
+<a name="66"><font size=-1>66     </font></a><span class="default">        </span><span class="comment"># First run</span>
+<a name="67"><font size=-1>67     </font></a><span class="comment">        <a href="dictionary_P.html#55042">fname</a> </span><span class="default">= </span><span class="string">&quot;run.abo&quot;</span>
+<a name="68"><font size=-1>68     </font></a><span class="string">    </span><span class="keyword">else</span><span class="default">:</span>
+<a name="69"><font size=-1>69     </font></a><span class="default">        </span><span class="keyword">if not <a href="dictionary_P.html#36446">chars</a></span><span class="default">: </span>
+<a name="70"><font size=-1>70     </font></a><span class="default">            <a href="dictionary_P.html#55042">fname</a> = </span><span class="string">&quot;run.aboA&quot;</span>
+<a name="71"><font size=-1>71     </font></a><span class="string">        </span><span class="keyword">else</span><span class="default">:</span>
+<a name="72"><font size=-1>72     </font></a><span class="default">            <a href="dictionary_P.html#72002">last_ch</a> = sorted(<a href="dictionary_P.html#36446">chars</a>)[-</span><span class="number">1</span><span class="default">]</span>
+<a name="73"><font size=-1>73     </font></a><span class="default">            </span><span class="keyword">if <a href="dictionary_P.html#72002">last_ch</a> </span><span class="default">== </span><span class="string">&quot;Z&quot;</span><span class="default">: </span><span class="keyword">raise <a href="dictionary_R.html#7877">RunTimeError</a></span><span class="default">(</span><span class="string">&quot;Got Z as last character, clean your directory!&quot;</span><span class="default">)</span>
+<a name="74"><font size=-1>74     </font></a><span class="default">            print(</span><span class="string">&quot;last&quot;</span><span class="default">,<a href="dictionary_P.html#72002">last_ch</a>)</span>
+<a name="75"><font size=-1>75     </font></a><span class="default">            <a href="dictionary_P.html#62363">i</a> = ascii_letters.<a href="dictionary_I.html#64214">index</a>(<a href="dictionary_P.html#72002">last_ch</a>)</span>
+<a name="76"><font size=-1>76     </font></a><span class="default">            <a href="dictionary_P.html#81725">next_ch</a> =  ascii_letters[<a href="dictionary_P.html#62363">i</a>+</span><span class="number">1</span><span class="default">]</span>
+<a name="77"><font size=-1>77     </font></a><span class="default">            <a href="dictionary_P.html#55042">fname</a> = </span><span class="string">&quot;run.abo&quot; </span><span class="default">+ <a href="dictionary_P.html#81725">next_ch</a></span>
+<a name="78"><font size=-1>78     </font></a><span class="default">                                                                                                               </span>
+<a name="79"><font size=-1>79     </font></a><span class="default">    </span><span class="keyword">return </span><span class="default">os.path.join(<a href="dictionary_P.html#95517">root</a>, <a href="dictionary_P.html#55042">fname</a>)</span>
+<a name="80"><font size=-1>80     </font></a><span class="default"></span>
+<a name="81"><font size=-1>81     </font></a><span class="default"></span><span class="keyword">def <a href="dictionary_P.html#75163">main</a></span><span class="default">():</span>
+<a name="82"><font size=-1>82     </font></a><span class="default">    </span><span class="keyword">def <a href="dictionary_P.html#124295">str_examples</a></span><span class="default">():</span>
+<a name="83"><font size=-1>83     </font></a><span class="default">        <a href="dictionary_P.html#50714">examples</a> = (</span>
+<a name="84"><font size=-1>84     </font></a><span class="default">          </span><span class="string">&quot;\n&quot;</span>
+<a name="85"><font size=-1>85     </font></a><span class="string">          &quot;Usage example:\n\n&quot; </span>
+<a name="86"><font size=-1>86     </font></a><span class="string">          &quot;paradev.py 1 2 3    ==&gt; Run mpirun -n# abinit &lt; files &gt; log 2&gt; err for n in [1,2,3] and compare the output files\n&quot;</span>
+<a name="87"><font size=-1>87     </font></a><span class="string">        </span><span class="default">)</span>
+<a name="88"><font size=-1>88     </font></a><span class="default">        </span><span class="keyword">return <a href="dictionary_P.html#50714">examples</a></span>
+<a name="89"><font size=-1>89     </font></a><span class="keyword"></span>
+<a name="90"><font size=-1>90     </font></a><span class="keyword">    def <a href="dictionary_P.html#121558">show_examples_and_exit</a></span><span class="default">(<a href="dictionary_P.html#49468">err_msg</a>=</span><span class="keyword">None</span><span class="default">, <a href="dictionary_P.html#49623">error_code</a>=</span><span class="number">1</span><span class="default">):</span>
+<a name="91"><font size=-1>91     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;Display the usage of the script.&quot;&quot;&quot;</span>
+<a name="92"><font size=-1>92     </font></a><span class="string">        </span><span class="default">sys.stderr.<a href="dictionary_W.html#135915">write</a>(<a href="dictionary_P.html#124295">str_examples</a>())</span>
+<a name="93"><font size=-1>93     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_P.html#49468">err_msg</a></span><span class="default">: </span>
+<a name="94"><font size=-1>94     </font></a><span class="default">            sys.stderr.<a href="dictionary_W.html#135915">write</a>(</span><span class="string">&quot;Fatal Error\n&quot; </span><span class="default">+ <a href="dictionary_P.html#49468">err_msg</a> + </span><span class="string">&quot;\n&quot;</span><span class="default">)</span>
+<a name="95"><font size=-1>95     </font></a><span class="default">        sys.exit(<a href="dictionary_P.html#49623">error_code</a>)</span>
+<a name="96"><font size=-1>96     </font></a><span class="default"></span>
+<a name="97"><font size=-1>97     </font></a><span class="default">    <a href="dictionary_P.html#88639">parser</a> = argparse.ArgumentParser(epilog=<a href="dictionary_P.html#124295">str_examples</a>(),formatter_class=argparse.RawDescriptionHelpFormatter)</span>
+<a name="98"><font size=-1>98     </font></a><span class="default"></span>
+<a name="99"><font size=-1>99     </font></a><span class="default">    </span><span class="comment">#parser.add_argument('-v', '--verbose', default=0, action='count', # -vv --&gt; verbose=2</span>
+<a name="100"><font size=-1>100     </font></a><span class="comment">    #                     help='verbose, can be supplied multiple times to increase verbosity')</span>
+<a name="101"><font size=-1>101     </font></a><span class="comment"></span>
+<a name="102"><font size=-1>102     </font></a><span class="comment">    <a href="dictionary_P.html#88639">parser</a></span><span class="default">.<a href="dictionary_A.html#28190">add_argument</a>(</span><span class="string">&quot;-b&quot;</span><span class="default">, </span><span class="string">&quot;--binary&quot;</span><span class="default">, type=str, default=</span><span class="string">&quot;abinit&quot;</span><span class="default">, help=</span><span class="string">&quot;Executable to be launched&quot;</span><span class="default">)</span>
+<a name="103"><font size=-1>103     </font></a><span class="default"></span>
+<a name="104"><font size=-1>104     </font></a><span class="default">    <a href="dictionary_P.html#88639">parser</a>.<a href="dictionary_A.html#28190">add_argument</a>(</span><span class="string">&quot;-f&quot;</span><span class="default">, </span><span class="string">&quot;--file-type&quot;</span><span class="default">, type=str, default=</span><span class="string">&quot;out&quot;</span><span class="default">, help=</span><span class="string">&quot;File to compared (out from main output or log for log file)&quot;</span><span class="default">)</span>
+<a name="105"><font size=-1>105     </font></a><span class="default"></span>
+<a name="106"><font size=-1>106     </font></a><span class="default">    </span><span class="comment">#parser.add_argument(&quot;-s&quot;, &quot;--strict&quot;, type=bool, default=True, action=&quot;store_if_true, </span>
+<a name="107"><font size=-1>107     </font></a><span class="comment">    #                    help=&quot;Exit immediately if the subprocess returns nonzero exit status&quot;)</span>
+<a name="108"><font size=-1>108     </font></a><span class="comment"></span>
+<a name="109"><font size=-1>109     </font></a><span class="comment">    <a href="dictionary_P.html#88639">parser</a></span><span class="default">.<a href="dictionary_A.html#28190">add_argument</a>(</span><span class="string">&quot;nprocs&quot;</span><span class="default">, nargs=</span><span class="string">&quot;*&quot;</span><span class="default">, help=</span><span class="string">&quot;List of MPI nodes to be tested&quot;</span><span class="default">)</span>
+<a name="110"><font size=-1>110     </font></a><span class="default"></span>
+<a name="111"><font size=-1>111     </font></a><span class="default">    </span><span class="comment"># Parse the command line.</span>
+<a name="112"><font size=-1>112     </font></a><span class="comment">    </span><span class="keyword">try</span><span class="default">:</span>
+<a name="113"><font size=-1>113     </font></a><span class="default">        <a href="dictionary_P.html#85496">options</a> = <a href="dictionary_P.html#88639">parser</a>.<a href="dictionary_P.html#88421">parse_args</a>()</span>
+<a name="114"><font size=-1>114     </font></a><span class="default">    </span><span class="keyword">except </span><span class="default">Exception:</span>
+<a name="115"><font size=-1>115     </font></a><span class="default">        <a href="dictionary_P.html#121558">show_examples_and_exit</a>(error_code=</span><span class="number">1</span><span class="default">)</span>
+<a name="116"><font size=-1>116     </font></a><span class="default"></span>
+<a name="117"><font size=-1>117     </font></a><span class="default">    </span><span class="keyword">if <a href="dictionary_P.html#85496">options</a></span><span class="default">.<a href="dictionary_N.html#83025">nprocs</a>: </span>
+<a name="118"><font size=-1>118     </font></a><span class="default">        <a href="dictionary_P.html#85496">options</a>.<a href="dictionary_N.html#83025">nprocs</a> = map(int, <a href="dictionary_P.html#85496">options</a>.<a href="dictionary_N.html#83025">nprocs</a>)</span>
+<a name="119"><font size=-1>119     </font></a><span class="default">    </span><span class="keyword">else</span><span class="default">:</span>
+<a name="120"><font size=-1>120     </font></a><span class="default">        <a href="dictionary_P.html#85496">options</a>.<a href="dictionary_N.html#83025">nprocs</a> = [</span><span class="number">1</span><span class="default">,</span><span class="number">2</span><span class="default">]</span>
+<a name="121"><font size=-1>121     </font></a><span class="default"></span>
+<a name="122"><font size=-1>122     </font></a><span class="default">    </span><span class="keyword">class <a href="dictionary_P.html#7876">Run</a></span><span class="default">(namedtuple(</span><span class="string">&quot;Run&quot;</span><span class="default">, </span><span class="string">&quot;out log err&quot;</span><span class="default">)):</span>
+<a name="123"><font size=-1>123     </font></a><span class="default">        </span><span class="string">&quot;&quot;&quot;Stores the paths to the stderr, the log file and the output file of the run.&quot;&quot;&quot;</span>
+<a name="124"><font size=-1>124     </font></a><span class="string"></span>
+<a name="125"><font size=-1>125     </font></a><span class="string">    <a href="dictionary_P.html#96141">run_list</a> </span><span class="default">= []</span>
+<a name="126"><font size=-1>126     </font></a><span class="default">    </span><span class="keyword">for <a href="dictionary_P.html#82767">np</a> in <a href="dictionary_P.html#85496">options</a></span><span class="default">.<a href="dictionary_N.html#83025">nprocs</a>:</span>
+<a name="127"><font size=-1>127     </font></a><span class="default">        <a href="dictionary_P.html#86902">out</a> = <a href="dictionary_P.html#54365">find_nextout</a>()</span>
+<a name="128"><font size=-1>128     </font></a><span class="default">        print(</span><span class="string">&quot;Expecting next output %s: &quot; </span><span class="default">% os.path.basename(<a href="dictionary_P.html#86902">out</a>))</span>
+<a name="129"><font size=-1>129     </font></a><span class="default">        <a href="dictionary_P.html#95997">run</a> = <a href="dictionary_P.html#7876">Run</a>(out=<a href="dictionary_P.html#86902">out</a>, log=</span><span class="string">&quot;log_np%d&quot; </span><span class="default">% <a href="dictionary_P.html#82767">np</a>, err=</span><span class="string">&quot;err_np%d&quot; </span><span class="default">% <a href="dictionary_P.html#82767">np</a>)</span>
+<a name="130"><font size=-1>130     </font></a><span class="default">        <a href="dictionary_P.html#96141">run_list</a>.<a href="dictionary_A.html#29427">append</a>(<a href="dictionary_P.html#95997">run</a>)</span>
+<a name="131"><font size=-1>131     </font></a><span class="default"></span>
+<a name="132"><font size=-1>132     </font></a><span class="default">        <a href="dictionary_P.html#53790">files_file</a> = </span><span class="string">&quot;files&quot;</span>
+<a name="133"><font size=-1>133     </font></a><span class="string"></span>
+<a name="134"><font size=-1>134     </font></a><span class="string">        <a href="dictionary_P.html#38568">cmd</a> </span><span class="default">= </span><span class="string">&quot;mpirun -n %d %s &lt; %s &gt; %s 2&gt; %s&quot; </span><span class="default">% (<a href="dictionary_P.html#82767">np</a>, <a href="dictionary_P.html#85496">options</a>.<a href="dictionary_B.html#34304">binary</a>, <a href="dictionary_P.html#53790">files_file</a>, <a href="dictionary_P.html#95997">run</a>.log, <a href="dictionary_P.html#95997">run</a>.<a href="dictionary_E.html#49461">err</a>)</span>
+<a name="135"><font size=-1>135     </font></a><span class="default">        print(</span><span class="string">&quot;Executing: %s&quot; </span><span class="default">% <a href="dictionary_P.html#38568">cmd</a>)</span>
+<a name="136"><font size=-1>136     </font></a><span class="default"></span>
+<a name="137"><font size=-1>137     </font></a><span class="default">        <a href="dictionary_P.html#95039">retcode</a> = os.system(<a href="dictionary_P.html#38568">cmd</a>)</span>
+<a name="138"><font size=-1>138     </font></a><span class="default"></span>
+<a name="139"><font size=-1>139     </font></a><span class="default">        </span><span class="keyword">if <a href="dictionary_P.html#95039">retcode</a></span><span class="default">: </span>
+<a name="140"><font size=-1>140     </font></a><span class="default">            print(</span><span class="string">&quot;Return code: %d&quot; </span><span class="default">% <a href="dictionary_P.html#95039">retcode</a>)</span>
+<a name="141"><font size=-1>141     </font></a><span class="default">            </span><span class="keyword">with </span><span class="default">open(<a href="dictionary_P.html#95997">run</a>.log, </span><span class="string">&quot;r&quot;</span><span class="default">) </span><span class="keyword">as <a href="dictionary_P.html#52593">fh</a></span><span class="default">: print(<a href="dictionary_P.html#52593">fh</a>.<a href="dictionary_R.html#92927">read</a>())</span>
+<a name="142"><font size=-1>142     </font></a><span class="default">            </span><span class="keyword">with </span><span class="default">open(<a href="dictionary_P.html#95997">run</a>.<a href="dictionary_E.html#49461">err</a>, </span><span class="string">&quot;r&quot;</span><span class="default">) </span><span class="keyword">as <a href="dictionary_P.html#52593">fh</a></span><span class="default">: print(<a href="dictionary_P.html#52593">fh</a>.<a href="dictionary_R.html#92927">read</a>())</span>
+<a name="143"><font size=-1>143     </font></a><span class="default">            </span><span class="comment">#if options.strict</span>
+<a name="144"><font size=-1>144     </font></a><span class="comment">            #    return retcode</span>
+<a name="145"><font size=-1>145     </font></a><span class="comment">            #else</span>
+<a name="146"><font size=-1>146     </font></a><span class="comment"></span>
+<a name="147"><font size=-1>147     </font></a><span class="comment">    # Generate HTML diffs and open the (temporary) files in the default browser</span>
+<a name="148"><font size=-1>148     </font></a><span class="comment">    # TODO: Add call to fldiff!</span>
+<a name="149"><font size=-1>149     </font></a><span class="comment"></span>
+<a name="150"><font size=-1>150     </font></a><span class="comment">    # This function will select the file we want to analyze.</span>
+<a name="151"><font size=-1>151     </font></a><span class="comment">    <a href="dictionary_P.html#57461">gat</a> </span><span class="default">= {</span>
+<a name="152"><font size=-1>152     </font></a><span class="default">        </span><span class="string">&quot;log&quot;</span><span class="default">: </span><span class="keyword">lambda </span><span class="default">x: getattr(x, </span><span class="string">&quot;log&quot;</span><span class="default">),</span>
+<a name="153"><font size=-1>153     </font></a><span class="default">        </span><span class="string">&quot;out&quot;</span><span class="default">: </span><span class="keyword">lambda </span><span class="default">x: getattr(x, </span><span class="string">&quot;out&quot;</span><span class="default">),</span>
+<a name="154"><font size=-1>154     </font></a><span class="default">    }[<a href="dictionary_P.html#85496">options</a>.<a href="dictionary_F.html#53221">file_type</a>]</span>
+<a name="155"><font size=-1>155     </font></a><span class="default"></span>
+<a name="156"><font size=-1>156     </font></a><span class="default">    <a href="dictionary_P.html#96014">run0</a>, <a href="dictionary_P.html#62236">html_files</a> = <a href="dictionary_P.html#96141">run_list</a>[</span><span class="number">0</span><span class="default">], []</span>
+<a name="157"><font size=-1>157     </font></a><span class="default">    </span><span class="keyword">for <a href="dictionary_P.html#95997">run</a> in <a href="dictionary_P.html#96141">run_list</a></span><span class="default">[</span><span class="number">1</span><span class="default">:]:</span>
+<a name="158"><font size=-1>158     </font></a><span class="default">        <a href="dictionary_P.html#61863">hfile</a> = <a href="dictionary_P.html#75358">make_html_diff</a>(<a href="dictionary_P.html#57461">gat</a>(<a href="dictionary_P.html#96014">run0</a>), <a href="dictionary_P.html#57461">gat</a>(<a href="dictionary_P.html#95997">run</a>))</span>
+<a name="159"><font size=-1>159     </font></a><span class="default">        <a href="dictionary_P.html#62236">html_files</a>.<a href="dictionary_A.html#29427">append</a>(<a href="dictionary_P.html#61863">hfile</a>)</span>
+<a name="160"><font size=-1>160     </font></a><span class="default"></span>
+<a name="161"><font size=-1>161     </font></a><span class="default">    </span><span class="keyword">for <a href="dictionary_P.html#62235">html_file</a> in <a href="dictionary_P.html#62236">html_files</a></span><span class="default">:</span>
+<a name="162"><font size=-1>162     </font></a><span class="default">        <a href="dictionary_P.html#34895">browse_localpath</a>(<a href="dictionary_P.html#62235">html_file</a>)</span>
+<a name="163"><font size=-1>163     </font></a><span class="default"></span>
+<a name="164"><font size=-1>164     </font></a><span class="default">    </span><span class="keyword">return </span><span class="number">0</span>
+<a name="165"><font size=-1>165     </font></a><span class="number"></span>
+<a name="166"><font size=-1>166     </font></a><span class="number"></span>
+<a name="167"><font size=-1>167     </font></a><span class="number"></span><span class="keyword">if <a href="dictionary_&.html#16166">__name__</a> </span><span class="default">== </span><span class="string">&quot;__main__&quot;</span><span class="default">:</span>
+<a name="168"><font size=-1>168     </font></a><span class="default">    sys.exit(<a href="dictionary_P.html#75163">main</a>())</span>
+<a name="169"><font size=-1>169     </font></a><span class="default"></span>
+<a name="170"><font size=-1>170     </font></a><span class="default"></span>
+</pre></body></html>

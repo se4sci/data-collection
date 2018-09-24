@@ -1,0 +1,185 @@
+hash,time,message,buggy
+4b763d3,2017-05-23T21:59:21,helanal: minor doc change (numpyfication),0.0
+f5b3503,2017-07-20T00:43:38,Added core.topology.TransTable.copy method,0.0
+0a9a84a,2017-07-20T01:43:05,added TopologyAttr.copy,0.0
+7b4bf01,2017-07-20T01:58:13,added core.topology.Topology.copy,0.0
+a5c16d1,2017-07-21T01:11:17,Added Reader.copy method,0.0
+8664cd7,2018-01-22T16:38:37,Removed the problem where t0 was ignored. Changed the organisation of the functions and used mroe consistent variable names. Removed the mention of parallel selection which was not implemented. Inlined the function which did not do much.,0.0
+6fb2727,2018-01-22T17:06:45,Corrected ProgressMeter to display loading correctly. Adjusted code to adhere to the 80 character line width limit.,1.0
+b6c0086,2018-01-24T17:47:26,Bumped version to 0.17 release,0.0
+3961b09,2018-01-24T17:50:32,Start of 0.17.1,0.0
+10ee7ff,2018-01-25T00:44:27,Enable pytest warnings (#1661),0.0
+911ea22,2018-01-25T16:18:55,added reading of record types,0.0
+93aefc7,2018-01-25T16:21:47,added test for default record_types,0.0
+9.851e+35,2018-01-26T17:33:06,Refined comments as discussed in https://github.com/MDAnalysis/mdanalysis/pull/1759,0.0
+5265b62,2018-01-29T14:04:17,encoding of RecordTypes,0.0
+4de452f,2018-01-29T14:41:24,fixed ResidueGroup and SegmentGroup RecordType access,1.0
+d9ef4ec,2018-01-29T20:24:29,Merge pull request #1762 from MDAnalysis/issue-1753-add_recordtype,0.0
+7cc1e81,2018-01-30T13:15:27,Fixes Issue #1582  AtomGroup.dimensions now always returns a copy,1.0
+b56ef01,2018-01-30T14:58:01,Merge pull request #1764 from MDAnalysis/issue-1582-dimensions_copy,0.0
+2cdf0fb,2018-02-01T16:12:43,Test case for the t0 argument being ignored. Corrected the original test_SurvivalProbability. The first point has to be 0 (autocorrelation). I changed the universe for the test so that the timeseries is not only 1s (meaning that nothing changes and the test is too naive). This could be further improved by using actual verified values.,0.0
+f658404,2018-02-01T19:18:09,Adds S array type validation to lib.distances.transform_StoR,0.0
+62522f5,2018-02-01T19:18:35,Adds tests for lib.distances.transform_StoR,0.0
+6fdf06d,2018-02-02T09:29:03,fix header length information in dcd,1.0
+0ac274e,2018-02-02T10:47:29,Refactors lib.distances._check_array and adds lib.distances._check_aray_dtype,0.0
+46d90c4,2018-02-02T11:40:17,Testing Survival Probability against actual results. Changed selection of water to be only around one interface residue GLU with a short radius to make the analysis and selection faster.,0.0
+1fd24eb,2018-02-02T11:46:51,Importing explicitly waterdynamics since this is the module we are testing in this file. Decreased precision to 3 decimals.,0.0
+f170e59,2018-02-02T13:42:47,Author's name - first contribution,0.0
+fd68f60,2018-02-02T14:17:18,DCDwriter now has a option to set istart,0.0
+c5504e5,2018-02-02T17:29:36,Updates CHANGELOG with Fix of #1699,0.0
+4945415.0,2018-02-02T17:31:00,Adds Nabarun Pal to list of authors,0.0
+adaf9d9,2018-02-03T09:22:00,use istart information in dcd to set correct time,0.0
+b307e73,2018-02-03T09:27:15,update changelog,0.0
+7a82fa9,2018-02-03T11:57:46,Update CHANGELOG,0.0
+75b69bc,2018-02-04T20:39:43,Update test_dcd.py,0.0
+2c55dcd,2018-02-05T14:55:08,proper null termination of remark string,0.0
+eae5845,2018-02-06T17:52:44,ENH: Added directed_hausdorff from scipy to speed up hausdorff calc (#1758),0.0
+1ae6ed5,2018-02-07T01:11:01,add binder button (#1770),0.0
+2703b38,2018-02-07T17:20:06,Merge pull request #1767 from MDAnalysis/fix-dcd-witer,0.0
+0a09297,2018-02-07T18:53:56,Refactors topology.guessers by changing the criteria when warning is raised,0.0
+9935167.0,2018-02-11T10:08:57,fixed link to Amber nctraj format,1.0
+daf6c1a,2018-02-11T10:14:54,docs: updated path to matplotlib objects,0.0
+a5517b9,2018-02-11T10:29:46,updated Amber TRJ docs,0.0
+83f8383,2018-02-11T10:44:51,restructured Amber docs and WebCited original Amber format pages,0.0
+a647b2e,2018-02-12T21:39:40,Adds machinery to recognize dummy atoms and assign masses,0.0
+c85cc4e,2018-02-12T21:40:45,Add new function topology.guessers.validate_atom_types,0.0
+10184af,2018-02-12T22:10:49,Fixes a bug in topology.guessers.validate_atom_types,1.0
+7.506e+80,2018-02-12T22:17:58,Adds test to check for no warning when topology with MW atom type is loaded,0.0
+acfa56a,2018-02-21T15:33:57,reST formatting fixes,0.0
+fc81ad0,2018-02-21T15:54:31,raise minimum scipy version to 1.0.0,0.0
+97e6752,2018-02-22T15:29:45,Add reindex option to write atom id to gro file,0.0
+1c5d2fc,2018-02-22T16:07:58,Add test,0.0
+4b62604,2018-02-22T16:40:19,fixed the PDB format of the HOLE test file PDB_HOLE,0.0
+0bf8090,2018-02-22T17:34:51,Add doc,0.0
+2322fa4,2018-02-22T17:36:37,Update GRO.py,0.0
+323823b,2018-02-22T17:40:58,fixed broken links in HOLE docs,0.0
+ae62b93,2018-02-23T04:42:38,added pbc to dist(),0.0
+69746d9,2018-02-23T05:11:44,added test case for pbc in dist(),0.0
+34b3276,2018-02-23T08:12:41,Added Universe.copy,0.0
+fc20c22,2018-02-23T11:46:07,Fix docs,1.0
+b78f7ce,2018-02-23T11:49:56,fix typo,1.0
+2f55f50,2018-02-23T15:13:14,pytest.fixture,0.0
+9756173.0,2018-02-23T15:30:29,Fix object,0.0
+09680c0,2018-02-23T19:12:20,added pbc to dist(),0.0
+7b6ad00,2018-02-23T20:23:17,Fixes Issue #1771,1.0
+3088f19,2018-02-24T16:26:21,added testcase for dist w/o pbc,0.0
+1b514a8,2018-02-24T18:35:40,Uses assert_nowarns for testing,0.0
+3b46b31,2018-02-26T18:28:16,added pbc to calc_angle() in hbond_analysis,0.0
+efa0842,2018-02-26T21:42:31,decimal correction in test case,0.0
+00c785b,2018-02-26T23:02:49,changing assert_almost_equal to assert_allclose to correct precision error,0.0
+38af730,2018-02-27T00:30:38,added pbc to hbond_analysis and required changes made,0.0
+b992af4,2018-02-27T01:39:34,minor error correctionin mdamath.py,0.0
+3366c8a,2018-02-27T03:26:52,minor changes in test_distance.py,0.0
+5368a7a,2018-02-27T19:25:29,passed parameter through fixture,0.0
+931c170,2018-02-28T01:36:34,File for duecredit module to load,0.0
+60430.0,2018-02-28T01:52:58,add citations for MDAnalysis,0.0
+bbe9fe5,2018-02-28T12:12:48,Changed the format of due.py to resolve the error in test,0.0
+941afa0,2018-02-28T20:36:23,added handling of atom_style kwarg for Lammps Data parser & reader,0.0
+3c6d6b1,2018-02-28T21:25:53,Adds cylayer and ccyzone to docstring of AtomGroup.select_atoms,0.0
+7e7a154,2018-03-01T00:31:23,validating dimensions for self.pbc and addition of discription to docstring,0.0
+e135861,2018-03-01T14:48:58,added atom_style kwarg to Lammps Data file reading,0.0
+2457627.0,2018-03-01T18:31:51,Fixed MPI fork() warning when importing MDAnalysis after MPI_Init() call,1.0
+3.6e+22,2018-03-02T07:08:26,Fixes typo in docstring of topology.guessers.validate_atom_types,1.0
+c4c7ad6,2018-03-02T07:36:13,Removes the added versionchanged,0.0
+3d86c45,2018-03-02T07:44:45,Updated docstring for AtomGroup.select_atoms,0.0
+8955570.0,2018-03-02T10:51:57,fix (scope='class'),1.0
+41787ac,2018-03-04T09:17:33,fixed up tests for reindex growriter,0.0
+6159650.0,2018-03-04T13:32:01,MAINT: Config / DOC updates for latest asv version.,0.0
+e97fd8e,2018-03-05T09:37:09,Updates hole download links,0.0
+eaaa968,2018-03-05T09:42:01,Merge pull request #1793 from MDAnalysis/issue-1791-lammpsparser,0.0
+0308d68,2018-03-05T10:12:02,applied changes suggested by @orbeckst and  @richardjgowers,0.0
+e47215b,2018-03-05T10:39:28,added changelog entry for PR #1794 and added @zemanj to the list authors,0.0
+7c6e970,2018-03-05T11:18:48,doc updated for #1791,0.0
+3b40305,2018-03-05T11:37:28,fixed up GRO and LAMMPS docs,1.0
+eabf44f,2018-03-05T11:38:46,made atom_style kwarg optional,0.0
+48f8dc4,2018-03-05T11:39:09,renamed error variable,0.0
+a28e672,2018-03-05T22:41:11,Updates CHANGELOG and adds name to author list,0.0
+9761de7,2018-03-06T05:22:52,Updates to https urls for downloading hole,0.0
+37f51d3,2018-03-06T08:52:46,whitespace removal,0.0
+713dc36,2018-03-06T23:13:00,Removes unnecessary docstrings,0.0
+1fa0f81,2018-03-07T09:31:01,Reorders docstring elements for better consistency,0.0
+a5f09a0,2018-03-07T14:00:27,analysis.align: fixed error messages and fixed use n_atoms,0.0
+50f0bcb,2018-03-07T15:03:05,align.get_matching_atoms(): more checks and tests,0.0
+139f4b9,2018-03-07T16:01:37,AMBER NCDF reader mmap=None as default,0.0
+dc32455,2018-03-07T23:22:13,tests for unwanted side effects when importing MDAnalysis,0.0
+44a1356,2018-03-07T23:22:13,tests for unwanted side effects when importing MDAnalysis,0.0
+dbafc04,2018-03-07T23:33:27,added changelog entry for import side effects,0.0
+dc706ed,2018-03-07T23:35:41,added myself to the list of authors,0.0
+9b32968,2018-03-08T10:29:06,AMBER NCDF: cleaned up mmap use,0.0
+f8b583b,2018-03-08T12:00:56,Python 3 compatibility (still likely to break other tests),0.0
+a4a6d81,2018-03-08T12:00:56,Python 3 compatibility (still likely to break other tests),0.0
+2f3419b,2018-03-08T12:00:56,Python 3 compatibility (still likely to break other tests),0.0
+e94b1c4,2018-03-08T14:43:49,Merge pull request #1813 from MDAnalysis/issue-1807-mmap,0.0
+f0ee149,2018-03-08T16:51:30,isolated import tests by offloading to separate Python instance,0.0
+da738bd,2018-03-08T16:51:30,isolated import tests by offloading to separate Python instance,0.0
+0f30ff5,2018-03-08T16:51:30,isolated import tests by offloading to separate Python instance,0.0
+fdbd139,2018-03-08T17:26:59,split the test into two separate ones (otherwise one could never fail),0.0
+96ab1cc,2018-03-08T17:26:59,split the test into two separate ones (otherwise one could never fail),0.0
+d873996,2018-03-08T17:26:59,split the test into two separate ones (otherwise one could never fail),0.0
+068e4ea,2018-03-08T17:53:33,moved one test back into the test module,0.0
+5209585.0,2018-03-08T17:53:33,moved one test back into the test module,0.0
+27d2727,2018-03-08T17:53:33,moved one test back into the test module,0.0
+b15e8ea,2018-03-09T00:28:50,Added the test case for Duecredit,0.0
+5e3bd49,2018-03-09T11:41:41,cleanup: removed some unnecessary lines,0.0
+3f31d61,2018-03-09T16:16:33,added comment explaining test_os_dot_fork_not_none,0.0
+fe68045,2018-03-09T16:55:47,RMSD doc improvements,0.0
+b2fc3f9,2018-03-09T23:08:37,added comment explaining why CalledProcessError is caught and raised again,0.0
+46fe093,2018-03-10T03:10:19,omit due.py from coverage reporting,0.0
+dde9250,2018-03-10T16:27:59,Updated docs  authors  and changelog,0.0
+e3d5cac,2018-03-11T11:00:54,fixed duecredit import error reporting in due stub,1.0
+9383f08,2018-03-11T21:01:35,Adding copy method to ChainReader,0.0
+149ac8b,2018-03-12T08:51:40,Update TPR tests for tpx 112,0.0
+f68f884,2018-03-12T10:29:43,duecredit: small fixes,0.0
+d97c75e,2018-03-13T20:55:35,remove UTF-8 from duecredit citation,0.0
+bc374fa,2018-03-13T22:40:39,Merge pull request #1810 from MDAnalysis/fix-aligner-errormessages,0.0
+ffc7b7a,2018-03-14T14:12:43,mock out calls to fork() in duecredit,0.0
+1413eac,2018-03-14T22:40:41,extensions need to be fully qualified in setup.py,0.0
+2ea22fd,2018-03-15T00:19:50,add native NAMD 2.10 PSF and DCD,0.0
+b23e688,2018-03-15T01:04:13,add tests for #1819,0.0
+81a44aa,2018-03-15T01:08:36,correctly calculate start of time in DCD,0.0
+d3f5163,2018-03-15T09:08:27,fix cython 0.28 compiler error,1.0
+6c788c6,2018-03-15T10:49:35,fixes stochasticproxembed.pyx Cython compilation error,1.0
+4e323f1,2018-03-15T13:39:16,fix cython to 0.27 as a band-aid solution,1.0
+486b27b,2018-03-16T18:34:21,fixing istart/nsavc for writers,1.0
+340ffbf,2018-03-17T18:13:30,fix copy error in cython setup,1.0
+0658f75,2018-03-17T18:13:53,cython setup clean-up,0.0
+be3e4f7,2018-03-17T19:33:50,removing unnecessary section from copy() and adding testcases,0.0
+f79f88b,2018-03-18T09:16:10,"Revert ""fix cython to 0.27 as a band-aid solution""",0.0
+83648d2,2018-03-18T09:33:48,fix rms tests,1.0
+4e7d4aa,2018-03-18T11:17:12,DCD test: use decimal=5 for time tests,0.0
+d1f6b8c,2018-03-18T11:28:08,Merge pull request #1822 from MDAnalysis/ayushsuhane-duecredits,0.0
+543853e,2018-03-19T04:37:46,Fixes hyperlinks to external resources in docs for MDAnalysis.coordinates.PQR (#1836),0.0
+a11dce4,2018-03-19T19:49:42,in copy()  seeking new reader and copying over current Timestep,0.0
+63b70f0,2018-03-20T03:40:17,removing redundant test cases,0.0
+74defb7,2018-03-21T23:16:55,Merge pull request #1833 from MDAnalysis/fix-cython28-build,0.0
+c7c6f40,2018-03-22T11:39:01,BENCH: add rdf asv benchmarks (#1840),0.0
+994f08c,2018-03-22T16:33:16,Merge branch 'develop' into issue-1819-dcd-istart,0.0
+6412516.0,2018-03-22T17:37:23,updated CHANGELOG for #1819,0.0
+5a232a3,2018-03-22T23:04:33,Merge pull request #1832 from MDAnalysis/issue-1819-dcd-istart,0.0
+de6a585,2018-03-23T21:11:18,add GSD to docs,0.0
+d404dd4,2018-03-24T12:57:33,make diffusionmap.DistanceMatrix full y use AnalysisBase,0.0
+4ce5ae9,2018-03-24T13:03:50,analysis docs: explain verbose,0.0
+d91dd3c,2018-03-27T00:16:53,improved docs for analysis.density,0.0
+8f950b6,2018-03-28T23:14:59,changed groupby function to accept multiple attributes #1839 (#1846),0.0
+ace4dc8,2018-03-29T00:25:06,Merge pull request #1843 from MDAnalysis/doc-fixes,0.0
+5be20e3,2018-04-03T16:57:10,fix HydrogenBondAutoCorrel for scipy >= 1.0.1,1.0
+0baba7c,2018-04-04T19:14:35,added tests for issue 1854,0.0
+224347b,2018-04-04T19:58:07,Fixed issue 1854,1.0
+1ee4ce9,2018-04-05T09:15:45,Merge pull request #1855 from MDAnalysis/issue-1854-PDBresids,0.0
+160a909,2018-04-06T12:04:59,fixed reading PQR files from Gromacs,0.0
+ea124c1,2018-04-06T12:08:36,added docs for PQR fix,0.0
+a67cce9,2018-04-09T08:52:41,added test for PQR file reading,0.0
+2b57a15,2018-04-09T13:04:06,fixed pkdtree with BioPython >= 1.71 (#1858),1.0
+b63d685,2018-04-09T14:21:55,fixed PQR coordinate reading for GROMACS flavour,1.0
+b41fa2f,2018-04-09T15:08:01,Bump TPX version,0.0
+a295b2c,2018-04-09T16:22:53,BUG: Fix untested MDAnalysis.visualization code,0.0
+e9fe678,2018-04-10T17:35:57,Add more tests for TPR and gromacs 2018,0.0
+63a2b0e,2018-04-10T21:17:49,Update CHANGELOG and doc for TPX 112,0.0
+c84c86c,2018-04-11T08:33:34,Merge pull request #1856 from MDAnalysis/issue-1804-pqrfix,0.0
+b205bad,2018-04-13T10:52:41,updated docs for AtomGroup to clarify init methods,0.0
+2f0ea82,2018-04-13T10:53:26,fixup! updated docs for AtomGroup to clarify init methods,1.0
+e56073f,2018-04-13T11:45:44,updeprecated older Group.__init__,0.0
+8ed2571,2018-04-13T13:05:34,removed old tests,0.0
+e8a1648,2018-04-15T15:56:24,finalised 0.18.0,0.0
+bc5be1f,2018-04-15T15:59:40,Merge branch 'develop',0.0
+39b0e4c,2018-04-22T13:55:05,updated c files for 0.18 release,0.0

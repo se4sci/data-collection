@@ -1,49 +1,49 @@
 hash,time,message,buggy
-c4d4f15,2016-12-15 19:25:38,Add cleaning for calculation of effective interaction in cRPA,0
-79aa402,2016-12-16 15:24:24,Update dmft tutorial and add cRPA tutorial.,0
-f350031,2016-12-16 16:06:22,Correct links in cRPA tutorial,0
-a2f464f,2016-12-16 17:28:31,Correct typos in tutorial cRPA,0
-054bd87,2016-12-20 07:24:37,Modify the *.ac files,0
-507779f,2016-12-29 18:46:14,Abort immediately if IOError in read_rhor,0
-467a002,2016-12-31 00:06:38,Replace -openmp by -qopenmp in recent Intel FC versions,0
-dbd4a56,2016-12-31 00:09:34,quickfix in opernlb_ylm: a test on nloalg was erroneous,0
-94d6523,2016-12-31 00:55:06,Change NLO_MINCAT value to save memory,0
-8211f4e,2016-12-31 01:54:59,Suppress useless args in ctocprj,0
-b3642ee,2017-01-02 17:49:34,Only master should write MSQD_T and PHDOS files,0
-e6af034,2017-01-02 19:54:07,Fix misplaced HAVE_NETCDF,0
-70c5403,2017-01-02 23:11:48,Fix formats in isfile,0
-b57742f,2017-01-03 14:16:31,Correct typos  and improve writtings on cRPA tutorial.,0
-fb17c60,2017-01-03 14:32:03,Merge branch 'release-8.2.0' into tuto_crpa,0
-bbe61cd,2017-01-03 18:58:50,Eliminate remaining problem in ctocprj,0
-78520bd,2017-01-04 09:53:36,Merge remote-tracking branch torrent/quickfixes/bbe6 into _torrent-8.2.0,0
-3b1a847,2017-01-04 12:22:09,Upgrade AtomPAW version,0
-01e3213,2017-01-04 14:38:27,Improve tutos dmft and crpa,0
-4e765d5,2017-01-04 19:53:53,Change the way Dij is transfered in to Ekb because the parallelization over atom was incompatible with the parallelization over spins,0
-f174c1b,2017-01-05 00:27:40,Change the way Dij is tranfered in to Ekb - Take 2,0
-fa96642,2017-01-05 17:45:16,Tests cRPA for tuto cRPA: typos,0
-4453903,2017-01-05 19:35:57,Change the way Dij is transfered in to Ekb - Take 3,0
-c2e8ce7,2017-01-06 02:42:18,Change the way Dij is transfered in to Ekb - Take 4,0
-6dacc24,2017-01-06 09:59:13,Merge remote-tracking branch torrent/quickfixes/c2e8 into _torrent-8.2.0,0
-f59e95b,2017-01-06 11:23:21,Adjust tolerance for ubu_intel_openmp. Modified: t94.in,0
-b036f6b,2017-01-06 11:27:37,Merge remote-tracking branch amadon/tuto_crpa/fa96 into _amadon-8.2.0,0
-f2006ad,2017-01-06 20:09:30,Improvment of code stability for several pathological cases of procs distribution,0
-1dc28fb,2017-01-07 01:06:01,Avoid npw=0 and print error message,0
-743eb15,2017-01-07 12:10:58,Errors corrected (thank you test farm~),0
-1f3dbc7,2017-01-09 00:51:52,Corrections to make PAW compatible with spnorb,0
-bc93740,2017-01-09 10:29:44,Merge remote-tracking branch torrent/quickfixes/1f3d into _torrent-8.2.0,0
-73384e7,2017-01-10 11:49:15,psml bugfix: ps_Relativity returns chars not bool,0
-238f1cf,2017-01-10 18:21:25,Fix duplicated import,0
-815110d,2017-01-10 18:39:19,Fix import,0
-2f3a5f5,2017-01-11 00:09:17,Update pspm refs,0
-3f1ebd7,2017-01-11 19:41:54,Correction in NCPP nlcc core correction for hybrid functionals,0
-595b00c,2017-01-12 21:18:50,Merge remote-tracking branch gmatteo/intel17/2f3a into _gmatteo-8.2.0,0
-ebe6324,2017-01-12 23:46:52,Merge remote-tracking branch torrent/quickfixes/3f1e into _torrent-8.2.0,0
-40875b8,2017-01-17 12:49:02,Print error message associated to nf90_create instead of nf90_close,0
-410f3c0,2017-01-17 13:11:20,Stop the code immediately if --netcdf-default without MPI-IO,0
-e28637e,2017-01-18 08:10:41,typo,0
-7f17b8c,2017-01-21 09:06:14,Modify tolerance  to prepare merge of bieder/hotfix_cif/e28637e9 . Modified:   t94.in,0
-6af2939,2017-01-21 09:09:04,Merge remote-tracking branch biederj/hotfix_cif/e286 into _biederj-8.2.0,0
-4c431f2,2017-01-22 21:27:49,Update tolerances for new bots tikal_intel15_serial  ubu_intel15_mpich  ubu_intel16_openmp  ubu_intel17_openmpi .,0
-6132de1,2017-01-22 21:46:52,In view of new bots + upgraded ones  modify testfarm.conf  for ubu_intel15_mpich  ubu_intel16_openmp  bob_gnu5.3_openmp  graphene_gnu6.2_macports  tikal_gnu5.4_mpich,0
-8949eda,2017-01-23 06:46:57,Modify or update refs files in abichecks/buildsys/Refs,0
-910058b,2017-01-23 11:14:23,Final update of files  to finalize v8.2.0 (no doc yet  though ...),0
+c4d4f15,2016-12-15T19:25:38,Add cleaning for calculation of effective interaction in cRPA,0.0
+79aa402,2016-12-16T15:24:24,Update dmft tutorial and add cRPA tutorial.,0.0
+f350031,2016-12-16T16:06:22,Correct links in cRPA tutorial,0.0
+a2f464f,2016-12-16T17:28:31,Correct typos in tutorial cRPA,0.0
+054bd87,2016-12-20T07:24:37,Modify the *.ac files,0.0
+507779f,2016-12-29T18:46:14,Abort immediately if IOError in read_rhor,1.0
+467a002,2016-12-31T00:06:38,Replace -openmp by -qopenmp in recent Intel FC versions,0.0
+dbd4a56,2016-12-31T00:09:34,quickfix in opernlb_ylm: a test on nloalg was erroneous,1.0
+94d6523,2016-12-31T00:55:06,Change NLO_MINCAT value to save memory,0.0
+8211f4e,2016-12-31T01:54:59,Suppress useless args in ctocprj,0.0
+b3642ee,2017-01-02T17:49:34,Only master should write MSQD_T and PHDOS files,1.0
+e6af034,2017-01-02T19:54:07,Fix misplaced HAVE_NETCDF,1.0
+70c5403,2017-01-02T23:11:48,Fix formats in isfile,1.0
+b57742f,2017-01-03T14:16:31,Correct typos  and improve writtings on cRPA tutorial.,0.0
+fb17c60,2017-01-03T14:32:03,Merge branch 'release-8.2.0' into tuto_crpa,0.0
+bbe61cd,2017-01-03T18:58:50,Eliminate remaining problem in ctocprj,1.0
+78520bd,2017-01-04T09:53:36,Merge remote-tracking branch torrent/quickfixes/bbe6 into _torrent-8.2.0,0.0
+3b1a847,2017-01-04T12:22:09,Upgrade AtomPAW version,0.0
+01e3213,2017-01-04T14:38:27,Improve tutos dmft and crpa,0.0
+4e765d5,2017-01-04T19:53:53,Change the way Dij is transfered in to Ekb because the parallelization over atom was incompatible with the parallelization over spins,1.0
+f174c1b,2017-01-05T00:27:40,Change the way Dij is tranfered in to Ekb - Take 2,0.0
+fa96642,2017-01-05T17:45:16,Tests cRPA for tuto cRPA: typos,0.0
+4453903.0,2017-01-05T19:35:57,Change the way Dij is transfered in to Ekb - Take 3,0.0
+c2e8ce7,2017-01-06T02:42:18,Change the way Dij is transfered in to Ekb - Take 4,0.0
+6dacc24,2017-01-06T09:59:13,Merge remote-tracking branch torrent/quickfixes/c2e8 into _torrent-8.2.0,0.0
+f59e95b,2017-01-06T11:23:21,Adjust tolerance for ubu_intel_openmp. Modified: t94.in,0.0
+b036f6b,2017-01-06T11:27:37,Merge remote-tracking branch amadon/tuto_crpa/fa96 into _amadon-8.2.0,0.0
+f2006ad,2017-01-06T20:09:30,Improvment of code stability for several pathological cases of procs distribution,0.0
+1dc28fb,2017-01-07T01:06:01,Avoid npw=0 and print error message,0.0
+743eb15,2017-01-07T12:10:58,Errors corrected (thank you test farm~),1.0
+1f3dbc7,2017-01-09T00:51:52,Corrections to make PAW compatible with spnorb,1.0
+bc93740,2017-01-09T10:29:44,Merge remote-tracking branch torrent/quickfixes/1f3d into _torrent-8.2.0,0.0
+733840000000.0,2017-01-10T11:49:15,psml bugfix: ps_Relativity returns chars not bool,1.0
+238f1cf,2017-01-10T18:21:25,Fix duplicated import,1.0
+815110d,2017-01-10T18:39:19,Fix import,1.0
+2f3a5f5,2017-01-11T00:09:17,Update pspm refs,0.0
+3f1ebd7,2017-01-11T19:41:54,Correction in NCPP nlcc core correction for hybrid functionals,1.0
+595b00c,2017-01-12T21:18:50,Merge remote-tracking branch gmatteo/intel17/2f3a into _gmatteo-8.2.0,0.0
+ebe6324,2017-01-12T23:46:52,Merge remote-tracking branch torrent/quickfixes/3f1e into _torrent-8.2.0,0.0
+40875b8,2017-01-17T12:49:02,Print error message associated to nf90_create instead of nf90_close,0.0
+410f3c0,2017-01-17T13:11:20,Stop the code immediately if --netcdf-default without MPI-IO,0.0
+e28637e,2017-01-18T08:10:41,typo,0.0
+7f17b8c,2017-01-21T09:06:14,Modify tolerance  to prepare merge of bieder/hotfix_cif/e28637e9 . Modified:   t94.in,0.0
+6af2939,2017-01-21T09:09:04,Merge remote-tracking branch biederj/hotfix_cif/e286 into _biederj-8.2.0,0.0
+4c431f2,2017-01-22T21:27:49,Update tolerances for new bots tikal_intel15_serial  ubu_intel15_mpich  ubu_intel16_openmp  ubu_intel17_openmpi .,0.0
+6132de1,2017-01-22T21:46:52,In view of new bots + upgraded ones  modify testfarm.conf  for ubu_intel15_mpich  ubu_intel16_openmp  bob_gnu5.3_openmp  graphene_gnu6.2_macports  tikal_gnu5.4_mpich,0.0
+8949eda,2017-01-23T06:46:57,Modify or update refs files in abichecks/buildsys/Refs,0.0
+910058b,2017-01-23T11:14:23,Final update of files  to finalize v8.2.0 (no doc yet  though ...),0.0

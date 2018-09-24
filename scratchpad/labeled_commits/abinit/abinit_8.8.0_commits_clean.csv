@@ -1,0 +1,35 @@
+hash,time,message,buggy
+6a3a9c3,2018-04-02T06:11:42,Initialize v8.8.0,0.0
+4d24151,2018-04-02T13:58:27,Added error message when trying to use vdW-DF functionals,0.0
+91095a8,2018-04-06T06:30:53,Suppress a fake URL+DOI  and gives a URL that works.,0.0
+7cc7023,2018-04-06T08:30:47,Corrected range of vdw_xc values for warning message,0.0
+ee7b400,2018-04-06T15:24:40,Changes in libPAW to improve consistency between uspp  atompaw  abinit legacy  etc...,0.0
+452913f,2018-04-06T15:41:08,Merge branch 'release-8.8.0' of abinit-gitlab:trunk/abinit into quickfixes,0.0
+c6a2d43,2018-04-06T16:02:40,Merge conflict,0.0
+e1685c6,2018-04-06T18:31:47,Correct mess after merge,0.0
+f313103,2018-04-09T11:30:28,Updated ref file for test vdwxc[03].,0.0
+629ebce,2018-04-09T16:38:16,Long lines suppressed,0.0
+86578c7,2018-04-09T16:41:11,New ref file for one test (due to new psp treatment),0.0
+7575338.0,2018-04-10T16:18:10,Merge remote-tracking branch 'remotes/trunk/release-8.8.0' into release-8.8.0 Some buildsys errors found.,0.0
+fe96f39,2018-04-10T16:20:51,Adjust test tolerances,0.0
+e8ffdec,2018-04-12T10:43:34,Updated error message for vdw_xc < 3.,0.0
+8e84840,2018-04-15T06:53:40,Merge torrent/quickfixes/fe96 into _cespejo,0.0
+63c3188,2018-04-16T12:02:58,remove spurious comment,0.0
+76b2730,2018-04-17T17:16:28,Toward PAW+DFPT+NC,0.0
+96484d3,2018-04-17T22:20:17,Merge torrent/quickfixes/76b2 into _torrent,0.0
+6b1ad95,2018-04-18T08:41:49,Add ./ to mksite.py systematically,0.0
+bf6e57e,2018-04-19T07:51:48,Try to modify order of printing of relevances classes  but does not work ?!,0.0
+456cbbb,2018-04-19T11:00:22,Add forgotten lines (variable initialization),0.0
+c42bc37,2018-04-19T11:36:48,Fix doc for hyb_mixing variables.,1.0
+ab3ead5,2018-04-19T11:38:36,Fix doc  hyb_range input variables,1.0
+3d75257,2018-04-19T15:27:14,Fix ordere of relevances in topics,1.0
+7e3561b,2018-04-20T15:34:06,"Include a in-text clarification of the source and postprocessed files in the ""topics"" directory. Develop release notes for v8.8. Complete MagField topics. Define cite:Ceresoli2006.",0.0
+bfc8776,2018-04-20T16:02:35,"Add an indication about the ""source"" character of the _*.md files in doc/topics",0.0
+2f91e0e,2018-04-20T20:55:54,Complete a first draft for the release notes.,0.0
+57dbcad,2018-04-20T20:59:54,Merge torrent/quickfixes/456b into _torrent-8.8.0,0.0
+db15717,2018-04-20T21:01:44,Merge gmatteo/relev_order/3d75 into _torrent-8.8.0,0.0
+986420c,2018-04-20T22:31:25,Add support for subsuite to wikilinks,0.0
+408469a,2018-04-21T05:59:09,Merge branch 'relev_order' of gitlab:/gmatteo/abinit into _torrent-8.8.0,0.0
+dcba2b6,2018-04-21T06:14:01,Minor improvements of doc,0.0
+5dcf7ce,2018-04-21T06:38:41,Initialize freeze of v8.8.0,0.0
+f48190c,2018-04-21T06:52:42,Fix spelling error,0.0

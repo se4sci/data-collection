@@ -1,0 +1,24 @@
+hash,time,message,buggy
+c9cb61b,2016-07-02T07:56:36,init abinit 8.1.2,0.0
+ede88c4,2016-07-02T22:30:48,Update reference files going from cronos_gcc46_paral to cronos_gnu_5.3.-paral modified:   tdfpt_03_MPI24.out modified:   tdfpt_04_MPI24.out,0.0
+355494d,2016-07-02T22:34:01,Update Tabirules#05  for abiref_gnu_5.3_debug modified:   t05.out,0.0
+8d22dec,2016-07-02T22:37:01,Try to fix the problem with Tbuildsys#40 (/bin/sh: configure: command not found) modified:   check-libpaw.py,0.0
+407cb00,2016-07-02T22:42:38,This should bypass the last problem with abiref_gnu_5.3_debug modified:   KNOWN_PROBLEMS modified:   abichecks/buildsys/tests.cnf,0.0
+7efc80a,2016-07-03T07:11:42,Modify testfarm.conf  from Jean-Michel  new version for the test farm under gitlab,0.0
+e2fe7b1,2016-07-03T13:16:14,This modif should suppress the warning messages for Tbuildsys#40 modified:   config/specs/testfarm.conf,0.0
+c837f94,2016-07-03T14:22:15,Make diag_moldyn.py compatible with Abinit8 and HIST.nc files,0.0
+b937dda,2016-07-03T18:14:29,Update two reference files for Tbuildsys#13 modified:   ubu_gnu_4.9_mpich.ac modified:   ubu_intel_15.0_mpich.ac,0.0
+350915a,2016-07-03T18:25:11,Clean the reference abichecks/buildsys/Refs deleted:    abiref_intel_15.0_mpich.ac deleted:    bb_amd-gfortran4.6_cronos.ac deleted:    bb_amd-gfortran4.6_max2.ac deleted:    bb_amd-open64_max2.ac deleted:    bb_intel-g95_yquem.ac deleted:    bb_intel-gfortran4.6_petrus.ac deleted:    bb_intel-gfortran4.6_toum_openmp.ac deleted:    bb_intel-gfortran4.7_mpich3_yquem.ac deleted:    bb_intel-gfortran4.7_shiva_distchk.ac deleted:    bb_intel-gfortran4.7_yquem.ac deleted:    bb_intel-gfortran4.7_yquem_openmp.ac deleted:    bb_intel-gfortran4.8_bigmac_macports.ac deleted:    bb_intel-gfortran4.8_ktulu.ac deleted:    bb_intel-gfortran4.8_yquem.ac deleted:    bb_intel-gfortran4.9_supermac.ac deleted:    bb_intel-intel15_yquem.ac deleted:    bb_intel-intel15_yquem_sernofb.ac deleted:    bb_intel-nag_petrus.ac deleted:    bb_intel-nag_petrus_serial.ac deleted:    bb_power6-xlf_ibm6.ac deleted:    bb_xeon-gcc49_tikal.ac deleted:    bb_xeon-gcc49_tikal_cov.ac deleted:    bb_xeon-gfortran4.7_buda_cuda.ac deleted:    bb_xeon-gfortran4.7_testf.ac deleted:    bb_xeon-gfortran4.7_testf_woMPI.ac deleted:    bb_xeon-intel12_green_prod.ac deleted:    bb_xeon-intel12_tikal_serial.ac deleted:    bb_xeon-intel13_coba2.ac deleted:    bb_xeon-intel13i_coba2.ac deleted:    bb_xeon-intel14_buda.ac deleted:    bb_xeon-psc_tikal.ac deleted:    bob_gnu_5.3_openmpi.ac deleted:    bob_intel_15.0_mpich.ac deleted:    inca_gnu_4.9_debug.ac deleted:    ubu_gnu_4.8_serial.ac deleted:    ubu_gnu_4.9_debug.ac deleted:    ubu_gnu_4.9_openmpi.ac,0.0
+e9da0aa,2016-07-03T18:26:42,Add the missing new references for Tbuildsys#13 new file:   abiref_gnu_5.3_debug.ac new file:   abiref_nag_6.1_openmpi.ac new file:   bob_gnu_5.3_openmp.ac new file:   buda_gnu_4.7_cuda.ac new file:   buda_intel_14.0_mpich.ac new file:   coba2_intel_13.1_openmpi.ac new file:   cronos_gnu_4.6_paral.ac new file:   cronos_gnu_5.3_paral.ac new file:   graphene_gnu_4.9_macports.ac new file:   ibm6_ibm_14.1_poe.ac new file:   inca_gnu_4.9_mpich.ac new file:   max2_gnu_5.3_dep.ac new file:   max2_gnu_5.3_mpich.ac new file:   petrus_nag_5.3_openmpi.ac new file:   testf_gnu_6.1_fb.ac new file:   tikal_gnu_4.9_cov.ac new file:   tikal_gnu_4.9_mpich.ac new file:   tikal_intel_15.0_serial.ac new file:   ubu_gnu_4.9_packages.ac new file:   ubu_intel_13.1_openmpi.ac new file:   ubu_intel_15.0_dfti.ac new file:   ubu_intel_16.0_mpich.ac,0.0
+54672da,2016-07-03T18:33:01,Reenable Tbuildsys#13 modified:   KNOWN_PROBLEMS modified:   abichecks/buildsys/tests.cnf,0.0
+1a405b0,2016-07-04T15:03:53,Merge remote-tracking branch 'merge/master' into docs,0.0
+c7ab763,2016-07-05T00:47:18,Suppress comments that applied to Tv1#10-20  and not to Tv1#09 modified:   t09.in,0.0
+6e0666f,2016-07-05T08:45:00,Merge branch 'docs' into 'master',0.0
+bcd5172,2016-07-05T09:23:07,Merge branch 'master' into 'master',0.0
+1cab66c,2016-07-05T13:36:49,Declare to be on v8.1.3 modified:   KNOWN_PROBLEMS,0.0
+abfa23b,2016-07-09T14:10:23,Minor modif  to initialize v8.1.3 modified:   KNOWN_PROBLEMS,0.0
+f72cd52,2016-07-09T15:01:57,Just a test modified:   KNOWN_PROBLEMS,0.0
+e39d1c0,2016-07-09T15:11:24,Merge branch 'develop' into 'develop',0.0
+67cc9a3,2016-07-09T16:34:30,Imported fix for Intel 16 compiler  from Jordan. modified:   m_BathOperator.F90,0.0
+a7dd3b8,2016-07-09T20:24:09,Adjust tolerance for ubu_intel_16.0_mpich modified:   t06.in,0.0
+f2f8295,2016-07-09T20:30:47,Merge branch 'develop' into 'develop',0.0

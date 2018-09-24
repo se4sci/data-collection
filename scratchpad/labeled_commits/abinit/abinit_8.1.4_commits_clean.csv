@@ -1,119 +1,119 @@
 hash,time,message,buggy
-b429c83,2016-06-22 21:14:31,Convert README files to markdown,0
-ea4dd0c,2016-06-22 22:04:09,Add link to asciinema video,0
-d45afab,2016-06-22 22:51:11,More markdown files,0
-7011ad4,2016-06-25 22:22:13,Create symbolic links README --> README.md to make automake happy,0
-ad59908,2016-07-09 15:45:53,add check on bdgw values,0
-b63191b,2016-07-10 06:03:54,Init 8.1.4 modified:   KNOWN_PROBLEMS,0
-8fbd030,2016-07-10 06:06:19,Modify the *.ac files for 8.1.4 modified:   configure.ac doc/configure.ac tests/configure.ac,0
-dd1890a,2016-07-10 14:30:00,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
-aaa420c,2016-07-13 16:13:09,Few modifications porting 8.1.1 into 8.1.3,0
-b21d590,2016-07-14 09:33:13,Merge branch 'develop' into 'develop',0
-a6f6077,2016-07-14 11:31:27,This should fix the problem with luo and README.xlf,0
-e884830,2016-07-18 00:19:43,import changes from bzr 8.1.2 branch. should pass tests - lets find out...,0
-39dc2bc,2016-07-18 00:23:56,missing new files from bzr added,0
-35fe99f,2016-07-18 22:53:11,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
-825b18b,2016-08-03 10:44:00,stray print statement,0
-21126cd,2016-08-03 22:53:14,improve documentation of abimem,0
-ed76593,2016-08-06 08:52:26,Import inside gitlab develop  the modifications from v8.0.8 to v8.0.8b (including the gitlab hotfix-8.1.3 from Marc),0
-2fe28e5,2016-08-08 11:35:56,adapt for full ETSFio netcdf case to read in DDK files,0
-a8e9645,2016-08-08 12:52:13,reimported fixes for netcdf DDK file. Need to check full bb suite noe,0
-566b19b,2016-08-08 17:18:29,repair default behavior in majority of cases with MPI mode output,0
-556778d,2016-08-09 14:55:59,ddk reading should work in parallel and with no memory leaks now.,0
-92e356e,2016-08-09 16:57:19,stray fortran unit for debugging was removed,0
-dda624a,2016-08-09 17:23:45,Merge branch 'develop' of gitlab:trunk/abinit into develop,0
-c7cf6c3,2016-08-11 11:14:17,git should ignore vim backup files ending in tilda,0
-591fe2b,2016-08-13 13:58:58,Update of the acknowledgment suggestions posted on the Web. Still far from being complete  but at least mentions the fourth (2016) ABINIT paper. modified:   acknowledgments.html,0
-0d27bbe,2016-08-13 14:25:10,Update the Web bibliography and bibtex info. Modified:   bibliography.html  bibtex-refs.html,0
-1f74e29,2016-08-13 14:30:33,Fix minor problems in acknowledgments.html,0
-47eb3c9,2016-08-13 14:34:55,More modifs to acknowledgments.html,0
-c130743,2016-08-13 14:39:29,More modifs of acknowledgments.html,0
-c296948,2016-08-13 14:40:56,More changes to acknowledgments.html,0
-97bccc2,2016-08-13 14:42:15,More acknowledgments.html,0
-bf590f8,2016-08-13 14:43:06,modified acknowledgments.html,0
-dccdeb3,2016-08-13 18:25:39,Update   abinit_help.html for NPROC_NO_EXTRA_LOG value (is 2 in ABINITv8 instead of 100 before),0
-7e1b2cb,2016-08-14 08:05:57,Define previous_maxerr in  66_wfs/m_invovl.F90  and exit if a spurious divergence develops.,0
-ebf354e,2016-08-14 15:24:45,Problem with ubu_intel_16.0_mpich for Tparal#30 . So  suppressed it #%% exclude_builders = ubu_intel_16.0_mpich    modified:   t30.in,0
-93fe398,2016-08-14 15:27:09,Document problem with Tparal#30 with Intel 16 inside   KNOWN_PROBLEMS,0
-f097004,2016-08-14 19:16:08,Update ref for test Tparal#30  and also exclude this test for ubu_intel_15.0_mpich. modified:   t30.in  ../Refs/t30_MPI4.out,0
-1be446d,2016-08-15 22:12:22,Update the doc concerning so_psp modified:   abinit_vars.yml,0
-449f17a,2016-08-15 22:26:55,Fix minor problems modified:   abinit_vars.yml,0
-fb7e450,2016-08-15 22:27:43,Again fix a minor problem  and regenate vargs.html modified:   abinit_vars.yml  html_automatically_generated/vargs.html,0
-9872e1e,2016-08-15 22:31:51,Refer to pawspnorb in the doc of so_psp   modified:   abinit_vars.yml,0
-ac1d3b9,2016-08-16 13:55:29,Merge gmatteo/develop/a6f6,0
-d4ccdce,2016-08-16 17:27:45,Enforce strict control on the availability of spin-orbit inside a pseudo if spinor=2  usepaw=0. modified:   57_iovars/chkinp.F90,0
-9cb5a08,2016-08-16 17:29:28,Git pull from the gitlab,0
-110a550,2016-08-16 17:45:41,Fix minor typo.	modified:   57_iovars/chkinp.F90,0
-d950850,2016-08-16 19:28:08,Fix minor bug in chkinp   introduce so_psp 0  in test input files when needed ...   ../src/57_iovars/chkinp.F90   v1/Input/t39.in   v2/Input/t76.in  v3/Input/t47.in  v7/Input/t05.in    v7/Input/t06.in,0
-e662d08,2016-08-16 20:39:42,Update ref files  because of changes linked to so_psp  ../../v1/Refs/t39.out   ../../v2/Refs/t76.out    ../../v3/Refs/t47.out   t05.out t06.out,0
-4df88ee,2016-08-16 21:29:00,Fix minor problems modified:   bibtex-refs.html,0
-e8a9251,2016-08-16 21:30:57,Minor fixes modified:   acknowledgments.html,0
-dff9a15,2016-08-16 22:23:35,Clean and improve formatting of the DMFT lesson. modified:   lesson_dmft.html,0
-9c4a2b1,2016-08-17 06:30:12,Merge remote-tracking branch remotes/gonze/develop/dff9 into trunk/_gonze,0
-fae2644,2016-08-17 06:33:55,Issued python abinit_vars.py . Modified  html_automatically_generated/vareph.html  html_automatically_generated/vargs.html,0
-26a57df,2016-08-19 10:25:02,change nband_occ to mband_occ  and introduce spin dep nband_occ for sums over different numbers of bands according to isppol,0
-b216bf3,2016-08-19 16:52:16,corrected alloc and destroy of dtefield arrays in particular nband_occ,0
-290fa17,2016-08-19 18:20:10,[buildsys] Upgraded CPP options in source code,0
-300d773,2016-08-19 18:49:40,[buildsys] Upgraded CPP options in build-system internals,0
-27a4e9a,2016-08-19 19:01:20,Made sure ViM swap files are ignored within the Abinit source tree,0
-32686bf,2016-08-19 19:03:45,[buildsys] Re-upgraded CPP options in the source code after including recent ones,0
-79685b9,2016-08-19 19:04:33,[buildsys] Re-upgraded CPP options in build-system internals after including recent ones,0
-5476d3a,2016-08-19 19:05:56,[buildsys] Upgraded CPP options in test inputs,0
-ea678d1,2016-08-19 19:07:29,[buildsys] Upgraded CPP options in test scripts,0
-7e94422,2016-08-19 22:17:06,[buildsys] Removed stale references to obsolete CPP options,0
-740933a,2016-08-19 23:27:03,[buildsys] Imported CPP option fixer,0
-1972092,2016-08-20 21:45:36,Change the initialization of pawspnorb when nspinor=2. Also change the initialization of kptopt when nspden=4. modified:   ../.gitignore  ../src/57_iovars/indefo.F90  ../src/57_iovars/indefo1.F90  ../src/57_iovars/invars1.F90,0
-db544d4,2016-08-20 21:47:50,Ignore abichecks.env new file:   .gitignore,0
-9a091ef,2016-08-20 22:02:40,Update doc related to initialization of pawspnorb and kptopt modified:   abinit_vars.yml  html_automatically_generated/varbas.html html_automatically_generated/varpaw.html,0
-a8df06d,2016-08-20 22:07:43,Fix wrong link modified:   abinit_vars.yml html_automatically_generated/varpaw.html,0
-b833997,2016-08-21 06:50:54,Fix typo	modified:   57_iovars/invars1.F90,0
-6efc307,2016-08-21 09:22:47,Update Ref file due to change with defaulr value of pawspnorb#	modified:   ../Input/t16.in t16.out,0
-394270a,2016-08-21 11:52:29,Modify input file  due to pawspnorb modified:   t03.in,0
-766b426,2016-08-23 18:22:13,Removed Bazaar dependency and updated warnings in makemake,0
-2e150f3,2016-08-24 09:26:17,Merge branch 'develop' of gitlab.abinit.org:pouillon/abinit into develop,0
-45f63d0,2016-08-24 13:24:26,corrected naming convention for occ states in tddft routine,0
-ca7ce28,2016-08-24 13:25:19,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0
-de4bbac,2016-08-26 10:45:37,Merge branch 'develop' of abinit:trunk/abinit into develop,0
-e057bf6,2016-08-26 10:47:35,Fixed CPP options,0
-94b2ac7,2016-08-30 17:40:51,Better treatment of nbdbuf in dfpt_cgwf for PAW,0
-09bb0d1,2016-08-31 11:37:54,small change in dfpt_nstpaw,0
-15a05a5,2016-09-01 16:57:15,"* in makemake      replace commands.getstatusoutput (deprecated) by subprocess then we can redirect stderr !      ( needed when the first line of '--version' is a warning and not the version )  * add new section on testfarm.conf for IBM8 ( ibm8_ibm_15.1_serial )  * in prtefield.F90  replace the ""big"" write by 4 write ( good for XLF and NAG )  * in m_efmas.F90  xlf did like & on string  * disable test v7/t23-24-25",0
-7ff790f,2016-09-02 19:19:13,Correction of the error occuring for Effective Charges for PAW + occopt=1 + empty states,0
-4cb46da,2016-09-02 23:07:14,Typo corrected,0
-e379731,2016-09-05 13:28:37,Improvment of symetries for strain perturbation,0
-2bd2903,2016-09-05 15:29:17,Cancel a previous change (nbdbuf),0
-3b1d7a9,2016-09-05 16:29:03,Adjust ref files because NL and OVL parts of 2nd order matrix are now pure real,0
-cf660a9,2016-09-05 16:42:56,Side-effect: the adjustment of gvnl1 in dfpt_cgwf seems to improve things for Efiled perturabation : now Evar=Enon-var in the present test case (was not the case before),0
-62fbe5a,2016-09-05 18:17:16,Merge remote-tracking branch 'trunk/develop' into dfpt-paw,0
-3780d50,2016-09-05 18:20:26,improvements for Bader and Hirshfeld analysis,0
-c147d2a,2016-09-05 22:36:08,check radial integral of charge for core agains znucl-zion in Bader code,0
-8acdeac,2016-09-06 11:59:52,fixed v6[19] - integration error is quite bad for core charge  so tolerance is increased to 0.1,0
-4fe4cfe,2016-09-06 16:21:39,continue propagating nsppol 2 ferrimagnetic case for berry phase calculation,0
-1f9f885,2016-09-06 16:26:22,Update 2 hyperlinks according to checklin script advice,0
-cd8a68b,2016-09-07 10:40:12,"Inclusion of rf2 developments of bzr version (""by hand"" merge...)",0
-d107b02,2016-09-07 10:41:03,Merge branch 'develop' into rf2,0
-8b47246,2016-09-07 14:21:06,Merge remote-tracking branch mverstra/quickfixes/8acd... into trunk/_mverstra,0
-ac4eeaa,2016-09-07 14:27:25,missing dealloc in dfptnl_mv,0
-a01c78a,2016-09-07 14:33:17,Merge branch 'develop' into quickfixes,0
-76fa88f,2016-09-07 14:33:51,Merge branch 'quickfixes' of gitlab:mverstra/abinit into quickfixes,0
-df159e2,2016-09-07 17:19:43,on some machines efield2 was coming up incorrectly initialized  which corrupts the first 2 iterations but does not affect the final result. Might change some ref files  which should be updated accordingly,0
-bd83456,2016-09-08 06:21:01,Updated hyperlinks to NIST modified:   lesson_spin.html,0
-3f63ca0,2016-09-08 06:50:14,Change http to https  modified:   lesson_spin.html,0
-1641181,2016-09-08 08:22:19,Fix abirule violation  modified:   initaim.F90,0
-2e66395,2016-09-08 10:55:24,Minor change to pass tests on petrus,0
-7cc6d98,2016-09-08 21:13:57,Merge remote-tracking branch torrent/dfpt-paw/1f9f  into _torrent,0
-678b627,2016-09-09 05:48:04,Merge remote-tracking branch baguetl/develop/2e66 into _baguetl,0
-1bde05b,2016-09-09 09:52:20,missing std_out for error message. NB: aim is still not conforming with abinit style,0
-ece3440,2016-09-09 10:00:49,Merge branch 'develop' into quickfixes Need latest patch for efield2 initialization.,0
-74a173c,2016-09-09 11:02:16,Merge remote-tracking branch mverstra/quickfixes/ece3 into _mverstra,0
-4cea31a,2016-09-09 22:17:55,Merge remote-tracking branch beuken/ibm8/15a0 into _beuken,0
-f99b395,2016-09-10 05:24:53,The original link for downloading Boltztrap is broken. modified:   abinit_vars.yml,0
-1f8d8ff,2016-09-10 06:08:03,Update vardev.html due to previous modification. modified:   html_automatically_generated/vardev.html,0
-4e5d96c,2016-09-10 16:50:25,Change 61_ionetcdf to 59_ionetcdf,0
-1da553e,2016-09-11 06:47:29,The order of dirs was not correct.  modified:   ../config/specs/binaries.conf,0
-c9a6681,2016-09-12 17:07:06,Correct link for the download of Boltztrap. modified:   abinit_vars.yml,0
-bd61ee3,2016-09-13 06:33:40,Finalize files before closing v8.1.4 development. Modified:   KNOWN_PROBLEMS src/51_manage_mpi/herald.F90,0
-49ba5cf,2016-09-13 06:35:10,Run python abi_yml2html.py. Modified:   html_automatically_generated/vardev.html,0
-9a5f666,2016-09-13 06:50:31,Apply make parents,0
-56454c2,2016-09-13 06:57:46,Apply make abiauty,0
-2990b83,2016-09-13 08:11:06,Minor modif for Boltztrap link. Modified:   abinit_vars.yml,0
+b429c83,2016-06-22T21:14:31,Convert README files to markdown,0.0
+ea4dd0c,2016-06-22T22:04:09,Add link to asciinema video,0.0
+d45afab,2016-06-22T22:51:11,More markdown files,0.0
+7011ad4,2016-06-25T22:22:13,Create symbolic links README --> README.md to make automake happy,0.0
+ad59908,2016-07-09T15:45:53,add check on bdgw values,0.0
+b63191b,2016-07-10T06:03:54,Init 8.1.4 modified:   KNOWN_PROBLEMS,0.0
+8fbd030,2016-07-10T06:06:19,Modify the *.ac files for 8.1.4 modified:   configure.ac doc/configure.ac tests/configure.ac,0.0
+dd1890a,2016-07-10T14:30:00,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0.0
+aaa420c,2016-07-13T16:13:09,Few modifications porting 8.1.1 into 8.1.3,0.0
+b21d590,2016-07-14T09:33:13,Merge branch 'develop' into 'develop',0.0
+a6f6077,2016-07-14T11:31:27,This should fix the problem with luo and README.xlf,1.0
+e884830,2016-07-18T00:19:43,import changes from bzr 8.1.2 branch. should pass tests - lets find out...,0.0
+39dc2bc,2016-07-18T00:23:56,missing new files from bzr added,0.0
+35fe99f,2016-07-18T22:53:11,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+825b18b,2016-08-03T10:44:00,stray print statement,0.0
+21126cd,2016-08-03T22:53:14,improve documentation of abimem,0.0
+ed76593,2016-08-06T08:52:26,Import inside gitlab develop  the modifications from v8.0.8 to v8.0.8b (including the gitlab hotfix-8.1.3 from Marc),0.0
+2fe28e5,2016-08-08T11:35:56,adapt for full ETSFio netcdf case to read in DDK files,0.0
+a8e9645,2016-08-08T12:52:13,reimported fixes for netcdf DDK file. Need to check full bb suite noe,1.0
+566b19b,2016-08-08T17:18:29,repair default behavior in majority of cases with MPI mode output,1.0
+556778d,2016-08-09T14:55:59,ddk reading should work in parallel and with no memory leaks now.,0.0
+92e356e,2016-08-09T16:57:19,stray fortran unit for debugging was removed,0.0
+dda624a,2016-08-09T17:23:45,Merge branch 'develop' of gitlab:trunk/abinit into develop,0.0
+c7cf6c3,2016-08-11T11:14:17,git should ignore vim backup files ending in tilda,0.0
+591fe2b,2016-08-13T13:58:58,Update of the acknowledgment suggestions posted on the Web. Still far from being complete  but at least mentions the fourth (2016) ABINIT paper. modified:   acknowledgments.html,0.0
+0d27bbe,2016-08-13T14:25:10,Update the Web bibliography and bibtex info. Modified:   bibliography.html  bibtex-refs.html,0.0
+1f74e29,2016-08-13T14:30:33,Fix minor problems in acknowledgments.html,1.0
+47eb3c9,2016-08-13T14:34:55,More modifs to acknowledgments.html,0.0
+c130743,2016-08-13T14:39:29,More modifs of acknowledgments.html,0.0
+c296948,2016-08-13T14:40:56,More changes to acknowledgments.html,0.0
+97bccc2,2016-08-13T14:42:15,More acknowledgments.html,0.0
+bf590f8,2016-08-13T14:43:06,modified acknowledgments.html,0.0
+dccdeb3,2016-08-13T18:25:39,Update   abinit_help.html for NPROC_NO_EXTRA_LOG value (is 2 in ABINITv8 instead of 100 before),0.0
+7e1b2cb,2016-08-14T08:05:57,Define previous_maxerr in  66_wfs/m_invovl.F90  and exit if a spurious divergence develops.,0.0
+ebf354e,2016-08-14T15:24:45,Problem with ubu_intel_16.0_mpich for Tparal#30 . So  suppressed it #%% exclude_builders = ubu_intel_16.0_mpich    modified:   t30.in,1.0
+93fe398,2016-08-14T15:27:09,Document problem with Tparal#30 with Intel 16 inside   KNOWN_PROBLEMS,0.0
+f097004,2016-08-14T19:16:08,Update ref for test Tparal#30  and also exclude this test for ubu_intel_15.0_mpich. modified:   t30.in  ../Refs/t30_MPI4.out,0.0
+1be446d,2016-08-15T22:12:22,Update the doc concerning so_psp modified:   abinit_vars.yml,0.0
+449f17a,2016-08-15T22:26:55,Fix minor problems modified:   abinit_vars.yml,0.0
+fb7e450,2016-08-15T22:27:43,Again fix a minor problem  and regenate vargs.html modified:   abinit_vars.yml  html_automatically_generated/vargs.html,0.0
+9872e1e,2016-08-15T22:31:51,Refer to pawspnorb in the doc of so_psp   modified:   abinit_vars.yml,0.0
+ac1d3b9,2016-08-16T13:55:29,Merge gmatteo/develop/a6f6,0.0
+d4ccdce,2016-08-16T17:27:45,Enforce strict control on the availability of spin-orbit inside a pseudo if spinor=2  usepaw=0. modified:   57_iovars/chkinp.F90,0.0
+9cb5a08,2016-08-16T17:29:28,Git pull from the gitlab,0.0
+110a550,2016-08-16T17:45:41,Fix minor typo.	modified:   57_iovars/chkinp.F90,0.0
+d950850,2016-08-16T19:28:08,Fix minor bug in chkinp   introduce so_psp 0  in test input files when needed ...   ../src/57_iovars/chkinp.F90   v1/Input/t39.in   v2/Input/t76.in  v3/Input/t47.in  v7/Input/t05.in    v7/Input/t06.in,1.0
+e662d08,2016-08-16T20:39:42,Update ref files  because of changes linked to so_psp  ../../v1/Refs/t39.out   ../../v2/Refs/t76.out    ../../v3/Refs/t47.out   t05.out t06.out,0.0
+4df88ee,2016-08-16T21:29:00,Fix minor problems modified:   bibtex-refs.html,1.0
+e8a9251,2016-08-16T21:30:57,Minor fixes modified:   acknowledgments.html,0.0
+dff9a15,2016-08-16T22:23:35,Clean and improve formatting of the DMFT lesson. modified:   lesson_dmft.html,0.0
+9c4a2b1,2016-08-17T06:30:12,Merge remote-tracking branch remotes/gonze/develop/dff9 into trunk/_gonze,0.0
+fae2644,2016-08-17T06:33:55,Issued python abinit_vars.py . Modified  html_automatically_generated/vareph.html  html_automatically_generated/vargs.html,0.0
+26a57df,2016-08-19T10:25:02,change nband_occ to mband_occ  and introduce spin dep nband_occ for sums over different numbers of bands according to isppol,0.0
+b216bf3,2016-08-19T16:52:16,corrected alloc and destroy of dtefield arrays in particular nband_occ,0.0
+290fa17,2016-08-19T18:20:10,[buildsys] Upgraded CPP options in source code,0.0
+300d773,2016-08-19T18:49:40,[buildsys] Upgraded CPP options in build-system internals,0.0
+27a4e9a,2016-08-19T19:01:20,Made sure ViM swap files are ignored within the Abinit source tree,0.0
+32686bf,2016-08-19T19:03:45,[buildsys] Re-upgraded CPP options in the source code after including recent ones,0.0
+79685b9,2016-08-19T19:04:33,[buildsys] Re-upgraded CPP options in build-system internals after including recent ones,0.0
+5476d3a,2016-08-19T19:05:56,[buildsys] Upgraded CPP options in test inputs,0.0
+ea678d1,2016-08-19T19:07:29,[buildsys] Upgraded CPP options in test scripts,0.0
+7e94422,2016-08-19T22:17:06,[buildsys] Removed stale references to obsolete CPP options,0.0
+740933a,2016-08-19T23:27:03,[buildsys] Imported CPP option fixer,0.0
+1972092.0,2016-08-20T21:45:36,Change the initialization of pawspnorb when nspinor=2. Also change the initialization of kptopt when nspden=4. modified:   ../.gitignore  ../src/57_iovars/indefo.F90  ../src/57_iovars/indefo1.F90  ../src/57_iovars/invars1.F90,0.0
+db544d4,2016-08-20T21:47:50,Ignore abichecks.env new file:   .gitignore,0.0
+9a091ef,2016-08-20T22:02:40,Update doc related to initialization of pawspnorb and kptopt modified:   abinit_vars.yml  html_automatically_generated/varbas.html html_automatically_generated/varpaw.html,0.0
+a8df06d,2016-08-20T22:07:43,Fix wrong link modified:   abinit_vars.yml html_automatically_generated/varpaw.html,1.0
+b833997,2016-08-21T06:50:54,Fix typo	modified:   57_iovars/invars1.F90,1.0
+6efc307,2016-08-21T09:22:47,Update Ref file due to change with defaulr value of pawspnorb#	modified:   ../Input/t16.in t16.out,0.0
+394270a,2016-08-21T11:52:29,Modify input file  due to pawspnorb modified:   t03.in,0.0
+766b426,2016-08-23T18:22:13,Removed Bazaar dependency and updated warnings in makemake,0.0
+2e150f3,2016-08-24T09:26:17,Merge branch 'develop' of gitlab.abinit.org:pouillon/abinit into develop,0.0
+45f63d0,2016-08-24T13:24:26,corrected naming convention for occ states in tddft routine,0.0
+ca7ce28,2016-08-24T13:25:19,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0.0
+de4bbac,2016-08-26T10:45:37,Merge branch 'develop' of abinit:trunk/abinit into develop,0.0
+e057bf6,2016-08-26T10:47:35,Fixed CPP options,1.0
+94b2ac7,2016-08-30T17:40:51,Better treatment of nbdbuf in dfpt_cgwf for PAW,0.0
+09bb0d1,2016-08-31T11:37:54,small change in dfpt_nstpaw,0.0
+15a05a5,2016-09-01T16:57:15,"* in makemake      replace commands.getstatusoutput (deprecated) by subprocess then we can redirect stderr !      ( needed when the first line of '--version' is a warning and not the version )  * add new section on testfarm.conf for IBM8 ( ibm8_ibm_15.1_serial )  * in prtefield.F90  replace the ""big"" write by 4 write ( good for XLF and NAG )  * in m_efmas.F90  xlf did like & on string  * disable test v7/t23-24-25",0.0
+7ff790f,2016-09-02T19:19:13,Correction of the error occuring for Effective Charges for PAW + occopt=1 + empty states,0.0
+4cb46da,2016-09-02T23:07:14,Typo corrected,0.0
+e379731,2016-09-05T13:28:37,Improvment of symetries for strain perturbation,0.0
+2bd2903,2016-09-05T15:29:17,Cancel a previous change (nbdbuf),0.0
+3b1d7a9,2016-09-05T16:29:03,Adjust ref files because NL and OVL parts of 2nd order matrix are now pure real,0.0
+cf660a9,2016-09-05T16:42:56,Side-effect: the adjustment of gvnl1 in dfpt_cgwf seems to improve things for Efiled perturabation : now Evar=Enon-var in the present test case (was not the case before),0.0
+62fbe5a,2016-09-05T18:17:16,Merge remote-tracking branch 'trunk/develop' into dfpt-paw,0.0
+3780d50,2016-09-05T18:20:26,improvements for Bader and Hirshfeld analysis,0.0
+c147d2a,2016-09-05T22:36:08,check radial integral of charge for core agains znucl-zion in Bader code,0.0
+8acdeac,2016-09-06T11:59:52,fixed v6[19] - integration error is quite bad for core charge  so tolerance is increased to 0.1,1.0
+4fe4cfe,2016-09-06T16:21:39,continue propagating nsppol 2 ferrimagnetic case for berry phase calculation,0.0
+1f9f885,2016-09-06T16:26:22,Update 2 hyperlinks according to checklin script advice,0.0
+cd8a68b,2016-09-07T10:40:12,"Inclusion of rf2 developments of bzr version (""by hand"" merge...)",0.0
+d107b02,2016-09-07T10:41:03,Merge branch 'develop' into rf2,0.0
+8b47246,2016-09-07T14:21:06,Merge remote-tracking branch mverstra/quickfixes/8acd... into trunk/_mverstra,0.0
+ac4eeaa,2016-09-07T14:27:25,missing dealloc in dfptnl_mv,0.0
+a01c78a,2016-09-07T14:33:17,Merge branch 'develop' into quickfixes,0.0
+76fa88f,2016-09-07T14:33:51,Merge branch 'quickfixes' of gitlab:mverstra/abinit into quickfixes,0.0
+df159e2,2016-09-07T17:19:43,on some machines efield2 was coming up incorrectly initialized  which corrupts the first 2 iterations but does not affect the final result. Might change some ref files  which should be updated accordingly,0.0
+bd83456,2016-09-08T06:21:01,Updated hyperlinks to NIST modified:   lesson_spin.html,0.0
+3f63ca0,2016-09-08T06:50:14,Change http to https  modified:   lesson_spin.html,0.0
+1641181.0,2016-09-08T08:22:19,Fix abirule violation  modified:   initaim.F90,1.0
+2e66395,2016-09-08T10:55:24,Minor change to pass tests on petrus,0.0
+7cc6d98,2016-09-08T21:13:57,Merge remote-tracking branch torrent/dfpt-paw/1f9f  into _torrent,0.0
+678b627,2016-09-09T05:48:04,Merge remote-tracking branch baguetl/develop/2e66 into _baguetl,0.0
+1bde05b,2016-09-09T09:52:20,missing std_out for error message. NB: aim is still not conforming with abinit style,0.0
+ece3440,2016-09-09T10:00:49,Merge branch 'develop' into quickfixes Need latest patch for efield2 initialization.,0.0
+74a173c,2016-09-09T11:02:16,Merge remote-tracking branch mverstra/quickfixes/ece3 into _mverstra,0.0
+4cea31a,2016-09-09T22:17:55,Merge remote-tracking branch beuken/ibm8/15a0 into _beuken,0.0
+f99b395,2016-09-10T05:24:53,The original link for downloading Boltztrap is broken. modified:   abinit_vars.yml,0.0
+1f8d8ff,2016-09-10T06:08:03,Update vardev.html due to previous modification. modified:   html_automatically_generated/vardev.html,0.0
+4e5d96c,2016-09-10T16:50:25,Change 61_ionetcdf to 59_ionetcdf,0.0
+1da553e,2016-09-11T06:47:29,The order of dirs was not correct.  modified:   ../config/specs/binaries.conf,0.0
+c9a6681,2016-09-12T17:07:06,Correct link for the download of Boltztrap. modified:   abinit_vars.yml,0.0
+bd61ee3,2016-09-13T06:33:40,Finalize files before closing v8.1.4 development. Modified:   KNOWN_PROBLEMS src/51_manage_mpi/herald.F90,0.0
+49ba5cf,2016-09-13T06:35:10,Run python abi_yml2html.py. Modified:   html_automatically_generated/vardev.html,0.0
+9a5f666,2016-09-13T06:50:31,Apply make parents,0.0
+56454c2,2016-09-13T06:57:46,Apply make abiauty,0.0
+2990b83,2016-09-13T08:11:06,Minor modif for Boltztrap link. Modified:   abinit_vars.yml,0.0
