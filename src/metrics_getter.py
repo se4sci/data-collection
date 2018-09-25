@@ -111,12 +111,13 @@ class MetricsGetter:
         cplusplus_metrics = und.Metric.list('c')
         python_metrics = und.Metric.list('Python')
         fortran_metrics = und.Metric.list('Fortran')
-        # -----------------------------------------------------------------------
-        # ---------- FORTRAN METRICS --------------------------------------------
-        # -----------------------------------------------------------------------
+        # ----------------------------------------------------------------------
+        # ---------- FUNCTION METRICS ------------------------------------------
+        # ----------------------------------------------------------------------
         searchstr = re.compile(".*\.F90", re.I)
-        f90_metrics = defaultdict(list)
-        for file in db.lookup(searchstr, "File"):
+        func_metrics = defaultdict(list)
+        for func in db.ents("function,method,procedure"):
+            row = []
             set_trace()
 
         # -----------------------------------------------------------------------
