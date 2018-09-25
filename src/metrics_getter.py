@@ -99,7 +99,7 @@ class MetricsGetter:
             out, err = p.communicate()
         return out, err
 
-    def generate_understand_reports(self):
+    def get_all_metrics(self):
         """
         Use the understand tool's API to generate metrics
 
@@ -157,30 +157,3 @@ def get_buggy_clean_revision_pairs(commit_messages_path=os.path.abspath("../labe
 
 def checkout_revision(commit_hash):
     pass
-
-
-# def understand_report_to_class_metrics(report_path):
-#     all_rows_m = []
-#     all_rows_oo = []
-#     for file in glob(os.path.join(report_path, 'classm*.html')):
-#         soup = BeautifulSoup(open(file))
-#         table = soup.select_one("table")
-#         headers_m = [th.text for th in table.select("tr th")]
-#         all_rows_m.extend([[td.text for td in row.find_all("td")]
-#                 for row in table.select("tr + tr")])
-
-#     for file in glob(os.path.join(report_path, 'classoom*.html')):
-#         soup = BeautifulSoup(open(file))
-#         table = soup.select_one("table")
-#         headers_oo = [th.text for th in table.select("tr th")]
-#         all_rows_oo.extend([[td.text for td in row.find_all("td")]
-#                 for row in table.select("tr + tr")])
-
-#     all_rows_m = pd.DataFrame(np.array(all_rows_m), columns=headers_m)
-#     all_rows_oo = pd.DataFrame(np.array(all_rows_oo), columns=headers_oo)
-#     return all_rows_oo.merge(all_rows_m)
-
-
-# if __name__ == "__main__":
-#     report_path = os.abspath('./sources/abinit/abinit_html')
-#     understand_report_to_class_metrics(report_path)
