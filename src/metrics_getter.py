@@ -57,22 +57,24 @@ class MetricsGetter:
         # Create a folder to hold the udb files
         if not self.udb_path.is_dir():
             os.makedirs(self.udb_path)
-        
-        # Create a handle for storing *.udb file for the project 
-        self.und_file = self.udb_path.joinpath("{}.udb".format(self.project_name))
-        
+
+        # Create a handle for storing *.udb file for the project
+        self.und_file = self.udb_path.joinpath(
+            "{}.udb".format(self.project_name))
+
         # Generate source path where the source file exist
-        self.source_path = self.cwd.joinpath(".temp", "sources", self.project_name)
-        
+        self.source_path = self.cwd.joinpath(
+            ".temp", "sources", self.project_name)
+
         # If project source doesn't exist, clone it.
         if not self.source_path.is_dir():
             self._os_cmd("git clone {} {}".format(REPO_LINKS[
                 self.project_name], self.source_path))
-        
+
         # Go to the udb path
         os.chdir(self.udb_path)
 
-        # If the und file doesn't exist, create it.        
+        # If the und file doesn't exist, create it.
         if not self.und_file.is_file():
             # Generate udb file
             cmd = "und create -languages python C++ Fortran add {} analyze {}".format(
@@ -81,14 +83,14 @@ class MetricsGetter:
 
         # Go to the cloned repo
         os.chdir(self.udb_path)
-        
+
         return self
 
     @staticmethod
     def _os_cmd(cmd):
         """
         Run a command on the shell
-        
+
         Parameters
         ----------
         cmd: str
@@ -105,36 +107,42 @@ class MetricsGetter:
 
         Notes
         -----
-        
+
         """
+
         db = und.open(str(self.und_file))
-        cplusplus_metrics = und.Metric.list('c')
-        python_metrics = und.Metric.list('Python')
-        fortran_metrics = und.Metric.list('Fortran')
         # -----------------------------------------------------------------------
         # ---------- FORTRAN METRICS --------------------------------------------
         # -----------------------------------------------------------------------
-        searchstr = re.compile(".*\.F90", re.I)
-        f90_metrics = defaultdict(list)
-        for file in db.lookup(searchstr, "File"):
-            set_trace()
+
+        f90_metrics = pd.DataFrame()
+        funcs = db.ents("function,method,procedure")
+        for func in funcs:
+            metrics_dict = func.metric(func.metrics())
+            for metric, value in metrics_dict.items():
+                f90_metrics[metric] = value
+
+        set_trace()
+
+        # cplusplus_metrics = und.Metric.list('c')
+        # python_metrics = und.Metric.list('Python')
+        # fortran_metrics = und.Metric.list('Fortran')
 
         # -----------------------------------------------------------------------
         # ----------  PYTHON METRICS --------------------------------------------
         # -----------------------------------------------------------------------
-        py_metrics = defaultdict(list)
-        searchstr = re.compile(".*\.py", re.I)
-        for file in db.lookup(searchstr, "File"):
-            set_trace()
-        
+        # py_metrics = defaultdict(list)
+        # searchstr = re.compile(".*\.py", re.I)
+        # for file in db.lookup(searchstr, "File"):
+        #     set_trace()
+
         # -----------------------------------------------------------------------
         # ----------    C and C++    --------------------------------------------
         # -----------------------------------------------------------------------
-        c_metrics = defaultdict(list)
-        searchstr = re.compile(".*\.c", re.I)
-        for file in db.lookup(searchstr, "File"):
-            set_trace()
-
+        # c_metrics = defaultdict(list)
+        # searchstr = re.compile(".*\.c", re.I)
+        # for file in db.lookup(searchstr, "File"):
+        #     set_trace()
 
     def __exit__(self, exception_type, exception_value, traceback):
         """
