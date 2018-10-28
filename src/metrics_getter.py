@@ -3,7 +3,6 @@ import re
 import shlex
 import numpy as np
 import pandas as pd
-from git import Repo
 from glob2 import glob, iglob
 import subprocess as sp
 import understand as und
@@ -64,16 +63,17 @@ class MetricsGetter:
 
         # If project source doesn't exist, clone it.
         if not self.source_path.is_dir():
-            self._os_cmd("git clone {} {}".\
-            format(REPO_LINKS[self.project_name], self.source_path))
+            self._os_cmd("git clone {} {}".
+                         format(REPO_LINKS[self.project_name], self.source_path))
 
         # Read all commit files.
         files = []
         for file in glob(str(self.commits_path.joinpath('*.csv'))):
             files.append(pd.read_csv(file))
-        
-        all_commits = pd.concat(files).sort_values(by='time').drop_duplicates(subset='message').reset_index()
-      
+
+        all_commits = pd.concat(files).sort_values(
+            by='time').drop_duplicates(subset='message').reset_index()
+
         # Find before after pairs for all the buggy commits
         self.buggy_clean_pairs = []
         for i in range(1, len(all_commits)):
@@ -82,13 +82,12 @@ class MetricsGetter:
                     #     Buggy commit hash              Clean commit hash
                     (all_commits.iloc[i-1]['hash'], all_commits.iloc[i]['hash']))
 
-        
         return self
 
     def _create_und_files(self, file_name_suffix):
         """
         Creates understand project files
-        
+
         Parameters
         ----------
         file_name_suffix : str
@@ -138,14 +137,14 @@ class MetricsGetter:
     def _files_changed_in_git_diff(self, hash_1, hash_2):
         """
         Get a list of all the files changed between two hashes
-        
+
         Parameters
         ----------
         hash_1 : str
             Commit hash 1.
         hash_2 : bool
             Commit hash 2.
-        
+
         Returns
         -------
         List[str]:
@@ -154,14 +153,15 @@ class MetricsGetter:
         """
 
         os.chdir(self.source_path)
-        out, __ = self._os_cmd("git diff {} {} --name-only".format(hash_1, hash_2))
-        
+        out, __ = self._os_cmd(
+            "git diff {} {} --name-only".format(hash_1, hash_2))
+
         files_changed = []
         for file in out.splitlines():
             for wanted in [".py", ".c", ".cpp", ".F90", ".f90", ".java"]:
                 if wanted in str(file):
                     files_changed.append(Path(str(file)).name[:-1])
-        
+
         return files_changed
 
     def get_all_metrics(self):
@@ -179,14 +179,17 @@ class MetricsGetter:
         """
 
         self.metrics_dataframe = pd.DataFrame()
-        printProgressBar(0, len(self.buggy_clean_pairs), prefix='Progress:',
+        printProgressBar(0, 10, prefix='Progress:',
                          suffix='Complete', length=50)
 
+        # printProgressBar(0, len(self.buggy_clean_pairs), prefix='Progress:',
+        #                  suffix='Complete', length=50)
+
         # 1. For each clean-buggy commit pairs
-        for i, (buggy_hash, clean_hash) in enumerate(self.buggy_clean_pairs):
+        for i, (buggy_hash, clean_hash) in enumerate(self.buggy_clean_pairs[:10]):
             # Go the the cloned project path
             os.chdir(self.source_path)
-            
+
             # Checkout the master branch first, we'll need this
             # to find what files have changed.
             self._os_cmd("git checkout master")
@@ -220,7 +223,7 @@ class MetricsGetter:
             # Create a understand file for this hash
             self._create_und_files("clean")
             db = und.open(str(self.clean_und_file))
-            for file in db.ents("File"):
+            for j, file in enumerate(db.ents("File")):
                 # print directory name
                 if str(file) in map(lambda x: x[:-4]+".f90", files_changed):
                     metrics = file.metric(file.metrics())
@@ -229,7 +232,10 @@ class MetricsGetter:
                     self.metrics_dataframe = self.metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
 
-            printProgressBar(i, len(self.buggy_clean_pairs), prefix='Progress:', suffix='Complete', length=50)
+            printProgressBar(i, 10,
+                             prefix='Progress:', suffix='Complete', length=50)
+            # printProgressBar(i, len(self.buggy_clean_pairs),
+            #                  prefix='Progress:', suffix='Complete', length=50)
 
     def clean_rows(self):
         """
@@ -239,14 +245,13 @@ class MetricsGetter:
         metric_cols = [
             col for col in self.metrics_dataframe.columns if not col in [
                 "Name", "Bugs"]]
-        
+
         # Drop duplicate rows
-        self.metrics_dataframe.drop_duplicates(subset="CountLine")
+        self.metrics_dataframe.drop_duplicates(subset="CountLine", inplace=True)
 
         # Rearrange columns
         self.metrics_dataframe = self.metrics_dataframe[
             ["Name"]+metric_cols+["Bugs"]]
-
 
     def save_to_csv(self):
         """ 

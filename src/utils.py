@@ -1,9 +1,10 @@
 
-def printProgressBar(iteration, total, prefix='Progress:', suffix='Complete', 
-                        decimals=2, length=50, fill='█'):
+
+def printProgressBar(iteration, total, prefix='Progress:', suffix='Complete',
+                     decimals=2, length=50, fill='█'):
     """
     Call in a loop to create terminal progress bar
-    
+
     Parameters
     ----------
     iteration: int 
