@@ -1,0 +1,101 @@
+Unnamed: 0,Document Title,Abstract,time,label
+358,358,1d323d96,Merge pull request #493 from ReactionMechanismGenerator/rmg_listener_bis,1539143938.271226,1
+593,593,eef8b286,Merge pull request #1059 from ReactionMechanismGenerator/DynamicsCriterion,1539143460.0388231,1
+309,309,eea762a7,Merge pull request #882 from ReactionMechanismGenerator/BAC,1539144066.212305,1
+606,606,fd324877,Fix to setMcGowanVolume method,1539143447.791733,1
+546,546,5a2f3415,Merge pull request #1165 from ReactionMechanismGenerator/fixUncertainty,1539143536.822767,1
+534,534,f95b53b8,Merge pull request #1243 from ReactionMechanismGenerator/fixUncertaintySens,1539143591.617798,1
+311,311,d3e08f1f,Merge branch 'GreenGroup/master',1539144060.068636,1
+446,446,55de2213,Merge pull request #464 from ReactionMechanismGenerator/Retroen,1539143827.700311,1
+671,671,5f904b1a,Fix docstring for rmgpy.molecule.AtomType,1539146601.959941,0
+23,23,237bc5f2,Fix parsing error for products in database checking,1539146797.60519,1
+73,73,1be137a0,add find_inverse_allyl_paths and fix find_3_atom_2_bond_end_with_charge,1539146564.856818,1
+21,21,c8812291,Fix mutable constructors in Cantera.__init__,1539146800.001852,1
+537,537,035e858e,Merge pull request #562 from ReactionMechanismGenerator/condaVersion,1539143589.604086,1
+471,471,015b0b86,Merge pull request #686 from ReactionMechanismGenerator/fixParReact,1539143689.450857,1
+485,485,e6275284,Merge pull request #443 from ReactionMechanismGenerator/parser,1539143671.5475788,1
+605,605,ea8bc27c,Merge pull request #216 from enochd/master,1539143448.423227,1
+5,5,1d7f3ce8,Fix mutable constructors in ObservablesTestCase.__init__,1539146861.792703,1
+179,179,ba0c2bc5,Merge branch 'master' into refactor,1539144401.562189,1
+703,703,7d60a7d2,store the family/library label as a reaction attribute,1539143258.754003,0
+197,197,233a6270,Merge pull request #847 from ReactionMechanismGenerator/documentation,1539144375.338697,1
+629,629,7673721a,Merge branch 'molecule' into 3DCoor,1539143418.298029,1
+385,385,05b72b54,Merge pull request #612 from ReactionMechanismGenerator/initialMolFracs,1539143897.369511,1
+656,656,357810c5,Fix sphinx syntax for matchNodeToStructure docstring,1539146835.99618,0
+478,478,5b5349c1,Merge pull request #195 from connie/master,1539143681.209929,1
+634,634,23deabd7,Possible fix for the duplicate training reactions problem,1539143336.110936,1
+28,28,d43e2446,test collision matrix memory fix,1539146790.3455539,1
+63,63,aab0f429,Minor fix to MoleculeDrawer.__findRingGroups,1539146579.973825,1
+383,383,c6e9461f,Merge pull request #575 from ReactionMechanismGenerator/polycyclic,1539143900.859574,1
+560,560,344c2ef0,Merge pull request #586 from ReactionMechanismGenerator/thermo_ring_correction,1539143521.90585,1
+129,129,e55934b3,Merge rdkit version check to close pull request #423,1539146067.440331,1
+34,34,821788f8,Fix a CpInf < Cphigh case in getEntropy(),1539146777.249477,1
+151,151,f8db09c8,Merge branch 'chemkin',1539145610.801317,1
+284,284,88dbf9f4,Merge pull request #860 from ReactionMechanismGenerator/mech_analyzer_2,1539144097.0489366,1
+67,67,fcccd563,Fix job subfolder creation,1539146570.649796,1
+449,449,cbf87849,Merge pull request #749 from ReactionMechanismGenerator/extractSource,1539143825.319034,1
+198,198,22286f0e,Merge pull request #437 from mliu49/input,1539144374.664362,1
+392,392,c8d2365e,Merge pull request #949 from ReactionMechanismGenerator/tests1,1539143890.521543,1
+336,336,263e6131,Merge pull request #208 from connie/master,1539144031.28211,1
+418,418,b42e1265,Merge pull request #477 from ReactionMechanismGenerator/quantity,1539143859.830888,1
+46,46,55a098b1,Fix imports in kineticsTest.py,1539146731.216631,1
+651,651,d4722a12,Fix liquidReactor jacobian unit test,1539143265.96823,1
+631,631,dab0f925,fix bug: replace i -> index in base.pyx loop,1539143341.082033,1
+406,406,db42e80f,Merge pull request #861 from ReactionMechanismGenerator/group_draw,1539143870.753746,1
+507,507,f1a75c12,Merge pull request #383 from GreenGroup/fixLogicOR,1539143642.571197,1
+670,670,ed9e5a54,Fix warning parsing molecules with implicit Hs via RDKit,1539146607.6592634,0
+252,252,80418069,Merge pull request #542 from ReactionMechanismGenerator/diffModels,1539144135.75619,1
+94,94,e6d5a7c4,Fix calculateCyclicSymmetryNumber() function,1539146276.989347,1
+328,328,270563b0,Merge pull request #427 from mliu49/markDup,1539144038.007683,1
+229,229,1e43509a,Merge pull request #857 from ReactionMechanismGenerator/degeneracy,1539144159.455382,1
+60,60,7741ddb6,Fix up some transportDataTest unit tests,1539146593.032898,1
+595,595,23b3a471,Merge pull request #1043 from ReactionMechanismGenerator/Model_Reduction_Argparse,1539143458.88449,1
+294,294,1c18cb44,Merge pull request #773 from ReactionMechanismGenerator/release2.0.0,1539144084.783971,1
+189,189,43a3b948,Merge branch 'master' into QMTP_initial,1539144388.358804,1
+329,329,ebca99db,Merge pull request #210 from pierrelb/pDepPruning,1539144037.170464,1
+684,684,88939cff,Merge pull request #1069 from ReactionMechanismGenerator/developer_documentation_update,1539143885.86057,0
+628,628,b0f640b7,Fix to Chebyshev.setCanteraKinetics() to adjust coefficients to correct units in kmol,1539143419.6765606,1
+526,526,e26f749e,Merge pull request #447 from ReactionMechanismGenerator/base_notify,1539143602.360369,1
+87,87,22e6a135,Fix appending of library reactions in CoreEdgeReactionModel.addReactionLibraryToOutput(),1539146290.371393,1
+291,291,d283ba6f,Merge pull request #609 from ReactionMechanismGenerator/resonance,1539144087.700234,1
+518,518,2a5a8784,Merge pull request #525 from ReactionMechanismGenerator/test_data_structure,1539143626.642934,1
+368,368,273eb51f,Merge pull request #596 from ReactionMechanismGenerator/cantera,1539143926.5802062,1
+699,699,9a6d0d8f,Add RMG-website links to HTML sidebar of Documentation,1539143271.1035259,0
+611,611,b42f0405,Fix and speed up test_liquidInputReading,1539143443.980665,1
+353,353,f9d9960e,Merge pull request #570 from ReactionMechanismGenerator/Overflow,1539143945.8844938,1
+166,166,feb5cb5a,Merge branch 'master' into QMthermo,1539144417.575235,1
+161,161,f1454daa,Merge branch 'QMthermo',1539144424.157269,1
+402,402,1245ebf5,Merge pull request #1376 from ReactionMechanismGenerator/SA,1539143874.212704,1
+100,100,8de91c0c,"Revert ""Fix bug in using rdkit's Chem removeH's function""",1539146267.523511,1
+539,539,ea3bdfc4,Merge pull request #547 from ReactionMechanismGenerator/fixReactionLibraryError,1539143545.30113,1
+150,150,924072c8,Merge branch 'unittest',1539145611.553283,1
+306,306,529e209f,Merge pull request #639 from ReactionMechanismGenerator/SSSR,1539144071.7645106,1
+469,469,370c11ad,Fix bug in TransportData.__repr__,1539143693.720885,1
+249,249,ae87a25f,Merge pull request #706 from ReactionMechanismGenerator/addLabelsToReaction,1539144138.751494,1
+285,285,9e9a4488,Merge pull request #824 from ReactionMechanismGenerator/store_kinetic_database_details,1539144096.023845,1
+690,690,cd8783fb,Documentation: Fix email links in main page.,1539143344.814392,0
+452,452,66dde441,Merge pull request #455 from ReactionMechanismGenerator/fix_bug454,1539143711.075795,1
+181,181,2bc49965,Merge remote-tracking branch 'richard/master',1539144400.247736,1
+561,561,c828d2ce,Merge pull request #1126 from ReactionMechanismGenerator/useThermoLibraryNames,1539143494.603577,1
+182,182,7e655550,Merge remote-tracking branch 'origin/master' into fluxDiagram_Chosen_Species,1539144396.921188,1
+566,566,3526a589,Merge pull request #1390 from ReactionMechanismGenerator/safe_pruning_,1539143491.318662,1
+75,75,f9592105,Fix stray commas creating tuples accidentally.,1539146308.5981581,1
+567,567,f3550f4a,Merge pull request #1181 from ReactionMechanismGenerator/sensitivity_tool_fix,1539143489.02424,1
+700,700,c95dc127,add liquidTest,1539143267.622883,0
+646,646,65c8cc4b,Merge pull request #839 from ReactionMechanismGenerator/ck2cti,1539143295.1883528,1
+597,597,f24c7cc3,Merge pull request #1040 from ReactionMechanismGenerator/canthermRotors,1539143457.2084901,1
+136,136,dbeac753,Fix bug for saving entries for kinetic rules,1539145796.454577,1
+11,11,907d5159,Fix Tlist error when fitting Arrhenius,1539146841.803582,1
+288,288,38a17053,Merge pull request #863 from ReactionMechanismGenerator/lonePairs,1539144093.021492,1
+463,463,e250e45d,Merge pull request #928 from ReactionMechanismGenerator/deterministic_rxn_direction,1539143699.24848,1
+681,681,f154a5ae,Merge pull request #765 from ReactionMechanismGenerator/documentationUpdate,1539144017.833669,0
+395,395,f3e89c32,Merge pull request #869 from ReactionMechanismGenerator/fixProductTemplates,1539143882.777376,1
+72,72,d6cfcd8e,Fix augmented InchiKey unit test,1539146566.022044,1
+177,177,16e0786f,Merge remote-tracking branch 'official/master',1539144403.658537,1
+36,36,30fe58b8,Fix some more MEASURE references in convertFame doc,1539146774.2853134,1
+257,257,9677d538,Merge pull request #701 from ReactionMechanismGenerator/strictParents,1539144131.846593,1
+571,571,403b12c8,Merge pull request #546 from ReactionMechanismGenerator/precision32bit,1539143485.17359,1
+321,321,adf2eff2,Merge pull request #396 from ReactionMechanismGenerator/docs,1539144047.06645,1
+282,282,6a0ac57a,Merge pull request #852 from ReactionMechanismGenerator/check_models,1539144099.7124,1
+300,300,79311913,Merge pull request #627 from ReactionMechanismGenerator/libraryNumReactantsCheck,1539144077.637292,1
+679,679,3fb6a656,Merge pull request #288 from KEHANG/official-doc,1539144379.124227,0

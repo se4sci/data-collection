@@ -1,0 +1,101 @@
+Unnamed: 0,Document Title,Abstract,time,label
+721,721,41edd9f3,Merge pull request #444 from drroe/restore_adddihedral,1539148246.9690359,1
+144,144,adb859d6,DRR - Cpptraj: Fix bug in Comm::CheckError(). Add more debug info.,1539149774.2616081,1
+726,726,d0fe96a1,Merge pull request #598 from drroe/fix_cuda,1539148178.7659,1
+563,563,4f32316d,Merge pull request #387 from drroe/gist_dataset,1539148564.223781,1
+281,281,4e394e22,DRR - Cpptraj: Fix X axis label,1539149310.924808,1
+477,477,879a8599,Merge pull request #180 from drroe/read_input,1539148725.541098,1
+393,393,a5e66470,DRR - Cpptraj: In calcstate  fix mangled printf format  correctly set number of frames.,1539149013.520084,1
+610,610,5059937d,Merge pull request #341 from drroe/fix_libcpptraj,1539148512.532804,1
+796,796,d9b3225a,DRR - Cpptraj: Misc readline fix from S. Brozell,1539147452.830974,1
+952,952,3d7f9b30,DRR - Cpptraj: In FileName  record directory prefix. In lifetime analysis use directory prefix + prefix + base filename instead of just prepending the prefix (which results in an error when not writing to the same directory).,1539147867.667686,0
+890,890,6c992ebe,DRR - Cpptraj: Fix printf bug.,1539149303.933693,0
+480,480,5c1203e4,Merge pull request #56 from drroe/frame_externalData,1539148718.397361,1
+467,467,9e98bcec,Merge pull request #433 from drroe/filter_combinecrd,1539148739.316474,1
+628,628,34506f5a,Merge pull request #272 from drroe/use_ndiff,1539148491.759807,1
+352,352,d2004e29,DRR - Cpptraj: Fix shared suffix.,1539149141.784615,1
+479,479,743ce4fd,Merge pull request #184 from drroe/grid,1539148722.624769,1
+7,7,d2268826,DRR - Cpptraj: Fix ensemble trajectory timing for RunEnsemble. Add 'Other' run timing category and make Time_Summary const.,1539150465.3948882,1
+427,427,97598299,Merge pull request #79 from hainm/diffusion,1539148789.0472894,1
+430,430,96e579ff,Merge pull request #200 from rmcgibbo/badge,1539148787.0616062,1
+634,634,263c66f1,Merge pull request #135 from drroe/protect_lj_etc,1539148487.198251,1
+908,908,52c398c4,DRR - Cpptraj: Fix up command help.,1539149174.455112,0
+345,345,dc20c782,DRR - Cpptraj: Fix no BINTRAJ compilation,1539149158.4718866,1
+711,711,4abd1c78,Merge pull request #258 from drroe/more_sanderlib,1539148342.422548,1
+707,707,b3b3bfc8,Merge pull request #254 from drroe/fix_std_data,1539148346.675688,1
+353,353,8b9a55ed,DRR - Cpptraj: Fix up COORDS data sets,1539149140.468878,1
+94,94,c6e4ce19,DRR - Cpptraj: Fix up some things with multi exponential fit. Results still seem strange...,1539149985.462922,1
+392,392,022ccf7c,DRR - Cpptraj: Fix detection of gnu compilers when they are really clang on OSX,1539149020.410193,1
+493,493,6deed622,Merge pull request #614 from drroe/cmdline_flags,1539148623.316865,1
+605,605,7b4ca056,Merge pull request #447 from drroe/circleci_badge,1539148517.8466609,1
+154,154,3d52ed7d,DRR - Cpptraj: Fix up sander interface. GB energies appear to work well.,1539149735.907568,1
+195,195,4dadeddb,DRR - Cpptraj: Fix conversion of velocity units from gro file,1539149623.947917,1
+513,513,735dc58f,Merge pull request #291 from drroe/fix_gmxtrr,1539148605.1476018,1
+695,695,1c8883bd,Merge pull request #405 from drroe/at_sync,1539148405.3950891,1
+813,813,638dfa23,DRR - Cpptraj: Try switching Travis CI environment to Trusty  this seems to be the most commonly recommended course of action to fix the SSL error I've been seeing.,1539150400.632508,0
+647,647,1d88e564,Merge pull request #146 from drroe/fix_diffusion_individual,1539148474.968468,1
+377,377,a478d35e,DRR - Cpptraj: Fix up average output when writing to COORDS set. Print number of frames average is over.,1539149061.325733,1
+502,502,ed471a36,Merge pull request #522 from drroe/newlipidorder,1539148616.4502552,1
+383,383,808fbd71,DRR - Cpptraj: Fix memory allocation for sorted ph data set. Check number of frames when sorting.,1539149044.6378381,1
+78,78,c9169740,DRR - Cpptraj: Fix order of evaluations leading to small memory error. Hide debug info,1539150053.7399359,1
+515,515,6a2be822,Merge pull request #410 from drroe/dataset_remove_cmd,1539148603.6795402,1
+464,464,680811e5,Merge pull request #267 from drroe/lifetime_dataset,1539148742.258249,1
+666,666,3f13b1eb,Merge pull request #511 from drroe/vol_density,1539148444.516792,1
+485,485,65a78a41,Merge pull request #545 from drroe/test_timing,1539148714.806672,1
+99,99,4879632c,DRR - Cpptraj: Add missing resinfo entry  fix solvent DispatchObject type,1539149963.254057,1
+926,926,fb4f2773,Appveyor: re-enable CMake-less build,1539148970.294007,0
+10,10,557c5114,DRR - Cpptraj: Fix cluster keywords for split  add option for printing number of clusters observed per time window.,1539150447.130915,1
+70,70,43e08439,DRR - Cpptraj: Fix up replica exchange accept calc. Remove/hide some debug info.,1539150095.917341,1
+526,526,a977eeea,Merge pull request #615 from drroe/fixsavenreps,1539148596.20366,1
+50,50,bfe7b5a5,DRR - Cpptraj: Fix issue where first character of new buffer could sometimes be overwritten by character from previous buffer.,1539150227.4018269,1
+229,229,66c73bcf,DRR - Cpptraj: Fix direct sum,1539149467.7377892,1
+765,765,76e10a9d,DRR - Cpptraj: Fix up hbond help  fix incorrect behavior of avgout/solvout/bridgeout.,1539147900.28821,1
+573,573,6c47cc4a,Merge pull request #452 from drroe/fix_spam_mpi,1539148553.3930366,1
+123,123,7553f1be,DRR - Cpptraj: Fix up more analyses for new dataset framework,1539149854.521964,1
+294,294,befeac1d,DRR - Cpptraj: Fix tests for parallel,1539149292.411142,1
+929,929,a1540609,try again to fix OS X Travis build,1539148923.7982528,0
+847,847,71071cff,DRR - Cpptraj: First attempt to fix GIST for water models with extra points.,1539149860.926913,0
+864,864,89278e80,DRR - Cpptraj: Fix variable names in AMBPDB test,1539149669.801964,0
+365,365,63193e56,DRR - Cpptraj: Fix for # threads,1539149085.777105,1
+25,25,c83a1542,DRR - Cpptraj: Fix # hbonds in nastruct on first frame read in by non-master,1539150342.69752,1
+840,840,d3c77ced,DRR - Cpptraj: Fix up formatting for dihedrals  headers and fields now correspond and have sensible widths.,1539149939.836679,0
+612,612,d1d76256,Merge pull request #586 from drroe/cphstats_implicit,1539148510.626127,1
+598,598,91f2504f,Merge pull request #280 from drroe/fix_unwrap_parallel,1539148525.97684,1
+575,575,da27777c,Merge pull request #556 from drroe/loops,1539148552.1104028,1
+577,577,e9e66432,Merge pull request #469 from drroe/test_ewald,1539148550.886744,1
+677,677,1b848b29,Merge pull request #360 from drroe/randomsieve,1539148421.370885,1
+88,88,1d4e7973,DRR - Cpptraj: Fix bug where orthorhombic imaging would fail for a dimension when subsequent dimension is imaged in same step due to too many 'else if's.,1539150013.6970608,1
+635,635,e219fdcd,Merge pull request #37 from drroe/improve_bondsearch,1539148486.294296,1
+47,47,4a08d8d1,DRR - Cpptraj: Fix SetTruncOct so that lengths are equal to X and not just all set to zero. Add rout ine to print box info to STDOUT.,1539150252.410823,1
+220,220,292902ca,DRR - Cpptraj: Fix error in debug section.,1539149480.847546,1
+888,888,7f140d76,DRR - Cpptraj: Fix naming.,1539149325.242702,0
+858,858,96a83a82,DRR - Cpptraj: Fix typo in help text,1539149744.6235151,0
+776,776,51034b44,Merge branch 'fix_gist_mem' into gist_general_solvent,1539147860.717403,1
+642,642,c94db0f7,Merge pull request #304 from drroe/mol2map,1539148478.8122768,1
+797,797,2363c599,DRR - Cpptraj: Fix typo,1539147444.8010714,1
+465,465,892013f8,Merge pull request #188 from drroe/atommap,1539148741.0276802,1
+339,339,18e5561c,DRR - Cpptraj: Fix reference help.,1539149178.587846,1
+805,805,b248d430,DRR - Cpptraj: Fix up clang compile  enable OpenMP if supported  add libstdc++ flag which seems to be required when linking to certain libraries via clang.,1539147385.4499009,1
+832,832,be19bffc,DRR - Cpptraj: Add 'center' option to closest  fix up reference command help.,1539150031.4543526,0
+320,320,ef6174c9,DRR - Cpptraj: Fix precision,1539149221.459661,1
+510,510,9eac1107,Merge pull request #489 from drroe/curvefit_params,1539148607.3584552,1
+401,401,76747501,Fix cpptraj build when built as part of AmberTools (really fixes cpp_ambpdb  which needed to link Residue.o),1539148974.052814,1
+147,147,0288298d,DRR - Cpptraj: Fix volmap sync  differences appear to be roundoff.,1539149756.350375,1
+209,209,05cb1592,DRR - Cpptraj: Fix X axis label for integrate,1539149558.201934,1
+142,142,07d332a2,DRR - Cpptraj: Fix for slightly different behavior of ensemble in serial and parallel,1539149782.449667,1
+307,307,49ac0a04,DRR - Cpptraj: Fix memory estimation.,1539149249.519882,1
+490,490,7b8963f0,Merge pull request #259 from drroe/minor_fixes,1539148625.184953,1
+90,90,1fb279eb,DRR - Cpptraj: Fix up binary suffix determination for tests. Add 'cuda' test option.,1539150008.359876,1
+436,436,969b13a1,Merge pull request #25 from hainm/update_parmed,1539148776.203116,1
+179,179,da750df7,DRR - Cpptraj: Fix passing of default options in actions.,1539149664.155848,1
+781,781,ff3d371d,DRR - Cpptraj: Change default for hb cutoff back to 3.5  reduce vertical separation cutoff to 2.0 (still may be a bit too big). Fix base pair step determination  base pairs are indexed by residue number.,1539147842.846143,1
+475,475,8e768977,Merge pull request #337 from drroe/test_targets,1539148727.269901,1
+654,654,ebb4b008,Merge pull request #331 from drroe/fix_cif,1539148464.9478462,1
+300,300,f72ed494,DRR - Cpptraj: Fix segfault in some routines using COORDS sets when velocities are present.,1539149258.807285,1
+470,470,a18023bc,Merge pull request #501 from drroe/charmm_repd_logs,1539148736.348905,1
+402,402,ac5dea44,Update CMake submodule  and fix CI scripts for new version,1539148959.606462,1
+696,696,d9ae1d2f,Merge pull request #176 from drroe/frame_externalmem_assign,1539148359.570159,1
+426,426,d6fd0351,Merge pull request #203 from rmcgibbo/check-netcdf,1539148789.835442,1
+838,838,798c5333,DRR - Cpptraj: Fix code doc,1539149993.84553,0
+596,596,9f7f2813,Merge pull request #470 from drroe/fix_mem_errors,1539148527.427793,1
+265,265,431211fd,DRR - Cpptraj: Fix single ensemble for 'nosort',1539149389.133891,1

@@ -1,0 +1,101 @@
+Unnamed: 0,Document Title,Abstract,time,label
+23,23,6bb63f83,Merge pull request #115 from NLeSC/feature/gridengine-advanced,1539128910.538858,1
+350,350,96ddb60d,Added SeekableByteChannel support to SSH. Fixed several test.,1539127840.9476779,1
+427,427,f4716732,fixed code layout. All test now run,1539127645.367784,1
+391,391,dd1ea80a,Fixed various sonar issues,1539127751.093981,1
+17,17,58a84b9b,Merge pull request #117 from NLeSC/feature/job-canceled-exception,1539128920.095327,1
+634,634,2e2efc37,"Fixed IntelliJ IDEA ""Dangling Javadoc comment."" warning",1539126847.18965,1
+908,908,0a41f112,Update CHANGELOG.md,1539126626.8393786,0
+58,58,b357dcd1,Merge pull request #154 from NLeSC/feature/scripting-cleanup,1539128855.5689619,1
+60,60,d8426249,Merge pull request #23 from NLeSC/feature/testOctopusProperties,1539128853.680448,1
+868,868,f56fc8a2,Extended wait time for run-fixed-client-environment-test  as it times out on a checksum verification,1539126837.0488849,0
+386,386,c5faf555,Fixed several sonarqube issues,1539127756.509744,1
+262,262,011ff4f0,adding findbugs annotation jar to report false positives . fixing some sonar issues,1539128204.2809641,1
+652,652,a72887d9,jclouds-all dependency breaks other tests. Reducing jcloud dependecies to minimum fixes this,1539126740.677777,1
+170,170,f0cc94f3,Merge pull request #495 from NLeSC/more-integrationTest,1539128729.311951,1
+783,783,ebd3cbd9,Slurm adaptor can now get status of jobs and queues,1539128307.141069,0
+660,660,c075fe95,Fixed equals  hashCode and copyconstructor of JobDescription. Fixes #617,1539126684.204059,1
+817,817,b95bde6d,Fixed travis config for livetests on mac,1539127889.585875,0
+314,314,31e7fb2a,Fixed build of test to properly check for octopus.test.properties,1539127974.526331,1
+806,806,8acb0077,Added sacct output to possible job status sources. Improving parser for Slurm output. Fixed code formatting.,1539128163.494764,0
+311,311,c802e62a,Fixed Torque tests with new job ID's and test fixture locations,1539127987.142631,1
+5,5,94e5d91e,Merged GridEngine updates into master,1539129009.727851,1
+371,371,228c4ed0,Fixed various sonar issues,1539127816.3388634,1
+323,323,14fa7809,Fixed test to use lower case adaptor names,1539127953.471076,1
+53,53,320c12ff,Merge pull request #15 from NLeSC/feature/ssh-adaptor-3,1539128862.912941,1
+253,253,a2fd26a4,refactored to fix some more codacy issues,1539128326.707877,1
+546,546,ce0e118d,Removed references to LocalAdaptor.ADAPTOR_NAME from generic queue. Fixes #79.,1539127269.259292,1
+2,2,993d174c,Catch parser error of OpenSSHConfig,1539129025.44143,1
+612,612,9d1ed0ee,Fixed various javadoc bugs and ommissions. Cleaned up FileUtil. Fixes #184,1539127090.322856,1
+714,714,9eef083d,Test config configured from a single location: GenericTestConfig,1539128947.963253,0
+22,22,37ed9b32,Merge pull request #152 from NLeSC/feature/one-test-config,1539128911.759191,1
+571,571,904b8890,Fixed local FileSystem creation. Fixed local createDirectory.,1539127197.62637,1
+710,710,3ed9952d,Use file in scheduler error,1539128962.991668,0
+824,824,a8d9ebe4,javadoc8 errors fixed. resolves issue #253,1539127664.183933,0
+295,295,159c4f8e,Fixed various javadoc bugs and ommissions. Cleaned up Sandbox.,1539128024.254298,1
+905,905,23b4f1f4,Update CONTRIBUTING.md,1539126630.230691,0
+358,358,c6d9fa11,Fixed various issues flagged by SonarQube,1539127826.626548,1
+563,563,60ff18ef,Various small fixes trigged by codacy and IT,1539127249.069516,1
+907,907,19ca87cf,Update DOI link,1539126628.343498,0
+85,85,0186a81b,Merge pull request #278 from NLeSC/split-integration-tests,1539128790.816412,1
+210,210,aa7e5471,Merge pull request #327 from NLeSC/slurm-parallel-docker,1539128683.742932,1
+451,451,c0a44718,Fixed code duplication in SchedulerConnection,1539127568.4092288,1
+777,777,e8c1e070,Local job arguments uniformly passed to (Java)JobDescription,1539128336.963983,0
+765,765,f71425e0,Added JavaDoc to most of files package. Some issues left.,1539128370.5819552,0
+352,352,115a079d,Fixed job ID tests in Torque,1539127838.580398,1
+465,465,20376162,Fixed SFTP parameterization,1539127525.957398,1
+222,222,4a988b56,Next attempt to fix both windows AND mac livetests,1539128618.27104,1
+113,113,ba60ba16,Merge pull request #565 from NLeSC/issue554-notices,1539128765.011446,1
+429,429,dc101b3e,Fixed integrationTests for LocalFileAdaptor. Now passes 100%,1539127643.298981,1
+452,452,bc4bf7ec,Fixed code style,1539127567.059017,1
+293,293,ea2f0ebb,Fixed valid properties of scripting scheduler adaptors to include subscheduler properties,1539128026.5256212,1
+137,137,9ab5036b,Merge pull request #473 from NLeSC/ci,1539128748.365832,1
+105,105,58592849,Merge pull request #192 from NLeSC/develop,1539128769.80758,1
+351,351,719dd3ba,fixed sonar issues. added documentation,1539127839.858108,1
+870,870,8c0dc47a,jdk_switcher failed  using default jdk for travis-ci osx build.,1539126833.502674,0
+591,591,0f8ef741,Fixed LocalBatchProcess to understand absolute paths for standard streams. Fixes #86.,1539127137.826016,1
+247,247,5a7245d7,Merge remote-tracking branch 'origin/issue/252-gradleize' into issue/252-gradleize-docker,1539128516.3960788,1
+141,141,b91b80f7,Merge pull request #88 from NLeSC/copyoption_contains,1539128746.993701,1
+637,637,d3f68ec4,Fixed JavaDoc of JobDescription,1539126805.915832,1
+787,787,3bc687dc,use ssh scheduler in gridengine adaptor instead of process.exec(ssh),1539128249.989988,0
+43,43,7b0954ea,Merge pull request #16 from NLeSC/feature/test_sandbox_submit_status,1539128878.6554642,1
+904,904,c9036541,Update CITATION.md,1539126631.1494,0
+319,319,a32f38b4,Fixed timing sensitive test  removed closed filesystem test for now,1539127964.931844,1
+270,270,fc928eeb,The CopyOption.contains(options  option) method always returns true when options is filled with anything but null. Due to this bug the FileUtils.recursiveCopy() failed when a single CopyOption was given with a UnsupportedOperationException. This bug has been fixed.,1539128145.51321,1
+761,761,37ea531a,Added missing stream close in test framework. Otherwise windows cannot delete dir.,1539128389.126044,0
+561,561,192e4388,Added  as default working dir for the local adaptor. Fixes #76.,1539127251.022325,1
+29,29,f936b513,Merge pull request #29 from NLeSC/feature/ssh-adaptor-3,1539128894.7294214,1
+508,508,f6feab52,fixed java7 bug that was allowed in java8,1539127361.7993429,1
+848,848,b44ec3b6,Fixed javadoc,1539127199.3758106,0
+555,555,06a14a19,Check credential types in file adaptors. Fixes #586,1539127259.06086,1
+541,541,a6fef982,Added workdir support to S3 adaptor. Fixes #540,1539127277.387995,1
+402,402,c28ff943,Fixed PMD issues,1539127705.254942,1
+96,96,1c24aa5a,Merge pull request #535 from NLeSC/windows-live-tests,1539128781.536627,1
+625,625,152b7ec6,Fixed SSH path check. Fixes #98,1539126902.2854302,1
+666,666,e9aaa293,Update gradle wrapper to 2.9,1539126596.762209,1
+515,515,376f40a6,Fixed bug in test,1539127326.967694,1
+280,280,15f61021,Fixed race condition between done and close streams in StreamForwarder. Closed various streams in GenericTestParent classes,1539128093.3207278,1
+593,593,14a9ae7f,Made Scheduler and FileSystem AutoClosable. Fixes #432,1539127132.75477,1
+800,800,b36b5d7a,Added extra job lookup for slurm interactive jobs. This fails sometimes even though the job ir running.,1539128171.0515401,0
+104,104,a061710e,Merge pull request #403 from NLeSC/develop,1539128770.043132,1
+254,254,b6bbbe5c,adding tests for scripting parser  improving some code and fixing some bugs in the process,1539128322.44185,1
+38,38,58dda71f,Merge pull request #58 from NLeSC/feature/test_does_coverage,1539128880.688578,1
+8,8,dccb776d,Corrected exceptions in various classes.,1539128957.022085,1
+889,889,8c1b979b,PMD warnings fixes in Torque integration test,1539126709.4780462,0
+657,657,09149176,Removed apiviz from lib and build. Fixes #139,1539126691.9927301,1
+648,648,74fd6ffe,Optimized getJobStatuses in Octopus engine to sort calls by adaptor and pass them in bulk. Fixes #44.,1539126764.942866,1
+412,412,5c450513,Added tests for  and fixed bug in  OctopusProperties,1539127691.299376,1
+244,244,ef477b0d,Merge docker and issue/252-gradleize branch.,1539128544.26799,1
+532,532,8b8cc371,Added support for DefaultCredential to S3. Fixes #614,1539127292.542324,1
+741,741,4228f9f2,Fix unwanted `docs` changes after gradle task.,1539128642.122369,0
+196,196,e86ea777,Merge pull request #294 from NLeSC/localUriLocation,1539128709.5752618,1
+911,911,e4d6f812,Update gradle plugins to latest version,1539126615.817874,0
+100,100,fe554e1f,Merge pull request #550 from NLeSC/sonarcloud-smells-1,1539128771.207638,1
+582,582,78fe693b,Removed MergeOutputStreams from JobDescription and adapted tests. Fixes #123.,1539127183.344217,1
+142,142,2e92db0a,Merge pull request #89 from NLeSC/copyoption_contains,1539128743.703973,1
+187,187,cbd07ee7,Merge pull request #227 from NLeSC/ftpfixes,1539128717.6076741,1
+362,362,b0f1dee5,Fixed test for removal of isDelete  isSymbolicLink  size,1539127824.147998,1
+857,857,f7702737,Removed emtpy constructor,1539126872.410735,0
+282,282,cae9e773,Added S3 adaptor and fixed cross package import in Jcloudsa base adaptor class,1539128078.874341,1
+713,713,9184da5f,SSHTunnelTest now also allows system properties for config,1539128949.208272,0
+190,190,804e1c0f,Merge pull request #316 from NLeSC/dropsonarqube,1539128716.640336,1

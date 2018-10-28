@@ -1,0 +1,2316 @@
+,Document Title,Abstract,time,label
+0,0900a9b1,resolved sonarcloud code smell: collapsible 'if' statements should be merged,1539129083.645507,1
+1,1c86e241,resolved sonarcloud code smell: collapsible 'if' statements should be merged,1539129082.637845,1
+2,993d174c,Catch parser error of OpenSSHConfig,1539129025.44143,1
+3,748f2418,resolved merge conflicts,1539129015.598864,1
+4,7cb72a82,merge conflicts resolved,1539129013.950682,1
+5,94e5d91e,Merged GridEngine updates into master,1539129009.727851,1
+6,706ad302,Merged fixUnitTestsAndTime,1539128998.720896,1
+7,184b7318,Improved error detecting in jobs. Automatically delete jobs in error state,1539128995.147459,1
+8,dccb776d,Corrected exceptions in various classes.,1539128957.022085,1
+9,6cc06c1e,Merge pull request #205 from NLeSC/feature/gftp-3rdparty-copy,1539128932.479067,1
+10,58dda4e3,Merge pull request #174 from NLeSC/feature/gridengine-unit-tests,1539128931.34119,1
+11,26de992e,Merge pull request #376 from NLeSC/feature/webdav-continued,1539128926.1123462,1
+12,a29b00f1,Merge pull request #212 from NLeSC/feature/jglobus-proxy-init,1539128925.072283,1
+13,b6cdbccd,Merge pull request #196 from NLeSC/feature/daemon-threads,1539128924.136829,1
+14,6f830336,Merge pull request #194 from NLeSC/feature/gridengine-resource-option,1539128923.040575,1
+15,35bfd380,Merge pull request #204 from NLeSC/feature/gftp-patch,1539128922.097302,1
+16,55f8d73a,Merge pull request #37 from NLeSC/feature/ge-job-exitcode,1539128921.167916,1
+17,58a84b9b,Merge pull request #117 from NLeSC/feature/job-canceled-exception,1539128920.095327,1
+18,654fb402,Merge pull request #32 from NLeSC/feature/sge-adaptor,1539128918.972836,1
+19,b7fb6eb3,Merge pull request #69 from NLeSC/feature/java-job-description,1539128917.922933,1
+20,737ddd96,Merge pull request #137 from NLeSC/feature/license-check,1539128917.504003,1
+21,134f3009,Merge pull request #153 from NLeSC/feature/one-test-config,1539128912.7504551,1
+22,37ed9b32,Merge pull request #152 from NLeSC/feature/one-test-config,1539128911.759191,1
+23,6bb63f83,Merge pull request #115 from NLeSC/feature/gridengine-advanced,1539128910.538858,1
+24,28806ab2,Merge pull request #257 from NLeSC/feature/webdav,1539128909.237451,1
+25,4b6b34b3,Merge pull request #35 from NLeSC/feature/ssh-adaptor-3,1539128904.045593,1
+26,de23ca6d,Merge pull request #209 from NLeSC/feature/gftp-3rdparty-copy,1539128902.6860142,1
+27,ab5eb25c,Merge pull request #24 from NLeSC/feature/ssh-adaptor-3,1539128896.108325,1
+28,76204c49,Merge pull request #25 from NLeSC/feature/ssh-adaptor-3,1539128895.306215,1
+29,f936b513,Merge pull request #29 from NLeSC/feature/ssh-adaptor-3,1539128894.7294211,1
+30,6d6ba2d9,Merge pull request #31 from NLeSC/feature/ssh-adaptor-3,1539128894.078858,1
+31,7897e99d,Merge pull request #14 from NLeSC/feature/ssh-adaptor-3,1539128893.31231,1
+32,3fffa715,Merge pull request #19 from NLeSC/feature/ssh-adaptor-3,1539128891.3188071,1
+33,2c5fb6e9,Merge pull request #158 from NLeSC/feature/scripting-cleanup,1539128890.319968,1
+34,3d45f6ab,Merge pull request #173 from NLeSC/feature/scripting-tests,1539128889.3610039,1
+35,8bf0155e,Merge pull request #232 from NLeSC/feature/torque,1539128888.074952,1
+36,90b02923,Merge pull request #56 from NLeSC/feature/root_getparent_null,1539128887.059476,1
+37,8747f6f1,Merge pull request #231 from NLeSC/feature/sshconfig,1539128881.375173,1
+38,58dda71f,Merge pull request #58 from NLeSC/feature/test_does_coverage,1539128880.688578,1
+39,4caa7eb9,Merge pull request #59 from NLeSC/feature/localjob_nostdin,1539128880.319402,1
+40,81958de6,Merge pull request #34 from NLeSC/feature/recursiveCopyAndDelete,1539128879.8715029,1
+41,30343b28,Merge pull request #224 from NLeSC/feature/ftpadaptor,1539128879.503984,1
+42,35b0d8c0,Merge pull request #57 from NLeSC/feature/sandbox_copyoption,1539128879.0100222,1
+43,7b0954ea,Merge pull request #16 from NLeSC/feature/test_sandbox_submit_status,1539128878.6554642,1
+44,e36c24fa,Merge pull request #175 from NLeSC/feature/gridengine-unit-tests,1539128878.302494,1
+45,d324cc7e,Merge pull request #126 from NLeSC/feature/gridengine-complete-jobdescription,1539128877.951442,1
+46,12bf60ce,Merge pull request #135 from NLeSC/feature/gridengine-parallel-jobs,1539128877.615364,1
+47,355c4771,Merge pull request #30 from NLeSC/feature/generic_filetest,1539128866.924635,1
+48,c76cc802,Merge pull request #94 from NLeSC/feature/sandbox_equals,1539128866.158273,1
+49,50ce47dc,Merge pull request #12 from NLeSC/feature/rename_test_package,1539128865.40873,1
+50,52b09451,Merge pull request #99 from NLeSC/feature/tostring_tests,1539128864.3678892,1
+51,2137d201,Merge pull request #6 from NLeSC/feature/octopus-exception,1539128863.8233972,1
+52,15406a4e,Merge pull request #201 from NLeSC/feature/slurm-2.6,1539128863.407374,1
+53,320c12ff,Merge pull request #15 from NLeSC/feature/ssh-adaptor-3,1539128862.912941,1
+54,d8bb4450,Merge pull request #21 from NLeSC/feature/sge-adaptor,1539128862.4190302,1
+55,537ecfd9,Merge pull request #202 from NLeSC/feature/gftp,1539128861.9826472,1
+56,94cd512a,Merge pull request #2 from NLeSC/feature/unnest_adaptors_1plusM_buildxml,1539128861.521901,1
+57,6ecc510c,Merge pull request #1 from NLeSC/feature/jacoco,1539128856.9773881,1
+58,b357dcd1,Merge pull request #154 from NLeSC/feature/scripting-cleanup,1539128855.5689619,1
+59,afb3279a,Merge pull request #18 from NLeSC/feature/testRelativePath,1539128854.688503,1
+60,d8426249,Merge pull request #23 from NLeSC/feature/testOctopusProperties,1539128853.680448,1
+61,dffc2bcc,Merge pull request #130 from NLeSC/feature/issue129,1539128852.863219,1
+62,d6730867,Merge pull request #27 from NLeSC/feature/SandboxedLocalJobIT,1539128851.8872151,1
+63,af6bef5b,Merge pull request #64 from NLeSC/feature/test_left_dir_behind,1539128851.0668778,1
+64,c97841fe,Merge pull request #7 from NLeSC/feature/mock_engine,1539128847.8072062,1
+65,6f1723a4,Merge pull request #3 from NLeSC/feature/local_coverage,1539128846.8940382,1
+66,eb22dc39,Merge pull request #149 from NLeSC/feature/gridengine-parallel-jobs-2,1539128838.814163,1
+67,edc7e508,Merge pull request #128 from NLeSC/feature/gridengine-custom-jobs,1539128837.664759,1
+68,02a4903c,Merge pull request #211 from NLeSC/feature/single-process,1539128836.705097,1
+69,b14b20fe,Merge pull request #70 from NLeSC/feature/ssh-adaptor-4,1539128835.5688891,1
+70,c0dff712,Merge pull request #4 from NLeSC/feature/ssh-adaptor,1539128833.9628599,1
+71,cd5ca632,Merge pull request #26 from NLeSC/feature/ssh-adaptor-3,1539128832.88897,1
+72,a8392fb0,Merge pull request #65 from NLeSC/feature/ssh-adaptor-3,1539128832.0422778,1
+73,adae91c2,Merge pull request #161 from NLeSC/feature/javajobdescription-tests,1539128830.696635,1
+74,e2afc3ed,Merge pull request #8 from NLeSC/feature/document_adding_adaptor,1539128829.673223,1
+75,d1fa6609,Merge pull request #36 from NLeSC/feature/generic_filetest,1539128828.4574132,1
+76,b621ab88,Merge pull request #230 from benvanwerkhoven/develop,1539128797.7836142,1
+77,a2e4779d,Merge pull request #583 from NLeSC/uses-fs-in-javadoc,1539128797.455281,1
+78,6e6b0459,Merge pull request #221 from blootsvoets/smalledits,1539128797.121445,1
+79,18ff6c87,Merge pull request #571 from NLeSC/java-job-description-tests,1539128793.328053,1
+80,34607a41,Merge pull request #492 from NLeSC/slurm-multi-version,1539128792.9270911,1
+81,99143ed2,Merge pull request #481 from NLeSC/ftp-integration-test,1539128792.559599,1
+82,501f1174,Merge pull request #484 from NLeSC/webdav-integration-tests,1539128792.14363,1
+83,8789afab,Merge pull request #482 from NLeSC/torque-integration-test,1539128791.695949,1
+84,83534842,Merge pull request #304 from NLeSC/gridengine-reporting-shorter-flush,1539128791.231831,1
+85,0186a81b,Merge pull request #278 from NLeSC/split-integration-tests,1539128790.816412,1
+86,f696d8b0,Merge pull request #396 from NLeSC/add-adaptor-docs,1539128790.4314802,1
+87,6599877c,Merge pull request #522 from NLeSC/xenon-cli-issue36,1539128790.030983,1
+88,5aefef36,Merge pull request #483 from NLeSC/gridengine-integration-tests,1539128789.629495,1
+89,b94f924e,Merge pull request #505 from NLeSC/file-integration-test2,1539128784.423715,1
+90,471862f7,Merge pull request #313 from NLeSC/docker-sanity-checks,1539128784.055615,1
+91,c27f27ba,Merge pull request #531 from NLeSC/path-forgets-absoluteness,1539128783.703883,1
+92,6d40ca71,Merge pull request #469 from NLeSC/tests-restructure-460,1539128783.3361142,1
+93,2a9dfc44,Merge pull request #520 from NLeSC/new-webdav,1539128783.006741,1
+94,0b622b12,Merge pull request #532 from NLeSC/relative-file-tests,1539128782.6569529,1
+95,8f0d502c,Merge pull request #467 from NLeSC/no-docker-build-461,1539128781.806743,1
+96,1c24aa5a,Merge pull request #535 from NLeSC/windows-live-tests,1539128781.536627,1
+97,8e20cd78,Merge pull request #567 from NLeSC/issue566-readme,1539128778.228386,1
+98,fe19f8c0,Merge pull request #553 from NLeSC/readme-2.0.0-rc2,1539128771.822512,1
+99,c243c17c,Merge pull request #324 from NLeSC/devel-readme,1539128771.503272,1
+100,fe554e1f,Merge pull request #550 from NLeSC/sonarcloud-smells-1,1539128771.207638,1
+101,31608d8a,Merge pull request #301 from NLeSC/coveralls-coverage,1539128770.898404,1
+102,57d0cd08,Merge pull request #618 from NLeSC/jspaaks-zenodo-metadata,1539128770.606909,1
+103,113b0a44,Merge pull request #365 from NLeSC/develop,1539128770.287354,1
+104,a061710e,Merge pull request #403 from NLeSC/develop,1539128770.043132,1
+105,58592849,Merge pull request #192 from NLeSC/develop,1539128769.80758,1
+106,115e749e,Merge pull request #445 from NLeSC/code-of-conduct,1539128769.552375,1
+107,a5da915e,Merge pull request #590 from NLeSC/credentialmap-getters-589,1539128766.737113,1
+108,f6677209,Merge pull request #427 from NLeSC/sonarqube-fixes2,1539128766.427215,1
+109,47ce6124,Merge pull request #428 from NLeSC/sonarqube-fixes3,1539128766.128041,1
+110,9310d0cf,Merge pull request #336 from NLeSC/java8-no-author,1539128765.848718,1
+111,6d51d619,Merge pull request #314 from NLeSC/integration2coverage-service,1539128765.560117,1
+112,2b401a60,Merge pull request #503 from NLeSC/tabs2spaces-and-licenseascomment,1539128765.319488,1
+113,ba60ba16,Merge pull request #565 from NLeSC/issue554-notices,1539128765.011446,1
+114,c7ffc0a6,Merge pull request #292 from NLeSC/without-unstable-adaptors,1539128764.72825,1
+115,bbcbfc79,Merge pull request #326 from NLeSC/more-unit-tests,1539128764.160575,1
+116,16ea374e,Merge pull request #322 from NLeSC/more-unit-tests,1539128760.734772,1
+117,2c6d0b09,Merge pull request #409 from NLeSC/move-docs,1539128760.44786,1
+118,e5a6a770,Merge pull request #315 from NLeSC/group-docker-tasks,1539128760.141562,1
+119,87793a7d,Merge pull request #611 from NLeSC/memory-options,1539128759.84759,1
+120,6a82fcbc,Merge pull request #603 from NLeSC/jspaaks-rsdbadge,1539128759.566108,1
+121,51c03ac6,Merge pull request #604 from NLeSC/jspaaks-rsdbadge,1539128759.295315,1
+122,446e8862,Merge pull request #338 from NLeSC/tutorial,1539128758.991199,1
+123,4cb50f13,Merge pull request #323 from NLeSC/tutorial,1539128758.737649,1
+124,36359faf,Merge pull request #299 from NLeSC/refactorJobTests,1539128758.462045,1
+125,6efeb2fc,Merge pull request #408 from NLeSC/move-utils,1539128758.188704,1
+126,8678b50d,Merge pull request #407 from NLeSC/move-utils,1539128755.327895,1
+127,bf6e22c4,Merge pull request #372 from NLeSC/windows-quircks,1539128755.0560448,1
+128,55ba56f0,Merge pull request #418 from NLeSC/hotfix-timeoutoverflow,1539128754.7529259,1
+129,0cb5c169,Merge pull request #414 from NLeSC/hotfix-wait,1539128754.464084,1
+130,0b07c840,Merge pull request #619 from NLeSC/jspaaks-citationcff,1539128754.1767,1
+131,a717d6fa,Merge pull request #420 from NLeSC/new-logo,1539128753.9028368,1
+132,80f4db61,Merge pull request #332 from NLeSC/agent-no-identies,1539128753.631537,1
+133,2bbc4630,Merge pull request #478 from NLeSC/public-streamforwarder,1539128753.288098,1
+134,b5d6b1e6,Merge pull request #308 from NLeSC/wait4gridengine,1539128753.0057518,1
+135,fac83908,Merge pull request #444 from NLeSC/contributing,1539128752.702991,1
+136,9573fa81,Merge pull request #591 from NLeSC/hdfs,1539128749.7129052,1
+137,9ab5036b,Merge pull request #473 from NLeSC/ci,1539128748.365832,1
+138,3b596686,Merge pull request #527 from NLeSC/S3AdaptorNoGitHell,1539128747.855932,1
+139,3fccad26,Merge pull request #255 from NLeSC/issue219,1539128747.5612571,1
+140,b5cf7a57,Merge pull request #341 from NLeSC/issue253,1539128747.296344,1
+141,b91b80f7,Merge pull request #88 from NLeSC/copyoption_contains,1539128746.993701,1
+142,2e92db0a,Merge pull request #89 from NLeSC/copyoption_contains,1539128743.703973,1
+143,080292a5,Merge pull request #328 from NLeSC/ssh_config_parser,1539128743.404423,1
+144,981921eb,Merge pull request #245 from NLeSC/issue242,1539128743.1115289,1
+145,60c5970d,Merge pull request #319 from NLeSC/gradlew4travis,1539128742.415796,1
+146,36f8ef52,Merge pull request #561 from NLeSC/issue238,1539128742.094009,1
+147,9054b89f,Merge pull request #339 from NLeSC/quickstart,1539128741.806307,1
+148,fdbf50ae,Merge pull request #549 from NLeSC/xenonprops,1539128741.400575,1
+149,29ce9d73,Merge pull request #352 from NLeSC/issue348,1539128741.102134,1
+150,911d83e6,Merge pull request #456 from NLeSC/roadmap,1539128740.799851,1
+151,612ac271,Merge pull request #312 from NLeSC/integrationTestFixes,1539128737.7996302,1
+152,35ad3c29,Merge pull request #411 from NLeSC/jekyllsite,1539128737.4474401,1
+153,dda846f1,Merge pull request #620 from NLeSC/jspaaks-citationcff,1539128737.127726,1
+154,b92a8132,Merge pull request #307 from NLeSC/pmd,1539128736.791891,1
+155,c679d263,Merge pull request #410 from NLeSC/slurm_15_fix,1539128736.482527,1
+156,136d7a19,Merge pull request #110 from NLeSC/issue109test,1539128736.095695,1
+157,81bf7c5c,Merge pull request #93 from NLeSC/more_filetests,1539128735.768592,1
+158,babab0e0,Merge pull request #524 from NLeSC/fixpathsemantics,1539128735.504026,1
+159,7f4f8c60,Merge pull request #309 from NLeSC/stylefixes,1539128735.149966,1
+160,624c6ec2,Merge pull request #337 from NLeSC/iss195,1539128734.863343,1
+161,066f92f1,Merge pull request #476 from NLeSC/APIchange,1539128731.920819,1
+162,1d3a9d98,Merge pull request #362 from NLeSC/test4sshagentforwarding,1539128731.559971,1
+163,ff57ad46,Merge pull request #296 from NLeSC/offlineGradleTweak,1539128731.247603,1
+164,1507db13,Merge pull request #295 from NLeSC/unusedImportsRemoved,1539128730.930048,1
+165,9c578931,Merge pull request #452 from NLeSC/citation,1539128730.639398,1
+166,c53381c2,Merge pull request #359 from NLeSC/fixture_loading,1539128730.385688,1
+167,0b6fc6ee,Merge pull request #357 from NLeSC/gradle29andbeta2jcenter,1539128730.0795019,1
+168,2dc6c150,Merge pull request #490 from NLeSC/more-integrationTest,1539128729.815505,1
+169,1234b767,Merge pull request #491 from NLeSC/more-integrationTest,1539128729.55925,1
+170,f0cc94f3,Merge pull request #495 from NLeSC/more-integrationTest,1539128729.311951,1
+171,d7550299,Merge pull request #425 from NLeSC/sonarqube,1539128725.0676029,1
+172,0c851c66,Merge pull request #488 from NLeSC/win-jitpack-descnoexception,1539128724.7778711,1
+173,a80ec93c,Merge pull request #325 from NLeSC/more-unit-tests,1539128724.479008,1
+174,6f060d74,Merge pull request #616 from NLeSC/cluster-contraints,1539128724.186592,1
+175,d13af8bf,Merge pull request #350 from NLeSC/known_hosts,1539128723.917346,1
+176,ae558737,Merge pull request #317 from NLeSC/ssh-merge,1539128723.639386,1
+177,d2223dd6,Merge pull request #318 from NLeSC/ssh-merge,1539128723.3632991,1
+178,d6b8fbee,Merge pull request #330 from NLeSC/license-headers,1539128723.056603,1
+179,b21f3990,Merge pull request #621 from NLeSC/merge-2-and-3,1539128722.737071,1
+180,e532ac14,Merge pull request #329 from NLeSC/intellij_analysis,1539128722.413869,1
+181,bcf37414,Merge pull request #474 from NLeSC/jitpack,1539128719.262379,1
+182,d0a1fe73,Merge pull request #246 from NLeSC/issue241,1539128718.990557,1
+183,e2136034,Merge pull request #298 from NLeSC/travisDockerBuild,1539128718.733572,1
+184,47dcc951,Merge pull request #487 from NLeSC/APIchange6,1539128718.462363,1
+185,ce4abaf1,Merge pull request #279 from NLeSC/fixingTestsAndTime,1539128718.167942,1
+186,e4f91ae0,Merge pull request #489 from NLeSC/FileSystem_integrationTests,1539128717.935075,1
+187,cbd07ee7,Merge pull request #227 from NLeSC/ftpfixes,1539128717.6076741,1
+188,a2712344,Merge pull request #277 from NLeSC/dockerInGradle,1539128717.375489,1
+189,e58850b4,Merge pull request #353 from NLeSC/ssh_config_windows,1539128717.0673368,1
+190,804e1c0f,Merge pull request #316 from NLeSC/dropsonarqube,1539128716.640336,1
+191,2af12147,Merge pull request #371 from NLeSC/appveyor4windows,1539128712.62422,1
+192,cee7a48e,Merge pull request #370 from NLeSC/travis4osx,1539128712.071719,1
+193,724b09d4,Merge pull request #367 from NLeSC/dockerslurmcomment,1539128711.358377,1
+194,95c192f1,Merge pull request #363 from NLeSC/dropdocbuilddeps,1539128710.767807,1
+195,adaa0d08,Merge pull request #546 from NLeSC/maybeThrow,1539128710.2139301,1
+196,e86ea777,Merge pull request #294 from NLeSC/localUriLocation,1539128709.5752618,1
+197,313dbd72,Merge pull request #485 from NLeSC/APIchange5,1539128708.9836528,1
+198,d202f8c7,Merge pull request #303 from NLeSC/offlineBuild,1539128708.36893,1
+199,c58e6c09,Merge pull request #530 from NLeSC/spotless,1539128707.759002,1
+200,af8fe14b,Merge pull request #572 from NLeSC/spotless-license,1539128707.065095,1
+201,4373c9a7,Merge pull request #528 from NLeSC/unknown-adaptor-typo,1539128699.21565,1
+202,c37f2751,Merge pull request #500 from NLeSC/publicapi-with-equals,1539128698.287694,1
+203,c12559e5,Merge pull request #424 from NLeSC/copy-hotfix,1539128697.3575618,1
+204,71558d86,Merge pull request #610 from NLeSC/xenon-3.0.0-attempt-shadow,1539128690.958036,1
+205,b8115fc0,Merge pull request #334 from NLeSC/gradle-release,1539128690.270813,1
+206,53836bac,Merge pull request #335 from NLeSC/gradle-dockerpull,1539128689.537409,1
+207,061a08e7,Merge pull request #537 from NLeSC/webdav-anonymous-user,1539128686.490187,1
+208,02cd0f71,Merge pull request #271 from NLeSC/javadocDevel-noclasspath,1539128685.7398689,1
+209,78a47ec9,Merge pull request #486 from NLeSC/scheduler-integrationTests,1539128684.810156,1
+210,aa7e5471,Merge pull request #327 from NLeSC/slurm-parallel-docker,1539128683.742932,1
+211,81946967,Merge pull request #498 from NLeSC/list-empty-string,1539128682.239891,1
+212,38e0f488,Merge pull request #534 from NLeSC/no-system-out-println,1539128677.551245,1
+213,acc43c1d,Merge pull request #497 from NLeSC/local-location-can-be-null,1539128670.544158,1
+214,f55cdb22,Switched to passive mode and opened port in docker compose file for xenon-ftp to fix 500 illegal port command error,1539128657.677043,1
+215,bfadeba0,added support to start only a single process per job (on the frst node)  instead of x on each node. Partial fix for #206,1539128646.6517448,1
+216,d3f638c8,Fix jitpack build  by overriding gradle task with integrationTest exclude,1539128637.5962539,1
+217,feb2f7d7,Merge pull request #274 from NLeSC/fix-unittest,1539128633.1212099,1
+218,2eabd9fd,Merge pull request #311 from NLeSC/pmdtask-fix,1539128624.176343,1
+219,6d5e98a9,Merge pull request #580 from NLeSC/jekyll-fix,1539128623.0548902,1
+220,9dbc1366,small fix to accomodate change to api,1539128621.6919801,1
+221,87ac4211,quick fix for jsch synchronization problem,1539128619.695616,1
+222,4a988b56,Next attempt to fix both windows AND mac livetests,1539128618.27104,1
+223,00a17c60,Fix spotless error,1539128602.938683,1
+224,f7b9125d,Merge pull request #412 from NLeSC/fix-javadocDevel,1539128599.50104,1
+225,08f1a5be,Merge pull request #526 from NLeSC/SSH-credential-fix,1539128598.859971,1
+226,86f2c8d2,Merge pull request #521 from NLeSC/fix-slurm-versions,1539128598.1341321,1
+227,1d82c049,Missing SSH config gives warning unless requested (fix #261),1539128597.262503,1
+228,af053402,JobQueues now removes jobs once the job is finished and the status is requested. Changed return value of cancelJob and cancelCopy. Partial fix for #73.,1539128596.189591,1
+229,87ba3979,Fix license header,1539128594.7503462,1
+230,3b6d0fbe,Fix unit tests,1539128593.86457,1
+231,94737aa6,partial fix for https://github.com/NLeSC/xenon-cli/issues/36,1539128592.558238,1
+232,48fce7be,Merge pull request #273 from NLeSC/issue/250-jobidparser,1539128576.09322,1
+233,313f60f4,Merge pull request #346 from NLeSC/issue#345,1539128570.4173439,1
+234,327734c0,Merge pull request #378 from NLeSC/issue-377,1539128569.607955,1
+235,3f834f3a,merged from issue 377 branch,1539128563.964142,1
+236,8154bf23,Partial fix of issue #321. Caused by race condition which is less likely now  but still occurs.,1539128562.027167,1
+237,d4f60fa0,Merge pull request #264 from NLeSC/issue/261-sshconfigdefault,1539128556.974019,1
+238,c06ca3ed,partial fix for issue #533,1539128551.261919,1
+239,4b98df7e,Merge remote-tracking branch 'origin/develop' into issue/252-gradleize,1539128549.86511,1
+240,bf4c87a6,Merge pull request #268 from NLeSC/issue/252-gradleize-docker,1539128548.98266,1
+241,f3319352,Merge remote-tracking branch 'origin/issue/252-gradleize' into docker-gradle,1539128547.726016,1
+242,bd40020b,Merge pull request #265 from NLeSC/issue/252-gradleize,1539128546.733654,1
+243,eb83bdb2,Merge branch 'develop' into issue/252-gradleize,1539128545.772963,1
+244,ef477b0d,Merge docker and issue/252-gradleize branch.,1539128544.26799,1
+245,379a2f9a,Merge remote-tracking branch 'origin/issue/252-gradleize-docker' into issue/252-gradleize-docker,1539128541.549912,1
+246,46a01149,Merge pull request #496 from NLeSC/fix-valid-properties,1539128517.471056,1
+247,5a7245d7,Merge remote-tracking branch 'origin/issue/252-gradleize' into issue/252-gradleize-docker,1539128516.3960788,1
+248,d4341013,Merge remote-tracking branch 'origin/issue/252-gradleize' into issue/252-gradleize-docker,1539128515.421386,1
+249,8631cb4e,The adaptors now propagate valid properties array to parent. Should fix issue 168.,1539128506.9728231,1
+250,f0df8d15,Merge branch 'issues/sshtestfail' into issue/261-sshconfigdefault,1539128372.924305,1
+251,22879157,Merge pull request #607 from NLeSC/gridengine-parsing-bug,1539128360.996957,1
+252,46d2ddd9,working on fixing the legalese based on lourens'es suggestions refs #554,1539128346.440573,1
+253,a2fd26a4,refactored to fix some more codacy issues,1539128326.707877,1
+254,b6bbbe5c,adding tests for scripting parser  improving some code and fixing some bugs in the process,1539128322.44185,1
+255,fdf1f969,cleanup after refactoring  fixing some minor bugs,1539128315.938426,1
+256,c4e6256b,second attempt at fixing test build to handle system properties,1539128296.7872698,1
+257,1559ef56,allows credentials in local scheduler. Updated some test to reflect changes. Fixing #219,1539128257.591007,1
+258,f8c7837c,Next refactor of API. 90% done. FileSystem.copy still unimplemented. Tests need fixing,1539128255.700275,1
+259,252b7d0f,fixing some bugs,1539128253.256673,1
+260,400734b6,Quick fix for tilde issues on windows test. Also see #568,1539128210.3599699,1
+261,0314c3de,Fixing exceptions,1539128209.055855,1
+262,011ff4f0,adding findbugs annotation jar to report false positives . fixing some sonar issues,1539128204.2809641,1
+263,33f828b4,fixing sonar issues in gridengine adaptor,1539128202.903798,1
+264,d5db56ea,fixing sonar issues in gridengine adaptor,1539128202.0398788,1
+265,0465058f,fixing sonar issues,1539128187.296055,1
+266,5d508b12,fixing sonar issues,1539128186.584507,1
+267,571f9b6c,Fixing sonar issues,1539128185.0522099,1
+268,565f785b,bug fix in OctopusProperties  use OctopusProperties in ssh adaptor  use ssh properties in GridEngine adaptor,1539128179.050656,1
+269,4279a8df,Fixed active/passive mode bug: When performing passive() on source server  target server must use port number from source server's passive() method and not use setLocalPassive() method.,1539128154.663001,1
+270,fc928eeb,The CopyOption.contains(options  option) method always returns true when options is filled with anything but null. Due to this bug the FileUtils.recursiveCopy() failed when a single CopyOption was given with a UnsupportedOperationException. This bug has been fixed.,1539128145.51321,1
+271,eda4e26e,Split LocalFileSystemUtilsTest into generic  os dependant  and user home dependant tests and use junit rules to set properties. Fixes #564,1539128144.0876482,1
+272,7c56cee3,Added a QueueStatusImplementation to the jobs engine package. Fixed gridengine adaptor build script. Finished all the gridengine adaptor queue info commands. Also throw a OctopusIOException to the getQueueStatus functions in Jobs.,1539128142.282341,1
+273,17794869,Added support for a custom job script. Also add a gridengine specific test  and made a few minor changes to the generic test framework to accomodate tests in subclasses. Fixes 121.,1539128135.659499,1
+274,579b31d0,Fixed timeout issues in slurm tests. Added COMPLETING state to slurm job state (interpreted as running),1539128117.96106,1
+275,dc1a3d51,Added sandbox tests. Added Adaptor.toString(). Fixed loaded adaptor print in engine.,1539128105.335997,1
+276,33416ef7,Added Jobs.getDefaultQueueName(Scheduler) to Jobs interface. Jobs.getQueueStatus(Scheduler  String name) throws exception if name is null. Fixes #111.,1539128102.747503,1
+277,de89cba5,Test to submit local job did not cleanup after itself. Fixed by running job inside temporary folder made by junit.,1539128101.320541,1
+278,be8a76a9,Fixed slurm adaptor to return the status of finished jobs  if configured on the cluster. Work around for scontrol bug on pre 17 slurm,1539128098.854696,1
+279,a8488e6c,Merged SSH agent support into SSH adaptor. Fixed key order. Added unit tests.,1539128097.544789,1
+280,15f61021,Fixed race condition between done and close streams in StreamForwarder. Closed various streams in GenericTestParent classes,1539128093.3207278,1
+281,a516de13,Attempt at getting sonar to behave. Fixed several issues indicated by sonar. Told javadoc not to include timestamps in generated files,1539128082.173066,1
+282,cae9e773,Added S3 adaptor and fixed cross package import in Jcloudsa base adaptor class,1539128078.874341,1
+283,8cc84ac6,Fixed various issues reported by findbugs. Added more examples. Added StreamUtils. Created OctopusProcess as parent of InteractiveProcess and BatchProcess.,1539128075.738508,1
+284,23a8fe20,Fixed various sonar issues. Cleanup and merge of SshFiles.copy and LocalFiles.copy,1539128071.977654,1
+285,7b97891e,Fixed bug in sftp cache of SSH adaptor. Increased sleep time in generic job cancel test.,1539128067.866755,1
+286,15ec4d28,Fixed test20_newInputStream to properly close stream after reading a test file. Not doing wo will prevent the file being deleted on windows,1539128064.0464551,1
+287,d65d6a75,Changed JobQueue implementation to use batch scheduler-like file locations. Breaks JobQueue unit tests! Fixes #101.,1539128062.495939,1
+288,71cf6dd3,added docker integration test for webdav as anonymous user  fixes #536,1539128060.958592,1
+289,0ab0712d,Fixed properties use in GridEngine/Slurm. Added property config to tests.,1539128056.682574,1
+290,bfb96127,Removed SeekableByteChannel from Files API for this version. Adapted tests for this. Added supportsStatusAfterDone() to JobTestConfig. Fixes #104.,1539128034.7497349,1
+291,5fa521e6,fixed mtime / atime bugs  added unit test  ssh properties now handled correctly,1539128032.297544,1
+292,0cfc68b6,Fixed various issues in the new SFTP adaptor. Commit due to next big API change that is planned.,1539128031.0185962,1
+293,ea2f0ebb,Fixed valid properties of scripting scheduler adaptors to include subscheduler properties,1539128026.5256212,1
+294,c3c9a06d,Fixed copy semantics for CopyMode.REPLACE and combinations of files and directories.,1539128025.442952,1
+295,159c4f8e,Fixed various javadoc bugs and ommissions. Cleaned up Sandbox.,1539128024.254298,1
+296,d680ef8a,Cleaned up exceptions. Removed OctopusIOException. Removed exceptions package. Fixes #191.,1539128023.149442,1
+297,1b431dfc,Fixed proxy lifetime in gftp Proxy Init.,1539128022.1195369,1
+298,8c264290,Fixed format of comment characters in license section of several files (the licence check is picky about this),1539128020.974483,1
+299,27fab05f,Fixed SlurmUtils unit test to reflect switch to job-names,1539128019.981078,1
+300,ae3f3388,Changed getJobs(Scheduler  String) to getJobs(Scheduler  String...). Fixes #43,1539128018.942226,1
+301,94020d84,Fixed test build file to use correct version number,1539128017.709375,1
+302,c1d9c023,fixed job script generator  map ge status to jobstatus properly,1539128016.28736,1
+303,2c10c702,Fixed Slurm scripting test: equality unordered Map with ordered string,1539127999.791022,1
+304,07a1d6f1,Fixed FTP server to retrieve attributes in more protable way,1539127998.367059,1
+305,26a34ff9,Fixed adaptor loaded to take classes in jarjar into account. Local and SSH now work.,1539127997.3751118,1
+306,6521aa03,Fixed OctopusProperties test to test for new toString format.,1539127996.2856019,1
+307,f751c911,Added many unittest for filesystems and fixed a few issues based on these tests,1539127995.151129,1
+308,59d376a7,Fixed tests for waitUntilDone and waitUntilRunning. Skrewed up job status testing,1539127991.997996,1
+309,5703f3fa,"Fixed when getJobs command return empty string then array is [""""]",1539127991.054775,1
+310,ad53c825,Some simple tests for jobscript generator in slurm. Fixes to JavaJobDescription tests,1539127988.927402,1
+311,c802e62a,Fixed Torque tests with new job ID's and test fixture locations,1539127987.142631,1
+312,0dfda47b,Fixed timing sensitive test  removed closed filesystem test for now,1539127986.118137,1
+313,75d7f318,"fixed test to compensate for exitcode issue set name of sge job to ""octopus""",1539127982.896594,1
+314,31e7fb2a,Fixed build of test to properly check for octopus.test.properties,1539127974.526331,1
+315,0cb3cac0,Fixed tests to use new Files API. Removed URIUtils.,1539127973.4367461,1
+316,fc5fd1c6,More tests. Fixed issues in torque and gridengine tests,1539127968.897655,1
+317,d298bb32,Fixed tests for waitUntilDone and waitUntilRunning. Skrewed up job cleanup after test,1539127967.4070392,1
+318,42dd2dfa,Fixed test to reflect new name used for engine in exceptions,1539127966.008285,1
+319,a32f38b4,Fixed timing sensitive test  removed closed filesystem test for now,1539127964.931844,1
+320,4073fa7f,Fixed root test of Utils.getRelativePath to be case insensitive,1539127960.4798288,1
+321,961fa1fc,Fixed local scheduler implementation to correctly compare to job scheduler.,1539127959.516197,1
+322,3a67286d,Fixed small bugs in SSH tests. Thanks Niels,1539127954.70412,1
+323,14fa7809,Fixed test to use lower case adaptor names,1539127953.471076,1
+324,8a5aad0d,Fixed prepare-test target to ignore known_hosts,1539127952.49616,1
+325,bc63ed3b,Added support for interactive jobs and isOnline to jobs. Fixes #54.,1539127941.8209221,1
+326,0fb08202,More tests. Fixed various bugs and inconsistencies in File adaptors.,1539127940.155654,1
+327,0cbf0ded,Fixed the implementations of waitUntilRunning and waitUntilDone in Jobs to properly handle the timeouts,1539127937.9219189,1
+328,92f3a7d0,Added correct SSH location to scripting adaptors. Fixed #585.,1539127934.8946679,1
+329,ef3c7c2c,Fixed directory names of file tests 15 and 16,1539127933.809771,1
+330,19e4996d,Extended file tests. Fixed several checks and exceptions in Local adaptor.,1539127932.16152,1
+331,d89f7346,Added more File tests. Fixed missing exception in local adaptor.,1539127927.424415,1
+332,e76cf69f,Added more File tests. Fixed missing exception in local adaptor.,1539127926.591173,1
+333,a205f3e1,Fixed error in output comparison of interactive job test,1539127923.7290108,1
+334,e86bf2e9,fixed test build file to pickup system properties,1539127922.354552,1
+335,07e3104f,Fixed test to use new signature of RelativePath constructor.,1539127921.242299,1
+336,4a1aa119,Fixed tests for waitUntilDone and waitUntilRunning (confused seconds and milliseconds),1539127919.934421,1
+337,5ec0ac3c,Fixed test to expect correct exception type,1539127912.590503,1
+338,d4bcbea1,Fixed some naming issues in tests that caused the automatic test run to fail.,1539127909.826306,1
+339,075aba6d,Added timeouts to local jobs. Fixed sandbox.,1539127884.747756,1
+340,20983e35,Added more integrationtest. Fixed bug in SSH streams fonud by these tests.,1539127882.8779109,1
+341,5e3a20c1,Fixed SandboxedLocalJobIT test to check for correct output.,1539127881.020517,1
+342,faab5477,refactored tests: fixed bug introduces during refactoring,1539127879.4267929,1
+343,7bed63fb,Fixed SSH to properly parse locations. Added test for this.,1539127873.778933,1
+344,ec8d7ade,Fixed several cross project imports and added dynamic adaptor loading,1539127872.223818,1
+345,be48a801,Fixed several SSH test to use config file.,1539127859.9888551,1
+346,bdf568af,do not run parallel test if parallel environment not configured. various sonar fixes,1539127855.015188,1
+347,c9dec913,Replaced keyfile and certfile in CertificateCredential by a single certfile. Fixes #155.,1539127850.724627,1
+348,db95d943,Fixed '&&' vs '&' in boolean statement. + Comments and formatting.,1539127845.919289,1
+349,f19659b0,Generate CA only if not yet generated  fixed run scripts,1539127844.623796,1
+350,96ddb60d,Added SeekableByteChannel support to SSH. Fixed several test.,1539127840.9476779,1
+351,719dd3ba,fixed sonar issues. added documentation,1539127839.858108,1
+352,115a079d,Fixed job ID tests in Torque,1539127838.580398,1
+353,c49701e6,Fixed localFiles integration tests,1539127837.684327,1
+354,b40109e1,Fixed compile errors (caused by verion differences),1539127833.0113132,1
+355,709538bc,Fixed delay in status update of pending jobs,1539127831.075052,1
+356,7540e714,Fixed many FIXMEs and TODOs  removed several printlns,1539127830.0549212,1
+357,a44cb9df,Fixed some sonar issues. Improved bahavior of BatchProcess on windows.,1539127827.090432,1
+358,c6d9fa11,Fixed various issues flagged by SonarQube,1539127826.626548,1
+359,a0155b36,Fixed various issues reported by SonarQube,1539127826.1384869,1
+360,3db2f1c1,Fixed various issues flagged by SonarQube,1539127825.564761,1
+361,f4c4f831,Fixed various issues reported by SonarQube,1539127824.941023,1
+362,b0f1dee5,Fixed test for removal of isDelete  isSymbolicLink  size,1539127824.147998,1
+363,351a8cf7,Fixed issues reported by sonarcloud,1539127823.430537,1
+364,6d4824be,Fixed issues in gridengine tests,1539127820.429019,1
+365,80c55168,Fixed issues in gridengine tests,1539127819.775473,1
+366,ab858520,Fixed issues in gridengine tests,1539127819.0926712,1
+367,c99629a3,Fixed issues in gridengine tests,1539127817.506187,1
+368,5d7da68b,Fixed several sonaqcube issues in JCloudsFileSystem,1539127817.218106,1
+369,07811ce8,Fixed various sonar issues,1539127816.946053,1
+370,ababd066,Fixed various sonar issues.,1539127816.658972,1
+371,228c4ed0,Fixed various sonar issues,1539127816.3388631,1
+372,c219bba5,Fixed various sonar issues,1539127815.919328,1
+373,52b0de6f,Fixed various sonar issues,1539127815.2370882,1
+374,f66b59a5,Fixed various sonar issues.,1539127810.686101,1
+375,08b0141c,Fixed various sonar issues.,1539127809.927943,1
+376,bba18eb5,Fixed various sonar issues.,1539127809.458955,1
+377,c0d81afb,Fixed various sonar issues.,1539127808.899119,1
+378,27e60c96,Fixed various sonar issues.,1539127808.367324,1
+379,b65a1b6c,Fixed various sonar issues.,1539127807.772549,1
+380,c48a7ab4,Fixed various sonarqube issues,1539127807.044118,1
+381,df08dbd1,Fixed various issues flagged by SonarQube,1539127805.700648,1
+382,ccedc6a4,Fixed several windows issues (mostly broken tests),1539127799.873715,1
+383,516e66f4,Fixed two sonarcloud issues,1539127759.284975,1
+384,749073bc,Fixed sonarqube issues,1539127757.774644,1
+385,6dac06ec,Fixed sonarqube issues,1539127757.132931,1
+386,c5faf555,Fixed several sonarqube issues,1539127756.509744,1
+387,8b5eb701,Fixed several sonarqube issues,1539127755.79616,1
+388,6c09e02d,Fixed several sonarqube issues.,1539127754.954881,1
+389,5bd7e42b,Fixed javadoc issues,1539127752.436188,1
+390,dd0c315e,Fixed various sonar issues.,1539127751.677316,1
+391,dd1ea80a,Fixed various sonar issues,1539127751.093981,1
+392,daf4a89a,Fixed various sonar issues,1539127749.364719,1
+393,d7217140,Fixed various sonar issues.,1539127711.971826,1
+394,e4030ee5,Fixed various sonar issues.,1539127711.314646,1
+395,de29df42,Fixed various sonar issues.,1539127710.678708,1
+396,97546a6d,Fixed sonar issues.,1539127710.051328,1
+397,80b2e1f2,fixed some codacy issues,1539127709.359462,1
+398,4a4cf98a,fixed some sonar issues,1539127708.525795,1
+399,a215351c,fixed sonar issues.,1539127707.772878,1
+400,b454e70e,Fixed sonar issues,1539127707.057344,1
+401,02b8ee52,Fixed sonar issues,1539127706.277284,1
+402,c28ff943,Fixed PMD issues,1539127705.254942,1
+403,4c9d7c15,Fixed most adaptor cross contamination in unit test,1539127702.421259,1
+404,a30e422a,Fixed unittest to test for job names,1539127700.05491,1
+405,80868804,Fixed typo in torque tests,1539127698.261668,1
+406,f37e46e7,Fixed octopus properties unit tests.,1539127697.430131,1
+407,b189115d,Fixed tests to use new constructor,1539127696.390627,1
+408,7112c626,Added tests for  and fixed bug in  OctopusProperties,1539127694.0028179,1
+409,3bc4ede0,Added tests for  and fixed bug in  OctopusProperties,1539127693.359736,1
+410,fcd4be32,Added tests for  and fixed bug in  OctopusProperties,1539127692.740739,1
+411,68283bd3,Added tests for  and fixed bug in  OctopusProperties,1539127692.084883,1
+412,5c450513,Added tests for  and fixed bug in  OctopusProperties,1539127691.299376,1
+413,38d59d84,Fixed sftp location and simplified getAdaptorNames,1539127686.179006,1
+414,3f90becb,Fixed race condition in FTP client,1539127683.63495,1
+415,ccd8f29c,Fixed code style and license info,1539127672.22992,1
+416,a51bfb1b,Fixed grid engine unit tests,1539127671.3005311,1
+417,98556a00,Fixed code style in LocationConfig,1539127670.3870609,1
+418,95fa6541,Fixed broken unit tests,1539127669.427548,1
+419,9c21335d,Fixed compiler error due to interface change.,1539127668.333801,1
+420,e2995d3b,Fixed small try-with-resources issue in test,1539127667.1897411,1
+421,b40a3d27,Fixed broken param in javadocDevel.,1539127659.651243,1
+422,2b1c2638,Fixed adaptor doc generator,1539127657.688271,1
+423,29b3efc4,Fixed license header in test,1539127654.179788,1
+424,5563c161,Fixed path parsing in RelativePath,1539127652.858091,1
+425,cd1588db,Fixed test to catch correct exceptions.,1539127650.99467,1
+426,43b3b36f,Fixed all compile errors. Still mostly untested,1539127647.95474,1
+427,f4716732,fixed code layout. All test now run,1539127645.367784,1
+428,7c9f3b99,Fixed FileSystem.close hanging on threadpool,1539127644.278716,1
+429,dc101b3e,Fixed integrationTests for LocalFileAdaptor. Now passes 100%,1539127643.298981,1
+430,e7ba0721,Fixed JavaJobDescriptionTest to work in windows environment,1539127640.883043,1
+431,2d120924,Fixed getLocalHomeFileSystem forwarding by engine.,1539127625.238724,1
+432,db889156,Fixed various unit tests.,1539127623.0305321,1
+433,a82aaf86,fixed ineractive job tests,1539127609.001058,1
+434,d43f122d,Fixed Location toString for undefined port.,1539127602.503069,1
+435,aed49f06,Fixed OctopusProperties to check if a key exists.,1539127600.561359,1
+436,c3c096ec,Fixed dotdot unit test,1539127598.9032981,1
+437,58934c07,Fixed ParallelProcess to work without stdin.,1539127596.2307,1
+438,fdf48133,Fixed connection check in FTP.,1539127594.551457,1
+439,ba78b1e2,Fixed test location on livetest,1539127593.125887,1
+440,01200d8b,Fixed test location on livetest,1539127592.203198,1
+441,18f04472,Fixed unit test,1539127587.5891562,1
+442,3568b064,Fixed local util test,1539127586.612349,1
+443,4d62a016,Fixed #422 by including filesystem into comparision,1539127581.840464,1
+444,317c0d5e,Fixed PathTest.toString,1539127580.927649,1
+445,4cebe50e,Fixed GenericCredential tests,1539127580.022716,1
+446,acdf3344,Fixed most bugs in test classes.,1539127579.0947812,1
+447,31e0cc10,Fixed properties in local adaptor.,1539127577.9785461,1
+448,637c6450,Fixed license in several tests,1539127576.9913151,1
+449,738448ae,Fixed various suggestions of sonarqube,1539127575.848542,1
+450,17e4ab15,Fixed small issue in GridEngineJobs,1539127569.733691,1
+451,c0a44718,Fixed code duplication in SchedulerConnection,1539127568.4092288,1
+452,bc4bf7ec,Fixed code style,1539127567.059017,1
+453,e0f879ce,Fixed error messages in SlurmAdaptor,1539127565.671449,1
+454,fbda8a1e,Fixed SandboxedLocalJobIT getResource,1539127559.43074,1
+455,c483d74e,Fixed RelativePath tests,1539127558.48703,1
+456,39e4cb05,Fixed license in test,1539127557.271836,1
+457,db39d165,Fixed XML Torque tests again,1539127555.8710198,1
+458,f5149b2a,Fixed SLURM test,1539127554.760056,1
+459,a51e7c10,Fixed weird line break.,1539127547.192143,1
+460,75babe50,fixed licence text,1539127544.32832,1
+461,6df96694,fixed license headers,1539127543.428239,1
+462,7be6f6a5,Fixed another HashMap order issue,1539127542.511401,1
+463,469ec903,Fixed isDone in local JobStatus,1539127540.630578,1
+464,b6a6f0bd,Fixed TestConfig.getProperty,1539127527.430216,1
+465,20376162,Fixed SFTP parameterization,1539127525.957398,1
+466,0bf8f492,Fixed LocalUtils test,1539127524.7890189,1
+467,8916f93b,Fixed duplicate method,1539127523.52721,1
+468,170d2c38,Fixed FileSystem and Pathname to support windows,1539127519.081589,1
+469,20804087,Fixed javadoc of getJobs,1539127506.4673991,1
+470,da449a72,Fixed Exception output with NullPointer,1539127500.028092,1
+471,0ab42531,fixed some small warnings,1539127495.924694,1
+472,1c075b5b,Fixed Scheduler close for local adaptor.,1539127494.7919471,1
+473,15b20a3f,Fixed a few bugs in local adaptor,1539127493.684755,1
+474,3e6fd346,Fixed RelativePath iterator.,1539127492.630411,1
+475,959007db,Fixed local scheduler URI acception.,1539127490.613962,1
+476,21327ab5,Fixed local scheduler retrieval,1539127480.999381,1
+477,8ae7baa4,Fixed dir stream,1539127479.957675,1
+478,ec7ff2f1,Fixed several tests,1539127478.87957,1
+479,3d03e029,Fixed tests.,1539127477.573061,1
+480,28577129,Fixed sonarqube setup,1539127475.824048,1
+481,4c85fb2f,Fixed some tests,1539127471.438796,1
+482,7cb3d714,Fixed detection of OSX,1539127467.021234,1
+483,ecddcf34,Fixed detection of OSX,1539127466.32331,1
+484,e2b86608,Fixed job killed exception,1539127465.5496778,1
+485,d20a02b4,Fixed link to correct ghpages,1539127464.461383,1
+486,a098e432,Fixed start imports,1539127463.5809538,1
+487,a9a4bd5c,Fixed several sonarqube issues,1539127462.782005,1
+488,2412dbd1,Fixed unittest,1539127461.78977,1
+489,f922f074,Fixed Travis OSX config. Fixed various issues flagged by sonarqube,1539127460.589629,1
+490,ded96833,Fixed double close in ssh inputstream,1539127388.62237,1
+491,0419e49b,Fixed script generator test,1539127384.404762,1
+492,a9d84e11,Fixed bug in generic file test.,1539127383.436567,1
+493,150533dd,Fixed test for CertificateImplementation,1539127382.658334,1
+494,746062e2,Fixed test,1539127381.690835,1
+495,9db5fe86,Fixed test,1539127380.8663971,1
+496,ffb5e30b,Fixed LocalJobExecutor to correctly set done. Fixed SandboxedLocalJobIT to delete files after test.,1539127379.7879288,1
+497,e1e01597,Fixed a small bug which lead to errors being detected where there are none,1539127378.708738,1
+498,1b4ba65c,Fixed html bug in Utils,1539127376.4851,1
+499,178c59ec,Fixed bug in opening stream for local,1539127372.603563,1
+500,37569ee5,Fixed potential null pointer exception in SSH adaptor,1539127371.6030118,1
+501,0be7f6df,Fixed #377,1539127368.8010778,1
+502,ad628f61,Fixed licence headers,1539127367.929435,1
+503,4066378f,Fixed FileUtilsTest.,1539127367.327324,1
+504,2ac75589,Fixed JobQueuesTest.,1539127366.607168,1
+505,9bf826be,fixed createOutputStream for Piter,1539127365.809566,1
+506,6987279a,Fixed FIXMEs,1539127364.804326,1
+507,453b3227,Fixed fixed client script to correctly set group id of mounted docker.sock,1539127364.035618,1
+508,f6feab52,fixed java7 bug that was allowed in java8,1539127361.7993429,1
+509,86a209ca,Fixed #465,1539127351.937291,1
+510,d732a3d8,Changed JobImplementation to allow for empty JobDescription. Removed UUID from JobImplementation  and changed hashCode and equals accordingly. Fixes #106.,1539127345.809999,1
+511,74777f44,Fixed various sonar issues. Fixed potential bug in CopyEngine.compareHead,1539127344.757731,1
+512,fef0b31c,Fixed various sonar issues. Fixed bug in CopyEngine.readFully,1539127343.525564,1
+513,66d121f6,Removed 3 calls from Files API. Fixed newAttributeDirectoryStream. Fixed #91 and #95,1539127338.1489131,1
+514,13727fff,Fixed documentation,1539127327.694752,1
+515,376f40a6,Fixed bug in test,1539127326.967694,1
+516,120602bd,Fixed copy without copy options  implemented move  fixed bug in dir streams.,1539127326.159315,1
+517,0c5ce7bf,added contributing guidelines file. Fixes issue #441.,1539127325.25455,1
+518,875c7760,Fixed NullPointerException when ssh ConfigRepository is not defined,1539127323.059139,1
+519,eae387be,moved gridengine tests to testing framework. Fixes #122,1539127310.815614,1
+520,ba275bae,Fixed property in SSH adaptor.,1539127307.3914108,1
+521,94c8c0f6,fixed bug in webdavlocation,1539127305.4625778,1
+522,832eccd4,Fixed nasty . and .. bug,1539127304.403974,1
+523,446a7166,added code of conduct. partly fixes issue #442,1539127302.6639369,1
+524,987bfef3,Added resumeCopy  append  size and isSymbolicLink to Files. Fixes #61,1539127301.979391,1
+525,bdbffccf,Recovered LiveTest config from other branch. Contains fixes needed for windows.,1539127301.132778,1
+526,8fc62750,added CITATION file  fixes issue #446,1539127300.375782,1
+527,80e4b200,Moved tilde expansion to utility method in LocalFileSystemUtils. Fixes #517,1539127299.5924392,1
+528,60abad86,Changed Streams from class to interface and added StreamsImplementation. Fixes #83.,1539127298.726191,1
+529,503b2d04,Added equals and hashcode to CredentialMap. Fixes #584,1539127297.694517,1
+530,538ccb6a,Job test no longer rethrows exception. Fixes #113.,1539127294.0135381,1
+531,7509f441,Added tested versions to slurm. Fixes #514,1539127293.436877,1
+532,8b8cc371,Added support for DefaultCredential to S3. Fixes #614,1539127292.542324,1
+533,c15cfaf2,Changed Files API to support asynchronous copy (which can be cancelled). Fixes #52,1539127291.797992,1
+534,df886f35,Added overflow detection to waitUntilRunning and waitUntilDone. Fixes #416,1539127291.0617151,1
+535,c61afaee,Changed config of webdav integrationTests. Fixes #538,1539127290.366224,1
+536,dd5ed1a9,Fixed bug in directoryStream,1539127289.4624689,1
+537,cbd267f7,Fixed bug in getAdaptor,1539127288.689121,1
+538,458c1d84,Changed AbsolutePath to Path and RelativePath to Pathname. Fixes #182.,1539127287.349737,1
+539,a97d3c5a,Merge remote-tracking branch 'origin/master' into fixpathsemantics AND Fixes Path semantics AND Fixes Webdav last access time semantics,1539127286.2959142,1
+540,aa55f875,Fixed bug in pathAttributeStream,1539127278.669761,1
+541,a6fef982,Added workdir support to S3 adaptor. Fixes #540,1539127277.387995,1
+542,81d222c7,Corrected exceptions in various classes. Fixes #20.,1539127276.56528,1
+543,b0caa7fa,Fixed OctopusPropertiesTest.,1539127275.336321,1
+544,dedd24af,Fixed RelativePathTest,1539127271.590018,1
+545,305e53bc,Removed check for non-null stdin for batch jobs in LocalJobs. Fixes #60,1539127270.294662,1
+546,ce0e118d,Removed references to LocalAdaptor.ADAPTOR_NAME from generic queue. Fixes #79.,1539127269.259292,1
+547,48a389ff,Added support for workdir in scheduler. Fixes #558,1539127268.3492188,1
+548,c4be5fbd,Various small bugfixes and fixes in the tests,1539127267.439684,1
+549,6ace7561,Changed paremeter order of CopyOpyions.contains. Fixes #100.,1539127263.468211,1
+550,4ba77560,Added test to check if adaptors uses copy constructor of JobDescription. Fixes #169.,1539127262.51036,1
+551,e0d735c6,Added support for username in tilde expansion. Fixes #563,1539127261.5257301,1
+552,bd91d4d2,Changed certificate API to use char [] passwords. Fixes #92.,1539127260.891371,1
+553,b0a6c23b,Added a list of deleted jobs. Fixes #129,1539127260.271563,1
+554,24c74d79,Added FileTestConfig.readOnlyPosixPermissions. Fixes #198,1539127259.717376,1
+555,06a14a19,Check credential types in file adaptors. Fixes #586,1539127259.06086,1
+556,01466a19,Added check on queuename to scheduler adaptors. Fixes #375,1539127258.518467,1
+557,2060502b,Added test for null scheduler. Fixes #186,1539127257.838226,1
+558,6c03c4b7,Removed AdaptorLoader and related classes. Fixes #38,1539127257.070558,1
+559,53cd9939,More tests. Simplified LocalBatchProcess. Fixes #105.,1539127252.926225,1
+560,d84c8883,Changed FileSystem.getEntryPath to return AbsolutePath. Fixes #87.,1539127251.989725,1
+561,192e4388,Added  as default working dir for the local adaptor. Fixes #76.,1539127251.022325,1
+562,91757b9a,Added waitUntilDone to jobs API and implementation for local and SSH. Fixes #85.,1539127250.1010768,1
+563,60ff18ef,Various small fixes trigged by codacy and IT,1539127249.069516,1
+564,ef573477,Added getCredential to Scheduler and FileSystem. Fixes #578,1539127233.143183,1
+565,04ecf652,Added toString() hashCode() and equals() to all API and engine classes (where it makes sense). Fixes #53. Added getDefaultCredential(). Fixes #49.,1539127231.950111,1
+566,84e997a1,Moved Scheduler.usesFileSystem to SchedulerDescription. Fixes #574,1539127230.6688972,1
+567,cfcf3bf5,Fixed several race conditions with submitting interactive jobs using slurm. Added and fixes tests related to this.,1539127229.031185,1
+568,660e2ed8,Added support for SSH tunneling. Fixes #575,1539127212.052053,1
+569,9500f5b7,Fixed dockerCACertificates commandline,1539127206.126265,1
+570,3a398900,Refactored SSH adaptor and fixed #167. Fixed InterSchemeMoveTest,1539127204.882753,1
+571,904b8890,Fixed local FileSystem creation. Fixed local createDirectory.,1539127197.62637,1
+572,1970e0a8,Fixed toString of JobDescription  and added unit tests for new fields. Fixes #612,1539127196.739496,1
+573,4da3891a,Extended javadoc of Jobs.getQueueStatusses  fixed behavior of Local and SSH implementation  added tests. Fixes #112.,1539127195.985699,1
+574,086193d1,Removed user check in createNewSession of SSH adaptor. Fixes #107.,1539127191.881398,1
+575,8456656b,Added getSupportedCredentials to AdaptorDescription. Fixes #595,1539127190.831043,1
+576,78edff11,Wrong type for XenonPropertyDescriptionImplementation. Fixes issue #345.,1539127189.792025,1
+577,43c81a69,Rename of move to rename. Fixes #466,1539127188.856321,1
+578,23951dc4,Lots of tests and small fixes,1539127187.874514,1
+579,f98a60a1,Fixes in GenericJobAdaptor and GenericScheduleJob tests,1539127186.603696,1
+580,60bc408e,Test config style fixes,1539127185.5443401,1
+581,dadb7d3c,Added equals to KeytabCredential. Fixes #615,1539127184.431326,1
+582,78fe693b,Removed MergeOutputStreams from JobDescription and adapted tests. Fixes #123.,1539127183.344217,1
+583,db9395e8,Added examples for queue and job status retrieval. Fixes several tests.,1539127182.438302,1
+584,30f925e4,Added support for JobOptions to JobDescription. Fixes #67,1539127179.680017,1
+585,ad65ef06,Fixed BatchProcess to understand absolute paths. Added test. Fixes #109.,1539127178.5203419,1
+586,3bcc5d2d,Added Jobs.waitUntilRunning. Added timeout calls to JobTestConfig. Fixes #116. Fixes #114.,1539127177.458854,1
+587,d69a2cd7,Generic property and location test fixes,1539127172.498048,1
+588,d2367596,Merge pull request #340 from NLeSC/no-more-examples,1539127140.728759,1
+589,d2edac70,Merge pull request #472 from NLeSC/xenon-fixed-client,1539127140.073727,1
+590,a8309a9e,Implemented isOpen in the ScriptingScheduler. Fixes #545,1539127138.9141939,1
+591,0f8ef741,Fixed LocalBatchProcess to understand absolute paths for standard streams. Fixes #86.,1539127137.826016,1
+592,d7ece390,Fixed getLocalFileSystems on Windows and added test FileUtilsTest.testGetLocalFileSystems. Fixes #199,1539127137.048196,1
+593,14a9ae7f,Made Scheduler and FileSystem AutoClosable. Fixes #432,1539127132.75477,1
+594,742f599c,Fixes a small bug in Path,1539127131.761194,1
+595,bf249a33,some small fixes for slurm 2.5,1539127130.611427,1
+596,b89a1ca4,Fixes S3 adaptor,1539127129.706196,1
+597,98a24d52,Added 2.0.0 javadoc. Fixes #552,1539127128.946875,1
+598,d66cf04d,Fixes recursive copy modes,1539127127.903282,1
+599,541317ac,More fixes to copymode for recursive,1539127127.026508,1
+600,45a7dc54,Fixes #543 and #542,1539127126.08932,1
+601,cc042d9e,Clarified the javadoc of JobState.getState. Fixes #596,1539127125.107401,1
+602,10a8fc5a,Merge pull request #213 from NLeSC/feature/slurm-interactive-fixes,1539127122.5484061,1
+603,02c685b9,fixes issue #238,1539127115.986703,1
+604,e8118eb1,More fixes from integration tests,1539127114.244843,1
+605,f32c357c,Made OctopusProperties more strict (checks names  types  etc). OctopusProperties no longer extends Properties. All use of Properties changed to Map<String String>. Fixes #132. Fixes #134. Fixes #144.,1539127112.227833,1
+606,1c1f398e,Made OctopusProperties more strict (checks names  types  etc). OctopusProperties no longer extends Properties. All use of Properties changed to Map<String String>. Fixes #132. Fixes #134. Fixes #144.,1539127110.721435,1
+607,fb53ad4e,Various sonarqube fixes,1539127109.048452,1
+608,1bb9f8ce,Fixed some sonar issues  fixed invalid working directory test. Fixes #145,1539127107.267637,1
+609,d41d1d03,Fixed parsing of gridengine slots when host groups are included. Fixes #606.,1539127102.136439,1
+610,4e62887a,Fixes #41,1539127099.206685,1
+611,b145009a,Added more tests for newOctopus. Fixes #156. Adaptors check properties more strictly. Fixes #165. Made OctopusEngine constructor private. Fixes #166.,1539127093.011424,1
+612,9d1ed0ee,Fixed various javadoc bugs and ommissions. Cleaned up FileUtil. Fixes #184,1539127090.322856,1
+613,fb6c3794,Fixed properties extract in OctopusEngine. Fixes #156.,1539127085.910249,1
+614,281f48c5,Intellij-analyze fixes,1539127083.960818,1
+615,4bfdfd0a,Added more SSH tests. Fixed issue with password credential. Fixes #102,1539126936.901062,1
+616,b53a474f,Fixed bugs in how Scheduler handles working directory in local and Torque adaptors. Fixes #592,1539126933.3145,1
+617,982dbfee,Removed default stdout and stderr in JobDescription. Fixes #159,1539126929.057125,1
+618,4c1458ba,Merge pull request #525 from NLeSC/ftp-fixes,1539126927.706615,1
+619,37e02e67,Fixed used of default credential in SSH tests. Fixes #80.,1539126926.387665,1
+620,06169999,Merge pull request #183 from NLeSC/feature/some-fixes,1539126912.496356,1
+621,cba69529,Fixed javadoc,1539126910.607619,1
+622,2594a518,Fixed the javadoc for the credentials package. Removed proxyCredential. Fixes #180,1539126909.551835,1
+623,1fc70198,Moved CopyEngine into engine.util. Single implementation is now used by Local and SSH  which fixes various SSH bugs. Fixes #90. Fixes #73.,1539126904.718102,1
+624,19e084b1,Fixed name of SSH tests. Fixes #77.,1539126903.4230142,1
+625,152b7ec6,Fixed SSH path check. Fixes #98,1539126902.2854302,1
+626,040f5dbd,Several fixes in Local and SSH. Shared JobQueue implementation for Local and SSH. Fixes #79. Fixes #81.,1539126900.845601,1
+627,3e2423f1,Merge pull request #380 from NLeSC/torque-docker-379,1539126889.229303,1
+628,f652af0c,Merge pull request #263 from jspaaks/issue/252-gradleize,1539126884.4901881,1
+629,792e05b2,Workaround for windows delete directory quirck. Fixed homedir expansion on windows.,1539126877.133171,1
+630,6ca81bf1,Fixed too specific Exception clause,1539126874.619603,1
+631,f380ad42,Fixed number of adaptors,1539126868.984338,1
+632,962e5acf,Fixed bug in LocalJobs.newScheduler that allowed null locations,1539126867.895772,1
+633,405a2737,Merge pull request #310 from NLeSC/examples-script,1539126854.154284,1
+634,2e2efc37,"Fixed IntelliJ IDEA ""Dangling Javadoc comment."" warning",1539126847.18965,1
+635,ab6fe7f3,Fixed various ommisions in Javadoc and removed unused imports.,1539126827.4088411,1
+636,5f831f75,Merge pull request #150 from NLeSC/feature/improved-java-jobdescription,1539126820.302826,1
+637,d3f68ec4,Fixed JavaDoc of JobDescription,1539126805.915832,1
+638,125740c3,Added link to adaptor and location list in javadoc of FileSystem.create and Scheduler.create. Fixes #421,1539126800.315862,1
+639,3391774d,Use SSH config file in SSH adaptor (fixes #207),1539126799.102298,1
+640,438bca25,Changed signature of RelativePath constructor use a char as a separator and to allow varargs. Fixes #40.,1539126797.546092,1
+641,8426e707,Moved class load time dependency of gridengine on ssh and local to moment of first use. Fixes serviceloader fail on integrationTest.,1539126796.2380369,1
+642,ed5012dd,Fixed test which relied on standard values of stdin/stdout/stderr in JobDescription,1539126794.286576,1
+643,85cf9c1e,Rename package nl.esciencecenter.octopus.tests to nl.esciencecenter.octopus in src/ directory. Fixes #10.,1539126789.990984,1
+644,8a34d77f,Added property autoAddHostKey to SSH adaptor. When true  unknown  host keys are added to the known_host automatically. Fixes #82,1539126787.633213,1
+645,07ada70a,Added generic credential test plus subclasses for local and SSH. Fixes #133.,1539126782.487814,1
+646,efb4ed1d,Merge pull request #276 from NLeSC/travis-fixes,1539126780.996342,1
+647,cb76bd36,Added support stdout  stderr and stdin to Torque. Fixes #601,1539126775.234334,1
+648,74fd6ffe,Optimized getJobStatuses in Octopus engine to sort calls by adaptor and pass them in bulk. Fixes #44.,1539126764.942866,1
+649,2d5139ce,Added resolve(String) to RelativePath. Fixes #42,1539126755.5230222,1
+650,aa6b0977,Default queueName for local adaptor is single. Fixes #75.,1539126754.078489,1
+651,f8df088e,More tests. Made NOFOLLOW_LINKS the default for traversing dirs. Fixes #97,1539126742.7579288,1
+652,a72887d9,jclouds-all dependency breaks other tests. Reducing jcloud dependecies to minimum fixes this,1539126740.677777,1
+653,2611e17d,Various fixes in JobQueues and JobQueueTest.,1539126711.881176,1
+654,7d108622,Fixed equals of JobDescription,1539126700.565193,1
+655,4361910f,Extracted job queues from local and SSH adaptors. Implementation is now shared by both. Fixes 79. Fixes 81.,1539126699.367341,1
+656,b42a1da0,Replaced logging backend from log4j to logback  updated slf4j api. Fixes #51,1539126697.4471118,1
+657,09149176,Removed apiviz from lib and build. Fixes #139,1539126691.9927301,1
+658,d07d832e,Reduced methods in Path to 2. Fixes #181,1539126690.69742,1
+659,78d44fe5,Fixes sftp and ftp adaptors!,1539126688.999286,1
+660,c075fe95,Fixed equals  hashCode and copyconstructor of JobDescription. Fixes #617,1539126684.204059,1
+661,adaec57d,Improved support for interactive jobs. Fixes #54. Fixes #74.,1539126653.1737778,1
+662,d60bb59c,Clear up time units in JobDescription. Fixes #559,1539126618.738741,1
+663,b2e6199a,Update of gradle to 4.1. Removed println,1539126610.1863382,1
+664,84a6c75b,Update common.gradle,1539126599.913649,1
+665,1dffa62c,Update test to run on OSX,1539126598.682348,1
+666,e9aaa293,Update gradle wrapper to 2.9,1539126596.762209,1
+667,59721a3e,Updated examples and documentation,1539126594.2830641,1
+668,86c29a9f,Added some convenience functions to JobDescription. Fixes #127,1539126583.643563,1
+669,3ced22ad,Upgraded to gradle 4.0.1  upgraded gradle plugins and test dependencies,1539126580.396965,1
+670,5f16a365,Update examples documentation + add script to run all examples.,1539126558.2860188,1
+671,3b494a97,source format,1539129093.159971,0
+672,4d048431,Made ADAPTOR_SCHEME accessible for Locations,1539129092.137789,0
+673,bb00080c,The shadow jar is the jar that must be published as the default jar,1539129090.799221,0
+674,15511b21,First working ssh job adaptor,1539129089.1979651,0
+675,d16adbb9,Remove test to see if xenon conflicts with docker client,1539129088.108862,0
+676,f551167c,Slurm scancel throws error when job already completed  ignore it,1539129078.043985,0
+677,e4dd6cd9,Added junit.jar,1539129075.800325,0
+678,e8c0bd3d,Use second ssh container for ssh gateway tests.,1539129074.947583,0
+679,17286367,resolved some spotless formatting problems,1539129055.264141,0
+680,bf84a4ff,add option to start only a single process  even when reserving multiple nodes and/or slots to JobDescription,1539129050.6733608,0
+681,3be73793,testing Generated annotation with sonar,1539129048.8944051,0
+682,e14e3e20,Test whether OpenSSHConfig is correctly read,1539129047.215166,0
+683,06ae9785,Merge sftp-hidden-file branch leftovers,1539129044.827875,0
+684,4327e7a0,implemented parallel job support in the gridengine adaptor,1539129043.343521,0
+685,9e24e8c6,Reverted the change made to error detection in the RemoteCommandRunner,1539129041.9483778,0
+686,717ff876,Publish coverage for each matrix build job even when job fails.,1539129038.572634,0
+687,8e505953,Seems to be an old merge of docs...,1539129036.823777,0
+688,aefcde30,Merge branch 'master' into merge-2-and-3,1539129035.424404,0
+689,2a9e1147,adding remaining test classes for scripting adaptors (unimplemented),1539129028.382009,0
+690,9da7eecc,Deduplicate ssh keys and create symlinks.,1539129023.185061,0
+691,a2bdc9e1,Exclude bat file from license check,1539129011.409209,0
+692,eea5f873,minor stuff,1539129006.478735,0
+693,4ff2784f,Make sure services get merged,1539129005.4712741,0
+694,55a73efd,Merged with master,1539129002.989285,0
+695,0095bb53,Update test to run on OSX and not break linux,1539128991.1448472,0
+696,797418a1,Increased timeout in test_workdir_usage_linux test as torque seems slow to update the state sometimes,1539128989.6928382,0
+697,8d188694,Replaced CopyHandle by simple String. Replace async copy implementation by one based on Futures,1539128988.623984,0
+698,5905a963,merged again,1539128987.1522849,0
+699,f739f306,Changed several status objects in API into interfaces,1539128986.031661,0
+700,3ef91e3e,use unlimited queue to run scripting commands,1539128984.832803,0
+701,40dd19aa,finished basic scripting unit tests,1539128983.646048,0
+702,80371ffe,use octopus api to wait for job completion,1539128981.1998632,0
+703,a6cb1f0e,throw OctopusIOException.,1539128977.247589,0
+704,6d6c036f,merge with some weird things in util.utils and engine,1539128976.3935552,0
+705,d5940af2,Small changes to exceptions and documentation,1539128974.655362,0
+706,9b653495,Added unit test for copy options.,1539128973.116997,0
+707,d94d325f,Return String from ScriptingParser parseJobID,1539128969.772263,0
+708,766053ec,Merge branch 'xenon-3.0.0-attempt2' into merge-2-and-3,1539128966.385459,0
+709,dcd380ee,GridEngine now always passed PE  even on 1 node,1539128965.026304,0
+710,3ed9952d,Use file in scheduler error,1539128962.991668,0
+711,4db7141f,Added properties checking to Adaptor base class. Reformatted to adhere to official NLeSC java codestyle.,1539128961.4724991,0
+712,9032f08d,Removed getUniqueID from public interface of FileSystem and Scheduler,1539128950.432069,0
+713,9184da5f,SSHTunnelTest now also allows system properties for config,1539128949.208272,0
+714,9eef083d,Test config configured from a single location: GenericTestConfig,1539128947.963253,0
+715,8568867e,Changed test config classes to use generic property loading  check both home and cwd and to fall back to System properties.,1539128946.402384,0
+716,d8695b6f,Only load known_hosts if it exists or is requested,1539128944.463244,0
+717,f14fe765,removed mysql part from the docker compose files  no longer needed after https://github.com/NLeSC/xenon-docker-images/pull/16,1539128942.894161,0
+718,1cc349aa,Only pull busybox:latest instead of all tags,1539128939.420671,0
+719,1861a456,Merge pull request #131 from NLeSC/feature/custom-script-ignore-description,1539128935.984009,0
+720,18c5f537,Merge pull request #151 from NLeSC/feature/one-test-config,1539128914.320152,0
+721,c187fa15,Merge pull request #228 from NLeSC/feature/utils,1539128907.466397,0
+722,c7a71808,Merge pull request #33 from NLeSC/feature/ssh-adaptor-3,1539128907.007865,0
+723,f41ee5d4,Merge pull request #22 from NLeSC/feature/ssh-adaptor-3,1539128906.321378,0
+724,0e646030,Applied NLeSC code formating standard,1539128812.7352312,0
+725,64338307,Attempt to debug TorqueScheduler.cancel,1539128811.599376,0
+726,fa5d8e00,updated yaml files to use docker images from within nlesc dockerhub organization,1539128809.931191,0
+727,ab5e8cc3,Skip attempt to use kill command to kill processes on windows systems. Removed windows network file system test in local adaptor tests since the semantics are not clear,1539128808.684068,0
+728,4033578f,merge,1539128802.616612,0
+729,42e8b000,Added gradle task to pull all docker containers.,1539128801.2748551,0
+730,1bf1822e,Actually filled in NLeSC in the LICENSE,1539128800.1317348,0
+731,2ebe0ed2,Use output from URI to create local filesystem,1539128703.487951,0
+732,96b2005b,Changed ssh newCertificateCredential test to use valid credential file.,1539128701.440246,0
+733,21bd61ca,Updated gradle wrapper to match version in build-common.gradle,1539128695.760933,0
+734,51f2eb61,Docker scripts now converted to gradle  moved to gradle/docker.gradle,1539128693.742023,0
+735,e1e99354,More test. Changed JobQueues to allow null forwarding.,1539128680.2564821,0
+736,63a257c6,Cleanup: do not superfluous setLocalPassive() on target server!.,1539128675.377,0
+737,fe64e01f,Test in FileSystemTest if FileSystem is closed before cleanup.,1539128673.3764222,0
+738,c1632809,Local jobs adaptor needs 'local:///' as location.,1539128665.195983,0
+739,30047498,added a closing ul tag and an opening ul tag to fix javadoc8 error,1539128649.950687,0
+740,73ce507b,Fix GitHub Pages build error + updates to release docs,1539128643.64741,0
+741,4228f9f2,Fix unwanted `docs` changes after gradle task.,1539128642.122369,0
+742,8dc7e28f,Fix typo SGE adaptor: Ocacle->Oracle,1539128640.604028,0
+743,c02696e1,Fix javadoc + license header,1539128635.340431,0
+744,b6c6f7af,Attempt to fix webdav HTTPS behavior,1539128615.019124,0
+745,83638fde,Javadoc fix,1539128612.5558279,0
+746,1e13c47a,Fix javadoc,1539128611.81861,0
+747,6130e6bf,Attempt to fix webdav authentication problem,1539128610.748302,0
+748,3cd41ffe,Reverted sonarqube issue  as the sonarqube suggestion does not work.,1539128588.8291788,0
+749,1c17def1,replaced single-slurm configuration with multiple-slurm configuration (v14-15-16-17)  seems like there still is an issue with the healthcheck though (first few tests fail),1539128587.390738,0
+750,ec3354b1,updated javadoc for Credentials.newCertificateCredential (issue #348),1539128581.133455,0
+751,0820ff0f,updated javadoc for Credentials (issue #348),1539128579.2603269,0
+752,2cf8d163,updated javadoc for Jobs.newScheduler (issue #348),1539128574.061139,0
+753,5a9bb420,Added tests related to issue #422,1539128572.30755,0
+754,521fe189,Revert 6130e6b as the issue turned out to be on the application side,1539128567.8999019,0
+755,7160d738,changed comment as suggested in issue #195,1539128555.326492,0
+756,10af1728,Squashed TORQUE bugs,1539128519.0699,0
+757,cd82f26b,finished test for JavaJobDescription,1539128511.976879,0
+758,1ed0e609,changed comment in test class,1539128508.604362,0
+759,a3835d9a,re-set system properties after tests to keep all test afterwards from failing,1539128504.7525358,0
+760,f1443144,Reversed state update and process destroy order in JobExecutor. Old order led to subtle race condition.,1539128503.262845,0
+761,37ea531a,Added missing stream close in test framework. Otherwise windows cannot delete dir.,1539128389.126044,0
+762,2096a504,Improved Torque scheduler handling of cancelled jobs,1539128379.869237,0
+763,e53b7423,Attempt to fix Jenkins tests of the SSH adaptor,1539128377.909962,0
+764,f5099bf2,adding tests for gridengine script generator,1539128375.1795619,0
+765,f71425e0,Added JavaDoc to most of files package. Some issues left.,1539128370.5819552,0
+766,30b563be,Major changes to Job API. Its structure is now closer to the Files API.,1539128365.989291,0
+767,44730d97,refactored slurm specific parsers into generic string parser class,1539128358.4662619,0
+768,eee80704,JUnit @Ignore annotation combined with @Test,1539128357.52735,0
+769,cb4500cc,GenericTestConfig wil now throw exception if xenon.test.properties (or user provided alternative) is not found.,1539128356.389227,0
+770,b010acd3,typo in JobDescription function name. Adding tests for Slurm adaptor,1539128355.3936,0
+771,2145cc26,Merged Jason's API changes  everything compiles again.,1539128354.0721,0
+772,9912bf16,Refactored generic file and job adaptor tests. Now allows SSH tests to read user/password from properties file.,1539128352.485223,0
+773,accae6ff,Update Proxy Creation methods. Now (Xenon) Properties can be used to specify user credentials and proxy creation setting. Also updated unit tests to use test properties.,1539128349.700069,0
+774,85291b02,For CI on Windows and MacOS us live tests against local filesystem and scheduler,1539128340.438467,0
+775,bf3c32df,Create local files in correct test directory,1539128339.061541,0
+776,dbe9bb50,Test local job submission without stdin.,1539128338.144167,0
+777,e8c1e070,Local job arguments uniformly passed to (Java)JobDescription,1539128336.963983,0
+778,45b2261b,Attempt to fix test on OSX,1539128335.2872891,0
+779,12c437d4,Attempt to fix test on OSX,1539128334.3622868,0
+780,113da37d,update to gradle 4.7 ans shadowJar 2.0.4. Added ssh and local adaptors as dependency to core  which feels like a bug,1539128332.835443,0
+781,cb2f573a,Do not use properties when creating filesystem in tests,1539128329.269867,0
+782,f55253ea,Implementing Slurm adaptor. Can submit jobs  does not report status yet,1539128310.501799,0
+783,ebd3cbd9,Slurm adaptor can now get status of jobs and queues,1539128307.141069,0
+784,b0652d3f,Added job submission to GridEngine adaptor,1539128305.715159,0
+785,a2da75c6,First working ssh job scheduler.,1539128303.5089462,0
+786,2598beb1,put generic part of GridEngine adaptor into separate package,1539128300.435199,0
+787,3bc687dc,use ssh scheduler in gridengine adaptor instead of process.exec(ssh),1539128249.989988,0
+788,876ce173,use ssh scheduler in gridengine adaptor instead of process.exec(ssh),1539128249.1799731,0
+789,644b0451,some more refactorings (from sonar),1539128247.871773,0
+790,bf0761d3,Dedicated folder in Docker for gradle cache (avoids locking issues),1539128246.627559,0
+791,d4e44326,Use sonar-scanner cli instead of sonar gradle plugin,1539128207.242012,0
+792,066ef6aa,Added default properties to the octopus engine.,1539128191.441184,0
+793,8561b200,use new JobImplementation constructor,1539128190.262741,0
+794,7cdf1f98,Added credential and job examples,1539128189.288661,0
+795,31a219a0,Closed directory streams in tests and utils. Windows will not allow the delete of a dir when it has a stream open,1539128183.3854392,0
+796,63c8b6df,Added more tests. Upgraded to junit 4.11,1539128181.288534,0
+797,b071cd83,Added examples/src.,1539128177.225082,0
+798,7e3fbf66,added script generator tests for ge adaptor,1539128173.30352,0
+799,59225cf2,Do codestyle check also on test  integrationTest and examples,1539128172.452032,0
+800,b36b5d7a,Added extra job lookup for slurm interactive jobs. This fails sometimes even though the job ir running.,1539128171.0515401,0
+801,4f2f7e2f,Changed dispose into close method.,1539128169.943595,0
+802,61f716d7,Added script to run all checks,1539128169.03277,0
+803,92c64b01,Allow null and empty string as location for local scheduler adaptor,1539128168.0675552,0
+804,e40c0d9a,Added Scheduler integrationTest for SSH,1539128166.1045349,0
+805,219350e8,Removed interactive job hash from Slurm scheduler,1539128165.033134,0
+806,8acb0077,Added sacct output to possible job status sources. Improving parser for Slurm output. Fixed code formatting.,1539128163.494764,0
+807,ad5fc8a3,Fixed the javadoc for the credentials package. Added package-info for credentials package.,1539128161.8031518,0
+808,f5e156e6,Removed examples.,1539128157.562797,0
+809,52e2fc6e,Added script to run all examples.,1539128156.586235,0
+810,b57cb026,Fixed formatting (use new formatter as found on https://github.com/NLeSC/wiki/wiki/attachments/code-format-nlesc-v2.xml ),1539128148.415984,0
+811,2edeeb28,Cleanup of developer javadoc. Quality is still low and many descriptions are still missing  but the compile warnings have been fixed.,1539128088.636559,0
+812,e6f86aec,Fixed build.xml to copy the globus libs to the dist/lib dir so that the tests can find them.,1539128053.100722,0
+813,f97bf801,Fixed various javadoc bugs in files package,1539127963.169585,0
+814,28d614ce,Cache .m2 dir in run-fixed-client-environment-test.sh,1539127950.477541,0
+815,dc6772c4,Fixed typo in travis config for livetests on mac,1539127915.073298,0
+816,30deaf28,Always refer to fixed path in fileadaptor tests,1539127905.204036,0
+817,b95bde6d,Fixed travis config for livetests on mac,1539127889.585875,0
+818,7cae6f13,Fixed the javadoc for the octopus package. Renamed Level into Component,1539127869.586443,0
+819,0d13fa02,fixed some problem with userguide which is now under doc/user,1539127868.207899,0
+820,ea200149,Fixed typos in comments. Added bin to .gitignore,1539127848.226047,0
+821,1255ef92,Fixed small javadoc issues.,1539127801.66853,0
+822,099b48f1,Fixed various javadoc issues. Fixes #177.,1539127781.1445599,0
+823,e27de014,Fixed various javadoc bugs in jobs package,1539127674.5312212,0
+824,a8d9ebe4,javadoc8 errors fixed. resolves issue #253,1539127664.183933,0
+825,84a2761d,Fixed travis.yml,1539127584.404305,0
+826,47870be2,Fixed spacing CopyFile example,1539127563.480645,0
+827,212ae2cf,Fixed javadoc issues,1539127538.03019,0
+828,53c1a590,Fixed javadoc issues,1539127536.6962721,0
+829,82399823,Fixed javadoc issues,1539127535.604327,0
+830,8d19818c,Fixed PMD and IntelliJ warnings,1539127521.399426,0
+831,ded4d939,Fixed various warnings of codacy,1539127503.408127,0
+832,481434b0,Fixed some Netbeans warnings,1539127502.307259,0
+833,ff51a67a,Fixed javadoc errors,1539127469.021461,0
+834,cfda5118,Fixed some javadoc + use java 7+ constructs,1539127386.916045,0
+835,be4f5d52,fixed import,1539127356.322814,0
+836,8432c955,Fixed codestyle,1539127350.951471,0
+837,977a6936,fixed formatting,1539127347.538608,0
+838,6589ba55,fixed check,1539127342.018266,0
+839,50a89089,Fixed documentation,1539127339.9927151,0
+840,9b16ccf7,Fixed documentation,1539127332.1194,0
+841,8f0251fc,Fixed documentation,1539127331.370522,0
+842,361a698f,Fixed documentation,1539127330.737769,0
+843,6694e798,fixed name,1539127273.405771,0
+844,ee060e6b,Fixed javadoc,1539127202.0434039,0
+845,407e44b8,Fixed javadoc,1539127201.4168231,0
+846,509b6554,Fixed javadoc,1539127200.8234859,0
+847,ac8b29a4,Fixed javadoc,1539127200.164227,0
+848,b44ec3b6,Fixed javadoc,1539127199.3758109,0
+849,6fa8abb3,Make Windows fixes also work on non-Windows,1539127175.7139132,0
+850,0680bdea,Fixed javadoc. Fixed doc,1539127105.253283,0
+851,6eb25207,More typos + windows compatibility fixes,1539127097.523478,0
+852,8564334a,Merge pull request #426 from NLeSC/sonarcube-fixes,1539126931.573173,0
+853,e5d3f3a5,Fixed javadoc warnings. Fixes #405. Commented out grgit line in build.gradle until workaround for #404 is found.,1539126914.449229,0
+854,d717e6bc,Small javadoc fixes,1539126908.240237,0
+855,ad1cc38e,Removed the AdaptorClassLoader  as it is not used,1539126887.145773,0
+856,6ce0576d,Merge pull request #605 from arnikz/arnikz,1539126880.171795,0
+857,f7702737,Removed emtpy constructor,1539126872.410735,0
+858,cc0c5e58,Added JavaDoc to various classes of Local Adaptor.,1539126871.354228,0
+859,75aceba4,Changed test config to check current working dir instead of home. Added octopus.test.properties example,1539126861.189897,0
+860,86f0276b,use standard toString(),1539126857.0169199,0
+861,f1466af5,Add unit test for RelativePath.,1539126855.974629,0
+862,a8200783,Added descriptions for all gradle tasks,1539126850.15145,0
+863,580a0e60,Removed unused file,1539126849.256051,0
+864,2c3d41f8,For javadoc only show public and in overview list main entry points.,1539126844.710289,0
+865,03008ec6,Add test for FilesEngine.setOwner().,1539126843.590323,0
+866,efc1acb2,add queue to test settings,1539126842.5192618,0
+867,ec609d5c,More unittest for SSH and gridengine based schedulers,1539126838.997408,0
+868,f56fc8a2,Extended wait time for run-fixed-client-environment-test  as it times out on a checksum verification,1539126837.0488849,0
+869,9943369d,Extended wait time for run-fixed-client-environment-test  as it times out on a checksum verification,1539126836.062427,0
+870,8c0dc47a,jdk_switcher failed  using default jdk for travis-ci osx build.,1539126833.502674,0
+871,2f151d10,Removed dependency on commons-io-2.4.jar,1539126832.148916,0
+872,6955b3f5,Removed dependency on commons-io-2.4.jar,1539126831.0418198,0
+873,e26cedd1,Alpine based container could not run ant prepare test task because of missing bash shell.,1539126825.056716,0
+874,413ea89a,Use sandbox in test.,1539126815.167324,0
+875,d9e2f9f9,Removed double hashcode and equals after merge,1539126803.63225,0
+876,fae5f357,Move common adaptor deps to adaptor.gradle,1539126792.2803462,0
+877,937f3f1b,Updated the documentation.,1539126773.009031,0
+878,a06690e4,Updated documentation,1539126772.198253,0
+879,ed85107b,Updated documentation,1539126771.3471901,0
+880,8227a669,Do not reuse ~/.gradle in docker integration test as it will give a lock error when 2 gradle instants are running at the same time.,1539126770.093318,0
+881,09443fe9,Document gradle tasks,1539126762.642875,0
+882,3612e761,Split build-common.gradle  download all dependencies for offline build,1539126761.093884,0
+883,0e3949d8,removed failOnError clause from Gradle file,1539126750.418551,0
+884,d1a7e639,Update of docs,1539126748.453064,0
+885,b063f93a,Update of docs,1539126747.7001631,0
+886,8f8db3f7,Update,1539126746.75576,0
+887,e1e58192,Update of jacoco,1539126745.763644,0
+888,cc33aeb2,Update 2.0.0 docs,1539126744.5211449,0
+889,8c1b979b,PMD warnings fixes in Torque integration test,1539126709.4780462,0
+890,a84a9614,Updated settings of gradle to reflect removal of HDFS  S3 and gridftp.,1539126706.857213,0
+891,9a89c245,Upgrade wrapper to latest gradle,1539126693.978997,0
+892,d977b6e4,Using correct gradle property set in Travis,1539126682.3758461,0
+893,d94663c6,Switched of faileing test for OSX,1539126680.049634,0
+894,c55d76d5,Move gradle test config to own file + verbose testing when CI env var is set,1539126675.402465,0
+895,7d2b3c6a,Remove requirement for dockerIntegrationTest to run after test,1539126650.3902118,0
+896,b256226b,Added gradle tutorialPdf task.,1539126647.781609,0
+897,d57fc654,Moved some generic stuff up in Gradle build,1539126646.8418949,0
+898,22b271fe,renamed test functions,1539126645.7502382,0
+899,8a1fcd11,Updated adding adaptor documentation,1539126644.422453,0
+900,1baf3424,Update CHANGELOG.md,1539126639.974077,0
+901,006a4c53,Update CHANGELOG.md,1539126638.870709,0
+902,a6396c2e,Update sardine webdav client to 5.8,1539126637.702971,0
+903,60b4a1f2,update user guide,1539126635.7677279,0
+904,c9036541,Update CITATION.md,1539126631.1494,0
+905,23b4f1f4,Update CONTRIBUTING.md,1539126630.230691,0
+906,689dc766,Update CONTRIBUTING.md,1539126629.383424,0
+907,19ca87cf,Update DOI link,1539126628.343498,0
+908,0a41f112,Update CHANGELOG.md,1539126626.8393788,0
+909,6fe416c8,Update CHANGELOG.md,1539126625.736025,0
+910,9b64ae24,Documentation update,1539126621.432278,0
+911,e4d6f812,Update gradle plugins to latest version,1539126615.817874,0
+912,9a6dcf7f,Moved examples to examples SourceSet.,1539126606.3302288,0
+913,75837a83,Added distribution task called `assembleDist` and documentation how to compile/run examples.,1539126604.698536,0
+914,66db6a51,Fixed typo in exception message,1539126574.701042,0
+915,3d5d32e5,Merge pull request #306 from NLeSC/stylefixes,1539126572.2049198,0
+916,864c8fb9,Added dummy local Credentials. More examples.,1539126570.412951,0
+917,ba492585,Use gradlew wrapper instead of system provided gradle.,1539126568.12535,0
+918,fabded2e,Merge pull request #138 from NLeSC/feature/licenses,1539126560.973295,0
+919,2d8dccb5,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,1539126552.590841,0
+920,9cda5b0d,Path forgot its absoluteness in getName()  normalize() + more Path tests,1539126548.083724,0
+921,0e71b499,SshCredentials now throws exception if a newCertificateCredential is given an non-existing certfile,0.0,0
+922,2ce6ed00,Updated readme. Added new Logo,0.0,0
+923,7ab20b92,Utils: empty HashMap with sufficient capacity,0.0,0
+924,1d172004,typos,0.0,0
+925,874c5e5b,Update README.md,0.0,0
+926,33301782,Updated userdoc to reflect new names for Path and Pathname,0.0,0
+927,7e2e4784,Using emptyMap in GridEngineSetup,0.0,0
+928,443d98f2,Small cleanup SchedulerConnection,0.0,0
+929,3944bfc5,added obligatory hashcode() override for ftp file attributes,0.0,0
+930,c412190f,Adding interactive support for SLURM Jobs (incomplete),0.0,0
+931,936648d6,Initial implementation of a Torque Adaptor,0.0,0
+932,d27c100f,added logo to documentation,0.0,0
+933,43e45623,Added userguide generation to doc build,0.0,0
+934,cce103cf,added support for all job description options to slurm adaptor  including some tests,0.0,0
+935,8f1dce43,New JGlobus ProxyInit class. This ProxyInit class supports both 'legacy' as wel as new JGlobus Proxies.,0.0,0
+936,fd8510f7,GlobusUtil: updated static methods. Added private key decoder.,0.0,0
+937,0b2c29e2,Using Pattern in ScriptingParser  updated usages,0.0,0
+938,b502363f,Removed duplicate exception. Unused import.,0.0,0
+939,6abab6b4,Specifying collection size in JobDescription,0.0,0
+940,c64458c0,Added print to GridEngineSchedulerConnection,0.0,0
+941,6e9b9aae,Modified user doc,0.0,0
+942,3ae20829,Added check for null argument.,0.0,0
+943,fac3fc09,Added missing class.,0.0,0
+944,c6edefd2,Comments. Tested reverse active/passive setup. Doesn't work.,0.0,0
+945,ef646e8e,Code review and cleanup,0.0,0
+946,133ce762,allow 0 runtime as infinite,0.0,0
+947,9d1a1ee0,First working version of the Grid FTP adaptor. Basic File Systems methods work.,0.0,0
+948,b996a489,Removed actual (re)load of the certificates during initialization.,0.0,0
+949,db3f7c41,Added support for workdir to SSH,0.0,0
+950,54439a4c,Updated Comments. Updated concurrency/synchronized statements. Moved globus load/create methods to GlobusProxyCredentials.,0.0,0
+951,a6d0f92c,Updated the INSTALL documentation. Changed build to always build javadoc and examples  and copy their results to dist.,0.0,0
+952,be96ac14,Merge branch 'feature/gftp-3rdparty-copy' of github.com:NLeSC/Xenon into feature/gftp-3rdparty-copy,0.0,0
+953,6c22eab5,Merge remote-tracking branch 'origin/develop' into feature/gftp,0.0,0
+954,28f739ec,Updated the INSTALL documentation.,0.0,0
+955,1a5138f1,Added Globus Credential factory methods. Moved static Globus methods to GlobusUtil.,0.0,0
+956,675214c5,Updated GlobusCredentials with proxy factory methods.,0.0,0
+957,b708e318,Merge branch 'master' of github.com:NLeSC/Xenon into feature/gftp,0.0,0
+958,2085bcfe,refactored: wrapped protected members with protected accessors for style,0.0,0
+959,9c4894a9,Grid FTP monitor object.,0.0,0
+960,db7f3939,Added third party copy method. Works between 2 localhost clients. Needs more testing.,0.0,0
+961,56350870,Updated to new PosixFileUtils.,0.0,0
+962,9cb567e6,Moved generic posix file utils from SSHUtil to PosixFileUtils,0.0,0
+963,cbea013f,Updated userdoc to reflect new names for Path and Pathname,0.0,0
+964,cd8a7a9e,only use daemon threads in Xenon,0.0,0
+965,06fe5805,Rename of OctopusProcess to Process.,0.0,0
+966,d66f332f,Added extra debug statements to SSH files implementation.,0.0,0
+967,0cbe459c,Added missing file and dir cleanup to generic file test 20b.,0.0,0
+968,d66b240e,Changed warning about non existing certificate directory to debug level. Moved static Globus methods from GftpUtil to GlobusUtil. Default CA certificates only need to be (re)loaded when the actual proxy is created.,0.0,0
+969,ed4b0ed3,added option to specify resources (-l in sge scripts),0.0,0
+970,e7e72ba4,ftp file attributes no longer simple hash code for implementing equals,0.0,0
+971,73eb4c83,added support for slurm 2.6 (ran tests agains cartesius),0.0,0
+972,5d11ad62,Added static modifier to generic PosixPermission methods.,0.0,0
+973,bb1e0e20,More comments + typo. Added 2 FIXMEs...,0.0,0
+974,163c91a0,Update of readme,0.0,0
+975,ed6865ac,First version of refactored GridFTP client. Supports basic mslt msld mkdir rm get put methods.,0.0,0
+976,e0b88e88,Added cog-jglobus-1.8,0.0,0
+977,32ada6f1,"refactored: ""== false"" to ""!""",0.0,0
+978,ff43a27f,Applied beter formatting to updated code.,0.0,0
+979,b30e76f8,Typo.,0.0,0
+980,ab2d10f7,Updated Comments.,0.0,0
+981,13f8114b,Update README.md,0.0,0
+982,809998d1,Why did git remove my src dirs ?,0.0,0
+983,ef9472b5,Merge remote-tracking branch 'origin/develop' into feature/single-process,0.0,0
+984,88340b89,Update of README. Increased version number in build file to 1.1.0-beta.1,0.0,0
+985,d995dc09,refactored new directory stream,0.0,0
+986,32b8d79b,Merge branch 'develop' into feature/gftp-patch,0.0,0
+987,c2d2c268,Clean up FileUtils.,0.0,0
+988,09d39857,Added missing class.,0.0,0
+989,292c0f4b,Renamed all (most?) classes with Cobalt in the type name to Xenon,0.0,0
+990,91aab33c,passes 'create file',0.0,0
+991,0942482e,every in-/outputstream opens a new ftp file system,0.0,0
+992,4584156d,Added prepare-test step to build file that creates test dir with symlinks,0.0,0
+993,28de6f88,Added Xenon logo  updated README  INSTALL  NOTICE,0.0,0
+994,ee10d788,Renamed Cobalt to Xenon. Will the hurting ever stop ?,0.0,0
+995,c3e94171,Added more logging to SSH adaptor and added property to SSHTunnelTest to disable strictHostKeyChecking,0.0,0
+996,c55f9c2f,Updated the all exept tests.,0.0,0
+997,43289f7b,Formatting.,0.0,0
+998,074d8ec0,passes 'create directories',0.0,0
+999,be874b64,ftp files passes all tests,0.0,0
+1000,bb8b9a7b,Updated the main and file examples.,0.0,0
+1001,eded9349,passes 'create directory' test,0.0,0
+1002,6d23a108,added missing debug messages,0.0,0
+1003,71b2f248,throw exception when trying to read a symbolic link,0.0,0
+1004,48e54f88,Renamed all (most?) classes with Cobalt in the type name to Xenon,0.0,0
+1005,2effa845,Replaced all occurences of Cobalt in examples,0.0,0
+1006,3bb5cc01,can retrieve attributes of all files including root,0.0,0
+1007,ca9547f3,Rename Octopus/Cobalt to Xenon in userdoc  build files  and config files.,0.0,0
+1008,93191166,tests for permissions of ftp file attributes,0.0,0
+1009,6cbbc26f,Merge branch 'develop' of github.com:NLeSC/Xenon into feature/gftp-3rdparty-copy,0.0,0
+1010,2f8e88ad,Comments exceptions logging etc.,0.0,0
+1011,c285ad71,Formatting + comments.,0.0,0
+1012,870fbcf0,Changed usePassive property to useActive. Update comments + property descriptions.,0.0,0
+1013,7ca2d42b,Documentation update,0.0,0
+1014,a8e37368,Rename images to xenon-design.xxx,0.0,0
+1015,8990fcdb,Renamed Pathname to RelativePath. Moved special local methods in Files to FileUtils,0.0,0
+1016,d7092043,Added logger info statement.,0.0,0
+1017,7a78fa8b,ftp input stream,0.0,0
+1018,08402a0a,Updated DataChannelAuthentication methods and third party active modes. - Added methods to disable DCAU. - Active (3rd party) transfer mode between servers can now be reversed.,0.0,0
+1019,7535a010,Replaced all octopus with xenon,0.0,0
+1020,3d9f9aba,Renamed all in utils packages.,0.0,0
+1021,f09221e0,refactored directory streams and file attributes added file attribute directory streams for ftp,0.0,0
+1022,4d4dfadb,Removed jobs.getLocalScheduler(),0.0,0
+1023,f7faed6d,Replaced all occurences of Cobalt in xenon package (no sub packages),0.0,0
+1024,540bc526,Moved third party transfer methods to GftpThirdPartyTransfer class. Added support for extended mode partial third party transfers.,0.0,0
+1025,8eedf92b,gets ftp file attributes,0.0,0
+1026,ad34ae63,set cwd support in ftp files test config,0.0,0
+1027,a852a906,Updated all docs and enums in adaptors.,0.0,0
+1028,43bada55,improved error reporting for interactive jobs. Disallow environment variables in interactive jobs,0.0,0
+1029,bb68e771,Updated all docs and enums in engine.* packages.,0.0,0
+1030,3d0c5ab0,Update of docs,0.0,0
+1031,c3535065,Update of docs,0.0,0
+1032,06765a85,update of docs,0.0,0
+1033,a0e95ad7,update of docs,0.0,0
+1034,026be17b,Merge branch 'develop' of github.com:NLeSC/Xenon into feature/gftp,0.0,0
+1035,39ebe6da,ftp adaptor now throws exception when asked for it's jobs object,0.0,0
+1036,f54a01ef,[examples] make sure that Xenon is ended,0.0,0
+1037,ceae9662,Renamed last Octpus,0.0,0
+1038,73dec292,Added renames examples.,0.0,0
+1039,dd72a122,Updated build.xml,0.0,0
+1040,ec37b9ec,Updated all docs and enums in cobalt package.,0.0,0
+1041,09930144,update of docs,0.0,0
+1042,99979e18,small ftp refactoring,0.0,0
+1043,836453c1,Update of packages in docs dir,0.0,0
+1044,adb16733,Updated readme,0.0,0
+1045,5316a3c6,Update of various docs,0.0,0
+1046,d0bc81a9,Refactored the code. Replaced Octopus in all packages and types with Cobalt.,0.0,0
+1047,43c2df40,Added new Logo,0.0,0
+1048,cf78628c,Updated docs,0.0,0
+1049,ba5de05b,Updated all docs and enums in engine package (not subpackages).,0.0,0
+1050,9594ce1d,Update of docs,0.0,0
+1051,fe84f1d8,Updated build.xml and docs,0.0,0
+1052,de9892dd,Moved the licences files related to the GrifFTP adaptor to the correct location.,0.0,0
+1053,a5372a3d,Added close method to Credentials. Updated documentation.,0.0,0
+1054,c128b28d,Initial version of URL-less API,0.0,0
+1055,7c6db6fd,cleaned up ftp  removed prints,0.0,0
+1056,b8560033,registered ftp adaptor at xenon engine,0.0,0
+1057,d8c35abf,FTP adaptor can open and close a file system,0.0,0
+1058,5f72d74b,Added Proxy Creation methods.,0.0,0
+1059,7aa79a6d,improved documentation,0.0,0
+1060,98605c58,Updated build.xml,0.0,0
+1061,b6e52024,improved documentation,0.0,0
+1062,6a5b374b,Use AtomicNumber instead of object synchronization,0.0,0
+1063,98660f9d,improved documentation,0.0,0
+1064,6f9dd11a,removed some tests that only work locally,0.0,0
+1065,67d73f05,improved documentation,0.0,0
+1066,810871e4,improved documentation,0.0,0
+1067,16c1873c,Added missing globus lib dir in build.xml,0.0,0
+1068,abc5d907,improved documentation,0.0,0
+1069,88b7f75b,Update of docs,0.0,0
+1070,5ed653fd,Merge remote-tracking branch 'origin/develop' into smalledits,0.0,0
+1071,545356bc,SSHTunnelTest now takes username in config into account,0.0,0
+1072,b210c05e,added specific exception for jobs that are canceled  and adjusted test. Adaptors still need to be done,0.0,0
+1073,2a19b9ef,Reduce methods in Path,0.0,0
+1074,62331ff7,implemented copy,0.0,0
+1075,2168037c,Added QueueStatusImplementation + local implementation.,0.0,0
+1076,3993e79a,Added missing file.,0.0,0
+1077,f3634cb6,Started writing test for OctopusProperties.,0.0,0
+1078,abef4d12,Converted JobDescription to class (from interface).,0.0,0
+1079,2fd7d266,Merge remote-tracking branch 'origin/develop' into feature/testOctopusProperties,0.0,0
+1080,1fe71797,Implemented ssh output streams.,0.0,0
+1081,f787fdcd,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1082,443a4fbc,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1083,470907dd,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1084,10406415,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1085,4858a5d2,code cleanup,0.0,0
+1086,9fa1fda4,Replace OctopusRuntimeException with UnsupportedOperationException  because some methods immutable object are unsupported.,0.0,0
+1087,446be5fd,Add test for getLongProperty  getShortProperty  getDoubleProperty  getFloatProperty .,0.0,0
+1088,cb69f7dd,cleanup of ssh adaptor: fileSystemImpl is not subclassed anymore,0.0,0
+1089,16414473,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1090,459952af,Merge remote-tracking branch 'origin/develop' into feature/testOctopusProperties,0.0,0
+1091,743dded2,Throw more specific exceptions  set properties for known_hosts and strict host key checking.,0.0,0
+1092,765a4a50,Added new exceptions,0.0,0
+1093,49e6832c,Added SeekableByteStream to local adaptor.,0.0,0
+1094,d4f8e9c9,deleted debug file  ignore dist,0.0,0
+1095,d5cafcf8,added exceptions,0.0,0
+1096,713d59e9,implemented dir streams,0.0,0
+1097,42f6e855,Merge remote-tracking branch 'origin/develop' into feature/test_sandbox_submit_status,0.0,0
+1098,a8467f83,Merge remote-tracking branch 'origin/develop' into feature/test_sandbox_submit_status,0.0,0
+1099,4feb6c4e,Merge remote-tracking branch 'origin/develop' into feature/test_sandbox_submit_status,0.0,0
+1100,4dcac9a9,Merge remote-tracking branch 'origin/develop' into feature/test_sandbox_submit_status,0.0,0
+1101,b29a7f78,Merge remote-tracking branch 'origin/develop' into feature/test_sandbox_submit_status,0.0,0
+1102,4a46b53a,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1103,d89bbb8f,Throw exception if job failed.,0.0,0
+1104,a0469154,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1105,0b957108,FileEngine now forward all calls to adaptors. No shortcuts allowed.,0.0,0
+1106,6592ad1f,deleted debug file  ignore dist,0.0,0
+1107,6476b8e0,Removed stray import,0.0,0
+1108,e1c39302,Refactored PathAttribute to PathAttributePair Refactored AbstractPathAttribute to PathAttributePairImplementation,0.0,0
+1109,fad4caf8,Added getCWDFileSystem and getHomeFileSystem.,0.0,0
+1110,825dbf37,implemented attribute streams,0.0,0
+1111,21621f43,Added hashcode and equals to RelativePath.,0.0,0
+1112,f602bfb7,Added getLocalScheduler()  and changed local implementation accordingly.,0.0,0
+1113,78e67a7d,Renamed adaptor to gridengine QstatOutputParser now reads most qstat files Added a test dir to the gridengine adaptor Added a bunch of tests for the QstatOutputParser,0.0,0
+1114,0674bf81,Added QueueStatus + the needed getters in Jobs.,0.0,0
+1115,04d261ec,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1116,849746c7,Added Javadoc to part of the public API.,0.0,0
+1117,d9b05192,Moved toString of Adaptors to generic implementation in Adaptor base class,0.0,0
+1118,9fe6921d,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1119,9f5f66a6,First complete version of ssh jobs,0.0,0
+1120,71131758,Added resolve root path.,0.0,0
+1121,080e7c9e,Added javadoc to certificates.,0.0,0
+1122,7c52e4b2,working on ssh jobs.,0.0,0
+1123,d0962beb,Throw a detailed Exception if possible.,0.0,0
+1124,0f951fcd,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1125,5d3d49b9,Refactoring txt parsing into seperate class,0.0,0
+1126,23b58592,Implemented recursiveCopy and recursiveDelete.,0.0,0
+1127,69c1f77a,Added tests for recursiveCopy with file already exists errors.,0.0,0
+1128,e99d66ee,Added hasDetachedJobs and hasLocalStandardStreams to Scheduler.,0.0,0
+1129,99854d0b,Merge remote-tracking branch 'origin/develop' into feature/recursiveCopyAndDelete,0.0,0
+1130,8f64e564,Test SFTP to ui.grid.sara.nl,0.0,0
+1131,f2434d08,Print URI of FileSystem also.,0.0,0
+1132,f27fad01,Working on exit code support. Works except for race condition between qstat removal and qacct addition,0.0,0
+1133,2a266058,Added Apache 2.0 licence header to octopus and local adaptor.,0.0,0
+1134,9a671c9b,Added Apache 2.0 licence header to ssh and gridengine adaptors  and to tests.,0.0,0
+1135,48aaec98,Added LICENCE and NOTICE files.,0.0,0
+1136,77598aa8,Added missing exception type.,0.0,0
+1137,d1c7cfef,Added AbsolutePathIterator,0.0,0
+1138,b5c75dd9,Merge remote-tracking branch 'origin/develop' into feature/SandboxedLocalJobIT,0.0,0
+1139,a16ceaf3,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1140,ec8a94c6,Refactored AdaptorInfo to AdaptorStatus,0.0,0
+1141,e14a297c,Added OctopusIOException to all calls in Jobs,0.0,0
+1142,9819248b,working on ssh jobs,0.0,0
+1143,3642a20d,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1144,a1e47eb7,Merge branch 'develop' into feature/sge-adaptor,0.0,0
+1145,1b2f6297,JavaDoc of Files should be complete.,0.0,0
+1146,0e8253e4,JavaDoc for Jobs should be complete.,0.0,0
+1147,5b5b21e0,finished (very basic) grid adaptor,0.0,0
+1148,deb65cf9,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1149,1f0fbc89,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1150,735ca393,Merge remote-tracking branch 'origin/develop' into feature/SandboxedLocalJobIT,0.0,0
+1151,7dc59efe,Removed exception for newScheduler,0.0,0
+1152,e9d5c579,Added JavaDoc to jobs package. Should be reasonably complete.,0.0,0
+1153,e43340ad,Merge remote-tracking branch 'origin/develop' into feature/SandboxedLocalJobIT,0.0,0
+1154,5e7fbc8e,Added Javadoc to files package (not complete).,0.0,0
+1155,4b089994,Merge remote-tracking branch 'origin/develop' into feature/SandboxedLocalJobIT,0.0,0
+1156,ed70de95,New Generic File Integration Test. Tests basic FileSystem manipulations.,0.0,0
+1157,6a61610f,Structure of ssh job adaptor is now ok.,0.0,0
+1158,8ee93dda,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1159,c6bc5cd6,Merge remote-tracking branch 'origin/develop' into feature/test_sandbox_submit_status,0.0,0
+1160,7b4d9f1c,Merge remote-tracking branch 'origin/develop' into feature/test_sandbox_submit_status,0.0,0
+1161,d9539f75,Merge remote-tracking branch 'origin/develop' into feature/test_sandbox_submit_status,0.0,0
+1162,910157f1,Add mockito library for mocking in unit tests.,0.0,0
+1163,4ea9f970,Changed adaptor loading scheme to use lower case names for adaptors.,0.0,0
+1164,faf4d551,Merge remote-tracking branch 'origin/develop' into feature/mock_engine,0.0,0
+1165,c67cfe67,Add tests which use mockito to mock.,0.0,0
+1166,4f47b14f,Added implementations of getStatus and cancel in LocalAdaptor. Added JobStatus implementation.,0.0,0
+1167,626a652a,"Added specialized ""supports(String scheme)"" call to local adaptor that accepts null as a valid scheme.",0.0,0
+1168,0bfbf29e,working on ge adaptor,0.0,0
+1169,54030037,Added static modifier to OctopusFactory.end(),0.0,0
+1170,cdfea658,Add comment for stub reason.,0.0,0
+1171,8658bfbf,Merge branch 'develop' into feature/sge-adaptor,0.0,0
+1172,f3f7c2be,Merge remote-tracking branch 'origin/feature/mock_engine' into feature/mock_engine,0.0,0
+1173,0ea9a4a5,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1174,dc98392a,We don't use powermock. So remove it's jar.,0.0,0
+1175,44f88f8e,Merge remote-tracking branch 'origin/develop' into feature/mock_engine,0.0,0
+1176,464f8a7e,Merge remote-tracking branch 'origin/feature/mock_engine' into feature/mock_engine,0.0,0
+1177,30c59955,refactored exceptions,0.0,0
+1178,8baa8ae0,Merge remote-tracking branch 'origin/develop' into feature/octopus-exception,0.0,0
+1179,16b1f565,Add tests for FilesEngine.copy().,0.0,0
+1180,80940c4f,Merge remote-tracking branch 'origin/develop' into feature/mock_engine,0.0,0
+1181,8eade60f,merged with develop version,0.0,0
+1182,3058a4f1,Add OctopusEngineTest case.,0.0,0
+1183,7869301b,Added unit test for JobsEngine.submitJob.,0.0,0
+1184,16dd579c,first version that can create sessions and channels,0.0,0
+1185,886211b6,Initial Commit of new Octopus Library.,0.0,0
+1186,0ff15386,shared libs dir (empty),0.0,0
+1187,2ed1ac68,Added JaCoCo test coverage. Implemented as ant target called 'coverage'. Will generate coverage html report in test/reports/coverage.,0.0,0
+1188,cc65b763,Do not throw away *.class files. But keep in classes/ directory.,0.0,0
+1189,b208bd69,Move classes to build/classes.,0.0,0
+1190,62e89dac,Do not group adaptors on core  additional and unstable directories  but use ant to group adaptors.,0.0,0
+1191,8834107b,Converted engine.Adaptor from interface to abstract class. Removed RECURSIVE from CopyOptions  since no adaptors support it. Added recursiveCopy to FileUtils.,0.0,0
+1192,1c0ba027,Merge branch 'develop' into feature/unnest_adaptors_1plusM_buildxml,0.0,0
+1193,64ba11ba,For code coverage the classes and sources for the local adaptor could not be found.,0.0,0
+1194,6efb5f7b,Adaptor class loader now tests for adaptor names to load.,0.0,0
+1195,b37bb598,Added exceptions to Adaptor.filesAdaptor() and Adaptors.jobsAdaptor(),0.0,0
+1196,403d2cca,Add class/module diagrams to javadoc using https://code.google.com/p/apiviz/,0.0,0
+1197,0ea92ec5,Added eclipse code style definitions.,0.0,0
+1198,d217f1fc,Merge branch 'develop' into feature/local_coverage,0.0,0
+1199,ac0efce8,beginning of grid engine adaptor,0.0,0
+1200,4f26d075,Merge branch 'develop' into feature/sge-adaptor,0.0,0
+1201,5d3f278a,Refactor of certificate support  make it a first-class citizen.,0.0,0
+1202,3e75ce50,"Adaptor class loader now check for ""octopus.adaptor.load"" property.",0.0,0
+1203,2b303733,throwing more specific exceptions,0.0,0
+1204,552d9db9,Add test coverage for ssh adaptor.,0.0,0
+1205,36380a50,Add documentation how to add a new adaptor to the build chain.,0.0,0
+1206,26032313,Completed RelativePath implementation.,0.0,0
+1207,e9bef91a,Merge branch 'develop' into feature/test_files_engine,0.0,0
+1208,0e9c884a,Changed newPath to use RelativePath instead of String. Added newPath with multiple relative paths as parameter.,0.0,0
+1209,2636f849,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1210,6b8bf441,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1211,d744744d,Added exceptions to files()  jobs()  credentials() calls in Adaptor.,0.0,0
+1212,add2c2fc,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1213,3abfc653,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1214,3009cdd5,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1215,f98ed2a9,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1216,377b53c6,Added support for public/private key pairs  known_hosts file. First integration test now works.,0.0,0
+1217,3e19cb7b,Added copy constructor to RelativePath. Added constructor to AbsolutePathImplementation that accepts multiple RelativePaths.,0.0,0
+1218,97f54d21,Ssh credentials work again.,0.0,0
+1219,e66dcd7e,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1220,771ede8e,Partially implementation of LocalAdaptor.,0.0,0
+1221,eaf6fbe2,Renamed credential implementations.,0.0,0
+1222,1f933828,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1223,3a307fcf,Switched default entry point of local file system to user.home.,0.0,0
+1224,b49fce76,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1225,2c31eb97,Merge remote-tracking branch 'origin/develop' into feature/sge-adaptor,0.0,0
+1226,ef5b7a69,in progress: new qstat parsing approach,0.0,0
+1227,66263ba9,working on ssh adaptor,0.0,0
+1228,5c5fc28f,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1229,95581b64,Merge remote-tracking branch 'origin/feature/ssh-adaptor-3' into feature/ssh-adaptor-3,0.0,0
+1230,cc23f6e2,Moved Eclipse Java Formatter and clean Up xml files to https://github.com/NLeSC/wiki/wiki/Eclipe .,0.0,0
+1231,8cde3fb4,Merge remote-tracking branch 'origin/develop' into feature/document_adding_adaptor,0.0,0
+1232,33eea710,wrote mkdir,0.0,0
+1233,6b2f92a3,Update adding_adaptor.md,0.0,0
+1234,538f1777,Almost complete overhaul of API. Should be almost OK now...,0.0,0
+1235,86633fdc,Merge branch 'develop' of ssh://git@github.com/NLeSC/octopus.git into develop,0.0,0
+1236,61e25dcb,Added isLocal to path.,0.0,0
+1237,afb3396b,Disabled FilesEnginesTest,0.0,0
+1238,f1a6742d,working on caching of ssh connections,0.0,0
+1239,32f2e94f,Adjust tests to use FileSystem.,0.0,0
+1240,0e018d87,Merge remote-tracking branch 'origin/develop' into feature/ssh-adaptor-3,0.0,0
+1241,0cba7fc9,Working on parsing xml output of SGE. The approach used now relies on the xml schema  which unfortunatelly doesn't match the actual output very well.,0.0,0
+1242,c027f97c,Merge remote-tracking branch 'origin/develop' into feature/rename_test_package,0.0,0
+1243,462f0303,Rename tests so method name of test say <method under test>_<start state>_<expected behavior>.,0.0,0
+1244,c7cf7906,Merge remote-tracking branch 'origin/develop' into feature/test_files_engine,0.0,0
+1245,d73980c8,Converted Path to RelativePath and AbsolutePath. Moved OctopusProperties to engine.,0.0,0
+1246,1903be0d,Added JobTimeout test.,0.0,0
+1247,acdc8e4e,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1248,77b34448,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1249,57d7740c,use a single test config file for all adaptor tests,0.0,0
+1250,c27e93cc,Added javadoc link,0.0,0
+1251,727d1cf8,Added external licences,0.0,0
+1252,96788621,Removed SeekableByteChannel,0.0,0
+1253,8e465ebc,Refactored scripting adaptor support. Added copyright statement to all files. Added some javadoc,0.0,0
+1254,36236af8,Improved handling of command line arguments in SSH (now also supports spaces in arguments). Adding more status support to Slurm adaptor.,0.0,0
+1255,52c8d4c4,Debugging Slurm adaptor. Passes almost all tests now. Also check Slurm server version.,0.0,0
+1256,1b140a56,Ignore spurious acct output on stderr if it still returns exit code 0,0.0,0
+1257,c242b66f,added toString  hashcode and equals,0.0,0
+1258,193982e2,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into feature/one-test-config,0.0,0
+1259,5502ccdc,Removed unused imports,0.0,0
+1260,25dd74a9,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1261,33b4b742,properly handle sge installations without parallel environments,0.0,0
+1262,ae881e84,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1263,78fbc899,added test status prints to logger,0.0,0
+1264,5f71abd0,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into feature/scripting-cleanup,0.0,0
+1265,dbf868ad,Merge remote-tracking branch 'origin/develop' into feature/scripting-cleanup,0.0,0
+1266,30d6bc11,added tests for java job description,0.0,0
+1267,b64859e9,added more tests for java job description  added explicit support for JavaJobDescription to local adaptor,0.0,0
+1268,f3e711ca,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1269,d230a4c1,added/updated all licenses for used libraries,0.0,0
+1270,2f58e377,Merge remote-tracking branch 'origin/develop' into feature/javajobdescription-tests,0.0,0
+1271,1f127468,Added example. Added URIUtils to convert a user URI to a filesystem URI,0.0,0
+1272,79732fef,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1273,c9b5b857,More tests,0.0,0
+1274,8c8abc8b,Added first example. Removed unused test and util classes.,0.0,0
+1275,e5ba1aab,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1276,5af07bd4,Removed Octopus.end. Should use OctopusFactory.endOctopus(o),0.0,0
+1277,ac3c0f0c,do not check validity of jobdescription if custom jobscript is given. The information in the description is not used  checking it does not make sense,0.0,0
+1278,1b36b346,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1279,7d812804,Added dummy local Credentials. More examples.,0.0,0
+1280,34098f81,Added file copy and dir listing examples. Removed debug prints in copy engine.,0.0,0
+1281,2864c80c,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1282,cc17eac6,refactored adaptor to improve testing and prepare for parallel job support,0.0,0
+1283,016d56ea,Improved checking of JobDescription validity. Working on gathering info needed for parallel jobs (incomplete). Added parallel job support as an testing option. Explicitly disabled parallel jobs for now.,0.0,0
+1284,da6fc8eb,added (the beginning of) an Installation document,0.0,0
+1285,460e55a1,improved handling and checking of properties,0.0,0
+1286,9a597561,Added documentation.,0.0,0
+1287,aeaed312,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1288,91ed1334,added missing license headers,0.0,0
+1289,3642ddee,Update of documentation.,0.0,0
+1290,0b282e26,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1291,0bcab195,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1292,9d635885,Added toString to most obvious candidates in API and engine packages.,0.0,0
+1293,207da7ba,unused import,0.0,0
+1294,b00ecc23,Added Credentials.close to interface,0.0,0
+1295,fbbfcc51,Refactored job info checks into generic funtion. More tests. Clarified some exception messages. Properly handle null queue names in getQueueStatuses(),0.0,0
+1296,8c27cc93,finished implementing slurm tests,0.0,0
+1297,381f4c4b,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0.0,0
+1298,2b540e3f,Changed signature of new...Credential methods,0.0,0
+1299,3abd3e0f,use queue name from config,0.0,0
+1300,2754f481,refactoring and testing grid engine adaptor,0.0,0
+1301,ee90e3c9,added some SchedulerConnection tests for ge adaptor,0.0,0
+1302,8223dc6d,unused imports,0.0,0
+1303,fd4a92e9,implementing slurm unit tests,0.0,0
+1304,09f365d9,adding tests for GridEngineSetup,0.0,0
+1305,bb8ff829,added gridengine xml parser tests,0.0,0
+1306,d9948b5f,Replaced various constant arrays with ImmutableArray<T>,0.0,0
+1307,ee8eb98d,added grid engine queue and parallelenvironment info tests,0.0,0
+1308,df843332,Merge remote-tracking branch 'origin/develop' into feature/gridengine-unit-tests,0.0,0
+1309,cb45319d,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1310,f9167306,keep track of deleted jobs for a while,0.0,0
+1311,dd886fd3,unused import,0.0,0
+1312,8424e25f,implemented getjobs() to only fetch qstat info once,0.0,0
+1313,db2d7c9d,Improved formatting of adaptor documentation generator.,0.0,0
+1314,4277fdff,refactoring scripting adaptors to improve testability,0.0,0
+1315,575db387,added some unit tests (incomplete),0.0,0
+1316,3a585bec,added option to set parallel environment in test config,0.0,0
+1317,b8ca067a,add output files to job description,0.0,0
+1318,da56d782,refactoring scripting adaptors to improve testability,0.0,0
+1319,d001897c,Added SSH tunnel capability to SSH adaptor,0.0,0
+1320,c4f922fc,refactoring scripting adaptors  adding unit tests,0.0,0
+1321,23506aa8,scripting unit tests,0.0,0
+1322,949feef7,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0.0,0
+1323,10682ad7,Added signalling in JobQueue to speedup waitUntilDone,0.0,0
+1324,9f3d562f,adding tests for scripting adaptor,0.0,0
+1325,85feefa7,Initial version of adaptor doc generator.,0.0,0
+1326,7d6c13f8,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0.0,0
+1327,392e3a5c,formatting code with new formatter,0.0,0
+1328,7cc9b02f,refactoring slurm adaptor to improve testability,0.0,0
+1329,31bfdfbc,refactoring slurm adaptor to improve testability,0.0,0
+1330,a8bd76a7,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0.0,0
+1331,678eb958,adding tests to slurm adaptor,0.0,0
+1332,50df30ae,Added copy constructor to JobDescription  and use it in adaptors,0.0,0
+1333,3ae42c22,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0.0,0
+1334,070c9b5e,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1335,9cceda4c,Added ssh specific multi job test to test SshSession cache.,0.0,0
+1336,4adcb581,SshSession cache now uses reduces channel limit of 7. Seems to work fine with openssh,0.0,0
+1337,ce15fab4,Added more tests,0.0,0
+1338,825630a4,Merge branch 'develop' of github.com:NLeSC/octopus into more_filetests,0.0,0
+1339,4c2719e5,Added debug statements to JobQueues,0.0,0
+1340,db21cc9a,Removed commented code. Added (start of) new file test.,0.0,0
+1341,a272d545,Added more File tests.,0.0,0
+1342,30da842b,Added more file tests. Added hashCode and equals to LocalFileAttributes and PathAttributesPairImplementation.,0.0,0
+1343,2605ce7f,Added more tests. Added decent options checks to Files.newOutputStream.,0.0,0
+1344,0b0f922c,Add example to Sandbox.,0.0,0
+1345,68729ac7,Added more tests.,0.0,0
+1346,ad22ffc4,Added more tests,0.0,0
+1347,bbaf2cfe,Added more Integration Tests. Renamed all Integration FileTest to 'ITFileTest' Added explicit 'testuser' for SFTP File Tests.,0.0,0
+1348,d5150b4e,More tests.,0.0,0
+1349,33816cf7,More tests.,0.0,0
+1350,25b51176,More tests.,0.0,0
+1351,72f083ad,More tests. Some require existing directory structure to be available.,0.0,0
+1352,3be6dc86,More tests.,0.0,0
+1353,43cc4d33,More tests (for creditials).,0.0,0
+1354,e59c14b7,More tests.,0.0,0
+1355,be02de9d,More tests.,0.0,0
+1356,22c2ccf6,Changed behavior of addUploadFile/addDonwloadFile. When addUploadFile was used without a destination string the destination path became the sandbox path. Which throws already exists exception. Now the sandbox path and the getFileName() of the source path will be used as the destination path.,0.0,0
+1357,4374a0b7,Added debug statements to LocalJobTest.,0.0,0
+1358,8acfecb6,catch specific exception in test,0.0,0
+1359,fbbccc6f,Can not check if target is directory when it does not exist. So remove check.,0.0,0
+1360,20773cad,Without these changes the sandbox could not be serialized to json using Jackson library.,0.0,0
+1361,7ed45242,Add tests when path is / then getParent should return null.,0.0,0
+1362,e980732f,Add CopyOption argument to upload() and download() of Sandbox.,0.0,0
+1363,7e9b4d6d,Changed adaptor loading scheme to the simplest implementation known to man! (and changed src tree and build structure accordingly).,0.0,0
+1364,7ecc9e19,Merge remote-tracking branch 'origin/develop' into feature/sandbox_copyoption,0.0,0
+1365,458e9dc1,Add IGNORE_EXISTS to CopyOption.,0.0,0
+1366,7b805a85,Added support for interactive jobs.,0.0,0
+1367,f1c308cd,Remove xml-test target  as test target generates both txt and xml output.,0.0,0
+1368,8d0ddfe1,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0.0,0
+1369,c431392d,Add license header.,0.0,0
+1370,2cf4d223,first version of interactive ssh jobs,0.0,0
+1371,44f45a48,Added JobStatus.isRunning(),0.0,0
+1372,f7db5864,updated JavaJobDescription to new API,0.0,0
+1373,7d0e72bc,implemented default credentials for ssh,0.0,0
+1374,cfca423f,Added missing class,0.0,0
+1375,c418e2c6,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1376,dd53a7fa,Added missing import,0.0,0
+1377,5cb53ba7,Updated NOTICE file to include Jsch. Added notices directory.,0.0,0
+1378,fc987a45,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1379,009ef7e5,add reminder FIXME,0.0,0
+1380,7266ee46,Merge branch 'develop' into feature/gridengine-advanced,0.0,0
+1381,ed946a6d,Merge new JobExceptions into current branch.,0.0,0
+1382,ea963105,Properly set a working directory. Handle (invalid) queue names. Set queue in submission script. Improved job status (also support error status).,0.0,0
+1383,581b6cae,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1384,89617d0a,removed debug exit code statement,0.0,0
+1385,ea80e282,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1386,8d5ee816,Added some exit code tests. Completed stdin/out/err support for gridengine adaptor,0.0,0
+1387,909ede18,refactored: removed clone() override because Clonable interface was unnecessary,0.0,0
+1388,6032336b,Merge remote-tracking branch 'origin/develop' into feature/job-canceled-exception,0.0,0
+1389,799fe5a7,made adaptors set a JobCanceledException in the status if a job was canceled. Improved GridEngine qacct parsing,0.0,0
+1390,598cdd93,set gridengine default queue to null  as it is impossible to determine,0.0,0
+1391,27bf822c,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1392,912f66ad,Added SshSession object which hides most of JSch from the adaptor. First requirement for connection caching.,0.0,0
+1393,3539ee44,added some tests for the working directory of a job. Working on completing all jobdescription features in the gridengine adaptor. Giving the ssh tests a bit more time to complete,0.0,0
+1394,e57b8ae6,added support for environment variables to ge adaptor  and a matching test to the generic job tests,0.0,0
+1395,0d449ea7,Added caching of sftp channels to SshSession. Note that exec channels cannot be cached (I think).,0.0,0
+1396,f4f3598d,Merge remote-tracking branch 'origin/develop' into feature/gridengine-complete-jobdescription,0.0,0
+1397,143ed443,refactored gridengine scripting interface so it should be generic,0.0,0
+1398,00822497,SSH adaptor now refuses to run jobs with environment variables.,0.0,0
+1399,6437f999,Merge remote-tracking branch 'origin/develop' into feature/gridengine-complete-jobdescription,0.0,0
+1400,55bf07e2,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1401,0a0e4373,Update of userguide.,0.0,0
+1402,95887826,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1403,2cd771dc,moving all gridengine specific code to seperate class,0.0,0
+1404,cf1cde88,Updated README.md. Started user guide.,0.0,0
+1405,e52e16fd,Updated README.md.,0.0,0
+1406,7efa3ac6,Update of userguide.,0.0,0
+1407,67c469b1,Added images dir (needed for docs).,0.0,0
+1408,2ce14c0e,Cleanep up test.,0.0,0
+1409,c0f1d97b,Cleanup test: * Add javadoc * Do formatting * Remove directory when done * Use logger instead of System.out,0.0,0
+1410,3ea7114a,Merge remote-tracking branch 'origin/develop' into issue109test,0.0,0
+1411,84ec885c,Refactoring GE adaptor. Added generic job tests to gridengine tests.,0.0,0
+1412,711091e9,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1413,a4757689,More tests. Coverage now 81 percent...,0.0,0
+1414,26fc929b,Give jobs a bit longer to complete.,0.0,0
+1415,5c923db2,Implemented working directory support to GridEngine,0.0,0
+1416,c17640dd,Implemented working directory support to GridEngine,0.0,0
+1417,c1e711c4,Merge remote-tracking branch 'origin/develop' into feature/gridengine-advanced,0.0,0
+1418,0887ce74,simplified class stucture a bit,0.0,0
+1419,cf3db302,Refactor of command line tool interface code,0.0,0
+1420,6d52428c,increase visibility of some functions to aid debugging,0.0,0
+1421,71d0acf2,Added test for horizontal line in parsing tables,0.0,0
+1422,885480fc,Tested changes in newFileSystem,0.0,0
+1423,bc5537f9,refacored: wrapped protected member with protected accessor,0.0,0
+1424,41c6afbb,Additional tests,0.0,0
+1425,aad69bea,"Revert ""Replace tabs with 4 spaces and removed trailing spaces""",0.0,0
+1426,1d02f26e,"Revert ""Tabs to spaces""",0.0,0
+1427,36cac89d,Merge branch 'master' into file-integration-test2,0.0,0
+1428,d8f621b3,Switched from job comment to job name to find interactive jobs in slurm as comments are not always stored by the accounting.,0.0,0
+1429,0166c022,More S3 better,0.0,0
+1430,e23b5a4b,Merge remote-tracking branch 'origin/master' into S3AdaptorNoGitHell,0.0,0
+1431,9c2e1a08,More documentation and exception stuff,0.0,0
+1432,d4ce8c2d,Merge branch 'copyrecursivemodereplace' into exceptiondocs AND lots of exception and documentation and some small API additions  namely:,0.0,0
+1433,8e55563d,Small changes to documentation,0.0,0
+1434,aa451720,Copystatus executation exception correctly wrapped.,0.0,0
+1435,0ca92431,Merge remote-tracking branch 'origin/master' into exceptiondocs,0.0,0
+1436,3cc6805e,Merge remote-tracking branch 'origin/master' into exceptiondocs,0.0,0
+1437,971d11f5,Merge branch 'file-integration-test2' of github.com:NLeSC/Xenon into file-integration-test2,0.0,0
+1438,cfd62b74,Implement detection of hidden file in sftp adaptor,0.0,0
+1439,92573251,Added tests for listing with hidden file,0.0,0
+1440,261b76f9,File adaptor returns user working directory as entryPath,0.0,0
+1441,936f6e2a,Do we need to remove drive letter in entry path?,0.0,0
+1442,a707cc21,Merge remote-tracking branch 'origin/copyrecursivemodereplace' into pr-master,0.0,0
+1443,133a4402,Merge remote-tracking branch 'origin/exceptiondocs' into pr-master,0.0,0
+1444,9889d82b,Merge remote-tracking branch 'origin/sftp-hidden-file' into pr-master,0.0,0
+1445,e281f305,Merge remote-tracking branch 'origin/entrypath-workdir' into pr-master,0.0,0
+1446,b4610c2a,Added new Webdav FileSystem implementation based on sardine instead of jackrabbit,0.0,0
+1447,d0832302,Simplified PathAttributesImplementation equals and hashcode to only include basic info,0.0,0
+1448,b30dbfd2,Change path semantics. (UNTESTED),0.0,0
+1449,2e091227,Tabs to spaces,0.0,0
+1450,8f9c8441,Dont name field same as method,0.0,0
+1451,f3422954,Path tests,0.0,0
+1452,c5cf39cd,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1453,4fcc99ab,Merge branch 'master' into FileSystem_integrationTests,0.0,0
+1454,295b5fac,Merge branch 'master' into FileSystem_integrationTests,0.0,0
+1455,d63e011f,Changed jacocoMergedTestReport to include all exec files it can find,0.0,0
+1456,6dc26c95,Merge branch 'master' of https://github.com/NLeSC/Xenon into slurm-multi-version,0.0,0
+1457,861bf1e2,More integration and fixedClientEnvironment tests,0.0,0
+1458,cfd07c55,More unit and integrationTests,0.0,0
+1459,bbcbd93c,More filesystem tests,0.0,0
+1460,a423ab48,More unit and integrationTests,0.0,0
+1461,d476533c,Added missing class,0.0,0
+1462,d4ba767e,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1463,7cf027c8,Simplyfied FTP adaptor,0.0,0
+1464,4657adcb,Added seperate doc generator,0.0,0
+1465,c0815fdf,Replace tabs with 4 spaces and removed trailing spaces,0.0,0
+1466,a8c1f01e,Removed private constuctor test,0.0,0
+1467,9afe7b11,Named copy threads,0.0,0
+1468,dc9169ed,CopyThread is now daemon,0.0,0
+1469,ef477ba7,More integration tests (not passing yet).,0.0,0
+1470,f7a741a3,Remove . and .. from Listsing,0.0,0
+1471,e19f15b3,Generalized handing of queue info into ScriptingScheduler,0.0,0
+1472,c0270428,Merge remote-tracking branch 'origin/master' into slurm-multi-version,0.0,0
+1473,ddc641aa,Added equals/hashcode for public api + added additional throws to javadoc,0.0,0
+1474,b4cbcd62,Dont mutate license header,0.0,0
+1475,58444ab5,Merge branch 'slurm-multi-version' into publicapi-with-equals,0.0,0
+1476,7f24dd8c,Dont mutate license header with IDE autoformat,0.0,0
+1477,a6fe9357,corrected copy-paste error in javadoc,0.0,0
+1478,2ba32301,Merge remote-tracking branch 'origin/master' into S3AdaptorNoGitHell,0.0,0
+1479,9b6481ec,Split adaptors out of tests,0.0,0
+1480,fbdebd82,Testing...,0.0,0
+1481,09b28500,Testing...,0.0,0
+1482,98a40451,Testing...,0.0,0
+1483,ff795a30,Testing...,0.0,0
+1484,57dfd57c,Testing...,0.0,0
+1485,b7395759,Testing...,0.0,0
+1486,a57bb9aa,Testing...,0.0,0
+1487,2af0a9b2,Testing...,0.0,0
+1488,c30250b7,Testing...,0.0,0
+1489,fcc16b0d,Testing...,0.0,0
+1490,2c3d77f6,Testing...,0.0,0
+1491,dfac07f9,Testing...,0.0,0
+1492,3cfd9fe7,Testing...,0.0,0
+1493,cf219a41,Solve a bunch of Windows tests,0.0,0
+1494,5dd6d43c,Testing...,0.0,0
+1495,c150ce7a,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1496,facd7546,Remove various leftover debug prints,0.0,0
+1497,6c74cb35,Resurrect HDFS adaptor from Git commits,0.0,0
+1498,044a0fe5,More HDFS better,0.0,0
+1499,7f238e6c,Make spotless happy,0.0,0
+1500,53af4313,Towards integration testing,0.0,0
+1501,d4ec6fc0,Towards integration test of HDFS,0.0,0
+1502,67226ecb,removed commented out code,0.0,0
+1503,764d2a21,refactored XenonProperties .clear()  .exclude() and .include(),0.0,0
+1504,cbf29526,resolved sonarcloud code smell: platform-specific line separator,0.0,0
+1505,b444b059,More unit tests,0.0,0
+1506,a1c502bf,Added test for default  certificate  and certificate with password credentials,0.0,0
+1507,baf4e365,Removes debug prints,0.0,0
+1508,3f6e53b2,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1509,4b90df91,Allow passwordless credentials,0.0,0
+1510,2ad9cc18,Removed test_copyFileCancelImmediately for now  as it is unclear why it fails sometimes,0.0,0
+1511,92e20c53,Removed test_cancelImmediately  as if seems to fail on mac,0.0,0
+1512,4b700e65,More tests,0.0,0
+1513,3021eb0d,Removed commented code,0.0,0
+1514,08bdc015,Merge branch 'master' into S3AdaptorNoGitHell,0.0,0
+1515,a3ac7bdd,Merge branch 'master' into fixpathsemantics,0.0,0
+1516,45fd12f6,Merge branch 'master' into S3AdaptorNoGitHell,0.0,0
+1517,0d39d4f6,Merged master into branch,0.0,0
+1518,d8230ad0,Merge branch 'S3AdaptorNoGitHell' of github.com:NLeSC/Xenon into S3AdaptorNoGitHell,0.0,0
+1519,3215219f,Commented test that has unclear semantics.,0.0,0
+1520,1f603ed3,Merge branch 'master' into fixpathsemantics,0.0,0
+1521,672a5cb5,More tests for sftp,0.0,0
+1522,31d46bc3,Added spotless task to gradle and applied cleanup to all code,0.0,0
+1523,1189b6d9,Added spotless task to gradle and applied cleanup to all code,0.0,0
+1524,980b7cd5,Added initial SSH test,0.0,0
+1525,b7ac0b3c,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1526,c688c0dd,Added some tests on exists() with relative paths,0.0,0
+1527,8d01e135,More tests,0.0,0
+1528,de662ff6,Merge branch 'relative-file-tests' of github.com:NLeSC/Xenon into relative-file-tests,0.0,0
+1529,3d47b275,Added working directory to filesystem,0.0,0
+1530,fc31ac7b,Merge branch 'master' into relative-file-tests,0.0,0
+1531,377a31f8,Added support for relative paths to all adaptors. FileSystem.getEntryPath replaced getWorkingDirectory  added setWorkingDirectory,0.0,0
+1532,4bd2cd1f,Force all test to implement complete LocationConfig,0.0,0
+1533,3e9a05a1,Removed unnecessary dependencies,0.0,0
+1534,b055cc08,More integrationTests,0.0,0
+1535,a7051d18,Merge branch 'feature/utils' into feature/torque,0.0,0
+1536,03b4b5e1,Initial push of latest API. All test are broken now,0.0,0
+1537,9f2968a2,Replaced various deadline calculations with a single one in Utils,0.0,0
+1538,827fdcae,Added support to get the list of supported properties from the XenonFactory,0.0,0
+1539,a2756141,Refactored Xenon internals to split adaptors into file and job part. BEWARE STILL UNTESTED!,0.0,0
+1540,bb2e0ec6,Remove concept of Component from XenonProperties  as it is no longer needed,0.0,0
+1541,d3193c2b,Initial S3 code,0.0,0
+1542,6d7dece1,Remove the Xenon and XenonFactory objects. Replaced by simple Xenon object returning a singleton File or Jobs,0.0,0
+1543,45f22cee,contributing guidelines file rephrased something,0.0,0
+1544,2bf119c7,now using numbered lists  no longer using first second third to identify cases.,0.0,0
+1545,654ce096,More s3 adapter implementatio,0.0,0
+1546,147c2ebe,added a ROADMAP.md,0.0,0
+1547,f14a53d7,More S3,0.0,0
+1548,325c4aec,JCoulds!,0.0,0
+1549,84a5ca30,Update link to javadoc and release info,0.0,0
+1550,2ee97c48,Merge branch 'APIchange' into S3Adapter,0.0,0
+1551,f27b7603,JCoulds instead of S3 directly.,0.0,0
+1552,d07c2a29,Renamed Job to JobHandle. Remove several unused classes and interfaces.,0.0,0
+1553,30b1a721,Added generic async copy implementation in FileSystem,0.0,0
+1554,0ecdaf2f,Renamed file and jobs package to filesystems and schedulers. Added initial unittests,0.0,0
+1555,53926485,Initial HDFS adapter,0.0,0
+1556,a704eeb2,HDFS implementation,0.0,0
+1557,209b7e55,Merge branch 'APIchange' into S3Adapter,0.0,0
+1558,e4b5e9b0,Remove old Amazon S3 adaptor (now replaced by JClouds),0.0,0
+1559,71dba27d,More unit tests,0.0,0
+1560,7a84bb50,more unittests,0.0,0
+1561,8fef1315,Added unittests,0.0,0
+1562,e4bcfa8f,Preparations for 1.2.2 release,0.0,0
+1563,3effb870,more unittests,0.0,0
+1564,6e1ffa24,Added more tests for waitUntilDone and waitUntilRunning,0.0,0
+1565,76835abd,Updated javadoc version in README,0.0,0
+1566,04d35d8f,Added slurm version 15.08.6,0.0,0
+1567,84457d76,Added 1.2.0 javadoc to docs,0.0,0
+1568,f5241124,Added 1.2.0 post,0.0,0
+1569,a9a74f65,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1570,57ee8783,Repair Jekyll site,0.0,0
+1571,2b14c99d,Added developer javadoc to docs/versions,0.0,0
+1572,f2cb2cb8,Update README.md,0.0,0
+1573,a4bd053e,Update README.md,0.0,0
+1574,45d8c3cf,Updated documentation of waitUnitRunning and waitUntilDone to cunningly avoid a discussion on the definition of forever,0.0,0
+1575,139b39e2,Added tests for waitUntilDone,0.0,0
+1576,5bf7a569,Removed extra test on timeout that produced wrong exception type,0.0,0
+1577,1c9e7a29,Preparations for 1.2.2 release,0.0,0
+1578,dafda6b1,Adapted existing test to new exception type being thrown when timeout has negative value,0.0,0
+1579,f6954cfa,Update README.md,0.0,0
+1580,a8a247ae,Added 1.2.1 javadoc,0.0,0
+1581,cef50f88,Switched to new logo,0.0,0
+1582,147a26cc,Added SonarQube,0.0,0
+1583,980f0d4b,Added SonarQube analysis to Travis-CI,0.0,0
+1584,234e35cf,Changed sonarqube config,0.0,0
+1585,e4d7f1e1,Commented out sonarqube for now  as it breaks travis. Added javadoc without the timestamps.,0.0,0
+1586,1fae87f2,Update README.md,0.0,0
+1587,87f79467,Update README.md,0.0,0
+1588,8ff770c8,Changed string.equals order as indicated by sonarqube,0.0,0
+1589,6e11b426,more unittests,0.0,0
+1590,680a473a,Removed Docker build from Xenon,0.0,0
+1591,8fa3b722,Combine basedir and path by resolving instead of concat.,0.0,0
+1592,9e2b4651,Added gridengine test skeleton,0.0,0
+1593,5e6aeb46,Use env vars for artifact and version + typo,0.0,0
+1594,99f7ac4f,Typo,0.0,0
+1595,d041564b,Forgotten commit,0.0,0
+1596,95507604,Integration test,0.0,0
+1597,c87a6046,Updated CHANGELOG,0.0,0
+1598,c44a3185,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1599,2144ddc3,Initial ftp intergrationtest,0.0,0
+1600,7be44385,Moved StreamForwarder to public utils package,0.0,0
+1601,76b23f3b,Added missing license header,0.0,0
+1602,c721bf4b,Added webdav tests,0.0,0
+1603,7fe18722,Added Torque integation test skeleton,0.0,0
+1604,add0f8b0,Added webdav integration test skeleton. Added more info on symlinks to FileSystemDescription.,0.0,0
+1605,089bb2b8,Merge remote-tracking branch 'origin/APIchange' into ci,0.0,0
+1606,6d26143c,More Scheduler integrationTests,0.0,0
+1607,543c433d,Merge branch 'APIchange' into S3Adapter,0.0,0
+1608,c60432d0,It worketh!! (A little bit!),0.0,0
+1609,d019a939,Merge branch 'master' into S3Adapter,0.0,0
+1610,c7074b9f,More integrationTest for schedulers,0.0,0
+1611,3d41ec21,Integration tests,0.0,0
+1612,c4e03866,Various small interface tweaks,0.0,0
+1613,83fdb0e0,Explain what jitpack config file is for,0.0,0
+1614,dbe8a331,Adaptor description(s) throws UnknownAdaptorException,0.0,0
+1615,ca0cf190,Added drive letter to supported locations of file adaptor,0.0,0
+1616,cf2b5d81,Create absolute symlinks for Windows tests,0.0,0
+1617,4c73442b,Typos in Travis Appveyor,0.0,0
+1618,8df6881b,Use string format instead of +,0.0,0
+1619,968f8b7a,Added link to https://docs.gradle.org/3.3/userguide/java_plugin.html#test_filtering,0.0,0
+1620,0d0dac87,More SSH tests,0.0,0
+1621,f5bfcfdd,Adjusted gradle and docs to new test sets,0.0,0
+1622,24c6a722,Implemented 2 tests for all tasks,0.0,0
+1623,050a22c2,Updated travis and appveyor,0.0,0
+1624,d0afb5e2,Only test Travis CI against Oracle 8,0.0,0
+1625,25e5f9bd,Added support for creating symbolic links,0.0,0
+1626,05fdf370,Merge branch 'APIchange' of github.com:NLeSC/Xenon into APIchange,0.0,0
+1627,98ab492f,HDFS,0.0,0
+1628,909b0f85,More unit tests,0.0,0
+1629,58178e2d,Merge branch 'APIchange' into S3Adapter,0.0,0
+1630,e0eb7e2c,Adjust docker image name of fixedClientEnvironmentTest task,0.0,0
+1631,9792a74c,Mocked posix access,0.0,0
+1632,31ff9dc7,Added missing files,0.0,0
+1633,ca5fb9d8,Add isonline to doc generator,0.0,0
+1634,6fcac852,More unittests,0.0,0
+1635,4e728063,More unittests for slurm,0.0,0
+1636,770dcba5,Added initial slurm integrationTests on docker,0.0,0
+1637,eb9f823b,Changed slurm image name,0.0,0
+1638,3c031dcd,Removed Location class as it was not longer relevant. More integrationTests,0.0,0
+1639,61cf2b0c,Forgotten test,0.0,0
+1640,1c87cf63,Merge remote-tracking branch 'origin/APIchange' into S3Adapter,0.0,0
+1641,5a4f0aaf,Replaced JobHandle by simple String,0.0,0
+1642,1242a204,Updated TESTING doc,0.0,0
+1643,de976207,Dont install docker-compose in Travis  its already installed,0.0,0
+1644,e2bde0e9,Rewrote adaptor doc generator,0.0,0
+1645,a924a08c,resolved sonarcloud code smell: implicit constructors,0.0,0
+1646,3cc637fc,resolved sonarcloud code smell: unused private variable,0.0,0
+1647,e02d59e8,resolved sonarcloud code smell: unused method parameter (loadKnownHosts! controversial  I know),0.0,0
+1648,0a80d25e,Moved adaptors into seperate subprojects,0.0,0
+1649,8df6389b,updated style for RSD badge,0.0,0
+1650,98b4097f,Update README.md,0.0,0
+1651,d1941b0f,Preparing for release 2.3.0,0.0,0
+1652,0bacac6e,RELEASE.md,0.0,0
+1653,985379d0,Switched of hadoop to work around dependency clashes,0.0,0
+1654,c0699988,Merge branch 'master' into no-hadoop,0.0,0
+1655,72ec19db,Merged master into branch. Bumped version,0.0,0
+1656,cf5c4c7c,Check in GridEngine if PE is set  and skip it in script if not,0.0,0
+1657,cf3208bf,Upped version,0.0,0
+1658,31c5c686,Added directory structure for core and adaptors,0.0,0
+1659,fbc7fabe,Added directory structure for core and adaptors,0.0,0
+1660,cc6e13c5,Moved main xenon classes to core,0.0,0
+1661,d92c98a9,updated badge,0.0,0
+1662,6c4f9c05,Moved integrationTest classes to adaptors,0.0,0
+1663,acb88c48,Moved unittest to adaptors and core,0.0,0
+1664,202e9d67,Move docker-compose configs to adaptors,0.0,0
+1665,973a6277,Move fixedclientEnviroment tests to adaptors,0.0,0
+1666,07c684b5,Moved integration test base classes to test-utils,0.0,0
+1667,66c7334a,Added webdav adaptor,0.0,0
+1668,45f4faef,Added ftp adaptor,0.0,0
+1669,9eb3c778,Added slurm  gridengine and torque,0.0,0
+1670,4c9557d1,Introduced pack dependency to explicitly state which dependencies to include in jarjar,0.0,0
+1671,48c6db3f,Added docker compose dependency to ftp,0.0,0
+1672,5536139d,Ignore */build,0.0,0
+1673,af9f944b,Update README.md,0.0,0
+1674,6f3cde3b,added RSD badge,0.0,0
+1675,34a726e5,Use Shadow plugin for adaptors + disabled classloader for each adaptor,0.0,0
+1676,b65bab4d,Deleting local tests,0.0,0
+1677,1d1c33db,Merge remote-tracking branch 'origin/master' into hdfs,0.0,0
+1678,ea46b551,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1679,5fccef5a,HDFS docker tests,0.0,0
+1680,63afc461,More tests to improve coverage,0.0,0
+1681,8bf9a87a,Merge branch 'master' into hdfs,0.0,0
+1682,3570d3e8,Final touches on HDFS,0.0,0
+1683,3208517f,Finally tests go through!,0.0,0
+1684,6f410436,Merge remote-tracking branch 'origin/master' into hdfs,0.0,0
+1685,222d0aa5,Update in preparation of 2.1.0 release,0.0,0
+1686,35aca598,Added keySet() and getDefault() methods to CredentialMap,0.0,0
+1687,34f96a7b,Final touches on HDFS testing,0.0,0
+1688,89ac511e,Merge remote-tracking branch 'origin' into hdfs,0.0,0
+1689,287ffb55,Code cleanup,0.0,0
+1690,edf52403,Reverted changes to CredentialMap,0.0,0
+1691,766593ba,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1692,5664d5b2,Changed config on OSX travis test,0.0,0
+1693,e1e6b494,Removed logback config as it interferes with users config,0.0,0
+1694,92fcec4a,Updates to prepare for the 2.2.0 release,0.0,0
+1695,72298fca,Merge branch 'master' into hdfs,0.0,0
+1696,e4abe539,Update of HDFS FileAdaptor constructor,0.0,0
+1697,d67a93c2,Added missing hdfs config to integration test resources,0.0,0
+1698,6ba9fd27,Cleanup filesystem after test  otherwise we will run into problems due to open lingering connections,0.0,0
+1699,4ee44034,Added HDFS to Xenon figure,0.0,0
+1700,d3c77c01,Added HDFS to README,0.0,0
+1701,d14d6e18,Correct artifactId of jars,0.0,0
+1702,9e1ee99f,Add docker client to doc generator to see if Jersey conflict happens during `./gradlew javadoc`,0.0,0
+1703,3b166f3b,whitespace changes  tripped up spotlessJava on Travis,0.0,0
+1704,c595cccf,Moved grid  cloud and hadoop based adaptors to separate repositories.,0.0,0
+1705,faccbc94,Added tests for schedulerArguments. Updated version and changlog,0.0,0
+1706,253226c1,Updated javadoc,0.0,0
+1707,7829f4a1,Added 2.6.0 javadoc,0.0,0
+1708,2738e0b8,Upped version in readme,0.0,0
+1709,c6d274a8,added a .zenodo.json file to control metadata on Zenodo,0.0,0
+1710,106091ff,replaced the CITATION.md with a CITATION.cff,0.0,0
+1711,ff9215fc,Preparation of 2.6.1 release,0.0,0
+1712,b2a89b59,added conceptdoi as doi to avoid errors on research-software.nl,0.0,0
+1713,478d8a12,Added support for temp space in JobDescription.,0.0,0
+1714,f6a1a039,Properly check OS for linux specific tests,0.0,0
+1715,36713369,prepare for 2.6.2 release,0.0,0
+1716,48bfa312,Updated build to reflect removal of HDFS  S3 and gridftp.,0.0,0
+1717,b4dd3df0,Added 2.5.0 docs,0.0,0
+1718,e7aeadde,Update sonar setting to new structure,0.0,0
+1719,80390858,Prevent shadowing previously shadowed dependencies,0.0,0
+1720,c2cc72d2,Moved everything,0.0,0
+1721,00f65d02,Revert to old build structure,0.0,0
+1722,60b4ea4d,Update sonarcloud badge,0.0,0
+1723,c401dccf,Update sonarcloud config,0.0,0
+1724,b1d99455,Generalized IO stream wrappers of FTP so GridFTP can also use them,0.0,0
+1725,2a6e6dfb,Added conversion to an from octal permission bits.,0.0,0
+1726,70e15bd7,Added several unit tests,0.0,0
+1727,adee5abc,Publish testapi and docgenerator as jar,0.0,0
+1728,5426b52e,Merge branch 'master' of github.com:NLeSC/xenon,0.0,0
+1729,6a298975,Added schedulerArguments to JobDescription,0.0,0
+1730,2cefa387,Update docs to 2.5.0,0.0,0
+1731,19a1f9f4,Move adaptor common stuff to own file,0.0,0
+1732,9910e0e0,Added unit test for memory and name settings,0.0,0
+1733,272aa491,Add gridftp adaptor,0.0,0
+1734,94a4d2e1,Use ServiceLoader to find adaptors,0.0,0
+1735,15c471ca,minus in package does not work  so replace with underscore,0.0,0
+1736,c25ab407,Created generic gradle config for scripting adaptors. All three now pass integration tests.,0.0,0
+1737,978419cb,changed scripting adaptor dependency to shadowed project artifact,0.0,0
+1738,64efb5b3,changed scripting adaptor dependency to shadowed project artifact,0.0,0
+1739,85826b04,Added docker compose to fixedClient dependencies,0.0,0
+1740,0f56f6b8,Added memory requirements and job name to JobDescription,0.0,0
+1741,19e369b8,Added maxmemory  jobname and threadsPerProcess options. Needs integration testing,0.0,0
+1742,f92b28e1,Code layout cleanup,0.0,0
+1743,8a6c9fc6,Added unit test for memory and name settings,0.0,0
+1744,7e9ad163,Added unit test for threads per process settings,0.0,0
+1745,2d38c2cf,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1746,13756081,Added job name to job status,0.0,0
+1747,633e77ce,Removed StartSingleProcess check from grid engine,0.0,0
+1748,564697c4,Adjust test to reflect new behavior of verifyJobDescription in grid engine adaptor,0.0,0
+1749,6c33e69f,Prep for 2.4.0 release,0.0,0
+1750,f060a229,Generated java doc for 2.4.0,0.0,0
+1751,3d48e551,Updated version and changelog in preperation of 2.4.1 release,0.0,0
+1752,6fc79f22,Added docs for 2.4.1,0.0,0
+1753,53df3e83,Switched hadoop to client-3.0.0 and runtime-3.0.0  as these shadow their dependencies,0.0,0
+1754,b63abfb5,Remove unit test. Breaks after change in slurmutils semantics,0.0,0
+1755,d17125bb,Added javadocDevel task,0.0,0
+1756,0f7995b0,Switched off DefaultCredential in S3 adaptor  as jclouds does not seem to support it,0.0,0
+1757,71eb67f1,Add license header to CredentialMapTest,0.0,0
+1758,36237694,Rollback of travis timeout. The script does not accept a non-tty run,0.0,0
+1759,c4f3ec0a,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1760,445e8dc9,Changed travis config for livetests on mac,0.0,0
+1761,6181cb45,replaced bintray download badge with jitpack download badge,0.0,0
+1762,fd86b2c9,removed compile-from-source section from readme,0.0,0
+1763,9929228f,throwing exception instead of printing its message,0.0,0
+1764,3a33aa3d,throwing exception instead of printing its message,0.0,0
+1765,5b2587f3,forgot to add the XenonExcpetion import,0.0,0
+1766,d31bce88,included the Gradle and Maven snippets inline instead of redirecting to jitpack.io,0.0,0
+1767,8d7a4629,corrected slurm image name,0.0,0
+1768,1a6ee3d4,removed old terminolgy comments about adaptor capability,0.0,0
+1769,4a91cade,Update of Path implementation  plus relevant changes in adaptors and test.,0.0,0
+1770,3936f34e,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1771,9f2a07ab,Changed travis config for livetests on mac,0.0,0
+1772,13ddeebb,Changed appveyor config for livetests on windows,0.0,0
+1773,d70495af,replaced xenon 1.2.2 job submission example snippet with xenon 2 syntax,0.0,0
+1774,f7303f50,Changed appveyor config for livetests on windows,0.0,0
+1775,c41b84bb,Changed appveyor config for livetests on windows,0.0,0
+1776,71f6dfa4,Changed appveyor config for livetests on windows,0.0,0
+1777,d3dd0035,Changed appveyor config for livetests on windows,0.0,0
+1778,697e0426,Changed appveyor config for livetests on windows,0.0,0
+1779,8bd66972,Update appveyor config to set workdir for windows livetests,0.0,0
+1780,3b1359d4,Update appveyor config to set workdir for windows livetests,0.0,0
+1781,b91ea5d6,Changed codecov command on windows,0.0,0
+1782,8f86b34a,Changed codecov command on windows,0.0,0
+1783,bf9d4024,Changed codecov command on windows,0.0,0
+1784,83dc7564,Changed codecov command on windows,0.0,0
+1785,b1a3fa8e,cleaned up the 'how to include xenon in your project' section  no longer mentions JCenter though  not sure if that's bad,0.0,0
+1786,1cf13dca,replaced xenon 1.2.2 file copy example snippet with xenon 2 syntax,0.0,0
+1787,c0747c28,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1788,125ee938,typos,0.0,0
+1789,fadab532,resolved sonarcloud code smell: don't reuse parameter,0.0,0
+1790,7b52a498,resolved sonarcloud code smell: 'throws' declarations should not be superfluous,0.0,0
+1791,36502f9c,resolved sonarcloud code smell: add @Override annotation to method signature,0.0,0
+1792,43d88e82,resolved sonarcloud code smell: remove useless assignment to local variable,0.0,0
+1793,c7a3b9c1,resolved sonarcloud code smell: remove unused method parameter,0.0,0
+1794,dd5bcea1,resolved sonarcloud code smell: string contains no format specifiers,0.0,0
+1795,5fd0bad1,resolved sonarcloud code smell: don't use constructors for primitives,0.0,0
+1796,d6bc69e0,resolved sonarcloud code smell: don't reuse parameter,0.0,0
+1797,ec7dc242,resolved sonarcloud code smell: removed commented out code,0.0,0
+1798,afcdc1a1,resolved sonarcloud code smell: 'throws' declarations should not be superfluous,0.0,0
+1799,59be8a64,resolved sonarcloud code smell: variable name capitalization,0.0,0
+1800,a5cb4e59,typo,0.0,0
+1801,7b17e8b1,updated list of adaptors  now consistent with output from (FileSytem|Scheduler).getAdaptorNames(),0.0,0
+1802,53b410e6,resolved sonarcloud code smell: removed commented-out code,0.0,0
+1803,1539e174,resolved sonarcloud code smell: implicit constructors,0.0,0
+1804,4bb975ef,resolved sonarcloud code smell: add @Override annotation to method signature,0.0,0
+1805,a5cc1f3e,resolved sonarcloud code smell: don't reuse parameter,0.0,0
+1806,9ac02be3,resolved sonarcloud code smell: use diamond operator,0.0,0
+1807,657b1734,resolved sonarcloud code smell: 'throws' declarations should not be superfluous,0.0,0
+1808,56b3408d,updated javadoc to avoid a failing javadoc build,0.0,0
+1809,e6f36b3e,Tests are green!,0.0,0
+1810,b78bbbea,rolled back commit cbf2952 (platform-specific line separator)  when constructing job scripts  don't use this platform's line separator  just use \n. One exception to the rollback is the logger  which should use %n  not \n.,0.0,0
+1811,146ede46,Update README.md,0.0,0
+1812,07eded71,updated and simplified the main README's documentation section,0.0,0
+1813,5a92cb3c,Changed codecov command on windows,0.0,0
+1814,e0bf751b,Removed extra info prints in appveyor config for windows,0.0,0
+1815,0a2d7b0b,Merge branch 'master' into xenonprops,0.0,0
+1816,430b90f1,Added tests for JavaJobDescription,0.0,0
+1817,1aeaba58,Merge branch 'master' of https://github.com/NLeSC/Xenon into issue554-notices,0.0,0
+1818,940bcc66,added figures and updated readme,0.0,0
+1819,e000495a,changed the way png images are included in the readme,0.0,0
+1820,685c7f4f,debugging the rendering of images on github,0.0,0
+1821,4d650d41,added overview of related tools  added link to tutorial  moved some other stuff around,0.0,0
+1822,2475f568,Update README.md,0.0,0
+1823,d349aa0a,Update ROADMAP.md,0.0,0
+1824,1800bece,Added workdir support to scheduler location,0.0,0
+1825,328d9dd2,Update README.md,0.0,0
+1826,75018b73,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1827,99972bee,JavaJobDescription is back. Needs tests.,0.0,0
+1828,40c658b2,Make `./gradlew --console plain check -xintegrationtest` pass,0.0,0
+1829,02a23dbf,Merge branch 'master' into sonarcloud-smells-1,0.0,0
+1830,fe4c31f8,Added support for stric host key checking and automatic addition to known_hosts in SSH adaptor. Both on by default.,0.0,0
+1831,6c6ce4d3,ScriptScheduler now reuses FileSystem from subscheduler. Added javadoc to various methods in SSHUtil. Removed integration tests that depend on local ssh files  will be moved to fixedClientTest,0.0,0
+1832,cdde90ae,Updated appveyor config,0.0,0
+1833,5999a675,Updated appveyor config,0.0,0
+1834,ae6bbbe8,Cleaned up JClouds adaptor,0.0,0
+1835,d857933b,Cleaned up JClouds adaptor,0.0,0
+1836,c097cd63,Merge branch 'master' into hdfs,0.0,0
+1837,fce5bc71,Added SchedulerAdaptorDescription.usesFileSystem() to Javadoc overview page,0.0,0
+1838,b46d3c60,Update CHANGELOG.md,0.0,0
+1839,056ddcbb,Update README.md,0.0,0
+1840,728a5316,Update README.md,0.0,0
+1841,201a7996,added a copyright notice for Xenon to the NOTICE file,0.0,0
+1842,625078c8,updated NOTICE file,0.0,0
+1843,2dc73a4a,Merge branch 'master' of https://github.com/NLeSC/Xenon into issue554-notices,0.0,0
+1844,8bfc3593,updated legal overview,0.0,0
+1845,78fce25d,Kerberos is a beast...,0.0,0
+1846,86442873,Update appveyor badge to only show status of master,0.0,0
+1847,721b7d39,Cleaned up path javadoc,0.0,0
+1848,93281549,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+1849,f114fc02,Added BUFFER_SIZE property to all file adaptors. Defaults to 64K. Used by streamcopy implementation.,0.0,0
+1850,220880fe,Removed codacy badge after switch to sonarqube.,0.0,0
+1851,27111754,Remove tilde-replacements from LocalFileSystem  as this behaviour is not consistent across adaptors.,0.0,0
+1852,38230eb4,renamed notices directory to legal as per lourens'es advise,0.0,0
+1853,b3c4823d,Update README.md,0.0,0
+1854,bd952033,license text of appendix should not be changed to include the name of the copyright holder AFAIK,0.0,0
+1855,dedc461a,removed separate version variable for consistency with the other dependencies,0.0,0
+1856,301c8a90,removed version numbers for packages that are no longer used,0.0,0
+1857,62764d94,removed commented-out code,0.0,0
+1858,262f430e,updated libraries in lib/ directory,0.0,0
+1859,7866870f,removed old license files,0.0,0
+1860,db43caee,added license text for asm and updated legal README,0.0,0
+1861,6b749e8d,added license and notice for Apache-2.0 runtime dependencies,0.0,0
+1862,80130a15,added license for CDDL-1.0 runtime dependencies,0.0,0
+1863,e54b3dad,updated legal overview,0.0,0
+1864,3b26c249,added license for remaining runtime dependencies,0.0,0
+1865,64c80f7c,updated legal overview,0.0,0
+1866,f62e95a7,updated README,0.0,0
+1867,fcb239b3,added license and notice files for development dependencies,0.0,0
+1868,e2539239,Added the new 1.2.0 javadoc to the repo,0.0,0
+1869,240e5ff2,Moved javadoc from docs/javadoc to docs/version/x.y.z/javadoc,0.0,0
+1870,498e94d6,Moved gh-pages to docs directory,0.0,0
+1871,79d5356c,Removed workingDir where command is directory-independent,0.0,0
+1872,3656e887,Merge branch 'gradleDockerComplete' into decreaseUnitTestTime,0.0,0
+1873,703f2e14,Updated docker gradle to support test filtering  updated docs accordingly.,0.0,0
+1874,3b387467,Merge branch 'gradleDockerComplete' into decreaseUnitTestTime,0.0,0
+1875,4b89086e,Save test cache into a container  to decrease integration test times,0.0,0
+1876,6106e973,Decreased build time of GridEngine and Slurm,0.0,0
+1877,6f397eb6,Build test cache if needed,0.0,0
+1878,fdf0ddf1,Suppress unchecked warning in test again,0.0,0
+1879,f09531c8,Forward Xenon test properties to integration test,0.0,0
+1880,4eae5816,Copy of files in insecure-ssh-keys directory to all docker build directories.,0.0,0
+1881,ebfb701f,-Pdocker.tests='*.ftp*' now preserves correct directory and properties,0.0,0
+1882,52afed68,Merge branch 'fixingTestsAndTime' of ssh://github.com/NLeSC/Xenon into fixingTestsAndTime,0.0,0
+1883,954b081c,Make sure gridftp host key has right permissions.,0.0,0
+1884,35dae527,Simplified docker gradle setup by splitting up directories and images,0.0,0
+1885,3f3c345f,Merge remote-tracking branch 'origin/fixingTestsAndTime' into fixingTestsAndTime,0.0,0
+1886,b88910ee,Large-scale refactoring of tests (more code reuse  better exception handling),0.0,0
+1887,b6006c29,Throw InvalidLocationException when parsing null location,0.0,0
+1888,17b4191e,Removed scary FileNotFoundException trace for non-mandatory SSH file.,0.0,0
+1889,716b4502,restructured Xenon/doc directory  added the files for the tutorial,0.0,0
+1890,b2e13d65,Update gradle for move of doc/userguide/src to doc/user/userguide/src,0.0,0
+1891,80471608,Moved doc/user/userguide/src/nl/esciencecenter/xenon/doc/AdaptorDocGenerator.java -> src/main/java/nl/esciencecenter/xenon/util/AdaptorDocGenerator.java,0.0,0
+1892,fbac9e8c,Added adaptor appendix as javadoc overview.,0.0,0
+1893,33f02b4e,HTML-ify the adaptor properties documentation.,0.0,0
+1894,02c34995,Update README.md,0.0,0
+1895,3705bdfe,Merge remote-tracking branch 'origin/develop' into feature/webdav-docker,0.0,0
+1896,0b3ec905,Set all docker Slurm options to 1-2 seconds,0.0,0
+1897,2ba7fddd,Merge branch 'gradleDockerComplete' into decreaseUnitTestTime,0.0,0
+1898,b1b30bc8,Merge remote-tracking branch 'origin/develop' into tutorial,0.0,0
+1899,bc0cea87,Added Travis Badge,0.0,0
+1900,b3583ce2,Quote test filter to prevent shell expansion of *.,0.0,0
+1901,549da489,Refresh gridftp certificates as the certificates in the container and git repo where out of sync.,0.0,0
+1902,08babf2e,Added classpath to Javadoc for Xenon developers task,0.0,0
+1903,0fdff4dd,Made webdav docker container with anon/auth and read/write combinations.,0.0,0
+1904,0977e79f,Moved SSH live tests to IT*Test,0.0,0
+1905,7010ad3d,Moved tunnel test to integration testing,0.0,0
+1906,fa333925,Added travis build file,0.0,0
+1907,da61832e,Added pandoc requirement to Travis,0.0,0
+1908,e1efa9a5,Added texlive for pandoc PDF generation,0.0,0
+1909,71448e62,SSH credential tests are moved to unit tests,0.0,0
+1910,72fdf556,Travis cache specified to avoid invalidation,0.0,0
+1911,5441d923,Removed Travis cache (not sure if it's working and it doesn't save time),0.0,0
+1912,3536f18e,Dependencies in task,0.0,0
+1913,3d6ebb17,Moved all integrations tests and files to src/integrationTest,0.0,0
+1914,3208e4c1,Run Docker integration tests with gradle check,0.0,0
+1915,550b85bf,Reduced JobQueue polling time while testing,0.0,0
+1916,4e9a7f31,Merge branch 'develop' into decreaseUnitTestTime,0.0,0
+1917,4230b73d,dockerTest must run after normal test,0.0,0
+1918,32602a76,Merge branch 'develop' into decreaseUnitTestTime,0.0,0
+1919,d0e2e0b5,Using correct Groovy 'String as int' syntax,0.0,0
+1920,d1d257f5,Add integration test code to sonar qube.,0.0,0
+1921,dece0537,Merge branch 'sonarqube-integrationtest' into gradleDockerComplete,0.0,0
+1922,4703f724,Grid ftp certificates should not be ignored as they are input for docker builds.,0.0,0
+1923,e8ae1c0d,Set SSH shell -> it was set to unusable default,0.0,0
+1924,748e7c02,Removed unstable gridftp and webdav adaptors.,0.0,0
+1925,03333445,Merge branch 'develop' into refactorJobTests,0.0,0
+1926,80b61167,Merge remote-tracking branch 'origin/develop' into wait4gridengine,0.0,0
+1927,3bc78f96,Explicitly include Hamcrest in tests: prevents importing wrong Matcher,0.0,0
+1928,b0b76a70,Using @Test instead of @org.junit.Test annotation,0.0,0
+1929,b1e41432,Initial travis+docker build,0.0,0
+1930,4e14f197,Explicitly including LaTeX modern style in Travis build,0.0,0
+1931,bd3dc80a,Only run docker integration tests on OpenJDK 7,0.0,0
+1932,59d1ff37,Don't make a test cache in travis,0.0,0
+1933,10fd1556,Use quotes around ENV variables in travis,0.0,0
+1934,9cacf0a2,Travis: using OracleJDK instead of OpenJDK for dockerIntegrationTest,0.0,0
+1935,f7d52520,Start docker with a clean directory,0.0,0
+1936,d89960a5,Remove sudo and docker from all packages except Oracle JDK 7,0.0,0
+1937,6b5c2e4b,Merge branch 'travisDockerTest' into travisDockerBuild,0.0,0
+1938,3d9d7932,Specify User ID to get Travis building working,0.0,0
+1939,2aea07fb,Update xenon.test.properties.docker,0.0,0
+1940,a69010b3,Wrong location takes into account Windows network drive,0.0,0
+1941,6516429c,Give more info when running docker integration tests,0.0,0
+1942,00169a62,Merge branch 'develop' of ssh://github.com/NLeSC/Xenon into develop,0.0,0
+1943,68b0893b,Upgrade Gradle from 2.7 to 2.8,0.0,0
+1944,85306a08,Added coveralls coverage reporting to Xenon.,0.0,0
+1945,826620d3,Added badge for codacy code quality.,0.0,0
+1946,1ac7956f,For Gridengine docker shorten flush time between when job moves from qstat to qacct,0.0,0
+1947,7978a4c3,Wait for gridengine to be up before running tests.,0.0,0
+1948,cd1f4025,Make docker integration tests less verbose.,0.0,0
+1949,b556cdc7,Force xenon-test known_hosts to be writable by xenon user.,0.0,0
+1950,6935f914,During integration test output progress to console.,0.0,0
+1951,830a9311,Temporary disable docker build for travis-ci.,0.0,0
+1952,5619d87f,Starting proper JUnit exception testing,0.0,0
+1953,51861630,Removed old+redundant tests,0.0,0
+1954,7fd32480,Made valid for link in overview point to the enum.,0.0,0
+1955,2d357b50,Misc javadoc/explicit exceptions in Files API,0.0,0
+1956,1c3cf648,Properly encapsulate workdir with spaces in SSH,0.0,0
+1957,32711a04,Misc style,0.0,0
+1958,dab80b16,Refactored FileAdaptorTest with proper cleanup,0.0,0
+1959,9864d278,Made ITFileTests of SFTP configurable,0.0,0
+1960,6cb729e8,Uniformized Sandbox test,0.0,0
+1961,cd584a4b,Using AbstractFileTest,0.0,0
+1962,d76d2210,Make sure build directory is clean before making cache,0.0,0
+1963,b453866a,Merge branch 'develop' of https://github.com/NLeSC/Xenon into tutorial,0.0,0
+1964,cbb96444,Merge branch 'tutorial' of https://github.com/NLeSC/Xenon into tutorial,0.0,0
+1965,e4161d4e,userguide pdf requires inkscape.,0.0,0
+1966,c0ffc3e8,Merge branch 'tutorial' of https://github.com/NLeSC/Xenon into tutorial,0.0,0
+1967,3a737a47,removed unused imports,0.0,0
+1968,f1f0b03a,Merge branch 'refactorJobTests' of ssh://github.com/NLeSC/Xenon into refactorJobTests,0.0,0
+1969,d203613b,Added description for docker tasks,0.0,0
+1970,a6612f21,Do correct FileAdaptor initialization (with root dir),0.0,0
+1971,abc6ca1a,Moved JobTimeoutTest to local schedule job tests,0.0,0
+1972,6877297b,Merge branch 'develop' into refactorJobTests,0.0,0
+1973,1201e1f1,Wait to start sge execd. So sge qmaster is running when execd are trying to register.,0.0,0
+1974,bab30f79,Better setup and cleanup of SFTPFiles,0.0,0
+1975,5d746cbc,Merge branch 'refactorJobTests' of ssh://github.com/NLeSC/Xenon into refactorJobTests,0.0,0
+1976,8c7b23df,Gridengine docker needs more sleeps to make sure qmaster and execd know each other.,0.0,0
+1977,df4af973,Merge remote-tracking branch 'origin/refactorJobTests' into refactorJobTests,0.0,0
+1978,46688ab9,Merge branch 'develop' into refactorJobTests,0.0,0
+1979,ceba6642,Gridengine parallel environment test needs to wait longer till job is done.,0.0,0
+1980,87a61f05,For gridengine integration tests switched to parallel environment which can run on multiple hosts.,0.0,0
+1981,91869533,Made known hosts file of xenon user in xenon-test docker container writable by xenon user itself.,0.0,0
+1982,707bbb3f,Gridengine can now be scaled up by starting xenon-gridengine-exec containers.,0.0,0
+1983,c1ccccc9,cleaned exists tests a bit,0.0,0
+1984,9f2b437d,Merge branch 'develop' into feature/torque,0.0,0
+1985,75cdf244,Added Torque Adaptor to XenonEngine,0.0,0
+1986,fcfa10ad,Removed faulty import,0.0,0
+1987,22cf9759,removed redundant call,0.0,0
+1988,8e11e94e,Various webdav additions,0.0,0
+1989,c0f36b63,Split exists tests,0.0,0
+1990,21fcfdd3,exists functionality,0.0,0
+1991,b7106cad,forgot to add these files to index,0.0,0
+1992,7e7627cf,small refactor,0.0,0
+1993,bb9c504a,webdav delete implementations,0.0,0
+1994,3673adc6,refactored files tests: split createDirectories test,0.0,0
+1995,9d42674a,webdav createDirectories functionality,0.0,0
+1996,3b01b4d9,Merge branch 'develop' into feature/torque,0.0,0
+1997,557ad9cc,refactored files tests: split createFile tests,0.0,0
+1998,acc3a0d0,corrected title of a test and placed back a accidentilly removed test,0.0,0
+1999,f0f17c09,added a line to ignore in SlurmAdaptor to support Slurm version on Cartesius,0.0,0
+2000,aaa0e82c,Merge branch 'develop' of github.com:NLeSC/Xenon into develop,0.0,0
+2001,daf9220b,webdav createFile throws exception when file already exists,0.0,0
+2002,8fcd8caf,refactored tests: split delete() tests,0.0,0
+2003,c20e7871,refactored delete() a bit,0.0,0
+2004,20846c32,Merge branch 'develop' of ssh://github.com/NLeSC/Xenon into develop,0.0,0
+2005,461fe61c,Simplified RelativePath (using ArrayList),0.0,0
+2006,ad778a59,refactored tests: Split newDirectoryStream tests,0.0,0
+2007,894a2ee9,Webdav newDirectoryStream functionality,0.0,0
+2008,5c57796d,Added FTP and gFTP to XenonEngine (rm TORQUE),0.0,0
+2009,a45dd7a0,Small Java syntax changes,0.0,0
+2010,6bf8f890,Run torque container more restricted,0.0,0
+2011,186eb2c1,Webdav adaptor can open a file system,0.0,0
+2012,b5f91631,refacored: removed some redundant throws,0.0,0
+2013,6c60e0f2,some more refactorings,0.0,0
+2014,5c2d721d,Tests: TorqueXmlParser  TorqueSchedulerConnection,0.0,0
+2015,cf734cf6,Testing TorqueJobScriptGenerator (added custom contents),0.0,0
+2016,50f9fda9,Merge branch 'develop' into feature/torque,0.0,0
+2017,c9737104,Merge branch 'develop' into feature/utils,0.0,0
+2018,3d93b3f8,Merge branch 'feature/utils' into feature/torque,0.0,0
+2019,38814d71,refactored tests: pulled property method in test config up to base class,0.0,0
+2020,37b8f0cb,refactored test: gave prepare and cleanup methods before and after annotations,0.0,0
+2021,305ea758,refactored tests: split test00 into seperate test methods,0.0,0
+2022,71c465bf,refactored tests: split file isOpen() tests,0.0,0
+2023,bb0e7caa,forgot to add these files as well,0.0,0
+2024,143dc326,No warnings due to 2x end with SSH at Xenon.end,0.0,0
+2025,32badcac,removed duplicate tests,0.0,0
+2026,d4b68d6e,changed method name,0.0,0
+2027,77583e45,refactored tests: split close() tests and removed null fs test,0.0,0
+2028,b14f4027,webdav isopen() and refactored Location base class to use Java.net,0.0,0
+2029,b57af6bb,refactored tests: split newPath tests,0.0,0
+2030,523c128b,webdav newPath implementation,0.0,0
+2031,1b413757,Small import changes,0.0,0
+2032,9acdd003,Added Torque docker setup description,0.0,0
+2033,4215de90,Merge remote-tracking branch 'origin/develop' into feature/torque,0.0,0
+2034,2b14d85d,Support 8282.jobid.host or host.jobid.2992 formats,0.0,0
+2035,6fc00f13,Added TORQUE adaptor tests,0.0,0
+2036,368a75cb,Separated tests of Torque: no stdout support (see #239),0.0,0
+2037,261b031e,test refactoring: split tests for directoryStream with filter,0.0,0
+2038,4ab6eb0c,refactored tests: split getAttributes tests,0.0,0
+2039,b97cf54b,Typo markdown,0.0,0
+2040,6d13246b,Moved src to src/main/java,0.0,0
+2041,75f38e86,For tests  moved java code to src/test/java and moved fixtures  example config and scripts to src/test/resources.,0.0,0
+2042,e6944abf,Moved userguide and adaptor developement to doc/ folder.,0.0,0
+2043,b02d460a,Moved test dependency jars to lib/test folder.,0.0,0
+2044,699c1d66,Gradleify gitignore. Remove needlesly verbose log configs.,0.0,0
+2045,4af4b0f8,Added gradle wrapper,0.0,0
+2046,b2511501,Working gradle tasks test  check  jacocoTestReport  jacocoIntegrationTestReport  javadoc  javadocDevel and userGuidePdf,0.0,0
+2047,f58df965,Typos,0.0,0
+2048,5b817a55,Added offline jars and documented offline build steps.,0.0,0
+2049,560de0e1,Generate userguide pdf with dependent tasks.,0.0,0
+2050,dc36abc4,Added gradle ide and sonarqube tasks. Documented most used gradle tasks.,0.0,0
+2051,042e76d6,Split build.gradle in online and offline version resp. build.gradle and buid.offline.gradle,0.0,0
+2052,ff188497,Replaced emptyMap() calls with new HashMap<>(),0.0,0
+2053,5c4bf8a5,create_symlinks script moved  adjusted docker build script.,0.0,0
+2054,ae2c21a9,Lost webdav dependencies during branch merge. Added them back.,0.0,0
+2055,609969bf,renamed build.offline.gradle to build-offline.gradle and renamed commons.gradle to build-common.gradle. Updated the documentation accordingly.,0.0,0
+2056,b94dde58,Removed reference to ant in test properties,0.0,0
+2057,eabec042,Regenerated userguide for new torque and webdav adaptors.,0.0,0
+2058,9adf9633,Document how to filter tests,0.0,0
+2059,7ab7c778,Make xenon-test container cmd overwritable to run filtered tests.,0.0,0
+2060,699f8380,Remove ant packages from xenon-test container. Dont add passphrase to globus user key.,0.0,0
+2061,f4f7b4f3,Pushed all docker images to hub.,0.0,0
+2062,ed69d42b,Added globus cerficates so they can be used by non docker container based clients or servers.,0.0,0
+2063,2c32f6b3,Set default for MYUID env var.,0.0,0
+2064,f72c4e63,Move lib folder with jars to root.,0.0,0
+2065,c6bbcc52,Moved build.gradle to root and removed ant build files.,0.0,0
+2066,6793e132,Moved readme and licence files to root. Removed INSTALL.md is was duplicate of README.md.,0.0,0
+2067,921bc430,Moved ant layout into temporary directory. Later will move files to correct place for gradle layout.,0.0,0
+2068,a4f906fd,refactored tests: split setPosixPermissions tests,0.0,0
+2069,1d40a9bf,test refactorings: split newAttributesDirectoryStream tests,0.0,0
+2070,a1706569,refactored tests: split getattributesstream tests,0.0,0
+2071,49e96397,temporarely ignored all webdav tests (adapter is w.i.p.),0.0,0
+2072,13825aae,Merge branch 'develop' into feature/webdav,0.0,0
+2073,7368c3dc,Added Dockerfile to create a ssh container.,0.0,0
+2074,e4166ae5,Initial Gradle build,0.0,0
+2075,e25514fa,Added dockerfiles for ssh  ftp  webdav  slurm  sge.,0.0,0
+2076,8790cfbe,Merge remote-tracking branch 'origin/develop' into docker,0.0,0
+2077,f74de9a9,Running local execution for preparing integration tests,0.0,0
+2078,cc0b65a1,Added docker files for gridengine and torque.,0.0,0
+2079,fa4d61be,Started with gridftp docker container.,0.0,0
+2080,fb774546,Added dependencies jars for webdav adaptor,0.0,0
+2081,db2e3f69,Create a docker container to generate gridftp certificates.,0.0,0
+2082,917cbb24,Added grid ftp user mapping and init script. Added test instructions for gridftp.,0.0,0
+2083,37355646,Merge remote-tracking branch 'origin/develop' into docker,0.0,0
+2084,ecbb1eef,Switched to phusion base. FTPFileAdaptorTest runs without failures or errors.,0.0,0
+2085,e8a5a609,Shorten scheduler interval of grid engine so tests go faster.,0.0,0
+2086,076e5216,Add passphrase to user globus certificate.,0.0,0
+2087,cf00d22d,Make sure private key is private.,0.0,0
+2088,cac73c16,Run 5 slurm compute nodes inside container also hardcode munge key so it can be used in a different docker container.,0.0,0
+2089,f9db9c39,At least one of live tests per adaptor succeeds. Use docker-compose to run tests.,0.0,0
+2090,03b7fedc,Ignore test config files.,0.0,0
+2091,316e5d9e,Print stacktraces for failed integration tests to console.,0.0,0
+2092,7a36cad6,Upgrade docker-compose to v1.5.0,0.0,0
+2093,f52b3639,Upped version to 1.2 in preparation of release,0.0,0
+2094,b131f4ea,Make slurm container depend on Mysql container for accounting.,0.0,0
+2095,98dfea1e,Update of readmes,0.0,0
+2096,80bf3255,Bumped to version 1.1.0,0.0,0
+2097,93836215,update release instructions,0.0,0
+2098,a4e46d3d,Merge branch 'master' into develop,0.0,0
+2099,5179f417,Initial commit,0.0,0
+2100,7523b837,Added more items to changelog.,0.0,0
+2101,426681e1,updated badge links to master branch.,0.0,0
+2102,0dd4cff1,Merge branch 'develop',0.0,0
+2103,82a8e6fb,Added doi badge,0.0,0
+2104,8377fd85,Use static license image url,0.0,0
+2105,1a0f753d,Changed license button to shields.io version,0.0,0
+2106,41d72808,For xenon slurm docker container job completion storage with correct pw.,0.0,0
+2107,b1a1578d,Removed import in test,0.0,0
+2108,8d865abb,Switched travis and codecov links back to develop version,0.0,0
+2109,253eca66,recommitted unstable webdav changes that were removed for v1.1,0.0,0
+2110,523e365d,added extra tests for webdav directory stream,0.0,0
+2111,300b900f,simplified webdav directory stream,0.0,0
+2112,04ccdb34,webdav directory listing,0.0,0
+2113,61f9ea18,access and modified time attributes refer to creation time if unknown (webdav),0.0,0
+2114,ec973a66,webdav directory attribute stream,0.0,0
+2115,2e9cea33,WIP inputstream for webdav,0.0,0
+2116,d80572fd,Added osx to travis-ci.,0.0,0
+2117,494e6e03,Added integration tests to osx travis-ci build.,0.0,0
+2118,73eb8d22,Osx integration test filter too strict  it found no tests.,0.0,0
+2119,93eb2296,Merge branch 'develop' of github.com:NLeSC/Xenon into develop,0.0,0
+2120,2053047a,Enabled accounting in slurm docker container.,0.0,0
+2121,118059a2,To appveyor added codecov  artifacts and test results of 2 junit files.,0.0,0
+2122,a95a1923,updated javadoc,0.0,0
+2123,a6143d6d,corrected some malformed html (javadoc8),0.0,0
+2124,de22377e,exception can not be thrown because it does not exist (javadoc8),0.0,0
+2125,e648270b,added a few imports of Exceptions otherwise the references cannot be found (javadoc8),0.0,0
+2126,c57c562c,exception can not be thrown because it does not exist (javadoc8),0.0,0
+2127,26a23683,added exception import (javadoc8),0.0,0
+2128,7dfb07c5,removed Exception  because it throws a XenonException,0.0,0
+2129,213b62a3,the code does not throw anything  @throws removed,0.0,0
+2130,9c5fc727,updated javadoc for XenonFactory.newXenon() (issue #348),0.0,0
+2131,f9cfb702,minor updates to the javadoc,0.0,0
+2132,7dbf18cf,updated javadoc for Credentials.newCertificateCredential (issue #348),0.0,0
+2133,bcfb519a,updated javadoc for Credentials.newPasswordCredential (issue #348),0.0,0
+2134,774925cf,updated javadoc for Files.newFileSystem (issue #348),0.0,0
+2135,e42b0a0d,Drop document build dependencies.,0.0,0
+2136,c7fc7784,added dummy file to trigger commit,0.0,0
+2137,c4d61a07,removed dummy file to trigger commit,0.0,0
+2138,895bb5a7,Read config and known_hosts file in Windows,0.0,0
+2139,1d803bbc,Removed unused class ProxyCredentialImplementation,0.0,0
+2140,8e9e7720,Added SSH agent forwarding support. Added example logback config.,0.0,0
+2141,01fc4a9e,Added SSH agent forwarding support. Added example logback config. Changed logging print in Xenon engine from info to debug.,0.0,0
+2142,7ca24c3e,Bump version for Jcenter.,0.0,0
+2143,98cabeda,Set logback back to INFO,0.0,0
+2144,ce57dab5,Load fixtures using class loader getResource,0.0,0
+2145,b88d24ba,Added test for SSH agent forwarding.,0.0,0
+2146,e24218a3,Added header.,0.0,0
+2147,dc760c8c,Added configuration for appveyor and appveyor build badge.,0.0,0
+2148,c0656178,after_test not run on test failure  moved after test commands to test_script section.,0.0,0
+2149,dfb420ca,Make sure known_hosts is owned by xenon user.,0.0,0
+2150,74fa4f96,Use trusty instead of precise Ubuntu version on Travis-CI,0.0,0
+2151,420f8ff4,Right way did not work  using softer way.,0.0,0
+2152,b39d9216,Now with flag in right position.,0.0,0
+2153,eef1af35,Merge remote-tracking branch 'origin/feature/webdav-docker' into feature/webdav-continued,0.0,0
+2154,fae2ae91,Added webdav docker gradle instructions and webdav test properties,0.0,0
+2155,c8f426d2,webdav added to docker compose config,0.0,0
+2156,b578390c,changed directories the webdav tests write to,0.0,0
+2157,d2cb0daf,corrected webdav test paths,0.0,0
+2158,12fad425,Merge 'master' into 'develop'.,0.0,0
+2159,b1d484ac,Configured torque docker container with hostname during boot and hardcoded torque container hostname.,0.0,0
+2160,b3ae0ab5,Added support for simple tuples in the table parsing of the ScriptingParser  plus some unit tests,0.0,0
+2161,6657eae3,Added support for simple tuples in the table parsing of the ScriptingParser  plus some unit tests,0.0,0
+2162,d8d852e7,Run integration tests with Oracle JDK 8,0.0,0
+2163,0a345654,Added description to licenseFormat gradle task,0.0,0
+2164,aa56146d,Use JDK 8 inside xenon-test Docker image,0.0,0
+2165,128942be,Use Oracle JDK 8 inside xenon-test Docker image,0.0,0
+2166,82293664,Increased torque timeout,0.0,0
+2167,89e103a4,Merge branch 'master' into develop,0.0,0
+2168,65670c9a,Upped version number to 1.2.0-beta,0.0,0
+2169,70359cee,Update README.md,0.0,0
+2170,4dfc4b3e,moved several xenon.engine.utils to xenon.utils so they can also be used by applications using xenon,0.0,0
+2171,91baca32,added javadoc,0.0,0
+2172,2bac6e31,Updated changelog,0.0,0
+2173,65610b11,Merge branch 'master' of github.com:NLeSC/Xenon,0.0,0
+2174,ccebe9ce,Moved content of doc to docs/development. Update of release.gradle to copy javadoc to docs,0.0,0
+2175,1672cdb7,Added license headers to all files missing the header (all webdav files),0.0,0
+2176,a5aa6e86,Removed temporary webdav tests (used for developing),0.0,0
+2177,e1339e2d,Test steps stop on failure  moved codecov  test results to on_finish.,0.0,0
+2178,5491c50b,Submit integration test coverage to codecov.,0.0,0
+2179,af69af0f,Add Python 3.4 to path  it has pip.,0.0,0
+2180,253cdba9,Create jacoco xml + upload all unit test results.,0.0,0
+2181,b87b5daa,Use full name of file.,0.0,0
+2182,c7f3fec9,Use foreach and fullname,0.0,0
+2183,7cbf4b0c,Add more envvars to codecov.,0.0,0
+2184,31e791c9,Run local integration tests in appveyor.,0.0,0
+2185,0d802b04,Run unit and integration tests together for appveyor.,0.0,0
+2186,261f7db0,Typo,0.0,0
+2187,36124202,Dont exit when dir exists.,0.0,0
+2188,4451ef63,Added integration test results to appveyor tests tab.,0.0,0
+2189,7d3ff2cf,Run integration tests even if unit tests fail.,0.0,0
+2190,3771a9b4,Symlinks should be created in working dir of integration tests.,0.0,0
+2191,099d3c68,Engine test now expects an extra adaptor (webdav),0.0,0
+2192,bf5ac92e,Skip the isHidden test for files on windows as they seem to fail,0.0,0
+2193,90656bd7,Added comment about jdk switcher,0.0,0
+2194,0adb1927,webdav outputstream,0.0,0
+2195,cb6b5b85,webdav outputstream tests,0.0,0
+2196,38ebc761,added a few comments,0.0,0
+2197,b15e3ae6,Remove leftover comments from debugging. Shame on me,0.0,0
+2198,cb3cb17b,webdav file size attributes,0.0,0
+2199,030af45c,webdav copy functionality,0.0,0
+2200,df9be99d,webdav copy status and canceling,0.0,0
+2201,3602bd30,webdav move  webdav adaptor finished,0.0,0
+2202,56839285,expanded files integration tests and made some optional,0.0,0
+2203,786aef24,corrected some malformed html (javadoc8),0.0,0
+2204,9092f3a3,corrected malformed code tag name,0.0,0
+2205,2ba539ed,corrected a few instances of < and > (oracle javadoc8),0.0,0
+2206,5d7382a8,Merge branch 'develop' of https://github.com/NLeSC/Xenon into tutorial,0.0,0
+2207,5a35ceac,Merge branch 'develop' into integrationTestFixes,0.0,0
+2208,08a31722,Added docker sanity checks for slurm and torque.,0.0,0
+2209,14b629e6,Make ~/.ssh more private for xenon-torque docker image.,0.0,0
+2210,2466cf15,Made docker authorized keys readable by user only.,0.0,0
+2211,3afbd779,Publish the coverage of integration tests also to coveralls.,0.0,0
+2212,a154423f,Integration test coverage report in xml format + use codecov for coverage reporting,0.0,0
+2213,5784940c,Forgot  ,0.0,0
+2214,12536c7e,Replace coveralls with codecov. Codecov has unit+integration+unified coverage reporting.,0.0,0
+2215,6ddd16f6,Removed SonarQube integration  using Codacy instead.,0.0,0
+2216,cd967c9b,Grouped the gradle docker tasks and added descriptions for them.,0.0,0
+2217,19a051d9,added docker section,0.0,0
+2218,8825522e,Merge branch 'develop' of https://github.com/NLeSC/Xenon into tutorial,0.0,0
+2219,839a9dd9,Added pmd dependencies,0.0,0
+2220,01f376f1,corrected another userguide path,0.0,0
+2221,d562b492,added a few more latex-related dependencies,0.0,0
+2222,2046d400,added 2 urls,0.0,0
+2223,c8c276ba,Merge branch 'develop' of https://github.com/NLeSC/Xenon into tutorial,0.0,0
+2224,0d5583f0,Remove userguide + moved adaptor doc to javadoc overview page.,0.0,0
+2225,61dafe58,Added test for adaptor doc generator.,0.0,0
+2226,5b32e272,Added SSH config parser  that respects lowercase settings,0.0,0
+2227,f839062a,Merge remote-tracking branch 'origin/adaptor-appendix2javadoc-dropuserguide' into tutorial,0.0,0
+2228,577a7742,Using JSch default arguments,0.0,0
+2229,0eddf35b,Using new OpenSSHConfig in SshAdaptor,0.0,0
+2230,87e40162,Commented use of Scanner in TorqueXmlParserTest,0.0,0
+2231,62830647,Merge branch 'develop' of ssh://github.com/NLeSC/Xenon into develop,0.0,0
+2232,ea9f86f8,Merge remote-tracking branch 'origin/develop' into examples-script,0.0,0
+2233,0890c3b8,corrected malformed code tag name,0.0,0
+2234,021b4b35,Create bin dir for docker-compose before downloading it.,0.0,0
+2235,c72ce81b,Resolved offline dependencies using Gradle,0.0,0
+2236,5c76e276,Merge remote-tracking branch 'origin/develop' into wait4gridengine,0.0,0
+2237,38d5e829,"Revert ""Temporary disable docker build for travis-ci.""",0.0,0
+2238,725a5fd5,Force private key of xenon test user to be non-group writable.,0.0,0
+2239,35a15def,added install notes for docker part,0.0,0
+2240,da44511c,Print docker version and origin,0.0,0
+2241,11ef77f3,Upgrade docker-engine to 1.9.0.,0.0,0
+2242,701e33dc,docker-engine can not be installed using apt_packages addon  using sudo to install it.,0.0,0
+2243,93462c1e,updated notes,0.0,0
+2244,e3ed97b0,Always report coverage to coveralls.io and only do docker stuff when integration test are run.,0.0,0
+2245,b0494d02,Add   between multiline if statement.,0.0,0
+2246,9d68d0b5,"Revert ""Revert ""Temporary disable docker build for travis-ci.""""",0.0,0
+2247,9a38b57b,Merge branch 'develop' of ssh://github.com/NLeSC/Xenon into develop,0.0,0
+2248,94ff26f6,"Revert ""Revert ""Revert ""Temporary disable docker build for travis-ci.""""""",0.0,0
+2249,c8bb40f2,Added PMD checks,0.0,0
+2250,8fdd2041,Merge branch 'develop' into pmd,0.0,0
+2251,d4d8d6dc,Disable multihost gridengine docker not working in travis-ci.,0.0,0
+2252,5cb9f3ab,Updated PMD version to latest version,0.0,0
+2253,8073be06,Saving codestyle dependencies to repository  for offline use,0.0,0
+2254,7c3552b6,Added TODO flag for empty catch,0.0,0
+2255,9ed5a667,Make log message reflect number of gridengine nodes.,0.0,0
+2256,166d4bc2,Merge remote-tracking branch 'origin/develop' into wait4gridengine,0.0,0
+2257,8401f82b,Merge branch 'pmd' into develop,0.0,0
+2258,5f5f6c95,updated notes,0.0,0
+2259,4361e5e3,Added more unit tests for SSH adaptor,0.0,0
+2260,847b7e33,Added more unit test for the SSH adaptor,0.0,0
+2261,db28cbd9,Merge branch 'develop' into tutorial,0.0,0
+2262,9330c093,removed the distinction user/devel: everything under doc/ is now assumed to be targeting developers,0.0,0
+2263,433f1eda,typo corrected,0.0,0
+2264,b2817423,typo corrected,0.0,0
+2265,27f1e49b,reorganized the document  cleaned up parts that are no longer used,0.0,0
+2266,25ef94be,compiling the latex is now less verbose,0.0,0
+2267,5b51fb4f,updated text,0.0,0
+2268,b3c6ca05,typo,0.0,0
+2269,59466c7a,updated tutorial: eclipse,0.0,0
+2270,b8a40c17,removed all @author fields from the JavaDoc,0.0,0
+2271,91d03d0d,Merge branch 'develop' into tutorial,0.0,0
+2272,1d9d2b80,Merge branch 'develop' into tutorial,0.0,0
+2273,5974caee,removed the tutorial  since that now has its own repository,0.0,0
+2274,20c07689,Added quickstart docs + sync version to version in JCenter.,0.0,0
+2275,de56c8db,Added README for Xenon developers.,0.0,0
+2276,38ff3397,Merge remote-tracking branch 'origin/develop' into no-more-examples,0.0,0
+2277,61250378,Merge remote-tracking branch 'origin/develop' into quickstart,0.0,0
+2278,a225599d,can't have a return javadoc tag when method return type is void (java8),0.0,0
+2279,e69f520d,java8 errors  mostly due to non-informative but incorrect tags,0.0,0
+2280,5815e509,Added bintray badge,0.0,0
+2281,cfdd8aa0,disabled the strict java8 testing mode  since oracle java8 turns out to be stricter than openjdk8,0.0,0
+2282,7cbb68bb,Merge branch 'develop' of https://github.com/NLeSC/Xenon into issue253,0.0,0
+2283,314ca309,IllegalPropertyException does not exist,0.0,0
+2284,f01f26c0,Exception is not thrown by GridEngineXmlParser,0.0,0
+2285,5c7e4482,Exception is not thrown by GridEngineXmlParser,0.0,0
+2286,53395301,corrected illegal tag name,0.0,0
+2287,498c58db,updated version information,0.0,0
+2288,8e54584b,Merge remote-tracking branch 'origin/develop' into gradle-release,0.0,0
+2289,1d088512,Create a version post for the website + update documentation for releasing a new version,0.0,0
+2290,b5163866,Correct urls for publishing javadocs.,0.0,0
+2291,69a86856,Make gradle tasks look nice by grouping tasks.,0.0,0
+2292,8cf9dfde,Use gradle wrapper for docker tasks.,0.0,0
+2293,71ec636a,Update integration config file,0.0,0
+2294,a1cb8574,Remove unneeded constructor,0.0,0
+2295,f7c2fe0c,Merge remote-tracking branch 'origin/develop' into gradle-release,0.0,0
+2296,e2341bbf,Started with gradle release task,0.0,0
+2297,7f1279df,Added more slurm tests and increased slurm timeouts in tests.,0.0,0
+2298,9d79477c,Decreased slurm timeouts for intergration tests. Travis may fail if they take too long.,0.0,0
+2299,403ca113,Each slurmd instance has own paths.,0.0,0
+2300,d097da46,Merge branch 'develop' into ssh_config_parser,0.0,0
+2301,38d23969,Switched to openssl crypto. Now parallel job works.,0.0,0
+2302,2dc8800c,Merge remote-tracking branch 'origin/develop' into gradle-release,0.0,0
+2303,340a88ec,Merge branch 'develop' into intellij_analysis,0.0,0
+2304,b34b74dc,Merge branch 'develop' into intellij_analysis,0.0,0
+2305,387cb25d,Publish javadoc to gh-pages branch of forked Xenon repo.,0.0,0
+2306,715af040,Added task to check files for license header.,0.0,0
+2307,a4ac847f,Added support for passphrases on keys  and added integation tests for the various ways of authenticating whith SSH,0.0,0
+2308,9e7f2597,Added passhrase protected key and ssh-agent to docker images.,0.0,0
+2309,aaa94239,Instructed PMD to allow the long length of the Utils class,0.0,0
+2310,6d5d73b3,Merge branch 'ssh-passphrase' into develop,0.0,0
+2311,c7589b1a,Merge branch 'develop' of github.com:NLeSC/Xenon into develop,0.0,0
+2312,7b39d433,Added COMPLETED state to SlurmSchedulerConnection (regarded as one of the running states),0.0,0
+2313,7d0ca569,Added timeout to ssh-fillpass-xenon,0.0,0
+2314,094848cf,Initial commit,0.0,0
