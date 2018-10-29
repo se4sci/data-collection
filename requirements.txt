@@ -1,2 +1,7 @@
+nose
+pandas 
+scipy
+numpy
+matplotlib
 gitpython
 BeautifulSoup4
