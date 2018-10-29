@@ -91,12 +91,6 @@ class MetricsGetter:
                     #     Buggy commit hash              Clean commit hash
                     (all_commits.iloc[i-1]['hash'], all_commits.iloc[i]['hash']))
 
-        # -------------------------------------------------------
-        # !!!!!!!!!!!!!!!!! FOR TESTING ONLY !!!!!!!!!!!!!!!!!!!!
-        self.buggy_clean_pairs = self.buggy_clean_pairs[:5]  # !!
-        # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        # -------------------------------------------------------
-
         return self
 
     def _create_und_files(self, file_name_suffix):
