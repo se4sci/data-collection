@@ -17,9 +17,7 @@ if __name__ == "__main__":
     with MetricsGetter(args.project_name, commits_path) as metrics:
         # Get metrics
         metrics.get_all_metrics()
-
         # Clean rows
         metrics.clean_rows()
-
         # Save as CSV
         metrics.save_to_csv()

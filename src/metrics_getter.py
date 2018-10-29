@@ -13,17 +13,17 @@ from .utils import printProgressBar
 
 REPO_LINKS = {
     "abinit": {
-        "url" :"https://github.com/abinit/abinit",
-        "lang": "FORTRAN"
-        },
+        "url": "https://github.com/abinit/abinit",
+        "lang": "fortran"
+    },
     "mdanalysis": {
-        "url": "https://github.com/MDAnalysis/mdanalysis", 
+        "url": "https://github.com/MDAnalysis/mdanalysis",
         "lang": "python"
-        },
+    },
     "libmesh": {
-        "url": "https://github.com/libMesh/libmesh",           
+        "url": "https://github.com/libMesh/libmesh",
         "lang": "C"
-        },
+    },
     "lammps": {
         "url": "https://github.com/lammps/lammps",
         "lang": "C"
@@ -91,12 +91,17 @@ class MetricsGetter:
                     #     Buggy commit hash              Clean commit hash
                     (all_commits.iloc[i-1]['hash'], all_commits.iloc[i]['hash']))
 
+        # -------------------------------------------------------
+        # !!!!!!!!!!!!!!!!! FOR TESTING ONLY !!!!!!!!!!!!!!!!!!!!
+        self.buggy_clean_pairs = self.buggy_clean_pairs[:5]  # !!
+        # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        # -------------------------------------------------------
+
         return self
 
     def _create_und_files(self, file_name_suffix):
         """
         Creates understand project files
-
         Parameters
         ----------
         file_name_suffix : str
@@ -116,8 +121,16 @@ class MetricsGetter:
                 os.rename(filename, filename[:-4] + '.f90')
 
         # Generate udb file
-        cmd = "und create -languages python C++ Fortran add {} analyze {}".format(
-            str(self.source_path), str(und_file))
+        if REPO_LINKS[self.project_name]["lang"] == "fortran":
+            cmd = "und create -languages Fortran add {} analyze {}".format(
+                str(self.source_path), str(und_file))
+        elif REPO_LINKS[self.project_name]["lang"] == "python":
+            cmd = "und create -languages python add {} analyze {}".format(
+                str(self.source_path), str(und_file))
+        if REPO_LINKS[self.project_name]["lang"] == "C":
+            cmd = "und create -languages C++ add {} analyze {}".format(
+                str(self.source_path), str(und_file))
+
         self._os_cmd(cmd)
 
         if file_name_suffix == "buggy":
@@ -129,7 +142,7 @@ class MetricsGetter:
         os.chdir(self.source_path)
 
     @staticmethod
-    def _os_cmd(cmd):
+    def _os_cmd(cmd, verbose=False):
         """
         Run a command on the shell
 
@@ -141,6 +154,10 @@ class MetricsGetter:
         cmd = shlex.split(cmd)
         with sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.DEVNULL) as p:
             out, err = p.communicate()
+
+        if verbose:
+            print(out)
+            print(err)
         return out, err
 
     def _files_changed_in_git_diff(self, hash_1, hash_2):
@@ -158,7 +175,7 @@ class MetricsGetter:
         -------
         List[str]:
             A list of all files changed. For simplicity we only include *.py
-            *.F90, *.c, *.cpp, *.java.         
+            *.F90, *.c, *.cpp, *.java.
         """
 
         os.chdir(self.source_path)
@@ -170,11 +187,11 @@ class MetricsGetter:
             for wanted in [".py", ".c", ".cpp", ".F90", ".f90", ".java"]:
                 if wanted in str(file):
                     files_changed.append(Path(str(file)).name[:-1])
-        
+
         # A work around for FORTRAN file extensions.
         if REPO_LINKS[self.project_name]["lang"] == "fortran":
             files_changed = list(map(lambda x: x[:-4]+".f90", files_changed))
-        
+
         return files_changed
 
     def get_all_metrics(self):
@@ -185,7 +202,7 @@ class MetricsGetter:
         -----
         + For every clean and buggy pairs of hashed, do the following:
             1. Get the diff of the files changes
-            2. Checkout the snapshot at the buggy commit 
+            2. Checkout the snapshot at the buggy commit
             3. Compute the metrics of the files in that commit.
             4. Next, checkout the snapshot at the clean commit.
             5. Compute the metrics of the files in that commit.
@@ -203,7 +220,7 @@ class MetricsGetter:
 
             # Checkout the master branch first, we'll need this
             # to find what files have changed.
-            self._os_cmd("git checkout master")
+            self._os_cmd("git reset --hard master", verbose=True)
 
             # Get a list of files changed between the two hashes
             files_changed = self._files_changed_in_git_diff(
@@ -212,11 +229,13 @@ class MetricsGetter:
             # ---------------------- BUGGY FILES METRICS -----------------------
             # ------------------------------------------------------------------
             # Checkout the buggy commit hash
-            self._os_cmd("git checkout {}".format(buggy_hash))
+            self._os_cmd(
+                "git reset --hard {}".format(buggy_hash), verbose=True)
+
             # Create a understand file for this hash
             self._create_und_files("buggy")
-            db = und.open(str(self.buggy_und_file))
-            for file in db.ents("File"):
+            db_buggy = und.open(str(self.buggy_und_file))
+            for file in db_buggy.ents("File"):
                 # print directory name
                 if str(file) in files_changed:
                     metrics = file.metric(file.metrics())
@@ -224,16 +243,21 @@ class MetricsGetter:
                     metrics["Bugs"] = 1
                     self.metrics_dataframe = self.metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
+            # Purge und file
+            db_buggy.close()
+            self._os_cmd("rm {}".format(str(self.buggy_und_file)))
 
             # ------------------------------------------------------------------
             # ---------------------- CLEAN FILES METRICS -----------------------
             # ------------------------------------------------------------------
             # Checkout the clean commit hash
-            self._os_cmd("git checkout {}".format(clean_hash))
+            self._os_cmd(
+                "git reset --hard {}".format(clean_hash), verbose=True)
+
             # Create a understand file for this hash
             self._create_und_files("clean")
-            db = und.open(str(self.clean_und_file))
-            for j, file in enumerate(db.ents("File")):
+            db_clean = und.open(str(self.clean_und_file))
+            for file in db_clean.ents("File"):
                 # print directory name
                 if str(file) in files_changed:
                     metrics = file.metric(file.metrics())
@@ -241,6 +265,9 @@ class MetricsGetter:
                     metrics["Bugs"] = 0
                     self.metrics_dataframe = self.metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
+            db_clean.close()
+            # Purge und file
+            self._os_cmd("rm {}".format(str(self.clean_und_file)))
 
             printProgressBar(i, len(self.buggy_clean_pairs),
                              prefix='Progress:', suffix='Complete', length=50)
@@ -249,20 +276,22 @@ class MetricsGetter:
         """
         Remove duplicate rows
         """
+
         # Select columns which are considered for duplicate removal
         metric_cols = [
             col for col in self.metrics_dataframe.columns if not col in [
                 "Name", "Bugs"]]
 
         # Drop duplicate rows
-        self.metrics_dataframe.drop_duplicates(subset="CountLine", inplace=True)
+        self.deduped_metrics = self.metrics_dataframe.drop_duplicates(
+            subset=metric_cols, keep=False)
 
         # Rearrange columns
         self.metrics_dataframe = self.metrics_dataframe[
             ["Name"]+metric_cols+["Bugs"]]
 
     def save_to_csv(self):
-        """ 
+        """
         Save the metrics dataframe to CSV
         """
         # Determine the path to save file
