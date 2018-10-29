@@ -220,7 +220,7 @@ class MetricsGetter:
 
             # Checkout the master branch first, we'll need this
             # to find what files have changed.
-            self._os_cmd("git reset --hard master", verbose=True)
+            self._os_cmd("git reset --hard master", verbose=False)
 
             # Get a list of files changed between the two hashes
             files_changed = self._files_changed_in_git_diff(
@@ -230,7 +230,7 @@ class MetricsGetter:
             # ------------------------------------------------------------------
             # Checkout the buggy commit hash
             self._os_cmd(
-                "git reset --hard {}".format(buggy_hash), verbose=True)
+                "git reset --hard {}".format(buggy_hash), verbose=False)
 
             # Create a understand file for this hash
             self._create_und_files("buggy")
@@ -252,7 +252,7 @@ class MetricsGetter:
             # ------------------------------------------------------------------
             # Checkout the clean commit hash
             self._os_cmd(
-                "git reset --hard {}".format(clean_hash), verbose=True)
+                "git reset --hard {}".format(clean_hash), verbose=False)
 
             # Create a understand file for this hash
             self._create_und_files("clean")
