@@ -219,7 +219,6 @@ class MetricsGetter:
             for file in db.ents("File"):
                 # print directory name
                 if str(file) in files_changed:
-                # if str(file) in :
                     metrics = file.metric(file.metrics())
                     metrics["Name"] = file.name()
                     metrics["Bugs"] = 1
