@@ -10,8 +10,24 @@ from pathlib import Path
 from pdb import set_trace
 from collections import defaultdict
 from .utils import printProgressBar
+
 REPO_LINKS = {
-    "abinit": "https://github.com/abinit/abinit"
+    "abinit": {
+        "url" :"https://github.com/abinit/abinit",
+        "lang": "FORTRAN"
+        },
+    "mdanalysis": {
+        "url": "https://github.com/MDAnalysis/mdanalysis", 
+        "lang": "python"
+        },
+    "libmesh": {
+        "url": "https://github.com/libMesh/libmesh",           
+        "lang": "C"
+        },
+    "lammps": {
+        "url": "https://github.com/lammps/lammps",
+        "lang": "C"
+    }
 }
 
 
@@ -43,13 +59,6 @@ class MetricsGetter:
         # Reference current directory, so we can go back after we are done.
         self.cwd = Path(os.getcwd())
 
-        # Create path to datasets
-        self.datasets_path = self.cwd.joinpath("datasets", self.project_name)
-
-        # Create a folder with the project name for the datasets
-        if not self.datasets_path.is_dir():
-            os.makedirs(self.datasets_path)
-
         # Generate path to store udb files
         self.udb_path = self.cwd.joinpath(".temp", "udb")
 
@@ -64,7 +73,7 @@ class MetricsGetter:
         # If project source doesn't exist, clone it.
         if not self.source_path.is_dir():
             self._os_cmd("git clone {} {}".
-                         format(REPO_LINKS[self.project_name], self.source_path))
+                         format(REPO_LINKS[self.project_name]["url"], self.source_path))
 
         # Read all commit files.
         files = []
@@ -107,8 +116,8 @@ class MetricsGetter:
                 os.rename(filename, filename[:-4] + '.f90')
 
         # Generate udb file
-        cmd = "und create -languages Fortran add {} analyze {}".format(
-            str(self.source_path.joinpath("src")), str(und_file))
+        cmd = "und create -languages python C++ Fortran add {} analyze {}".format(
+            str(self.source_path), str(und_file))
         self._os_cmd(cmd)
 
         if file_name_suffix == "buggy":
@@ -161,7 +170,11 @@ class MetricsGetter:
             for wanted in [".py", ".c", ".cpp", ".F90", ".f90", ".java"]:
                 if wanted in str(file):
                     files_changed.append(Path(str(file)).name[:-1])
-
+        
+        # A work around for FORTRAN file extensions.
+        if REPO_LINKS[self.project_name]["lang"] == "fortran":
+            files_changed = list(map(lambda x: x[:-4]+".f90", files_changed))
+        
         return files_changed
 
     def get_all_metrics(self):
@@ -179,14 +192,12 @@ class MetricsGetter:
         """
 
         self.metrics_dataframe = pd.DataFrame()
-        printProgressBar(0, 10, prefix='Progress:',
+
+        printProgressBar(0, len(self.buggy_clean_pairs), prefix='Progress:',
                          suffix='Complete', length=50)
 
-        # printProgressBar(0, len(self.buggy_clean_pairs), prefix='Progress:',
-        #                  suffix='Complete', length=50)
-
         # 1. For each clean-buggy commit pairs
-        for i, (buggy_hash, clean_hash) in enumerate(self.buggy_clean_pairs[:10]):
+        for i, (buggy_hash, clean_hash) in enumerate(self.buggy_clean_pairs):
             # Go the the cloned project path
             os.chdir(self.source_path)
 
@@ -197,7 +208,6 @@ class MetricsGetter:
             # Get a list of files changed between the two hashes
             files_changed = self._files_changed_in_git_diff(
                 buggy_hash, clean_hash)
-
             # ------------------------------------------------------------------
             # ---------------------- BUGGY FILES METRICS -----------------------
             # ------------------------------------------------------------------
@@ -208,7 +218,8 @@ class MetricsGetter:
             db = und.open(str(self.buggy_und_file))
             for file in db.ents("File"):
                 # print directory name
-                if str(file) in map(lambda x: x[:-4]+".f90", files_changed):
+                if str(file) in files_changed:
+                # if str(file) in :
                     metrics = file.metric(file.metrics())
                     metrics["Name"] = file.name()
                     metrics["Bugs"] = 1
@@ -225,17 +236,15 @@ class MetricsGetter:
             db = und.open(str(self.clean_und_file))
             for j, file in enumerate(db.ents("File")):
                 # print directory name
-                if str(file) in map(lambda x: x[:-4]+".f90", files_changed):
+                if str(file) in files_changed:
                     metrics = file.metric(file.metrics())
                     metrics["Name"] = file.name()
                     metrics["Bugs"] = 0
                     self.metrics_dataframe = self.metrics_dataframe.append(
                         pd.Series(metrics), ignore_index=True)
 
-            printProgressBar(i, 10,
+            printProgressBar(i, len(self.buggy_clean_pairs),
                              prefix='Progress:', suffix='Complete', length=50)
-            # printProgressBar(i, len(self.buggy_clean_pairs),
-            #                  prefix='Progress:', suffix='Complete', length=50)
 
     def clean_rows(self):
         """

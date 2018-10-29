@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# VSCODE
+
+.vscode
+.vscode/*
+
+# MAC Junk
+.DS_Strore
