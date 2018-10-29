@@ -185,7 +185,7 @@ class MetricsGetter:
         files_changed = []
         for file in out.splitlines():
             for wanted in [".py", ".c", ".cpp", ".F90", ".f90", ".java"]:
-                if wanted in str(file):
+                if wanted in str(file) and "__init__.py" not in str(file):
                     files_changed.append(Path(str(file)).name[:-1])
 
         # A work around for FORTRAN file extensions.
