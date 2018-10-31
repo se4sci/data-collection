@@ -4,7 +4,7 @@ Unnamed: 0,Document Title,Abstract,time,label
 41,41,ee0864ba,Correct wrong dimensioning of nperm(: :) array,1540316870.340178,1
 140,140,19f2588d,Correct small error in input parsing script,1540316411.201279,1
 325,325,4cd5015f,Document greenData struct members,1540316174.177353,0
-20,20,a3628362,Merge branch 'wavelet-cavity' of repo.ctcc.no:pcmsolver into wavelet-cavity,1540316964.126389,1
+20,20,a3628362,Merge branch 'wavelet-cavity' of repo.ctcc.no:pcmsolver into wavelet-cavity,1540316964.126389,0
 27,27,86962e61,Correct use of nonequilibrium solver,1540316918.317847,1
 104,104,25db250e,Fix flags for C++ compilers,1540316544.940249,1
 204,204,48497f07,added wavelet software from Helmut,1540317173.846344,0
@@ -12,7 +12,7 @@ Unnamed: 0,Document Title,Abstract,time,label
 191,191,b244ed33,Minor fixes.,1540316184.259913,1
 158,158,dda2fcb3,Small fix.,1540316356.4923859,1
 70,70,bdb27830,Fix inconsistency betwen NumPy surface function save and load functions,1540316726.8765962,1
-2,2,7fa10e7b,Merge pull request #5 from robertodr/master,1540317230.063832,1
+2,2,7fa10e7b,Merge pull request #5 from robertodr/master,1540317230.063832,0
 253,253,7647c9db,Cavity output now contains also cavity input,1540316892.984297,0
 81,81,5418ebcb,Fix conf.py for doc build,1540316660.4980788,1
 53,53,0e5ff863,still debugging  now i get the first compression  however errors occur somewhere after that,1540316780.216088,1
@@ -33,7 +33,7 @@ Unnamed: 0,Document Title,Abstract,time,label
 209,209,7045ad8d,Fine-grain compilation on sources based on DEVELOPMENT_CODE flag.,1540317160.1189814,0
 54,54,f99a7104,Fix builds on Magnum CI + Eigen3 issues + RPATH issues,1540316775.692527,1
 131,131,004869ac,Minor modifications to initialization of solver in interface,1540316444.515529,1
-18,18,f529c9fc,Merge branch 'wavelet-cavity' into devel,1540317024.725058,1
+18,18,f529c9fc,Merge branch 'wavelet-cavity' into devel,1540317024.725058,0
 323,323,5b46918e,Add binary and png in .gitattributes,1540316178.806222,0
 260,260,8fb6f94c,Correct indentation,1540316838.420149,0
 274,274,fdcfd415,Fix licensing in Legendre.hpp,1540316601.797737,0
