@@ -1,0 +1,915 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+410549e,2015-05-15 19:57:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12452 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+aef75ac,2015-05-15 22:41:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13706 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+26c0997,2015-05-15 23:09:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13857 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+bff0947,2015-05-18 16:04:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13748 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b2b721f,2015-05-18 16:10:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13712 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d9be5d7,2015-05-18 21:06:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13713 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f110488,2015-05-18 21:08:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13714 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9d8ec27,2015-05-19 19:13:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13827 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+43d738e,2015-05-21 19:10:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13831 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+547f570,2015-06-04 14:32:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13832 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9a72a59,2015-06-08 23:55:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13833 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5a72351,2015-06-09 15:22:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13834 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e223ffe,2015-06-12 16:58:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13835 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+12b5742,2015-06-23 23:18:51,',0,,0.0
+4844574.0,2015-06-26 17:33:25,',0,,0.0
+721b312,2015-07-01 15:51:02,Fixing copy bug in pair_exp6_rx_kokkos,0,,1.0
+afd2f6b,2015-07-01 15:54:23,Fixing neighbor bug,0,,1.0
+fe0bf70,2015-07-01 19:56:10,fix another couple of typos,0,,0.0
+2b605e2,2015-07-01 21:02:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13840 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a67cb06,2015-07-01 21:52:07,Fixing neighbor bug,0,,1.0
+65f55e7,2015-07-02 00:39:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13841 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+90d0dd2,2015-07-02 00:39:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13843 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7abe03a,2015-07-02 00:43:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13830 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b3242e1,2015-07-02 00:44:17,',0,,0.0
+7579964.0,2015-07-02 00:44:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13852 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ade2dca,2015-07-02 00:45:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13853 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5db1b37,2015-07-02 00:48:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13854 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+38af3b0,2015-07-02 00:48:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13855 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+050244f,2015-07-02 14:26:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13856 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+79e142b,2015-07-02 19:09:11,Tweaked description of insertion rotation,0,,0.0
+ccfea31,2015-07-02 23:10:34,',0,,0.0
+8db4d80,2015-07-02 23:10:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13778 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0229556,2015-07-03 15:43:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15382 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+229556.0,2015-07-03 15:43:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11990 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9d3ab0f,2015-07-06 13:53:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13790 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6f3946b,2015-07-06 14:03:53,',0,,0.0
+a60a088,2015-07-06 14:04:30,',0,,0.0
+29557ef,2015-07-06 14:10:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13826 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5622ae8,2015-07-06 14:31:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13731 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+dd8b6a6,2015-07-06 14:31:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13825 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+480fdcc,2015-07-06 15:54:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13716 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4155d70,2015-07-06 16:32:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13718 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+da4f029,2015-07-06 16:33:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13719 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5aafb05,2015-07-06 16:33:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13722 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1cfff72,2015-07-06 16:34:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13723 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a0163ac,2015-07-06 16:34:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13726 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fc933f2,2015-07-06 16:35:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13739 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0ab61a4,2015-07-06 16:44:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13727 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+819276d,2015-07-06 16:44:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13728 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e60ccb6,2015-07-06 16:45:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13729 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+217fdbc,2015-07-06 17:08:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13715 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f03b5a8,2015-07-07 16:43:21,Fixed so tabulated pair_vashishta uses same pair_modify command style as other pair styles,0,,1.0
+8749c91,2015-07-07 18:41:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13730 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cd4d1ec,2015-07-07 19:58:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13732 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c368b5f,2015-07-07 23:50:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13733 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1d04d83,2015-07-07 23:58:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13734 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d464e97,2015-07-08 02:31:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13735 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0210c45,2015-07-08 04:04:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13738 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e52b320,2015-07-08 04:06:03,',0,,0.0
+7b3f236,2015-07-08 04:07:49,',0,,0.0
+a3c3e6c,2015-07-08 14:41:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13777 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9414009.0,2015-07-08 14:47:33,',0,,0.0
+d434e66,2015-07-08 14:50:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13815 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+596a3a9,2015-07-08 15:00:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12250 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7a4fbd4,2015-07-08 15:03:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12274 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d88e01e,2015-07-08 15:03:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13522 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d8cc5a4,2015-07-08 15:12:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12270 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d4ff848,2015-07-08 15:20:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12276 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a222aa2,2015-07-08 15:31:07,',0,,0.0
+eb6c99b,2015-07-08 15:31:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12194 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2e1c813,2015-07-08 22:23:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12195 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1ec5dd6,2015-07-08 22:23:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12196 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5501c07,2015-07-08 22:25:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12197 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+616e95e,2015-07-08 22:25:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12198 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+42ef877,2015-07-09 22:44:52,fix ave/chunk fixes  2d disc option  fix_modify dynamic/dof,0,,1.0
+c210fae,2015-07-09 22:46:55,fix possible uninitialized data access with pppm and pppm/disp,0,,1.0
+ac35671,2015-07-13 15:00:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12199 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6606a83,2015-07-13 15:17:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12200 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+476ff26,2015-07-14 16:00:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12201 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+233c652,2015-07-14 17:20:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13697 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ba5cad5,2015-07-14 17:20:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12202 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+dd45068,2015-07-14 17:24:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12204 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+64e0dec,2015-07-14 17:24:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12206 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4e6e4da,2015-07-14 17:29:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12207 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ca4fa34,2015-07-14 17:39:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12208 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+26b23a4,2015-07-14 19:55:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12209 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+47e13d7,2015-07-14 19:55:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12210 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+61ec2f7,2015-07-14 19:57:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12211 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7c2f518,2015-07-14 20:02:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12212 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+639c39f,2015-07-14 20:04:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12213 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fb11957,2015-07-14 20:10:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12214 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e60fcd9,2015-07-14 20:13:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12203 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+74aa492,2015-07-14 20:13:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13695 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f393d01,2015-07-14 21:37:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13517 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+dba2abc,2015-07-15 16:36:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13515 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+062a357,2015-07-15 16:53:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13519 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f7bc08d,2015-07-15 21:29:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13483 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d23e550,2015-07-15 21:33:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13503 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+eceb8f1,2015-07-15 22:56:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13484 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4c5985d,2015-07-16 15:37:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13486 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+79a3604,2015-07-16 15:37:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13488 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5a21de6,2015-07-16 21:21:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13489 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+58091a4,2015-07-16 21:52:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13490 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+97b3d8d,2015-07-16 21:52:39,Updated to new QUIP directory structure,0,,0.0
+8667fbe,2015-07-16 21:52:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13494 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3310614.0,2015-07-16 21:52:56,Describes new QUIP directory structure,0,,0.0
+b96e60f,2015-07-16 21:53:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13501 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e4e7165,2015-07-16 21:53:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13502 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6295fc6,2015-07-16 22:30:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13504 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6a79311,2015-07-16 22:32:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13518 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a2c475b,2015-07-16 22:34:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13505 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2e4b4ba,2015-07-16 22:35:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13506 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+63d154a,2015-07-16 22:37:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13507 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8e3c4f7,2015-07-16 22:38:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13508 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a7d83da,2015-07-16 22:39:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13510 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5288406.0,2015-07-16 22:41:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13511 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9d8b08f,2015-07-16 22:44:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13512 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f39666e,2015-07-16 22:44:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13513 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3341c4d,2015-07-16 23:36:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12215 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9.36e+138,2015-07-16 23:37:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12217 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+21727b3,2015-07-16 23:38:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12218 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0a4962b,2015-07-17 15:02:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12188 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b35f4e5,2015-07-17 15:04:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12221 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c5bb851,2015-07-17 15:08:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12222 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4e75721,2015-07-17 16:17:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12261 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0b8bad3,2015-07-17 16:21:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12251 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9a1737e,2015-07-17 16:40:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12252 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f249271,2015-07-17 17:24:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12253 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+dd474fb,2015-07-17 17:25:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12254 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d9ad60f,2015-07-17 18:05:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12255 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6d665f1,2015-07-17 18:15:35,Fixing compile error with Kokkos CUDA Makefiles,0,,1.0
+1ebb654,2015-07-17 23:20:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12256 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+11de055,2015-07-17 23:33:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12257 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0e18ddd,2015-07-18 00:08:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12219 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+af21477,2015-07-18 00:12:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12258 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+680779c,2015-07-18 00:15:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12260 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1633701.0,2015-07-18 00:18:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12262 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2363060.0,2015-07-18 00:18:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12249 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+75a9c73,2015-07-18 00:40:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12263 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+62d15ab,2015-07-21 14:14:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12264 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+adc94dd,2015-07-21 22:48:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12265 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+028c6d8,2015-07-21 22:52:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12266 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+339ba17,2015-07-21 22:59:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12267 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+689a20f,2015-07-21 23:04:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12268 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b4ad688,2015-07-21 23:11:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12269 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9ee7c38,2015-07-21 23:15:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12259 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+354a802,2015-07-21 23:20:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12187 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9aee122,2015-07-21 23:42:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12173 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1ddb160,2015-07-21 23:48:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12186 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f9b7502,2015-07-22 14:36:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12192 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6e40300,2015-07-22 14:36:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12190 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8ee843d,2015-07-22 14:38:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12176 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b4a8019,2015-07-22 15:20:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13861 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+60cd716,2015-07-22 15:20:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13862 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+63802b7,2015-07-22 15:26:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13863 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5a7749e,2015-07-22 15:35:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12168 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+50e9b17,2015-07-22 15:39:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12169 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a8a64b8,2015-07-22 15:39:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12170 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ca5d4d8,2015-07-22 15:49:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12171 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+92b5c35,2015-07-22 15:49:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12193 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6864dfa,2015-07-22 15:52:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12172 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a5a4d41,2015-07-22 16:06:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12174 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+50b4210,2015-07-22 16:07:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12177 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ead2e3a,2015-07-22 16:11:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12189 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cd9d7e4,2015-07-22 16:14:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12178 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+261249d,2015-07-22 16:22:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12179 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0b9c5a0,2015-07-22 16:22:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12180 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f89f6a0,2015-07-22 16:31:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12181 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5b9dbb2,2015-07-23 14:56:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12182 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fcad65b,2015-07-23 14:56:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12183 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a683f51,2015-07-23 14:56:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12185 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6c84ca5,2015-07-23 15:47:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13780 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+54ad691,2015-07-23 15:47:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12275 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+96e3b7b,2015-07-23 15:51:18,',0,,0.0
+303d9b9,2015-07-24 14:16:56,,0,,
+e91bd24,2015-07-24 15:50:34,,0,,
+052f644,2015-07-24 17:57:18,,0,,
+c6c44b5,2015-07-24 17:57:41,,0,,
+9dbde79,2015-07-24 17:58:32,,0,,
+643f2bf,2015-07-24 17:59:16,,0,,
+4af5546,2015-07-24 22:51:21,,0,,
+8aa285e,2015-07-24 23:03:12,,0,,
+bc62538,2015-07-24 23:03:15,,0,,
+bbef0a8,2015-07-24 23:15:45,,0,,
+2a05c2e,2015-07-24 23:22:18,,0,,
+fa048e5,2015-07-27 14:28:11,,0,,
+8fe1cd9,2015-07-27 14:41:27,,0,,
+8.936e+70,2015-07-27 14:51:17,,0,,
+6d83f5e,2015-07-27 14:54:15,,0,,
+3dfb446,2015-07-27 14:57:19,,0,,
+d58afbc,2015-07-27 14:58:04,,0,,
+218bd7c,2015-07-27 15:00:00,,0,,
+059f719,2015-07-27 18:05:31,,0,,
+f524105,2015-07-27 18:05:49,,0,,
+687247b,2015-07-27 18:07:51,,0,,
+1a40739,2015-07-27 18:07:53,,0,,
+9ed741e,2015-07-27 18:12:18,,0,,
+3177446.0,2015-07-27 18:12:57,,0,,
+633d506,2015-07-27 20:33:03,,0,,
+fc4c6b0,2015-07-27 21:12:34,,0,,
+c0354ea,2015-07-27 22:05:56,,0,,
+f851538,2015-07-28 14:37:39,,0,,
+6a4f1ae,2015-07-28 15:04:45,,0,,
+6e24fac,2015-07-28 15:11:10,,0,,
+66a82e3,2015-07-28 15:21:03,,0,,
+0b5f034,2015-07-28 15:21:59,,0,,
+bcdde44,2015-07-28 15:24:00,,0,,
+5b109e4,2015-07-28 15:28:32,,0,,
+d89332f,2015-07-28 15:40:37,,0,,
+737f6dc,2015-07-28 16:04:10,,0,,
+1ff053e,2015-07-28 17:40:16,,0,,
+c16f3a8,2015-07-28 20:14:21,,0,,
+cab2496,2015-07-28 20:19:48,,0,,
+73feacb,2015-07-28 21:27:22,,0,,
+783fa29,2015-07-28 21:27:28,,0,,
+8b6f939,2015-07-28 21:46:05,,0,,
+8e49abc,2015-07-28 21:46:57,,0,,
+299b207,2015-07-28 21:48:16,,0,,
+24c02ed,2015-07-28 21:51:22,,0,,
+5d21c88,2015-07-28 21:55:40,,0,,
+d25b21d,2015-07-28 22:00:48,,0,,
+d80cdcf,2015-07-28 22:00:52,,0,,
+1acc3e3,2015-07-28 22:09:37,,0,,
+dc536d8,2015-07-28 22:09:43,,0,,
+d205583,2015-07-28 22:13:58,,0,,
+c531bad,2015-07-28 22:14:20,,0,,
+6592d2a,2015-07-28 22:15:30,,0,,
+4.551e+53,2015-07-28 22:27:31,,0,,
+0fcb6cf,2015-07-28 22:56:59,,0,,
+4715f3c,2015-07-28 23:37:45,,0,,
+179bdc7,2015-07-28 23:39:47,,0,,
+9a1aa45,2015-07-28 23:45:28,,0,,
+6091ba4,2015-07-28 23:45:58,,0,,
+60334f9,2015-07-28 23:47:20,,0,,
+a4af676,2015-07-28 23:49:34,,0,,
+40ad1ad,2015-07-29 14:07:02,,0,,
+0bc9643,2015-07-29 14:07:41,,0,,
+5c85ecd,2015-07-29 23:55:00,,0,,
+ae025d5,2015-07-30 00:03:34,,0,,
+bbb618c,2015-07-30 00:04:00,,0,,
+544e55c,2015-07-30 00:05:24,,0,,
+956fb72,2015-07-30 00:11:16,,0,,
+f46b165,2015-07-30 13:54:29,,0,,
+37fff68,2015-07-30 13:55:51,,0,,
+ee6fce7,2015-07-30 14:33:54,,0,,
+765fc83,2015-07-30 14:35:44,,0,,
+71ebbc3,2015-07-30 14:38:28,,0,,
+7ef61b1,2015-07-30 14:50:06,,0,,
+3116492.0,2015-07-30 14:53:28,,0,,
+3159a0c,2015-07-30 16:49:30,,0,,
+7eb82ad,2015-07-31 20:54:39,,0,,
+992d9ff,2015-07-31 23:59:10,,0,,
+80a58bf,2015-07-31 23:59:29,,0,,
+9213a78,2015-08-01 16:13:14,,0,,
+354ee97,2015-08-01 23:04:25,new fix wall/gran/region command  REBO bug fix  new example log files,0,,1.0
+7928a73,2015-08-01 23:06:35,,0,,
+57ed470,2015-08-04 18:48:13,,0,,
+b0dec93,2015-08-04 18:54:11,,0,,
+810a134,2015-08-04 19:08:26,,0,,
+365d119,2015-08-04 19:26:51,,0,,
+2f7344a,2015-08-04 19:55:02,,0,,
+318aefa,2015-08-04 20:56:27,,0,,
+d7e358c,2015-08-04 20:56:54,,0,,
+7e1de6d,2015-08-04 20:57:54,,0,,
+e5beeb1,2015-08-05 00:26:06,,0,,
+fbfd916,2015-08-05 00:28:53,,0,,
+b616d79,2015-08-05 00:29:31,,0,,
+cefaee3,2015-08-05 00:43:30,,0,,
+901bb5d,2015-08-05 00:43:32,,0,,
+e309f5f,2015-08-05 00:58:21,,0,,
+38cd445,2015-08-05 13:08:56,,0,,
+08e9e3c,2015-08-05 13:09:10,,0,,
+4b03a29,2015-08-10 02:57:32,address spline out-of-bounds bug reported in issue #59 and refactor high-level spline code for consistency and efficiency,0,,1.0
+00833cd,2015-08-10 20:15:20,,0,,
+a9c64a1,2015-08-10 20:15:40,,0,,
+f2276c9,2015-08-10 20:27:45,,0,,
+23a8240,2015-08-10 20:34:00,,0,,
+4731f7e,2015-08-10 20:35:31,,0,,
+168a283,2015-08-10 23:47:27,,0,,
+6e2fad3,2015-08-10 23:47:41,,0,,
+2df93f0,2015-08-10 23:47:55,',0,,0.0
+76cfa65,2015-08-10 23:48:37,,0,,
+5f76611,2015-08-10 23:50:55,,0,,
+8cc111e,2015-08-10 23:53:39,,0,,
+ee8892a,2015-08-10 23:53:41,,0,,
+1a53c31,2015-08-11 00:08:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13980 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e4907d7,2015-08-11 00:08:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13981 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fe2ce45,2015-08-13 14:52:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13983 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+be93068,2015-08-13 14:52:21,Delete man_fix_bocs.html,0,,0.0
+36315f3,2015-08-13 14:52:31,',0,,0.0
+24bf972,2015-08-14 14:56:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14091 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6663800.0,2015-08-14 19:07:16,mention that fix reax/bonds and reax/c/bonds do not honor the group id,0,,0.0
+2395d65,2015-08-14 19:07:30,revert <cinttypes> back to <inttypes.h> as the former seems to require C++-11,0,,0.0
+21dd53e,2015-08-14 19:09:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14092 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+916fc0f,2015-08-18 21:13:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14093 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+adabfc3,2015-08-18 21:50:30,add VTK config for recent fedora versions,0,,0.0
+6da9e4c,2015-08-18 22:54:48,',0,,0.0
+dc2ebd0,2015-08-18 22:59:25,',0,,0.0
+a4c8c59,2015-08-18 23:22:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13972 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+bcaafc2,2015-08-18 23:22:43,2nd set of updates,0,,0.0
+4d19041,2015-08-18 23:22:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13975 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9a4a5c1,2015-08-18 23:22:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13956 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+83c1ac6,2015-08-18 23:57:58,',0,,0.0
+7be9bc3,2015-08-19 14:33:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13931 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+16eed7a,2015-08-19 14:39:33,',0,,0.0
+2f55b6d,2015-08-19 14:55:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13932 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1c3e0db,2015-08-19 14:56:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13933 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c85a42a,2015-08-19 15:11:20,',0,,0.0
+21f8abd,2015-08-19 15:15:32,',0,,0.0
+071ded9,2015-08-19 15:16:24,',0,,0.0
+185e746,2015-08-19 15:19:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13965 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+56d0cae,2015-08-19 15:23:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13964 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cd86153,2015-08-19 15:32:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13900 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+06f25e6,2015-08-19 15:38:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13902 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7e8fff9,2015-08-19 15:38:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13903 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3e90c3e,2015-08-19 15:43:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13904 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e3cfdfd,2015-08-19 16:15:23,replace variable length arrays in fix rx of USER-DPD with new/delete,0,,0.0
+fbaff8e,2015-08-19 16:15:31,replace variable length arrays in pair style tdpd with new/delete,0,,0.0
+8dae768,2015-08-19 16:15:42,replace variable length arrays in compute basal/atom with new/delete,0,,0.0
+27b4742,2015-08-19 16:15:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13905 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e2ac7b2,2015-08-19 22:12:32,',0,,0.0
+494ee3b,2015-08-19 22:17:15,',0,,0.0
+e4e5261,2015-08-19 22:50:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13955 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f842d1b,2015-08-20 15:44:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13957 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3fcbe43,2015-08-20 15:55:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13958 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fec0587,2015-08-20 16:53:24,',0,,0.0
+01004c3,2015-08-20 18:59:20,',0,,0.0
+717ecf0,2015-08-20 21:38:25,',0,,0.0
+f5388bb,2015-08-21 22:51:16,',0,,0.0
+6353450.0,2015-08-21 22:51:32,',0,,0.0
+3841dd5,2015-08-21 22:55:12,remove some extra semicolons,0,,0.0
+16d803e,2015-08-22 00:18:47,Merge branch 'master' into user-cgdna,0,,0.0
+01447fe,2015-08-22 00:20:02,Merge pull request #10 from lammps/master,0,,0.0
+962dd0d,2015-08-22 00:20:05,Removed old documentation,0,,0.0
+ce59e32,2015-08-28 20:00:56,update .gitignore for lib/latte,0,,0.0
+eee480c,2015-08-28 20:01:49,include USER-BOCS package in cmake,0,,0.0
+75cf1f5,2015-08-28 20:02:02,adapt isfinite() handling to upstream,0,,0.0
+cc7cb87,2015-08-28 20:06:12,plug memory leaks in USER-BOCS,0,,0.0
+c2352b9,2015-08-28 20:07:46,Merge pull request #894 from akohlmey/cplusplus-clang-fixes,0,,0.0
+abcda0a,2015-08-28 20:07:56,fix1,0,,0.0
+b0215cc,2015-08-28 20:40:07,convert atc library header files to C++ style,0,,0.0
+591490000000.0,2015-08-28 20:40:16,Merge pull request #634 from craabreu/master,0,,0.0
+1fe96eb,2015-08-28 20:45:16,Merge pull request #879 from mdelyser/USER-BOCS,0,,0.0
+2648166.0,2015-08-28 20:45:18,Merge pull request #887 from akohlmey/create-bonds-single-bugfix,0,,0.0
+4296808.0,2015-08-28 23:35:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14604 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0f3d77e,2015-08-28 23:35:43,use american spelling of neighbor consistently in docs and code comments,0,,0.0
+4e247c3,2015-08-28 23:36:43,Merge pull request #889 from akohlmey/cplusplus-compliance,0,,0.0
+6b854b3,2015-08-28 23:41:05,need to ignore pair style kim in src/,0,,0.0
+a47262d,2015-08-28 23:48:36,Added reference to implementation paper,0,,0.0
+59520bb,2015-08-28 23:48:49,eliminate variable length arrays from AtC lib for C++ standard compliance,0,,0.0
+90a3eb3,2015-08-28 23:49:09,',0,,0.0
+c9188c0,2015-08-28 23:50:01,Merge pull request #895 from junghans/cmake,0,,0.0
+546ccbe,2015-08-28 23:51:23,',0,,0.0
+272640d,2015-08-28 23:51:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13945 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fa37609,2015-08-28 23:54:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13946 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f945c6d,2015-08-28 23:54:15,update logfiles and adjust some example inputs to be consistent,0,,0.0
+4d13f3d,2015-08-29 00:13:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13950 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+34c599b,2015-08-29 00:13:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13951 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d95acac,2015-08-29 00:19:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13952 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c20049b,2015-08-29 00:19:08,avoiding variable length array in pair style comb3 by declaring MAXLIB const,0,,0.0
+21a6d44,2015-08-29 21:58:08,more cosmetic changes to silence pedantic warnings,0,,0.0
+6e4f2fd,2015-08-29 21:58:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13890 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c5ff6e6,2015-08-29 22:01:04,Merge pull request #893 from ohenrich/user-cgdna,0,,0.0
+1a435a4,2015-08-29 22:01:12,some more cosmetic changes,0,,0.0
+4bd3fe8,2015-08-29 22:03:12,use correct namespace when instantiating IntelBuffers ,0,,0.0
+3131840.0,2015-08-31 13:32:05,replace variable length array with constant length through making maxLine constant,0,,0.0
+14554c9,2015-08-31 15:20:49,Fixing Kokkos bugs,0,,1.0
+5c5df89,2015-08-31 16:08:00,Fixing fdotr in pair_buck_coul_cut_kokkos,0,,1.0
+36018a3,2015-09-02 14:04:46,cmake: remove obsolete BODY/POEMS conflict,0,,0.0
+16ded23,2015-09-02 19:32:33,Tweak to Kokkos Cuda Makefile allowing it to automatically find the nvcc wrapper,0,,0.0
+3f79c91,2015-09-02 19:32:36,',0,,0.0
+047be53,2015-09-02 20:39:55,',0,,0.0
+a6b9148,2015-09-02 20:41:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13991 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fbf6999,2015-09-02 20:41:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14064 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ae980d6,2015-09-02 20:41:38,Small fixes to Colvars library,0,,0.0
+36b34c8,2015-09-02 20:44:36,Update fix_bocs.cpp,0,,0.0
+7df1d7a,2015-09-02 20:44:39,',0,,0.0
+7420059.0,2015-09-03 00:08:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14053 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ba42504,2015-09-03 00:09:07,Merge pull request #886 from lammps/snap-quadratic,0,,0.0
+a3017bc,2015-09-03 00:14:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14025 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f35b63f,2015-09-03 00:14:17,Merge pull request #883 from giacomofiorin/colvars-update,0,,0.0
+4be1616,2015-09-03 00:14:29,',0,,0.0
+daff294,2015-09-03 00:19:46,',0,,0.0
+1bc274e,2015-09-03 00:19:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14028 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7b30c20,2015-09-04 23:17:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14029 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+40382cb,2015-09-04 23:23:47,',0,,0.0
+c7303a1,2015-09-08 14:13:03,',0,,0.0
+6f4af86,2015-09-08 22:13:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14061 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+11d8194,2015-09-08 23:37:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13992 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+942cce8,2015-09-08 23:38:11,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14060 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+807cb72,2015-09-08 23:49:48,',0,,0.0
+9a80425,2015-09-08 23:50:06,',0,,0.0
+3cf2e3f,2015-09-08 23:50:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13995 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ab7ff21,2015-09-08 23:50:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13996 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c3e333c,2015-09-08 23:51:12,Added atom jiggle to initial structure,0,,0.0
+63759a1,2015-09-08 23:53:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14021 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fafba07,2015-09-08 23:53:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14023 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9aac00e,2015-09-08 23:55:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14068 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+71054c5,2015-09-08 23:55:14,Slight tweak to Kokkos Cuda Makefile,0,,0.0
+11fea85,2015-09-08 23:55:51,',0,,0.0
+abbf8d2,2015-09-08 23:58:46,',0,,0.0
+556bde6,2015-09-09 00:02:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14057 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+819dbd1,2015-09-09 00:02:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14059 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ebbc55b,2015-09-09 14:04:05,',0,,0.0
+8fe7c3d,2015-09-09 14:05:02,',0,,0.0
+b1090f8,2015-09-09 14:05:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14032 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9effcca,2015-09-11 14:49:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12844 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4035556.0,2015-09-11 14:50:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12846 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3561a54,2015-09-11 14:50:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12848 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d9d9a2a,2015-09-11 14:54:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12850 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d32cd3c,2015-09-11 15:03:39,Added logfreq2,0,,0.0
+bef809b,2015-09-11 15:05:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12853 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fa87761,2015-09-11 15:05:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12854 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+41ef5b7,2015-09-11 15:05:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12855 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+66566c5,2015-09-11 15:05:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12858 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+54210d7,2015-09-11 21:47:25,Fix wall forces and subtractAppliedForce for extended-Lagrangian ABF,0,,1.0
+8.86e+172,2015-09-11 22:08:22,Fixed another bug in edge_histo,0,,1.0
+0da2e17,2015-09-11 23:08:52,augment fix shardlow check for ordering fixes to be KOKKOS compatible,0,,1.0
+5cbf3cf,2015-09-11 23:09:21,apply bugfix to fix wall/gran by eric_lyster@agilent.com on lammps-users,0,,1.0
+79e5478,2015-09-11 23:39:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12859 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+67771a0,2015-09-11 23:39:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12860 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ed7559f,2015-09-12 16:41:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12861 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b9a5521,2015-09-18 20:36:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12862 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ca55525,2015-09-18 21:16:12,Fixed initialization of arrays in computes,0,,1.0
+fe3c667,2015-09-23 00:30:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12833 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4f6a6f3,2015-09-23 00:30:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12831 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+06bb2fb,2015-09-23 00:31:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14601 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d472396,2015-09-23 00:43:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12830 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cb971f0,2015-09-23 18:10:39,Corrected error in etail and ptail,0,,1.0
+0cc260a,2015-09-23 23:06:12,',0,,0.0
+a6ff24c,2015-09-24 20:01:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12842 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+70128bf,2015-09-24 20:01:39,',0,,0.0
+787cc14,2015-09-24 20:02:03,Made insertion work correctly for triclinic,0,,0.0
+ea547aa,2015-09-24 20:02:14,Tweaked bit about thermostats,0,,0.0
+2ed7d36,2015-09-24 20:16:09,Modifed ZBL to accomodate mixing,0,,0.0
+448b9f6,2015-09-24 20:18:19,Modifed ZBL to accomodate mixing,0,,0.0
+6f39a0a,2015-09-24 20:23:37,Modifed ZBL to accomodate mixing,0,,0.0
+44c8bb9,2015-09-24 20:23:56,Modifed ZBL to accomodate mixing,0,,0.0
+53a8a03,2015-09-24 20:24:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13949 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ac2ab62,2015-09-24 20:29:32,patch 8Mar18,0,,0.0
+c622ab1,2015-09-24 20:29:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15411 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5461867.0,2015-09-24 20:34:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12834 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d2ee16c,2015-09-24 20:35:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12835 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+aec30b0,2015-09-24 20:43:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12838 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+87025c6,2015-09-24 20:44:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12841 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9bdec30,2015-09-24 20:44:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14033 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+df7687f,2015-09-24 20:44:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13990 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ef4e8f2,2015-09-24 20:57:49,make sure all allocatable class pointers are initialized to NULL,0,,0.0
+d2a2124,2015-09-24 22:48:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13988 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+663551e,2015-09-24 22:48:45,',0,,0.0
+8fd8c25,2015-09-24 22:52:11,',0,,0.0
+61649b5,2015-09-24 22:52:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14134 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f384db5,2015-09-24 22:54:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14135 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+27c4acc,2015-09-24 22:54:21,Merge pull request #872 from akohlmey/ave-correlate-long-bugfix,0,,0.0
+4f4ba3f,2015-09-25 18:12:48,',0,,0.0
+6156578.0,2015-09-28 12:29:43,Require type argument be zero when mol keyword used,0,,0.0
+4d4d561,2015-09-28 12:29:55,patch 20Apr18,0,,0.0
+a6d7932,2015-09-28 12:37:59,Added Vashishta potential,0,,0.0
+89ea1e4,2015-09-28 12:38:11,add write_data() support to remaining improper styles.,0,,0.0
+858eed2,2015-09-28 12:38:18,Added deprecated warning message to pair_style reax,0,,0.0
+e551418,2015-09-30 23:00:44,Fixes issue #701,0,,1.0
+3f3165a,2015-10-02 19:54:31,added tfac_insert keyword,0,,0.0
+6f038ab,2015-10-05 15:10:54,added tfac_insert keyword and changed molecule insertion velocities PRNG,0,,0.0
+56ee1b6,2015-10-05 15:13:56,added tfac_insert keyword,0,,0.0
+0.0,2015-10-05 15:18:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14128 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+bee7ed9,2015-10-05 15:19:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14082 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fa6ad89,2015-10-05 15:20:06,',0,,0.0
+5fa97f5,2015-10-05 15:25:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14086 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c784292,2015-10-05 15:25:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14087 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+bb48e47,2015-10-05 15:32:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14088 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1bb4a26,2015-10-05 15:32:23,Added elastic constant example at finite temperature,0,,0.0
+f343a9f,2015-10-05 18:22:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14071 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+eda7896,2015-10-05 18:25:21,Merge pull request #867 from stanmoore1/kk_tweaks,0,,0.0
+46545bb,2015-10-05 18:30:11,Made molecule ID for molecule group to minus 1,0,,0.0
+db4d012,2015-10-05 18:41:56,Added Xiong's name and cleaned up code,0,,0.0
+8a024fa,2015-10-05 18:49:23,Added Vashishta potential,0,,0.0
+a1149ef,2015-10-05 18:52:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14126 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ae2a7e2,2015-10-05 18:54:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14112 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+233eaea,2015-10-05 18:54:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14113 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+da1e4e4,2015-10-05 21:02:38,',0,,0.0
+dcb68f4,2015-10-07 20:20:31,tweak to header file names,0,,0.0
+97878b1,2015-10-07 20:20:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14014 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+39e8123,2015-10-13 15:53:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14015 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+537e951,2015-10-13 15:54:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14016 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d357a2f,2015-10-13 16:11:13,Merge pull request #875 from akohlmey/collected-small-fixes,0,,0.0
+b437d74,2015-10-13 20:07:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14017 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5f1edde,2015-10-14 23:19:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14004 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d4870cd,2015-10-14 23:20:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14022 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+aa6624c,2015-10-15 00:12:59,make filenames comply with LAMMPS conventions and add reference log files,0,,0.0
+edf114f,2015-10-15 17:36:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13987 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c7170a4,2015-10-15 17:39:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14012 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+834731d,2015-10-15 18:41:59,Fix more typos in tools,0,,0.0
+2675f36,2015-10-15 21:00:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14114 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ce62105,2015-10-15 21:02:03,',0,,0.0
+9025f65,2015-10-16 18:37:06,Fixed error in average option,0,,1.0
+7b16c43,2015-10-19 17:19:32,Protected against numerical overflow at cutoff,0,,0.0
+45a91ea,2015-10-19 17:20:57,USER-BOCS,0,,0.0
+a38f111,2015-10-19 17:23:32,add extract to fix_group,0,,0.0
+bf26b12,2015-10-21 03:57:35,Merge pull request #9 from lammps/master,0,,0.0
+b2c2e38,2015-10-21 18:09:53,add write_data() support to 4 more dihedral styles  which completes the set,0,,0.0
+ddfb996,2015-10-21 18:16:47,Changed DATA to DATE in headers,0,,0.0
+9a878cd,2015-10-21 18:29:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14072 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ef82677,2015-10-21 18:51:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14069 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c4af165,2015-10-21 18:51:25,',0,,0.0
+cd07840,2015-10-21 18:52:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14003 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2ea1457,2015-10-21 18:53:06,',0,,0.0
+45e18fe,2015-10-21 18:53:15,',0,,0.0
+d145ae0,2015-10-21 19:27:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14007 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b036260,2015-10-21 19:28:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14008 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a5abe2a,2015-10-21 19:30:35,whitespace cleanup,0,,0.0
+cb6baee,2015-10-21 19:30:46,',0,,0.0
+abe4c06,2015-10-21 19:34:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13896 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8a10c55,2015-10-21 19:39:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14220 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1a488ad,2015-10-21 19:40:47,update lib/latte/Install.py to be consistent with CMake config,0,,0.0
+bc33be3,2015-10-21 19:41:00,',0,,0.0
+7163eaf,2015-10-21 19:42:12,',0,,0.0
+1953fd7,2015-10-21 19:55:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14299 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+87ae491,2015-10-21 19:55:53,Simplified non-overlap condition,0,,0.0
+869b8f9,2015-10-21 19:55:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14304 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3830813.0,2015-10-21 19:58:57,Simplified non-overlap condition,0,,0.0
+50733f2,2015-10-21 20:18:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14301 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2199974.0,2015-10-21 20:53:05,',0,,0.0
+636a690,2015-10-21 20:53:14,Merge pull request #865 from athomps/fix_gcmc_temperature,0,,0.0
+5775cf2,2015-10-21 21:00:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14215 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a2604e2,2015-10-21 21:01:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14218 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+069e25a,2015-10-21 21:01:49,doc typos,0,,0.0
+bc1cf99,2015-10-21 21:20:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14171 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4ce32a3,2015-10-21 21:23:26,',0,,0.0
+46e7b64,2015-10-21 23:13:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14187 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e512ca2,2015-10-21 23:14:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14172 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7a68ceb,2015-10-21 23:17:38,cmake: bump openkim to v1.9.4,0,,0.0
+d75b473,2015-10-21 23:17:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14221 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+066e759,2015-10-21 23:20:45,Fixed initialization of arrays in computes,0,,1.0
+1eeeb02,2015-10-22 19:05:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14225 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b229c71,2015-10-22 21:48:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14228 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cee848f,2015-10-22 22:06:49,Added hexatic bond orientational order parameter,0,,0.0
+449f373,2015-10-22 22:08:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14302 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0068c45,2015-10-22 22:09:41,',0,,0.0
+36b3880,2015-10-22 22:09:44,',0,,0.0
+0a4b0ce,2015-10-22 22:17:09,Merge pull request #852 from akohlmey/collected-small-bugfixes-and-updates,0,,0.0
+01acc93,2015-10-22 22:17:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14153 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d8c16fb,2015-10-22 22:56:04,Merge pull request #868 from junghans/latte,0,,0.0
+0eb2e8f,2015-10-22 22:56:21,alphabetize correction in docs,0,,0.0
+cfbe572,2015-10-22 23:03:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14201 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f8d13ac,2015-10-22 23:36:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14191 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d815b39,2015-10-22 23:39:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14192 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9cf48b9,2015-10-22 23:41:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14194 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+bcf5604,2015-10-22 23:46:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14266 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+439af71,2015-10-22 23:53:39,add info to compute heat/flux doc page,0,,0.0
+b723066,2015-10-22 23:53:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14265 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b45a8bb,2015-10-23 00:04:22,',0,,0.0
+336aa40,2015-10-23 00:06:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14259 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9e92038,2015-10-23 00:20:52,',0,,0.0
+d3096fc,2015-10-23 00:23:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14200 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0a19b07,2015-10-23 00:23:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14258 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a165a3c,2015-10-23 00:30:30,Updated compute hexorder/atom  added compute orientorder/atom,0,,0.0
+58c70ec,2015-10-23 00:30:38,',0,,0.0
+9057c42,2015-10-23 00:30:53,restore python3 compatibility,0,,0.0
+238c17e,2015-10-23 00:34:56,provide keyword/value option to compute ackland/atom for selecting legacy or current variant of implementation,0,,0.0
+8d4d517,2015-10-23 00:45:50,Updating Kokkos library--first deleting old folder,0,,0.0
+021a327,2015-10-23 00:46:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13908 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7a9ae37,2015-10-23 00:46:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13909 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+df128b0,2015-10-23 00:57:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13928 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+46755d0,2015-10-23 00:58:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13926 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e53f61a,2015-10-23 14:53:22,Commented out line (temporarily) that causes a segmentation fault in the USER-AWPMD library,0,,0.0
+815751.0,2015-10-23 17:00:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13919 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+52ceb41,2015-10-23 17:14:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13918 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f04945d,2015-10-23 17:14:26,',0,,0.0
+ff974eb,2015-10-23 17:16:31,',0,,0.0
+a27957c,2015-10-23 17:16:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14138 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2a1a318,2015-10-23 19:36:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14188 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0035a69,2015-10-23 19:46:50,Merge branch 'master' into resetids,0,,0.0
+7340e1b,2015-10-23 19:46:53,Merge branch 'master' of github.com:lammps/lammps,0,,0.0
+4e5fa8d,2015-10-23 19:49:53,Merge pull request #8 from lammps/master,0,,0.0
+99dcf3c,2015-10-23 19:50:02,Tweak whitespace in Makefile.kokkos_cuda_mpi,0,,0.0
+a1a97ef,2015-10-23 19:59:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14246 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+98a6849,2015-10-23 19:59:37,Revert to previous code without plug-in interface,0,,0.0
+628190c,2015-10-30 14:52:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14245 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8a47487,2015-10-30 14:53:28,',0,,0.0
+dbcf968,2015-10-30 14:53:40,Merge pull request #866 from lammps/header-error-messages,0,,0.0
+01e0bed,2015-10-30 19:44:45,Deallocate views of views in serial to prevent race condition in Kokkos profiling tools,0,,0.0
+0aa7740,2015-10-30 19:46:30,purge deleted file in KIM package,0,,0.0
+354e20f,2015-10-30 20:04:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14243 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+260d9f4,2015-10-30 20:14:54,avoid warning about group all,0,,0.0
+b4ff474,2015-10-30 20:14:57,Added hexatic bond orientational order parameter,0,,0.0
+a248111,2015-10-30 22:52:45,Added hexatic bond orientational order parameter,0,,0.0
+34e1f5c,2015-10-30 23:45:50,cast implicit string objects to char * for C++ standard compliance,0,,0.0
+c8c2f18,2015-10-30 23:45:52,Added hexatic bond orientational order parameter,0,,0.0
+f227080,2015-11-04 05:18:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14207 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9841323.0,2015-11-04 06:06:40,cmake: add openkim build as external project,0,,0.0
+a91bbaf,2015-11-04 23:56:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14272 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4f71701,2015-11-05 01:33:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14182 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d212245,2015-11-05 01:37:52,',0,,0.0
+3bc7350,2015-11-05 06:53:08,Merge pull request #855 from lammps/dumpinc,0,,0.0
+fa9af07,2015-11-05 06:58:13,Merge pull request #824 from jrgissing/write_data-noextra,0,,0.0
+f71eee1,2015-11-05 16:41:14,',0,,0.0
+9cd043e,2015-11-06 15:51:31,Added hexatic bond orientational order parameter,0,,0.0
+007123f,2015-11-06 15:51:47,',0,,0.0
+b741a77,2015-11-07 21:03:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14181 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7c9fe87,2015-11-07 21:06:21,remove trailing whitespace,0,,0.0
+6d6d834,2015-11-07 21:07:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14176 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+048f290,2015-11-07 21:07:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14174 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a61df92,2015-11-10 16:47:09,Merge pull request #856 from akohlmey/fix_srp_bugfix,0,,0.0
+4c19f60,2015-11-11 23:37:31,Fixed molecule mass when gcmc offset applied,0,,1.0
+da1a3ac,2015-11-11 23:39:25,Fixed initialization of arrays in computes/fixes in MC package,0,,1.0
+70aba85,2015-11-15 22:34:00,Use reference to improve performance in pair_reaxc_kokkos,0,,0.0
+9dc8102,2015-11-16 17:45:59,got rid of std:complex_literals i1,0,,0.0
+c28bd3c,2015-11-16 22:37:40,Remove unused variables in pair_reaxc_kokkos,0,,0.0
+27798d4,2015-11-16 23:14:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13910 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cd714e6,2015-11-17 21:42:36,',0,,0.0
+16a90f2,2015-11-17 21:42:53,',0,,0.0
+99c4b4c,2015-11-17 21:43:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13913 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d7e2bb3,2015-11-17 21:43:53,replace variable length array in msm with new/delete,0,,0.0
+f496b51,2015-11-17 23:10:26,',0,,0.0
+61678ee,2015-11-17 23:13:46,Updating Kokkos library--adding new folder,0,,0.0
+e3c4db7,2015-11-17 23:13:55,Adding optimizations to Kokkos EAM pair style,0,,0.0
+f6c76f4,2015-11-18 18:23:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13924 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+77f8955,2015-11-18 18:23:54,replace variable length array with new/delete in PNG support of dump image,0,,0.0
+0bdd0e3,2015-11-18 18:25:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13907 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7189cdd,2015-11-18 18:25:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13906 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b857237,2015-11-19 15:34:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13891 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b10ae0a,2015-11-21 00:35:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13892 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+355ba86,2015-11-21 00:35:32,',0,,0.0
+574a328,2015-11-21 00:35:34,',0,,0.0
+88f58be,2015-11-24 16:26:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14197 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7f02cec,2015-11-25 21:22:45,Changed the factorial table to static member,0,,0.0
+e993934,2015-12-01 14:32:42,',0,,0.0
+3ca986f,2015-12-01 21:42:17,fixed sucrose,0,,1.0
+00738a8,2015-12-02 05:06:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14196 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+853eab8,2015-12-03 22:57:01,Fixed initialization of arrays in fixes,0,,1.0
+28e3ebf,2015-12-04 19:06:19,Fixed initialization of arrays in computes,0,,1.0
+050a136,2015-12-04 19:29:27,Fixed opencl error,0,,1.0
+d241f92,2015-12-04 19:29:46,implement bugfix from issue #388,0,,1.0
+2271d91,2015-12-04 21:56:45,Merge pull request #870 from lammps/doc-tweak,0,,0.0
+f7702fd,2015-12-05 03:27:16,Merge pull request #857 from lammps/resetids,0,,0.0
+5087bdb,2015-12-05 03:28:45,updated version of fix latte from SJP,0,,0.0
+9ae8b64,2015-12-05 03:31:39,Small tweak for compatibility with different versions of lscpu,0,,0.0
+32acf72,2015-12-05 03:32:34,',0,,0.0
+e028508,2015-12-05 03:33:47,Updated compute hexorder/atom  added compute orientorder/atom,0,,0.0
+692047a,2015-12-08 16:12:04,one more small correction to document recent fix ave/time changes,0,,0.0
+7e710a0,2015-12-08 23:13:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14297 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4da6cce,2015-12-08 23:15:20,cmake: update latte to v1.1.1,0,,0.0
+d1cbced,2015-12-08 23:15:41,',0,,0.0
+b73bfe9,2015-12-08 23:16:00,Updated compute hexorder/atom  added compute orientorder/atom,0,,0.0
+6000ad1,2015-12-08 23:28:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14139 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+eaa45f0,2015-12-08 23:34:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14152 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9f7fc76,2015-12-08 23:35:16,Merge pull request #860 from lammps/doctweak,0,,0.0
+24da728,2015-12-08 23:35:27,Updated compute hexorder/atom  added compute orientorder/atom,0,,0.0
+2216401.0,2015-12-08 23:46:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14219 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+74a04c3,2015-12-08 23:51:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14222 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b13f9b8,2015-12-08 23:52:08,complete integration of reset_ids into the documentation build system,0,,0.0
+ab3fa39,2015-12-08 23:52:11,',0,,0.0
+f3dabd0,2015-12-08 23:56:27,',0,,0.0
+d24d85d,2015-12-09 00:27:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14959 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1860c2d,2015-12-09 15:41:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14960 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a473a42,2015-12-09 16:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14961 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c78f244,2015-12-09 17:05:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14962 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+15c3a77,2015-12-09 17:09:00,remove debug code,0,,0.0
+f7355d5,2015-12-09 17:11:00,avoid bad typesetting of include images,0,,0.0
+3d659ab,2015-12-09 17:16:00,update html files with recent changes,0,,0.0
+bac5a15,2015-12-09 17:16:00,"updates in ""Getting Started"" for running on Windows.",0,,0.0
+6f443bf,2015-12-09 17:18:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14428 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d43c4a1,2015-12-09 17:22:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14429 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fe6f196,2015-12-09 17:29:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14430 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2126034,2015-12-09 17:30:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14431 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c2db793,2015-12-09 17:45:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14432 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+90100b4,2015-12-09 17:45:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14433 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+549ea87,2015-12-09 17:45:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14435 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+11fe1e8,2015-12-09 18:17:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14410 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7920c13,2015-12-09 18:17:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14409 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+582ba55,2015-12-09 20:28:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14406 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6eed163,2015-12-09 21:09:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14379 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e000e4a,2015-12-09 21:09:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14391 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+900a3aa,2015-12-09 21:10:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14380 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c00aabe,2015-12-09 21:24:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14381 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+87a47d8,2015-12-09 21:33:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14382 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+493f9c4,2015-12-09 21:44:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14383 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b1dc501,2015-12-09 21:47:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14386 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8349024,2015-12-09 21:48:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14387 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+704f170,2015-12-09 22:31:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14389 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+82d5d73,2015-12-09 22:31:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14388 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ab01075,2015-12-09 22:31:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14390 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+676cdda,2015-12-09 22:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14392 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+93919c3,2015-12-09 22:38:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14405 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fc1a176,2015-12-09 22:46:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14427 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0dcabb7,2015-12-09 23:29:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14425 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+760071b,2015-12-09 23:57:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14331 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+59e5d36,2015-12-10 16:04:00,Fixing issue in fix_qeq_reax,0,,1.0
+807e00d,2015-12-10 16:54:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14424 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+86a4507,2015-12-10 16:55:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14332 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8550cac,2015-12-10 17:07:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14333 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+28bf73f,2015-12-10 17:23:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14334 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+03a9006,2015-12-10 17:38:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14335 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2cf6305,2015-12-10 17:40:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14336 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d94f71a,2015-12-10 17:42:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14337 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4c1ad17,2015-12-10 17:44:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14338 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3b6a3f4,2015-12-10 22:38:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14375 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+762f48e,2015-12-11 22:20:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14376 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+921bcfb,2015-12-11 23:15:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14377 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+aecaf0b,2015-12-11 23:29:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14378 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4e83593,2015-12-11 23:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14411 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b7b610f,2015-12-11 23:33:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14412 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+06370a8,2015-12-11 23:33:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14413 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+75de12f,2015-12-15 15:49:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14415 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5f802f8,2015-12-15 15:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14416 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+074d596,2015-12-15 15:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14417 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9f38620,2015-12-15 16:01:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14418 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+31f2291,2015-12-15 16:03:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14419 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+06a217a,2015-12-15 22:26:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14420 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b5a1ba9,2015-12-15 22:29:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14421 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0939eb1,2015-12-15 22:30:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14422 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ead53bc,2015-12-15 22:33:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14423 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f3af23a,2015-12-15 23:31:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14394 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9e3b61d,2015-12-15 23:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14395 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8dff51d,2015-12-15 23:48:00,Adding changes from Mike Brown to USER-INTEL for gcc compatibility,0,,0.0
+df7e89f,2015-12-16 16:47:00,Added comment about momentum under NPT,0,,0.0
+f7e17e9,2015-12-17 15:46:00,Merge pull request #32 from rbberger/doc-cleanups-and-updates,0,,0.0
+e37c9fa,2015-12-17 23:05:00,Merge branch 'integration' into doc-cleanups-and-updates,0,,0.0
+7e9270e,2015-12-17 23:05:00,regenerate html files from scratch after merging from upstream and including richard's last updates to the converter tools,0,,0.0
+71b325e,2015-12-17 23:09:00,regenerate html files one more time,0,,0.0
+fb2cb21,2015-12-17 23:18:00,resolved conflicts,0,,0.0
+72ebb1d,2015-12-19 18:30:00,Merge branch 'doc' into integration,0,,0.0
+1506318,2015-12-19 18:31:00,remove empty file,0,,0.0
+528053b,2015-12-19 18:31:00,Created more complete TOC and indices,0,,0.0
+df8b58a,2015-12-19 18:32:00,Filter out more header numbers,0,,0.0
+2926854,2015-12-19 18:32:00,"update description of Windows support in ""Getting started"" Section",0,,0.0
+e2ec56c,2015-12-19 18:42:00,HTML update,0,,0.0
+0656a3e,2015-12-19 18:43:00,update error message to be consistent with other styles,0,,0.0
+6f10e99,2015-12-21 15:20:00,update docs for lj/sf/dipole/sf,0,,0.0
+0fd57a6,2015-12-21 16:44:00,place ellipses in square brackets to avoid sphinx choking on them,0,,0.0
+ca9b0ad,2015-12-22 20:16:00,Give credit to Richard for being the lammps.org and senior jenkins wrangler,0,,0.0
+202bc7b,2015-12-23 01:40:00,correct section link descriptions,0,,0.0
+29b4d60,2015-12-23 17:04:00,regenerate html pages with the updated content from the corrections,0,,0.0
+57dc7d3,2015-12-23 17:07:00,document how using shrink-wrap boundaries can cause lost atoms in parallel,0,,0.0
+f0cd77a,2015-12-23 17:21:00,correct and improve links to PyMol and MATLAB,0,,0.0
+10c246d,2015-12-23 17:21:00,update html file updated boundary.txt file,0,,0.0
+ca0d0dc,2015-12-23 17:23:00,"correct and improve typesetting for various sub-sub-subsections in ""Getting started""",0,,0.0
+ce72ce4,2015-12-24 00:00:00,ignore Makefile.lammps in lib tree,0,,0.0
+41a026e,2015-12-24 00:02:00,restore c++ marker in header comment,0,,0.0
+06e04df,2015-12-24 00:03:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15567 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5.17E+06,2016-01-11 16:01:00,Updated HTML after latest tool changes and corrections,0,,0.0
+e86cfe4,2016-01-11 17:58:00,Raise exception and output error if ulb ule and olb ole are unbalanced,0,,0.0
+eb06320,2016-01-11 17:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14398 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+eb20bcf,2016-01-11 18:56:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14399 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9e4140c,2016-01-11 18:57:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14400 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+173d486,2016-01-11 21:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14401 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b5086e3,2016-01-11 21:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14402 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7ae65d4,2016-01-11 22:00:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14404 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d3f534f,2016-01-11 22:00:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14312 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f5946c7,2016-01-11 22:00:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14313 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e24ed78,2016-01-11 22:00:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14311 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e72cef0,2016-01-11 22:00:00,Merge branch 'integration' into doc-cleanups-and-updates,0,,0.0
+681ebfa,2016-01-11 23:34:00,Remove references to former empty file,0,,0.0
+12c8aaf,2016-01-11 23:38:00,Merge branch 'small-bugfixes' of github.com:akohlmey/lammps into small-bugfixes,0,,0.0
+4e199dd,2016-01-12 00:12:00,flag 'allocated' must be initialized in constructor,0,,0.0
+20cc9e5,2016-01-12 00:13:00,final version of pair vashishta/table,0,,0.0
+0da05dc,2016-01-12 00:29:00,pair vashishta/table,0,,0.0
+05240f9,2016-01-12 00:43:00,clean-up of example files,0,,0.0
+fbd03b3,2016-01-12 16:24:00,added options to compute bond/local,0,,0.0
+b9ab7a0,2016-01-12 16:27:00,Merge pull request #26 from rbberger/is_available_feature,0,,0.0
+2520edf,2016-01-12 16:27:00,Merge pull request #27 from akohlmey/small-bugfixes,0,,0.0
+395397d,2016-01-12 16:34:00,doc updates,0,,0.0
+dc385fc,2016-01-12 16:47:00,Merge branch 'integration' of github.com:akohlmey/lammps into integration,0,,0.0
+a34b9f1,2016-01-12 16:48:00,Add indentation to multi-paragraph entries,0,,0.0
+9dcf6ee,2016-01-12 22:25:00,Update unit tests to reflect new behavior,0,,0.0
+843814f,2016-01-12 22:25:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15428 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7bd6ae2,2016-01-12 22:28:00,sync with Git,0,,0.0
+cd1f4ae,2016-01-12 22:29:00,Use MPI_Allreduce values instead of each processor's values,0,,0.0
+09fb68d,2016-01-14 22:33:00,Merge branch 'init' into integration,0,,0.0
+5bba67f,2016-01-14 22:35:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14543 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3e36b2b,2016-01-15 00:28:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14544 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+51a2504,2016-01-15 00:34:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14547 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ba87515,2016-01-15 00:35:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14548 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c077947,2016-01-15 15:30:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14550 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ef6beaa,2016-01-15 15:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14552 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+bfa9882,2016-01-15 15:39:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14554 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+984a1af,2016-01-15 15:53:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14555 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1174eac,2016-01-15 15:58:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14582 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fb0230a,2016-01-15 16:05:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14583 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b66f1e3,2016-01-15 16:05:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14589 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0d79f78,2016-01-15 16:06:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14590 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f6f88c2,2016-01-15 19:40:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14592 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f16130a,2016-01-19 20:52:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14593 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0d1c7af,2016-01-19 22:18:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14594 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7c810d6,2016-01-19 22:26:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14595 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a3c0f3e,2016-01-19 23:12:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14596 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+81d55a7,2016-01-20 00:01:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14597 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fa01d91,2016-01-20 00:03:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14598 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fe10d8c,2016-01-20 17:29:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14538 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+005f9d5,2016-01-21 01:58:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14537 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+66a048b,2016-01-21 01:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14536 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d13b2ec,2016-01-21 02:34:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14522 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+eebf110,2016-01-21 18:16:00,Fixed errors in FixRxKokkos kokkos neighbor lists initialization and usage and calls to computeLocalTemperature.,0,,1.0
+eb10541,2016-01-21 20:15:00,fix gcmc updates from Aidan  trimming of output for replica commands,0,,1.0
+4da36d1,2016-01-22 02:49:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14542 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+56ef0d4,2016-01-22 03:14:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14540 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e3e687f,2016-01-22 22:30:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14444 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c8fb847,2016-01-22 22:36:00,fix some more code formatting issues  add newline at EOF,0,,1.0
+34785af,2016-01-22 23:35:00,Fixing CUDA runtime issues in pair_exp6_rx_kokkos,0,,1.0
+ad1d7ff,2016-01-23 00:09:00,add fix latte command to doc pages,0,,1.0
+d4a5571,2016-01-23 00:47:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14447 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+79466c3,2016-01-23 00:47:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14539 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+28d6cef,2016-01-23 00:47:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14446 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7f049bb,2016-01-23 00:48:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14449 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6275610,2016-01-23 00:48:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14448 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5d99bf6,2016-01-23 00:49:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14450 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3621171,2016-01-23 00:49:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14451 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8b7e9fe,2016-01-23 00:49:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14452 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b31f864,2016-01-23 00:55:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14453 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+67d5513,2016-01-23 00:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14455 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f593ffb,2016-01-23 00:59:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14456 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+aca2442,2016-01-23 01:00:00,Updated description of 2d and free surface cases,0,,0.0
+775b163,2016-01-25 15:46:00,Added 2d example,0,,0.0
+9eb8702,2016-01-25 16:13:00,Fixing more CUDA runtime issues,0,,1.0
+92ae19e,2016-01-25 20:58:00,Fixing Kokkos CUDA compile error,0,,1.0
+bf9517b,2016-01-25 21:36:00,Fixing some CUDA runtime issues in npair_ssa_kokkos,0,,1.0
+1285866,2016-01-25 22:45:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14459 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0fbc487,2016-01-25 22:50:00,Changed behavior for non-periodic systems,0,,0.0
+2d78e1a,2016-01-25 23:04:00,Changed behavior for non-periodic systems,0,,0.0
+4905119,2016-01-25 23:04:00,Removed flangevin==NULL check,0,,0.0
+c25e431,2016-01-26 00:41:00,Added faces as local compute,0,,0.0
+e18635c,2016-01-26 00:42:00,Added faces as local compute,0,,0.0
+ef42979,2016-01-26 15:07:00,Added faces as local compute,0,,0.0
+db9fe7a,2016-01-26 15:11:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14507 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f7731ba,2016-01-26 15:12:00,Squelching annoying kokkos output,0,,0.0
+b5c90fa,2016-01-26 15:13:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14509 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8c4d592,2016-01-26 22:07:00,import fix halt prototype code with corrections for soft exit,0,,1.0
+0541d52,2016-01-26 23:49:00,Fixing bug,0,,1.0
+dca90d4,2016-01-27 18:40:00,fix external only needs to collect virial in case it is requested,0,,1.0
+fa7543b,2016-01-27 20:33:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14510 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ed17939,2016-01-27 23:15:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14511 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b355fa2,2016-01-28 21:07:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14512 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+db773d7,2016-01-28 21:14:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14513 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d42ebe4,2016-01-28 21:17:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14514 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7e67afa,2016-01-28 21:19:00,convert weight array from class member to local pointer to temporary storage,0,,0.0
+997ce62,2016-01-28 21:20:00,remove unused class member,0,,0.0
+237743e,2016-01-28 21:22:00,correct string hanlding with building custom property label,0,,0.0
+bc15585,2016-01-28 21:24:00,simplify and correct logic to pass weight to balancer algorithms,0,,0.0
+f86a9f4,2016-01-28 21:24:00,properly handle the case of neighbor lists never been computed before,0,,0.0
+def0d4e,2016-01-28 23:28:00,Fixing more Kokkos per-atom and fdotr issues,0,,1.0
+cf77d88,2016-01-28 23:32:00,whitespace cleanup,0,,0.0
+ce471ff,2016-01-29 16:31:00,add new imbalance module store  which allows to store weights in an atom property,0,,0.0
+dd2d454,2016-01-29 16:44:00,remove upper limit for weigh factor on neighbor list and time weights,0,,0.0
+ccf5f31,2016-01-29 16:55:00,update documentation for refactored load-balancing,0,,0.0
+0f877f6,2016-01-29 17:09:00,improve the weight assignment algorithm for compute time based balancing,0,,0.0
+7b091eb,2016-01-29 17:13:00,proof-of-concept implementation for neighbor list based balancing with yet unsolved problems,0,,0.0
+7ae6db5,2016-01-29 17:14:00,silence warnings about cases  that cannot happen,0,,0.0
+daaadcd,2016-01-29 17:24:00,undo changes that belong to a different branch or are redundant,0,,0.0
+a8d0bf9,2016-01-29 17:38:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15489 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3d7d897,2016-01-29 17:39:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15490 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+029faeb,2016-01-29 18:27:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15491 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+60ec762,2016-01-29 20:37:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15492 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2da2a3b,2016-02-02 16:00:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15493 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0766f95,2016-02-02 16:01:00,minor tweaks and comment fixes,0,,0.0
+9cf43f2,2016-02-02 16:05:00,whitespace cleanup,0,,0.0
+3e9a18b,2016-02-03 20:53:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13069 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8e9f616,2016-02-03 20:55:00,disable debug output and include bond cost as well,0,,0.0
+216f83d,2016-02-03 21:18:00,undo obsoleted changes to group command by iain bethune,0,,0.0
+1a82fbf,2016-02-03 21:19:00,complete implementation for group based imbalance class,0,,0.0
+662467,2016-02-03 21:20:00,prototype implementation for extensible imbalance scheme,0,,0.0
+963784,2016-02-03 21:22:00,be a bit more paranoid about initializing data structures,0,,0.0
+22961a9,2016-02-03 21:23:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14515 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+bb11aa3,2016-02-03 21:27:00,Adding error checks for Kokkos-incompatible features,0,,0.0
+94da81b,2016-02-03 21:27:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14518 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+de6ff01,2016-02-03 21:33:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14519 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b25125e,2016-02-03 21:37:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14520 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c1aebdd,2016-02-03 21:39:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14521 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+21ee4aa,2016-02-03 21:57:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14523 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ddb83e1,2016-02-03 21:58:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14535 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6b593f0,2016-02-04 17:17:00,Adding Kokkos output and error checks,0,,0.0
+b2d417f,2016-02-04 20:39:00,Changing Kokkos default,0,,0.0
+753429e,2016-02-04 21:09:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14528 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+02408d3,2016-02-04 21:09:00,Changing Kokkos default,0,,0.0
+384aef4,2016-02-05 17:28:00,Fixing compile error in USER-OMP,0,,1.0
+da41fcb,2016-02-05 17:40:00,Fixing Kokkos CUDA compile error,0,,1.0
+9e20448,2016-02-08 16:18:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14529 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ea12e28,2016-02-10 15:02:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14530 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b6be862,2016-02-10 22:50:00,Fixing bug on Macs,0,,1.0
+e2117af,2016-02-10 23:34:00,Fixing neighbor bug,0,,1.0
+7a5587d,2016-02-11 15:43:00,correct link targets,0,,0.0
+707dee6,2016-02-11 16:40:00,avoid distracting error output,0,,0.0
+ce579ea,2016-02-11 16:42:00,added molecule option to compute group/group command,0,,0.0
+70aa37e,2016-02-15 15:26:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14531 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+729ba2c,2016-02-15 15:28:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14532 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a70623e,2016-02-15 15:30:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14533 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cd14e43,2016-02-15 15:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14534 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e813620,2016-02-15 15:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12940 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4e42c28,2016-02-15 15:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12938 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d615b66,2016-02-15 15:33:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15412 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e98647e,2016-02-15 15:36:00,improve c++-11 compliance. replace variable size stack allocation.,0,,0.0
+3db8850,2016-02-15 15:47:00,make it so that dynamic load balancing only uses the timing since the last balancing,0,,0.0
+53f0833,2016-02-15 15:49:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14541 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6a5d853,2016-02-15 15:50:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14442 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5cd677f,2016-02-15 16:09:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12909 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+468ef14,2016-02-15 16:10:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14441 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9d46c0b,2016-02-15 16:19:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12911 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+de853a3,2016-02-15 16:20:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12912 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+77fe3db,2016-02-15 17:21:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12914 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+85a60a9,2016-02-15 17:21:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12913 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b1922ae,2016-02-15 18:04:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12915 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+bee7ffa,2016-02-15 18:06:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12916 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+701b4a0,2016-02-15 18:11:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12917 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+be03537,2016-02-15 18:12:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12919 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2ed1861,2016-02-15 18:14:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12920 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9fc1ec8,2016-02-15 18:15:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12921 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e7eced3,2016-02-15 18:16:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12922 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9ac8547,2016-02-15 18:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12924 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2d43f00,2016-02-15 18:32:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12925 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e77d1d2,2016-02-15 18:35:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12926 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+531cd5f,2016-02-15 18:36:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12928 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c43da51,2016-02-15 18:37:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12930 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+384d510,2016-02-15 18:37:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12931 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0be549d,2016-02-15 18:38:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12934 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+74d9b46,2016-02-15 20:16:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12936 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0

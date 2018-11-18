@@ -1,0 +1,505 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+4514fc8,2018-02-25 17:07:51,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+bc0e13c,2018-02-25 17:10:28,Initialize v8.7.5,0,,0
+7791fa3,2018-02-25 21:08:53,Convert lessons/theory/userguide into md,0,,0
+da5f7ea,2018-02-25 21:18:40,Import python code + js + css,0,,0
+c2a8c6f,2018-02-25 23:29:53,mkdocs up and running,0,,0
+127d4bf,2018-02-26 09:10:49,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+86f26b7,2018-02-26 10:08:59,Merge remote-tracking branch 'trunk/develop' into elpa,0,,0
+e5dee57,2018-02-26 11:59:16,Begin to polish md lessons,0,,0
+34bae55,2018-02-26 12:30:21,"Fixes for new bots  - add enable_gw_dpc=""yes"" for atlas_gnu_7.2_fb  - rename atlas_intel_18.0_paral to atlas_intel_18.0_openmpi (confusion with cronos)",1,,1
+7.7e+97,2018-02-26 13:17:19,Still working on lessons,0,,0
+966df01,2018-02-26 13:40:24,"fix typo : remove all "" in the new bot sections",1,,0
+9c3275a,2018-02-26 13:43:45,Merge with trunk,0,,0
+cf17efc,2018-02-26 15:14:50,Saving work,0,,0
+91d9c74,2018-02-26 17:10:07,Cleanup in welcome.md,0,,0
+da03c6e,2018-02-26 18:41:37,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+b036c87,2018-02-26 19:35:11,Begin to move images to new (smart) location,0,,0
+ded3efd,2018-02-26 21:31:54,Finalize image migration,0,,0
+5c3f4e5,2018-02-27 08:24:05,Fix abirules and timana,1,,1
+c6406ef,2018-02-27 09:13:48,Remove ABI_UNUSED since not available for structure type and furthermnore it does a copy which is very bad for structure ! So I'll change abirule's ref.,0,,0
+d288ee0,2018-02-27 10:29:54,Fixes,1,,1
+c5b8f78,2018-02-27 10:34:37,update ref,0,,0
+730b722,2018-02-27 11:35:15,theory,0,,0
+7f02e38,2018-02-27 12:27:55,Fix,1,,1
+697852f,2018-02-27 14:33:09,Regenerate abiref database with betterbib  migrate to new version,0,,0
+b7d47d8,2018-02-27 18:50:11,fix typo on builder name,1,,0
+bfd42ed,2018-02-27 20:26:08,add refs and dialogs in 1-4 lessons,0,,0
+cf8eab9,2018-02-27 22:59:42,Save work,0,,0
+a348bf8,2018-02-28 01:27:50,md lessons,0,,0
+a36da84,2018-02-28 09:19:53,Merge remote-tracking branch 'remotes/biederj/elpa' into _biederj,0,,0
+9605864.0,2018-02-28 09:29:15,For abirules#04  bypass limitation of ABI_UNUSED by calling a fake write.,0,,0
+21f0e70,2018-02-28 09:41:51,Well  ABI_UNUSED can be used ...,0,,0
+652c4b4,2018-02-28 09:56:40,Use a public component instead of a private one.,0,,0
+7028656.0,2018-02-28 11:17:04,Complete m_xgScalapack.F90 with robodoc end marker,0,,0
+67b061a,2018-02-28 11:18:55,Update ref for abirules#04,0,,0
+0cbca8d,2018-02-28 11:22:20,Correct information about HAVE_GW_DPC,0,,1
+22ec07f,2018-02-28 14:00:32,md lessons,0,,0
+80cf82f,2018-02-28 22:37:51,mathjax,0,,0
+1fba1f7,2018-03-01 01:36:39,Convert yaml vars into python modules,0,,0
+effaffb,2018-03-01 03:15:59,Save work,0,,0
+8512a3b,2018-03-01 10:51:29,Add jquery-UI,0,,0
+00299b9,2018-03-01 15:11:29,Remove old harcoded links,0,,0
+ed8093f,2018-03-01 15:12:26,local terms in orbmag  starting on-site,0,,0
+d98b5eb,2018-03-01 17:09:28,Cleanup in User-guide,0,,0
+3fd2e2c,2018-03-01 19:24:57,Detach Variables from Yaml.Object,0,,0
+dbff68d,2018-03-01 21:03:17,markdown,0,,0
+3a747c1,2018-03-01 22:01:09,user-guide,0,,0
+06e728e,2018-03-01 23:20:54,Remove default values in calls to Variable.__init__,0,,0
+7457520.0,2018-03-02 11:35:44,Add links to tutorials flowchart,0,,0
+a6a435d,2018-03-02 12:04:30,Remove obsolete mkdocs code,0,,0
+297800.0,2018-03-02 16:59:50,Fix problems reported by Michiel,1,,1
+e81307f,2018-03-02 18:17:32,Remove old files in variables,0,,0
+1807975.0,2018-03-02 18:56:14,merge mkdocs-variables into variables  remove biblio files,0,,0
+555272e,2018-03-02 19:20:47,Remove html topics  keep yml because I still need them,0,,0
+8d004ac,2018-03-02 19:37:44,Remove pymods,0,,0
+716b29c,2018-03-02 19:52:14,Merge mkdocs-tutorials in tutorial and remove old files,0,,0
+ee23017,2018-03-02 20:05:21,Merge mkdocs-theory into theory,0,,0
+0e2fe55,2018-03-02 20:16:25,Merge mkdocs-user-guide into guide and remove old files,0,,0
+94e0c4a,2018-03-02 20:28:07,Remove known_problems dir,0,,0
+73efbc9,2018-03-02 21:00:10,Remove bzr files  move pseudos to developers section,0,,0
+db8c398,2018-03-02 21:40:04,Remove gallery  interface pseudo docs with mkdocs,0,,0
+e0fff6e,2018-03-02 21:50:45,Rationalize ~README files,0,,0
+284a52c,2018-03-02 22:02:12,Add kcalc2ibz to SIGEPH.nc,0,,0
+c2f2e05,2018-03-02 23:12:30,Remove install_notes  replaced by installation.md,0,,0
+7e+52,2018-03-03 01:03:44,Deprecate wikilings without namespace,0,,0
+ae52cd4,2018-03-03 02:03:38,Fix links,1,,1
+f060c24,2018-03-03 02:27:12,Fix links,1,,1
+fd45e4f,2018-03-03 12:34:43,Use acknowledgments.md instead of yml version,0,,0
+6bd377a,2018-03-03 12:42:24,Add README -> README.md,0,,0
+aed2a89,2018-03-03 13:06:09,Remove ionmov 30 from docs,0,,0
+cd78d68,2018-03-03 13:13:30,Add README,0,,0
+5b21ca6,2018-03-03 13:56:18,Use wikilinks for pdf files,0,,0
+16f15ac,2018-03-03 15:19:09,Fix internal links (generated_files),1,,1
+67e5439,2018-03-03 16:19:41,Remove remaining 'generated_files/' links,0,,0
+31a3a6d,2018-03-03 17:04:37,Fix internal links  remove site_url in mkdocs.yml,1,,1
+2bf6925,2018-03-03 17:05:01,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into mkdocs,0,,0
+d15771c,2018-03-03 20:18:12,Minor fixes,1,,1
+fd5896f,2018-03-03 23:54:10,Add test for variables in test,0,,0
+bb35484,2018-03-04 01:02:13,Cleanup + add tests for vars in tests,0,,0
+460f26b,2018-03-04 02:39:34,Integrate README_ files + ac examples,0,,0
+78d126a,2018-03-04 13:10:09,Fix links  add new entries to Variable,1,,1
+e221d89,2018-03-04 14:35:03,Only 3 broken links reported by linkchecker due to old release notes in site,0,,0
+12379bc,2018-03-04 19:44:02,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,,0
+48d9336,2018-03-04 20:22:03,Import code for variables from abipy,0,,0
+253cdaf,2018-03-04 23:33:19,Continue to merge abipy code into variables,0,,0
+a9c54bb,2018-03-05 01:18:06,About to finalize API,0,,0
+5ba400c,2018-03-05 11:55:53,Define topics and relevances in py module  FileFormats was missing in old version,0,,0
+af033d6,2018-03-05 15:55:10,Deactivate docchk and check_forbidden_in_doc_yml  replaced by unitests,0,,0
+4b1949b,2018-03-05 21:29:13,Add workflow diagram for rf2,0,,0
+825532d,2018-03-05 23:36:25,Fix invalid escape seq in py string,1,,1
+e62275a,2018-03-05 23:50:57,Update top.am to accound for changes in doc directory and README files.,0,,0
+c4ad0b2,2018-03-06 01:12:30,Improve docs,0,,0
+7f69e1d,2018-03-06 01:41:34,Conver yaml into python template,0,,0
+b37572a,2018-03-06 02:53:23,Update docs,0,,0
+d4b913a,2018-03-06 03:15:32,Add description to topics,0,,0
+53f1334,2018-03-06 14:33:45,Final cleanup,0,,0
+b710cbf,2018-03-06 14:59:17,Fix indentation,1,,0
+c4e67e4,2018-03-06 15:27:55,Use the new weight distribution of the Fourier components of the force constants done by Guido Pettreto as default. Extensive benchmarks in the phonon database shows that in most materials it solves issues of the phonon interpolation near Gamma while not decrasing the quality in other materials.,0,,0
+79ced62,2018-03-06 20:59:08,Merge branch 'mkdocs' of gitlab.abinit.org:gmatteo/abinit into eph,0,,0
+7d52069,2018-03-06 21:14:14,Update month of delivery and version number.,0,,0
+4102356.0,2018-03-06 21:15:35,Apply make parents,0,,0
+dee0d2e,2018-03-06 21:19:58,Update the check_list,0,,0
+0fe04e4,2018-03-06 21:26:18,Initialize v8.7.6,0,,0
+c2940b8,2018-03-06 22:22:21,Cleanup,0,,0
+3bcbf03,2018-03-06 22:22:27,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,,0
+21ea48e,2018-03-07 05:26:32,Activatee the new weights only if nqshift is 0.,0,,0
+657e7ea,2018-03-07 09:29:39,merge trunk,0,,0
+223c72a,2018-03-07 10:38:10,Add doc/index.md --> guide/new_user,0,,0
+86c6a05,2018-03-07 14:34:20,Merge branch 'develop' of gitlab.abinit.org:wchen/abinit into develop,0,,0
+66e8f73,2018-03-07 15:51:34,Start to play with the *.md files.,0,,0
+e0818ec,2018-03-07 18:33:25,Fix warnings encountered with mksite.py WARNING: Don't know how to handle wikilink token . Also  miscellaneous fixes.,1,,1
+6c968a3,2018-03-07 20:54:36,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+6214254.0,2018-03-07 20:54:50,Merge branch 'develop' into mkdocs,0,,0
+e122728,2018-03-07 21:07:22,Merge remote-tracking branch 'remotes/henrique/phgamma' into _henrique,0,,0
+2df2400,2018-03-07 21:14:04,Implement the correct determination of new_wght,0,,1
+9334b54,2018-03-08 00:34:42,Fix wrong displayed value of Fock fraction when using customized hyb_mixing(_sr),1,,1
+2000000000000000.0,2018-03-08 00:36:52,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+dc84c14,2018-03-08 00:52:26,Fix the display issue for the range-separation parameter,1,,1
+668c63b,2018-03-08 06:05:22,Treat better tolerance of recounting of weights on atoms  for interatomic force constants,0,,0
+fa46d30,2018-03-08 06:06:12,Merge branch 'develop' into _henrique,0,,0
+8a9ddd3,2018-03-08 06:08:35,Previous fix was not fully correct.,1,,1
+5262cb0,2018-03-08 13:18:23,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+6c6a40e,2018-03-08 13:21:14,Add more metadata to netcdf files,0,,0
+919c967,2018-03-08 13:21:24,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,,0
+1657d69,2018-03-08 16:48:15,Update a series of reference files  due to the change of determination of the weights for the computation of the IFCs.,0,,0
+6ec31b1,2018-03-08 16:57:13,Partial update of the input and reference files of the tests affected by the change of meaning of brav,0,,0
+1bfd3ac,2018-03-08 17:30:35,Document brav=-1,0,,0
+e1e1642,2018-03-08 17:47:39,Fix typo,1,,0
+b3a0e55,2018-03-08 17:47:49,Merge branch '_henrique' of gitlab:trunk/abinit into _henrique,0,,0
+821a583,2018-03-08 22:29:14,Fix typo,1,,0
+e14eda2,2018-03-09 06:04:00,typo correction from Gabriel,0,,0
+8df0b4b,2018-03-09 06:26:16,Update references for brav=-1,0,,0
+0492af7,2018-03-09 06:27:08,Modifs to deal with brav=-1,0,,0
+1a7d275,2018-03-09 06:27:24,Merge branch '_henrique' of gitlab:trunk/abinit into _henrique,0,,0
+c217605,2018-03-09 11:35:37,Upgrade refs,0,,0
+7f8d606,2018-03-09 15:24:25,Update tolerances. Also reduced the one for v8#45 _GRUN_DOS and _GRUN_QPATH  hoping more stable result from new algorithm for brav=1,0,,0
+d9c52e9,2018-03-09 20:58:32,Two more update of tols,0,,0
+631c969,2018-03-09 22:53:02,EPH.nc --> A2F.nc (move to new format),0,,0
+1f3b254,2018-03-10 05:46:09,Merge branch '_henrique' into develop,0,,0
+61cba83,2018-03-10 05:50:35,Merge branch 'mkdocs' into develop,0,,0
+733a2b8,2018-03-10 05:54:36,Merge remote-tracking branch 'remotes/wchen/develop' into develop,0,,0
+89cb0c6,2018-03-10 11:59:16,Add ph_ variabies for A2F.nc,0,,0
+07e6ff7,2018-03-10 12:08:30,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,,0
+0bc286e,2018-03-10 14:08:12,Increase EPH_WTOL,0,,0
+3610a1a,2018-03-10 14:10:42,Add gwa.pdf to theory.extra,0,,0
+4a04d0a,2018-03-12 15:39:45,Change the way spinat is taken into account in initrhoij.F90,0,,0
+87f7eb7,2018-03-13 00:40:12,Fix invalid escape sequence,1,,1
+5574d65,2018-03-13 20:57:01,Fix edit on github link,1,,1
+7603c94,2018-03-14 10:16:17,typo in comment,0,,0
+a07f748,2018-03-14 14:21:25,Use zcut as input variable,0,,0
+3e0352e,2018-03-14 16:53:19,Increase tols,0,,0
+bd712f7,2018-03-14 20:41:37,seems to be a working version with spectral Allen/Eliashberg function. Need to commit it even if this will make clashes with Matteo updates and cleaning of m_phgamma,0,,0
+025cbf3,2018-03-15 01:09:24,Fix links to robodoc,1,,1
+98189c7,2018-03-15 01:09:51,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into mkdocs,0,,0
+05bcec7,2018-03-15 16:43:39,Use sigma broadening in DW if ediff < tol6,0,,0
+7c17df7,2018-03-16 08:51:17,Update refs files for the tutorial tdepes,0,,0
+772dee5,2018-03-16 10:11:36,Add references+links,0,,0
+06d52b9,2018-03-16 10:59:23,"Translate ""tribe"" to ""relevance"" whenever needed.",0,,0
+fe78f37,2018-03-16 11:22:36,Fix incorrect directories or other typos.,1,,1
+f077e42,2018-03-16 12:01:31,Write adiabatic results to ab_out,0,,0
+ac048f9,2018-03-16 21:50:52,Execute tdepes only in the NETCDF case.,0,,0
+9a73ac1,2018-03-17 06:29:14,Make the test on the lowest argument of an exponential more robust,0,,0
+a48a810,2018-03-17 06:30:20,Merge branch '_gmatteo' of gitlab.abinit.org:trunk/abinit into _gmatteo,0,,0
+46679a9,2018-03-17 07:09:55,Fix issues in the .md files  linked to the message of JMB.,1,,0
+ceddc6d,2018-03-17 09:01:05,Fix of a subset of borken links detected by linchecker.,1,,1
+205df8e,2018-03-17 13:07:28,Clean the tutorials tdepes.,0,,0
+6e+141,2018-03-17 14:32:08,add spin dynamics branch,0,,0
+afd2877,2018-03-18 05:28:13,Partial rewriting of the tdepes tutorial.,0,,0
+006e823,2018-03-18 06:26:38,v8.6 release notes are integrated  not yet fully formatted.,0,,0
+79c54a1,2018-03-18 06:54:06,Release notes for v8.6 are now better formatted. Not all hyperlinks have been established  but this is sufficient for now.,0,,0
+6d7c490,2018-03-18 08:59:12,Treat explicitly the computation of the q-point grid.,0,,0
+27ab0c0,2018-03-18 10:50:32,tdepes_3 has been cleaned.,0,,0
+e844bb3,2018-03-18 13:35:27,Further work on tdepes.,0,,0
+35c40dd,2018-03-18 15:43:22,Improve docs,0,,0
+d425205,2018-03-18 16:25:24,Fix problem with tdepes_2 . Also define depes_4_plot_bs.in.,1,,1
+d1732a6,2018-03-18 16:55:10,The first cleaning of the tutorial is completed. Checks still to be done.,0,,0
+6e34f1a,2018-03-18 17:04:15,Update tdepes_4 input and output files,0,,0
+c4d3c03,2018-03-18 17:29:24,Fix typos,1,,0
+09d5b8d,2018-03-18 18:18:34,Fix problem with tdepes_2,1,,1
+74a1b96,2018-03-18 18:21:24,Update of ref for tdepes_4 (was obtained on my Mac initially).,0,,0
+b54c04e,2018-03-18 18:59:56,Merge branch '_gmatteo' of gitlab:trunk/abinit into _gmatteo,0,,0
+bf7640b,2018-03-18 21:37:46,add spin dynamics source code,0,,0
+938aa37,2018-03-18 21:45:11,Miscellaneous fixes.,1,,1
+71b3c42,2018-03-18 22:25:14,save supercell vectors in m_supercell,0,,0
+12dfb28,2018-03-18 22:26:00,clean duplicated m_supercell.F90 file,0,,0
+0f5462a,2018-03-18 23:18:49,Tutorial rf1 has been cleaned and upgraded. Also help for respfn. Also added a few references in the bib file.,0,,0
+bd40442,2018-03-19 06:35:03,Minor adjustment.,0,,0
+58f9315,2018-03-19 09:10:56,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,,0
+00fd429,2018-03-19 09:51:32,remove duplicated free in effpot_xml.c,0,,0
+45ad551,2018-03-19 15:27:54,Use IBZ in DW if symsigma,0,,0
+8d2c600,2018-03-19 15:46:41,Update refs,0,,0
+41fe4d1,2018-03-19 17:47:53,Allowed for free-form link flags statements in configure options,0,,0
+bdbfff7,2018-03-19 19:39:53,Increase tolrel  use brav@anaddb,0,,0
+6e2a16b,2018-03-19 20:46:48,first successful compilation for spin dynamics,0,,0
+9660c84,2018-03-19 23:47:20,try another unit conversion,0,,0
+3f08cdd,2018-03-20 06:07:55,Merge remote-tracking branch 'remotes/pouillon/buildsys-relax-parsing' into _gmatteo,0,,0
+7325b9d,2018-03-20 09:59:16,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0,,0
+c6f9186,2018-03-20 10:32:42,Initialize v8.7.7,0,,0
+df1b190,2018-03-20 10:44:32,Finalize merge,0,,0
+c658f5a,2018-03-20 11:23:31,merged some conflicts in m_phgamma,0,,0
+ffa146d,2018-03-20 18:09:29,merge to multibilit,0,,0
+95516fc,2018-03-21 08:53:44,change small comment in test (commit before to merge the trunk),0,,0
+d25cd54,2018-03-21 08:58:10,Merge tag 'start-8.7.7' into Multibinit,0,,0
+df52368,2018-03-21 10:32:51,fix typos from merge,1,,0
+e23f70c,2018-03-21 13:37:43,stray netcdf write was left from merge,0,,0
+7dc06e8,2018-03-21 13:55:38,First successful spin dyanmics run!,0,,0
+4f707c1,2018-03-21 16:22:23,Add correct double counting for usepawu=4.,0,,1
+989b2e4,2018-03-21 17:37:42,out of range iw for tmp_gaussian,0,,0
+602b4dc,2018-03-21 17:39:28,Merge branch 'develop' of gitlab:mverstra/abinit into develop,0,,0
+1f2e2b5,2018-03-21 18:34:02,Update tdepes.md,0,,0
+ca939c2,2018-03-21 21:08:46,ease test v5/16 - should be able to bring down the tolerances a lot now. Fingers crossed  belt buckled  flaps down,0,,0
+f39a606,2018-03-22 15:54:20,too long line,0,,0
+1f91912,2018-03-23 07:57:21,Fix the problem in plot_bs.py script  as well as address of this script in tdepes.md file.,1,,1
+18345a9,2018-03-23 09:19:58,Come back to 1f919,0,,0
+bce88e9,2018-03-23 10:21:35,Restore the master (v8.7.7) in develop,0,,0
+76cc798,2018-03-23 10:27:37,Fix problems with tdepes tutorial and Samuel's script.,1,,1
+f7a965c,2018-03-23 10:34:27,forgot to close debugging units. This should be removed anyway before merging,0,,0
+66c6214,2018-03-23 10:58:33,Merge remote-tracking branch 'github/master' into develop,0,,0
+ca09613,2018-03-23 11:05:12,Fix the problem with the weights in temperature_final.py .,1,,1
+e6e2392,2018-03-24 11:10:27,Move acrossb and rotmat to m_geometry,0,,0
+2f1f806,2018-03-24 11:22:01,prt_cif  prtposcar --> m_crystal,0,,0
+e08faa5,2018-03-24 11:42:09,Move matr3eigval and matrginv to m_abilasi,0,,0
+d540ec8,2018-03-24 11:50:21,Move sbf8 to m_special_funcs,0,,0
+dbcb603,2018-03-24 12:01:08,hermit --> m_numeric_tools,0,,0
+2024fa9,2018-03-24 12:01:39,abilint,0,,0
+fe4882c,2018-03-24 12:23:44,uniformrandom --> m_numeric_tools,0,,0
+22ccf88,2018-03-24 12:42:53,ctrap and findmin moved to m_numeric_tools,0,,0
+f570585,2018-03-24 13:25:02,Move inupper to m_fstrings,0,,0
+f4c976c,2018-03-24 13:26:50,Seed is inout. Wrong interface in m_use_ga,1,,0
+4be7f90,2018-03-24 13:48:55,abilint,0,,0
+014a241,2018-03-24 14:46:35,outwant  outxml and outqmc are now modules,0,,0
+2.088e+89,2018-03-24 14:54:05,Fix typo,1,,0
+59ba252,2018-03-24 14:54:26,abilint,0,,0
+b0be99b,2018-03-24 14:54:31,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0,,0
+551b78a,2018-03-24 15:06:27,mv kramerskronig to m_numeric_tools,0,,0
+4e7a588,2018-03-24 15:06:33,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0,,0
+bc248b0,2018-03-24 15:47:32,fixsym --> m_geometry,0,,0
+1b55275,2018-03-24 16:18:12,Create m_parser module with low-level tools,0,,0
+9f14354,2018-03-24 16:32:05,Move appen/importxyz to m_parser,0,,0
+b2cb232,2018-03-24 16:37:49,Move parsefile to m_parser,0,,0
+98abdd5,2018-03-24 16:50:53,Add missing import,0,,0
+f26d105,2018-03-24 16:58:02,Move write_var_netcdf and create_ncfile to m_nctk (deprecated),0,,0
+bb3d22f,2018-03-24 17:08:18,abilint,0,,0
+335dfaa,2018-03-24 19:50:09,Fix robodoc warnings,1,,0
+6f537eb,2018-03-25 00:53:50,Convert geometry wavefunctions and noncoll into markdown,0,,0
+6ee3e66,2018-03-25 01:10:34,Remove obsolete scripts,0,,0
+3b988aa,2018-03-25 12:37:48,Move find_getdtset to m_dtset,0,,0
+24b9d45,2018-03-25 12:53:36,Move jacobi and lubksb to m_abilasi and deprecate,0,,0
+a8b9c93,2018-03-25 13:05:28,ludcmp must be public,0,,0
+c0c4921,2018-03-25 14:05:53,Move symkchk to m_kpts,0,,0
+a8d8ea4,2018-03-25 14:23:41,Move cspint to m_numeric_tools,0,,0
+8360c0b,2018-03-25 14:30:59,Move INTRPL to m_splines and deprecate,0,,0
+346a1fb,2018-03-25 14:35:01,Delete intrpl,0,,0
+f7a84bb,2018-03-25 14:41:49,export cspint,0,,0
+df8f7a4,2018-03-25 15:06:45,Move blow_pawuj to pawuj_utils,0,,0
+ffad41f,2018-03-25 15:22:49,Move overlap_g to m_cgtools,0,,0
+6f15555,2018-03-25 15:37:04,abilint,0,,0
+2210543.0,2018-03-25 19:34:06,Remove interp,0,,0
+b3ba462,2018-03-25 20:08:20,Fix typos,1,,0
+7bafed8,2018-03-25 23:25:42,Fix robodoc warnings,1,,0
+cf8a8fe,2018-03-26 00:11:58,Minor changes,0,,0
+e079a8b,2018-03-26 09:50:05,Increase tolnlines in v5[40],0,,0
+b84999c,2018-03-26 10:43:44,Group memana routines in m_memeval,0,,0
+11ea19f,2018-03-26 11:02:58,Add missing import,0,,0
+c315a75,2018-03-26 14:50:43,Encaspulate aim procedures in m_bader.,0,,0
+388844a,2018-03-26 15:12:39,abilint,0,,0
+21a0c60,2018-03-26 20:55:36,Fix robodoc tag,1,,1
+15db058,2018-03-26 22:24:04,Continue to correct links.,0,,1
+aa7dcbf,2018-03-27 08:52:10,More link fixes,1,,1
+c983f66,2018-03-27 15:45:44,add generate_training_set routine,0,,0
+6413068.0,2018-03-27 15:49:50,Fix different links,1,,0
+5b98748,2018-03-27 15:51:46,Move xred2xcart and friends to m_geometry,0,,0
+a793fcf,2018-03-27 16:03:34,Fix Allen1996 reference,1,,0
+bab53e8,2018-03-27 16:25:45,abinit: fix bug related to the new supercell_latt input,1,,1
+2b6648f,2018-03-27 16:32:40,Begin to group procedures in 41_geometry  won't touch spgfinder code,0,,0
+a9032bc,2018-03-27 18:14:10,Fix bigdft compilation,1,,1
+3e4a343,2018-03-27 18:14:40,DOI of a 1998 did not work. Gave working URL.,0,,0
+d6f11ab,2018-03-27 21:40:20,Move metric to m_geometry,0,,0
+12f63a3,2018-03-27 21:49:31,Polish docs,0,,0
+1e477a2,2018-03-27 22:06:56,Change site_url  fix new bibtex entries,1,,0
+8226ca7,2018-03-27 22:51:18,Move zerosym to m_fft,0,,0
+d5ecd99,2018-03-28 00:35:34,Gather eig/occ routines in m_occ,0,,0
+7fe419b,2018-03-28 00:45:29,Fix typo,1,,0
+7e22be9,2018-03-28 01:12:08,Create m_angles module for low-level tools,0,,0
+2606b20,2018-03-28 01:21:37,Fix typos,1,,0
+03a9c0c,2018-03-28 01:36:05,Move chkprimd and dhkdilatmx to m_geometry,0,,0
+fb3f11a,2018-03-28 01:36:17,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0,,0
+eefd630,2018-03-28 01:50:39,export dist2,0,,0
+c01f756,2018-03-28 01:53:23,Version for buildbot,0,,0
+88dd42e,2018-03-28 10:25:30,Merge remote-tracking branch 'remotes/amadon/develop' into _amadon,0,,0
+29f8f94,2018-03-28 10:42:55,Fix bigdft compilation errors,1,,1
+03a5373,2018-03-28 11:20:48,Some fix of the documentation for developers/,1,,1
+013ea2d,2018-03-28 11:35:03,Merge remote-tracking branch 'remotes/gmatteo/mkdocs' into _gonze,0,,0
+d0616eb,2018-03-28 12:42:02,Move dzgedi and dzgefa to m_abilasi and deprecate,0,,0
+1f74884,2018-03-28 12:56:43,abilint,0,,0
+c99d43c,2018-03-28 14:09:10,Modularize tddft,0,,0
+edceb44,2018-03-28 14:19:39,Fix typo,1,,0
+da16248,2018-03-28 14:58:23,Merge branch '_gonze' into develop,0,,0
+e8066f1,2018-03-28 15:20:48,Fix typos in doc,1,,0
+c79306f,2018-03-28 19:49:54,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into abilint,0,,0
+8a44264,2018-03-28 22:50:34,Increase tolred in v8[69],0,,0
+547c78f,2018-03-28 23:18:29,Move symg and getkpgnorm to m_gsphere,0,,0
+99938a8,2018-03-29 01:26:47,Version for buildbot,0,,0
+2b20cd5,2018-03-29 09:15:26,add twist term 2b,0,,0
+4738b26,2018-03-29 09:54:55,Merge remote-tracking branch 'trunk/develop' into dfpt_noncoll,0,,0
+b0b9cd7,2018-03-29 10:14:09,abinit debug supercell_latt input and ionmov 27,0,,0
+393b9d5,2018-03-29 11:54:57,merge trunk/develop,0,,0
+5d8035c,2018-03-29 12:50:16,merge local develop branch,0,,0
+bf0a1c5,2018-03-29 13:13:17,updated m_orbmag,0,,0
+1752b9d,2018-03-29 13:52:06,Move dotprod_vn to m_cgtools  create m_suscep_stat module,0,,0
+694d8bb,2018-03-29 14:05:02,Move testsusmat to m_dtset,0,,0
+560af60,2018-03-29 14:05:47,add missing deallocation,0,,0
+292276a,2018-03-29 14:06:02,abilint,0,,0
+7da2599,2018-03-29 14:06:04,Merge branch 'abilint' of gitlab.abinit.org:gmatteo/abinit into abilint,0,,0
+10c3ed8,2018-03-29 14:40:56,Fix compilation error,1,,1
+5e9e59b,2018-03-29 15:00:43,Mov chkdpr and chkint routines to m_parser,0,,0
+a6724a6,2018-03-29 15:44:57,Abilint,0,,0
+43a7e7a,2018-03-29 16:56:36,corrected m_orbmag module use,0,,1
+50e1450,2018-03-30 14:51:50,add treatment of unstable phonon with ionmov 27: option 1=> fix value for the amplitude,1,,1
+1a1c355,2018-03-30 15:10:30,add paht to ddb file as argument in mover,0,,0
+c0e8cbe,2018-03-30 19:38:53,Add section on pseudos and spherical harmonics to theory notes,0,,0
+bf37455,2018-03-30 20:25:01,ionmov 27:add option for negative frequencies,0,,0
+8b86031,2018-03-31 00:31:54,Remove deprecated wikilink syntax  enforce namespace  add bibtex entries,0,,0
+4075f01,2018-03-31 00:52:53,Deactivate search bar,0,,0
+4d5a8dc,2018-03-31 13:02:14,Begin to group procedures in 64_psp,0,,0
+1fb761c,2018-03-31 13:18:26,move vhtnzc to psp6cc,0,,0
+c50bc40,2018-03-31 13:28:43,Group fhi routines in psp6in,0,,0
+cd30351,2018-03-31 14:23:19,Move clnup routines to gstate,0,,0
+a975d7a,2018-03-31 14:46:41,Move routines inside cgwf,0,,0
+aeef3f1,2018-03-31 15:18:27,abilint,0,,0
+9552ca4,2018-03-31 16:51:47,Merge remote-tracking branch 'remotes/gmatteo/mkdocs' into _gmatteo,0,,0
+90aadfb,2018-03-31 17:27:51,Progress towards the finalization of v8.7.7 .,0,,0
+42f9507,2018-03-31 19:58:56,Create m_pspheads module,0,,0
+de17db9,2018-03-31 20:11:33,Move macroin routines to m_dtset,0,,0
+fe56703,2018-03-31 20:33:52,abilint,0,,0
+ead235a,2018-03-31 21:06:57,Move pspheds_comm to m_pspheasds  getdim_nclo to m_memeval,0,,0
+5585abf,2018-03-31 21:27:37,Move setmqgrid to m_memeval,0,,0
+f2fc59f,2018-03-31 21:41:37,Move listkk to m_kpts,0,,0
+3d71df1,2018-03-31 21:52:25,Fix compilation errors,1,,1
+47f806d,2018-04-01 10:31:33,Delete rdnpw  randac  WffReadEigk because mkmem == 0 has been removed,0,,0
+54b56a7,2018-04-01 11:12:26,Encaspulate macroave tools in m_macroave,0,,0
+45d681a,2018-04-01 12:26:34,Move getkgrid  get_full_kgrid  get_kpt_fullbz  smpbz  testkgrid to m_kpts,0,,0
+5.8e+285,2018-04-01 12:41:13,abilint + fix typo,1,,0
+6e0441a,2018-04-01 13:47:39,Fix dependencies,1,,1
+afb5cc7,2018-04-01 15:51:52,Move kgindex to m_fftcore,0,,0
+bf2e590,2018-04-01 16:15:17,Move bound  getng and sphereboundary to m_fftcore,0,,0
+016559b,2018-04-01 16:29:30,abilint + typos,0,,0
+6f362b2,2018-04-01 17:49:04,Initial cleanup in GW and BSE dirs,0,,0
+79adcba,2018-04-01 18:03:31,Remove fsumrule,0,,0
+ea9e1a0,2018-04-01 18:36:42,Mv outkss to m_io_kss,0,,0
+f94f6c0,2018-04-01 18:54:42,Fix compilation errors,1,,1
+bb34fd9,2018-04-01 19:16:22,Move mkkpg to m_kg,0,,0
+ce88d9f,2018-04-01 19:30:41,abilint + add missing import,0,,0
+2ebc856,2018-04-01 20:11:18,Move timein and time_accu to m_time,0,,0
+f4b1b91,2018-04-01 20:29:16,include defs_time in m_time and declare globs as private,0,,0
+fa2da84,2018-04-01 20:49:21,Export time_accu,0,,0
+9d7aa8c,2018-04-01 21:41:03,Move timab to m_time,0,,0
+c38f21f,2018-04-01 22:31:59,abilint,0,,0
+64ebb23,2018-04-01 22:32:37,Move aim junk to m_bader,0,,0
+787e5df,2018-04-01 22:32:42,Merge branch 'abilint2' of gitlab.abinit.org:gmatteo/abinit into abilint2,0,,0
+04b9db4,2018-04-01 22:43:33,Fix compilation error,1,,1
+7f92b0f,2018-04-01 22:52:47,Use m_time.TIMER_SIZE instead of mtim,0,,0
+43942df,2018-04-01 23:13:07,Version for buildbot,0,,0
+d3d99f5,2018-04-01 23:51:52,Move prttagm and prttagm_images to m_parser,0,,0
+68bf679,2018-04-02 00:06:39,Move phase to m_fft_mesh,0,,0
+6a3a9c3,2018-04-02 06:11:42,Initialize v8.8.0,0,,0
+1e779db,2018-04-02 06:17:35,Initialize v8.9.0,0,,0
+1fa3b7b,2018-04-02 20:30:11,Mv hdr_vs_dtset to m_hdr,0,,0
+b058509,2018-04-03 11:35:15,Temporary implementation of full 1wf output. Fixed mrggkk_nc,1,,1
+111412a,2018-04-03 11:35:48,Merge remote-tracking branch 'trunk/master' into develop,0,,0
+f28cbed,2018-04-03 12:16:22,Move mblktyp1  mblktyp5 to m_ddb  Deprecate mblktyp5,0,,0
+507421.0,2018-04-03 12:16:59,Remove files,0,,0
+3e5b74d,2018-04-03 12:45:42,abilint,0,,0
+cfb9b1d,2018-04-03 12:46:06,Minor changes,0,,0
+d942a29,2018-04-03 12:46:08,Merge branch 'abilint2' of gitlab.abinit.org:gmatteo/abinit into abilint2,0,,0
+39b65a5,2018-04-03 12:48:14,Merge abilint2 into abilint,0,,0
+468303.0,2018-04-03 13:37:40,Mv ddb_io_out.F90 to m_ddb_hdr,0,,0
+371f81b,2018-04-03 13:39:37,Move test_ftgkk to ftgkk,0,,0
+73f9a46,2018-04-03 13:43:29,Remove lin_interpq_gam,0,,0
+41e7561,2018-04-03 13:46:48,Mv outelph inside elphon,0,,0
+f721706,2018-04-03 13:57:35,Had psp9in call wrtout for every single data output,0,,0
+313717f,2018-04-03 14:06:29,Create m_elphon module providing elphon routine,0,,0
+e722db3,2018-04-03 14:18:03,abilint,0,,0
+dc3229a,2018-04-03 16:16:25,Added an input variable (prtfull1wf) and corresponding test.,0,,0
+be25629,2018-04-03 17:06:27,Remove complete_gkq  fxgkkphase  integrate_gamma_alt  mk_irredper mkfsqgrid and symgamma as discussed with MJV,0,,0
+4130726.0,2018-04-03 17:24:32,Move kptfine_av to m_double_grid,0,,0
+f71a6f5,2018-04-03 17:41:14,Mv remove_inversion to m_geometry,0,,0
+ce8f9eb,2018-04-03 17:42:44,Use m_geometry,0,,0
+95629a8,2018-04-03 18:46:43,Updated reference output file for test.,0,,0
+5ba2ff0,2018-04-03 19:34:30,Mv eig2stern  eig2tot  outbsd  smeared_delta to m_eig2d,0,,0
+11ec70b,2018-04-03 19:48:14,Fix compilation error,1,,1
+9ca74a2,2018-04-03 19:51:35,Mv elph2_fanddw to m_eig2d,0,,0
+3496dd3,2018-04-03 20:02:29,Mv dfpt_symph to m_phonons,0,,0
+b5a6f42,2018-04-03 20:09:19,Updated test parameters,0,,0
+ef03f5a,2018-04-03 20:16:13,mv inpgkk to read_el_veloc,0,,0
+73eef73,2018-04-03 21:21:08,Increased tolerance on number of lines in v8[t81],0,,0
+07cb6d0,2018-04-03 21:21:42,Merge branch 'develop' of abigit:antonius/abinit into develop,0,,0
+2444856.0,2018-04-03 21:24:31,Increased tolerance on nlines in v8[t81],0,,0
+4b4da08,2018-04-03 22:43:48,Fix compilation error,1,,1
+6375875.0,2018-04-03 23:04:52,cgwf --> m_cgwf,0,,0
+863ab7a,2018-04-03 23:43:40,abilint,0,,0
+2ae4049,2018-04-04 07:15:41,Updated reference output file to abiref,0,,0
+6741e6e,2018-04-04 08:33:20,Fixed erroneous characters in reference output,1,,0
+671f222,2018-04-04 10:32:38,debug after merge,0,,0
+e564d47,2018-04-04 10:37:28,Fixed eph with kptopt 0,1,,1
+adf3b71,2018-04-04 11:05:10,Fix robodoc warnings,1,,0
+64efb96,2018-04-04 11:59:18,Merge branch 'abilint2' into abilint,0,,0
+14c75f9,2018-04-04 16:26:06,Move setup_bse to new m_bse module,0,,0
+12c6553,2018-04-04 17:04:04,Mv setup_screening to new module m_screening_driver,0,,0
+f56ba06,2018-04-04 17:29:59,abilint,0,,0
+595d36b,2018-04-04 22:11:19,Version for buildbot,0,,0
+326e920,2018-04-04 22:11:51,Squashed commit of the following:,0,,0
+65a9be8,2018-04-04 22:52:13,Merge branch 'abilint' into abilint2,0,,0
+32ea8e8,2018-04-05 09:29:34,Refined the condition for suppressing time-reversal symmetries in dfpt,0,,0
+1f933e3,2018-04-05 12:58:33,Updated ElectronPhononCoupling,0,,0
+91095a8,2018-04-06 06:30:53,Suppress a fake URL+DOI  and gives a URL that works.,0,,0
+9d35bb9,2018-04-06 13:22:00,merged trunk,0,,0
+ee7b400,2018-04-06 15:24:40,Changes in libPAW to improve consistency between uspp  atompaw  abinit legacy  etc...,0,,0
+452913f,2018-04-06 15:41:08,Merge branch 'release-8.8.0' of abinit-gitlab:trunk/abinit into quickfixes,0,,0
+c6a2d43,2018-04-06 16:02:40,Merge conflict,0,,0
+e1685c6,2018-04-06 18:31:47,Correct mess after merge,0,,1
+71ef3bb,2018-04-08 20:50:32,Merge gmatteo/abilint/326e into _gmatteo,0,,0
+5435fb3,2018-04-08 20:52:53,Modify tolerance for v8#45 GRUN_DOS file,0,,0
+fef3ac4,2018-04-09 05:53:42,Merge antonius/develop/1f93 into _antonius,0,,0
+5aee485,2018-04-09 06:18:11,Fix use m_time,1,,1
+f313103,2018-04-09 11:30:28,Updated ref file for test vdwxc[03].,0,,0
+629ebce,2018-04-09 16:38:16,Long lines suppressed,0,,0
+86578c7,2018-04-09 16:41:11,New ref file for one test (due to new psp treatment),0,,0
+e29be4b,2018-04-10 15:13:11,Add script to replace abilint,0,,0
+3f61af4,2018-04-10 15:14:27,Merge branch 'abilint' into abilint2,0,,0
+21238ef,2018-04-10 15:58:07,Modularize eliashberg_1d,0,,0
+06de20c,2018-04-10 16:16:29,Move gam_mult_displt to defs_elphonon + group aother procedures,0,,0
+7575338.0,2018-04-10 16:18:10,Merge remote-tracking branch 'remotes/trunk/release-8.8.0' into release-8.8.0 Some buildsys errors found.,1,,0
+fe96f39,2018-04-10 16:20:51,Adjust test tolerances,0,,0
+7a86398,2018-04-10 16:29:56,Move k_neighbors to m_double_grid,0,,0
+bbda0d6,2018-04-10 16:43:38,Modularize harmonic_Thermo and m_thmeig,0,,0
+cd2244f,2018-04-10 16:58:51,abilint,0,,0
+19395a3,2018-04-10 17:00:38,Mv mkfskgrid to m_elphon,0,,0
+4c71b99,2018-04-10 17:14:02,ramansus --> m_raman and include electrooptic.F90,0,,0
+d6a4ca8,2018-04-10 17:32:03,read_gkk --> m_iogkk and include outgkk,0,,0
+a65d5ee,2018-04-10 17:46:01,Mv dfptnl_doutput to m_ddb,0,,0
+53da53e,2018-04-10 17:56:29,Mv mka2f and mka2fQgrid to m_elphon,0,,0
+71da4ba,2018-04-10 18:04:46,Mv read_el_veloc to m_iogkk,0,,0
+8e0b96a,2018-04-10 18:13:49,Mv getcgqphase to dfpt_looppert,0,,0
+90931f0,2018-04-10 18:17:45,abilint,0,,0
+e865816,2018-04-10 20:08:33,Mv interpolate_gkk to get_all_gkk2,0,,0
+b7435a7,2018-04-10 20:21:25,m_multipoles_fftr --> m_multipoles and includes multipoles_out,0,,0
+7e5fd24,2018-04-10 20:35:49,Create m_exc_analyze module,0,,0
+6c8fe20,2018-04-10 21:06:35,Create m_exc_build and mv exc_build_block inside,0,,0
+848be9d,2018-04-10 21:40:47,Fix typos,1,,0
+3a04e8b,2018-04-10 22:04:48,Mv out1dm to m_multipoles,0,,0
+3952832.0,2018-04-10 22:21:47,Mv ep_setupqt and order_fs_kpts to m_elphon,0,,0
+ba929ea,2018-04-10 22:28:32,Version for buildbot,0,,0
+22c489a,2018-04-10 23:21:56,Move waveformat to uderiv,0,,0
+db00537,2018-04-10 23:41:43,Move herald to m_specialmsg,0,,0
+e8ffdec,2018-04-12 10:43:34,Updated error message for vdw_xc < 3.,1,,0
+d06b12a,2018-04-12 16:30:16,Merge branch 'trunk' into nonlinear,0,,0
+eafe175,2018-04-12 18:04:21,Do not use : crash pawxc_dfpt,0,,0
+e34fe3b,2018-04-13 11:31:25,- cleaning : mv scripts to scripts/ folder - add support of google analytics on mkdocs,0,,0
+1f8058e,2018-04-13 12:25:13,bug fixes related to intel ifort 18 issues,1,,1
+e155f80,2018-04-13 14:27:56,removed variable level from calls to pspini,0,,0
+0f9566e,2018-04-13 19:33:03,Move symredcart to m_geometry,0,,0
+5f400f5,2018-04-13 19:42:56,Mv dfpt_prtph to m_dynmat,0,,0
+315574d,2018-04-14 16:15:48,Squashed commit of the following:,0,,0
+8e84840,2018-04-15 06:53:40,Merge torrent/quickfixes/fe96 into _cespejo,0,,0
+65c3b4f,2018-04-15 09:28:39,Merge jzwanzig/develop/e155 into _beuken,0,,0
+c0c50ff,2018-04-15 11:41:13,temp,0,,0
+1de5be5,2018-04-15 21:14:50,ongoing: spin_hist,0,,0
+ccc3d4d,2018-04-16 09:26:18,update orbmag in prep for twisted cprj,0,,0
+8c5011d,2018-04-16 09:32:01,Merge branch 'develop' into twisted,0,,0
+f329604,2018-04-16 11:44:02,Merge gmatteo/abilint/3155 into _gmatteo,0,,0
+63c3188,2018-04-16 12:02:58,remove spurious comment,0,,0
+9f73b67,2018-04-16 21:12:33,Merge branch 'release-8.8.0' into develop,0,,0
+6152060.0,2018-04-17 13:46:02,switch nucdipmom_k from pointer to allocatable array,0,,0
+dbaa5cc,2018-04-17 13:49:23,Merge remote-tracking branch 'remotes/trunk/develop' into develop,0,,0
+76b2730,2018-04-17 17:16:28,Toward PAW+DFPT+NC,0,,0
+96484d3,2018-04-17 22:20:17,Merge torrent/quickfixes/76b2 into _torrent,0,,0
+6b1ad95,2018-04-18 08:41:49,Add ./ to mksite.py systematically,0,,0
+4a574c0,2018-04-18 11:09:36,debug some symetries for the generation of anharmonic terms,0,,1
+a50daaa,2018-04-18 11:18:29,Enter patch from JMB,1,,0
+699f3ce,2018-04-18 12:57:05,Fix typo,1,,0
+b2b4b30,2018-04-18 14:32:14,Merge remote-tracking branch 'trunk/develop' into Multibinit,0,,0
+0411b54,2018-04-18 17:22:23,Merge with trunk completed. Correction in pawxc.,0,,0
+42b61da,2018-04-18 18:02:44,Merge remote-tracking branch 'gitlab_trunk/develop' into nonlinear,0,,0
+bf6e57e,2018-04-19 07:51:48,Try to modify order of printing of relevances classes  but does not work ?!,0,,0
+98a3bbb,2018-04-19 09:14:12,Remove time display for each dataset,0,,0
+456cbbb,2018-04-19 11:00:22,Add forgotten lines (variable initialization),0,,0
+c42bc37,2018-04-19 11:36:48,Fix doc for hyb_mixing variables.,1,,1
+ab3ead5,2018-04-19 11:38:36,Fix doc  hyb_range input variables,1,,1
+a05e5ca,2018-04-19 14:10:48,reconstruct spin hist file,0,,0
+3d75257,2018-04-19 15:27:14,Fix ordere of relevances in topics,1,,1
+8795682.0,2018-04-19 16:25:45,Change conditions for authorized nonlinear computations,0,,0
+539d0cb,2018-04-19 22:59:49,Add missing colon to v8[65] pre_commands,0,,0
+2425c7d,2018-04-20 13:27:32,Correction of pawmkrho call for bigdft,0,,1
+d4b52d0,2018-04-20 13:51:12,a working version with only the basic things,0,,0
+4a490e7,2018-04-20 13:53:56,Split writting of textual output in dfptnl_pert in order to pass the test farm,0,,1
+7e3561b,2018-04-20 15:34:06,"Include a in-text clarification of the source and postprocessed files in the ""topics"" directory. Develop release notes for v8.8. Complete MagField topics. Define cite:Ceresoli2006.",0,,0
+64c58b6,2018-04-20 16:57:33,Split the right line this time...,0,,0
+2f91e0e,2018-04-20 20:55:54,Complete a first draft for the release notes.,0,,0
+57dbcad,2018-04-20 20:59:54,Merge torrent/quickfixes/456b into _torrent-8.8.0,0,,0
+db15717,2018-04-20 21:01:44,Merge gmatteo/relev_order/3d75 into _torrent-8.8.0,0,,0
+986420c,2018-04-20 22:31:25,Add support for subsuite to wikilinks,0,,0
+408469a,2018-04-21 05:59:09,Merge branch 'relev_order' of gitlab:/gmatteo/abinit into _torrent-8.8.0,0,,0
+dcba2b6,2018-04-21 06:14:01,Minor improvements of doc,0,,0
+5dcf7ce,2018-04-21 06:38:41,Initialize freeze of v8.8.0,0,,0

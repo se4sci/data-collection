@@ -1,0 +1,755 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+51fa33a,2017-01-06 11:14:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12227 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1310438.0,2017-01-06 11:40:32,',0,,0.0
+1310438.0,2017-01-06 11:40:32,Merge pull request #843 from akohlmey/whitespace-cleanup,0,,0.0
+1310438.0,2017-01-06 11:40:32,cleanup embedded or trailing tabs,0,,0.0
+1310438.0,2017-01-06 11:40:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14163 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1a9f2df,2017-01-06 11:44:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12228 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9d46670,2017-01-06 11:44:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12229 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9587225.0,2017-01-06 11:44:16,Avoid more div by zero in meam/c,0,,0.0
+9587225.0,2017-01-06 11:44:16,Improve style  replace pow(x) with faster square() and cube(),0,,0.0
+9587225.0,2017-01-06 11:44:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12230 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9587225.0,2017-01-06 11:44:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12231 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4d0a6d8,2017-01-06 11:51:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12232 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+eb1c6a2,2017-01-06 11:54:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12233 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6abefe7,2017-01-06 15:41:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13625 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f995bb4,2017-01-06 16:00:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13549 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ccd09e3,2017-01-06 19:04:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12363 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+20a4e36,2017-01-06 21:30:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12364 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+51e52b4,2017-01-06 21:30:33,replace variable length array in fix ipi with new/delete,0,,0.0
+09af780,2017-01-06 21:31:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12365 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a9f0b7d,2017-01-09 10:39:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12416 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9250a55,2017-01-09 12:24:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12366 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+21cde62,2017-01-09 12:29:15,Made small change to how fix_species affects neighbor frequency,0,,0.0
+ebd25cc,2017-01-09 12:40:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12368 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+26d5085,2017-01-09 13:12:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13601 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+afbc6fc,2017-01-09 13:17:23,fix a header line formatting issue,0,,1.0
+c31f1e9,2017-01-09 13:36:40,',0,,0.0
+9807062.0,2017-01-09 13:39:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13602 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9807062.0,2017-01-09 13:39:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13604 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9807062.0,2017-01-09 13:39:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12088 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9807062.0,2017-01-09 13:39:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12089 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4d5abe6,2017-01-09 14:04:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13606 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+001964e,2017-01-09 14:04:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13607 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+20f8a8c,2017-01-09 14:38:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12369 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c877c07,2017-01-09 16:21:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13609 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e4673d7,2017-01-09 16:36:25,pass the name of the python interpreter compatible with the python package to 'make install-python',0,,0.0
+1a81da0,2017-01-09 17:03:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12370 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e5ac49d,2017-01-09 17:13:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12371 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+33412c7,2017-01-09 17:50:49,update load balance weights documentation for fix balance and balance,0,,0.0
+0db2a07,2017-01-09 17:51:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12373 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d014e00,2017-01-09 17:51:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12391 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1f6cfb1,2017-01-10 10:56:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13610 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d06688b,2017-01-10 12:11:20,avoid hang in fix reax/c/species when multiple atoms have the exact same x-coordinate,0,,0.0
+95706ac,2017-01-10 12:29:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12374 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5d5751b,2017-01-10 12:38:48,Fix dump cfg in vizplotgui_atomeye.py example,0,,1.0
+92d15d4,2017-01-10 12:52:37,USER-INTEL: Bug fix for case where a bond/angle/dihedral/improper style is specified  but there are no bond/... types and therefore no allocation.,0,,1.0
+7839c33,2017-01-10 13:05:00,Fixing a few bugs in Kokkos,0,,1.0
+55aa91b,2017-01-10 13:07:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13611 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ee9e7cf,2017-01-10 13:22:36,Fixing bugs in per-atom,0,,1.0
+622d926,2017-01-10 13:41:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12375 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7162caf,2017-01-10 14:46:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12376 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d26f140,2017-01-10 15:22:52,Fix issue in fix_qeq_reax_kokkos  can't call child function from base constructor,0,,1.0
+98c6608,2017-01-10 15:25:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13612 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d65676e,2017-01-10 16:08:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12281 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1d0e600,2017-01-10 23:47:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12377 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+34cb402,2017-01-11 07:46:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12367 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9f4e5e0,2017-01-11 09:11:35,fix typo,0,,0.0
+6a9a0e8,2017-01-11 09:25:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13613 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b5ff41f,2017-01-11 11:10:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13615 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cb9fdf7,2017-01-11 11:44:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13616 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c2bb20e,2017-01-11 11:54:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13617 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+41804ff,2017-01-11 12:42:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13618 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fdb6b91,2017-01-11 12:50:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13619 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5dcbbba,2017-01-11 13:15:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13620 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+52761ae,2017-01-11 13:18:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13621 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6950a99,2017-01-11 19:49:58,remove non-portable non-ascii blanks from fix wall/ees docs,0,,0.0
+8e1cf66,2017-01-11 20:59:40,set appropriate flags for computing a vector in constructor of fix restrain,0,,1.0
+0b081b0,2017-01-11 21:05:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12415 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b7d0dc8,2017-01-12 08:32:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13622 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3580e54,2017-01-12 09:00:07,Fixing Kokkos issue in fix_eos_table_rx_kokkos,0,,1.0
+3.58e+57,2017-01-12 09:00:07,Fixing Kokkos issue in fix_eos_table_rx_kokkos,0,,1.0
+1229f6f,2017-01-12 10:15:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12414 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c94030d,2017-01-12 13:37:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12413 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f51ddf8,2017-01-12 13:50:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13623 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0c3b942,2017-01-12 13:50:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13624 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4dab673,2017-01-12 14:15:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12315 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cce10f6,2017-01-12 14:19:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15278 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0635151,2017-01-12 16:22:24,BUGFIX: fix a copy-o in build_Item_Ghost(): xbin2  etc. should be an int xbin2  ybin2  and zbin2 are temporary integer bin coordinates  not floats!,0,,1.0
+630783c,2017-01-12 16:22:24,Fixing Kokkos bug,0,,1.0
+635151.0,2017-01-12 16:22:24,Fixing Kokkos bug,0,,1.0
+5b7ab13,2017-01-12 16:22:38,Fixing Kokkos bug,0,,1.0
+daf766d,2017-01-12 16:22:38,Fixing bug in qeq,0,,1.0
+6bd17be,2017-01-12 16:58:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15289 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+aaa7dca,2017-01-12 17:13:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15303 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e8e03dd,2017-01-12 23:44:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12317 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2540fc2,2017-01-12 23:54:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12318 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c59bcf3,2017-01-13 08:10:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12320 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b2f67fe,2017-01-13 08:12:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12321 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1ae53d5,2017-01-13 09:26:30,Reducing memory churn in pair_exp6_rx_kokkos,0,,0.0
+c15d658,2017-01-13 10:01:22,Fixing issues in pair_multi_lucy_rx_kokkos,0,,1.0
+2a35fa7,2017-01-13 10:37:31,Updated to 1.33 from 1.32,0,,0.0
+f16f939,2017-01-13 10:51:28,Updated to 1.108 from 1.103,0,,0.0
+04fe071,2017-01-13 12:13:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12355 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a42a666,2017-01-13 13:23:26,README for updated header files from VMD 1.9.3,0,,0.0
+dc1b94c,2017-01-13 13:27:48,correct link for dispersion parameter how-to and reformat,0,,0.0
+7849871,2017-01-13 13:32:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12246 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7849871,2017-01-13 13:32:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12356 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7849871,2017-01-13 13:32:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12358 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7849871,2017-01-13 13:32:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12235 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+96259ea,2017-01-13 13:36:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12407 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2b29980,2017-01-13 13:50:21,Fixing index issue in pair_exp6_rx_kokkos,0,,1.0
+aa0b327,2017-01-13 14:26:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12397 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+61cff85,2017-01-13 14:35:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12398 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+688df1c,2017-01-13 14:40:36,Fix system header #include style.,0,,1.0
+e3153e0,2017-01-13 14:43:48,Merge pull request #439 from rbberger/python_mixed_use_support,0,,0.0
+374abea,2017-01-13 18:09:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12399 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+98ceb6f,2017-01-13 18:11:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12400 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+afaacc6,2017-01-13 18:32:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12401 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fe8caa8,2017-01-13 18:33:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12402 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5d48bfd,2017-01-13 18:40:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12403 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b988b29,2017-01-13 18:43:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12404 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8.36e+73,2017-01-13 18:56:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12405 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+8360e70,2017-01-13 18:56:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12236 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fa00e05,2017-01-14 15:39:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12406 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b220850,2017-01-14 16:16:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12408 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5821fe8,2017-01-14 17:06:23,correct bug in tracking atom->nlocal vs. atom->nmax when allocating pbc enforcement buffers,0,,1.0
+4a09399,2017-01-14 17:13:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12394 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+473a3eb,2017-01-15 12:05:19,fix bug in incorrect use of O coordinate instead of M coordinate in pppm/tip4p,0,,1.0
+f3a82f4,2017-01-16 08:42:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12409 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5abd6e5,2017-01-16 11:08:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12410 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3f46b6d,2017-01-16 11:15:54,correct a logic bug in fix wall/gran/region,0,,1.0
+0a2b78a,2017-01-16 15:47:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12411 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2f13365,2017-01-16 17:08:00,protect fix ave/histo from segfaulting on non-existing computes  fixes or variables,0,,0.0
+5cd856c,2017-01-17 09:02:56,Bug fix in multiple fix rigid check,0,,1.0
+c9bea60,2017-01-17 09:03:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12412 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d8bc590,2017-01-17 09:04:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12379 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+74a661a,2017-01-17 09:05:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12316 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+252e07e,2017-01-17 09:08:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12380 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1b9e50c,2017-01-17 09:08:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12382 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+973bef4,2017-01-17 09:11:45,draft fix_dpd_energy_kokkos.h,0,,0.0
+c19d201,2017-01-17 09:12:22,save draft of fix_dpd_energy_kokkos.cpp,0,,0.0
+8c5b108,2017-01-17 09:13:27,Reverting accidental change,0,,0.0
+cd7bdf9,2017-01-17 09:13:47,Adding Kokkos files,0,,0.0
+83408b1,2017-01-17 09:14:03,test push,0,,0.0
+ad4d299,2017-01-17 09:33:25,changes in latte makefile for lattelib and README,0,,0.0
+c52a263,2017-01-17 09:36:28,whitespace cleanup,0,,0.0
+d2fc88a,2017-01-17 10:14:53,patch 6Jul17,0,,0.0
+91d68e2,2017-01-17 12:26:00,Merge pull request #442 from akohlmey/small-updates-and-bugfixes,0,,0.0
+01609f5,2017-01-17 12:47:59,USER-DPD: aplly unpack_comm_hybrid bugfix d31121b to atom_vec_dpd_kokkos.cpp,0,,1.0
+883385c,2017-01-17 13:19:06,Merge pull request #445 from Pakketeretet2/extract_for_bond,0,,0.0
+8b4130c,2017-01-17 13:28:55,Fixing Kokkos bugs,0,,1.0
+4eb08a5,2017-01-17 15:55:39,Modified the quip/lammps interface to pass lammps atom ids,0,,0.0
+5569c4c,2017-01-17 16:19:25,Fixing Kokkos memory issue,0,,1.0
+96636c7,2017-01-17 16:43:55,correct listing of USER-OMP variants of fix rigid styles,0,,0.0
+b38733e,2017-01-18 10:15:06,Fixing Kokkos memory deallocation issue,0,,1.0
+93262b5,2017-01-18 11:30:58,initial dummy version of fix_latte.cpp,0,,0.0
+7fc0970,2017-01-18 11:31:14,LAMMPS_LAMBDA from ibaned/lammps@7559bc9,0,,0.0
+3af4b3c,2017-01-18 11:31:35,initial dummy version of fix_latte.cpp,0,,0.0
+2d32fa8,2017-01-18 12:53:40,Fixing memory error,0,,1.0
+e05b132,2017-01-18 14:18:35,Fixing error checks,0,,1.0
+116ae9d,2017-01-18 14:51:35,Fixing Kokkos bug,0,,1.0
+4f2fcee,2017-01-18 15:08:32,patch 13Apr17,0,,0.0
+05cafb7,2017-01-18 15:51:50,changes for lattelib,0,,0.0
+f6cd986,2017-01-18 16:17:11,changes for lattelib,0,,0.0
+cf83ce4,2017-01-19 08:44:30,Merge pull request #443 from Pakketeretet2/user-manifold-fix-every-keyword,0,,0.0
+5ce8e2f,2017-01-19 09:54:15,Fixing logic error with suffix styles,0,,1.0
+917ca19,2017-01-19 09:54:15,Fixing Kokkos execution space issue with regions,0,,1.0
+fc94f1b,2017-01-19 11:55:22,Fixed a bug with equal-style variables as manifold params.,0,,1.0
+de6442d,2017-01-19 11:55:22,Fixing some Kokkos issues,0,,1.0
+6d47cf3,2017-01-19 15:42:09,Removed changed bond_harmonic from wrong position.,0,,0.0
+521f3df,2017-01-19 16:54:50,patch 11Apr17,0,,0.0
+9a29987,2017-01-19 17:01:15,Fixed typo,0,,0.0
+fbfb1df,2017-01-19 20:47:10,changes for lattelib,0,,0.0
+0887ff1,2017-01-20 09:37:07,Add Python 3 compatibility to PYTHON package,0,,0.0
+f8d3c4c,2017-01-20 13:14:59,changes in latte makefile for lattelib and README,0,,0.0
+5d0e4e1,2017-01-20 13:15:16,changes in latte makefile for lattelib and README,0,,0.0
+aa0ad9b,2017-01-20 13:19:43,test push,0,,0.0
+caea897,2017-01-20 13:24:09,USER-DPD: initial Kokkos port  first steps from Aug 24th ARL Kokkos hackathon atom_vec_dpd_kokkos pair_dpd_fdt_energy_kokkos without the Oct 7th VV support from e27ed6c,0,,0.0
+e699612,2017-01-20 14:30:46,Integrating atom_vec_dpd into the Kokkos package,0,,0.0
+f9bc81b,2017-01-20 16:43:13,Refactor PYTHON package and wrapper classes,0,,0.0
+43d61f3,2017-01-22 15:03:45,Initialize Python interpreter in PythonImpl constructor,0,,0.0
+41d3903,2017-01-22 22:49:21,Delete python_wrapper.h,0,,0.0
+c8260af,2017-01-23 13:34:51,Fix typo,0,,0.0
+31976d1,2017-01-23 19:20:05,Adding pair_exp6_rx_kokkos files,0,,0.0
+b5cb74b,2017-01-23 19:21:48,Integrating pair_dpd_fdt_energy_kokkos files,0,,0.0
+5897955.0,2017-01-24 11:24:47,Fixing GPU memory issues in Kokkos,0,,1.0
+5897955.0,2017-01-24 11:24:47,Fixing GPU memory issue in pair_exp6_rx_kokkos,0,,1.0
+5897955.0,2017-01-24 11:24:47,Fixing GPU memory issue in fix_langevin_kokkos,0,,1.0
+5897955.0,2017-01-24 11:24:47,Fixing GPU memory issues in Kokkos,0,,1.0
+8e808f6,2017-01-24 11:45:27,Prevent segfault if Python was never initialized,0,,0.0
+70fa918,2017-01-24 21:49:16,Merge pull request #450 from rbberger/python_destruction_fix,0,,0.0
+73177d6,2017-01-25 11:18:03,Fixing Kokkos memory issue,0,,1.0
+26c8d3d,2017-01-25 12:53:55,Fixing Kokkos memory issue,0,,1.0
+6328beb,2017-01-25 15:22:42,Fix minor issues in pair_snap_kokkos,0,,1.0
+effbe18,2017-01-25 15:24:01,fix double-return warning,0,,1.0
+3d40b51,2017-01-25 15:24:52,initial dummy version of fix_latte.cpp,0,,0.0
+60b48c9,2017-01-25 15:36:24,Merge branch 'master' into USER-DPD_kokkos as of 21Dec16 patch,0,,0.0
+1074c67,2017-01-25 15:37:27,Removing pair_table_rx_kokkos from Kokkos Install.sh since it isn't ready for runtime testing,0,,0.0
+053ee54,2017-01-25 15:38:41,Merge branch 'USER-DPD_whitespace' into USER-DPD_kokkos,0,,0.0
+e992bfe,2017-01-25 15:40:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12383 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+03c9c46,2017-01-25 15:49:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12390 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+672bbbe,2017-01-25 16:03:11,Whitespace change to npair_kokkos,0,,0.0
+cfe818a,2017-01-26 08:37:56,Merge pull request #363 from ibaned/obey-datamask,0,,0.0
+f0a4ed6,2017-01-26 08:46:03,Merge pull request #364 from stanmoore1/kk_triclinic_neighlist,0,,0.0
+6a74a81,2017-01-26 08:46:28,new keywords for read_data: extra/X/per/atoms + changes to docs,0,,0.0
+cf95ea0,2017-01-26 08:50:18,Merge branch 'master' into USER-DPD_kokkos,0,,0.0
+c617bc1,2017-01-26 08:52:17,Merge remote-tracking branch 'origin/master' into python_refactoring,0,,0.0
+5b18421,2017-01-26 08:54:59,Merging from master to 13Dec16 version,0,,0.0
+5b29515,2017-01-26 08:57:12,Merge branch 'exaalt' of gitlab.com:exaalt/lammps into exaalt,0,,0.0
+8050eb3,2017-01-26 09:17:59,Setting molecule COM to 0 after moving atoms,0,,0.0
+6cc969d,2017-01-26 09:24:13,Fixing restart error,0,,1.0
+be13ecf,2017-01-26 10:03:43,Fixing Kokkos bugs,0,,1.0
+2023fa2,2017-01-26 10:03:54,Merge branch 'exaalt' of gitlab.com:exaalt/lammps into exaalt,0,,0.0
+85c8db5,2017-01-26 10:09:45,do not pollute global namespace by including mscg header in fix header,0,,0.0
+b5d622c,2017-01-26 10:18:45,Updates to Kokkos files,0,,0.0
+9daf7fb,2017-01-26 10:19:06,fix_latte unpdated,0,,0.0
+e5d0bde,2017-01-26 10:19:44,Updates to Kokkos files,0,,0.0
+ebe27c6,2017-01-26 10:33:03,Addition of potential  code modifications to incorporate multicomponent spline MEAM in pair_meam_spline.,0,,0.0
+6384486.0,2017-01-26 13:12:28,Cleanup on pair_meam_spline.cpp,0,,0.0
+6384486.0,2017-01-26 13:12:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12057 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6384486.0,2017-01-26 13:12:28,Merge pull request #473 from akohlmey/compress-for-reaxc-fixes,0,,0.0
+6384486.0,2017-01-26 13:12:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12055 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a5ff354,2017-01-26 13:45:45,Change to fix_property_atom to allow virtual override of grow_arrays() function,0,,0.0
+868d95f,2017-01-26 13:47:12,Adding Kokkos version of fix_property_atom,0,,0.0
+5971d4c,2017-01-26 13:49:56,Merge branch 'master' into USER-DPD_kokkos: as of 17Dec16 patch,0,,0.0
+851f804,2017-01-26 13:50:13,Whitespace cleanup to pair_dpd_fdt_energy  should be cherry-picked to Master,0,,0.0
+18e5584,2017-01-26 13:51:47,Small whitespace tweak to pair_dpd_fdt_energy,0,,0.0
+f8506fe,2017-01-26 14:06:43,Porting recent changes from USER-DPD package to KOKKOS package,0,,0.0
+ff2786c,2017-01-26 14:28:54,Removing more memory churn in pair_exp6_rx_kokkos,0,,0.0
+8b7bd9d,2017-01-26 14:59:10,restore incorrect change due to spell checking in fix imd,0,,1.0
+e42678e,2017-01-26 16:20:12,Added forgotten #include string to bond_harmonic.cpp,0,,0.0
+149f37e,2017-01-26 19:08:59,when computing only rotational temperature  we must not subtract the default n-dim extra DOFs,0,,0.0
+f3c5919,2017-01-27 08:08:05,Merge pull request #444 from ohenrich/user-cgdna,0,,0.0
+09fc8b0,2017-01-27 08:21:57,Changes necessary for runtime testing of Kokkos styles,0,,0.0
+2a6f5e6,2017-01-27 09:17:48,Adding CPU runtime tested version of pair_dpd_fdt_energy_kokkos,0,,0.0
+a1f4551,2017-01-27 10:18:41,update .gitignore and Purge.list for recent changes,0,,0.0
+e9d46f4,2017-01-27 12:31:13,whitespace cleanup in VMD plugin headers,0,,0.0
+fb279a8,2017-01-27 13:24:46,add support for USER-TALLY to pair styles hybrid and hybrid/overlay,0,,0.0
+3dddeef,2017-01-27 14:02:56,add support to pair_modify to selectively disable compute/tally callbacks in sub-styles for pair hybrid and hybrid/overlay,0,,0.0
+5afd3e9,2017-01-27 14:18:01,Renaming rand_pool_wrap to rand_pool_wrap_kokkos,0,,0.0
+579cc6d,2017-01-27 15:13:37,Change necessary for pair_exp6_rx_kokkos to compile on GPU,0,,0.0
+59f4a77,2017-01-27 15:17:39,Updated polarizer.py to use coul/long/cs,0,,0.0
+f73c9a4,2017-01-27 16:45:15,avoid division by zero by initializing unset (=automatic) g_ewald parameters to some number > 0.,0,,0.0
+641bb4b,2017-01-27 16:47:19,avoid division by zero also for ewald/disp,0,,0.0
+51a0b6b,2017-01-28 07:49:08,fix bug where per atom data for USER-OMP was reducing the wrong arrays with hybrid styles,0,,1.0
+2ea900d,2017-01-28 10:41:16,turn errors from manybody potentials for */tally computes into warnings,0,,0.0
+843f3a9,2017-01-28 12:02:49,Allow requesting Python interpreter without having to define a function just for that,0,,0.0
+acba25c,2017-01-28 15:58:21,make Python::init() method public and remove the now redundant Python::request() method,0,,0.0
+033b07f,2017-01-30 07:26:49,Merge branch 'master' into small-updates-and-fixes,0,,0.0
+997142a,2017-01-30 07:27:02,Merge pull request #374 from agiliopadua/master,0,,0.0
+ed0a347,2017-01-30 10:31:50,Updating Kokkos lib to 2.03.00,0,,0.0
+b3e9006,2017-01-30 12:04:30,Merge branch 'master' into kokkos_update,0,,0.0
+ce2da50,2017-01-30 13:01:28,Adding ubuf union to Kokkos atom_vec styles,0,,0.0
+ee83b75,2017-01-30 14:32:18,correct units for some improper force constants in docs,0,,0.0
+be166cb,2017-01-30 15:03:43,remove cg/cmm style name aliases,0,,0.0
+9ef55fe,2017-01-31 17:23:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13681 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fbe30b5,2017-01-31 18:13:44,correct another broken link in fix ti/spring,0,,1.0
+bcb1d94,2017-01-31 18:28:04,Slight tweak to Kokkos pair styles to use texture cache memory,0,,0.0
+67bed8e,2017-01-31 18:34:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13639 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7ee45ec,2017-02-01 11:52:27,Fixing Kokkos default values,0,,1.0
+ed59193,2017-02-01 17:39:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13640 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6232073,2017-02-01 17:39:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12238 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6232073,2017-02-01 17:39:37,Slight tweak to Kokkos Phi Makefile,0,,0.0
+6232073,2017-02-01 17:39:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13643 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6232073,2017-02-01 17:39:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12237 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d4c9e25,2017-02-01 17:45:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14290 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+9d1991b,2017-02-02 08:10:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13644 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6bcec9c,2017-02-02 08:57:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13646 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6595fde,2017-02-02 11:58:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13664 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+daf9f95,2017-02-02 13:09:52,Fixing small Kokkos bug,0,,1.0
+38e0e4b,2017-02-02 13:24:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13647 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6f92429,2017-02-02 13:34:27,Fixing bug in pppm/intel for AVX-512 with single precision and ik diff. This commit simplifies the code by eliminating packing optimizations that were slower under typical parameters and had some memory bugs.,0,,1.0
+5da0d39,2017-02-02 13:35:51,Fixing execution space issues in KOKKOS package,0,,1.0
+0a87b74,2017-02-02 13:42:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13648 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6a4918b,2017-02-02 13:43:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13649 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1834a5e,2017-02-02 14:58:04,Fixing CUDA runtime issues in fix_shardlow_kokkos,0,,1.0
+067119f,2017-02-02 15:13:51,Slight tweaks to Kokkos CUDA makefile,0,,0.0
+dc34a32,2017-02-03 14:43:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13652 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6ca3774,2017-02-03 14:43:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13659 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+84c5171,2017-02-03 14:45:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13660 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+207adc3,2017-02-03 14:45:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13661 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0d57a1d,2017-02-03 16:09:06,rename examples folder for USER-CGSDK package,0,,0.0
+191453e,2017-02-03 16:53:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13662 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+27aca14,2017-02-04 15:02:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13663 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+dc9c239,2017-02-06 15:45:26,rename references to USER-CG-CMM to USER-CGSDK,0,,0.0
+52aaad9,2017-02-07 12:18:27,rename USER-CG-CMM folder to USER-CGSDK,0,,0.0
+151b3f5,2017-02-07 12:53:45,update the README for USER-CGSDK,0,,0.0
+ab32d13,2017-02-07 13:03:07,change references from cg_cmm to lj_sdk and from cmm to sdk,0,,0.0
+4b31972,2017-02-07 13:38:49,rename files in GPU library from cg_cmm to lj_sdk,0,,0.0
+f2d005f,2017-02-07 16:24:59,Fixes coverity issue CID 179440,0,,1.0
+4e8351d,2017-02-07 17:53:36,refactor msi2lmp documentation to emphasize lack of active development,0,,0.0
+a5f830c,2017-02-08 14:31:11,Feature: AIREBO parametrize cutoff switching,0,,0.0
+8c074a3,2017-02-08 14:32:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13551 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0efd209,2017-02-09 11:50:03,remove doc text explaining restrictions that are lifted with the changes in this branch,0,,0.0
+93d99ec,2017-02-09 22:38:58,restore lost change to PYTHON/Install.sh,0,,0.0
+fbb24c2,2017-02-10 09:22:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13548 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+02b0e6c,2017-02-10 09:23:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13696 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0068ef5,2017-02-10 09:25:32,cmake: fixed another typo,0,,0.0
+4ac7a5d,2017-02-12 21:21:11,Merge pull request #470 from lammps/integration,0,,0.0
+2f32c1a,2017-02-12 22:48:02,performance improvement through avoiding function call and dereference overhead,0,,0.0
+2bdda8f,2017-02-13 08:40:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13547 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4843296,2017-02-13 08:53:13,Merge pull request #310 from EfremBraun/master,0,,0.0
+4843296,2017-02-13 08:53:13,Merge pull request #318 from andeplane/initialize_pointers,0,,0.0
+4843296,2017-02-13 08:53:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12240 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4843296,2017-02-13 08:53:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12239 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cb982f2,2017-02-13 09:05:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13653 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4e9c8f4,2017-02-13 10:48:30,whitespace cleanup,0,,0.0
+383da81,2017-02-13 10:50:34,Adding missing Kokkos file,0,,0.0
+8f9b2ac,2017-02-13 10:53:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13632 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+33af7ab,2017-02-13 10:59:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13631 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+90e5ae9,2017-02-13 11:19:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13671 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+96a43e8,2017-02-13 12:29:41,Updated version of equations  documentation.,0,,0.0
+15008c9,2017-02-13 13:00:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13672 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+799d55e,2017-02-13 14:24:51,Merge pull request #464 from akohlmey/rename-cg-cmm-to-cgsdk,0,,0.0
+dc16228,2017-02-13 15:03:14,Stopped working on gaussian bump.,0,,0.0
+acc5bde,2017-02-13 16:36:30,Cleanup: two space indent + no trailing spaces on lines.,0,,0.0
+1b3f6e2,2017-02-13 17:14:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13673 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0e16dc3,2017-02-13 17:37:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13674 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+de4af6f,2017-02-13 17:52:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13675 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a323ca1,2017-02-13 18:05:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13677 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+20806dd,2017-02-14 00:26:55,Fixed header for the force field file,0,,1.0
+0fb8dac,2017-02-14 07:41:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13678 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4807001,2017-02-14 07:42:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12242 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4807001,2017-02-14 07:42:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12241 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4807001,2017-02-14 07:42:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13680 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+4807001,2017-02-14 07:42:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13682 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6b92347,2017-02-14 13:14:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13667 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+928947d,2017-02-15 11:43:50,USER_OMP -> USER-OMP,0,,0.0
+69a8e19,2017-02-15 12:29:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13683 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c6c1852,2017-02-15 12:44:54,fix a broken link that slipped through the cracks in the previous cleanup,0,,1.0
+ccaec31,2017-02-15 13:00:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13684 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5f93fad,2017-02-15 13:56:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13685 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e0bafa4,2017-02-15 15:03:40,Cleaned up atom->x and atom->f deferences.,0,,0.0
+fc3505f,2017-02-15 16:37:29,Fixed issue with switching function derivative in PairAIREBO::FLJ,0,,1.0
+904609a,2017-02-15 16:38:13,fix bug reported by richard berger via https://ci.lammps.org/job/lammps/job/master/job/regression/160/testReport/junit/examples/msst/msst/,0,,1.0
+4a80df3,2017-02-15 16:45:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13686 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+ce20c7f,2017-02-17 12:42:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13688 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+a88136c,2017-02-17 17:58:24,Fix compiler warnings,0,,1.0
+5289ec0,2017-02-17 18:39:04,new Section package and start doc pages and build scripts,0,,0.0
+c2ee328,2017-02-17 21:54:41,Merge pull request #452 from akohlmey/small-fixes-and-updates,0,,0.0
+d1a0a3e,2017-02-17 22:00:56,Merge pull request #457 from stanmoore1/kokkos_ubuf,0,,0.0
+7feb6c2,2017-02-17 22:41:32,Fix resource leak,0,,1.0
+37810bd,2017-02-17 23:06:53,OpenMP version added.,0,,0.0
+19ffe59,2017-02-18 00:32:14,Merge pull request #458 from stanmoore1/kokkos_sync_bugfix,0,,0.0
+5c6e7b1,2017-02-18 01:09:02,fix ti/spring for eam/allow and eam/fs,0,,1.0
+01d0a5c,2017-02-18 01:38:55,USER-DPD Kokkos: propagate 763a00e8 bugfix to pair_multi_lucy_rx_kokkos.cpp,0,,1.0
+8065d96,2017-02-18 03:14:32,Starting to refactor in preparation to contruct OMP version.,0,,0.0
+b27cc8f,2017-02-20 14:09:11,Using correct value for atom->nlocal,0,,0.0
+1cd4c48,2017-02-21 15:49:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13689 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7185ec9,2017-02-21 15:49:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13691 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+cb9d42d,2017-02-21 15:50:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13692 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+d001a09,2017-02-21 15:50:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13693 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+429264a,2017-02-21 15:50:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13694 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+1d17cae,2017-02-21 15:51:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13668 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+b70c670,2017-02-21 15:52:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13666 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3dbbea3,2017-02-21 15:57:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13630 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+53f3df5,2017-02-21 15:57:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13645 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6e89ccd,2017-02-21 15:59:06,Merge pull request #319 from andeplane/domain_bug,0,,0.0
+49e83b4,2017-02-21 16:07:26,Merge pull request #323 from akohlmey/pppm-cg-triclinic,0,,0.0
+20a9ffe,2017-02-21 21:27:34,Merge pull request #324 from ibaned/pair-table-kokkos-inherit,0,,0.0
+83988a1,2017-02-22 11:29:01,patch 4May17,0,,0.0
+0a751c5,2017-02-22 11:52:20,Cleanup.,0,,0.0
+e76cad3,2017-02-22 14:25:41,Cleanup.,0,,0.0
+458b674,2017-02-22 20:03:41,Cleanup.,0,,0.0
+3626496.0,2017-02-22 20:06:49,Removed unused functions.,0,,0.0
+3626496.0,2017-02-22 20:06:49,jive Kokkos/reaxc file names with new user-reaxc file names,0,,0.0
+3626496.0,2017-02-22 20:06:49,make PairTable::allocate() virtual,0,,0.0
+3626496.0,2017-02-22 20:06:49,"Revert ""move enum to pair.h""",0,,0.0
+2dcbc80,2017-02-23 18:20:02,Fixed problem with box flips under NVT,0,,1.0
+1db62a5,2017-02-24 13:17:49,update src/Purge.list with renamed reaxc src files,0,,0.0
+aecafec,2017-02-24 13:21:26,fix Fortran flags for MEAM,0,,1.0
+2f04e87,2017-02-24 13:24:18,USER-DPD Kokkos: use a parallel_for() to build the ghosts workplan for SSA,0,,0.0
+a341a6b,2017-02-24 13:27:27,Merge branch 'USER-DPD_GBhacks' into USER-DPD_GBhacks_ssa_mem as of patch 31March17,0,,0.0
+f7a4871,2017-02-24 13:35:48,Merge branch 'USER-DPD_GBhacks' into USER-DPD_GBhacks_cps,0,,0.0
+a18b4ef,2017-02-24 15:33:13,Merge pull request #306 from timattox/USER-DPD_updates,0,,0.0
+9999f36,2017-02-24 15:34:59,Updated full_energy description,0,,0.0
+7137948.0,2017-02-24 17:35:58,Merge branch 'USER-DPD_kokkos' into USER-DPD_GBhacks as of patch 31March17,0,,0.0
+7137948.0,2017-02-24 17:35:58,"Revert ""Cleanup of a few more references to obsoleted and removed tools like xmovie""",0,,0.0
+7137948.0,2017-02-24 17:35:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12054 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7137948.0,2017-02-24 17:35:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12022 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c56e069,2017-02-24 17:38:46,Merge branch 'virial1' into 'exaalt',0,,0.0
+6ea290a,2017-02-24 17:41:57,"Removed extra ""helper"" functions.",0,,0.0
+c2e3a76,2017-02-24 19:07:55,Cleanup on equations  JPG to be constructed.,0,,0.0
+b053c36,2017-02-24 19:09:07,fixup docs after last change,0,,0.0
+21619b2,2017-02-24 22:16:33,Updates to pair/meam/spline documentation.,0,,0.0
+fd1523c,2017-02-24 22:19:53,implement overlooked changes from 4may2017 patch,0,,0.0
+e450085,2017-02-24 22:24:29,correct some more omitted updates,0,,0.0
+35ee24c,2017-02-26 14:50:58,Work around VTK 7 API change,0,,0.0
+e4b544f,2017-02-26 17:53:45,Added two examples of using the VTK dump style,0,,0.0
+3eba3e5,2017-02-26 17:57:13,Merge pull request #466 from DallasTrinkle/meam-spline-multicomponent,0,,0.0
+a5507b2,2017-02-26 18:00:20,Merge pull request #471 from akohlmey/fix-4may2017-issues,0,,0.0
+2708c86,2017-02-27 18:03:18,another change to fix poems,0,,0.0
+c0cf50b,2017-02-27 18:19:59,Switched some inside() checks to inside_nonperiodic() checks,0,,0.0
+b921b69,2017-02-27 18:22:21,fixed namespace issue,0,,1.0
+9736fb3,2017-02-28 10:40:46,Merge pull request #474 from rbberger/dump_vtk_fixes,0,,0.0
+9b01949,2017-02-28 11:05:40,Added inside_nonperiodic(),0,,0.0
+3605208,2017-02-28 11:16:27,Added DATE reporting for parameter file,0,,0.0
+3605208,2017-02-28 11:16:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13524 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3605208,2017-02-28 11:16:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12244 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3605208,2017-02-28 11:16:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12243 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3ac74a1,2017-02-28 11:21:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13525 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+2b78ac2,2017-02-28 12:49:11,Merge remote-tracking branch 'upstream/master' into python_refactoring,0,,0.0
+b26a434,2017-02-28 12:53:56,Merge pull request #476 from akohlmey/dump_custom_bugfix,0,,0.0
+7a593c2,2017-02-28 14:25:03,USER-DPD: correct off-by-one errors in PairTableRX::coeff(),0,,1.0
+a1b40b9,2017-02-28 14:59:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13526 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+df13a7a,2017-02-28 15:12:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13527 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+323570c,2017-02-28 15:39:01,Fixes coverity issue CID 179426,0,,1.0
+1dc78a7,2017-02-28 17:45:21,USER-DPD: correct off-by-one errors in PairMultiLucyRX::coeff(),0,,1.0
+3ae77e7,2017-03-01 09:45:50,rename some USER/misc dirs,0,,0.0
+0982331,2017-03-01 09:49:24,Bugfix for the limit keyword,0,,1.0
+982331.0,2017-03-01 09:49:24,USER-DPD Kokkos: replicate 9a560b90 bugfix to atom_vec_dpd_kokkos.cpp,0,,1.0
+78a8f75,2017-03-01 09:53:50,add a couple of simple example single/multi-elment inputs for meam/spline pair styles,0,,0.0
+1025c25,2017-03-01 09:55:33,implement functions to execute arbitrary python code from strings or files and recast the python source keyword through using them.,0,,0.0
+bf1794f,2017-03-01 10:29:33,Merge pull request #477 from lammps/renamings,0,,0.0
+6e26358,2017-03-01 11:46:26,Merge pull request #478 from akohlmey/add-python-source-cmd,0,,0.0
+641bf72,2017-03-01 11:52:33,two small doc corrections from Andrew Jewett for pair style gauss and dihedral style spherical,0,,0.0
+48ed963,2017-03-01 12:05:00,corrections to pair style morse/smooth/linear contributed by David R. Heine,0,,0.0
+268e855,2017-03-01 14:14:29,USER-DPD bugfix: make atom_vec_dpd work properly with atom_vec_hybrid. We were sending too much data during pack_comm_hybrid/unpack_comm_hybrid.,0,,1.0
+ed089c3,2017-03-01 14:18:14,first few pieces of pair style python,0,,0.0
+9a560b9,2017-03-01 15:22:28,A tiny bugfix for the reset flag  and a brief explanation of the changes,0,,1.0
+8c625a5,2017-03-01 15:29:44,make melt input consistent with melt example again,0,,0.0
+8210b25,2017-03-01 15:34:24,BUGFIX: use Kokkos::atomic_fetch_max() to avoid a race on new_maxneighs,0,,1.0
+03c0553,2017-03-01 15:49:12,Merge pull request #449 from rbberger/python_refactoring,0,,0.0
+8a0e44d,2017-03-01 16:13:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13528 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5c6b0cc,2017-03-01 16:34:20,Cleanup of style (removing all tabs  shortened long lines).,0,,0.0
+3820c58,2017-03-02 14:02:49,Updates to documentation: equation.,0,,0.0
+d95fbf3,2017-03-02 15:01:41,Merge pull request #455 from stanmoore1/kokkos_update,0,,0.0
+27d2e9b,2017-03-02 15:03:33,update VMD molfile plugin headers and move them to lib/molfile (where they belong),0,,0.0
+f11b83e,2017-03-02 16:37:03,Merge branch 'unstable' of https://github.com/ketankhare/lammps into small-fixes-and-updates,0,,0.0
+eaf7ed7,2017-03-02 21:25:27,Fixed error in one example command,0,,0.0
+ce1a3f2,2017-03-03 08:11:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13529 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+6382d3c,2017-03-03 09:14:47,polish the introduction  some more clarifications  corrections and formatting improvements,0,,0.0
+763a00e,2017-03-03 09:29:17,USER-DPD Kokkos: bugfix for npair_ssa_kokkos.cpp corresponding to 0cd3f0cd,0,,1.0
+27d6284,2017-03-03 09:52:42,correct 'thrid' instead of 'third',0,,0.0
+7e78921,2017-03-03 10:12:44,USER-DPD: pair_multi_lucy_rx bugfix for systems with multiple atom types,0,,1.0
+a7e8550,2017-03-03 10:38:45,USER-DPD Kokkos: use a parallel_for() to build the locals workplan for SSA,0,,0.0
+c468727,2017-03-03 10:49:15,Fixing GPU memory issue in domain_kokkos,0,,1.0
+0651ea7,2017-03-03 12:50:13,Adding initial versions of pair_hybrid_kokkos and pair_hybrid_overlay_kokkos,0,,0.0
+c1739ca,2017-03-03 13:29:20,Merge branch 'master' into USER-DPD_kokkos,0,,0.0
+635c448,2017-03-03 14:57:35,support for eatom and vatom in pair_table_rx_kokkos,0,,0.0
+b35895c,2017-03-03 15:21:09,Merge pull request #11 from ibaned/pair-table-rx-kokkos,0,,0.0
+fd78486,2017-03-05 18:27:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13530 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e261bef,2017-03-05 18:30:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13532 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+084d831,2017-03-05 20:03:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13533 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7dd60f9,2017-03-05 20:35:52,Added reference to fix rhok implimentation,0,,0.0
+778a79b,2017-03-05 20:39:04,Merge pull request #700 from giacomofiorin/colvars-fix,0,,0.0
+dd76ac5,2017-03-05 20:40:45,Made documentation changes to fix nvk,0,,0.0
+17486a9,2017-03-05 21:16:21,Changed algorithm for generating rotation axis,0,,0.0
+fc9eebb,2017-03-05 21:23:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13521 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+c2c22fc,2017-03-06 10:57:19,Merge pull request #12 from ibaned/pair-table-rx-kokkos,0,,0.0
+3e8cfb8,2017-03-06 11:04:47,Prevent overlapping host/device computation in pair_hybrid_kokkos,0,,0.0
+886cc69,2017-03-06 11:05:49,Merge branch 'master' into USER-DPD_kokkos as of patch 17Jan17,0,,0.0
+a2c80d2,2017-03-06 14:50:43,Merge branch 'master' into USER-DPD_kokkos as of 3af4b3c28 on 18 Jan. 2017 Includes a critical bugfix for using USER-DPD and MOLECULE together.,0,,0.0
+4a6f279,2017-03-06 14:58:40,correct bug and synchronize fix addforce respa level init with other fixes,0,,1.0
+a7d1b57,2017-03-06 15:07:07,Adding zero compute to pair_dpd_fdt_energy_kokkos,0,,0.0
+3e3a24d,2017-03-06 15:28:25,Initialize variables in pair_exp6_rx_kokkos,0,,0.0
+527a573,2017-03-06 15:42:26,Merge pull request #9 from ibaned/pair-table-rx-kokkos,0,,0.0
+b8c72c7,2017-03-06 15:51:09,USER-DPD: Make another version of coord2bin() for nbin_ssa,0,,0.0
+5b3101c,2017-03-06 16:02:52,Merge branch 'master' into USER-DPD_kokkos as of patch 20 Jan 2017.,0,,0.0
+3270886,2017-03-07 00:27:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12245 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+3270886,2017-03-07 00:27:35,Updated the GCMC documentation,0,,0.0
+3270886,2017-03-07 00:27:35,Added protection against using charges without full_energy,0,,0.0
+3270886,2017-03-07 00:27:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13860 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+007f3c6,2017-03-07 00:51:31,Added protection against using charges without full_energy,0,,0.0
+3a054d1,2017-03-07 00:55:01,update fix rigid documentation,0,,0.0
+d680040,2017-03-07 00:57:23,more changes to fix rigid and fix poems,0,,0.0
+21be86c,2017-03-07 00:58:03,cleaned fix latte,0,,0.0
+359af41,2017-03-07 00:58:35,replace variable length array in fix lb/momentum with fixed size array,0,,0.0
+08baaa9,2017-03-07 01:00:25,Rename fix python to fix python/invoke,0,,0.0
+efaa4c6,2017-03-07 09:31:12,Added clarification about template molecule coordinates,0,,0.0
+d6866f1,2017-03-07 09:32:30,Only root process calls potential_date,0,,0.0
+020e75e,2017-03-07 09:33:14,Enabled Coulombic pair styles without energy_full,0,,0.0
+0798885,2017-03-07 09:35:31,',0,,0.0
+798885.0,2017-03-07 09:35:31,Enabled Coulombic pair styles without energy_full,0,,0.0
+4af6557,2017-03-07 09:46:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13531 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+e4aa735,2017-03-07 09:46:40,protect PairTable dtor with copymode,0,,0.0
+c2aabde,2017-03-07 09:46:54,Merge pull request #313 from stanmoore1/kokkos_bugfixes,0,,0.0
+920641b,2017-03-07 09:47:22,Highlighted the assignee  maintainer changes  and mentioned LAMMPS collaborator,0,,0.0
+a2fa6ef,2017-03-07 09:56:03,Updated text and images on reverse pull requests,0,,0.0
+79b005d,2017-03-07 11:40:07,Updated text and images on reverse pull requests,0,,0.0
+de27305,2017-03-07 11:47:18,Initial bare-bones port of FixRX to Kokkos.,0,,0.0
+d01f09d,2017-03-07 15:23:17,Added kokkos-managed parameters for FixRxKokkos.,0,,0.0
+42d3a8f,2017-03-07 15:41:06,Fix bug in Kokkos peratom energy/virial with newton on,0,,1.0
+683023d,2017-03-08 12:36:23,Zeroing variables in pair_exp6_rx_kokkos to match pull request,0,,0.0
+1f6c194,2017-03-08 12:42:44,Updated KOKKOS installer and updated USER-DPD FixRx to match KOKKOS version.,0,,0.0
+0ce5dc0,2017-03-08 13:05:15,Adding sync/modify to pair_multi_lucy_rx_kokkos,0,,0.0
+fc23f9c,2017-03-08 13:07:52,Another tweak to sync/modify in pair_multi_lucy_rx_kokkos,0,,0.0
+2ef713e,2017-03-08 16:40:16,updated version of fix latte from SJP,0,,1.0
+35e1cf1,2017-03-08 20:02:02,Fixing GPU memory issues in atom_vec_dpd_kokkos,0,,1.0
+a001a5c,2017-03-09 12:20:49,Fixing memory error,0,,1.0
+b28b84d,2017-03-09 14:00:27,fix LAMMPS_PNG,0,,1.0
+3298c37,2017-03-09 14:30:21,Removing duplicate code in pair_exp6_rx_kokkos,0,,0.0
+6f71275,2017-03-09 15:35:07,USER-DPD: Copy inline coord2bin() functions from nbin_kokkos into nbin_ssa,0,,0.0
+65964f3,2017-03-09 16:40:56,Added Kokkos-like array datatype into RK4 and RHS in FixRXKokkos.,0,,0.0
+5fe6206,2017-03-10 09:16:58,Merge pull request #13 from timattox/master,0,,0.0
+0b4adaa,2017-03-10 09:24:46,Makefile for latte_dev,0,,0.0
+b20d95d,2017-03-10 10:59:43,USER-DPD: track & use the extent of the local atoms in the bins,0,,0.0
+c97feaf,2017-03-10 11:00:30,Corrected reference to Fig.1,0,,0.0
+07fcfd6,2017-03-10 11:01:51,Adding missing sync/modified in atom_vec_dpd_kokkos,0,,0.0
+ffe02d2,2017-03-10 14:51:04,USER-DPD: Correct an error message typo.,0,,0.0
+470353e,2017-03-10 14:51:16,USER-DPD: properly compute AIRct_ssa values  and use them in fix_shardlow. Eliminates last use of per-atom ssaAIR values within initial_integrate(),0,,0.0
+f871ecd,2017-03-10 15:55:07,move fix bond/react examples and compress large data file,0,,0.0
+f70752c,2017-03-10 15:58:35,USER-DPD: remove unneeded gairct_ssa[] & anum vars  and some > 0 guards,0,,0.0
+c7eadfd,2017-03-10 16:29:09,USER-DPD: remove broken code for building SSA half neighbor list from full,0,,0.0
+4cfe623,2017-03-10 21:30:03,USER-DPD: remove use of ssaAIR[]  move coord2ssaAIR() to nbin_ssa.cpp Saves an int per atom and ghost  also simplifies and reduces code size.,0,,0.0
+17c8e69,2017-03-10 21:37:52,Updated FixRxKokkos to use kokkos-managed data objects.,0,,0.0
+d6f6c6f,2017-03-12 16:05:28,Updates to FixRxKokkos ...,0,,0.0
+e908b8d,2017-03-12 16:20:09,fixed links in Section_intro.txt,0,,0.0
+b1b377c,2017-03-12 17:48:51,Added kokkos datatypes to FixRxKokkos::computeLocalTemperature(...),0,,0.0
+d5eceeb,2017-03-13 01:56:00,Merge branch 'master' into user-cgdna,0,,0.0
+4b4bc7d,2017-03-13 03:03:27,Merge branch 'master' into USER-DPD_kokkos,0,,0.0
+d2cbfef,2017-03-13 09:01:35,USER-DPD: renumber AIRs back to 1-7 for ghosts  and just 0 for locals. This removes the the distinction between pure and impure locals. Pure and impure locals messed up the directionality of half neighbor lists  which turns out is crucial to the approach for SSA with kokkos.,0,,0.0
+e136a9d,2017-03-13 22:48:12,USER-DPD: Split the SSA stencil and neighbor list into subphases. NOTE: pair evaluation order changes  causing numerical differences! This enables processing neighbors in subphase groups that enforce a geometrical seperation of pairs  allowing greater parallelism once fix_shardlow (SSA) is converted to Kokkos.,0,,0.0
+6311d33,2017-03-13 22:49:04,USER-DPD: Use subphases when processing AIR zero (locals) in SSA. NOTE: pair ordering was NOT changed  but tiny differences could occur.,0,,0.0
+23c3f56,2017-03-13 22:51:15,Added setup_pre_force  pack/unpack methods to FixRxKokkos.,0,,0.0
+68b2a45,2017-03-13 22:53:10,Merge branch 'master' into USER-DPD_kokkos Fixed trivial merge conflict in src/KOKKOS/Install.sh,0,,0.0
+d17d99b,2017-03-13 22:54:09,USER-DPD: SSA with Kokkos: Reorder stencil subphases to make things easier.,0,,0.0
+27b1c33,2017-03-14 10:39:06,USER-DPD: Save pointer to the NPair used to create the NeighList Gives a user of NeighList access to data stored in a custom NPair,0,,0.0
+580f6b5,2017-03-14 10:44:31,USER-DPD: SSA with Kokkos: make stencil's sx  sy  sz variables public,0,,0.0
+23b8287,2017-03-14 11:36:44,USER-DPD: Rework SSA to use a new neighbor list structure  ready for Kokkos NOTE: pair evaluation order changes  causing numerical differences! Atom pair processing order is fully planned out in npair_half_bin_newton_ssa Makes the SSA neighbor list structure very different. Do not use by others! Each local is in ilist  numneigh  and firstneigh four times instead of once.,0,,0.0
+7a75cd1,2017-03-14 11:39:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14157 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+fdc390a,2017-03-14 14:08:14,Code clean-up for FixRxKokkos.,0,,0.0
+5925460.0,2017-03-14 14:27:23,Added ODE diagnostics to FixRxKokkos using Kokkos managed data.,0,,0.0
+5925460.0,2017-03-14 14:27:23,Merge branch 'master' into user-cgdna,0,,0.0
+5925460.0,2017-03-14 14:27:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12023 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+5925460.0,2017-03-14 14:27:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12024 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+f4a08ba,2017-03-15 09:25:16,Merge remote branch 'upstream/master' into USER-DPD_kokkos,0,,0.0
+bd7f414,2017-03-15 09:47:42,Switched to using Kokkos device data for ODE scratch data.,0,,0.0
+ec1778b,2017-03-15 11:10:04,USER-DPD: add npair_halffull_newton_ssa to Purge.list With the new SSA neighbor list  half from full can't work  and will break compiles if the old files are in the src directory,0,,0.0
+c3ce374,2017-03-15 11:34:01,added bondmax method to fix halt,0,,1.0
+f9468f4,2017-03-15 13:10:58,Update FixRXKokkos for Cuda build. Added inline and other KOKKOS macros.,0,,0.0
+4c77838,2017-03-15 13:11:26,USER-DPD Kokkos: add missing () in STACKPARAMS check in ssa_update_*,0,,0.0
+b1c5912,2017-03-15 13:12:08,indentation fixes in npair_kokkos.cpp  plus a comment question,0,,0.0
+3a2da51,2017-03-15 13:12:43,cleanup: remove unused binatomsItem() declaration in npair_kokkos.h,0,,0.0
+bdee2fa,2017-03-15 15:59:55,USER-DPD: change nstencil_ssa[] to eliminate a corner case Saves a conditional inside an NPairHalfBinNewtonSSA::build() inner loop,0,,0.0
+7ebed71,2017-03-15 16:05:51,USER-DPD: first attempt at nbin_ssa_kokkos... It compiles!,0,,0.0
+ce9b3f4,2017-03-15 18:17:39,USER-DPD: move centroid bin of stencil_ssa to the first slot. Eliminates a special case version of a loop just for Subphase 0. NOTE: pair evaluation order changes  causing numerical differences! This changed the order that close neighbors of ghosts are processed.,0,,0.0
+0d8f74f,2017-03-15 18:54:41,USER-DPD: fix typo in NPairHalfBinNewtonSSA::build(): sz1 instead of sx1 Luckily  no real change  since sz1 and sx1 are normally identical.,0,,0.0
+0262a54,2017-03-15 21:56:39,Fix compiler warnings in atom_vec_hybrid_kokkos,0,,1.0
+a210867,2017-03-15 22:13:06,USER-DPD: first attempt at npair_ssa_kokkos... It compiles!,0,,0.0
+79cae51,2017-03-15 22:20:30,Merge branch 'master' into USER-DPD_kokkos as of patch 21Feb17,0,,0.0
+29550d4,2017-03-15 22:31:14,Fix bug introduced into Make.py by latest changes,0,,1.0
+eb29ef3,2017-03-15 22:43:00,correct the logic for checking if fix is right,0,,1.0
+36da922,2017-03-15 22:55:51,different bug fix for create_bonds  delete_atoms neigh list issue,0,,1.0
+ef940d2,2017-03-16 01:38:05,DEBUG: make FixShardlowKokkos have it's own rand_pool   plus debug code. ssa_update_dpde() hangs on first use of rand_gen.normal() Switching to not using a pointer to PairDPDfdtEnergyKokkos's rand_pool had no noticble effect.,0,,0.0
+cda8213,2017-03-16 01:41:28,KOKKOS: fix a compile-time error caused by merge of patch 21Feb17 Remove the unused PairHybridOverlayKokkos::modify_requests() method The patch removed the parent PairHybridOverlay::modify_requests(),0,,0.0
+acdb932,2017-03-16 09:28:27,Fixing GPU memory issue with fix_property_atom_kokkos,0,,1.0
+bdb7669,2017-03-16 09:44:07,Fixed undefined tdof in setup,0,,1.0
+2f5e711,2017-03-16 10:00:12,Removed printf's from FixRXKokkos and FixRX.,0,,0.0
+db0281b,2017-03-16 12:14:09,Merge branch 'FixRX_Kokkos_merge' into USER-DPD_kokkos,0,,0.0
+1995f43,2017-03-16 14:24:28,Fixed triclinic bug in gcmc and qtype bug atom/swap,0,,1.0
+bed2883,2017-03-16 15:02:50,allow fix viscous to be used with dynamic groups,0,,0.0
+f604f86,2017-03-16 15:08:17,Merge branch 'debug-cuda' into fix-momentum-kokkos,0,,0.0
+070ce33,2017-03-16 18:35:04,Corrected comment in 3' to 5' directionality check,0,,0.0
+ef72145,2017-03-16 21:10:41,USER-DPD: pair_dpd_fdt_energy_kokkos: enable STACKPARAMS specialization,0,,0.0
+8f37285,2017-03-16 21:12:10,USER-DPD: make PairDPDfdtEnergyKokkos's rand_pool public so it can be reused,0,,0.0
+f5b7361,2017-03-16 21:31:30,USER-DPD: make locals & ghosts use similar SSA work plan data structure Kokkos SSA won't use AIRct_ssa[]  but still used for non-Kokkos for now.,0,,0.0
+efb2a94,2017-03-16 21:51:14,USER-DPD: first attempt at fix_shardlow_kokkos... It compiles!,0,,0.0
+f893104,2017-03-16 22:21:55,USER-DPD: variety of fixes for new SSA Kokkos code. Still not functional.,0,,0.0
+ec192a9,2017-03-16 22:28:19,USER-DPD Kokkos: enable install of SSA Kokkos code,0,,0.0
+1bb9c7d,2017-03-16 22:36:13,Merge branch 'master' of https://github.com/lammps/lammps into USER-DPD_kokkos,0,,0.0
+621d7d5,2017-03-16 23:05:03,Fixes coverity issue CID 179436,0,,1.0
+ac82d04,2017-03-16 23:12:49,Merge branch 'USER-DPD_kokkos' into USER-DPD_GBhacks,0,,0.0
+411c069,2017-03-17 02:36:41,bugfix when parsing mpirun,0,,1.0
+8e75616,2017-03-17 02:55:41,update permissions,0,,0.0
+5ea096d,2017-03-17 03:19:29,Corrected comment in 3' to 5' directionality check.,0,,0.0
+4a7bc11,2017-03-17 03:24:03,Merge branch 'USER-DPD_ssa_update' into USER-DPD_kokkos,0,,0.0
+d31c591,2017-03-17 09:40:39,Switched to operator()'s and Tag's for the Kokkos launch objects.,0,,0.0
+ba069fb,2017-03-17 10:11:00,USER-DPD: use LAMBDA instead of functor for ghost binning in nbin_ssa_kokkos,0,,0.0
+a719f41,2017-03-17 10:26:44,"USER-DPD: add ""#ifdef DEBUG_PAIR_CT"" debugging code to fix_shardlow*",0,,0.0
+a91b851,2017-03-17 11:14:59,use RandWrap in pair_dpd_fdt_energy_kokkos and fix_shardlow_kokkos,0,,0.0
+a936b7b,2017-03-17 11:16:58,Make pair_dpd_fdt_energy's random seed public so fix_shardlow can use it.,0,,0.0
+53a3877,2017-03-17 11:17:28,USER-DPD Kokkos: for deterministic results  serialize bin_atoms() for now.,0,,0.0
+fcc3b3b,2017-03-17 11:18:08,USER-DPD Kokkos: give each workItem index a unique instance of RanMars Makes fix_shardlow_kokkos deterministic across runs and thread count.,0,,0.0
+7ca5dce,2017-03-17 11:18:52,added sucrose latte min example,0,,0.0
+9f35b76,2017-03-17 11:19:04,"USER-DPD Kokkos: Add ""#ifdef DPD_USE_RAN_MARS"" toggle Also  initialize the rand_pool with a seed in init_style()",0,,0.0
+4a90bca,2017-03-17 11:29:23,"USER-DPD Kokkos: Add ""#ifdef ALLOW_NON_DETERMINISTIC_SSA"" toggle SSA atom binning algorithm was adjusted to do as much work in parallel while preserving deterministic behavior.  The final step is done serially to preserve deterministic behavior. An alternative would be to sort the contents of the bins so that they are always in the same order.",0,,0.0
+7fb741d,2017-03-17 11:35:59,Merge branch 'USER-DPD_bugfix' into USER-DPD_kokkos,0,,0.0
+ae5ebf6,2017-03-17 11:40:09,latte.in added,0,,0.0
+1c749d5,2017-03-17 12:09:25,USER-DPD Kokkos: remove extranious debugging code,0,,0.0
+eb1a4d1,2017-03-17 15:18:24,Merge branch 'USER-DPD_kokkos' into USER-DPD_kokkos_ssa_debug,0,,0.0
+64fdb1f,2017-03-17 15:52:40,lib kokkos bugfix: on a CUDA host  the random state wasn't preserved. Random_XorShift*_Pool<Kokkos::Cuda>::free_state() has two purposes: 1) update the state value kept in the pool 2) unlock the state For a CUDA host thread  ONLY skip step 2  not both.,0,,0.0
+7567024.0,2017-03-17 17:02:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12028 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7567024.0,2017-03-17 17:02:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12025 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+7567024.0,2017-03-17 17:02:47,lib kokkos: Enable deterministic use of Random_XorShift*_Pool. Add support for lock-free and deterministic use of Random_XorShift*_Pool by giving state_idx selection and lock responsibility up to the application.  Done by an overload of get_state() to take sate_idx as an argument that the appplication guarantees is concurrently unique and within the range of num_states that the application passed to init(). In other words  this allows the RNG state to be associated with some application specific index  rather than a runtime arbitrary thread ID  and thus the application can control which work is performed using which RNG in a deterministic manner  regardless of which thread performs the work.,0,,0.0
+7567024.0,2017-03-17 17:02:47,latte in added,0,,0.0
+0cd3f0c,2017-03-17 19:11:39,USER-DPD Bugfix: reset_dt() is not called when I thought it should be called. Move the calculation of dtsqrt inside FixShardlow::initial_integrate(),0,,1.0
+fff43a4,2017-03-17 19:33:04,Bugfix for checking image flags,0,,1.0
+b3c46b7,2017-03-17 20:15:24,USER-DPD Kokkos: Now use the deterministic Random_XorShift64() for SSA,0,,0.0
+5be32f5,2017-03-18 20:48:49,Merge branch 'USER-DPD_bugfix' into USER-DPD_kokkos  AtomVecDPD hybrid bugfix,0,,0.0
+da81531,2017-03-18 20:54:12,Merge branch 'USER-DPD_kokkos' into USER-DPD_kokkos_ssa_debug,0,,0.0
+2ab77ca,2017-03-18 21:01:40,removed fix_latte from src folder,0,,0.0
+d04ea86,2017-03-18 21:21:25,Adding fix_wall_lj93_kokkos,0,,0.0
+b6ecfb9,2017-03-18 21:22:02,USER-DPD Kokkos: use Random_XorShift64() by default  but allow overrides,0,,0.0
+52987a3,2017-03-18 22:32:39,USER-DPD Kokkos: correct the setup of the ghost SSA workplan,0,,0.0
+a68f3a9,2017-03-19 21:12:52,reaxff corrected bond order bugfix from Tomáš Trnka trnka@scm.com posted on lammps-users,0,,1.0
+20de98e,2017-03-19 21:22:59,USER-DPD Kokkos: rand seed can't be zero  so add some salt.,0,,0.0
+d496c0f,2017-03-20 08:57:29,Merge branch 'master' into USER-DPD_kokkos as of patch 13Feb17,0,,0.0
+5b842f0,2017-03-20 09:15:48,cmake: fixed a typo,0,,0.0
+5c39dfd,2017-03-20 09:22:09,small formatting correction in fix neb docs,0,,0.0
+2c93065,2017-03-20 12:13:35,Add Tonnam and Ya names,0,,0.0
+ce94d7a,2017-03-20 12:16:01,Add names Tonnam and Ya to README,0,,0.0
+554531a,2017-03-20 13:51:36,Verified oxDNA with modified nucleotide layout,0,,0.0
+4ad1c82,2017-03-20 14:37:32,Reverse communication compute fragment/aggregate,0,,0.0
+f0c6ed0,2017-03-20 16:24:38,Remove the now unused AIRct_ssa[] array from the NeighList class.,0,,0.0
+ecf1762,2017-03-20 16:25:06,Merged upstream.,0,,0.0
+0a6b33c,2017-03-20 16:27:00,Fix a couple of typos in the docs,0,,0.0
+2218a9d,2017-03-20 16:32:04,Reset some files back to upstream.,0,,0.0
+0d0c2b6,2017-03-20 16:32:16,provide last input command line with error->one() output,0,,0.0
+3b44c3f,2017-03-20 16:55:14,Reset plane wiggle in master.,0,,0.0
+03828b5,2017-03-20 16:57:32,Fixed a typo in manifold plane wiggle.,0,,0.0
+a42b0b7,2017-03-20 17:04:16,MAINT: Use proper data type for bigint when defining NetCDF file.,0,,0.0
+e110d69,2017-03-20 17:17:35,MAINT: Use proper data type for bigint when defining NetCDF file.,0,,0.0
+47d6451,2017-03-20 17:18:24,Fix issues in Kokkos comm,0,,1.0
+82d952a,2017-03-20 17:26:19,MAINT: Removed superfluous code.,0,,0.0
+0c9cd11,2017-03-20 18:25:11,MAINT: Removed superfluous code.,0,,0.0
+6482df6,2017-03-20 18:57:30,"added missing ""dihedral"" in compute dihedral/local docs",0,,0.0
+145e682,2017-03-21 08:18:21,Moved some stuff around.,0,,0.0
+dcede30,2017-03-21 08:56:37,Fix format issue in pair_exp6_rx_kokkos,0,,1.0
+734e639,2017-03-21 14:12:00,USER-DPD: make the kokkos and non-kokkos fix_shardlow match more closely,0,,0.0
+7ed500e,2017-03-21 17:09:42,correct documentation for create_atoms rotate,0,,0.0
+3c91f97,2017-03-21 17:12:09,added support for POEMS,0,,0.0
+f7bdf12,2017-03-22 09:35:47,correctly skip over point particles and point dipoles when counting extendend particles in fix rigid/small,0,,0.0
+c5d561a,2017-03-22 12:00:32,delete old log files. new log files are approved by @athomps,0,,0.0
+43f2725,2017-03-22 14:05:16,Merge pull request #741 from stanmoore1/kk_compile,0,,0.0
+cb90596,2017-03-22 14:39:46,Merge pull request #738 from rbberger/pylammps_thermo_style_fix,0,,0.0
+3ec16f3,2017-03-22 14:40:30,Add pair yukawa/kk to Section_commands,0,,0.0
+1275970.0,2017-03-22 14:57:37,Merged Axel's suggestions and updated text,0,,0.0
+1275970.0,2017-03-22 14:57:37,Merge branch 'github-tutorial-update' of https://github.com/Pakketeretet2/lammps into github-tutorial-update,0,,0.0
+1275970.0,2017-03-22 14:57:37,Merge branch 'master' of https://github.com/lammps/lammps into USER-DPD_es_RNG,0,,0.0
+1275970.0,2017-03-22 14:57:37,Merge pull request #743 from stanmoore1/kk_yukawa_fix,0,,0.0
+a14d582,2017-03-22 15:00:57,suspend support for sphinxcontrib.images,0,,0.0
+a79aef6,2017-03-22 15:00:57,correct file name for doc file,0,,0.0
+43a304f,2017-03-22 15:01:11,Update atom_vec_smd.cpp,0,,0.0
+66eb9c2,2017-03-22 15:01:11,added ExTeP to USER-MISC,0,,0.0
+dc1d93a,2017-03-22 15:08:09,provide Makefile.lammps template for use with bundled linalg lib,0,,0.0
+ef3f323,2017-03-22 15:12:43,add missing BLAS/LAPACK functions used by LATTE to linalg lib,0,,0.0
+3070b04,2017-03-22 15:12:47,Added lal_ufm_ext.cpp in lib/gpu,0,,0.0
+1db5834,2017-03-22 15:12:49,Merge pull request #708 from abbatux/patch-2,0,,0.0
+3533df3,2017-03-22 15:48:36,Merge pull request #709 from abbatux/patch-1,0,,0.0
+1ea9a14,2017-03-22 15:55:34,Merge pull request #712 from akohlmey/linalg-for-latte,0,,0.0
+daae76c,2017-03-22 15:59:00,Merge pull request #716 from akohlmey/collected-small-changes,0,,0.0
+7435084.0,2017-03-22 15:59:10,typo fixed,0,,0.0
+7435084.0,2017-03-22 15:59:10,add alternate log files with the latest version of LAMMPS,0,,0.0
+7435084.0,2017-03-22 15:59:10,Merge pull request #723 from lammps/replicate_bbox,0,,0.0
+7435084.0,2017-03-22 15:59:10,Protect from divide by zero in mpi_timings() when printing results. e.g. If neighbor list(s) are never rebuilt  the Neigh time will be zero.,0,,0.0
+af0b5b0,2017-03-22 16:23:29,Merge branch 'master' into cluster-fragment-aggregate-fixes,0,,0.0
+bf560e7,2017-03-22 16:56:40,Added a KOKKOS-enabled Yukawa pair style.,0,,0.0
+756c899,2017-03-23 10:01:21,Updated docs for pair_yukawa,0,,0.0
+8d793d4,2017-03-23 10:03:24,Undid the removal of rad in pair_yukawa.,0,,0.0
+e598762,2017-03-23 10:04:03,Remove const from variable,0,,0.0
+969325b,2017-03-23 10:08:09,Merge branch '17_dump_nc3' of github.com:pastewka/lammps into 17_dump_nc3,0,,0.0
+6d395ec,2017-03-23 10:08:47,Fix typo in Section_howto.txt,0,,0.0
+1075be7,2017-03-23 10:18:15,Merge pull request #733 from pastewka/17_dump_nc3,0,,0.0
+df8dbec,2017-03-23 10:22:49,Merge remote-tracking branch 'andeplane/fix_ave_chunk_bug' into collected-bugfixes,0,,0.0
+343c9ed,2017-03-23 10:24:13,Replicate bbox from Chris Knight,0,,0.0
+02e6590,2017-03-23 11:03:00,Merge branch 'collected-small-changes' of github.com:akohlmey/lammps into collected-small-changes,0,,0.0
+b88a749,2017-03-23 11:38:33,make *_gpu_reinit() functions consistent in returning void. correct prototypes in src/GPU  too.,0,,0.0
+865b41e,2017-03-23 11:50:10,Merge branch 'master' of https://www.github.com/lammps/lammps,0,,0.0
+568b67e,2017-03-23 12:00:53,Merge pull request #706 from lammps/doc-cs,0,,0.0
+9ecc5c8,2017-03-23 14:12:37,Merge pull request #854 from lammps/readdump,0,,0.0
+5c9892c,2017-03-23 14:14:49,avoid small memory leak with USER-REAXC + USER-OMP  spotted by GCC's address sanitizer,0,,1.0
+a72efbe,2017-03-23 15:18:23,Update pair_smd_tlsph.cpp,0,,0.0
+47cade2,2017-03-23 15:19:02,Merge pull request #707 from akohlmey/granular-omp-refactor,0,,0.0
+44841f6,2017-03-23 15:31:27,fix memory leak in list of neighbor list requests,0,,1.0
+2cdcd6d,2017-03-23 16:03:25,updated neighbor list history processing for USER-OMP,0,,0.0
+f127e42,2017-03-23 17:37:49,Disallowing full neighborlist for pair_tersoff_kokkos styles until a bugfix is released,0,,0.0
+47cebb0,2017-03-23 17:43:27,patch 23Oct17,0,,0.0
+8820315.0,2017-03-23 17:57:02,update USER-CGDNA examples to follow LAMMPS style,0,,0.0
+8820315.0,2017-03-23 17:57:02,Update smd_material_models.cpp,0,,0.0
+8820315.0,2017-03-23 17:57:02,Added the UFM files (doc/src - lib/gpu - src),0,,0.0
+8820315.0,2017-03-23 17:57:02,Removed traces of pair morse/kk,0,,0.0
+df95b2c,2017-03-23 22:27:42,"Revert ""no need to include library.o in the LAMMPS executable""",0,,0.0
+277b93c,2017-03-24 09:41:30,"Revert ""no need to include library.o in the LAMMPS executable""",0,,0.0
+f5a85d6,2017-03-24 10:01:23,"Revert ""no need to include library.o in the LAMMPS executable""",0,,0.0
+e6fcaef,2017-03-24 10:03:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14142 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+394e9b4,2017-03-24 13:53:07,Add missing header files to GPU package,0,,0.0
+3dfe450,2017-03-24 15:17:51,Merge pull request #731 from Pakketeretet2/pair-yukawa-kk,0,,0.0
+b418b46,2017-03-26 23:07:48,USER-DPD: Bugfix for fix_rx and fix_eos_table_rx to handle restart files. Patch by Jim Larentzos.  Applied by Tim Mattox.,0,,1.0
+5f08231,2017-03-27 06:35:19,add missing header files to USER-INTEL package,0,,0.0
+28784a4,2017-03-27 08:38:40,Add checks to Kokkos Install.sh so that files aren't unnecessarily recompiled,0,,0.0
+463923.0,2017-03-27 10:41:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11986 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,,0.0
+0463923,2017-03-27 10:41:32,one more file that doesn't require to include accelerator_kokkos.h,0,,0.0
+04fd038,2017-03-27 13:46:57,Fixing bug with Kokkos and reading restart files,0,,1.0
+3feffbe,2017-03-27 13:49:53,disable disruptive debug output,0,,0.0
+c041727,2017-03-27 14:28:50,no need to include library.o in the LAMMPS executable,0,,0.0
+87ea9ba,2017-03-27 14:29:13,USER-DPD Kokkos: replicate 7a593c2f bugfix to pair_table_rx_kokkos.cpp,0,,1.0
+da90967,2017-03-27 14:30:21,Add multiple inheritance to pair_multi_lucy_rx_kokkos,0,,0.0
+661bd37,2017-03-27 14:53:48,need to ignore new fix cmap sources,0,,0.0
+61e7595,2017-03-27 14:59:58,Add pair_yukawa_kokkos to Install.sh and minor cleanup,0,,0.0
+a241b2d,2017-03-27 15:00:19,fix allocation regressions in PairTableKokkos,0,,1.0
+5feeb79,2017-03-27 15:16:28,Merge pull request #3 from stanmoore1/kk_yukawa,0,,0.0
+443ea13,2017-03-28 02:05:05,Move instantiation of MemoryKokkos class,0,,0.0
+fc51c38,2017-03-28 02:22:45,Remove redundant #include in input.cpp,0,,0.0
+28bdebd,2017-03-28 07:50:48,Remove outdated elastic constants,0,,0.0
+f8da9a8,2017-03-28 11:00:22,Merge pull request #705 from akohlmey/fix_rigid_bugfix,0,,0.0
+ee55a98,2017-03-28 11:22:10,Merge pull request #670 from vishalkenchan/pair_style/coul_wolf_cs,0,,0.0
+b3d6d9f,2017-03-28 11:38:26,cmake: fix install,0,,1.0
+20ae050,2017-03-28 11:38:26,fix issue with rRESPA inner/middle neighbor lists,0,,1.0
+1dfd61f,2017-03-28 12:33:45,compute energy correctly for bond style gromos,0,,0.0
+111d350,2017-03-28 12:34:46,fix bugs in documentation and implementation of atom style mdpd,0,,1.0
+61f3ff1,2017-03-28 12:35:33,Update readme.md,0,,0.0
+7e9f05b,2017-03-28 12:49:09,Update readme.md,0,,0.0
+80e5111,2017-03-28 12:50:13,Update readme.md,0,,0.0
+645f56c,2017-03-28 12:51:17,Use -restrict whenever Intel is used  no matter the package,0,,0.0
+9f6e126,2017-03-28 12:52:26,add call to fftw_cleanup() before exiting to avoid bogus leak reports when compiling with FFTW v3.x,0,,0.0
+7041f75,2017-03-28 12:53:34,add support for building rigid bodies from custom atom properties or atom style variables,0,,0.0
+0637f23,2017-03-28 13:12:23,Ensure consistency with documentation,0,,0.0
+4b9d0a9,2017-03-28 13:26:12,update to doc pages for new coreshell pair styles,0,,0.0
+ef6070c,2017-03-28 14:35:58,Add missing header files,0,,0.0
+1d8f0c7,2017-03-28 14:37:30,Merge pull request #740 from stanmoore1/improve_reax,0,,0.0
+8afed61,2017-03-28 18:16:36,Add newline to memory_kokkos.h,0,,0.0
+604afeb,2017-03-28 18:22:02,Update Kokkos docs,0,,0.0
+66a6375,2017-03-28 18:58:31,change pair style airebo/intel to compile with -DLAMMPS_BIGBIG,0,,0.0
+5c1f546,2017-03-28 19:08:24,Merge branch 'patch-3' of https://github.com/abbatux/lammps into collected-bugfixes-and-updates,0,,0.0
+1544b51,2017-03-29 01:18:24,correct velocity output for write_data of atom style smd,0,,0.0
+c733204,2017-03-29 08:28:03,"correct error messages. the atom style is called ""smd"" not ""tlsph""",0,,0.0
+ac1aa9e,2017-03-29 11:18:04,Add Kokkos thread fences to pack/unpack routines,0,,0.0
+4466d9f,2017-03-30 09:34:35,Add missing fences in comm_kokkos,0,,0.0
+ae56b9a,2017-03-30 10:07:27,Merge remote-tracking branch 'upstream/master' into fix_python_move,0,,0.0
+085958f,2017-03-31 15:02:02,Merge branch 'master' into kk_update,0,,0.0
+bf4f081,2017-03-31 15:57:00,fix bug in compute orientorder/atom argument parsing,0,,1.0
+fe82926,2017-03-31 15:57:00,Fix segmentation fault in dump vtk,0,,1.0
+5edbd63,2017-03-31 16:03:05,"Fix spelling ""correction"" from 3a054d1a: iterations not interactions. :-)",0,,1.0
+6ba59cb,2017-03-31 16:03:05,fix class name in PAIR_CLASS setup,0,,1.0
+697b072,2017-03-31 16:43:25,Update to Kokkos library v2.5.00,0,,0.0
+ac64183,2017-04-01 12:11:55,A few more tweaks to charge history in fix_qeq_reax_kokkos,0,,0.0
+ac4c35c,2017-04-01 13:45:29,Edits to accelerate_kokkos.txt,0,,0.0
+e0021a3,2017-04-01 14:41:52,Merge pull request #737 from akohlmey/collected-bugfixes,0,,0.0
+c4c3d49,2017-04-01 23:52:14,Merge pull request #735 from jaapkroe/extep,0,,0.0
+2b2f3bd,2017-04-02 00:07:24,Need dynamic cast for multiple inheritance,0,,0.0
+aedd7c5,2017-04-03 16:42:18,various small cosmetic adjustments to increase conformance with LAMMPS programming conventions,0,,0.0
+6f1bbd3,2017-04-03 18:08:15,incorporate refactored weighting into fix balance,0,,0.0
+28e8691,2017-04-04 12:35:26,fix typos,0,,0.0
+03a6f52,2017-04-04 13:30:49,Improve performance of PairReaxCKokkos,0,,0.0
+b6bc33b,2017-04-04 13:31:22,update for fix ipi from michele ceriotti,0,,0.0
+e190eb1,2017-04-04 17:54:33,Remove non-existent function in reaxc_forces_omp,0,,0.0
+874944f,2017-04-04 19:37:17,fix CUDA type issues in pair_table_rx_kokkos,0,,1.0
+8993daa,2017-04-04 19:54:22,Improve performance of pair_reaxc  this change is safe because the non-bonded i-loop doesn't include ghost atoms  this optimization is already included in the USER-OMP version,0,,0.0
+497a5d8,2017-04-04 20:03:57,Make memory_kokkos its own class,0,,0.0
+4d4b6f6,2017-04-05 11:42:25,Use multiple inheritance to remove accelerator_kokkos.h out of pair.h,0,,0.0
+bceaa57,2017-04-05 15:05:47,Use multiple inheritance to remove accelerator_kokkos.h out of region.h and kspace.h,0,,0.0
+456926a,2017-04-05 16:18:39,Always build occasional lists on first step,0,,0.0
+ad54818,2017-04-05 16:38:44,Remove OpenMP from KOKKOS_DEVICES in Kokkos CUDA Makefiles since normally this doesn't improve performance,0,,0.0
+9e272cb,2017-04-06 02:31:45,Removed dead code,0,,0.0
+178af2e,2017-04-06 03:53:57,add option to the print command to also print to the global universe screen and logfile,0,,0.0
+1725832.0,2017-04-06 11:08:57,Corrected error in etail and ptail,0,,1.0
+1725832.0,2017-04-06 11:08:57,re-apply bugfix from two years ago,0,,1.0
+1725832.0,2017-04-06 11:08:57,avoid possible memory leak,0,,1.0
+1725832.0,2017-04-06 11:08:57,bugfix,0,,1.0
+62b9fa2,2017-04-07 15:11:26,remove obsolete tools and files,0,,0.0
+d635742,2017-04-07 15:29:56,bugfix for compute pressure/grem: must make a copy of argument strings,0,,1.0
+1ad7d85,2017-04-10 09:57:54,mention NumPy dependency instead of Numeric for python tools,0,,0.0
+f19f558,2017-04-10 10:06:03,have the relevant LAMMPS version embedded into top part of the html manual,0,,0.0
+035d0a8,2017-04-10 16:38:58,remove references to deleted tools. update/clarify section on restart2data,0,,0.0
+8051b12,2017-04-10 18:39:37,correct typo reported on lammps-users,0,,0.0
+b9177fd,2017-04-10 18:40:30,remove reference to removed section on VMD scripts,0,,0.0
+3d3d106,2017-04-10 18:41:36,added virial,0,,0.0
+84ea8a7,2017-04-10 20:43:24,make RK solver check in fix_rx_kokkos.cpp be as lenient as in fix_rx.cpp NOTE: the (y < -MY_EPSILON) test was too strict  but don't know by how much This needs to be revisited before merging back to LAMMPS master.,0,,0.0
+4c4a3fe,2017-04-11 08:24:06,pair_zhou docs: add equation  add link in section_commands and pairs,0,,0.0
+ccc9367,2017-04-11 08:24:32,Merge branch 'add-pair-zhou' of https://github.com/tonnamb/lammps into pull-417,0,,0.0
+b9d844c,2017-04-11 08:25:09,update colvars abf integrate tool from git repo,0,,0.0
+06cebb9,2017-04-11 08:27:31,a few more small changes to integrate pair style zhou properly,0,,0.0
+76fd936,2017-04-11 08:27:53,Cleanup of a few more references to obsoleted and removed tools like xmovie,0,,0.0
+49dd944,2017-04-11 08:35:09,Fixed triclinic bug in gcmc and qtype bug atom/swap,0,,1.0

@@ -1,0 +1,508 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+442646be1,2015-07-14 18:10:12,Label version 1.1.0,0,,0
+8378b1028,2015-07-15 13:48:46,Merge upstream/master v1.1.0,0,,0
+2878f9ae0,2015-07-15 13:59:46,Fix failing unit tests for new Mie potential,1,,1
+708c7788e,2015-07-15 14:38:05,Merge nlist_asymm,0,,0
+49ee9999e,2015-07-15 14:38:35,Expand Mie unit tests for multi nlists,0,,0
+177247bf2,2015-07-15 14:40:25,Merge tag 'v1.1.0' into per_type_ghosts,0,,0
+21d7b49fe,2015-07-16 12:16:45,only rename tmp file on root rank,0,,0
+445f21432,2015-07-16 15:55:06,improve hoomd_script.meta doxygen docs,0,,0
+d91bff57f,2015-07-16 16:38:31,Add syntax highlighting to README example,0,,0
+35b4afbcc,2015-07-16 17:13:58,make sure xml dump writers are tested for all of the file processing they are supposed to do,0,,0
+4655aabf7,2015-07-17 21:49:56,fixes #77 normalize analyze.log quantities to strings before appending,1,,0
+6ea5ec854,2015-07-20 09:54:50,Merged in fix_xml_restart (pull request #65),0,,0
+7be39a8b4,2015-07-20 09:59:21,Merged in meta_doc (pull request #66),0,,0
+c3261fe39,2015-07-20 10:05:30,Merge pull request #13 from ctk3b/patch-1,0,,0
+d9c21a530,2015-07-20 10:28:08,Add missing entries to change log,0,,0
+0ce6621b5,2015-07-20 11:17:42,Update unit tests,0,,0
+2e6de0c06,2015-07-21 08:57:51,Tagging v1.1.1,0,,0
+cbcce58fc,2015-07-22 08:02:41,Fix test_pair_set_energy on numpy < 1.9.0,1,,1
+e3ddc449f,2015-07-23 15:23:08,Fix ghost layer width <-> box size checking,1,,1
+b0f5055db,2015-07-29 11:14:12,Merge tag 'v1.1.1' into nlist_asymm,0,,0
+684d7cdce,2015-07-29 15:04:52,Add unit test for empty types,0,,0
+f259da8c8,2015-07-30 16:51:11,Fix a bug in GPU tree neighborlists when there are types with no particles,1,,1
+6d003bdb3,2015-07-31 10:00:20,Add unit test and bug fixes for adding new particle types,1,,1
+a05219cbf,2015-07-31 10:07:35,Rename define for particles per leaf,0,,0
+2b06a41b0,2015-07-31 10:35:02,Merge in bug fixes from nlist_asymm,1,,1
+ee06d5f3c,2015-08-04 18:02:13,update analyze.log.set_params() and add test,0,,0
+70e98e71d,2015-08-10 11:15:32,Merge branch 'maint' into handle_log_quantities,0,,0
+8c23fcf33,2015-08-10 11:16:02,Merged in handle_log_quantities (pull request #69),0,,0
+e0438a3b1,2015-08-10 15:13:07,Update change log,0,,0
+9dcf04269,2015-08-11 08:20:56,Merge branch 'maint',0,,0
+0ac3b6b87,2015-08-11 12:15:15,Use CUDA device properties to find maximum texture width,0,,0
+e092e8e39,2015-08-11 12:49:11,Remove incorrect update_coeffs from pair.table,0,,0
+5b3ec315f,2015-08-11 13:09:21,Really fix the pair.table bug,1,,1
+f110fc31b,2015-08-12 08:55:19,Fix incorrect data type for nlist gpu binned shmem,1,,1
+6fdadbc28,2015-08-12 09:55:50,Add CMake install for cub,0,,0
+397c07474,2015-08-12 13:51:08,Merge pull request #9 from mphoward/nlist_asymm,0,,0
+ec735210d,2015-08-12 13:54:56,Update change log for BVH tree merge,0,,0
+210b568fb,2015-08-12 15:02:57,Merge upstream/master into multi_nlist,0,,0
+af868ad7a,2015-08-12 15:03:09,Update nlist documentation,0,,0
+d333d9c0d,2015-08-13 15:53:52,Merge upstream/master into per_type_ghosts,0,,0
+42e94f7e5,2015-08-13 19:25:23,GPU evaluator updated for new CUDA template,0,,0
+2ddc15149,2015-08-14 12:48:24,Fixing compilation of unit tests with boost 1.59.0,1,,0
+512cd76b8,2015-08-14 13:42:40,Add balanced domain decomposition class,0,,0
+3b5a69ec6,2015-08-14 13:42:57,Add C++ unit tests for balanced domain decomposition,0,,0
+d62269182,2015-08-14 17:31:06,Add balanced domain decomposition to python module and assorted bug fixes,1,,1
+7ec98df31,2015-08-17 07:05:23,Merge branch 'maint' into fix_check_ghost_layer,0,,0
+7062c5d5b,2015-08-17 13:13:10,Merge branch 'master' into aniso_int_new,0,,0
+09d3456a9,2015-08-17 14:11:20,Fix bug for insufficient contextual information for templated kernels in gcc 4.4,1,,1
+1fc86e73f,2015-08-17 15:07:12,Updated xml unit test to use ArrayHandles instead of convenience functions,0,,0
+899f47e8f,2015-08-17 15:19:17,Fix a bug sizing the local box,1,,1
+9ae0c3832,2015-08-17 15:21:47,Updated Gay-Berne unit test to use tree neighbor list,0,,0
+5e6114f8f,2015-08-18 09:48:04,Bump CUB version to 1.4.1,0,,0
+01db8621d,2015-08-18 10:11:38,Fix compile error for cuda < 6.5,1,,1
+0dc58eaaf,2015-08-18 10:53:44,Squash CUB maybe uninitialized warning in radix sort,0,,0
+d228a8e29,2015-08-18 11:01:13,Fix typo in comment,1,,0
+704905914,2015-08-18 13:46:52,Update temporary storage allocation to match requirements for small problems,1,,0
+b01c9e01f,2015-08-18 13:50:02,Don't overwrite returned tmp_storage_bytes during allocation in case CUB interface changes in future,0,,0
+414f727a6,2015-08-19 09:58:18,added callback capability to dump.pos,0,,0
+3696c6465,2015-08-19 10:33:49,Made integrate.npt error out when given an empty particle group,1,,0
+306fd73c0,2015-08-19 14:51:02,Add prototype of LoadBalancer and unit test shell,0,,0
+904c7f0f3,2015-08-19 16:52:00,Add load imbalance reduction method and refactor skeleton,0,,0
+4e887d7fd,2015-08-20 10:01:28,Fixed compiler warning for initialization list member order,1,,0
+ac695a7fc,2015-08-20 10:49:59,Fixed NVT test not being run,1,,0
+3d9e37cf6,2015-08-24 15:58:44,Fields global parameter added,0,,0
+1654f71d7,2015-08-25 14:28:01,Adding field parameter type and making the changes through out the code,0,,0
+063874bf1,2015-08-25 14:44:47,added field type to gpu kernels fixed compiler errors,1,,0
+fe429b14c,2015-08-26 16:53:28,Add BVLS to compute load balancing adjustments (note: eigen is required but not bundled yet pending discussion with @joaander  so commit will not compile),0,,0
+e8ce95981,2015-08-27 08:41:49,Merged in mphoward/hoomd-blue/fix_gcc4.4_errors (pull request #72),0,,0
+e1f96d406,2015-08-27 08:42:24,Merged in fix_check_ghost_layer (pull request #68),0,,0
+ceed88237,2015-08-27 08:43:25,Merged in mphoward/hoomd-blue/upgrade_cub (pull request #73),0,,0
+8822346d4,2015-08-27 08:44:35,Merged in fix_boost_1_59_0 (pull request #70),0,,0
+56ff37cfe,2015-08-27 09:14:45,Add per-type MPI support to the neighbor lists,0,,0
+4ee002092,2015-08-27 09:40:59,Add Eigen 3.2.5,0,,0
+6c7f81bd5,2015-08-27 09:41:24,Merge branch 'eigen' into load_balance,0,,0
+20ba4e57e,2015-08-27 09:48:00,Add CUB license to credits,0,,0
+482191868,2015-08-27 10:01:59,Add Eigen license credit,0,,0
+b9775a641,2015-08-27 10:02:10,Merge branch 'eigen' into load_balance,0,,0
+f9e001619,2015-08-27 14:43:43,Merged in mphoward/hoomd-blue/upgrade_cub (pull request #74),0,,0
+793194756,2015-08-27 14:44:30,Merged in mphoward/hoomd-blue/per_type_ghosts (pull request #59),0,,0
+901b0e7c5,2015-08-27 15:47:32,Add domain resizing algorithms,0,,0
+7898fe1b9,2015-08-28 11:01:38,Add evaluator template for potentials on walls,0,,0
+e8077c340,2015-08-28 14:47:36,Add meta data output for pos-writer.,0,,0
+3cea9e026,2015-08-28 15:26:32,Fixed references to num_util functions,1,,0
+8b62e7115,2015-08-28 15:37:05,Fixed num_util.cc and num_util.h to avoid boost::python::numeric::array usage,1,,0
+b41dcec15,2015-08-28 15:54:57,Fixed minor typo in num_util.cc,1,,0
+5dabf65fa,2015-08-28 15:56:26,fixed num_util reference in potential pairs and undid bad changes in particledata,1,,0
+44ed38fd2,2015-08-28 15:57:05,Merge branch 'num_util_numericarrayfix' of https://bitbucket.org/glotzer/hoomd-blue into num_util_numericarrayfix,0,,0
+5bda5021c,2015-08-28 15:57:33,Merge branch 'num_util_numericarrayfix' of https://bitbucket.org/glotzer/hoomd-blue into num_util_numericarrayfix,0,,0
+dfe4f621a,2015-08-28 16:01:44,that mistake wasn't actually a mistake... oops,0,,0
+42abd9ded,2015-08-28 16:02:04,Merge branch 'num_util_numericarrayfix' of https://bitbucket.org/glotzer/hoomd-blue into num_util_numericarrayfix,0,,0
+c04dc2f40,2015-08-28 16:50:28,Change minimum domain size to a hard constraint,0,,0
+e2cfe32e4,2015-08-31 12:54:26,Removed implicit usage of boost::python from num_util.cc,0,,0
+2521b4b96,2015-08-31 18:04:03,Newwalls struct  and wall evaluator implement,0,,0
+3b1aa7569,2015-09-01 11:16:28,Update change log,0,,0
+dc2eac55f,2015-09-01 11:18:24,Update credits,0,,0
+fe814e9b1,2015-09-01 14:06:34,Merged maint into walls_ext,0,,0
+82f7f8cb2,2015-09-01 15:43:25,Fix merge conflict from per-type MPI branch,1,,1
+621044f3d,2015-09-01 15:56:51,Update LoadBalancer and balanced DD interface * Add/update Python wrapper * Write shells of Python unittests for new interface * Update C++ unit tests for new interface,0,,0
+7efcc6016,2015-09-01 16:25:06,Add interface for setting load balancing parameters,0,,0
+47457e3a5,2015-09-01 17:13:42,Add shell for load balancing on GPU,0,,0
+dce422527,2015-09-01 17:15:37,Fixed compiling issues and implemented rcut and ron as params for walleval,1,,0
+7a74e0bb4,2015-09-02 08:10:45,Merge pull request #10 from mphoward/multi_nlist,0,,0
+c32adf1c1,2015-09-02 09:21:46,Merge branch 'maint',0,,0
+edf076240,2015-09-02 15:32:55,Merged in write_metadata_dump_pos (pull request #76),0,,0
+8c5168d76,2015-09-02 16:04:29,Fix communication of off rank particles for corners,1,,1
+fad7e93d5,2015-09-02 17:17:26,changed name of callback to addInfo. added documentation to dump.py,0,,0
+679141b6e,2015-09-02 17:24:24,Add GPU functionality for counting off rank particles,0,,0
+76f78bd5f,2015-09-02 17:27:38,Merge remote-tracking branch 'upstream/master' into load_balance,0,,0
+620a18a4b,2015-09-02 17:38:12,Update ghost layer width syntax,0,,0
+c091377a5,2015-09-02 18:35:33,Added python interface and GPU computes,0,,0
+502c6cb23,2015-09-02 21:10:25,Attempt to add walls python interface,0,,0
+fead6e0fa,2015-09-03 09:11:38,Merged in num_util_numericarrayfix (pull request #77),0,,0
+cbc1c3838,2015-09-03 09:12:19,Merged in pos_updater (pull request #75),0,,0
+6a7136d38,2015-09-03 10:03:18,Fixed some python interface issues,1,,0
+f49d6970e,2015-09-03 10:12:53,Removed r_cut from interface params,0,,0
+583e2dec6,2015-09-03 11:34:26,Update change log,0,,0
+834efb3bc,2015-09-03 11:35:32,Update credits,0,,0
+9152e1b1b,2015-09-03 16:10:17,Refactor LoadBalancer code * Replace complicated reduction with gather and reduction on root * Add statistics counting * Add caching behavior for functions * Only migrate particles if migration is necessary * Add profiler support,0,,0
+9df37a486,2015-09-03 16:14:27,boost python fixes,1,,0
+d374b2b57,2015-09-04 12:23:39,Add cite.save to the doc index,0,,0
+72a0a63b2,2015-09-04 13:27:07,Remove in-place exclusive sum,0,,0
+3aae0016f,2015-09-04 13:45:30,Enforce a minimum temporary storage allocation as a precaution,0,,0
+c3905349d,2015-09-04 13:50:00,Fix incorrect sizing of head list texture bind,1,,1
+1ff3a5b99,2015-09-04 13:57:28,Sanity check the head list,0,,0
+9d8115153,2015-09-07 11:19:18,Unbind textures after use in neighbor list and pair force,0,,0
+63dbab2f5,2015-09-07 13:50:14,Fix shared (i j) prefix length,1,,1
+77e042715,2015-09-08 13:07:44,Fix snapshot initialization with balanced decomposition,1,,1
+b3612785f,2015-09-08 16:11:24,Fixed logic error,1,,1
+f924783cc,2015-09-08 16:11:54,Python3 update for print,0,,0
+9418e26ad,2015-09-09 14:50:11,Fix particle migration and ghost errors,1,,1
+0e31a7c8a,2015-09-09 15:46:27,Restore correct box shifting for migrated particles,0,,0
+84b39ad43,2015-09-09 16:05:29,Hardcoded several python interface issues,0,,0
+1168cb03a,2015-09-09 17:00:36,Misc. bug fixes for balanced DD and load balancer,1,,1
+63ffb904a,2015-09-09 17:00:41,Output,0,,0
+d25f73d98,2015-09-09 17:03:27,Merge remote-tracking branch 'upstream/master' into eigen,0,,0
+07406527a,2015-09-09 17:04:19,Merge remote-tracking branch 'upstream/master' into load_balance,0,,0
+88f50bfdd,2015-09-09 19:42:12,fixed bugs  changed export  fixed pyhton api,1,,0
+ba1ea8b4c,2015-09-09 19:42:12,fixed bugs  changed export  fixed pyhton api,1,,0
+152870366,2015-09-10 13:31:11,Implemented python interface for all non-charged pair-potentials,0,,0
+9487f167d,2015-09-10 17:04:29,Added all potentials and initialized forces properly,0,,0
+6069783c5,2015-09-10 17:05:26,Added all potentials and initialized forces properly,0,,0
+a96390607,2015-09-10 17:15:29,Fix merge errors,1,,1
+9704383af,2015-09-10 17:30:27,Final HEAD fix,1,,1
+d717e72a5,2015-09-11 07:58:44,Fix typo in pair.zbl,1,,0
+7aee47d32,2015-09-11 16:31:19,Really enforce a minimum domain size in optimization,0,,0
+ac8d377cf,2015-09-12 11:22:17,Fixes common libraries for plugins that are built with MPI enabled,1,,0
+a0f27a84b,2015-09-13 18:22:36,Fix a problem were bond forces are computed incorrectly,1,,1
+1cb6a275d,2015-09-14 13:33:38,Made Berendsen and BD thermostats issue a warning for anisotropic particles,0,,0
+450abffe4,2015-09-14 15:41:14,Disable BVH trees on Fermi architecture,0,,0
+ca3dd9957,2015-09-15 12:50:02,first proposed fixed,1,,0
+93b0d6ae4,2015-09-15 15:02:45,Expand unit tests for load balancer  and fix minimum domain size tolerance,1,,1
+783230873,2015-09-16 13:10:15,Refactor domain decomposition,0,,0
+79190dbf6,2015-09-16 13:17:58,Fix typos and misses from refactor,1,,0
+2b9f5f0ea,2015-09-17 15:37:50,Revise and expand documentation * Minor optimization to GPU load balancer to avoid full memcpy * Remove check on load balancing along individual dimensions,0,,0
+1da349069,2015-09-17 16:19:13,Add error checking for context initialization,1,,0
+c255c1cef,2015-09-17 16:36:10,Add missing status line for update.balance,0,,0
+4cb9ff9c6,2015-09-21 11:23:26,Remove one time balance feature  requires too much system setup,0,,0
+7671c9427,2015-09-21 11:33:13,Fix illegal memory access in PPPM,1,,1
+d10ab9806,2015-09-22 14:07:40,Added constructors,0,,0
+08c26f20e,2015-09-22 14:10:11,Implimented GPU code constructors,0,,0
+a8e477688,2015-09-22 15:15:12,Fixed default constructors,1,,0
+d06c56dc1,2015-09-22 20:44:54,fix wording in snapshot initialization error message,1,,1
+44f28cb2f,2015-09-24 12:53:50,Merged in plugin_cmake_fix (pull request #78),0,,0
+c8291c445,2015-09-24 12:56:26,Merged in fix_bond_boundary_conditions (pull request #79),0,,0
+85efa20e9,2015-09-24 12:59:46,Merged in mphoward/hoomd-blue/disable_bvh_fermi (pull request #80),0,,0
+fc9e17b9b,2015-09-24 15:08:06,Merged in m_eric_irrgang/initpy-edited-online-with-bitbucket-1442954619308 (pull request #85),0,,0
+b7db85952,2015-09-24 21:39:37,Added python classes to create wall struct and fixed many minor issues,1,,0
+2e66393f0,2015-09-25 10:47:33,Update change log for recent merges,0,,0
+dba29dcb6,2015-09-25 13:39:55,fixed the field params,1,,0
+f5dfaa1e4,2015-09-25 13:47:14,Fixed a bug where calling `restore_snapshot()` during a run zeroed potential parameters.,1,,1
+2d459e9d5,2015-09-25 14:19:37,Apply non-changing ntypes fixes to all other methods that listen to the ntypes change signal,1,,0
+b2991a0f5,2015-09-28 07:43:36,Remove dt from npt examples,0,,0
+c9dfc1803,2015-09-28 07:50:48,Remove code tuned for compute_1x,0,,0
+df30cc408,2015-09-28 08:13:05,Error out if user requests compute 1x build,1,,0
+05489ff68,2015-09-28 08:14:49,Remove additional compute_1x support code.,0,,0
+218879c5a,2015-09-28 08:17:41,Remove compute 1x from ExecutionConfiguration,0,,0
+a05c66c1c,2015-09-28 08:39:32,Merged in remove-compute-1x (pull request #86),0,,0
+c0e5fa35b,2015-09-28 09:46:05,Restoring mistaken changes to test_neighborlist,0,,0
+fafc71a16,2015-09-28 11:39:50,Test tree nlist only on Kepler and newer,0,,0
+8883fdb9f,2015-09-28 12:18:17,Remove using namespace in ParticleData.h,0,,0
+86406c8ac,2015-09-28 12:24:39,Change PYTHON_LIBRARY to HOOMD_PYTHON_LIBRARY,0,,0
+bb0141b9d,2015-09-28 12:43:15,Fix problems with the HOOMD_PYTHON variables,1,,1
+a3584bafe,2015-09-28 15:09:56,Merge branch 'maint',0,,0
+6f52f7ed2,2015-09-28 15:11:14,python API changes and minor corrections,0,,0
+d2c9643b2,2015-09-28 15:28:59,started tests and covered additional index possibilities,0,,0
+765ad8b72,2015-09-28 17:02:37,boost export error fix,1,,1
+d766cffde,2015-09-28 18:56:46,Removed unused code and implemented boost for other geometries,0,,0
+a387d8afa,2015-09-29 09:04:16,Unix line endings for cleaner diffs,0,,0
+472ce3ea6,2015-09-29 10:30:52,Switch from math.h to cmath,0,,0
+71a9b9745,2015-09-29 13:35:54,Fix compiler error,1,,1
+7fc02eb57,2015-09-29 14:58:07,Attempt to fix compile error,1,,1
+ff2791ccb,2015-09-30 08:53:30,v1.2.0,0,,0
+09722f2ac,2015-09-30 10:19:34,Set release date in change log,0,,0
+a5e437e85,2015-09-30 16:41:42,Refactor cutoff radius change as a signal,0,,0
+d748c37ab,2015-09-30 16:52:18,Add multi binned neighbor list on CPU,0,,0
+6b6c89767,2015-09-30 17:19:41,Enable multi even when there are only two cells,0,,0
+3a3d2a341,2015-10-01 13:55:38,Refactor cell list ghost layer width,0,,0
+dc42c4ad9,2015-10-01 15:20:19,Try to include periodic boundaries and double counting correctly,0,,0
+bd9ca94b6,2015-10-01 15:35:06,Add checks on periodic and aperiodic stencils,0,,0
+37c1da987,2015-10-01 18:27:42,Refactor stencils as separate class,0,,0
+c7ef9feb9,2015-10-01 18:34:35,Add shell for GPU multi neighbor list,0,,0
+ee49a874a,2015-10-02 10:09:39,Add unit tests for GPU class * Fix compile error in GPUMultiBinned,1,,1
+5ca92f520,2015-10-02 15:18:43,Add unoptimized GPU support for multi binned,0,,0
+efccb0fb6,2015-10-02 15:21:42,Add python wrapper to multi nlist,0,,0
+a08696a3e,2015-10-02 16:31:28,Merge branch 'master' into multi_cell,0,,0
+82d45fc93,2015-10-05 10:21:14,Add cta to multi binned gpu,0,,0
+8ca1d0f58,2015-10-05 10:57:02,Add texture fetch for stencil  reduce branching,0,,0
+5eed5176a,2015-10-05 13:02:53,Texture bind tdb array,0,,0
+962546d27,2015-10-05 17:34:19,Sort particles by type,0,,0
+8f9e61295,2015-10-06 17:23:08,Purged old walls implementation,0,,0
+f74608ea5,2015-10-06 18:05:52,Merged master into walls_ext,0,,0
+5d6848d8d,2015-10-07 15:00:34,Modified naming of variables for consistency with other HOOMD code,0,,0
+c8938289a,2015-10-07 15:24:31,Allow for evaluators that require diameter,0,,0
+8a07245f0,2015-10-07 17:42:15,reorganized to remove loop reduncancy and fix access for walldata,1,,1
+e7992054e,2015-10-08 13:47:33,Add manual cell width,0,,0
+c57b277e4,2015-10-08 14:18:31,Add enhancements to CPU and profiling,0,,0
+6138f771c,2015-10-08 14:27:35,Reorganized code and added wall utility functions,0,,0
+dba49e451,2015-10-12 12:50:15,Fixed compile errors and removed unused variables,1,,0
+98cec242b,2015-10-12 12:51:07,Merge branch 'walls_ext' of https://bitbucket.org/glotzer/hoomd-blue into walls_ext,0,,0
+a185777d8,2015-10-12 13:45:29,Updated cuda code to reflect idx unused by evals,0,,0
+889d777df,2015-10-12 14:53:13,Fix non-MPI builds,1,,1
+e4aa7860e,2015-10-12 22:22:04,Lazy reallocation of groups,0,,0
+07ec95eb9,2015-10-12 22:49:31,Added dipole anisotropic potential,0,,0
+fc69de73c,2015-10-13 03:12:16,Fix merge issues,1,,1
+8afa4562d,2015-10-14 14:53:52,Replace cub scan with thrust scan,0,,0
+e9b8e4375,2015-10-14 15:04:31,Add missing namespace to test_nvt_integrator_mpi.cc,0,,0
+cf2adc0dd,2015-10-15 06:10:05,Merged in mphoward/hoomd-blue/fix_cuda_75 (pull request #88),0,,0
+7a0ae6600,2015-10-15 06:10:32,Merged in mphoward/hoomd-blue/fix_long_unit_tests (pull request #89),0,,0
+460e4b82a,2015-10-15 09:34:27,Add python tuning for stencil cell width,0,,0
+afb067a20,2015-10-15 10:10:03,Change GPUArray MAXALLOC error to a notice,1,,0
+cadbfc936,2015-10-15 11:19:36,Merged in lazy_group_realloc (pull request #87),0,,0
+68ca2b5a1,2015-10-15 11:20:01,Merged in mphoward/hoomd-blue/remove_max_alloc (pull request #90),0,,0
+82fdec0e2,2015-10-15 13:55:02,Added basic documentation for anisotropic integrators,0,,0
+6086f1eeb,2015-10-16 10:43:19,Merge branch 'master' into load_balance,0,,0
+1aef63f10,2015-10-16 11:12:30,Fix missing namespaces,1,,1
+081468214,2015-10-16 12:26:33,Properly cite Miller2002 in aniso documentation,0,,0
+4c0b2c0dc,2015-10-19 11:00:07,Don't try to escape $ORIGIN in hoomd executable rpath,0,,0
+c440b1f44,2015-10-19 13:21:25,Merged in dont_escape_rpath (pull request #91),0,,0
+7551dca31,2015-10-19 13:44:19,Removed unused parameter in dipole aniso evaluator,0,,0
+a9e12748a,2015-10-19 15:41:50,Added python-level unit tests for gay-berne and dipole anisotropic potentials,0,,0
+b72433e30,2015-10-20 09:17:03,Remove stray print statements,0,,0
+c3fadeb7a,2015-10-20 09:18:14,Merge remote-tracking branch 'upstream/master' into multi_cell,0,,0
+4d3763081,2015-10-20 22:59:00,Refactor dipole params to truly be pair params,0,,0
+62def0a8e,2015-10-20 23:00:22,Added C++ level unit test for dipole potential,0,,0
+b2abd4f5b,2015-10-21 07:02:10,Apply patch from Trung,1,,1
+db779074b,2015-10-21 08:47:13,Reflow aniso doxygen paragraphs for consistency with other docs,0,,0
+9a300e461,2015-10-21 08:58:33,Updated xml file format docs for xml v1.6,0,,0
+560f754b2,2015-10-21 09:20:11,Fixed ai_pair.dipole python interface,1,,0
+6bfcb130c,2015-10-21 09:21:13,Fixed python-level unit test for ai_pair.dipole pair coeff fix,1,,1
+af5e52214,2015-10-21 09:32:04,Don't use __all__ in hoomd_script.__init__,0,,0
+7ce4694f8,2015-10-22 07:02:53,Reinstate EMBED_CUDA to enable conda binary builds,0,,0
+650cd9dac,2015-10-22 07:12:45,Update license headers,0,,0
+4d8238f40,2015-10-22 07:12:59,Merge branch 'maint' into npt-rigid-fix2,0,,0
+5a0fcfb61,2015-10-22 07:13:39,Update license headers,0,,0
+2ba820940,2015-10-22 08:35:10,Fix typo,1,,0
+0fc31108a,2015-10-22 09:51:30,Merged in npt-rigid-fix2 (pull request #92),0,,0
+eee078974,2015-10-22 10:32:23,Merged in mphoward/hoomd-blue/eigen (pull request #81),0,,0
+94794eccb,2015-10-22 11:23:49,Fix errors building developer documentation,1,,0
+313884541,2015-10-22 11:31:41,Update Change log,0,,0
+7026ba99e,2015-10-22 14:25:17,Fixed NVTMTKGPU running part of step one twice (merge bug),1,,1
+aa0c4b438,2015-10-22 14:40:44,Tagging v1.2.1,0,,0
+b9f3713aa,2015-10-22 14:44:31,Add release date to change log,0,,0
+01db597cd,2015-10-23 10:30:21,Fixed double-sorting of angular momenta on CPU (merge bug),1,,1
+83b934110,2015-10-23 10:31:30,Added angmom and moment_inertia snapshot members,0,,0
+38d2e9a54,2015-10-23 10:32:41,Fixed NPT and NVT tests for templated snapshot API,1,,0
+e8d4c0a98,2015-10-23 10:33:13,Added anisotropic tests to NVE unit tests,0,,0
+40176cfaa,2015-10-23 10:43:48,Remove macro redefinition compiler warning,0,,0
+d4c35ba14,2015-10-23 10:46:27,Removed compiler warnings in unit tests,0,,0
+75a6cc992,2015-10-23 17:46:06,added metadata,0,,0
+cd07e50cf,2015-10-23 18:02:45,correct typo and include missing math module,0,,0
+e198c3df7,2015-10-24 01:19:44,gpu works to at least compile,0,,0
+76e7140b6,2015-10-24 01:24:11,Merge branch 'walls_ext' of https://bitbucket.org/glotzer/hoomd-blue into walls_ext,0,,0
+d02a906ed,2015-10-24 01:25:42,Removed merge error,1,,0
+605a65d26,2015-10-24 01:26:41,Merged maint into walls_ext,0,,0
+9987e0bb0,2015-10-24 13:21:17,fix typo in box math docs,1,,0
+ef8b35765,2015-10-26 06:39:18,Merged in doc_fix (pull request #93),0,,0
+c815cf461,2015-10-26 09:48:32,Fixed whitespace in hoomd_script.pair,1,,0
+3f21d3756,2015-10-26 09:49:29,Moved hoomd_script.ai_pair contents into hoomd_script.pair,0,,0
+c048c7644,2015-10-26 10:00:44,Made default moment of inertia be (0  0  0),0,,0
+81c928af3,2015-10-26 11:19:16,Set particle moments of inertia in anisotropic integrator tests,0,,0
+1c28daeff,2015-10-26 11:25:06,Added machinery to force [an-]isotropic integration,0,,0
+fba91f7d6,2015-10-26 14:00:51,Updated ComputeThermo to use more compact angular momentum relation,0,,0
+42606d0cf,2015-10-26 14:02:19,Updated aniso documentation for aniso argument in integrate.mode_standard,0,,0
+b72336db7,2015-10-26 15:31:34,Properly pass field variable to GPU,0,,0
+25524b101,2015-10-26 20:20:13,Add electric field,0,,0
+2e1a808af,2015-10-26 20:44:27,Fix handling of external field on GPU,1,,1
+ffdcab7bb,2015-10-26 21:38:50,fix python interface,1,,1
+b52cb2b45,2015-10-27 00:56:11,Improved python module and documented,0,,0
+2094f6943,2015-10-27 01:06:02,Fixed merge errors,1,,0
+3be13e2ff,2015-10-27 09:57:10,Fixed typo in aniso doc,1,,0
+0011e41ea,2015-10-27 09:57:41,Made ComputeThermo's translational/rotational DOF counts/kinetic energies explicit,0,,0
+cb048b3bf,2015-10-27 11:26:05,Fixed rotational DOF accounting,1,,0
+93fdcc282,2015-10-27 11:26:41,Made NVT test test translational  rotational  and overall temperatures,0,,0
+60c3a1a42,2015-10-27 13:49:05,Added note in aniso doc about setting moment of inertia,0,,0
+cc00ce443,2015-10-27 14:36:49,Update balancing documentation and default params,0,,0
+9fe769eb1,2015-10-27 14:37:36,Merge remote-tracking branch 'upstream/master' into load_balance,0,,0
+0d4579ac0,2015-10-27 18:43:00,Finished user documentation,0,,0
+70c836e2a,2015-10-27 22:05:32,Merge branch 'master' into aniso_int_new,0,,0
+eda39f574,2015-10-27 22:13:59,Don't upcast a copy of thrown exception in System::run,0,,0
+86a331604,2015-10-28 07:11:27,Merged in fix_run_catch (pull request #94),0,,0
+86edaba2e,2015-10-28 07:14:47,Merged in mphoward/hoomd-blue/load_balance (pull request #82),0,,0
+a0fd20240,2015-10-28 08:53:12,Fixed remaining errors from merge of master into aniso_int_new,1,,0
+6f3d4997b,2015-10-28 09:16:30,Fix invalid syntax,1,,1
+96565406a,2015-10-28 09:20:13,Fix exception handling syntax,1,,1
+6d8f6b199,2015-10-28 09:31:36,Add warning for aniso integrators when no rotational DOF are found,0,,0
+de9ef5592,2015-10-28 09:36:37,Fix rank check in non-MPI builds,1,,1
+e7ed22e7c,2015-10-28 09:41:39,Merge branch 'load_balance' of bitbucket.org:mphoward/hoomd-blue,0,,0
+4ef915c34,2015-10-28 13:36:27,Merge branch 'maint',0,,0
+5868540be,2015-10-28 19:10:27,Unit test added  misc fixes  inline wallfuncs disabled temporarily,1,,0
+2c553a94c,2015-10-29 08:26:27,Fix NPH unit test failure,1,,1
+95d68143f,2015-10-29 08:31:23,Removed compiler warning for unused variable,0,,0
+08fbe8ed8,2015-10-29 09:34:53,Fixed Autotuner not being found when MPI is disabled,1,,0
+c8a3431f6,2015-10-29 14:27:37,Merged in aniso_int_new (pull request #16),0,,0
+a3087e75a,2015-10-29 16:48:38,Unit test actually added  test script  and numerous fixes,1,,0
+e2a6ed8d5,2015-10-29 16:53:49,Merge remote-tracking branch 'remotes/origin/master' into walls_ext,0,,0
+224460f32,2015-10-29 17:09:27,Normalized plane normal in unit test,0,,0
+5f7f423bb,2015-10-29 17:22:05,Merge remote-tracking branch 'remotes/origin/master' into walls_ext,0,,0
+75ac5a0c5,2015-10-30 15:52:55,Prevent memory access error when particle is out of bounds,1,,1
+e10a02b2c,2015-11-02 13:46:10,Update ChangeLog and credits,0,,0
+b0504123e,2015-11-02 16:32:39,Improved documentation  removed merge leftovers  r_min replaced r_on to reduce confusion with XPLOR r_on and external.e_field linked into documentation,0,,0
+ec63602eb,2015-11-06 13:36:19,Merged in m_eric_irrgang/init_create_empty-edited-online-with-bit-1446827818881 (pull request #97),0,,0
+b1c1fcdbc,2015-11-06 16:38:11,init_create_empty example had typo in velocity distribution,0,,0
+c27f27cf1,2015-11-09 12:21:32,Rename bdnvt to langevin,0,,0
+5d7595c03,2015-11-09 14:00:19,Update python interface with more flexibility,0,,0
+2464ac1ce,2015-11-09 14:43:03,cerr,0,,0
+7990bd7ea,2015-11-09 15:06:43,global r_cut not required,0,,0
+087d7d3dd,2015-11-09 15:37:08,Merged master into walls_ext,0,,0
+f92045122,2015-11-09 15:38:27,Merge branch 'walls_ext' of https://bitbucket.org/glotzer/hoomd-blue into walls_ext,0,,0
+3177356aa,2015-11-10 15:17:24,Merged in mphoward/hoomd-blue/fix_mpi_fork (pull request #98),0,,0
+8ceafe456,2015-11-10 15:27:24,Fix mpi fork warning,1,,0
+b4ac0010f,2015-11-10 15:38:33,Add integrate.brownian,0,,0
+60017bde3,2015-11-10 17:30:50,Add needed ifdef,0,,0
+4c1e7778f,2015-11-10 17:46:38,Put the ifdef in the right place,0,,0
+01d50e5a9,2015-11-10 21:07:23,r_shift and linearization implemented not documented yet,0,,0
+feca71f92,2015-11-10 21:29:42,Minor fixes,1,,0
+c4efb5642,2015-11-10 21:45:18,Returning a large neagative number is a bad idea..,0,,0
+9871417c1,2015-11-10 21:46:33,Fix RNG generation in Langevin and BD,1,,1
+ebad5866b,2015-11-11 13:20:19,Add check for slurm environmental variable,0,,0
+bfb3ac18b,2015-11-11 17:06:15,Fixed r_shift math for V(r) and F continuous,1,,0
+4692dbe82,2015-11-12 09:20:46,Merged in mphoward/hoomd-blue/guess_slurm_rank (pull request #99),0,,0
+9ce4a45ff,2015-11-12 15:40:01,Rename D to d,0,,0
+860397222,2015-11-12 15:43:30,Missed a d,0,,0
+98ac2684f,2015-11-12 17:00:30,Implement Langevin on the GPU,0,,0
+e796a7c4b,2015-11-12 17:26:34,Fix a few documentation errors.,1,,0
+36671a44a,2015-11-12 20:35:08,Fix typo,1,,1
+293a91815,2015-11-12 20:35:41,Add BD on the GPU,0,,0
+7762848b2,2015-11-14 00:36:47,Implement constraints data structure,0,,0
+91e292a1f,2015-11-15 23:56:19,Implement CPU constraint algorithm,0,,0
+c48c1d6d4,2015-11-15 23:57:29,change maintainer,0,,0
+2e2c2ccfd,2015-11-16 00:08:26,fix assertions,1,,1
+37a8abe83,2015-11-16 16:45:39,Add bdnvt command back for backwards compatibility,0,,0
+a1d1d9fe7,2015-11-16 16:48:21,Enable constraint solver on GPU,0,,0
+1e8d82ad6,2015-11-16 16:52:55,remove spurious file,0,,0
+b86ba1750,2015-11-16 17:03:24,remove unnecessary code,0,,0
+a20be66eb,2015-11-16 17:33:24,Use singular for word constraint in xml syntax,0,,0
+7fe58ad8a,2015-11-16 18:15:12,Faster constraint solving on GPU,0,,0
+8baba4cc4,2015-11-16 19:37:19,correct number of removed degrees of freedom,0,,0
+abbcd1dcb,2015-11-17 08:06:11,Add unit test for BD,0,,0
+dfa4918dd,2015-11-17 08:13:19,Move langevin diffusion tests to python,0,,0
+de6547fce,2015-11-17 08:17:04,Add entries to the change log,0,,0
+608c9d419,2015-11-17 08:22:13,Warn users using the deprecated bdnvt syntax,0,,0
+143f5e3f0,2015-11-17 08:42:49,Move nve unit test to long tests,0,,0
+aeebd5546,2015-11-17 09:42:09,Update python documentation,0,,0
+03e4e806a,2015-11-17 11:08:10,Add exclusions from constraints,0,,0
+a52178265,2015-11-17 13:34:09,Expand documentation,0,,0
+3275b4c33,2015-11-17 13:48:32,Rename MultiBinned classes to Stencil,0,,0
+e5806492f,2015-11-17 13:49:38,Move CUDA neighbor files into appropriate directory,0,,0
+0b25796af,2015-11-17 14:11:56,Fix one botched renaming,1,,1
+251aa74f3,2015-11-17 14:48:51,Add simple cell list stencil tests,0,,0
+6fe07cc85,2015-11-17 14:49:11,Merge remote-tracking branch 'upstream/master' into multi_cell,0,,0
+57f4671b2,2015-11-17 15:13:40,Add signal for cell width changing to update stencil correctly,0,,0
+949ab6a00,2015-11-17 22:51:16,Use sparse matrix linear algebra,0,,0
+e31757225,2015-11-17 23:03:10,Half-spaces fleshed out  documentation updated,0,,0
+0603c7aa8,2015-11-17 23:34:01,Fixed sloppy coding errors,1,,0
+b5e8a9962,2015-11-18 07:48:57,Fix a bug where m_aabbs is not aligned,1,,1
+34034868b,2015-11-18 08:23:19,Put cuda files back where they should be,0,,0
+d9f485ba9,2015-11-18 08:50:12,Clean up warnings with clang,0,,0
+7d6125039,2015-11-18 15:59:41,"Revert ""Use sparse matrix linear algebra""",0,,0
+d0ece5e73,2015-11-18 16:40:55,Use QR decomposition,0,,0
+f55581547,2015-11-18 17:01:43,for larger constraint matrices  LU is faster,0,,0
+23e97ca3e,2015-11-18 22:28:33,"Revert ""for larger constraint matrices  LU is faster""",0,,0
+4361103c6,2015-11-18 22:28:40,"Revert ""Use QR decomposition""",0,,0
+df340caa4,2015-11-18 22:28:49,"Revert ""Revert ""Use sparse matrix linear algebra""""",0,,0
+746d03d63,2015-11-18 22:29:14,Cache the structural zeros of the connectivity matrix,0,,0
+43a3229e5,2015-11-18 23:25:26,support double,0,,0
+5e5b5df62,2015-11-18 23:45:49,Correct scoping,0,,0
+03e2e3306,2015-11-19 13:21:03,Merged in langevin (pull request #100),0,,0
+c61da1f79,2015-11-19 14:32:03,Remove return on group_size==0,0,,0
+7b3dfd26d,2015-11-19 14:37:56,Update change log,0,,0
+12941e5b0,2015-11-19 14:41:01,Use union as storage type for type / constraint distance,0,,0
+29cf5bb7c,2015-11-19 14:46:43,remove unneeded code,0,,0
+75f8b3be9,2015-11-19 15:33:54,Cleanup renaming,0,,0
+372a94be9,2015-11-19 15:41:33,Fix setEvery() for neighbor lists,1,,1
+0e62de6f2,2015-11-19 15:43:11,Update credits,0,,0
+d9a7d07c8,2015-11-20 01:33:25,Finally working,0,,0
+e67d8e04a,2015-11-20 01:37:47,fix typo,1,,0
+45fc98c40,2015-11-20 01:44:01,Fix initialization from XML,1,,0
+8ac00c182,2015-11-20 01:50:32,add profiling statement,0,,0
+17079875f,2015-11-20 01:57:07,quench compiler warning,0,,0
+72c092fe3,2015-11-20 11:40:59,Factor out solution of matrix equation,0,,0
+60c24c0cc,2015-11-20 11:49:52,Only trigger group reordering signal when groups actually change,0,,0
+506ad41ca,2015-11-20 11:55:14,add one profiling section,0,,0
+44a897d0d,2015-11-20 11:58:35,Variable name change dirty->reorder,0,,0
+d631184b1,2015-11-20 12:35:46,suppress compiler warnings,0,,0
+180ee66be,2015-11-20 20:11:10,Fixed bad math in shifted mode  tests updated and mostly fixed,1,,0
+a7618de90,2015-11-20 20:11:28,Merged master into walls_ext,0,,0
+21ba879fd,2015-11-21 16:39:37,Only convert dense2sparse if sparsity pattern changes,0,,0
+1bb41ded9,2015-11-21 17:29:08,fix unspecified launch failure,1,,1
+03210e131,2015-11-21 20:10:06,add constraint virial,0,,0
+0d3adb7f0,2015-11-21 21:49:13,Enable warnings when distance constraint is violated,0,,0
+f7de4f14d,2015-11-21 22:27:44,fix base class in export of ForceDistanceConstraintGPU,1,,1
+637a17203,2015-11-21 22:32:57,fix rel tolerance criterion,1,,1
+16211922c,2015-11-23 09:40:33,Merge branch 'maint',0,,0
+c9c56dc7e,2015-11-23 10:38:04,Removed unsupported binary file format,0,,0
+066d01453,2015-11-23 10:42:12,Merged in mphoward/hoomd-blue/multi_cell (pull request #101),0,,0
+26fa9edb6,2015-11-23 10:42:48,Updated change log,0,,0
+335a931bd,2015-11-23 13:31:33,Enable log.query() to get current system properties,0,,0
+d5b5dc40f,2015-11-23 13:32:39,support CUDA <= 7.5,0,,0
+6653917cd,2015-11-23 13:40:54,forgot a few ifdef's,0,,0
+ce0bdc7c7,2015-11-23 14:01:25,Removed unused code.,0,,0
+f137a57d1,2015-11-23 14:33:07,"Revert ""Fix illegal memory access in PPPM""",1,,0
+9dc2709dd,2015-11-23 14:39:26,allow prefetching of exclusion list,0,,0
+b2eb7cfed,2015-11-23 16:20:09,"Revert ""allow prefetching of exclusion list""",0,,0
+731b9b20f,2015-11-23 16:22:11,fix as per mphoward's suggestion,1,,1
+d23607169,2015-11-23 16:37:26,Fix system.replicate() with constraints,1,,1
+09475917c,2015-11-23 19:10:31,Enable sparse matrix caching with Eigen,0,,0
+c7eabc30b,2015-11-23 19:19:00,fix compile error,1,,1
+208bef8e8,2015-11-23 19:58:54,Enable constraints in dump.xml(),0,,0
+6075d338b,2015-11-23 20:06:57,Make boxdim.scale() return itself,0,,0
+06e2d3327,2015-11-23 20:16:51,add uniform scaling argument to boxdim.scale(),0,,0
+460b5376d,2015-11-23 23:38:29,Gracefully handle NaN positions in constraints,0,,0
+f184ed34b,2015-11-24 04:05:21,made order of re-initialization safer in BondedGroupData,0,,0
+683930874,2015-11-24 04:10:06,Fix a NaN occuring when charge.pppm() is executed with uneven interpolation order,1,,1
+2f2ccfdcd,2015-11-24 04:18:06,Make ComputeThermo survive re-initialization,0,,0
+10a1e2416,2015-11-24 04:35:12,Merge branch 'master' into constraints,0,,0
+7ce320411,2015-11-24 08:21:59,Merged in fix_pppm_exclusions (pull request #83),0,,0
+0f778bf2d,2015-11-24 08:27:20,Merged in fix_pppm_nan (pull request #105),0,,0
+5dea04c77,2015-11-24 08:36:01,Merged in fix_compute_thermo_reinit (pull request #106),0,,0
+3ec55d729,2015-11-24 16:24:37,Fix a segfault when particle positions are nan,1,,1
+34419ce0d,2015-11-24 20:29:55,Add unit test,0,,0
+d0026144d,2015-11-24 21:30:08,total revamp to r_shift mode  documentation examples and image added  tests all passed,0,,0
+c5be819ab,2015-11-24 21:30:51,Merged master into walls_ext,0,,0
+b195909df,2015-11-24 21:49:59,Made documentation syntax more consistent,0,,0
+12567c00e,2015-11-24 21:50:22,Merge branch 'walls_ext' of https://bitbucket.org/glotzer/hoomd-blue into walls_ext,0,,0
+90bd1743f,2015-11-25 06:35:38,Merged in improve_boxdim (pull request #104),0,,0
+b220b6fdc,2015-11-25 06:36:21,Merged in fix_pppm_crash (pull request #107),0,,0
+15ca0a410,2015-11-25 06:42:03,Updated change log,0,,0
+8abaae0a7,2015-11-25 06:42:34,Merge branch 'maint',0,,0
+28e445d34,2015-11-25 08:23:37,Pass the external field in by pointer.,0,,0
+6496e2a78,2015-11-25 09:07:23,Clarify documentation,0,,0
+932a894c9,2015-11-25 09:09:16,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue,0,,0
+aef17f866,2015-11-25 09:10:50,Update change log,0,,0
+79c8ab640,2015-11-25 09:11:39,Merged in log-query (pull request #102),0,,0
+5473640ae,2015-11-25 09:18:01,Update credits,0,,0
+ec088ccdd,2015-11-25 09:25:31,Update analyze.log docs,0,,0
+4156c1ea6,2015-11-25 09:52:01,Remove uneeded comments,0,,0
+bfa5f6014,2015-11-25 09:56:11,Remove more stray comments,0,,0
+51646ce45,2015-11-25 10:29:53,Group names are gone,0,,0
+bacdfdc13,2015-11-25 11:29:07,Mention conda builds in README,0,,0
+d67a49ce8,2015-11-25 12:33:23,Update python interface and docs for extrapolation * r_shift -> r_extrap * Updated figure for extrapolated mode,0,,0
+a8addfa17,2015-11-25 12:38:07,Forgot to label axes,0,,0
+9eb2deecf,2015-11-25 14:02:04,rshift to rextrap cside  tests modified  external field contribution added to compute thermo documentation,0,,0
+77b625f01,2015-11-25 14:04:43,Merged master into walls_ext,0,,0
+6cdfde88c,2015-11-25 14:06:09,Merge branch 'walls_ext' of https://bitbucket.org/glotzer/hoomd-blue into walls_ext,0,,0
+d2a3077f7,2015-11-25 14:19:32,Credit to MH for extrp the smart way,0,,0
+04cf92f26,2015-11-25 14:43:00,Virial is correct now,0,,0
+50238fc8c,2015-11-25 15:50:27,Merge branch 'master' into constraints,0,,0
+206c0a2e1,2015-11-26 14:52:10,support updating image flags using boxdim.wrap,0,,0
+ae226576b,2015-11-28 17:15:18,Reset matrix elements only when necessary,0,,0
+fa4a893fa,2015-11-29 18:33:08,Re-enable plug-in build,0,,0
+09c7813dd,2015-11-30 15:45:18,Removed virial contribution of walls,0,,0
+6f146f9ab,2015-11-30 16:05:52,Merged in support_img_in_python_wrap (pull request #109),0,,0
+745607a29,2015-11-30 16:08:13,Update change log,0,,0
+83b77914a,2015-11-30 20:10:47,NPT errors for wall forces,1,,0
+bbbbb1ad4,2015-12-01 15:29:18,GPU error for NPT as well,1,,0
+23f5df6f3,2015-12-01 15:31:45,Merge branch 'master' into constraints,0,,0
+353d520f7,2015-12-01 16:45:50,adding active force compute files,0,,0
+9387667db,2015-12-01 17:11:21,adding more files,0,,0
+159109bdc,2015-12-01 18:51:51,added rest of constraint and activity work  should be up to date  though is not yet tested,0,,0
+f3d975282,2015-12-02 10:49:28,fixed missing code  is now stable,1,,0
+630052bc9,2015-12-02 17:50:32,added some flags  removed group force capabilities for now,0,,0
+abbc79e0e,2015-12-02 21:46:55,Removes type checks for polymers list and separation dict in create_random_polymers() in init.py,0,,0
+baa8a347f,2015-12-03 06:30:18,Merged in asmunder/hoomd-blue-my-prs/remove-polymers-separation-typecheck-2 (pull request #112),0,,0
+91da95532,2015-12-03 06:54:10,Fix failing unit test,1,,1
+1423c9aec,2015-12-03 07:30:01,Fix failing unit test again,1,,1
+b18cb7f95,2015-12-03 08:13:10,And again...,0,,0
+58f5b771e,2015-12-03 09:05:30,Change virial contribution from walls,0,,0
+c789aebfd,2015-12-03 09:26:16,Update documenation to discuss wall virial term.,0,,0
+b3dbfc301,2015-12-03 10:41:59,Merged in walls_ext (pull request #96),0,,0
+0ce180695,2015-12-03 10:56:03,Merge branch 'master' into remove-dump-bin,0,,0
+d8a9d3d9b,2015-12-03 12:51:12,Merged in remove-dump-bin (pull request #103),0,,0
+d6e85d25c,2015-12-03 12:52:27,Update change log,0,,0
+5616d064c,2015-12-03 19:31:45,Merge branch 'master' into constraints,0,,0
+44cf3f2e8,2015-12-03 19:41:10,resolving merge conflicts,0,,0
+fa6c4e108,2015-12-04 14:18:10,fixed bugs in activeForceCompute  added diffusion constant  added check for rigid bodies for orientation link flag,1,,0
+5cb4b68b4,2015-12-07 12:17:12,Fix compilation with CUDA 6.5,1,,1
+93b55e726,2015-12-07 13:38:56,Merged in fix_compile_cuda65 (pull request #113),0,,0
+e905c484b,2015-12-07 14:13:28,Merge branch 'master' into constraints,0,,0
+0bc23e18b,2015-12-07 19:42:25,rot_noise_first_addition,0,,0
+ddb7bbb97,2015-12-07 19:50:31,rot_browniandynamics,0,,0
+c3a257506,2015-12-08 07:07:19,Detect when SLURM_LOCALID is 0 on all ranks,0,,0
+e064674ba,2015-12-08 10:57:29,Add needed ifdef,0,,0
+52329c0ae,2015-12-08 10:58:09,Update change log,0,,0
+7dcf5dfa0,2015-12-08 10:58:24,Migrate contributor info to the README,0,,0
+ec6abba6b,2015-12-08 11:00:56,Tweak formatting in contributor info,0,,0
+14b7e07d8,2015-12-08 11:02:31,Move contributor files so they are accessible,0,,0
+48c2dd29f,2015-12-08 11:03:58,Fix typo,1,,0

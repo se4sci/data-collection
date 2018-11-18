@@ -1,0 +1,668 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+b429c83,2016-06-22 21:14:31,Convert README files to markdown,0,,0
+ea4dd0c,2016-06-22 22:04:09,Add link to asciinema video,0,,0
+7011ad4,2016-06-25 22:22:13,Create symbolic links README --> README.md to make automake happy,0,,0
+c9cb61b,2016-07-02 07:56:36,init abinit 8.1.2,0,,0
+ede88c4,2016-07-02 22:30:48,Update reference files going from cronos_gcc46_paral to cronos_gnu_5.3.-paral modified:   tdfpt_03_MPI24.out modified:   tdfpt_04_MPI24.out,0,,0
+355494d,2016-07-02 22:34:01,Update Tabirules#05  for abiref_gnu_5.3_debug modified:   t05.out,0,,0
+8d22dec,2016-07-02 22:37:01,Try to fix the problem with Tbuildsys#40 (/bin/sh: configure: command not found) modified:   check-libpaw.py,1,,1
+7efc80a,2016-07-03 07:11:42,Modify testfarm.conf  from Jean-Michel  new version for the test farm under gitlab,0,,0
+e2fe7b1,2016-07-03 13:16:14,This modif should suppress the warning messages for Tbuildsys#40 modified:   config/specs/testfarm.conf,0,,0
+b937dda,2016-07-03 18:14:29,Update two reference files for Tbuildsys#13 modified:   ubu_gnu_4.9_mpich.ac modified:   ubu_intel_15.0_mpich.ac,0,,0
+350915a,2016-07-03 18:25:11,Clean the reference abichecks/buildsys/Refs deleted:    abiref_intel_15.0_mpich.ac deleted:    bb_amd-gfortran4.6_cronos.ac deleted:    bb_amd-gfortran4.6_max2.ac deleted:    bb_amd-open64_max2.ac deleted:    bb_intel-g95_yquem.ac deleted:    bb_intel-gfortran4.6_petrus.ac deleted:    bb_intel-gfortran4.6_toum_openmp.ac deleted:    bb_intel-gfortran4.7_mpich3_yquem.ac deleted:    bb_intel-gfortran4.7_shiva_distchk.ac deleted:    bb_intel-gfortran4.7_yquem.ac deleted:    bb_intel-gfortran4.7_yquem_openmp.ac deleted:    bb_intel-gfortran4.8_bigmac_macports.ac deleted:    bb_intel-gfortran4.8_ktulu.ac deleted:    bb_intel-gfortran4.8_yquem.ac deleted:    bb_intel-gfortran4.9_supermac.ac deleted:    bb_intel-intel15_yquem.ac deleted:    bb_intel-intel15_yquem_sernofb.ac deleted:    bb_intel-nag_petrus.ac deleted:    bb_intel-nag_petrus_serial.ac deleted:    bb_power6-xlf_ibm6.ac deleted:    bb_xeon-gcc49_tikal.ac deleted:    bb_xeon-gcc49_tikal_cov.ac deleted:    bb_xeon-gfortran4.7_buda_cuda.ac deleted:    bb_xeon-gfortran4.7_testf.ac deleted:    bb_xeon-gfortran4.7_testf_woMPI.ac deleted:    bb_xeon-intel12_green_prod.ac deleted:    bb_xeon-intel12_tikal_serial.ac deleted:    bb_xeon-intel13_coba2.ac deleted:    bb_xeon-intel13i_coba2.ac deleted:    bb_xeon-intel14_buda.ac deleted:    bb_xeon-psc_tikal.ac deleted:    bob_gnu_5.3_openmpi.ac deleted:    bob_intel_15.0_mpich.ac deleted:    inca_gnu_4.9_debug.ac deleted:    ubu_gnu_4.8_serial.ac deleted:    ubu_gnu_4.9_debug.ac deleted:    ubu_gnu_4.9_openmpi.ac,0,,0
+e9da0aa,2016-07-03 18:26:42,Add the missing new references for Tbuildsys#13 new file:   abiref_gnu_5.3_debug.ac new file:   abiref_nag_6.1_openmpi.ac new file:   bob_gnu_5.3_openmp.ac new file:   buda_gnu_4.7_cuda.ac new file:   buda_intel_14.0_mpich.ac new file:   coba2_intel_13.1_openmpi.ac new file:   cronos_gnu_4.6_paral.ac new file:   cronos_gnu_5.3_paral.ac new file:   graphene_gnu_4.9_macports.ac new file:   ibm6_ibm_14.1_poe.ac new file:   inca_gnu_4.9_mpich.ac new file:   max2_gnu_5.3_dep.ac new file:   max2_gnu_5.3_mpich.ac new file:   petrus_nag_5.3_openmpi.ac new file:   testf_gnu_6.1_fb.ac new file:   tikal_gnu_4.9_cov.ac new file:   tikal_gnu_4.9_mpich.ac new file:   tikal_intel_15.0_serial.ac new file:   ubu_gnu_4.9_packages.ac new file:   ubu_intel_13.1_openmpi.ac new file:   ubu_intel_15.0_dfti.ac new file:   ubu_intel_16.0_mpich.ac,0,,0
+54672da,2016-07-03 18:33:01,Reenable Tbuildsys#13 modified:   KNOWN_PROBLEMS modified:   abichecks/buildsys/tests.cnf,0,,0
+1a405b0,2016-07-04 15:03:53,Merge remote-tracking branch 'merge/master' into docs,0,,0
+c7ab763,2016-07-05 00:47:18,Suppress comments that applied to Tv1#10-20  and not to Tv1#09 modified:   t09.in,0,,0
+6e0666f,2016-07-05 08:45:00,Merge branch 'docs' into 'master',0,,0
+bcd5172,2016-07-05 09:23:07,Merge branch 'master' into 'master',0,,0
+1cab66c,2016-07-05 13:36:49,Declare to be on v8.1.3 modified:   KNOWN_PROBLEMS,0,,0
+abfa23b,2016-07-09 14:10:23,Minor modif  to initialize v8.1.3 modified:   KNOWN_PROBLEMS,0,,0
+f72cd52,2016-07-09 15:01:57,Just a test modified:   KNOWN_PROBLEMS,0,,0
+e39d1c0,2016-07-09 15:11:24,Merge branch 'develop' into 'develop',0,,0
+ad59908,2016-07-09 15:45:53,add check on bdgw values,0,,0
+67cc9a3,2016-07-09 16:34:30,Imported fix for Intel 16 compiler  from Jordan. modified:   m_BathOperator.F90,1,,1
+a7dd3b8,2016-07-09 20:24:09,Adjust tolerance for ubu_intel_16.0_mpich modified:   t06.in,0,,0
+f2f8295,2016-07-09 20:30:47,Merge branch 'develop' into 'develop',0,,0
+b63191b,2016-07-10 06:03:54,Init 8.1.4 modified:   KNOWN_PROBLEMS,0,,0
+8fbd030,2016-07-10 06:06:19,Modify the *.ac files for 8.1.4 modified:   configure.ac doc/configure.ac tests/configure.ac,0,,0
+dd1890a,2016-07-10 14:30:00,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+aaa420c,2016-07-13 16:13:09,Few modifications porting 8.1.1 into 8.1.3,0,,0
+b21d590,2016-07-14 09:33:13,Merge branch 'develop' into 'develop',0,,0
+a6f6077,2016-07-14 11:31:27,This should fix the problem with luo and README.xlf,1,,1
+39dc2bc,2016-07-18 00:23:56,missing new files from bzr added,0,,0
+35fe99f,2016-07-18 22:53:11,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+4aadfe9,2016-07-21 09:56:40,Attempt to merge private bzr to git,0,,0
+8760a90,2016-07-25 12:52:05,Typo,0,,1
+6464c25,2016-07-25 12:59:08,Merge with develop branch Merge remote-tracking branch 'origin/develop' into develop,0,,1
+825b18b,2016-08-03 10:44:00,stray print statement,0,,0
+d548b1f,2016-08-04 14:25:11,Bug fix,1,,1
+ed76593,2016-08-06 08:52:26,Import inside gitlab develop  the modifications from v8.0.8 to v8.0.8b (including the gitlab hotfix-8.1.3 from Marc),0,,0
+2fe28e5,2016-08-08 11:35:56,adapt for full ETSFio netcdf case to read in DDK files,0,,0
+a8e9645,2016-08-08 12:52:13,reimported fixes for netcdf DDK file. Need to check full bb suite noe,1,,1
+566b19b,2016-08-08 17:18:29,repair default behavior in majority of cases with MPI mode output,0,,1
+556778d,2016-08-09 14:55:59,ddk reading should work in parallel and with no memory leaks now.,0,,0
+dda624a,2016-08-09 17:23:45,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+c7cf6c3,2016-08-11 11:14:17,git should ignore vim backup files ending in tilda,0,,0
+591fe2b,2016-08-13 13:58:58,Update of the acknowledgment suggestions posted on the Web. Still far from being complete  but at least mentions the fourth (2016) ABINIT paper. modified:   acknowledgments.html,0,,0
+0d27bbe,2016-08-13 14:25:10,Update the Web bibliography and bibtex info. Modified:   bibliography.html  bibtex-refs.html,0,,0
+1f74e29,2016-08-13 14:30:33,Fix minor problems in acknowledgments.html,1,,1
+47eb3c9,2016-08-13 14:34:55,More modifs to acknowledgments.html,0,,0
+c130743,2016-08-13 14:39:29,More modifs of acknowledgments.html,0,,0
+97bccc2,2016-08-13 14:42:15,More acknowledgments.html,0,,0
+bf590f8,2016-08-13 14:43:06,modified acknowledgments.html,0,,0
+dccdeb3,2016-08-13 18:25:39,Update   abinit_help.html for NPROC_NO_EXTRA_LOG value (is 2 in ABINITv8 instead of 100 before),0,,0
+7e1b2cb,2016-08-14 08:05:57,Define previous_maxerr in  66_wfs/m_invovl.F90  and exit if a spurious divergence develops.,0,,0
+ebf354e,2016-08-14 15:24:45,Problem with ubu_intel_16.0_mpich for Tparal#30 . So  suppressed it #%% exclude_builders = ubu_intel_16.0_mpich    modified:   t30.in,1,,0
+f097004,2016-08-14 19:16:08,Update ref for test Tparal#30  and also exclude this test for ubu_intel_15.0_mpich. modified:   t30.in  ../Refs/t30_MPI4.out,0,,0
+449f17a,2016-08-15 22:26:55,Fix minor problems modified:   abinit_vars.yml,1,,1
+fb7e450,2016-08-15 22:27:43,Again fix a minor problem  and regenate vargs.html modified:   abinit_vars.yml  html_automatically_generated/vargs.html,1,,1
+ac1d3b9,2016-08-16 13:55:29,Merge gmatteo/develop/a6f6,0,,0
+9cb5a08,2016-08-16 17:29:28,Git pull from the gitlab,0,,0
+110a550,2016-08-16 17:45:41,Fix minor typo.	modified:   57_iovars/chkinp.F90,1,,1
+d950850,2016-08-16 19:28:08,Fix minor bug in chkinp   introduce so_psp 0  in test input files when needed ...   ../src/57_iovars/chkinp.F90   v1/Input/t39.in   v2/Input/t76.in  v3/Input/t47.in  v7/Input/t05.in    v7/Input/t06.in,1,,1
+e662d08,2016-08-16 20:39:42,Update ref files  because of changes linked to so_psp  ../../v1/Refs/t39.out   ../../v2/Refs/t76.out    ../../v3/Refs/t47.out   t05.out t06.out,0,,0
+4df88ee,2016-08-16 21:29:00,Fix minor problems modified:   bibtex-refs.html,1,,0
+e8a9251,2016-08-16 21:30:57,Minor fixes modified:   acknowledgments.html,1,,0
+9c4a2b1,2016-08-17 06:30:12,Merge remote-tracking branch remotes/gonze/develop/dff9 into trunk/_gonze,0,,0
+fae2644,2016-08-17 06:33:55,Issued python abinit_vars.py . Modified  html_automatically_generated/vareph.html  html_automatically_generated/vargs.html,0,,0
+26a57df,2016-08-19 10:25:02,change nband_occ to mband_occ  and introduce spin dep nband_occ for sums over different numbers of bands according to isppol,0,,0
+b216bf3,2016-08-19 16:52:16,corrected alloc and destroy of dtefield arrays in particular nband_occ,0,,0
+290fa17,2016-08-19 18:20:10,[buildsys] Upgraded CPP options in source code,0,,0
+300d773,2016-08-19 18:49:40,[buildsys] Upgraded CPP options in build-system internals,0,,0
+27a4e9a,2016-08-19 19:01:20,Made sure ViM swap files are ignored within the Abinit source tree,0,,0
+32686bf,2016-08-19 19:03:45,[buildsys] Re-upgraded CPP options in the source code after including recent ones,0,,0
+79685b9,2016-08-19 19:04:33,[buildsys] Re-upgraded CPP options in build-system internals after including recent ones,0,,0
+5476d3a,2016-08-19 19:05:56,[buildsys] Upgraded CPP options in test inputs,0,,0
+ea678d1,2016-08-19 19:07:29,[buildsys] Upgraded CPP options in test scripts,0,,0
+7e94422,2016-08-19 22:17:06,[buildsys] Removed stale references to obsolete CPP options,0,,0
+740933a,2016-08-19 23:27:03,[buildsys] Imported CPP option fixer,0,,0
+a8df06d,2016-08-20 22:07:43,Fix wrong link modified:   abinit_vars.yml html_automatically_generated/varpaw.html,1,,1
+b833997,2016-08-21 06:50:54,Fix typo	modified:   57_iovars/invars1.F90,1,,1
+6efc307,2016-08-21 09:22:47,Update Ref file due to change with defaulr value of pawspnorb#	modified:   ../Input/t16.in t16.out,0,,0
+394270a,2016-08-21 11:52:29,Modify input file  due to pawspnorb modified:   t03.in,0,,0
+766b426,2016-08-23 18:22:13,Removed Bazaar dependency and updated warnings in makemake,0,,0
+436a344,2016-08-23 18:38:00,"Revert ""[buildsys] Imported CPP option fixer""",0,,0
+cfae8d2,2016-08-23 18:38:00,"Revert ""Removed Bazaar dependency and updated warnings in makemake""",0,,0
+2987238.0,2016-08-23 18:38:01,"Revert ""[buildsys] Upgraded CPP options in build-system internals""",0,,0
+00ba060,2016-08-23 18:38:01,"Revert ""[buildsys] Re-upgraded CPP options in the source code after including recent ones""",0,,0
+d024975,2016-08-23 18:38:01,"Revert ""[buildsys] Re-upgraded CPP options in build-system internals after including recent ones""",0,,0
+27ca728,2016-08-23 18:38:01,"Revert ""[buildsys] Removed stale references to obsolete CPP options""",0,,0
+fd0390b,2016-08-23 18:38:01,"Revert ""[buildsys] Upgraded CPP options in test scripts""",0,,0
+80f847d,2016-08-23 18:38:01,"Revert ""[buildsys] Upgraded CPP options in test inputs""",0,,0
+8a35ceb,2016-08-23 18:38:01,"Revert ""Made sure ViM swap files are ignored within the Abinit source tree""",0,,0
+8d2ae6f,2016-08-23 18:38:02,"Revert ""[buildsys] Upgraded CPP options in source code""",0,,0
+2e150f3,2016-08-24 09:26:17,Merge branch 'develop' of gitlab.abinit.org:pouillon/abinit into develop,0,,0
+ca7ce28,2016-08-24 13:25:19,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+0bb87a0,2016-08-24 15:41:14,First step introduce T-dep in optical properties,0,,0
+ed2515f,2016-08-25 11:25:51,After .rej of patch,1,,0
+64bd99a,2016-08-25 11:26:14,New file missing,0,,0
+d5c28c3,2016-08-25 16:01:32,Wrong patch...,1,,1
+24f20eb,2016-08-25 16:12:12,Mistakes yet again,0,,0
+65fbb07,2016-08-25 16:21:41,Yet again mistakes,0,,1
+5b32317,2016-08-25 19:52:18,Memory leak in optic,0,,1
+de4bbac,2016-08-26 10:45:37,Merge branch 'develop' of abinit:trunk/abinit into develop,0,,0
+e057bf6,2016-08-26 10:47:35,Fixed CPP options,1,,1
+9c685d5,2016-08-26 17:22:21,modif pour forces sur terme de Fock,0,,0
+94b2ac7,2016-08-30 17:40:51,Better treatment of nbdbuf in dfpt_cgwf for PAW,0,,0
+09bb0d1,2016-08-31 11:37:54,small change in dfpt_nstpaw,0,,0
+1775a11,2016-08-31 14:15:52,new rpa-type bootstrap f_xc kernel  minor cleanup  test v67mbpt/v36 updated,0,,0
+e5889db,2016-08-31 14:18:58,Merge branch 'develop' of gitlab.abinit.org:wchen/abinit into develop,0,,0
+7c78e17,2016-08-31 14:59:04,Enable QPS read in DOS calculation,0,,0
+15a05a5,2016-09-01 16:57:15,"* in makemake      replace commands.getstatusoutput (deprecated) by subprocess then we can redirect stderr !      ( needed when the first line of '--version' is a warning and not the version )  * add new section on testfarm.conf for IBM8 ( ibm8_ibm_15.1_serial )  * in prtefield.F90  replace the ""big"" write by 4 write ( good for XLF and NAG )  * in m_efmas.F90  xlf did like & on string  * disable test v7/t23-24-25",0,,0
+7ff790f,2016-09-02 19:19:13,Correction of the error occuring for Effective Charges for PAW + occopt=1 + empty states,1,,1
+4cb46da,2016-09-02 23:07:14,Typo corrected,0,,0
+e379731,2016-09-05 13:28:37,Improvment of symetries for strain perturbation,0,,0
+2bd2903,2016-09-05 15:29:17,Cancel a previous change (nbdbuf),0,,0
+62fbe5a,2016-09-05 18:17:16,Merge remote-tracking branch 'trunk/develop' into dfpt-paw,0,,0
+3780d50,2016-09-05 18:20:26,improvements for Bader and Hirshfeld analysis,0,,0
+c147d2a,2016-09-05 22:36:08,check radial integral of charge for core agains znucl-zion in Bader code,0,,0
+8acdeac,2016-09-06 11:59:52,fixed v6[19] - integration error is quite bad for core charge  so tolerance is increased to 0.1,1,,1
+1f9f885,2016-09-06 16:26:22,Update 2 hyperlinks according to checklin script advice,0,,0
+cd8a68b,2016-09-07 10:40:12,"Inclusion of rf2 developments of bzr version (""by hand"" merge...)",0,,0
+d107b02,2016-09-07 10:41:03,Merge branch 'develop' into rf2,0,,0
+8b47246,2016-09-07 14:21:06,Merge remote-tracking branch mverstra/quickfixes/8acd... into trunk/_mverstra,0,,0
+ac4eeaa,2016-09-07 14:27:25,missing dealloc in dfptnl_mv,0,,0
+a01c78a,2016-09-07 14:33:17,Merge branch 'develop' into quickfixes,0,,0
+ea893a2,2016-09-07 14:33:40,Merge branch 'develop' into nonlinear,0,,0
+76fa88f,2016-09-07 14:33:51,Merge branch 'quickfixes' of gitlab:mverstra/abinit into quickfixes,0,,0
+21e2d87,2016-09-07 15:26:18,"Some notes about the variable ""pead""",0,,0
+eac788b,2016-09-07 15:31:33,Suppress minor modifications made for testing purposes,0,,0
+df159e2,2016-09-07 17:19:43,on some machines efield2 was coming up incorrectly initialized  which corrupts the first 2 iterations but does not affect the final result. Might change some ref files  which should be updated accordingly,0,,0
+30136c6,2016-09-07 18:42:14,Small improvments in getgh1c/getgh2c,0,,0
+bd83456,2016-09-08 06:21:01,Updated hyperlinks to NIST modified:   lesson_spin.html,0,,0
+3f63ca0,2016-09-08 06:50:14,Change http to https  modified:   lesson_spin.html,0,,0
+1641181.0,2016-09-08 08:22:19,Fix abirule violation  modified:   initaim.F90,1,,1
+2e66395,2016-09-08 10:55:24,Minor change to pass tests on petrus,0,,0
+7cc6d98,2016-09-08 21:13:57,Merge remote-tracking branch torrent/dfpt-paw/1f9f  into _torrent,0,,0
+678b627,2016-09-09 05:48:04,Merge remote-tracking branch baguetl/develop/2e66 into _baguetl,0,,0
+ece3440,2016-09-09 10:00:49,Merge branch 'develop' into quickfixes Need latest patch for efield2 initialization.,1,,0
+74a173c,2016-09-09 11:02:16,Merge remote-tracking branch mverstra/quickfixes/ece3 into _mverstra,0,,0
+a90d329,2016-09-09 11:24:11,fixed conflict,1,,1
+40c4c1a,2016-09-09 11:27:57,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+2f2d406,2016-09-09 19:10:21,Merge error corrected,1,,1
+4cea31a,2016-09-09 22:17:55,Merge remote-tracking branch beuken/ibm8/15a0 into _beuken,0,,0
+4e5d96c,2016-09-10 16:50:25,Change 61_ionetcdf to 59_ionetcdf,0,,0
+1da553e,2016-09-11 06:47:29,The order of dirs was not correct.  modified:   ../config/specs/binaries.conf,0,,1
+8e0be24,2016-09-11 12:05:08,outkss now uses its own version of calc_vkb,0,,0
+085520f,2016-09-11 12:33:43,Remove inclvkb==1,0,,0
+b0e6079,2016-09-11 13:22:24,Pass crystal_t to prepare new version,0,,0
+626eccf,2016-09-11 14:17:25,Code cleanup,0,,0
+57640d8,2016-09-11 14:24:33,Use ntypat as last dimension,0,,0
+26f0c55,2016-09-11 15:10:38,Change API to prepare new version,0,,0
+f56cd1c,2016-09-11 18:21:04,Before changes,0,,0
+9f15416,2016-09-11 21:13:08,Initialize psps%mproj,0,,0
+2b6f0a0,2016-09-11 21:48:04,Code cleanup,0,,0
+42528ee,2016-09-11 22:59:11,Saving work,0,,0
+9356163.0,2016-09-11 23:59:28,Saving work,0,,0
+8d48be6,2016-09-12 00:09:50,Allocate arrays with psps%lnmax  use indlmn to loop,0,,0
+69641cc,2016-09-12 01:11:51,Preliminary support for nproj > 1,0,,0
+45f142f,2016-09-12 10:08:08,"New nonlinear routine passes all ""nlo"" tests",0,,0
+c9a6681,2016-09-12 17:07:06,Correct link for the download of Boltztrap. modified:   abinit_vars.yml,0,,1
+bd61ee3,2016-09-13 06:33:40,Finalize files before closing v8.1.4 development. Modified:   KNOWN_PROBLEMS src/51_manage_mpi/herald.F90,0,,0
+9a5f666,2016-09-13 06:50:31,Apply make parents,0,,0
+56454c2,2016-09-13 06:57:46,Apply make abiauty,0,,0
+2990b83,2016-09-13 08:11:06,Minor modif for Boltztrap link. Modified:   abinit_vars.yml,0,,0
+4.377e+75,2016-09-13 10:37:06,Initialise v8.1.5 development,0,,0
+c8b98be,2016-09-13 14:22:28,Minor correction in dfpt_vtorho.F90,0,,1
+b72170d,2016-09-13 18:46:15,m_commutator_vkbr --> m_vkbr,0,,0
+6609968.0,2016-09-13 19:08:03,abiref: Update ref files after phase-of-the-moon-effects,0,,0
+8c22d23,2016-09-13 19:15:46,Activate inclvkb 2 in v67mbpt[40] (GW with psp8 pseudos),0,,0
+83a4309,2016-09-13 19:51:12,Merge branch 'develop' into commutator,0,,0
+db22a79,2016-09-13 22:59:00,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+a7a1b90,2016-09-14 15:12:08,Changes in dfpt_mkvxc_noncoll,0,,0
+fec7624,2016-09-14 18:27:12,Improvement of density accumulation routine,0,,0
+f9baea8,2016-09-15 13:59:23,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+5e75db3,2016-09-15 14:06:48,Merge branch 'gmatteo/abinit-commutator' into develop,0,,0
+e4b4578,2016-09-16 14:54:18,Added the eph_routine  to compute all the gkk elements on a k-point grid for a given q-point grid. Added two variables to control the tasks when optdriver==7:     prtphdos     eph_task I still need to document those.,0,,0
+2ae7181,2016-09-20 14:28:09,Update abinit to TRIQS/CTHYB interface for version 1.3 of TRIQS and CTHYB,0,,0
+1d8cff2,2016-09-20 14:30:19,Update doc concerning TRIQS/CTHYB (input variable: dmft_solv),0,,0
+7ab8055,2016-09-20 15:12:38,Merge branch 'develop' into triqs,0,,0
+eaa894b,2016-09-20 21:11:58,Replace read(*) with read_string,0,,0
+9544b0a,2016-09-21 10:43:29,fix the error message in the general case  and restricts it to dmft calculations,1,,1
+865ee35,2016-09-21 10:47:18,Merge branch 'develop' into quickfix,0,,0
+2614e2e,2016-09-21 11:31:35,cut3d: replace read(* ...) with read(std_in  ...) everywhere,0,,0
+3df2c96,2016-09-21 12:25:21,Fix autoparal=1 error in m_paw_dmft,1,,1
+a662712,2016-09-21 14:04:31,First version of full-dfpt nonlinear (pead=0) for NC pseudos,0,,0
+abc57d0,2016-09-21 14:18:11,trypo corrected,0,,0
+073346e,2016-09-21 14:20:29,Merge branch 'develop' of abinit-gitlab:trunk/abinit into develop,0,,0
+3452bc7,2016-09-21 15:26:34,Added the input variable ddb_shiftq.,0,,0
+03a22ea,2016-09-21 15:36:31,An error was introduced in getgh1c  corrected,1,,1
+9073974.0,2016-09-21 15:55:08,Adjustements to make automatic tests happy - take 1,0,,1
+dc0e7da,2016-09-21 16:05:47,Correct the term involving the derivative of lagrange multipliers,0,,1
+4684872.0,2016-09-21 16:27:49,Fix an hyperlink. Modified:   lesson_basepar.html,1,,1
+8c9e3eb,2016-09-21 16:41:00,Fix remaining read(std_in  *),1,,1
+564d5b2,2016-09-21 18:01:45,Added documentation to 3 new variables:     eph_task     ddb_shiftq     prtphdos,0,,0
+75155ef,2016-09-21 19:41:24,Adjustements to make automatic tests happy - take 2 (update ref due to change of tolerance in rhohxc),0,,1
+fec30e4,2016-09-21 19:41:58,Merge branch 'develop' of abinit-gitlab:trunk/abinit into dfpt-noncoll,0,,0
+174d3ba,2016-09-21 20:26:19,Add new module m_dens for density-related tools. Extract hirshfeld code from cut3d,0,,0
+65d93c3,2016-09-21 20:28:02,git add m_dens.F90,0,,0
+14c0b74,2016-09-21 20:50:08,Remove stray write  update v3[61],0,,0
+f9783e5,2016-09-21 21:03:41,Alleviate problem on bob_openmp fro testv2#33. Modified:   t33.in  t33.out,1,,0
+bff1193,2016-09-22 07:16:45,Merge remote-tracking branch amadon/triqs/7ab8 into _amadon,0,,0
+7142873.0,2016-09-22 09:53:23,Merge remote-tracking branch amadon/quickfix/3df2 into _amadon,0,,0
+30c3199,2016-09-22 10:16:49,Update MPI-FORUM hyperlink in tutorial,0,,0
+55b052b,2016-09-22 10:17:34,Update MPI-FORUM hyperlink in tutorial,0,,0
+2874373.0,2016-09-22 10:54:08,Merge remote-tracking branch 'trunk/develop' into develop,0,,0
+72f1f26,2016-09-22 17:37:16,Merge remote-tracking branch torrent/develop/30c3 into _torrent,0,,0
+99177d7,2016-09-22 18:44:37,Conflicts resolved  test refs adjusted - take 1,0,,0
+121b065,2016-09-22 22:20:30,Merge remote-tracking branch torrent/dfpt-noncoll/55b0 into _torrent,0,,0
+2048a87,2016-09-22 22:24:26,Change slightly the tolerance for v6#94. Modified:   t94.in,0,,0
+4525b8c,2016-09-23 07:49:57,Merge remote-tracking branch gmatteo/cut3d_prompt/14c0 into _gmatteo,0,,0
+6afaa09,2016-09-23 08:21:04,Merge remote-tracking branch 'trunk/develop' into develop,0,,0
+0baf65f,2016-09-23 08:53:58,Fixed a bug introduced after merging with trunk.,1,,1
+3dc2d19,2016-09-23 12:35:15,missing condition for the use of prtvclmb - could also just turn on prtvha brute force...,0,,0
+ee9ed95,2016-09-23 16:34:15,Fixed the k-point parallelism in eph_gkk.,1,,1
+a087687,2016-09-23 17:42:51,Merge remote-tracking branch gmatteo/scprqt/568c into _gmatteo,0,,0
+da2ad4f,2016-09-23 19:44:19,Conflicts resolved  test refs adjusted - take 2,0,,0
+22449a7,2016-09-24 09:11:56,Fixed writing of gkk files in a parallel environment.,1,,1
+8e+148,2016-09-24 09:12:31,Merge remote-tracking branch 'trunk/develop' into develop,0,,0
+8f29bf3,2016-09-24 15:54:56,Change intent of MPI_type in low-level routines (inout --> in),0,,0
+96e7134,2016-09-24 17:17:11,Replace inout intent with in in other low-level routines,0,,0
+964804c,2016-09-26 10:27:40,synchronisation avec trunk,0,,0
+a14e078,2016-09-26 10:28:24,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+32d4e6a,2016-09-26 11:00:55,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+266040.0,2016-09-26 11:05:37,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+c1b3edd,2016-09-26 14:11:45,DFPT in non-collinear magnetism works with ixc=0  before trunk merge.,0,,0
+407d48d,2016-09-26 14:26:38,Fixed some conflict with the trunk.,1,,1
+fdaf676,2016-09-26 15:25:20,Move boltztrap routines to m_ebands  add ref files for v6[11],0,,0
+674bbd9,2016-09-26 15:36:42,Pass ebands and crystal to ebands_prtblztrp,0,,0
+4fb3e2d,2016-09-26 15:55:14,Correct the computation of d3e/dE1dE2dtau3,0,,1
+db341a0,2016-09-26 15:56:06,abilint,0,,0
+00a34da,2016-09-26 16:17:22,Correct initialization of iddk,0,,1
+85b095a,2016-09-26 16:29:24,Fixed some conflict with the trunk.,1,,1
+bdc1073,2016-10-01 21:17:02,dirty fix of fft issue in hybrid,1,,1
+521090000000.0,2016-10-01 21:31:16,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+5f5b1a9,2016-10-02 07:23:22,Fix hyperlinks Modified:   abinit_vars.yml lesson_paral_gspw.html acknowledgments.html,1,,1
+f27ca2a,2016-10-02 11:40:03,Update ref due to previous modif. Modified:   t80.out,0,,0
+187584c,2016-10-02 16:13:12,Applied yml to html. Also correct one more link. Modified:   html_automatically_generated/vardev.html tutorial/lesson_dmft.html,0,,1
+4e6f23d,2016-10-02 18:59:16,Merge gmatteo/boltztrap/db34 into _gmatteo,0,,0
+e6d69b4,2016-10-03 17:46:07,Now DFPT works with AFM collinear systems (like Cr2O3) with full ixc,0,,0
+5a00c6e,2016-10-04 10:42:40,update reference for Antoine Levitt chebfi paper,0,,0
+2b5a0a2,2016-10-04 10:43:32,update comment on header in anaddb BT case,0,,0
+f8ad053,2016-10-04 10:43:59,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+44784c6,2016-10-04 13:07:29,Merge remote-tracking branch 'trunk/develop' into develop,0,,0
+ba1ac3c,2016-10-04 16:24:26,The non-collinear DFPT now works with full Vxc1 and rho1 compared with magnetic collinear systems,0,,0
+fb240c9,2016-10-06 00:16:08,Improve convergence of SCF cycle for WVL calculations and for all iscf/nnsclo/wvlbigdft_comp combinations,0,,0
+606903a,2016-10-06 13:44:24,Started coding phonon self-energy.,0,,0
+adadaed,2016-10-06 13:52:45,"Revert ""Started coding phonon self-energy.""",0,,0
+a7ac58a,2016-10-06 14:45:10,Fixed abirules. Corrected some memory leaks.,1,,1
+f86889a,2016-10-06 18:40:00,Fixed the last memory leak problem...I think.,1,,1
+8738074.0,2016-10-07 21:47:00,Explain how to solve ImportError exceptions raised by abimem.py,0,,0
+7e5f027,2016-10-08 06:09:11,Merge remote-tracking branch fricci/develop/ba1a into _fricci,0,,0
+0b2294f,2016-10-08 10:49:32,Merge remote-tracking branch gmatteo/abimem/8738 into _gmatteo,0,,0
+210b262,2016-10-08 16:12:03,Move chkneu to m_dtset and rename it (dtset_chkneu),0,,0
+9159bff,2016-10-08 17:04:52,Replace dataset intent from inout to in in low-level procedures,0,,0
+72a4c86,2016-10-08 17:16:36,Abilint,0,,0
+3a44f67,2016-10-08 17:17:18,Remove my log file,0,,0
+c7380e9,2016-10-11 06:18:40,Initialize v8.1.6 development.,0,,0
+12fbc41,2016-10-12 14:10:44,Merge with trunk,0,,0
+f3d11b1,2016-10-12 14:34:01,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+ab4ae8e,2016-10-12 17:36:28,Merge branch 'develop' of abinit-gitlab:trunk/abinit into wvl-paw-forces,0,,0
+425b1d8,2016-10-12 19:17:32,Change nnsclo default value for WVL calculations with iscf>0,0,,0
+6d374a4,2016-10-12 19:53:01,Re-activate bigdft_paral tests and improve them,0,,1
+6df0b84,2016-10-14 15:03:03,Bug fixed in dfptnl_pert.F90,1,,1
+944a8eb,2016-10-17 10:10:19,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+787999e,2016-10-19 14:57:28,Bug corrections for PAW Fock forces. It works for hydrogen.,1,,1
+332e8bc,2016-10-19 14:59:52,Synchronisation avec le tronc Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+9dcfece,2016-10-19 23:35:54,Merge branch 'develop' of abinit-gitlab:trunk/abinit into wvl-paw-forces,0,,0
+4b8b34b,2016-10-19 23:39:50,Add missing module dependency,0,,1
+ec4a874,2016-10-20 00:33:42,Conflicts resolved,0,,0
+18c3b7a,2016-10-20 01:01:14,Compilation errors eliminated,1,,1
+07ba5d3,2016-10-20 15:19:01,Adjust test tolerances,0,,0
+de95470,2016-10-20 15:30:02,Activate bigdft 1.7.1.24 on abiref,0,,0
+f75865d,2016-10-20 17:13:53,Update some bigdft test refs (all tests pass on abiref),0,,0
+0c5d677,2016-10-20 18:31:39,Another tolerance adjusted,0,,0
+513f0a2,2016-10-25 12:55:37,Correct a small bug when lobpcg suicides,1,,1
+56e4218,2016-10-25 13:24:24,Correct dfptnl_pert.F90 for parallel computations,0,,1
+db8fea5,2016-10-27 12:14:43,align with trunk,0,,0
+fa16c62,2016-10-27 12:41:03,outscfcv cleanup,0,,0
+e99b11c,2016-10-27 14:05:03,Desactivate openmp for ifort -> crash,0,,0
+c1fc835,2016-10-27 14:05:38,Fix a bug for kpt=0 0 0 Add non local energy for NC calculations -> not tested !,1,,1
+143bd60,2016-10-28 08:55:51,Merge remote-tracking branch 'abinit/nonlinear' into nonlinear,0,,0
+a59c8c7,2016-10-28 13:54:49,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into tdepoptic,0,,0
+c749c1d,2016-10-28 14:15:27,Missing amu in crystal_init (BTW : why is amu the first argument in crystal_init ?),0,,0
+15f1d04,2016-10-28 14:30:36,Coupling with lifetime not supported yet,0,,0
+536d49e,2016-10-28 14:49:43,Fix issue with DOS + order eigenvalues for printing,1,,1
+fca7389,2016-10-28 15:52:14,Bug when paral_kgb 1 for NC : enl is incomplete,1,,1
+037838c,2016-10-28 19:54:59,Use xgeev only with ep_renorm included...,0,,0
+d6f7345,2016-10-28 20:53:24,Reading with new NetCDF routines,0,,0
+3e14136,2016-10-28 21:27:49,Adding tests for the T-dep of optical properties,0,,0
+b656bd0,2016-10-28 21:41:59,Solve part of the memory issues + anti-resonant contributions for Bi-lanczos,0,,0
+e9e5370,2016-10-31 10:07:08,debug conversion of rpt in reduced coordinates,0,,0
+810bcf6,2016-10-31 11:40:50,add missing deallocations,0,,1
+371e3c7,2016-10-31 14:06:57,Memory leak fixed,1,,1
+a79f27f,2016-10-31 17:13:50,Make test farm happy (?),0,,0
+3bd4ed5,2016-11-02 15:52:39,Still trying for NC,0,,0
+bbf0761,2016-11-02 20:06:19,Test seem to pass but timing is new with xgBlock so number of lines differ,0,,0
+ba67654,2016-11-03 15:40:52,Fix FPE,1,,1
+f900620,2016-11-03 22:59:56,Fix a FPE again (due to ecutsm...),1,,1
+ed24244,2016-11-04 08:06:17,Disable newlobpcg if cuda is used,0,,0
+410d12e,2016-11-04 08:17:35,Remove unsed variables and correct chebfi ref since preconditionning had a typo I corrected long time ago,0,,1
+042cb5b,2016-11-04 09:35:45,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+4077cc3,2016-11-04 12:04:07,Use netcdf3 file instead of netcdf4,0,,0
+29c4339,2016-11-04 13:47:18,Upgrade refs from abiref,0,,0
+b723f45,2016-11-04 14:01:59,change precision calculation for succeeding with old/new lobpcg on abiref,0,,0
+a0fdbb5,2016-11-04 18:47:45,Improve cprj management in getghc/getgh1c and rf2 modules Can now process cleanly when cprj are not allocated (and computedc on the fly),0,,0
+d9a7948,2016-11-04 18:54:48,Increase tolerances of t51,0,,0
+9944c18,2016-11-04 18:55:57,Remove debugging flush call,0,,0
+54f9f76,2016-11-07 11:48:21,Remove old code for renormalization,0,,0
+98f3a17,2016-11-08 11:38:05,add polynomial_term_type and polynomial_coeff_type,0,,0
+d8633f9,2016-11-08 12:33:42,move m_effpot_xml.F90 and ddb_to_effective_potential.F90 into m_effective_potential_file.F90,0,,0
+c1e0663,2016-11-08 13:10:23,timana dumbyness,0,,0
+5654756.0,2016-11-08 13:31:06,better converge wf for respf,0,,0
+1c4e235,2016-11-09 18:47:04,Ok on my local laptop and should fix many bots,1,,1
+826c26b,2016-11-09 18:51:26,fix max2,1,,1
+b59117a,2016-11-10 12:11:44,add the reading of xml file with fitted coefficients for effective potential,0,,0
+70b68e9,2016-11-10 13:02:12,Slightly adjust tolerance,0,,0
+65ba346,2016-11-10 13:06:51,robodoc correction,0,,1
+299c538,2016-11-10 13:07:00,Merge remote-tracking branch 'refs/remotes/origin/develop' into develop,0,,0
+7c1eea5,2016-11-10 13:21:52,Merge remote-tracking branch 'trunk/develop' into develop,0,,0
+70470d4,2016-11-10 15:37:58,add setter in effective potential type for the coefficient from fited polynome,0,,0
+beaed51,2016-11-10 15:53:50,correction for multibinit,0,,1
+9b0b1e7,2016-11-11 11:00:27,Preparing littlegroup symmetries,0,,0
+3ef9577,2016-11-11 11:36:06,activate netcdf,0,,0
+a5b012d,2016-11-11 12:11:45,Write Kt mesh to netcdf file,0,,0
+1028d09,2016-11-11 16:38:22,Save work,0,,0
+f1d2475,2016-11-11 18:09:11,Saving work,0,,0
+740400000000.0,2016-11-11 18:56:33,Refactoring in m_dvdb,0,,0
+4131455.0,2016-11-11 19:08:46,abilint,0,,0
+1f5ca17,2016-11-11 21:52:59,Saving work,0,,0
+4ca9ae2,2016-11-12 12:29:56,Add support for qp_range  kptgw  bdgw,0,,0
+a7c3f88,2016-11-12 12:47:05,littlegroup_pert: Add optional argument to disable wrtout,0,,0
+c8e9a01,2016-11-12 13:14:52,Include degenerate states if symsigma,0,,0
+d236fff,2016-11-12 15:15:40,Add qibz and wtq to sigmaph_t,0,,0
+e81fd7c,2016-11-12 16:08:12,Symmetrize potentials if symv1 even when all 3natom perts are available on file,0,,0
+f7b1162,2016-11-12 17:20:04,Precompute symq tables,0,,0
+8cc277b,2016-11-12 17:47:08,Document possible symmetry issue in listkk and symkpt (To be discussed),0,,0
+22c6a90,2016-11-12 18:37:40,Add command to test v1(r) symmetries in real space,0,,0
+27c3809,2016-11-12 22:15:28,Preparing littlegroup,0,,0
+6d18178,2016-11-13 13:02:20,Save work,0,,0
+5b9f1b7,2016-11-13 13:12:25,Because abilint takes more time than AHC in C with 200 bands,0,,0
+c341ccc,2016-11-13 13:47:04,Add dvdb%iv_pinfoq table,0,,0
+bdf3b48,2016-11-13 14:27:23,Implement nkptgw == 0 and gw_qprange == 0,0,,0
+f734dce,2016-11-13 20:23:26,Quick parallelization over q-points,0,,0
+c6e3ae0,2016-11-14 10:10:57,Saving work,0,,0
+20a04c3,2016-11-14 14:41:04,rf2_init: two loop inverted,0,,0
+e27c21c,2016-11-14 16:22:27,Use pointers instead of copies in init_rf2,0,,0
+2b4fdda,2016-11-14 17:42:39,add computation of energy and forces from fitted polynome,0,,0
+7119690.0,2016-11-14 19:21:42,dudk projections (cprj) are now computed inside rf2_init,0,,0
+f27134b,2016-11-15 09:31:16,change I/O and update ref for multibinit,0,,0
+1ae6a89,2016-11-15 10:57:05,changes required for parallel version,0,,0
+6c4636f,2016-11-15 11:45:22,move copyright statement to make reading easier,0,,0
+725abdc,2016-11-15 13:55:01,Use pointers instead of copies in m_rf2/apply_hamiltonian,0,,0
+36291c5,2016-11-15 16:47:06,Implement Blue Moon Ensemble method within PIMD (MT+GG),0,,0
+5262b52,2016-11-15 18:10:59,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+d96e0b7,2016-11-15 18:31:01,Add doc for new pimd_constraint variable,0,,0
+d4c7311,2016-11-15 20:44:31,Initialize v8.1.7 development. Modified:  configure.ac + */configure.ac,0,,0
+2fa6851,2016-11-15 21:10:19,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into develop,0,,0
+42c9dda,2016-11-15 21:49:21,Add symsigma option,0,,0
+245d42e,2016-11-15 21:56:54,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,,0
+d6db363,2016-11-15 22:00:50,abilint,0,,0
+44231a0,2016-11-16 01:15:24,Quick fix to get around occasional FFT mesh errors for HF and hybrid-functional calculations,1,,1
+55963b7,2016-11-16 01:24:39,"Revert ""Quick fix to get around occasional FFT mesh errors for HF and hybrid-functional calculations""",1,,1
+850bf04,2016-11-16 01:28:17,Quick fix to get around the occasional FFT mesh error for HF (hybrid) calculations,1,,1
+bcd536d,2016-11-16 01:30:20,Merge branch 'develop' of gitlab.abinit.org:wchen/abinit into develop,0,,0
+f3b1317,2016-11-16 09:47:35,Merge branch 'start-8.1.7' of gitlab:trunk/abinit into develop,0,,0
+71ee842,2016-11-16 09:47:40,Merge branch 'start-8.1.7' of gitlab:trunk/abinit into develop,0,,0
+8b5e4c1,2016-11-16 09:49:42,Merge remote-tracking branch 'trunk/develop' into develop,0,,0
+d646b83,2016-11-16 10:32:51,Merge branch 'develop' of abinit-gitlab:trunk/abinit into dfpt-paw,0,,0
+ba7ace5,2016-11-16 12:09:32,Reduce verbosity,0,,0
+be76ae8,2016-11-16 12:47:14,cleanup,0,,0
+9ce92e0,2016-11-16 12:59:05,Update ref file,0,,0
+bdc80fa,2016-11-16 13:18:08,TODO list,0,,0
+14d8449,2016-11-16 14:06:08,small bug fix,1,,1
+246774e,2016-11-16 15:21:25,Correction of merge errors,1,,1
+ea63055,2016-11-16 19:24:41,First version of history (HIST  hist%) with images WE save the rewriting of existing iterations in HIST file. There is room for improvment (memory saving),0,,0
+cf93aad,2016-11-17 10:26:48,remove rpt with weight==0 and update ref,0,,0
+8eb4997,2016-11-17 12:07:43,Print list of perturbations to ab_out,0,,0
+c33ccb1,2016-11-17 12:48:37,Update refs,0,,0
+38d33c8,2016-11-17 14:48:12,modified to satisfy the libxc and wannier90 tests,0,,0
+341a714,2016-11-17 15:26:36,Correction on a pointer to please ifort13,0,,1
+f33b630,2016-11-17 19:27:38,Confirm https://github.com/abinit/abinit_issues/issues/1,0,,1
+bdca0eb,2016-11-17 19:34:34,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into fermi_surface,0,,0
+a82c2b5,2016-11-17 20:01:30,Replace get_rank_1kp with listkk,0,,0
+14c36ce,2016-11-17 21:52:20,Reactivate krank although it requires more memory than listkk,0,,0
+7e009c8,2016-11-17 22:50:05,Merge remote-tracking branch torrent/dfpt-paw/341a into _torrent,0,,0
+32f63d9,2016-11-17 22:51:14,Saving work,0,,0
+8973424.0,2016-11-17 22:51:39,Merge remote-tracking branch 'origin/fermi_surface' into eph,0,,0
+83f99d7,2016-11-17 22:54:58,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,,0
+41369bb,2016-11-18 08:04:09,Add routine to print phonon isosurface in xcrysden format,0,,0
+19424000000.0,2016-11-18 23:00:05,Add m_kpts module (will replace m_bz_mesh that is obsolete and should be used only in GW),0,,0
+c151449,2016-11-18 23:34:25,Replace boiler plate code with kpts_ibz_from_kptrlatt,0,,0
+d1ca56a,2016-11-19 10:10:22,Fix syntax errors,1,,1
+87cfd2e,2016-11-19 10:36:42,New variable: prtphsurf,0,,0
+6b97d6d,2016-11-19 11:13:54,Add test for prtphsurf,0,,0
+31ce8bd,2016-11-19 11:58:55,Remove obsolete code based on m_wffile (sections enclosed withing ifndef DEV_MG_WFK).,0,,0
+53631ce,2016-11-19 13:20:09,Had to fix newline issue in abinit_vars.yml (I'm using the GUI with java version 1.8.0_72),1,,1
+188a1e6,2016-11-19 16:27:25,Investigating https://buildbot.abinit.org/builders/abiref_gnu_5.3_openmpi/builds/466,0,,1
+15a256b,2016-11-19 21:50:34,Merge branch '_gmatteo' into develop,0,,0
+ae7c28f,2016-11-20 12:06:40,Add section to test B-spline interpolation,0,,0
+abca6a9,2016-11-20 12:15:09,Stop the code at the level of the parser if any(ddb_ngqpt) <= 0,0,,0
+44be527,2016-11-20 15:12:44,Saving work,0,,0
+338f8ed,2016-11-20 15:20:12,Merge branch 'develop' into eph,0,,0
+cb3c250,2016-11-20 15:20:54,Merge branch 'develop' into eph,0,,0
+ce81dfc,2016-11-20 15:22:26,Merge branch 'develop' into cleanup,0,,0
+040a392,2016-11-20 22:53:36,Remove dos_degeneratewfs,0,,0
+945e1df,2016-11-20 23:57:55,Parallelize tetrahedron,0,,0
+7db4a7e,2016-11-21 00:35:04,Yet another bug in DOS if kptopt 4 (get_full_kgrid assumes TR),1,,1
+5df0413,2016-11-21 01:05:20,Update DOS files produced by mpiio[28] (get_full_kgrid assumes TR but kptopt=4 in input file),0,,0
+ac205d8,2016-11-21 01:26:23,Remove buggy code in tetrahedra,0,,1
+87ecf0a,2016-11-21 11:32:49,Added RPA one-shot bootstrap fxc kernel,0,,0
+827420.0,2016-11-21 12:49:24,Merge branch 'fxc' of gitlab.abinit.org:wchen/abinit into develop,0,,0
+8e2c975,2016-11-21 13:11:19,"Revert ""Merge branch 'fxc' of gitlab.abinit.org:wchen/abinit into develop""",0,,1
+13948b0,2016-11-21 13:14:21,Merge remote-tracking branch 'usbdisk/develop' into develop,0,,0
+f72f2c3,2016-11-21 13:25:19,gwgamma=-8 documented,0,,0
+cde05f5,2016-11-21 13:33:54,Merge branch 'develop' into nonlinear,0,,0
+2a6f165,2016-11-21 15:32:02,Add two variables for dmft (dmft_tolfreq and dmftctqmc_triqs_nleg)  two tests  for DFT+DMFT+TRIQS and update config file for TRIQS on ubu_gnu_4.9_mpich.ac,0,,0
+ecc2e4e,2016-11-21 17:16:58,fixed doc,1,,0
+72ca0e7,2016-11-21 18:45:13,Supress dmftctqmc_triqs_nleg,0,,0
+3ee1fab,2016-11-22 10:44:44,add set for anharmonic contribution of eff_pot and add input for ionmov 13,0,,0
+819efb5,2016-11-22 11:23:35,Preparing changes in tetrahedra,0,,0
+d963c26,2016-11-22 11:27:02,Supress dmft_tolfreq,0,,0
+268ef7a,2016-11-22 11:34:05,Exchange (iene  iat) loops (because locality matters  especially for IO),0,,0
+774ac65,2016-11-22 12:26:37,Remove gaus_dos  will be merged with tetrahedra routine,0,,0
+073de64,2016-11-22 12:33:50,correct error in dmft_solve,1,,1
+d7368d3,2016-11-22 12:40:07,Fix typo,1,,0
+1c85712,2016-11-22 13:30:38,Work around a bug in mpich2 1.3.2.p1,1,,1
+7ef0cb2,2016-11-22 14:25:58,Cleaning,0,,0
+6f3f4e2,2016-11-22 15:22:53,Update refs,0,,0
+cf4a5bb,2016-11-22 15:48:00,Correct error in t99.in,1,,1
+0c49160,2016-11-22 16:38:20,Update t99/paral Refs,0,,0
+140246e,2016-11-22 18:56:51,Typos found thanks to the automatic tests,0,,0
+a0eb760,2016-11-23 10:26:46,A bug (only printing) has been magically corrected  update ref files,1,,1
+81e746f,2016-11-23 11:12:32,Remove get_dos_1band_m (get_dos_1band performs the same task),0,,0
+09cdc0f,2016-11-23 11:44:47,Save work,0,,0
+5936f72,2016-11-23 11:44:47,PIMD constraint improved (now the center of mass is fixed),1,,0
+21c6709,2016-11-23 15:40:10,Return ierr /= 0 if tetra table cannot be constructed. Caller must handle it,0,,0
+ff34a72,2016-11-23 16:43:51,Shorten DFT+DMFT+TRIQS tests,0,,0
+5dfccce,2016-11-23 18:03:41,Sauvegarde au 23/11/2016,0,,0
+357ca54,2016-11-23 23:40:32,Cleanup,0,,0
+b0932b5,2016-11-24 11:32:08,pimd constraint improved (center of mass fixed),1,,0
+d216967,2016-11-24 13:39:45,get_dos_1band now accumulates DOS/IDOS,0,,0
+3a4a769,2016-11-24 15:47:55,Preparing other changes in dos_calcnwrite,0,,0
+94f2563,2016-11-24 20:27:03,Merge remote-tracking branch 'origin/fatbands' into eph,0,,0
+238c746,2016-11-24 21:47:20,Write header to DOS_TOTAL file.,0,,0
+0e3daf2,2016-11-24 22:04:34,Add DOS_TOTAL ref file,0,,0
+683ff45,2016-11-24 22:06:05,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into fatbands,0,,0
+44454d4,2016-11-25 08:03:39,Merge remote-tracking branch amadon/triqsv1.3_new/ff34 into _amadon,0,,0
+cd548b7,2016-11-25 11:17:25,Add two variables for DFT+DMFT and TRIQS. Update precisions on tests mpiio/Input/t28.in and v7/Input/t48.in  to run on ubu ifort.15 (after discussion with M. Giantomassi et Y. Gillet).,0,,0
+454590000.0,2016-11-25 11:28:27,Add a line for precision of v7/t48,0,,0
+58917000000.0,2016-11-25 12:30:30,B-spline interpolation for phonons,0,,0
+1014f38,2016-11-25 13:09:22,Modify DFT+DMFT+TRIQS tests.,0,,0
+141bd1a,2016-11-25 15:28:31,Some fixes in invars/outvars related to rf2 developments,1,,1
+d3287e5,2016-11-25 16:11:14,B-spline is 40x faster that Fourier interpolation. MAE: 1.0 [meV]  MARE: 1.0% Excellent for numerical integration in the small box,0,,0
+39a45a1,2016-11-25 18:31:48,Suppress xcart and fred from abi_hist datastructure,0,,0
+349f81f,2016-11-25 20:43:58,tetrahedron: new API to compute weights for a single k-point,0,,0
+25a7de9,2016-11-25 22:51:23,New version of PJDOS parallelized over k-points  spin and bands,0,,0
+7c037c1,2016-11-26 15:12:27,Merge remote-tracking branch 'trunk/develop' into lobpcg_new,0,,0
+abab61d,2016-11-26 15:14:27,typo,0,,0
+265889c,2016-11-26 16:37:02,Add optional argument for derivatives,0,,0
+4e057da,2016-11-27 13:51:08,Import skw code,0,,0
+3a0e7bc,2016-11-27 18:02:09,Skw interpolation for phonons,0,,0
+e3ed8f4,2016-11-28 10:29:28,Add routine to write bands in xmgrace format,0,,0
+39cd889,2016-11-28 11:21:10,correct directories in w90 tutorial from Nick Pike,0,,1
+97f7add,2016-11-28 11:41:50,Documentation,0,,0
+0f438c9,2016-11-28 11:42:38,Saving work,0,,0
+a3ad8d9,2016-11-28 11:42:46,Merge remote-tracking branch 'origin/fatbands' into eph,0,,0
+497de6a,2016-11-28 12:45:29,Set the output variable etotal to zero in nonlinear,0,,0
+8078d86,2016-11-28 13:15:59,Take care of band-parallelism in rf2_init,0,,0
+14a464f,2016-11-28 14:30:05,Bugs fixed for rf2 in paw,1,,1
+9d55682,2016-11-28 14:38:07,I love triggering internal compiler errors,1,,1
+34eb858,2016-11-28 14:43:00,Merge remote-tracking branch amadon/triqsv1.3_new/1014 into _amadon,0,,0
+a3184ed,2016-11-28 15:19:46,added back shift to cut3d wave function option 13. WHO REMOVED THIS SHIFT OPTION WITH MSG_ERROR??? Makes no sense- either remove the option or put a comment about what to fix,1,,0
+a757b45,2016-11-28 17:24:25,Make ibm8 happy,0,,0
+87e61f7,2016-11-28 18:48:28,I love IBM  you tell him to sys_exit(0) and it returns 260,0,,0
+70ed22e,2016-11-28 21:31:34,Pass xmpi_comm_self to m_effective_potential.mkphbs. add routine to print phonons in xmgrace format,0,,0
+ea1f669,2016-11-28 22:38:15,mkphbst: code cleanup,0,,0
+a2411f7,2016-11-28 23:53:53,Really take care of band-parallelism in rf2_init...,0,,0
+e47f345,2016-11-29 11:15:34,Dvdb is mandatory only if eph_task /= 0,0,,0
+991b422,2016-11-29 11:15:48,Correct a bug when prtvol==-19,1,,1
+f5cf436,2016-11-29 11:28:43,Just to test the interpolators with the test farm,0,,0
+e85ed50,2016-11-29 12:23:34,mkphbs: Preserve behaviour of ifcflag and symdynmat in v5[81],0,,0
+9079313.0,2016-11-29 13:30:30,Docs,0,,0
+d4d6a1f,2016-11-29 15:05:43,this version of vclmb seems to work with npfft > 1,0,,0
+af7ce33,2016-11-29 15:07:20,clean printing of mpi rank and nfgd\,0,,0
+fafe18d,2016-11-29 15:08:14,make out1dm safe for fft parallel output - it uses fortran io always,0,,0
+cfcfaf7,2016-11-29 15:36:13,reactivated prtvclmb tests - will have to update the ref files probably,0,,0
+f86dfe9,2016-11-29 15:47:22,Remove useless filter on dudk in rf2_init,0,,0
+11acd4b,2016-11-29 15:51:34,add writeXML for coefficients from polynomial,0,,0
+e91d46b,2016-11-29 17:22:30,Preparing derivatives,0,,0
+b833900,2016-11-29 20:23:59,Fix portability problem in ConfigParser detected by py3k,1,,1
+5f5b0c7,2016-11-29 21:12:45,"Suppress blank before "" "" that was preventing comparison of _SBK files. Modified:   t93.in  t94.in",0,,1
+e070093,2016-11-29 22:07:51,Take of convergence criteria in dfpt_cgwf for ipert=natom+10 and ipert=natom+11,0,,0
+38f26c6,2016-11-30 06:05:22,Prepare store of new _SBK files. renamed:    t93.out_ep_SBK -> t93.out_ep_SBK_ORG t94.out_ep_SBK -> t94.out_ep_SBK_ORG,0,,0
+4116c4b,2016-11-30 06:10:57,Updated reference _SBK files  previously untested. t93.out_ep_SBK  t94.out_ep_SBK,0,,0
+6b8747d,2016-11-30 07:34:56,Modify tolerances. Modified:   t94.in,0,,0
+fa8f83b,2016-11-30 08:55:05,small bug fixed in the writing of XML for coefficient,1,,1
+6d2e93b,2016-11-30 10:15:40,Change refs because the output etotal of nonlinear (meaning less in that case) has been set to zero,0,,0
+24d3b44,2016-11-30 11:32:18,Merge branch 'develop' into fatbands,0,,0
+3370f76,2016-11-30 12:22:50,Remove obsolete code not called anymore. Compute tetra weights inside k-point loop,0,,0
+1bfd83a,2016-11-30 13:55:50,This to avoid a bug in xmpi_sum_master with mpich3-3.1.3 that triggers SIGFPE,1,,1
+49d93c7,2016-11-30 15:09:43,Merge remote-tracking branch 'origin/fatbands' into eph,0,,0
+4de7074,2016-11-30 16:23:13,Perturbations natom+10 and natom+11 can automatically take into account some symmetries (not all of them  could be improved),0,,0
+0fca334,2016-11-30 20:59:22,Saving work,0,,0
+35c8f2c,2016-12-01 11:03:54,Tools for new developments,0,,0
+55fe0e4,2016-12-01 11:21:07,Change also nonlinear refs with proc>1,0,,0
+2f4e945,2016-12-01 13:29:27,Deallocate rfpert_nl and use it only if rf2 computations are acivated,0,,0
+bcbf8cd,2016-12-01 15:00:09,corrected bug in average speed of sound and Debye quantities from DOS,1,,1
+9747d84,2016-12-01 15:09:16,Merge branch 'quickfixes' of gitlab:mverstra/abinit into quickfixes,0,,0
+b61cfa3,2016-12-01 15:10:07,Merge branch 'quickfixes' into develop,0,,0
+8452954.0,2016-12-01 15:13:55,reset reference point for 10 percent limit in DOS/omega^2,0,,0
+7144f76,2016-12-01 15:14:39,Merge branch 'quickfixes' of gitlab:mverstra/abinit into quickfixes,0,,0
+b1e61e2,2016-12-01 15:15:56,Merge branch 'quickfixes' into develop,0,,0
+9412491.0,2016-12-01 15:57:48,Merge branch 'rf2-fixes' into nonlinear,0,,0
+79a77b4,2016-12-01 17:31:11,first test of output for TDEP format ifc from anaddb.,0,,0
+bb840aa,2016-12-01 17:32:55,solved merge conflict too,0,,0
+97f431b,2016-12-01 17:33:18,Merge branch 'quickfixes' into develop,0,,0
+5b6d77a,2016-12-02 09:55:32,Add rf2_pert1_dir/pet2_dir in outvar,0,,0
+6d64cc1,2016-12-02 10:04:53,Merge branch 'rf2-fixes' into nonlinear,0,,0
+25de5dc,2016-12-02 10:15:25,Multibinit:debug  add inputs for fit  change indexes in supercell+update ref,0,,0
+8ca83f8,2016-12-02 13:41:08,change defaults for ifcout and atifc - will probably need to update some ref files and input files to keep the old defaults of 0 (no ifc neighbors printed) and 0 (for all prim cell atoms  do not print the ifc),0,,0
+4a2c34b,2016-12-02 13:44:36,first draft of a Debye Waller factor calculation in anaddb,0,,0
+3ef2c20,2016-12-02 15:46:23,Correct directions of rf2_dires_from_rfpert_nl,0,,1
+357e571,2016-12-02 15:52:26,HIST file was not correctly written in parallel (images),0,,0
+cb2ca09,2016-12-02 19:37:29,prtvclmb compatible with all parallelisations,0,,0
+90c370b,2016-12-02 23:40:11,bugfix unit and indices,0,,1
+d627e25,2016-12-03 10:52:37,Begin rationalization of k-points,0,,0
+265e732,2016-12-03 10:59:15,I forgot that abilint does not understand Fortran,0,,0
+72c9d97,2016-12-03 12:33:55,Begin to use new API for k-points,0,,0
+c24ab55,2016-12-03 12:51:41,Replace smpbz with getkgrid in tetra_from_kptrlatt,0,,0
+c615320,2016-12-03 16:47:04,Use new API for tetrahedra in eph code,0,,0
+1e2c07d,2016-12-03 20:45:47,Cleanup in mkphdos  preparing integration of Blochl corrections in tetra,0,,0
+9ed7ccf,2016-12-03 21:47:22,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into runtests,0,,0
+5c9fd8f,2016-12-03 21:50:44,bug fixes for output of full msqd matrix and weight in tetrahedron case,1,,1
+020fbd8,2016-12-04 07:05:30,Merge branch 'develop' into _gmatteo,0,,0
+8da2c2e,2016-12-04 13:32:51,Only phgamma needs eDOS(eF),0,,0
+390f648,2016-12-04 13:45:23,Merge remote-tracking branch gmatteo/fatbands/1bfd into _gmatteo,0,,0
+e0b1a0e,2016-12-04 17:36:41,Correct directions of rf2_dirs_from_rfpert_nl,0,,1
+1b90c27,2016-12-04 17:37:37,Merge remote-tracking branch baguetl/rf2-fixes/5b6d into _baguetl,0,,0
+4b911f8,2016-12-04 17:51:20,Authorize PAW computations in nonlinear,0,,0
+7fef4fa,2016-12-05 05:37:56,Merge remote-tracking branch gmatteo/runtests/9ed7 into _gmatteo,0,,0
+24c5c66,2016-12-05 09:55:17,Merge remote-tracking branch 'usbdisk/trunk' into rf2-fixes,0,,0
+723c671,2016-12-05 09:56:25,Merge branch 'rf2-fixes' into nonlinear,0,,0
+a4415b2,2016-12-05 12:59:04,Saving work,0,,0
+26698dd,2016-12-05 12:59:46,Merge remote-tracking branch 'origin' into eph,0,,0
+137eec3,2016-12-05 13:18:44,abilint,0,,0
+1a18ad7,2016-12-05 14:08:39,Replace getkgrid with kpts_ibz_from_kptrlatt,0,,0
+995cc45,2016-12-05 14:45:50,Finally fix problem with newlines in imgmov,1,,1
+156744d,2016-12-05 16:33:52,(multibinit) add I/O in the xml for strain coupling,0,,0
+8fb0640,2016-12-05 18:06:03,Cleanup,0,,0
+6a1486a,2016-12-05 18:48:46,Merge branch 'develop' of abinit-gitlab:trunk/abinit into quickfixes,0,,0
+c857453,2016-12-06 10:11:16,Adding a new optimizer for geometry relaxation based on L-BFGS algorithm as found on netlib.org. The original subroutine has been translated to Fortran90 A new value for ionmov has been authorized: 22. Development on finalized yet. Optcell /= 0 has not been coded yet,0,,0
+d024bfa,2016-12-06 10:28:54,multibinit: add setter in m_harmonics_term  change I/O and update ref,0,,0
+8a52384,2016-12-06 11:29:13,Now working for optcell/=0 Interfaces to m_lbfgs have been changed,0,,0
+f90c173,2016-12-06 13:35:49,Small improvement of dfpt_cgwf for ipert=natom+10 or +11,0,,0
+2f75bee,2016-12-06 16:29:57,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+7b6fc84,2016-12-06 19:39:51,Reactivate tests mpiio[26:28] on 4 processors,0,,0
+31cbbfa,2016-12-07 09:20:44,Merge branch 'quickfixes' of gitlab:torrent/abinit into develop,0,,0
+bc13780,2016-12-07 10:02:21,mean square displacement matrix and msqd(T) are calculated and output by anaddb,0,,0
+5b4d066,2016-12-07 10:20:02,adding a new test v8/t02 to test ionmov=22 for 9 silicon atoms (running time: 11s on my laptop),0,,0
+00e9dd5,2016-12-07 10:52:51,output only upper triangle half of msqd matrix,0,,0
+0dd5335,2016-12-07 11:10:22,bug fix in my previous commit,1,,1
+fed6b29,2016-12-07 13:29:19,bug fix for multibinit test paral 97,1,,1
+4e8217b,2016-12-07 13:35:36,fix ref file for v2/15,1,,1
+2ed83e2,2016-12-07 13:39:31,Merge remote-tracking branch torrent/quickfixes/b810 into _torrent,0,,0
+2daaf5e,2016-12-07 14:22:23,"adding ""save"" statement in module to please all possible compilers. Thank you Matteo!",0,,0
+691b42e,2016-12-07 14:35:12,correct use of the ABI_ALLOCATE/ABI_DEALLOCATE macros,0,,0
+c5c297e,2016-12-07 17:01:00,restore old default of not outputting ifcs for v2/22,0,,0
+9347638.0,2016-12-07 17:02:17,restore old default of not outputting ifcs for v4/50,0,,0
+2a1c0f6,2016-12-07 17:08:18,restore old default of not outputting ifcs for v5/28,0,,0
+195ad51,2016-12-07 17:15:17,many more input files go back to old value of ifcout 0,0,,0
+4cc59ed,2016-12-07 17:25:40,Minor changes,0,,0
+c75f6b6,2016-12-07 17:26:28,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,,0
+d4aa977,2016-12-07 17:27:48,even more explicit zeroing of the ifcs which are output by the code,0,,0
+2987edd,2016-12-07 21:42:26,restore defaults for Alexandre - see what he wants for multibinit,0,,0
+d429be9,2016-12-07 23:21:11,update BTRAP file header and defaults for ifcout,0,,0
+5e09408,2016-12-08 00:50:04,HIST file was not correcly written in parallel (images),0,,0
+2db89fd,2016-12-08 01:06:25,A test had to be updated,0,,0
+8104ef6,2016-12-08 01:54:30,Merge branch 'develop' of abinit-gitlab:trunk/abinit into pimd,0,,0
+1eb4bef,2016-12-08 03:10:09,Post-merge changes (conflicts HIST and effpot),0,,0
+9637b5a,2016-12-08 08:32:11,Forgot the ABI_DEALLOCATEs and Robodoc messed up. Hopefully  this is fixed now.,1,,1
+9991c6e,2016-12-08 11:25:59,Post-merge correction,0,,1
+492c535,2016-12-08 12:04:05,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+d69f188,2016-12-08 14:41:50,avoid divid by 0 in Bose factor  and set default temp grid to 1:1000 in eph,0,,0
+cd278bc,2016-12-08 15:32:54,merged trunk,0,,0
+e77bd2c,2016-12-08 15:39:00,multibinit: add strain coupling and output for stress tensor + update ref,0,,0
+5e+87,2016-12-08 16:28:14,mistyped the value of ifcout,0,,0
+2047ba5,2016-12-08 16:57:02,Merge branch 'develop' into 'develop',0,,0
+d9c289c,2016-12-08 17:18:32,Replace tabs by four spaces in Abivars,0,,0
+3da9a37,2016-12-08 22:11:19,output short ranged IFC and the LO/TO file for TDEP,0,,0
+d6feb39,2016-12-08 22:24:11,Replace abi_hist%histXF by abi_hist%xred/fcart,0,,0
+da96713,2016-12-08 22:24:51,double output of VCLMB and variable names wrong in tdep output,1,,0
+7a2f5b4,2016-12-08 22:31:01,Replace abi_hist%histA by abi_hist%acell,0,,0
+a0bd57c,2016-12-08 22:58:31,Replace abi_hist%histR by abi_hist%rprimd,0,,0
+5d38068,2016-12-08 23:28:51,Replace abi_hist%histV by abi_hist%vel,0,,0
+61c2dce,2016-12-08 23:46:23,Replace abi_hist%histE/Ek/Ent by abi_hist%etot/ekin/entropy,0,,0
+6ed8d67,2016-12-09 00:00:00,Replace abi_hist%histT by abi_hist%time,0,,0
+b7ae686,2016-12-09 00:22:14,bad merge of Marc modification of prtvclmb,0,,0
+1a189a5,2016-12-09 09:49:25,Merge remote-tracking branch 'trunk/develop' into lobpcg_new,0,,0
+ef41559,2016-12-09 10:22:36,Bug fix after merge ? strange,1,,1
+74f5679,2016-12-09 13:01:18,Bug correction in the trunk ? module missing and makemake update,1,,1
+c48de06,2016-12-09 15:06:42,bug fix in error message for optcell 7 8 9 - from Nick Pike,1,,1
+93ec2b1,2016-12-09 15:07:11,missing deallocate found by max2,0,,1
+d7d1d24,2016-12-10 00:41:29,Add vel_cell in history (datastructure and file),0,,0
+ff82173,2016-12-10 22:41:43,mrgddb: Don't issue a warning if ngfft meshes are equal,0,,0
+742972d,2016-12-10 22:58:01,Use refs from abiref,0,,0
+bea05d4,2016-12-11 14:29:56,Add output of Phonon bands,0,,0
+efe62d9,2016-12-11 15:13:16,Fix minor bug in xmgrace format,1,,1
+02b5a53,2016-12-11 15:25:21,abilint,0,,0
+362ff1e,2016-12-11 19:39:18,Saving work,0,,0
+b83807d,2016-12-12 01:11:56,Optimize size of history in gstateimg (and children),0,,0
+293788d,2016-12-12 18:40:49,Add prteband and prtphbands variables to print bands in Xmgracen/gnuplot format,0,,0
+286ca21,2016-12-12 19:35:07,Init ebands%eig with zero to avoid SIGFPE,0,,0
+9dad72d,2016-12-12 20:14:20,Update refs (extra line introduced for prtebands),0,,0
+776a27c,2016-12-12 21:27:59,This should fix the SIGFPE when nband_k != mband,1,,1
+b2afba8,2016-12-12 21:28:12,Merge branch 'eph' of gitlab.abinit.org:gmatteo/abinit into eph,0,,0
+69ebb82,2016-12-12 22:38:46,Fix wrong bantot passed to ebands_init in dfpt_loopert (prtgkk  ieig2rf),1,,1
+484acdf,2016-12-12 22:57:55,Try to workaround bug in ieig2rf (ebands_init),1,,1
+585b1ba,2016-12-13 08:47:17,Fix end marker. Modified:   45_geomoptim/m_lbfgs.F90,1,,1
+bb0f505,2016-12-13 09:01:45,Preparing to pull.,0,,0
+08d6262,2016-12-13 09:15:31,Merge remote-tracking branch 'trunk/develop' into develop,0,,0
+d4c04ca,2016-12-13 09:30:55,Updated the ElectronPhononCoupling package: Temperature-dependent spectral function. Better documentation.,0,,0
+f230330,2016-12-13 10:11:21,multibinit: bugs fixed for strain-coupling,1,,1
+e281a85,2016-12-13 10:11:30,Merge branch 'develop' of gitlab:amartin/abinit into develop,0,,0
+8ebc424,2016-12-13 11:06:59,Tune tolerances of new tests  add docs,0,,0
+b725656,2016-12-13 11:08:08,Bug in fold2bloch on my desktop and HPC,1,,1
+91778b3,2016-12-13 11:18:59,Long time no merge ?,0,,0
+22cf2fd,2016-12-13 14:03:08,Nonlinear : calls of getgh1c (and getghc) work in PAW,0,,0
+022957c,2016-12-13 14:37:17,* check libxc 2.2.3,0,,0
+bd1653b,2016-12-13 15:25:38,Merge remote-tracking branch biederj/mytrunk/74f5 into _biederj,0,,0
+920cfaf,2016-12-13 15:41:27,Merge branch 'rf2-fixes' into nonlinear,0,,0
+c7b2787,2016-12-13 16:17:33,Correct declaration of nhat in dfpt_scfcv (used only for ipert=natom+3 +4 (stress) ),0,,1
+8cabe37,2016-12-13 16:33:13,Introduce k3xc1 in the paw_an structure,0,,0
+7fd3092,2016-12-13 17:11:14,corrected average speed of sound from DOS routine  update ref files too,0,,0
+7af6345,2016-12-13 18:29:50,Cosmetic changes,0,,0
+c124545,2016-12-13 20:33:19,Saving work,0,,0
+541c571,2016-12-13 21:58:39,Merge remote-tracking branch antonius/develop/d4c0 into _antonius,0,,0
+862590000000.0,2016-12-14 08:48:51,Merge remote-tracking branch 'trunk/develop' into hotfix-dfpt-scfcv,0,,0
+69ae688,2016-12-14 10:40:31,Saving work,0,,0
+92bc67a,2016-12-14 16:21:15,Phonon velocities via IFC(R) and FT (dipdip and q=0 not treated yet),0,,0
+6ba0552,2016-12-14 16:42:02,Computation of k3xc1 (done in pawxc  asked by pawdenpot),0,,0
+205ad4e,2016-12-14 20:51:10,Merge remote-tracking branch mverstra/develop/7fd3 into _mverstra,0,,0
+cdcfc2f,2016-12-14 21:00:00,Update reference files  due to mverstra/develop/7fd3,0,,0
+99caebd,2016-12-15 06:02:04,Adjust tolerances for tests v5#88 90 93 94 95,0,,0
+e0317a0,2016-12-15 06:02:52,Merge branch '_mverstra' of gitlab:/trunk/abinit into _mverstra,0,,0
+c98d086,2016-12-15 08:14:49,Update tolerance. Modified:   t95.in,0,,0
+860e01a,2016-12-15 10:01:43,multibinit: bug fixed in stress tensor calculation + update ref,1,,1
+e260a81,2016-12-15 11:16:27,multibinit: change strain-coupling input variables,0,,0
+36cb9b7,2016-12-16 08:44:39,Merge remote-tracking branch baguetl/hotfix-dfpt-scfcv/8625 into _baguetl,0,,0
+c6f7097,2016-12-16 13:38:57,Merge remote-tracking branch amartin/develop/860e into _amartin,0,,0
+79aa402,2016-12-16 15:24:24,Update dmft tutorial and add cRPA tutorial.,0,,0
+f350031,2016-12-16 16:06:22,Correct links in cRPA tutorial,0,,1
+a2f464f,2016-12-16 17:28:31,Correct typos in tutorial cRPA,0,,0
+442daa5,2016-12-17 09:23:24,small typos,0,,0
+feb1bd3,2016-12-17 09:24:08,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,,0
+1a43d6d,2016-12-17 10:44:05,abirules,0,,0
+23a9a46,2016-12-17 11:03:14,Merge remote-tracking branch 'origin' into eph,0,,0
+f327fa6,2016-12-17 12:34:23,Comment out output of k-points in invars2. get_kpt_fullbz is not able to handle kptrlatt with shifts. Add v8[3] test,0,,0
+741ea17,2016-12-17 12:42:56,Add input file and ref,0,,0
+e0143e2,2016-12-17 12:45:09,Use ref from abiref,0,,0
+0b8690b,2016-12-17 19:13:34,Try to fix SIGFPE in [paral][t95_MPI10][np=10] @ abiref_gnu_5.3_openmpi,1,,1
+f40d1db,2016-12-17 19:14:04,Merge branch 'kpoints' of gitlab.abinit.org:gmatteo/abinit into kpoints,0,,0
+e36bdd5,2016-12-19 15:57:50,Merge branch 'develop' of gitlab:ygillet/abinit into abivars,0,,0
+976c7f8,2016-12-19 18:16:10,Apply make parents,0,,0
+6f029ba,2016-12-19 18:16:59,Apply make abiauty,0,,0
+db2c1b2,2016-12-19 18:21:36,Initialize the next release notes  install notes  features ...,0,,0
+5e8fc5f,2016-12-19 20:37:22,Merge remote-tracking branch ygillet/abivars/9d9b into _ygillet,0,,0
+7ba2d71,2016-12-19 20:40:16,Apply python abi_yml2html.py  using the new version from Yannick,0,,0

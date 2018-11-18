@@ -1,0 +1,1539 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+d13670df,2017-04-09 15:23:28,Merge pull request #484 from hainm/pytraj-build-box_17.0,0,,1
+dea5d065,2017-04-11 12:02:28,DRR - Cpptraj: Add hbond timing info,0,,0
+4d65a837,2017-04-11 16:12:01,DRR - Cpptraj: Test new hydrogen bond action that arranges things by site to avoid doubled calculation and hopefully make parallelization simpler.,0,,0
+df323da8,2017-04-12 08:29:31,DRR - Cpptraj: Add test hbond2 action,0,,0
+35705f9f,2017-04-12 10:30:23,DRR - Cpptraj: Finish initial solute-solute hbond calculation. Seems to be decent speedup so far but requires much more testing.,0,,0
+45262994,2017-04-12 11:07:41,DRR - Cpptraj: Ensure donor-only sites will be calculated.,0,,0
+78f12eb0,2017-04-12 11:55:15,DRR - Cpptraj: Add print code. MPI code added too but not yet working.,0,,0
+023e553c,2017-04-12 12:39:20,DRR - Cpptraj: Ensure UU hydrogen bonds in map are truely unique by using donor H atom - acceptor atom indices as key.,0,,0
+3005b652,2017-04-12 12:51:43,DRR - Cpptraj: Try to improve insertion speed into hbond map,0,,0
+2a613e99,2017-04-13 08:10:23,DRR - Cpptraj: Add solvent Hbond calc. Speedup in initial testing is about 3.4x so far.,0,,0
+f91a9936,2017-04-13 08:16:51,DRR - Cpptraj: HBmapType to UUmapType,0,,0
+f12ebf29,2017-04-13 08:35:38,DRR - Cpptraj: Ensure solvent is ignored when solute donor or acceptor mask not explicitly specified.,0,,0
+902943e4,2017-04-13 08:54:20,DRR - Cpptraj: Recognize ions,0,,0
+2248a308,2017-04-13 09:06:53,DRR - Cpptraj: Add solute/solvent hydrogen and ion count,0,,0
+86e1b0f6,2017-04-13 09:33:21,DRR - Cpptraj: Add bridging calc,0,,0
+3932a7a3,2017-04-13 09:44:56,DRR - Cpptraj: Properly init some variables. Fix spacing.,1,,0
+cde9c408,2017-04-13 09:51:58,DRR - Cpptraj: Remove unused class variable.,0,,0
+34c36b27,2017-04-13 10:04:24,DRR - Cpptraj: Add nointramol functionality. Slows down the code a little since it introduces an if statement in some inner loops but is still faster than original.,0,,0
+256bb2f7,2017-04-13 11:36:36,DRR - Cpptraj: Start fixing the MPI consolidation,1,,0
+75cf5468,2017-04-13 12:59:29,DRR - Cpptraj: Add sort option for data file write. This allows comparison between series data of the old and new versions of the hbond code since the order in which hbonds are searched for is slightly different,0,,0
+b5250ceb,2017-04-13 13:00:27,DRR - Cpptraj: Hide some debug info,0,,0
+88d886c1,2017-04-13 13:44:23,DRR - Cpptraj: Send solvent hbond data with solute hbonds. Properly finish off time series in parallel.,0,,0
+3028de85,2017-04-13 13:52:29,DRR - Cpptraj: Remove obsolete code. Ensure UU/UV time series data properly added to file if specified during MPI,0,,0
+34bbe56f,2017-04-13 15:18:40,DRR - Cpptraj: OpenMP-parallelize solute hbonds. OK speedup for now (~40% at 4 threads).,0,,0
+9e90a6ff,2017-04-13 15:23:09,DRR - Cpptraj: Properly handle nointramol variable in openmp,0,,0
+a59ea34b,2017-04-13 15:34:53,DRR - Cpptraj: Create AddUV function,0,,0
+484dae0b,2017-04-13 15:49:09,DRR - Cpptraj: Openmp parallelize the UV calc,0,,0
+0dd6010e,2017-04-13 16:00:41,DRR - Cpptraj: Simplify code a bit by using the numHB variable as mythread under openmp  can calculate numHB from the thread arrays,0,,0
+96b7fb88,2017-04-13 16:03:10,DRR - Cpptraj: Remove old code,0,,0
+83ef1cb1,2017-04-14 07:46:12,DRR - Cpptraj: Add specified solute mask tests.,0,,0
+645cc241,2017-04-14 08:01:39,DRR - Cpptraj: Add no angle cut test,0,,0
+f31b3255,2017-04-14 08:03:19,DRR - Cpptraj: Still calc angle even when cutoff is -1 so the average is still reported.,0,,0
+32a345c4,2017-04-16 15:52:03,DRR - Cpptraj: Add bridge class - not yet used. Will eventually be needed for tracking bridge time series.,0,,0
+6763a66a,2017-04-16 16:59:12,DRR - Cpptraj: When 'nointramol'  ignore solvent-solute bridges that bridge residues belonging to a single solute molecule. Partially addresses #392.,0,,0
+0e017fdf,2017-04-17 08:29:13,DRR - Cpptraj: Add missing test file.,0,,0
+45afa0be,2017-04-17 11:34:25,DRR - Cpptraj: Make use of new bridge class,0,,0
+ffa66092,2017-04-17 11:39:21,DRR - Cpptraj: Fix MPI compilation,1,,1
+271d5c89,2017-04-17 12:34:44,DRR - Cpptraj: For backwards compatibility store solute donor H/acceptor indices for determining the data set index. This has the added bonus of having these be consistent for OpenMP calcs.,0,,0
+094c2e2f,2017-04-17 12:46:01,DRR - Cpptraj: MPI data set creation use UU_Set_Idx,0,,0
+ce65438b,2017-04-17 12:49:11,DRR - Cpptraj: Data set ordering for hbond UU series data can now be made consistent for parallel runs,0,,0
+678906c5,2017-04-17 12:51:06,DRR - Cpptraj: Add save files for new test,0,,0
+d4def227,2017-04-17 12:56:54,DRR - Cpptraj: Use typedef,0,,0
+f937d648,2017-04-18 08:51:19,DRR - Cpptraj: Consolidate UU series set creation.,0,,0
+7861999a,2017-04-18 08:58:34,DRR - Cpptraj: Fix variable naming to better reflect what is actually stored.,1,,0
+968c1ffd,2017-04-18 09:04:50,DRR - Cpptraj: Start adding bridgebyatom option,0,,0
+10c440a0,2017-04-18 09:08:42,DRR - Cpptraj: Fix up output formatting.,1,,0
+5ed6b996,2017-04-18 09:39:26,DRR - Cpptraj: Finish bridgebyatom option.,0,,0
+401baaf6,2017-04-18 09:42:04,DRR - Cpptraj: Add but do not yet enable the bridge nointramol test,0,,0
+765761f7,2017-04-18 10:02:34,DRR - Cpptraj: Version bump. New hbond functionality is different from AmberTools release.,0,,0
+3d8b2f60,2017-04-18 10:05:28,DRR - Cpptraj: Remove old hbond code.,0,,0
+901bb1dd,2017-04-18 10:05:49,DRR - Cpptraj: Enable tests for new hbond code.,0,,0
+49ac0a04,2017-04-18 11:52:11,DRR - Cpptraj: Fix memory estimation.,1,,1
+e65e8ae7,2017-04-18 12:01:29,DRR - Cpptraj: Fix up code docs.,1,,0
+ac011edf,2017-04-18 12:26:03,DRR - Cpptraj: Split nointramol functionality into two loops again  results in noticable speedup for UU hbond calc,0,,0
+98f5100c,2017-04-18 12:50:30,DRR - Cpptraj: Hide timing info behind ifdef,0,,0
+dc211af8,2017-04-18 13:05:19,DRR - Cpptraj: Improve stability of bridge sort by comparing residues/atoms when # frames equal.,0,,0
+9f3758db,2017-04-18 14:16:22,Merge branch 'master' into hbond_improve_speed,0,,0
+81236bd9,2017-04-18 14:34:17,DRR - Cpptraj: Properly initialize class variable in constructors.,0,,0
+d30e0619,2017-04-18 18:37:42,Merge pull request #485 from drroe/hbond_improve_speed,0,,1
+827e3b8b,2017-04-25 09:15:17,Merge pull request #487 from drroe/pdb_ep_warning,0,,1
+25801214,2017-04-25 10:31:10,DRR - Cpptraj: Add warning when writing PDB and topology contains extra points but they are not being written.,0,,0
+8bff7116,2017-04-25 14:45:47,DRR - Cpptraj: Drastically reduce the memory usage in 'pairwise' when a small subset of atoms is selected.,0,,0
+e32d2533,2017-04-25 15:42:11,DRR - Cpptraj: Add printmode only|or|and options.,0,,0
+03e1fda6,2017-04-26 06:11:25,Merge pull request #488 from drroe/pairwise_mem,0,,1
+9eac1107,2017-04-27 14:02:06,Merge pull request #489 from drroe/curvefit_params,0,,1
+39c5956c,2017-04-27 14:38:14,DRR - Cpptraj: Store final fit parameters as data sets.,0,,0
+28e4caa5,2017-04-28 08:31:46,Merge pull request #490 from drroe/env_var,0,,1
+b0b530ce,2017-04-28 08:38:04,DRR - Cpptraj: Use MPICC/MPICXX/MPIF90 environment variables if they are set.,0,,0
+58b5b748,2017-04-28 08:40:15,DRR - Cpptraj: Fix capitalization,1,,0
+d2bb9a7b,2017-04-28 08:45:57,DRR - Cpptraj: Add MPI env. vars to help text. When MKL specified do not skip LAPACK/BLAS check.,0,,0
+551ea97e,2017-04-28 08:49:20,DRR - Cpptraj: Only write SHADER_MODEL if it has been set.,0,,0
+c29045de,2017-04-28 09:12:15,DRR - Cpptraj: When '--skip-checks' specified we are probably in AmberTools so no resource file needed.,0,,0
+744f2032,2017-04-28 09:15:40,DRR - Cpptraj: Remove some double brackets.,0,,0
+ed11f2e0,2017-04-28 10:34:33,Merge branch 'master' into ti_integrate,0,,0
+59dd0a02,2017-04-28 14:09:12,DRR - Cpptraj: Add 'separate' option to 'readdata' to allow multiple files to end up in separate data sets.,0,,0
+85336be2,2017-04-28 14:21:45,DRR - Cpptraj: Fix small issue where 'printdata' would try to use keywords as data sets.,1,,1
+4f3f8a3e,2017-04-28 14:39:19,DRR - Cpptraj: Add some debug info. Fix TI output label,1,,1
+8fd28375,2017-04-28 14:46:10,DRR - Cpptraj: Fix up help and add more output.,1,,0
+e5f7d7e8,2017-05-01 09:42:23,DRR - Cpptraj: Add simple bootstrap error analysis class,1,,0
+5f63fe55,2017-05-01 09:52:36,DRR - Cpptraj: Test adding the bootstrap analysis.,0,,0
+76b38fde,2017-05-01 11:24:02,DRR - Cpptraj: Clean up output  add bootstrap options.,0,,0
+fc20d04e,2017-05-01 12:15:50,DRR - Cpptraj: Make bootstrap keywords shorter. Save bootstrap values in data sets and add option to write to file.,0,,0
+68391f09,2017-05-02 11:50:34,DRR - Cpptraj: Allow width/precision to be changed in 'calc' command.,0,,0
+8b624fb6,2017-05-02 12:13:46,DRR - Cpptraj: Add format options for calc,0,,0
+f93e720a,2017-05-04 08:59:40,DRR - Cpptraj: Fix comment,1,,0
+22c2ba4a,2017-05-04 09:02:27,Merge pull request #491 from drroe/molinfo_short,0,,1
+32647093,2017-05-04 10:31:50,DRR - Cpptraj: Add 'short' keyword to 'molinfo' command for printing molecule counts.,0,,0
+22f26372,2017-05-04 10:32:30,DRR - Cpptraj: Add 'molinfo short' test,0,,0
+0ce63699,2017-05-04 11:35:22,Merge branch 'master' into ti_integrate,0,,0
+832fc1b2,2017-05-04 14:56:09,DRR - Cpptraj: Add TI analysis test. Bootstrap test not yet working  need to be able to set random seeds.,0,,0
+cc4e03f4,2017-05-05 06:38:38,DRR - Cpptraj: Properly allocate reference trajectory frame for '2drms'. Prevents segfaults with certain trajectories.,0,,0
+f44b5406,2017-05-05 08:15:33,Merge pull request #492 from drroe/fix_2drms,0,,1
+418e59a1,2017-05-05 09:50:20,DRR - Cpptraj: Prepare for different ways to calculate avg to check convergence,0,,0
+5f84237f,2017-05-05 11:14:07,DRR - Cpptraj: Ensure that improper parameters are properly stripped. Also ensure LJ 1-4 terms are stripped/updated so they correspond with the new atom type indices.,0,,0
+c0f6f140,2017-05-05 12:22:54,DRR - Cpptraj: Correctly handle CHARMM FF description (%FLAG FORCE_FIELD_TYPE),0,,0
+c611dafa,2017-05-05 12:38:56,DRR - Cpptraj: Strip Urey-Bradley parameters,0,,0
+57dde61f,2017-05-05 12:40:48,DRR - Cpptraj: Fix comments,1,,0
+91004f7e,2017-05-05 12:51:57,DRR - Cpptraj: Add check for bad FORCE_FIELD_TYPE section,0,,0
+af5d6d66,2017-05-05 13:04:34,Merge pull request #494 from drroe/fix_cmap,0,,1
+52dc5f5e,2017-05-05 13:05:05,DRR - Cpptraj: Change missing CMAP grid info to warning  not error.,1,,0
+cac19d3b,2017-05-05 13:28:16,DRR - Cpptraj: Add CHAMBER strip test,0,,0
+cddc9779,2017-05-05 14:11:43,Merge branch 'master' into fix_cmap,0,,0
+52319cba,2017-05-05 15:18:20,Merge branch 'master' into ti_integrate,0,,0
+8c2acb0a,2017-05-10 14:43:50,DRR - Cpptraj: Add option to set bootstrap seed. Begin adding increment average option.,0,,0
+00ea924a,2017-05-10 15:28:35,DRR - Cpptraj: Split off nskip functionality  add straight average functionality.,0,,0
+f3da809e,2017-05-10 16:07:50,DRR - Cpptraj: Begin adding incremental average code.,0,,0
+2e5d0630,2017-05-11 11:25:15,DRR - Cpptraj: Fix so interval is correct size.,1,,1
+da5fca5e,2017-05-11 11:28:37,DRR - Cpptraj: Change variable name to better reflect what it is,0,,0
+76d60c29,2017-05-11 11:38:25,DRR - Cpptraj: Add increment curve data sets,0,,0
+8f7b85fb,2017-05-11 13:44:43,DRR - Cpptraj: Finish adding increment calc,0,,0
+0f0d97c5,2017-05-11 14:15:26,DRR - Cpptraj: Start adding bootstrap averaging,0,,0
+ac3e487b,2017-05-11 14:59:26,DRR - Cpptraj: For bootstrap use the average value of DA over all resamples. Report SD as well.,0,,0
+1d5ae59b,2017-05-11 15:07:51,DRR - Cpptraj: Remove separate bootstrap  no longer needed.,0,,0
+165da7ed,2017-05-11 15:14:21,DRR - Cpptraj: Hide debug info,0,,0
+b8d1643a,2017-05-11 15:14:39,DRR - Cpptraj: Test straight average and bootstrap results,0,,0
+291e3834,2017-05-11 15:15:34,DRR - Cpptraj: Add increment test,0,,0
+0c0edce8,2017-05-11 15:24:16,DRR - Cpptraj: Add SD data set for bootstrap  do not print x column for straight average/bootstrap,0,,0
+2d436d85,2017-05-11 15:29:38,DRR - Cpptraj: Use DOUBLE where only single values calcd. Update bootstrap test for SD.,0,,0
+54ec215c,2017-05-11 15:37:55,DRR - Cpptraj: Choose bootstrap by number of samples instead of number of points. Allow points to be automatically chosen.,0,,0
+a8f243b3,2017-05-11 15:48:00,DRR - Cpptraj: Add option for choosing bootstrap factor,0,,0
+e829d424,2017-05-12 12:27:02,DRR - Cpptraj: Enable TI test.,0,,0
+31d43307,2017-05-12 12:32:56,DRR - Cpptraj: Fix up help. No longer needs to be hidden.,1,,0
+4889d7a4,2017-05-15 06:10:27,Merge pull request #495 from drroe/ti_integrate,0,,1
+27c8c832,2017-05-22 12:00:23,DRR - Cpptraj: More descriptive error message.,1,,0
+ff5d60dc,2017-05-22 12:27:49,DRR - Cpptraj: Better error detection when reading Amber mdout files.,1,,0
+7f446efe,2017-05-24 11:27:05,DRR - Cpptraj: Add 'change' command. Just changes residue names right now.,0,,0
+c0f9de85,2017-05-24 11:33:42,DRR - Cpptraj: Slight syntax change,0,,0
+eb801ca9,2017-05-24 11:43:37,DRR - Cpptraj: Add ability to change atom names,0,,0
+0b36d355,2017-05-24 11:49:52,DRR - Cpptraj: When pdbatom specified change ILE@CD (charmm) to CD1,0,,0
+dd02f3ad,2017-05-31 08:59:15,DRR - Cpptraj: Allow # closest waters to be >= number of solvent molecules  allows closest to be used to track ion distances etc.,0,,0
+56c8f538,2017-05-31 09:06:54,DRR - Cpptraj: For PDBV3 recognize CHARMM histidine names,0,,0
+a59c087c,2017-05-31 09:15:24,DRR - Cpptraj: Add some help text about pairwise 'cut' default options.,0,,0
+d69e6b5d,2017-06-01 06:38:53,Merge pull request #496 from drroe/psf,0,,1
+9f2c0017,2017-06-02 10:11:57,DRR - Cpptraj: Add TI raw curve data set to output file when performing straight averaging.,0,,0
+50d5e3e8,2017-06-02 15:12:28,DRR - Cpptraj: Ensure the 'prec' data file arg affects sets already in the data file.,0,,0
+f2ebe63a,2017-06-06 10:23:20,DRR - Cpptraj: Add option that allows manual setting of x column width/precision,0,,0
+9534a2d0,2017-06-06 10:26:35,DRR - Cpptraj: Make standard data write non square 2d output use xprec,0,,0
+bb633e63,2017-06-06 14:18:14,DRR - Cpptraj: Add 'outformat' option to 'dataset' command to change data set output format type for double precision sets.,0,,0
+8ea958ef,2017-06-07 11:18:53,DRR - Cpptraj: Add 'xfmt' keyword for DataFile,0,,0
+49647bb4,2017-06-07 12:06:13,DRR - Cpptraj: For standard data file output ensure previously set options are not overwritten,0,,0
+2e0dd7e1,2017-06-08 09:10:06,DRR - Cpptraj: Make X column format changes separate from width/precision changes.,0,,0
+21085562,2017-06-08 09:43:43,DRR - Cpptraj: Allow datafile commands to be passed to all data files as well,0,,0
+db249b0e,2017-06-08 10:45:56,DRR - Cpptraj: Change TI curve X dim label to 'Lambda',0,,0
+0b2ce860,2017-06-08 12:25:43,Merge pull request #497 from drroe/fix_ti,0,,1
+e8557040,2017-06-08 13:39:28,DRR - Cpptraj: Use of XcolPrec() in 3d write was backwards.,0,,0
+8e318dc2,2017-06-08 13:45:30,"DRR - Cpptraj: TI curve label is now ""Lambda""",0,,0
+fc45d9b9,2017-06-08 14:24:54,DRR - Cpptraj: Start CHARMM REPD replica log reader,0,,0
+3cadf836,2017-06-08 14:26:20,Merge branch 'master' into charmm_repd_logs,0,,0
+0992dd8b,2017-06-08 15:51:29,DRR - Cpptraj: Start reading temperature replica logs,0,,0
+05ba80a5,2017-06-12 11:02:12,DRR - Cpptraj: Finish charmm replica log read  consolidate common setup between Amber and Charmm replica logs. Needs more work since charmm replica indices start from 0.,0,,0
+5a580e4c,2017-06-12 11:13:02,DRR - Cpptraj: Improve documenation,0,,0
+206c785c,2017-06-12 11:17:07,DRR - Cpptraj: Add some error checking for short replica logs,1,,0
+732bed11,2017-06-12 11:34:53,DRR - Cpptraj: More code docs.,0,,0
+fc786dcd,2017-06-12 11:49:29,DRR - Cpptraj: Add replica index offset and wrap status to replica log data set. Currently in Amber replicas start from 1 and wrap  whereas in Charmm replicas start from 0 and do not wrap.,0,,0
+be1c2d7c,2017-06-12 12:18:19,DRR - Cpptraj: Try to incorporate replica index offset,0,,0
+b0c2a1cc,2017-06-12 12:49:56,DRR - Cpptraj: Factor in offset when determining exchange direction. More descriptive output for debug.,0,,0
+0a8c209f,2017-06-13 13:32:10,DRR - Cpptraj: Add hash before DIMENSION to aid in plotting,0,,0
+60f9a9d2,2017-06-13 13:47:45,DRR - Cpptraj: Hide some debug info,0,,0
+3f3dd76b,2017-06-14 12:13:05,DRR - Cpptraj: Fix replica log path  add some replica tag checks  make reading exchange more robust.,1,,0
+b7c49a46,2017-06-14 15:46:31,DRR - Cpptraj: Correctly detect HREMD info,0,,0
+fbbaa174,2017-06-15 13:01:47,Merge pull request #498 from drroe/ti_setlength,0,,1
+5b789baa,2017-06-15 14:21:15,DRR - Cpptraj: Code docs,0,,0
+a0c3f858,2017-06-15 14:38:31,DRR - Cpptraj: Make TI 'increment' analysis more robust to DV/DL sets of different sizes (from e.g. crashed run(s)),0,,0
+e82ad4cd,2017-06-15 15:02:20,Merge branch 'master' into charmm_repd_logs,0,,0
+b858452e,2017-06-16 09:52:29,DRR - Cpptraj: Initial incarnation of Charmm restart format parser.,0,,0
+676df450,2017-06-16 10:03:57,DRR - Cpptraj: Enable charmm restart parser for testing,0,,0
+a2398c2f,2017-06-16 10:04:09,DRR - Cpptraj: Make tinker file detection more robust,0,,0
+884cb4fb,2017-06-16 10:06:25,DRR - Cpptraj: Fix charmm restart detection,1,,1
+7c0ac939,2017-06-16 13:03:32,DRR - Cpptraj: Add access to IsOpen function,0,,0
+37f37670,2017-06-16 13:19:36,DRR - Cpptraj: Read in title and shape matrix,0,,0
+95bd6d3f,2017-06-16 13:31:50,DRR - Cpptraj: Move ShapeToUcell to Box so Traj_CharmmRestart can use it,0,,0
+d0d32c46,2017-06-19 10:26:10,DRR - Cpptraj: Finish up coords/velocity read.,0,,0
+af77c4d4,2017-06-19 12:28:42,DRR - Cpptraj: Hide some debug info,0,,0
+08fbcd32,2017-06-19 15:11:02,DRR - Cpptraj: Fix potential segfault in vectormath when calc type not specified,1,,1
+ea8b76f4,2017-06-19 16:17:25,DRR - Cpptraj: Begin adding support for adding detection and processing of charmm replica ensembles,0,,0
+842feb29,2017-06-20 09:19:15,DRR - Cpptraj: In calc only check 'format' arg if it was specified,0,,0
+5b9517f8,2017-06-20 09:30:33,DRR - Cpptraj: Pass debug level to REMDtraj_ in EnsembleIn_Multi,0,,0
+9ad92e0b,2017-06-20 09:36:08,DRR - Cpptraj: Fix version string length,1,,1
+a1f6e710,2017-06-20 12:11:34,DRR - Cpptraj: Make 'writedata' respect ensemble,0,,0
+c689a4ea,2017-06-21 15:35:25,DRR - Cpptraj: Track and use segment IDs so that when reading PSFs changing residue is correctly recognized when 2 adjacent residues from different segments have the same residue number. Also increase the size of char buffers to read extended PSFs.,0,,0
+70e94f0c,2017-06-22 09:30:58,DRR - Cpptraj: When appending to replica logs set coordinate indices with final indices from existing replica log. In charmm replica logs use the tag after exchange since this is what will correspond to restarts.,0,,0
+f1220f65,2017-06-22 16:23:10,DRR - Cpptraj: Add 'multi' keyword to 'filter' action for filtering multiple data sets separately.,0,,0
+8864e35b,2017-06-23 08:41:21,DRR - Cpptraj: Improve code documentation.,0,,0
+4364e7a6,2017-06-23 08:50:41,DRR - Cpptraj: datafilter multi test,0,,0
+9fd42703,2017-06-23 09:00:19,DRR - Cpptraj: When writing x column label correctly take into account x col width when it has been explicitly set.,0,,0
+0d17adc2,2017-06-23 09:03:51,DRR - Cpptraj: Add x column precision/format test.,0,,0
+22538120,2017-06-23 09:13:51,DRR - Cpptraj: Clean test file,0,,0
+c5775bb5,2017-06-23 09:17:01,DRR - Cpptraj: Add charmm restart read test,0,,0
+47b6ae3d,2017-06-23 09:35:27,DRR - Cpptraj: Initial remlog test,0,,0
+2bbdb293,2017-06-23 09:38:19,DRR - Cpptraj: Add MREMD log read test,0,,0
+bc37de4a,2017-06-23 09:40:54,DRR - Cpptraj: Add pH replica log read test,0,,0
+b911f59a,2017-06-23 09:42:43,DRR - Cpptraj: Add exchange acceptance test,0,,0
+9518b4e8,2017-06-23 09:44:46,DRR - Cpptraj: Test printing individual round trips.,0,,0
+7b50c784,2017-06-23 09:47:50,DRR - Cpptraj: Add round trip data to save,0,,0
+84aaaa95,2017-06-23 09:55:13,DRR - Cpptraj: Add charmm replica log read test,0,,0
+9f95d690,2017-06-23 11:09:29,DRR - Cpptraj: Fix replica offsets in output. Improve help text.,1,,1
+83d0c5f0,2017-06-23 11:34:20,DRR - Cpptraj: Add 'edata' option to 'remlog' for extracting PE from replica logs into data sets,0,,0
+a0e4d0cb,2017-06-23 11:36:48,DRR - Cpptraj: Add remlog edata test,0,,0
+0896134c,2017-06-23 12:11:17,DRR - Cpptraj: Fix includes.,1,,1
+38357865,2017-06-23 12:12:38,DRR - Cpptraj: Remove extra include,0,,0
+088dbd51,2017-06-23 12:26:32,DRR - Cpptraj: Fix help.,1,,0
+dc528aeb,2017-06-23 13:26:57,DRR - Cpptraj: Initial incarnation of charmm fast replica log read,0,,0
+3dff5185,2017-06-23 14:42:31,DRR - Cpptraj: Finish up fast replica exchange log read,0,,0
+82224446,2017-06-23 14:56:30,DRR - Cpptraj: Remove debug issue. Recognize all replica data sets.,0,,0
+a18023bc,2017-06-23 15:29:28,Merge pull request #501 from drroe/charmm_repd_logs,0,,1
+c15bab21,2017-06-23 15:49:43,DRR - Cpptraj: Use '-qopenmp' flag for Intel compilers V16 and greater. Better cleanup of files left behind by configure. Addresses #500.,0,,0
+1b952dea,2017-06-24 09:19:53,Merge pull request #502 from drroe/intel_omp,0,,1
+892da09c,2017-06-26 15:36:10,DRR - Cpptraj: Test new unwrap style action,0,,0
+ab9066cd,2017-06-26 15:40:58,DRR - Cpptraj: Enable unimage,0,,0
+5e0ef3bf,2017-06-26 16:03:31,DRR - Cpptraj: Add some debug info.,0,,0
+28a509fd,2017-06-27 11:43:33,DRR - Cpptraj: Change focus of 'unimage' - now specifically looks for molecules which have been split up due to imaging and tries to fix it. Seems to work well so far. Needs polish.,1,,0
+b58478f6,2017-06-27 11:47:02,DRR - Cpptraj: Change action name to better reflect the function,0,,0
+8e7f4ff4,2017-06-27 12:00:07,DRR - Cpptraj: fiximagedbonds test,0,,0
+6e0be05b,2017-06-27 12:28:06,DRR - Cpptraj: Add non-orthogonal fiximagedbonds test,0,,0
+d1c18c30,2017-06-27 12:31:00,DRR - Cpptraj: Change nonortho test so it doesnt use coords data sets  update save for corresponding change in roundoff.,0,,0
+70d2a8a4,2017-06-27 13:31:22,DRR - Cpptraj: Incorporate mask selection,0,,0
+c5844627,2017-06-27 13:33:05,DRR - Cpptraj: Move order of strip action so mask can be tested,0,,0
+6e86683e,2017-06-27 13:35:37,DRR - Cpptraj: Remove redundant var,0,,0
+747a424d,2017-06-27 13:39:16,DRR - Cpptraj: Hide debug info and improve output messages. Add help text.,0,,0
+eb9aa5c4,2017-06-27 13:43:17,DRR - Cpptraj: Enable fiximagedbonds test,0,,0
+5a4ccf21,2017-06-28 08:31:04,Merge pull request #504 from drroe/new_unwrap,0,,1
+d76dcdd5,2017-06-28 10:40:52,DRR - Cpptraj: Add missing newline,0,,0
+07443665,2017-06-28 10:42:38,DRR - Cpptraj: Check if pucker data set already present from previous setup and use that instead of trying to add a new one (which will fail).,1,,0
+4168f652,2017-06-28 10:45:31,DRR - Cpptraj: Only increment idx for NA bases. Improve error message.,1,,0
+cec6be61,2017-06-28 11:20:08,Merge pull request #505 from drroe/fix_nastruct_pucker,0,,1
+4d927e44,2017-06-29 11:14:25,DRR - Cpptraj: Start major refactoring of surf code to address issue #493,0,,0
+031953fd,2017-06-30 12:48:44,DRR - Cpptraj: Refactor bookkeeping in 'surf' so that correct SA is calculated for a mask even when solute is not the first part of the system. OpenMP still needs testing.,0,,0
+f1d4bb8b,2017-06-30 12:56:00,DRR - Cpptraj: Add 'solutemask' keyword.,0,,0
+ab089343,2017-06-30 12:59:18,DRR - Cpptraj: Avoid segfault  VDW_ only corresponds to heavy atoms.,0,,0
+f0f33510,2017-06-30 13:07:27,DRR - Cpptraj: Align numbers  make a bit easier to read.,0,,0
+bacb77ee,2017-06-30 13:22:28,DRR - Cpptraj: Hide debug info. Report number of threads in openmp.,0,,0
+a5e176ab,2017-06-30 13:32:34,DRR - Cpptraj: Allow vdw offset and neighbor cut to be changed  but warn in help text that most times they shouldnt.,0,,0
+8e1f5755,2017-07-03 08:43:32,Merge pull request #506 from drroe/fix_surf,0,,1
+a58d05a5,2017-07-03 10:24:20,"DRR - Cpptraj: Save internal base ""strand"" number.",0,,0
+bebd9897,2017-07-03 14:24:19,DRR - Cpptraj: Add option to nastruct for naive guess of which bases should be paired (consecutive molecules assuming 5' to 3' ordering).,0,,0
+586d125c,2017-07-03 14:31:48,DRR - Cpptraj: Properly protect debug info. Restore variable that was accidentally changed to a constant.,0,,0
+5b5ba61b,2017-07-03 14:34:41,DRR - Cpptraj: Consolidate functionality to add base pairs,0,,0
+b956884d,2017-07-03 14:39:16,DRR - Cpptraj: Cleanup comments and spacing,0,,0
+0448a0f2,2017-07-03 15:11:36,DRR - Cpptraj: Update help. Add bptype option for specifying base pairing type when guessing base pairing. Add first option for explicitly requesting first frame (still the default). More informative output during setup for guessbp.,0,,0
+b7a9a321,2017-07-03 15:36:56,Merge pull request #507 from drroe/nastruct_spec_bp,0,,1
+cabcdae2,2017-07-03 15:37:15,DRR - Cpptraj: Start adding more distance options.,0,,0
+d6d06117,2017-07-03 15:37:56,Merge branch 'master' into dist_to_plane,0,,0
+c05bf890,2017-07-03 16:09:55,DRR - Cpptraj: Add distance reference and plane options. Reference seems to work well  plane still needs to be tested.,0,,0
+1173660b,2017-07-03 16:10:44,DRR - Cpptraj: Distance reference test.,0,,0
+73722aae,2017-07-05 09:06:13,DRR - Cpptraj: Add function headers,0,,0
+52b494de,2017-07-05 09:45:22,DRR - Cpptraj: Add 'vectorcoord' subcommand to 'dataset' command for extracting vector components into separate data sets.,0,,0
+d23a7fa4,2017-07-05 09:55:21,DRR - Cpptraj: Add dataset vectorcoord test,0,,0
+8500132f,2017-07-05 10:33:29,DRR - Cpptraj: Replace distance plane with point.,0,,0
+cbc0992e,2017-07-05 10:33:49,DRR - Cpptraj: Add more distance tests,0,,0
+79851555,2017-07-05 10:35:18,DRR - Cpptraj: Enable distance tests,0,,0
+3bcfe7a5,2017-07-05 10:38:11,DRR - Cpptraj: Add nastruct guessbp test,0,,0
+fe24e510,2017-07-05 11:57:31,Merge pull request #510 from drroe/dist_to_plane,0,,1
+a0b020dd,2017-07-06 09:01:19,DRR - Cpptraj: Add 'density' keyword to 'volume' action for calculating system density instead.,0,,0
+5b1846c1,2017-07-06 09:03:39,DRR - Cpptraj: Add tests for volume/density,0,,0
+3c9b98e5,2017-07-06 09:08:40,DRR - Cpptraj: Update dependencies.,0,,0
+5b008448,2017-07-06 10:11:11,DRR - Cpptraj: Add prototype RATTLE routine for modifying set velocities. Not yet functional,0,,0
+3f13b1eb,2017-07-06 10:25:07,Merge pull request #511 from drroe/vol_density,0,,1
+2902c3be,2017-07-06 10:27:26,DRR - Cpptraj: Start adding keywords for enabling use of constraints.,0,,0
+6cc8e108,2017-07-06 10:28:26,Merge branch 'master' into velocity_rattle,0,,0
+14527f24,2017-07-06 10:53:15,DRR - Cpptraj: Refactor so that bonds are selected in Setup,0,,0
+f604092d,2017-07-06 11:03:47,DRR - Cpptraj: Woops  not enough coffee - was using force constant instead of bond eq. length...,0,,0
+c8c52285,2017-07-06 14:03:10,DRR - Cpptraj: Make Frame::SetCoordinatesByMap work for force as well,0,,0
+e15b79be,2017-07-06 15:08:52,DRR - Cpptraj: Split constraint functionality into separate class.,0,,0
+3b8c0cc2,2017-07-06 15:22:05,DRR - Cpptraj: Convert temperature action to use Constraints. Results need careful validation since I think I've fixed the deg. of freedom calc.,1,,0
+c3e2a1ba,2017-07-06 15:50:15,DRR - Cpptraj: Fix test output for corrected degrees of freedom calc,1,,1
+3cb0b506,2017-07-07 12:21:53,DRR - Cpptraj: Add setvelocity test,0,,0
+ac87632e,2017-07-07 12:23:38,DRR - Cpptraj: Fix up help text and output.,1,,0
+7fb477ae,2017-07-07 13:02:38,DRR - Cpptraj: Add code for calculating momentum vector,0,,0
+2e55ba5b,2017-07-07 13:15:39,DRR - Cpptraj: Add option to setvelocity to zero momentum,0,,0
+af05c05c,2017-07-07 13:32:15,DRR - Cpptraj: Add vector momentum test,0,,0
+e65a9c1c,2017-07-07 13:37:20,DRR - Cpptraj: Add option 'modify' to just modify existing velocities,0,,0
+24c412e7,2017-07-07 13:37:54,DRR - Cpptraj: Test 'zeromomentum' and 'modify',0,,0
+c54650e0,2017-07-07 15:14:18,DRR - Cpptraj: Add total system density to 'density' command when no masks are specified.,0,,0
+68da233d,2017-07-07 15:18:21,DRR - Cpptraj: Update help,0,,0
+9f19fc25,2017-07-07 15:28:58,DRR - Cpptraj: Remove 'density' from 'volume',0,,0
+de625138,2017-07-07 15:44:19,DRR - Cpptraj: Calculate total system mass in Setup(),0,,0
+b2f9e3f9,2017-07-07 15:45:56,DRR - Cpptraj: Update spline test output  uses the save for temperature as input,0,,0
+70bb5957,2017-07-07 16:05:14,DRR - Cpptraj: Add missing test save,0,,0
+bda1c50a,2017-07-10 08:07:51,Merge pull request #513 from drroe/velocity_rattle,0,,1
+c1f8d5df,2017-07-10 13:05:30,DRR - Cpptraj: Start trying to debug these maddening hangs on appveyor.,0,,0
+360e5a54,2017-07-10 13:29:23,DRR - Cpptraj: More debug info,0,,0
+04e41db7,2017-07-10 14:35:36,DRR - Cpptraj: Issue seems to be in CheckDefines...,0,,0
+8b9ee554,2017-07-10 15:45:44,DRR - Cpptraj: Try to change the way defines are detected to avoid appveyor hang,0,,0
+a7b8592b,2017-07-10 16:18:02,DRR - Cpptraj: Remove debug info,0,,0
+6ebf852c,2017-07-11 08:07:08,"DRR - Cpptraj: More debug info  this time it hung on ""Parallel tests."" after the title was printed.",0,,0
+d8df5f5a,2017-07-11 10:16:46,DRR - Cpptraj: Clean up the autoimage code a bit. Do not tie anchor mask to a specific molecule  if it pertains to one molecule skip that molecule in fixed  but if it spans molecules consider those molecules 'fixed' as well (not sure how useful this is but it doesn't break anything). This means SetupAtomRanges does not need multiple interfaces  just make it equivalent to strict=false (since with autoimage we never want to image just part of a molecule). Improve code docs and remove old code. Simplify some of the vector math. Clean up iterators. Remove unneeded class vars.,1,,0
+afb8a4d1,2017-07-11 10:30:30,DRR - Cpptraj: Hide debug info.,0,,0
+8f416054,2017-07-11 10:42:32,DRR - Cpptraj: Fix off by one in debug message,1,,1
+6f5976ba,2017-07-11 10:59:07,DRR - Cpptraj: More informative debug,0,,0
+89f30316,2017-07-11 12:21:43,DRR  - Cpptraj: Test out new autoimage procedure. Instead of relying on whether something is out of the box or not  always test whether imaging would bring the molecule closer or not. In addition use previous fixed point as anchor for fixed molecules beyond the first.,1,,0
+7c41ca2d,2017-07-11 14:20:07,DRR - Cpptraj: Test code that looks through multiple cells.,0,,0
+6717613c,2017-07-11 15:13:00,DRR - Cpptraj: Narrow down target translation,0,,0
+258ad769,2017-07-11 16:00:33,DRR - Cpptraj: Make 'moveanchor' option to activate new code  default still original code.,0,,0
+53cb30ab,2017-07-12 08:03:27,Merge pull request #515 from drroe/autoimage_hexamer,0,,1
+420c65ee,2017-07-12 08:04:21,Merge branch 'master' into appveyor_hang,0,,0
+095b89ad,2017-07-12 09:38:50,DRR - Cpptraj: Automatically search for replica logs if nrep not specified,0,,0
+3dc2091f,2017-07-12 09:39:09,DRR - Cpptraj: Properly incorporate offset,0,,0
+29170194,2017-07-12 09:45:48,DRR - Cpptraj: Update help,0,,0
+b48e63e8,2017-07-12 09:53:29,DRR - Cpptraj: Enable tests that should be run,0,,0
+b6a16795,2017-07-12 10:31:03,DRR - Cpptraj: Add 'crdidx' arg to charmm replog data read  primarily for use with ensemble sorting,0,,0
+2419c4b3,2017-07-12 11:50:50,DRR - Cpptraj: Since amber replica/coord indices start from 1  coord index of 0 is error for crdidx,1,,0
+29383473,2017-07-12 11:58:03,DRR - Cpptraj: Convert timestep to ps,0,,0
+2532f4db,2017-07-12 13:54:21,DRR - Cpptraj: Use tag prior to exchange since this is the coord idx that corresponds with trajectory frame (traj write happens before exchange).,0,,0
+252366d2,2017-07-13 09:29:45,DRR - Cpptraj: Modify DataSet_RemLog to store restart coordinate indices. This is necessary for proper appending to existing replica log data sets when final restarts may be written after the final exchange  which is the case with e.g. CHARMM. Make EnsembleIn_Multi use this information.,0,,0
+2363ee58,2017-07-13 09:44:32,DRR - Cpptraj: Make DataIO_RemLog use IdxArray and RestartCrdIndices from DataSet_RemLog.,0,,0
+315eddff,2017-07-13 09:58:57,DRR - Cpptraj: Improve code docs.,0,,0
+3f9da505,2017-07-14 13:16:14,Merge pull request #516 from drroe/charmm_replog_search,0,,1
+33e75cb5,2017-07-14 16:06:35,DRR - Cpptraj: Start testing new lipid order action with automatic chain determination,0,,0
+443c1635,2017-07-17 10:14:09,DRR - Cpptraj: Group all carbons with the same name  store carbon and any bonded hydrogen indices,0,,0
+9ddb9ab8,2017-07-17 15:56:43,DRR - Cpptraj: Refactor so that all similar sites are grouped. Hydrogens accessed via array now. Results consistent with lipidorder so far except for sign.,0,,0
+d06b6a78,2017-07-20 09:56:14,DRR - Cpptraj: Fix potential segfault in hbond when no atoms selected.,1,,1
+80c2f67f,2017-07-20 10:08:35,DRR - Cpptraj: If nothing selected for hbond  print warning and skip.,0,,0
+32b58f06,2017-07-20 10:40:30,Merge pull request #518 from drroe/fix_hbond,0,,1
+5ee6b6d0,2017-07-20 16:09:35,Merge branch 'master' into appveyor_hang,0,,0
+7796842b,2017-07-20 16:09:47,Merge branch 'master' into newlipidorder,0,,0
+4022621f,2017-07-21 18:54:14,Add CMake buildfiles,0,,0
+3d94ba44,2017-07-24 10:19:49,DRR - Cpptraj: Hide some debug info. Improve code docs.,0,,0
+1a05b890,2017-07-24 12:06:10,DRR - Cpptraj: Ensure carbons are sorted by their relative positions in the chain,0,,0
+e15a2bce,2017-07-24 12:06:49,DRR - Cpptraj: For checking the new action - will not be in final release,0,,0
+0ebdbafe,2017-07-25 14:00:13,Add cmake as a submodule,0,,0
+a5f5d5a3,2017-07-25 14:53:53,DRR - Cpptraj: Major refactor - seek to separate out individual sites from data collection  should be more amenable to openmp parallelization down the road  although a bit more bookkeeping. Also refactor recursive subroutine via stack variable.,0,,0
+952a5836,2017-07-25 21:54:34,Fix missing <algorithm> includes with Visual c++,1,,0
+3c0c5a19,2017-07-25 21:55:09,Add packaging support with CMake,0,,0
+b9bb6f94,2017-07-26 10:06:07,Merge pull request #519 from multiplemonomials/master,0,,1
+10a8e6ae,2017-07-26 10:15:51,DRR - Cpptraj: Fix dos line endings,1,,1
+da489711,2017-07-26 10:17:34,DRR - Cpptraj: Add EOL,0,,0
+ca0e9471,2017-07-26 10:19:34,DRR - Cpptraj: Get rid of extra char in include,0,,0
+ec92881f,2017-07-26 12:00:45,Merge pull request #521 from drroe/fixdos,0,,1
+f3ce3feb,2017-07-26 13:50:43,Merge branch 'master' into newlipidorder,0,,0
+e8b66cf3,2017-07-27 08:17:36,DRR - Cpptraj: Clear sites every time setup is called. General clean up and improve documentation.,0,,0
+fdfb2db7,2017-07-27 08:58:16,DRR - Cpptraj: Write values to separate data sets.,0,,0
+2837784f,2017-07-27 09:01:48,DRR - Cpptraj: Clean up output format and print number hydrogens associated with each carbon in chains,0,,0
+b58db364,2017-07-27 09:17:12,DRR - Cpptraj: Add standard deviation data sets and fix up labels.,1,,1
+ec5356fe,2017-07-27 09:32:06,DRR - Cpptraj: Hide some debug info,0,,0
+401a7cb3,2017-07-27 09:39:30,DRR - Cpptraj: Count number of chains during setup. ID chains by residue name of first carbon and atom name of carbonyl carbon instead of residue name of carbonyl carbon.,0,,0
+c2670ef2,2017-07-27 09:41:41,DRR - Cpptraj: Update placeholder test,0,,0
+b6ef910f,2017-07-27 09:49:12,DRR - Cpptraj: Some chemist I am...,0,,0
+2b9008e0,2017-07-27 10:15:39,DRR - Cpptraj: Lipid order parameters are typically reported as -SCD,0,,0
+9aa9936e,2017-07-27 10:16:41,DRR - Cpptraj: Update order parameter output to -SCD,0,,0
+9e3ec2c4,2017-07-27 10:39:50,DRR - Cpptraj: Improve help text,0,,0
+426070dd,2017-07-27 10:45:33,DRR - Cpptraj: Process arguments for 'out' file,0,,0
+bacb4269,2017-07-27 10:46:06,DRR - Cpptraj: Add XYDY mode for grace output.,0,,0
+81a4433c,2017-07-27 10:50:59,DRR - Cpptraj: Do not overwrite previously set option,0,,0
+bb0cc759,2017-07-27 11:01:24,DRR - Cpptraj: Add test save,0,,0
+a7cbd130,2017-07-27 11:21:54,DRR - Cpptraj: Initial MPI code,0,,0
+614057e5,2017-07-27 11:25:30,DRR - Cpptraj: Separate test,0,,0
+ba5b309e,2017-07-27 11:25:39,DRR - Cpptraj: Rename command,0,,0
+d308f0d6,2017-07-27 12:40:39,DRR - Cpptraj: Split out molecule count short form so it can be used elsewhere,0,,0
+a35e9a67,2017-07-27 12:45:28,DRR - Cpptraj: Max counts only needed for output formatting,0,,0
+71933963,2017-07-27 13:23:05,DRR - Cpptraj: Make MolCount() a little more concise,0,,0
+838b6748,2017-07-27 13:25:44,DRR - Cpptraj: Fix code docs  make function name more descriptive,1,,0
+07c0ac38,2017-07-27 14:45:13,DRR - Cpptraj: Separate out the unique molecule count fucntionality from TopInfo. Avoids some bad dependency stuff with ambpdb and just makes more sense.,0,,0
+abc67c0d,2017-07-27 14:54:26,DRR - Cpptraj: More tests,0,,0
+b09586a6,2017-07-27 15:04:20,DRR - Cpptraj: Actually compare test,0,,0
+8c54fcaa,2017-07-27 15:04:33,DRR - Cpptraj: Fix parallel compilation,1,,1
+788bcbcf,2017-07-28 08:15:41,DRR - Cpptraj: Start adding openmp code,0,,0
+cf282493,2017-07-28 10:07:08,DRR - Cpptraj: Instead of giant scratch space  put scratch space at level of CarbonData (since chains can be different sizes).,0,,0
+cdc02e40,2017-07-28 10:12:53,DRR - Cpptraj: Code docs  move buffer to outside of loop,0,,0
+209de35a,2017-07-28 10:22:06,DRR - Cpptraj: Change sync to try to get hybrid omp/mpi working,0,,0
+6bc0231b,2017-07-28 10:27:18,DRR - Cpptraj: Make suffix ordering same as configure,0,,0
+e2259030,2017-07-28 10:28:14,DRR - Cpptraj: Fix buffer allocation in hybrid omp/mpi mode,1,,1
+ab31c8fb,2017-07-28 10:34:37,DRR - Cpptraj: Remove debug info  add info on # threads,0,,0
+fc4b7324,2017-07-28 10:37:07,DRR - Cpptraj: Enable new lipid order test.,0,,0
+4b26f02b,2017-07-28 10:43:39,DRR - Cpptraj: Add carbon position to setup output.,0,,0
+a016a372,2017-07-28 11:59:43,DRR - Cpptraj: Calculate SCD as |<P2>| by default (per convo. with R. Pastor)  give option to report raw <P2> values as well.,0,,0
+a49e637b,2017-07-28 12:04:39,DRR - Cpptraj: Fix carbon position number,1,,1
+630f76a0,2017-07-28 12:23:35,DRR - Cpptraj: Do not try to strip parameters if no parameters exist in the first place.,0,,0
+ed471a36,2017-07-28 13:16:07,Merge pull request #522 from drroe/newlipidorder,0,,1
+6214a89d,2017-08-01 02:41:19,Add parser for cpptrajfiles and ambpdbfiles,0,,0
+152b3620,2017-08-01 08:14:41,Merge pull request #523 from multiplemonomials/master,0,,1
+c82d5c9e,2017-08-01 14:43:48,Fix build with AppleClang in C++11 mode,1,,1
+86c0906b,2017-08-02 09:19:12,Merge pull request #524 from multiplemonomials/master,0,,1
+10ea9f13,2017-08-07 13:22:53,DRR - Cpptraj: Make nonbond energy calc openmp,0,,0
+3f1d8f8b,2017-08-07 13:31:56,DRR - Cpptraj: OpenMP-parallelize separate elec and vdw calcs,0,,0
+1d26a459,2017-08-07 15:36:58,DRR - Cpptraj: When using exclusion list iterator  make sure iterator is advanced up to or just beyond the current atom in inner loop  otherwise exclusions can be wrong when not all atoms are selected.,1,,0
+50284bcc,2017-08-08 08:16:51,Merge pull request #526 from drroe/energy,0,,1
+b34d1387,2017-08-09 09:19:23,DRR - Cpptraj: Add a script which can be used to create templates for certain child classes.,0,,0
+0b2f829f,2017-08-09 09:42:23,DRR - Cpptraj: Initial incarnation of CHARMM output parser,0,,0
+268b42d9,2017-08-09 09:43:25,DRR - Cpptraj: Add comment in template output,0,,0
+2f3762cc,2017-08-09 09:44:14,DRR - Cpptraj: Slight reorganization of template order,0,,0
+00ea4707,2017-08-09 09:56:55,DRR - Cpptraj: Read down to DYNA section,0,,0
+a7f271f7,2017-08-09 10:30:04,DRR - Cpptraj: Initial parse  doesnt work since fortran format can have no space between consecutive elements.,0,,0
+c708ad9b,2017-08-09 11:08:14,DRR - Cpptraj: Initial pass at reading fixed width values.,1,,0
+014b96fb,2017-08-09 11:24:09,DRR - Cpptraj: Add sanity check. Start storing line headers.,0,,0
+96895276,2017-08-09 11:26:55,DRR - Cpptraj: Store headers,0,,0
+6a1504e2,2017-08-09 11:54:11,DRR - Cpptraj: Actually store data values in data set list,0,,0
+d52c672c,2017-08-09 12:14:06,DRR - Cpptraj: Ignore repeated steps during REPD,0,,0
+acc7583a,2017-08-09 12:16:24,DRR - Cpptraj: Use entire label  CHARMM will sometimes need more than 4 chars to distinguish between different terms,0,,0
+d1485ce4,2017-08-09 12:30:33,DRR - Cpptraj: Hide debug info,0,,0
+9fc6b1db,2017-08-09 12:34:19,DRR - Cpptraj: Add keyword,0,,0
+9fc2c0ef,2017-08-09 12:35:35,DRR - Cpptraj: Write error message and fix code docs,1,,0
+dce64869,2017-08-09 13:05:35,DRR - Cpptraj: For non-repd runs  when step is repeated we want the repeated step since this is typically after adjustments for thermostats  etc,0,,0
+78722688,2017-08-09 14:16:51,DRR - Cpptraj: Try to be smart about appending. Fix set count when DYNA> section is ignored,1,,1
+35dfb208,2017-08-09 15:51:24,DRR - Cpptraj: Start adding ability to drop/keep points from data set,0,,0
+c4a32086,2017-08-10 13:50:27,DRR - Cpptraj: Add function to DataSetList to allow allocating DataSet without adding to list.,0,,0
+da736486,2017-08-10 14:15:27,DRR - Cpptraj: Add code for accessing values via void*. This allows DataSet_1D to be used in a generic way without explicit casting (see e.g. Exec_DataSetCmd::ModifyPoints()).,0,,0
+973a6c8b,2017-08-10 14:16:12,DRR - Cpptraj: Finish off drop/keep points,0,,0
+1fbdec82,2017-08-10 14:16:47,DRR - Cpptraj: Add droppoints/keeppoints tests,0,,0
+03d19c40,2017-08-10 14:18:14,DRR - Cpptraj: Fix up help,1,,0
+56a92103,2017-08-10 14:20:22,DRR - Cpptraj: Hide debug info,0,,0
+10045a23,2017-08-10 16:16:30,DRR - Cpptraj: Code to change data set dimensions directly,0,,0
+ee45f084,2017-08-11 08:30:20,DRR - Cpptraj: Enable ChangeDim() and add help.,0,,0
+8cbad009,2017-08-11 08:45:48,DRR - Cpptraj: Make dataset keep/droppoints able to work on multiple sets,0,,0
+078e5540,2017-08-11 08:46:15,DRR - Cpptraj: Add dataset dim test,0,,0
+8e1c6a18,2017-08-11 09:00:11,DRR - Cpptraj: Fix output typo,1,,0
+086133c5,2017-08-11 09:36:05,DRR - Cpptraj: Try to reorganize help so it is easier to read - not sure if I succeeded...,0,,0
+b44b089c,2017-08-11 12:42:06,DRR - Cpptraj: Remove unused function,0,,0
+9aad1c53,2017-08-11 12:43:13,DRR - Cpptraj: Fix typo,1,,0
+74704af9,2017-08-11 13:24:42,Merge pull request #528 from drroe/charmm_output,0,,1
+075d424e,2017-08-15 10:42:24,DRR - Cpptraj: Use const& to simplify var name,0,,0
+d45d07ce,2017-08-15 10:45:37,DRR - Cpptraj: Replace pseudo-ANINT with floor().,0,,0
+2cbbc931,2017-08-15 11:50:48,DRR - Cpptraj: Remove ANINT,0,,0
+8483fcbc,2017-08-15 13:38:37,DRR - Cpptraj: The autoimage moveanchor code for nonortho boxes was not correct since min fractional dist is not always the same as min cartesian dist,0,,0
+c1b9e876,2017-08-15 13:40:45,DRR - Cpptraj: Do not overwrite anchorcenter too soon,0,,0
+e8bec691,2017-08-15 15:46:13,Merge pull request #529 from drroe/autoimage_micelle,0,,1
+0b9b5a32,2017-08-15 15:47:55,Merge branch 'master' into appveyor_hang,0,,0
+03055fb4,2017-08-16 11:48:04,DRR - Cpptraj: Start test of new pairlist class,0,,0
+8c39becd,2017-08-16 15:52:36,DRR - Cpptraj: Finish up new pairlist test,0,,0
+417169ed,2017-08-16 15:58:09,DRR - Cpptraj: Change class names,0,,0
+ce3b80e1,2017-08-16 16:11:37,DRR - Cpptraj: Store atom index with respect to selected atoms,0,,0
+d4404533,2017-08-17 08:25:04,DRR - Cpptraj: Test direct calc with new pairlist,0,,0
+e81fe8f3,2017-08-17 08:31:44,DRR - Cpptraj: Enable new pairlist calc,0,,0
+4cbaeab6,2017-08-17 08:45:23,DRR - Cpptraj: Add some timing data. Use wrapped fractional coords.,0,,0
+43cfe1de,2017-08-17 08:56:57,DRR - Cpptraj: Properly clear cells,0,,0
+9583edd6,2017-08-17 09:01:55,DRR - Cpptraj: Make naming consistent,0,,0
+9f0984a3,2017-08-17 09:09:24,DRR - Cpptraj: Improve code docs.,0,,0
+09880c61,2017-08-17 09:13:51,DRR - Cpptraj: Look at delta E,0,,0
+35607579,2017-08-17 09:19:18,DRR - Cpptraj: Replace PairList with PairList2,0,,0
+8c4db477,2017-08-17 09:24:04,DRR - Cpptraj: Start replacing PairList with PairList2 in Ewald,0,,0
+b22321d1,2017-08-17 09:32:07,DRR - Cpptraj: Store fractional coords separately for recip calc,0,,0
+bba69bdb,2017-08-17 09:35:39,DRR - Cpptraj: Do not store fractional wrapped coords in AtmType anymore,0,,0
+daef9461,2017-08-17 09:41:45,DRR - Cpptraj: Code comments and cleanup,0,,0
+c5fa25a9,2017-08-17 13:48:46,DRR - Cpptraj: Print grid dimensions,0,,0
+211072a6,2017-08-17 13:52:12,DRR - Cpptraj: Version of check using pairlist. So far speedup of ~10x in a 5827 atom system,0,,0
+1908eed3,2017-08-17 14:08:09,DRR - Cpptraj: OpenMP-parallelize,0,,0
+b52b10eb,2017-08-17 14:20:08,DRR - Cpptraj: Add ability to change pairlist cutoff,0,,0
+4251f99a,2017-08-17 14:40:59,DRR - Cpptraj: Make 4.0 the default cutoff for pairlist,0,,0
+1e48f4e6,2017-08-17 15:01:26,DRR - Cpptraj: Use Problem to track long bonds - gets rid of omp critical pragma in the middle of the loop and will eventually allow for consistent output between serial/openmp.,1,,0
+bbae4726,2017-08-17 15:48:52,DRR - Cpptraj: Use Problem for CheckOverlap. Separate out common write functionality into its own subroutine.,1,,0
+b38e2906,2017-08-17 16:01:39,DRR - Cpptraj: Consolidate code for writing out individual problems.,1,,0
+53a6fd88,2017-08-17 16:09:29,DRR - Cpptraj: Use Problem class in place of BondType since they are the same structure.,1,,0
+d8388093,2017-08-17 16:12:14,DRR - Cpptraj: Sort bond list. Will help with output  may help locality of reference.,0,,0
+3e67c027,2017-08-17 16:13:14,DRR - Cpptraj: Check test output order no longer varies based on number of threads,0,,0
+9418c6c0,2017-08-17 16:19:45,DRR - Cpptraj: If for some reason a really large cutoff for check is used  adjust the pairlist accordingly.,0,,0
+c85e7ecd,2017-08-18 09:20:21,DRR - Cpptraj: Add check test with PBC. Can have one with multiple frames because its way faster now.,0,,0
+4d4f1cad,2017-08-18 10:39:04,DRR - Cpptraj: Make use of data sets to get 'check' properly working in parallel.,0,,0
+4cb3a362,2017-08-18 14:11:05,DRR - Cpptraj: Start splitting off structure check capability,0,,0
+f90671c8,2017-08-18 14:31:13,DRR - Cpptraj: Finish up the structure check class.,0,,0
+4313ee64,2017-08-18 15:00:36,DRR - Cpptraj: Make Action_CheckStructure use StructureCheck. Needs lots of validation still.,0,,0
+b46ce51d,2017-08-18 15:07:48,DRR - Cpptraj: Use StructureCheck for permutedihedrals,0,,0
+97ea7a45,2017-08-18 15:33:47,DRR - Cpptraj: Properly clear problem list in non-pairlist check routines,1,,0
+3ac7201e,2017-08-18 15:35:17,DRR - Cpptraj: Add test for 'check around',0,,0
+9269a8de,2017-08-18 15:42:41,DRR - Cpptraj: Test around with skip,0,,0
+26b86485,2017-08-18 15:44:02,DRR - Cpptraj: Make sure the skip is actually tested,0,,0
+2d167d3c,2017-08-18 15:45:36,DRR - Cpptraj: Skip test shouldnt be run in parallel,0,,0
+17924765,2017-08-18 15:51:22,DRR - Cpptraj: Add 'silent' keyword  tests when outfile is 0,0,,0
+fb0e0a91,2017-08-18 15:51:49,DRR - Cpptraj: Clean up output  enable silent keyword.,0,,0
+7b70e373,2017-08-18 16:01:57,DRR - Cpptraj: Improve help text,0,,0
+66c8fa9e,2017-08-18 16:08:03,DRR - Cpptraj: Output mask info in Action_CheckStructure instead of StructureCheck  will suppress non-warning/error setup messages in permutedihedrals.,0,,0
+21249b07,2017-08-21 11:37:14,Merge pull request #530 from drroe/new_pairlist,0,,1
+475330e0,2017-08-23 21:37:42,Another file needs <algorithm> included in MSVC,0,,0
+de9e77ac,2017-08-23 21:38:16,Add INSTALL_HEADERS option to CMake build system,0,,0
+936c9032,2017-08-23 21:39:03,Update cmake submodule,0,,0
+4d23a060,2017-08-23 21:45:21,Add a few missing algorithm includes for MSVC compatibility,0,,0
+9ec98223,2017-08-24 11:24:45,Merge pull request #532 from multiplemonomials/master,0,,1
+3df20b13,2017-08-25 09:20:36,DRR - Cpptraj: Handle coord idx overflow in amber remlog with > 99 replicas.,0,,0
+be4a5eed,2017-08-25 10:27:04,Merge pull request #533 from drroe/big_remlog,0,,1
+d94ed7bc,2017-08-28 09:15:14,DRR - Cpptraj: Use velocities by default if present  deprecate 'usevelocity' with an error message. Add 'usecoords' but don't recommend its use.,1,,0
+9f024888,2017-08-28 09:16:55,DRR - Cpptraj: Update test for options change,0,,0
+dce872ba,2017-08-28 09:21:50,DRR - Cpptraj: Frame::VXYZ to VelXYZ and Frame::FXYZ to FrcXYZ. VelXYZ is more descriptive and avoids confusion with DataSet_Vector::VXYZ. FrcXYZ to be consistent with VelXYZ.,0,,0
+74fa8e00,2017-08-28 14:19:44,DRR - Cpptraj: Initial commit of IR spectrum action,0,,0
+9122029f,2017-08-28 15:49:29,DRR - Cpptraj: Add calculation of the autocorrelation function,0,,0
+28cf83c1,2017-08-28 16:03:36,DRR - Cpptraj: Fix direct normalization,1,,1
+137f93a5,2017-08-28 16:08:24,DRR - Cpptraj: Simplify normalization for fft,0,,0
+8bfdcad9,2017-08-30 08:55:54,DRR - Cpptraj: Print details of what output trajectories are active and what is being written to them after Action setup.,0,,0
+658200d2,2017-08-30 09:16:32,DRR - Cpptraj: More descriptive output for 'outtraj' and fix formatting.,1,,0
+85dcf8e7,2017-08-30 13:12:30,DRR - Cpptraj: Add mdfrc/mdvel options for Amber ASCII trajout,0,,0
+c6d4567e,2017-08-30 13:12:51,DRR - Cpptraj: Test Amber ASCII mdvel/mdfrc options,0,,0
+2040b2ed,2017-08-30 15:27:24,DRR - Cpptraj: Fix variable name,1,,1
+9187306c,2017-08-30 15:28:22,DRR - Cpptraj: Clean test file,0,,0
+4007c545,2017-08-31 08:16:18,Merge pull request #535 from drroe/trajout_info,0,,1
+634b79c4,2017-08-31 15:20:05,Merge branch 'master' into appveyor_hang,0,,0
+a9609552,2017-08-31 23:33:58,CMake: Update CMakeLists.txt for new parallelization duplication scheme,0,,0
+d90951a3,2017-09-01 08:14:16,DRR - Cpptraj: Start adding pairlist to spam pure calc as a test. Not yet working.,0,,0
+da8e2df9,2017-09-01 09:02:02,DRR - Cpptraj: Area per molecule action test,0,,0
+6e1c2cb3,2017-09-01 09:05:10,DRR - Cpptraj: Add areapermol test and protect in parallel,0,,0
+58877f47,2017-09-01 09:14:51,DRR - Cpptraj: Additional syntax test.,0,,0
+46389380,2017-09-01 09:18:13,DRR - Cpptraj: Add XZ and YZ area tests.,0,,0
+3cb40ff7,2017-09-01 09:18:26,DRR - Cpptraj: Add setup output when nmols is being used.,0,,0
+e5b57ffd,2017-09-01 10:38:19,DRR - Cpptraj: Exclude self water interactions and ensure i->j and j->i residues calcd. Results are still off though.,0,,0
+772d7328,2017-09-04 00:49:33,CMake: get cpptraj.cuda working with new parallelization scheme,0,,0
+252e8a17,2017-09-05 08:42:39,DRR - Cpptraj: Use test save file instead of generated file. Removes dependency of Test_Filter on Test_Diffusion executing first. Should address issue #537.,0,,0
+db6a1eaf,2017-09-05 09:10:34,Merge pull request #538 from drroe/fix_test,0,,1
+c9a7c2aa,2017-09-05 09:27:02,Merge branch 'master' into spam_pairlist,0,,0
+7c994a25,2017-09-05 09:27:22,Merge branch 'master' into appveyor_hang,0,,0
+cd541537,2017-09-05 12:02:06,DRR - Cpptraj: Output now properly has results with imaging on. Not sure how this was missed before.,0,,0
+31d23ad9,2017-09-05 12:04:10,DRR - Cpptraj: Re-enable old calculation  this time with imaging properly on,0,,0
+d9966f3e,2017-09-05 12:05:55,DRR - Cpptraj: Enable the pairlist version of the purewater calc - this time it works.,0,,0
+db65efc0,2017-09-05 12:25:40,DRR - Cpptraj: Only use pairlist if purewater specified. Clean up and reorganize code. Improve code docs.,0,,0
+7f62372a,2017-09-05 12:34:02,DRR - Cpptraj: For purewater  data set index is not Frame.,0,,0
+6bfef2cd,2017-09-05 12:36:30,DRR - Cpptraj: Improve code docs,0,,0
+5bc027dc,2017-09-05 12:50:49,DRR - Cpptraj: Make consistent use of typedefs,0,,0
+2e26f610,2017-09-05 13:02:19,DRR - Cpptraj: Add pairlist timing data for purewater,0,,0
+9d0b285b,2017-09-05 13:44:12,DRR - Cpptraj: Remove file that should not have been tracked and ensure it is properly cleaned.,0,,0
+0d6f2c08,2017-09-05 13:56:21,DRR - Cpptraj: Update for changes to spampure.dat.save,0,,0
+68d7b760,2017-09-05 14:37:17,Merge pull request #539 from drroe/spam_pairlist,0,,1
+273e4219,2017-09-05 14:38:35,Merge branch 'master' into areaperlipid,0,,0
+53c6c668,2017-09-05 15:04:13,Merge pull request #536 from drroe/areaperlipid,0,,1
+7dd792c4,2017-09-05 15:05:22,Merge branch 'master' into appveyor_hang,0,,0
+49306575,2017-09-06 10:06:52,DRR - Cpptraj: Begin major refactoring of MasterTest.sh. Idea is to only ever setup the environment once whether you're doing one test or many.,0,,0
+514e54bc,2017-09-06 10:17:15,DRR - Cpptraj: Change NCDUMP to CPPTRAJ_NCDUMP. Initial logic for finding cpptraj.,0,,0
+ba0b7e85,2017-09-06 10:21:07,DRR - Cpptraj: Enable/disable some options,0,,0
+f5fc796b,2017-09-06 10:29:35,DRR - Cpptraj: Set cpptraj output and error,1,,0
+8e44192c,2017-09-06 11:01:37,DRR - Cpptraj: Always determine single or multiple  but only ever setup once.,0,,0
+1a033019,2017-09-06 11:07:44,DRR - Cpptraj: Check how cpptraj was compiled,0,,0
+61e79288,2017-09-06 11:28:55,DRR - Cpptraj: Add valgrind support. Only check for ncdump if cpptraj binary has netcdf support. Change TEST_OS to CPPTRAJ_TEST_OS,0,,0
+d3dba609,2017-09-06 11:29:42,DRR - Cpptraj: Env. var name change,0,,0
+9946cfdd,2017-09-06 11:43:55,DRR - Cpptraj: Set ambpdb and ndiff locations,0,,0
+1705f68c,2017-09-06 11:55:21,DRR - Cpptraj: Add library checks,0,,0
+72507e33,2017-09-06 12:03:51,DRR - Cpptraj: Start test results file,0,,0
+b64c1357,2017-09-06 12:05:17,DRR - Cpptraj: Clean valgrind.out if it is present,0,,0
+b4537721,2017-09-06 12:31:12,DRR - Cpptraj: Enable time and debug options. Check defines right after cpptraj binary is set so valgrind etc setup goes in SetBinaries,0,,0
+08bbd533,2017-09-06 12:33:03,DRR - Cpptraj: REMOVE to CPPTRAJ_RM for consistency,0,,0
+41f6abbd,2017-09-06 12:39:27,DRR - Cpptraj: Allow CleanFiles to remove directories.,0,,0
+d2b9997f,2017-09-06 12:39:48,DRR - Cpptraj: Only create Restart directory if test is to be run  and ensure it is properly cleaned.,0,,0
+89278e80,2017-09-06 12:45:19,DRR - Cpptraj: Fix variable names in AMBPDB test,1,,0
+217eb5d0,2017-09-06 12:50:58,DRR - Cpptraj: Clean up some debug info  add more debug info  fix order of debug arg in command line,1,,0
+45705f0d,2017-09-06 13:05:26,DRR - Cpptraj: Add code for setting number of MPI threads and make it so it only has to happen once.,0,,0
+b5c93a8c,2017-09-06 13:11:34,DRR - Cpptraj: Clean up comments. Require 'make' when running multiple tests.,0,,0
+db133f5c,2017-09-06 13:23:29,DRR - Cpptraj: Hide some debug info. Begin wrapping log output in preparation for doing summary within script.,0,,0
+1fc128b3,2017-09-06 13:37:49,DRR - Cpptraj: Change NUMTESTS to NUMCOMPARISONS. Continue reformatting output. Create TestHeader function.,0,,0
+91ec925d,2017-09-06 13:46:07,DRR - Cpptraj: Add header to Test_Error.dat. Add summary of execution failures.,0,,0
+ad967c6b,2017-09-06 14:11:49,DRR - Cpptraj: Fix counting and reporting in NcTest,1,,1
+511743a1,2017-09-06 14:24:14,DRR - Cpptraj: Add DIFFOPTS warning,0,,0
+b0a5c417,2017-09-06 14:35:44,DRR - Cpptraj: Fix error reporting in AmberTools,1,,1
+1de3eff5,2017-09-06 14:37:03,DRR - Cpptraj: Reenable some options,0,,0
+52f5b79f,2017-09-06 14:41:57,DRR - Cpptraj: Make running MPI test without DO_PARALLEL set an error,1,,0
+5f12d944,2017-09-06 15:41:19,DRR - Cpptraj: Initial version of Summary function using awk instead of grep,0,,0
+99bdf573,2017-09-06 16:12:53,DRR - Cpptraj: Enable showerrors option,0,,0
+ed3916e7,2017-09-06 16:16:40,DRR - Cpptraj: Add CpptrajTest.sh,0,,0
+4062e8d2,2017-09-06 16:28:31,DRR - Cpptraj: Fix up test targets,1,,1
+0ff1fd99,2017-09-07 08:03:02,DRR - Cpptraj: Change env var CPPTRAJ_STANDALONE to local var STANDALONE,0,,0
+3dd2a077,2017-09-07 08:09:40,DRR - Cpptraj: Determine method of execution by variable instead of file,0,,0
+ee8bf88e,2017-09-07 08:16:12,DRR - Cpptraj: Make summary function use CPPTRAJ_TEST_MODE instead of file check. Improve code docs.,0,,0
+21717595,2017-09-07 08:30:36,DRR - Cpptraj: Improve code docs and help text.,0,,0
+6e6d4ddb,2017-09-07 08:44:06,DRR - Cpptraj: Allow tests to be run directly by CpptrajTest.sh to bypass make framework.,0,,0
+e582b7a2,2017-09-07 08:48:52,DRR - Cpptraj: Reenable -profile option,0,,0
+93bf329d,2017-09-07 08:53:48,DRR - Cpptraj: Fix up help,1,,1
+0b7f0cd4,2017-09-07 08:58:10,DRR - Cpptraj: Add 'alltests' option to run all tests found in Test_* directories.,0,,0
+6779c9c1,2017-09-07 09:24:10,DRR - Cpptraj: Summary will now be run after single test  after specified test dirs  or for all tests (if executed via make),0,,0
+169889cb,2017-09-07 09:53:06,DRR - Cpptraj: Remove find command from Makefile. Heavy lifting is done by MasterTest.sh via individual test scripts.,0,,0
+e5d6098e,2017-09-07 10:29:21,DRR - Cpptraj: Start writing valgrind output parser,0,,0
+5710d90b,2017-09-07 10:47:58,DRR - Cpptraj: Print vg results for individual tests. Output allocated sizes in MB if > 1 kB,0,,0
+f0a8a792,2017-09-07 10:58:01,DRR - Cpptraj: Write new valgrind summary to CPPTRAJ_TEST_RESULTS,0,,0
+de73d76f,2017-09-07 11:11:49,DRR - Cpptraj: Add valgrind summary. Make summary exit with an error status to restore previous behavior.,1,,0
+f941af36,2017-09-07 11:18:47,DRR - Cpptraj: When parsing output for valgrind stuff ignore lines that dont have '==' in them.,0,,0
+d7a0ec7a,2017-09-07 11:38:36,DRR - Cpptraj: Do not print summary footer if header wasnt printed (fixes output under AT). Fix variable name in ambpdb test.,1,,0
+21be94b9,2017-09-07 12:03:23,DRR - Cpptraj: Enable readdata test. Fix variable names in test scripts.,1,,0
+a8883645,2017-09-07 12:27:39,DRR - Cpptraj: Start building a framework for counting skipped tests.,0,,0
+d386ef4a,2017-09-07 12:52:52,DRR - Cpptraj: Start converting the check routines so they are more versatile. Add skip of individual comparison. Start counting skipped tests.,0,,0
+14d39ebf,2017-09-07 12:59:49,DRR - Cpptraj: Count skipped tests/checks in Summary. Do not print elements which are zero.,0,,0
+87ae28a2,2017-09-07 13:09:46,DRR - Cpptraj: Have SkipTest exit with status 0.,0,,0
+73d9657a,2017-09-07 13:10:14,DRR - Cpptraj: CheckPtrajAnalyze -> CheckMathlib,0,,0
+3e746ab1,2017-09-07 13:17:14,DRR - Cpptraj: Clean up skip messages.,0,,0
+1520c9c2,2017-09-07 13:31:41,DRR - Cpptraj: Add XDR check,0,,0
+5556a833,2017-09-07 13:32:59,DRR - Cpptraj: Stop using LIB check vars directly.,0,,0
+8cfd7a3e,2017-09-07 13:47:26,DRR - Cpptraj: Add CHECKERR to MasterTest.sh  incremented every time a requirement for test/check to run is not met. Can then be used in script to exit or skip.,0,,0
+3582f219,2017-09-07 13:50:22,DRR - Cpptraj: Make use of CHECKERR,0,,0
+f24420e0,2017-09-07 13:56:27,DRR - Cpptraj: Update 2drms tests,0,,0
+783482db,2017-09-07 14:02:50,DRR - Cpptraj: Update Checks in more tests,0,,0
+0f35c172,2017-09-07 14:38:08,DRR - Cpptraj: Add RequiresX routines to simplify skipping.,0,,0
+3865ddfe,2017-09-07 14:47:03,DRR - Cpptraj: RequiresThreads -> CheckNthreads,0,,0
+ccc2c3bd,2017-09-07 14:50:38,DRR - Cpptraj: Fix up netcdf checks,1,,1
+c5fe645f,2017-09-07 14:57:30,DRR - Cpptraj: Add RequiresMaxThreads routine,0,,0
+26c34fe3,2017-09-07 15:06:19,DRR - Cpptraj: Update more tests.,0,,0
+d605dd28,2017-09-07 15:19:53,DRR - Cpptraj: Update even more tests,0,,0
+ec1a44bb,2017-09-07 15:28:32,DRR - Cpptraj: Fix up cluster tests etc,1,,1
+50fbc3ed,2017-09-07 15:35:47,DRR - Cpptraj: So  so many tests...,0,,0
+f09952fe,2017-09-07 15:58:25,DRR - Cpptraj: More tests...I may have bitten off a bit too much today...,0,,0
+c0cb8631,2017-09-07 16:04:40,DRR - Cpptraj: Lump skipped comparisons in with the rest.,0,,0
+e7fe6314,2017-09-07 16:19:56,DRR - Cpptraj: More updates. Good place to stop for today.,0,,0
+2ccd737f,2017-09-08 08:39:51,DRR - Cpptraj: Start centralizing checks,0,,0
+48695d6d,2017-09-08 08:58:28,DRR - Cpptraj: Replace individual check functions with ones that take a list. Should be easier to read and use.,0,,0
+5b2cd481,2017-09-08 09:03:24,DRR - Cpptraj: Disabled old check functions. Burning the ships so to speak...,0,,0
+bf134799,2017-09-08 09:04:08,DRR - Cpptraj: Test new check framework,0,,0
+d61d1d7e,2017-09-08 09:06:57,DRR - Cpptraj: Add option to exit immediately on test error,1,,0
+5e98c12c,2017-09-08 09:12:11,DRR - Cpptraj: Fix up test names,1,,0
+eca23112,2017-09-08 09:25:43,DRR - Cpptraj: Finally start getting rid of CheckTest,0,,0
+ce5a0d48,2017-09-08 09:25:55,DRR - Cpptraj: Convert to new framework,0,,0
+c5b9c602,2017-09-08 10:04:05,DRR - Cpptraj: Exit when individual test fails if EXIT_ON_ERROR is set,1,,0
+e6693291,2017-09-08 10:04:23,DRR - Cpptraj: More updates,0,,0
+18e68f52,2017-09-08 10:18:22,DRR - Cpptraj: Even more updates,0,,0
+4d807ebf,2017-09-08 10:31:38,DRR - Cpptraj: More and more updates,0,,0
+603c23dc,2017-09-08 10:41:26,DRR - Cpptraj: Add ambpdb and amberhome checks,0,,0
+db7732df,2017-09-08 10:43:55,DRR - Cpptraj: Updates upon updates...,0,,0
+3a33926a,2017-09-08 12:51:01,DRR - Cpptraj: Updates  updates  updates,0,,0
+ee42815c,2017-09-08 13:18:12,DRR - Cpptraj: Finally finish the first round of upgrades!,0,,0
+1b5e7f5e,2017-09-08 13:32:10,DRR - Cpptraj: Hide some debug info. Fix test name. Re-enable tests that were accidentally removed.,1,,1
+7792974b,2017-09-08 13:39:52,DRR - Cpptraj: Clean up code docs,0,,0
+d24219f2,2017-09-08 13:48:33,DRR - Cpptraj: Protect against too many threads.,0,,0
+52c44c8e,2017-09-08 13:59:54,DRR - Cpptraj: Protect tests that require netcdf,0,,0
+7a51913b,2017-09-08 14:24:09,DRR - Cpptraj: Fix NetCDF caps,1,,1
+30de0b71,2017-09-08 14:36:42,DRR - Cpptraj: Move CheckTest to deprecated section,0,,0
+c0548f81,2017-09-08 14:42:15,DRR - Cpptraj: Try to actually determine OS when CPPTRAJ_TEST_OS not already set.,0,,0
+ac12d59d,2017-09-08 14:43:49,DRR - Cpptraj: Direct error message to stderr,1,,0
+2a3ba5b8,2017-09-08 15:00:35,DRR - Cpptraj: When CPPTRAJHOME is not set need to handle the relative path carefully. During setup the path is ../ since we are in /test  but for tests the path is ../../.,0,,0
+e94f2aae,2017-09-08 15:17:08,Merge pull request #514 from drroe/appveyor_hang,0,,1
+a16f05cd,2017-09-08 15:43:25,Merge branch 'master' into ir_vac,0,,0
+46f9b29c,2017-09-11 08:31:07,DRR - Cpptraj: Add 'timing' option,0,,0
+6b7b6643,2017-09-11 08:32:52,DRR - Cpptraj: Fix test.short target so set up is not done for every test.,1,,1
+82dd6817,2017-09-11 14:45:39,DRR - Cpptraj: Add zcat check to CheckEnv,0,,0
+6e0375ab,2017-09-11 14:49:49,DRR - Cpptraj: Add testos check,0,,0
+c6bc4028,2017-09-11 15:04:20,DRR - Cpptraj: Trap obsolete function,0,,0
+8bc10bd7,2017-09-11 15:12:11,DRR - Cpptraj: Separate loop for EXIT_ON_ERROR so that OK tests arent constantly being re-run,0,,0
+5cd85fa7,2017-09-11 15:16:30,DRR - Cpptraj: Add 'file' to CheckEnv,0,,0
+ecb1605d,2017-09-11 15:23:06,DRR - Cpptraj: Add parallel and threads checks,0,,0
+5977dc1d,2017-09-11 15:41:05,DRR - Cpptraj: Add openmp check. Disabled another obsolete check function.,0,,0
+f02bc2d9,2017-09-11 15:47:22,DRR - Cpptraj: Add check for single ensemble support,0,,0
+5627db8e,2017-09-12 08:33:06,DRR - Cpptraj: Detect matrix memory allocation error.,1,,0
+9facb835,2017-09-12 09:21:28,DRR - Cpptraj: int -> size_t to avoid index overflow,0,,0
+cb56275c,2017-09-12 10:01:42,DRR - Cpptraj: For grids  int index => size_t or long int as appropriate to avoid overflows.,0,,0
+e3b36984,2017-09-12 10:14:47,DRR - Cpptraj: Add size printout for Eij matrix  can get large.,0,,0
+5671f687,2017-09-12 10:49:00,DRR - Cpptraj: When exiting on error  fail when test has no comparisons and is not skipped.,1,,0
+a51a8912,2017-09-12 10:53:12,DRR - Cpptraj: Add ability to disable tests and report as skipped.,0,,0
+1e746ee3,2017-09-12 12:06:17,DRR - Cpptraj: Add fftw check option,0,,0
+cc85aadd,2017-09-12 12:12:49,DRR - Cpptraj: Fix var name,1,,0
+c3532272,2017-09-12 14:08:25,DRR - Cpptraj: Get rid of short tests target. Was not up to date anyway,0,,0
+7d053083,2017-09-13 08:00:42,DRR - Cpptraj: Add hidden command line option for exit on error mode,1,,0
+7ec57360,2017-09-13 09:18:27,DRR - Cpptraj: Ensure any overall results files get cleaned,0,,0
+92a46a45,2017-09-13 11:48:47,DRR - Cpptraj: Add option for enabling long tests,0,,0
+11dad103,2017-09-13 14:51:00,DRR - Cpptraj: Add file that should be cleaned to CleanFiles,0,,0
+29c27529,2017-09-13 14:51:22,Merge branch 'test_timing' of github.com:drroe/cpptraj into test_timing,0,,0
+653be4d7,2017-09-14 11:20:40,DRR - Cpptraj: Show skipped tests when 'showerrors' specified.,0,,0
+cfaaadd7,2017-09-14 11:21:24,DRR - Cpptraj: Mark 10 frame Ewald tests as long,0,,0
+b73b1ced,2017-09-14 11:22:16,DRR - Cpptraj: Add short version of esander tests,0,,0
+b33e0d1d,2017-09-14 11:29:07,DRR - Cpptraj: Mark original sander energy tests as long,0,,0
+9a0997ba,2017-09-14 11:43:07,DRR - Cpptraj: Since the test.showerrors target is for CI make sure it runs all tests  even long ones.,0,,0
+814c7d42,2017-09-14 12:53:57,DRR - Cpptraj: Make sure energy is calculated when only summary specified. Remove unneeded class var summaryfile_. Start updating help.,0,,0
+2d801e28,2017-09-14 13:03:31,DRR - Cpptraj: Fix up help so it is clear that 'purewater' is a separate mode from the SPAM energy calc.,1,,1
+bed670ee,2017-09-14 13:36:45,Merge pull request #543 from drroe/fix_spam_out,0,,1
+bc997ac0,2017-09-14 13:37:18,Merge branch 'master' into test_timing,0,,0
+a134cbdd,2017-09-14 16:18:24,CMake: switch to parallelization duplication scheme,0,,0
+78fc7da3,2017-09-15 09:38:07,DRR - Cpptraj: Replace variable with actual test name. Makes it easier to ascertain that command is tested.,0,,0
+ce69c62d,2017-09-15 10:39:16,DRR - Cpptraj: Start fixing 'without' mask selection by distance,1,,0
+70a639a8,2017-09-15 12:15:15,DRR - Cpptraj: Fix scope of variables,1,,1
+99d8d214,2017-09-15 13:12:02,DRR - Cpptraj: Get rid of 'if' statement inside loops by framing distance based mask selection as a state change.,0,,0
+bc788d03,2017-09-15 13:13:50,DRR - Cpptraj: Revert  should not have been committed.,0,,0
+c066b970,2017-09-15 13:18:19,DRR - Cpptraj: First incarnation of distance-based mask test.,0,,0
+c06a4582,2017-09-15 13:24:44,DRR - Cpptraj: Combine into one run,0,,0
+ce13feed,2017-09-15 13:33:11,DRR - Cpptraj: Improve code docs. Use selected array directly instead of converting to int.,0,,0
+992ba718,2017-09-15 13:34:21,DRR - Cpptraj: Do not write dat files.,0,,0
+87b3e392,2017-09-15 15:03:32,DRR - Cpptraj: selected => ToSearch  better name.,0,,0
+5abd2629,2017-09-15 15:07:04,DRR - Cpptraj: Use typedef,0,,0
+6e1eb4e9,2017-09-15 15:10:29,DRR - Cpptraj: Store coord indices instead of atom #s since that is what is needed,0,,0
+b9f78718,2017-09-15 15:13:29,DRR - Cpptraj: Hide debug info,0,,0
+e80059ef,2017-09-15 15:13:43,DRR - Cpptraj: Update requirements,0,,0
+1a6fec29,2017-09-15 15:25:18,DRR - Cpptraj: Enable distance-based mask test,0,,0
+965afdfa,2017-09-18 09:19:34,DRR - Cpptraj: If format specifically set use it for output data set in RPNcalc,0,,0
+7351596f,2017-09-18 09:20:08,DRR - Cpptraj: Respect x column width arguments for inverted standard data write,0,,0
+84b2956e,2017-09-18 09:20:42,DRR - Cpptraj: Add 'calc' test,0,,0
+a808c38f,2017-09-18 09:30:23,DRR - Cpptraj: Add calc test with data sets,0,,0
+6c5e8590,2017-09-18 09:31:45,DRR - Cpptraj: Enable calc test,0,,0
+67bbadc1,2017-09-18 10:09:40,DRR - Cpptraj: Add calcstate test.,0,,0
+cc1c41b9,2017-09-18 10:10:51,DRR - Cpptraj: Enable calcstate test and add missing file.,0,,0
+791dfa6e,2017-09-18 10:25:24,DRR - Cpptraj: Add change command test,0,,0
+20d92340,2017-09-18 10:26:33,DRR - Cpptraj: Enable change command test,0,,0
+8ac5a919,2017-09-18 12:41:39,DRR - Cpptraj: Add clusterdihedral v time check,0,,0
+322dcf62,2017-09-18 12:47:33,DRR - Cpptraj: Add netcdf rremd reservoir creation test,0,,0
+1d0b6109,2017-09-18 12:49:18,DRR - Cpptraj: Enable createreservoir test,0,,0
+738e9762,2017-09-18 13:03:26,DRR - Cpptraj: Faster version of volmap test,0,,0
+69107d04,2017-09-18 15:06:49,DRR - Cpptraj: Store divergence in data set and allow it to be written to a file.,0,,0
+c3ea34cd,2017-09-18 15:07:14,DRR - Cpptraj: Test divergence as well,0,,0
+b334f7e7,2017-09-18 15:15:49,DRR - Cpptraj: Fixatomorder test,0,,0
+978ccf1b,2017-09-18 15:16:50,DRR - Cpptraj: Clean up test files,0,,0
+e1b7ba32,2017-09-18 15:20:41,DRR - Cpptraj: Enable fixatomorder test and indicate it is normal to see some error messages for this test.,1,,0
+61bfbd87,2017-09-18 15:30:54,DRR - Cpptraj: Add lowestcurve test,0,,0
+4e1c0545,2017-09-18 15:51:53,DRR - Cpptraj: Add minimage test,0,,0
+f74917ca,2017-09-18 15:56:09,DRR - Cpptraj: Add multihist test,0,,0
+c616aec3,2017-09-18 16:04:09,DRR - Cpptraj: Add regress test,0,,0
+b15c9c03,2017-09-19 09:05:05,DRR - Cpptraj: Add 'createset' command,0,,0
+2c328786,2017-09-19 09:43:37,DRR - Cpptraj: Add 'nx' option to 'regress' for creating output data sets with specified number of x values from input set min and max,0,,0
+0ad460f2,2017-09-19 09:47:18,DRR - Cpptraj: Text 'nx' instead  smaller output set.,0,,0
+aaf8c2d5,2017-09-19 10:00:15,DRR - Cpptraj: Add slope and intercept data sets to regress,0,,0
+64b0c870,2017-09-19 10:03:07,DRR - Cpptraj: Test using slope and intercept from regress in 'createset',0,,0
+bc41639b,2017-09-19 10:06:20,DRR - Cpptraj: Add feedback to createset,0,,0
+71d20249,2017-09-19 10:16:52,DRR - Cpptraj: Add 'rst' test,0,,0
+185326e6,2017-09-19 10:26:51,DRR - Cpptraj: Test rst command,0,,0
+af4561e5,2017-09-19 12:43:38,DRR - Cpptraj: Add pairwise test,0,,0
+4faf4363,2017-09-19 13:27:41,DRR - Cpptraj: Add pairwise reference test,0,,0
+dadfa9a9,2017-09-19 13:58:31,DRR - Cpptraj: Add scalepdbe option to scale energies printed to PDB from 0.0 to 100.0. Improve output messages. Clean up code and reorganize header.,0,,0
+275d4df7,2017-09-19 14:04:54,DRR - Cpptraj: Make average energy output use CpptrajFile from datafilelist,0,,0
+86f70b88,2017-09-19 14:10:34,DRR - Cpptraj: Improve output,0,,0
+79fc5bc8,2017-09-19 14:26:25,DRR - Cpptraj: Scale energy values in pdb from 10 to 100 to make it obvious which ones do not satisfy cutoffs.,0,,0
+eb1c6da3,2017-09-19 14:27:55,DRR - Cpptraj: Use scalepdbe option,0,,0
+c20bd4de,2017-09-19 14:31:16,DRR - Cpptraj: Enable pairwise test,0,,0
+e72f0909,2017-09-19 14:40:44,DRR - Cpptraj: Add/enable parmbox test,0,,0
+42a85425,2017-09-19 14:58:22,DRR - Cpptraj: Add solvent test with closest,0,,0
+de345f8a,2017-09-19 14:58:52,DRR - Cpptraj: No need to test imaging in closest  done elsewhere,0,,0
+6b5abc92,2017-09-19 15:02:20,DRR - Cpptraj: Get rid of commented out input,0,,0
+8dbce791,2017-09-19 15:25:57,DRR - Cpptraj: Add translate test.,0,,0
+0f2661f5,2017-09-19 15:27:15,DRR - Cpptraj: Enable solvent and translate tests,0,,0
+7dfacda1,2017-09-19 15:47:32,DRR - Cpptraj: Add/enable replicatecell test,0,,0
+7e614bb1,2017-09-19 16:04:47,DRR - Cpptraj: Remove temporary files created by Energy_Sander upon destruction. Add keepfiles option to prevent this,0,,0
+abe1d375,2017-09-19 16:09:34,DRR - Cpptraj: Fix dependency on other test output,1,,1
+52317004,2017-09-20 09:13:28,DRR - Cpptraj: Change check zlib to inpath so it can be used more generally,0,,0
+3f3574df,2017-09-20 10:45:26,DRR - Cpptraj: Add scaledihedralk test,0,,0
+48e31a35,2017-09-20 10:58:50,DRR - Cpptraj: Add scaledihedralk tests,0,,0
+360471dc,2017-09-20 10:59:22,DRR - Cpptraj: Remove debug file,0,,0
+ebdbcfd7,2017-09-20 11:28:08,DRR - Cpptraj: Add meltcurve test to MREMD test,0,,0
+568fdd7d,2017-09-20 11:36:52,DRR - Cpptraj: Split out meltcurve test into separate unit,0,,0
+07d332a2,2017-09-20 11:44:12,DRR - Cpptraj: Fix for slightly different behavior of ensemble in serial and parallel,1,,1
+a17b39c5,2017-09-20 12:01:41,DRR - Cpptraj: Add phipsi test,0,,0
+ee57dcfe,2017-09-20 12:24:30,DRR - Cpptraj: Remove unnecessary keyword.,0,,0
+c86b0238,2017-09-20 13:08:29,DRR - Cpptraj: Remove include only needed for debug,0,,0
+199b94fc,2017-09-20 13:14:23,DRR - Cpptraj: Clean up code comments,0,,0
+b6c4b1de,2017-09-20 13:36:18,DRR - Cpptraj: Store xmin max etc from bounds in data sets,0,,0
+6c632cc3,2017-09-20 14:18:17,DRR - Cpptraj: Protect test in parallel,0,,0
+5c678144,2017-09-20 14:21:22,DRR - Cpptraj: Protect pairwise test in parallel,0,,0
+b275a2a5,2017-09-20 14:22:02,DRR - Cpptraj: Protect replicatecell test in parallel,0,,0
+f0b96b88,2017-09-20 14:23:03,DRR - Cpptraj: Protect translate test in parallel,0,,0
+e8a26b82,2017-09-20 14:25:11,DRR - Cpptraj: Protect esander test in parallel,0,,0
+65a78a41,2017-09-20 15:15:35,Merge pull request #545 from drroe/test_timing,0,,1
+4f55e0d0,2017-09-25 10:30:44,DRR - Cpptraj: Initial attempt to bypass using dacdif in AmberTools (which is slow) in favor of regular diff.,0,,0
+d32b6623,2017-09-25 12:51:11,DRR - Cpptraj: Fix reporting of missing files when in AmberTools so it matches dacdif.,1,,0
+b56a40c6,2017-09-25 13:05:10,DRR - Cpptraj: Improve script internal documentation.,0,,0
+3b1c3094,2017-09-25 13:12:28,DRR - Cpptraj: Do not repeat skipped test messages.,0,,0
+5e2bd568,2017-09-25 13:25:43,DRR - Cpptraj: Increase test header separator length to 80 chars. Looks better IMO.,0,,0
+19f22ff3,2017-09-25 13:59:11,Merge pull request #547 from drroe/no_dacdif,0,,1
+b0fe023e,2017-09-25 14:08:26,Merge branch 'master' into ir_vac,0,,0
+89f60296,2017-09-26 10:14:58,DRR - Cpptraj: Start adding code for selection of molecules by mask. Modify ArgList::ArgIsMask so that it looks for characters which are valid to start masks  not just mask characters in a string.,0,,0
+6ec9be6e,2017-09-26 10:20:02,DRR - Cpptraj: Add some notes on new ArgIsMask behavior,0,,0
+c3fd23c5,2017-09-26 10:44:01,DRR - Cpptraj: Finish adding code to select atoms by molecule number. Update dependencies.,0,,0
+8401b78f,2017-09-26 10:48:14,DRR - Cpptraj: Hide debug info,0,,0
+eee72624,2017-09-26 10:48:30,DRR - Cpptraj: Add molecule selection syntax test,0,,0
+5a6e1679,2017-09-26 10:54:31,DRR - Cpptraj: Add molecule AND atom shorthand,0,,0
+8787feb0,2017-09-26 11:26:06,DRR - Cpptraj: Add molecule AND residue shorthand,0,,0
+d8e726ab,2017-09-26 11:53:19,DRR - Cpptraj: Record all input in history  even if it doesnt work. Will add option to return to original behavior later.,0,,0
+bb90221d,2017-09-26 11:54:11,DRR - Cpptraj: Add beginnings of ResChain for ChainID,0,,0
+91dd885e,2017-09-26 12:06:22,DRR - Cpptraj: Finish selection by chain ID,0,,0
+f51bf60b,2017-09-26 12:08:18,DRR - Cpptraj: Add selection by chain ID test,0,,0
+86c8ebb2,2017-09-26 12:12:59,DRR - Cpptraj: Remove terminal underscores from passed in variable names,0,,0
+050725bb,2017-09-26 12:17:01,DRR - Cpptraj: Use typedefs,0,,0
+225c679e,2017-09-26 12:38:07,DRR - Cpptraj: Slight reconfig of MaskToken in preparation for adding distance selection by molecule,0,,0
+35b66998,2017-09-26 13:07:13,DRR - Cpptraj: Add molecule selection by distance,0,,0
+9f85d694,2017-09-26 13:08:02,DRR - Cpptraj: Add molecule selection by distance test,0,,0
+94d5f857,2017-09-26 13:23:07,DRR - Cpptraj: Add distance based mask outside molecule selection test,0,,0
+25d56161,2017-09-26 13:54:26,DRR - Cpptraj: Add function to select by original residue number,0,,0
+a53a92c6,2017-09-26 14:08:26,DRR - Cpptraj: Clean up function names.,0,,0
+586ae359,2017-09-26 14:24:07,DRR - Cpptraj: Enable original residue number selection.,0,,0
+2bbededd,2017-09-26 14:24:32,DRR - Cpptraj: Add original residue number selection test,0,,0
+64492168,2017-09-26 14:28:44,DRR - Cpptraj: Some cleanup.,0,,0
+5560e7b8,2017-09-26 14:45:13,DRR - Cpptraj: resX_ -> idxX_  more descriptive.,0,,0
+8c27727d,2017-09-26 22:38:49,Update CMake submodule to new version,0,,0
+b265ecbc,2017-09-26 23:50:42,CMake: fix failure to build when readline is disabled and MPI is enabled,1,,1
+0311ab9d,2017-09-27 08:21:24,DRR - Cpptraj: Add mol+res+atom selection test,0,,0
+6f54f24e,2017-09-27 09:22:43,DRR - Cpptraj: Add missing flag set.,0,,0
+90d7036c,2017-09-27 09:31:01,DRR - Cpptraj: Test modifying the tokenizer to recognize '::' as a legit operator.,0,,0
+c1bd0753,2017-09-27 10:20:22,DRR - Cpptraj: Use '::' instead of ':/' for chain ID selection.,0,,0
+b5175765,2017-09-27 13:58:45,Merge pull request #548 from drroe/expand_mask,0,,1
+99f72684,2017-09-27 16:13:29,DRR - Cpptraj: Initial attempt at adding some control structures,0,,0
+e9817bee,2017-09-27 16:15:17,DRR - Cpptraj: Var name change,0,,0
+da657184,2017-09-27 16:16:05,DRR - Cpptraj: Turn off debug,0,,0
+88fbb5b7,2017-09-27 18:59:13,Merge pull request #551 from drroe/maskdebugoff,0,,1
+a7899d6f,2017-09-27 23:14:18,Fix a few things lost in the rebase,1,,1
+ee2d3f17,2017-09-28 00:02:41,CMake: also build the combinations of MPI  OMP  and CUDA.,0,,0
+4bea1c2a,2017-09-28 08:08:05,Merge branch 'master' into loops,0,,0
+5c49602c,2017-09-28 08:48:44,DRR - Cpptraj: Make for specific to atom masks initially.,0,,0
+86685942,2017-09-28 08:49:28,DRR - Cpptraj: Reorganization to allow nested control structures.,0,,0
+082667ea,2017-09-28 09:00:52,DRR - Cpptraj: Detect unterminated control blocks,0,,0
+a8db6b3b,2017-09-28 09:14:18,DRR - Cpptraj: Add control block description  use it to provide more detailed output and error messages.,1,,0
+3dff7d65,2017-09-28 09:25:52,DRR - Cpptraj: Add mask setup,0,,0
+6d1779b6,2017-09-28 09:49:05,DRR - Cpptraj: Start adding logic for actually executing the control blocks.,0,,0
+c508d5eb,2017-09-28 10:10:45,DRR - Cpptraj: Add logic for executing inner blocks recursively,0,,0
+aa50d9f7,2017-09-28 10:31:22,DRR - Cpptraj: First attempt at replacing variables.,0,,0
+360efea9,2017-09-28 10:36:19,DRR - Cpptraj: Make unrecognized variable a warning,0,,0
+ff1f35da,2017-09-28 10:43:10,DRR - Cpptraj: Better error handling in control structure,1,,0
+1f71e408,2017-09-28 12:29:35,Merge pull request #552 from multiplemonomials/cmake_1.1_changes,0,,1
+d0bdd772,2017-09-28 12:29:55,Merge branch 'master' into loops,0,,0
+1fadc50f,2017-09-28 13:00:56,DRR - Cpptraj: Come up with a way to pass variables in nested loops,0,,0
+81177717,2017-09-28 14:07:31,DRR - Cpptraj: for -> formask,0,,0
+e96f75c4,2017-09-28 14:51:23,DRR - Cpptraj: Allow multiple masks,0,,0
+184a7752,2017-09-28 14:57:32,DRR - Cpptraj: Add some error checking and improve output messages.,1,,0
+13a34d74,2017-09-28 15:17:44,DRR - Cpptraj: Make residues and molecules work as well,0,,0
+35324282,2017-09-28 15:20:07,DRR - Cpptraj: Move debug statements. Add code docs.,0,,0
+e9bc8b13,2017-09-28 15:29:04,DRR - Cpptraj: Reorganize split of Dispatch,0,,0
+3e16242f,2017-09-28 15:32:49,DRR - Cpptraj: Actually execute the commands.,0,,0
+8da3065f,2017-09-28 15:43:16,DRR - Cpptraj: Modify test to use new loop syntax,0,,0
+516eda7d,2017-09-28 16:04:19,DRR - Cpptraj: Hide debug info. Make outpout formatting a little nicer.,0,,0
+7c32f240,2017-10-02 09:11:38,DRR - Cpptraj: Switch from 'formask in' back to 'for inmask' in preparation for adding generic variables to for loop.,0,,0
+13e6a5cc,2017-10-02 09:34:22,DRR - Cpptraj: Reorganize argument parsing loop in preparation for supporting different for loop types,0,,0
+31b4cedb,2017-10-02 09:35:39,DRR - Cpptraj: Niterations => MaxIterations,0,,0
+45fa18d6,2017-10-02 09:40:32,DRR - Cpptraj: Generalize # iterations check,0,,0
+cefcd894,2017-10-02 12:08:52,DRR - Cpptraj: Initial incarnation of the generic integer for loop variable type,0,,0
+f09fb56d,2017-10-02 12:19:36,DRR - Cpptraj: Add description,0,,0
+10418af1,2017-10-02 14:10:34,DRR - Cpptraj: Enable integer for loop. Allow variable to start after beginning of argument.,0,,0
+4a6320fe,2017-10-02 14:13:02,DRR - Cpptraj: Test using integer for variable in data set name,0,,0
+af184792,2017-10-02 15:07:51,DRR - Cpptraj: Add range checks. Calculate number of iterations for integer loop.,0,,0
+e948e985,2017-10-02 15:24:56,DRR - Cpptraj: Allow integer loop without end condition as long as there is at least one end condition in the block,0,,0
+bafe82cb,2017-10-02 15:26:04,DRR - Cpptraj: Update input  no longer need end condition,0,,0
+4b8399ce,2017-10-02 15:30:35,DRR - Cpptraj: Fix up help,1,,1
+db7f86a8,2017-10-02 15:41:15,DRR - Cpptraj: Better variable name recognition in input,0,,0
+c9169740,2017-10-02 15:48:08,DRR - Cpptraj: Fix order of evaluations leading to small memory error. Hide debug info,1,,1
+40cfca18,2017-10-03 09:33:09,DRR - Cpptraj: Initial incarnation of the VariableArray class.,0,,0
+5ce3b1f5,2017-10-03 09:35:03,DRR - Cpptraj: Change function name,0,,0
+b12be92f,2017-10-03 09:47:21,DRR - Cpptraj: Place current script variables in separate class. Should allow more flexibility.,0,,0
+5a002aee,2017-10-03 09:53:56,DRR - Cpptraj: Start() does not have to add variables since this is done during CheckDone() if needed.,0,,0
+62754913,2017-10-03 10:18:40,DRR - Cpptraj: Have ChangeArg modify ArgLine as well.,0,,0
+7e4502dc,2017-10-03 10:19:16,DRR - Cpptraj: Have ExecuteCommand modify commands so script variables can be used outside of control blocks.,0,,0
+767bbe46,2017-10-03 10:20:27,DRR - Cpptraj: Script vars can be used outside of control blocks now.,0,,0
+e5d347a1,2017-10-03 10:33:36,DRR - Cpptraj: Properly clear control blocks when an error occurs.,1,,0
+4ed98dfd,2017-10-03 10:39:20,DRR - Cpptraj: Print command when adding to control block. Hide debug info.,0,,0
+23379ce4,2017-10-03 10:47:38,DRR - Cpptraj: Ensure control commands inside control blocks are printed as well.,0,,0
+a7637ce9,2017-10-03 11:46:12,DRR - Cpptraj: Add molfirstres and mollastres for mask loop types. Improve help and error messages.,1,,0
+53bf0c8c,2017-10-03 11:51:10,DRR - Cpptraj: Do not allow variables to be used as for loop start/end args yet.,0,,0
+728b0d70,2017-10-03 11:59:36,DRR - Cpptraj: Improve code docs and cleanup variable names.,0,,0
+ad6154cb,2017-10-03 12:14:14,DRR - Cpptraj: Fix up code docs,1,,0
+a2af2c37,2017-10-03 13:30:45,DRR - Cpptraj: Add a way to set script variables,0,,0
+eea426c9,2017-10-03 13:47:05,DRR - Cpptraj: Code cleanup,0,,0
+f0023bbd,2017-10-04 08:31:07,DRR - Cpptraj: Allow any amount of whitespace in set.,0,,0
+1b6b60ef,2017-10-04 08:32:33,DRR - Cpptraj: Add loops test,0,,0
+43b3b591,2017-10-04 09:05:35,DRR - Cpptraj: Distinguish control blocks from controls.,0,,0
+2d87483f,2017-10-04 09:08:30,DRR - Cpptraj: Add test requirements and enable test.,0,,0
+f2aac72c,2017-10-04 09:18:06,DRR - Cpptraj: Make Control inheritable,0,,0
+18c219f0,2017-10-04 10:54:41,DRR - Cpptraj: Add 'show' command,0,,0
+225ee81f,2017-10-04 13:10:19,DRR - Cpptraj: No need for separate BLOCK DispatchObject  'for' is distinguished by its destination. This way it shows up in the CONTROL category for help.,0,,0
+21c51121,2017-10-04 13:25:04,DRR - Cpptraj: Update code comments.,0,,0
+bce55c5a,2017-10-06 09:25:18,DRR - Cpptraj: Add routines to remove leading whitespace,0,,0
+ce842c29,2017-10-06 09:32:28,DRR - Cpptraj: Add ability to set script variables to number of atoms/residues/molecules in a given mask.,0,,0
+ebe52f80,2017-10-06 09:44:06,DRR - Cpptraj: Add 'trajinframes' option to set,0,,0
+a9bba08f,2017-10-06 09:56:23,DRR - Cpptraj: Add option to append variables.,0,,0
+281e1cc3,2017-10-06 10:07:12,DRR - Cpptraj: Slight change in output format of 'show' to make things more clear,0,,0
+758377cc,2017-10-06 13:18:25,DRR - Cpptraj: First attempt at recognizing data sets as script vars,0,,1
+83ed33e7,2017-10-06 13:37:45,DRR - Cpptraj: Correctly recognize data set name,0,,0
+8d980848,2017-10-10 13:28:11,DRR - Cpptraj: Replace script variable instance with data set value,0,,0
+0c874f52,2017-10-10 15:46:04,DRR - Cpptraj: Improve output message and recognize dash and underscore in data set name,0,,0
+06b52807,2017-10-12 09:59:41,DRR - Cpptraj: Replace all instances of script variables in an argument.,0,,0
+ced0ad0f,2017-10-12 10:02:32,DRR - Cpptraj: Add test of dataset as script var,0,,0
+18d04645,2017-10-12 10:10:47,DRR - Cpptraj: Hide some debug info.,0,,0
+91f4d6e5,2017-10-13 13:08:57,DRR - Cpptraj: Fix issue when reading old amber topology files with large integers in pointers section.,1,,1
+97335c1a,2017-10-13 15:26:45,DRR - Cpptraj: Add 'quietblocks' command to suppress output within control blocks.,0,,0
+1afc8dd8,2017-10-16 11:47:27,DRR - Cpptraj: Add check for valid integer in Get12I6(),0,,0
+da27777c,2017-10-17 10:38:17,Merge pull request #556 from drroe/loops,0,,1
+29095194,2017-10-17 11:33:24,DRR - Cpptraj: Only look for keys/extensions for formats where topology writes are actually supported.,0,,0
+7d702f95,2017-10-17 12:03:50,DRR - Cpptraj: Use write keys for options display.,0,,0
+8af8e4b4,2017-10-17 12:15:17,DRR - Cpptraj: Create array with supported traj write formats,0,,0
+5e1f03a5,2017-10-18 10:41:09,DRR - Cpptraj: Start adding back trajectory file type routines using write key/ext array,0,,0
+db0588b2,2017-10-18 11:08:26,DRR - Cpptraj: Add TODO reminder,0,,0
+37a67cbb,2017-10-18 11:20:13,DRR - Cpptraj: Use new write format determination functions,0,,0
+43ed8361,2017-10-18 11:23:25,DRR - Cpptraj: Remove old unused functions,0,,0
+dea18d6b,2017-10-18 11:28:50,DRR - Cpptraj: Add array with supported write types.,0,,0
+bb2208bc,2017-10-18 11:30:33,DRR - Cpptraj: Use WriteKeyArray in SetupDatafile(),0,,0
+32d8a17e,2017-10-18 12:01:34,DRR - Cpptraj: Add WriteFormatFromArg() function for data files. Remove Vectraj from list of read keys.,0,,0
+a687f356,2017-10-18 12:39:44,Merge pull request #560 from drroe/fix_unsupported_readwrite,0,,1
+567f9936,2017-10-19 14:23:54,DRR - Cpptraj: Fix handling of vector data sets in RPNcalc when size of one is 1.,1,,1
+c1a4585d,2017-10-19 14:41:15,DRR - Cpptraj: Add '[savevectors {combined|separate}]' keyword to rms action to allow translation vectors to be stored.,0,,0
+5757d67e,2017-10-19 14:50:41,DRR - Cpptraj: Add matricesout and vecsout to rms,0,,0
+b4d942bb,2017-10-19 14:51:18,DRR - Cpptraj: Use savematrices,0,,0
+dc99357f,2017-10-19 14:52:59,DRR - Cpptraj: Add savevectors test,0,,0
+c447df7d,2017-10-20 08:31:52,Merge pull request #562 from drroe/rmsd_vecs,0,,1
+5ed2b1b5,2017-10-20 08:32:55,Merge branch 'master' into ir_vac,0,,0
+dd888077,2017-10-20 08:41:02,DRR - Cpptraj: Make hidden  not ready for prime time,0,,0
+b03aa9e6,2017-10-20 08:48:10,DRR - Cpptraj: Add infraredspec test.,0,,0
+ecab48b8,2017-10-20 08:48:26,DRR - Cpptraj: Increase default width/precision for raw output since it will hold velocity * charge,0,,0
+36c9c8f7,2017-10-20 08:50:18,DRR - Cpptraj: Enable irspec test.,0,,0
+1f43ddc0,2017-10-20 09:29:24,Merge pull request #563 from drroe/ir_vac,0,,1
+4c32fcdd,2017-10-20 15:28:49,DRR - Cpptraj: Start creating class to read cpout files.,0,,0
+5bf1689f,2017-10-20 16:06:40,DRR - Cpptraj: Enable cpout for testing,0,,0
+a921a951,2017-10-20 16:12:50,DRR - Cpptraj: Recognize redox as well.,0,,0
+0d10b700,2017-10-23 08:44:40,DRR - Cpptraj: When determining the number of parameters do not make 'A' followed by a non-digit an error since it may just be a data set name.,1,,0
+ad46ceb3,2017-10-23 09:03:43,DRR - Cpptraj: Refactor parameter check so first assignment is ignored only when assignment will happen.,0,,0
+cd0e26d3,2017-10-23 09:29:33,Merge pull request #564 from drroe/fixCurveFit,0,,1
+e5ebc759,2017-10-23 09:31:06,Merge branch 'master' into cphstats,0,,0
+abe5cc52,2017-10-23 12:59:22,DRR - Cpptraj: Finish up initial read code,0,,0
+7fada05b,2017-10-23 13:41:58,DRR - Cpptraj: initial incarnation of pH data set,0,,0
+5509c410,2017-10-23 13:59:42,DRR - Cpptraj: Add some code for accessing states.,0,,0
+8155297a,2017-10-23 14:37:20,DRR - Cpptraj: Start parser for cpin namelist stuff,0,,0
+25a95a8c,2017-10-23 15:59:16,DRR - Cpptraj: Properly parse namelist syntax,0,,0
+a4a66682,2017-10-23 16:12:13,DRR - Cpptraj: Save residue/system names and preserve spaces in quoted strings,0,,0
+0b9c8223,2017-10-23 16:14:51,DRR - Cpptraj: Add first charge,0,,0
+75f30651,2017-10-24 08:57:56,DRR - Cpptraj: Set up residue protonation state info,0,,0
+7ce2d3df,2017-10-24 09:16:37,DRR - Cpptraj: Require cpin file,0,,0
+86f1f31b,2017-10-24 09:41:15,DRR - Cpptraj: Move vars that do not need class scope. Improve data set info output.,0,,0
+9a71a0ed,2017-10-24 10:04:25,DRR - Cpptraj: Save pH values each frame.,0,,0
+66e52054,2017-10-24 16:22:31,DRR - Cpptraj: Move RepName and SearchForReplicas to inside FileName so they can be used by files other than trajectories.,0,,0
+0f64acc0,2017-10-26 13:24:54,DRR - Cpptraj: Add link to wiki,0,,0
+5aa90407,2017-10-26 13:32:16,DRR - Cpptraj: Shader model 2.0 not supported by cuda 9,0,,0
+c3b97b40,2017-10-26 13:46:31,DRR - Cpptraj: More descriptive error message when CUDA fails,1,,0
+b2724efc,2017-10-26 13:55:24,DRR - Cpptraj: Update build instructions.,0,,0
+c7115fbc,2017-10-26 13:56:18,DRR - Cpptraj: Minor spelling error.,1,,0
+6a1d279a,2017-10-26 14:10:05,DRR - Cpptraj: Fix a few minor warnings.,1,,0
+d88fb166,2017-10-26 15:07:04,DRR - Cpptraj: Move MPI version of SearchForReplicas to FileName,0,,0
+b703dbb6,2017-10-26 15:14:28,Fix cpptraj building in paths that have spaces :),1,,1
+f63eb526,2017-10-26 15:48:10,Finish fixing spaces?,1,,0
+62572087,2017-10-26 15:48:14,DRR - Cpptraj: Move found replica message back to TrajIOarray,0,,0
+68875c22,2017-10-26 15:48:50,DRR - Cpptraj: Initial incarnation of the readensembledata command,0,,0
+0b08d4f4,2017-10-26 16:09:11,DRR - Cpptraj: Initial read code. Add missing ifdef.,0,,0
+5231d36b,2017-10-26 16:09:49,Merge pull request #566 from swails/bugfix/SPACES,0,,1
+16ce1b10,2017-10-26 16:10:20,Merge branch 'master' into cuda9,0,,0
+1c68f8a7,2017-10-27 08:04:11,Merge pull request #565 from drroe/cuda9,0,,1
+982bd295,2017-10-27 08:08:39,Merge branch 'master' into cphstats,0,,0
+c619027a,2017-10-27 08:53:40,DRR - Cpptraj: Read data in ensemble mode like trajectories.,0,,0
+8bb58302,2017-10-27 09:11:30,DRR - Cpptraj: When checking for existing data set modify MetaData ensemble number on the fly if necessary.,0,,0
+0176de21,2017-10-30 14:50:02,DRR - Cpptraj: Initial incarnation of data sort action.,0,,0
+82db00fc,2017-10-30 14:50:39,DRR - Cpptraj: Fix return type,1,,1
+b828c7c2,2017-10-30 15:39:50,DRR - Cpptraj: Only TrajComm masters read data,0,,0
+4c9db222,2017-10-30 15:40:24,DRR - Cpptraj: Add some data set checks,0,,0
+7b3e423a,2017-10-31 08:47:27,DRR - Cpptraj: Place ReplicaMap inside namespace ReplicaInfo as Map,0,,0
+c3f547b8,2017-10-31 09:00:20,DRR - Cpptraj: Add DivideAmongThreads to Parallel::Comm,0,,0
+b609b4b7,2017-10-31 09:10:23,DRR - Cpptraj: Use DivideAmongThreads from Comm,0,,0
+a1487a93,2017-10-31 09:18:50,DRR - Cpptraj: Add ensemble_size_  ensemble_beg_  and ensemble_end_ in preparation for allowing # threads to be < ensemble size.,0,,0
+4c23994c,2017-10-31 09:40:32,DRR - Cpptraj: Allow number of threads to be less than number of groups.,0,,0
+98d49609,2017-10-31 09:41:10,DRR - Cpptraj: Use Ensemble_Beg and Ensemble_End,0,,0
+a8b62506,2017-10-31 09:52:49,DRR - Cpptraj: Do not allow fewer threads than frames for the original ensemble framework  that needs a major overhaul to work.,0,,0
+e3ead376,2017-10-31 10:31:34,DRR - Cpptraj: Add variable to track how many ensemble members a thread is responsible for.,0,,0
+a526c44e,2017-10-31 10:32:13,DRR - Cpptraj: Gather initial pH values.,0,,0
+9a511228,2017-10-31 10:46:22,DRR - Cpptraj: When # threads < # groups ensure threads is a multiple of groups  ensures things like AllGather will work properly.,0,,0
+64e91c8f,2017-10-31 10:47:18,DRR - Cpptraj: Put pH values in ReplicaInfo::Map,0,,0
+9583deb1,2017-10-31 15:14:19,DRR - Cpptraj: Add Resize and Allocate functions,0,,0
+7947eec2,2017-10-31 15:19:38,DRR - Cpptraj: Reserve/resize solvent ph array as well. Add [] operator for accessing residue state.,0,,0
+737786a7,2017-10-31 15:22:57,DRR - Cpptraj: Disable debug info,0,,0
+55561b44,2017-11-01 09:13:26,DRR - Cpptraj: Add SetHasCopies(),0,,0
+2f8e52f7,2017-11-01 09:13:59,DRR - Cpptraj: Reorganize. Add Nframes(),0,,0
+92013cfb,2017-11-01 09:14:21,DRR - Cpptraj: Add bare bones cpout write for testing.,0,,0
+2524e086,2017-11-01 09:45:54,DRR - Cpptraj: Support multiple sets to same file,0,,0
+63d01514,2017-11-01 09:46:13,DRR - Cpptraj: Initial sort. Not working of course.,0,,0
+5ad4f09b,2017-11-01 10:06:53,DRR - Cpptraj: Fix AddState so extra pH values arent added.,1,,1
+bc7dd1da,2017-11-01 10:08:44,DRR - Cpptraj: Working now for 1 thread,0,,0
+a70cd4d7,2017-11-01 10:38:52,DRR - Cpptraj: Initial changes for multiple threads,0,,0
+9a1d0ca4,2017-11-01 11:03:48,DRR - Cpptraj: Reduce -> ReduceMaster to be consistent with existing Parallel::Comm names.,0,,0
+95bd2281,2017-11-01 11:32:42,DRR - Cpptraj: Add Reduce to rank,0,,0
+3abf8ed5,2017-11-01 12:26:22,DRR - Cpptraj: Hide some debug info,0,,0
+26719fa8,2017-11-01 13:06:09,DRR - Cpptraj: Add Consolidate function. Use assign instead of resize to avoid problems with resize not properly initializing array when mpi_reducing,1,,0
+93f6fc70,2017-11-01 13:08:47,DRR - Cpptraj: Consolidate data to target ranks  then remove data that does not belong on rank.,0,,0
+3e4cd879,2017-11-01 14:08:10,DRR - Cpptraj: Add MemberEnsCommRank() for determining which thread a given ensemble member belongs to.,0,,0
+fe650e0c,2017-11-01 14:10:21,DRR - Cpptraj: Use MemberEnsCommRank,0,,0
+60941c31,2017-11-01 14:31:47,DRR - Cpptraj: Hide some debug info,0,,0
+d75a88a9,2017-11-01 14:39:36,DRR - Cpptraj: Hide debug info,0,,0
+2b13bf96,2017-11-02 09:25:59,DRR - Cpptraj: In parallel ensemble mode print data sets that are on other ranks.,0,,0
+f3a0157b,2017-11-02 09:31:47,DRR - Cpptraj: Hide more debug info  add printout of sets before and after sorting.,0,,0
+7153b639,2017-11-02 09:43:46,DRR - Cpptraj: Placeholder for future function.,0,,0
+afcb4506,2017-11-02 12:09:24,DRR - Cpptraj: Add barrier and flush to fix order of printout in parallel.,1,,1
+9088ac47,2017-11-02 14:23:36,DRR - Cpptraj: Improve code docs.,0,,0
+a646a35e,2017-11-02 15:27:51,DRR - Cpptraj: Stub for cphstats analysis,0,,0
+c6a6ac80,2017-11-03 10:22:39,DRR - Cpptraj: Calculate transitions  # protonated  total protonation. Add some checks.,0,,0
+f5092aaf,2017-11-03 15:29:54,DRR - Cpptraj: Attempt to store pH stats in a way that will make it easier to do things like Hill eq. fits down the road.,0,,0
+001c5d24,2017-11-03 15:49:54,DRR - Cpptraj: Need to think carefully about how across-ensemble stats should be calculated.,0,,0
+d1ad502c,2017-11-07 09:42:37,DRR - Cpptraj: Fix serial compile issues,1,,1
+4ca1d0c2,2017-11-07 10:04:13,DRR - Cpptraj: Ensure residue info in pH set.,0,,0
+2e053868,2017-11-09 19:01:47,Fix building without readline causing errors,1,,1
+9308a4bf,2017-11-09 19:01:47,Fix building without readline causing errors,1,,1
+9f46e9a8,2017-11-09 19:02:00,update CMake submodule,0,,0
+18ee05bc,2017-11-09 19:02:00,update CMake submodule,0,,0
+ef4b4c50,2017-11-09 19:02:36,Add BUILD_PARALLEL_COMBINATIONS option to decrease build time for pan-configuration builds,0,,0
+db683ead,2017-11-09 19:02:36,Add BUILD_PARALLEL_COMBINATIONS option to decrease build time for pan-configuration builds,0,,0
+07148247,2017-11-09 19:29:52,Merge branch 'add-parallel-combine-option' of https://github.com/multiplemonomials/cpptraj into add-parallel-combine-option,0,,0
+12aee474,2017-11-09 19:41:27,Merge branch 'master' into add-parallel-combine-option,0,,0
+408905ad,2017-11-13 14:07:23,DRR - Cpptraj: Make a dataset just for unsorted pH data.,0,,0
+629c657b,2017-11-13 14:10:17,DRR - Cpptraj: Fix header guard,1,,0
+cc4e4a4a,2017-11-13 14:22:28,DRR - Cpptraj: Add CphResidue class for storing titratable residue info,0,,0
+a33a0afa,2017-11-13 16:32:34,DRR - Cpptraj: Modify DataSet_pH_REMD to use CphResidue.,0,,0
+b678ebf5,2017-11-13 16:37:01,DRR - Cpptraj: Add single residue single pH sorted constant pH data set.,0,,0
+ae19ecf0,2017-11-13 16:40:40,DRR - Cpptraj: Ensure data sets can be allocated.,0,,0
+37c3c204,2017-11-13 16:57:17,DRR - Cpptraj: Start changes for reading with new sets,0,,0
+61ada2d9,2017-11-14 11:49:42,DRR - Cpptraj: Attempt to fix MKL + GNU compile.,1,,1
+b87cbeae,2017-11-14 12:19:00,Merge pull request #568 from drroe/fixmklgnu,0,,1
+a40ce152,2017-11-14 12:25:59,DRR - Cpptraj: Start removing unneeded functions.,0,,0
+4c96ed49,2017-11-14 12:26:17,Merge branch 'master' into cphstats,0,,0
+2e65d159,2017-11-14 12:26:48,Merge branch 'cphstats' into cphstats-twophsets,0,,0
+99b97c34,2017-11-14 12:39:22,Merge branch 'master' into add-parallel-combine-option,0,,0
+d01ef807,2017-11-14 13:12:24,Merge pull request #567 from multiplemonomials/add-parallel-combine-option,0,,1
+94ad4414,2017-11-14 14:57:32,Merge branch 'master' into cphstats,0,,0
+f0b92143,2017-11-14 14:57:47,Merge branch 'cphstats' into cphstats-twophsets,0,,0
+dfdaa3fd,2017-11-14 15:09:28,DRR - Cpptraj: Use CphResidue,0,,0
+57b89fee,2017-11-15 17:54:04,DRR - Cpptraj: Fix unsorted cpout read,1,,1
+de72c2f7,2017-11-15 19:19:52,DRR - Cpptraj: Sorted pH read,0,,0
+aa6230b6,2017-11-15 20:09:51,DRR - Cpptraj: Fix up pH set writes.,1,,1
+ddc77e54,2017-11-16 11:26:40,DRR - Cpptraj: Adapt sort for new sets. Needs testing.,0,,0
+f3a12c2b,2017-11-16 11:54:53,DRR - Cpptraj: Update for new set format,0,,0
+9b40e075,2017-11-16 11:55:20,DRR - Cpptraj: Add file and update dependencies,0,,0
+2108670f,2017-11-16 13:20:57,DRR - Cpptraj: Add missing OpenFile,0,,0
+a6641f2f,2017-11-16 13:37:46,DRR - Cpptraj: Use truncated name for data set aspect,0,,0
+fdd83631,2017-11-16 22:41:31,DRR - Cpptraj: Add WriteBuffer for DataSet_pH,0,,0
+03b5027a,2017-11-16 22:45:48,DRR - Cpptraj: Add keyword/extension for cpout write,0,,0
+5dffad60,2017-11-16 23:01:44,DRR - Cpptraj: Remove parentheses from set description,0,,0
+1ded9973,2017-11-21 14:38:39,DRR - Cpptraj: Add mcstepsize  nwriteheader  and dt options to cpout write.,0,,0
+1d2f90ad,2017-11-21 15:21:56,DRR - Cpptraj: Get rid of old code,0,,0
+377b1d5c,2017-11-21 15:38:36,DRR - Cpptraj: Fix DataSet consolidation,1,,1
+3e17d4f0,2017-11-21 15:44:12,DRR - Cpptraj: Hide debug info. Do not set legend.,0,,0
+24f9d4e0,2017-11-27 15:14:51,DRR - Cpptraj: Start adding statsout option,0,,0
+18c24f21,2017-11-28 09:53:21,DRR - Cpptraj: Instead of using multiple maps  just sort the result stats array according to the desired output. Add some cphstats-like output.,0,,0
+060e1330,2017-11-28 10:19:40,DRR - Cpptraj: Add pKa and offset calc,0,,0
+176bdc7d,2017-11-28 10:46:45,DRR - Cpptraj: Truncate residue name,0,,0
+bc2f9a82,2017-11-29 09:52:27,DRR - Cpptraj: Ignore the first frame of constant pH set to be consistent with cphstats. Change acumulators to unsigned int.,0,,0
+78bafc57,2017-11-29 15:28:44,DRR - Cpptraj: Add option to get frac. protonated/deprotonated plots for each residue as a function of pH,0,,0
+337f7336,2017-12-12 14:46:04,DRR - Cpptraj: Add some more detailed timing info,0,,0
+f8befcf9,2017-12-13 09:10:35,DRR - Cpptraj: Start testing new version of nonbonded calc where different nonbonded types (solute to on-grid water  on-grid water to itself  off-grid water to on-grid water) are split into 3 separate loops.,0,,0
+f2a6f0b1,2017-12-13 09:49:25,DRR - Cpptraj: Store on-grid water coords to reduce cache misses,0,,0
+94067550,2017-12-13 11:49:37,DRR - Cpptraj: Code cleanup  disable nonbond distance timer for now.,0,,0
+70741eda,2017-12-13 12:49:59,DRR - Cpptraj: Save some time in the non-bonded calc by precalculating imaged coords in the off-grid solvent to on-grid solvent loop.,0,,0
+e7f61f25,2017-12-13 13:43:09,DRR - Cpptraj: Fix for cases other than non-orthorhombic,1,,1
+ff494b34,2017-12-13 14:09:30,DRR - Cpptraj: Fix timer,1,,1
+e7f6e3eb,2017-12-13 14:19:47,DRR - Cpptraj: Speed up solute to on-grid solvent distance calc.,0,,0
+daff1ede,2017-12-13 14:34:22,DRR - Cpptraj: Speed up nonortho on-grid solvent self calc,0,,0
+5dd1056a,2017-12-13 14:40:35,DRR - Cpptraj: Hide some debug info,0,,0
+4e6a8092,2017-12-14 09:04:21,DRR - Cpptraj: Use DBL_MAX for maxD,0,,0
+fef33c95,2017-12-14 09:11:10,DRR - Cpptraj: Speed up old nonbond form as well,0,,0
+3f153f08,2017-12-14 09:26:03,DRR - Cpptraj: Completely separate new nonbond calc from old. Old has a slight edge in speed.,0,,0
+ae002b09,2017-12-14 09:37:08,DRR - Clean up comments,0,,0
+7b27bcc4,2017-12-14 10:26:57,DRR - Cpptraj: Add units to reference density output. Estimate how much memory will be needed to store on-grid indices based on the reference density and grid volume  and use push_back in case that estimate is too low.,0,,0
+ccd64174,2017-12-14 10:37:34,DRR - Cpptraj: Remove increased tolerance,0,,0
+96e02d48,2017-12-14 10:46:21,DRR - Cpptraj: Remove new scheme for now since its a bit more memory hungry and doesnt provide a huge speedup. Bigger speedup is in the nonortho calc.,0,,0
+d53dfa7b,2017-12-14 10:55:48,DRR - Cpptraj: Openmp-parallelize the coords pre-wrap for nonortho cells,0,,0
+6fcb3283,2017-12-14 11:00:30,DRR - Cpptraj: Minor clean up,0,,0
+98dee33a,2017-12-14 11:54:20,Merge pull request #570 from drroe/gist_pairlist,0,,1
+7cc49172,2017-12-16 22:40:31,Merge branch 'master' of https://github.com/Amber-MD/cpptraj into HEAD,0,,0
+da38667e,2017-12-16 23:18:31,First attempt at adding CMake to Appveyor build,0,,0
+0ae26e9c,2017-12-16 23:21:20,yml syntax error,1,,0
+a6eca24e,2017-12-16 23:23:28,try again to fix matrix,1,,0
+a142b1dd,2017-12-16 23:24:27,one more time...,0,,0
+dc6a7f79,2017-12-16 23:27:06,try to fix multiline string,1,,0
+0cd7ee94,2017-12-16 23:30:27,try carets for line continuation,0,,0
+b1d43e36,2017-12-16 23:34:18,Give up on splitting the line.  It's a good thing I have two monitors...,0,,0
+07581cde,2017-12-16 23:38:37,Add missing %  un-split long line,0,,0
+73975bb0,2017-12-16 23:43:09,try to override CMake's check for sh.exe,0,,0
+cc516a4e,2017-12-16 23:50:10,Clone cmake in appveyor  fix premature compiler-finding in CMakeLists.txt,1,,0
+a369a1dd,2017-12-16 23:52:10,OK that didn't work  let's try a different way.,0,,0
+fcc11ae0,2017-12-17 00:01:05,update cmake submodule to fix syntax error,1,,0
+7194331d,2017-12-17 00:06:06,Re-enable C language in cmake because apparently some compile tests need it.,0,,0
+19137fa4,2017-12-17 00:13:21,try to fix bzip2 error by updating cmake submodule,1,,1
+00c01128,2017-12-17 00:24:10,Update CMake submodule  enable PRINT_PACKAGING_REPORT,0,,0
+2f81c4b2,2017-12-17 00:37:34,disable arpack on Appveyor for now until I can figure out why it's broken,0,,0
+728e98ab,2017-12-17 00:48:15,stupid xcopy and its stupid command-line options...,0,,0
+60a24b7e,2017-12-17 01:06:00,Use cmake's install instead of copying files,0,,0
+fb4f2773,2017-12-17 01:28:37,Appveyor: re-enable CMake-less build,0,,0
+d6d7fa2a,2017-12-17 01:29:48,fix missing environment variable,1,,1
+94431622,2017-12-17 01:38:53,fix sh invocation,1,,1
+d97bd120,2017-12-17 10:01:59,"appveyor: add another missing ""./""",0,,0
+6f6ab449,2017-12-17 10:50:12,More of those missing <algorithm> includes,0,,0
+705185a2,2017-12-17 11:08:42,Add cmake builds to .travis.yml,0,,0
+2eb7999d,2017-12-17 11:15:46,travis-ci: add more semicolons,0,,0
+04567fd4,2017-12-17 11:54:08,travis: cmake install to base dir,0,,0
+e03da3f3,2017-12-17 14:20:01,remove comment that was breaking Travis,0,,0
+2a3bc69f,2017-12-17 14:38:45,travis: try again to fix OS X error,1,,0
+a1540609,2017-12-17 14:47:34,try again to fix OS X Travis build,1,,0
+593f6689,2017-12-17 14:56:11,remove if statement to figure out which line is failing,1,,0
+57e9701c,2017-12-17 15:05:58,keep trying things to troubleshoot inexplicable Travis failure without error,1,,0
+c86a9a62,2017-12-17 17:29:16,try removing rvm get head?,0,,0
+cad5706d,2017-12-17 17:30:32,remove errant comment,0,,0
+1734dead,2017-12-17 17:35:25,travis: try older OS X version,0,,0
+df348c19,2017-12-17 18:02:49,OK that didn't work  let's try a newer version.,0,,0
+d85cbc0d,2017-12-17 18:13:03,That's a bit better... Let's try turning off set -x,0,,0
+2269d615,2017-12-17 18:18:31,try to combine cd with other commands,0,,0
+557fb13a,2017-12-17 18:23:13,"OK maybe it doesn't like ""cd $builddir"" ?",0,,0
+232bea77,2017-12-17 18:29:27,let's see how this weirdness is affected when I shuffle the script around?,0,,0
+c44b108a,2017-12-17 18:32:57,"I wonder if ""set -e"" is breaking something inside Travis?",0,,0
+c88c7236,2017-12-17 18:41:32,"Haha!  That was it!  Removing ""set -e"" did the trick!  Just have to turn off OpenMP...",0,,0
+3f11cc62,2017-12-17 18:51:55,"add missing ""cd ..""  re-enable configure-based cpptraj build",0,,0
+59120032,2017-12-17 19:47:36,reenable disabled Travis build types,0,,0
+b9626fba,2017-12-18 14:30:47,Merge pull request #571 from multiplemonomials/cmake-ci,0,,1
+0d899296,2018-01-08 15:47:05,DRR - Cpptraj: Add volume estimate to volmap,0,,0
+570a8520,2018-01-09 10:17:16,DRR - Cpptraj: Fix up parsing of volmap arguments - should now correctly handle 'data'. Also print better info on grid when it is set up. Remove extra DataSet_3D functions having to do with binning in favor of an explicit interface to GridBin.,1,,1
+204a287f,2018-01-09 10:32:20,DRR - Cpptraj: Get mask before file name so that mask is not used as file name if no output file desuired.,0,,0
+c0432068,2018-01-09 10:39:23,DRR - Cpptraj: Add dataset to hold total grid volume,0,,0
+d69eb402,2018-01-09 11:31:44,DRR - Cpptraj: Add check for spacing argument(s),0,,0
+8a4e522d,2018-01-09 11:32:10,DRR - Cpptraj: Fix up help,1,,1
+f5f180d5,2018-01-09 12:28:33,DRR - Cpptraj: Add some debug info. Fix potential error when data set name not specified. Improve speed slightly by not calculating some prefactors when point will not be on grid.,1,,0
+2af6b9aa,2018-01-09 13:40:56,DRR - Cpptraj: Only store half radii for atoms that will be calculated,0,,0
+d453d3ab,2018-01-09 16:00:21,DRR - Cpptraj: Add better error checking on grid allocation. Add 'boxref' keyword. Do not calculate atoms with 0.0 radii.,1,,0
+5ff740cf,2018-01-10 09:58:30,DRR - Cpptraj: Fix potential memory errors in comparetop when one or both topologies are missing certain types of information.,1,,1
+52afbd04,2018-01-10 11:48:06,DRR - Cpptraj: Add stepfac keyword,0,,0
+e6d9d949,2018-01-10 12:09:50,DRR - Cpptraj: Convert rhalf to double precision,0,,0
+33b138fd,2018-01-10 12:42:29,DRR - Cpptraj: Add 'sphere' mode for ignoring points outside radius when smearing gaussian  useful for volume calc.,0,,0
+8d79d66c,2018-01-10 13:52:40,DRR - Cpptraj: Add 'radii' argument for choosing specific type of radii. Only store and calculate volmap for atoms with radii > 0.0.,0,,0
+ba3c2092,2018-01-10 13:53:42,Merge branch 'master' of github.com:/Amber-MD/cpptraj into volmap_volume,0,,0
+dfcc24b8,2018-01-10 15:15:13,DRR - Cpptraj: Fix parsing of gromacs top keys,1,,1
+b6481861,2018-01-11 08:40:32,Merge pull request #572 from drroe/volmap_volume,0,,1
+d9c834b1,2018-01-11 08:41:10,Merge branch 'master' into fix_gmx_top,0,,0
+7b94214d,2018-01-11 13:42:23,Merge pull request #573 from drroe/fix_gmx_top,0,,1
+ed4553c5,2018-01-11 15:11:57,DRR - Cpptraj: When printing dihedrals  print charmm impropers too if present,0,,0
+791f9a77,2018-01-11 15:47:40,Fix Appveyor path to project directory varying from what was assumed in the batch file,1,,1
+ac5dea44,2018-01-11 15:48:21,Update CMake submodule  and fix CI scripts for new version,1,,1
+cb970bfa,2018-01-12 08:19:20,Merge pull request #574 from multiplemonomials/appveyor-path-fix,0,,1
+cb7127da,2018-01-12 09:16:00,DRR - Cpptraj: Separate printing of charmm impropers from other dihedrals,0,,0
+487a2789,2018-01-12 09:27:54,DRR - Cpptraj: Add command to print Urey-Bradley terms,0,,0
+5e18760d,2018-01-12 09:30:34,DRR - Cpptraj: Slight width increase to accomodate impropers,0,,0
+3b803b77,2018-01-12 09:33:57,Merge branch 'master' into printhedrals_charmm,0,,0
+452d9bb4,2018-01-12 09:36:50,DRR - Cpptraj: Update for format change,0,,0
+f03dacdb,2018-01-12 10:23:02,DRR - Cpptraj: Detect coordinate overflows in PDB format. If it happens  warn and replace the number with asterisks.,0,,0
+d2232262,2018-01-12 10:57:00,DRR - Cpptraj: Protect against empty PDBs. Also protect against cases where StartNewMol() is called without any atom/residue info present.,0,,0
+17a44254,2018-01-12 14:07:06,Merge pull request #575 from drroe/printhedrals_charmm,0,,1
+98b52015,2018-01-17 14:17:25,DRR - Cpptraj: Add template for DataSet,0,,0
+d2c96347,2018-01-17 14:17:43,DRR - Cpptraj: Initial incarnation of parameters data set,0,,0
+5bd32736,2018-01-17 14:27:27,DRR - Cpptraj: Move AtomType to ParameterTypes,0,,0
+2159fbeb,2018-01-17 15:48:49,DRR - Cpptraj: AtomType and AtomTypeArray,0,,0
+667969ff,2018-01-17 16:04:55,DRR - Cpptraj: Add some debug info and iterators,0,,0
+29d5ad01,2018-01-17 16:05:28,DRR - Cpptraj: Remove AtomType from ParameterTypes.h  add proper include to Topology,0,,0
+a84822b3,2018-01-17 16:06:06,DRR - Cpptraj: Add CHarmm RTF/PRM file,0,,0
+690d12b8,2018-01-17 16:06:30,DRR - Cpptraj: Actually add the class,0,,0
+2a663e29,2018-01-17 16:07:07,DRR - Cpptraj: Add more functionality to DataSet_Parameters and enable,0,,0
+50a527aa,2018-01-17 16:07:34,DRR - Cpptraj: Add Append function,0,,0
+24840de4,2018-01-17 16:07:49,DRR - Cpptraj: Update dependencies,0,,0
+cfe8e979,2018-01-18 10:27:08,DRR - Cpptraj: Beginning of ParameterHolders,0,,0
+53a8e003,2018-01-18 10:36:28,DRR - Cpptraj: Add CheckForAtomType,0,,0
+ccb4431d,2018-01-18 10:37:00,DRR - Cpptraj: Make use of ParameterHolders,0,,0
+4575d250,2018-01-18 10:37:15,DRR - Cpptraj: Update dependencies.,0,,0
+96e03da6,2018-01-18 10:54:20,DRR - Cpptraj: Just use vector instead of a map  sorting type arrays is tricky,0,,0
+872c2630,2018-01-18 11:05:05,DRR - Cpptraj: Read MASS entries,0,,0
+ca764bec,2018-01-18 11:26:43,DRR - Cpptraj: Change BondParmHolder to template ParmHolder. Add angle and UB param read,0,,0
+caf94fbd,2018-01-18 11:29:32,DRR - Cpptraj: Print angle and UB params,0,,0
+55bd8a80,2018-01-18 11:39:11,DRR - Add dihedrals and impropers,0,,0
+3f6436c4,2018-01-18 11:54:01,DRR - Cpptraj: Read LJ parameters,0,,0
+ce0a2de4,2018-01-18 11:57:33,DRR - Cpptraj: Fix data set constructor,1,,1
+f33c13b8,2018-01-18 11:58:57,DRR - Cpptraj: Remove unneeded .cpp file,0,,0
+0c167ab2,2018-01-18 12:01:07,DRR - Cpptraj: Remove some debug info,0,,0
+ba463788,2018-01-18 13:34:46,DRR - Cpptraj: Initial incarnation of the updateparameters command,0,,0
+30890d32,2018-01-18 13:50:54,DRR - Cpptraj: Update bond parameters.,0,,0
+7ff9d778,2018-01-18 14:06:42,DRR - Cpptraj: Update angles. Ensure when angles are read from charmm prm they are converted to radians.,0,,0
+99144ddb,2018-01-18 14:39:39,DRR - Cpptraj: Update dihedral  improper  and UB parameters,0,,0
+11a09528,2018-01-18 14:54:09,DRR - Cpptraj: Change where CMAP parameters are written to be consistent with parmed.,0,,0
+a11945bf,2018-01-18 14:59:52,DRR - Cpptraj: Give charmm default dihedral scaling factors of 1.0,0,,0
+fb8977e6,2018-01-19 08:59:12,DRR - Cpptraj: Do not just bail when END is hit.,0,,0
+332d2a26,2018-01-19 09:25:47,DRR - Cpptraj: Hide some debug info. Better info for DataSet_Parameters.,0,,0
+c31e9e84,2018-01-19 09:40:06,DRR - Cpptraj: Improve code docs. Make defining nonbond params for atom without previous MASS statement an error.,1,,0
+ba2b5bd2,2018-01-19 09:49:22,DRR - Cpptraj: Improve code docs and output messages.,0,,0
+fd86b4cc,2018-01-19 10:13:23,DRR - Cpptraj: CHAMBER topologies use a higher precision constant when converting charge units.,0,,0
+cbb3efab,2018-01-19 10:15:39,DRR - Cpptraj: Correct for higher precision constant,0,,0
+0b21262f,2018-01-19 14:38:13,DRR - Cpptraj: Improve help.,0,,0
+cf4a9d65,2018-01-23 09:08:59,Merge pull request #578 from drroe/add_parameters,0,,1
+008adef1,2018-01-24 15:17:10,DRR - Cpptraj: Stub for introducing libpme from A. Simmonett,0,,0
+5e10145c,2018-01-24 15:48:29,DRR - Cpptraj: Add some detection for C++11 extensions. Change configure output so more important messages happen at the end.,0,,0
+80525966,2018-01-24 16:00:56,DRR - Cpptraj: Change ordering of some flags.,0,,0
+021099c9,2018-01-25 09:24:59,DRR - Cpptraj: Start configure rewrite,0,,0
+eade6441,2018-01-25 11:58:36,DRR - Cpptraj: Add all options except library. Add compiler flag setup.,0,,0
+5e8d238e,2018-01-25 13:22:31,DRR - Change to mpi compiler wrappers if necessary,0,,0
+841fb6a5,2018-01-25 13:41:10,DRR - Cpptraj: Setup profiling,0,,0
+4016a03e,2018-01-25 13:46:12,DRR - Cpptraj: Use cray wrappers,0,,0
+3ad06fc2,2018-01-25 14:03:22,DRR - Cpptraj: Make local function variables lowercase. Start compiler tests.,0,,0
+ae6aa953,2018-01-25 15:26:46,DRR - Cpptraj: Check for OpenMP and C11 support,0,,0
+33bf6986,2018-01-25 15:47:22,DRR - Cpptraj: Add MPICH_IGNORE_CXX_SEEK fix,1,,1
+747d4224,2018-01-25 15:55:22,DRR - Cpptraj: Some more cray flags,0,,0
+99c58e77,2018-01-25 16:09:56,DRR - Cpptraj: Start external library configure,0,,0
+43ba523c,2018-01-26 08:40:12,DRR - Cpptraj: Start recognizing library command line stuff.,0,,0
+b2dd6d1f,2018-01-26 09:48:39,DRR - Cpptraj: Start library setup,0,,0
+2010e890,2018-01-26 10:04:12,DRR - Cpptraj: Add test compile.,0,,0
+29cc2ea1,2018-01-26 10:16:39,DRR - Cpptraj: Try to deal with bundled libraries,0,,0
+efe932ea,2018-01-26 10:22:12,DRR - Cpptraj: Start setting flags.,0,,0
+297d86ef,2018-01-26 10:59:08,DRR - Cpptraj: Add checks for pnetcdf  zlib  bzlib. Go back to old way of determining '=' position because apparently expr index does not work the same way on Macs (grr),0,,0
+059a01e2,2018-01-26 11:57:16,DRR - Cpptraj: Split up tests so they can potentially be combined.,0,,0
+1476a9f2,2018-01-26 12:21:48,DRR - Cpptraj: Bring external library tests out of arrays,0,,0
+fc9400b6,2018-01-26 12:35:43,DRR - Cpptraj: Add check for adding in the fortran link arguments,0,,0
+8007d714,2018-01-26 12:51:01,DRR - Cpptraj: Add arpack test. Make fortran link test a function.,0,,0
+7fec2c0a,2018-01-26 12:56:40,DRR - Cpptraj: Support -nomathlib,0,,0
+ba72ad0c,2018-01-26 13:08:07,DRR - Cpptraj: FFTW3 options,0,,0
+013dba62,2018-01-26 13:42:30,DRR - Cpptraj: Add external readline,0,,0
+9e86ca4b,2018-01-26 13:59:13,DRR - Cpptraj: Add xdrfile,0,,0
+41ebec6e,2018-01-26 14:38:16,DRR - Cpptraj: Start readline and xdrfile bundled,0,,0
+5748aa5a,2018-01-26 15:00:08,DRR - Cpptraj: Add sanderlib test,0,,0
+8bff2b02,2018-01-26 15:05:27,DRR - Cpptraj: Add fortran test,0,,0
+51126b9d,2018-01-26 15:11:07,DRR - Cpptraj: Openblas,0,,0
+49b5237b,2018-01-26 15:15:15,DRR - Cpptraj: Override previous openblas,0,,0
+0cf87ec4,2018-01-26 15:19:50,DRR - Cpptraj: New macAccelerate flag,0,,0
+24b18d26,2018-01-26 15:39:21,DRR - Cpptraj: Enable -amberlib flag,0,,0
+c2b124f4,2018-01-26 16:11:17,DRR - Cpptraj: Add MKL setup,0,,0
+718024fe,2018-01-27 14:59:26,DRR - Cpptraj: Consolidate BLAS options variables,0,,0
+695369e2,2018-01-29 09:24:55,DRR - Cpptraj: Make '-<lib>' a general flag for enabling 3rd party libraries. Get rid of USE_FFTW3 variable. Hide some debug info,0,,0
+6f1d5830,2018-01-29 09:41:51,DRR - Cpptraj: Store configure command. Dont print OK when TestProgram is quiet. Enable MPI if not specified but parallel netcdf is.,0,,0
+1dd5e232,2018-01-29 09:55:21,DRR - Cpptraj: Support '-timer' option as a library. Add -DDEBUG  -DMPI  -DENABLE_SINGLE_ENSEMBLE directives,0,,0
+7a285fd4,2018-01-29 09:57:30,DRR - Cpptraj: MPI + no parallel netcdf warning,0,,0
+02e07f1f,2018-01-29 10:22:56,DRR - Cpptraj: Cray fortran warn flag is different from C/C++ (sigh),0,,0
+a9b0caf8,2018-01-29 10:26:38,DRR - Cpptraj: Do not switch to MPI compiler wrappers when using cray compilers,0,,0
+7e35f707,2018-01-29 10:30:00,DRR - Cpptraj: Start adding CUDA support. Look for lib64 dir if lib not found when setting up linker flags.,0,,0
+df7a8140,2018-01-29 10:56:46,DRR - Cpptraj: Get rid of USE_WINDOWS variable in favor of the PLATFORM variable. Make sure TestProgram uses LDFLAGS. Fix up GNU static compile by adding in lquadmath. Add binary suffix code.,1,,1
+b1d9a9e9,2018-01-29 11:04:14,DRR - Cpptraj: Trap when intel compiler version check fails. Fix cuda suffix.,1,,0
+88c0cfb7,2018-01-29 11:07:01,DRR - Cpptraj: Remove USE_CRAY variable in favor of PLATFORM='cray',0,,0
+6ca2fea5,2018-01-29 11:16:25,DRR - Cpptraj: Remove staticlink from LDFLAGS when not static. Fix cray warn flag,1,,0
+aaa18306,2018-01-29 11:51:13,DRR - Cpptraj: Start adding platform-specific checks. Fix BLAS options so they override -amberlib if it was specified.,1,,1
+0abc0294,2018-01-29 12:01:15,DRR - Cpptraj: Add libstdc++ check on OSX,0,,0
+d9b7b2f8,2018-01-29 12:56:44,DRR - Cpptraj: Start testing clang++/gfortran linking on OSX,0,,0
+f6ff9cc4,2018-01-29 12:57:33,DRR - Cpptraj: Enable platform-specific tests,0,,0
+6ee35912,2018-01-29 12:57:45,Merge branch 'libpme-configure' of github.com:drroe/cpptraj into libpme-configure,0,,0
+8a92a0c4,2018-01-29 13:19:59,DRR - Cpptraj: Add lgfortran search for OSX,0,,0
+2bd0f249,2018-01-29 13:24:44,DRR - Cpptraj: Add some debug info.,0,,0
+7d710314,2018-01-29 14:16:11,DRR - Cpptraj: Start setting up config.h link variables. Fix include path for bundled libraries. Reduce the number of global script variables. Add install directory check,1,,1
+ba161348,2018-01-29 14:50:23,DRR - Cpptraj: Start determining build targets and writing config.h,0,,0
+007f2b6c,2018-01-29 14:58:11,DRR - Cpptraj: Add special XDR and fft rules,0,,0
+fa245caf,2018-01-29 15:06:35,DRR - Cpptraj: Add cleaning and resource file creation.,0,,0
+6b0e438f,2018-01-29 15:17:55,DRR - Cpptraj: SKIP_CHECKS to PERFORM_CHECKS,0,,0
+d6daf680,2018-01-29 15:53:08,DRR - Cpptraj: Add more detailed summary,0,,0
+3da0f2d9,2018-01-29 16:02:14,DRR - Cpptraj: Remove openmp flags if no openmp desired. Improve test output on osx,0,,0
+e9ba8c7c,2018-01-29 16:05:04,DRR - Cpptraj: Use OpenMP test as the C++ test when compiling openmp (no need to do it twice).,0,,0
+e65b2e2a,2018-01-29 16:13:12,DRR - Cpptraj: Ensure some critical tests always happen. Actually add C++11 flag to CXXFLAGS when support is enabled.,0,,0
+022ccf7c,2018-01-29 20:48:09,DRR - Cpptraj: Fix detection of gnu compilers when they are really clang on OSX,1,,1
+28df3700,2018-01-30 10:35:51,DRR - Cpptraj: Ensure that the '-amberlib' option only overwrites libraries that have not been otherwise specified. Ensure that libraries that are off are not added to the linker variables.,0,,0
+c095580f,2018-01-30 10:39:56,DRR - Cpptraj: Do not print out BLAS info if disabled,0,,0
+8675bd15,2018-01-30 10:59:50,DRR - Cpptraj: Fix up help. Print shader model config in summary,1,,0
+a30af6c4,2018-01-30 11:34:50,DRR - Cpptraj: Have C++11 test use actual code.,0,,0
+be8353a5,2018-01-30 11:35:59,DRR - Cpptraj: Add return 0 statement at the end of test code.,0,,0
+35273a83,2018-01-30 11:45:08,DRR - Cpptraj: Add C++11 flag for Intel  clang  and Cray compilers,0,,0
+4f98a517,2018-01-30 11:59:44,DRR - Cpptraj: Ensure INCLUDE is part of CXXFLAGS etc. Ensure the same directory is not included multiple times.,0,,0
+0708289b,2018-01-30 12:25:53,DRR - Cpptraj: Add directives. Fix setting of cuda libraries.,1,,0
+d0d3d704,2018-01-30 12:43:36,DRR - Cpptraj: Add xdr_seek check to xdr test. Remove unneeded XDR-related variables from config and makefile,0,,0
+2cbd2dd5,2018-01-30 12:53:24,DRR - Cpptraj: Remove unnecessary readline stuff from config / makefile,0,,0
+8da9cb62,2018-01-30 13:21:20,DRR - Cpptraj: Simplify handling of FFT in configure/Makefile,0,,0
+152d2b8e,2018-01-30 13:48:16,DRR - Cpptraj: Ensure ompflag is added to LDFLAGS,0,,0
+e5b21198,2018-01-30 15:37:09,DRR - Cpptraj: Properly set directives when functionality is turned off by a test.,0,,0
+4045a0d7,2018-01-30 15:54:47,DRR - Cpptraj: Add LIBPME directive,0,,0
+6a44079c,2018-01-30 15:58:05,DRR - Cpptraj: Put all directives in one place,0,,0
+de740577,2018-01-30 16:01:17,DRR - Cpptraj: Add missing include,0,,0
+04fd38d8,2018-01-30 16:06:27,DRR - Cpptraj: Add option to disable C++11 support,0,,0
+88bf5c2a,2018-01-30 21:08:44,DRR - Cpptraj: Makefile_at is obsolete,0,,0
+7b01f091,2018-01-30 21:10:16,DRR - Cpptraj: Makefile_at is obsolete,0,,0
+27c240f3,2018-01-30 21:34:58,DRR - Cpptraj: Add bundled ARPACK,0,,0
+1500128d,2018-01-31 08:19:01,DRR - Cpptraj: Try to bundle arpack,0,,0
+3c5431ca,2018-01-31 08:46:55,DRR - Cpptraj: SECOND -> ARSECOND and do not make ETIME external to avoid issues with intrinsics.,0,,0
+c4e6dadd,2018-01-31 09:06:35,DRR - Cpptraj: Fix capitalization and variable name typos,1,,1
+505e1ec3,2018-01-31 09:33:50,DRR - Cpptraj: Add timing info,0,,0
+d0afcf0b,2018-01-31 09:52:35,DRR - Cpptraj: Add code to determine number of FFT grid points.,0,,0
+a1aae3ad,2018-01-31 11:31:51,DRR - Cpptraj: Fix warnings flag for ifort. Ensure Fortran link required if bundled ARPACK will be used.,1,,0
+51d2cc6a,2018-01-31 11:33:50,DRR - Cpptraj: Initial attempt at enabling PME calc,0,,0
+8b6406e0,2018-01-31 11:59:46,DRR - Cpptraj: Comparison operator typo,0,,0
+0a148707,2018-01-31 12:01:31,DRR - Cpptraj: Fix errors of the type: If the actual argument is scalar  the dummy argument shall be scalar unless the actual argument is of type character or is an element of an array that is not assumed shape  pointer  or polymorphic.,1,,0
+12168646,2018-01-31 12:02:59,DRR - Cpptraj: Clean up files leftover by ifort,0,,0
+75d11da5,2018-01-31 12:20:14,DRR - Cpptraj: Fix initialization of coords and charge arrays for libpme. Actually perform the energy calc. Enable output of timing info.,1,,1
+47f4d7f5,2018-01-31 14:17:33,DRR - Cpptraj: Ensure box type is correctly set for box action,0,,0
+b5821271,2018-01-31 14:20:56,DRR - Cpptraj: Add some debug info but keep it hidden.,0,,0
+43db47d8,2018-01-31 14:40:32,DRR - Cpptraj: Add ability to specify nfft,0,,0
+62dd89c7,2018-01-31 14:46:18,DRR - Cpptraj: Get rid of rsumtol for pme,0,,0
+b3bd8e62,2018-01-31 15:00:59,DRR - Cpptraj: Add libpme test,0,,0
+09993f4c,2018-01-31 15:01:15,DRR - Cpptraj: Hide a debug statement,0,,0
+01935e86,2018-01-31 15:12:17,DRR - Cpptraj: Add option to change pme spline order.,0,,0
+fc54362e,2018-01-31 15:36:53,DRR - Cpptraj: Change debug level,0,,0
+37bd6c76,2018-01-31 16:11:09,DRR - Cpptraj: Only run the LLVM check on Darwin,0,,0
+a9898954,2018-02-01 09:53:00,DRR - Cpptraj: Add orthogonal PME test,0,,0
+2187e4c6,2018-02-01 10:07:01,DRR - Cpptraj: Mol2 version of A. Simmonett's water dimer test system,0,,0
+7bc41473,2018-02-01 11:44:30,DRR - Cpptraj: Split regular and particle mesh Ewald calcs,0,,0
+a4c95348,2018-02-01 11:53:28,DRR - Cpptraj: Make allocation a little more efficient. Fix compile bugs leftover from split. Better printout of nfft values.,1,,0
+09d7dc8c,2018-02-01 11:56:03,DRR - Cpptraj: Make nonortho parameters tighter,0,,0
+0eb04193,2018-02-01 13:21:11,DRR - Cpptraj: Fix up test naming.,1,,1
+6722f08a,2018-02-01 13:40:44,DRR - Cpptraj: Move additional library setup from BasicChecks to SetupLibraries. Attempt to use simpler -mkl option for linking MKL when using Intel compilers.,0,,0
+e55d7566,2018-02-01 13:50:14,DRR - Cpptraj: Add some code for enabling FFTW3 in Eigen for libpme but do not enable - does not seem to work correctly yet.,0,,0
+53ca0956,2018-02-01 14:07:47,DRR - Cpptraj: Put INCLUDE and DIRECTIVES inside config.h,0,,0
+fe6c2b3f,2018-02-01 14:22:18,DRR - Cpptraj: Fix memory leak. Use Charge_ array directly in libpme via mapMat.,1,,1
+bf4567b1,2018-02-01 14:25:43,DRR - Cpptraj: Write out nffts if specified,0,,0
+58897c85,2018-02-01 14:26:51,DRR - Cpptraj: Constants no longer needed in ParticleMesh,0,,0
+1a0372b5,2018-02-01 14:35:26,DRR - Cpptraj: Make test require libpme,0,,0
+ca900e41,2018-02-01 14:43:46,DRR - Cpptraj: Add 'pme' options to help,0,,0
+496e8511,2018-02-01 14:55:07,DRR - Cpptraj: Add --compile-verbose option,0,,0
+0f5c8885,2018-02-01 15:10:58,DRR - Cpptraj: Rename test dir,0,,0
+86899918,2018-02-01 15:16:35,DRR - Cpptraj: Enable libpme test,0,,0
+1bd4e186,2018-02-01 15:48:55,DRR - Cpptraj: Placeholder for long range vdw correction,0,,0
+cd84da2b,2018-02-02 09:14:39,DRR - Cpptraj: Finish up vdw correction,0,,0
+dcf6a9d5,2018-02-02 09:21:15,DRR - Cpptraj: Simplify the vdw correction by precalculating stuff that depends only on number of types and B parameter,0,,0
+003fd024,2018-02-02 12:52:16,DRR - Cpptraj: Increase precision of printed matrix,0,,0
+e1286b82,2018-02-02 12:59:50,DRR - Cpptraj: Ensure libpme_standalone.h is added as a dependency but do not look in it for dependencies.,0,,0
+a008cd0b,2018-02-02 13:03:30,DRR - Cpptraj: Attempt to add VDW calc to Ewald direct sum. Doesnt appear to work properly yet.,0,,0
+457b57c5,2018-02-02 14:07:34,DRR - Cpptraj: Fix up debug info. Add missing VDW calc.,1,,0
+e97b9796,2018-02-02 14:22:41,DRR - Cpptraj: Add vdw energy to output.,0,,0
+ccbb783d,2018-02-02 14:23:14,DRR - Cpptraj: Update test saves to store vdw energy,0,,0
+cd651ae3,2018-02-05 10:11:44,DRR - Cpptraj: Better control over what terms are calculated for the 'energy' action. The 'etype' argument no longer implies that only electrostatics should be calculated. Provide better info on what VDW calc type is being used since certain electrostatic calc types will use specific VDW calcs by default (e.g. the long range correction for Ewald types). Fix up CalcType names to avoid confusion with other enumerated types.,1,,0
+47668bb6,2018-02-05 10:14:28,DRR - Cpptraj: VDW/ELEC data set order now consistent for all nonbond calc types. Add 'nonbond' keyword so only elec/vdw are calcd.,0,,0
+4ba2d0c9,2018-02-05 10:28:08,DRR - Cpptraj: Do not attempt to save energy terms if they were not requested,0,,0
+0e8629c2,2018-02-05 10:28:28,DRR - Cpptraj: Total energy term is no longer saved if only one energy term has been requested.,0,,0
+92027b57,2018-02-05 10:32:31,DRR - Cpptraj: Fix up help.,1,,0
+635dce71,2018-02-05 10:42:39,DRR - Cpptraj: Improve code docs.,0,,0
+d98889fa,2018-02-05 11:08:54,DRR - Cpptraj: Fix exclusion list generation when not all atoms are selected,1,,1
+1020fae3,2018-02-05 11:10:07,DRR - Cpptraj: Add test with atom mask,0,,0
+4319d67e,2018-02-05 11:18:54,DRR - Cpptraj: Fix vdw long range correction when not all atoms selected.,1,,1
+a7eff2ff,2018-02-05 11:19:20,DRR - Cpptraj: Update for VDW long range correction fix,1,,1
+ca87e9f0,2018-02-05 12:24:38,DRR - Cpptraj: Hide some debug info,0,,0
+8fe64671,2018-02-05 12:31:07,DRR - Cpptraj: Fix compiling without C++11 support,1,,1
+f14ed9ad,2018-02-05 13:07:48,DRR - Cpptraj: Code cleanup and documentation,0,,0
+8559f0df,2018-02-05 13:18:21,DRR - Cpptraj: Add erfcdx option,0,,0
+ad8c21c5,2018-02-05 13:21:04,DRR - Cpptraj: Clean up output,0,,0
+c8ca596b,2018-02-05 13:34:17,DRR - Cpptraj: Move to debug versions  do not need to calc Ewald energies here since there is a separate test for these already,0,,0
+673f42dc,2018-02-05 14:25:10,DRR - Cpptraj: Add non-debug test saves,0,,0
+8fca170e,2018-02-05 14:33:37,DRR - Cpptraj: Add trap for non-orthogonal cells.,0,,0
+c72334ec,2018-02-06 12:43:15,DRR - Cpptraj: Bump internal version.,0,,0
+c85a9496,2018-02-08 10:59:24,Merge branch 'master' into cphstats-twophsets,0,,0
+29daeaeb,2018-02-08 14:00:56,DRR - Cpptraj: Start adding cphstats test,0,,0
+1c6b7ff5,2018-02-08 14:02:02,DRR - Cpptraj: Add missing cpin file,0,,0
+f0967b9d,2018-02-08 14:11:05,DRR - Cpptraj: Add test saves,0,,0
+39af9ece,2018-02-08 14:19:42,DRR - Cpptraj: Add constant pH part of the test.,0,,0
+c30bbec2,2018-02-08 14:20:26,DRR - Cpptraj: Add better error message,1,,0
+a529b15e,2018-02-08 14:24:21,DRR - Cpptraj: Slightly change the way data sets are read.,0,,0
+546da16c,2018-02-08 14:57:14,DRR - Cpptraj: In ensemble read mode ensure that ensemble num is set for data file list so no data is lost via overwrite.,0,,0
+bbd3d92c,2018-02-08 15:13:46,DRR - Cpptraj: Use test saves as input in case sort fails for some reason,1,,0
+02e9c178,2018-02-08 15:33:36,DRR - Cpptraj: Add noensextension keyword. This is really just a stopgap until better ensemble data file handling is implemented.,0,,0
+7f444525,2018-02-08 15:34:15,DRR - Cpptraj: Ensure ensemble rank is not appended to sorted files.,0,,0
+575fdc36,2018-02-08 15:49:47,DRR - Cpptraj: Trap bad numbers of threads,0,,0
+a6e78e10,2018-02-08 15:49:54,DRR - Cpptraj: Hide some debug info,0,,0
+2d93117d,2018-02-08 15:56:33,DRR - Cpptraj: Clean up test,0,,0
+28eb5e91,2018-02-08 16:07:00,DRR - Cpptraj: Hide debug statements,0,,0
+54e0f1f2,2018-02-09 09:24:04,DRR - Cpptraj: Clean up help text.,0,,0
+b6511d09,2018-02-09 09:26:35,DRR - Cpptraj: Do not use file name wildcard since that doesn't work on windows.,0,,0
+6bb88cdb,2018-02-09 10:17:02,Merge pull request #579 from drroe/cphstats-twophsets,0,,1
+ad7dfae7,2018-02-09 11:27:45,Merge branch 'master' into libpme,0,,0
+9290b8b6,2018-02-10 10:57:58,DRR - Cpptraj: Switch to non-eigen version of libpme. Now requires fftw.,0,,0
+be5f0e83,2018-02-12 12:45:18,DRR - Cpptraj: Set FC_SYMBOL so libpme defines symbols correctly. May need to modify this for different platforms etc later on.,0,,0
+e71f861a,2018-02-12 12:48:27,DRR - Cpptraj: Make only Ewald_ParticleMesh depend on libpme_standalone to avoid defining duplicate symbols in Action_Energy,0,,0
+925ba885,2018-02-12 12:50:17,DRR - Cpptraj: Updates from A. Simmonett,0,,0
+fa1a14d7,2018-02-12 13:27:30,DRR - Cpptraj: Add nonortho test,0,,0
+5891a2ca,2018-02-13 12:35:36,DRR - Cpptraj: When specifying -amberlib use fftw3 if it is available.,0,,0
+1da71f91,2018-02-13 14:53:39,DRR - Cpptraj: Remove libsander.a since it does not exist.,0,,0
+5e2275b7,2018-02-14 08:45:46,DRR - Cpptraj: Add option to specify fortran cross-linking will be required.,0,,0
+4fb970d0,2018-02-14 09:07:57,DRR - Cpptraj: Do not use bundled arpack with openblas (openblas has arpack). Provide more informative messages when PME is disabled.,0,,0
+a8e78e7a,2018-02-14 09:45:44,DRR - Cpptraj: Incorporate some changes from A. Simmonett,0,,0
+06634731,2018-02-14 09:55:09,DRR - Cpptraj: Add longer libpme test with multiple frames,0,,0
+abbc4335,2018-02-14 10:45:56,DRR - Cpptraj: Always specify location of libsander.so when linking to avoid potentially pulling in other libraries compiled by Amber.,0,,0
+d2004e29,2018-02-14 11:14:00,DRR - Cpptraj: Fix shared suffix.,1,,1
+cf337c83,2018-02-14 12:47:46,DRR - Cpptraj: Allow operator characters inside dataset aspects.,0,,0
+3d15d1be,2018-02-20 15:51:54,DRR - Cpptraj: Add kinetic energy estimation from velocity and velocity/force,0,,0
+e10a5ec4,2018-02-20 16:01:39,DRR - Cpptraj: Add kinetic energy test,0,,0
+1c040516,2018-02-20 16:14:58,DRR - Cpptraj: Use mass information from Frame,0,,0
+e29def5f,2018-02-21 08:48:11,DRR - Cpptraj: Add ketype option to specify type of KE calc.,0,,0
+d84bfe6c,2018-02-21 10:34:50,DRR - Cpptraj: Fix comparison to wrong enumerated type,1,,1
+af01d989,2018-02-21 10:39:29,DRR - Cpptraj: Need DIRECTIVES for nproc to be compiled properly.,0,,0
+dd002554,2018-02-21 10:42:21,DRR - Cpptraj: Rip out MPI part of PMElib since in cpptraj MPI is for trajectory/ensembles only (also it currently doesnt compile).,0,,0
+d7b61871,2018-02-21 11:09:40,DRR - Cpptraj: Move all energy timing info from Energy to Action_Energy. Only print timing components that were actually used.,0,,0
+19bed07d,2018-02-21 11:52:03,DRR - Cpptraj: Readline library is not needed by libcpptraj so separate it out in config.h,0,,0
+8b45fd12,2018-02-21 11:56:20,DRR - Cpptraj: Remove CFLAGS from travis script - not sure why they were ever necessary but they definitely should not be now.,0,,0
+5a84d8ff,2018-02-21 11:58:32,DRR - Cpptraj: Add -fftw3 configure flag to libcpptraj test.,0,,0
+225c1798,2018-02-21 12:47:22,DRR - Cpptraj: Initial attempt at creating a separate NetCDF reservoir class.,0,,0
+32e26908,2018-02-21 12:51:13,DRR - Cpptraj: Remove NetCDF reservoir stuff from Traj_AmberNetcdf,0,,0
+01d33923,2018-02-21 13:29:29,DRR - Cpptraj: Update dependencies.,0,,0
+b9a59e6e,2018-02-21 13:47:11,DRR - Cpptraj: Use new RemdReservoirNC class.,0,,0
+fc3a27a3,2018-02-21 13:51:11,DRR - Cpptraj: CreateReservoir no longer writes extraneous time values to reservoir,0,,0
+f6417fb4,2018-02-21 14:03:56,DRR - Cpptraj: Add option to include forces in reservoir.,0,,0
+8d1940cf,2018-02-21 14:09:55,DRR - Cpptraj: Fix compile without netcdf,1,,1
+739106b0,2018-02-21 14:26:28,DRR - Cpptraj: The tragedy of the misplaced semicolon...,0,,0
+ee04a084,2018-02-21 14:50:05,Merge pull request #582 from drroe/fixResTemp,0,,1
+bef50713,2018-02-21 14:52:25,DRR - Cpptraj: Integrate the Libcpptraj test into the main test framework so errors are not silently ignored.,1,,0
+d5aedaa2,2018-02-21 14:52:59,Merge branch 'master' into libpme,0,,0
+378bed93,2018-02-21 15:38:13,DRR - Cpptraj: Disable the non-double precision templates for diagonalizer wrappers  cpptraj doesnt use them and the LAPACK that comes with Amber only has double precision.,0,,0
+edc563e4,2018-02-22 13:58:06,DRR - Cpptraj: Ensure DIRECTIVES and INCLUDE are properly passed to libcpptraj objects,0,,0
+cea1ce3c,2018-02-22 14:19:33,DRR - Cpptraj: Better integration of libcpptraj link test - now reports correct numbers (counts as 1 execution and 1 comparison). Consolidate program error into a function.,1,,0
+ef7ff877,2018-02-22 15:09:15,DRR - Cpptraj: Add variable so we know if this is a libcpptraj test (for which binaries are unnecessary).,0,,0
+408a3bf8,2018-02-22 15:16:28,DRR - Cpptraj: Put explicit exit with error status in libcpptraj test  do not ignore errors in this test.,1,,0
+5cd3d983,2018-02-22 15:51:17,Merge pull request #581 from drroe/libpme,0,,1
+c1b65f1c,2018-02-25 20:10:35,DRR - Cpptraj: Ensure -shared implies -nosanderlib. Make sure 'amberopt' test for FFTW3 functions correctly.,0,,0
+17537cff,2018-02-25 23:16:41,Merge pull request #584 from drroe/fix_pytraj,0,,1
+77a7dcd8,2018-02-26 08:59:29,DRR - Cpptraj: Add space to hold full record status and time variables,0,,0
+6de93611,2018-02-26 09:43:44,DRR - Cpptraj: Save time related values in unsorted REMD set,0,,0
+e3734d12,2018-02-26 09:53:02,DRR - Cpptraj: Save time values for sorted ph data,0,,0
+6701fec2,2018-02-26 10:36:13,DRR - Cpptraj: Add values used to denote full and partial (aka delta) pH records.,0,,0
+3a80b5ec,2018-02-26 10:36:58,DRR - Cpptraj: Functions for record type and time values,0,,0
+020e4165,2018-02-26 10:37:25,DRR - Cpptraj: Record record state properly for sorted pH data. Use it for writes. Can now do perfect sorted read/write conversion.,0,,0
+94cc84d2,2018-02-26 10:42:19,DRR - Cpptraj: Change Full to RecordType to better reflect the purpose.,0,,0
+dde15bec,2018-02-26 11:39:46,DRR - Cpptraj: Start sorting,0,,0
+808fbd71,2018-02-26 12:12:36,DRR - Cpptraj: Fix memory allocation for sorted ph data set. Check number of frames when sorting.,1,,1
+b826a536,2018-02-26 12:18:02,DRR - Cpptraj: Ensure number of frames to process is consistent among ensemble members.,0,,0
+5afe792e,2018-02-26 14:15:39,DRR - Cpptraj: Add detection for unsorted implicit pH data,0,,0
+b315a5d0,2018-02-26 15:01:28,DRR - Cpptraj: Convert to namespace and rename to avoid confusion with Residue,0,,0
+8ee67844,2018-02-26 15:19:24,DRR - Cpptraj: Consolidate constant pH time variables and update classes to use new naming.,0,,0
+3c5a1ffc,2018-02-26 16:10:48,DRR - Cpptraj: Consolidate ph data record read,0,,0
+2045d115,2018-02-27 08:42:43,DRR - Cpptraj: Improve code docs.,0,,0
+e0f94fe7,2018-02-27 08:59:36,DRR - Cpptraj: Make number of residues per record and number of frames class variables. Make calculating the time step a function.,0,,0
+ba8ccb31,2018-02-27 09:00:17,DRR - Cpptraj: Add sorted implicit constant pH test,0,,0
+fc2d5283,2018-02-27 09:22:19,DRR - Cpptraj: Use ReadRecord to determine if unsorted data is implicit,0,,0
+6532fcdc,2018-02-27 09:26:40,DRR - Cpptraj: Better precision for time values for more accurate dt determination,0,,0
+c91721fc,2018-02-27 09:37:46,DRR - Cpptraj: Get rid of unneeded write variables,0,,0
+b79d091e,2018-02-27 10:04:29,DRR - Cpptraj: Change PH_REMD to PH_EXPL,0,,0
+a3072c48,2018-02-27 10:18:16,DRR - Cpptraj: Create base class for unsorted ph remd data in prep for adding implicit one,0,,0
+321188db,2018-02-27 10:18:55,DRR - Cpptraj: Forgot to actually add the file.,0,,0
+da32ce05,2018-02-27 10:26:11,DRR - Cpptraj: Add unsorted ph remd implicit set,0,,0
+fa267ac4,2018-02-27 10:35:38,DRR - Cpptraj: Use new DataSet_PHREMD_Explicit class. Add DataSet_PHREMD_Implicit stub,0,,0
+3a0ca1b3,2018-02-27 10:44:20,DRR - Cpptraj: Add unsorted implicit REMD read,0,,0
+67606ebd,2018-02-27 11:06:43,DRR - Cpptraj: Add unsorted implicit ph write,0,,0
+b6c6f2f4,2018-02-27 11:07:02,DRR - Cpptraj: Update dependencies,0,,0
+6b7a51c0,2018-02-27 11:07:15,DRR - Cpptraj: Add unsorted explicit ph write test,0,,0
+6c50967f,2018-02-27 11:20:45,DRR - Cpptraj: Add function to return initial ph value of REMD sets,0,,0
+a6011b4d,2018-02-27 11:28:17,DRR - Cpptraj: Start generalizing sort in prep for adding implicit,0,,0
+6e887f1f,2018-02-27 11:42:37,DRR - Cpptraj: Since ETIME is not officially part of the Fortran standard (and not supported by e.g. cray compilers) use CPU_TIME instead.,0,,0
+a84a15c8,2018-02-27 11:50:16,DRR - Cpptraj: Properly initialize vars. Add sort for implicit constant ph remd,0,,0
+44323a51,2018-02-27 12:56:55,DRR - Cpptraj: Move explicit remd source files to subdir,0,,0
+a45e603f,2018-02-27 13:33:55,DRR - Cpptraj: Allow wildcards in file name for readensembledata,0,,0
+486e3405,2018-02-27 13:35:02,DRR - Cpptraj: Add implicit REMD pH read/write. Ignore blank lines since cpptraj writes an extra one to be comparable with cphstats.,0,,0
+21403a55,2018-02-27 13:35:50,DRR - Cpptraj: These have been moved,0,,0
+a2d3019a,2018-02-27 13:42:26,DRR - Cpptraj: Finish off implicit sort/stats test,0,,0
+d12becda,2018-02-27 13:55:58,DRR - Cpptraj: Fix variable names.,1,,0
+a69ba20d,2018-02-27 14:37:44,DRR - Cpptraj: 'as' keyword not needed for writedata,0,,0
+ed7ab07b,2018-02-27 14:38:07,Merge branch 'cphstats_implicit' of github.com:drroe/cpptraj into cphstats_implicit,0,,0
+b1b3efb6,2018-02-27 14:47:05,DRR - Cpptraj: Put check for 'noensextension' first in logical statement so it is always processed. Store names of sets to be written in string so it can be written outside of the loop.,0,,0
+d161256f,2018-02-27 14:48:11,Merge branch 'cphstats_implicit' of github.com:drroe/cpptraj into cphstats_implicit,0,,0
+2bd053ef,2018-02-28 12:09:19,DRR - Cpptraj: Add small implicit remd test,0,,0
+8006e409,2018-02-28 12:10:26,DRR - Cpptraj: Add small implicit remd test save,0,,0
+f0aee724,2018-02-28 14:02:52,DRR - Cpptraj: Specify default state.,0,,0
+381de536,2018-02-28 14:23:22,DRR - Cpptraj: Add parallel sort for implicit remd. Its not pretty but hopefully will be faster than serial,0,,0
+73c23d27,2018-02-28 14:27:24,DRR - Cpptraj: Add some parallel routines.,0,,0
+1ea3430c,2018-03-01 08:34:21,DRR - Cpptraj: Print message when automatically searching for ensemble members.,0,,0
+a0c78a7a,2018-03-01 08:34:41,DRR - Cpptraj: Use small implicit REMD test.,0,,0
+75779951,2018-03-01 08:45:14,DRR - Cpptraj: Check if lowest filename exists when searching for replicas.,0,,0
+f1fccfc7,2018-03-01 08:45:34,DRR - Cpptraj: Large implicit remd test moved elsewhere,0,,0
+05d20d7a,2018-03-01 08:51:35,DRR - Cpptraj: Remove unneeded statements,0,,0
+9b99ef67,2018-03-01 09:34:54,DRR - Cpptraj: Add some debug info,0,,0
+9d4a4f93,2018-03-01 10:38:01,DRR - Cpptraj: Add ensextension command,0,,0
+44973853,2018-03-01 10:38:24,DRR - Cpptraj: Place Cpptraj instance in separate function to ensure its destructors are called prior to Parallel::End(),0,,0
+308edce4,2018-03-01 10:46:25,DRR - Cpptraj: Add support for shared writes in parallel for CpptrajFiles. Use for cphstats stats output.,0,,0
+fb24dd46,2018-03-01 12:43:59,DRR - Cpptraj: Add some parallel debug info,0,,0
+a6e2f794,2018-03-01 13:05:26,DRR - Cpptraj: Get rid of ActiveComm(). Instead  always set up trajectory and ensemble comms. If ensemble mode is not active the trajectory communicator will contain all threads and the ensemble communicator will contain only the master thread. Update analysis framework to use new comm setup.,0,,0
+47547b02,2018-03-01 13:16:56,DRR - Cpptraj: Consolidate->Reduce to better reflect what is going on. Comment out Consolidate/Reduce from DataSet_PHREMD_Explicit  unused right now.,0,,0
+43ed75a0,2018-03-01 13:54:00,DRR - Cpptraj: Always print debug info for SetupComms (inside define),0,,0
+d9788158,2018-03-01 14:24:18,DRR - Cpptraj: Comms should now never be null,0,,0
+0a5169dd,2018-03-01 14:33:24,DRR - Cpptraj: Do not use write_shared since that breaks trajectory file writes which should be indepdenent. Instead  make sure the Flush function will update the MPI file pointer as well and use that.,0,,0
+ab1daf20,2018-03-01 14:56:16,DRR - Cpptraj: Ensure if statsOut is not shared that threads can write independently,0,,0
+f0590097,2018-03-01 15:56:24,DRR - Cpptraj: Determine whether DataFile is shared or not based on if extension is appended. Deal with appropriately in cphstats,0,,0
+9db4c2ac,2018-03-02 11:19:29,DRR - Cpptraj: Place logic for determining whether to append ensemble number extension or not in DataFile. DataFileList will contain the default behavior which can be overridden by data file arguments. Only tested for serial so far.,0,,0
+d25f684c,2018-03-02 12:13:18,DRR - Cpptraj: Disable test in parallel,0,,0
+3f23ba4c,2018-03-02 13:08:06,DRR - Cpptraj: Add MPI file IO class that uses shared write,0,,0
+eef37bbd,2018-03-02 13:34:50,DRR - Cpptraj: Fix up shared writes in parallel. For CpptrajFile  use MPISHARED when file is shared to ensure threads can write consecutively.,1,,1
+7204dcb4,2018-03-02 13:36:16,DRR - Cpptraj: Turn off ensemble extension so that tests work in parallel.,0,,0
+84ecbb55,2018-03-02 14:20:52,DRR - Cpptraj: Remove some debug info. Protect FileIO_MpiShared when not parallel,0,,0
+c499226e,2018-03-02 14:29:00,DRR - Cpptraj: Protect test from illegal number of threads.,0,,0
+47c34877,2018-03-02 14:59:49,DRR - Cpptraj: Filename wild card matching not yet working on windows.,0,,0
+d5ef20be,2018-03-02 15:53:28,DRR - Cpptraj: Fix compile for gcc7,1,,1
+e4b25930,2018-03-02 16:49:00,Merge pull request #587 from drroe/fixgcc7,0,,1
+8627f80f,2018-03-02 16:49:35,Merge branch 'master' into cphstats_implicit,0,,0
+3b4496c1,2018-03-03 08:43:25,"FIX pytraj cloning error (""alert protocol version while accessing"") (#588)",1,,1
+e8352aee,2018-03-04 12:51:47,Merge branch 'master' into cphstats_implicit,0,,0
+5574c565,2018-03-04 13:12:20,DRR - Cpptraj: Add communicator containing only trajComm masters - this is what should be used for analysis since only trajComm masters are guaranteed to have full copies of data after a trajectory analysis run.,0,,0
+e5376346,2018-03-04 18:51:42,DRR - Cpptraj: Do not use EnsembleComm in DataFileList  instead make functions pass in a comm if CpptrajFile is to be shared.,0,,0
+a89c341b,2018-03-05 07:53:39,DRR - Cpptraj: Add a hidden debug option,0,,0
+fa33554b,2018-03-05 08:10:54,DRR - Cpptraj: For clang with gfortran linking  ensure system library searched before libgfortran path. This is actually a re-fix (see here: https://github.com/Amber-MD/cpptraj/pull/473).,0,,1
+eea2839d,2018-03-05 08:48:08,Merge pull request #589 from drroe/fix_libppctraj_again,0,,1
+207ed1d2,2018-03-05 08:48:45,Merge branch 'master' into cphstats_implicit,0,,0
+b582b496,2018-03-05 11:30:42,DRR - Cpptraj: Make ensembleComm split for no ensemble mode again consistent with ngroups == 1 and fix masterComm split. Add '==' operator.,1,,1
+927b74e0,2018-03-05 11:32:00,DRR - Cpptraj: Slight behavior change: if comm is null assume no output desired. Default to trajComm. Do not allow shared mode for trajComm.,0,,0
+d1293fe7,2018-03-05 15:10:03,DRR - Cpptraj: In parallel  only setup/init an analysis on trajcomm masters since these are the only threads guaranteed to have full data at the moment. On non-masters add a placeholder analysis so that threads can stay in sync  otherwise these non-master threads think no analysis needs to be done.,0,,0
+8e88085b,2018-03-05 20:54:16,DRR - Cpptraj: Default to null communicator for CpptrajFile since different parts of the code (e.g. actions vs analysis vs exec) will have different parallel requirements. Null comm means file cannot yet be shared.,0,,0
+d408468b,2018-03-06 10:05:22,DRR - Cpptraj: Only execute Exec commands on TrajComm master.,0,,0
+0eccf322,2018-03-06 12:39:30,DRR - Cpptraj: Have Exec commands indicate whether they can be executed with only TrajComm master threads or if they need all threads. Do not hard code the communicator in Exec_SortEnsembleData.,0,,0
+59e45cd1,2018-03-06 19:18:59,DRR - Cpptraj: Revert change that had Execs reporting how many threads they needed. For things to really remain in sync everything should execute an Exec. Need to reorganize underlying framework instead.,0,,0
+ea1af88b,2018-03-07 12:47:21,DRR - Cpptraj: Go back to previous behavior for appending ensemble num to CpptrajFiles.,0,,0
+66a8a806,2018-03-07 13:04:32,DRR - Cpptraj: Only let TrajComm masters execute.,0,,0
+dec138b9,2018-03-07 13:37:11,DRR - Cpptraj: Remove the analysis kludge - not a good solution,0,,0
+1d56bcec,2018-03-07 15:52:55,DRR - Cpptraj: Disable readensemble data with more than 1 thread per ensemble member (for now). Update cphstats test checks accordingly.,0,,0
+286d2f87,2018-03-08 10:36:59,DRR - Cpptraj: Fix logic for append ensemble number to CpptrajFile and open shared in parallel. Set fracplot in cphstats to no extension.,1,,1
+31b6e83b,2018-03-08 13:08:49,DRR - Cpptraj: Add warning that ensextension has not been fully tested in parallel.,0,,0
+7908548c,2018-03-08 13:51:19,DRR - Cpptraj: Use tolerance for tighter PME tests,0,,0
+d1d76256,2018-03-08 14:42:29,Merge pull request #586 from drroe/cphstats_implicit,0,,1
+56cf7476,2018-03-13 10:03:50,DRR - Cpptraj: Use expr instead of bc,0,,0
+5f6d793d,2018-03-13 10:54:38,DRR - Cpptraj: Add CUDA test. Add check for OS bits.,0,,0
+20e53dc3,2018-03-13 11:26:12,DRR - Cpptraj: Instead of prefering 'lib' over 'lib64'  use 'lib<arch>' if it exists and 'lib' otherwise.,0,,0
+5e58f9a0,2018-03-13 12:05:55,Merge pull request #590 from drroe/fix_tests,0,,1
+531ce5c3,2018-03-13 14:09:16,DRR - Cpptraj: pubfft does not require fortran linking flags.,0,,0
+3057062c,2018-03-13 15:02:56,Merge pull request #591 from drroe/fix_flink,0,,1
+ae66953b,2018-03-13 16:00:35,DRR - Cpptraj: Add redox type,0,,0
+d4d475b5,2018-03-14 19:15:27,DRR - Cpptraj: Add detection of remd_values,0,,0
+c33580f3,2018-03-14 19:42:25,DRR - Cpptraj: Add remd_values to Frame and a function for reading them to NetcdfFile. Read from Amber trajectories.,0,,0
+0730ec09,2018-03-14 19:48:55,DRR - Cpptraj: Add remd_values allocation and functions,0,,0
+a0495460,2018-03-15 10:28:16,DRR - Cpptraj: Add RedOx potential and pH to Frame. Read them in from RemdValues when present.,0,,0
+9923a898,2018-03-15 11:50:15,DRR - Cpptraj: Use STL vectors instead of raw arrays. Remove remDimIdx_. Use a switch for netcdf type to trap bad cases.,0,,0
+75e384d8,2018-03-15 13:39:52,DRR - Cpptraj: For backwards compatibility  assume remd_values with 1 d is temperature.,0,,0
+8061aca9,2018-03-15 13:47:09,DRR - Cpptraj: Properly initialize variable id.,0,,0
+a72354a8,2018-03-16 12:06:49,DRR - Cpptraj: Keep remd_values variable detection separate from temperature. Modify HasTemperatures so it is true if TempVID is set or RemdValuesVID is set and one of the dimensions is temperature.,0,,0
+922b3357,2018-03-16 12:59:15,DRR - Cpptraj: Clean up CoordinateInfo constructors. Create routine in NetcdfFile that returns a CoordinateInfo based on how the NetcdfFile has been set up so that it is consistent for everything using NetcdfFile.,0,,0
+f0e76257,2018-03-16 13:05:56,DRR - Cpptraj: Add ph and redox to sync,0,,0
+0fbe0242,2018-03-16 13:11:07,DRR - Cpptraj: Add functions to report whether netcdf file has pH / redox,0,,0
+df52d249,2018-03-16 13:46:23,DRR - Cpptraj: Reorder class variables so coords vel and force are together,0,,0
+1b4bd801,2018-03-16 13:54:29,DRR - Cpptraj: Have CoordinateInfo store whether replica_values was present in netcdf file,0,,0
+5d60532f,2018-03-16 14:58:27,DRR - Cpptraj: Define remd_values in netcdf output. Need separate variable for storing value types so that 1D isnt treated as multi-D,0,,0
+bc5d8631,2018-03-16 15:06:56,DRR - Cpptraj: Add write of remd_values,0,,0
+8e3c888c,2018-03-16 15:17:31,DRR - Cpptraj: Cleanup and fix up comments,1,,0
+1fdd6c08,2018-03-16 15:25:37,DRR - Cpptraj: Add repidx and crdidx,0,,0
+e44541a7,2018-03-16 15:56:13,DRR - Cpptraj: Add read/write of repidx and crdidx,0,,0
+3759c17a,2018-03-16 16:09:42,DRR - Cpptraj: Add values read/write to Amber netcdf restart,0,,0
+f8c82a7c,2018-03-19 10:39:14,DRR - Cpptraj: Check for unprocessed arguments by trajin  trajout  ensemble.,0,,0
+4c15d3d4,2018-03-19 10:49:17,DRR - Cpptraj: Revert last commit. Because ArgList is passed in const in several places for trajectory processing it is not always known at the top if all arguments were processed.,0,,0
+4fa2571e,2018-03-19 10:51:37,DRR - Cpptraj: Check for unprocessed args for trajin/ensemble,0,,0
+50e0ae72,2018-03-19 10:52:36,DRR - Cpptraj: Add check for unprocessed 'trajout' args.,0,,0
+1d439519,2018-03-19 11:35:00,DRR - Cpptraj: Add 'remdtrajvalues' keyword  which can be used with 'remdtraj' to extract frames at specific values.,0,,0
+58989767,2018-03-19 12:03:15,DRR - Cpptraj: Hide some debug info. Ensure that RemdValues_ is properly allocated when associated VID present.,0,,0
+f6831342,2018-03-19 12:43:10,DRR - Cpptraj: Start consolidating read setup.,0,,0
+4edeb633,2018-03-19 12:46:04,DRR - Cpptraj: netcdf restart use NC_setupRead,0,,0
+b735267e,2018-03-19 12:49:59,DRR - Cpptraj: Make nc ensemble use NC_setupRead. Hide some functions.,0,,0
+b3e3e115,2018-03-19 12:58:04,DRR - Cpptraj: Add note,0,,0
+cd46d2d5,2018-03-19 13:17:54,DRR - Cpptraj: Fix up info for netcdf formats. Hide some debug info.,1,,1
+5bef807d,2018-03-19 13:39:12,DRR - Cpptraj: Make NetCDF type a class variable so Conventions do not have to be called over and over.,0,,0
+553b35f7,2018-03-19 13:50:04,DRR - Cpptraj: Use static conventions strings,0,,0
+2f129ce6,2018-03-19 14:24:22,DRR - Cpptraj: Make NC_setupRead responsible for opening/closing file. Properly pass debug info in.,0,,0
+7594da89,2018-03-19 14:30:55,DRR - Cpptraj: Rename function,0,,0
+617e1bc4,2018-03-19 14:54:46,DRR - AmbPDB: Only pass pdb-related args to PDB format  same for mol2,0,,0
+2363c599,2018-03-19 14:58:14,DRR - Cpptraj: Fix typo,1,,1
+d4280631,2018-03-19 15:06:40,DRR - Cpptraj: Remove extra keywords,0,,0
+8ba1d763,2018-03-19 15:09:26,DRR - Cpptraj: Remove trajout check for now. Its useful to have Exec commands able to set up trajectories and pass in argument lists to be processed. Will have to address the unprocssed arguments issue later,0,,0
+420eb1a6,2018-03-19 15:42:15,DRR - Cpptraj: Fix compilation in parallel,1,,1
+a1f64dbc,2018-03-19 15:48:38,DRR - Cpptraj: Cleanup output. Print indices starting from 1,0,,0
+11512043,2018-03-20 09:49:52,DRR - Cpptraj: Do not allow 'previous' ref in parallel,0,,0
+79449bfe,2018-03-20 10:06:11,DRR - Cpptraj: Properly broadcast charmm cell type for correct dcd write in parallel,0,,0
+34bdce57,2018-03-20 10:39:10,DRR - Cpptraj: When comparing netcdf remove program and programVersion - allows direct comparison to sander/pmemd output,0,,0
+031d97bb,2018-03-20 12:47:49,DRR - Cpptraj: Ensure NetcdfFile and CoordinateInfo are properly synced in parallel,0,,0
+29988218,2018-03-20 14:58:11,DRR - Cpptraj: Fix MPI compile without pnetcdf,1,,1
+36fdd94e,2018-03-21 08:57:28,Merge pull request #592 from drroe/modify_netcdf,0,,1
+0cb2d8ad,2018-03-23 13:01:46,DRR - Cpptraj: Update version and bump internal version number. This will likely be the version that goes into the Amber 18 release.,0,,0
+de504e07,2018-03-23 14:20:32,Merge pull request #593 from drroe/update_version,0,,1
+dac5e44f,2018-03-25 20:45:41,DRR - Cpptraj: Fix error message. Address #594,1,,1
+248548bb,2018-03-26 08:02:53,Merge pull request #596 from drroe/fix_clang,0,,1
+55704bc5,2018-03-26 11:25:54,DRR - Cpptraj: Test saving top N representatives from clustering,0,,0
+37f4a1ed,2018-03-26 11:27:42,Merge branch 'master' into cluster_nreps,0,,0
+e964cc4d,2018-03-26 11:48:08,DRR - Cpptraj: Add version of AddDataFile that allows default args to be passed in  these can be overridden with user-specified args.,0,,0
+095cbd22,2018-03-26 11:56:18,DRR - Cpptraj: Allow default file argument to be overridden by user. Do not require output filename.,0,,0
+da750df7,2018-03-27 15:56:32,DRR - Cpptraj: Fix passing of default options in actions.,1,,1
+7f8537f6,2018-04-02 14:08:34,DRR - Cpptraj: Now that reference traj is really just another coords data set  use the Calculate_2D routine for everything - enables openmp for reference traj. Better detection of equivalent masks (do not rely on mask expression).,0,,0
+87a5d43b,2018-04-02 14:11:46,DRR - Cpptraj: Rename coords_ to TgtTraj_ to be consistent with RefTraj_,0,,0
+f76ecc45,2018-04-02 14:13:48,DRR - Cpptraj: noxcol is default for mask,0,,0
+8c8eac5d,2018-04-02 14:17:24,DRR - Cpptraj: Remove obsolete function,0,,0
+3a7a8485,2018-04-02 14:56:57,DRR - Cpptraj: Use total frames in target in inner loop  not total reference,0,,0
+49fd54f5,2018-04-03 13:58:43,DRR - Cpptraj: To be consistent with previous results  ordering in matrix must be ref  tgt.,0,,0
+eea14400,2018-04-03 15:34:01,DRR - Cpptraj: Fix rms2d output when masks are different. Previous output was flipped w.r.t convention (down is tgt  across is ref).,1,,1
+b40f0096,2018-04-03 16:06:58,DRR - Cpptraj: Turns out cpptraj doesnt need -lcuda,0,,0
+c8ea4ee8,2018-04-04 10:21:40,DRR - Cpptraj: Add new DataSet_Coords class that will be used in rms2d to fix thread safety issues.,1,,1
+02f819cd,2018-04-04 10:50:40,DRR - Cpptraj: New class wasnt ready for prime time.,0,,0
+92f09149,2018-04-04 10:57:35,DRR - Cpptraj: Use separately allocated frame when using TRAJ as reference to avoid memory clashes.,0,,0
+d0fe96a1,2018-04-04 10:58:37,Merge pull request #598 from drroe/fix_cuda,0,,1
+349122b1,2018-04-04 11:50:51,Merge branch 'master' into fix_rms2d,0,,0
+8c468a2d,2018-04-04 13:24:12,DRR - Cpptraj: Add Andy Simmonett to authors. Update copyright date. General README cleanup.,0,,0
+6c5f945b,2018-04-04 13:26:15,Merge branch 'fix_rms2d' of github.com:drroe/cpptraj into fix_rms2d,0,,1
+477b2c48,2018-04-04 13:51:46,Merge pull request #597 from drroe/fix_rms2d,0,,1
+19f07335,2018-04-10 13:16:26,Merge branch 'master' into cluster_nreps,0,,0
+b6ed2660,2018-04-10 13:47:59,DRR - Cpptraj: Save best representative frames and their scores in separate array.,0,,0
+5bff680e,2018-04-10 13:55:42,DRR - Cpptraj: Add nRepsToSave variable,0,,0
+fa23914f,2018-04-10 14:03:00,DRR - Cpptraj: Add savenreps keyword,0,,0
+df5a90eb,2018-04-10 14:19:45,DRR - Cpptraj: Use new bestReps array exclusively - remove old repFrame variable. Update remaining best rep functions and comment out unused best rep function in ClusterNode.,0,,0
+677c06cc,2018-04-10 15:00:10,DRR - Cpptraj: Add ability to write multiple best reps to summary,0,,0
+f223f36a,2018-04-10 15:01:21,DRR - Cpptraj: Cluster best nreps test,0,,0
+e9087fed,2018-04-10 15:08:52,DRR - Cpptraj: Add multiple cluster reps output to info file,0,,0
+9c8aa68a,2018-04-10 15:19:13,DRR - Cpptraj: Ensure if multiple reps specified they are saved to single rep traj,0,,0
+18b90203,2018-04-10 15:35:25,DRR - Cpptraj: Enable writing of multiple representative frames for best rep trajectory output. If repframe is specified  frames are written to individual files  otherwise representatives from the same cluster are put in the same file.,0,,0
+809ba0ea,2018-04-10 15:36:44,DRR - Cpptraj: Some debug stuff  not enabled.,0,,0
+625aa9e9,2018-04-10 15:37:37,DRR - Cpptraj: Enable cluster nreps test.,0,,0
+573334d7,2018-04-12 13:35:30,DRR - Cpptraj: Initial incarnation of the cpptraj manual extracted from the Amber manual.,0,,0
+99d295c0,2018-04-12 13:40:05,DRR - Cpptraj: Use pdf hyperlinks,0,,0
+ae1acaa7,2018-04-12 13:42:12,DRR - Cpptraj: Add title,0,,0
+8387a1e9,2018-04-12 13:53:32,DRR - Cpptraj: Add TOC and change link colors.,0,,0
+f5b9524e,2018-04-12 13:55:48,DRR - Cpptraj: Fix bib sort,1,,1
+3ffb605a,2018-04-12 13:58:45,DRR - Cpptraj: Add author,0,,0
+3d4bf64a,2018-04-12 14:03:14,DRR - Cpptraj: Add URL,0,,0
+56d2c13d,2018-04-12 14:06:25,DRR - Cpptraj: Add PDF version of manual.,0,,0
+dbcfa377,2018-04-13 10:32:06,DRR - Cpptraj: Update documentation section.,0,,0

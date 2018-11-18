@@ -1,0 +1,289 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+746062e2,2013-07-04 17:40:57,Fixed test,1,,1
+c27e93cc,2013-07-04 18:00:59,Added javadoc link,0,,0
+727d1cf8,2013-07-04 18:02:52,Added external licences,0,,0
+96788621,2013-07-04 18:03:42,Removed SeekableByteChannel,0,,0
+4327e7a0,2013-07-08 17:56:20,implemented parallel job support in the gridengine adaptor,0,,0
+2598beb1,2013-07-09 15:00:52,put generic part of GridEngine adaptor into separate package,0,,0
+f55253ea,2013-07-09 23:44:36,Implementing Slurm adaptor. Can submit jobs  does not report status yet,0,,0
+8e465ebc,2013-07-10 13:37:51,Refactored scripting adaptor support. Added copyright statement to all files. Added some javadoc,0,,0
+36236af8,2013-07-10 17:30:41,Improved handling of command line arguments in SSH (now also supports spaces in arguments). Adding more status support to Slurm adaptor.,0,,0
+ebd3cbd9,2013-07-10 21:57:31,Slurm adaptor can now get status of jobs and queues,0,,0
+52c8d4c4,2013-07-11 16:37:59,Debugging Slurm adaptor. Passes almost all tests now. Also check Slurm server version.,0,,0
+8acb0077,2013-07-11 22:35:58,Added sacct output to possible job status sources. Improving parser for Slurm output. Fixed code formatting.,1,,0
+1b140a56,2013-07-15 14:54:32,Ignore spurious acct output on stderr if it still returns exit code 0,0,,0
+eb22dc39,2013-07-22 04:05:13,Merge pull request #149 from NLeSC/feature/gridengine-parallel-jobs-2,0,,1
+bf249a33,2013-07-22 13:01:02,some small fixes for slurm 2.5,1,,1
+c242b66f,2013-07-24 12:49:47,added toString  hashcode and equals,0,,0
+5f831f75,2013-07-25 04:59:39,Merge pull request #150 from NLeSC/feature/improved-java-jobdescription,0,,1
+18c5f537,2013-07-25 05:38:46,Merge pull request #151 from NLeSC/feature/one-test-config,0,,0
+37ed9b32,2013-07-25 06:12:12,Merge pull request #152 from NLeSC/feature/one-test-config,0,,1
+134f3009,2013-07-25 06:41:38,Merge pull request #153 from NLeSC/feature/one-test-config,0,,1
+57d7740c,2013-07-25 14:37:12,use a single test config file for all adaptor tests,0,,0
+e86bf2e9,2013-07-25 15:07:13,fixed test build file to pickup system properties,1,,1
+193982e2,2013-07-25 15:07:24,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into feature/one-test-config,0,,0
+c4e6256b,2013-07-25 15:35:19,second attempt at fixing test build to handle system properties,1,,1
+f32c357c,2013-07-25 16:15:40,Made OctopusProperties more strict (checks names  types  etc). OctopusProperties no longer extends Properties. All use of Properties changed to Map<String String>. Fixes #132. Fixes #134. Fixes #144.,1,,1
+1c1f398e,2013-07-25 16:16:59,Made OctopusProperties more strict (checks names  types  etc). OctopusProperties no longer extends Properties. All use of Properties changed to Map<String String>. Fixes #132. Fixes #134. Fixes #144.,1,,1
+25dd74a9,2013-07-25 16:17:15,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0,,0
+0ab0712d,2013-07-25 16:46:39,Fixed properties use in GridEngine/Slurm. Added property config to tests.,1,,1
+b65a1b6c,2013-07-25 17:26:46,Fixed various sonar issues.,1,,1
+cb2f573a,2013-07-25 17:50:15,Do not use properties when creating filesystem in tests,0,,0
+33b4b742,2013-07-26 11:04:08,properly handle sge installations without parallel environments,0,,0
+6589ba55,2013-07-26 11:42:42,fixed check,1,,0
+252b7d0f,2013-07-26 14:16:34,fixing some bugs,1,,1
+565f785b,2013-07-26 16:22:33,bug fix in OctopusProperties  use OctopusProperties in ssh adaptor  use ssh properties in GridEngine adaptor,1,,1
+b357dcd1,2013-07-28 04:14:34,Merge pull request #154 from NLeSC/feature/scripting-cleanup,0,,1
+c9dec913,2013-07-29 11:24:24,Replaced keyfile and certfile in CertificateCredential by a single certfile. Fixes #155.,1,,1
+ae881e84,2013-07-29 11:24:39,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0,,0
+150533dd,2013-07-29 12:20:46,Fixed test for CertificateImplementation,1,,1
+b0f1dee5,2013-07-29 12:22:59,Fixed test for removal of isDelete  isSymbolicLink  size,1,,1
+ec7ff2f1,2013-07-29 13:39:12,Fixed several tests,1,,1
+4066378f,2013-07-29 14:15:01,Fixed FileUtilsTest.,1,,1
+2611e17d,2013-07-29 16:32:53,Various fixes in JobQueues and JobQueueTest.,1,,1
+78fbc899,2013-07-29 16:35:28,added test status prints to logger,0,,0
+2ac75589,2013-07-29 17:18:33,Fixed JobQueuesTest.,1,,1
+5d508b12,2013-07-30 09:17:51,fixing sonar issues,1,,1
+5f71abd0,2013-07-30 09:18:43,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into feature/scripting-cleanup,0,,0
+3be73793,2013-07-30 09:49:26,testing Generated annotation with sonar,0,,0
+33f828b4,2013-07-30 11:45:02,fixing sonar issues in gridengine adaptor,1,,1
+d5db56ea,2013-07-30 11:47:35,fixing sonar issues in gridengine adaptor,1,,1
+2c5fb6e9,2013-07-30 12:15:17,Merge pull request #158 from NLeSC/feature/scripting-cleanup,0,,1
+fb6c3794,2013-07-30 13:11:01,Fixed properties extract in OctopusEngine. Fixes #156.,1,,1
+0465058f,2013-07-30 13:26:52,fixing sonar issues,1,,1
+011ff4f0,2013-07-30 14:09:52,adding findbugs annotation jar to report false positives . fixing some sonar issues,1,,1
+571f9b6c,2013-07-30 15:07:04,Fixing sonar issues,1,,1
+dbf868ad,2013-07-30 15:08:19,Merge remote-tracking branch 'origin/develop' into feature/scripting-cleanup,0,,0
+1bb9f8ce,2013-07-30 17:38:44,Fixed some sonar issues  fixed invalid working directory test. Fixes #145,1,,1
+adae91c2,2013-07-31 06:53:11,Merge pull request #161 from NLeSC/feature/javajobdescription-tests,0,,1
+30d6bc11,2013-07-31 13:27:51,added tests for java job description,0,,0
+b64859e9,2013-07-31 14:42:44,added more tests for java job description  added explicit support for JavaJobDescription to local adaptor,0,,0
+982dbfee,2013-07-31 14:52:03,Removed default stdout and stderr in JobDescription. Fixes #159,1,,1
+0b282e26,2013-07-31 14:52:13,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0,,0
+cd82f26b,2013-07-31 15:37:58,finished test for JavaJobDescription,0,,0
+2f58e377,2013-07-31 15:40:34,Merge remote-tracking branch 'origin/develop' into feature/javajobdescription-tests,0,,0
+ed5012dd,2013-07-31 16:44:38,Fixed test which relied on standard values of stdin/stdout/stderr in JobDescription,1,,1
+b010acd3,2013-07-31 17:47:05,typo in JobDescription function name. Adding tests for Slurm adaptor,0,,0
+27e60c96,2013-08-01 10:22:03,Fixed various sonar issues.,1,,1
+0bcab195,2013-08-01 10:23:31,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0,,0
+d7217140,2013-08-01 11:19:27,Fixed various sonar issues.,1,,1
+c0d81afb,2013-08-01 11:34:44,Fixed various sonar issues.,1,,1
+74777f44,2013-08-01 13:08:37,Fixed various sonar issues. Fixed potential bug in CopyEngine.compareHead,1,,1
+ad53c825,2013-08-01 13:38:02,Some simple tests for jobscript generator in slurm. Fixes to JavaJobDescription tests,1,,1
+fef0b31c,2013-08-01 13:44:41,Fixed various sonar issues. Fixed bug in CopyEngine.readFully,1,,1
+dd0c315e,2013-08-01 14:04:27,Fixed various sonar issues.,1,,1
+bba18eb5,2013-08-01 14:05:49,Fixed various sonar issues.,1,,1
+e4030ee5,2013-08-01 14:53:43,Fixed various sonar issues.,1,,1
+de29df42,2013-08-01 15:15:26,Fixed various sonar issues.,1,,1
+08b0141c,2013-08-01 16:08:33,Fixed various sonar issues.,1,,1
+f66b59a5,2013-08-01 16:32:23,Fixed various sonar issues.,1,,1
+4277fdff,2013-08-02 17:00:03,refactoring scripting adaptors to improve testability,0,,0
+3a585bec,2013-08-02 17:54:48,added option to set parallel environment in test config,0,,0
+b8ca067a,2013-08-02 18:14:30,add output files to job description,0,,0
+44730d97,2013-08-03 15:23:35,refactored slurm specific parsers into generic string parser class,0,,0
+da56d782,2013-08-04 22:16:34,refactoring scripting adaptors to improve testability,0,,0
+fdf1f969,2013-08-05 13:34:13,cleanup after refactoring  fixing some minor bugs,1,,1
+d001897c,2013-08-05 14:30:21,Added SSH tunnel capability to SSH adaptor,0,,0
+c4f922fc,2013-08-05 14:36:39,refactoring scripting adaptors  adding unit tests,0,,0
+23506aa8,2013-08-05 14:40:10,scripting unit tests,0,,0
+949feef7,2013-08-05 14:40:26,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0,,0
+977a6936,2013-08-05 14:51:56,fixed formatting,1,,0
+10682ad7,2013-08-05 16:55:21,Added signalling in JobQueue to speedup waitUntilDone,0,,0
+575db387,2013-08-05 18:45:27,added some unit tests (incomplete),0,,0
+9f3d562f,2013-08-05 23:00:39,adding tests for scripting adaptor,0,,0
+b145009a,2013-08-06 13:49:57,Added more tests for newOctopus. Fixes #156. Adaptors check properties more strictly. Fixes #165. Made OctopusEngine constructor private. Fixes #166.,1,,1
+3a398900,2013-08-06 16:17:34,Refactored SSH adaptor and fixed #167. Fixed InterSchemeMoveTest,1,,1
+b6bbbe5c,2013-08-06 16:26:31,adding tests for scripting parser  improving some code and fixing some bugs in the process,1,,1
+7d6c13f8,2013-08-06 16:29:08,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0,,0
+392e3a5c,2013-08-06 16:31:25,formatting code with new formatter,0,,0
+8631cb4e,2013-08-06 20:40:35,The adaptors now propagate valid properties array to parent. Should fix issue 168.,1,,1
+7cc9b02f,2013-08-06 21:01:56,refactoring slurm adaptor to improve testability,0,,0
+31bfdfbc,2013-08-06 21:05:52,refactoring slurm adaptor to improve testability,0,,0
+a8bd76a7,2013-08-06 21:10:36,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0,,0
+678eb958,2013-08-06 23:26:04,adding tests to slurm adaptor,0,,0
+50df30ae,2013-08-07 09:15:05,Added copy constructor to JobDescription  and use it in adaptors,0,,0
+4ba77560,2013-08-07 10:10:32,Added test to check if adaptors uses copy constructor of JobDescription. Fixes #169.,1,,1
+3ae42c22,2013-08-07 10:19:52,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0,,0
+85feefa7,2013-08-07 10:46:32,Initial version of adaptor doc generator.,0,,0
+db2d7c9d,2013-08-07 11:12:29,Improved formatting of adaptor documentation generator.,0,,0
+2a9e1147,2013-08-07 11:27:46,adding remaining test classes for scripting adaptors (unimplemented),0,,0
+40dd19aa,2013-08-07 11:52:49,finished basic scripting unit tests,0,,0
+fd4a92e9,2013-08-07 16:04:21,implementing slurm unit tests,0,,0
+db9395e8,2013-08-07 20:51:39,Added examples for queue and job status retrieval. Fixes several tests.,1,,1
+9db5fe86,2013-08-07 21:28:57,Fixed test,1,,1
+8424e25f,2013-08-07 21:41:55,implemented getjobs() to only fetch qstat info once,0,,0
+3d45f6ab,2013-08-08 06:06:52,Merge pull request #173 from NLeSC/feature/scripting-tests,0,,1
+376f40a6,2013-08-08 09:31:42,Fixed bug in test,1,,1
+87ac4211,2013-08-08 10:53:18,quick fix for jsch synchronization problem,1,,1
+b00ecc23,2013-08-08 10:55:28,Added Credentials.close to interface,0,,0
+fbbfcc51,2013-08-08 13:59:28,Refactored job info checks into generic funtion. More tests. Clarified some exception messages. Properly handle null queue names in getQueueStatuses(),0,,0
+8c27cc93,2013-08-08 15:02:52,finished implementing slurm tests,0,,0
+381f4c4b,2013-08-08 15:04:30,Merge remote-tracking branch 'origin/develop' into feature/scripting-tests,0,,0
+37569ee5,2013-08-08 15:47:41,Fixed potential null pointer exception in SSH adaptor,1,,1
+2b1c2638,2013-08-08 15:57:37,Fixed adaptor doc generator,1,,1
+b57cb026,2013-08-08 16:16:11,Fixed formatting (use new formatter as found on https://github.com/NLeSC/wiki/wiki/attachments/code-format-nlesc-v2.xml ),1,,0
+2b540e3f,2013-08-08 16:19:41,Changed signature of new...Credential methods,0,,0
+3abd3e0f,2013-08-08 16:20:57,use queue name from config,0,,0
+daf4a89a,2013-08-08 16:31:42,Fixed various sonar issues,1,,1
+dd1ea80a,2013-08-08 17:04:31,Fixed various sonar issues,1,,1
+f5099bf2,2013-08-08 17:34:27,adding tests for gridengine script generator,0,,0
+52b0de6f,2013-08-08 17:36:40,Fixed various sonar issues,1,,1
+2754f481,2013-08-09 17:20:32,refactoring and testing grid engine adaptor,0,,0
+7e3fbf66,2013-08-11 14:15:49,added script generator tests for ge adaptor,0,,0
+ee90e3c9,2013-08-11 15:18:38,added some SchedulerConnection tests for ge adaptor,0,,0
+207da7ba,2013-08-11 15:27:57,unused import,0,,0
+8223dc6d,2013-08-11 15:29:11,unused imports,0,,0
+0ab42531,2013-08-11 15:32:28,fixed some small warnings,1,,1
+09f365d9,2013-08-11 21:51:57,adding tests for GridEngineSetup,0,,0
+58dda4e3,2013-08-12 05:59:55,Merge pull request #174 from NLeSC/feature/gridengine-unit-tests,0,,1
+e36c24fa,2013-08-12 08:30:56,Merge pull request #175 from NLeSC/feature/gridengine-unit-tests,0,,1
+6987279a,2013-08-12 11:20:22,Fixed FIXMEs,1,,1
+bb8ff829,2013-08-12 13:24:50,added gridengine xml parser tests,0,,0
+d9948b5f,2013-08-12 13:30:14,Replaced various constant arrays with ImmutableArray<T>,0,,0
+07811ce8,2013-08-12 14:25:37,Fixed various sonar issues,1,,1
+ee8eb98d,2013-08-12 14:28:58,added grid engine queue and parallelenvironment info tests,0,,0
+22b271fe,2013-08-12 14:48:44,renamed test functions,0,,0
+3ef91e3e,2013-08-12 14:49:15,use unlimited queue to run scripting commands,0,,0
+df843332,2013-08-12 14:50:01,Merge remote-tracking branch 'origin/develop' into feature/gridengine-unit-tests,0,,0
+4a4cf98a,2013-08-12 14:59:12,fixed some sonar issues,1,,1
+228c4ed0,2013-08-12 15:00:10,Fixed various sonar issues,1,,1
+cb45319d,2013-08-12 15:00:15,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0,,0
+23a8fe20,2013-08-12 16:36:07,Fixed various sonar issues. Cleanup and merge of SshFiles.copy and LocalFiles.copy,1,,1
+bdf568af,2013-08-12 17:28:19,do not run parallel test if parallel environment not configured. various sonar fixes,1,,1
+ababd066,2013-08-13 10:44:24,Fixed various sonar issues.,1,,1
+09149176,2013-08-13 11:01:06,Removed apiviz from lib and build. Fixes #139,1,,1
+7cae6f13,2013-08-13 11:32:29,Fixed the javadoc for the octopus package. Renamed Level into Component,1,,0
+2594a518,2013-08-13 13:00:52,Fixed the javadoc for the credentials package. Removed proxyCredential. Fixes #180,1,,1
+ad5fc8a3,2013-08-13 13:10:57,Fixed the javadoc for the credentials package. Added package-info for credentials package.,1,,0
+06169999,2013-08-13 13:50:20,Merge pull request #183 from NLeSC/feature/some-fixes,0,,1
+f97bf801,2013-08-13 16:52:34,Fixed various javadoc bugs in files package,1,,0
+e27de014,2013-08-13 17:25:41,Fixed various javadoc bugs in jobs package,1,,0
+f9167306,2013-08-13 19:52:27,keep track of deleted jobs for a while,0,,0
+dd886fd3,2013-08-13 21:17:34,unused import,0,,0
+9d1ed0ee,2013-08-14 13:19:59,Fixed various javadoc bugs and ommissions. Cleaned up FileUtil. Fixes #184,1,,1
+77b34448,2013-08-14 13:20:12,Merge branch 'develop' of ssh://github.com/NLeSC/octopus into develop,0,,0
+159c4f8e,2013-08-14 14:25:04,Fixed various javadoc bugs and ommissions. Cleaned up Sandbox.,1,,1
+458c1d84,2013-08-14 15:26:21,Changed AbsolutePath to Path and RelativePath to Pathname. Fixes #182.,1,,1
+2a19b9ef,2013-08-14 22:46:25,Reduce methods in Path,0,,0
+d07d832e,2013-08-15 14:39:36,Reduced methods in Path to 2. Fixes #181,1,,1
+c219bba5,2013-08-15 16:10:27,Fixed various sonar issues,1,,1
+7112c626,2013-08-15 16:57:32,Added tests for  and fixed bug in  OctopusProperties,1,,1
+68283bd3,2013-08-15 17:18:33,Added tests for  and fixed bug in  OctopusProperties,1,,1
+5c450513,2013-08-15 17:21:10,Added tests for  and fixed bug in  OctopusProperties,1,,1
+fcd4be32,2013-08-15 17:24:51,Added tests for  and fixed bug in  OctopusProperties,1,,1
+3bc4ede0,2013-08-15 17:28:47,Added tests for  and fixed bug in  OctopusProperties,1,,1
+8cc84ac6,2013-08-20 14:49:39,Fixed various issues reported by findbugs. Added more examples. Added StreamUtils. Created OctopusProcess as parent of InteractiveProcess and BatchProcess.,1,,1
+06fe5805,2013-08-20 14:50:57,Rename of OctopusProcess to Process.,0,,0
+099b48f1,2013-08-20 16:07:37,Fixed various javadoc issues. Fixes #177.,1,,0
+cbea013f,2013-08-20 16:54:52,Updated userdoc to reflect new names for Path and Pathname,0,,0
+33301782,2013-08-20 17:15:16,Updated userdoc to reflect new names for Path and Pathname,0,,0
+97546a6d,2013-08-22 09:28:10,Fixed sonar issues.,1,,1
+6e9b9aae,2013-08-22 10:29:24,Modified user doc,0,,0
+43e45623,2013-08-22 11:12:26,Added userguide generation to doc build,0,,0
+d27c100f,2013-08-22 11:23:37,added logo to documentation,0,,0
+719dd3ba,2013-08-26 09:52:39,fixed sonar issues. added documentation,1,,1
+a215351c,2013-08-26 11:12:08,fixed sonar issues.,1,,1
+09930144,2013-08-26 11:56:35,update of docs,0,,0
+2f151d10,2013-08-26 12:55:31,Removed dependency on commons-io-2.4.jar,0,,0
+6955b3f5,2013-08-26 12:55:51,Removed dependency on commons-io-2.4.jar,0,,0
+a0e95ad7,2013-08-26 13:02:27,update of docs,0,,0
+06765a85,2013-08-26 13:06:44,update of docs,0,,0
+c3535065,2013-08-26 13:13:28,Update of docs,0,,0
+3d0c5ab0,2013-08-26 13:14:15,Update of docs,0,,0
+d1a7e639,2013-08-26 13:15:05,Update of docs,0,,0
+9594ce1d,2013-08-26 13:16:02,Update of docs,0,,0
+b063f93a,2013-08-26 13:16:46,Update of docs,0,,0
+88b7f75b,2013-08-26 13:17:53,Update of docs,0,,0
+abc5d907,2013-08-26 16:15:35,improved documentation,0,,0
+810871e4,2013-08-26 16:17:04,improved documentation,0,,0
+67d73f05,2013-08-26 16:18:16,improved documentation,0,,0
+98660f9d,2013-08-26 16:20:08,improved documentation,0,,0
+b6e52024,2013-08-26 16:22:14,improved documentation,0,,0
+7aa79a6d,2013-08-26 16:23:07,improved documentation,0,,0
+c128b28d,2013-08-29 17:09:41,Initial version of URL-less API,0,,0
+a098e432,2013-08-29 17:14:41,Fixed start imports,1,,1
+cbd267f7,2013-08-29 17:34:43,Fixed bug in getAdaptor,1,,1
+962e5acf,2013-08-29 20:40:34,Fixed bug in LocalJobs.newScheduler that allowed null locations,1,,1
+2060502b,2013-09-02 09:24:50,Added test for null scheduler. Fixes #186,1,,1
+170d2c38,2013-09-02 14:59:14,Fixed FileSystem and Pathname to support windows,1,,1
+7bed63fb,2013-09-03 11:44:03,Fixed SSH to properly parse locations. Added test for this.,1,,1
+8990fcdb,2013-09-03 15:42:36,Renamed Pathname to RelativePath. Moved special local methods in Files to FileUtils,0,,0
+0cb3cac0,2013-09-03 17:20:19,Fixed tests to use new Files API. Removed URIUtils.,1,,1
+4d4dfadb,2013-09-04 09:13:05,Removed jobs.getLocalScheduler(),0,,0
+ccedc6a4,2013-09-04 16:59:22,Fixed several windows issues (mostly broken tests),1,,1
+a44cb9df,2013-09-05 11:40:09,Fixed some sonar issues. Improved bahavior of BatchProcess on windows.,1,,1
+c2d2c268,2013-09-05 14:51:16,Clean up FileUtils.,0,,0
+09d39857,2013-09-05 14:53:01,Added missing class.,0,,0
+4584156d,2013-09-09 13:56:33,Added prepare-test step to build file that creates test dir with symlinks,0,,0
+31e7fb2a,2013-09-09 14:14:20,Fixed build of test to properly check for octopus.test.properties,1,,1
+8a5aad0d,2013-09-09 14:30:50,Fixed prepare-test target to ignore known_hosts,1,,1
+be48a801,2013-09-09 14:46:06,Fixed several SSH test to use config file.,1,,1
+4073fa7f,2013-09-09 15:43:40,Fixed root test of Utils.getRelativePath to be case insensitive,1,,1
+6d4824be,2013-09-09 16:08:16,Fixed issues in gridengine tests,1,,1
+80c55168,2013-09-09 16:31:12,Fixed issues in gridengine tests,1,,1
+ab858520,2013-09-09 16:42:52,Fixed issues in gridengine tests,1,,1
+c99629a3,2013-09-09 17:04:53,Fixed issues in gridengine tests,1,,1
+709538bc,2013-09-10 09:43:04,Fixed delay in status update of pending jobs,1,,1
+a5372a3d,2013-09-10 12:18:53,Added close method to Credentials. Updated documentation.,0,,0
+59721a3e,2013-09-10 15:04:12,Updated examples and documentation,0,,1
+b189115d,2013-09-10 15:25:47,Fixed tests to use new constructor,1,,1
+13727fff,2013-09-10 15:33:30,Fixed documentation,1,,1
+50a89089,2013-09-10 15:38:12,Fixed documentation,1,,0
+8f0251fc,2013-09-10 15:40:06,Fixed documentation,1,,0
+9b16ccf7,2013-09-10 15:41:17,Fixed documentation,1,,0
+361a698f,2013-09-10 15:42:17,Fixed documentation,1,,0
+212ae2cf,2013-09-10 16:07:20,Fixed javadoc issues,1,,0
+53c1a590,2013-09-10 16:19:16,Fixed javadoc issues,1,,0
+82399823,2013-09-10 16:21:34,Fixed javadoc issues,1,,0
+d680ef8a,2013-09-11 09:59:31,Cleaned up exceptions. Removed OctopusIOException. Removed exceptions package. Fixes #191.,1,,1
+cd1588db,2013-09-11 10:27:58,Fixed test to catch correct exceptions.,1,,1
+0680bdea,2013-09-11 10:59:03,Fixed javadoc. Fixed doc,1,,0
+163c91a0,2013-09-11 11:03:50,Update of readme,0,,0
+a6d0f92c,2013-09-11 12:16:56,Updated the INSTALL documentation. Changed build to always build javadoc and examples  and copy their results to dist.,0,,0
+28f739ec,2013-09-11 12:19:05,Updated the INSTALL documentation.,0,,0
+937f3f1b,2013-09-11 12:53:10,Updated the documentation.,0,,0
+5bd7e42b,2013-09-11 13:19:19,Fixed javadoc issues,1,,1
+07ada70a,2013-09-11 14:05:49,Added generic credential test plus subclasses for local and SSH. Fixes #133.,1,,1
+fac3fc09,2013-09-11 14:16:25,Added missing class.,0,,0
+0e71b499,2013-09-11 16:02:29,SshCredentials now throws exception if a newCertificateCredential is given an non-existing certfile,0,,0
+75aceba4,2013-09-12 13:26:50,Changed test config to check current working dir instead of home. Added octopus.test.properties example,0,,0
+8568867e,2013-09-12 13:36:37,Changed test config classes to use generic property loading  check both home and cwd and to fall back to System properties.,0,,0
+96b2005b,2013-09-12 13:42:58,Changed ssh newCertificateCredential test to use valid credential file.,0,,0
+3d03e029,2013-09-12 13:57:03,Fixed tests.,1,,1
+b454e70e,2013-09-12 14:46:41,Fixed sonar issues,1,,1
+02b8ee52,2013-09-12 15:05:35,Fixed sonar issues,1,,1
+b502363f,2013-09-18 13:07:22,Removed duplicate exception. Unused import.,0,,0
+2ce6ed00,2013-09-18 15:48:47,Updated readme. Added new Logo,0,,0
+43c2df40,2013-09-18 15:49:17,Added new Logo,0,,0
+d0bc81a9,2013-09-18 16:10:11,Refactored the code. Replaced Octopus in all packages and types with Cobalt.,0,,0
+5316a3c6,2013-09-18 16:18:04,Update of various docs,0,,0
+836453c1,2013-09-18 16:22:14,Update of packages in docs dir,0,,0
+ec37b9ec,2013-09-18 16:30:36,Updated all docs and enums in cobalt package.,0,,0
+73dec292,2013-09-18 16:33:57,Added renames examples.,0,,0
+809998d1,2013-09-18 16:39:48,Why did git remove my src dirs ?,0,,0
+ba5de05b,2013-09-18 16:44:00,Updated all docs and enums in engine package (not subpackages).,0,,0
+bb68e771,2013-09-18 16:49:04,Updated all docs and enums in engine.* packages.,0,,0
+a852a906,2013-09-18 16:56:48,Updated all docs and enums in adaptors.,0,,0
+b071cd83,2013-09-18 16:57:11,Added examples/src.,0,,0
+bb8b9a7b,2013-09-18 17:01:09,Updated the main and file examples.,0,,0
+c55f9c2f,2013-09-18 17:04:46,Updated the all exept tests.,0,,0
+ee10d788,2013-09-19 16:49:24,Renamed Cobalt to Xenon. Will the hurting ever stop ?,0,,0
+28de6f88,2013-09-19 16:54:12,Added Xenon logo  updated README  INSTALL  NOTICE,0,,0
+292c0f4b,2013-09-19 17:07:25,Renamed all (most?) classes with Cobalt in the type name to Xenon,0,,0
+48e54f88,2013-09-19 17:08:07,Renamed all (most?) classes with Cobalt in the type name to Xenon,0,,0
+2effa845,2013-09-19 17:36:43,Replaced all occurences of Cobalt in examples,0,,0
+f7faed6d,2013-09-19 17:42:27,Replaced all occurences of Cobalt in xenon package (no sub packages),0,,0
+3d9f9aba,2013-09-20 13:49:11,Renamed all in utils packages.,0,,0
+7535a010,2013-09-20 16:34:12,Replaced all octopus with xenon,0,,0
+ca9547f3,2013-09-23 13:59:21,Rename Octopus/Cobalt to Xenon in userdoc  build files  and config files.,0,,0
+a8e37368,2013-09-23 14:03:08,Rename images to xenon-design.xxx,0,,0
+ceae9662,2013-09-23 14:06:44,Renamed last Octpus,0,,0
+7ca2d42b,2013-09-23 17:20:54,Documentation update,0,,0
+9b64ae24,2013-09-23 17:21:28,Documentation update,0,,0
+58592849,2013-09-24 08:15:55,Merge pull request #192 from NLeSC/develop,0,,1
+ed85107b,2013-09-24 16:24:41,Updated documentation,0,,0
+a06690e4,2013-09-24 16:27:53,Updated documentation,0,,0
+98605c58,2013-09-24 16:45:09,Updated build.xml,0,,0
+fe84f1d8,2013-09-24 16:48:30,Updated build.xml and docs,0,,0
+dd72a122,2013-09-24 17:01:29,Updated build.xml,0,,0
+adb16733,2013-09-24 17:04:20,Updated readme,0,,0

@@ -1,0 +1,523 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+2a7f80e3,2011-03-29 12:42:39,initial commit,0,,0
+107e878f,2011-04-01 11:29:58,added some extra CMAKE functionality,0,,0
+dd44581e,2011-04-01 11:37:03,added pcm-green as a submodule,0,,0
+89f4de72,2011-04-01 11:52:11,added pcmgreen submodule to cmake... not sure if it works,0,,0
+feeabb3e,2011-04-01 15:15:11,added normal files,0,,0
+2f608246,2011-04-01 15:22:08,updated revision for pcm-green,0,,0
+6a409939,2011-04-04 08:56:01,added cavity as external submodule,0,,0
+8e1626ce,2011-04-04 09:03:55,submoudule pcm-green updated,0,,0
+a6236833,2011-04-04 09:06:33,switched pcmcav submodule to pedralib branch,0,,0
+5d933b31,2011-04-04 09:28:48,added cavity to cmakelists,0,,0
+f9d446f3,2011-04-04 09:53:19,CMAkeLists with pcmcav,0,,0
+ff14d396,2011-04-04 09:56:31,nothing really,0,,0
+d385a88a,2011-04-04 09:56:38,Merge branch 'devel' of repo.ctcc.no:pcmsolver into devel,0,,0
+4db6d664,2011-04-04 18:23:18,updated pcmcav submodule,0,,0
+d0e015ee,2011-04-04 18:25:54,setup and cmake update,0,,0
+33034ee1,2011-04-05 09:11:36,modified cmakelists,0,,0
+1ab80b7d,2011-04-05 09:32:30,removed GF submodule,0,,0
+65e8421f,2011-04-05 09:47:06,moved pcm-green submodule,0,,0
+b752caf9,2011-04-05 09:49:21,cleaned gitignore,0,,0
+7e9329b6,2011-04-05 09:51:30,restructured tree,0,,0
+794f2bcb,2011-04-05 15:40:06,compiler and library settings inherited by submodules,0,,0
+aacfee18,2011-04-05 15:41:59,updeate pcmcav module,0,,0
+c6f80cab,2011-04-05 15:42:14,Merge branch 'restructure' into devel,0,,0
+09185052,2011-04-05 23:20:28,PCM solver with template for GF,0,,0
+9fb501b8,2011-04-05 23:23:21,Merge branch 'devel' of repo.ctcc.no:pcmsolver into devel,0,,0
+724107c3,2011-04-07 16:57:49,new pcm-green module,0,,0
+5cddb68a,2011-04-11 09:41:19,everything updated,0,,0
+dc46b7b5,2011-04-11 10:52:01,eigen 3 in setup,0,,0
+c56dfc8d,2011-04-11 10:55:14,updated submodules,0,,0
+1bb404a5,2011-04-12 18:20:14,general IEFPCM solver working for a spherical cavity and uniform dielectric,0,,0
+222764ac,2011-04-12 19:08:08,updated external modules,0,,0
+d64fe20a,2011-04-12 19:08:48,Merge remote branch 'origin/devel' into devel,0,,0
+6e0d1c53,2011-04-13 14:18:11,optimization flags and new setup,0,,0
+1d1336ad,2011-04-18 14:43:13,in the process of removing templates,0,,0
+7bf511d8,2011-04-18 14:45:12,modified pcm solver to use gepol cavity itnerface,0,,0
+bbeb252c,2011-04-18 14:53:33,new cavity,0,,0
+046836a0,2011-04-18 14:59:38,new submodules,0,,0
+3e6cdbe6,2011-04-18 15:03:22,new commit of submodule pcmcav,0,,0
+536b11b4,2011-04-18 15:15:07,updated cavity module,0,,0
+99688e6b,2011-04-28 11:32:49,removed template for GF,0,,0
+32d45560,2011-04-28 13:47:35,Merge branch 'devel' into mergeintercav,0,,0
+86d0efd6,2011-04-28 13:47:57,merging conflicts part 2,0,,0
+b7c9fb2c,2011-06-27 11:25:20,all within pcmsolver: compiles...,0,,0
+b4847ec0,2011-07-02 23:56:13,New version of the pcm module all submodules except libgetkw are now within the module the code compiles and runs but it has to check for correctness.,0,,0
+0b65e5a7,2011-07-06 14:43:36,testing into Dalton...,0,,0
+9451b4dc,2011-07-12 18:22:26,Started interfacing with Dalton,0,,0
+04a44372,2011-07-14 10:33:59,pedralib needs a thorough cleanup,0,,0
+e3e0abd5,2011-07-14 12:19:11,before sed,0,,0
+3bea445c,2011-07-14 12:19:40,before sed,0,,0
+a379deb4,2011-07-14 12:39:22,sed-ified included files,0,,0
+905c7800,2011-07-14 12:43:43,compiled with modified names,0,,0
+ddb1982c,2011-07-14 16:20:41,tested renamed pedra,0,,0
+74fa58fe,2011-07-14 17:10:16,yet another renaming,0,,0
+bfb97d19,2011-07-14 17:37:26,renamed common block titles,0,,0
+a38bf478,2011-07-14 18:16:15,Fixed gpopen/gpclose problem Careful with common blocks: when compiling two libraries that use a common block with the same name they will then share the same memory.,1,,1
+f3f0363c,2011-07-20 11:48:42,developing interface,0,,0
+857b084d,2011-07-20 11:48:52,Merge branch 'dalton-interface' of repo.ctcc.no:pcmsolver into dalton-interface,0,,0
+73617b55,2011-07-22 09:57:54,upgraded interface: compiles,0,,0
+82002c95,2011-07-25 17:04:06,working on the interface,0,,0
+a952821c,2011-07-25 22:52:06,it compiles...,0,,0
+75b70a3d,2011-07-27 12:14:18,some name changes,0,,0
+59c2d5af,2011-07-27 12:17:07,some name changes,0,,0
+f741dbda,2011-07-27 16:41:38,renamed printing units,0,,0
+4973148e,2011-07-27 16:43:32,work in progress,0,,0
+fa4d9ae6,2011-07-27 16:46:53,Merge branch 'dalton-interface' of repo.ctcc.no:pcmsolver into dalton-interface,0,,0
+12aea577,2011-07-27 16:49:03,renamed again,0,,0
+900706f8,2011-07-27 16:51:43,Merge branch 'dalton-interface' of repo.ctcc.no:pcmsolver into dalton-interface,0,,0
+35c1b4f1,2011-08-02 13:06:12,Fixed errors in CMakeLists.txt,1,,0
+d3e14951,2011-08-03 15:47:30,(NOT!) working on interface,0,,0
+f5685193,2011-08-03 15:47:55,Merge branch 'dalton-interface' of repo.ctcc.no:pcmsolver into dalton-interface,0,,0
+55bae35d,2011-08-03 20:04:18,Fixed a bug: normal vectors were NOT normalized. The result was surprisingly accurare despite the bug. Need to clean up the code a bit fomr garbage printing before continuing....,1,,1
+13ad328b,2011-08-09 11:01:48,switched indices on tess centers data to make it consistent with Eigen row major default,0,,0
+499ca208,2011-08-09 18:59:36,SCF working,0,,0
+4ae4a09a,2011-08-10 11:50:30,this version is in sync with Dalton revision 11016,0,,0
+5a4acd56,2011-08-15 15:19:20,adding Wavelet Cavity,0,,0
+ec25bb58,2011-08-15 16:12:54,compilied with Wavelet Cavity included,0,,1
+f4d0444f,2011-08-16 12:22:43,Wavelet cavity code compiles and generates a dump. No clue what to do with it for now...,0,,0
+48497f07,2011-09-12 12:39:14,added wavelet software from Helmut,0,,0
+ecda2713,2011-09-14 15:44:50,new files in wemlib,0,,0
+98668ae9,2011-09-14 15:52:17,compiled with wavelet library (not used yet...),0,,0
+97aca783,2011-09-16 15:21:16,compiling with inheritance on PCMSolver side,0,,0
+8f09379c,2011-09-16 15:35:04,Embryo of WEMSolver,0,,0
+54c4cce0,2011-09-16 17:24:42,fixed bug at the pedra interface,1,,1
+5d3b2dfa,2011-09-19 17:29:16,uploaded wavelet cavity to be sent to the wem solver,0,,1
+0cf2bfd5,2011-09-19 17:31:12,WEMSolver constructors updated. not sure if this works yet...,0,,0
+e97c2dad,2011-09-20 12:08:22,added ifndef/define/endif directives to include files in wemlib,0,,0
+24843fed,2011-09-23 12:06:50,compiles with buildSystemMatrix for WEMSolver,0,,0
+4f37aa19,2011-09-30 18:48:11,get same T_ and most likely same system matrix now,0,,0
+0506f8d2,2011-10-14 16:04:24,Updated libgetkw path on repo,0,,0
+bc281724,2011-10-14 17:21:34,debugging wavelet cavity,0,,1
+93aa113d,2011-10-14 17:24:52,added some cmake files,0,,0
+f6a2e6c2,2011-10-14 17:34:20,updated libgetkw url,0,,0
+46ac172f,2011-10-20 15:20:27,fixed bug in setup and disabled blas by default,1,,1
+a3628362,2011-10-20 15:20:53,Merge branch 'wavelet-cavity' of repo.ctcc.no:pcmsolver into wavelet-cavity,0,,1
+e95f53e6,2011-11-03 10:36:23,Updated libgetkw repo,0,,0
+ebba71fe,2011-11-03 11:43:33,updated CMakelists.txt for right order of libraries,0,,0
+6a2d6558,2011-11-07 14:11:44,Bug fix but still smth wrong with wavelet module,1,,1
+d53369cc,2011-11-10 15:58:16,Changed order of libraries.,0,,0
+52572b12,2011-11-10 16:00:34,Merge branch 'roberto-test',0,,0
+71f69c4b,2011-11-10 16:08:12,Merge branch 'master' of https://repo.ctcc.no/pcmsolver,0,,0
+28e7c19f,2011-11-14 12:02:07,Fixed compilation issues and added cmake files from Dalton,1,,1
+d44d4cc3,2011-11-14 12:21:00,Fixed path of executable files.,1,,0
+2c1c3585,2011-11-14 15:07:54,debugging wavelet solver,0,,1
+6b0cde5b,2011-11-14 15:36:56,Working on input parsing.,0,,0
+b51d266e,2011-11-14 15:39:06,Merge branch 'dalton-interface' of repo.ctcc.no:pcmsolver into dalton-interface,0,,0
+cfe22c42,2011-11-15 10:33:45,Updated libgetkw reference point (sha1),0,,0
+8f084af5,2011-11-15 10:34:02,Merge branch 'dalton-interface' into devel,0,,0
+f529c9fc,2011-11-15 10:46:43,Merge branch 'wavelet-cavity' into devel,0,,1
+f6e6f369,2011-11-15 13:36:57,Moved creation of pcmsolver.x from solverlib to main project directory,0,,0
+afa2477d,2011-11-15 15:52:09,Added new keywords.,0,,0
+cb36ece1,2011-11-16 12:02:50,some output cleanup,0,,0
+6efa8aae,2011-11-17 12:09:15,a change of sign in the double layer fixed Si,1,,1
+c222e42f,2011-11-17 12:55:02,Compared to Ville's implementation the code seems to yield the same system matrices and the same charges. Some notes: 1) In order to compare numbers one by one the cavity is explicitly given in the old code otherwise    some small corrections due to Angstrom/AU conversions happen,0,,0
+c88d718d,2011-11-17 13:29:08,Removed constant nuclear potential,0,,0
+14e2e9fb,2011-11-17 14:56:36,Merge branch 'dalton-interface' of repo.ctcc.no:pcmsolver into dalton-interface,0,,0
+f678bc75,2011-11-17 15:13:37,Cleanup to port wemsolver to dalton-nterface,0,,0
+2e4cf134,2011-11-18 12:36:12,"- Fixed (or better hacked) CMakeLists.txt in order to avoid the compilation of the executable when    ""make all"" is run  - Defined an init_pcm that should decide whether traditional or wavelet PCM is used  - Fixed python input parsing (to be merged with modifications from Roberto...)",1,,1
+e9df4f91,2011-11-18 16:31:09,Merge branch 'dalton-interface' of https://repo.ctcc.no/pcmsolver into dalton-interface,0,,0
+59500819,2011-11-22 10:12:18,Working on common interface for IEF and WEM,0,,0
+1fb48456,2011-11-22 13:06:18,Working on spheres.,0,,0
+e7e626b0,2011-11-22 16:35:52,Working on common interface for wavelet and traditional PCM,0,,0
+8e7e7114,2011-11-22 18:54:16,Working on interface.,0,,0
+938848c2,2011-11-22 18:59:34,Separate prototypes and implementation for subroutine needed for interfacing. TODO: modify CMakeLists.txt accordingly.,0,,0
+264f4656,2011-11-23 11:31:37,fixed stupid bug,1,,1
+7d4e5707,2011-11-23 16:19:39,Working on interface and input parsing.,0,,0
+900a18aa,2011-11-24 12:04:26,Working on interface.,0,,0
+8ba978a7,2011-11-24 12:59:14,Fixed unity conversion problem. Units are at present a total mess!! This should be fixed ASAP!,1,,1
+d369f092,2011-11-24 13:53:31,Added TAGS to gitignore,0,,0
+c803aade,2011-11-24 17:51:54,1) Working on interface  Implicit cavity working (rudimentally). 2) Changed some names.,0,,0
+cd1deebb,2011-11-24 18:38:51,Fixing some inconsistencies.,1,,0
+2f621c43,2011-11-28 14:48:40,Fixed a bug in the wem library (NaN in precond.c) and fixed unit conversion problem.,1,,1
+465c967a,2011-11-29 13:20:19,Changed factor for PCM diagonal elements,0,,0
+b49ccd68,2011-11-29 15:24:49,nothing really,0,,0
+fe9e5d6e,2011-11-29 15:25:12,Merge branch 'wem_ief' of repo.ctcc.no:pcmsolver into wem_ief,0,,0
+0ac8a6df,2011-11-30 18:19:05,Implicit cavity specification now working.,0,,0
+858745af,2011-11-30 18:23:40,New classes for implicit cavity specification.,0,,0
+da0a538a,2011-12-01 16:18:24,erge branch 'wem_ief' into merge_wem,0,,0
+c8887123,2011-12-01 16:37:06,Added unit flag.,0,,0
+0f0d6588,2011-12-02 18:17:46,Various fixes. Added a Solvent class (enables to manage different solvents). Began to think about input structure for different solvents possible.,1,,0
+a1bf3fe5,2011-12-02 18:18:40,Solvent class.,0,,0
+9526d793,2011-12-07 10:18:02,Added functionality on the solvent side.,0,,0
+7c82244e,2012-01-09 11:30:22,Various fixes for cavity formation.,1,,1
+09a2301b,2012-01-18 10:17:26,small fix,1,,1
+f45f4a0e,2012-01-18 10:17:41,Merge branch 'dalton-interface' of repo.ctcc.no:pcmsolver into dalton-interface,0,,0
+d6459da3,2012-01-18 10:22:36,Merge branch 'dalton-interface' into wem_ief,0,,0
+58530c31,2012-01-20 11:04:23,Minor change.,0,,0
+4718bc85,2012-01-20 16:59:22,Added -w flag to icpc to avoid warnings with Eigen.,0,,0
+ee28b202,2012-01-25 10:38:11,libtaylor downloaded and installed,0,,0
+16f75de6,2012-01-26 15:20:13,working on libtaylor in the full code,0,,0
+ab1ee320,2012-01-26 16:30:09,Removed useless comments,0,,0
+e8208aae,2012-01-26 21:57:11,fake potential method,0,,0
+42a8c082,2012-01-26 21:58:38,Merge branch 'devel' into wem_ief_libtaylor,0,,0
+247e5b05,2012-01-26 22:12:56,New flag for icpc.,0,,0
+eb37dd9e,2012-01-26 22:14:15,Merge conflict fixed.,1,,1
+1c9fcce6,2012-01-27 10:28:25,Removed useless print,0,,0
+e67d9ff0,2012-01-27 11:12:46,Seems to work with the following input file:,0,,0
+9e0bc9a7,2012-01-27 14:30:06,Debugging autodiff code. There is some loss of accuracy when the double layer is computed with libtaylor. This needs to be understood better before proceeding further.,0,,0
+6006e348,2012-01-27 15:23:41,Projecting the gradient with a normalized vector (as one should do) yields the wrong result while using the non normalized one I get the right answer. I have not yet understood why....,1,,0
+a7f52c8c,2012-01-27 20:28:49,Added taylor<double 1 1> as a possible case,0,,0
+e3aafa7b,2012-01-27 21:33:33,updated test main,0,,0
+6fa65f72,2012-01-28 10:42:46,First piecewise linears commit,0,,0
+a146e098,2012-01-28 11:37:51,remaned library,0,,0
+351a9355,2012-01-28 18:02:01,WEM --> WEM_pwl,0,,0
+4d372ba6,2012-01-28 18:05:35,WEMPCG --> WEMPCG_pwl,0,,0
+8268e83e,2012-01-28 18:06:18,WEM --> WEM_pwl,0,,0
+c4f7548b,2012-01-28 18:13:43,WEMPGMRES --> WEMPGMRES_pwl,0,,0
+4482dc1b,2012-01-28 18:14:02,WEMPGMRES --> WEMPGMRES_pwl,0,,0
+294e4248,2012-01-28 19:28:21,WEMRHS --> WEMRHS_pwl,0,,0
+1f964bed,2012-01-28 19:51:09,compression --> compression_pwl,0,,0
+2a5f43bb,2012-01-28 19:52:57,Removed common files,0,,0
+25edc71e,2012-01-28 20:17:58,dwt --> dwt_pwl,0,,0
+97083ec4,2012-01-28 20:25:38,energy --> energy_pwl,0,,0
+07fb76d4,2012-01-28 20:38:09,integrate --> integrate_pwl,0,,0
+51181bdc,2012-01-28 20:54:35,interpolate --> interpolate_pwl,0,,0
+d5757d38,2012-01-28 22:31:32,mask and intvector,0,,0
+c427200d,2012-01-28 22:35:35,postproc,0,,0
+271188a1,2012-01-28 22:40:03,precond,0,,0
+66727f71,2012-01-28 22:46:25,read_points and sparse removed,0,,0
+f691fe65,2012-01-29 16:10:15,topology,0,,0
+c48547a3,2012-01-29 16:17:01,topology,0,,0
+ec12f806,2012-01-29 16:19:16,trafos,0,,0
+ff92fd6f,2012-01-29 18:26:50,wavelet structure renamed to wavelet_pwl element structurs renamed to element_pwl,0,,0
+6d4a0c84,2012-01-29 21:31:35,Changed names in basis.h routines,0,,0
+b65baf94,2012-01-29 21:44:37,Removed unnecessary files,0,,0
+6e2c33c1,2012-01-29 22:10:27,Updated CMake files,0,,0
+dcffa538,2012-01-29 22:19:29,Updated CMake files,0,,0
+dc9880b6,2012-01-29 22:42:50,Trying to compile with pwllib,0,,0
+5f45d316,2012-01-30 10:15:48,not compiling yet,0,,0
+23015075,2012-01-30 11:08:21,Created an interface for common Green's function operations  and modified WEMSolver.cpp to use that interface instead of doing dynamic_cast's,0,,0
+c926640c,2012-01-30 16:16:30,Piecewise linear library compiles,0,,0
+60608b6e,2012-01-31 10:25:16,Work in progress to remove template according to Ville's suggestion: 1) GreensFunctionInterface without template done 2) Template from IEFSolver and WEMSolver class need to be removed 3) Input script with derivative option fixed 4) Comp diag element should be moved to the various GF classes (much cleaner...),1,,1
+119c1962,2012-01-31 16:28:24,Work in progress on PWL,0,,0
+d085205c,2012-02-01 10:24:11,Almost ready with PWCSolver,0,,0
+9121e084,2012-02-01 11:08:01,Fixed a sign error! Cut&Paste is the root to all bugs...,1,,1
+7e194303,2012-02-01 11:13:42,fixed a wrong sign in the computation of the S_e stiffness matrix,1,,1
+bbd71c2a,2012-02-01 11:39:41,Small change,0,,1
+267be85b,2012-02-01 11:40:53,Added file,0,,0
+65a7c853,2012-02-01 14:48:06,1) Removing template parameter from solver classes 2) Sign change at the D operator for IEFPCM both for diagonal and off diagonal elements 3) The diagonal elements are now computed in the GreensFunction classes,0,,0
+602f93f5,2012-02-01 21:49:11,Fighting against templates. For now templates are winning big times!,0,,0
+fccbecc5,2012-02-02 08:55:00,I do not understand this...,0,,0
+93e62cfb,2012-02-02 09:18:48,some small changes,0,,1
+0030c7c4,2012-02-02 14:21:53,Compiles on stallo,0,,0
+d01a9fe2,2012-02-02 14:22:50,Removed old commented code,0,,0
+268eaa57,2012-02-02 14:52:45,Compiles on MAC,0,,0
+07ccdd3e,2012-02-02 16:07:17,Derivative order can now be given from input. Lacks the possibility of giving the choice of using the analytic GF derivative from input,0,,1
+25e2a0d9,2012-02-02 18:57:56,Merge branch 'wem_ief_taylor_vw' into wem_ief_libtaylor,0,,0
+465b719a,2012-02-02 20:59:03,Merge branch 'wem_ief_libtaylor' into merge_pwl,0,,0
+850de36b,2012-02-02 21:45:49,work in progress on PWL,0,,0
+2ffdb775,2012-02-03 11:53:42,Working on PWL solver + different cases,0,,0
+47416370,2012-02-03 16:24:53,indented files in wemlib,0,,0
+931728c8,2012-02-03 17:16:06,Indented with: gnuindent -kr -nut *.c *.h,0,,0
+49a243ee,2012-02-03 17:23:15,Indented with: gnuindent -kr -nut *.c *.h,0,,0
+aee2f6f6,2012-02-03 17:34:58,Converted from dos format,0,,0
+cb4d15ea,2012-02-03 17:37:10,Indented wavcavlib with: gnuindent -kr -nut *.c *.h,0,,0
+bbc17725,2012-02-06 22:39:02,Work in progress on PWL...,0,,0
+d55b92fe,2012-02-10 11:58:14,Compiles with PWC as a derived class of WEM (PWL not yet tested),0,,0
+5396caa8,2012-02-10 12:18:51,Program stops after cavity generation,0,,0
+cebe1a94,2012-02-10 16:45:43,New structure seems to work with PWC and Full equation,0,,0
+e0ec4b90,2012-02-11 12:05:49,Compiles with 2nd kind PWL implmented,0,,0
+d69f283a,2012-02-12 17:28:04,Compiles and runs with PWL  but the result is for now wrong,1,,0
+220e21d8,2012-02-16 15:41:47,pcm_dblas1.F removed last line.,0,,0
+75803703,2012-02-16 15:50:32,Added -w flag to icpc (turns warnings off),0,,0
+68235fa0,2012-02-16 20:40:20,working on PWL,0,,0
+f8a05a9c,2012-02-17 17:11:23,Commented out a function.,0,,0
+f5e85b49,2012-02-18 09:04:09,PWL compiles  runs  but result is wrong. Need to fix unit problem first,1,,0
+60f73269,2012-02-18 18:40:48,Tweaking for prettier cavity.off,0,,0
+a0a90754,2012-02-19 18:13:58,Still trying to get coloured cavity.,0,,1
+6157bc28,2012-02-19 21:36:31,Separated randwerte from intlin1 and intkon1,0,,0
+27269969,2012-02-19 22:38:37,Fixed units. From now on EVERYTHING in the module should be in Atomic Units. To be fixed: 1) Interface and GePol Cavity 2) Pedra 3) Sure something else I have now forgotten...  ),1,,1
+0d0cae2d,2012-02-20 11:28:18,Allowed for separate executables with pwc and pwl (For testing and for Helmut),0,,0
+34360f9b,2012-02-20 14:28:51,PWC executable working withn internal benzene test IMPORTANT: all quantities are assumed ro be A.U. from now on (Changed also coordinates in data.c),0,,0
+bc0a2ddc,2012-02-20 19:17:37,Nothing really.,0,,0
+ea804f03,2012-02-20 23:49:49,Testing,0,,0
+690c3d2a,2012-02-21 00:29:54,Full solver gives same result wit pwc.x and pcmsolver.x,0,,0
+7647c9db,2012-02-21 09:58:16,Cavity output now contains also cavity input,0,,0
+48dd8f1c,2012-02-21 12:19:29,External and internal energy computation give (surprise! surprise!) the same result,0,,0
+058dc18d,2012-02-21 15:47:47,Fixed a sign error on the matrix.,1,,1
+264bdab4,2012-02-21 22:58:51,preparing PWL,0,,0
+da528874,2012-02-21 23:03:51,removed ANTOAU and XTANG from pedra,0,,0
+06ee203a,2012-02-22 16:14:56,Piecewise linears working with First Kind equation,0,,0
+c1c761ff,2012-02-22 16:32:07,PWL full case working too,0,,0
+343281b8,2012-02-22 21:52:53,standalone cavity,0,,0
+76a28c02,2012-02-22 21:58:21,added missing files,0,,0
+4f21612b,2012-02-23 15:58:59,nuc_pot_pcm,0,,0
+5e69fbfe,2012-02-24 17:38:16,Some clanup,0,,0
+98b13599,2012-03-05 15:27:32,Compiles within Dalton,0,,0
+dff7a738,2012-03-05 16:31:10,fixed launch script,1,,0
+e4e9048a,2012-03-06 14:43:20,Fixed conflicts,1,,1
+7345f07f,2012-03-07 11:47:40,Fixed a bug in IEFSolver: wrong sign for the Diag element of the D matrix,1,,1
+a1c50724,2012-03-11 19:14:11,Removed weird coupling bewtwwn module and parent program,0,,0
+e04bd174,2012-03-12 16:58:49,Bug fix First Kind Second Kind,1,,1
+b47e8ab3,2012-03-12 17:30:21,Minor conflict fix in the interface,1,,1
+589cd42b,2012-03-13 11:58:35,IEF  PWC and PWL working DIIS closed shell in Dalton,0,,0
+75458d00,2012-03-13 16:31:15,Implementing simple molecule input for Helmut,0,,0
+ad90ba7f,2012-03-14 10:51:51,Working on simple molecule structure: PWL not yet working,0,,0
+2b6447b7,2012-03-14 11:35:49,Rudimentary input for pwl and pwc,0,,0
+2db82658,2012-03-14 11:36:08,Merge branch 'pwl' into helmut,0,,0
+f44174a8,2012-03-14 17:07:00,Removed epsilon scaling factor from pwl CASE=3 S_e and small input fix,1,,1
+7d081cdd,2012-03-14 23:16:51,Fixed NaN bug: same previously fixed in PWC library,1,,1
+1ca1dda9,2012-03-15 08:21:04,Removed CMake commented section,0,,0
+4ad368a3,2012-03-15 19:03:05,Solved inconsistencies in signatures,0,,0
+2f6c4334,2012-03-16 18:43:54,Added function to interface,0,,0
+15659680,2012-03-19 16:17:22,Some cleanup,0,,0
+dee13150,2012-03-19 16:18:14,Simple routine to get a tessera center added,0,,0
+42b404cf,2012-03-19 23:06:04,1. added setters for potential and charges in Cavity abstract base class  2. changed the wrapper for computing charges in interface,0,,1
+67fa7524,2012-03-22 09:29:42,First commit on surf func implementation,0,,0
+192570ad,2012-03-22 09:49:02,Primitive map working,0,,0
+9eacc5ce,2012-03-22 11:13:15,Compiles and run with SurfaceFunctionMap,0,,0
+90cddd56,2012-03-22 11:30:31,Compiles with setFunction,0,,0
+3efd5464,2012-03-22 16:31:05,Compile with SurfaceFunction instead of VectorXd,0,,0
+610697e9,2012-03-22 18:37:30,Something in Cavity class (to be changed),0,,1
+8c80e4b5,2012-03-22 19:50:50,pcmsolver.x compiles with SurfaceFunction,0,,0
+226a4ae1,2012-03-23 14:35:18,Surface function working,0,,0
+f37f89bf,2012-03-24 07:45:29,Merge branch 'pwl' of repo.ctcc.no:pcmsolver into pwl,0,,0
+14415e6d,2012-03-25 20:21:59,Removed two empty lines,0,,0
+8a92931a,2012-03-26 10:03:01,SurfaceFunction working with Dalton,0,,0
+45c88321,2012-03-26 10:05:32,Merge branch 'pwl' of repo.ctcc.no:pcmsolver into pwl,0,,0
+af24b4c8,2012-03-26 11:07:38,Updated pcmsolver test main,0,,0
+05838dd1,2012-03-26 11:59:25,Fixed bug in python script,1,,1
+e176e730,2012-03-26 12:04:24,Merge branch 'helmut' into pwl,0,,0
+91b7bd5a,2012-03-26 15:54:02,Cleaned up pcmsolver.cpp,0,,0
+70234bb5,2012-03-27 10:14:53,Added tests for PWC/PWL First/Full,0,,0
+e6421a6c,2012-03-27 10:30:15,Forgotten test output files,0,,0
+b18a7f52,2012-03-27 10:52:56,Fixed compilation problem in GreensFunction,1,,1
+41822aa2,2012-03-27 22:36:44,Different compPolarizationEnergy.,0,,0
+6050624f,2012-03-30 14:06:57,Merge branch 'cavfunc' of repo.ctcc.no:pcmsolver into cavfunc,0,,0
+97985e8e,2012-03-30 14:31:33,Added -std=c99 flag for Intel C compiler.,0,,0
+9296c0c5,2012-03-30 14:59:48,Merge branch 'cavfunc' of repo.ctcc.no:pcmsolver into merge-dirac-cavfunc,0,,0
+75e16f1e,2012-03-30 15:09:19,Removed a comment,0,,0
+e9b96b70,2012-03-30 15:10:45,Merge branch 'pwl' of repo.ctcc.no:pcmsolver into merge-dirac-cavfunc,0,,0
+115e3cae,2012-03-30 15:33:55,Interface clean-up,0,,0
+ebd872b1,2012-04-18 23:32:20,Getting novelties to work.,0,,0
+3be4d5ef,2012-04-19 16:49:51,Minor changes. Potential bugs spotted with the help of valgrind.,1,,1
+f092cd0e,2012-04-20 09:42:23,SolventMap redefined. Now test with DIRAC.,0,,0
+e2f08c77,2012-04-23 16:33:08,Many things: 1. input parsing script now accepts ProbeRadius only from Medium section  2. keyword Scaling defaults to Yes and takes the scaling factor from the Atom class (to revise probably)  3. Atom class has a radius scaling data member (for now 1.0 for every element)  4. interface functions are separated according to their visibility to the host program (i.e. extern C linkage or not)  5. in Solvent class removed the vector containing the solvent data in favour of the map.,0,,0
+d80509d9,2012-04-23 17:30:42,pass install prefix and allow to override libdir with LIBGETKW_LOCATION,0,,0
+38dfaa1d,2012-04-23 17:48:20,Merge remote-tracking branch 'origin/dirac-interface',0,,0
+6b623528,2012-04-25 12:04:52,Conceptually cleaner way of declaring vdW radii.,0,,0
+2808fdc5,2012-04-25 13:38:36,Fix a problem with install prefix.,1,,0
+bec0c915,2012-04-25 14:36:00,vector<Atom> Bondi doesn't need to have file scope.,0,,0
+d0ae6e04,2012-04-27 22:10:06,Patching for units  must be revised.,1,,0
+72ad1e1c,2012-04-27 22:21:07,Fix stupid typo.,1,,0
+7ac6161d,2012-04-27 22:50:55,Units are fine... reverting.,0,,0
+4641567d,2012-04-28 17:57:51,Converting Bondi vdW radii from Angstrom to AU.,0,,0
+eb6a6e9a,2012-04-28 17:58:12,Merge branch 'dirac-interface' of repo.ctcc.no:pcmsolver into dirac-interface,0,,0
+6610ad41,2012-04-29 14:56:15,Reverting explicit conversion of vdW radii in Atom.cpp  use Constants.h instead. ToAngstrom is now the 2010 CODATA recommended value  both in Constants.h and pcmsolver.in,0,,0
+0cdb58f5,2012-04-29 15:02:51,Small fix to pedra printout (units are AU).,1,,1
+d5375fa8,2012-04-29 15:09:49,Fix stupid error.,1,,1
+2e689e83,2012-04-29 15:10:12,Merge branch 'dirac-interface' of repo.ctcc.no:pcmsolver into dirac-interface,0,,0
+a789ab3a,2012-04-29 15:17:11,Now everything works fine.,0,,0
+bc3ca2ca,2012-05-01 14:45:39,Print GePol cavity size.,0,,0
+e2cec275,2012-05-03 23:07:20,Dirty dirty hack to use total potentials and charges.,0,,0
+9f6f798b,2012-05-09 10:14:29,Correct typo in solvent printout.,0,,0
+9b502cd2,2012-06-07 21:39:39,Richer set of vdW radii from a paper by Cramer and Truhlar.,0,,0
+0c23313b,2012-06-12 22:13:39,1. Solved an issue in the radius selection  2. PEDRA.OUT and cavity.off files are always re-created. This avoids having files of huge dimension (e.g. when doing numerical geometry optimizations.) 3. The overloading of operator<< for GePolCavity is a bit different. 4. Added extern C print function  to print some info related to the module in the host program output.,0,,0
+2eb6afa2,2012-06-14 10:31:31,If make install is issued put relevant things in same install directory as parent program.,0,,0
+95fc4824,2012-06-14 11:48:58,Smooth build-and-install process  nicely working together with that of the parent program.,0,,0
+e43d669e,2012-06-14 12:44:04,INST_LIBDIR updated to correctly configure input parsing script.,0,,0
+f98764af,2012-08-08 12:48:10,Symmetrize PCM matrix for isotropic case.,0,,0
+0f798466,2012-08-09 10:49:31,Added flag -std=c99 for Intel C compiler.,0,,0
+fa27276e,2012-08-09 10:50:07,Merge branch 'dirac-interface' of repo.ctcc.no:pcmsolver into dirac-interface,0,,0
+f413bd5a,2012-11-03 11:49:29,Diagonalize PCM matrix and print info to file in the isotropic case.,0,,0
+a5620414,2012-11-03 11:49:58,Merge branch 'dirac-interface' of repo.ctcc.no:pcmsolver into dirac-interface,0,,0
+41d30c0e,2013-02-26 17:42:50,Install prefix of external submodules changed to /external,0,,0
+05fb1caa,2013-02-26 23:01:29,Added a dummy function to be used to test if linking works correctly.,0,,0
+471cdc74,2013-03-12 15:23:51,Update BLAS and LAPACK modules of cmake. We now require at least Eigen 3.0.0,0,,0
+c53cbcb9,2013-03-13 18:23:33,Restructuring configure&compile setup for PCMSolver. Inspired by R.B. and J.J.,0,,0
+32740f72,2013-03-14 18:37:36,Compilers and Math are correctly configured. Thanks J.J. and R.B.,0,,0
+eb6f3fcd,2013-03-17 16:26:03,Better CMake configure&build structure. User can now activate Eigen fallback to Intel MKL. Doxyfile properly configured.,0,,0
+66da77d0,2013-03-17 21:47:39,Final clean-up of configure&build structure. Switched to python setup script.,0,,0
+e9a0ea4c,2013-03-18 15:21:27,Various renaming in source dir hierarchy. Modify CMakeLists.txt to get make install to work properly.,0,,0
+aaaef594,2013-03-18 18:09:09,Add -fPIC flag for all compilers (generate Position-Independent Code),0,,0
+7d8e6332,2013-03-18 18:25:24,Pass CMAKE_CXX_FLAGS to external projects. This should be done also for Fortran and C compilers (maybe wrapping it in the add_external function),0,,0
+0919f97a,2013-03-19 15:05:35,Correct a double / in CMakeLists.txt,0,,0
+85840475,2013-03-19 23:02:14,Solved issue with make -jN. Parallel make now works fine.,0,,1
+d41a5ac0,2013-03-22 12:12:17,Added solver for conductor-like approximation (C-PCM),0,,0
+fa3513b6,2013-03-22 18:41:18,Debugged interface for call to CPCMSolver.,0,,0
+8e0f7332,2013-03-23 15:38:44,Solved problem with installation to /usr/local,1,,0
+5be4feab,2013-03-23 16:08:54,Minor fix to CMakeLists.txt,1,,0
+bb4e09d7,2013-03-27 09:59:57,Small fixes in CMakeLists.txt,1,,0
+275ec142,2013-03-27 11:24:46,Added Google Test Framework for tests.,0,,0
+8e5917f1,2013-04-01 13:07:45,Added support for unit testing with Google Test.,0,,0
+4a0240a2,2013-04-07 15:01:50,Added a stub for the Input class. Various minor improvements in structure.,0,,1
+d613c4c0,2013-04-08 16:19:58,Input class defined  start working on new interface structure.,0,,0
+5db5c31c,2013-04-23 15:48:32,Install parsing script to /bin,0,,0
+2b1cdc45,2013-05-08 15:47:42,Added -fPIC flag for gfortran.,0,,0
+d2aeff96,2013-05-09 08:25:48,Mods by Andy Simmonett to correct kt/kt name conflicts.,0,,1
+4563633d,2013-05-10 16:13:16,Desing of Input is now that of a Singleton.,0,,0
+e11935d3,2013-05-15 00:11:35,Print info on polarization energy components using printf.,0,,0
+6818d12b,2013-05-16 18:09:24,Added UFF radii set  the parsing script has been modified accordingly.,0,,0
+5302dcf1,2013-05-16 18:09:44,Merge branch 'master' of repo.ctcc.no:pcmsolver,0,,0
+fd9bac19,2013-05-19 15:30:10,Correct the implementation of Input as a Singleton. Trying to recover the work I lost on the interface.,0,,1
+b89b712c,2013-05-19 15:32:24,Merge branch 'master' into google-tests,0,,0
+1ab294fa,2013-05-21 17:47:52,Recovery: compiles with DIRAC but crashes on execution (I know why  I want to complete the restructuring),0,,0
+46f0d40e,2013-05-22 12:23:32,Polishing cavity classes.,0,,1
+6d153a3e,2013-05-22 14:54:16,Added an intermediate class in the inheritance hierarchy of the cavities.,0,,0
+ad818fc9,2013-05-22 17:08:58,Compiles and WORKS with DIRAC.,0,,0
+5578ad75,2013-05-22 19:09:33,Streamlining cavity classes: 1. GePolCavity class is now free from weird dependencies  2. WaveletCavity class is almost there  but I must test against the old (and working) implementation  3. Next step is to apply the CavityFactory in the interface.,0,,0
+3f9355e1,2013-05-23 14:53:44,Minor modifications.,0,,1
+a417ac60,2013-05-23 17:36:50,Small corrections  mainly trying to understand how a factory works...,0,,1
+ab4b3fb1,2013-05-29 17:36:09,Added some syntactic sugar to the SurfaceFunction class. Currently not used in the user interface  some modifications there are needed.,0,,0
+6ae7870e,2013-05-29 18:34:51,1. Added flag -std=c++0x It's 2013  g++ and Intel have a good support of the new standard. 2. Some more sugar for SurfaceFunction 3. Basic restructuring of Cavity class  to account for the new interface of SurfaceFunction.,0,,0
+ed1fd936,2013-05-30 10:58:12,Added UFF radii set.,0,,0
+a3bc648c,2013-05-30 16:44:14,1. added unit tests for overloaded operators in surface function class  2. removerd CavityOfSpheres class. This extra layer of indirection did more harm than good.,0,,1
+828fa055,2013-05-31 11:57:45,Dividing responsibility between Cavity and SurfaceFunction,0,,0
+b29275b6,2013-05-31 17:10:35,Cleaner structure and better comments in the makeCavity function in GePolCavity class.,0,,0
+214db4f4,2013-06-03 12:05:41,1. Changed cavity constructors  to get the Factory to work. 2. Factories belong in the directories of their object type.,0,,0
+514df245,2013-06-03 13:42:05,Cavity Factory working  but not smoothly enough...,0,,0
+2a61e7fe,2013-06-04 17:02:32,1. CavityFactory works  but it is still untested when creating a WaveletCavity  2. our inheritance hierarchies break the Liskov Substitution Principle. We use RTTI when necessary instead (possibly bad design  but preserves logical integrity)  3. solved a bug in makeCavity for GePol  4. the addition of new spheres by PEDRA is still untested...,1,,0
+18b5787e,2013-06-05 17:52:40,SurfaceFunction is now helper class and is only used in the interface  not in the core classes. The rationale is that the core classes should have to deal with base types only  to avoid high coupling between different parts of the code.,0,,0
+658f6c74,2013-06-06 17:08:39,WARNING: this is a dirty commit. 1. added a SurfaceMap helper class  will see if I can remove this extra layer of complication  2. interface works with new SurfaceFunction implementation  3. there's lots of printing going on. I commit like this so that I have a checkpoint to refer to in case I break something.,0,,0
+9b3f7ff5,2013-06-06 17:58:45,Clean-up of the previous commit. 1. removed all print-outs  2. as expected helper class SurfaceMap is not needed.,0,,0
+9c498258,2013-06-17 15:09:50,Some fixes: 1. new surface functions automagically register themselves in the surface function map upon creation  2. corrected the implementation of the cavity factory  no more clumsy static functions and preprocessor macros  3. removed a leftover in utils/CMakeLists.txt,1,,0
+1874a472,2013-06-17 18:14:25,Documentation is now managed by Sphinx. The breathe plugin will extract documentation from the code via Doxygen and let us put it into Sphinx. The code will be documented in the usual way  Sphinx can then be used for both the programmers' manual and the users' manual.,0,,0
+f326c2e7,2013-06-18 15:00:43,Working on Doxygen+Sphinx(breathe) documentation of the code.,0,,0
+08faba8e,2013-06-18 15:28:20,Documenting helper classes.,0,,0
+b244ed33,2013-06-18 16:21:22,Minor fixes.,1,,1
+5aae4197,2013-06-18 17:50:20,Removal of using namespace directives and documenting.,0,,0
+27c681bc,2013-06-19 10:16:22,Nothing really.,0,,0
+68bcaf07,2013-06-19 14:45:21,Documenting.,0,,0
+c081ec5a,2013-06-20 12:55:22,Trying to understand the Green's function code and documenting it while I'm at it.,0,,0
+60b33ada,2013-06-21 16:57:15,Still trying to get the new infrastructure to work (I think we are close): 1. refactoring of the interface  for the moment just moving things around  2. Green's function classe do not depend any longer on getkw  3. Solver classes do not depend any longer on getkw  4. documenting here and there.,0,,0
+ac62a6d0,2013-06-21 17:11:44,Documenting.,0,,0
+a05d8dc0,2013-06-21 17:31:30,Documenting the include/forward declare strategy to adopt.,0,,0
+29da7f24,2013-06-22 14:46:04,Fixes to get pcmsolver running on my Mac.,1,,0
+bf7d0751,2013-06-25 00:03:18,Encapsulating Green's function evaluation.,0,,0
+23708423,2013-06-25 09:43:46,Documentation.,0,,0
+0e03054d,2013-06-25 10:03:49,Documentation.,0,,0
+f25daaaa,2013-06-27 16:10:48,Clumsy attempt at creating a factory for Green's functions. The templated nature of the GreensFunction object complicates matters a lot.,0,,0
+09917e4c,2013-06-28 13:45:24,Remove strategy classes from green.,0,,0
+101efc33,2013-07-02 10:34:00,Making helper classes final + documenting.,0,,0
+f51b3133,2013-07-02 10:34:17,Merge branch 'google-tests' of repo.ctcc.no:pcmsolver into google-tests,0,,0
+1e0d0435,2013-07-03 16:56:34,Super-massive refactoring of libgreen and libsolver. Next step is super-massive refactoring of libinterface.,0,,0
+2dfeb043,2013-07-03 20:20:44,The new structure works.,0,,0
+9d93d6c1,2013-07-03 20:21:26,Merge branch 'google-tests' of repo.ctcc.no:pcmsolver into google-tests,0,,0
+5c2b40be,2013-07-03 23:07:59,Restored MetalSphere  PlanarInterface and GreensFunctionSum (but work to do on all three of them...),0,,0
+843329f6,2013-07-03 23:09:01,GreensFunctionSum removed (i.e. you can it back from this commit hash). I think we should go for operator+ and operator- overloading.,0,,0
+cc69e244,2013-07-04 15:01:34,Simplify CTORs for solvers.,0,,0
+ec82a830,2013-07-04 15:29:04,Compiles with SolverFactory. Next step  use the factory,0,,0
+3b93038f,2013-07-04 16:45:59,SolverFactory works.,0,,0
+1188d6af,2013-07-04 19:54:40,Extension of all C++ headers in hpp. Some polishing of the code.,0,,0
+839f72f2,2013-07-04 20:03:52,Compiles with DIRAC.,0,,0
+f02f68b2,2013-07-05 09:46:05,Cavity abstract base class stripped down to pure interface. Redefinition of overloaded operator<< for all the cavity classes.,0,,0
+1221dfaa,2013-07-05 19:17:46,Super big polishing commit. The order of includes IS IMPORTANT  I will document in the programmers' manual how to do it properly. The coupling between wavelet cavity and wavelet solver (issue 368) MUST be solved.,0,,1
+d4bb7df0,2013-07-05 20:03:53,Some more polish.,0,,0
+934bccf6,2013-07-08 19:44:33,Removed old/commented code in the interface. TODO: write unit tests  re-think the structure of libgreen (Luca's objections)  structure of wavelet part is a bit messy (needs revision).,0,,0
+15e540a2,2013-07-08 19:51:20,Merge branch 'google-tests',0,,0
+36fa8149,2013-07-08 20:27:44,UFF radii are now in the new structure. Unit tests are disabled on master.,0,,0
+cc962e74,2013-07-09 12:25:10,Update example input.,0,,0
+4dc4c8d4,2013-07-09 12:44:58,Documentation now compiles,0,,0
+5b8ae959,2013-07-09 18:55:34,Enable compilation of unit tests in this branch. Add default CTOR to CPCMSolver and IEFSolver classes. Modify GePol cavity tests and add a test for CPCMSolver.,0,,0
+0aca99e3,2013-07-09 18:56:19,Documentation.,0,,0
+0e4856a2,2013-07-09 18:57:04,Merge branch 'master' into google-tests,0,,0
+9e0a8e31,2013-07-12 21:06:20,Stupid bug in input reading.,1,,1
+3baf3d13,2013-07-13 19:38:52,Update docs.,0,,0
+9d370dbb,2013-07-13 19:39:35,Merge branch 'master' into google-tests,0,,0
+0f8f73e4,2013-07-13 19:47:01,1. Add class for TsLess cavity. 2. Remove commented code in WaveletCavity.cpp,0,,0
+b0d45ccf,2013-07-17 20:49:56,1. Prepare for TsLess code. 2. Revert to current C++ standard. 3. Some small fixes to get the code to compile with gcc. 4. With gcc I cannot link to MKL...,1,,0
+239c3939,2013-07-17 20:58:21,Compiles with gcc,0,,0
+c678de74,2013-07-18 12:22:52,Small fix in WaveletCavity,1,,1
+05a069d5,2013-07-18 13:10:24,Correct surface function test.,0,,1
+a497aa96,2013-07-18 15:16:56,Everything in place. We can start working on TsLess.,0,,0
+80d9da09,2013-07-30 10:48:39,Test for iefpcm added. Linker problem with gcc not yet solved though.,1,,0
+77c55578,2013-07-30 10:59:08,Correct a small warning in CTOR initialization list.,0,,0
+4ae7df34,2013-07-30 11:52:08,Sanity checks in Input object,0,,0
+d61f26b8,2013-07-30 12:32:21,Program to an interface principle applied to the buildSystemMatrix functions. Will extend to wavelet solvers in the next commit.,0,,0
+617aa344,2013-07-30 18:18:56,Merge branch 'master' into tsless-cavity,0,,0
+0d2cf55a,2013-07-30 18:59:07,Add sample test with CPCM and IEFPCM with TsLess cavity. When TsLessCavity is correctly in place everything should work without further effort.,0,,0
+0dd01567,2013-07-31 16:08:27,Wavelet cavity generator cannot handle one single sphere. Investigating this bug.,1,,1
+6a841cb4,2013-07-31 16:22:49,Solved warning from a call to fprintf,0,,0
+5cb31585,2013-07-31 18:26:06,Remove useless prints.,0,,0
+76263946,2013-08-01 16:23:19,Changed order of tests for wavelet cavity generator (NH3 test now runs before unit sphere),0,,0
+23165d16,2013-08-12 14:55:35,Add tests for IEFPCM and CPCM with complex arrangement of point charges.,0,,0
+b1a1d461,2013-08-12 16:35:53,Export sources to topmost CMakeLists.txt We can now create a unique static library  so that the host program doesn't need to know how PCMSolver is made internally.,0,,0
+90605128,2013-08-13 10:41:35,Change the name of library from libpcmsolver to libpcm.,0,,0
+432e8c11,2013-08-13 12:31:34,Compiles with DIRAC.,0,,0
+a29afa7c,2013-08-13 12:33:55,Merge branch 'master' into tsless-cavity,0,,0
+5d944ef4,2013-08-13 16:29:38,Different building strategy for unit tests.,0,,0
+695411e3,2013-08-13 16:36:57,Correct a typo in CMakeLists.txt,0,,0
+f32eaedc,2013-08-21 10:48:36,Added tear_down_pcm_ function. This deletes the global pointers allocated in the interface.,0,,0
+17f28ae0,2013-08-21 15:27:05,Added a comment.,0,,0
+e90eb0ff,2013-08-21 16:06:36,Improved comment.,0,,0
+98a3165f,2013-08-21 16:27:31,Rename util directory to tools.,0,,0
+f89d4b25,2013-08-22 12:49:18,Changed labels of surface function from Chg to ASC and from Pot to MEP.,0,,0
+99615e9c,2013-08-22 19:58:44,Refine the unRegister() function in SurfaceFunction class. The syntactic sugar added in the class must be reviewed...,0,,0
+c9610bb3,2013-08-23 14:57:55,Added install rule for Config.hpp.,0,,0
+0604bdb6,2013-08-25 16:11:12,Nothing really.,0,,0
+e973d86c,2013-08-25 16:12:39,Merge branch 'master' of repo.ctcc.no:pcmsolver,0,,0
+7f16753d,2013-08-26 10:25:13,Correcting my catastrophic encounter with map iterators.,0,,0
+83cb3ff3,2013-08-26 19:43:05,Use Eigen API when transferring the tesserae centers coordinate to the host program.,0,,0
+fa134e2c,2013-08-26 20:29:01,Switch from raw pointers to boost::shared_ptr for SurfaceFunctionMap.,0,,0
+aa3b529e,2013-08-27 15:48:04,comp_pol_ene_pcm_ function now decides by itself what to do  based on what is in the SurfaceFunctionMap.,0,,0
+07b3b98d,2013-09-02 11:48:48,Merge branch 'master' into tsless-cavity,0,,0
+95c07350,2013-09-03 17:11:26,A small thing in pedra_cavity.F,0,,1
+4a7af635,2013-10-04 10:57:35,Correct a potential bug in the tear_down_pcm_ function (double delete...),1,,1
+9509c854,2013-10-04 11:21:45,Templates cannot be inline  correcting.,0,,0
+9dc3e560,2013-10-04 15:47:56,Do not print nodes in WaveletCavity.cpp,0,,0
+f073858a,2013-10-04 15:48:07,Merge branch 'master' of repo.ctcc.no:pcmsolver,0,,0
+8586b55e,2013-10-08 15:49:33,Added some more radii + scaling factor is now 1.2,0,,0
+e0bbbc99,2013-10-09 12:31:20,Fix compilation issue with tests.,1,,1
+7d879dee,2013-10-18 15:52:33,Re-enable compilation of tests relying on gepol cavity.,0,,1
+fe69c90f,2013-10-18 15:52:40,Merge branch 'master' into tsless-cavity,0,,0
+577859f4,2013-10-18 16:25:28,Compile sources as sub-libraries only if ENABLE_TESTS=TRUE.,0,,0
+0abd1614,2013-10-20 11:15:43,Disable compilation of separate libraries is unit testing is not required.,0,,0
+a0bd2a03,2013-10-21 14:31:07,Correcting IonicLiquid. A pure virtual function in Green's function ABC was never defined in IonicLiquid derived class.,0,,0
+a9bc698a,2013-10-21 15:20:42,Minor mods to names used for volume function in pwl.,0,,1
+9b631dbf,2013-10-21 15:52:52,Compiler issues more warnings now.,0,,0
+84ce40dc,2013-10-21 15:53:02,Merge branch 'master' of repo.ctcc.no:pcmsolver,0,,0
+c5f415a4,2013-10-22 19:23:51,Fix flags for C compiler,1,,1
+25db250e,2013-10-22 19:48:28,Fix flags for C++ compilers,1,,1
+15ac4efa,2013-10-23 11:37:43,Update example input in examples directory.,0,,0
+242c73da,2013-10-24 15:08:25,Shipping Eigen 3.2.0 with the module now.,0,,0
+9b4ae390,2013-10-25 12:06:41,Convert internal solvent probe radius from angstrom to au. Closes bug #447,1,,1
+dab72451,2013-10-25 12:07:21,Merge branch 'master' of repo.ctcc.no:pcmsolver,0,,0
+3f4ef537,2013-10-25 15:09:33,Possible fix for install.,1,,0
+a1bc7051,2013-10-25 15:53:46,Still fixing install details.,1,,0
+dd759d3e,2013-10-25 15:59:09,Fix where Eigen 3 ends up...,1,,1
+ca2d2491,2013-10-25 16:52:57,Install works. Selection of Eigen 3 works too.,0,,0
+d26d5c09,2013-10-25 16:57:30,Merge branch 'master' into ship-eigen,0,,0
+45b59d0e,2013-10-25 16:57:58,Merge branch 'ship-eigen' of repo.ctcc.no:pcmsolver into ship-eigen,0,,0
+8f3de2a5,2013-10-25 17:56:11,Simplify installation of input parsing script.,0,,0
+d0076b88,2013-10-30 10:23:27,Add function to calculate dot products of surface functions.,0,,0
+e27ae059,2013-10-30 10:23:56,Merge branch 'master' of repo.ctcc.no:pcmsolver,0,,0
+5fb4c461,2013-10-31 19:01:21,Remove one print from the interface.,0,,0
+4e7a02db,2013-10-31 19:02:53,Update .gitignore,0,,0
+76b87143,2013-11-25 18:06:38,Comment some printouts,0,,0
+baf62f2b,2013-11-25 18:47:25,Kill execution if wavelet cavity with only one generating sphere is asked.,0,,0
+9921a1f7,2013-11-26 12:30:22,Disabling obnoxious warning from Eigen headers. Works with GNU compilers,0,,0
+272e7aff,2013-11-26 15:19:21,Enabled -Weffc++ flag also for GNU compiler. Intel compilers seem to be ignoring my pragmas...,0,,0
+17220990,2013-11-26 15:42:30,Disable obnoxious warnings also when issued from libtaylor headers.,0,,0
+534243e1,2013-11-26 15:59:26,The cleanest solution is to remove the -Weffc++ compiler flag for Intel.,0,,0
+9c554cff,2013-11-27 10:07:20,Quick fix for cavity input in Atoms mode.,1,,1
+26009b02,2013-11-27 11:22:03,Still struggling with CMake and the install process..,0,,0
+3083f5e4,2013-11-27 11:46:52,"Revert ""Still struggling with CMake and the install process..""",0,,0
+7e7609eb,2013-12-03 15:42:07,Experiment on how to release the code to the public.,0,,0
+1ec06b14,2013-12-03 16:03:28,Insert safeguard in WaveletCavity.cpp file,0,,0
+018dbfd0,2013-12-03 19:03:15,Added license for Eigen,0,,0
+998b9783,2013-12-04 09:32:38,Added License files and better release preparation mechanism in CMake.,0,,0
+0745e6bc,2013-12-04 10:18:45,Minor modifications.,0,,1
+18b3ef49,2013-12-04 11:38:51,Added Ville's CavityViewer.py in the tools directory.,0,,0
+0fe5504c,2013-12-04 12:22:49,This reverts some parts of a previous commit.,0,,0
+e51574d5,2013-12-04 14:31:31,Small fix for the release process.,1,,1
+b40a9b3b,2013-12-04 14:55:01,Merge branch 'master' into google-tests,0,,0
+e4d6b342,2013-12-04 14:56:51,Disable compilation of unit tests.,0,,1
+b600bb49,2013-12-04 16:33:29,Working on the  for now very minimal  unit test suite.,0,,0
+6af3f1fa,2013-12-05 14:46:34,Working on unit tests and linking to math libs.,0,,0
+040d5a72,2013-12-06 14:38:21,Unit testing should fail is something fails inside the classes being tested.,1,,0
+1ebeb243,2013-12-06 15:14:55,Still on testing.,0,,0
+6ba9ad68,2013-12-06 18:00:06,Fixing the diagonalization of the inertia tensor.,1,,0
+92f76823,2013-12-08 15:43:25,Merge branch 'master' into merge-master-into-tsless,0,,0
+5de1c493,2013-12-10 14:22:08,Changing the setup for tests.,0,,0
+b9eb5f2c,2013-12-10 15:26:00,The setup for our unit test suite should be good enough now.,0,,0
+0c31d83e,2013-12-10 15:55:28,Use vector of random numbers in the surface_function test.,0,,0
+225d2e65,2013-12-10 16:33:49,Insert safeguards for the TsLess code.,0,,0
+463b287c,2013-12-10 18:16:03,A little tweak in the selection of unit tests.,0,,0
+90f24a9e,2013-12-10 18:44:00,Added a TODO list.,0,,0
+95922592,2013-12-10 18:58:53,Update TODO list.,0,,0
+a1698961,2013-12-11 15:30:43,Review optimization flags.,0,,0
+8630a8fa,2013-12-11 17:18:45,Update breathe version.,0,,0
+bad9b646,2013-12-11 17:24:43,Protect tsless code from being compiled if not on development branch.,0,,0
+5d843ed4,2013-12-11 18:28:02,Clang and Clang++ are now supported. It might be necessary to fix the flags.,1,,0
+824fd4b2,2013-12-11 18:29:09,Build debug_wavcav.x only when necessary.,0,,0

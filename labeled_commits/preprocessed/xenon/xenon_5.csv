@@ -1,0 +1,429 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+d20a02b4,2015-12-16 18:55:34,Fixed link to correct ghpages,1,,1
+82a8e6fb,2015-12-16 19:02:16,Added doi badge,0,,0
+8377fd85,2015-12-16 19:21:14,Use static license image url,0,,0
+1a0f753d,2015-12-17 09:16:54,Changed license button to shields.io version,0,,0
+b131f4ea,2015-12-17 15:31:41,Make slurm container depend on Mysql container for accounting.,0,,0
+41d72808,2015-12-17 15:34:24,For xenon slurm docker container job completion storage with correct pw.,0,,0
+8d865abb,2015-12-18 09:34:29,Switched travis and codecov links back to develop version,0,,0
+724b09d4,2015-12-18 09:42:42,Merge pull request #367 from NLeSC/dockerslurmcomment,0,,1
+95c192f1,2015-12-18 09:43:05,Merge pull request #363 from NLeSC/dropdocbuilddeps,0,,1
+c53381c2,2015-12-18 09:43:16,Merge pull request #359 from NLeSC/fixture_loading,0,,1
+253eca66,2016-01-18 10:02:45,recommitted unstable webdav changes that were removed for v1.1,0,,0
+94c8c0f6,2016-01-18 11:11:33,fixed bug in webdavlocation,1,,1
+523e365d,2016-01-19 14:26:31,added extra tests for webdav directory stream,0,,0
+300b900f,2016-01-19 15:48:04,simplified webdav directory stream,0,,0
+04ccdb34,2016-01-20 09:49:49,webdav directory listing,0,,0
+61f9ea18,2016-01-20 10:41:01,access and modified time attributes refer to creation time if unknown (webdav),0,,0
+ec973a66,2016-01-20 13:38:10,webdav directory attribute stream,0,,0
+2e9cea33,2016-01-20 17:03:20,WIP inputstream for webdav,0,,0
+d80572fd,2016-01-22 14:56:28,Added osx to travis-ci.,0,,0
+8c0dc47a,2016-01-22 15:05:38,jdk_switcher failed  using default jdk for travis-ci osx build.,1,,0
+494e6e03,2016-01-22 15:46:52,Added integration tests to osx travis-ci build.,0,,0
+73eb8d22,2016-01-22 15:59:49,Osx integration test filter too strict  it found no tests.,0,,0
+dc760c8c,2016-01-22 16:25:46,Added configuration for appveyor and appveyor build badge.,0,,0
+118059a2,2016-01-22 17:04:57,To appveyor added codecov  artifacts and test results of 2 junit files.,0,,0
+c0656178,2016-01-22 17:14:33,after_test not run on test failure  moved after test commands to test_script section.,0,,0
+e1339e2d,2016-01-22 17:21:58,Test steps stop on failure  moved codecov  test results to on_finish.,0,,0
+af69af0f,2016-01-22 17:53:25,Add Python 3.4 to path  it has pip.,0,,0
+253cdba9,2016-01-22 18:08:40,Create jacoco xml + upload all unit test results.,0,,0
+b87b5daa,2016-01-22 18:23:51,Use full name of file.,0,,0
+c7f3fec9,2016-01-22 18:30:43,Use foreach and fullname,0,,0
+7cbf4b0c,2016-01-22 18:38:47,Add more envvars to codecov.,0,,0
+31e791c9,2016-01-25 12:52:54,Run local integration tests in appveyor.,0,,0
+0d802b04,2016-01-25 12:57:48,Run unit and integration tests together for appveyor.,0,,0
+261f7db0,2016-01-25 13:00:27,Typo,0,,0
+36124202,2016-01-25 13:30:08,Dont exit when dir exists.,0,,0
+a2bdc9e1,2016-01-25 13:41:21,Exclude bat file from license check,0,,0
+4451ef63,2016-01-25 13:46:24,Added integration test results to appveyor tests tab.,0,,0
+7d3ff2cf,2016-01-25 14:20:50,Run integration tests even if unit tests fail.,1,,0
+5491c50b,2016-01-25 14:32:51,Submit integration test coverage to codecov.,0,,0
+792e05b2,2016-01-26 10:00:55,Workaround for windows delete directory quirck. Fixed homedir expansion on windows.,1,,1
+3771a9b4,2016-01-26 10:22:22,Symlinks should be created in working dir of integration tests.,0,,0
+31a219a0,2016-01-26 15:56:11,Closed directory streams in tests and utils. Windows will not allow the delete of a dir when it has a stream open,0,,0
+bf5ac92e,2016-01-26 16:48:55,Skip the isHidden test for files on windows as they seem to fail,1,,0
+19ca87cf,2016-01-26 17:07:24,Update DOI link,0,,0
+bf6e22c4,2016-01-28 13:14:51,Merge pull request #372 from NLeSC/windows-quircks,0,,1
+90656bd7,2016-01-28 13:22:17,Added comment about jdk switcher,0,,0
+cee7a48e,2016-01-28 14:04:55,Merge pull request #370 from NLeSC/travis4osx,0,,1
+15ec4d28,2016-02-01 13:22:48,Fixed test20_newInputStream to properly close stream after reading a test file. Not doing wo will prevent the file being deleted on windows,1,,1
+0adb1927,2016-02-01 15:49:34,webdav outputstream,0,,0
+cb6b5b85,2016-02-02 09:55:44,webdav outputstream tests,0,,0
+38ebc761,2016-02-02 10:00:34,added a few comments,0,,0
+15f61021,2016-02-02 11:07:59,Fixed race condition between done and close streams in StreamForwarder. Closed various streams in GenericTestParent classes,1,,1
+ab5e8cc3,2016-02-02 14:01:53,Skip attempt to use kill command to kill processes on windows systems. Removed windows network file system test in local adaptor tests since the semantics are not clear,0,,0
+f1443144,2016-02-02 15:31:59,Reversed state update and process destroy order in JobExecutor. Old order led to subtle race condition.,0,,0
+b15e3ae6,2016-02-02 16:28:55,Remove leftover comments from debugging. Shame on me,0,,0
+cb3cb17b,2016-02-02 17:09:02,webdav file size attributes,0,,0
+2af12147,2016-02-02 17:28:30,Merge pull request #371 from NLeSC/appveyor4windows,0,,1
+030af45c,2016-02-15 14:21:32,webdav copy functionality,0,,0
+df9be99d,2016-02-15 14:25:38,webdav copy status and canceling,0,,0
+3602bd30,2016-02-15 16:31:51,webdav move  webdav adaptor finished,0,,0
+56839285,2016-02-15 16:34:07,expanded files integration tests and made some optional,0,,0
+099d3c68,2016-04-06 10:59:01,Engine test now expects an extra adaptor (webdav),0,,0
+a5aa6e86,2016-04-06 11:00:25,Removed temporary webdav tests (used for developing),0,,0
+0a345654,2016-04-06 11:36:00,Added description to licenseFormat gradle task,0,,0
+1672cdb7,2016-04-06 11:38:18,Added license headers to all files missing the header (all webdav files),0,,0
+0be7f6df,2016-04-06 14:24:57,Fixed #377,1,,1
+420f8ff4,2016-04-06 14:28:54,Right way did not work  using softer way.,0,,0
+b39d9216,2016-04-06 14:31:32,Now with flag in right position.,0,,0
+3f834f3a,2016-04-06 14:46:23,merged from issue 377 branch,0,,1
+eef1af35,2016-04-06 16:29:13,Merge remote-tracking branch 'origin/feature/webdav-docker' into feature/webdav-continued,0,,0
+fae2ae91,2016-04-07 09:36:14,Added webdav docker gradle instructions and webdav test properties,0,,0
+c8f426d2,2016-04-07 10:09:41,webdav added to docker compose config,0,,0
+b578390c,2016-04-07 11:48:27,changed directories the webdav tests write to,0,,0
+d2cb0daf,2016-04-11 11:45:34,corrected webdav test paths,0,,0
+80b2e1f2,2016-04-11 14:41:05,fixed some codacy issues,1,,1
+a2fd26a4,2016-04-12 08:48:48,refactored to fix some more codacy issues,1,,1
+327734c0,2016-04-21 15:11:04,Merge pull request #378 from NLeSC/issue-377,0,,1
+26de992e,2016-04-21 15:49:08,Merge pull request #376 from NLeSC/feature/webdav-continued,0,,1
+12fad425,2016-04-25 17:00:30,Merge 'master' into 'develop'.,0,,0
+b1d484ac,2016-04-29 12:09:44,Configured torque docker container with hostname during boot and hardcoded torque container hostname.,0,,0
+3e2423f1,2016-04-29 23:10:05,Merge pull request #380 from NLeSC/torque-docker-379,0,,1
+1bf1822e,2016-05-26 10:20:25,Actually filled in NLeSC in the LICENSE,0,,0
+b3ae0ab5,2016-10-17 18:20:49,Added support for simple tuples in the table parsing of the ScriptingParser  plus some unit tests,0,,0
+6657eae3,2016-10-17 18:22:56,Added support for simple tuples in the table parsing of the ScriptingParser  plus some unit tests,0,,0
+8a1fcd11,2017-02-01 13:48:28,Updated adding adaptor documentation,0,,0
+74fa4f96,2017-02-06 10:26:11,Use trusty instead of precise Ubuntu version on Travis-CI,0,,0
+d8d852e7,2017-02-06 10:31:53,Run integration tests with Oracle JDK 8,0,,0
+aa56146d,2017-02-06 10:43:33,Use JDK 8 inside xenon-test Docker image,0,,0
+128942be,2017-02-06 11:16:26,Use Oracle JDK 8 inside xenon-test Docker image,0,,0
+82293664,2017-02-07 12:58:21,Increased torque timeout,0,,0
+f696d8b0,2017-02-07 13:25:41,Merge pull request #396 from NLeSC/add-adaptor-docs,0,,1
+89e103a4,2017-02-07 14:54:28,Merge branch 'master' into develop,0,,0
+a061710e,2017-02-07 15:50:23,Merge pull request #403 from NLeSC/develop,0,,1
+65670c9a,2017-02-07 16:04:30,Upped version number to 1.2.0-beta,0,,0
+70359cee,2017-02-08 12:06:16,Update README.md,0,,0
+e5d3f3a5,2017-02-10 12:50:16,Fixed javadoc warnings. Fixes #405. Commented out grgit line in build.gradle until workaround for #404 is found.,1,,0
+4dfc4b3e,2017-02-13 13:55:28,moved several xenon.engine.utils to xenon.utils so they can also be used by applications using xenon,0,,0
+91baca32,2017-02-13 14:05:25,added javadoc,0,,0
+75babe50,2017-02-13 14:18:01,fixed licence text,1,,1
+8678b50d,2017-02-13 16:53:33,Merge pull request #407 from NLeSC/move-utils,0,,1
+d717e6bc,2017-02-15 10:57:39,Small javadoc fixes,1,,0
+2bac6e31,2017-02-15 13:59:25,Updated changelog,0,,0
+65610b11,2017-02-15 14:00:25,Merge branch 'master' of github.com:NLeSC/Xenon,0,,0
+6efeb2fc,2017-02-15 14:01:36,Merge pull request #408 from NLeSC/move-utils,0,,1
+ccebe9ce,2017-02-15 17:18:21,Moved content of doc to docs/development. Update of release.gradle to copy javadoc to docs,0,,0
+f52b3639,2017-02-16 10:31:36,Upped version to 1.2 in preparation of release,0,,0
+498e94d6,2017-02-16 10:45:33,Moved gh-pages to docs directory,0,,0
+240e5ff2,2017-02-16 11:19:28,Moved javadoc from docs/javadoc to docs/version/x.y.z/javadoc,0,,0
+e2539239,2017-02-16 11:20:51,Added the new 1.2.0 javadoc to the repo,0,,0
+76835abd,2017-02-16 11:22:49,Updated javadoc version in README,0,,0
+2c6d0b09,2017-02-16 13:23:25,Merge pull request #409 from NLeSC/move-docs,0,,1
+c679d263,2017-02-16 14:58:15,Merge pull request #410 from NLeSC/slurm_15_fix,0,,1
+6fe416c8,2017-02-16 15:31:39,Update CHANGELOG.md,0,,0
+04d35d8f,2017-02-20 13:20:09,Added slurm version 15.08.6,0,,0
+84457d76,2017-02-20 13:20:52,Added 1.2.0 javadoc to docs,0,,0
+f5241124,2017-02-20 13:36:58,Added 1.2.0 post,0,,0
+a9a74f65,2017-02-20 13:41:30,Merge branch 'master' of github.com:NLeSC/Xenon,0,,0
+57ee8783,2017-02-20 15:46:24,Repair Jekyll site,0,,0
+35ad3c29,2017-02-20 15:49:49,Merge pull request #411 from NLeSC/jekyllsite,0,,1
+2edeeb28,2017-02-23 11:22:04,Cleanup of developer javadoc. Quality is still low and many descriptions are still missing  but the compile warnings have been fixed.,1,,0
+2b14c99d,2017-02-23 11:44:45,Added developer javadoc to docs/versions,0,,0
+f7b9125d,2017-02-23 14:15:05,Merge pull request #412 from NLeSC/fix-javadocDevel,0,,1
+f2cb2cb8,2017-02-23 14:26:30,Update README.md,0,,0
+a4bd053e,2017-02-28 09:40:04,Update README.md,0,,0
+0cbf0ded,2017-02-28 11:24:58,Fixed the implementations of waitUntilRunning and waitUntilDone in Jobs to properly handle the timeouts,1,,1
+45d8c3cf,2017-02-28 12:12:21,Updated documentation of waitUnitRunning and waitUntilDone to cunningly avoid a discussion on the definition of forever,0,,0
+139b39e2,2017-02-28 12:25:19,Added tests for waitUntilDone,0,,0
+6e1ffa24,2017-02-28 12:42:00,Added more tests for waitUntilDone and waitUntilRunning,0,,0
+4a1aa119,2017-02-28 13:24:35,Fixed tests for waitUntilDone and waitUntilRunning (confused seconds and milliseconds),1,,1
+d298bb32,2017-02-28 14:09:57,Fixed tests for waitUntilDone and waitUntilRunning. Skrewed up job cleanup after test,1,,1
+59d376a7,2017-02-28 14:12:33,Fixed tests for waitUntilDone and waitUntilRunning. Skrewed up job status testing,1,,1
+5bf7a569,2017-02-28 14:43:26,Removed extra test on timeout that produced wrong exception type,1,,0
+dafda6b1,2017-02-28 15:00:12,Adapted existing test to new exception type being thrown when timeout has negative value,0,,0
+0cb5c169,2017-02-28 16:03:01,Merge pull request #414 from NLeSC/hotfix-wait,0,,1
+f6954cfa,2017-02-28 16:42:24,Update README.md,0,,0
+006a4c53,2017-02-28 16:44:46,Update CHANGELOG.md,0,,0
+84a6c75b,2017-02-28 17:02:08,Update common.gradle,0,,1
+a8a247ae,2017-03-03 11:00:30,Added 1.2.1 javadoc,0,,0
+df886f35,2017-03-03 12:31:20,Added overflow detection to waitUntilRunning and waitUntilDone. Fixes #416,1,,1
+55ba56f0,2017-03-03 13:29:01,Merge pull request #418 from NLeSC/hotfix-timeoutoverflow,0,,1
+cef50f88,2017-03-13 15:16:40,Switched to new logo,0,,0
+a717d6fa,2017-03-13 15:51:01,Merge pull request #420 from NLeSC/new-logo,0,,1
+5a9bb420,2017-04-11 09:03:18,Added tests related to issue #422,0,,0
+4d62a016,2017-04-14 12:41:06,Fixed #422 by including filesystem into comparision,1,,1
+c12559e5,2017-04-14 17:02:11,Merge pull request #424 from NLeSC/copy-hotfix,0,,1
+147a26cc,2017-04-24 14:16:30,Added SonarQube,0,,0
+980f0d4b,2017-04-24 14:19:32,Added SonarQube analysis to Travis-CI,0,,0
+234e35cf,2017-04-24 16:08:45,Changed sonarqube config,0,,0
+a516de13,2017-04-25 10:46:30,Attempt at getting sonar to behave. Fixed several issues indicated by sonar. Told javadoc not to include timestamps in generated files,1,,1
+e4d7f1e1,2017-04-25 12:21:01,Commented out sonarqube for now  as it breaks travis. Added javadoc without the timestamps.,0,,0
+a0155b36,2017-04-25 14:59:41,Fixed various issues reported by SonarQube,1,,1
+f4c4f831,2017-04-25 16:12:33,Fixed various issues reported by SonarQube,1,,1
+d4e44326,2017-05-04 10:39:09,Use sonar-scanner cli instead of sonar gradle plugin,0,,0
+d7550299,2017-05-04 20:50:53,Merge pull request #425 from NLeSC/sonarqube,0,,1
+1fae87f2,2017-05-08 12:01:27,Update README.md,0,,0
+87f79467,2017-05-08 12:02:12,Update README.md,0,,0
+8ff770c8,2017-05-08 13:23:58,Changed string.equals order as indicated by sonarqube,0,,0
+1c9e7a29,2017-05-08 14:16:22,Preparations for 1.2.2 release,0,,0
+e4bcfa8f,2017-05-08 14:17:16,Preparations for 1.2.2 release,0,,0
+84a5ca30,2017-05-08 14:59:30,Update link to javadoc and release info,0,,0
+fb53ad4e,2017-05-08 16:40:30,Various sonarqube fixes,1,,1
+8fef1315,2017-05-08 17:05:49,Added unittests,0,,0
+738448ae,2017-05-09 13:09:43,Fixed various suggestions of sonarqube,1,,1
+42dd2dfa,2017-05-09 13:22:06,Fixed test to reflect new name used for engine in exceptions,1,,1
+8564334a,2017-05-09 13:59:14,Merge pull request #426 from NLeSC/sonarcube-fixes,0,,0
+c48a7ab4,2017-05-09 15:47:12,Fixed various sonarqube issues,1,,1
+c0a44718,2017-05-09 16:13:39,Fixed code duplication in SchedulerConnection,1,,1
+9f2968a2,2017-05-10 11:51:03,Replaced various deadline calculations with a single one in Utils,0,,0
+1b4ba65c,2017-05-10 12:03:31,Fixed html bug in Utils,1,,1
+df08dbd1,2017-05-10 13:20:48,Fixed various issues flagged by SonarQube,1,,1
+f6677209,2017-05-10 13:51:48,Merge pull request #427 from NLeSC/sonarqube-fixes2,0,,1
+c6d9fa11,2017-05-10 15:36:50,Fixed various issues flagged by SonarQube,1,,1
+3db2f1c1,2017-05-10 16:01:53,Fixed various issues flagged by SonarQube,1,,1
+47ce6124,2017-05-12 12:37:48,Merge pull request #428 from NLeSC/sonarqube-fixes3,0,,1
+827fdcae,2017-05-16 13:37:52,Added support to get the list of supported properties from the XenonFactory,0,,0
+a2756141,2017-06-16 11:15:35,Refactored Xenon internals to split adaptors into file and job part. BEWARE STILL UNTESTED!,0,,0
+43b3b36f,2017-06-19 13:47:22,Fixed all compile errors. Still mostly untested,1,,1
+bb2e0ec6,2017-06-19 16:33:04,Remove concept of Component from XenonProperties  as it is no longer needed,0,,0
+d3193c2b,2017-06-19 17:52:26,Initial S3 code,0,,0
+6d7dece1,2017-06-20 15:25:31,Remove the Xenon and XenonFactory objects. Replaced by simple Xenon object returning a singleton File or Jobs,0,,0
+dc101b3e,2017-06-20 17:24:31,Fixed integrationTests for LocalFileAdaptor. Now passes 100%,1,,1
+0c5ce7bf,2017-06-21 16:02:23,added contributing guidelines file. Fixes issue #441.,1,,1
+45f22cee,2017-06-21 16:04:49,contributing guidelines file rephrased something,0,,0
+689dc766,2017-06-21 16:11:51,Update CONTRIBUTING.md,0,,0
+23b4f1f4,2017-06-21 16:18:06,Update CONTRIBUTING.md,0,,0
+446a7166,2017-06-21 16:42:00,added code of conduct. partly fixes issue #442,1,,1
+2bf119c7,2017-06-22 11:41:36,now using numbered lists  no longer using first second third to identify cases.,0,,0
+748f2418,2017-06-22 11:46:01,resolved merge conflicts,0,,1
+0cfc68b6,2017-06-23 12:40:09,Fixed various issues in the new SFTP adaptor. Commit due to next big API change that is planned.,1,,1
+654ce096,2017-06-23 15:36:48,More s3 adapter implementatio,0,,0
+8fc62750,2017-06-26 16:00:41,added CITATION file  fixes issue #446,1,,1
+c9036541,2017-06-26 16:06:16,Update CITATION.md,0,,0
+147c2ebe,2017-06-27 11:33:33,added a ROADMAP.md,0,,0
+f14a53d7,2017-06-27 13:07:13,More S3,0,,0
+03b4b5e1,2017-06-28 17:27:00,Initial push of latest API. All test are broken now,0,,0
+325c4aec,2017-06-29 15:56:39,JCoulds!,0,,0
+2ee97c48,2017-06-29 16:15:27,Merge branch 'APIchange' into S3Adapter,0,,0
+f27b7603,2017-06-30 17:07:43,JCoulds instead of S3 directly.,0,,0
+f8c7837c,2017-06-30 17:14:59,Next refactor of API. 90% done. FileSystem.copy still unimplemented. Tests need fixing,1,,1
+d07c2a29,2017-06-30 17:30:47,Renamed Job to JobHandle. Remove several unused classes and interfaces.,0,,0
+30b1a721,2017-07-01 23:34:29,Added generic async copy implementation in FileSystem,0,,0
+0ecdaf2f,2017-07-03 11:36:23,Renamed file and jobs package to filesystems and schedulers. Added initial unittests,0,,0
+53926485,2017-07-03 16:12:00,Initial HDFS adapter,0,,0
+a704eeb2,2017-07-04 14:26:17,HDFS implementation,0,,0
+f751c911,2017-07-04 16:04:58,Added many unittest for filesystems and fixed a few issues based on these tests,1,,1
+178c59ec,2017-07-04 16:31:34,Fixed bug in opening stream for local,1,,1
+209b7e55,2017-07-04 17:19:16,Merge branch 'APIchange' into S3Adapter,0,,0
+e4b5e9b0,2017-07-04 17:20:52,Remove old Amazon S3 adaptor (now replaced by JClouds),0,,0
+0314c3de,2017-07-04 17:55:35,Fixing exceptions,1,,1
+71dba27d,2017-07-05 13:27:37,More unit tests,0,,0
+7a84bb50,2017-07-05 15:16:01,more unittests,0,,0
+6e11b426,2017-07-05 15:27:38,more unittests,0,,0
+3effb870,2017-07-05 15:32:44,more unittests,0,,0
+ac8b29a4,2017-07-05 16:07:16,Fixed javadoc,1,,0
+317c0d5e,2017-07-05 16:20:39,Fixed PathTest.toString,1,,1
+680a473a,2017-07-06 10:20:08,Removed Docker build from Xenon,0,,0
+8f0d502c,2017-07-06 10:39:25,Merge pull request #467 from NLeSC/no-docker-build-461,0,,1
+911d83e6,2017-07-06 10:39:57,Merge pull request #456 from NLeSC/roadmap,0,,1
+9c578931,2017-07-06 10:40:58,Merge pull request #452 from NLeSC/citation,0,,1
+115e749e,2017-07-06 10:41:46,Merge pull request #445 from NLeSC/code-of-conduct,0,,1
+fac83908,2017-07-06 10:43:28,Merge pull request #444 from NLeSC/contributing,0,,1
+968f8b7a,2017-07-06 10:45:48,Added link to https://docs.gradle.org/3.3/userguide/java_plugin.html#test_filtering,0,,0
+f5bfcfdd,2017-07-06 13:27:07,Adjusted gradle and docs to new test sets,0,,0
+24c6a722,2017-07-06 18:11:59,Implemented 2 tests for all tasks,0,,0
+050a22c2,2017-07-06 18:40:41,Updated travis and appveyor,0,,0
+d0afb5e2,2017-07-06 18:47:58,Only test Travis CI against Oracle 8,0,,0
+6d40ca71,2017-07-07 09:51:12,Merge pull request #469 from NLeSC/tests-restructure-460,0,,1
+25e5f9bd,2017-07-07 11:52:42,Added support for creating symbolic links,0,,0
+05fdf370,2017-07-07 11:57:38,Merge branch 'APIchange' of github.com:NLeSC/Xenon into APIchange,0,,0
+98ab492f,2017-07-10 11:56:45,HDFS,0,,0
+909b0f85,2017-07-10 12:51:24,More unit tests,0,,0
+e40c0d9a,2017-07-10 13:58:26,Added Scheduler integrationTest for SSH,0,,0
+58178e2d,2017-07-10 14:56:12,Merge branch 'APIchange' into S3Adapter,0,,0
+e0eb7e2c,2017-07-10 16:50:11,Adjust docker image name of fixedClientEnvironmentTest task,0,,0
+9792a74c,2017-07-10 17:11:26,Mocked posix access,0,,0
+d2edac70,2017-07-10 18:01:57,Merge pull request #472 from NLeSC/xenon-fixed-client,0,,1
+28d614ce,2017-07-10 18:07:00,Cache .m2 dir in run-fixed-client-environment-test.sh,0,,0
+0d0dac87,2017-07-10 18:12:39,More SSH tests,0,,0
+b44ec3b6,2017-07-10 18:14:23,Fixed javadoc,1,,0
+31ff9dc7,2017-07-10 18:18:26,Added missing files,0,,0
+ad628f61,2017-07-10 18:33:19,Fixed licence headers,1,,1
+84a2761d,2017-07-10 18:42:17,Fixed travis.yml,1,,0
+6fcac852,2017-07-10 22:26:49,More unittests,0,,0
+ec609d5c,2017-07-10 22:48:14,More unittest for SSH and gridengine based schedulers,0,,0
+4e728063,2017-07-11 12:05:09,More unittests for slurm,0,,0
+770dcba5,2017-07-11 14:00:33,Added initial slurm integrationTests on docker,0,,0
+20983e35,2017-07-12 10:43:37,Added more integrationtest. Fixed bug in SSH streams fonud by these tests.,1,,1
+637c6450,2017-07-12 10:49:35,Fixed license in several tests,1,,1
+eb9f823b,2017-07-12 11:25:27,Changed slurm image name,0,,0
+3c031dcd,2017-07-12 17:28:55,Removed Location class as it was not longer relevant. More integrationTests,0,,0
+61cf2b0c,2017-07-13 14:51:46,Forgotten test,0,,0
+1c87cf63,2017-07-13 14:54:47,Merge remote-tracking branch 'origin/APIchange' into S3Adapter,0,,0
+5a4f0aaf,2017-07-13 21:17:09,Replaced JobHandle by simple String,0,,0
+219350e8,2017-07-13 21:29:35,Removed interactive job hash from Slurm scheduler,0,,0
+8d188694,2017-07-14 01:14:32,Replaced CopyHandle by simple String. Replace async copy implementation by one based on Futures,0,,0
+1242a204,2017-07-14 12:45:46,Updated TESTING doc,0,,0
+de976207,2017-07-14 12:46:45,Dont install docker-compose in Travis  its already installed,0,,0
+3ced22ad,2017-07-14 13:02:14,Upgraded to gradle 4.0.1  upgraded gradle plugins and test dependencies,0,,1
+c55d76d5,2017-07-14 13:11:49,Move gradle test config to own file + verbose testing when CI env var is set,0,,0
+e2bde0e9,2017-07-14 14:00:37,Rewrote adaptor doc generator,0,,0
+ca5fb9d8,2017-07-14 14:04:22,Add isonline to doc generator,0,,0
+8df6881b,2017-07-14 14:05:40,Use string format instead of +,0,,0
+85291b02,2017-07-14 15:12:49,For CI on Windows and MacOS us live tests against local filesystem and scheduler,0,,0
+cba69529,2017-07-14 15:40:44,Fixed javadoc,1,,1
+ee060e6b,2017-07-14 15:55:07,Fixed javadoc,1,,0
+86a209ca,2017-07-14 16:11:57,Fixed #465,1,,1
+089bb2b8,2017-07-14 16:40:19,Merge remote-tracking branch 'origin/APIchange' into ci,0,,0
+43c81a69,2017-07-14 16:47:51,Rename of move to rename. Fixes #466,1,,1
+4c73442b,2017-07-14 16:51:57,Typos in Travis Appveyor,0,,0
+6eb25207,2017-07-14 17:16:06,More typos + windows compatibility fixes,1,,0
+9ab5036b,2017-07-14 17:46:23,Merge pull request #473 from NLeSC/ci,0,,1
+d3f638c8,2017-07-15 12:29:41,Fix jitpack build  by overriding gradle task with integrationTest exclude,1,,1
+5e6aeb46,2017-07-15 12:35:22,Use env vars for artifact and version + typo,0,,0
+99f7ac4f,2017-07-15 12:37:53,Typo,0,,0
+2c3d41f8,2017-07-15 13:34:35,For javadoc only show public and in overview list main entry points.,0,,0
+bcf37414,2017-07-16 21:21:13,Merge pull request #474 from NLeSC/jitpack,0,,1
+d041564b,2017-07-17 10:10:56,Forgotten commit,0,,0
+95507604,2017-07-17 10:11:37,Integration test,0,,0
+066f92f1,2017-07-17 12:11:45,Merge pull request #476 from NLeSC/APIchange,0,,1
+c87a6046,2017-07-17 12:18:22,Updated CHANGELOG,0,,0
+c44a3185,2017-07-17 12:18:32,Merge branch 'master' of github.com:NLeSC/Xenon,0,,0
+2144ddc3,2017-07-17 12:21:03,Initial ftp intergrationtest,0,,0
+7be44385,2017-07-17 13:52:22,Moved StreamForwarder to public utils package,0,,0
+76b23f3b,2017-07-17 13:59:27,Added missing license header,0,,0
+2bbc4630,2017-07-17 16:27:27,Merge pull request #478 from NLeSC/public-streamforwarder,0,,1
+c721bf4b,2017-07-18 11:57:23,Added webdav tests,0,,0
+f55cdb22,2017-07-18 13:26:39,Switched to passive mode and opened port in docker compose file for xenon-ftp to fix 500 illegal port command error,1,,1
+99143ed2,2017-07-18 15:21:22,Merge pull request #481 from NLeSC/ftp-integration-test,0,,1
+7fe18722,2017-07-18 17:21:31,Added Torque integation test skeleton,0,,0
+8789afab,2017-07-18 18:27:11,Merge pull request #482 from NLeSC/torque-integration-test,0,,1
+9e2b4651,2017-07-19 11:18:17,Added gridengine test skeleton,0,,0
+add0f8b0,2017-07-19 13:01:35,Added webdav integration test skeleton. Added more info on symlinks to FileSystemDescription.,0,,0
+5aefef36,2017-07-19 13:02:30,Merge pull request #483 from NLeSC/gridengine-integration-tests,0,,1
+501f1174,2017-07-19 13:19:23,Merge pull request #484 from NLeSC/webdav-integration-tests,0,,1
+6d26143c,2017-07-19 21:23:16,More Scheduler integrationTests,0,,0
+38d59d84,2017-07-20 14:37:12,Fixed sftp location and simplified getAdaptorNames,1,,1
+543c433d,2017-07-20 16:47:27,Merge branch 'APIchange' into S3Adapter,0,,0
+c60432d0,2017-07-20 17:53:39,It worketh!! (A little bit!),0,,0
+d019a939,2017-07-21 12:51:57,Merge branch 'master' into S3Adapter,0,,0
+f739f306,2017-07-21 21:41:51,Changed several status objects in API into interfaces,0,,0
+313dbd72,2017-07-21 23:00:22,Merge pull request #485 from NLeSC/APIchange5,0,,1
+c7074b9f,2017-07-23 22:55:18,More integrationTest for schedulers,0,,0
+78a47ec9,2017-07-23 23:25:14,Merge pull request #486 from NLeSC/scheduler-integrationTests,0,,1
+3d41ec21,2017-07-24 11:00:27,Integration tests,0,,0
+c4e03866,2017-07-24 11:35:08,Various small interface tweaks,0,,0
+47dcc951,2017-07-24 11:44:55,Merge pull request #487 from NLeSC/APIchange6,0,,1
+83fdb0e0,2017-07-24 14:24:18,Explain what jitpack config file is for,0,,0
+dbe8a331,2017-07-24 14:29:14,Adaptor description(s) throws UnknownAdaptorException,0,,0
+ca0cf190,2017-07-24 14:31:35,Added drive letter to supported locations of file adaptor,0,,0
+cf2b5d81,2017-07-24 14:34:51,Create absolute symlinks for Windows tests,0,,0
+8fa3b722,2017-07-24 14:43:24,Combine basedir and path by resolving instead of concat.,0,,0
+0c851c66,2017-07-24 14:54:27,Merge pull request #488 from NLeSC/win-jitpack-descnoexception,0,,1
+b055cc08,2017-07-24 16:15:52,More integrationTests,0,,0
+9b6481ec,2017-07-24 16:28:18,Split adaptors out of tests,0,,0
+3e9a05a1,2017-07-24 16:31:14,Removed unnecessary dependencies,0,,0
+1c17def1,2017-07-24 16:41:34,replaced single-slurm configuration with multiple-slurm configuration (v14-15-16-17)  seems like there still is an issue with the healthcheck though (first few tests fail),1,,0
+4fcc99ab,2017-07-24 16:46:03,Merge branch 'master' into FileSystem_integrationTests,0,,0
+295b5fac,2017-07-24 16:48:58,Merge branch 'master' into FileSystem_integrationTests,0,,0
+e4f91ae0,2017-07-24 16:49:12,Merge pull request #489 from NLeSC/FileSystem_integrationTests,0,,1
+0dfda47b,2017-07-24 17:07:32,Fixed timing sensitive test  removed closed filesystem test for now,1,,1
+a32f38b4,2017-07-24 17:18:52,Fixed timing sensitive test  removed closed filesystem test for now,1,,1
+d63e011f,2017-07-24 18:12:35,Changed jacocoMergedTestReport to include all exec files it can find,0,,0
+2dc6c150,2017-07-24 18:14:51,Merge pull request #490 from NLeSC/more-integrationTest,0,,1
+c4be5fbd,2017-07-24 20:39:11,Various small bugfixes and fixes in the tests,1,,1
+01200d8b,2017-07-25 09:38:47,Fixed test location on livetest,1,,1
+ba78b1e2,2017-07-25 09:52:04,Fixed test location on livetest,1,,1
+1234b767,2017-07-25 10:22:37,Merge pull request #491 from NLeSC/more-integrationTest,0,,1
+6dc26c95,2017-07-25 12:39:21,Merge branch 'master' of https://github.com/NLeSC/Xenon into slurm-multi-version,0,,0
+861bf1e2,2017-07-25 13:38:05,More integration and fixedClientEnvironment tests,0,,0
+f14fe765,2017-07-25 14:12:08,removed mysql part from the docker compose files  no longer needed after https://github.com/NLeSC/xenon-docker-images/pull/16,0,,0
+fa5d8e00,2017-07-25 16:51:13,updated yaml files to use docker images from within nlesc dockerhub organization,0,,0
+cfd07c55,2017-07-25 17:20:27,More unit and integrationTests,0,,0
+bbcbd93c,2017-07-25 17:33:51,More filesystem tests,0,,0
+a423ab48,2017-07-25 17:46:57,More unit and integrationTests,0,,0
+ea2f0ebb,2017-07-26 11:04:27,Fixed valid properties of scripting scheduler adaptors to include subscheduler properties,1,,1
+f0cc94f3,2017-07-26 11:05:15,Merge pull request #495 from NLeSC/more-integrationTest,0,,1
+46a01149,2017-07-26 11:05:33,Merge pull request #496 from NLeSC/fix-valid-properties,0,,1
+d476533c,2017-07-26 11:11:38,Added missing class,0,,0
+d4ba767e,2017-07-26 11:11:47,Merge branch 'master' of github.com:NLeSC/Xenon,0,,0
+64338307,2017-07-26 11:27:49,Attempt to debug TorqueScheduler.cancel,0,,0
+92c64b01,2017-07-26 13:11:34,Allow null and empty string as location for local scheduler adaptor,0,,0
+acc43c1d,2017-07-26 13:45:37,Merge pull request #497 from NLeSC/local-location-can-be-null,0,,1
+3f90becb,2017-07-26 15:59:12,Fixed race condition in FTP client,1,,1
+7cf027c8,2017-07-26 16:00:37,Simplyfied FTP adaptor,0,,0
+c5cf39cd,2017-07-26 16:00:56,Merge branch 'master' of github.com:NLeSC/Xenon,0,,0
+5703f3fa,2017-07-27 14:13:29,"Fixed when getJobs command return empty string then array is [""""]",1,,1
+81946967,2017-07-27 14:17:08,Merge pull request #498 from NLeSC/list-empty-string,0,,1
+fc5fd1c6,2017-07-27 14:39:38,More tests. Fixed issues in torque and gridengine tests,1,,1
+4657adcb,2017-07-27 15:02:54,Added seperate doc generator,0,,0
+7c9f3b99,2017-07-27 15:13:56,Fixed FileSystem.close hanging on threadpool,1,,1
+a8c1f01e,2017-07-27 15:15:58,Removed private constuctor test,0,,0
+9afe7b11,2017-07-27 15:24:08,Named copy threads,0,,0
+dc9169ed,2017-07-27 15:32:33,CopyThread is now daemon,0,,0
+ef477ba7,2017-07-27 17:50:10,More integration tests (not passing yet).,0,,0
+f7a741a3,2017-07-27 17:52:34,Remove . and .. from Listsing,0,,0
+e19f15b3,2017-07-27 21:34:34,Generalized handing of queue info into ScriptingScheduler,0,,0
+15b20a3f,2017-07-28 00:11:05,Fixed a few bugs in local adaptor,1,,1
+c0270428,2017-07-28 13:21:42,Merge remote-tracking branch 'origin/master' into slurm-multi-version,0,,0
+580a0e60,2017-07-28 13:27:28,Removed unused file,0,,0
+23951dc4,2017-07-28 18:25:26,Lots of tests and small fixes,1,,1
+ddc641aa,2017-07-30 10:09:44,Added equals/hashcode for public api + added additional throws to javadoc,0,,0
+f551167c,2017-07-31 09:56:23,Slurm scancel throws error when job already completed  ignore it,1,,0
+b4cbcd62,2017-07-31 10:10:02,Dont mutate license header,0,,0
+58444ab5,2017-07-31 10:21:17,Merge branch 'slurm-multi-version' into publicapi-with-equals,0,,0
+7f24dd8c,2017-07-31 10:40:10,Dont mutate license header with IDE autoformat,0,,0
+34607a41,2017-07-31 10:56:19,Merge pull request #492 from NLeSC/slurm-multi-version,0,,1
+c37f2751,2017-07-31 10:56:34,Merge pull request #500 from NLeSC/publicapi-with-equals,0,,1
+2e2efc37,2017-07-31 11:24:50,"Fixed IntelliJ IDEA ""Dangling Javadoc comment."" warning",1,,1
+c0815fdf,2017-07-31 12:43:36,Replace tabs with 4 spaces and removed trailing spaces,0,,0
+cfda5118,2017-07-31 12:50:01,Fixed some javadoc + use java 7+ constructs,1,,0
+e8118eb1,2017-07-31 12:50:52,More fixes from integration tests,1,,1
+8f9c8441,2017-07-31 12:54:02,Dont name field same as method,0,,0
+c3c096ec,2017-07-31 13:29:50,Fixed dotdot unit test,1,,1
+2b401a60,2017-07-31 13:30:16,Merge pull request #503 from NLeSC/tabs2spaces-and-licenseascomment,0,,1
+78d44fe5,2017-07-31 14:02:58,Fixes sftp and ftp adaptors!,1,,1
+971d11f5,2017-07-31 14:03:19,Merge branch 'file-integration-test2' of github.com:NLeSC/Xenon into file-integration-test2,0,,0
+2e091227,2017-07-31 14:08:16,Tabs to spaces,0,,0
+aad69bea,2017-07-31 14:41:24,"Revert ""Replace tabs with 4 spaces and removed trailing spaces""",0,,0
+1d02f26e,2017-07-31 14:48:00,"Revert ""Tabs to spaces""",0,,0
+36cac89d,2017-07-31 14:51:27,Merge branch 'master' into file-integration-test2,0,,0
+b94f924e,2017-07-31 14:51:42,Merge pull request #505 from NLeSC/file-integration-test2,0,,1
+d9e2f9f9,2017-07-31 15:22:34,Removed double hashcode and equals after merge,0,,0
+d8f621b3,2017-08-01 11:56:40,Switched from job comment to job name to find interactive jobs in slurm as comments are not always stored by the accounting.,0,,0
+0166c022,2017-08-01 12:55:54,More S3 better,0,,0
+e23b5a4b,2017-08-01 12:57:58,Merge remote-tracking branch 'origin/master' into S3AdaptorNoGitHell,0,,0
+d66cf04d,2017-08-01 14:20:32,Fixes recursive copy modes,1,,1
+541317ac,2017-08-01 14:41:07,More fixes to copymode for recursive,1,,1
+9c2e1a08,2017-08-01 16:17:28,More documentation and exception stuff,0,,0
+27fab05f,2017-08-01 17:06:16,Fixed SlurmUtils unit test to reflect switch to job-names,1,,1
+d4ce8c2d,2017-08-01 17:06:36,Merge branch 'copyrecursivemodereplace' into exceptiondocs AND lots of exception and documentation and some small API additions  namely:,0,,0
+8e55563d,2017-08-01 17:29:25,Small changes to documentation,0,,0
+d5940af2,2017-08-01 17:43:49,Small changes to exceptions and documentation,0,,0
+aa451720,2017-08-02 08:12:16,Copystatus executation exception correctly wrapped.,0,,0
+0ca92431,2017-08-02 10:01:12,Merge remote-tracking branch 'origin/master' into exceptiondocs,0,,0
+41c6afbb,2017-08-02 10:07:13,Additional tests,0,,0
+3b6d0fbe,2017-08-02 10:07:24,Fix unit tests,1,,1
+3cc6805e,2017-08-02 11:11:11,Merge remote-tracking branch 'origin/master' into exceptiondocs,0,,0
+4c85fb2f,2017-08-02 13:28:16,Fixed some tests,1,,1
+cfd62b74,2017-08-02 14:48:45,Implement detection of hidden file in sftp adaptor,0,,0
+92573251,2017-08-02 14:57:21,Added tests for listing with hidden file,0,,0
+261b76f9,2017-08-03 07:26:45,File adaptor returns user working directory as entryPath,0,,0
+936f6e2a,2017-08-03 08:07:28,Do we need to remove drive letter in entry path?,0,,0
+a707cc21,2017-08-03 10:29:38,Merge remote-tracking branch 'origin/copyrecursivemodereplace' into pr-master,0,,0
+133a4402,2017-08-03 10:30:14,Merge remote-tracking branch 'origin/exceptiondocs' into pr-master,0,,0
+9889d82b,2017-08-03 10:46:53,Merge remote-tracking branch 'origin/sftp-hidden-file' into pr-master,0,,0
+06ae9785,2017-08-03 10:47:42,Merge sftp-hidden-file branch leftovers,0,,0
+e281f305,2017-08-03 10:52:05,Merge remote-tracking branch 'origin/entrypath-workdir' into pr-master,0,,0
+b4610c2a,2017-08-03 11:45:15,Added new Webdav FileSystem implementation based on sardine instead of jackrabbit,0,,0
+d0832302,2017-08-03 11:49:12,Simplified PathAttributesImplementation equals and hashcode to only include basic info,0,,0
+c02696e1,2017-08-03 13:19:11,Fix javadoc + license header,1,,0
+b30dbfd2,2017-08-03 13:54:42,Change path semantics. (UNTESTED),0,,0
+fdf48133,2017-08-03 14:24:10,Fixed connection check in FTP.,1,,1
+2a9dfc44,2017-08-03 14:26:53,Merge pull request #520 from NLeSC/new-webdav,0,,1
+94737aa6,2017-08-03 14:32:23,partial fix for https://github.com/NLeSC/xenon-cli/issues/36,1,,1
+a6fe9357,2017-08-03 14:33:25,corrected copy-paste error in javadoc,1,,0
+7509f441,2017-08-03 14:34:17,Added tested versions to slurm. Fixes #514,1,,1
+28577129,2017-08-03 14:54:07,Fixed sonarqube setup,1,,1
+2412dbd1,2017-08-03 15:15:56,Fixed unittest,1,,1
+f3422954,2017-08-03 15:41:59,Path tests,0,,0
+a97d3c5a,2017-08-03 17:35:36,Merge remote-tracking branch 'origin/master' into fixpathsemantics AND Fixes Path semantics AND Fixes Webdav last access time semantics,1,,1
+742f599c,2017-08-03 17:58:09,Fixes a small bug in Path,1,,1
+2ba32301,2017-08-04 13:28:21,Merge remote-tracking branch 'origin/master' into S3AdaptorNoGitHell,0,,0
+baf4e365,2017-08-04 14:01:06,Removes debug prints,0,,0
+07a1d6f1,2017-08-04 14:32:04,Fixed FTP server to retrieve attributes in more protable way,1,,1
+4c1458ba,2017-08-04 14:33:11,Merge pull request #525 from NLeSC/ftp-fixes,0,,1
+4b90df91,2017-08-04 14:35:25,Allow passwordless credentials,0,,0
+08f1a5be,2017-08-04 14:35:50,Merge pull request #526 from NLeSC/SSH-credential-fix,0,,1
+2ad9cc18,2017-08-04 15:01:18,Removed test_copyFileCancelImmediately for now  as it is unclear why it fails sometimes,1,,0

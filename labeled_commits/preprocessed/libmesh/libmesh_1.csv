@@ -1,0 +1,1126 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+c5e9041,2003-02-04 17:33:21,removed *.html from the .cvsignore file.  This probably prevented the footer.html file from getting updated for some of you.  This file is needed as it adds a reference to SourceForge that allows them to monitor the website traffic.,0,,0
+4312a2c,2003-02-04 17:35:33,forgot to replace an @ in the make rule for ex1,0,,1
+c0d3a52,2003-02-05 00:14:26,describe what Mesh/MeshBase offers,0,,0
+d2e8cfa,2003-02-05 20:51:44,corrections for --enable-ifem: InfFE and FE now use identical FEType to ease overall handling  added FEBase::build_InfFE  some typos,0,,1
+4510a6e,2003-02-06 05:41:15,partial fixes for InfFE  removed empty face_infinite.C  added some explanatory comments for invalid calls to n_dofs etc  added an example #5 -- better do not use it (yet)  currently only for debugging InfFE  Had some problems with the build_cube() method  with higher-order HEX elements: too many nodes initialized. Only gcc 295? don't know  haven't tested...,1,,1
+0f7d15d,2003-02-06 06:02:42,Added Jacobi quadrature rules. These rules allow for conical product quadrature to be performed on tris and tets.  Although these types of rules are non-optimal (use more points than necessary and cluster points) they are correct  and easy to construct for high orders.  At this time  if you select anything beyond fifth-order quadrature for tets or tris you will get a conical product Gauss-Jacobi rule.  Other changes include fixing a broken 7 point Gauss quadrature rule which had the wrong weights  and making a few functions in the QBase class virtual instead of pure virtual.  This way you can create concrete quadrature classes without implementing anything for 2 and 3D.  The init_1D function is still pure virtual so you will at least need to define 1D quadrature rules if you create a new class.,1,,1
+b574311,2003-02-06 17:14:01,The map inversion no longer makes assumptions about dimensionality.  Specifically  you can find the inverse map of a point in 3-space that sits on a 1D edge eleement.  This is being used to create more general & efficient hanging node constraints.  Also added the amr example program.,0,,0
+9.695e+49,2003-02-06 17:58:35,added static build method for quadrature rules (who _needs_ this? - Ifem  & fun  -)  moved example 5 (ifems) to example 6  example 5 now departs from example 4 and dwells on the use of the QBase::build  added namespace QuadratureRules (similar to ElemQuality etc),0,,0
+fe1e990,2003-02-06 19:02:58,Added ex7. This example uses complex numbers.,0,,0
+9ba2878,2003-02-06 23:02:56,some optimizations in the Point class.  Removed unnecessary constructor calls.,0,,0
+7.49e+82,2003-02-06 23:28:48,PerfLog now records the time an object exists and the total time spent in logged methods.  This allows for a more meaninful percentage to be displayed,0,,0
+3843f04,2003-02-07 04:00:42,Removed a couple of unnecessary return  statements.,0,,0
+ea55009,2003-02-07 04:34:16,rearranged some configure tests  reformatted the PerfLog print line,0,,0
+8715f40,2003-02-07 15:21:32,finally understood what the Jacobi quadrature is all about  fixed the QBase::build appropriately  so that it makes more sense  took the liberty to include this gained knowledge in the QJacobi documentation,1,,0
+4a99422,2003-02-07 15:22:17,minor optimizations.  Will add a universal PerfLog that all classes can log to rather than one PerfLog per class,0,,0
+71531c3,2003-02-07 16:19:11,changed gmv_support to write abs() when complex is enabled.,0,,0
+a891cf3,2003-02-07 18:06:00,added laspack in the contrib directory.  This will be used to build non-parallel iterative solvers,0,,0
+9f875d7,2003-02-07 18:07:45,documentation  added run target to examples Makefiles  ComplexDenseMatrix can now add a RealDenseMatrix  but obviously not vice versa,0,,0
+3362bdc,2003-02-07 19:25:46,pretty builds,0,,0
+91ffa81,2003-02-07 22:18:54,added SparseMatrix base class.  This will allow transparent switching between Petsc and Laspack solvers.  LaspackMatrix mostly implemented.,0,,0
+369245b,2003-02-09 22:47:17,"minor documentation fix for namespace Petsc  for --enable-ifem: decreased virtual members in FE classes  so that uniform usage of both FE and InfFE is now possible: see ex6  ex6: included variational form  need thorough testing! fixed ""make examples"" dependency  adjusted to Ben's pretty builds",1,,1
+e36707c,2003-02-10 01:23:15,This may be only temporary (wanted to do patch but cannot  since patch only works on revisions already in the repository) -- Open for discussion  will send email --- Note: library still works with this  but this is definitely not final state Split up SystemData to accomodate for other physical problem classes,1,,0
+83641b1,2003-02-10 03:55:51,Abstracted out PetscMatrix  PetscVector  and PetscInterface.  Added support for LASPACK solvers  uniprocessor real only at the moment.  Should be easy to extend to uniprocessor complex.  Will make SystemBase dynamically switch between solver packages at runtime  most likely tomorrow.,0,,0
+4c98bd8,2003-02-10 04:04:31,removed stray copy/paste error,1,,0
+53d409b,2003-02-10 11:50:57,manicure,0,,0
+2a1a66e,2003-02-10 12:21:08,manicure,0,,0
+9cba32d,2003-02-10 14:31:16,small documentation fixes: doxygen now runs without any complaints  simplified & corrected ex7 param list to be more handle-safe,1,,0
+d8d0fed,2003-02-10 22:03:28,LASPACK solvers now work for real data types.  To use them do ./configure --disable-petsc,0,,0
+340ea83,2003-02-10 22:12:11,LASPACK solvers now work for real data types.  To use them do ./configure --disable-petsc,0,,0
+8c88ff5,2003-02-10 23:42:57,fixed broken LaspackVector assignment operator,1,,1
+9c03490,2003-02-11 00:08:48,IRIX compatibility fixes,1,,1
+5ff91e3,2003-02-11 00:58:24,IRIX compatibility fixes,1,,1
+7b5c3c1,2003-02-11 14:20:25,compatibility fixes,1,,1
+e8510cd,2003-02-11 22:59:35,configure for mpi,0,,0
+6540bb9,2003-02-12 02:03:50,SystemData now became GeneralSystem  this works fine  but EquationSystems currently only handles a GeneralSystem  added FrequencySystem (only an outline!)  documentation,0,,0
+e52e015,2003-02-12 05:41:29,dded the PredicatedIterator class.  The PredicatedIterator is derived from std::iterator and is designed to mimic the usual iteration over the contents of a container. It differs from normal iterators in that op++ automatically advances the iterator to the next item in the container which satisfies the user-supplied predicate.  From the abstract PredicatedIterator base class  several concrete classes have already been defined.  They are currently used in the MeshBase class to iterate over the _elements vector.  Whereas before one would say:,0,,0
+1c322e7,2003-02-13 00:16:48,Changed default behavior of the basic_elem_iterator to return true if the Elem* is not NULL.  Added typedefs for predicated iterators into arrays of Elem*.  Added accessor functions to elem.h to return the begin and end of the neighbors array.  This may be useful when iterating over neighbors and deciding which ones are (are not) on the boundary.,0,,0
+45285d4,2003-02-13 01:49:49,added the DofObject class.  This moves the dof indexing out of the DofMap class and into the Elem and Node objects.  This should be the last big design change necessary to facilitate parallelizing the reamining data structures.,0,,0
+10cb649,2003-02-13 16:34:30,added node iterators,0,,0
+2a8c42d,2003-02-13 17:43:07,IRIX syntax changes,0,,0
+3d84fdf,2003-02-13 22:56:14,removed all unnecessary   from the code,0,,0
+b00d68f,2003-02-14 15:22:51,added the libMesh all-static class for bookkeeping.  Consolidated to one PerfLog for the library.,0,,0
+1aa8540,2003-02-14 17:02:45,added the libMesh all-static class for bookkeeping.  Consolidated to one PerfLog for the library.,0,,0
+aa1a08b,2003-02-14 20:50:39,Changed basic_active_type_elem_iterator to be multiply inherited from active_elem_iterator and type_elem_iterator rather than reimplementing the functionality of either.  May turn out to be really useful for composite predicate iterators  or may be dangerous.  Time will tell.,0,,0
+6d4fe60,2003-02-14 22:37:11,fixed a bug in the DofObject that only allowed for one system,1,,1
+8000555.0,2003-02-15 05:21:13,fix for multiple systems,1,,1
+d4a35ba,2003-02-17 01:23:02,minor FE optimizations.  Changed DofMap::component stuff to DofMap::variable to be more consistent with all the other classes in the code,0,,0
+d2c7100,2003-02-17 04:05:48,fixed a bug in libMesh that copied argc and argv instead of taking references,1,,1
+79a735c,2003-02-17 05:33:09,one final DofMap::component changed to variable,0,,0
+1535141.0,2003-02-18 00:49:55,Added multiply-inherited basic_active_pid_elem_iterator. Fixed some virtual inheritance classes which needed to explicitly call their hared parents constructor.,1,,1
+08c57f7,2003-02-18 13:38:20,used the active_pid_elem_iterator to make the DofMap more clear,0,,0
+8818121.0,2003-02-18 19:43:38,added the DistributedVector class.  This will be used to hide some details in parallelizing the library,0,,0
+16ab5fa,2003-02-19 13:28:41,finished DistributedVector,0,,0
+d763f11,2003-02-20 04:59:58,Templated all the numeric data types to provide a clearer distinction between Real and Complex data types.,0,,0
+f59025b,2003-02-20 05:13:42,minor SGI fixes,1,,1
+a04a884,2003-02-20 12:55:08,fixed some bugs in InfFE,1,,1
+df31347,2003-02-20 15:22:16,documentation,0,,0
+9aaf1a6,2003-02-20 16:30:09,documentation formatting,0,,0
+5f28080,2003-02-20 17:09:30,added compute map to update the radial distances and shape functions independently,0,,0
+e7d01d7,2003-02-20 23:18:16,Silly documentation stuff.  Added the Tet10 embedding matrices at long last for refining those elements.  Will likely release libmesh-0.3.0 tomorrow,0,,0
+084ab07,2003-02-21 18:31:32,redid the Tecplot support so that it writes one file even with complex numbers,0,,0
+51b34ec,2003-02-21 21:03:56,fixed for 0.3.0 release,1,,1
+0a54fa8,2003-02-21 22:40:59,Made the predicate member protected.  There is no reason that the user should be allowed to call it. Also added a make doc command to the upload documentation script so that if there is no documentation  some will get built before you rsync.,0,,0
+05ad08d,2003-02-21 22:50:13,documentation,0,,0
+d48dcb1,2003-02-21 22:57:46,stylesheet fixed,1,,0
+41fdd30,2003-02-21 22:57:47,This commit was manufactured by cvs2svn to create tag 'libmesh-0_3_0'.,0,,0
+c7ecdb7,2003-02-24 14:35:53,A number of minor changes.,0,,0
+a548d9c,2003-02-24 15:23:13,cvs ignores for SGI,0,,0
+99b2401,2003-02-24 15:23:14,This commit was manufactured by cvs2svn to create tag 'libmesh-0_3_2'.,0,,0
+cb20060,2003-02-24 22:03:50,changed example programs to use element iterators.  This will make it easier to add an example for parallel,0,,0
+713995d,2003-02-25 04:49:09,Changed example 7 to exit without a fatal error when complex numbers have not been enabled in the code.,1,,0
+0760cf5,2003-02-25 16:26:47,libMesh now compiles & runs w/o _any_ complaints in dbg & opt on HP,0,,0
+85c36cb,2003-02-25 18:34:52,added the Prism18 and Prism15.  Still need embedding matrices  shape functions for Prism15,0,,0
+5451061.0,2003-02-26 00:47:52,Adding explicit this-> qualifications for calling member functions within other member functions. For now private and protected members will remain with an underscore prefix and not use the this-> qualifier.  It was felt that that would be a bit of overkill :),0,,0
+1b05f5a,2003-02-26 01:08:14,- Added the embedding matrices for the Prism18. - Fixed the ambiguous definition of the Prism reference element...   For the record  it is (xi eta) in the standard reference isoscolese   triangle with zeta in [0 1]  NOT [-1 1].  Sorry about the confusion.   It was wrong in two places in such a way that they cancelled each other   out! - Creating the boundary mesh works again  this time without renumbering the   nodes,1,,1
+3ba4d30,2003-02-26 04:43:14,Added this-> qualifier to the different element classes.,0,,0
+24685.0,2003-02-26 11:34:36,fixed silly tests that avoided the use of petsc options,1,,1
+f68cd32,2003-02-26 13:59:52,example 4 now runs properly in parallel,0,,0
+935967.0,2003-02-26 16:05:46,minor fix to gmv complex output,1,,1
+182e5b8,2003-02-26 17:27:34,* src/apps/.cvsignore (Module): Ignore foo.cc,0,,0
+e8c0a65,2003-02-27 00:15:14,- typo in ex4  - major rework & debug of InfFE<...>::reinit() and related methods,0,,1
+f60a691,2003-02-27 00:55:30,unified the refinement code for the non-infinite elements.  Thanks for the suggestion  John.  Daniel  you might want to take a look at this...  Maybe the refinement code for the infinte elements can be consolidated too?,0,,0
+6e9ade3,2003-02-27 01:44:48,weirdly  Ben could override my changes to inf_fe.h... so  here they are again  -),0,,0
+342c07f,2003-02-27 02:02:15,change for --disable-amr,0,,0
+9491199.0,2003-02-27 17:20:03,"minor fixes for HP: - new aCC requires the same notation for AutoPtr as the IBM xlC - made aCC shut up about further future errors - improved std support  see mesh_documentation.h: for now  this   works.   Possible future improvement?: ./configure could just try   to figure out the architecture on its own? Then this whole   environment variable thing  like CXX=""aCC -AA""   won't be necessary?",1,,1
+eac915d,2003-02-27 22:26:51,added boundary conditions for internal cube mesh,0,,0
+5ac4933,2003-02-28 23:37:49,parallelizing the mesh.  Added DenseSubMatrix  DenseVector  DenseSubVector.  Made all read_* members protected...  The only way to read a mesh now is with the Mesh::read() member.,0,,0
+9995749.0,2003-03-02 17:36:35,Added this-> qualifier to one place.,0,,0
+ce14852,2003-03-03 02:15:58,redesigned the Mesh  MeshBase  BoundaryMesh layout.  Moved most things into the MeshBase.  Working on parallelizing the mesh.  Will need to move boundary node information from being tied to a node number to a node pointer  more like the elements.,0,,0
+48b9f59,2003-03-03 18:03:39,PerfLog optionally takes subheaders for the events,0,,0
+a49c2a6,2003-03-03 18:09:04,PerfLog optionally takes subheaders for the events,0,,0
+c907dc4,2003-03-03 19:25:19,build fixes for xlC,1,,1
+b978e87,2003-03-03 19:29:39,build fixes for xlC,1,,1
+0414a99,2003-03-03 19:55:53,nada,0,,0
+f0b4b84,2003-03-03 22:23:43,changed boundary node information to be tied to node addresses  not node numbers.  This will facilitate renumbering nodes and elements without breaking the boundary conditions,0,,1
+cd91eb0,2003-03-04 12:59:48,boundary conditions are tied to pointers now  not numbers.  This allows nodes and elements to be renumbered without messing up the boundary conditions,0,,0
+9e8ec26,2003-03-04 15:31:24,changed all internal performance logging to be based on macros defined in mesh_common.h.  This eliminates _any_ overhead with --disable-perflog (the default).,0,,0
+9cd115b,2003-03-04 18:09:47,debugging InfFE,0,,1
+0d6ac2b,2003-03-04 22:31:17,replaced reinterpret_cast with dynamic_cast,0,,0
+d4eb974,2003-03-05 13:11:57,Elem::level() now exists when configured with --disable-amr  and simply returns 0. Fix for building with --disable-reference-counting. reference_counter.h still needs to #include <string>,1,,1
+1e63074,2003-03-05 17:01:21,changed definition of reference prism (again),0,,0
+0e528c8,2003-03-07 04:44:38,The DenseMatrix<T> and DenseSubMatrix<T> now come from a common base class  DenseMatrixBase<T>.  The base class provides some common functionality for both classes to reduce the overall code length.  Note that the transpose() member cannot move up into the base class because asking for the transpose entries of a submatrix does not make sense  i.e. the transpose entry of its parent is not in general available in the submatrix.  Also added is a common DenseVectorBase base class for both DenseVector and DenseSubVector.,0,,0
+129bf30,2003-03-07 05:07:55,Tightened up the definitions of the DenseVector<T> and the DenseSubVector<T>.  Also added .C files of the same name so that the objects are explicitly instantiated and compiled.,0,,0
+ce10506,2003-03-07 20:59:04,Added a here() stmt. for debugging.,0,,0
+2d03e69,2003-03-08 05:44:02,fixed broken assert,1,,1
+7da3a7c,2003-03-08 07:30:56,fixed a bug in the DofObject that tried to delete a NULL pointer when clearing an object for which no variables were allocated.  Also changed two references to copys in the DenseMatrix multiplication,1,,1
+f4dd9fc,2003-03-10 00:33:01,visual bits  will update infinite elements to the new & clearer refine() scheme soon  this will also include prisms,0,,0
+eb96c44,2003-03-11 00:47:47,"- consolidated infinite elements to match up with the new & neat   Elem::refine() style - fixed bug in MeshBase::build_inf_elem() which only occured   with higher-order elements - fixed (sometimes-erratic) behavior of Elem::n_nodes() by   shifting it all the way down to where n_nodes() is truly   unique - added convenient way to automatically determine origin   in meshtool - fixed some documentation  like the ""delete pointer""  where   actually an AutoPtr already takes care of",1,,1
+1df6317,2003-03-11 04:35:19,templated EquationSystems for the systems to handle  done it using static_casts  since i _really_ did not find a way to use T_sys instead of SystemBase  see equation_systems.C -- help certainly appreciated  i think there _should_ be some better way  avoiding the casts...,0,,0
+11eb1c5,2003-03-11 19:50:04,thanks to Steffen: fixed a wrong shift pattern in Legendre polynomials for infinite elements,1,,1
+a2e7eeb,2003-03-11 23:36:46,portability fixes for HP,1,,1
+48627a9,2003-03-12 00:33:20,Added the typename identifier in the EquationSystems source file.  Fixed a bug in the add function for complex numbers in the DenseMatrixBase class.,1,,1
+0f917b4,2003-03-12 20:15:11,cleaned up some TODO: - thanks John  the complex output of EqnSystems now also exists.   anybody please feel free to optimize it  but as far as i got it    that's all i can do with xdr. - PetscVector::localize() and localize_to_one() now do not use   MPIU_SCALAR any more  couldn't get this running.  Current   implementation works  but if anybody finds something better    please improve. - beautified EqnSystems output for infinite elements - removed outdated TODOs,0,,0
+d05659b,2003-03-12 20:21:03,cleaned up some TODO: - thanks John  the complex output of EqnSystems now also exists.   anybody please feel free to optimize it  but as far as i got it    that's all i can do with xdr. - PetscVector::localize() and localize_to_one() now do not use   MPIU_SCALAR any more  couldn't get this running.  Current   implementation works  but if anybody finds something better    please improve. - beautified EqnSystems output for infinite elements - removed outdated TODOs,0,,0
+030c33c,2003-03-14 09:56:41,discontinue efforts to get PETSc<complex> on HP running  resort to Laspack. Even PETSc maintenance does not use HP anymore... --- Am i the only one to be damned to use an HP compute server??? ---,0,,0
+49cba51,2003-03-16 19:10:23,Minor fixes for compiling with --enable-perflog.  Fixed a problem with dense matrix multiplication  showed up with constraint matrices.,1,,1
+22b4c8f,2003-03-16 20:11:38,oops... forgot to check this one in,0,,0
+7ef07af,2003-03-17 01:27:08,SGI fixes,1,,1
+de9b430,2003-03-17 11:35:00,added support for multiple (possibly parallel) matrices & vectors  as suggested by Ben  keep them in SystemBase  since they incur almost no overhead when not used. will update FrequencySystem soon to use this new feature,0,,0
+bc4baa6,2003-03-18 18:20:15,changed the condense() member to take a DenseVector  added a get_mesh() member to the SystemBase,0,,0
+5982148.0,2003-03-19 22:43:30,SystemBase::n_vars() no longer asserts that the system has variables  so it will return 0 for a system in which no variables have been defined.,0,,0
+e652cfb,2003-03-19 23:43:56,fixed a bug in the nodes_to_elem_map computation,1,,1
+d311cec,2003-03-20 11:51:25,- fixed SystemBase handling of multiple matrices & vectors for Laspack - fixed FrequencySystem to support either fast solution or solution of large   frequency-dependent linear systems (complex)  updated ex7 accordingly - added axpy for sparse matrices,1,,1
+7141534.0,2003-03-20 14:40:39,moved the #ifdefs in ex7 to work with real numbers.  changed the number of CVS diffs generated by cvs2html from 3 to 2.  The creation time was getting ridiculous!,0,,0
+952fcb9,2003-03-20 17:19:56,made PetscMatrix::add inline,0,,0
+a9c7bd2,2003-03-20 18:38:33,adding backbone of compare.cc. Will implement the specializations for the two systemtypes once i modified the EquationSystems output,0,,0
+28d0366,2003-03-21 15:29:29,- compare.cc now runs fine  with option -q helpful for scripted testing - in the course of making compare.cc added compare() functionality   to some classes - added the ThinSystem which implements the minimum necessities for   systems  acts as a lean alternative to GeneralSystem,0,,0
+b30afa3,2003-03-21 17:15:22,Added an add_vector function to NumericVector and derived classes,0,,0
+4469b3b,2003-03-22 13:23:48,Changed the iterative solver stopping test with PETSc to use default values for atol and divergence tests,0,,0
+d43e133,2003-03-22 21:04:31,actually  just wanted PerfLog output with the old gcc... ended up in introducing two wrapper classes for the broken fstream and stringstream as a side-effect  the (ASCII) output  like .xda and .dat is now uniform for the two gcc's i tested.,0,,0
+e98b38d,2003-03-23 01:39:14,"fixes for HP  of which this one is a curiosity  i'd say: - aCC definitely dislikes names of function/method parameters starting   with an underscore ""_""  like what i first did in SparseMatrix etc...  -)",1,,1
+5425863.0,2003-03-23 02:47:51,fixed a printing problem in PerfLog  an uninitialized variable in laspack,1,,1
+eebc6d8,2003-03-23 15:09:19,rework the OFStream and OStringStream again because of  guess what  HP aCC  had to resort to preprocessor macros.,0,,0
+ad52060,2003-03-23 15:23:30,documentation,0,,0
+3ba8712,2003-03-23 15:23:31,This commit was manufactured by cvs2svn to create tag 'libmesh-0_3_3'.,0,,0
+14dc6e9,2003-03-24 18:16:12,changed int to unsigned int for srand,0,,0
+1c7e1ae,2003-03-25 04:26:55,Added some documentation.,0,,0
+0a7b376,2003-03-25 15:19:02,fixed shared library linking on the IBM,1,,1
+89243ad,2003-03-25 21:06:59,fix for xlC,1,,1
+e5e6193,2003-03-26 01:08:15,added virtual bool Elem::infinite().  Will add inf_elem_iterators soon.,0,,0
+868c69a,2003-03-26 05:07:31,linker fix for cxx,1,,1
+6ff9291,2003-03-26 13:55:24,replaced unnecessary }  with } in examples,0,,0
+b3cb54f,2003-03-26 14:18:35,fixed (hacked?) configure for the IBM Power4,1,,1
+02bc647,2003-03-26 14:26:35,fixed (hacked?) configure for the IBM Power4,1,,1
+6a19c7a,2003-03-26 14:27:36,fixed (hacked?) configure for the IBM Power4,1,,1
+98abf6a,2003-03-26 14:29:35,OK  fixed for the last time?,1,,1
+c259398,2003-03-26 14:41:42,sorry to keep doing this... there is no autoconf on the IBM.,0,,0
+859b965,2003-03-26 14:47:48,sorry to keep doing this... there is no autoconf on the IBM.,0,,0
+e6401ee,2003-03-26 14:51:38,sorry to keep doing this... there is no autoconf on the IBM.,0,,0
+ddf972b,2003-03-26 17:09:56,final tweak for IBM xlC,0,,0
+fb850fc,2003-03-27 01:24:32,sorry to keep doing this... there is no autoconf on the IBM.,0,,0
+b56812f,2003-03-27 18:30:05,Added prism6 to unv_support. I also added it to write_gmv  where it is treated as a phex8.,0,,0
+6c99922,2003-03-28 20:38:07,minor optimizations in iinline point methods. print more useful information when a call to inverse_map fails,1,,0
+5c09610,2003-03-29 12:45:33,- moved the FEInterface::is_inf_elem to private.  There is no public need   anymore since bool Elem::infinite(). This clears up  the use of InfFE. - thought about the worth of inf_elem_iterator  and really do not need   them.  Would be straightforward to implement  so if anybody needs   them  tell me.,0,,0
+639bd2c,2003-04-01 14:19:49,various changes to InfFE: - fixed bug that occured only with higher-order base approximation - changed internal dof & node numbering scheme completely - added inverse_map() - split implementation files for better overview,1,,1
+b24115f,2003-04-02 14:55:13,moved the hanging node condtraint computation out of dof_map into the individual FE types.  This allows each FE type to implement its own constraint calculation  and the DofMap does not need to know anything about it.,0,,0
+816881f,2003-04-02 15:18:05,added #include<map>,0,,0
+ca7104e,2003-04-02 21:58:46,Added configure tests for hash_map and others.  Will start using these when available for performance-critical applications (like the find_neighbors() and point location methods,0,,0
+7e69b1f,2003-04-02 22:34:37,compiler optimizations,0,,0
+6f8c950,2003-04-02 22:37:17,fixes for SGI,1,,1
+522b968,2003-04-03 00:52:58,optimization options for xlC,0,,0
+8eab73b,2003-04-03 14:17:25,- added _build_ support for 2D infinite elements - fixed nodal_soln for infinite elements - added static member libMesh::zero.  May not be really necessary    but want to be on the safe side: who knows what the default   constructor of std::complex does with only one double passed in. - added container class FEComputeData.  Serves as a hide for   I/O to customized FE classes.  E.g. for the notorious infinite   elements  the compute_data()  using FEComputeData  is the physically   correct counterpart to shape(),1,,1
+599016d,2003-04-05 02:25:42,- cleaned up the EquationSystems::read() and write() to   (a) handle multiple vectors  if desired    (b) delegated tasks to SystemBase that SystemBase can do   (c) added get_info() for SystemBase  two more inline methods in EqnSysBase    (d) fixed a silly bug in FrequencySystem that did allocate additional       vectors  but omitted to assign values,1,,1
+23fa027,2003-04-05 02:27:35,forgot to add this one...,0,,0
+7b9185f,2003-04-05 12:16:35,"fixes for HP.  Ben  was it IBM or SGI that did not like this ""FE<Dim-1 ...>""?  I fixed that for HP  perhaps the other compilers are now happy  too.",1,,1
+52913e7,2003-04-06 16:59:00,technically  an iterator and a const_iterator are different types of objects  and comparisons between the two are not allowed.  fixed two instances of this,1,,1
+2938e02,2003-04-06 17:01:27,oops...  did not mean to check these in!  undid the change,0,,0
+6ff230f,2003-04-07 18:34:49,added libMesh::msg() and libMesh::err() as parallel-aware replacements for std::cout and std::cerr  respectively.  This is much like the message and error_message functionality in s3  but without the macros,0,,0
+eb2d1f7,2003-04-08 03:21:35,Added command-line parsing for true/false flags via the libMesh::on_command_line() method.  This is used to enable run-time switching between solver packages.  For example  if you have PETSc and LASPACK installed you can switch between them like this:,0,,0
+5c89ad5,2003-04-08 03:33:21,updated the dependencies for command-line parsing,0,,0
+0ca79ec,2003-04-08 12:46:07,fixed doc bug,1,,1
+fab0cad,2003-04-08 22:54:10,forget libMesh::msg() et. al  found a way to reroute std::cout so that messages do not appear from non-processor 0 processors.,0,,0
+b489176,2003-04-09 01:20:25,forget libMesh::msg() et. al  found a way to reroute std::cout so that messages do not appear from non-processor 0 processors.,0,,0
+56b7f91,2003-04-09 02:30:28,Added a build_solution_vector overload in equation_systems which can be used to build (locally) the global solution for a single variable in a single system.  I cant remember why I wanted to do that  the code is untested and has error() in the beginning.  Testing to come.,1,,0
+d36d854,2003-04-09 03:25:00,fixed a missing std:: in getpot.h,1,,1
+0187a7e,2003-04-09 14:08:39,added NewmarkSystem derived from SystemBase and an example 8 to show how NewmarkSystem can be used,0,,0
+6c057b0,2003-04-09 15:27:40,uhps  forgot to check in header file,0,,0
+68a9091,2003-04-09 16:22:00,forgot the .C-file too,0,,0
+f6597a2,2003-04-09 19:27:00,* Ben once said  EquationSystems should take care of time stepping.   so i changed ex8 to make use of the EquationSystems features (flag    param) * added two macros that keep instantiation data in (almost) one place    for the two templated classes EquationSystems<> and FE<>.  This   was already done with InfFE<>. * cleaned NewmarkSystem of some unnecessary member data,0,,0
+2faea96,2003-04-09 19:29:24,forgot to add .depend and fix .cvsignore... here it is.  -),1,,0
+670efee,2003-04-11 10:46:18,improved compatibility with infinite elements.  Sorry John  when i added the if-test  i did not think that conventional FE may still need it. Right now  i think this is something we both can live with  -),0,,0
+3fed62c,2003-04-11 19:09:32,just moved a few lines,0,,0
+538e613,2003-04-11 23:57:05,small compatibility enhancements: - explicitly assigning values to the FEFamily entries helps in   identifying the family  whether a .dat file was produced with or   without enabled ifem - for the EquationSystems<T> I/O it actually does not matter   what System type it handles  and what system type it loads.   So  changed the error (in case of system type mismatch) to a simple std::out - added in FrequencySystem the EquationSystems::parameter n_frequencies,1,,1
+f7b6610,2003-04-18 13:16:41,Changed targets in the example programs from ex1 to ./ex1  for example.  This fixes the problem of not having . in your path  which was pointed out by Denis.  Thanks.,1,,1
+a257c77,2003-04-18 13:25:17,updated config.guess and config.sub from ftp.gnu.org/pub/gnu/config,0,,0
+fa1c98d,2003-04-18 14:03:05,check for strstream if sstream is not found,0,,0
+63f1e9b,2003-04-18 14:11:29,fixed aclocal  was printing incorrect comments for locale and sstream #defines,1,,1
+3e564af,2003-04-18 15:46:32,Added a bool argument secure to FEInterface::inverse_map and respective methods in FE and InfFE. If secure is false we do not bother about convergence of the newton algorithm in inverse_map (e.g. when checking if an element contains a certain point).,0,,0
+d403113,2003-04-18 17:10:38,added a missing #ifdef ENABLE_INFINITE_ELEMENTS,0,,0
+7245f1c,2003-04-18 19:02:23,removed const problem from getpot,1,,0
+eec0334,2003-04-19 01:58:32,Added an additional acronym.,0,,0
+035b6c5,2003-04-21 15:22:20,implemented matrix/vector product in LaspackVector  now successfully runs ex8,0,,0
+5c8eeb3,2003-04-21 15:22:21,This commit was manufactured by cvs2svn to create tag 'libmesh-0_3_4'.,0,,0
+ad63c37,2003-04-29 21:39:36,initialize on an initialized vector now works by resizing it,0,,0
+8eeb623,2003-04-29 21:41:12,do not set the element refinement flag to DO_NOTHING mmediately after refinement.  Keep it around for the solution projection,0,,0
+759847c,2003-04-30 13:56:11,changed the DofMap to use iterators instead of direct access to the elements and nodes,0,,0
+e5346bf,2003-04-30 21:09:30,added preliminary solution projection support.  This was quite painful because of an unforseen bug in the Point-to-Node assignment operator that is now fixed,1,,1
+b88cab1,2003-05-01 18:44:31,added maintain_level_one as an optional parameter to MeshRefinement::refine_and_coarsen_elements().  This allows the refinement schemes to violate level-1 restrictions if requested by the user.,0,,0
+d150839,2003-05-02 20:32:34,made the Point::size_sq() member public as suggested by Mike Anderson.  There was no real reason to have it private.,0,,0
+548378b,2003-05-04 23:59:00,added libMesh::default_solver_package().  This allows all the solver-related classes to use default parameters for the SolverInterface and still switch via command-line arguments,0,,0
+8f6d71c,2003-05-05 15:30:36,added a r/w access member to the quadrature base class,0,,0
+624224.0,2003-05-05 15:30:37,This commit was manufactured by cvs2svn to create branch 'libmesh-devel'.,0,,0
+44deca9,2003-05-05 22:23:09,added the NumericVector<>::clone() member for easy copying of numeric vectors,0,,0
+7ee0486,2003-05-05 23:57:32,refactoring EquationSystems & SystemBase classes,0,,0
+db9b458,2003-05-06 00:10:12,refactoring EquationSystems & SystemBase classes,0,,0
+3e5894a,2003-05-06 00:24:10,added XdrMode enum in a separate file,0,,0
+793ce72,2003-05-06 14:00:56,refactoring EquationSystems and the System classes,0,,0
+336d3fb,2003-05-06 17:13:33,NewmarkSystem now works,0,,0
+4c07b93,2003-05-06 17:53:29,fixed all the examples except for ex6 & ex7.  Need to add the FrequencySystem,1,,0
+648eb2e,2003-05-06 21:53:35,fixed the FrequencySystem.  All systems have been reimplemented.  All the examples work,1,,1
+7722d2f,2003-05-07 20:47:15,added EquationSystems::additional_data stuff  fixed ex4 documentation  cleaned up the systems,1,,0
+c680689,2003-05-09 03:45:50,fixed a syntax error that caused a segfault with icc,1,,1
+049e4b3,2003-05-09 12:55:39,added the DataMap object,0,,0
+fffaebf,2003-05-09 14:18:51,minor changes to the DataMap,0,,0
+7f50284,2003-05-09 21:27:47,reordered multiple-inheritance to work around icc bug,1,,1
+5a0a293,2003-05-10 15:46:43,added a DataMap to the EquationSystems object,0,,0
+e4857da,2003-05-10 22:10:38,Added some small classes  mainly focused at ease of every-day use  no big number-crunching things:,0,,0
+8fbf61d,2003-05-10 22:19:41,"already fixed the first ""bug""",1,,1
+ad81842,2003-05-10 22:19:42,This commit was manufactured by cvs2svn to create branch 'libmesh-devel'.,0,,0
+d93cd2a,2003-05-12 14:16:48,fixed a bug with the SystemBase::reinit() that only occured with --enable-complex,1,,1
+86e9799,2003-05-12 15:51:08,reworked ex6,0,,0
+3fbd103,2003-05-13 04:25:35,reworked the project_vector to be more efficient for Lagrange elements.  Changed the corresponding calls in reinit().  amr.cc now tests the projection stuff.,0,,0
+3af1718,2003-05-13 16:37:27,added asserts in xdrIO.C to make sure the input buffer is still good in the case of reading from an ASCII file,0,,0
+32652d6,2003-05-13 21:32:42,sync with HEAD tree,0,,0
+916ee1d,2003-05-13 22:08:21,changed static to dynamic casts in the point locator and functions.  Changed ex6 to work with the new equation systems,0,,0
+f70398b,2003-05-14 01:28:39,Minor change to the mesh base class.  The ability to create a vector of 1s and 0s corresponding to nodes on and off the boundary respectively has been placed in the private member function find_boundary_nodes().  This functionality was originally in the distort() member  but will be needed for mesh smoothing eventually too.,0,,0
+124ae37,2003-05-14 02:27:08,Added a class outline for the mesh smoothing base class as well as a concrete laplacian smoother class. Will add functionality hopefully soon  maybe after quals.,0,,0
+7cd373b,2003-05-14 09:03:05,MeshBase::build_inf_elem(...) now also returns optionally a list of elements and sides of the _interior_ boundary,0,,0
+4f6855b,2003-05-14 11:54:37,adding functionality for reading node- or element-associated data from file  also in non-libMesh format.  For this  class BoundaryData handles the mapping to and from external node/element labels and also holds the actual data.,0,,0
+87d4634,2003-05-14 11:54:38,This commit was manufactured by cvs2svn to create branch 'libmesh-devel'.,0,,0
+69ac4ca,2003-05-14 14:07:20,rearranged the function calls in the FunctionBase class so that input preceeds output in the function arguments.,0,,0
+225bd8a,2003-05-14 19:45:36,"ex6  the example for infinite elements  got promoted to the league of ""official"" examples.  Though it only solves an ""academic-style"" first time step of a time-dependent acoustic simulation  it is still ready for release  since the InfFE class is now stable.",0,,0
+816cd64,2003-05-14 19:48:22,forgot cleaning up & cvsignores,0,,0
+929f882,2003-05-14 22:29:35,made the MeshBase class reference counted  adding a flux jump error indicator,1,,0
+682ed59,2003-05-15 17:07:12,flux_jump indicator almost ready,0,,0
+0ce90e6,2003-05-15 17:53:28,sync with HEAD,0,,0
+d08a035,2003-05-15 19:43:34,"Sorry for this mess: class ""BoundaryData"" was only alive a short time  replaced by the much more intuitive ""MeshData""  a new member of MeshBase.",0,,0
+a81ace2,2003-05-15 19:43:35,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_0-pre'.,0,,0
+cc58e3d,2003-05-15 19:43:36,This commit was manufactured by cvs2svn to create branch 'libmesh-devel'.,0,,0
+747ff49,2003-05-15 20:09:56,removed the boundary_data stuff,0,,0
+1799963.0,2003-05-15 20:11:11,added the mesh_data stuff,0,,0
+781c8a0,2003-05-15 20:52:28,merged with HEAD,0,,0
+4a888e2,2003-05-15 23:34:36,merged libmesh_devel changes,0,,0
+138f13e,2003-05-15 23:56:45,fixed an error message on SGI CC,1,,1
+04e33a8,2003-05-15 23:57:02,fixed some warnings on cxx,1,,0
+46fc9b0,2003-05-16 00:30:08,fixed ifems for xlC compatibility,1,,1
+ac89ace,2003-05-16 14:37:50,More efficient SystemBase::reinit  flux_jump indicator should work but needs testing,0,,0
+cc6a217,2003-05-16 19:29:13,Adaptive mesh refinement seems to actually work!,0,,0
+8abdd7b,2003-05-19 13:08:02,added a minimum and maximum to the statistics vector.  These simply call the std::max_element (min_element  resp.) algorithms.,0,,0
+106fd64,2003-05-19 21:21:14,added methods to flag selected cells for coarsening & refinement,0,,0
+8f4ad46,2003-05-20 09:28:45,- cleaned up the UnvInterface to be much more readable  - added functionality to _write_ Universal files  too.,0,,0
+2661c88,2003-05-20 13:38:05,fixed for solving only for 1 frequency,1,,1
+e13dd9a,2003-05-20 20:55:04,added the ErrorEstimator::component_mask to select only a subset of the variables when calculating an error indicator,1,,0
+53d4f6b,2003-05-20 22:43:10,The array assign_elem_nodes was sized one too small for the Hex20.  Thanks icc!,0,,0
+e3d9d5c,2003-05-21 00:39:46,updated PETSc link,0,,0
+9885b5f,2003-05-21 13:50:23,fixes for --disable-amr and compiling with DIM=2,1,,1
+315a6a7,2003-05-21 15:27:38,building with DIM=2 now works again,0,,0
+ec87af6,2003-05-21 15:50:22,added --enable-2D-only configure option,0,,0
+c63f788,2003-05-21 15:54:05,added --enable-2D-only configure option,0,,0
+3a4da49,2003-05-21 17:19:34,recommend GNU make for HP (just like PETSc),0,,0
+a5039d3,2003-05-21 22:17:59,added refimement flagging strategies,0,,0
+922e4d4,2003-05-22 09:39:58,Added first versions of MeshData::read_unv and MeshData::write_unv. Will add some extensions regarding the header soon.,0,,0
+16a2126,2003-05-22 12:48:09,changhed operator == for points to require less flops,0,,0
+b9593a1,2003-05-22 16:20:52,fixed for Real data,1,,1
+322e61c,2003-05-22 17:06:24,Minor changes to the iterator functionality provided by the MeshBase and Elem classes.  Non-standard typedefs were removed as these constructs are avoided in all other parts of the code.  Also the use of std::make_pair() was implemented to clean up the syntax.  In the quadrature rules  several places which were foolishly taking pointers instead of references were changed.  None of these changes affect the user interface.,0,,0
+c0c0c8b,2003-05-22 18:31:19,fixed documentation of XdrMODE  fixed compare.cc for new EquationSystems  fixed bug in SystemBase::compare  fixed EquationSystems for handling FrequencySystem  added bool EquationSystems::parameter_exists() function  temporary work-around for ErrorEstimator & complex until Tuples come,1,,1
+602faa3,2003-05-22 19:10:49,with XdrMODE separated from the heavy-weight xdr_cxx.h  it can move into MeshData read/write methods,0,,0
+3973ebb,2003-05-22 21:18:03,added the TypeVector<T> as a compromise between the Tuples and a Point<T> class.  Changed the Elem::refine() algorithm to be much smarter (and faster) when looking for new nodes,0,,0
+b8f1259,2003-05-22 21:21:24,forgot to update the dependencies,0,,0
+ccb2543,2003-05-22 21:40:06,removed the last mod,0,,0
+bf5f6a2,2003-05-23 00:30:38,taught MeshBase::write_gmv() how to write INFPRISM6,0,,0
+52be984,2003-05-23 03:21:47,re-inlined some performance-critical methods in DofObject.  write_gmv() needed an #ifndef ENABLE_INFINITE_ELEMENTS.  Fix for building with --disable-optional.,1,,1
+3d2223a,2003-05-23 14:28:40,A trivial change sped up MeshBase::find_neighbors() by a factor of 2...  I feel silly,0,,0
+188a762,2003-05-23 14:44:37,added magnitude to write_gmv_binary when using complex numbers,0,,0
+0e51ed1,2003-05-23 23:17:56,added the Elem::key(s) member  will likely deprecate the Elem::key() member.  Mesh::find_neighbors() is WAY faster now,0,,0
+dc7171d,2003-05-24 22:49:47,optimization in Elem::key(s) for special elements,0,,0
+134dfe5,2003-05-26 23:30:04,added mean/standard deviation refinement flagging,0,,0
+7e0211d,2003-05-27 17:18:17,Metis partitioning should now work in parallel,0,,0
+41fc52e,2003-05-28 03:17:50,partitioning of adaptively refined meshes in parallel now works,0,,0
+b20569f,2003-05-28 03:30:41,fixed configure for gcc-3.3 and gcc-3.4,1,,1
+05069a6,2003-05-28 13:25:11,changed Point to RealGradient,0,,0
+a47d8ad,2003-05-28 22:03:15,this might not all work just this second  but I need to check it in since the CFDLab is going DOWN!,0,,0
+a1057a2,2003-05-29 00:03:06,parallel solution projection on refined meshes now works,0,,1
+ca1ba55,2003-05-29 04:29:16,fixed the space-filling curve to only operate on the active elements.  Changed MeshRefinement::uniformly_refine() to only call prepare_for_use() after all the refinement steps are taken,1,,1
+62edca5,2003-05-29 15:54:07,added configure tests for 64-bit compatibility  added logging to MeshRefinement.  meshtool now partitons last  in particular after refinement,0,,0
+3b609a1,2003-05-29 16:01:02,oops...  forgot to stop a log in the case of an early return,0,,0
+3d4c660,2003-05-29 16:58:49,64-bit fix for SGI,1,,1
+61b221a,2003-05-29 18:14:07,Re-worked the new localize member in the PetscVector.  Having trouble on refined & repartitioned meshes when the partitioning essentially flip-flops,0,,0
+2fb76e0,2003-05-29 21:31:36,systems were not calling clear() in their destructors.  Solving transient problems in parallel with AMR now works  I think...  YEAH!,1,,1
+2e2c97f,2003-05-30 14:48:30,added example 9  which shows how to use the TransientSystem to solve a linear convection-diffusion problem,1,,0
+af74955,2003-05-30 20:15:45,thanks to Steffen!  fixed a _fierce_ bug in InfFE.  For this to work i had to add yet another (but very small) purely virtual member to FEBase that before only existed in FE.,1,,1
+e8bd058,2003-06-02 13:24:00,changed HTML title,0,,0
+64c8e74,2003-06-02 22:50:11,optimizing routines with better choices for the STL containers,0,,0
+dce102b,2003-06-03 05:33:35,optimizations & code cleanup,0,,0
+d111756,2003-06-03 16:47:38,Now use the hashed containers for performance-critical functions on platforms where they are available,0,,0
+36906ac,2003-06-03 22:10:07,MeshRefinement messed up the coarsening flags when you dont want level-1 compliance  fixed...,1,,1
+1548798.0,2003-06-04 01:30:08,changed EquationSystems::add_system<T>() to return a reference to the new object  changed example 10 to use a hybrid mesh,0,,0
+63263cb,2003-06-04 15:00:16,- updated documentation of examples fixed one overly include in ex5  - enabled ex9 and ex10 now also for older (gcc 2.95) compilers using   the OStringStream.  Left the old code in //OLD CODE comments.,1,,0
+abb5c25,2003-06-04 18:28:36,cleand up some comments,0,,0
+e75af0e,2003-06-04 22:47:45,fixed the o_string_stream for when the compiler works,1,,1
+8d0b57f,2003-06-05 19:33:51,fixed StatisticsVector::variance to return the same value as the GSL and MATLAB,1,,1
+f93e2a9,2003-06-06 14:42:45,added example 11  which solves the linear Stokes system,0,,0
+d71059d,2003-06-07 14:36:17,- moved some private methods in MeshData to public - gmv support now outputs also InfPrism12,0,,0
+68ae9ce,2003-06-08 17:28:42,fixed a bug that only occurred when the infinite element origin is not given by (0 0 0),1,,1
+014fc04,2003-06-10 19:04:47,oops... simple loop reordering speeds up ex3 ex4  ex5 significantly,0,,0
+bdb7b87,2003-06-10 19:04:48,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_0'.,0,,0
+b1700ae,2003-06-12 01:36:00,fixed a bug in the LaspackVector assignment operator when the lhs was not initialized,1,,1
+35ccea8,2003-06-12 02:29:07,fixed a bug in the LaspackVector assignment operator when the lhs was not initialized,1,,1
+270d674,2003-06-12 15:24:23,documentation fix,1,,0
+e55db4c,2003-06-12 21:56:31,fixed a bug in the ExodusII triangle support,1,,1
+b56d8c1,2003-06-15 00:36:25,changed 2 to 2.  etc... for the hierarchic polynomials.  This was necessary for the Portland Group compiler.  There is still a linking problem,1,,0
+6afa87b,2003-06-24 05:33:51,added ParMETIS.  Need to actually code the partitioners.  Will do that soon.,0,,0
+bb994fa,2003-06-25 05:21:11,When linking with mpich  but NOT with petsc  made a small change to the library path in order to link with both -lmpich and -lpmpich  whereas before we just linked with -lmpich. The reason we need -lpmpich is that parmetis uses it I believe. Still need to make some changes to the parmetis Makefile in case both mpi and petsc are disabled.,0,,0
+55687dd,2003-06-25 06:01:05,Modified the configure scripts to automatically disable parmetis if both petsc and mpi were already disabled.  Also modified the parmetis Makefile to do nothing in case both petsc and mpi were both disabled.,0,,0
+f215447,2003-06-25 08:32:33,changed MPI configuration test to include the -I in the include variable.  This configuration should work well for MPICH.  Should we go to using mpiCC in the future?  I would rather not  but the MPI configuration section will need to be smarter...,0,,0
+2ab7453,2003-06-25 19:53:05,Completed the code for the LaplaceMeshSmoother class.  Note that this smoother makes no guarantee of being able to smooth grids on complex domains.  It implements the simplest possible algorithm for smoothing.,0,,0
+293b983,2003-06-25 19:58:26,Made the smooth() function pure virtual once again.,0,,0
+775db36,2003-06-26 07:16:29,changed not to !.  SGIs CC did not understand it...  Sorry John.  Maybe in the future?  It may be that a command line option fixes it  but I could not find anything in the manual page.  If you can find any information on the web we might be able to put it back in... Maybe you could ask Spencer?,1,,0
+36f77a5,2003-06-26 11:00:31,added fix to getpot.h for cygwin,1,,1
+877da3f,2003-07-05 09:59:14,"fixed funny bug: the PARMETIS_INCLUDE from PETSc's packages file could shadow the PARMETIS_INCLUDE from libMesh's Make.common... Perhaps the ""make"" I use is not the best  but at least this renamed variable does not hurt",1,,1
+83e66cf,2003-07-05 14:58:59,reworked the PointLocator structure.  PointLocator<T> disappeared  didn't make sense.  Instead  PointLocatorTree and PointLocatorList are there. But use PointLocatorList with CAUTION!  since this is primarily intended for locating the closest element  where the point may live in 3D  and the element  too  but the element is actually 2D (surface).  When applied to volumetric meshes (which is not truly intended)  it may happen that the centroid of an adjacent element is closer due to extremely distorted elements,0,,0
+6e4f0e4,2003-07-07 21:01:30,made MeshData and FrequencySystem a bit more usable,0,,0
+43d5310,2003-07-07 23:19:28,commented rho  c out,0,,0
+a61f91c,2003-07-09 10:10:16,Added class MeshDataUnv Header to access data specified at the beginning of a 2414 universal file dataset.,0,,0
+ec5287e,2003-07-10 07:38:06,the MeshData may now also take user-specified node/element data  not only reading from file.,0,,0
+0706b72,2003-07-10 12:10:10,hopefully final fix: a tricky call to SystemBase::clear() deleted EquationSystems parameters... Not desired when reading :-P,1,,1
+39e016b,2003-07-11 14:44:27,Added the magnitude of complex numbers when writing results in tecplot format format.,0,,0
+faee615,2003-07-12 14:02:59,yet another bugfix for MeshData: the good ol' 12.3456789D+01 issue  where the streams do not recognize the D as 10th-power... This fix is likely to be the last. :-P,1,,1
+fe8f940,2003-07-12 16:33:18,fixed the ::build_side() and ::side() for infinite cells.  the BoundaryMesh now works with infinite elements  too... yields cool pic's,1,,1
+c84df91,2003-07-12 16:56:39,moved the read_unv() and write_unv() methods from Mesh to MeshBase  so that a BoundaryMesh may now also be written as .unv,0,,1
+92862bb,2003-07-12 19:37:17,forgot to update the smart MeshBase::write(std::string) method,0,,0
+79cdaee,2003-07-12 20:39:30,fixed the MeshData to write a sensible header with the minimum info necessary for reading,1,,1
+1078f9d,2003-07-12 22:41:54,re-add the full MeshData support for xdr files...  This feature got lost with release of libMesh-0-4-0  now back again and working,0,,1
+6370caa,2003-07-15 09:20:20,Extended create_bounding_box to work for QuadTrees.,0,,0
+d1d2eca,2003-07-15 12:40:12,initial support for ParMETIS,0,,0
+4c3504b,2003-07-16 18:42:12,separated out functionality that will be repeated in the partition and repartition members,0,,0
+ebeeb6e,2003-07-18 18:53:00,fixed a bug in assigning an end iterator to the beginning of a container,1,,1
+def48f1,2003-07-22 19:14:45,Moved a templated inlined function out of the C file and into the h file.  Funny to note that this compiled on gcc but not on xlC.  The main problem I think is the instantiation of templated *functions* as opposed to classes.  xlC wouldnt instantiate them correctly unless they were in the header file.,1,,0
+52d2d6a,2003-07-23 21:32:27,When checking the state of an ifstream  it is not correct to simply check if its !bad().  This is because the bad bit is not set when the file does not exist.  Instead the failbit is set.  Therefore it is more correct to check if the stream is good() e.g. assert(in.good()) rather than !bad().,0,,1
+177fccb,2003-07-23 21:49:05,"- John's bugfix for xlC was also the cure for HP-UX.  Thanks a lot  John! - fixed minor complaints about the ""this->"" issue",1,,0
+6f37c79,2003-07-24 18:31:17,Added some comments regarding the use of the read_xdr_soln and read_xdr_soln_binary functions.,0,,0
+9826e7e,2003-07-24 22:14:56,no longer need template instantiations since the templated function has moved into a header file.,0,,0
+d100bea,2003-07-25 20:58:24,consolidated several repeated methods in the partitioning algorithms,0,,0
+147f91b,2003-07-26 00:17:04,added a bool that lets the user decide whether she wants to prepare_for_use directly after reading a mesh  or do it by herself.  This is particularly helpful for IFEM simulations in parallel  first read the mesh  then let _every_ node build the IFEMs  and _then_ distribute.,0,,0
+9021b6c,2003-07-27 14:56:11,overly cautious: too many asserts.  Now the slim() method works,0,,0
+956b4f5,2003-07-27 17:16:43,documentation,0,,0
+8639bf6,2003-07-30 16:14:05,"added the ""translate()"" method.  With this  nodal data stored in a MeshData can be translated to form that is suitable for the Mesh::write(...) methods  so that the nodal data can be visually inspected. Can translate either to the Mesh itself or to the BoundaryMesh",0,,0
+0e1bf0e,2003-08-01 13:56:54,added a fix for the Tecplot library incompatibilities on Redhat 9 machines,1,,1
+6f305e8,2003-08-04 12:43:06,documentation,0,,0
+9eb82d8,2003-08-04 17:23:51,reworked the MeshData interface to look similar to the other libMesh design like get_xyz() etc.  Also included some more debug tests for invalid data files,0,,0
+8904edf,2003-08-07 08:55:30,fixes for the FrequencySystem to work with only _one_ frequency-dependent matrix  instead of multiple frequency-independent matrices,1,,1
+b6e9175,2003-08-07 19:25:31,can now increase order of linear elements: added MeshBase::all_second_order()  tested for several  but not all elements.,0,,0
+dca0a6d,2003-08-08 09:13:24,fixed a dumb bug that added too many nodes that also gave me quite a headache with infinite elements.  Now this second_order converter works fine!,1,,1
+7dda254,2003-08-08 14:11:27,- extended the MeshData to compatible mode: when the  MeshData   was not active at mesh import time  one can still write   a Universal mesh  or read/write mesh data through the   compatibility mode.  However  be cautious with this mode    it uses the _current_ Mesh node and element ids - fixed MeshBase Universal support for Tet10,1,,1
+08a74d6,2003-08-08 14:30:11,documentation,0,,0
+4899538.0,2003-08-09 21:34:42,fix for PETSc 2.1.6 when variables are used in the packages file,1,,1
+10ad7ea,2003-08-11 19:48:24,removed graph matrix support.  This is no longer necessary unless Damien REALLY wants it  and it causes unnecessary includes,0,,0
+c228d69,2003-08-12 17:49:18,- fixed meshtool for missing matrix graph - added functionality to write the boundary as Universal mesh    but with node numbers of the corresponding volume mesh - some more asserts in the MeshData,1,,1
+f57c2ca,2003-08-15 19:14:13,added #include <algorithm> for std::sort,0,,0
+cb0111b,2003-08-16 17:33:49,some minor mod's to NewmarkSystem  and a fix.  matrices were assembled twice...,1,,0
+ebae48d,2003-08-16 21:19:30,the MeshData can now read also only a selected dataset 2414 (nodal/element data)  e.g. a .unv file that contains multiple load cases  one specific load case  identified through its label  can be selected,0,,0
+9425cc7,2003-08-17 11:39:10,reworked the user interface for building infinite elements and moved the build_inf_elem() methods to mesh_base_modification.C,0,,0
+a070fc2,2003-08-17 11:49:01,forgot...,0,,0
+08af695,2003-08-17 19:06:35,fixes for --disable-amr,1,,1
+d95b923,2003-08-17 19:07:42,oops  forgot this...,0,,0
+c72e6ec,2003-08-17 23:07:05,Universal files now write only the _active_ elements (in case you manually refined the mesh  so that you can write the refined only  without the leftover coarser elements),0,,0
+be07969,2003-08-18 14:12:44,changed the element flagging routines to exclude elements at the maximum allowable level of refinement from the statistics performed in the selection process,0,,0
+fc52d4f,2003-08-18 14:44:52,- thanks  John for the hint with the unsigned short int!  Reduced   mem requirements for the adjacent_vertices matrices of all higher-order   elements through converting to short int - reduced # of virtual fn's in Elem by one: the higher_order_equiv_elem()   or so got moved into a static member function of Elem.  This also enables   to choose whether one wants to convert quad4->quad8 or quad4->quad9   through a simple bool option in MeshBase::all_second_order(bool) - reduced repeated code in adjacent_vertices through moving these short   int matrices to Hex  Quad  Prism etc - fixed GMV support for higher-order Prisms (enuff debugging for today...  -),1,,1
+b4ccc49,2003-08-20 21:38:45,removed a here() statemenet,0,,0
+d5dcda2,2003-08-21 22:07:01,Fixed a bug in the node numbering of this reference element.,1,,1
+c10a2f6,2003-08-21 22:10:07,Commented out MeshRefinement friend.  We seem to be developing a continuing problem with making Elem a friend of many classes in order to get access to the build member.,1,,1
+4b6c26d,2003-08-22 19:59:50,Checked in the centroid partitioner.,0,,0
+5283b16,2003-08-23 00:36:08,Added the radial code for the centroid partitioner.,0,,0
+c61805f,2003-08-23 17:12:46,- minor fix to the logging behavior of the build_inf_elem() methods - MeshData can now also (for .unv files) transfer the _whole_ header   in one chunk  also tried to make the MeshData for .unv a bit more   idiot-proof -- i use it quite often right now,1,,1
+3f7f7a4,2003-08-23 22:27:33,documentation,0,,0
+d02b42f,2003-08-26 22:58:45,The partitioners no longer modify the subdomain_id of the elements.  I suppose this could be put back if desired  but subdomain_id really refers to material properties  etc  NOT partitions. Also wrote (well Ben wrote) code to generate a submesh from a parent mesh.  One way this is useful is if you want to say create a new mesh consisting only of active elements  you simply pass two active_elem_iterators to the routine and it does the rest.,0,,0
+47da52c,2003-08-27 02:04:23,Commented out print commands and made a warning only print in debug mode.,0,,0
+0f4aa96,2003-08-27 02:07:25,Removed an extra pair of braces which didnt make sense.,0,,0
+cda314e,2003-08-27 02:51:33,Converted static_cast<unsigned int>(-1) to libMesh::invalid_uint everywhere.  Not much less to type  but the meaning should be much more clear.,0,,0
+404b8ad,2003-08-27 15:22:51,upp'ed 1-dimensional gaussian quadrature order significantly  but have to admit that i _computed_ the points and weights with double precision  so i already cut off the 15th digit  but even the 14th may be inaccurate (but at least close)...,0,,0
+e673628,2003-08-27 18:35:17,Added tecplot macro files to the ignore list.,0,,0
+30049a7,2003-08-27 18:55:52,changed configure to check gcc version from newest to oldest.  This allows gcc-3.3.1 to be properly detected as a 3.3-series compiler instead of improperly detected as a 3.1-series compiler.,0,,0
+751c05b,2003-08-27 21:22:22,allow boundary condition inheritance,0,,0
+ef26643,2003-08-28 02:47:19,update build for Itanium,0,,0
+839d995,2003-08-28 19:35:42,changed operator(i j) in the DenseMatrix to be non-virtual.  This was causing a matrix assembly bottleneck  particularly on bad compilers.  ditto for the DenseVector operator(i).  The functionality is replaced in the base class with the virtual el(i j) and el(i)  which must be used when the old virtual behavior is expected.,0,,0
+b683035,2003-08-28 19:50:54,use long int instead of long long int on 64-bit machines,0,,0
+5996515.0,2003-08-28 20:55:27,added this->,0,,0
+0c3e273,2003-08-29 13:54:03,changed the LASPACK solvers to use GMRES and ILU by default,0,,0
+09a9c14,2003-08-29 14:13:09,changed datatype to avoid warnings on 64-bit architectures,0,,0
+18bcb66,2003-08-29 14:14:16,Changed Ke(i.j) back,0,,0
+cd56295,2003-08-29 16:47:27,LASPACK OKed for ex10,0,,0
+13c7062,2003-08-29 20:09:37,The Sphere can now transform from cartesian to spherical coordinates.,0,,0
+0d67261,2003-08-30 09:46:03,with the new nice Mesh::create_submesh() from Ben/John  there is no need any more for the active_elem_iterators in the .unv support. meshtool is now making sure that it only writes active elements through this new method,0,,0
+5247afa,2003-09-01 18:12:37,added ex12 that covers the MeshData features in detail,0,,0
+c973861,2003-09-01 18:28:41,forgot to add ex12 also to the calling Makefile,0,,0
+abb4d39,2003-09-02 18:02:45,Changed all copyright statements to include 2003.,0,,0
+248c455,2003-09-02 18:04:17,fixed .cvsignore for example 12,1,,1
+ad2c257,2003-09-02 19:49:07,compatibility fixes for IRIX,1,,1
+3edfc70,2003-09-02 19:50:20,throw an error and return an acceptable type in the case of failed switch statements,1,,0
+4d1f064,2003-09-02 19:55:01,throw an error and return an acceptable type in the case of failed switch statements,1,,0
+4f55446,2003-09-02 19:55:02,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_1-pre'.,0,,0
+680e0f0,2003-09-03 16:35:23,added missing return statements,0,,1
+d460428,2003-09-03 16:35:24,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_1-rc1'.,0,,0
+642ce5b,2003-09-03 16:49:10,added a comment,0,,0
+a4da446,2003-09-06 02:24:00,major fixes for HP-UX  the suckin' OS: - aCC cannot swap  as in elem.h - inserted some more this-> - finally reading .unv works -- but why? status report on file I/O capabilities: - reading .xda: no - reading .unv: yes - writing .gmv: yes - writing .unv MeshData: works  but reordered? - reading .unv MeshData: no?,1,,1
+5120efe,2003-09-06 15:31:40,doc fix,1,,0
+01b2132,2003-09-06 22:57:12,"finally! -- _FULL_ functionality  now also on HP-UX  my ""favorite"" OS...  fixed xda and unv file I/O",1,,1
+92adec8,2003-09-09 14:11:56,- reworked the MeshUnvInterface internals:  no need for a /tmp/xyz file   any more that buffers data.  This new method is something like   20%+ faster than the old one.  Tested on linux and hp-ux - added typedefs MeshData::const_node_data_iterator and   MeshData::const_node_data_iterator similar to the iterators for   the elements and nodes in MeshBase.  Convenient when one wants to   iterate directly over the nodes/elements with associated data  e.g.   Dirichlet-type boundary conditions.  Tested on linux and hp-ux,0,,0
+0634c2b,2003-09-09 17:13:36,meshtool can now use the MeshBase::all_second_order() method  reworked Hex20 support for unv to be more obvious,0,,0
+ea14955,2003-09-09 17:40:45,oops  removing what i just committed,0,,0
+11a660a,2003-09-10 19:52:01,added Opteron to the ignore list,0,,0
+b6bf2ef,2003-09-11 15:46:12,Put the ability to choose the number of partitions back into the MeshBase.  Also added the functionality of the -p argument back into meshtool.,0,,0
+3a89f61,2003-09-11 19:10:53,fixed all_second_order() so that boundary conditions get inherited,1,,1
+2ad15cc,2003-09-12 03:28:56,trivial changes in read_unv().  Doubt it really effects performance.,0,,0
+e187ca2,2003-09-12 21:31:22,- had trouble with the pre-defined tolerance in MeshBase::build_inf_elem()    changed to 1e-3.  At some time this could be determined from the   bounding_box of the mesh? - improved speed of the contains_point() for infinite cells through   applying Ben's trick to use size_sq() instead of size() for points   whenever possible,0,,0
+fb701dc,2003-09-13 21:32:36,fixed warnings of uninitialized variables,1,,0
+f8f0607,2003-09-16 00:41:29,Checked in code to allow for the reading of gzstreams.  Works on linux with gcc 2.95.3 and the latest gcc. Not sure about 2.96 or other architectures.  Only compressed UNV files can be read right now.  Others will be added as we work out the bugs.,1,,0
+f8bfe82,2003-09-16 13:30:35,UnvInterface can now also _write_ .unv.gz  not only read them. tested with 4 different files  works properly,0,,0
+92461b8,2003-09-16 15:59:31,now only processor 0 reads the mesh  and then braodcastst it to the other processors,0,,0
+694bd07,2003-09-16 16:44:04,now also the MeshData can read/write .unv.gz files,0,,0
+96acdeb,2003-09-16 18:48:20,changed the message printed when building libgzstream,0,,0
+68246c2,2003-09-16 18:48:21,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_1-rc2'.,0,,0
+0c0a788,2003-09-18 18:11:27,ignore .gz files,0,,0
+11f0bd8,2003-09-18 18:13:52,ignore .gz files,0,,0
+743211e,2003-09-25 21:46:56,mesh_common.h -> libmesh_common.h mesh_config.h -> libmesh_config.h,0,,0
+fde46da,2003-09-25 21:50:47,include file changed name,0,,0
+4a08ab1,2003-09-25 21:59:11,fix for no performance logging,1,,1
+97b91c0,2003-09-25 22:04:42,forgot rto wrap an include,0,,0
+01aa1fd,2003-09-27 00:54:57,nodes that are orphaned during coarsening & refinement can now be removed. This might stay as the default behavior,0,,0
+3ea785e,2003-09-29 19:25:41,changed mpi to MPI,0,,0
+4d66a93,2003-09-29 19:54:12,added --disable-petsc command-line argument.  If this is used on the command line then PETSc will not be initialized.  This is mostly useful when running simple examples under valgrind.  PETSc produces several valgrind warnings  so using --disable-valgrind will effectively suppress these.,0,,0
+bd5b4db,2003-09-30 18:22:18,The Mesh class no longer includes a MeshRefinement object  since this is not strictly necessary.  Also  the BoundaryMesh object has been removed from the Mesh.  Both of these can be explicitly created if they are needed (see meshtool.cc). This reduces object dependencies  and should decrease the size of the Mesh object,0,,0
+ad5126e,2003-10-01 04:02:52,Fixed a bit of documentation for the Mesh.  Specifically  it does not contain a MeshRefinement or BoundaryMesh object  and the docs were changed to reflect that fact.,1,,0
+8ed03d7,2003-10-01 10:37:36,the infinite elements now also work fine in time domain! :-))),0,,0
+4efba23,2003-10-01 16:28:51,the Partitioners can now be accessed through a factory.  PetscMatrix::add_matrix no longer needs to cast away const-ness (at least for PETSc 2.1.6)  Will check older versions,0,,0
+4c8137e,2003-10-01 17:48:26,forget that...  PETSc <= 2.1.5 requires the cast  so put it back,0,,0
+01f6eaa,2003-10-01 19:27:43,fixed the Partitioner factory for xlC,1,,1
+4888283.0,2003-10-01 19:47:09,fixed build system to properly disable libgzstreams,1,,1
+44d64df,2003-10-01 19:49:46,fixed AutoPtr assignment for xlC,1,,1
+852469a,2003-10-01 20:21:54,added a simple script to check for stand-alone headers.  Can be improved.,0,,0
+99bf631,2003-10-02 01:05:08,fixed the Factory?,1,,1
+03ade4f,2003-10-02 03:39:25,Made more header files conform to the stand-alone compilation requirement.  Also updated the test script so that you dont have to link.  The tests run faster this way.,0,,0
+dbd7c21,2003-10-02 20:23:38,Made the test_headers script look cooler by adding colors.  Thanks Mike!,0,,0
+39cfd74,2003-10-03 01:08:46,Added a cvsignore file for the contrib/bin directory.,0,,0
+0024e3e,2003-10-08 13:25:27,changed a linear search into a binary search for operator (i j) in the PETSc matrix,0,,0
+84b846d,2003-10-08 13:49:35,changed unsigned int to int for PETSc compatibility,0,,0
+a940869,2003-10-09 19:21:51,accidentally checked in a _huge 25x25x25 ex4.C from an Itanium2.  Fixed that.,1,,1
+115dc01,2003-10-09 21:03:02,removed option to skip prepare_for_use() from Mesh::read().  This should not be optional,0,,0
+81c41b5,2003-11-03 03:56:52,Fixed some incorrect statements in the documentation.,1,,1
+c2e9b84,2003-11-05 21:22:40,Checked in structure for the new web page.,0,,0
+14b7649,2003-11-05 22:26:45,re-organized the include directory and all that involves...,0,,0
+76a8e3d,2003-11-06 05:49:23,Moved ex1.C over to the new commenting style for automatic output to html.,0,,0
+b2bb869,2003-11-06 06:09:37,Moved ex2.C over to the new commenting style for automatic output to html.,0,,0
+ff2ee3e,2003-11-06 06:11:07,Added some scripts which allow the examples to be converted to html.,0,,0
+6e9149f,2003-11-06 06:21:39,Removed a mesh_logging.h include.,0,,0
+6f1b51a,2003-11-06 06:24:35,Added some personal apps to the ignore list for the src/apps directory.,0,,0
+5aef702,2003-11-06 20:30:21,fixed the dependencies,1,,1
+9d7204c,2003-11-06 20:35:23,Checked in source for the new web page.,0,,0
+bef87ef,2003-11-06 20:39:31,Added ex1.php not as a link.,0,,0
+166f2c2,2003-11-06 20:51:36,Working more on the scripts which translate examples into php.,0,,0
+e4a815f,2003-11-06 21:23:28,Updating the examples so that they can be automatically generated into html.,0,,0
+637c053,2003-11-06 21:32:08,Checked in updated code for the examples title page.,0,,0
+b7427d1,2003-11-06 22:29:59,Added the automatically-generated documentation for example 3.,0,,0
+4d7d9a1,2003-11-07 02:59:25,Updated the documentation in ex4 for automatic html generation.,0,,0
+22abbab,2003-11-07 03:04:57,Added example 4 to the list of examples on the web.,0,,0
+cf03cc5,2003-11-07 03:13:42,Added download and mailing list links to the home page.,0,,0
+b63faa6,2003-11-07 17:41:08,added documentation for example 5,0,,0
+6cc385c,2003-11-07 18:32:37,added a link in the applications section,0,,0
+9b273ed,2003-11-07 18:50:46,Did the documentation for example 10.  Motivation to finish 6-9.,0,,0
+b161012,2003-11-07 22:14:19,Added the developers page with pictures.  More to come.,0,,0
+bcd50ac,2003-11-07 23:10:59,Updated the Makefile to use sourceforge name when checking in the web pages.  We need to make sure we are getting the right permissions when we upload stuff.,0,,0
+ce0095e,2003-11-08 14:09:20,added some presentations  changed the navigation border width,0,,0
+7025df8,2003-11-08 14:20:58,changed doxygen documentation to not use a background image  changed HTML titles to be the same (i.e. single -),0,,0
+dc84cf0,2003-11-08 16:20:45,forgot an <li>,0,,0
+b29062f,2003-11-09 13:53:46,added installation instructions,0,,0
+e7f6df4,2003-11-10 01:23:33,removed the download.php file,0,,0
+8fe3e99,2003-11-10 04:24:54,Checked in a fix to remove :ext: when attempting to discern a users sourceforge name while uploading documentation.  Still need to find a way to set permissions correctly.,1,,1
+b420b0b,2003-11-10 13:10:28,added doc/html/*~ to the make clean target,0,,0
+d90b7f6,2003-11-10 16:55:31,added example 6 to the documentation,0,,0
+7bb5c0c,2003-11-10 20:21:41,the documentation is really getting somewhere!,0,,0
+fd4aa9c,2003-11-10 20:53:45,Added browser detection scripts to dumb things down for internet exploder.,0,,0
+9bf4d50,2003-11-10 21:54:01,Added browser detection php script.,0,,0
+e51c2c0,2003-11-10 21:54:51,Letting emacs use its php highlighting.,0,,0
+e858f0b,2003-11-10 21:55:31,Added bills other picture to the ignore list.,0,,0
+638364e,2003-11-10 22:14:35,added examples,0,,0
+ae6b8c3,2003-11-10 22:22:22,Added documentation for example 7.,0,,0
+9028a43,2003-11-10 23:06:04,html commands now possible in the example comments.,0,,0
+5cd37d9,2003-11-11 04:58:33,cleaned up layout.css and the example files,0,,0
+f208679,2003-11-11 13:19:41,fixed ex7.  ex8 now works in complex mode,1,,1
+b914fd9,2003-11-11 13:54:32,ran ex7 in complex mode,0,,0
+f027927,2003-11-11 14:18:13,changed ex9 and ex10 so that they work in complex mode,0,,0
+73432b7,2003-11-11 15:21:46,Added a segmented version of the title image to allow for word wrap.,0,,0
+4228679.0,2003-11-11 16:21:15,added the make upload target to upload an existing web page withour rebuilding the doxygen documentation,0,,0
+6ee5ecb,2003-11-11 17:54:09,The Make dependency for the example files was using a question mark for matching the numbers.  Unfortunately  the question mark only matches a single character which does not match 10  11  12... I changed it to use a star instead.  This is really a minor fix.,1,,0
+20fb000,2003-11-11 20:51:47,changed upload target to properly handle permissions,0,,0
+b09db96,2003-11-12 17:42:57,Added a link to my masters report on the publications page.,0,,0
+9a56ae3,2003-11-13 21:21:22,Fixed a small bug which didnt print newlines in the tecplot output.,1,,1
+f7e506a,2003-11-14 00:03:06,Checked in a fix for internet explorer not being able to handle the title image word wrap.,1,,1
+29b8a09,2003-11-14 14:47:36,removed the optional parameter from MeshBase::read(),0,,0
+b70e7f1,2003-11-14 17:41:47,Added Steffen and Daniel to the devs page.,0,,0
+464e1d6,2003-11-15 14:58:19,changed xdrIO so the error message in the case of failed file access is printed in optimized mode by moving the test outside of an assert,1,,0
+2226cd6,2003-11-15 20:12:07,added a fix for the factory instantiation for IBM xlC,1,,1
+19d3109,2003-11-17 17:29:08,Hard-coded the image widths so the text doesnt load up on top of the title page.,0,,1
+826de3c,2003-11-18 18:48:08,ex6 now works in complex mode.  There was no reason for it not to.,0,,0
+83b7217,2003-11-18 22:22:13,Also added the heights of each picture to the php script.,0,,0
+b89e5db,2003-11-18 23:04:20,removed an unnecessary print statement left over from the development phase,0,,0
+86d0e7c,2003-11-18 23:04:21,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_1'.,0,,0
+8656ff9,2003-11-19 19:21:06,Added Hendrik and Florian to the developers page.,0,,0
+4087e4c,2003-11-24 09:32:55,Made Hendrik and Florian students.,0,,0
+97d6bb1,2003-11-28 16:23:39,the nodal values are now averaged for plotting purposes.  Makes discontinuous solutions pretty when plotted at the nodes,0,,0
+5e8c11d,2003-11-30 05:00:50,updated configure system,0,,0
+3e69d1e,2003-11-30 05:37:47,updated configure system,0,,0
+8afb0b8,2003-11-30 05:43:43,updated configure system,0,,0
+86694f9,2003-11-30 05:58:14,updated configure system,0,,0
+db55d56,2003-11-30 06:01:18,updated configure system,0,,0
+2c1f5b9,2003-11-30 06:07:41,updated configure system,0,,0
+5c57370,2003-11-30 06:21:32,updated configure system,0,,0
+8a60f1c,2003-11-30 06:29:46,updated configure system,0,,0
+c0d9a5d,2003-11-30 06:33:37,updated configure system,0,,0
+3d1fa1a,2003-11-30 06:35:10,updated configure system,0,,0
+60865f2,2003-11-30 06:38:39,updated configure system,0,,0
+9f7c4c4,2003-11-30 06:38:40,updated configure system,0,,0
+aa35f94,2003-11-30 07:04:21,updated configure system,0,,0
+1d61019,2003-11-30 07:10:18,changed CONST to CONSTANT in the Order enum.  This caused a problem with LAM MPI,1,,0
+95a3e72,2003-11-30 21:42:56,made the configure --help output pretty,0,,0
+686738c,2003-12-03 17:19:53,updated Daniel.,0,,0
+f918768,2003-12-06 13:49:20,ignore Itanium-dependent files,0,,0
+f890d68,2003-12-08 19:14:43,added TetGen reader from Jens Oeser,0,,0
+28bebe6,2003-12-09 20:24:09,added a direct solver for dense systems in the DenseMatrix and DenseVector classes,0,,0
+ec31854,2003-12-11 08:28:51,Fixed Daniel.,1,,1
+5822f4e,2003-12-12 18:57:51,fixed some bugs contributed by Marc Buffat,1,,1
+ae2271a,2003-12-12 22:42:53,It is now possible to compute curvatures on element boundaries.  This information is available at the quadrature points via fe->get_curvatures().  This information is sometimes necessary for computing stresses on curved boundaries.  I have tested in in 3D (2D boundaries) and 2D (1D boundaries) and it appears to work.,0,,0
+9d444f7,2003-12-18 03:07:07,fixed a no-return statement condition,1,,1
+4ee00d5,2003-12-19 13:25:36,fixed a bug in the Plane class.  Thanks to Peter Kolb for this fix,1,,1
+2bcd7c0,2003-12-20 19:55:33,added capability in the EquationSystems to extract a discontinuous solution vector for plotting purposes,0,,0
+d0f7d2d,2003-12-20 19:58:09,fixed an off-by-one error in the UCD input,1,,1
+d0b4dfd,2003-12-22 13:40:56,parallelized the nodal solution construction.  This particularly effects the writing of discontinuous data averaged to the nodes,0,,0
+112de30,2003-12-23 22:57:51,Made the constructor protected to prevent the possibility of users constructing this class.  It is only used internally by the mesh.,0,,0
+d9980c3,2003-12-24 00:30:43,fixed for Scali MPI compatibility.  Apparently MPI_SUM is not always valid for char data types,1,,1
+a309c4b,2004-01-03 15:37:44,initial rewrite of Systems classes.  The new solver interface will be much more flexible for complicated system arrangements  i.e. 2 systems  one implicit  one explicit  or 2 implicit systems  one linear  one nonlinear  etc...  More documentation and discussion on the developers list to come,0,,0
+e541d3c,2004-01-05 21:03:16,Updated the doxygen input file to also document the files in the new solvers directories.,0,,0
+9c6d3c4,2004-01-09 19:25:35,Added a new set of shape functions based on integrated Legendre polynomials. The new FEFamily SZABAB is simply named after the corresponding reference by Szabo and Babuska. Class FE<_dim  SZABAB> is only available through the FEBase::build method. Currently the shapes are implemented up to seventh order in 2D. Since some users may not be interested in higher order shape functions (and we will add more of them in the future)  these shapes are only available when the library is compiled with option pfem enabled.,0,,0
+d57285b,2004-01-09 19:33:22,Added new set of shape functions. Currently implemented up to seventh order in 2D.,0,,0
+64431a6,2004-01-11 15:56:46,fixed a bug in the solution projection that caused all vectors to be projected as parallel  distributed vectors regardless of initial distribution.  This causes a problem when the current_local_solution (a local vector) was projected  since it was improperly projected into a parallel vector.  I introduced this bug about a week ago in the system rewrite.,1,,1
+c4fb38a,2004-01-14 07:02:00,Added some links to TACC press release  USNCCM  and SAVIAC web sites.,0,,0
+ee99226,2004-01-14 22:34:24,added another build_nodes_to_elem member that gets pointers to all the elements connected to a node,0,,0
+47f3373,2004-01-16 11:01:52,Changed 1D szabab shapes to some nicer expressions1D szabab shapes to some nicer expressions.,0,,0
+af1a50e,2004-01-17 22:56:54,fixes for the systems,1,,1
+0ec7bba,2004-01-20 13:36:04,fix for AMR when variables are approximated by different orders (e.g. Taylor-Hood elements for incompressible flows,1,,1
+022ffc1,2004-02-03 01:39:57,removed a stray here(),0,,0
+0eb9787,2004-02-08 20:25:24,added the libmesh-config script for easy building.  Note that your make must understand the --no-print-directory flag,0,,0
+0e4b5d1,2004-02-08 20:36:57,configure no longer removes config.status  but distclean does,0,,0
+66fc274,2004-02-08 20:52:45,converted sqrt calls into constant parameters,0,,0
+3d3b97c,2004-02-08 22:07:46,optimizations for shape function calculations,0,,0
+5f97a69,2004-02-08 22:17:31,optimizations for shape function calculations,0,,0
+4383734.0,2004-02-09 17:12:28,Changed all instances of pow(x int) to pow<int>(x).  Those calls should all be inlined via template magic and be evaluated in O(1) time.,0,,0
+540a955,2004-02-09 18:32:46,Checked in example 13  a nonlinear example.,0,,0
+d8be541,2004-02-09 18:40:19,Added html documentation for example 13. We still need to figure out why some of the system include files are being omitted from the documentation.,0,,0
+2d93b37,2004-02-09 18:51:31,Had to include libmesh_common.h in utility.h so that it would pass the test_headers.sh script.,0,,0
+0668f09,2004-02-10 13:28:07,no need for Utility::swap() when std::swap() will do...  Also fixes for Metis and Parmetis for new compiler -I semantics,1,,1
+7f62225,2004-02-10 16:20:15,Changed 2D szabab shapes for TRI6 elements to nicer (Horner scheme) representations.,0,,0
+ecb4561,2004-02-10 22:48:14,code to look at the SFC in Tecplot format,0,,0
+6be44ce,2004-02-10 22:48:53,changed comment style so that it makes it into the documented source,0,,0
+f55e387,2004-02-10 22:50:22,changed 2D mapping to properly handle 2D manifolds in 3D space,0,,0
+b354bc6,2004-02-10 22:51:17,more efficient comparison function,0,,0
+6d4878a,2004-02-10 22:51:55,use leng=3,0,,0
+2c8a402,2004-02-10 22:52:28,changed INT  probably should remove?,0,,0
+622e810,2004-02-10 23:02:15,changed unsigned long to unsigned,0,,0
+91575a2,2004-02-12 17:31:38,only renumber the nodes if refinement has occured.  This should fix Bills grid2grid problem,1,,1
+e6f8a24,2004-02-12 20:52:15,do not try to build optional packages when they are disabled,0,,0
+158ae41,2004-02-13 21:36:49,the user must be able to extract a writeable node ptr to build elements by hand,0,,0
+5ca4af4,2004-02-13 21:36:50,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_2'.,0,,0
+a1d1750,2004-02-15 15:35:31,changed all PETSc CHKERRQ calls to CHKERRABORT.  This solves the problem of returning from void functions.  CHKERRABORT also calls MPI_Abort after printing a diagnostic error.  Consequently  all PETSc errors are treated as fatal.  This was the original intent  but CHKERRQ was the only documented function  so that is what I used.,1,,0
+ab5cec7,2004-02-18 12:13:35,It seems that the HP-UX compiler needs the full name (Base::...).,0,,0
+7788809,2004-02-18 23:04:08,added the XYZ finite element type.  This is similar to the monomials  except the shape functions are defined in terms of physical coordinates.  This requires a slightly different approach for reinitialization  so the class has some additional specialization.  The FEBase/FE relationship is growing complex  however  and will likely change in the future.,0,,0
+5adf203,2004-02-20 13:52:12,Added Daniel's and my project pages to the applications.,0,,0
+8a84a1e,2004-02-22 21:47:59,Added a cholesky factorization routine to the DenseMatrix class. For SPD matrices  Cholesky factorization is supposed to be faster than straight LU.,0,,0
+2d3a7d9,2004-02-25 03:44:44,changes from the laptop I forgot to check in...,0,,0
+142b1a2,2004-02-25 14:27:25,compatibility fixes for gcc-3.0,1,,1
+96486e5,2004-02-25 18:45:31,Made the A(i i) > 0 check in _cholesky_decompose ifdef to build the library when option complex is enabled. Take care when using this with complex numbers.,0,,0
+5740992,2004-02-26 04:24:07,Changed two lines which made and returned a std::pair to instead use std::make_pair.,0,,0
+b6f7791,2004-02-26 14:15:48,fixed a typo in a comment :-),1,,0
+e02ed32,2004-02-27 13:30:18,factorization must be recomputed after a matrix is zeroed or resized  so the factorization flag must be reset.  Ideally  the flag would get re-set after any non-const write access  but that would cause unnecessary overhead.,0,,0
+057016c,2004-02-27 19:06:24,OK  now elements and nodes get numbered in a rational way when there was no mesh refinement.  This will correspond to their original position in these vectors  without messing with any trimming,0,,0
+3033687,2004-02-27 19:54:30,Changes for HP.,0,,0
+4de153b,2004-02-27 22:43:47,Changes for HP.,0,,0
+4816e20,2004-02-29 18:28:10,added a rhs to the ExplicitSystem,0,,0
+7de9cee,2004-03-01 09:26:25,Fixed DenseMatrix::zero.,1,,1
+e94d9e0,2004-03-01 14:40:24,moved rhs from the ImplicitSystem to the ExplicitSystem  now the ImplicitSystem is derived from the ExplicitSystem,0,,0
+a5e5078,2004-03-02 12:59:44,modified xdrIO to accept id and title strings longer than 80 characters,0,,0
+29b56ee,2004-03-05 21:07:00,Added an iteration count and final linear residual value tothe implicit system class.,0,,0
+050e2b8,2004-03-07 21:57:10,configure fixes  do not build parmetis without a valid MPI installation,1,,1
+8ce82cf,2004-03-07 22:39:04,configure fixes for Solaris.  Need to use different linking options,1,,1
+f6b4dd2,2004-03-07 22:44:23,configure fixes for Solaris.  Need to use different linking options,1,,1
+df95f14,2004-03-07 23:11:34,it is not sufficient to check for the existance of rpc/rpc.h and then infer XDR support.  We now check for the availability of xdrsdtio_create  which should be sufficient.,0,,0
+0b677c4,2004-03-08 00:57:16,forgot this...,0,,0
+3123367,2004-03-08 01:12:51,syntax error caught on the SGI,1,,0
+0c66a9b,2004-03-08 02:10:05,Fixes for compatibility with the Sun ONE Studio compiler,1,,1
+60ed03d,2004-03-08 02:30:00,added optimize flags for Sun C++,0,,0
+950b40e,2004-03-08 04:58:31,upgraded Metis and ParMetis to v3.1  which was released in August 2003.,0,,0
+efb0d1e,2004-03-09 18:52:39,removed an inline that caused problems for Solaris,1,,1
+d1e7ded,2004-03-10 02:57:10,added Sun compiler to supported list,0,,0
+31907c8,2004-03-10 07:11:27,change the Laspack interface to call the solvers with a 0 initial guess.  this is necessary in the case of exampe 13 to keep the solver from exiting in 0 iterations.  WHY??  This should be fixed...  I have looked at the code but do not see an obvious problem...,1,,0
+e07c147,2004-03-10 17:33:55,fixed min for complex,1,,1
+ac84756,2004-03-13 16:39:02,Removed some unnecessary headers and used std::make_pair instead of building a pair and returning it in two separate lines.,0,,0
+cb4c9e1,2004-03-13 20:21:59,Used std::make_pair in return statement and fixed a documentation bug.,1,,1
+232d129,2004-03-14 01:31:48,Changed dynamic casts of references to be dynamic casts to pointers.  This allows simple error checking by comparing the resulting pointer against NULL.  When casting references fails  a std::bad_cast exception is thrown  however  all exceptions are in general ignored by the library.,1,,0
+522b527,2004-03-18 15:10:32,Changed several of the MeshBase::write_* and Mesh::write_* methods to be const.  Having some difficulty with the xdr and unv formats since they are implemented in terms of the FooInterface objects which expect to be able to read OR write.  Thinking about whether or not its worth messing with.,0,,0
+0e5fc6f,2004-03-18 15:43:37,Made the write_diva methods const by changing BoundaryInfo::sync() to a const method.,0,,0
+28297b7,2004-03-18 16:41:00,Fixed mainly documentation typos.  Also decided that  although BoundaryInfo::sync() can technically be made const  it is not strictly a const function since it *does modify* the mesh which contains it. Specifically  it sets the subdomain_id for some elements on the boundary. The result is that write_diva() back to non-const for now.,1,,0
+5c4b2ea,2004-03-18 23:22:40,Minor cosmetic changes to the predicated_iterator class.,0,,0
+9072a20,2004-03-19 19:16:53,added the MeshIO class to encapsulate mesh/soln read/write operations and get them out of the Mesh class.  I have already converted UNV  UCD  and Tecplot I/O to this new format and will continue with others incrimentally.  All should feel free to convert any existing format they might want to...,0,,0
+beb6141,2004-03-20 00:46:50,removed cvshtml,0,,0
+ee4ec5f,2004-03-20 05:36:27,Ported the Diva writing code to the new MeshIO format.  Does this even work anymore?  I bet she has long since changed her format!.,0,,0
+4e4029a,2004-03-20 15:16:57,added GMVIO  changed all the examples to use it.  Still need to roll in write_discontinuous_gmv,0,,0
+c76468c,2004-03-21 03:19:26,fixed the const_elem_iterator  const_node_iterator and friends to have the intended behavior (i.e. treat the returned Elem and Node as const),1,,1
+ce692dd,2004-03-21 03:54:19,fixed the const_elem_iterator  const_node_iterator and friends to have the intended behavior (i.e. treat the returned Elem and Node as const),1,,1
+71d51a2,2004-03-21 04:19:30,fixed the const_elem_iterator  const_node_iterator and friends to have the intended behavior (i.e. treat the returned Elem and Node as const),1,,1
+d2f42e7,2004-03-21 04:20:40,removed stray here()s,0,,0
+151c9c8,2004-03-21 04:27:06,xlC fix,1,,1
+70e63f7,2004-03-21 04:48:50,more fixes for the iterators,1,,1
+0cb82fa,2004-03-21 07:23:00,Made a few methods in MeshCommunication const and introduced the first use of the mutable keyword in the library to allow the operator() method of the point_locator_* classes to be const. If mutable causes a difficulty for your compiler  please let me know and I will undo the change!,0,,0
+419771e,2004-03-21 16:14:10,fix for for ex12,1,,1
+67ae721,2004-03-22 01:11:59,Added a non-const const_elements_begin() function to the MeshBase class.  The reasoning behind this is you may want to enforce const iteration over the elements of a non-const Mesh.  Changed a few places in the code to use this new function.,0,,0
+ebcef0b,2004-03-22 22:41:46,cleaned up the trees a bit and added an option to create a tree from the elements directly  bypassing the nodes.  The obvious extension (that I have not made yet) will use the trees (and PointLocators) to find not only elements but also nodes.  Incidentally  the motivation for this was reading a structured surface mesh with a singular axis that contained a number of points at the same physical location in space.  When the target bin size for the tree was less than the number of coincident points an infinite loop was created...  Charming.,0,,0
+e3a6962,2004-03-23 04:17:26,Created a MatlabIO object to handle reading meshes generated in the pdetool program  and removed the previous read_matlab() routines from the MeshBase class.  Also removed the generic read() and write() routines from the MeshBase class since they were not being used and consisted of error messages only.,1,,0
+780a9c2,2004-03-23 04:47:29,Added an OFFIO class for reading standard OFF OOGL format.  Removed corresponding functions from the MeshBase interface.,0,,0
+321ad52,2004-03-23 05:16:22,Added the ShaneeIO class for reading old school shanee meshes from the precursor of libmesh.  Removed corresponding functions from MeshBase and removed the file mesh_misc_support.C,0,,0
+0f04816,2004-03-24 03:48:52,Updated dependencies and removed some unnecessary includes.  I did not test extensively on many systems  so sorry if it breaks something for you :(,0,,0
+4c0d0cf,2004-03-24 04:32:59,Fixing more unnecessary header file dependencies.,1,,1
+3700fac,2004-03-24 05:49:12,Tried to remove a lot of unnecessary header files. For some reason math.h was included in many places but as far as I can tell you only need it for sqrt  fabs  and maybe pow.  If that is not the case  I can fix it.  Also started commenting the reason for inclusion of standard header files  e.g. #include <algorithm> // for std::sort and the like.  Not including C++ header files speeds up compilation times a bit.,1,,0
+a7c416c,2004-03-31 04:05:59,Added a doxygen update run before the main documentation making command.  Have not tested.,0,,0
+9f37a30,2004-04-01 16:36:40,The build process now checks to be sure $PETSC_ARCH has been set as well as $PETSC_DIR.  If PETSC_ARCH is empty then PETSC is configured off and a message to that affect is printed.,0,,0
+6ba43e1,2004-04-05 20:07:04,Made the BoundaryMesh a subclass of the Mesh instead of MeshBase  so that it can have write functionality.,0,,0
+b11e48d,2004-04-07 21:42:39,changed the MeshIO class to be templated on the type of mesh to write.  Previously it expected a Mesh  but this precludes writing a BoundaryMesh since it is not of type Mesh. Writing the boundary mesh now works again in meshtool,0,,0
+ef9c3c7,2004-04-08 16:56:03,Changes for complex.,0,,0
+9c2aa41,2004-04-08 21:58:54,updated compiler flags for Itanium (ecc),0,,0
+6b089fa,2004-04-14 17:32:47,changed configure to work with libmpi.so on the Altix,0,,0
+3378303,2004-04-16 17:08:17,Some changes to make the PointLocater work more safe. Also changed some asserts to match with tolerances given in some methods.,0,,0
+bde3932,2004-04-17 02:16:23,Added ifdefs for infinite element calls.,0,,0
+e4739a0,2004-04-17 03:02:50,fixes for PETSc 2.2.0.  SLES has been removed from PETSc  the functionality has all been rolled into KSP.  I guess we should support 2.1.x and 2.2.x for about a year and then drop 2.1.x.,1,,1
+3b5cc78,2004-04-18 00:51:51,Added operator << functions to all the classes which had print_info() members.  Now you can do: Mesh mesh(2)  std::cout << mesh << std::endl  That is equivalent to: Mesh mesh(2)  mesh.print_info() ,0,,0
+a8cca45,2004-04-19 14:13:47,Rebuilt the ex1 program documentation.,0,,0
+7f74afe,2004-04-19 16:29:16,Added a script which creates all the examples documentation at once.,0,,0
+5aa2259,2004-04-19 16:30:37,Updated the example documentation (excepts examples 6 and 7) since I did not have a build available with complex numbers or infinite elements.,0,,0
+342d0d3,2004-04-19 17:08:20,Fixed bug with program2html.pl which prevented some include files from showing up in the docs.,1,,1
+489c7d5,2004-04-19 17:10:15,Fixed small documentation bug which caused some header files not to show up properly.,1,,1
+a297549,2004-04-19 17:12:26,fixed GMVIO for the Altix,1,,1
+038048d,2004-04-19 17:34:36,made MeshBase::prepare_for_use() public.  This is useful for creating a mesh directly with add_point() & add_elem(),0,,0
+59e50f2,2004-04-19 17:36:11,added operator() to the tree.,0,,0
+001413e,2004-04-19 17:41:07,only print warning message about curious point location if in secure mode,0,,0
+fea6606,2004-04-19 17:50:36,updated support information for the Altix,0,,0
+6749923,2004-04-19 18:09:14,added a link for the NASA/JSC seminar presentation,0,,0
+775f3cc,2004-04-20 11:22:29,fixed for PETSc 2.1.x configuration,1,,1
+6ed3f23,2004-04-20 11:57:55,PGI compiler flag fixes,1,,1
+bd468d0,2004-04-23 13:24:00,Fixed UNVIO for some 3D elements.,1,,1
+ce286df,2004-04-25 05:43:33,Fixes for GCC 3.4.0.  The biggest thing is that when a class B is derived from a partial specialization of class A then data from A will not be visible in B without using this->.  Also  no longer try & build a partitioner factory in the lib  portability is a nightmare.,1,,1
+d0cc62e,2004-04-26 03:55:12,Added my old USNCCM VII presentation.,0,,0
+6971cee,2004-04-26 04:13:02,Added a presentation on scraper flow to the presentation page.,0,,0
+01d0d2d,2004-04-26 04:17:01,Added the Albuquerque Academy presentation.,0,,0
+2b0278e,2004-05-05 15:23:50,Added support for some methods of TetGen 1.3 library. To make use of the functionality added  the environment variable TETGEN_DIR must be defined and libMesh must be configured with option --enable-tetgen. Note that the support is for version 1.3 which should be available soon. Also added ASCII output for medit file viewer (www-rocq1.inria.fr/gamma/medit).,0,,0
+73fe256,2004-05-06 02:07:33,Fixed a few bugs in assert() statements and removed some unused variables.,1,,1
+bb595dc,2004-05-08 14:42:15,fixed a typo,1,,0
+d2d8896,2004-05-09 15:40:22,added some comments on TetGen routines,0,,0
+0efbaea,2004-05-11 20:29:07,The partitioners now set a new variable in the Mesh called _n_parts.  This variable was needed since n_subdomains does not map directly to the number of partitions created when using partitioners  and neither does n_processors() since you may partition a mesh on one processor if you wish.  Therefore the partitioners all set the new variable _n_parts in the mesh to allow for this possibility.  The GMV routine now allows you to plot (without error messages) the different partitions of the grid.,1,,0
+daa58e7,2004-05-11 21:18:34,added optimizations for computing edge data in the case of XYZ finite elements,0,,0
+e86b734,2004-05-12 17:26:22,Fixed a small bug where if no linear solver packages were defined  there was a compilation error.  This was due to auto_ptr.h not being included properly in that case.,1,,1
+bea2e72,2004-05-12 18:05:24,Changed stokes_system.solution to stokes_system.current_local_solution.,0,,0
+34745a1,2004-05-12 18:10:29,Changes for complex variable compatibility.,0,,0
+6ac0563,2004-05-12 18:28:25,Fixed bug in error_vector.C where it returned 1e+30 for a vector of all zeros.,1,,1
+2f6f440,2004-05-13 15:58:52,Minor changes to get rid of some warnings.,0,,0
+8f4f565,2004-05-14 22:59:34,Removed tetgen triangulate methods from MeshBase. Use e.g. TetGenMeshInterface tegen (mesh) tegen.triangulate ... to make use of the respective functionality.,0,,0
+9609499,2004-05-14 23:06:35,Ups  removed changes I accidently committed a few minutes ago.,0,,0
+fe6d847,2004-05-17 00:22:09,Parmetis got commented out?,0,,0
+7fc55c4,2004-05-17 02:18:02,FEXYZ shapes do not need reinitialization at each ::reinit() step,0,,0
+c07abb2,2004-05-17 21:53:20,Comitted some changes from Florian.,0,,0
+4b62c08,2004-05-20 19:48:46,Made the ErrorEstimator class a base class for the specific KelleyErrorEstimator implementation.  This allows us to derive future ErrorEstimators from a common base class.,0,,0
+10d6909,2004-05-20 19:51:14,Added Example 14.,0,,0
+79abd10,2004-05-20 20:03:32,Updated the examples Makefile to include example 14.,0,,0
+7b743a6,2004-05-20 21:14:33,Updated the dependencies for ex14.,0,,0
+bbafc00,2004-05-20 22:14:12,"Fixed a name resolution issue in the error estimator classes which was caused by attempting to overload a pure virtual function and call the overloaded version from a subclass.  Wolfgang told me about the ""using"" directive.",1,,1
+d92ad9a,2004-05-20 22:31:23,Updated the keywords generation script for emacs.,0,,0
+316966c,2004-05-20 22:43:10,Updated the example documentation on the web.,0,,0
+2cd27cd,2004-05-20 22:56:52,Fixed misspelling everywhere of Kelley -> Kelly.  I blame this on a presentation by Mike Anderson where he misspelled it!,1,,1
+33b05d5,2004-05-20 23:03:57,Added example 14 documentation and updated ignore file.,0,,0
+c899dbb,2004-05-21 14:34:40,Added QUAD9 support  scalar output,0,,0
+9f256cf,2004-05-21 15:32:19,Changed string to std::string in one place.,0,,0
+abd5531,2004-05-24 19:58:39,Checked in the beginning of the ExactSolution class.,0,,0
+ca83880,2004-05-25 17:58:27,Added ex14 to its ignore list.,0,,0
+fc61523,2004-05-25 17:59:03,Ignore tecplot .lay files.,0,,0
+6e36e97,2004-05-27 04:35:09,Updated ex14 to compute the error between the approximate and exact solutions.,1,,0
+5af79ce,2004-05-27 04:37:12,Working on the ExactSolution class.  It appears to be somewhat functional  though it is not yet working in parallel I dont think.,0,,0
+e3e5ea5,2004-05-27 04:39:28,Removed a stray code fragment.,0,,0
+855649d,2004-05-27 05:04:19,Modified the 14th example a bit more. It is now possible to investigate both adaptive and uniform refinement within the same code  simply by changing the input file.  The adaptive scheme achieves better error reduction in general than the uniform refinement scheme  but both have strange rates  possibly due to the singularity in the solution derivative.  Note: still need,1,,0
+55c9c73,2004-06-01 14:24:23,Some changes for complex number support. libMesh now compiles with --enable-complex  but I still have to check ExactSolution for complex numbers a little more carefully.,0,,0
+c9ae0df,2004-06-01 15:50:54,Added a comment to the system projection code which explains how to skip non-LAGRANGE elements but does not change the existing code.,0,,0
+194a2bc,2004-06-02 15:05:06,Updated ex14 to have more options user-selectable from the input file.,0,,0
+45a3847,2004-06-02 15:08:41,Updated the EquationSystems and System classes to be able to return the number of active dofs  which is defined as the total number of dofs minus the number of constrained dofs.  Also parallelized the exact solution class.,0,,0
+3672669,2004-06-02 20:33:22,added initial support for the patch recovery error estimator,1,,1
+feeacce,2004-06-02 20:55:17,syntax,0,,0
+bfbcc42,2004-06-04 17:29:26,Added a function to remove certain elements from a mesh. We needed something like this to get rid of some face elements after generating 3d meshes with e.g. TetGen.,0,,0
+a3c20a8,2004-06-08 14:45:50,changes for complex.,0,,0
+85d47b0,2004-06-15 20:17:23,moved all gmv support into GMVIO  added proper coupling between discontinuous basis functions in the DOF map.  Note that this will over-allocate memory for the Q2P-1 LBB stable element which has no inter-element coupling for the discontinuous pressure,0,,0
+8a03a6d,2004-06-19 21:37:24,Adjustments to TetGen 1.3 release.,0,,0
+4458578,2004-07-12 22:54:59,Added a virtual destructor.,0,,0
+ccf40ad,2004-07-12 22:56:18,GCC 3.4.1 complained that almost all the variables from the FEBase class which are used in this file were undefined.  Adding this-> seemed to clear up the problem  which did not exist for any other files.,1,,0
+4601367,2004-07-12 23:53:26,Change for GCC 3.4.1 debug mode.,0,,0
+7bf9640,2004-07-13 17:31:31,Changed ex4 to allow the setting of the problem size on the command line.,1,,0
+7f45f5a,2004-07-13 20:10:45,Added option for non-glx gmv.,0,,0
+244d5f7,2004-07-13 21:48:41,Preliminary support (2D only  read only) for GMSH file format added.,0,,0
+4859f74,2004-07-14 19:23:19,Reworked the tecplot_connectivity() and vtk_connectivity() functionality in the Elem class and all subclasses.  They have been combined into one function called connectivity() which should be extensible for new IO packages such as GMSH and DB Explorer without changing the interface of the Elem class. Sorry for the wicked recompile.,0,,0
+60b8fdf,2004-07-14 19:26:06,Added enumeration file for IO software packages like Tecplot  GMV  etc.,0,,0
+a69c50d,2004-07-22 19:54:17,More changes for the connectivity routines in the Elem class. Now there are no longer separate functions for write_ucd_connectivity and write_tecplot_connectivity. They have been combined in the more generic write_connectivity routine.,0,,0
+28fb3bf,2004-07-26 14:02:52,Fixed some old code where instead of references to vectors  we were passing actual vectors.,1,,1
+21befbf,2004-07-26 15:01:33,Minor changes to documentation only.,0,,0
+8a93dfb,2004-07-26 16:27:49,Working on removing unnecessary #includes to reduce compilation dependency..,0,,0
+0f51ebb,2004-08-02 18:46:47,Needed read access to some derivatives.,0,,0
+b101c65,2004-08-02 21:54:22,"added #include \""libmesh_common.h\"" for assert",0,,0
+894414d,2004-08-02 22:08:14,replaced find with std::find  added #include <algorithm>.  How has that not been caught before?,0,,0
+12964cd,2004-08-02 22:08:15,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_3-rc1'.,0,,0
+521380d,2004-08-05 14:44:15,Changed the tegen configuration slightly to be like the rest of the libraries in aclocal.m4.  Also removed dependency on stdio.h.,0,,0
+f76bd6a,2004-08-05 15:58:44,Removing unnecessary includes of <stdio.h> as well as documenting why it is necessary in cases where it is.,0,,0
+82bd273,2004-08-05 20:20:11,Improving the binary functionality for GMV so that it is more portable and less ugly.,0,,0
+5eed4a1,2004-08-05 20:21:10,Fix for GCC3.4.1 not liking zero element array access for empty arrays.src/utils/xdr_cxx.C,1,,1
+0d41218,2004-08-06 16:48:41,Apparently it was possible to remove the <iostream> inclusion from libmesh_common.h.  This should result in a little less unnecessary inclusions of the standard header files.,0,,0
+400fe5c,2004-08-09 17:34:58,Added #include <assert.h> in several places where it was originally not needed since <stdlib.h> was already included.  Library compiles under AIX 5.2.0.0.,0,,0
+6d1d50e,2004-08-09 21:46:30,Updated the .depend file for the library.,0,,0
+303663f,2004-08-17 01:46:07,added the script create_libmesh_release to facilitate creating & tagging CVS snapshots for release,0,,0
+2c00626,2004-08-17 03:03:57,added #include <assert.h> to libmesh_common.h  removed it from others,0,,0
+0facff4,2004-08-20 13:56:27,Added new USER_PRECOND type,0,,0
+057e458,2004-08-20 13:58:02,Added some additional documentation to the solve member.,0,,0
+e601d54,2004-08-20 14:00:22,Added matlab printing capabilities (for PetscVectors) in the NumericVector class.  Also the create_subvector routine was added.,0,,0
+c47015e,2004-08-20 14:01:55,Generalized the PetscInterface solve member  to allow it to take different matrices for the system matrix and the preconditioner.  Does not affect existing code.,0,,0
+0a062b8,2004-08-20 14:05:21,Added additional constructor for building PetscMatrix objects from existing PETSc Mats  also added the _get_submatrix() routine which uses PETScs MatGetSubMatrix() function to extract submatrices.,0,,0
+3c20731,2004-08-20 14:07:11,Added the create_ and reinit_submatrix() functions to the sparse matrix base class  as well as an error function if this functionality is attempted to be called from the base class.  There may be something similar for Laspack  I dont know.,1,,0
+0aae1a3,2004-08-20 14:08:42,Added additional constructor which takes a PETSc Vec object  as well as the create_subvector functionality.,0,,0
+c619015,2004-08-20 14:09:30,Added virtual destructor  this class may be derived from in the future.,0,,0
+0c50ba4,2004-09-13 05:14:37,updated documentation for Sun,0,,0
+42a990a,2004-09-16 13:03:53,Fixed op= bug which should never have compiled.,1,,1
+b11a3d9,2004-09-21 22:38:58,work-around for compilers (like Intel icc v8.x) that pretend to be gcc,0,,0
+9ba63c5,2004-09-22 18:43:01,changed outdated comments,0,,0
+d52efb6,2004-09-27 13:41:48,Changed header of xdr files to write 0 for the number of additional vectors when write_additional_data is false.,0,,0
+6cf09c3,2004-09-27 13:43:25,Added ibm to ignore list.,0,,0
+f63181d,2004-09-27 14:54:26,Added a make target to link the examples (no run). Also  the PCMAT preconditioner was apparently not available in Petsc 2.1.1  so I added preprocessor macros to prevent compilation in this case.,0,,0
+919998c,2004-09-27 15:56:49,Final reworking of the System IO stuff.  Problem should be solved with the addition of one more boolean flag to the system class.,1,,0
+aa0fdb6,2004-09-29 13:27:13,fix for PETSc 2.2.1 courtesy of Martin Luthi,1,,1
+c0ab3b2,2004-09-29 21:45:21,configure option --enable-mgf-workaround is deprecated.  use runtime  command-line option --enable-mgf-workaround instead.,0,,0
+a4f8bea,2004-09-30 14:23:41,added Bills perl script to convert an XDA mesh to an MGF/ASCII mesh,0,,0
+c21332d,2004-09-30 14:26:22,added CVS tags and emacs local variables to force perl mode,0,,0
+4424e3d,2004-09-30 17:18:38,patches from Bill for writing MGF-style xdr meshes,1,,1
+4c9ff01,2004-09-30 19:40:08,fix for ex8 run-time problem  but will not pre-allocate enough matrix storage for discontinuous elements,1,,1
+ca9a09a,2004-09-30 20:10:31,compile fixes for Solaris,1,,1
+7506826,2004-09-30 21:21:49,added PltLoader class to read Tecplot .plt files,0,,0
+e862833,2004-10-04 13:53:22,allow users read-only access to the data vector,0,,0
+8126d6b,2004-10-10 19:07:27,made the DenseMatrix.condense() member more generic and extended it to the DenseSubMatrix,0,,0
+0effe18,2004-10-12 19:46:58,allow the preconditioning matrix to be different than the system matrix,0,,0
+029c3a1,2004-10-14 20:12:20,Apparently it is more correct to use ios::sync_with_stdio() than ios_base::sync_with_stdio() since that function wasnt always in the base class.,0,,0
+ee6c3b3,2004-10-14 20:24:07,For some reason  GCC 3.2.3 requires std::ios::scientific instead of std::scientific.,0,,0
+ec8a556,2004-10-14 21:33:04,Fixed the link target for the examples.,1,,1
+3d12c1c,2004-10-14 21:54:06,Added const qualifier to one of the add vector routines (add the product of a sparse matrix and a NumericVector to a distributed vector.),0,,0
+45cb166,2004-10-14 22:02:47,Added the shell preconditioner type  only makes sense for PETSc.,0,,0
+1f094f7,2004-10-14 22:56:09,fixes for the Altix with Intel/icc v8.1,1,,1
+81c72ca,2004-10-15 00:39:42,further propagation of the const SparseMatrix<> change in the add_vector() member,0,,0
+2dff477,2004-10-15 04:27:37,allow for user-specified TetGen installation,0,,0
+0a5307d,2004-10-15 04:31:07,avoid hiding inherited vars,0,,0
+be12067,2004-10-15 04:38:19,added missing return value,0,,0
+16bf883,2004-10-15 04:44:28,added missing include,0,,0
+a40f928,2004-10-15 13:08:04,Made unnecsseary change due to accidently compiling with gcc2.96. doh.,0,,0
+6531331,2004-10-15 13:09:46,Oops  should have checked this in along with the header file.,0,,0
+f58c8a8,2004-10-15 19:46:58,Changed error message to print the entire thing to std::cerr,1,,0
+069fa64,2004-10-16 03:48:36,64-bit fix,1,,1
+c042c77,2004-10-18 12:17:04,fix for PETSc 2.2.1,1,,0
+d8dbdef,2004-10-18 18:25:00,Made op() code backward compatible for PETSc 2.1.X versions.,0,,0
+4fd19fa,2004-10-18 21:42:01,Removed extra commas  which are errors if you are in pedantic mode.,1,,0
+a511a26,2004-10-18 22:10:07,various PETSc  64-bit fixes.  updated config.{guess sub},1,,1
+d97ee7b,2004-10-19 12:44:11,replaced std::endl with \n in all file IO and stringstreams.  std::endl forces a flush  which kills performance on some machines,0,,0
+4e75ad1,2004-10-19 16:26:21,The print() function is now generalized to take an arbitrary stream instead of just std::cout by default.,0,,0
+b7748e4,2004-10-19 16:35:55,Added <iostream> header file.,0,,0
+4190380,2004-10-19 16:58:08,Making print() functions more general by allowing them to work on arbitrary streams instead of just std::cout,0,,0
+2817c80,2004-10-19 17:11:55,Oops  forgot to check in PetscInterface header file.,0,,0
+8af9d77,2004-10-19 19:55:43,MIPSpro config updates,0,,0
+715095c,2004-10-19 20:12:45,MIPSpro config updates,0,,0
+e3b354c,2004-10-19 22:31:06,fixes for IRIX 6.5/MIPSPro 7.4,1,,1
+d1d44a7,2004-10-20 00:33:06,Added a forward declaration and some strange syntax to fix up template member friend function.,1,,0
+aeff93c,2004-10-20 14:47:49,fixed for MIPSPro,1,,1
+911a8fc,2004-10-20 21:42:34,fixed an error in the Laspack csr implementation  no longer zero the system matrix before it is closed in the NewmarkSystem,1,,1
+5bedeff,2004-10-21 14:39:20,GCC complained about using a possibly uninitialized variable.,0,,0
+1144f52,2004-10-22 21:03:22,Added MPI_Abort to the error() macro.,1,,0
+353f7f9,2004-10-22 21:03:50,Fixed bug in HEX27 embedding matrix.,1,,1
+2b1647c,2004-10-25 16:03:10,added -ftz for Itanium2,0,,0
+64e61b7,2004-10-25 21:49:25,removed the side_children_matrix stuff since it is no longer used,0,,0
+1d438f9,2004-10-25 21:49:26,This commit was manufactured by cvs2svn to create tag 'libmesh-0_4_3_rc2'.,0,,0
+08682e5,2004-10-26 15:31:19,Generalizing more print functions to print to any stream rather than just std::cout.,0,,0
+94883ad,2004-10-26 16:16:16,You have to sync_with_stdio _before_ redirecting std::cout to NULL in parallel cases.  Otherwise  you will get np copies of every message.,0,,0
+fe1bec6,2004-10-26 22:00:46,Removed the MeshData class from the MeshBase class.,0,,0
+a99f13d,2004-10-26 22:02:00,fixed the Factory<> class.,1,,1
+f97cb43,2004-10-26 22:22:38,fixed the Factory<> class.,1,,1
+d799f57,2004-10-27 15:04:41,fixed the Factory<> class.,1,,1
+8ac9bd7,2004-10-27 21:10:42,added Tecplot API for Linux on Itanium chips,0,,0
+53d47ae,2004-10-27 21:14:20,removed the print-only-once logic from the ReferenceCounter,0,,0
+5bf0b87,2004-10-27 21:46:46,should fix Debian complaint,1,,1
+5286cb6,2004-10-28 19:02:20,fixed a couple of broken links  fixed the TetGenInterface to handle MeshData external to the Mesh class,1,,1
+b441b0c,2004-10-28 19:09:27,fixed a couple of broken links  fixed the TetGenInterface to handle MeshData external to the Mesh class,1,,1
+cb4c42c,2004-10-28 20:06:14,changed the static Elem::build and Node::build members to return an AutoPtr<> instead of a naked pointer.  This way the methods can be public and someone *really* has to try to leak memory,0,,0
+ce47c40,2004-10-28 20:38:56,removed unnecessary xlC AutoPtr<> ap  return ap  workaround since the current xlC on longhorn is OK with this,0,,1
+76cc56a,2004-10-28 21:37:24,scratch that xlC change...,0,,0
+d144690,2004-10-29 23:24:54,include mesh.h instead of mesh_base.h,0,,0
+60c4255,2004-11-02 00:38:09,added another option for distributing DOFs.  This is a placeholder for now,0,,0
+7b08e35,2004-11-02 19:21:21,Currently no deed for a MeshData in the tetgen interface.,0,,0
+20fd155,2004-11-03 14:30:12,added a command-line option to change the way degrees of freedom are numbered  fixed the Adaptive<> solver to work with the new ErrorEstimator class structure,1,,1
+bcaa60c,2004-11-03 21:30:19,cleaned up the DOF constraints code a little bit.,0,,0
+ef160c1,2004-11-04 13:31:59,changed DofMap::build_constraint_matrix to be more efficient in the (usual) case that the element has no constraints.  Also fixed for the case that an element has constraints in terms of its *own* dofs  (not others),1,,1
+a857ecb,2004-11-05 02:19:46,final changes to enable mgf mesh output,0,,0
+b0060b9,2004-11-05 14:23:37,commented out offending lines broken by somebody elses recent changes,0,,0
+f0f9978,2004-11-05 17:19:42,Added a MeshData pointer to EquationSystems.,0,,0
+a872441,2004-11-07 18:26:44,Fixed one line for proper .xda output.,1,,1
+f7c7dc7,2004-11-08 00:11:06,Reworked the element and node iterators used in the mesh class.  Many files changed  see devel mailing list for description of changes.,0,,0
+9332526,2004-11-08 00:36:39,Added source code file for the mesh iterators.,0,,0
+a51d467,2004-11-08 18:05:30,Added license information to new files.,0,,0
+48d90b2,2004-11-09 12:20:57,Fixes for FrequencySystem.,1,,1
+6909240,2004-11-09 21:46:16,Fully qualified class names as required by Sun C++ v5.5,0,,0
+d6b51ba,2004-11-09 22:24:32,formatting changes,0,,0
+40e6d62,2004-11-09 22:27:35,updated .depends,0,,0
+7eb108a,2004-11-09 22:40:03,more fixes for first (broken :-) fixes for the Sun,1,,1
+1f72530,2004-11-09 22:51:35,final fix for the Sun  I hope...,1,,1
+8803ffb,2004-11-10 20:34:54,In the delete_elem function  removed the line which called erase on the iterator to avoid invalidating iterators. Also explicitly NULL the iterator which has been deleted so we know to skip over it during future iterations!,0,,0
+ede6def,2004-11-12 00:42:42,Rewrote most of the TetGenMeshInterface.  It is no longer a friend of MeshBase  and should generate more useful meshes (Elems have valid ids) now as well.,0,,0
+f215abb,2004-11-12 01:57:27,Removed dangerous strdup command (memory leak!) and made several functions take const arguments.,0,,0
+10c9bfd,2004-11-12 18:24:13,Updated the examples.,0,,0
+c822b79,2004-11-12 20:55:21,Moved the ExodusII and XDR I/O implementation into ExodusII_IO and XdrIO  respectively.  These classes conform to the MeshIO<> interface.  All the I/O implementation should now be separated out of the Mesh/MeshBase classes.,0,,0
+602f07d,2004-11-12 22:36:09,Moved the build_inf_elem functionality to a separate class of its own.  Now if you want to build infinite elements on top of your mesh  you must construct a InfElemBuilder object  and call the same functionality as before.  See ex6 for details.,0,,0
+eed73e0,2004-11-13 02:10:14,fixed XdrIO for the case of complex data.,1,,1
+e19f874,2004-11-13 04:12:07,fixed XdrIO for complex data,1,,1
+2fc70c5,2004-11-14 01:20:23,fixed configuration flags for Intel ICC v8.1,1,,1
+4a62b8f,2004-11-14 03:50:31,libMesh now works with gcc 4.0 (latest CVS),0,,0
+36e8d33,2004-11-14 03:54:20,fix for solaris,1,,1
+9543707,2004-11-14 05:40:52,Also reset number of partitions to zero upon call to mesh.clear().,0,,0
+c089c62,2004-11-14 18:52:11,Removed elem.h dependency from mesh_base.h by making the delete_elem function not inline. Now we can get away with forward declaration.,0,,0
+a1c70ad,2004-11-14 20:16:10,Forgot one place where #include elem.h was needed.,0,,0
+9dce1a7,2004-11-15 00:20:52,merged new GMVIO implementation.  right now the old implementation is used.,0,,0
+b22ae29,2004-11-15 09:30:54,Moved an #ifdef.,0,,0
+44b9a39,2004-11-15 22:09:13,added the MeshTools namespace  starting to implement the Side<> class,0,,0
+9d6041d,2004-11-15 22:14:24,added the MeshTools namespace  starting to implement the Side<> class,0,,0
+82ee4cc,2004-11-16 15:58:05,Commented out unused variables.,0,,0
+c9c9471,2004-11-17 07:52:17,split the MeshIO functionality into MeshInput and MeshOutput,0,,0
+8af5846,2004-11-18 21:23:23,fixed perf_log call,1,,1
+0c49c6e,2004-11-19 03:19:08,fixed perflog for real this time...,1,,1
+52ae433,2004-11-19 13:57:52,added --enable-everything  fixed another perflog issue  started the Parameters class  but needs work.  configure no longer aborts when it does not recognize the compiler  but rather issues a warning that the user will need to manually set the compiler flags in Make.common,1,,1
+9a0967e,2004-11-22 21:01:17,recognize the Cray C++ compiler,0,,0
+54d361c,2004-11-22 21:18:39,recognize the Cray C++ compiler,0,,0
+43387ab,2004-11-22 21:32:36,Moved the all_tri() function to the MeshTools::Modification namespace. Also added the SideIter class as nested class of the Elem to allow for iteration over the sides of an element.  This code is not extensively tested yet  and is not used anywhere yet.  More to come soon.,0,,0
+be70d67,2004-11-23 02:11:12,fixed warning on some platforms about comparing a negative constant to an unsigned variable,1,,0
+24acb1f,2004-11-23 03:34:17,Added exact coefficients for moderate degree triangle quadrature  numerical coefficients for high degree quadrature,0,,0
+fb415b4,2004-11-29 18:37:10,added NumericVector<>.insert() methods,0,,0
+cb91d3e,2004-11-30 21:45:26,Now using element ids instead of element memory addresses to test cache validity,0,,0
+e90a18e,2004-11-30 23:00:21,Fixed 6/7th degree triangle quadrature rule weights,1,,1
+3dc4421,2004-12-01 02:37:02,Clarify floating point vs. integer arithmetic,0,,0
+1e47b27,2004-12-02 18:18:56,Fixed a bug in getpot.h when evaluating an division string.  The first argument in the denominator was skipped.  Also changed the location of some comment blocks  hopefully doxygen will now document nested namespaces,1,,1
+29e93da,2004-12-03 22:34:10,added ability to check for the existance of the variable in an input file,0,,0
+5abd279,2004-12-06 00:48:01,Fixed a bug which prevented coarsening in the mean_stddev flagging routine.,1,,1
+97ceeb8,2004-12-06 04:52:41,improved the Parameters class,0,,1
+ef7a4bb,2004-12-07 22:47:46,removed the DataMap object  replaced with the Parameters class.  Simplified parameter handling in the EquationSystems class,0,,0
+a33a616,2004-12-10 13:54:26,removed extraneous fe_face,0,,0
+19a5e15,2004-12-10 14:49:32,fixed a bug which incorrectly warned that a DOF was constrained when in fact it was not,1,,1
+476198b,2004-12-17 20:55:07,Added long-overdue implementation of the rotate method  fixed typos.  Thanks  Martin.,1,,0
+1b3f092,2004-12-24 15:02:32,fixed TypeVector typos (thanks  Martin).  Provide access to the components of the physical-to-local coordinate transformation matrix in FEBase.  This is useful in computing the shock-capturing parameter of Tezduyar et al.,1,,1
+884be74,2005-01-03 00:06:49,renamed the LinearSolverInterface class LinearSolver  will shortly add NonlinearSolver.  The PETSc interface will support the PETSc matrix-free approach for solving nonlinear systems.,0,,0
+29e8d3e,2005-01-03 16:17:59,fix in MeshTools::Modification::distort thanks to Martin,1,,1
+dbfe70d,2005-01-03 20:14:41,support for solving nonlinear systems with PETSc in work,0,,0
+206c2b9,2005-01-03 20:16:07,put ierr where it belongs,0,,0
+42a3155,2005-01-03 22:10:10,initial nonlinear support in PETSc.  Interface still needs some work.,0,,0
+1c340df,2005-01-04 03:03:26,it would help to call SNESSolve,0,,0
+3dc67a6,2005-01-04 16:40:28,Compatibility changes for SNES in petsc-2.1.x  also need to link against -lpetscsnes in the Makefile.,0,,0
+ab3966b,2005-01-05 18:00:18,fix for PETSc 2.2.0,1,,0
+009593c,2005-01-06 21:55:04,added LinearImplicitSystem.  will be adding NonlinearImplicitSystem shortly,0,,0
+6010f9c,2005-01-07 16:03:27,Fixes for infinite elements.,1,,1
+dbcf6a9,2005-01-13 20:49:28,Made System::project_vector use L2 projection for non-Lagrange elements instead of giving up,0,,0
+a3ab5c3,2005-01-13 21:06:50,Added Clough-Tocher finite element family and quadrature rule  Made invalid quadrature rule enum a fixed value in case we ever want more binary compatibility between libMesh versions,1,,1
+19a7822,2005-01-13 21:13:29,Added --enable-second-derivatives configure option,0,,0
+4061f8f,2005-01-13 21:19:04,Changed partial ordering to strict ordering for TypeVector::operator<,0,,0
+147642a,2005-01-13 21:22:43,Added small tensor classes (for function hessians  primarily),0,,0
+b04bd5d,2005-01-13 21:24:51,Dependencies updated for new second derivatives code,0,,0
+ccaa86e,2005-01-13 21:54:03,Added Clough-Tocher macroelement and uniform grid quadrature rules,0,,0
+717bed0,2005-01-13 21:57:51,Added Clough-Tocher macroelement and uniform grid quadrature rules,0,,0
+4e07fbe,2005-01-13 22:10:16,Added optional support for second derivative calculations for fourth-order problems  including FE base calculations  shape function second derivatives in some FE derived classes  and shape function second derivative stub/warning functions in all other derived classes,1,,0
+0b023b7,2005-01-13 22:21:08,Added Clough-Tocher C1 triangular elements  C1 cubic 1D elements  and stubs for C1 3D elements.,0,,0
+fbfd0b4,2005-01-13 23:37:08,Added Biharmonic example problem,1,,0
+2c99e9d,2005-01-13 23:37:46,Make ex15 too,0,,0
+b17af48,2005-01-14 19:29:43,changed ImplicitSystem references to LinearImplicitSystem,0,,0
+ba93710,2005-01-14 19:38:31,prevent compiler warning message,0,,0
+5f6e1b7,2005-01-14 20:04:26,added .cvsigore,0,,0
+37695d2,2005-01-14 20:11:36,added documentation for ex15,0,,0
+0fd68e6,2005-01-17 02:21:12,"Fixed ""overwriting with zeros"" bug",1,,1
+392306f,2005-01-19 15:18:35,Added missing scalar * vector/tensor operators  tensor*tensor->scalar contraction function  made tensor a friend class to fix tensor*vector->vector multiplication,1,,0
+9bdccef,2005-01-19 16:49:49,added an if test in DEBUG mode to make the LAGRANGE dof constraint computations more clear,0,,0
+5881eed,2005-01-19 21:59:54,fixes for PETSc nonlinear systems with matrix-free solvers,1,,1
+cd2bfd2,2005-01-25 17:07:37,trivial changes for IBM xlC on lonestar,0,,0
+09c875a,2005-01-25 21:45:00,turn on second derivatives with --enable-everything,0,,0
+a9b212c,2005-01-28 19:14:18,Use the Side<> class as a proxy when building element sides.  This eliminates the need for allocating and deallocating connectivity storage arrays when building sides  thus making the Elem::build_side() member more efficient.  Note that this has not been implemented yet in the case of infinite elements  however it would be easy to add.  Assuming there are many more interior elements than infinite elements there is also probably little performance impact.,0,,0
+85f905a,2005-01-28 21:29:52,changed #include <foo.h> to #include <cfoo> where appropriate,0,,0
+947cc1e,2005-01-28 21:43:50,disable a tail-padding warning for ICC v8.1 on the Itanium,0,,0
+b97201e,2005-01-30 21:34:22,added ex15 to the examples,0,,0
+1f6e8a4,2005-01-31 22:16:18,gotta destroy the SNES  otherwise there is a memory leak!,0,,0
+e712c21,2005-02-02 20:43:46,added some latex documentation,0,,0
+acedfda,2005-02-02 20:45:11,added some latex documentation,0,,0
+2851044,2005-02-02 20:51:17,added a single function to compute both the Jacobian and residual to the nonlinear equation system,0,,0
+9f279bd,2005-02-04 13:36:39,code cleanup,0,,0
+e6c0cb9,2005-02-04 13:38:40,learning how to build RPMS,0,,0
+4326048,2005-02-14 22:29:37,Added a new option to the build_cube and build_square mesh generation routines which builds meshes graded into the boundary layers.  The inspiration comes from the Gauss- Lobatto grid points which are commonly used in spectral methods since the Chebyshev polynomials of arbitrary order reduce to cosine evaluations at the G-L points.  Tested in 2D and 3D.,0,,0
+a6b4de3,2005-02-15 05:23:34,documentation changes  minor optimizations in EquationSystems,0,,0
+6ce6784,2005-02-15 05:31:34,documentation changes  minor optimizations in EquationSystems,0,,0
+b90c1a1,2005-02-19 19:07:01,Added is_vertex  is_edge  is_face functions,0,,0
+7f2d944,2005-02-19 19:07:31,Added is_vertex  is_edge  is_face functions,0,,0
+8a465c0,2005-02-21 06:11:39,Added templated max()  min() inline functions,0,,0
+c7783b5,2005-02-21 15:19:09,fixed make distclean target  moved maxmin.h into include/utils,1,,0
+f4831fa,2005-02-22 22:12:38,Added include guards and license.,0,,0
+5dbdf24,2005-02-22 22:17:43,Copyright notice updated for 2005.,0,,0
+702b12a,2005-02-22 23:12:32,"Added ""extra_hanging_dofs"" characteristic to help enable non-Lagrange element hanging node support",0,,0
+d776a16,2005-02-23 03:31:06,Getting rid of overzealous gcc warnings when HAVE_MPI isn't defined,0,,0
+f1c09a6,2005-02-23 03:42:16,Starting on C1 compute_constraints,0,,0
+874e8c7,2005-02-23 03:53:17,Backtracked in-progress compute_constraints to be temporarily compatible with current interface... oops,0,,0
+ec91f5d,2005-02-23 04:33:20,"Picked more useful definition of ""vertex""  ""edge""  and ""face"" nodes for infinite elements",0,,0
+c65d5b3,2005-02-23 04:40:36,Fixed missing argument name bug... sorry,1,,1
+d9cd8a8,2005-02-24 17:04:33,Removing redundant functions,0,,0
+f3f885e,2005-02-24 17:49:02,fixed Hex27::is_face() to properly account for the center node (node 26),1,,1
+5da1010,2005-02-25 19:16:39,Added side_nodes_map[][] for infinite elements  is_node_on_side() function for all elements.,0,,0
+fe58620,2005-02-28 14:35:44,fixed meshtool,1,,1
+7a89c45,2005-02-28 16:35:26,DofMap now adds additional hanging node DOFs for finite element types which require it  compute_constraints now takes more useful arguments and is implemented for Clough elements.,0,,0
+89eed7b,2005-02-28 18:16:39,"Fixed ""looking up indices from first variable"" bug",1,,1
+8d1a4b0,2005-02-28 19:05:58,"Fixed ""get dof indices from first variable"" bug in compute_constraints",1,,1
+2222658,2005-03-01 01:32:01,Moved projection-based compute_constraints functions into FE base class  added compatibility with Hierarchic elements  fixed the bugs that revealed in the new DofMap functions,1,,1
+4192d17,2005-03-01 14:21:58,do not assert (_nodes != NULL) in some cases for edges and faces  this is perfectly valid now with the Side<> class.  also removed commented-out old implementation of Elem::tecplot_output and friends,0,,0
+048a484,2005-03-01 15:50:26,Changed float to double in DofConstraints  made DofConstraints a class instead of typedef.,0,,0
+ac40f8b,2005-03-01 16:42:57,Switched types to use new DofConstraints class,0,,0
+d88b918,2005-03-01 17:43:54,Don't panic in debug mode when dof_indices is called for a Lagrange side element,0,,0
+1fe14c8,2005-03-02 20:52:29,fixed a bug in the Tri6 implementation,1,,1
+ac62102,2005-03-02 21:27:08,fixed a double-deletion error in the BoundaryMesh,1,,1
+e070e9a,2005-03-02 22:06:12,updated for new doxygen,0,,0
+6bb6ba3,2005-03-02 22:09:41,added links to the howto & xda documentation,0,,0
+14e056c,2005-03-07 12:41:41,Changes for complex numbers.,0,,0
+a4de34a,2005-03-07 15:28:50,Updated function add_system.,0,,0
+00a3aaf,2005-03-08 15:06:13,oops  forgot to check this fix in!,1,,0
+567c407,2005-03-08 15:47:45,do not build Latex documentation by default  probably unreadable anyway.  more fixes for doxygen under Fedora,1,,1
+7c158b2,2005-03-10 22:05:48,Added the ability to attach a user-defined function to the Kelly error estimator.  This was needed to allow computation of the error in matching flux boundary conditions.  Also added the ability to refine only and coarsen only in the MeshRefinement object.  Some of this may break complex numbers support  Appy polly loggies in advance  me drogues.,1,,0
+37a92bd,2005-03-11 15:23:45,Added initialization for bc_function.,0,,0
+859a235,2005-03-17 19:20:08,allow for implicit DG DOFs via command-line switch,0,,0
+de3124a,2005-03-17 19:21:15,do not call MPI_Abort in the case of one processor  it removes the ability to perform a traceback!,0,,0
+5a3a1ae,2005-03-17 19:23:37,build a new SNES each solve to support matrix-free without leaking memory,0,,0
+37e8b31,2005-03-17 22:46:19,No need for complex constraint coefficients.,0,,0
+9a003e0,2005-03-18 16:56:12,initial support for deriving from Systems to implement user-provided functionality,0,,0
+7ebfe50,2005-03-19 00:45:05,Fixed unvio write method.,1,,1
+48a1697,2005-03-21 01:36:31,apparently 1.e-10 is too large for some applications.  Just needs to be a small positive number  but should not otherwise affect the error vector,1,,0
+367576c,2005-03-21 02:10:22,Project new user-defined vectors to the new mesh instead of zeroing them.,0,,0
+a008db1,2005-03-21 15:19:29,added MeshBase::level_elements_begin() etc...,0,,0
+cca696f,2005-03-21 16:25:07,Thanks to Martin. Extended unvio read/write method for 9-noded quadrilaterals.,0,,0
+f39f162,2005-03-21 18:06:29,made MeshRefinement methods return a parameter indicating whether or not the mesh actually changed,0,,0
+64e2032,2005-03-21 21:29:26,Removed all files associated with the old element and node iterators.,0,,0
+12c0a46,2005-03-22 22:01:55,Improvements to variant_filter_iterator.  Tested on several compilers including xlC  icc  and gcc 2.95.3 and later.  May not work on SUNPRO yet  based on past experience.  It is now possible to construct const_iterators from regular iterators in the same way that this technique is used in the STL.,0,,0
+4269d6b,2005-03-23 14:03:45,fixed a bug in tetrahedral 4th and 5th order Gauss rules.  Thanks  Luca,1,,1
+6a81d68,2005-03-23 20:24:48,removed stray here(),0,,0
+a7c26c2,2005-03-30 15:21:14,updated gmsh support from Martin.  Thanks.,0,,0
+4011851,2005-03-31 20:40:06,added pyramid.,0,,0
+83febc8,2005-04-05 17:09:56,Fixed LASPACK GMRES implementation for complex numbers. For details see contrib/laspack/CODE_CHANGES.,1,,1
+a5fecc9,2005-04-08 09:31:02,No need to reinit element shapes for first and second order elements.,0,,0
+ce6ed4e,2005-04-08 20:39:33,updated Gmsh support from Martin.,0,,0
+619a702,2005-04-10 10:07:21,Removed extraneous print statement.,0,,0
+8e4bf25,2005-04-10 13:05:30,Changes for complex.,0,,0
+440e5a9,2005-04-10 20:15:53,Changed ExactSolution to consider the EquationSystems parameters instead of just the time.,0,,0
+d672caf,2005-04-12 09:01:01,Used Martin's patch for some changes regarding the _mesh_data pointer.,1,,1
+d63a7cb,2005-04-13 19:08:03,Meshtool now Conforms to new StatisticsVector interface.,0,,0
+436818b,2005-04-14 17:11:43,Tried to reduce extensive use of friend classes in MeshData. Also modified example 7 which now uses an l-shaped mesh and corresponding mesh data.,0,,0
+609e33c,2005-04-18 13:55:15,Fixed logging in example 7.,1,,1
+9d540c5,2005-04-18 19:18:35,No need to project on unchanged elements,0,,0
+222ff19,2005-04-20 13:34:41,initial support for the pseudo-ExodusII files written by gridgen,0,,0
+fdc70ee,2005-04-25 13:18:49,trivial change  updated const iterators now that non-const to const conversion works,0,,0
+57e8ee3,2005-04-28 20:26:49,Added triangle to the contrib directory and the libmesh build system. Added initial header and source files to be expanded upon later.  We should probably distribute tetgen as well since it is only 1 file.,0,,0
+b55fcf8,2005-04-28 20:38:21,Oops  forgot to commit header file.,0,,0
+f9affda,2005-04-29 04:47:06,Oops  would help if there was a Makefile.,0,,0
+00d0bc0,2005-04-29 22:22:42,Added routine to delaunay triangulate a square.,0,,0
+22326a6,2005-05-02 13:12:29,Finally implemented the EigenSystem and an interface to the SLEPc eigen solvers. Also include an example ex16 to show how to use the new feature. SLEPc support makes only sense in combination with the corresponding PETSc version. Hence cofigure checks if both PETSc and SLEPc have the same version numbers. The Interface may only work for the latest SLEPc currently available (2.2.1).,0,,0
+2608728,2005-05-02 13:42:07,Fixed compiler errors if slepc is disabled.,1,,1
+a2ec9d7,2005-05-02 14:54:56,Fixes to the triangle interface for better memory management.,1,,1
+6f2e5cb,2005-05-03 15:25:59,Fixed tetgen interface to get rid of switch warnings.,1,,1
+dd00afa,2005-05-03 23:03:04,Changed the name of the gmv output files to enable AutoRead.,0,,0
+cba3bef,2005-05-03 23:22:24,"Changed active element definition to use RefinementFlag field Added ""subactive/active/ancestor"" element states Separated element coarsening from element ""contraction""",0,,0
+7e02419,2005-05-04 19:26:23,"After contracting an element it is no longer ""just coarsened""",0,,0
+633573c,2005-05-04 21:24:42,"Remove unnecessary ""element unchanged"" projection  Produce an error upon non-Lagrange coarsening  not bad data",1,,0
+a1aeb88,2005-05-04 21:27:58,Added FEContinuity enum  Added FEBase::get_continuity() for reporting it  Merged C0 and C1_constraints into proj_constraints using it.,0,,0
+e87e589,2005-05-05 20:20:49,added PETSc 2.3.x support,0,,0
+b95827f,2005-05-05 20:42:16,fixed missing return warning,1,,0
+c8d6250,2005-05-05 21:13:32,Fixes for when triangle is disabled.,1,,1
+87f9cfe,2005-05-05 21:17:19,Added default case to prevent unhandled cases warning.,0,,0
+2565789,2005-05-05 22:19:51,Removed unnecessary comments.,0,,0
+7d8b7f4,2005-05-06 17:07:01,Added Elem::is_node_on_edge,0,,0
+e51ffca,2005-05-06 17:44:09,OS X support,0,,0
+18b83aa,2005-05-06 20:58:41,added standard header,0,,0
+c448247,2005-05-06 22:02:31,OS X Compatibility,0,,0
+ab63dc8,2005-05-07 00:22:29,added FE<>::get_continuity() to fe_macro.h.  Changed debug compile flags to use -O0 with gcc  this provides a noticeable speedup in compile time under gcc4.  The resulting code  however  is noticeably slower.,0,,0
+3276f53,2005-05-08 14:11:17,moved MeshBase::contract() up to Mesh.  Unfortunately  there is no good way to make MeshBase::delete_elem() efficient  so the old implementation of MeshBase::contract() was (potentially) O(n_elem^2)  and consumed approximately 20 percent of the runtime in ex10.  This new implementation exploits the fact that the elements are stored in a vector (which is why it was moved up to the Mesh class) and is linear in the number of elements.  The new implementation is less that 1 percent of the run time in ex10.,0,,0
+1511eba,2005-05-09 12:35:23,Fixed triangle support on OS X.,1,,1
+ccea24d,2005-05-09 20:38:42,The _elements and _nodes std::vectors have been moved from MeshBase to Mesh at long last.  There are still several lingering design issues which will have to be addressed when additional Mesh subclasses are actually created.  MeshBase now contains a great deal of pure virtual functions which have to be reimplemented in derived classes.  I am certain not all of them will make sense for every subclass  so we will probably end up with another level of abstraction like UnstructuredMesh and then the actual Mesh class.  For now some additional clean-up is probably required  but the examples are running correctly.  I haven't compiled with enable-everything  but if you find something I will try to fix it.,1,,0
+6315ad8,2005-05-10 14:35:18,added virtual destructors where necessary in TetGenInterface,0,,0
+d7b9585,2005-05-10 15:29:27,Added Roy to the developers page.,0,,0
+50a28ed,2005-05-10 15:40:22,Removed inactive devs from photo page.,0,,0
+93a15bf,2005-05-10 17:48:41,Added new FE shape functions based on Bernstein polynomials. Similarly to the szabab elements the Bernstein shapes should only be available if higher order shapes are enabled.,0,,0
+74cf922,2005-05-10 17:53:05,accidently comitted unnecessary changes in ex16.,0,,0
+3272fa6,2005-05-10 19:53:28,Added dofs_on_edge function  FEInterface:: to dofs_on{side edge},0,,0
+95a60c7,2005-05-10 20:22:08,Replaced repetitive error specializations with macro,1,,0
+6fd425c,2005-05-10 21:37:17,moved some functions to MeshTool  reimplemented some stuff using the new iterators,0,,0
+286ff7d,2005-05-10 23:44:59,added *.dot,0,,0
+c79f382,2005-05-11 04:17:57,cannot hard-code -lstdc++  that is a gcc-specific lib.  Use ANSI prototypes in triangle to avoid warnings with icc v8.1 on the altix,0,,0
+c0eb4c0,2005-05-11 18:19:46,Added SideEdge proxy class,0,,0
+12664ce,2005-05-11 18:31:17,Added Elem::build_edge(),0,,0
+8a452b3,2005-05-11 20:11:37,Added edge_reinit and supporting functions,0,,0
+19c0f85,2005-05-11 23:12:11,allow for a user-defined MPI communicator instead of MPI_COMM_WORLD.  This allows libMesh to be run on a subset of processors inside a larger MPI job.  As a general rule a library should never use MPI_COMM_WORLD,0,,0
+eed0e87,2005-05-12 17:01:25,Added tetgen 1.3.3 to the contrib directory. Also merged the different TeGenWrapper levels.,0,,0
+fbd5d27,2005-05-12 21:19:47,Updating the configuration process.  Note that these changes should not have affected the current libmesh_config.h file yet  the plan is to slowly build up the libmesh_config_contrib.h file until it is ready to configure for all the contributed software  and then remove the contributed pound-defines from libmesh_config.h,0,,0
+7e8c3f8,2005-05-13 20:11:46,Added Elem::is_child_on_{edge side}() functions  Changed Mesh::find_neighbors to find subactive neighbors too (which are now used in is_child_on_side),0,,0
+83f01c5,2005-05-13 21:07:36,Added JUST_COARSENED case to System::project_vector,0,,0
+956b538,2005-05-14 17:14:18,copy and paste bug  changed triangle to tetgen.,1,,0
+8659874,2005-05-14 17:20:49,Perform linking of dyn. lib. step with C++ compiler.  Not sure if this makes any difference  though.,0,,0
+7bad4fc,2005-05-14 17:21:36,Oops  re-added a comment,0,,0
+4b0282f,2005-05-14 17:23:21,Perform dynamic linking step with C++ compiler.,0,,0
+9228865,2005-05-14 21:16:53,Added -lz to link line.  This may be needed on some Macs?,0,,0
+bed63ac,2005-05-16 18:09:34,Fixed potential Lagrange coarsening segfault,1,,1
+ce0a861,2005-05-16 19:03:05,Fixed subactive neighbor setting bug,1,,1
+58ab780,2005-05-17 14:59:36,removed assert(vertex_dofs)  since this is not appropriate for discontinuous elements with no vertex degrees of freedom,0,,0
+d2fe101,2005-05-17 15:26:20,adding MeshCommunication::distribute(),0,,0
+acaf76a,2005-05-17 15:56:45,removed deprecated PetscSetCommWorld,0,,0
+c1d885d,2005-05-17 15:57:34,removed deprecated PetscSetCommWorld,0,,0
+72f3175,2005-05-17 18:38:28,fixed an error in MeshCommunication::broadcast()  added some PerfLog calls,1,,1
+c653afd,2005-05-17 20:09:49,Moved old*_local_solution to System::add_vector() control,0,,0
+54e4be5,2005-05-17 20:11:07,Moved Mesh::contract() and refinement responsibility to System::reinit(),0,,0
+32b6afb,2005-05-17 21:54:48,Updated the publications page to add the work by Ondrej about Newmark Systems.,0,,0
+536cc45,2005-05-17 23:36:50,Fixes for many assorted segfaults and assertion errors. Non-Lagrange coarsening still fails  at least for C1 elements.,1,,1
+3ae565e,2005-05-18 08:33:17,Minor changes for complex numbers.,0,,0
+3aa9782,2005-05-18 08:54:13,Ups  some more changes for complex.,0,,0
+0642fda,2005-05-18 13:14:31,Make eliminate_unrefined_patches prevent the future creation (via coarsening) of new unrefined patches  and add tests to *{refine coarsen}_elements to make sure compatibility conditions are now satisfied after refinement or coarsening is done.,1,,0
+23d122d,2005-05-18 13:59:38,Added warning about not using laspack with ex8.,0,,0
+db39d47,2005-05-18 16:05:59,Don't try to compute_constraints() for non-active elements!,0,,0
+5428ebe,2005-05-18 16:14:05,Removed one of the redundant active() tests from previous bugfix.,0,,1
+0086c99,2005-05-18 17:29:01,renumber the elements in Mesh::contract(),0,,0
+7f03da9,2005-05-18 17:48:47,Added assert()s to make it easier to catch buffer overflows here,0,,0
+28aeb5e,2005-05-18 18:07:36,Test for multiple adjacent cells simultaneously coarsening  which will not create an unrefined patch,1,,0
+03e20c1,2005-05-18 20:58:09,Bugfixes for non-Lagrange coarsening  which might work now,0,,1
+5d57141,2005-05-19 14:24:39,Temporarily disabled extra eliminate_unrefined_patches asserts,0,,0
+c70c572,2005-05-19 14:36:48,Fixed some links.,1,,1
+3b8b596,2005-05-19 14:55:40,Ups.,0,,0
+6bedce0,2005-05-19 20:50:07,fix for elements with no nodal DOFs,1,,1
+3b6f0c0,2005-05-20 05:24:12,Move refinement/coarsening responsibility to EquationSystems. Non-Lagrange coarsening should now work with multiple Systems,0,,0
+656fc9d,2005-05-20 14:58:11,"Contract the mesh even on the ""backwards compatibility"" code path",0,,0
+56b88b3,2005-05-20 17:16:17,Prevent COARSEN_INACTIVE flagged parents from running around with non COARSEN flagged children,0,,0
+d9c70c1,2005-05-24 12:54:57,Reducing dependencies: sparse_matrix.h no longer includes dof_map.h,0,,0
+73f8f01,2005-05-24 13:35:41,Reducing dependencies.  Print functions are generally not fast anyway  inlining them leads to unnecessary dependencies and larger headers.  Removing print functions from headers.,0,,0
+3c17288,2005-05-24 14:01:54,Reducing dependencies: Removed iostream dependencies from the PerfLog header.,0,,0
+752b056,2005-05-24 14:26:31,Reducing dependencies: Removed <iostream> dependency from reference_counter.h,0,,0
+28c6389,2005-05-24 15:24:12,Reducing dependencies: Moved FE print functions to C file to remove dependence on iostream.,0,,0
+c35925e,2005-05-24 17:30:30,removed spurious print statements,0,,0
+7961c52,2005-05-24 17:42:45,fixed ex10 for parallel,1,,1
+7cd7aac,2005-05-24 19:20:42,go back to -O2 in dbg mode,0,,0
+66a5949,2005-05-25 16:05:14,trivial change for --disable-amr,0,,0
+8f19309,2005-05-25 16:19:53,reordered subclass definitions for IBM xlC,0,,0
+7fbd987,2005-05-25 16:22:16,submitted contributed patches for MeshCommunication::broadcast() and the Xdr class,1,,1
+f694c55,2005-05-25 17:54:24,More extensive performance logging of the Kelly Error Estimator.,1,,0
+5197e24,2005-05-25 17:54:25,This commit was manufactured by cvs2svn to create tag 'libmesh-0_5_0-rc1'.,0,,0
+8d36bfa,2005-05-27 14:45:39,Added laplacian jump error estimator for fourth order problems,1,,0
+6f08ac9,2005-05-27 15:00:58,Dependency changes  including the fourth_error_estimators.C addition and probably the dependency removals due to John's work.,0,,0
+959489a,2005-05-27 17:21:25,fix for when second derivatives are absent,1,,1
+c8f8831,2005-05-27 21:29:18,trivial change for DofMap::dof_indices to increase performance when there are no element-based DOFs,0,,0
+fcef72e,2005-05-31 15:37:40,Removed some out-of-date code comments.,0,,0
+467b813,2005-05-31 15:49:48,reworked some of DofMap::compute_sparsity() to increase performance.  Right now this is only implemented for the case when the user does not specify any DOF coupling  but the implementation is generic and will be adapted to that case as well.,0,,0
+3b8b973,2005-05-31 17:49:28,efficient sparsity pattern computation for the case when the user specifies the DOF coupling,0,,0
+08c224d,2005-05-31 20:22:06,Moved the setting of n_systems() on new elements to the Elem::refinement function itself.,0,,0
+c4cd0f7,2005-06-01 15:38:39,more optimization in compute_sparsity(),0,,0
+913ddc6,2005-06-01 21:43:40,preliminary support for devel mode,0,,0
+bec699f,2005-06-02 18:25:43,configuration improvements,0,,0
+23b73fa,2005-06-02 18:30:36,added *_devel,0,,0
+82ab3b2,2005-06-03 13:40:04,Reducing compiler dependencies: Changed several includes to forward declarations in dof_map.h.  This typically involves turning class member objects into class members which are pointers to objects.  It also sometimes involves dynamic memory allocation  but often the risk of leaks is reduced by proper use of constructors and destructors.,0,,0
+6883805,2005-06-03 15:49:58,Removing compiler dependencies for system.h.,0,,0
+199d41a,2005-06-03 20:31:26,moved memory deallocation to the DofMap::clear() member,0,,0
+c2d4168,2005-06-03 21:07:56,Moved delete to the clear() function.,0,,0
+d4b0069,2005-06-03 22:53:57,Oops  do not delete _dof_map in clear()  only in dtor!,0,,0
+b2c3ce2,2005-06-04 14:28:23,Added includes according to changes in class system.,0,,0
+8ae5cde,2005-06-06 14:53:20,Forward declare Mesh and Elem in equation_systems.h instead of #include. This greatly reduced header file inter-dependencies.  Also added the new deprecated() macro for marking code which will be removed in future versions  and deprecated some redundant parts of the EquationSystems interface.  As a result of removing the #include  most of the examples had to have elem.h #included directly.,0,,0
+2b5aed6,2005-06-06 16:24:16,1D support for linear and quadratic Lagrange elements  Adaptivity and finding neighbors support for 1D Generalization of side() to return AutoPtr<DofObject> rather than AutoPtr<Elem> Support for GNUPlot output in 1D Support for error estimation via Kelly indicator in 1D Some bug fixes added for allocation of zero-length arrays in dof_object.h  more needed! Changes to side() for all infinite element types to return AutoPtr<DofObject> Support for build_line in mesh_generation.C Added ex0 to test 1D code  ex4 updated to work in 1D.,1,,1
+6e6cc51,2005-06-06 16:26:32,Initialize devel-mode variable.,0,,0
+9caf533,2005-06-06 17:49:04,Adding missing header.,0,,0
+2890f58,2005-06-06 17:50:35,Removed deprecated EquationSystems call.,0,,0
+4fd2204,2005-06-06 19:10:17,pass MeshData object to the TetGenIO interface,0,,0
+ea5f905,2005-06-06 19:10:50,detailed reference counting only in DEBUG mode,0,,0
+82827ba,2005-06-07 12:52:21,Some changes for complex number support.,0,,0
+8b0e843,2005-06-07 14:04:18,Included dof_map.h.,0,,0
+873bf23,2005-06-07 14:56:32,Added const qualifier.,0,,0
+2e433f3,2005-06-07 16:33:48,Started using the side class for the infinite element build_side routines.,0,,0
+edaa6d3,2005-06-07 21:20:56,Fixed potential non-Lagrange coarsening segfault on mixed meshes,1,,1
+db359a2,2005-06-07 21:50:39,Fix for overzealous assert in dbg mode and efficiency improvement in opt mode  for elements with DoF-free non-vertex nodes (e.g. linear hierarchics on Quad9s),1,,1
+f15d17a,2005-06-08 04:10:19,Added local L2 projections from analytic solutions for generalized initial condition setting,0,,0
+72f5c37,2005-06-08 08:13:41,Reworked the build_side methods for infinite elements.,0,,0
+171f578,2005-06-08 08:13:42,This commit was manufactured by cvs2svn to create tag 'libmesh-0_5_0-rc2'.,0,,0
+4c71abf,2005-06-08 15:07:52,Weakened overzealous assert() statements,0,,0
+77709d7,2005-06-08 16:11:18,Changed gnuplot_io.C to use a std::map to form the data files. Also  made data filename depend on gnuplot script filename so that in time-dependent problems data won't be overwritten.,1,,0
+dda046e,2005-06-08 16:21:46,Fix to avoid incorrect caching on non-shapes-need-reinit elements,1,,1
+fa0a998,2005-06-08 16:38:17,Changes for complex.,0,,0
+9487f20,2005-06-08 16:38:18,This commit was manufactured by cvs2svn to create tag 'libmesh-0_5_0-rc3'.,0,,0
+cfecd86,2005-06-08 17:07:03,Fixed bug in gnuplot_io.C to allow correct plotting of multiple variables,1,,1
+af83e1f,2005-06-08 17:51:36,changed ex14 to handle Dirichlet BCs for non-Lagrange elements,0,,0
+02ee6cf,2005-06-08 20:37:16,made ex9 & ex10 more generic for non-Lagrange FEs.  Implementation thereof to follow.,0,,0
+c801a7a,2005-06-08 20:54:53,Added FEType::default_quadrature_rule(),0,,0
+6198e8c,2005-06-08 20:56:24,Now using default_quadrature_rule() for element-independent accurate integration,0,,0
+91b9a0c,2005-06-08 23:59:31,removed unused variables,0,,0
+d64f65d,2005-06-09 01:09:37,added ex0 documentation,0,,0
+2170718,2005-06-09 15:16:03,changed ex8 HAVE_PETSC test to work for different preprocessor semantics,0,,0
+7bdfe9a,2005-06-09 15:17:22,generic powerpc-* ignore rule.,0,,0
+46db5b1,2005-06-09 15:25:59,Compatibility fix for petsc 2.1.1,1,,1
+f126ab7,2005-06-09 16:57:52,explicitly #include <sstream>,0,,0
+26718ec,2005-06-09 18:28:54,fix for Cray C++,1,,1
+ad4555c,2005-06-09 19:15:10,fix for newer Intel Itanium compilers,1,,1
+63cc8cd,2005-06-09 19:16:39,fix for newer Intel Itanium compilers,1,,1
+e54cc99,2005-06-09 19:45:01,updated for gcc-3.2-based Altix,0,,0
+7d9c360,2005-06-10 03:02:37,Fixed Example 0 Makefile to link on Mac OS X 10.4  using GCC 4.0.0.,1,,1
+cbe92bc,2005-06-10 15:25:01,Stopped compilation of target printing to screen,0,,0
+86a15cf,2005-06-10 18:12:09,fixed meshtool to include additional headers,1,,1
+672bf35,2005-06-10 18:57:52,Fixed bug in plotting coarsened elements.,1,,1
+ccb845d,2005-06-10 20:27:10,Fixed bug in generating Gauss-Lobatto grid for EDGE4 elements.,1,,1
+a15c8f0,2005-06-10 21:57:43,"hold off on #include ""edge_edge4.h""",0,,0
