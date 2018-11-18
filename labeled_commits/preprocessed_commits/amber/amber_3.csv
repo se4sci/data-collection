@@ -1,0 +1,1020 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+49155e59,2016-04-29 12:45:53,Merge pull request #308 from drroe/amber_restart_noeol,0,,1
+e71d23db,2016-04-29 13:36:09,Merge branch 'master' into closest_optimize,0,,0
+ecea1302,2016-05-02 08:50:52,DRR - Cpptraj: Update version to 17 beta.,0,,0
+ac22c902,2016-05-02 09:23:38,Merge pull request #309 from drroe/closest_optimize,0,,1
+67ff8dcd,2016-05-02 09:38:21,Merge branch 'master' into closest_cuda,0,,0
+c778eeea,2016-05-02 10:09:18,DRR - Cpptraj: Do not run closest with CUDA if imaging  not yet supported.,0,,0
+11c86487,2016-05-02 10:09:55,DRR - Cpptraj: When CUDA  add check that CUDA device is available. Print info for active device.,0,,0
+d094010b,2016-05-02 10:21:22,DRR - Cpptraj: Remove obsolete code.,0,,0
+a54461da,2016-05-02 10:23:32,DRR - Cpptraj: Add warning that CUDA code is still experimental,0,,0
+7071d293,2016-05-02 11:01:53,Merge pull request #310 from drroe/closest_cuda,0,,1
+b4324b44,2016-05-02 13:06:00,DRR - Cpptraj: Report when CXX  CC  or FC env. vars are set during configure (#306). When OpenMP test fails report the compiler ($CXX) instead of compiler suite ($COMPILERS) (#307).,1,,0
+8118a7ee,2016-05-02 13:14:18,DRR - Cpptraj: Make it so that multiple suffices can be appended.,0,,0
+ea786b44,2016-05-02 14:53:29,"DRR - Cpptraj: Change configure/make so that configure creates a list of targets to be built based on configure options  removes the needs for blank targets for ambpdb/nproc and the ugly ""if ambpdb exists move it"" code. Separate '.exe' from SFX into new variable  EXE  SFX really specifies the type of cpptraj being built  while the '.exe' is a platform-specific executable suffix. Make crucial warnings a little flashier. Clean up configure output.",0,,0
+84d5fdae,2016-05-02 15:01:00,DRR - Cpptraj: For CUDA build record SHADER_MODEL in config.h,0,,0
+d8b978f0,2016-05-02 15:39:13,DRR - Cpptraj: Try to fix up the appveyor build,1,,1
+d7091353,2016-05-02 15:42:46,DRR - Cpptraj: Try to fix up the appveyor build,1,,1
+4ea2714d,2016-05-02 15:52:13,DRR - Cpptraj: Actually write to config.h,0,,0
+a3487edb,2016-05-02 18:00:43,Merge pull request #312 from drroe/configure_improvements,0,,1
+512ff476,2016-05-02 18:01:28,Merge branch 'master' of github.com:/Amber-MD/cpptraj,0,,0
+f5bfe6ce,2016-05-02 19:13:08,Merge pull request #313 from drroe/master,0,,1
+bd1a8b0f,2016-05-04 09:35:03,DRR - Cpptraj: Move determination of dimension from values to Dimension class.,0,,0
+d13f3232,2016-05-04 09:53:26,DRR - Cpptraj: Add symmetric matrix data read test,0,,0
+1cbd2ad4,2016-05-04 09:57:09,DRR - Cpptraj: Move code for determining symmetric matrix data to DataIO so other DataIO-derived classes can use it.,0,,0
+f5451706,2016-05-04 10:00:51,DRR - Cpptraj: Return pointer to data set created.,0,,0
+411da045,2016-05-04 10:20:47,DRR - Cpptraj: Fix check for null,1,,1
+fb699b20,2016-05-04 10:39:26,DRR - Cpptraj: Add read of matrix data from cpptraj Gnuplot,0,,0
+1c02dbe0,2016-05-04 10:44:20,DRR - Cpptraj: Read data labels if present,0,,0
+93d76b4a,2016-05-04 11:58:07,DRR - Cpptraj: Try to allow clustering of matrix data sets. May need to store frame indices.,0,,0
+14a0b0dc,2016-05-04 13:10:31,DRR - Cpptraj: Fix error in 2D pairwise distance calc.,1,,1
+ef2604b6,2016-05-04 13:10:43,DRR - Cpptraj: Allow clustering on 2D matrices,0,,0
+8f3fbf03,2016-05-04 13:25:29,DRR - Cpptraj: Move scaling factor determination to constructor,0,,0
+37b9553f,2016-05-04 13:41:29,DRR - Cpptraj: Add make2d function to dataset command,0,,0
+6f1cc9db,2016-05-04 14:20:34,DRR - Cpptraj: Fix error message,1,,0
+914bf4e8,2016-05-04 14:35:13,DRR - Cpptraj: Fix error message,1,,0
+c5bde75f,2016-05-06 13:26:20,DRR - Cpptraj: Add 'filter' subcommand to 'dataset' for creating a new data set from a portion of an existing one.,0,,0
+1a87c066,2016-05-06 13:30:00,DRR - Cpptraj: Hide debug message,0,,0
+857f8e7a,2016-05-06 13:44:03,DRR - Cpptraj: Add cutoff.,0,,0
+cf544321,2016-05-06 13:44:25,DRR - Cpptraj: Add clustermap command,0,,0
+fea622be,2016-05-06 13:45:08,DRR - Cpptraj: Add missing depends,0,,0
+8efa5d35,2016-05-06 14:55:45,DRR - Cpptraj: Add DBSCAN style algorithm to clustermap,0,,0
+b082df41,2016-05-06 15:32:04,DRR - Cpptraj: Hide debug info. Print details on rows/cols etc of points within clusters.,0,,0
+eaae943a,2016-05-06 15:44:56,DRR - Cpptraj: Add timing info.,0,,0
+a1fbfb96,2016-05-06 16:10:28,DRR - Cpptraj: Add openmp,0,,0
+74584a66,2016-05-09 08:27:16,DRR - Cpptraj: Code documentation.,0,,0
+f33fe1f1,2016-05-09 08:36:14,DRR - Cpptraj: Remove 2D clustering stuff from cluster command.,0,,0
+9abe5c75,2016-05-09 08:42:40,DRR - Cpptraj: Fix up help and output,1,,0
+d5f76015,2016-05-09 08:46:13,DRR - Cpptraj: Make progress bar a little more responsive,0,,0
+2bd51cba,2016-05-09 08:52:13,DRR - Cpptraj: Sort clusters by number of points,0,,0
+5cb33bb6,2016-05-09 09:14:12,DRR - Cpptraj: Add new palette options for Gnuplot output,0,,0
+d49772fa,2016-05-09 09:22:06,DRR - Cpptraj: Use row/column dims in output,0,,0
+31f8c49d,2016-05-09 10:34:17,DRR - Cpptraj: Add map clustering directly to wavelet,0,,0
+35c12c87,2016-05-09 10:41:43,DRR - Cpptraj: Clean up names,0,,0
+679bdddf,2016-05-09 11:06:33,DRR - Cpptraj: Store cluster output in data sets. Sort map by cluster size,0,,0
+0e29eeed,2016-05-09 11:12:20,DRR - Cpptraj: Fix cluster set dims,1,,1
+f998ded0,2016-05-09 11:29:51,DRR - Cpptraj: Make regions square by default (min/max # frames/atoms). Add option to also make regions detailed.,0,,0
+56ead13e,2016-05-09 12:55:17,DRR - Cpptraj: Fix up omp thread vars. Add but do not enable kdist calcDRR - Cpptraj: Fix up omp thread vars. Add but do not enable kdist calc,1,,1
+cb951de2,2016-05-09 13:20:15,DRR - Cpptraj: Add timer progress since kdist calc is very slow,0,,0
+f93be80a,2016-05-09 13:36:27,DRR - Cpptraj: Hide Kdist plot behind option.,0,,0
+3976676a,2016-05-09 14:06:43,DRR - Cpptraj: Add cluster region PDB output,0,,0
+f77ca2ad,2016-05-09 14:16:23,DRR - Cpptraj: Want values up to and including max for Row/Col,0,,0
+455c9c39,2016-05-09 14:20:23,DRR - Cpptraj: Fix memory leak,1,,1
+25e6ecff,2016-05-09 14:58:20,DRR - Cpptraj: Add but do not yet enable code to write out entire wavelet traj. Fix potentially bad error in pdb output mask when calcdetail.,1,,0
+ea1c7ccd,2016-05-09 15:46:11,DRR - Cpptraj: Add ability to write an overlay trajectory which can be used to visualize the different clusters/regions.,0,,0
+a1e70238,2016-05-10 08:30:39,DRR - Cpptraj: Add Elapsed function.,0,,0
+1e8f2790,2016-05-10 09:10:22,DRR - Cpptraj: Make progress timer a separate class  potentially useful elsewhere.,0,,0
+3731546d,2016-05-10 10:40:00,DRR - Cpptraj: Add gnuplot binary write of multiple 1D data sets,0,,0
+54648728,2016-05-10 10:59:02,DRR - Cpptraj: Enable binary writes for 2D gnuplot data,0,,0
+e75d6c6b,2016-05-10 11:20:51,DRR - Cpptraj: Add ability to read gnuplot binary data,0,,0
+dc8b12f5,2016-05-10 11:44:53,DRR - Cpptraj: Add ability to read in gnuplot binary data when given the gnuplot script that references the data,0,,0
+890ec65d,2016-05-10 11:54:53,DRR - Cpptraj: Add info message for gnuplot ascii data read,0,,0
+d2b527bb,2016-05-10 13:20:17,DRR - Cpptraj: Properly initialize the progress timer.,0,,0
+16a017cc,2016-05-10 13:21:06,DRR - Cpptraj: Ignore other points if their value is not greater than the cutoff,0,,0
+22587192,2016-05-10 14:23:22,DRR - Cpptraj: Make RegionQuery() much faster by only checking rows and columns that could possibly be within epsilon. Remove thread_neighbors for now since RegionQuery is no longer OpenMP parallelized.,0,,0
+cfb71061,2016-05-10 14:36:48,DRR - Cpptraj: Move timing data to better reflect overall clustering time,0,,0
+72814d31,2016-05-10 15:19:27,DRR - Cpptraj: GetDist2 only needed in one place now,0,,0
+d490b48e,2016-05-10 15:26:49,DRR - Cpptraj: Clean up output.,0,,0
+5b6937c9,2016-05-10 15:49:26,DRR - Cpptraj: OpenMP-parallelize the convolution,0,,0
+5567ed57,2016-05-11 09:23:52,DRR - Cpptraj: Add wavelet map cluster options to wavelet help. If minpoints is not given estimate it from the number of atoms  good rule of thumb appears to be ~5%.,0,,0
+d12cfde1,2016-05-12 10:11:51,DRR - Cpptraj: If 'correction' is not specified set the correct default based on wavelet type,0,,0
+6889e79e,2016-05-12 11:43:13,DRR - Cpptraj: Update clustermap command to match wavelet,0,,0
+85c6b780,2016-05-12 13:50:52,DRR - Cpptraj: Fix up debug info,1,,0
+c1d91d90,2016-05-12 15:35:56,DRR - Cpptraj: Add new version of dbscan algorithm,0,,0
+dfa45dbc,2016-05-13 08:37:17,DRR - Cpptraj: Separate out basic ClusterMap functonality so it can be shared between Exec_ClusterMap and Analysis_Wavelet.,0,,0
+644ab16b,2016-05-13 10:06:09,DRR - Cpptraj: Exec_ClusterMap use new ClusterMap class.,0,,0
+bd69754d,2016-05-13 10:07:03,DRR - Cpptraj: Fix includes,1,,0
+6939f1d1,2016-05-13 10:21:03,DRR - Cpptraj: Allow minpoints to be passed to DoCluster,0,,0
+5f54794b,2016-05-13 10:32:30,DRR - Cpptraj: Use ClusterMap class in wavelet analysis,0,,0
+2e0651c7,2016-05-13 10:43:14,DRR - Cpptraj: Fix up timing. More stable cluster sort.,1,,1
+87fd99a4,2016-05-13 11:42:29,DRR - Cpptraj: Allow output to separate file.,0,,0
+2e0c681c,2016-05-13 13:14:56,DRR - Cpptraj: Add code to check for unwritten data before exit  if present  write it before exiting.,0,,0
+f4919d6d,2016-05-13 13:34:52,DRR - Cpptraj: Change defaults.,0,,0
+7d1b0e93,2016-05-13 14:51:37,DRR - Cpptraj: WAFEX output,0,,0
+fe87cd4c,2016-05-13 14:52:08,DRR - Cpptraj: Output message,0,,0
+eace7aa0,2016-05-16 08:39:36,DRR - Cpptraj: Add wavelet tests,0,,0
+3542061b,2016-05-16 10:42:56,DRR - Cpptraj: Begin changes to Parm_Amber required for reading very very large topology files,0,,0
+e1f13826,2016-05-16 10:49:49,DRR - Cpptraj: Add missing test file. Disable symmetric matrix read test due to eigenvector sign flips.,0,,0
+0b75f563,2016-05-16 10:59:55,DRR - Cpptraj: Fix up FortranData class,1,,1
+0742c0e4,2016-05-16 11:41:30,DRR - Cpptraj: Use customizable increment in ArrayIterator,0,,0
+8f0f202f,2016-05-16 11:42:27,DRR - Cpptraj: Read pointers data,0,,0
+7d813e18,2016-05-16 11:42:48,Merge pull request #321 from drroe/wavelet_cluster,0,,1
+7cd9bbbc,2016-05-16 12:50:31,DRR - Cpptraj: Add function that can iterate through buffer one element at a time.,0,,0
+ef6035f7,2016-05-16 12:50:58,DRR - Cpptraj: Fix advancing through file  add debug info.,1,,1
+6ff952cd,2016-05-16 13:05:55,DRR - Cpptraj: Add Topology resize routine.,0,,0
+97e948fe,2016-05-16 13:18:15,DRR - Cpptraj: Read atom names.,0,,0
+d79793d9,2016-05-16 13:42:52,DRR - Cpptraj: More flags read. Consolidate some common setup.,0,,0
+1b9d537d,2016-05-16 14:16:32,DRR - Cpptraj: Read masses  atom type indices  nonbond indices.,0,,0
+b452dcc7,2016-05-16 15:52:39,DRR - Cpptraj: Add bond and angle parm read. Change the way these are added to topology. Add PDB info reads. Change the way extra atom info is added.,0,,0
+bc246b99,2016-05-16 16:17:39,DRR - Cpptraj: Add bond reads,0,,0
+25aba6c1,2016-05-17 08:33:54,DRR - Cpptraj: Ensure null char replaces a newline,0,,0
+059a38de,2016-05-17 08:54:41,DRR - Cpptraj: Initialize var,0,,0
+41efe8f8,2016-05-17 09:09:33,DRR - Cpptraj: Fix uninitialized terminal byte in buffer,1,,1
+5886ed06,2016-05-17 09:21:55,DRR - Cpptraj: Fix setting of residue atom numbers and original residue numbers,1,,1
+c079c2c4,2016-05-17 09:55:06,DRR - Cpptraj: Fix up bond assignment and element determination,1,,1
+9049b5f6,2016-05-17 10:33:43,DRR - Cpptraj: Add read of chamber UB terms,0,,0
+dfabf79e,2016-05-17 10:40:59,DRR - Cpptraj: Fix adding of bonds.,1,,1
+22f01087,2016-05-17 11:03:49,DRR - Cpptraj: Read dihedral parameters. Make Resize take a class as input.,0,,0
+e1bc67b2,2016-05-17 11:08:02,DRR - Cpptraj: Use Amber defaults for SCNB/SCEE for dihedral parm constructor,0,,0
+e1ae6f74,2016-05-17 11:35:17,DRR - Cpptraj: Read CHAMBER impropers. Do not set Amber defaults for SCEE/SCNB in ParameterTypes  do it in Parm_Amber.,0,,0
+f1448762,2016-05-17 11:42:52,DRR - Cpptraj: Add more reads to Old format parm,0,,0
+9e84c240,2016-05-17 12:04:56,DRR - Cpptraj: Add read  of LJ A and B,0,,0
+c876dc44,2016-05-17 13:23:38,DRR - Cpptraj: Add read of LJ14 parms,0,,0
+9688774a,2016-05-17 13:40:07,DRR - Cpptraj: Add read of angles and dihedrals,0,,0
+5537b74c,2016-05-17 14:32:53,DRR - Cpptraj: Add read of HB parms. Fix up old format read.,1,,0
+0e19240d,2016-05-17 14:47:11,DRR - Cpptraj: Add read of atom types  itree  join  and irotat.,0,,0
+35fd1a43,2016-05-17 15:05:21,DRR - Cpptraj: Add read of box info,0,,0
+38c795dd,2016-05-17 15:14:44,DRR - Cpptraj: Add read of water cap info,0,,0
+4b6491e4,2016-05-17 15:28:13,DRR - Cpptraj: Add read of GB params,0,,0
+3fc21b0b,2016-05-17 15:34:33,DRR - Cpptraj: Fix up box warning,1,,0
+b29dec6a,2016-05-17 16:04:12,DRR - Cpptraj: Start adding CMAP support,0,,0
+89360320,2016-05-18 09:07:08,DRR - Cpptraj: Switch to checking the error/fail bits of stringstreams instead of implicitly converting the conversion itself to bool. Although the latter has worked fine for years  bleeding-edge compilers will choke on it. Fixes errors of the type: ``` StringRoutines.cpp: In function ‘bool validDouble(const string&)’: StringRoutines.cpp:183:21: error: cannot convert ‘std::basic_istream<char>::__istream_type {aka std::basic_istream<char>}’ to ‘bool’ in return    return (iss >> val)  ```,1,,0
+8a218cfb,2016-05-18 09:16:23,Merge branch 'master' into large_amber_top,0,,0
+1eab04a2,2016-05-18 09:29:13,DRR - Cpptraj: Compare only up to the length of the stored FLAG name. Should allow recognition of the CMAP grid flags.,0,,0
+08a3dfda,2016-05-18 09:47:56,Merge pull request #325 from drroe/fix_stringstream,0,,1
+5328d673,2016-05-18 09:49:52,DRR - Cpptraj: Split CMAP reads by FLAG like everything else.,0,,0
+f0afb271,2016-05-18 10:34:12,Merge branch 'master' into large_amber_top,0,,0
+1b5aa4a9,2016-05-18 10:49:14,DRR - Cpptraj: Since FLAG names can be very similar  go back to exact FLAG name matches and create an exception for CHARMM_CMAP_PARAMETER_XX,0,,0
+b3f9a412,2016-05-18 10:57:11,DRR - Cpptraj: Add read of cmap terms,0,,0
+a23bf145,2016-05-18 11:04:40,DRR - Cpptraj: Add read of atomic polarizabilities,0,,0
+707a78b0,2016-05-18 11:40:49,DRR - Cpptraj: Add LES read,0,,0
+fb1b76d5,2016-05-18 11:46:50,DRR - Cpptraj: Hide some debug info,0,,0
+d3de6930,2016-05-18 12:50:26,DRR - Cpptraj: Change infile to file since it will also be used for writes,0,,0
+b34289e2,2016-05-18 13:16:38,DRR - Cpptraj: Start creating some write routines.,0,,0
+6b34d655,2016-05-18 14:06:31,DRR - Cpptraj: Write pointers,0,,0
+91ba17fc,2016-05-18 14:27:25,DRR - Cpptraj: Write chamber version and type  atom names.,0,,0
+0983abbf,2016-05-18 14:30:14,DRR - Cpptraj: Write charges,0,,0
+1d9731e4,2016-05-18 14:39:24,DRR - Cpptraj: Atomic number  mass  type index  number excluded. No need to create array for numex anymore.,0,,0
+88533a8c,2016-05-18 14:44:59,DRR - Cpptraj: Nonbond indices  residues names/pointers,0,,0
+b04d57b9,2016-05-18 14:49:21,DRR - Cpptraj: Bond RK  REQ,0,,0
+9ada3966,2016-05-18 15:05:21,DRR - Cpptraj: Only reallocate buffer when larger size is needed. Update dependencies,0,,0
+a0160b00,2016-05-18 15:07:34,DRR - Cpptraj: Angle TK,0,,0
+ce14af1f,2016-05-18 16:54:11,DRR - Cpptraj: Add angle teq and chamber UB write,0,,0
+5ae7aba2,2016-05-18 17:11:16,DRR - Cpptraj: Make format string part of BufferedFrame for writes. Less chance of weird things happening if a bad format string is passed in.,0,,0
+f1d77509,2016-05-18 17:28:53,DRR - Cpptraj: Start adding improper write,0,,0
+a9bb73aa,2016-05-19 13:42:11,DRR - Cpptraj: Add 'nomolsearch' option to disable molecule search on topology load.,0,,0
+6f0e75c2,2016-05-19 14:07:00,DRR - Cpptraj: For debugging  print warning on write when SetupBuffer called without FlushBuffer.,0,,0
+80e8314a,2016-05-19 14:08:24,DRR - Cpptraj: Do not overwrite SCEE/SCNB with defaults if they were read in from topology. Finish improper writes.,0,,0
+d8f97b9a,2016-05-19 14:13:50,DRR - Cpptraj: Reorganize and improve docs,0,,0
+e5f2e3b3,2016-05-19 14:18:17,DRR - Cpptraj: SOLTY  LJ A/B writes,0,,0
+5a9d349d,2016-05-19 14:31:09,DRR - Cpptraj: Add LJ 1-4 write. Consolidate LJ and BondParm writes. Change AmberParmFlagType to FlagType.,0,,0
+93d1c434,2016-05-19 14:45:03,DRR - Cpptraj: Bond  angle  dihedral indices,0,,0
+c4aedfe2,2016-05-19 14:52:34,DRR - Cpptraj: Excluded  HB params,0,,0
+dba14438,2016-05-19 15:10:49,DRR - Cpptraj: Atom types  itree  join  irotat  solvent pointers. No need for ifbox determination to be a separate function.,0,,0
+a068c029,2016-05-19 15:14:00,DRR - Cpptraj: Atoms per mol  box dimensions,0,,0
+8bf22498,2016-05-19 15:17:05,DRR - Cpptraj: CAP info,0,,0
+fa95f079,2016-05-19 15:24:39,DRR - Cpptraj: RADIUS SET  consolidate single line writes,0,,0
+d3510d6a,2016-05-19 15:27:27,DRR - Cpptraj: GB radii and screening params,0,,0
+22fdc2f0,2016-05-19 15:47:53,DRR - Cpptraj: CMAP grid counts  resolutions  grids. Fix format string for float output.,1,,0
+65c08677,2016-05-19 15:52:59,DRR - Cpptraj: Finish up CMAP  do polar,0,,0
+96649505,2016-05-19 15:59:12,DRR - Cpptraj: Add LES write.,0,,0
+3b28e7ae,2016-05-20 11:08:45,DRR - Cpptraj: Add missing initializer,0,,0
+cf30dc59,2016-05-20 11:09:45,DRR - Cpptraj: Not really warnings  more informative.,0,,0
+12ad69ed,2016-05-20 11:12:37,DRR - Cpptraj: Only write LJ14 terms for CHAMBER parm,0,,0
+a103e0ea,2016-05-20 11:35:24,DRR - Cpptraj: Only write GB params when present. Fix size of ITREE  JOIN  and IROTAT sections.,1,,1
+846cac58,2016-05-20 14:24:48,DRR - Cpptraj: Fix cap info read. Only write radii set if not empty,1,,1
+972a8815,2016-05-20 14:32:52,DRR - Cpptraj: Remove debug info,0,,0
+c3d9bb6f,2016-05-20 14:34:29,DRR - Cpptraj: const correctness,0,,0
+8cf9badb,2016-05-20 14:57:33,DRR - Cpptraj: New molecule search for very large (>9999999 atoms  this limit is currently a guess). For such systems the recursive search blows the stack away.,0,,0
+6e0645b7,2016-05-20 15:02:17,DRR - Cpptraj:  Keep track of lowest unassigned atom to improve efficiency of mol search,0,,0
+f20cb71b,2016-05-20 15:15:57,DRR - Cpptraj: Move the molecule search routines to separate functions. Fix up atom iterators,1,,1
+f1d3f4a6,2016-05-20 15:21:59,DRR - Cpptraj: Improve error messages,1,,0
+94794b35,2016-05-20 15:24:30,DRR - Cpptraj: If itree/join/irotat not present just dont print them.,0,,0
+f741cbb3,2016-05-20 15:55:38,DRR - Cpptraj: Change limit for mol search switch to 150k  seems performance is comparable at that point.,0,,0
+026280e0,2016-05-20 16:00:48,DRR - Cpptraj: Remove file that should not be tracked (reported by DAC),0,,0
+0d5460c4,2016-05-20 16:02:15,DRR - Cpptraj: Internal version bump. Lots of changes to parser/topology stuff.,0,,0
+004cee81,2016-05-20 17:54:35,Merge pull request #328 from drroe/large_amber_top,0,,1
+af6296a6,2016-05-21 08:05:32,DRR - Cpptraj: Ensure file name set when reading old Amber topology,0,,0
+a8265b7c,2016-05-21 08:49:08,Merge pull request #330 from drroe/fix_old_top,0,,1
+f308da90,2016-05-21 16:52:11,DRR - Cpptraj: Fix quoted string handling in CIF file record,1,,1
+f46e6e6e,2016-05-22 20:28:05,DRR - Cpptraj: Properly handle quoted and semi-colon column entries,0,,0
+836b7659,2016-05-23 05:29:20,DRR - Cpptraj: Add code docs,0,,0
+2350d1f4,2016-05-23 08:03:50,DRR - Cpptraj: Improve iterator math,0,,0
+70e126fe,2016-05-23 08:09:19,DRR - Cpptraj: Count residue insertion code change as residue change,0,,0
+2548041b,2016-05-23 08:38:20,DRR - Cpptraj: Use 'auth_seq_id' column for residue numbers if present and valid.,0,,0
+878f5992,2016-05-23 09:08:24,DRR - Cpptraj: Remove dependency on ArgList,0,,0
+60679537,2016-05-23 09:13:51,DRR - Cpptraj: Fix up iterators,1,,1
+bb8e6e73,2016-05-24 08:17:45,DRR - Cpptraj: Add CIF test.,0,,0
+c5a8f881,2016-05-24 08:28:04,DRR - Cpptraj: Remove Test_Comprehensive  all functionality checked by this test is already tested elsewhere (Test_General  Test_RMSD  Test_Image  Test_Center  Test_Watershell  etc).,0,,0
+abceda3f,2016-05-24 08:41:11,DRR - Cpptraj: Change LIE test so that it uses existing topology and trajectory to save space.,0,,0
+53c0b522,2016-05-24 09:40:07,DRR - Cpptraj: Only use sscanf to read occupancy/b-factor columns if we know we want to read a PQR file. Otherwise this will fail when b-factors are greater than 99.99.,1,,0
+81ec8b09,2016-05-24 09:42:18,DRR - Cpptraj: Add PDB format test (read/write of residue numbers  insertion code  alternate location codes  etc).,0,,0
+7ec920c4,2016-05-24 09:55:26,DRR - Cpptraj: Add PDB format tests,0,,0
+ebb4b008,2016-05-24 10:36:32,Merge pull request #331 from drroe/fix_cif,0,,1
+6715b3d5,2016-05-24 15:48:22,DRR - Cpptraj: Use absolute path when creating libcpptraj. Should hopefully address #314,0,,0
+c430aa51,2016-05-24 19:16:14,Merge pull request #334 from drroe/libcpptraj_target,0,,1
+9cba279f,2016-05-25 09:00:46,DRR - Cpptraj: Add 'align' action,0,,0
+a0a6b5c0,2016-05-25 09:06:20,DRR - Cpptraj: Add align test,0,,0
+bf0923cb,2016-05-25 09:50:00,DRR - Cpptraj: Add velocityautocorr test. Addresses #319,0,,0
+5635ec62,2016-05-25 09:50:39,DRR - Cpptraj: Enable v.a.c. test,0,,0
+9539aff0,2016-05-25 10:43:47,Merge pull request #335 from drroe/action_align,0,,1
+4ad0893c,2016-05-25 10:44:46,DRR - Cpptraj: Instead of turning off things libcpptraj does not need at configure time  create a new defined called LIBCPPTRAJ which can be used at compile time to disable things like readline and sanderlib. This allows the cpptraj executable to be built with these things while excluding them from libcpptraj without re-configuring. Should finally address #220 (I hope).,0,,0
+847c5593,2016-05-25 11:07:56,DRR - Cpptraj: Do not include libcpptraj as an install target. Since it now deletes objects required by cpptraj  parallel makes with both of these targets active will fail.,1,,0
+3a677b7d,2016-05-25 12:37:14,DRR - Cpptraj: Instead of removing and rebuilding objects that must be changed for libcpptraj  compile them into separate *.LIBCPPTRAJ.o objects. This allows such objects to automatically include the -DLIBCPPTRAJ flag as part of the build instead of passing it via a separate make instance  which means parallel makes with both targets now work again.,0,,0
+ee53fca1,2016-05-25 12:41:25,Merge branch 'master' into libcpptraj_build,0,,0
+32378e28,2016-05-25 12:42:33,DRR - Cpptraj: Update dependencies,0,,0
+1fb279eb,2016-05-25 13:31:48,DRR - Cpptraj: Fix up binary suffix determination for tests. Add 'cuda' test option.,1,,1
+56d07522,2016-05-25 13:36:30,DRR - Cpptraj: Add test.mpi  test.openmp  and test.cuda targets. Addresses #283 and #311.,0,,0
+dc8b3cf1,2016-05-25 13:39:23,Merge pull request #336 from drroe/libcpptraj_build,0,,1
+1fbc0863,2016-05-25 13:39:47,Merge branch 'master' into test_targets,0,,0
+4492f46f,2016-05-25 14:07:27,DRR - Cpptraj: Fix typo that prevented molsurf.o from being incorporated into libcpptraj,1,,0
+8e768977,2016-05-25 14:27:39,Merge pull request #337 from drroe/test_targets,0,,1
+43d21b2e,2016-05-26 11:29:05,DRR - Cpptraj: Fixes for AmberTools build of libcpptraj. Also add AMBERLDFLAGS to link steps in Makefile_at (partially address #327).,1,,0
+0b07b9b2,2016-05-26 11:39:19,DRR - Cpptraj: Forgot to actually add the compile pattern rule,0,,0
+fb18a27f,2016-05-26 12:46:44,Merge pull request #340 from drroe/amberldflags,0,,1
+47db8d3a,2016-05-26 15:35:32,DRR - Cpptraj: Fairly large change to how base reference info is stored for nastruct  now in classes instead of static arrays. This will eventually allow custom NA residues to be defined. Intended to address #290.,0,,0
+507b57e5,2016-05-27 11:08:37,DRR - Cpptraj: Add 'baseref' keyword to 'nastruct' for loading custom base references.,0,,0
+c346813e,2016-05-27 11:42:57,DRR - Cpptraj: Actually add the loaded custom reference into reference bases. Warn when custom base will override existing base.,0,,0
+a0202ad1,2016-05-27 13:13:17,DRR - Cpptraj: Command.cpp needs to be compiled differently for cpptraj and libcpptraj since it includes files that are also different.,0,,0
+786c12b0,2016-05-27 13:26:59,DRR - Cpptraj: Add 'baseref' test,0,,0
+a6bed4c7,2016-05-27 13:32:51,DRR - Cpptraj: Update dependencies.,0,,0
+64bdb883,2016-05-27 13:38:44,DRR - Cpptraj: Fix debug info.,1,,0
+5059937d,2016-05-27 13:42:09,Merge pull request #341 from drroe/fix_libcpptraj,0,,1
+9f614d26,2016-05-27 14:32:51,Merge pull request #342 from drroe/nastruct_helix_units,0,,1
+a99797ae,2016-05-31 14:48:28,DRR - Cpptraj: Add experimental code for viewing amber distance restraints,0,,0
+44d87ba8,2016-05-31 15:21:29,DRR - Cpptraj: Add ability to write out different mol2s for different restraint distances corresponding to noe strength,0,,0
+6e250af0,2016-06-01 11:01:05,DRR - Cpptraj: Split out viewrst functionality from command so it can be used elsewhere,0,,0
+29cdc2ca,2016-06-01 11:32:14,DRR - Cpptraj: Add ability to write either topology or mol2 for viewrst. Frame only needed for the latter.,0,,0
+e380325a,2016-06-01 11:47:25,DRR - Cpptraj: Add 'viewrst' to 'nmrrst',0,,0
+2ae70e1e,2016-06-01 11:48:46,DRR - Cpptraj: Cannot assign in const function,0,,0
+e4234155,2016-06-01 11:55:06,Merge branch 'master' into clustermatrix_dataset,0,,0
+3dda0c55,2016-06-01 12:38:11,DRR - Cpptraj: Fix up help,1,,0
+8d40d672,2016-06-01 14:33:18,DRR - Cpptraj: Update code docs,0,,0
+4562a8d5,2016-06-01 14:53:53,DRR - Cpptraj: If cluster pairwise file specified but not found when loading  force CMATRIX format.,0,,0
+1c6abd8d,2016-06-01 15:04:16,DRR - Cpptraj: Generalize pairwise distance calculation to use ClusterDist::FrameDist() instead of having a specialized PairwiseDistCalc function. Greatly simplifies the code  removes the dependency on DataSet_Cmatrix (important since eventually DataSet_Cmatrix will need ClusterDist to not have to store pairwise distances in memory)  and is only about 4% slower worst-case (tested with RMS metric and 20026 frames).,0,,0
+1edc01cb,2016-06-01 15:15:10,DRR - Cpptraj: Fix dependencies,1,,1
+82269976,2016-06-02 10:07:01,DRR - Cpptraj: Comments,0,,0
+1c5779a0,2016-06-02 10:24:23,DRR - Cpptraj: Rename in prep for making base class,0,,0
+e16ea9ca,2016-06-02 10:32:41,DRR - Cpptraj: Initial attempt of splitting pairwise and cluster matrices,0,,0
+4c43c3bc,2016-06-02 10:36:49,DRR - Cpptraj: Add ClusterMatrix::PrintElements,0,,0
+52e18da0,2016-06-02 10:55:30,DRR - Cpptraj: Improve code docs.,0,,0
+911409d4,2016-06-02 11:14:45,DRR - Cpptraj: Split of Cmatrix into base and inherited class. Compiles but not yet integrated.,0,,0
+488db392,2016-06-02 11:44:27,DRR - Cpptraj: Store actual number of frames after sieving.,0,,0
+7d2554d1,2016-06-02 11:44:51,DRR - Cpptraj: Function that returns number of rows in cluster matrix,0,,0
+889679c7,2016-06-02 11:45:30,DRR - Cpptraj: Fix up Cmatrix allocation.,1,,1
+c21099aa,2016-06-02 11:47:37,DRR - Cpptraj: Move SetupMatrix routine to ClusterMatrix,0,,0
+9fb2d889,2016-06-02 12:59:54,DRR - Cpptraj: Fix ClusterList for new cluster classes. Add GetElement() to DataSet_Cmatrix.,1,,1
+66d3511e,2016-06-02 13:50:18,DRR - Cpptraj: Update everything else for new cluster class layout,0,,0
+a9b7c44f,2016-06-02 14:22:00,DRR - Cpptraj: Fix code doc,1,,0
+6e853ec7,2016-06-02 14:53:14,DRR - Cpptraj: Add pairwise matrix data set type that uses no memory by calculating frame to frame distance on the fly. Makes clustering slower but use way less memory.,0,,0
+98e1ba16,2016-06-02 14:59:43,DRR - Cpptraj: Give no mem cmatrix a unique description,0,,0
+b7a628bb,2016-06-02 15:09:07,DRR - Cpptraj: Make OpenMP code a little cleaner,0,,0
+8fd08800,2016-06-03 08:49:14,DRR - Cpptraj: Add common NetCDF routines in NC namespace,0,,0
+991eb215,2016-06-03 09:59:34,DRR - Cpptraj: Initial incarnation of a NetCDF cluster matrix file format.,0,,0
+143feb60,2016-06-03 10:10:50,DRR - Cpptraj: Add function to write actual frames array,0,,0
+0102ef19,2016-06-03 10:14:15,DRR - Cpptraj: Add function to write cmatrix element,0,,0
+f5db11bc,2016-06-03 10:31:28,DRR - Cpptraj: Change option for determining pairwise cache to 'pairwisecache <type>' in anticipation of having a disk cache option. Add NeedsSetup() function to DataSet_Cmatrix for determining if the pairwise matrix has to be set up or not. Fix initialization in DataSet_Cmatrix_NOMEM constructor.,1,,0
+a3cb08b7,2016-06-03 10:33:12,DRR - Cpptraj: Add pairwisecache none tests,0,,0
+8a195350,2016-06-03 10:58:20,DRR - Cpptraj: Add data set for caching clustering pairwise distance data to disk,0,,0
+cfd7feaa,2016-06-03 11:24:17,DRR - Cpptraj: Add destructor to ensure file is closed  fix variable init.,1,,0
+58933c14,2016-06-03 12:51:14,DRR - Cpptraj: Fix index in Read/Write element functions. Add extra flag to file creation that states whether it will be used as a cache so that the file is re-opened WRITE|SHARED.,1,,0
+d77546ea,2016-06-03 12:52:22,DRR - Cpptraj: Enable cluster pairwise matrix disk caching. Not yet thread safe.,0,,0
+80e78439,2016-06-03 13:14:37,DRR - Cpptraj: Set up variables and dimensions on cluster matrix read,0,,0
+72b892f4,2016-06-03 13:23:33,DRR - Cpptraj: Fix netcdf cluster matrix write under openmp. Kills the scaling but doesnt segfault anymore.,1,,1
+9b3eefc3,2016-06-03 14:07:01,DRR - Cpptraj: Use DataSet MetaData for storing file name,0,,0
+232b2e7d,2016-06-03 14:28:56,DRR - Cpptraj: Write pairwise cache file name to output,0,,0
+cfc60c1f,2016-06-03 14:50:36,DRR - Cpptraj: Open write routine now create  make separate open write routine. Do not use SHARED variable. Keep track of READ/WRITE status.,0,,0
+554b56f4,2016-06-03 15:07:02,DRR - Cpptraj: Ensure cluster matrix data is flushed to disk.,0,,0
+34d2c2e8,2016-06-03 15:20:02,DRR - Cpptraj: Fix code comments,1,,0
+30a95151,2016-06-03 15:44:29,DRR - Cpptraj: Store index to frame array instead of always creating it on the fly.,0,,0
+4622eda3,2016-06-06 08:29:43,DRR - Cpptraj: Add NCSHARE flag back  seems to have better performance.,0,,0
+ad12008c,2016-06-06 08:45:09,DRR - Cpptraj: Use unsigned int.,0,,0
+98569ecd,2016-06-06 10:41:56,DRR - Cpptraj: Make NetcdfFile use NC_Routines to consolidate code. Clean up NetcdfFile class and increase function documentation as well.,0,,0
+4ec98dec,2016-06-06 11:57:01,DRR - Cpptraj: Somewhat more stable implementation of the DBSCAN algorithm. Results should be largely unchanged from previous iteration  although some low-population clusters may be slightly different.,0,,0
+b4ea958e,2016-06-06 13:30:51,DRR - Cpptraj: Clean up sievetoframe code.,0,,0
+ce0151cf,2016-06-06 14:14:30,DRR - Cpptraj: Add SSR/SST calc,0,,0
+91cb363f,2016-06-06 14:21:05,DRR - Cpptraj: Update test output for SSR/SST calc. Also note that the representative frames have changed in the symmetric RMSD cluster metric test. This is because the test uses a trajectory that is made up of 4 segments of identical frames  so the shortest distances to cluster rep calc has many identical values  the answers are still correct.,0,,0
+dc20c782,2016-06-06 14:42:37,DRR - Cpptraj: Fix no BINTRAJ compilation,1,,1
+950f68cc,2016-06-06 14:52:58,DRR - Cpptraj: Initial incarnation of the netcdf cmatrix DataIO class,0,,0
+d701f4e1,2016-06-07 14:03:04,DRR - Cpptraj: Enable netcdf cluster matrix data file,0,,0
+f27a5df1,2016-06-07 15:22:59,DRR - Cpptraj: If PW distances are not being calcd  output the name of the set being used to STDOUT,0,,0
+22d6e2b7,2016-06-07 15:30:41,DRR - Cpptraj: Test reading and writing of pairwise distance matrix formats,0,,0
+0ebdffb5,2016-06-07 16:04:04,DRR - Cpptraj: In cluster help  change <file> to <name> to reflect the fact that PW distance data set names can be used as well. Do not put 'disk' pairwise cache option yet since performance is relatively poor.,0,,0
+f613799c,2016-06-07 20:57:34,code integration done   -  imaging supported,0,,0
+8d4dc5c0,2016-06-07 21:01:26,code integration done   -  imaging supported - minor fixes,1,,0
+5374c82d,2016-06-07 21:02:29,code integration done   -  imaging supported - minor fixes -2,1,,0
+4cc69f1c,2016-06-07 21:10:20,code integration done   -  imaging supported - minor fixes -3,1,,0
+67d05bfc,2016-06-09 10:18:38,DRR - Cpptraj: Make DataSet_Cmatrix interface consistent so no static casts needed during setup.,0,,0
+6ddb7baa,2016-06-09 10:50:32,DRR - Cpptraj: Add functions to return ClusterDist descriptions.,0,,0
+c7c55ce1,2016-06-09 10:52:50,DRR - Cpptraj: Add some debug info,0,,0
+ab651259,2016-06-09 10:57:01,DRR - Cpptraj: Record description of distance metric used to calc pairwise matrix,0,,0
+6345dcde,2016-06-09 11:06:50,DRR - Cpptraj: Save cluster metric description to netcdf cluster matrix file when available,0,,0
+abc73eb8,2016-06-09 11:35:41,DRR - Cpptraj: Make netcdf cluster matrix file the default. Add keyword and extension for using the old cluster matrix file format.,0,,0
+c30b7088,2016-06-09 11:36:26,DRR - Cpptraj: Update test to ensure old cluster matrix file format is tested.,0,,0
+40c714e6,2016-06-09 12:05:23,DRR - Cpptraj: Fix no netcdf compile.,1,,1
+9d38aafc,2016-06-09 13:00:39,Merge pull request #346 from drroe/clustermatrix_dataset,0,,1
+67a21bd7,2016-06-09 13:09:19,Merge branch 'master' into viewrst,0,,0
+1c00748d,2016-06-09 13:18:12,DRR - Cpptraj: Add 'topout' option.,0,,0
+69e30246,2016-06-09 13:18:43,DRR - Cpptraj: Version bump.,0,,0
+97d1f5e4,2016-06-09 13:23:04,DRR - Cpptraj: Always clean source directory after configure unless '-noclean' specified.,0,,0
+aa27e873,2016-06-09 13:42:38,DRR - Cpptraj: POINT -> REF  better reflects what is being done.,0,,0
+f2a004fd,2016-06-09 14:06:51,DRR - Cpptraj: Add ability to center on a specified point. Addresses #344.,0,,0
+6efd30eb,2016-06-09 14:07:18,Merge pull request #347 from drroe/viewrst,0,,1
+42a16990,2016-06-09 14:08:22,DRR - Cpptraj: Add 'center point' test,0,,0
+e1844fdf,2016-06-09 14:57:54,Merge pull request #348 from drroe/center_point,0,,1
+aa95f622,2016-06-09 16:36:16,minor fixed in kernel_warppers.cu,1,,0
+8d780340,2016-06-10 10:15:24,fixed ucell  box  recip pointer issue,1,,0
+7eb53a93,2016-06-10 10:18:53,minor fixes,1,,0
+de624dae,2016-06-10 15:31:49,Merge pull request #350 from amit56r/master,0,,1
+d628828e,2016-06-13 08:48:44,DRR - Cpptraj: Rename functions to better reflect what they do. Clean up output.,0,,0
+2d215bf4,2016-06-13 09:15:25,DRR - Cpptraj: Fix up const-correctness. Add code docs. No need to pass gpu timing back to Action_Closest since it can be reported in the kernel wrapper function.,1,,0
+d2018739,2016-06-13 09:19:30,DRR - Cpptraj: Use switch instead of if statements so that any unhandled cases will be reported at compile time. Only include cstdio if debugging.,0,,0
+8fc8404d,2016-06-13 09:59:17,DRR - Cpptraj: Change GPU kernel function names to better reflect what they do  use the pmemd.cuda convention with lower-case 'k' prefix. Fix up const-correctness. Remove tabs and extra unnecessary whitespace.,1,,0
+d1cc1cc4,2016-06-13 10:05:23,DRR - Cpptraj: Fix up forward declaration,1,,1
+b2cf7b6c,2016-06-13 10:40:10,Merge pull request #352 from drroe/cleanup_gpu,0,,1
+9b5bbc48,2016-06-14 09:36:54,DRR - Cpptraj: Report clustering method timing with respect to total clustering time (currently only for HA). Fix const for ClusteringInfo().,1,,1
+92570917,2016-06-14 10:25:22,DRR - Cpptraj: Implement OpenMP version of FindMin(). Does result in speedup but needs some polishing.,0,,0
+77ccff02,2016-06-14 11:56:47,DRR - Cpptraj: Add protective ifdef,0,,0
+8ecf5034,2016-06-14 15:05:02,DRR - Cpptraj: Simplify calculation of initial cluster distances.,0,,0
+eab60333,2016-06-14 15:11:03,DRR - Cpptraj: Dynamically allocate temp arrays in ClusterMatrix for OpenMP.,0,,0
+18b823cc,2016-06-14 15:14:08,DRR - Cpptraj: Remove debug info,0,,0
+47a5ad08,2016-06-15 10:18:04,DRR - Cpptraj: Make it so that cluster trajectories formats can be determined from name if not given.,0,,0
+5a388ca7,2016-06-15 13:55:44,DRR - Cpptraj: Add new keywords to cluster: assignrefs  refcut  refmask  which can be used to ascertain if clusters are close in RMSD to loaded references and assign them names accordingly.,0,,0
+c396fecd,2016-06-15 14:12:55,DRR - Cpptraj: Add assigned cluster name to 'split' output. Fix up some const stuff.,1,,1
+3ba65a39,2016-06-15 14:22:57,DRR - Cpptraj: Do not create extra copy of frames to cluster array,0,,0
+c469cb28,2016-06-16 08:53:31,DRR - Cpptraj: Update help and comments.,0,,0
+1ca7fc22,2016-06-16 09:29:13,DRR - Cpptraj: Remove debug info  fix spelling error.,1,,0
+bdc7edb8,2016-06-16 10:16:09,Merge pull request #353 from drroe/cluster_HA,0,,1
+67cb4c15,2016-06-16 12:57:38,DRR - Cpptraj: Some code cleanup,0,,0
+dd9dc7e9,2016-06-16 13:54:54,DRR - Cpptraj: Add test for ortho and no imaging for watershell,0,,0
+a81981b3,2016-06-16 14:03:41,DRR - Cpptraj: Improvements to watershell calc speed - nonortho imaging now ~ 2x faster.,0,,0
+7903c609,2016-06-16 14:15:54,DRR - Cpptraj: Once a residue has been marked as first shell  skip the rest of the solute atoms.,0,,0
+04df3204,2016-06-16 14:28:37,DRR - Cpptraj: Use Image::WrapToCell0() function in closest.,0,,0
+3608b82a,2016-06-17 08:25:18,DRR - Cpptraj: Get rid of unnecessary copy of box coords. Only calc unit cell/fractional cell matrices when performing non-orthorhombic imaging.,0,,0
+2abedc5f,2016-06-17 08:45:55,DRR - Cpptraj: Add check for Natom_ == 0 in ConvertToCharMask().,0,,0
+a667ba46,2016-06-17 08:51:48,DRR - Cpptraj: Add function to set total # atoms  needed if converting to CharMask.,0,,0
+5e629d03,2016-06-17 08:52:20,DRR - Cpptraj: Use 'closest' cuda code for watershell,0,,0
+b1e03b8b,2016-06-17 09:05:17,DRR - Cpptraj: Get rid of unneeded depends,0,,0
+9341adf3,2016-06-17 09:10:57,DRR - Cpptraj: Fix defines so cuda and openmp code are not active at the same time.,1,,0
+281e442b,2016-06-17 09:36:22,DRR - Cpptraj: Add more info during setup,0,,0
+e1cdf008,2016-06-17 10:14:46,DRR - Cpptraj: Update code docs.,0,,0
+27381e17,2016-06-17 10:45:18,DRR - Cpptraj: Start adding code to support reading separate mdfrc file.,0,,0
+8fe290dd,2016-06-17 10:51:29,Merge pull request #354 from drroe/improve_watershell,0,,1
+909e7fac,2016-06-17 11:15:42,DRR - Cpptraj: Add option for reading forces as coords. Allow netcdf files to only have forces.,0,,0
+d56d929c,2016-06-17 11:48:25,DRR - Cpptraj: Add test for reading/writing separate velocities/forces,0,,0
+133d7c84,2016-06-17 11:56:06,DRR - Cpptraj: Protect test,0,,0
+b4827f6c,2016-06-17 13:34:08,Merge pull request #355 from drroe/force_traj,0,,1
+633360c4,2016-06-17 14:04:46,DRR - Cpptraj: Remove write of unnecessary test trajectory.,0,,0
+acd14c0c,2016-06-17 14:18:43,DRR - Cpptraj: Add dpeaks test,0,,0
+b652333c,2016-06-17 14:20:54,DRR - Cpptraj: Hide debug info.,0,,0
+f515fcaa,2016-06-17 14:36:14,DRR - Cpptraj: Add missing newline,0,,0
+e783b273,2016-06-17 14:37:56,DRR - Cpptraj: Test readinfo via writing out cluster using previously generated info file.,0,,0
+b92beee0,2016-06-17 14:59:38,DRR - Cpptraj: Add version 1.1.4 of libxdrfile,0,,0
+2c21c64d,2016-06-17 15:05:18,DRR - Cpptraj: Add libxdrfile test,0,,0
+b150a87d,2016-06-17 15:06:05,Merge pull request #357 from drroe/misc_fixes,0,,1
+c5005a62,2016-06-20 09:16:18,DRR - Cpptraj: Only check VIDs during NetCDF write,0,,0
+c738aee8,2016-06-20 09:19:38,DRR - Cpptraj: Add coords variable to CoordinateInfo  currently only relevant for NetCDF.,0,,0
+222f366f,2016-06-20 09:43:49,DRR - Cpptraj: Fix up CoordinateInfo constructors.,1,,1
+b765b49b,2016-06-20 09:45:37,DRR - Cpptraj: Add check that coordinates are present in input trajectories.,0,,0
+76d5bb69,2016-06-20 10:13:36,DRR - Cpptraj: Make novelocity etc common trajout options.,0,,0
+125a6edc,2016-06-20 10:15:14,DRR - Cpptraj: Add output for noX options,0,,0
+7a320ab1,2016-06-20 10:19:59,DRR - Cpptraj: Fix formatting of help options,1,,0
+6124fabe,2016-06-20 11:27:41,DRR - Cpptraj: Add mdvel/mdfrc/mdcrd options to NetCDF traj for writing only velocities/forces (optionally with coordinates).,0,,0
+3d46f130,2016-06-20 12:04:48,DRR - Cpptraj: Deprecate 'velocity' and 'force' keywords  otherwise unwanted behavior could result.,0,,0
+60f6b359,2016-06-20 12:39:04,Merge pull request #359 from drroe/trajout_options,0,,1
+f579d8aa,2016-06-20 13:29:33,Merge branch 'master' into xdrfile,0,,0
+8df890f2,2016-06-21 10:52:55,DRR - Cpptraj: Add test for random sieving.,0,,0
+00c72a4a,2016-06-21 10:53:41,DRR - Cpptraj: Fix implicit conversion of int to size_t. Not technically a problem since it gets converted back to int in ClusterSieve  but better to be correct and consistent.,1,,1
+1b848b29,2016-06-23 08:14:52,Merge pull request #360 from drroe/randomsieve,0,,1
+c8f493d9,2016-06-23 10:53:44,DRR - Cpptraj: Fix SetFrame() for case where forces allocated but velocities not allocated.,1,,1
+347f4a03,2016-06-23 11:29:28,Merge pull request #364 from drroe/fix_frame,0,,1
+57d2831b,2016-06-23 13:46:17,DRR - Cpptraj: Instead of having a separate between-cluster distance matrix (which is only needed during cluster calc by HA algorithm)  only calculate between-cluster distances during summary. This requires implementing between-cluster distance calculation has a separate function. There are slight differences in the centroid-based cluster distance results (i.e. all algorithms *not* HA) but this is only due to the fact that now frame lists are always sorted before centroid calculation.,0,,0
+7036d516,2016-06-23 13:50:31,DRR - Cpptraj: Update summary output. Differences only due to the fact that now frame lists are always sorted before centroid calculation.,0,,0
+0f4a956b,2016-06-23 13:57:35,DRR - Cpptraj: No need for separate count of all distances in average.,0,,0
+2d761206,2016-06-23 14:03:44,DRR - Cpptraj: Clean up older code,0,,0
+21368c3e,2016-06-23 15:17:23,Merge pull request #365 from drroe/cluster_distances,0,,1
+40cfee80,2016-06-24 08:56:56,DRR - Cpptraj: Find best representative frame using ClusterDist instead of DataSet_Cmatrix. This will eventually allow best representative to be found even among sieved frames. It is also somewhat more accurate since there is no precision loss due to float <-> double conversions.,0,,0
+34b359e6,2016-06-24 09:01:57,DRR - Cpptraj: Update test for recent change to finding best representative frames. In all cases  the distances for the new best representative frames are almost identical  difference is due to use of full double precision instead of converting from float.,0,,0
+5a04669f,2016-06-24 09:13:04,DRR - Cpptraj: Add frame distance calculation function to ClusterList that will make use of the pairwise distance matrix for non-sieved frames and use ClusterDist otherwise. Make use of this in the ClusterDistance() function of Cluster_Hieragglo so sieved frames can be included in the calculation after they are restored.,0,,0
+99cd94cb,2016-06-24 09:16:08,DRR - Cpptraj: Update cluster distance output  sieved frames now included in calculation.,0,,0
+1b455b21,2016-06-24 09:23:28,DRR - Cpptraj: Average within-cluster frame distance (and stdev) now correctly include sieved frames.,0,,0
+cde95f74,2016-06-24 09:24:28,DRR - Cpptraj: Average within-cluster frame distance and stdev now correctly include sieved frames,0,,0
+f75a579b,2016-06-24 09:38:06,DRR - Cpptraj: Find best representative frame after sieved frames have been added back.,0,,0
+02e52b87,2016-06-24 09:41:07,DRR - Cpptraj: Update results to reflect that best rep frames now can be chosen from sieved frames. Results now more consistent with no sieving,0,,0
+ef96d88a,2016-06-24 10:22:32,DRR - Cpptraj: Use Frame_Distances() to determine best representative frame to take advantage of pairwise matrix if possible. This means there will be some precision loss again but otherwise the calculation can be an order of magnitude slower  this solution seems to be a good compromise. Also add some more detailed timing data that will probably be turned off once changes are finished.,0,,0
+d30a397e,2016-06-24 10:25:55,DRR - Cpptraj: Restore old info results since best rep frame calc now uses pairwise matrix if it is available.,0,,0
+5c71f46b,2016-06-24 10:38:25,DRR - Cpptraj: Use Frame_Distance() in silhouette calc to include sieved frames.,0,,0
+df41cf1b,2016-06-24 10:38:50,DRR - Cpptraj: Update silhouette calc to reflect fact that sieved frames now included in the calc. Much closer to non-sieved results.,0,,0
+3ac08cd5,2016-06-24 10:48:48,DRR - Cpptraj: Make DBI calc const. Centroids are fully up to date after Renumber().,0,,0
+28d03572,2016-06-24 10:58:39,DRR - Cpptraj: Make pseudo-F calc const. Centroids are fully up to date after Renumber().,0,,0
+c8ba0c8c,2016-06-24 10:59:09,DRR - Cpptraj: Update pseudo-F - differences due to round-off  math with very very small numbers.,0,,0
+6c978b42,2016-06-24 11:20:07,DRR - Cpptraj: Make cluster info print const,0,,0
+ccec240e,2016-06-24 11:27:37,DRR - Cpptraj: Improve function name,0,,0
+3f2a42e8,2016-06-24 13:35:47,DRR - Cpptraj: Add timer for finding best rep,0,,0
+c3a71560,2016-06-24 13:49:47,DRR - Cpptraj: Create function for finding best rep frames by closest distance to centroid.,0,,0
+fc42162e,2016-06-24 14:12:14,DRR - Cpptraj: Update code doc  add debug info.,0,,0
+a42b5d7d,2016-06-24 14:25:50,DRR - Cpptraj: Add option to choose how best rep frames will be chosen. Default to cumulative if not sieving (i.e. pairwise matrix will have all frame-frame distances) and centroid otherwise.,0,,0
+a8ac64bb,2016-06-27 09:06:11,DRR - Cpptraj: Do not include sieved frames in within-cluster avg distance calc for speed purposes  but give the option to include them.,0,,0
+81fa2831,2016-06-27 09:13:37,DRR - Cpptraj: Fix warning message,1,,0
+697d97c0,2016-06-27 09:14:51,DRR - Cpptraj: Add 'bestrep' option to match previous results. Default now when sieving is to find best representative by distance to centroid instead of lowest cumulative distance.,0,,0
+1f30cca0,2016-06-27 09:17:08,DRR - Cpptraj: Use 'includesieveinavg' option to match previous results.,0,,0
+97d1df0c,2016-06-27 10:02:44,DRR - Cpptraj: Add centroid coordinate print function. Only for debugging purposes.,0,,0
+abf0a144,2016-06-27 10:05:13,DRR - Cpptraj: Fix finding best rep frame by centroid,1,,1
+df3155a1,2016-06-27 10:14:27,DRR - Cpptraj: Remove debug timing info.,0,,0
+4ef01aaf,2016-06-27 10:24:09,DRR - Cpptraj: No need to pass in max frames for these functions.,0,,0
+08896a48,2016-06-27 10:36:16,DRR - Cpptraj: Add 'cumulative_nosieve' option to 'bestrep' to restore old behavior if desired.,0,,0
+bf55eae2,2016-06-27 11:08:16,DRR - Cpptraj: Do not include sieved frames in final cluster distance calc for hierarchical agglomerative by default since that can be very slow (restores previous behavior)  but add an option to include them if desired.,0,,0
+68690ef4,2016-06-27 11:09:55,DRR - Cpptraj: Add debug timing info back in but disable it,0,,0
+ce749d2c,2016-06-27 11:38:23,DRR - Cpptraj: Change 'includesieveinavg' to 'includesieveincalc' since it affects more than one calculation now. Do not include sieved frames in silhouette calc since otherwise it can be orders of magnitude slower.,0,,0
+a66d1a36,2016-06-27 11:39:28,DRR - Cpptraj: Add 'includesieveincalc' for consistency with previous results.,0,,0
+33c3c287,2016-06-27 11:44:12,DRR - Cpptraj: Fix code doc  add warning.,1,,0
+f7677006,2016-06-27 13:39:48,DRR - Cpptraj: Fix up code docs.,1,,0
+173fe74d,2016-06-27 13:57:06,DRR - Cpptraj: Update test arguments,0,,0
+12ab4ab5,2016-06-27 14:19:19,DRR - Cpptraj: Fix restoration of sieved frames in DBSCAN when sievetoframe not specified (now correctly identifies noise).,1,,1
+67a7c710,2016-06-27 14:20:17,DRR - Cpptraj: Update test for fix to dbscan sieve restore by centroid,1,,1
+576c2a2e,2016-06-27 19:30:24,Merge pull request #366 from drroe/cluster_include_sieve_in_calc,0,,1
+553dea3d,2016-06-28 10:31:34,DRR - Cpptraj: Fix .gro file detection,1,,1
+bd51d9e2,2016-06-28 11:11:05,DRR - Cpptraj: Look in GMXDATA directory if 'include' file not found for gromacs top.,0,,0
+ffd7319f,2016-06-28 16:25:21,Added new citation information for our recent publication in JCC.,0,,0
+5b673b62,2016-06-28 20:21:09,Merge pull request #367 from gosldorf/master,0,,1
+f2964b66,2016-06-29 10:39:25,DRR - Cpptraj: Fix processing of include files relative to last file included. Fix handling of section reads when other directives may be present.,1,,1
+a40f1839,2016-06-29 11:04:01,DRR - Cpptraj: Explicit init of enumerated type,0,,0
+4fc98ab0,2016-06-29 11:15:47,DRR - Cpptraj: Avoid confusing gro files with amber crd,0,,0
+20b3b893,2016-06-29 13:08:45,DRR - Cpptraj: Attempt to add force read/write to Gromacs trr,0,,0
+4446da47,2016-06-29 13:56:32,DRR - Cpptraj: Fix allocation of temp array for forces/velocities  fix write of forces,1,,1
+24e6a2f3,2016-06-30 09:33:10,DRR - Cpptraj: Add some constants for unit conversion and update comments,0,,0
+fe18d66f,2016-06-30 09:37:14,DRR - Cpptraj: Fix reversed constants. Need more coffee...,1,,1
+a37f6aa1,2016-06-30 10:31:00,DRR - Cpptraj: Fix force unit conversion. Consolidate frame read.,1,,1
+afc57682,2016-06-30 11:06:31,DRR - Cpptraj: Fix conversion of velocity units,1,,1
+4dadeddb,2016-06-30 11:13:18,DRR - Cpptraj: Fix conversion of velocity units from gro file,1,,1
+e6905fcc,2016-06-30 11:19:12,DRR - Cpptraj: Use amu to kg conversion from Constants,0,,0
+41bd1e48,2016-06-30 11:39:39,DRR - Cpptraj: Fix default title for TRR format.,1,,1
+57e24e1d,2016-06-30 12:22:21,Merge pull request #368 from drroe/fix_gmx,0,,1
+6d497da5,2016-06-30 12:59:48,Merge branch 'master' into xdrfile,0,,0
+42c7d89b,2016-06-30 13:03:33,DRR - Cpptraj: Create separate make files for standalone and AT builds,0,,0
+e0cbb9de,2016-06-30 13:12:39,DRR - Cpptraj: Add libxdrfile to the build,0,,0
+dd273e3c,2016-06-30 13:44:22,DRR - Cpptraj: Initial incarnation of XTC traj using xdrfile,0,,0
+485898c7,2016-06-30 13:58:31,DRR - Cpptraj: Add ID function and function placeholders,0,,0
+c0b33ce9,2016-06-30 14:00:01,DRR - Cpptraj: Remove redundant comment lines that lead to spurious warning messages,0,,0
+ed318b67,2016-06-30 14:01:46,DRR - Cpptraj: Remove another redundant comment line,0,,0
+8b4352d7,2016-06-30 14:24:32,DRR - Cpptraj: Enable xtc detection and fix standalone build (AT build still needs fixing).,1,,1
+37aeb307,2016-06-30 14:59:08,DRR - Cpptraj: Add coordinate read. Still need to do unit conversion,0,,0
+b5dcdb35,2016-07-01 08:46:06,DRR - Cpptraj: Do unit conversion,0,,0
+d64ad7f0,2016-07-01 09:11:37,DRR - Cpptraj: Move conversion to unit cell coords to Box.,0,,0
+dcb67976,2016-07-01 09:45:18,DRR - Cpptraj: Fix error checking  enable writes.,1,,1
+88e2a7f0,2016-07-01 10:09:31,DRR - Cpptraj: Read in time values from TRR,0,,0
+4870dd97,2016-07-01 10:10:58,DRR - Cpptraj: Add read and write of time values.,0,,0
+38dc668e,2016-07-01 10:49:04,DRR - Cpptraj: Upgrade to newer version of xdrfile library from mdtraj,0,,0
+c9dfcac6,2016-07-01 11:09:59,DRR - Cpptraj: Determine # of frames in XTC file,0,,0
+e0f9ed5e,2016-07-01 13:18:10,DRR - Cpptraj: Protect during C++ compilation,0,,0
+9027bf2d,2016-07-01 13:19:08,DRR - Cpptraj: Determine # of frames via file size for small files and seeking for large files.,0,,0
+b57f2743,2016-07-01 13:37:52,DRR - Cpptraj: Determine frame offsets for random file access during read.,0,,0
+61b374d6,2016-07-01 13:57:43,DRR - Cpptraj: Fill in parallel functions,0,,0
+25ecd956,2016-07-01 14:08:09,DRR - Cpptraj: Set up NO_XDRFILE define for --defines. Fix small typo. Fix compilation with no XDR support.,1,,1
+4eca4e3f,2016-07-01 14:28:24,DRR - Cpptraj: Update main README so it is clear what external libraries are bundled with cpptraj. Make note in xdrfile README about changes for C++.,0,,0
+e0bf14a7,2016-07-01 16:12:11,DRR - Cpptraj: Add flags to hopefully fix windows build.,1,,0
+8c16e875,2016-07-01 16:53:47,DRR - Cpptraj: Ooops...forgot to actually redirect to config.h,0,,0
+c1113e50,2016-07-01 17:20:00,DRR - Cpptraj: No need to use variables for dependencies in these targets since the targets themselves are hard-coded.,0,,0
+b250caf1,2016-07-01 20:00:58,Merge pull request #369 from drroe/xdrfile,0,,1
+89af8e8e,2016-07-01 22:07:29,DRR - Cpptraj: Fix libcpptraj build (I hope),1,,1
+a6ed2dc8,2016-07-01 22:51:43,Merge pull request #371 from drroe/fix_libcpptraj,0,,1
+58047cdd,2016-07-26 14:27:16,DRR - Cpptraj: Add some debug info.,0,,0
+009b3be5,2016-07-26 14:50:37,DRR - Cpptraj: Fixes to get libxdrfile compilation working under AmberTools.,1,,0
+a9c666c1,2016-07-26 15:05:36,Merge pull request #376 from drroe/fix_at_xdrfile,0,,1
+18013887,2016-07-28 08:52:25,DRR - Cpptraj: Fix save of initial coords,1,,1
+6362844b,2016-07-28 09:10:27,DRR - Cpptraj: More debug,0,,0
+52719307,2016-07-28 13:34:31,DRR - Cpptraj: Image distances for stfcdiffusion distance mode. Update dependencies.,0,,0
+2ec82f0c,2016-07-28 13:40:09,DRR - Cpptraj: Disable debug info.,0,,0
+f9f81867,2016-07-28 13:51:41,DRR - Cpptraj: Clean up messages.,0,,0
+89542862,2016-07-28 14:13:22,Merge pull request #377 from drroe/fix_stfcdiffusion,0,,1
+988c65cf,2016-07-28 16:06:35,DRR - Cpptraj: Ensure torsion values between 0.0 and 30.0 are correctly assigned as 'c'.,0,,0
+8d8e5571,2016-07-28 16:58:13,Merge pull request #378 from drroe/fix_stat,0,,1
+eafc133d,2016-07-29 08:18:28,DRR - Cpptraj: Fix torsion binning for first value as well.,1,,1
+f1ae52cf,2016-07-29 08:23:23,DRR - Cpptraj: Finally add CPPTRAJLDFLAGS and CPPTRAJCXXFLAGS to AmberTools Makefile. Addresses #345.,0,,0
+dbdec99a,2016-07-29 08:45:41,Merge pull request #379 from drroe/fix_stat_again,0,,1
+9b3fb9ea,2016-08-01 13:58:22,DRR - Cpptraj: First attempt at a libcpptraj test.,0,,0
+93a69159,2016-08-01 14:03:17,DRR - Cpptraj: Add libcpptraj test.,0,,0
+63356cf6,2016-08-02 09:08:26,DRR - Cpptraj: Make libcpptraj test separate.,0,,0
+789a51cc,2016-08-02 09:20:27,DRR - Cpptraj: Attempt to add libcpptraj testing to Travis-CI.,0,,0
+1eb5387a,2016-08-02 09:34:54,DRR - Cpptraj: Attempt to fix travis build.,1,,0
+95ec9896,2016-08-02 09:42:11,DRR - Cpptraj: Fix order of 'if' statement...,1,,1
+ce46dafc,2016-08-02 09:59:53,DRR - Cpptraj: Change travis script command to avoid false negatives.,0,,0
+079a12d0,2016-08-02 10:00:14,DRR - Cpptraj: Always export library path to avoid execution problems.,1,,0
+8d280bfa,2016-08-02 10:11:45,Merge pull request #380 from drroe/test_libcpptraj,0,,1
+b0e9cfac,2016-08-03 08:16:53,DRR - Cpptraj: Begin conversion to using dataset/datafile framework  clean up formatting (remove tabs etc).,0,,0
+ac02fdfe,2016-08-03 08:50:12,DRR - Cpptraj: Finish putting data into data sets. Remove all whitespace from mask legends.,0,,0
+058d74f5,2016-08-03 09:10:19,DRR - Cpptraj: Use double data set since X values are monotonic. Fix up dependencies. Make sure Hannes' name correctly appears in code docs.,1,,0
+f9b00397,2016-08-03 09:13:43,DRR - Cpptraj: Fix for higher default precision of average density data sets.,1,,1
+05cb1592,2016-08-03 09:26:18,DRR - Cpptraj: Fix X axis label for integrate,1,,1
+4e394e22,2016-08-03 09:26:44,DRR - Cpptraj: Fix X axis label,1,,1
+0f0d6ab8,2016-08-03 09:27:00,DRR - Cpptraj: Update test output for fixed X axis label,1,,0
+a72c9601,2016-08-03 09:50:04,Merge pull request #381 from drroe/density_use_datasets,0,,1
+10324397,2016-08-03 11:24:05,DRR - Cpptraj: Add rotatedihedral command for rotating single dihedral,0,,0
+612941b5,2016-08-03 11:50:48,DRR - Cpptraj: Reclassify permutedihedrals and rotatedihedral as COORDS commands. Fix up keywords. Fix output of atom names. Add output for torsion.,1,,1
+363515c8,2016-08-03 12:51:20,DRR - Cpptraj: Align non-moving atoms on original reference after rotation.,0,,0
+39c6347d,2016-08-03 12:54:30,DRR - Cpptraj: Add rotatedihedral test.,0,,0
+2b060279,2016-08-03 13:00:37,DRR - Cpptraj: Add more tests.,0,,0
+ed4c9c04,2016-08-03 13:02:29,DRR - Cpptraj: Enable test,0,,0
+2d19c88e,2016-08-03 13:57:52,Merge pull request #382 from drroe/rotatedihedral,0,,1
+639d1826,2016-08-03 15:01:40,Merge branch 'master' into gist_dataset,0,,0
+85ce92bd,2016-08-03 15:15:29,DRR - Cpptraj: Update dependencies,0,,0
+bcc58508,2016-08-03 15:48:08,DRR - Cpptraj: Finish up init  allocate data sets  add as test action.,0,,0
+6bcd3fda,2016-08-03 16:01:56,DRR - Cpptraj: Add some setup,0,,0
+a67c7635,2016-08-04 09:52:22,DRR - Cpptraj: Make CalcIndex virtual since both grids implement it anyway.,0,,0
+c3677f3c,2016-08-04 11:27:53,DRR - Cpptraj: Finish gridding  start adding euler,0,,0
+54e146dc,2016-08-04 11:44:53,DRR - Cpptraj: Finish up Euler,0,,0
+7f0b1a41,2016-08-04 11:45:08,DRR - Cpptraj: Add some debug info  update dependencies.,0,,0
+15e3528b,2016-08-04 11:51:24,DRR - Cpptraj: Fix issue with inverting integer atom mask (#384).,1,,1
+3fa79284,2016-08-04 12:54:43,DRR - Cpptraj: Save water atom charges,0,,0
+ece10cff,2016-08-04 12:55:11,Merge pull request #385 from drroe/fix_invert_mask,0,,1
+8da62ce6,2016-08-04 13:05:01,DRR - Cpptraj: Add dipole stuff,0,,0
+d50f45d6,2016-08-04 14:12:26,DRR - Cpptraj: Add orientational entropy calc  more debug info.,0,,0
+fcb72441,2016-08-04 15:30:27,DRR - Cpptraj: Start adding translational entropy...,0,,0
+a0c155cf,2016-08-05 09:37:58,DRR - Cpptraj: Finish adding translational entropy cases,0,,0
+444d00ae,2016-08-05 14:41:44,DRR - Cpptraj: Attempt to finish translational entropy - discrepancies still remain. Add some debug info.,0,,0
+bfe7b5a5,2016-08-05 14:55:55,DRR - Cpptraj: Fix issue where first character of new buffer could sometimes be overwritten by character from previous buffer.,1,,1
+91e7076f,2016-08-05 15:09:21,Merge pull request #386 from drroe/fix_buffer,0,,1
+d2d2385f,2016-08-08 09:25:07,DRR - Cpptraj: Fix indexing for self translational entropy calc,1,,1
+cd9fe9e5,2016-08-08 09:36:09,DRR - Cpptraj: Update code docs.,0,,0
+3f442cfb,2016-08-08 09:48:54,DRR - Cpptraj: Add arrays for energy calc.,0,,0
+642c910b,2016-08-08 10:38:02,DRR - Cpptraj: Initial solute-solvent energy calc.,0,,0
+766c7982,2016-08-08 11:06:11,DRR - Cpptraj: Reorganize nonbond calc as a separate loop so all waters are assigned voxels before routine is called.,0,,0
+7556e87e,2016-08-08 11:12:16,DRR - Cpptraj: Add solvent-solvent energy calc,0,,0
+b291f44a,2016-08-08 11:21:45,DRR - Cpptraj: Add neighbor calc,0,,0
+680bfae6,2016-08-08 11:44:28,DRR - Cpptraj: Add average energy calc. Solvent-solvent calc seems off.,0,,0
+849fdf77,2016-08-08 13:23:53,DRR - Cpptraj: Fix nonbond energy loop so all solvent solvent interactions are calcd. Still seems to be off.,1,,1
+573c109d,2016-08-08 14:32:51,DRR - Cpptraj: Ensure we are summing into voxel2 as well if valid.,0,,0
+df188fdd,2016-08-08 17:04:45,DRR - Cpptraj: Start adding output stuff.,0,,0
+145af13c,2016-08-09 08:43:10,DRR - Cpptraj: Add grid index to bin indices calc,0,,0
+5880b86a,2016-08-09 09:00:28,DRR - Cpptraj: Add gist output. Dipole stuff seems off.,0,,0
+393c9214,2016-08-09 09:14:27,DRR - Cpptraj: Fix cast of double grids,1,,1
+0a5c551c,2016-08-09 09:26:44,DRR - Cpptraj: Fix neighbor update for voxel 2,1,,1
+f96e4d2d,2016-08-09 09:29:33,DRR - Cpptraj: Fix dipole Z printout,1,,1
+2805b2a5,2016-08-09 10:19:21,DRR - Cpptraj: Add order calc,0,,0
+bf12fb02,2016-08-09 10:37:30,DRR - Cpptraj: Add UdpateElement function,0,,0
+97eeafcc,2016-08-09 11:08:11,DRR - Cpptraj: Add water-water interaction matrix calc,0,,0
+06790178,2016-08-09 11:29:54,DRR - Cpptraj: Add all data files to output,0,,0
+13f1b88a,2016-08-09 11:30:48,DRR - Cpptraj: Update help,0,,0
+fb733a9f,2016-08-09 12:28:07,DRR - Cpptraj: Handle very tiny grids,0,,0
+9d579868,2016-08-09 12:32:12,DRR - Cpptraj: Protect against divide by zero,0,,0
+2dc0187f,2016-08-09 12:49:19,DRR - Cpptraj: Fix up timing data.,1,,1
+d32d7531,2016-08-09 13:03:01,DRR - Cpptraj: Make max grid point a class variable again.,0,,0
+f0a8a586,2016-08-09 13:05:01,DRR - Cpptraj: Check for null data sets.,0,,0
+5e8e3714,2016-08-09 13:55:19,DRR - Cpptraj: Initial OpenMP implementation. Not yet thread safe for Eij calc.,0,,0
+3e883aba,2016-08-10 11:28:08,DRR - Cpptraj: Test combining solvent-solute into one giant outer loop for NB calc - theoretically better for openmp...,0,,0
+4e7655a5,2016-08-10 11:43:44,DRR - Cpptraj: Add OpenMP version. So far scaling seems better than original implementation but need to do some more tests. Eij still needs to be done as well.,0,,0
+023c4359,2016-08-10 12:01:43,DRR - Cpptraj: Disable timings not being recorded for the time being,0,,0
+83155809,2016-08-10 12:05:38,DRR - Cpptraj: Fix code comments,1,,0
+e8a00d3e,2016-08-10 13:25:50,DRR - Cpptraj: Fix Eij calc with OpenMP,1,,1
+5a2398a6,2016-08-10 14:06:41,DRR - Cpptraj: Add tests for new code. Need new save file for Eij due to round-off  new DX save files since format is slightly different. GIST output is same within relative tolerance of 0.0001.,0,,0
+6b8be07c,2016-08-10 14:10:08,DRR - Cpptraj: Clean up debug info,0,,0
+8839f72d,2016-08-10 14:15:20,DRR - Cpptraj: Fix type for double grid,1,,1
+3850d2b6,2016-08-12 12:13:10,DRR - Cpptraj: Print Eij results and info to CpptrajFiles  add 'info' keyword  make it clear that 'ext' refers to grid file extensions. Add progress bars to Print section since it might take a while with many voxels/frames.,0,,0
+9864dec4,2016-08-12 13:18:11,DRR - Cpptraj: Remove old code. New code results match old code to within machine precision.,0,,0
+73950697,2016-08-12 13:35:57,DRR - Cpptraj: Remove obsolete code. Slight reorganization of code in translational entropy calc to reflect the fact that no calc is triggered when at a boundary voxel.,0,,0
+af22c68f,2016-08-12 13:40:26,DRR - Cpptraj: Make it clear that I'm to blame for any bugs that may be in this version of GIST :-),1,,0
+913f63ee,2016-08-12 14:07:39,DRR - Cpptraj: Forgot to update the other GIST test.,0,,0
+4f32316d,2016-08-12 14:18:19,Merge pull request #387 from drroe/gist_dataset,0,,1
+0b941d00,2016-08-12 14:59:33,DRR - Cpptraj: Fix reading of some old style Amber topology files  where number of pointers is not always consistent.,1,,1
+7d95f614,2016-08-12 15:10:24,Merge pull request #390 from drroe/fix_old_parm,0,,1
+24cf57d8,2016-09-19 14:58:55,DRR - Cpptraj: Fix bug in 'crdaction' where wrong frame was being used for actions that modify topology info. Also make 'crdaction' respect 'noprogress'.,1,,1
+aa9fb8b8,2016-09-19 16:11:55,DRR - Cpptraj: Update dependencies.,0,,0
+638d40fd,2016-09-20 09:34:24,Merge pull request #395 from drroe/fix_crd,0,,1
+7df90a7f,2016-09-20 15:21:40,DRR - Cpptraj: Fix reading extended format for COR. Print when reading extended format.,1,,0
+e78c4e27,2016-09-20 15:49:48,DRR - Cpptraj: Fix potential segfault in rotdiff when 'corrout' file not able to be opened.,1,,1
+85c87f61,2016-09-21 08:10:33,Merge pull request #396 from drroe/fix_cor,0,,1
+12cd4dd6,2016-09-21 08:48:01,DRR - Cpptraj: Move all test checks to end since dacdif removes files by default and the cluster info file is needed for second part of the test.,0,,0
+3e88f897,2016-09-21 08:53:22,DRR - Cpptraj: Was checking the wrong file.,1,,0
+e46b27ac,2016-09-21 09:21:40,DRR - Cpptraj: Fix up Makefile clean/uninstall rules.,1,,0
+53cf0412,2016-09-21 09:41:09,Merge pull request #397 from drroe/fix_test,0,,1
+31bd6f0f,2016-09-22 09:32:30,DRR - Cpptraj: Fix conversion of nucleic acid residue names for 'bres' (from DAC). Also change recognized water residue names to HOH for 'bres'.,1,,0
+797e212b,2016-09-22 11:42:21,DRR - Cpptraj: Atom names with 2 character element names start in column 13.,0,,0
+b719cb0b,2016-09-22 14:10:16,DRR - Cpptraj: Make residue numbers larger than 9999 and atom numbers larger than 99999 wrap to 0 instead of 1.,0,,0
+7e6fd3ff,2016-09-22 14:30:28,DRR - Cpptraj: Fix potential segfault when encountering blank lines in certain spots in CIF files.,1,,1
+5441be7d,2016-09-22 14:49:44,DRR - Cpptraj: Make sure when terbyres is enabled that TER cards are also placed going from solvent->solute as well as solute->solvent.,0,,0
+5685b3b0,2016-09-22 15:12:58,Merge pull request #398 from drroe/improve_pdb,0,,1
+5a8908a5,2016-09-27 09:52:01,DRR - Cpptraj: Add functions for going between unit cell params and shape matrix,0,,0
+8ed34f2b,2016-09-27 10:31:01,DRR - Cpptraj: Add option to write older DCD where unit cell params stored instead of symmetric shape matrix  adjust version accordingly. Improve code docs  remove debug info.,0,,0
+7c169265,2016-09-27 10:48:07,DRR - Cpptraj: Fix detection of rhombic dodecahedron cells,1,,1
+9a86b357,2016-09-27 11:32:07,Merge pull request #399 from drroe/fix_charmm_ucell,0,,1
+a3f3297b,2016-09-28 10:08:06,DRR - Cpptraj: Do not put TER cards between ions as well as solvent for terbyres,0,,0
+a1a17b31,2016-09-28 16:14:34,DRR - Cpptraj: Actually make PDB atom/residue numbers wrap to 0 after 99999/9999.,0,,0
+b710bf16,2016-09-29 09:41:24,DRR - Cpptraj: Remove file that should not be tracked.,0,,0
+aab93edd,2016-10-05 09:15:47,DRR - Cpptraj: First attempt at recognizing which residues should have HETATM records.,0,,0
+09290666,2016-10-05 09:49:38,DRR - Cpptraj: Correctly set reference mask from reference expression instead of target,0,,0
+a704e196,2016-10-05 09:51:16,DRR - Cpptraj: Correct case in warning message,0,,0
+9098a53c,2016-10-05 10:09:06,DRR - Cpptraj: Recognize zinc-coordinating cysteine (CYZ) for 'pdbres' option,0,,0
+4725f6f9,2016-10-05 10:10:45,Merge pull request #400 from drroe/fix_drmsd,0,,1
+b4faac7a,2016-10-05 11:36:15,Merge pull request #401 from drroe/fix_pdb_ter,0,,1
+f577f4b4,2016-10-12 09:07:56,DRR - Cpptraj: Seems some new versions of OpenMPI need the '#include <cstdio>' directive as well as older versions of intel MPI. Just including cstdio does not seem to negatively affect other MPI distributions so always include it. I wish they would keep their interfaces consistent...,0,,0
+2d914518,2016-10-12 09:26:17,Merge pull request #403 from drroe/fix_openmpi,0,,1
+3dac2260,2016-10-21 10:18:37,DRR - Cpptraj: Comment out DEBUG statement (thanks to DAC for pointing this out).,0,,0
+1c8883bd,2016-10-21 10:29:35,Merge pull request #405 from drroe/at_sync,0,,1
+cf32ec31,2016-10-24 12:23:03,DRR - Cpptraj: Improve code docs  make allocation more straightforward for next power of two.,0,,0
+acd8931c,2016-10-24 12:24:17,DRR - Cpptraj: Only assign legend if 'name' not provided. Clean up output format for correlation coefficient.,0,,0
+fb62cbc1,2016-10-24 13:02:26,DRR - Cpptraj: Store correlation coefficient in a data set,0,,0
+8efad371,2016-10-24 13:37:58,DRR - Cpptraj: Remove constructor allocators for CorrF classes to make it easier to check for memory errors  change the name of the allocation routine from Allocate to CorrSetup to make it easier to search for. Trap memory error in Analysis_Corr.,1,,0
+98beccff,2016-10-24 16:35:23,Merge pull request #406 from drroe/fix_fft,0,,1
+72fe561a,2016-10-25 15:59:13,DRR - Cpptraj: Fix missing asterisk (reported by DAC),1,,0
+50abff82,2016-10-26 08:07:15,Merge pull request #407 from drroe/fix_gro,0,,1
+7c87de56,2016-10-27 10:05:09,DRR - Cpptraj: Add code to save non-native contact data as well,0,,0
+0fdcdc54,2016-10-27 10:23:40,DRR - Cpptraj: Add nonnative contact pdb option,0,,0
+f40f5c9f,2016-10-27 10:40:29,DRR - Cpptraj: Add test for new features.,0,,0
+b6c53f39,2016-10-27 10:43:49,DRR - Cpptraj: Do not run test for new options in parallel,0,,0
+28b3a5c2,2016-10-27 11:31:22,Merge pull request #409 from drroe/nativecontacts_nonnative,0,,1
+0bbbd248,2016-10-31 11:28:08,DRR - Cpptraj: Start writing 'remove' mode of 'dataset' command,0,,0
+1d68ce37,2016-10-31 12:01:48,DRR - Cpptraj: Finish dataset remove average,0,,0
+dcfe5410,2016-10-31 12:05:08,DRR - Cpptraj: Put 'remove' functionality in separate function,0,,0
+cbcf1029,2016-10-31 12:16:32,DRR - Cpptraj: Put all 'dataset' functionality in separate functions to enhance readability,0,,0
+fbe3b1fd,2016-10-31 12:33:12,DRR - Cpptraj: Implement size criterion,0,,0
+d4c9bad1,2016-10-31 12:42:33,DRR - Cpptraj: Add help,0,,0
+14aa1f76,2016-10-31 12:56:41,DRR - Cpptraj: Add mode/type,0,,0
+079e67b0,2016-10-31 14:59:53,DRR - Cpptraj: Fix up make2d args check  correctly set metadat. Fix text alignment in help.,1,,1
+4b95460a,2016-10-31 15:04:15,DRR - Cpptraj: Add 'dataset' commands test,0,,0
+7220313f,2016-10-31 15:20:48,DRR - Cpptraj: Track invidual contact series in resContact,0,,0
+32eade5f,2016-10-31 15:21:51,DRR - Cpptraj: Add missing test files.,0,,0
+860e8b9e,2016-11-01 09:07:12,DRR - Cpptraj: Add options to record contact time series by residue.,0,,0
+f2207d48,2016-11-01 09:17:51,DRR - Cpptraj: More informative error messages,1,,0
+cc16b53b,2016-11-01 09:35:40,DRR - Cpptraj: Give non-native residue series contact sets different legends and aspects.,0,,0
+ec9f4644,2016-11-01 09:39:40,DRR - Cpptraj: Add test for residue time series,0,,0
+6a2be822,2016-11-01 09:41:01,Merge pull request #410 from drroe/dataset_remove_cmd,0,,1
+d69b25e8,2016-11-01 09:47:34,DRR - Cpptraj: Change label for non-native contacts in residue output,0,,0
+57cdb4eb,2016-11-01 10:12:21,Merge pull request #411 from drroe/nativecontacts_residue_series,0,,1
+71071cff,2016-11-01 12:30:11,DRR - Cpptraj: First attempt to fix GIST for water models with extra points.,1,,0
+5b4071bf,2016-11-02 09:12:13,DRR - Cpptraj: Fix memory access issue.,1,,1
+51034b44,2016-11-02 09:24:40,Merge branch 'fix_gist_mem' into gist_general_solvent,0,,1
+9bb15e57,2016-11-02 11:32:17,DRR - Cpptraj: Add note about low precision of Amber elec conversion factor.,0,,0
+960d2588,2016-11-02 11:45:28,DRR - Cpptraj: Debug statement,0,,0
+f8f179a4,2016-11-02 13:44:32,Merge pull request #413 from drroe/gist_general_solvent,0,,1
+e761be7a,2016-11-09 12:18:48,DRR - Cpptraj: Initial incarnation of the remap command.,0,,0
+6bba27ab,2016-11-09 12:29:59,DRR - Cpptraj: Add Setup. Also clean up messages in strip action.,0,,0
+ef07d401,2016-11-09 12:32:55,DRR - Cpptraj: Add DoAction,0,,0
+208c11e7,2016-11-09 12:34:35,DRR - Cpptraj: Add remap command  update dependencies,0,,0
+a9d665f7,2016-11-09 12:42:27,DRR - Cpptraj: User atom numbers start from 1,0,,0
+1a55dfe3,2016-11-09 13:02:11,DRR - Cpptraj: Add remap test,0,,0
+e6880326,2016-11-09 13:44:37,Merge pull request #416 from drroe/remap_command,0,,1
+26b22c60,2016-11-12 12:46:34,DRR - Cpptraj: First attempt at improving the atom mapping code.,0,,0
+70936561,2016-11-13 10:43:05,DRR - Cpptraj: Make use of StructureMapper,0,,0
+03321a21,2016-11-13 10:51:57,DRR - Cpptraj: Fix small memory error,1,,1
+fb2e154b,2016-11-13 14:12:54,DRR - Cpptraj: Get rid of dependence on DataSet_Coords_REF in StructureMapper. Store coordinates in MapAtom instead.,0,,0
+bd0571bc,2016-11-13 17:34:01,DRR - Cpptraj: Make counting of mapped atoms a separate function.,0,,0
+89559f88,2016-11-13 18:20:15,DRR - Cpptraj: First attempt at per residue mapping,0,,0
+38ea1bc4,2016-11-13 18:37:19,DRR - Cpptraj: Correctly offset by residue map target indices. Use original topologies to output atom names.,0,,0
+920ce9fd,2016-11-13 19:18:15,DRR - Cpptraj: Add keyword to allow switching from by-residue to all atom mapping. Cleanup code and messages.,0,,0
+ba9d5139,2016-11-13 19:28:58,DRR - Cpptraj: More message cleanup,0,,0
+899129cf,2016-11-17 11:16:03,DRR - Cpptraj: Fix segfault for 'help analyze'. The 'analyze' prefix was being treated as a special keyword which meant 'search only the analysis list for command'. However  this meant that when used in conjunction with 'help'  the 'analyze' would be stripped away and the entire string would be null. This makes 'analyze' a command which searches the analysis list and then adds the command to the state  which is a better way of doing things anyway.,1,,0
+d650a61c,2016-11-17 11:23:44,DRR - Cpptraj: Add 'analyze' future deprecation info.,0,,0
+b9186cb7,2016-11-17 14:50:01,Merge pull request #420 from drroe/fix_help,0,,1
+07f620a6,2016-11-19 21:54:14,Be more conservative about when to return an error (set -e means if any command results in a non-zero exit status  it kills the shell and returns non-zero).,1,,0
+903d6e82,2016-11-19 22:41:22,Merge pull request #421 from swails/bugfix/travis,0,,1
+a1e28f2b,2016-11-22 09:44:50,Merge branch 'master' into atommap_by_residue,0,,0
+05fcc3aa,2016-11-22 10:05:36,DRR - Cpptraj: Make map all atoms default again. Change to enumerated type for potential future mapping options.,0,,0
+a41f7ec9,2016-11-22 10:12:37,DRR - Cpptraj: Clean up errors/warnings,0,,0
+6aada2b6,2016-11-22 10:22:09,DRR - Cpptraj: Do not fail outright when a residue is not mapped  just do not map it.,1,,0
+a96f5ce4,2016-11-22 10:38:47,DRR - Cpptraj: Add documentation,0,,0
+979a42fb,2016-11-22 10:43:04,DRR - Cpptraj: Add atommap mode byres test,0,,0
+31b917e9,2016-11-22 11:27:21,Merge pull request #422 from drroe/atommap_by_residue,0,,1
+b366c57b,2016-11-22 11:56:23,DRR - Cpptraj: Start refactoring SPAM so it uses the master DSL/DFL,0,,0
+8bc35718,2016-11-22 13:32:43,DRR - Cpptraj: Make ImagedAction part of class instead of inheriting.,0,,0
+c6b4b1f8,2016-11-22 13:42:24,DRR - Cpptraj: Code cleanup,0,,0
+a1e49d81,2016-11-22 14:58:39,DRR - Cpptraj: First attempt at separating KDE code,0,,0
+9a61c421,2016-11-22 16:08:33,DRR - Cpptraj: Re-implement KDE as a class.,0,,0
+6aa0eeb8,2016-11-23 08:29:31,DRR - Cpptraj: Fix up normalization and automatic min/max/step/bins determination.,1,,1
+f72cd249,2016-11-23 09:28:13,DRR - Cpptraj: Fix up for OpenMP. Allow KDE to be calcd with different number of threads than normal if desired.,1,,1
+fd25bda1,2016-11-23 10:08:53,DRR - Cpptraj: Initial add of Jason Swails energy stats calc code for SPAM. Not yet working.,0,,0
+a7107855,2016-11-23 11:44:46,DRR - Cpptraj: Use OpenMP to speed up volmap,0,,0
+e9512dda,2016-11-23 13:03:22,Merge pull request #423 from drroe/volmap_openmp,0,,1
+a4f6e0f4,2016-11-23 13:04:26,Merge branch 'master' into spam_ecalc,0,,0
+81d36276,2016-11-28 09:03:26,DRR - Cpptraj: Fix order of memory allocation - could lead to segfault with OpenMP.,1,,1
+2e06cf03,2016-11-28 09:42:32,DRR - Cpptraj: Add volmap test with 'size' keyword,0,,0
+658e0ce9,2016-11-28 10:14:49,Merge pull request #425 from drroe/fix_volmap,0,,1
+a3a16471,2016-11-28 10:15:51,Merge branch 'master' into spam_ecalc,0,,0
+5c6c3802,2016-11-28 14:16:05,DRR - Cpptraj: Add function for setting up data file with no argument list.,0,,0
+1c3ab50e,2016-11-28 14:18:40,DRR - Cpptraj: Change so that SetupDatafile with filename also takes debug level,0,,0
+f6ae8cca,2016-11-28 14:38:05,DRR - Cpptraj: Try to avoid per-frame allocations. Add some debug info. Clean up code.,0,,0
+dc0ba5a9,2016-11-28 14:38:55,DRR - Cpptraj: Add zero function to ensure all values get set to zero.,0,,0
+51777491,2016-11-28 14:53:08,DRR - Cpptraj: Change variable name to make clearer,0,,0
+7c1d2740,2016-11-28 16:27:09,DRR - Cpptraj: Skip frames where no energy calcd. Estimate bins as sqrt of data.,0,,0
+1e95d750,2016-11-29 09:19:02,DRR - Cpptraj: Make pure water calc OpenMP-parallelized,0,,0
+dc5ef208,2016-11-29 10:14:57,DRR - Cpptraj: Add timers  clean up output  add options for specifying DG and DH bulk values.,0,,0
+3b4adfeb,2016-11-29 12:57:51,DRR - Cpptraj: Split off splining functionality,0,,0
+739a1439,2016-11-30 10:57:29,DRR - Cpptraj: Split out bandwidth factor estimation.,0,,0
+cc10bc66,2016-11-30 11:04:37,DRR - Cpptraj: Add constructor for bins  min  step  and label,0,,0
+33eae6f1,2016-11-30 11:08:57,DRR - Cpptraj: Remove separate spline functionality,0,,0
+f3459814,2016-11-30 12:43:58,DRR - Cpptraj: Add 'temperature' keyword and enable 'summary' keyword. Create data sets for final energy values. Improve how energy set without skipped frames is created. Add delta G calculation.,0,,0
+9319505b,2016-11-30 12:51:58,DRR - Cpptraj: Add -T*DS calc. Remove unneeded function vars.,0,,0
+7179e64c,2016-11-30 13:01:19,DRR - Cpptraj: Make peak data sets use index instead of aspect (makes more sense IMO). Make peak indices always start from 1 and frame #s start from 1 to be consistent with the rest of cpptraj.,0,,0
+52fc4ffb,2016-11-30 13:02:35,DRR - Cpptraj: Update test output from last commit.,0,,0
+4bef309a,2016-11-30 13:18:19,DRR - Cpptraj: Add 'ucell' and 'shape' options to charmm dcd trajin to force reading of box info as unit cell params or shape matrix respectively.,0,,0
+c82018d9,2016-11-30 14:02:50,libcpptraj,0,,0
+224d5301,2016-11-30 14:09:57,copy header file too,0,,0
+86e66812,2016-11-30 14:14:31,try,0,,0
+249a7389,2016-11-30 14:15:24,Merge pull request #427 from drroe/charmm_ucell,0,,1
+abad277e,2016-11-30 14:22:37,try more,0,,0
+35a38d8a,2016-11-30 14:35:01,only libcpptraj,0,,0
+844bfff5,2016-11-30 14:44:19,no test,0,,0
+1524eb85,2016-11-30 15:57:24,DRR - Cpptraj: Add functions to add/remove force/velocity/mass components of Frame.,0,,0
+2cd3bc8d,2016-11-30 15:57:44,DRR - Cpptraj: Fix atom mapping in symmetric systems by properly initializing target frame.,1,,0
+e6b5862d,2016-11-30 18:50:16,.lib,0,,0
+22690237,2016-11-30 19:40:06,get config.h,0,,0
+a83f255c,2016-12-01 10:19:58,Merge pull request #428 from drroe/frame_methods,0,,1
+85955c85,2016-12-01 11:57:40,DRR - Cpptraj: Make max/min dependent on fixed constant times the step size instead of variance. Multiply sum by binwidth to approximate left Riemann sum. Remove sum debug info.,1,,0
+0a35f2dc,2016-12-01 12:17:16,DRR - Cpptraj: More code cleanup  only calc ucell/frac matrices once per frame if needed. Remove/hide debug info. Delete obsolete code.,0,,0
+a64f491f,2016-12-01 13:18:57,DRR - Cpptraj: Clean up header file a bit,0,,0
+242b9c77,2016-12-01 13:45:51,DRR - Cpptraj: Test summary output,0,,0
+cce63d64,2016-12-01 13:47:18,DRR - Cpptraj: Add somewhat naive openmp parallelization,0,,0
+384a259a,2016-12-01 14:18:35,DRR - Cpptraj: Enable SPAM for MPI,0,,0
+0830b475,2016-12-01 14:18:50,DRR - Cpptraj: Enable spam test for MPI,0,,0
+9df242c2,2016-12-01 14:42:52,DRR - Cpptraj: Hide more debug info. Perform energy calc for pure water.,0,,0
+4f3547f1,2016-12-02 10:08:44,Merge pull request #429 from drroe/spam_ecalc,0,,1
+78eb9e96,2016-12-05 09:18:31,Merge pull request #431 from drroe/enhance_autoimage,0,,1
+8c36cd69,2016-12-05 10:23:37,DRR - Cpptraj: Allow only part of a molecule to be used as the anchor point.,0,,0
+6e4facda,2016-12-05 10:48:59,DRR - Cpptraj: Add test for specifying anchor mask region,0,,0
+43b38340,2016-12-08 11:02:33,DRR - Cpptraj: Add atom comparison to 'comparetop'. Unhide comparetop command.,0,,0
+a829ecf7,2016-12-08 11:38:55,DRR - Cpptraj: Add comparetop test,0,,0
+4c66c529,2016-12-08 14:40:13,DRR - Cpptraj: Keep track of total frames filtered.,0,,0
+dfdf6d74,2016-12-08 14:40:32,DRR - Cpptraj: Fix indentation,1,,0
+62ce9d50,2016-12-09 08:59:06,DRR - Cpptraj: Split out filter test from outtraj test.,0,,0
+31a2c647,2016-12-09 09:02:38,DRR - Cpptraj: Add combinecrd test,0,,0
+88e1e85e,2016-12-09 09:42:29,DRR - Cpptraj: Add combined box info to combinecrd  using the largest box dimensions  also add option to have no box info in combined coords. Increase speed a bit by using direct copies.,0,,0
+74b30f34,2016-12-09 09:44:03,DRR - Cpptraj: Add combinecrd test with box info,0,,0
+71961c6d,2016-12-09 10:01:36,Merge pull request #432 from drroe/comparetop_atoms,0,,1
+fe082977,2016-12-09 10:07:34,Merge branch 'master' into filter_combinecrd,0,,0
+9591e3af,2016-12-09 12:16:44,artifact,0,,0
+53604dcf,2016-12-09 12:20:09,fix config.h,1,,0
+d21605e7,2016-12-09 12:27:07,change cpptraj. to libcpptraj.,0,,0
+63afeae2,2016-12-09 12:30:40,DRR - Cpptraj: Do not allow combinecrd to run in parallel.,0,,0
+f36ac289,2016-12-09 12:30:55,DRR - Cpptraj: Skip combinecrd test in parallel.,0,,0
+a6e0a6f3,2016-12-09 12:35:49,ooops  libcpptraj.lib,0,,0
+9e98bcec,2016-12-09 14:27:12,Merge pull request #433 from drroe/filter_combinecrd,0,,1
+75a20aa2,2016-12-09 14:59:34,Merge pull request #434 from hainm/win_cpptraj_lib,0,,1
+af053565,2016-12-09 15:27:47,DRR - Cpptraj: Use TopInfo class for more control of topology info printout.,0,,0
+076f6324,2016-12-09 15:38:33,DRR - Cpptraj: Allow output to be redirected to a file.,0,,0
+c2a4b460,2016-12-09 15:39:20,DRR - Cpptraj: Atom info test,0,,0
+40676421,2016-12-09 16:09:07,DRR - Cpptraj: Move print bond info functionality to TopInfo and make it so 2 masks can be specified. Consolidate common setup in Exec_Top.,0,,0
+5da06c0b,2016-12-09 16:09:53,DRR - Cpptraj: Add bond info print,0,,0
+4cf48755,2016-12-09 16:41:37,DRR - Cpptraj: Move Angle print to TopInfo.,0,,0
+4abb369d,2016-12-09 16:41:58,DRR - Cpptraj: Angle info test,0,,0
+94ec3d57,2016-12-11 13:26:20,DRR - Cpptraj: Move dihedral info routines to TopInfo,0,,0
+2d3b51fd,2016-12-11 13:27:08,DRR - Cpptraj: Add dihedral info test,0,,0
+863050bb,2016-12-11 17:07:43,DRR - Cpptraj: Put residue info print into TopInfo,0,,0
+2b865383,2016-12-11 17:08:11,DRR - Cpptraj: Add residue info print,0,,0
+fee99919,2016-12-12 09:51:30,DRR - Cpptraj: Move molecule info print to TopInfo. Add # residues and last residue number to output.,0,,0
+6841a0db,2016-12-12 09:52:00,DRR - Cpptraj: Add molecule info print.,0,,0
+34ded243,2016-12-12 09:52:34,DRR - Cpptraj: Make test name more accurate,0,,0
+9e1ed6c6,2016-12-12 10:24:30,DRR - Cpptraj: Move charge/mass print to TopInfo  add test.,0,,0
+531cd947,2016-12-12 10:41:00,DRR - Cpptraj: Add print of bond lengths via reference structure.,0,,0
+057504af,2016-12-12 10:52:36,DRR - Cpptraj: Add print of angle and torsion via reference structure,0,,0
+4f5c8664,2016-12-12 12:01:20,DRR - Cpptraj: Make Truncated() function a little smarter  add len() function.,0,,0
+d3c77ced,2016-12-12 12:01:49,DRR - Cpptraj: Fix up formatting for dihedrals  headers and fields now correspond and have sensible widths.,1,,0
+b380eb98,2016-12-12 12:03:44,DRR - Cpptraj: Update test output.,0,,0
+4c63b077,2016-12-12 12:05:43,DRR - Cpptraj: Make min dihedral number field width match header width,0,,0
+486a6a65,2016-12-12 12:15:12,DRR - Cpptraj: Fix up angles formatting,1,,1
+5ccbd96c,2016-12-12 12:26:46,DRR - Cpptraj: Fix up bonds formatting and fix aligment of angle atom number fields,1,,1
+e585abb9,2016-12-12 12:36:56,DRR - Cpptraj: Change class variable names to avoid confusion. Add test for value printout.,0,,0
+921974ae,2016-12-12 12:45:47,DRR - Cpptraj: Remove extra newline printout after each parameter array - looks cleaner in my opinion. Track values.dat.save instead of values.dat. Add env variable for passing args to diff within tests for debugging purposes.,0,,0
+e51e8879,2016-12-12 12:48:56,DRR - Cpptraj: Enable topology info print test.,0,,0
+e61ea9d2,2016-12-12 15:14:49,Merge pull request #435 from drroe/topinfo,0,,1
+41b17c18,2016-12-12 17:10:31,using libcpptraj.dll.a,0,,0
+ed73f969,2016-12-12 17:29:35,try configure,0,,0
+31a7ba30,2016-12-12 17:37:07,even more?,0,,0
+c872c0c5,2016-12-12 17:42:05,create netcdf cache,0,,0
+ea5f8bcc,2016-12-12 17:42:41,cache include folder too,0,,0
+7925b409,2016-12-12 17:45:36,where,0,,0
+6f74cdba,2016-12-12 17:50:33,g++,0,,0
+6b589413,2016-12-12 17:52:06,ls,0,,0
+b3a15382,2016-12-12 17:55:55,arpack + openblas,0,,0
+800fa0c0,2016-12-12 17:57:57,with-readline,0,,0
+768d8fef,2016-12-12 18:00:26,set env,0,,0
+e1deef81,2016-12-12 18:02:17,start making,0,,0
+cd963f23,2016-12-12 18:04:41,using MINGWPREFIX,0,,0
+6d12e399,2016-12-12 18:09:02,omg  working,0,,0
+246b0542,2016-12-13 08:25:01,Merge pull request #436 from hainm/dll_a,0,,1
+763962f2,2016-12-13 12:47:46,make the line nicer?,0,,0
+f78541b1,2016-12-13 12:57:17,like this?,0,,0
+879f88a4,2016-12-13 15:22:23,again,0,,0
+8a7d3a22,2016-12-15 11:21:45,Merge pull request #437 from hainm/format,0,,1
+6162109f,2016-12-16 13:04:12,DRR - Cpptraj: Add option to allow writing of empty tree  join  and rotate arrays. Warn about missing parameters/atom type names.,0,,0
+c90ffd9f,2016-12-16 13:45:21,DRR - Cpptraj: Have AppendTop() combine extra atom info and bond parameters.,0,,0
+20f9c6f5,2016-12-16 14:15:29,DRR - Cpptraj: Add angles to AppendTop,0,,0
+4989cd59,2016-12-16 16:21:26,DRR - Cpptraj: Start adding dihedrals to AppendTop(),0,,0
+7a48cd82,2016-12-19 16:25:06,DRR - Cpptraj: Finish change for AddDihedral,0,,0
+2455f355,2016-12-19 16:25:33,DRR - Cpptraj: Start adding nonbond stuff,0,,0
+62e684be,2016-12-20 12:07:27,DRR - Cpptraj: Add append of nonbond params. Needs testing.,0,,0
+9e8f941e,2016-12-20 12:45:09,DRR - Cpptraj: When appending topology combine non-existing parameters with Lorentz-Berthelot rules,0,,0
+ca97efe8,2016-12-20 13:04:04,DRR - Cpptraj: Hide/clean up debug info,0,,0
+f46392be,2016-12-21 10:27:44,DRR - Cpptraj: When stripping topology  set solvent status of new molecules based on solvent status of old molecules  i.e. preserve solvent info.,0,,0
+13b6e309,2016-12-21 10:32:01,DRR - Cpptraj: Fix up configure help.,1,,0
+047d0324,2016-12-21 11:34:33,DRR - Cpptraj: Only setup solvent info based on old molecule info if there was actually old molecule info,0,,0
+dd2c6ef7,2016-12-21 13:08:58,Merge pull request #440 from drroe/fix_strip_solvent,0,,1
+d92c43cc,2016-12-21 13:09:46,Merge branch 'master' into fix_output_ambertop,0,,0
+d8ead830,2016-12-22 11:59:37,DRR - Cpptraj: CurrentTop -> NewTop  make name better reflect purpose.,0,,0
+86395f78,2016-12-22 12:15:13,DRR - Cpptraj: Fix nonbond parameter check,1,,1
+1a1bccc4,2016-12-22 12:22:11,DRR - Cpptraj: Add test of combining with parameters  split a system apart and put it back together.,0,,0
+b1535778,2016-12-22 12:44:58,DRR - Cpptraj: Update test output  parameters actually combined now.,0,,0
+2e655c5f,2016-12-22 12:54:30,DRR - Cpptraj: Remove old debug info,0,,0
+32e66bb3,2016-12-22 13:12:43,DRR - Cpptraj: Use new AddLJterm()  obsolete old one.,0,,0
+118d620c,2016-12-22 13:31:53,DRR - Cpptraj: Fix up help text,1,,0
+f2867ffc,2016-12-22 13:43:35,DRR - Cpptraj: More function consolidation.,0,,0
+b63eb4ca,2016-12-22 15:55:19,Merge pull request #441 from drroe/fix_output_ambertop,0,,1
+7cd3c22d,2016-12-27 14:28:55,add circleci,0,,0
+3e74c80b,2016-12-27 14:29:39,utils to util,0,,0
+db9e59d3,2016-12-27 14:44:46,use python from /opt/conda/bin,0,,0
+3a18a4cb,2016-12-27 14:51:46,oops  this python,0,,0
+81b69a9d,2016-12-28 10:25:38,DRR - Cpptraj: Restore AddDihedral(int int int int) function to Topology class. Addresses #442.,0,,0
+41edd9f3,2016-12-28 11:59:11,Merge pull request #444 from drroe/restore_adddihedral,0,,1
+c0c38cea,2016-12-28 12:11:43,Merge branch 'master' of https://github.com/Amber-MD/cpptraj into circle,0,,0
+50094867,2016-12-28 15:37:25,Merge pull request #443 from hainm/circle,0,,1
+ca1bc8ba,2016-12-29 08:29:26,DRR - Cpptraj: Do not write header to output energy files  makes comparing easier in AT (dacdif is not compatible with the '-I' flag).,0,,0
+2dd173ac,2016-12-29 08:30:29,DRR - Cpptraj: Link is not really necessary and is removed in AT.,0,,0
+96c0ff6e,2016-12-29 08:39:40,DRR - Cpptraj: Add Gromacs TRR/XTC tests. Addresses #417.,0,,0
+2d69a374,2016-12-29 10:02:17,DRR - Cpptraj: Add missing variable initializations to avoid segfaults with sander API.,0,,0
+5b74dac5,2016-12-29 10:27:44,DRR - Cpptraj: Improve sander API detection by ensuring all variables used by Energy_Sander can be initialized.,0,,0
+372acf11,2016-12-29 10:53:43,DRR - Cpptraj: Make sander API test fail configure only if '--with-sanderlib' was specified.,1,,0
+d9769d44,2016-12-29 10:58:02,DRR - Cpptraj: Remove --with-sander flag and set AMBERHOME to HOME to make sander API errors (which do NOT depend on cpptraj) non-fatal.,1,,0
+b48afe85,2016-12-29 11:06:45,DRR - Cpptraj: Effectively disable sander API testing on travis until a better mechanism is in place to ensure the sander API that is pulled in is up to date with Amber GIT tree.,0,,0
+574a3481,2016-12-29 11:17:09,Merge pull request #446 from drroe/at_fixes,0,,1
+af22cdb1,2016-12-29 13:06:39,DRR - Cpptraj: Add CircleCI build badge for pytraj.,0,,0
+7b4ca056,2016-12-29 13:39:40,Merge pull request #447 from drroe/circleci_badge,0,,1
+51a44108,2017-01-04 12:12:07,DRR - Cpptraj: Begin direct sum test.,0,,0
+e09da2b1,2017-01-04 12:48:55,DRR - Cpptraj: Finish direct sum test.,0,,0
+0b5ffc07,2017-01-04 16:15:36,DRR - Cpptraj: Fix summation and add missing factor of 1/2. Improve debug output.,1,,1
+bf4de1d8,2017-01-04 16:20:11,DRR - Cpptraj: Disable debug info,0,,0
+ef6174c9,2017-01-04 16:29:54,DRR - Cpptraj: Fix precision,1,,1
+6d05b07d,2017-01-09 13:36:20,DRR - Cpptraj: Test 0 point as well,0,,0
+666f51f4,2017-01-09 13:47:57,DRR - Cpptraj: Add separate electrostatics and vdw calc functions,0,,0
+0516cc39,2017-01-09 14:07:08,DRR - Cpptraj: Add ability to get either elec or vdw by themselves.,0,,0
+31a66747,2017-01-09 14:47:26,DRR - Cpptraj: Make elec direct sum a selectable calculation.,0,,0
+b91759e7,2017-01-09 14:55:00,DRR - Cpptraj: Add timing for direct sum,0,,0
+a66d79f4,2017-01-09 15:10:18,DRR - Cpptraj: Make direct sum work properly with exclusion list.,0,,0
+7f140d76,2017-01-09 16:00:45,DRR - Cpptraj: Fix naming.,1,,0
+f6e630bc,2017-01-09 16:07:02,DRR - Cpptraj: Some code compaction,0,,0
+881135fb,2017-01-11 08:31:57,DRR - Improve calculation efficiency by getting rid of nested loops and conditional within loop.,0,,0
+aa7d697d,2017-01-11 08:37:59,DRR - Cpptraj: More code consolidation,0,,0
+673e0da5,2017-01-11 08:42:02,DRR - Cpptraj: More consolidation,0,,0
+15c4730e,2017-01-11 15:29:15,DRR - Cpptraj: Start Ewald stuff based on sanders implementation.,0,,0
+2359278b,2017-01-11 16:15:55,DRR - Cpptraj: Add sumq function,0,,0
+9765ffec,2017-01-11 16:20:12,DRR - Cpptraj: Add self.,0,,0
+8c65782e,2017-01-12 09:53:28,DRR - Cpptraj: Debug self energy,0,,0
+20049aba,2017-01-12 11:07:28,DRR - Cpptraj: Code reorganization,0,,0
+466ba132,2017-01-12 15:56:18,DRR - Cpptraj: Add calculation of some defaults.,0,,0
+0760851b,2017-01-13 09:32:37,DRR - Cpptraj: Remove unused class vars  add MapCoords  start Recip energy.,0,,0
+d41f0675,2017-01-13 10:45:45,DRR - Cpptraj: Add recip energy calc. Not working yet.,0,,0
+f013e2ca,2017-01-13 12:25:34,DRR - Cpptraj: Fix silly sign and indexing errors.,1,,0
+e606c643,2017-01-13 13:10:12,DRR - Cpptraj: Add placeholder for direct space energy. Not finished yet.,0,,0
+66c73bcf,2017-01-17 14:18:06,DRR - Cpptraj: Fix direct sum,1,,1
+618d8f47,2017-01-17 14:57:13,DRR - Cpptraj: Some code reorganization  better code docs  better function names.,0,,0
+2a91e2ef,2017-01-17 15:25:15,DRR - Cpptraj: Enable Ewald as an option.,0,,0
+d645dfc1,2017-01-17 16:05:34,DRR - Cpptraj: Add ewald timing data.,0,,0
+1296adf6,2017-01-17 16:22:34,DRR - Cpptraj: Allocate trig arrays once during setup instead of per frame. Update dependencies,0,,0
+fdef4521,2017-01-19 08:39:38,DRR - Cpptraj: Make sure when data sets are cleared they are also cleared from data files.,0,,0
+90511a72,2017-01-19 09:39:59,Merge pull request #449 from drroe/fix_list_segfault,0,,1
+0c9a02ea,2017-01-19 16:04:37,DRR - Cpptraj: Fix standard write of cmatrix sets.,1,,1
+ccf21835,2017-01-19 16:10:18,DRR - Cpptraj: In atomicfluct  only overwrite legend when no set name specified.,0,,0
+a9b4a48e,2017-01-20 16:50:12,Merge pull request #450 from drroe/fix.cmatrix.write,0,,1
+c3f8fafb,2017-01-22 17:05:34,DRR - Cpptraj: Begin pairlist code. Not a great translation yet.,0,,0
+f3636d48,2017-01-22 17:07:12,DRR - Cpptraj: Fix up depends etc,1,,0
+ccf723ca,2017-01-23 15:59:15,DRR - Cpptraj: Fix up cell translate vector generation indices. Take init stuff out of constructor.,1,,1
+ef2ad59f,2017-01-23 16:22:23,DRR - Cpptraj: Add erfc timer for debug,0,,0
+37b494a9,2017-01-24 09:16:03,DRR - Cpptraj: Add fractional coords calc and fill translate vector routines,0,,0
+c38ab04f,2017-01-24 09:58:19,DRR - Cpptraj: Put reciprocal vector lengths calc into Box class. Add SetupGrids(),0,,0
+848a3662,2017-01-24 13:01:35,DRR - Cpptraj: Fix calc of frac coords so it matches sander. Begin gridding routine,1,,1
+a1cc53da,2017-01-24 13:17:11,DRR - Cpptraj: Finish up grid routine,0,,0
+ac87ee8b,2017-01-26 13:55:32,DRR - Cpptraj: Try to set up grid pointers like sander does. Not yet working.,0,,0
+ba5a2592,2017-01-27 13:48:12,DRR - Cpptraj: Change where erfc timing starts and stops,0,,0
+542f5c9d,2017-01-27 13:48:25,DRR - Cpptraj: Add grid pointer calc that (I think) actually works,0,,0
+4fd7bc3f,2017-01-27 14:16:14,DRR - Cpptraj: Add translate vector index calc and code docs.,0,,0
+bf3b6da0,2017-01-29 08:44:36,DRR - Cpptraj: Fix up grid pointers calc. Add direct sum calc using pairlist. Not 100% working yet.,1,,0
+7eda39f9,2017-01-29 12:44:05,DRR - Cpptraj: Fix one more mistake in pointer calc,1,,1
+5c16c909,2017-01-29 12:47:05,DRR - Cpptraj: Enable some debug info. Make sure we use charges with prefactor baked in.,0,,0
+74e5f3cf,2017-01-29 12:59:26,DRR - Cpptraj: Remove some debug info. Calcs not requiring exclusion list are working!,0,,0
+6270f920,2017-01-29 14:12:00,DRR - Cpptraj: Direct sum seems correct now. Had to avoid double counting self cell interactions. Add calculation and use of full exclusion lists for each atom.,0,,0
+1cf29f5f,2017-01-29 14:25:00,DRR - Cpptraj: Remove debug info,0,,0
+02ed3b02,2017-01-29 14:25:59,DRR - Cpptraj: Enable pairlist direct calc,0,,0
+94f6a78b,2017-01-30 11:29:36,DRR - Cpptraj: Refactor pairlist so that memory allocation happens in a smarter way. Get rid of unnecessary code in many places  including MapCoords in Ewald sinc this is in the pair list now.,0,,0
+f2356e40,2017-01-30 11:49:38,DRR - Cpptraj: Fix up timing info for Ewald,1,,1
+50b742e5,2017-01-30 12:00:34,DRR - Cpptraj: Add skinnb keyword.,0,,0
+c8aea61e,2017-01-30 14:07:13,DRR - Cpptraj: Add ewald adjust for excluded atoms.,0,,0
+0e4f1285,2017-01-30 15:10:13,DRR - Cpptraj: Clean up debug info,0,,0
+9b383ddf,2017-01-30 16:08:51,Merge branch 'master' into test_ewald,0,,0
+87fe7682,2017-01-31 09:20:00,DRR - Cpptraj: Cubic spline class derived from DataSet_Mesh,0,,0
+887efc3d,2017-01-31 09:36:55,DRR - Cpptraj: Better error trapping.,1,,0
+f510974e,2017-01-31 09:43:33,DRR - Cpptraj: Add function to evaluate single X value,0,,0
+e46df574,2017-01-31 09:51:25,DRR - Cpptraj: Make DataSet_Mesh use Spline,0,,0
+8ea555ae,2017-01-31 10:33:32,DRR - Cpptraj: Save splined Erfc values,0,,0
+d2a592f6,2017-01-31 10:43:27,DRR - Cpptraj: Lookup works but is slow.,0,,0
+734268b8,2017-01-31 11:40:37,DRR - Cpptraj: Improve table lookup speed.,0,,0
+2d550114,2017-01-31 11:53:01,DRR - Cpptraj: Try some inlining,0,,0
+57bfa158,2017-01-31 15:14:08,DRR - Cpptraj: Fix up code docs,1,,0
+7a12a6ce,2017-02-01 11:35:56,DRR - Cpptraj: Place spline values in a table for hopefully more efficient lookup. Actual speed benefit is minimal.,0,,0
+38ad64ff,2017-02-01 15:27:00,DRR - Cpptraj: Fix empty cell check and reorganize atom loop,1,,1
+7764734a,2017-02-01 15:47:37,DRR - Cpptraj: OpenMP parallelize direct sum,0,,0
+bce71867,2017-02-01 16:02:16,DRR - Cpptraj: Dont allocate work arrays every frame,0,,0
+53a361ee,2017-02-02 09:32:51,DRR - Cpptraj: Parallelize recip calc and improve code docs. Hide slow direct function with ifdef.,0,,0
+010a9362,2017-02-02 11:05:31,DRR - Cpptraj: Update code docs.,0,,0
+f8c99a9c,2017-02-05 21:43:49,Add a script to build on Jenkins,0,,0
+222eed79,2017-02-05 22:03:10,Expand test suite to improve parallel tests,0,,0
+7e4f1e07,2017-02-09 12:16:48,Run the Intel tests with libsander Increase maxit on the curve fit tests and loosen the tolerance on one file comparison due to variation from the Intel compilers with MKL,0,,0
+25f4cea9,2017-02-09 13:18:46,Fix the configure script for Intel + OpenMP,1,,0
+6fb281e9,2017-02-09 14:25:06,DRR - Cpptraj: Properly adjust frame offset.,0,,0
+3f11e0c1,2017-02-09 14:38:48,DRR - Cpptraj: Offset double counted frames by -1 in peakFrameData so that frame 0 can be properly marked as double counted.,0,,0
+6c47cc4a,2017-02-09 20:05:42,Merge pull request #452 from drroe/fix_spam_mpi,0,,1
+531bebc3,2017-02-09 20:26:05,Merge branch 'master' of github.com:/Amber-MD/cpptraj into ci/jenkins,0,,0
+73f06ddc,2017-02-09 21:28:24,Fix OpenMP tests,1,,1
+2d1a3bd5,2017-02-10 15:56:27,Merge pull request #451 from swails/ci/jenkins,0,,1
+d529d1c7,2017-02-13 20:42:43,Load a specific Amber so tests don't point to my test environment that changes all the time.,0,,0
+d437d67c,2017-02-15 09:41:37,Merge pull request #454 from swails/ci/jenkins,0,,1
+9780d65c,2017-02-15 10:45:25,Merge branch 'master' into test_ewald,0,,0
+1f1e3496,2017-02-15 13:47:45,DRR - Cpptraj: Make atomicfluct code way more efficient - use integer mask instead of character mask.,0,,0
+89978f52,2017-02-15 15:46:49,Merge pull request #455 from drroe/fix_atomicfluct,0,,1
+c7a7da9c,2017-02-16 10:04:57,DRR - Cpptraj: Trap program errors and missing binary errors during testing.,1,,0
+46065e6d,2017-02-16 10:37:17,DRR - Cpptraj: Do not run in parallel if no parallel netcdf library,0,,0
+59b06d4d,2017-02-16 11:26:05,DRR - Cpptraj: Protect test in parallel when no pnetcdf,0,,0
+3fad635f,2017-02-16 12:54:52,DRR - Cpptraj: Ensure in 'runanalysis' that only master executes.,0,,0
+ea2bd451,2017-02-16 16:39:06,Merge pull request #456 from drroe/improve_test_err,0,,1
+e668ed19,2017-02-17 11:54:21,DRR - Cpptraj: Changes necessary for using cpptraj configure within AmberTools build process.,0,,0
+e12b132d,2017-02-18 09:16:17,Move OS X tests to Jenkins,0,,0
+0618cd6f,2017-02-18 09:17:44,Fix script,1,,1
+f9d3db75,2017-02-18 09:20:38,Another attempt to fix,1,,0
+508a5f30,2017-02-18 11:17:40,Load CUDA,0,,0
+1dafce23,2017-02-18 11:21:22,noarpac -> -noarpack,0,,0
+8ed2f1f6,2017-02-18 13:44:16,Fix the CUDA build (configure for sm_30),1,,1
+5db5951b,2017-02-18 17:49:15,Fix one of the test failures on the Mac,1,,1
+0f89ec55,2017-02-18 17:55:33,Fix CUDA tests,1,,1
+fea525cf,2017-02-19 07:45:26,Merge pull request #458 from swails/ci/osx-jenkins,0,,1
+24e4d1a3,2017-02-19 07:47:29,Merge branch 'master' into at_configure,0,,0
+946fca55,2017-02-19 07:48:36,DRR - Cpptraj: MKL fix from Jason Swails,1,,1
+3c002f89,2017-02-19 08:06:27,DRR - Cpptraj: If SHADER_MODEL is not set compile for multiple architectures,0,,0
+2062a2a0,2017-02-19 08:08:13,DRR - Cpptraj: Remove warning - CUDA code has been around for enough time.,0,,0
+82320d51,2017-02-19 14:44:44,DRR - Cpptraj: Add ActiveComm function since a TrajComm might not be defined if we arent going to be doing any trajectory processing.,0,,0
+5db9f6e5,2017-02-19 14:57:37,DRR - Cpptraj: Use ActiveComm for data file write since TrajComm may not be defined. Use it in RunAnalysis as well.,0,,0
+a359e6e6,2017-02-19 15:23:40,Merge pull request #457 from drroe/at_configure,0,,0
+06136591,2017-02-27 12:09:50,DRR - Cpptraj: Do not automatically disable ARPACK when -macAccelerate specified.,0,,0
+b2f247bc,2017-02-27 12:31:20,Merge pull request #460 from drroe/mac_flag,0,,1
+9ecabdce,2017-02-28 09:02:53,DRR - Cpptraj: Fix clang++/gfortran linking on OSX (I hope),1,,1
+3077b293,2017-02-28 09:36:43,DRR - Cpptraj: Fix binary location logic. Previously some important binary vars would remain unset if CPPTRAJ explicitly specified.,1,,1
+c021fa11,2017-02-28 10:58:01,DRR - Cpptraj: Do not use -lgfortran when using -macAccelerate or -openblas and arpack not needed. Only test clang++ and gfortran linking if -lgfortran is needed.,0,,0
+8b71ea4b,2017-02-28 11:33:14,Merge pull request #461 from drroe/mac_clang_gfortran,0,,1
+48f80e62,2017-03-01 10:37:54,DRR - Cpptraj: Add 'pdbter' option to write TER cards according to original PDB info or when chainID changes.,0,,0
+9ca18dde,2017-03-01 10:51:42,DRR - Cpptraj: If 'pdbter' and no chain ID or TER info in topology  switch mode to terbyres.,0,,0
+15b87062,2017-03-01 11:26:32,Merge pull request #462 from drroe/pdb_original_ter,0,,1
+bc0b367b,2017-03-03 09:29:00,DRR - Cpptraj: Add 'pdbres' keyword to atomicfluct byres output to use original pdb numbering if available. Also cleanup some output.,0,,0
+29b2ecce,2017-03-03 09:48:46,Merge pull request #465 from drroe/atomicfluct_pdbres,0,,1
+970f2621,2017-03-06 09:13:20,DRR - Cpptraj: Add third STDOUT output level option for supressing all output no matter what.,0,,0
+4985bf50,2017-03-06 09:18:42,DRR - Cpptraj: Correct spelling errors,1,,0
+05742c5d,2017-03-06 09:25:28,DRR - Cpptraj: Add hidden command line option '--suppress-all-output' to suppress all STDOUT output.,0,,0
+b51843fb,2017-03-06 09:32:05,DRR - Cpptraj: Make stdout a variable,0,,0
+a89d8896,2017-03-06 09:53:54,DRR - Cpptraj: Add '-o' command line flag for redirecting STDOUT output to a file.,0,,0
+95970a41,2017-03-06 10:31:38,Merge pull request #466 from drroe/set_world_silent,0,,1
+c2ece3d2,2017-03-06 10:35:55,Merge branch 'master' into test_ewald,0,,0
+3917c651,2017-03-06 11:08:38,DRR - Cpptraj: Fix up excluded energy adjustment term.,1,,1
+fd4f3f23,2017-03-06 11:12:00,DRR - Cpptraj:  Add Ewald energy tests,0,,0
+e463cf0e,2017-03-06 11:24:13,DRR - Cpptraj: Remove FtuFabI test (not needed).,0,,0
+7ab63695,2017-03-06 15:18:46,DRR - Cpptraj: Change version to 17.00. Also do not have separate version for NetCDF anymore - no longer needed since the test framework properly accounts for differences in NetCDF headers now.,0,,0
+485dd1b8,2017-03-06 15:20:34,DRR - Cpptraj: Bump internal version,0,,0
+2b92c9ac,2017-03-06 16:21:01,Merge pull request #467 from drroe/version17,0,,1
+4c452de1,2017-03-09 08:34:30,Merge branch 'master' into test_ewald,0,,0
+8f2da38c,2017-03-09 09:08:47,DRR - Cpptraj: Protect tests in paralleDRR - Cpptraj: Protect tests in parallell,0,,0
+0fed4368,2017-03-09 09:57:02,DRR - Cpptraj: Slight change in FFT memory allocation for wavelet analysis under OpenMP to get FFTW working without segfault for larger thread counts.,0,,0
+e9e66432,2017-03-09 13:43:26,Merge pull request #469 from drroe/test_ewald,0,,1
+fcc5f1f9,2017-03-15 12:37:11,DRR - Cpptraj: Properly initialize some variables.,0,,0
+da7b3928,2017-03-15 12:54:06,DRR - Cpptraj: Fix minor issue  sometimes tried to tokenize end of file.,1,,1
+235c5780,2017-03-15 12:54:47,DRR - Cpptraj: Properly clean up associated data,0,,0
+9f7f2813,2017-03-15 15:59:19,Merge pull request #470 from drroe/fix_mem_errors,0,,1
+eb530dd4,2017-03-16 11:02:42,DRR - Cpptraj: Fix for renamed docker image (from Hai),1,,1
+c2667fcf,2017-03-16 14:13:54,Merge pull request #471 from drroe/fix_circleci,0,,1
+a92633fa,2017-03-16 14:18:21,DRR - Cpptraj: Need to update this too apparently.,0,,0
+310de800,2017-03-17 10:50:33,Merge pull request #472 from drroe/fix_circleci_again,0,,1
+2c413382,2017-03-17 11:22:11,DRR - Cpptraj: When configuring for clang/macAccelerate on OSX make sure the system c++ library is used  avoids problems with libcpptraj for pytraj.,1,,0
+242310f4,2017-03-17 11:51:14,Merge pull request #473 from drroe/fix_libcpptraj_clang,0,,1
+9c4a37b5,2017-03-17 14:27:49,DRR - Cpptraj: When writing PDB v3 residue names  make sure CONECT records are included for the HETATM entries to be more in line with what the PDB format specifies.,0,,0
+dc3c152f,2017-03-17 14:38:55,DRR - Cpptraj: Update test PDB saves with missing TER cards for final molecules.,0,,0
+c98b6f34,2017-03-17 14:59:57,DRR - Cpptraj: Add test for printout of CONECT records for HETATM entries.,0,,0
+158c2676,2017-03-22 12:37:55,DRR - Cpptraj: Add CONECT write for disulfides when pdbv3 is active.,0,,0
+2c04e0b4,2017-03-22 16:17:49,DRR - Cpptraj: Add code for writing SSBOND records.,0,,0
+a4e3fa27,2017-03-23 15:48:57,DRR - Add distances to SSBOND records.,0,,0
+39b211de,2017-03-24 08:45:14,DRR - Cpptraj: Ensure CONECT records are only written once per PDB,0,,0
+517d060c,2017-03-24 09:08:55,DRR - Cpptraj: Ensure null chars correctly handled in constructors,0,,0
+ebacefef,2017-03-24 09:11:12,DRR - Cpptraj: Properly redirect error output,1,,0
+53c79e9d,2017-03-24 11:47:23,Merge pull request #474 from drroe/pdb_resname,0,,1
+453407c0,2017-03-24 12:18:55,DRR - Cpptraj: Make PDBWRITEMODE public again to fix pytraj build (and add a note so I don't forget).,1,,1
+a8a036fc,2017-03-24 15:58:24,DRR - Cpptraj: Try to fix the issues travis is having in getting pysander,1,,0
+435cf08a,2017-03-24 16:22:37,DRR - Cpptraj: Try curl -OL ...,0,,0
+638dfa23,2017-03-25 06:47:35,DRR - Cpptraj: Try switching Travis CI environment to Trusty  this seems to be the most commonly recommended course of action to fix the SSL error I've been seeing.,1,,0
+e80594aa,2017-03-25 08:53:48,Merge pull request #475 from drroe/fix_pytraj,0,,1
+3bb7f9e1,2017-03-31 15:09:16,"DRR - Cpptraj: Fix this error with PGI compilers: ""KDE.cpp""  line 53: error: more than one instance of overloaded function ""sqrt""           matches the argument list:             function ""sqrt(double)""             function ""std::sqrt(long double)""             function ""std::sqrt(float)""             argument types are: (size_t)     int bins = (int)sqrt(Pdata.Size()) ",1,,0
+bd50511b,2017-03-31 15:28:53,Merge pull request #478 from drroe/fix_pgi,0,,1
+8964ddaa,2017-04-03 10:15:10,DRR - Cpptraj: Remove extra factor of 1/6 from velocity autocorrelation output for diffusion constant in units of 1E-5 cm^2/ps. Allow diffusion constant output to be redirected to a file.,0,,0
+fd186ed2,2017-04-03 10:41:44,DRR - Cpptraj: Replace special Angstrom char with 'Ang.' to prevent strange printout on certain platforms.,0,,0
+86100630,2017-04-03 10:56:40,DRR - Cpptraj: Store diffusion constant in E-5 cm^2/ps as data set with aspect [D}  like 'diffusion' command.,0,,0
+fc4b2438,2017-04-03 10:57:23,DRR - Cpptraj: Add direct and diffout tests,0,,0
+2da75bb4,2017-04-03 11:01:29,DRR - Cpptraj: Reorder variables in a more sensible manner and improve code docs,0,,0
+176e6abc,2017-04-03 11:07:43,DRR - Cpptraj: Clean up output,0,,0
+d6b558cb,2017-04-03 12:18:19,Merge pull request #479 from drroe/fix_vac_units,0,,1
+2b3851dd,2017-04-05 12:36:44,DRR - Cpptraj: Add check to configure to see if flag needed for older MPI versions.,0,,0
+c0c371b0,2017-04-05 13:09:03,Merge pull request #480 from drroe/fix_old_mpi,0,,1
+19c085d4,2017-04-05 15:32:43,DRR - Cpptraj: Move MPI check to before LDFLAGS are set to avoid strange behavior on some systems.,0,,0
+e072514d,2017-04-05 15:50:48,Merge pull request #481 from drroe/fix_linker,0,,1
+9e841cb7,2017-04-07 09:51:46,DRR - Cpptraj: Fix VAC function plot X axis label and minimum value.,1,,1
+2ceea334,2017-04-07 09:56:39,DRR - Cpptraj: Update for fixed plot labels and origin.,1,,0
+a11f9218,2017-04-07 11:23:15,Merge branch 'master' into fix_vac_units2,0,,0
+39c6ae51,2017-04-07 11:23:34,DRR - Cpptraj: Add 'baseref' option.,0,,0
+9f802b1c,2017-04-07 11:27:02,DRR - Cpptraj: Fix bracket location.,1,,1
+2aa932e0,2017-04-07 11:30:07,DRR - Cpptraj: Add pairwisecache disk to help.,0,,0
+1e810302,2017-04-07 12:21:53,Merge pull request #482 from drroe/fix_vac_units2,0,,1
+24ef1262,2017-04-07 12:22:35,Merge branch 'master' into update_help,0,,0
+b36ce2da,2017-04-07 14:32:22,DRR - Cpptraj: maxlag is in frames  not time.,0,,0
+f6cc6750,2017-04-07 14:53:44,DRR - Cpptraj: Clean up help options.,0,,0
+eefebf97,2017-04-08 13:49:11,Merge pull request #483 from drroe/update_help,0,,1
+66827058,2017-04-09 03:39:22,using stable docker image hainm/pytraj-build-box:17.0,0,,0
+3514e700,2017-04-09 03:40:26,no need to pull now,0,,0

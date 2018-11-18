@@ -1,0 +1,900 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+cc74f4fa7,2015-12-08 12:28:45,Tagging v1.3.0,0,,0
+c045f9530,2015-12-08 12:58:57,Fix typo,1,,0
+b6e285b3c,2015-12-09 06:39:14,Fix invalid MPI communicator error,1,,1
+aed9147db,2015-12-09 12:18:39,3D rotational diffusion done,0,,0
+9886c9cfc,2015-12-09 12:20:06,3D rotational diffusion done,0,,0
+20d252c2d,2015-12-09 14:04:44,regular 2D diffusion added  and fixed a bug with active force magnitude being counted twice,1,,1
+2006d93a4,2015-12-09 17:05:57,stable version  getting active force to know about constraint,0,,0
+6831f1dde,2015-12-10 12:06:20,bd_cpu_added,0,,0
+eaef4fc1c,2015-12-10 12:15:36,bd_2,0,,0
+4f7c47625,2015-12-10 14:08:47,rot_noise_added,0,,0
+ade5844f1,2015-12-10 14:33:34,rot_3,0,,0
+f2b944239,2015-12-10 14:53:52,rot_3,0,,0
+7adcc6b4c,2015-12-10 15:04:55,rot_4,0,,0
+de2943432,2015-12-14 15:03:48,added back in sphere constraint  making ellipsoid a unique case of being an updater rather than a force,0,,0
+07db0a759,2015-12-14 16:38:22,constraint ellipsoid now an updater  makes sense when using brownian dynamics,0,,0
+048a6f193,2015-12-15 16:34:18,removed an id vs tag bug  implemented constraint ellipsoid as updater and it talks with active force  is stable but pending tests,1,,0
+c749c59a5,2015-12-16 12:34:06,"""x :x",0,,0
+218d13286,2015-12-16 12:34:45,"Revert ""rot_3""",0,,0
+738123e94,2015-12-16 12:35:16,"Revert ""rot_3""",0,,0
+8b008714d,2015-12-16 12:39:59,"Revert ""rot_noise_added""",0,,0
+188634f85,2015-12-16 12:40:58,"Revert ""bd_2""",0,,0
+82e0b9263,2015-12-16 12:43:25,undone chengyu's changes,0,,0
+6c4e5c462,2015-12-17 13:56:34,changed active force arrays into ArrayHandle's,0,,0
+93d925b97,2015-12-17 15:09:30,Merge branch 'master' into constraints,0,,0
+9921397be,2015-12-17 15:37:02,added GPU files for ellipsoid constraint and active force vector,0,,0
+93209c43e,2015-12-17 16:39:07,ellipsoid gpu code changes  not tested,0,,0
+9879d9b26,2015-12-18 13:03:24,ellipsoid gpu code stable build  untested,0,,0
+40485ed26,2015-12-18 13:26:07,minor,0,,0
+ffddcda71,2015-12-18 17:10:26,fixing merge conflict from rebase,1,,0
+22890fd55,2015-12-18 17:48:01,Fix order of Updater export statements,1,,1
+ff3ff30b7,2015-12-19 13:55:31,Fix crash on Python 3.5.1,1,,1
+d7813b972,2015-12-21 07:36:19,Merged in qiao/hoomd-blue/cq-py351 (pull request #114),0,,0
+917292f30,2015-12-21 12:52:55,adding active force gpu code,0,,0
+d8611ded9,2015-12-21 14:21:48,Remove unused boost libraries,0,,0
+a9fb0a545,2015-12-21 14:57:42,fixed tag issues and changed location of all particle loop,1,,0
+9a758a3f8,2015-12-21 15:36:51,small changes with arrayhandle's and getting GPU code ready for active force compute,0,,0
+a17ff7d54,2015-12-21 16:21:51,changes to active force compute gpu cu code,0,,0
+b94a88d12,2015-12-30 18:09:30,add_ActiveForceGPU_untested,0,,0
+338254708,2016-01-04 14:56:16,Active_force_gpu_compilable,0,,0
+d2fca227a,2016-01-04 16:40:59,Added documentation to python files for active and ellipsoid code,0,,0
+bec8e7883,2016-01-05 11:20:07,Enable constraints with MPI on CPU,0,,0
+26baaa7df,2016-01-05 11:34:20,documentation added to C++ code,0,,0
+ce59f5b81,2016-01-05 15:30:17,ActiveForceComputeGPU_working_and_bugfixes,0,,0
+fbcf095d7,2016-01-05 15:30:38,ActiveForceComputeGPU_working_and_bugfixes,0,,0
+6298b51c3,2016-01-05 16:26:14,more documentation and comment changes,0,,0
+93e78a278,2016-01-05 16:26:32,Merge branch 'active_matter_rebase' of https://bitbucket.org/glotzer/hoomd-blue into active_matter_rebase,0,,0
+7e7bf8984,2016-01-06 12:41:32,minor changes,0,,0
+f88ec8f47,2016-01-06 12:57:49,enable multi-GPU constraints,0,,0
+5eb9bef15,2016-01-06 13:16:26,safely proceed if zero constraints in local domain,0,,0
+a6f5ce694,2016-01-06 13:47:13,Disable autotuner MPI sync in NeighborListBinned,0,,0
+eadb7e419,2016-01-06 14:09:46,Fix initialization of groups in MPI,1,,1
+337c5dff6,2016-01-06 14:16:16,Fix re-initialization of bonded groups,1,,1
+b8b94babb,2016-01-06 14:35:21,Error out with incomplete constraints on CPU,1,,0
+5ce538b66,2016-01-06 14:55:46,more error checking,1,,0
+07f580c29,2016-01-06 15:02:43,apply minimum image in molecule diameter calaculation,0,,0
+d61241510,2016-01-06 15:44:37,working_CPU,0,,0
+13859be8c,2016-01-06 17:13:39,adding groups into active force  not done yet,0,,0
+7f6eab4f1,2016-01-06 19:38:05,now works at least for n=2 decompositions,0,,0
+36c7bcff0,2016-01-07 13:53:17,added group capabilities back to active force  fixed error with diffusion being 0,1,,0
+d7c63c856,2016-01-07 17:13:38,chaged how groups work  working on group GPU code,0,,0
+5ac7b5960,2016-01-08 10:07:11,first round of changes to GPU code with groups added,0,,0
+753b217c0,2016-01-08 10:23:59,rotbd_c_gpu_compilalbe,0,,0
+a604accb3,2016-01-08 10:31:48,small gpu changes,0,,0
+fac548e0f,2016-01-08 10:34:57,fix_default_value_gamma_r_and_python_API,0,,0
+62d04520f,2016-01-08 10:53:58,critical_stupid_bug_fix,0,,0
+ba2ef76e6,2016-01-08 11:03:55,minor_bug_fixes,0,,0
+a3f5a3e6a,2016-01-08 13:40:58,I_think_running_version_rotbd2,0,,0
+3eaac3ede,2016-01-08 14:08:49,small gpu changes,0,,0
+41bf09fe2,2016-01-08 15:55:24,small gpu changes,0,,0
+970aa23a2,2016-01-11 10:57:54,fixed gropu size = 1  but not when >1,1,,0
+b38a69aeb,2016-01-11 12:42:50,constraints and MPI appear to work on CPU,0,,0
+6bc86336e,2016-01-11 15:44:56,untested fix of group GPU code,1,,1
+fa11da956,2016-01-11 16:10:35,stable verision  groups working in GPU,0,,0
+e239961d5,2016-01-13 10:39:21,MPI/Multi-GPU constraints working,0,,0
+e5b3a8dfb,2016-01-13 15:44:05,Update copyright date,0,,0
+d2e950437,2016-01-14 08:36:20,Update change log,0,,0
+ab7c8de26,2016-01-14 08:37:03,Bump version to 1.3.1,0,,0
+eea2eea9a,2016-01-14 08:48:09,Merge branch 'maint',0,,0
+8d1911e7c,2016-01-14 13:00:57,some document changes  and altered diffusion algorithm for 3D,0,,0
+e1bd386ab,2016-01-14 15:58:55,fix segfault when moving particles,1,,1
+d0cb699bb,2016-01-14 19:11:15,Fix wrong access to system.box,1,,1
+d8e9a660c,2016-01-14 19:11:15,Fix wrong access to system.box,1,,1
+e3be7fbf9,2016-01-14 20:27:12,fix walls exports to be able to include hoomd.h in plugins,1,,1
+db0d0ac0b,2016-01-14 20:27:12,fix walls exports to be able to include hoomd.h in plugins,1,,1
+886182bf0,2016-01-15 11:10:51,Use python @property for system.box,0,,0
+603062ac6,2016-01-15 11:10:51,Use python @property for system.box,0,,0
+297bfcc27,2016-01-15 14:56:32,Merged in fix_system_box (pull request #118),0,,0
+b03445a32,2016-01-16 16:02:55,Merge branch 'master' into constraints,0,,0
+09614f2f3,2016-01-17 17:48:51,add constraints python unit test,0,,0
+9efbc5393,2016-01-17 17:58:32,enable constrain.sphere() in MPI,0,,0
+52939dbfe,2016-01-17 18:11:03,Update XML unit test,0,,0
+1aedccdaf,2016-01-17 18:32:22,Updated hoomd_script.data unit test,0,,0
+3ad4263c9,2016-01-17 18:43:19,update constraints unit test,0,,0
+80965623c,2016-01-17 18:51:52,Failsafe is cusolver is not found,0,,0
+f5c4cc592,2016-01-17 19:19:53,Fix kinetic energy logging in MPI,1,,1
+bb7862909,2016-01-17 19:19:53,Fix kinetic energy logging in MPI,1,,1
+a127aa948,2016-01-17 19:20:08,Check energy conservation for distance constraints,0,,0
+8cdeb79e6,2016-01-17 19:28:02,Add warning about incompatible integrators,0,,0
+9292ed8f3,2016-01-17 19:36:13,Bump XML file format version and document,0,,0
+75e1614b7,2016-01-17 19:45:16,run constraints unit test on 8 procs,0,,0
+f6ecbe890,2016-01-17 20:14:37,Fix errors when compiling without MPI,1,,1
+8beb6daa0,2016-01-17 21:02:26,add dfftlib in extern/,0,,0
+b7b33b201,2016-01-17 23:07:16,Fix two more compile errors with ENABLE_MPI=OFF,1,,1
+77f0497cd,2016-01-18 10:46:10,Merge branch 'constraints' into mpi_pppm,0,,0
+a7c36fbca,2016-01-18 14:23:08,added catch for orientation diffusion with rigid particles  and fixed bug in recalculating values every force call,1,,1
+cf7006cec,2016-01-18 15:45:25,added unit tests for active force and ellipsoid constraint,0,,0
+9c8c47d5b,2016-01-18 16:11:11,fixed small bug,1,,1
+9c3e82341,2016-01-18 16:22:41,fix particle out of box error if particles are initialized on the boundary in MPI,1,,1
+938f3726b,2016-01-18 16:22:41,fix particle out of box error if particles are initialized on the boundary in MPI,1,,1
+7ba7f2083,2016-01-18 16:58:01,minor gpu bugs,1,,0
+978e7bdd9,2016-01-18 20:49:44,Rewrote PPPMForceCompute base class for MPI,0,,0
+4eb388855,2016-01-19 06:07:59,Merged in fix_walls (pull request #119),0,,0
+87f8bca02,2016-01-19 06:08:32,Merged in fix_ke_mpi (pull request #120),0,,0
+db370eab4,2016-01-19 06:09:04,Merged in fix_particles_on_boundary (pull request #121),0,,0
+ef26622c9,2016-01-19 07:21:25,Merge branch 'maint',0,,0
+11662bd70,2016-01-19 08:40:27,Restore findcuda to version in master.,0,,0
+67b7b887f,2016-01-19 08:43:36,Add integrate.brownian to the documentation index.,0,,0
+b5ec44ff6,2016-01-19 10:58:28,Base class passes C++ unit test,0,,0
+9e51a8cd7,2016-01-19 11:17:14,2D_pass_diffusion_test_bug_fixes,0,,0
+30d5a59b1,2016-01-19 11:50:21,Fix segfault due to incorrect handling of PBC with order > 3,1,,1
+b87fc00eb,2016-01-19 12:02:33,extended PPPM python unit test,0,,0
+9a327d234,2016-01-19 12:27:47,Base class PPPM with MPI passes test (np=2),0,,0
+4268bf85a,2016-01-19 12:28:36,Merge branch 'constraints' into mpi_pppm,0,,0
+dec71d7ce,2016-01-19 12:32:07,Run pppm unit test on 8 ranks,0,,0
+44bb63c56,2016-01-19 14:28:55,merge,0,,0
+72a4eda2f,2016-01-19 14:37:11,Merge remote-tracking branch 'origin/active_matter_rebase' into rotbd2,0,,0
+7f447f45d,2016-01-19 15:51:35,pppm GPU compiles,0,,0
+e36d32e88,2016-01-19 16:18:08,Use autotuners for GPU pppm,0,,0
+7cae6534c,2016-01-19 16:28:08,Fix hang in influence function kernel,1,,1
+1d982328d,2016-01-19 16:40:42,More tuners,0,,0
+409e024cd,2016-01-19 16:59:18,Add autotuner for charge assignment,0,,0
+737cecc73,2016-01-19 18:00:44,rigid requirement removed for rotational diffusion and orientation_link,0,,0
+f6049f1c4,2016-01-19 18:54:50,PPPM GPU passing C++ unit test,0,,0
+f26b7a215,2016-01-19 19:50:37,adding grid communicator unit test,0,,0
+297bba8ac,2016-01-19 21:59:35,GPU pppm/MPI passes python unit test,0,,0
+394a76e31,2016-01-19 22:15:11,use group in PPPM,0,,0
+7d4e97981,2016-01-19 22:31:36,fix exclusions,1,,1
+91ba0b584,2016-01-19 22:33:59,updated docs,0,,0
+78ffb554b,2016-01-20 11:27:24,changed orientation flag to not require rigid bodies  left to user,0,,0
+fc2285ed9,2016-01-20 11:38:12,documented and tested snapshot access to constraints,0,,0
+5445a3528,2016-01-20 11:50:47,Summarize constraint algorithm in documentation,0,,0
+37e7c0d01,2016-01-20 13:03:13,Fix failing unit test in double,1,,1
+76fc8cb85,2016-01-20 13:12:03,fix minor doc typos,1,,0
+c4535565c,2016-01-20 13:51:41,Merge branch 'constraints' into mpi_pppm,0,,0
+add426eaa,2016-01-20 14:10:35,Fix segfault when profiling base class PPPM,1,,1
+dd54b8539,2016-01-20 14:44:38,Fix multi-GPU bug on capability < 3.5 devices in PPPM,1,,1
+7f1ab9d65,2016-01-20 15:10:17,Fix illegal memory access in constraint communicatoin,1,,1
+950b70dc6,2016-01-20 15:10:17,Fix illegal memory access in constraint communicatoin,1,,1
+0ea8e3acb,2016-01-20 15:14:57,fix profiler overflow in charge.pppm,1,,1
+9e1cacc70,2016-01-20 15:30:07,Fix potential segfault in CommunicatorGridGPU,1,,1
+19525a583,2016-01-20 15:52:55,Fix out of resources error in PPPM,1,,1
+5bca0ce80,2016-01-20 18:57:50,tentatively fix logic for triggering migrate,1,,1
+eacad281f,2016-01-20 18:57:50,tentatively fix logic for triggering migrate,1,,1
+962545082,2016-01-21 10:06:30,Move function decl into inclusion guard scope,0,,0
+58666bd09,2016-01-21 13:23:44,Merged in fix_inclusion_guard (pull request #123),0,,0
+544fed154,2016-01-21 16:42:23,Use local memory instead of shared memory for charge assignment,0,,0
+51a75424f,2016-01-21 17:50:50,Do not copy N^2 matrix back and forth between device and host,0,,0
+60b7e8cb4,2016-01-21 17:50:50,Do not copy N^2 matrix back and forth between device and host,0,,0
+36abcff53,2016-01-21 18:59:22,Fix invalid profiling in MPI PPPM on CPU,1,,1
+d811a2808,2016-01-21 18:59:42,Merge branch 'mpi_pppm' of https://bitbucket.org/glotzer/hoomd-blue into mpi_pppm,0,,0
+758507718,2016-01-21 19:27:13,add nondeterministic code path to assign charges,0,,0
+53e9a2956,2016-01-21 20:05:23,Fix sporadic segfault/illegal memory access in CellList(GPU),1,,1
+0c32643ba,2016-01-21 20:05:23,Fix sporadic segfault/illegal memory access in CellList(GPU),1,,1
+2c4153d3d,2016-01-21 21:04:13,Fix molecule tag assignment and compilation in debug mode,1,,1
+215fccc65,2016-01-21 21:04:13,Fix molecule tag assignment and compilation in debug mode,1,,1
+815971476,2016-01-21 21:07:20,Fix debug mode,1,,1
+bb57f5f1a,2016-01-21 21:53:41,Fix crash in MPI/constraint simulations,1,,1
+200a61c2f,2016-01-21 21:53:41,Fix crash in MPI/constraint simulations,1,,1
+d505fa2bb,2016-01-21 22:42:10,Pad buffer size correctly for FFT,0,,0
+98f0a22dd,2016-01-24 16:33:35,Fix compile for CUDA < 7.5,1,,1
+39ec207db,2016-01-24 16:33:35,Fix compile for CUDA < 7.5,1,,1
+538f65cf6,2016-01-24 18:52:13,Fix execution on CUDA < 7.5,1,,1
+30586288d,2016-01-24 18:52:13,Fix execution on CUDA < 7.5,1,,1
+ae339ec11,2016-01-25 09:18:11,Remove non-ASCII characters from constrain.py,0,,0
+eb6c10ac0,2016-01-25 12:30:04,Improve documentation,0,,0
+7b21831bb,2016-01-26 12:54:23,Optimize start-up for charge.pppm,0,,0
+9b8c8aeb7,2016-01-26 13:21:40,Fix doc typo,1,,0
+5be351a11,2016-01-26 13:32:18,Merged in constraints (pull request #116),0,,0
+ea462b9e9,2016-01-27 10:29:18,Add option to charge.pppm to compute long-range part less frequently,0,,0
+1420b1cd6,2016-01-28 07:40:10,Move wall exports into hoomd_module.cc,0,,0
+28067a925,2016-01-28 07:45:07,Somehow  the chage to walls made *all* the unit tests fail to build.....,1,,0
+8621cb6db,2016-01-28 13:23:54,Merged in fix-wall-include2 (pull request #125),0,,1
+9aca721d7,2016-02-01 10:24:53,minor change,0,,0
+3c7b2a443,2016-02-01 12:06:22,add noiseless flag in bd rotation and translation,0,,0
+bc171f12b,2016-02-01 18:44:52,Add to python converter registrations,0,,0
+ea83f5b18,2016-02-02 07:09:10,Fix unit test linkage,1,,1
+8a10e5c62,2016-02-02 08:23:05,Merged in support-boost-1.60 (pull request #126),0,,0
+93cb0e0b3,2016-02-02 08:54:15,Fix CPU build,1,,1
+ccd872847,2016-02-02 09:53:20,Fix builds with MPI disabled,1,,1
+0d8365ea9,2016-02-02 12:00:56,Merge branch 'maint',0,,0
+8944f5f76,2016-02-02 12:15:54,Update master to work with boost 1.60,0,,0
+8a5dfad46,2016-02-02 12:34:41,Update change log,0,,0
+e71b894a4,2016-02-02 13:04:22,Fix corrupt metadata in MPI runs,1,,1
+72defc5f3,2016-02-02 13:04:22,Fix corrupt metadata in MPI runs,1,,1
+d395938c6,2016-02-02 13:07:49,Quiet multiple registration warnings,0,,0
+ad0b13ee2,2016-02-02 13:07:49,Quiet multiple registration warnings,0,,0
+1a8e0d9ea,2016-02-02 13:49:17,Merge branch 'maint',0,,0
+eb71c46e5,2016-02-02 14:54:11,Fix NaN issues for wall computes,1,,1
+235d5423a,2016-02-02 19:17:03,Fix dumb mistake  fdivr is no scalar3,1,,1
+780271bb5,2016-02-02 19:28:11,Match documentation for logging,0,,0
+a78924662,2016-02-03 07:35:27,Document zero length returns,0,,0
+ad02e154e,2016-02-03 07:42:18,formatting nonsense,0,,0
+151f123f0,2016-02-03 10:12:23,Add compile instructions for clusters,0,,0
+e998ae25f,2016-02-04 06:11:03,Merged in zero_walls_bug_fix (pull request #128),0,,0
+1e99a08b6,2016-02-04 07:53:47,fixed,1,,0
+72d3c8bf4,2016-02-04 10:09:54,Further updates to compile instructions,0,,0
+4885ce8a7,2016-02-04 12:06:21,Fix typos,1,,0
+ac01c7e52,2016-02-04 14:16:58,Reorganize contributor information.,0,,0
+0aff1d8fd,2016-02-04 16:23:20,add_rot_damping_for_rigidBDNVT_CPUonly,0,,0
+ed7c8fb4a,2016-02-04 17:31:21,Document Python 2 issue,0,,0
+2c5dc8b37,2016-02-04 22:14:39,add_gpu_rigidbdnvt,0,,0
+a5585cfc2,2016-02-05 08:25:48,Construct walls in a variety of ways in test_walls,0,,0
+db4e9bf2b,2016-02-05 08:34:20,Catch the intended failure,0,,0
+6ada787b8,2016-02-05 14:24:16,isinstance change for py2,0,,0
+f692617b9,2016-02-05 15:17:13,Merged in fix_walls_to_wall (pull request #129),0,,0
+23fe8e284,2016-02-06 15:01:39,call the callback at the beginning of the analyze call and allow to add a callback after the writer is created.,0,,0
+8d480543a,2016-02-07 16:54:18,Merge branch 'master' into mpi_pppm,0,,0
+5cb0cebfb,2016-02-07 16:54:49,Fix warning for init.reset(),1,,0
+3f30e674d,2016-02-08 07:55:59,Add base class to walls,0,,0
+0f0c1567f,2016-02-08 08:03:59,Merged in fix_ref_count (pull request #130),0,,0
+66ccce377,2016-02-08 08:15:48,Working Titan and Eos module settings,0,,0
+24bb7c33d,2016-02-08 08:17:20,Merge branch 'update-compile-docs' into maint,0,,0
+68edc126b,2016-02-08 08:17:39,Merge branch 'maint',0,,0
+125cd1b97,2016-02-08 08:27:21,Merge branch 'master' into active_matter_rebase,0,,0
+02d07bc61,2016-02-08 08:28:07,Fix typo,1,,0
+719846d87,2016-02-08 10:06:48,Require context.initialize() before init.*,0,,0
+cd23fe956,2016-02-08 10:14:44,Remove embedded benchmark scripts,0,,0
+457488ce4,2016-02-08 10:38:16,Remove FindCUDA.cmake,0,,0
+e6df9d40a,2016-02-08 10:39:06,Bump minimum version of cmake to 2.8,0,,0
+6ee10bf87,2016-02-08 10:39:26,Remove compatibility path for cmake 2.6,0,,0
+7d20eef6c,2016-02-08 10:44:56,Remove integrate.bdnvt,0,,0
+481c65898,2016-02-08 11:21:38,Remove old NVT integrator,0,,0
+88f585728,2016-02-08 12:00:24,Fix default angleA type name,1,,1
+e76e6afd2,2016-02-08 12:01:27,Allow empty snapshots,0,,0
+0bc9f2907,2016-02-08 12:01:44,Unit tests to verify proper type initialization,0,,0
+d89237f33,2016-02-08 14:18:07,convert user input type names to str,0,,0
+a3a2cfbe5,2016-02-08 14:28:32,Tagging v1.3.2,0,,0
+a107f3548,2016-02-08 19:33:21,Merged in remove-implicit-context (pull request #131),0,,0
+bc4924b66,2016-02-08 19:34:07,Merged in remove-benchmarks (pull request #132),0,,0
+1c3f58f43,2016-02-08 19:35:39,Merge branch '2.0' into remove-findcuda,0,,0
+b07c3c62d,2016-02-08 19:36:49,Add cmake version update to change log,0,,0
+a63fcf0ac,2016-02-08 19:38:47,Merged in remove-findcuda (pull request #133),0,,0
+57817be04,2016-02-08 19:39:57,Merge branch '2.0' into remove-bdnvt,0,,0
+57040aca9,2016-02-08 19:40:56,Noted removal of integrate.bdnvt in change log,0,,0
+8203f4135,2016-02-08 19:41:57,Merged in remove-bdnvt (pull request #134),0,,0
+789801289,2016-02-08 19:42:53,Merge branch '2.0' into remove-old-nvt,0,,0
+5ac1caa0d,2016-02-08 19:43:51,Note removal of non-mtk NVT integrator,0,,0
+b18287ac9,2016-02-08 19:44:40,Merged in remove-old-nvt (pull request #135),0,,0
+6d7e3e53c,2016-02-08 19:46:26,Merge branch '2.0' into typename-str,0,,0
+a0ede916f,2016-02-08 19:47:51,Mention type name conversion in change log,0,,0
+44ee43c0c,2016-02-08 19:48:37,Merged in typename-str (pull request #137),0,,0
+d83f1de99,2016-02-08 19:50:10,Merge branch '2.0' into angleA-fix,0,,1
+0fe1c4495,2016-02-09 09:47:39,Fix angle and dihedral test initialization,1,,1
+0245c2c73,2016-02-09 09:47:54,Allow 0 partilces on a rank in bond calculations,0,,0
+cdbc9de14,2016-02-09 09:49:25,Mention angleA fix in change log,1,,0
+b7b53d07f,2016-02-09 10:03:39,Add version to top level package,0,,0
+6f34acb05,2016-02-09 12:46:52,Move bib options and exec_conf to context.py,0,,0
+6e38d0e0d,2016-02-09 13:28:48,Move global state into a class in context.py,0,,0
+6a6647613,2016-02-09 13:45:57,Allow multiple calls context.initialize(),0,,0
+71974166a,2016-02-09 13:54:15,Remove init.reset(),0,,0
+e6ee89bdf,2016-02-09 14:15:44,Remove unused getPDataRefs,0,,0
+f9c5e8e44,2016-02-09 14:16:23,Unit test multiple simulation contexts,0,,0
+c0bc5a258,2016-02-09 14:16:45,Add missing __exit__ to SimulationContext,0,,0
+dbf30a9cb,2016-02-09 14:21:08,Mention SimulationContext in change log,0,,0
+dcbcbcd02,2016-02-09 14:41:15,Fix spelling error,1,,0
+4ef29a112,2016-02-10 05:51:01,Merged in angleA-fix (pull request #136),0,,1
+8c5177314,2016-02-10 05:51:25,Merged in version (pull request #138),0,,0
+7c527f486,2016-02-10 05:55:32,Fix failing MPI tests,1,,1
+e612a4ac8,2016-02-10 06:08:18,Restore old simulation context on __exit__,0,,0
+f11deb593,2016-02-10 06:16:45,Merge branch '2.0' into global-context,0,,0
+b1166bd5c,2016-02-10 08:28:11,Remove remaining explicit calls to cout and cerr,0,,0
+895a608be,2016-02-10 10:18:14,Send messenger output to python sys.std*,0,,0
+bd69084d4,2016-02-10 10:23:32,Merged in global-context (pull request #139),0,,0
+dc65385d2,2016-02-10 10:31:41,Mention jupyter support in change log,0,,0
+5c38e3bab,2016-02-10 11:38:16,Change to push/pop mechanism for status line quiet,0,,0
+4ce55b840,2016-02-10 11:43:50,Link util.quiet_status to the doc index,0,,0
+3234416ab,2016-02-10 11:45:06,Add quiet_status to the change log,0,,0
+3c5337119,2016-02-10 12:57:17,Add angle_coeff to angle.harmonic,0,,0
+3d5be362a,2016-02-10 13:09:38,Use dihedral_coeff syntax with harmonic and opls,0,,0
+b835705d9,2016-02-10 13:20:06,Update improper to use improper_coeff,0,,0
+c816881b1,2016-02-10 13:23:31,Remove deprecated set_coeff syntax,0,,0
+25b4944fc,2016-02-10 13:30:55,Fix unit tests to new syntax,1,,1
+27d8728ac,2016-02-10 13:33:17,Mention set_coeff syntax in change log,0,,0
+fe93729f7,2016-02-10 14:11:20,Fix compile errors in --std=c++11 builds,1,,1
+93c709695,2016-02-10 20:37:15,Convert all __*attr__ to properties,0,,0
+c3d7e00f3,2016-02-11 08:11:08,Merged in jupyter-notebook (pull request #140),0,,0
+5af0999aa,2016-02-11 08:13:04,Merge branch '2.0' into quiet-status,0,,0
+336d46e67,2016-02-11 08:13:32,Merged in quiet-status (pull request #141),0,,0
+05e5606aa,2016-02-11 08:14:18,Merged in remove-set-coeff (pull request #142),0,,0
+18c60bd98,2016-02-11 08:44:29,Remove n/a comment,0,,0
+b892f1201,2016-02-11 09:32:16,Need new-style classes for properties in python2,0,,0
+e4498c3e3,2016-02-11 10:14:47,Merged in properties (pull request #143),0,,0
+dc4ce9669,2016-02-11 17:51:37,redefined rotational diffusion and updated documentation,0,,0
+d8166274a,2016-02-11 17:53:24,redefined rotational diffusion and updated documentation,0,,0
+250fa2d4c,2016-02-15 14:26:25,init commit correct dynamics cpu for bdnvt_rigid rotational,0,,0
+77c71292d,2016-02-15 15:18:53,major bug fix for cpu bdnvt_rigid,1,,1
+eba5c117d,2016-02-16 20:59:28,Refactoring rigid bodies,0,,0
+3e58aa351,2016-02-17 11:50:31,Fix calculation of central particle torque,1,,1
+21414f8f3,2016-02-17 15:38:09,MPI works with two ranks,0,,0
+0ecdd394f,2016-02-17 19:20:48,constituent particles follow central ptl (tag-wise),0,,0
+8eb501c9f,2016-02-17 21:36:35,add group.rigid_center(),0,,0
+0404e3237,2016-02-17 22:07:37,MPI communication working,0,,0
+b4e6331a2,2016-02-17 22:21:45,remove unneeded callback,0,,0
+8345d83cb,2016-02-17 22:43:16,Error out if integrating constituent particles,1,,0
+f06298989,2016-02-18 13:01:50,Tentatively fix MPI communication,1,,1
+f2f6ef877,2016-02-18 13:41:27,Fix uninitialized value in Communicator,1,,1
+0d4f137db,2016-02-18 16:54:38,sum up net torque from force constraints on cpu,0,,0
+444a6a2b2,2016-02-18 19:35:08,rigid bodies conserve energy in single rank simulations,0,,0
+276faf475,2016-02-19 00:34:28,Energy is conserved in MPI,0,,0
+fdc80b60b,2016-02-19 01:10:54,tentatively enable system.replicate() with rigid bodies,0,,0
+1be068d39,2016-02-19 11:44:22,fixed NaN error when active force magnitude = 0,1,,0
+0808aa348,2016-02-19 14:52:06,removed unneeded code,0,,0
+4c04773c8,2016-02-19 15:40:04,Fix replication of rigid bodies,1,,1
+fe4c95da2,2016-02-19 21:08:39,add Onsager reaction field pair.reaction_field(),0,,0
+b38f4e181,2016-02-19 21:12:15,update maintainer,0,,0
+480bf3929,2016-02-19 21:20:22,add test case for infinite eps_rf,0,,0
+840fe4807,2016-02-19 21:32:24,fix typo,1,,0
+a27412f5e,2016-02-21 21:57:04,Only activate body filtering if needed,0,,0
+e817dca7f,2016-02-21 23:58:25,Add GPU kernel for rigid body force/torque reduction,0,,0
+85736f13d,2016-02-22 13:59:49,update kernel on GPU,0,,0
+b9cf61237,2016-02-22 18:15:50,tentatively fix nompi compile,1,,1
+5d5915655,2016-02-22 18:18:07,fix compile with boost 1.60,1,,1
+73362cf83,2016-02-23 13:10:26,langevin_add_noiseless_option,0,,0
+f722f23af,2016-02-24 18:06:25,add summation of rigid body virials,0,,0
+517f4ae91,2016-02-24 20:47:36,correct shared memory size,0,,0
+02e192cb3,2016-02-25 19:27:09,fixed the includes,1,,0
+257cfffb7,2016-02-25 21:05:29,langevin cpu code added rotational damping and noise,0,,0
+f1a108d33,2016-02-26 08:19:02,Merged in hoomd_h_fix (pull request #146),0,,0
+7c2e7d265,2016-02-26 08:19:27,Merged in cxx11 (pull request #145),0,,0
+0c0e39c46,2016-02-28 16:33:36,NPT working with MPI,0,,0
+df7045c11,2016-02-28 17:20:45,Removing RigidData and integrators,0,,0
+adacadfa4,2016-02-28 17:27:06,suppress compiler warning,0,,0
+b6a2c0b0c,2016-02-28 17:37:16,Fix some unit tests,1,,1
+a2368e715,2016-02-28 17:49:19,tentatively suppress some MPI unit test errors,1,,0
+5f733ee32,2016-02-28 17:53:38,one more unit test,0,,0
+42eb066ef,2016-02-28 17:56:33,fix python2 error,1,,1
+fbcc71050,2016-02-28 18:28:31,second attempt to remove invalid character,0,,0
+af57367a1,2016-02-28 21:15:41,Implement register_callback,0,,0
+7d4b52ba9,2016-02-28 21:16:39,Update change log,0,,0
+2bec1b1af,2016-02-29 13:35:19,langevin gpu at least it can compile version,0,,0
+77a628c7a,2016-02-29 20:05:41,Merged in log-callback (pull request #148),0,,0
+0ee754c48,2016-02-29 20:08:45,Add change log to contributing.md,0,,0
+0caba7114,2016-03-01 10:06:36,Import gsd file layer API,0,,0
+54ace1ad5,2016-03-01 13:29:00,add enforce2D support,0,,0
+e60c0f24d,2016-03-02 11:14:18,Initial working version of dump.gsd,0,,0
+56e390728,2016-03-02 20:25:09,Add static control options to dump.gsd,0,,0
+b1c3d8fc2,2016-03-03 14:30:01,3d brownian cpu running version  coeff untested,0,,0
+03c6da2e2,2016-03-03 14:41:18,fix_minor_langevin_dim_bug,0,,0
+ddbd505de,2016-03-03 15:12:01,3d brownian gpu added  everything seems to work well,0,,0
+9bcb53ed5,2016-03-03 16:04:45,add ang_mom for both cpu and gpu brownian,0,,0
+5ba4244d0,2016-03-04 11:19:16,add comments and documentation  waiting to commit for pull request,0,,0
+9483c0fa8,2016-03-04 16:08:59,fix shared memory alignment issues with walls (at least  on Fermi),1,,1
+4161bd8aa,2016-03-04 16:30:35,further fixing alignment,1,,0
+c59e60154,2016-03-04 17:09:41,How about a __syncthreads()?,0,,0
+b6b26fa6b,2016-03-06 19:56:46,Merged in fix_wall_alignment (pull request #150),0,,0
+c2220dd51,2016-03-06 20:08:23,Tagging version 1.3.3,0,,0
+75d15d3d9,2016-03-06 20:30:50,Merge branch 'maint',0,,0
+d4541c4e8,2016-03-06 20:31:00,Merge branch 'master' into 2.0,0,,0
+28b96c82a,2016-03-07 13:30:21,minor change of documentation and default behavior for gamma_r,0,,0
+333104a93,2016-03-07 14:32:00,add separate shared cuda array for s_gamma_r,0,,0
+5e85ad8f4,2016-03-07 14:45:14,add_coder_credits,0,,0
+cc267b69e,2016-03-09 11:46:10,add unittest,0,,0
+d5fdb9a77,2016-03-09 16:00:53,major bug fix and cuda shared mem array renaming,1,,1
+4cb915b48,2016-03-09 16:12:48,documentation updates and minor renaming,0,,0
+3dff74255,2016-03-10 18:44:16,Fixed a bug where integrate.brownian gave the same x y  and z velocity components,1,,1
+32f5f39b5,2016-03-10 18:44:16,Fixed a bug where integrate.brownian gave the same x y  and z velocity components,1,,1
+b17f91bfc,2016-03-10 18:45:38,Merge branch 'maint',0,,0
+91359fe95,2016-03-11 11:22:30,Add unit test for dump.gsd,0,,0
+7e21f8adc,2016-03-11 14:11:57,Merge remote-tracking branch 'origin/master' into mergemaster,0,,0
+6c3645477,2016-03-11 15:29:32,delete an unneccesary check in active_force_compute,0,,0
+2a3223681,2016-03-11 21:22:20,Merge branch 'master' into active_matter_rebase,0,,0
+f271b53e7,2016-03-13 18:32:15,Starting to setup sphinx docs.,0,,0
+89053fb0b,2016-03-13 22:29:04,Add initial outline of GSD reader,0,,0
+d0db60c6b,2016-03-14 10:14:14,Fix a bug where GSD data was written incorrectly,1,,1
+4132d1692,2016-03-14 10:15:20,Implement particle gsd reader,0,,0
+76af8ee6b,2016-03-14 12:02:52,Complete imlepementation of data.gsd_snapshot,0,,0
+401dd568f,2016-03-14 12:16:31,Implement init.read_gsd,0,,0
+0e825a123,2016-03-14 12:26:28,Properly handle time_step in init.read_gsd,0,,0
+1a48b8a86,2016-03-14 13:23:06,Fix some of the MPI errors,1,,1
+23fc6f29e,2016-03-14 19:27:32,fixed evaluator plugins,1,,0
+12666c6c1,2016-03-14 20:21:32,MPI enable GSD,0,,0
+00c3d49ea,2016-03-14 20:54:05,Configure a dummy simulation so it runs on the GPU,0,,0
+7d3dd6080,2016-03-14 21:22:00,Maybe barrier will make the test more reliable?,0,,0
+043cc9867,2016-03-14 22:01:24,Fix last errors in GSD reader,1,,1
+e7e8ac533,2016-03-15 14:21:20,Merged in erjank/hoomd-blue-1/erjank/added-brief-documentation-for-being-able-1458060200193 (pull request #153),0,,0
+c33922628,2016-03-15 14:23:52,Merged in LudwigSchneider/hoomd-blue/plugin-fix (pull request #152),0,,1
+1d36b6bfa,2016-03-15 16:43:43,Added brief documentation for being able to log angle and dihedral energies.,0,,0
+ee10ced2c,2016-03-15 22:42:32,Remove boost::iostreams from Messenger,0,,0
+30c124e80,2016-03-16 09:03:30,Remove iostreams from HOOMDMPI.h,0,,0
+8f9bd4ec2,2016-03-16 11:26:29,Merge branch 'maint' of bitbucket.org:glotzer/hoomd-blue into pos_writer_modification,0,,0
+891f44d6b,2016-03-16 13:00:37,Merged in pos_writer_modification (pull request #155),0,,0
+514ffe984,2016-03-16 14:03:59,update change log,0,,0
+d936cb100,2016-03-16 14:10:43,Update change log,0,,0
+d92f17449,2016-03-16 14:37:35,Merged in remove-iostreams (pull request #154),0,,0
+5b0908620,2016-03-16 14:40:21,Merged in gsd (pull request #151),0,,0
+7b3090d63,2016-03-16 16:14:15,Remove boost::thread dependancy,0,,0
+e3332a365,2016-03-16 16:42:19,Remove dependance on boost zip_iterator,0,,0
+96b5c338a,2016-03-16 17:09:33,Remove *most* of the boost::filesystem usage,0,,0
+685eef521,2016-03-16 19:40:51,Fix failing test,1,,1
+48da90b8e,2016-03-16 20:00:06,Remove boost/dynamic_bitset dependancy,0,,0
+9484822f2,2016-03-16 20:23:00,Add group.force_update(),0,,0
+5bbeb5830,2016-03-16 21:29:47,First pass  clean pu ActiveForceCompute*.h and *.cc,0,,0
+9803a6e1a,2016-03-16 22:03:52,Cleanup style in ActiveForceComputeGPU.cu,0,,0
+e719e8de8,2016-03-18 19:41:46,Clean up reminaing active_matter_rebase branch,0,,0
+24352f087,2016-03-18 19:56:49,Merged in active_matter_rebase (pull request #115),0,,0
+80a3d7981,2016-03-18 20:04:08,Merge branch 'master' into rotbd2,0,,0
+a75de01b6,2016-03-18 20:10:03,Misc cleanup,0,,0
+d1a631552,2016-03-18 20:18:55,Fix failing tests,1,,1
+a434cbad4,2016-03-18 20:19:45,Update change log,0,,0
+dcb9307c0,2016-03-18 20:20:45,Added missing change log entry,0,,0
+e9b0d9e23,2016-03-18 20:34:23,Merged in rotbd2 (pull request #149),0,,0
+7dcef84a4,2016-03-18 20:34:53,Merge branch 'master' into reaction_field,0,,0
+2636350ee,2016-03-18 20:37:02,Add missing information,0,,0
+2c663f7ff,2016-03-18 20:37:36,Merged in reaction_field (pull request #144),0,,0
+ebb56cb53,2016-03-18 20:38:06,Merge branch 'master' into mpi_pppm,0,,0
+305bffb61,2016-03-18 21:06:09,Merge branch 'master' into 2.0,0,,0
+2602f9caa,2016-03-18 21:08:31,Merge branch '2.0' of bitbucket.org:glotzer/hoomd-blue into 2.0,0,,0
+1a1f1f3a1,2016-03-20 21:28:21,Merge branch 'master' into force_composite,0,,0
+4c8c515d7,2016-03-20 21:31:05,Merged in force_composite (pull request #147),0,,0
+84ad04a6a,2016-03-21 09:53:10,Merge branch 'master' into 2.0,0,,0
+6019a6f69,2016-03-21 10:52:03,Update new code to 2.0 ways,0,,0
+4851904ba,2016-03-21 11:11:54,Merge branch 'master' into mpi_pppm,0,,0
+c46030d92,2016-03-21 11:33:42,Merge branch 'sphinx-docs' into 2.0,0,,0
+b3c9ad0b1,2016-03-21 11:57:36,Remove share/,0,,0
+a0934b068,2016-03-21 11:58:48,Merge branch '2.0' of bitbucket.org:glotzer/hoomd-blue into 2.0,0,,0
+45630b6db,2016-03-21 13:37:48,Module reorg phase 1,0,,0
+ff4427da6,2016-03-22 12:39:50,Enable cite  context  and meta,0,,0
+727980f7d,2016-03-22 13:19:32,Enable the rest of the python module in CPU mode.,0,,0
+36772ba4a,2016-03-22 13:45:30,New module compiles and imports with MPI enabled,0,,0
+0ab5ef99f,2016-03-22 14:24:27,ENABLE_CUDA=on enabled now,0,,0
+3ef74a15d,2016-03-22 15:52:14,md module compiles and links,0,,0
+f3c30ef75,2016-03-22 16:57:57,hoomd.md now imports,0,,0
+74f71a53e,2016-03-22 20:17:07,_md builds with ENABLE_CUDA=on,0,,0
+814c72700,2016-03-22 20:27:18,Clean up unused files,0,,0
+46a059db3,2016-03-22 21:13:22,C++ unit tests for hoomd module,0,,0
+f557b36fb,2016-03-22 21:44:40,Starting to get python unit tests operational,0,,0
+7a7e4a00b,2016-03-23 09:16:48,Python unit tests passing for the hoomd module,0,,0
+18412e5e7,2016-03-24 10:38:45,C++ unit tests pass,0,,0
+f63624550,2016-03-24 16:13:35,All MD unit tests passing,0,,0
+7d6a19812,2016-03-24 18:17:50,Update change log,0,,0
+91bec255c,2016-03-24 18:50:10,Disable CTest,0,,0
+567a74685,2016-03-24 18:51:13,Move lint detector up to top,0,,0
+46af6c1ef,2016-03-24 18:51:29,Remove data directory,0,,0
+35695fadf,2016-03-24 20:30:25,Support boost 1.60.0,0,,0
+e39e922e2,2016-03-24 20:59:52,Boost 1.60.0 unit test framework requires the system library,0,,0
+493feeb8b,2016-03-25 08:35:21,Re-enable installs,0,,0
+52a0ee6a2,2016-03-25 08:36:09,Merged in module-reorg (pull request #156),0,,0
+de436707f,2016-03-25 09:13:58,_hpmc module builds,0,,0
+cc84448ae,2016-03-25 09:51:41,hpmc C++ unit tests build,0,,0
+be54d028b,2016-03-25 11:03:02,HPMC python tests pass,0,,0
+3a36faada,2016-03-29 22:11:09,OBB tree for faster polyhedron overlap check,0,,0
+7cd106994,2016-03-29 22:23:46,enable GCA clustering,0,,0
+68555d1d8,2016-03-29 22:31:07,fix clusters export,1,,1
+11c6656e4,2016-03-29 22:38:21,rename R -> sweep_radius for consistency,0,,0
+f189ac453,2016-03-29 22:38:48,Merge branch 'obb_tree' into clusters_new,0,,0
+c23865f96,2016-03-31 10:55:45,Fix python2 runtime error,1,,1
+a22b262dd,2016-03-31 12:59:27,fix GPU bug where constituent particle types were being reset,1,,1
+e73358aba,2016-03-31 14:05:31,By default  only validate rigid bodies but do not create them,0,,0
+f71b755ef,2016-03-31 17:00:11,Allow charges and diameters in rigid bodies,0,,0
+b6440415e,2016-04-01 10:51:21,Fix hoomd GSD reader with default particle types,1,,1
+d9d65aa3e,2016-04-01 15:02:54,Add blue waters build environment,0,,0
+6295fc4ae,2016-04-01 16:18:42,Fix bug in Langevin integration on CPU,1,,1
+c807c36da,2016-04-01 16:30:44,Merge branch 'fix_langevin_cpu' into complete_force_composite,0,,0
+4af94aac5,2016-04-01 16:43:37,re-enable rescale temp with anisotropic particles,0,,0
+8df074663,2016-04-01 16:51:10,enable zeroing momentum of central particles of rigid bodies,0,,0
+6cfad7440,2016-04-01 17:07:27,update box works with rigid bodies,0,,0
+5f8d9077e,2016-04-01 19:22:48,Merged in fix_langevin_cpu (pull request #158),0,,0
+8e8df03cb,2016-04-02 10:05:44,Fix linker error on mac,1,,1
+ad72c0ea8,2016-04-02 10:10:37,Merge branch 'fix_link_mac' into complete_force_composite,0,,0
+c2c633386,2016-04-02 10:22:28,fix installation location for hpmc library,1,,1
+2b1199741,2016-04-02 10:23:00,Merge branch 'fix_link_mac' into complete_force_composite,0,,0
+6eb95db94,2016-04-02 10:26:55,Merge branch 'hpmc' into obb_tree,0,,0
+a408a2f25,2016-04-02 10:27:02,Merge branch 'fix_link_mac' into obb_tree,0,,0
+8e4c3841a,2016-04-02 11:19:50,fix segfault,1,,1
+85ddaaf9a,2016-04-02 11:29:50,remove check for non-empty group,0,,0
+2f9ff192f,2016-04-02 16:56:26,Added dimension parameter to init.create_random(),0,,0
+4158359ff,2016-04-02 18:40:32,re-enable unwrap_rigid option dump.pos(),0,,0
+cc7832b06,2016-04-02 18:46:03,add back unwrap_rigid option to dump.dcd(),0,,0
+64f7bb7ca,2016-04-04 12:47:03,Fix GPU error handling,1,,1
+364fe68ef,2016-04-04 12:52:03,Merge branch 'fix_cuda_error_handling' into complete_force_composite,0,,0
+f481d65cf,2016-04-04 16:03:08,Add method to create constituent particles,0,,0
+b3f0eee14,2016-04-04 16:25:43,move tree traversal specifics into GPUTree.h,0,,0
+31a7f4ae5,2016-04-04 17:29:27,accelerate sphere_union shape using OBB tree,0,,0
+4937b063c,2016-04-04 17:47:07,fix failing unit test,1,,1
+0ee66f40a,2016-04-04 18:22:15,eight particles per OOBB tree node to better fit on GPU,0,,0
+5218d928c,2016-04-04 18:22:55,fix proxy access to sphere_union shape,1,,1
+87c3e77ae,2016-04-04 18:40:38,fix cpu compile,1,,1
+a2336bbc4,2016-04-04 19:04:19,export sphere_union implicit integrator on GPU,0,,0
+1d32f5913,2016-04-04 21:37:13,Template GPU tree dimensions,0,,0
+35862ae60,2016-04-05 11:13:19,Minor optimization,0,,0
+c10b2c77f,2016-04-05 16:01:03,Fix BW compile docs,1,,1
+d4d2fd0f9,2016-04-05 17:01:16,fix performance issue (doh!),1,,1
+cc3bc7deb,2016-04-05 17:20:17,fix inline keyword,1,,0
+18e4ad63b,2016-04-05 17:42:13,the previous commit still didn't compile on mac,0,,0
+b622acd32,2016-04-05 18:31:17,move matrix matrix multiplication in VectorMath.h,0,,0
+ad7a119a6,2016-04-07 13:44:42,Merged in fix_link_mac (pull request #159),0,,0
+10c9c3510,2016-04-07 13:46:25,Merged in fix_cuda_error_handling (pull request #162),0,,0
+34d12c0db,2016-04-07 15:55:25,Fix error message,1,,1
+004091b72,2016-04-07 19:56:29,fix typos,1,,0
+11d549fe1,2016-04-07 19:57:06,add hints for Darwin and Wilkes clusters,0,,0
+f5690be0d,2016-04-08 05:35:36,Move HPMC_MIXED up to the top level.,0,,0
+d2fe756c3,2016-04-08 05:37:41,Boost is now always dynamically linked.,0,,0
+339f06517,2016-04-08 12:00:25,Document constrain.rigid(),0,,0
+ec4edb27f,2016-04-08 14:07:34,Merge branch '2.0' into complete_force_composite,0,,0
+01846e10f,2016-04-08 15:19:50,fix plugin compile,1,,1
+b3f18d077,2016-04-08 15:24:23,fix multi-gpu segfault,1,,1
+265da9fb5,2016-04-08 16:44:37,Communicate images on CPU,0,,0
+6969cbbe5,2016-04-08 17:20:50,communicate images on GPU,0,,0
+a3a8ffde0,2016-04-08 17:38:49,tentatively fix bug in GPU communication,1,,1
+2c28359f2,2016-04-08 17:54:55,really fix bug in multi GPU,1,,1
+f4d29e694,2016-04-11 10:17:32,Starting to lay out sphinx documentation,0,,0
+41fa067ad,2016-04-11 14:21:12,Merge remote-tracking branch 'bitbucket/hpmc' into 2.0,0,,0
+be35f1155,2016-04-11 14:25:57,Merged in complete_force_composite (pull request #166),0,,0
+79ebddfea,2016-04-11 14:27:52,Merged in fix_plugin_compile (pull request #167),0,,0
+4adbd5f32,2016-04-11 14:29:36,Merged in compile_guide (pull request #165),0,,0
+6d9d86a5d,2016-04-11 14:32:23,Merged in andrew_mark/hoomd-blue/random2d (pull request #160),0,,0
+4b3ff7c58,2016-04-11 14:33:39,Merge branch 'maint',0,,0
+8befff11f,2016-04-11 14:35:54,Merge branch 'master' into 2.0,0,,0
+96a221376,2016-04-11 15:24:34,Merge branch '2.0' into sphinx2,0,,0
+c03f4f034,2016-04-12 11:17:31,Fix blue waters module suggestions,1,,1
+93bbe9a63,2016-04-12 11:35:36,Fix another typo,1,,0
+16e969c46,2016-04-12 18:27:05,Accumulate particle energy and zero constituent particle energies/virials/forces,0,,0
+79de99ef2,2016-04-12 21:19:14,Relax assumptions on order of constituent particles,0,,0
+e51f6539a,2016-04-12 22:38:18,Initialize constituent particles after *all* central ptls,0,,0
+41e4b094a,2016-04-13 11:55:39,By default  only validate particle order,0,,0
+2865228f2,2016-04-13 14:32:29,fix unit test,1,,1
+a5c92e033,2016-04-13 16:24:25,Merge branch 'mpi_pppm' of https://bitbucket.org/glotzer/hoomd-blue into mpi_pppm,0,,0
+5bece93fe,2016-04-13 16:31:29,Merge branch '2.0' into mpi_pppm,0,,0
+409a963ef,2016-04-13 17:27:30,Compiles  unit tests run,0,,0
+861fdbe06,2016-04-13 17:31:03,update change log / credits,0,,0
+00343f8b0,2016-04-13 17:47:46,tentatively fix compilation with ENABLE_MPI=OFF,1,,1
+2539ab612,2016-04-13 17:51:38,fix more potential ENABLE_MPI=OFF errors,1,,1
+0239edbf0,2016-04-13 18:52:24,tentatively fix compile error with CUDA but no MPI,1,,1
+09b51d190,2016-04-13 19:16:01,fix another compile error and a warning,1,,1
+50c3e271a,2016-04-13 20:28:42,fermi workarounds,0,,0
+a4f958324,2016-04-13 20:31:59,fix typo,1,,0
+80bb75003,2016-04-14 07:09:42,Merged in mpi_pppm (pull request #122),0,,0
+a3677f7aa,2016-04-14 07:43:33,Merged in compute_rigid_body_energy (pull request #168),0,,0
+9d94212ff,2016-04-14 07:46:29,Merge branch 'maint',0,,0
+b6a88f7f9,2016-04-14 07:47:00,Merge branch 'master' into 2.0,0,,0
+f82f3a9ba,2016-04-14 07:47:40,Starting to document hoomd modules in sphinx.,0,,0
+ad9f144f5,2016-04-14 07:48:15,Merge branch '2.0' into sphinx2,0,,0
+da5270a22,2016-04-14 11:01:15,cite and comm modules documented in sphinx,0,,0
+828564ca0,2016-04-14 12:46:06,Add hoomd.analyze to sphinx docs,0,,0
+51124fb8f,2016-04-14 13:39:04,More modules in sphinx now.,0,,0
+bb9e1b112,2016-04-14 15:51:22,Check input for group.tag_list(),0,,0
+514d8945a,2016-04-14 16:24:14,ensure that tag arguments to bonds.add() etc. are integer,0,,0
+b11d1a816,2016-04-18 08:27:38,Merged in group_tag_list_check_input (pull request #169),0,,0
+a1a4ba8f1,2016-04-18 08:28:10,Merged in fix_add_bonded_group_arguments (pull request #170),0,,0
+f3946c694,2016-04-18 14:16:57,Enable force.get_energy() to compute the energy of a particle group,0,,0
+c790ba9ae,2016-04-18 14:20:12,add changelog entry,0,,0
+2ac5911ea,2016-04-18 16:25:45,Documented dump and group in sphinx,0,,0
+429ea7a07,2016-04-19 10:27:12,Merged in compute_energy_group (pull request #171),0,,0
+85a9d079d,2016-04-19 10:27:20,Document more modules with sphinx,0,,0
+64dae736f,2016-04-19 10:27:54,Merge branch '2.0' into sphinx2,0,,0
+562764ed5,2016-04-19 12:40:46,Compute hoomd module sphinx conversion.,0,,0
+f87353b05,2016-04-19 12:42:26,Fix failing tests.,1,,1
+4b32fe4d1,2016-04-19 13:02:23,fix a bug where constituent particle positions are not initialized correctly,1,,1
+1dd8a71c1,2016-04-19 18:20:33,Update README,0,,0
+1de8c3535,2016-04-20 18:08:35,Start documenting HPMC,0,,0
+5de71274c,2016-04-25 11:29:22,Merged in fix_validate_rigid_bodies (pull request #172),0,,0
+56c915062,2016-04-25 14:00:50,Complete HPMC documentation.,0,,0
+c662ac088,2016-04-25 14:32:08,Fix failing unit tests,1,,1
+0f92d2512,2016-04-25 14:32:23,Add credits page,0,,0
+f5038330f,2016-04-25 14:36:37,Add license page,0,,0
+15421997c,2016-04-25 15:02:24,Add compiling page to docs,0,,0
+fe78609d1,2016-04-26 15:55:19,Add concepts pages.,0,,0
+cc184b3f4,2016-04-27 08:06:55,Bring in overview and credits from HPMC,0,,0
+c282b28e0,2016-04-27 08:52:35,Document md.angle,0,,0
+bee72d970,2016-04-27 09:32:12,Document bond module,0,,0
+ef4fb2812,2016-04-27 10:10:45,Document charge module,0,,0
+0244bf608,2016-04-27 10:35:22,Document constrain,0,,0
+f2560b170,2016-04-27 11:03:47,Document dihedral module.,0,,0
+64c257359,2016-04-27 11:16:30,Document external,0,,0
+330ed7461,2016-04-27 12:01:24,Document force module,0,,0
+8b0dc7004,2016-04-27 12:14:26,Document improper,0,,0
+1444391c9,2016-04-28 07:42:53,Documentation updates,0,,0
+95fa634a1,2016-04-28 08:31:27,Document nlist module,0,,0
+82a828a51,2016-04-28 12:25:17,Document pair module,0,,0
+c5f6be778,2016-04-28 12:32:58,Rearrange module index,0,,0
+b67d4b0e0,2016-04-28 12:33:19,Fix bug in nlist,1,,1
+e43d2eb61,2016-04-28 12:34:04,Really fix bug in nlist,1,,1
+44283e53d,2016-04-28 12:50:45,Document update module,0,,0
+7b2579a2f,2016-04-28 14:10:29,Document wall module,0,,0
+7715a99eb,2016-04-29 08:07:02,Update unit tests to match API changes,0,,0
+b052071ae,2016-04-29 09:25:39,Mark encoding for integrate.py,0,,0
+19767f786,2016-04-29 09:26:18,Enable building with conda provided prereqs,0,,0
+6e47cbfbd,2016-04-29 09:27:10,Merge branch 'sphinx2' into 2.0,0,,0
+90513ef71,2016-04-29 10:53:08,Update compiling docs to revlect python module installation,0,,0
+1166cefd9,2016-04-29 10:54:01,Embed dfft into _md,0,,0
+d23b9297c,2016-04-29 12:06:45,Add setup.py (for readthedocs builds),0,,0
+c10d9d0ff,2016-04-29 12:10:19,Add readthedocs config files,0,,0
+68358f73a,2016-04-29 12:18:21,Add ipython to readthedocs environment,0,,0
+b21e5ccc0,2016-04-29 12:19:30,Try python3,0,,0
+f36e8d19d,2016-04-29 12:48:18,Move cuda profile start/end to util.,0,,0
+9d8888c55,2016-04-29 13:18:27,Remove sorter global module,0,,0
+ceb95a78b,2016-04-29 13:25:44,Add context.on_gpu(),0,,0
+1aaf8f6fc,2016-04-29 13:51:02,Report 0 rotational DOF when aniso is disabled.,0,,0
+a9aee841a,2016-04-29 13:54:16,Try non-parallel builds on readthedocs,0,,0
+6cfee7f93,2016-04-29 14:57:06,Trying glotzer channel boost,0,,0
+9aa3d6b14,2016-04-29 15:03:52,Trying a different GCC_ARCH setting,0,,0
+715bc235c,2016-04-29 15:08:19,Maybe readthedocs will like the core2 arch,0,,0
+5c13d4fd7,2016-04-29 15:17:56,Maybe readthedocs.org has clang?,0,,0
+471f8bcba,2016-04-29 15:31:08,Try building with llvm on readthedocs.org,0,,0
+8d34d1434,2016-05-03 17:35:57,Update python unit tests to proposed API,0,,0
+7393fb9a0,2016-05-03 17:36:38,Remove global neighbor list and wrappers,0,,0
+9badba379,2016-05-03 17:48:47,Update ChangeLog with deprecated commands and job script changes,0,,0
+c5ad723af,2016-05-04 09:55:41,Update pair.py examples,0,,0
+4d5b64dd3,2016-05-04 09:57:49,Update spot missed in pair.eam,0,,0
+9b024eefe,2016-05-04 10:23:41,Make computing cell adjacency list optional,0,,0
+b6d59d841,2016-05-04 10:25:53,Update ChangeLog,0,,0
+e2e671950,2016-05-04 14:56:53,Remove stray unit test output,0,,0
+3bd6a9702,2016-05-04 14:57:31,Fix harmless sigma (simga) typo in unit tests,1,,0
+b26ddaa4c,2016-05-04 16:46:52,Add neighbor list concepts page,0,,0
+bf1fdd442,2016-05-04 16:51:58,Add LBVH complexity,0,,0
+39bd7d42b,2016-05-04 16:56:26,Add missing link to nlist.tree,0,,0
+803d9dd97,2016-05-04 17:19:07,Add required citations to the neighbor list docs,0,,0
+1775e55c8,2016-05-04 17:25:25,Update ChangeLog,0,,0
+04027bcb1,2016-05-04 17:31:40,Regularize default r_buff = 0.4,0,,0
+2aaf6fa39,2016-05-04 17:38:33,Update ChangeLog,0,,0
+374917dd1,2016-05-06 10:45:31,Quiet the run and parameter set calls in nlist tune functions,0,,0
+1d7aac778,2016-05-12 08:25:01,Merged in mphoward/hoomd-blue/remove_global_nlist (pull request #173),0,,0
+93c032c3e,2016-05-12 08:36:47,Merged in mphoward/hoomd-blue/fix_unit_test_typos (pull request #175),0,,0
+85e98cf15,2016-05-12 08:37:51,Merged in mphoward/hoomd-blue/quiet_nlist_tune (pull request #179),0,,0
+167222b4e,2016-05-12 08:44:10,Merged in mphoward/hoomd-blue/improve_nlist_docs (pull request #176),0,,0
+7b7eeab45,2016-05-12 08:45:07,Merged in mphoward/hoomd-blue/fix_default_rbuff (pull request #177),0,,0
+74f07dc70,2016-05-12 08:50:47,Apply pull request #178 by hand,0,,0
+bade84076,2016-05-12 09:24:28,Merge remote-tracking branch 'upstream/2.0' into cell_adj_switch,0,,0
+2cc0d266b,2016-05-12 09:33:35,Error out in adjacency list getter if it is not computed,1,,0
+74da24cd7,2016-05-12 09:35:29,rtd builds seem to work when incremental.,0,,0
+fe8ff7519,2016-05-12 09:45:10,Prepend the build dir to the python path in tests,0,,0
+db6d31894,2016-05-12 10:06:46,Merged in mphoward/hoomd-blue/cell_adj_switch (pull request #174),0,,0
+8126a5ae1,2016-05-13 07:58:09,Attempt to fix spurious unit test failures,1,,0
+e2edd254e,2016-05-13 14:49:05,License hoomd under the BSD-3 clause license.,0,,0
+c30d6ced0,2016-05-16 08:31:51,Fix failing test,1,,1
+3183f999a,2016-05-16 10:11:03,Boost 1.61 support,0,,0
+a5ea5135d,2016-05-16 11:41:03,Build docs from the source tree,0,,0
+763e297c7,2016-05-16 11:54:13,Not needed for new rtd doc builds,0,,0
+0e0149917,2016-05-16 11:55:32,Implicit contributor agreement,0,,0
+110ee5d9f,2016-05-17 09:21:59,Link to new hoomd web pages,0,,0
+8c42c22ef,2016-05-17 11:59:44,Enable c++11 builds,0,,0
+9f0483f70,2016-05-17 14:13:58,Trigger 2.0 branch jenkins build,0,,0
+56103926b,2016-05-17 15:03:24,Revise analyze.py documentation,0,,0
+7e2d7706d,2016-05-18 10:29:09,Create deprecated module.,0,,0
+dae828c1d,2016-05-18 10:45:50,Misc doc tweaks.,0,,0
+98638ccd2,2016-05-18 10:51:25,Remove PDB and MOL2 dump writers.,0,,0
+8539cab35,2016-05-18 11:22:12,Deprecated dump.xml,0,,0
+433e9934b,2016-05-18 12:14:39,added reverse orientation link to active force code,0,,0
+727637152,2016-05-18 12:27:19,Deprecated dump.pos,0,,0
+f13b53b0f,2016-05-18 13:19:38,Remove init.create_empty,0,,0
+4f6c7c2fe,2016-05-18 21:10:30,Deprecate init.create_random and init_create_random_polymers,0,,0
+4544d6b39,2016-05-19 09:00:53,Document deprecated.init,0,,0
+f82b25508,2016-05-19 11:43:34,Move cgcmm to its own package,0,,0
+fd05c577c,2016-05-19 16:58:03,fixed so orientation always tracks active force vector and is correctly oriented at begining,1,,0
+4593dee3f,2016-05-19 17:01:36,documentation,0,,0
+b31789c6a,2016-05-19 18:04:18,Added pair.van_der_waals,0,,0
+7320e24e9,2016-05-19 18:08:28,added a bit of documentation,0,,0
+9d0092123,2016-05-19 19:42:56,derive forces only from excess free energy,0,,0
+db0404e5c,2016-05-19 23:12:58,compute virial,0,,0
+ba5f89bef,2016-05-20 09:45:50,Move eam to the metal package.,0,,0
+198abbe28,2016-05-20 11:04:03,Use kT instead of T to avoid confusion on temperature units.,0,,0
+99523a34f,2016-05-20 11:06:18,Bring change log up to date,0,,0
+1f97ed3d9,2016-05-20 13:53:31,Clean up hpmc,0,,0
+b929ec8c0,2016-05-20 14:13:37,some documentation,0,,0
+5864c5759,2016-05-22 01:10:38,add coarse-graining parameter,0,,0
+4eb9ed6ca,2016-05-22 13:46:24,protect against numerical errors,1,,0
+3551f5abc,2016-05-22 19:11:21,do not add constant to CG potential,0,,0
+d2397b284,2016-05-23 13:03:55,fixed gpu code typos,1,,0
+cf5cbc41f,2016-05-23 15:00:54,Initial import of getar I/O from plugin.,0,,0
+2f05e18c4,2016-05-24 09:18:03,Use production GSD schema versions.,0,,0
+a8c5e2327,2016-05-24 09:59:44,Integrated the python bits of the getar plugin documentation,0,,0
+f237e2ace,2016-05-24 10:10:19,Added Findlibgetar.cmake,0,,0
+dd102ce36,2016-05-24 10:26:41,Add back in hoomd.dump synopsis,0,,0
+d0a6003e6,2016-05-24 17:43:03,Changed NPT to accept stress tensors as well as isotropic pressures,0,,0
+4a1b80c44,2016-05-24 17:57:39,cleaned up comments  list manipulation  that were overlooked,0,,0
+3773a009f,2016-05-25 10:34:04,Initial compiling import of DEM plugin,0,,0
+7c7b8d1ba,2016-05-25 12:10:55,Rename parameter alpha->beta,0,,0
+67e2c30e8,2016-05-25 12:11:58,mini doc fix,1,,0
+e78deeb95,2016-05-25 18:53:24,fixed set_params,1,,0
+a4e23f097,2016-05-26 08:48:56,Updated hoomd.dem.pair for hoomd 2.0 API,0,,0
+0fef4ad99,2016-05-26 08:49:13,Fixed a bug for DEM geometry accounting of single-face shapes,1,,1
+9274db0ff,2016-05-26 08:49:54,Added simple tests for hoomd.dem,0,,0
+931bb8978,2016-05-26 08:51:18,Made setParams in dem computes not center by default,0,,0
+2de7526b7,2016-05-26 09:47:21,Removed deprecated rigid body code from getar format I/O code,0,,0
+d1bc504a0,2016-05-26 10:02:02,Fixed getar I/O C++ style to be more in line with HOOMD's,1,,0
+7664fce3e,2016-05-26 10:06:32,Add semicolons to new getar I/O python code,0,,0
+7d292b40c,2016-05-26 10:21:17,Add details to getar documentation,0,,0
+9a417e797,2016-05-26 10:24:59,Made one getar test be run even if gtar module is not found,0,,0
+55779c83a,2016-05-26 10:27:47,Added brief note describing the purpose of getar dump iterators,0,,0
+992c658d6,2016-05-26 10:32:54,Added semicolons in getar test script,0,,0
+6e337a9b3,2016-05-26 11:11:58,Improved examples in getar I/O python functions,0,,0
+8d970d7b7,2016-05-27 06:37:09,Merge branch '2.0' into npt_to_isostress_rebased,0,,0
+0803f6741,2016-05-27 08:54:44,Fixed a bug in dem.utils.convexHull for large shapes,1,,1
+033871ce8,2016-05-27 09:51:45,Added semicolons to DEM python module and tests,0,,0
+77999287c,2016-05-27 10:13:07,Updated C++ components of dem plugin to hoomd style,0,,0
+ae0952ee5,2016-05-27 12:39:12,Made build script automatically update git submodules,0,,0
+7ca17a9d8,2016-05-27 12:57:23,Fixed warning print statement in getar test for python 2,1,,0
+c933250d3,2016-05-27 12:58:44,Removed --recursive clone from compiling documentation,0,,0
+8ff90a33e,2016-05-27 13:10:04,Fixed future import statement,1,,0
+b73699804,2016-05-27 14:33:13,Don't run cgcmm unit test in MPI,0,,0
+2830bb880,2016-05-27 14:54:04,Merged in active-force-reverse-orientation (pull request #181),0,,0
+a927821a1,2016-05-27 14:54:43,Don't use std::cerr for getar errors,1,,0
+e58b45d1d,2016-05-27 15:03:56,Fixed namespace issues in GetarInitializer files,1,,0
+690fa36a4,2016-05-27 15:04:12,Added sqlite3 as optional dependency,0,,0
+7059f8638,2016-05-27 15:11:12,Add note about lustre and one-shot mode to dump.getar documentation,0,,0
+aef510519,2016-05-27 16:06:42,Added basic documentation for DEM component,0,,0
+7f1b12945,2016-05-27 16:27:17,Made DEM package name lower case in documentation TOC,0,,0
+51a736613,2016-05-28 10:57:31,fix bug in table potential,1,,1
+4e7ef9b93,2016-05-28 11:00:08,Merge branch 'fix_table_reinit' into pair_van_der_waals,0,,0
+c01e1768a,2016-05-29 20:31:34,add UpdaterBoxMC class,0,,0
+aa79c21e4,2016-05-31 08:24:33,Merged in fix_table_reinit (pull request #186),0,,0
+1ff8fb02b,2016-05-31 08:32:57,Merge branch '2.0' into add_dump_getar,0,,0
+06fe7a3c3,2016-05-31 08:55:24,Allow box.wrap to work with any float type.,0,,0
+0dec88a36,2016-05-31 08:58:09,Add lattice generator.,0,,0
+b7f1dd547,2016-05-31 09:06:59,Added back in DEM utils tests,0,,0
+ee48f3348,2016-05-31 09:50:32,fix bug in lattice.hex,1,,1
+8b2da26b9,2016-05-31 09:50:44,Add examples to init.create_lattice,0,,0
+42f226f83,2016-05-31 10:06:54,Additional documentation for lattice.,0,,0
+622ec909c,2016-05-31 10:35:37,Unit test the lattice generator.,0,,0
+77e5f404c,2016-05-31 10:36:05,Return the sysdef instance from create_lattice.,0,,0
+c457d7624,2016-05-31 10:47:35,Add fcc lattice,0,,0
+ba18e8292,2016-05-31 10:54:17,Add lattice to change log.,0,,0
+c13d68bfe,2016-05-31 12:24:28,shorten license headers,0,,0
+11e561584,2016-05-31 13:14:40,Add GTAR to change log  credits.,0,,0
+ecc47e82c,2016-05-31 13:50:28,Merged in add_dump_getar (pull request #182),0,,0
+a98cf1e61,2016-05-31 14:34:39,Update P S arguments to work as documented.,0,,0
+4e279352e,2016-05-31 14:36:54,Merge branch '2.0' into npt_to_isostress_rebased,0,,0
+a05320fb3,2016-05-31 14:38:02,Add constant stress to change log and credits,0,,0
+f5953a78c,2016-05-31 14:42:03,Fix broken assert from snapshot API change,1,,1
+d5940dca3,2016-05-31 14:47:35,Merged in fix_snapshot_assert (pull request #187),0,,0
+05162cdaf,2016-05-31 15:09:27,Fix up hoomd.dem.utils docstrings,1,,1
+767b3d34b,2016-05-31 15:21:28,Updated copyright headers in DEM files,0,,0
+e6bb3e232,2016-05-31 16:11:05,add boxMC interface and tests,0,,0
+e614a90d9,2016-05-31 17:12:09,add boxSquish as AspectMove,0,,0
+713e552b5,2016-05-31 17:23:12,Fixed a bug in mass license editing (should be fixup'd into previous commit),1,,1
+645da0916,2016-06-01 07:15:32,Fix sphinx documentation build.,1,,0
+f8493ce9f,2016-06-01 07:15:47,Add libgetar license to the credits.,0,,0
+8c7b04d13,2016-06-01 07:31:22,Update build prerequisites.,0,,0
+ee8d261c0,2016-06-01 07:40:09,Mark several cmake variables as advanced,0,,0
+4b18a0460,2016-06-01 07:49:13,Merge branch '2.0' into npt_to_isostress_rebased,0,,0
+0d9d12a2a,2016-06-01 07:53:20,Add note about negative diagonal components in S,0,,0
+372f347ca,2016-06-01 08:55:53,Merged in npt_to_isostress_rebased (pull request #185),0,,0
+054ecdec1,2016-06-01 09:19:17,Expand DEM documentation,0,,0
+672d267e2,2016-06-01 09:20:06,Cleaned up dem.utils namespace,0,,0
+8c96718fc,2016-06-01 09:54:16,Merge branch '2.0',0,,0
+c3710fa90,2016-06-01 09:59:18,Merged master into add_dem,0,,0
+fbf5fc37c,2016-06-01 10:42:43,Merge branch 'master' into lattice-generator,0,,0
+259fa1d7a,2016-06-01 10:55:09,Added DEM to changelog and credits,0,,0
+ffca2b97f,2016-06-01 11:09:22,convert boxMC documentation to sphinx,0,,0
+59db8ce4d,2016-06-01 12:51:36,clarify units and adopt more explicit name for betaP parameter,0,,0
+eae2daec3,2016-06-01 13:30:06,Silence some warnings,0,,0
+f351d4e29,2016-06-01 13:36:39,Fix build error in getardumpwriter.cc on mac,1,,1
+9b756c0b5,2016-06-01 13:54:30,Silence updatermuvt unititialized value warning,0,,0
+0fcc819cc,2016-06-01 15:01:34,Fixed _dem sphinx documentation without a hoomd build,1,,0
+a40141d17,2016-06-01 15:07:00,slight change to wording of error message in ActiveFoceCompute.cc,1,,0
+d329e89db,2016-06-02 07:16:00,Merged in active-force-error-message-change (pull request #190),0,,0
+37ff76761,2016-06-02 09:09:56,Bump libgetar to latest master,0,,0
+da47e6f18,2016-06-02 17:06:35,fixed bug in constraint_ellipsoid updater context -> hoomd.context,1,,1
+22b12c69b,2016-06-02 17:06:57,fixed bug in constraint_ellipsoid updater context -> hoomd.context,1,,1
+70a5fa91b,2016-06-02 21:01:28,Fixed DEM tests for MPI,1,,0
+582cc58d2,2016-06-02 21:02:16,Register DEM tests in cmake,0,,0
+773ccf7e3,2016-06-02 21:02:36,Fix encoding issue in dem documentation,1,,0
+6e993ea03,2016-06-02 21:02:57,Fixed occasional freezing in getar test in MPI,1,,0
+43fe2b374,2016-06-03 17:33:03,Increase libgetar version to catch a build fix on flux,1,,0
+b20400f00,2016-06-06 12:58:07,Bundle correct cuda libraries.,0,,0
+2a6331aba,2016-06-06 13:26:07,Fix bug when using MPI with multiple simulation contexts,1,,1
+610cf1ee2,2016-06-06 13:37:54,Add additional conda prereqs,0,,0
+0822f0c2e,2016-06-06 13:42:58,Merge branch 'fix_mpi_multiple_contexts' into pair_van_der_waals,0,,0
+d322f7f4b,2016-06-06 14:30:16,Fix isnan compile error in ForceDistanceConstraint,1,,1
+3e67d8169,2016-06-06 14:30:51,fix wrong body counting in force composite,1,,1
+a8e0fc4a6,2016-06-06 14:32:50,Merge branch 'fix_force_composite' into pair_van_der_waals,0,,0
+c4c876e74,2016-06-06 14:54:42,Fix additional nan compile errors,1,,1
+29f1cafad,2016-06-06 16:09:04,Added warning for DEM cuda 7.5 compiler bug,1,,0
+8d798ecae,2016-06-06 17:36:18,fix initialization,1,,1
+0ba32ab9d,2016-06-06 17:37:05,Merge branch 'fix_force_composite' into pair_van_der_waals,0,,0
+bd6ef934a,2016-06-07 08:55:50,Restore hoomd.sublime-project,0,,0
+1b2fe0c0a,2016-06-07 08:56:32,Merged in bug-fix-in-md.update.constraint_ellipsoid-CUDA-flag (pull request #191),0,,1
+59c3b525c,2016-06-07 08:57:18,Merged in fix_mpi_multiple_contexts (pull request #192),0,,0
+2d2d7990b,2016-06-07 08:57:48,Merged in fix_force_composite (pull request #193),0,,0
+f2023eba1,2016-06-07 08:58:19,Merged in lattice-generator (pull request #188),0,,0
+5b25b4051,2016-06-07 10:55:22,Merged in add_dem (pull request #184),0,,0
+debb6def8,2016-06-07 11:52:26,Fix ghost layer/r_buff handling with rigid bodies,1,,1
+075a9a471,2016-06-07 11:53:00,Merge branch 'fix_rigid_mpi' into pair_van_der_waals,0,,0
+a3cf68529,2016-06-07 11:57:50,Shorten the running time of some tests.,0,,0
+caadd1304,2016-06-07 12:45:52,ping jenkins to rerun tests,0,,0
+2bdaafe73,2016-06-07 13:20:44,Fix failing test_communication,1,,1
+8bbe62d5b,2016-06-07 15:47:32,Add unit test to catch 'import meta' bug in integrate module.,1,,0
+6681baa06,2016-06-07 16:08:21,Fix meta import bug in integrate module.,1,,1
+2d87e27a4,2016-06-07 17:06:25,Merge branch 'master' into pair_van_der_waals,0,,0
+4fb0bf8d1,2016-06-07 17:08:48,Merge branch 'bump_libgetar_flux' into pair_van_der_waals,0,,0
+f61de0c08,2016-06-07 17:57:57,Improve metadata output handling of non-unique entries.,0,,0
+b2dc1aef9,2016-06-08 10:32:34,Do not unnecessarily add buffer length,0,,0
+2925c760e,2016-06-08 10:50:23,More robust handling of incomplete rigid bodies on GPU,0,,0
+d82cd93c5,2016-06-08 11:08:31,remove spurious character,0,,0
+db819a531,2016-06-08 11:32:43,Merge branch 'fix_rigid_mpi' into pair_van_der_waals,0,,0
+e4fe20f40,2016-06-08 11:33:14,Merge branch 'pair_van_der_waals' of https://bitbucket.org/glotzer/hoomd-blue into pair_van_der_waals,0,,0
+949a58e99,2016-06-08 11:51:04,Go back to conda readthedocs builds,0,,0
+54f91dfa1,2016-06-08 13:39:06,Fix the metadata dump tests for hpmc.,1,,1
+7aa1df3a8,2016-06-08 14:47:08,std::shared_ptr,0,,0
+8488bdba4,2016-06-08 18:11:40,Created a function testPairOverlap to return the overlap status of two particles,0,,0
+5bebc7d9d,2016-06-09 08:48:55,Widen acceptance window for stats_check,0,,0
+41fde66e1,2016-06-09 08:49:40,Merged in bump_libgetar_flux (pull request #194),0,,0
+99f52443d,2016-06-10 06:59:56,Merged in fix_rigid_mpi (pull request #195),0,,0
+16d4192c6,2016-06-10 07:04:24,Fix errors when running after a metadata dump.,1,,1
+9dd207571,2016-06-10 07:15:33,Move MD simulation meta test into the md package,0,,0
+a661561fc,2016-06-10 07:43:49,Merged in issue117 (pull request #196),0,,0
+468c19eb1,2016-06-10 07:49:04,Merge branch 'master' into boxMC,0,,0
+4a854b661,2016-06-10 16:13:42,Simplified update move names and implementation,0,,0
+310879908,2016-06-10 16:16:45,Merge branch 'boxMC' of https://bitbucket.org/glotzer/hoomd-blue into boxMC,0,,0
+31ab5223b,2016-06-13 17:44:46,Added a mapOverlaps function that interates through all particles at the C level,0,,0
+bd0ec8ed9,2016-06-14 07:02:15,Default phase=0,0,,0
+d2a5b6867,2016-06-14 07:39:44,Add write_restart to dump.gsd,0,,0
+038fc3e25,2016-06-14 07:57:45,Document RNG pitfalls,0,,0
+9a79503ea,2016-06-14 09:29:01,Reduce memory utilization in takeSnapshot.,0,,0
+6ceb2a33d,2016-06-14 10:42:24,Setup to work with bumpversion,0,,0
+ef689b3aa,2016-06-14 11:06:11,It is no longer an error to have unnormalized orientations in hpmc.,1,,0
+14c296067,2016-06-14 11:29:18,Merge branch 'master' into pair_van_der_waals,0,,0
+0af8627af,2016-06-14 12:47:26,Fix snapshot() compile errors.,1,,0
+26da07280,2016-06-14 13:06:54,Add ParticleGroup selector to xml dump writer,0,,0
+2e9308e90,2016-06-14 15:00:04,Add unit tests for groups,0,,0
+39861b472,2016-06-14 15:07:31,Update xml documentation  credits  and change log,0,,0
+b17c0990b,2016-06-14 15:13:45,Merge remote-tracking branch 'upstream/master' into xml_group,0,,0
+ea0e115c4,2016-06-14 15:15:25,Keep missed one instance of N consistent,0,,0
+69bf3f12b,2016-06-14 16:17:09,Added aspect move counter,0,,0
+1e9f7d223,2016-06-14 19:00:15,changed unit test to match the current function name in update.py,0,,0
+0909ff6d5,2016-06-15 05:25:40,Merged in mphoward/hoomd-blue/xml_group (pull request #197),0,,0
+7424827c7,2016-06-15 09:09:41,Fix compile error on Blue Waters,1,,1
+2cf215436,2016-06-15 12:18:06,only provide square density term in van der waals potential,0,,0
+494b0d152,2016-06-15 12:22:52,Changed exposed overlap functions to work with particle tags instead of indices,0,,0
+ad1690441,2016-06-15 16:03:49,Merged in fix_dump_getar_inheritance (pull request #198),0,,0
+29eff102b,2016-06-15 16:32:59,Fix metadata access in dcd dump writer.,1,,1
+968bf6ff4,2016-06-15 17:21:17,Optimization,0,,0
+fd7d36b7c,2016-06-15 17:28:55,update log name,0,,0
+8f7392d58,2016-06-15 17:30:10,Fix hoomd.dump.getar namespace issue and expand its unit tests,1,,1
+0d090ff5e,2016-06-15 17:39:40,Merge branch 'master' into pair_van_der_waals,0,,0
+880f8926e,2016-06-15 19:42:24,Add copyright notice,0,,0
+2543c5219,2016-06-15 19:43:33,Remove unused frequency option.,0,,0
+a0b294f3d,2016-06-15 19:45:09,Better document betaP,0,,0
+fdaf5b839,2016-06-15 19:46:45,Remove unused methods.,0,,0
+2156b2ac4,2016-06-15 20:00:43,Add metadata tracking to boxMC,0,,0
+052187f6a,2016-06-15 20:01:07,Remove default seed.,0,,0
+2b46e659b,2016-06-15 20:05:46,Allow overshear reduction in MPI builds.,0,,0
+f89275740,2016-06-15 20:16:24,Add stability notice for dem.,0,,0
+c02dd2315,2016-06-15 22:35:03,Unit tests should pass now,0,,0
+3440040fd,2016-06-16 09:37:55,Refer to docstrings in contributing instructions.,0,,0
+8c504bda0,2016-06-16 11:29:08,remove update.npt,0,,0
+c80680ffa,2016-06-16 11:31:01,Fixed an off-by-one issue,1,,0
+5f1267cbd,2016-06-16 12:06:20,normalize naming related to hpmc.update.boxmc,0,,0
+59d392165,2016-06-16 13:20:14,update util tests for hpmc.update.boxmc,0,,0
+2c1304395,2016-06-16 13:48:55,make tunable_map use dictionaries for clarity,0,,0
+59d95729e,2016-06-16 14:19:21,further deobfuscate hpmc.util.tune,0,,0
+a90a5dd23,2016-06-16 14:31:27,enable custom set methods in hpmc.util.tune,0,,0
+a0b74c225,2016-06-16 16:42:57,add get methods for boxmc parameters,0,,0
+a2aee665b,2016-06-16 16:50:17,make naming consistent in update.py inline example  fixed wrong argument in updaterboxmc,1,,0
+ca122b26b,2016-06-16 16:50:22,Merge branch 'boxMC' of https://bitbucket.org/glotzer/hoomd-blue into boxMC,0,,0
+e1e0b2827,2016-06-16 17:28:53,fixing inline example to fit the current syntax,1,,0
+51df4f53e,2016-06-17 11:18:10,Removed test_pair_overlaps function (redundant),0,,0
+923f083ee,2016-06-17 15:28:09,make hpmc.util.tune quieter and simpilfy tests,0,,0
+544baaddd,2016-06-17 20:32:03,finish boxmc tasks from PR,0,,0
+c93282a5b,2016-06-17 20:32:54,Merge branch 'hpmc_tune' into boxMC,0,,0
+c18aaae0d,2016-06-17 22:51:41,slightly more general std::vector constructor,0,,0
+26daf98f1,2016-06-19 10:01:40,changing parameters for aspect ratio to shorten the test,0,,0
+b9ec5aada,2016-06-19 15:39:21,add rigid option to integrate.sphere_union(),0,,0
+f318d68de,2016-06-19 19:53:40,allow different radius per vertex,0,,0
+21829d50a,2016-06-19 20:04:33,fix some uninitialized values,1,,1
+a5aa3f1a0,2016-06-19 20:08:13,Minor optimization,0,,0
+2beb98286,2016-06-19 20:44:07,even more optimizations,0,,0
+bd5d320ad,2016-06-19 20:55:20,more minor optimization,0,,0
+7fbf6e956,2016-06-20 11:02:51,Merged in hpmc_tune (pull request #199),0,,0
+a7ba33463,2016-06-20 14:17:47,Merged in hpmc_expose_overlap (pull request #200),0,,0
+8e281d24b,2016-06-20 17:20:30,Add Bryan's work to the credits.,0,,0
+58d9118a6,2016-06-20 18:20:59,First CPU compiling flow version.,0,,0
+c8587b977,2016-06-20 22:26:43,return python tuples instead of std::vector objects,0,,0
+ea99c7137,2016-06-20 22:27:55,shorten names of hpmc.update.boxmc set methods,0,,0
+a63a1b1ee,2016-06-20 22:55:22,UpdaterBoxMC::update needs to check for sane range and select from the full range,0,,0
+a948e1884,2016-06-20 23:44:01,simplify updater parameter setting and getting,0,,0
+5b25677dc,2016-06-21 06:29:40,Quiet status in hpmc.util.tune,0,,0
+540dc85d7,2016-06-21 06:58:56,Clarify hpmc.update.boxmc documentation,0,,0
+64969e68f,2016-06-21 07:07:05,Update and document boxmc logged quantities.,0,,0
+75177b41e,2016-06-21 09:47:11,Merged in boxMC (pull request #189),0,,0
+cc78d23cb,2016-06-21 11:06:20,Merge branch 'master' of https://bitbucket.org/glotzer/hoomd-blue,0,,0
+86926b80e,2016-06-21 12:07:33,Update compile docs,0,,0
+6b1f69ad4,2016-06-21 12:48:23,Move ShapeSphere classes to module_sphere.cc,0,,0
+3350e184b,2016-06-21 12:55:10,Move ShapeConvexPolygon classes to module_convex_polygon.cc,0,,0
+4d9ce6a58,2016-06-21 12:59:29,Move ShapeSimplePolygon classes to module_simple_polygon.cc,0,,0
+598ecb674,2016-06-21 13:07:25,Move Spheropolygon classes to module_spheropolygon.cc,0,,0
+ca12c1b7b,2016-06-21 13:12:55,Move ShapePolyhedron classes to module_polyhedron.cc,0,,0
+ca45ddedc,2016-06-21 13:17:46,Move ShapeEllipsoid classes to module_ellipsoid.cc,0,,0
+dc443f845,2016-06-21 13:23:19,Move ShapeFacetedSphere classes to module_faceted_sphere.cc,0,,0
+5e41f4cff,2016-06-21 13:33:01,Move ShapeSphinx classes to module_sphinx.cc,0,,0
+473b09938,2016-06-21 13:50:11,Move ShapeUnion<ShapeSphere> classes to module_union_sphere.cc,0,,0
+c4c0b8b41,2016-06-21 14:08:41,Fix misnamed exports,1,,1
+e2c29ef65,2016-06-21 14:28:07,Move spheropolhedron over to module_convex_spheropolyedron*.cc,0,,0
+79452c902,2016-06-21 14:53:16,Remove incorrect ifdefs,0,,0
+bb7b6c345,2016-06-21 20:54:10,all of hoomd module except bondedgroupdata converted successfully  template issues remain,0,,0
+604927ca6,2016-06-21 21:09:34,Update pybind to v1.8,0,,0
+8257316d2,2016-06-21 21:20:50,Sync with master,0,,0
+f8310190c,2016-06-22 08:49:39,Merge branch 'hpmc-module-breakup',0,,0
+1e3e88490,2016-06-22 11:00:05,Correct minimum tested gcc version,0,,0

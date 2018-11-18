@@ -1,0 +1,649 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+ea708b0,2017-06-27 11:16:04,new MDAnalysisTests.core.util.assert_nowarns() function,0,0.0,0
+be8db1c,2017-06-28 16:21:54,Gromacs trajectories fixes and improvements - FIXED: trr/xtc tests failed (on Mac OS X) when MDAnalysis was properly installed   as a egg directory but not as a developer install:   - forgot to include the trr and xtc files in the package   - learned that xdrfile_open() segfaults (at least Mac OS X) if     there is no file: added additional check to prevent that - Gromacs XDR reader now behave like DCDReader:   (1) raise IOError when done    (2) continue raising with repeated next() - for some reason  TRR files can (always??) return status exdrINT at end of file  catch   this in _read_next_timestep() - regenerated swig files from libxdrfile.i (only minor doc things),1,1.0,1
+68ff0d5,2017-06-29 22:15:49,add header property,0,0.0,0
+2b16b6a,2017-06-30 00:34:55,remove old module from setup.py,0,0.0,0
+dbdaf60,2017-07-01 02:22:08,Coordinates now returns a brand new array - doesn't break any of the numtools c functions that don't check for contiguity - long term we should fix the c functions to work properly with non-contiguous arrays This corresponds to r87 in /code/MDAnalysis.,1,1.0,1
+3860ccd,2017-07-02 20:28:18,move unitcell handling from libdcd to DCDReader,0,0.0,0
+b97f2ab,2017-07-02 22:46:35,new attributes for Atom: radius and bfactor - enhanced Atom object with the radius value (read by the PQR reader) and   added radii() to AtomGroup  this should make it easier to handle PQR files - changed the way that B-factors were stored: they are now also store with   each individual Atom. For compatibility with the old behaviour  AtomGroup.bfactors   is still a (managed) attribute but this will likely be changed to a method in   the 0.8 release to have a more uniform interface - Fixed a bug with the Bio.PDB reader: in the absence of a segid in the file it   would throw an error,1,1.0,1
+f0a8204,2017-07-03 03:37:02,fixed bug in access to GSD trajectory at fixed frame,1,1.0,1
+3b4841b,2017-07-03 03:39:51,Fix test_diffusionmap.py,1,1.0,1
+60cb030,2017-07-03 03:44:50,Fixed analysis.density requiring deprecated trajectory attributes,1,1.0,1
+c773c0f,2017-07-03 03:47:13,"Revert ""PSF Parser Fix"" (not needed because atom numbering was fixed)",1,1.0,1
+ed4c80a,2017-07-03 03:50:02,fixed: ProgressMeter,1,1.0,1
+c1e7cf2,2017-07-03 04:02:18,Fixed bug in rms.py,1,0.0,1
+2deec4e,2017-07-03 04:05:33,Fixed core/distances,1,0.0,1
+c9f2038,2017-07-03 04:09:45,Fix test_rdf.py,1,1.0,1
+a7f050e,2017-07-03 04:12:00,analysis.align: fixed error messages and fixed use n_atoms,1,1.0,1
+f3946f3,2017-07-03 04:12:51,Pytest style analysis/test_distances.py (#1541),0,1.0,1
+80c4cba,2017-07-03 04:14:37,fixed: exception did not display psf file name,1,1.0,1
+0b5aced,2017-07-03 04:18:03,fixed: Python >=2.5 required (with statement is used),1,0.0,1
+e025e63,2017-07-03 04:20:00,fixes for writing selections - fixed test for selection writin  which gave a false positive - fixed GROWriter,1,1.0,1
+1f0d2f9,2017-07-03 04:23:55,Fixed PointSelection KDTree (CNS was removed),1,0.0,1
+123139f,2017-07-03 04:25:30,DCD header improvements,0,0.0,0
+17a9a47,2017-07-03 04:27:26,add hypothesis to travis tests,0,0.0,0
+566bcca,2017-07-03 12:40:16,general clean up,0,0.0,0
+0097099,2017-07-03 22:08:02,reactivate hypothesis tests,0,0.0,0
+015f15a,2017-07-03 22:08:09,removed conditional skipping of tests when scipy or matplotlib are missing,0,0.0,0
+32efca9,2017-07-03 22:15:04,use timeseries,0,0.0,0
+619526c,2017-07-03 22:15:15,Remove useless file,0,0.0,0
+2d2ce49,2017-07-04 09:49:56,minor clean ups,0,0.0,0
+23e3d28,2017-07-04 09:50:01,docs and changelog,0,0.0,0
+6f2001f,2017-07-04 19:02:32,updated TXYZ docs (#1631),0,0.0,0
+25bfb7c,2017-07-07 09:44:45,Merge pull request #1450 from utkbansal/pytest-analysis,0,0.0,0
+6423abb,2017-07-07 10:03:05,fixed path to online docs in doc/README,1,0.0,0
+9bec7bd,2017-07-07 10:05:45,fixed: typo  entity unwrapping of segment should now really return a segment,1,0.0,0
+8cbac38,2017-07-07 22:51:53,only add a commit if there is something staged,0,0.0,0
+42c7105,2017-07-08 02:04:08,update changelog,0,0.0,0
+742d7c4,2017-07-08 13:37:55,ENH: early work adding asv benchmark suite to MDA.,0,0.0,0
+ebc342e,2017-07-08 14:58:54,fixed: hbond analysis generate_table(),1,1.0,1
+b4aa1dd,2017-07-08 18:04:37,removed pytest xdist,0,0.0,0
+fd129d6,2017-07-08 22:38:22,Pytest Style analysis/test_rdf.py (#1570),0,1.0,1
+6ea0eb1,2017-07-09 08:15:17,DCD test improvements,0,0.0,0
+3214bd8,2017-07-09 09:08:16,make scipy and matplotlib full dependencies (#1159),0,0.0,0
+cc34959,2017-07-09 10:58:31,scipy and matplotlib are imported at top in analysis,0,0.0,0
+a952501,2017-07-09 18:58:41,update libdcd and DCDReader docs,0,0.0,0
+189df68,2017-07-09 22:05:19,Richard's extra align_principalAxis camelcase fix.,1,1.0,1
+4923639,2017-07-09 22:17:04,copy timestep,0,0.0,0
+d0dfa98,2017-07-09 22:37:00,yapify DCD,0,0.0,0
+47d8016,2017-07-11 00:46:16,fixed: copy does not take kw args,1,1.0,1
+d996cfe,2017-07-11 06:02:46,reorder tests,0,0.0,0
+94faa8c,2017-07-11 14:55:05,add readframes tests,0,0.0,0
+5a1b55c,2017-07-11 23:54:36,Pytest Style analysis/test_psa.py (#1569),0,1.0,1
+97526a5,2017-07-12 10:56:17,fix TRZ file reader on big-endian arches,1,1.0,1
+4398642,2017-07-12 13:02:17,Fixed conda install path for travis,1,1.0,1
+7cb8500,2017-07-12 13:10:31,Fix warnings (#1748),1,1.0,1
+4c6bc8b,2017-07-12 13:41:29,fix pos warnings (#828),1,1.0,1
+c6106f0,2017-07-13 13:00:01,Pytest Style topology/test_xpdb.py,0,1.0,1
+26e6332,2017-07-13 14:08:01,fixed Timestep frame number issues,1,1.0,1
+ae6fca7,2017-07-13 17:30:55,Partially fix test_rms.py,1,1.0,1
+4b30b98,2017-07-13 17:56:03,hbonds: still return timeseries from run() and fixed reST,1,1.0,1
+51e285c,2017-07-13 18:49:56,add new timeseries tests to test_dcd,0,0.0,0
+d4b27a6,2017-07-13 18:52:54,Fixed delaunay tetrahedronalization This corresponds to r43 in /code/MDAnalysis.,1,1.0,1
+5f6de0e,2017-07-13 18:53:40,Fixed psa.py conflicts (numpy --> np),1,1.0,1
+9f24e0e,2017-07-13 22:29:19,TST: test for deprecation warnings,0,0.0,0
+f51f49a,2017-07-13 23:31:33,Merge pull request #1404 from MDAnalysis/issue-1159-analysis-deps,0,0.0,0
+a355d99,2017-07-14 10:06:11,Issue #32: sort of fixed (check if a DCD has size 0 and raise IOError  instead of segfaulting,1,1.0,1
+277127c,2017-07-14 11:35:07,general clean up of travis.yml,0,0.0,0
+fac3e8d,2017-07-14 19:29:39,Gnm speed up (#1579),0,0.0,0
+16eae41,2017-07-14 19:47:16,Removed stray line,0,0.0,0
+299a939,2017-07-14 20:42:43,change dimension in place,0,0.0,0
+e71888e,2017-07-15 12:33:15,Finished improving lammps data parsing,0,0.0,0
+c3e9cc5,2017-07-15 17:09:55,Added PSA citation and DOI link to references list,0,0.0,0
+8bfa78a,2017-07-16 09:14:24,enabled selecting between serial and OpenMP distance functions,0,0.0,0
+7173fcf,2017-07-16 12:09:43,TRJ Reader Fix,1,1.0,1
+316eb85,2017-07-16 18:23:22,test AMBER trajectories for Issue 109,0,0.0,0
+b48275e,2017-07-17 14:02:50,Merge pull request #534 from MDAnalysis/issue-533,0,0.0,0
+46448c9,2017-07-17 14:16:58,removed c_numpy.pxd and replaced with 'cimport numpy',0,0.0,0
+6bfbf1c,2017-07-17 14:41:37,small modifications of distance calc backend selection,0,0.0,0
+0210129,2017-07-17 16:31:52,Fixes for Issue 201,1,1.0,1
+680fdbd,2017-07-17 17:11:18,Patched argument type checking logic in function dist_mat_to_vec()  and corresponding unit test is now more thorough (checks the specific error message string). Fixes #1498. (#1500),1,1.0,1
+3e3ac06,2017-07-17 17:15:16,Merge pull request #529 from MDAnalysis/feature-selectparallel,0,0.0,0
+9616de7,2017-07-17 17:25:20,Enable pytest warnings (#1661),0,1.0,1
+2ee4e65,2017-07-17 18:41:45,Added dt and time_offset to Timestep API,0,0.0,0
+82e100e,2017-07-17 20:42:38,The NamedStream class now has the required __fspath__ method (#1504),0,1.0,1
+4ca3235,2017-07-18 10:39:32,Fixes issue #816,1,0.0,1
+6b6fde1,2017-07-18 10:58:46,make AtomGroup.coordinates() return an array of type numpy.float32 by default - distance array needs float32 and when interfacing with I/O this is also   how coordinates are stored so it makes sense to enforce it at this   crucial entry point - LeafletFinder would raise an error when building the adjacency matrix   because the array returned by coordinates() was float64,1,0.0,0
+a97753f,2017-07-18 12:19:22,fixed TXYZ.py rst bullet list,1,1.0,1
+f351475,2017-07-18 13:56:43,Added tests for topology string types with various formats. Fixes #1336. (#1518),1,1.0,1
+704107b,2017-07-18 14:16:48,Merge pull request #536 from MDAnalysis/scipy-ncdf-precision,0,0.0,0
+3dd9d3c,2017-07-18 16:57:02,Added flag for indicating if openmp was used to Cython submodules,0,0.0,0
+f1647ec,2017-07-18 18:46:37,fix for simple rms.rmsd() (Issue #822),1,1.0,1
+179444d,2017-07-18 20:03:23,Added test for openmp declaration,0,0.0,0
+192e75b,2017-07-18 20:30:02,Pytest style topology/base.py (#1526),0,1.0,1
+3e420cf,2017-07-18 23:01:26,Pytest Style coordinates/test_null.py,0,0.0,0
+c3a0abd,2017-07-19 01:09:15,test_libdcd test_seek_over_max() now appropriately checks for EOFError instead of IOError.,0,0.0,0
+283c617,2017-07-19 12:12:18,TST: Added a test for segid str type in test_str_types(). Fixes #1523. (#1528),1,0.0,1
+01e9fa0,2017-07-19 12:12:47,fixed known failure in transition,1,1.0,1
+86273c6,2017-07-19 12:28:03,Small fixes/changes:  - Added future division and six.range to test_psa.py  - Separated pairs analysis (_run_pairs_analysis) from _run  moved plotting before  - Adding a couple distance matrix checks to PSAnalysis methods  - PSAnalysis.cluster now uses generated distance matrix D by default    and checks for proper dist matrix format if dist_mat kwarg is specified  - updated docstring for PSAnalysis.cluster,0,0.0,1
+7a5b9a7,2017-07-19 12:35:47,removed lib.parallel.distances,0,0.0,0
+8420368,2017-07-19 15:07:34,Fixes Issue #1771,1,0.0,1
+1208eb1,2017-07-19 18:07:24,Merge pull request #510 from kain88-de/basetest-fix,0,0.0,0
+8826b5e,2017-07-19 19:05:15,Fixes segid from TPR parser on python 3 (#1521),1,0.0,1
+301c7eb,2017-07-19 22:33:24,documented selection of backend for distance calculations,0,0.0,0
+f5b3503,2017-07-20 00:43:38,"Revert ""Added DCD2 (DIMS AdK transition) to datafiles""",0,0.0,0
+0a9a84a,2017-07-20 01:43:05,added test for default record_types,0,0.0,0
+7b4bf01,2017-07-20 01:58:13,Merge pull request #448 from MDAnalysis/issue-446,0,0.0,0
+6698c62,2017-07-20 06:42:56,Switch to pytest fixtures,0,0.0,0
+36d1351,2017-07-20 07:11:15,Fix default creation of writer from XTC/TRR TrjReader. Fixed docs.,1,0.0,1
+0e2745f,2017-07-20 18:31:24,Merge pull request #538 from MDAnalysis/issue/530,0,0.0,0
+51ce987,2017-07-20 23:16:04,Fixed DMSTimestep initial unitcell being wrong,1,1.0,1
+a5c16d1,2017-07-21 01:11:17,Merge pull request #467 from jbarnoud/tpr-doc,0,0.0,0
+b71471b,2017-07-21 09:30:17,Use cythonize to compile cython files,0,0.0,0
+9a500e4,2017-07-21 12:20:59,Pytest Style topology/test_pdb.py,0,0.0,0
+d76c934,2017-07-21 19:48:54,Merge pull request #559 from kain88-de/cythonize,0,0.0,0
+e0bc303,2017-07-22 07:41:30,Finalised changes for analysis.rdf and analysis.polymer,0,0.0,0
+13da40b,2017-07-23 18:28:25,include forgotten Amber data files,0,0.0,0
+3d73f44,2017-07-23 18:48:27,Merge pull request #549 from MDAnalysis/issue-548,0,0.0,0
+d97da42,2017-07-25 23:42:54,Fixed Amber TOPParser for both 10 and 12 formats,1,1.0,1
+1b8c667,2017-07-26 00:02:28,Pytest Style analysis/test_gnm.py (#1542),0,0.0,1
+aaff9a1,2017-07-26 12:51:33,fixed Issue 58 (analysis.align.rms_fit_try) - messed up a horrible if/elif construct - fix reported by Joshua Adelman - added unit test (and marked as slow) - updated CHANGELOG NOTE: The rms_fit_trj() function should be rewritten for       - speed       - better handling of trajectory formats,1,1.0,1
+53410cd,2017-07-27 01:20:56,Pytest Style topology/test_hoomdxml.py (#1593),0,1.0,1
+5672a7a,2017-07-27 02:25:45,Fix test for group subtractions,1,0.0,1
+ed3018a,2017-07-27 02:33:11,Pytest Style coordinates/test_writer_registration.py (#1654),0,1.0,1
+1db2aaf,2017-07-27 22:02:29,Extra tests for from_coordinates Timestep constructor,0,0.0,0
+dc16124,2017-07-28 14:59:10,detect OpenMP-capable compiler during setup (fixes Issue 145),1,1.0,1
+3271028,2017-07-28 21:02:50,Fixed: testest broken by the new PrimitivePDB Reader and Writer,1,1.0,1
+2b60524,2017-07-29 09:38:00,Version bumped to 0.8.0rc3. Doc fixed and regenerated,1,0.0,1
+fda6e36,2017-07-29 13:21:13,"Fix of ""point"" selections in atomSelect. Corrected docstring and converted coordinate arrays to dtype=float32",1,1.0,1
+a46cf63,2017-07-29 20:42:36,hbond analysis: possibly fixed bug and added ProgressMeter,1,1.0,1
+b4e044b,2017-07-29 23:21:07,Partially fix test_hbonds.py,1,1.0,1
+a1e49ba,2017-07-29 23:42:32,Pytest style analysis/test_persistencelength.py (#1568),0,0.0,1
+0ad6d9b,2017-07-29 23:45:04,[WIP]Pytest Style analysis/test_helanal.py (#1550),0,1.0,1
+0cb6d08,2017-07-30 16:48:21,Fixed XYZ format acting as standalone topology & coordinates,1,0.0,1
+b307b2c,2017-07-30 16:56:11,added patches that were lost in the last orbeckst -> trunk merge - crucial fix of old pyrex loops in src/dcd/dcdtimeseries.pyx - experimental HBond.py re-added - fixed date in CHANGELOG...,1,1.0,1
+a4e5791,2017-07-30 23:53:57,Fixed: testest broken by the new PrimitivePDB Reader and Writer,1,0.0,1
+3f87c79,2017-07-31 12:38:59,selection writer for VMD  PyMol  CHARMM  Gromacs working - use get_writer() to encapsulate the choosing of an appropriate writer   based on filename or default format (should be implemented similarly for   the single frame writers) and corresponding changes in AtomGroup class - write comments (or not  if commentfmt is None) - can write a preamble comment - use the selection writer for LeafletFinder instead of the simple   VMD writer,0,0.0,0
+5fb8893,2017-07-31 17:41:39,libxdrfile2 docs: added all exdr symbols,0,0.0,0
+d8af6c7,2017-08-01 17:20:59,Add new writer test,0,0.0,0
+5b00422,2017-08-01 17:58:31,add ZeroDivisionError exception to WaterOrientationRelaxation class,0,0.0,0
+f3161a8,2017-08-01 22:35:10,Tweak to PSA citation,0,0.0,0
+081429a,2017-08-02 00:51:32,Fixed PBC in parallel distance array (closes Issue 151),1,1.0,1
+8e3f0e1,2017-08-02 02:15:52,Pytest Style core/test_index_dtype.py (#1627),0,1.0,1
+0f9ef86,2017-08-02 15:29:29,fixed HydrogenBondingAnalysis backbone donor list,1,1.0,1
+36e5b14,2017-08-02 21:36:44,Merge pull request #546 from sseyler/develop,0,0.0,0
+f54822f,2017-08-03 09:21:31,Merge pull request #547 from MDAnalysis/feature-betterdata,0,0.0,0
+65e5b4f,2017-08-03 09:28:38,Added basic tests for InterRDF,0,0.0,0
+a486eac,2017-08-03 13:45:49,Merge pull request #558 from hainm/issue556,0,0.0,0
+0d11e11,2017-08-03 17:01:17,Merge branch 'develop' into feature-polymers,0,0.0,0
+349c936,2017-08-03 17:52:45,Added tests for AnalysisBase,0,0.0,0
+eda6c13,2017-08-03 18:16:41,Fixed issue with check_slice_indices and numpy ints,1,1.0,1
+4e070ea,2017-08-03 19:33:48,include analysis tests into MDAnalysisTests,0,0.0,0
+ef1b0d4,2017-08-03 20:19:45,Merge pull request #553 from MDAnalysis/issue/552-no-analysis-tests,0,0.0,0
+b6a7cbc,2017-08-03 21:48:28,FIXED Issue 16: can easy_install from tar file but at the prices of copying c_numpy.pxd into each subdirectory  easy_install breaks if these are symbolic or hard links,1,1.0,1
+858069f,2017-08-03 23:49:22,[Review Needed]Pytest Style coordinates/test_gms.py (#1639),0,1.0,1
+ea2ca62,2017-08-04 05:37:23,Pytest Style topology/test_psf.py (#1601),0,1.0,1
+559528f,2017-08-04 17:38:41,Merge branch 'develop' of https://github.com/MDAnalysis/mdanalysis into develop,0,0.0,0
+0fa638a,2017-08-04 19:41:35,use context,0,0.0,0
+a5a584d,2017-08-04 19:43:21,Merge pull request #543 from MDAnalysis/issue-532,0,0.0,0
+4cb8c08,2017-08-04 19:56:46,Updated Lammps data reading,0,0.0,0
+74b5e23,2017-08-04 20:37:31,Split lammps data tests into their own file (#466),0,0.0,0
+59299cc,2017-08-05 09:53:47,Added more tests for lammps topology,0,0.0,0
+60d013b,2017-08-05 12:35:05,Merge pull request #1517 from MDAnalysis/py3builds,0,0.0,0
+0b9066c,2017-08-05 13:09:17,Updated INPCRDReader to SingleFrameReader style,0,0.0,0
+1f69ba0,2017-08-05 13:12:06,"fix MDAnalysis.analysis.rms.RMSD with select != ""all"" fails",1,1.0,1
+1703f85,2017-08-05 14:17:41,Pytest Style: test_altloc.py (#1464),0,1.0,1
+b939af1,2017-08-05 14:21:31,Fix circular import.,1,1.0,1
+d4705e8,2017-08-05 15:50:32,fixed bug in core.util.iterable(): failed on unicode,1,1.0,1
+8f5d4db,2017-08-05 21:33:45,added coveralls to dep list,0,0.0,0
+2542b16,2017-08-05 23:47:58,Pytest Style coordinates/test_timestep_api.py (#1650),0,1.0,1
+833d83a,2017-08-06 01:02:47,Pytest Style coordinates/test_pdbqt.py (#1649),0,1.0,1
+9952012,2017-08-07 17:54:40,skip hole on osx for now.,0,0.0,0
+f15526b,2017-08-07 21:32:23,FIXED: Issue 53 (ChainedReader failed when accessing dt),1,1.0,1
+2a702aa,2017-08-07 21:33:06,Fixed an incorrect requirement for hbond autocorrel tool,1,0.0,1
+76f98c5,2017-08-08 08:30:13,Remove mda_nosetests and nose plugins,0,0.0,0
+6a856aa,2017-08-08 08:56:48,Drop comments for running tests with nose,0,0.0,0
+782cd7b,2017-08-08 09:17:11,Fixed broken Atom add,1,0.0,1
+3a21ed4,2017-08-08 09:40:01,Pytest Style analysis/test_leaflet.py (#1551),0,1.0,1
+812df80,2017-08-08 09:44:21,testsuite: prepared setup.py for PyPI,0,0.0,0
+9801d05,2017-08-08 09:48:32,fixed: alignto() and rms_fit_trj() selection,1,1.0,1
+1c19bd3,2017-08-08 13:04:55,Fix for issue 51: bolean correction from and to or for various flot32/64 checks etc.,1,1.0,1
+559a459,2017-08-08 17:38:12,Prevent tests from littering (#1490),0,0.0,0
+753edd8,2017-08-08 17:38:52,fix unicode name in open,1,0.0,1
+1cc0275,2017-08-08 18:26:11,print slowest tests (#1486),0,0.0,0
+64f9816,2017-08-08 18:37:45,Writer class: fixed repr even if no numatoms provided,1,1.0,1
+929867e,2017-08-08 18:44:14,Issue 23: 	generate bond list when using a PDB instead of a PSF,0,1.0,1
+979da77,2017-08-08 19:23:48,Fix docs,1,0.0,0
+0d7ada4,2017-08-08 19:26:48,wateranalysis: Fixed case when no water molecules in selection.,1,1.0,1
+262fd3e,2017-08-08 19:28:05,fixed Universe.load_new() raised a NameError,1,1.0,1
+8fb4f0a,2017-08-09 01:02:31,Pytest Style: test_selections.py (#1471),0,1.0,1
+9b3cc87,2017-08-10 00:00:28,refactor PCA tests (#1485),0,0.0,0
+3131911,2017-08-10 00:06:54,Refs #1731 Refactor validate_dimensions,0,0.0,0
+a8a2de5,2017-08-10 00:32:21,Changed test name(s) from test_asymmetric_weight() to test_asymmetric_wavg_weight() and test_asymmetric_avg_weight()  need diff names for each test.,0,0.0,0
+ed17728,2017-08-10 08:12:16,New names for (w)avg_hausdorff tests + reverting back to old (same) test names: test_asymmetric_weight(),0,0.0,0
+4fde596,2017-08-11 20:27:13,Added two tests for Hausdorff neighbors--only the distances,0,0.0,0
+d98f063,2017-08-11 20:28:37,New test for Hausdorff pair frames in pairs analysis  pairs analysis now also gives distance matrix,0,0.0,0
+366d70c,2017-08-14 00:15:51,code cleanup for 0.6.2 - removed delaunay code from the release - removed experimental HBond code,0,0.0,0
+ab5b5d9,2017-08-14 00:34:11,Remove parsernotfound (#1516),0,0.0,0
+beb08df,2017-08-14 09:41:49,Merge pull request #1480 from utkbansal/f-u-nose,0,0.0,0
+a6be297,2017-08-14 10:16:56,Added python3 to build matrix,0,0.0,0
+5408508,2017-08-14 10:39:12,Add a molnums topology attribute to TPR parser,0,0.0,0
+36ae1d3,2017-08-14 10:43:08,Added docstring in PSAnalysis.cluster for dist_mat kwarg,0,0.0,0
+d4f04ea,2017-08-14 10:45:29,MAINT: simplify neighbor search algorithm,0,0.0,0
+f67a99e,2017-08-14 11:50:55,Drop nose,0,0.0,0
+6f9ff86,2017-08-14 11:57:01,remove unnecessary check,0,0.0,0
+f65c1ee,2017-08-14 12:02:10,setup.py modified to use Cython if present. setup_developer.py deleted,0,1.0,1
+cebbb70,2017-08-14 14:20:39,Added tests for triclinic lammps data,0,0.0,0
+09d168c,2017-08-14 20:27:31,Pytest Style: coordinates/test_gro.py (#1659),0,0.0,1
+12467b0,2017-08-14 22:53:38,added biopython to requirements and updated CHANGELOG,0,0.0,0
+5092593,2017-08-14 23:58:17,Doc update,0,0.0,0
+4c465e9,2017-08-15 07:57:08,XTC/TRR-related doc update and cleanup.,0,0.0,0
+7b383c1,2017-08-15 08:00:47,Replace the deprecated logger.warn (#1564),0,0.0,0
+69730f4,2017-08-15 08:07:08,Merge pull request #1553 from MDAnalysis/asv_bench_simplified,0,0.0,0
+d2101fc,2017-08-15 10:40:23,Fixed TRZ reader not iterating properly,1,0.0,1
+c60860e,2017-08-15 11:02:46,Merge pull request #1767 from MDAnalysis/fix-dcd-witer,0,0.0,0
+8440f66,2017-08-15 11:12:40,Merge pull request #472 from MDAnalysis/fix-lammps,0,0.0,0
+77fa82e,2017-08-15 17:24:55,DOC: Added MDA asv docs.,0,0.0,0
+5428d7e,2017-08-15 21:20:41,Pytest Style topology/test_top.py (#1602),0,1.0,1
+6840e49,2017-08-15 21:26:07,GRO reader: fixed case with only 3 entries for the unitcell,1,1.0,1
+4fd0215,2017-08-15 21:27:12,fixed: threw exception if no atom was found at all  now just returns empty index list,1,1.0,1
+0acb796,2017-08-15 22:08:59,TST: Added traj reader striding asv test.,0,0.0,0
+150865c,2017-08-16 01:14:49,fixed cached decorator breaking function docs,1,1.0,1
+b345f66,2017-08-16 16:04:44,Get rid of assert_raises,0,0.0,0
+81d1352,2017-08-16 16:48:07,MAINT: refactor wording and pep8 changes,0,0.0,0
+d5b6bf4,2017-08-16 16:59:24,TST: Removed some scipy-specific info from asv JSON file.,0,0.0,0
+c512595,2017-08-16 17:33:13,add NCDF format reader,0,0.0,0
+59e2c22,2017-08-16 17:36:29,test for #1487,0,0.0,0
+0acc0f9,2017-08-16 17:39:28,fixed type selection,1,0.0,1
+ebf171b,2017-08-16 18:29:47,Address reviews on molnums,0,0.0,0
+9085e7b,2017-08-16 18:43:26,run pylint on python 3.6 (#1589),0,0.0,1
+6b136c4,2017-08-16 21:16:08,FIXED Issue 34: fixed unitcell for XTC/TRR - box vectors were extracted wrongly - moved rad2deg  _angle  _veclength into coordinates.core (for further use) - added test case,1,1.0,1
+85a2786,2017-08-17 18:31:13,Remove all occurences of @dec,0,0.0,0
+a8ae6c9,2017-08-18 07:07:59,Merge pull request #1524 from MDAnalysis/issue-260-py3,0,0.0,0
+8a075f2,2017-08-18 08:34:14,remove dcd from timestep API test,0,0.0,0
+4a8f881,2017-08-20 04:45:08,Pytest Style topology/test_dlpoly.py,0,1.0,1
+9a0790b,2017-08-21 00:51:07,fixed a typo in TPRParser.py: fer_err => fver_err,1,0.0,0
+f240c55,2017-08-21 12:57:42,support ordered readframes,0,0.0,0
+c7a4741,2017-08-21 14:42:17,fixed(?): util.angle() would sometimes produce nan,1,1.0,1
+38e9e92,2017-08-21 14:51:39,Fixed GROParser not stripping atom and residue names,1,0.0,1
+09d8b68,2017-08-21 19:32:36,fixed CHANGELOG (#1700),1,0.0,0
+2cd2761,2017-08-21 19:37:57,Pytest Style core/test_group_traj_access.py (#1629),0,1.0,1
+a0024fa,2017-08-21 20:11:13,Fixing up CHANGELOG (#1430),1,0.0,0
+56776ef,2017-08-24 03:37:07,Pytest style: test_datafiles.py (#1465),0,1.0,1
+86c55f1,2017-08-24 23:30:18,updated CHANGELOGs with correct information,0,0.0,0
+f08aa4f,2017-08-25 02:54:51,fix doc build error,1,0.0,1
+bf47a6a,2017-08-25 05:53:15,Fix deprecation warning missfires (#1477),1,1.0,1
+ef5dee9,2017-08-25 12:40:49,Pytest Style coordinates/test_xyz.py (#1656),0,1.0,1
+164ea65,2017-08-25 13:33:54,fix typo,1,0.0,0
+93a8d8c,2017-08-25 13:52:18,Merge pull request #1730 from MDAnalysis/issue-1712-macbuildfail,0,0.0,0
+2364f13,2017-08-25 14:20:46,fixed: Bug in psf parser would not read charges correctly. Eg 0.900000E-01 would be read as 0.9 and not lead to an exception. This means that anything done with MDAnalysis and charge analysis in the past needs to be rechecked. I referencedd the Charmm source code for the authoritative PSF format. This corresponds to r51 in /code/MDAnalysis.,1,1.0,1
+b997234,2017-08-25 14:21:36,Fixed Timeseries so that you can pass in an AtomGroup This corresponds to r23 in /code/MDAnalysis.,1,1.0,1
+e8de75d,2017-08-25 14:45:43,Import common objects into base namespace  also fixed some things in AtomGroup.py This corresponds to r24 in /code/MDAnalysis.,1,1.0,1
+1215ca3,2017-08-25 14:46:29,fixed _frame attribute of DCDReader and removed dimensions property,1,1.0,1
+2ce3e75,2017-08-25 16:56:13,Fixed coordinate based selections on AtomGroups This corresponds to r76 in /code/MDAnalysis.,1,1.0,1
+a3bae23,2017-08-26 12:39:56,minor doc fix for XTC,1,0.0,0
+e377b79,2017-08-26 14:34:16,Fixed tests for issue #851,1,0.0,1
+fba975e,2017-08-26 22:34:42,Issue 76: chainreader format,0,1.0,1
+d15c51e,2017-08-26 22:36:55,fixed exception message for coordinate format guessing and minor doc typo,1,0.0,1
+e0307aa,2017-08-27 13:15:43,fixed the PDB format of the HOLE test file PDB_HOLE,1,1.0,1
+be5d599,2017-08-27 13:19:15,fix errors in rst files,1,0.0,1
+db2cc3c,2017-08-27 13:25:51,Fixed typo,1,0.0,0
+ec1e983,2017-08-27 17:07:54,TST: show links to commits on GitHub in asv report (#1734),0,0.0,0
+e9f0cb9,2017-08-28 11:42:17,Pytest Style core/test_atomselections.py (#1634),0,0.0,1
+141dc11,2017-08-28 16:58:56,finalized fix of #556 (test failure due os.chdir/tempdir),1,1.0,1
+318ec85,2017-08-30 01:35:41,fixes rms.RMSD: selections are now applied to atomgroup itself,1,1.0,1
+7049b08,2017-09-02 14:39:42,reverted change to Bond TopologyAttr,0,0.0,0
+9b11a67,2017-09-03 13:02:32,Updated Universe.add_TopologyAttr docstring,0,0.0,0
+b270733,2017-09-03 13:02:58,fixed/improved docs,0,0.0,1
+53edb84,2017-09-03 16:38:53,Merge pull request #1186 from MDAnalysis/issue-1092-restrict_setattr,0,0.0,0
+20257f3,2017-09-03 16:45:35,TST: Adding MDAnalysis.analysis.leaflet asv benchmarks (#1724),0,0.0,0
+bad5eaa,2017-09-03 17:05:36,Added gsd as dependency,0,0.0,0
+211a2e0,2017-09-03 18:05:04,Merge branch 'develop' into gsdparser-feature,0,0.0,0
+7dba4c5,2017-09-03 22:13:43,Added gsd files to testsuite setup.py,0,0.0,0
+49aaf08,2017-09-04 00:36:24,update CHANGELOG (Issue 184 fixed),1,0.0,1
+3703d7d,2017-09-04 00:38:38,merged develop (fixed CHANGELOG conflicts),1,1.0,1
+b2ac888,2017-09-04 10:44:02,[WIP]Pytest Style analysis/test_contacts.py (#1545),0,0.0,1
+b786cd3,2017-09-04 14:29:02,better warning message for hydrogenbond analysis,0,0.0,0
+383e2ee,2017-09-04 16:47:49,workaround for travis-ci/travis-ci#6307,0,0.0,0
+c95ad7b,2017-09-04 17:17:22,rebuilt online docs (0.7.2 with fix for point selection),1,0.0,0
+75d42ca,2017-09-04 17:23:37,Merge branch 'develop' into issue-1006-psatests,0,0.0,0
+c791a5c,2017-09-04 17:40:32,Merge pull request #1508 from sseyler/issue-1006-psatests,0,0.0,0
+72f7605,2017-09-04 18:13:56,Merge branch 'develop' into gsdparser-feature,0,0.0,0
+446514c,2017-09-04 18:15:37,Allow osx builds to fail,1,0.0,0
+6c8aa36,2017-09-04 18:16:52,Merge pull request #1693 from rcortini/gsdparser-feature,0,0.0,0
+b138532,2017-09-04 22:33:04,Doc regenerated. libxdrfile2 generated doc files added to git,0,0.0,0
+363c94f,2017-09-05 01:53:28,Fixed TRR coordinate access via _y and _z (Issue 224),1,1.0,1
+44dbfc1,2017-09-05 11:24:56,updated conda recipe for 0.17.0 release,0,0.0,0
+89ebb46,2017-09-05 11:36:32,clarified UAG upadte procedure,0,0.0,0
+8457376,2017-09-05 14:24:43,Changelog for attribute setting changes,0,0.0,0
+5e2d0ba,2017-09-05 16:47:24,Further clarified is_group in TopologyAttrContainer.subclass,0,0.0,0
+ac47b78,2017-09-05 17:48:18,use pytest style for test_dcd,0,0.0,0
+23f4980,2017-09-06 07:30:17,TST: Added asv benchmarks for analysis.rms (#1741),0,0.0,0
+ffaecc8,2017-09-06 07:36:13,unittests: fixed doc string :-p,1,1.0,1
+bf0c199,2017-09-06 07:55:13,Water bridge analysis (#1722),0,0.0,0
+7ea2cc3,2017-09-06 12:46:08,change format -> order for timeseries method,0,0.0,0
+bc36840,2017-09-06 14:34:42,write deprecation tests,0,0.0,0
+8d64c7f,2017-09-06 16:04:03,update CHANGELOG,0,0.0,0
+596b26e,2017-09-06 17:34:30,PrimitivePDBReader - fixed bug related to 1-based frame indexing  which had broken multi-model PDB parsing,1,1.0,1
+48be91a,2017-09-06 17:34:30,Refs #1731 Refactor box and periodic definition,0,0.0,0
+71d5140,2017-09-06 17:43:35,TST: Added first draft of psa module asv benchmarks. (#1750),0,0.0,0
+731004b,2017-09-06 17:54:55,more reST fix (in qcprot),1,1.0,1
+deb1d8e,2017-09-06 18:01:23,coordinate tests: make sure that for Gromacs tests the conversion flag is set correctly - set core.flags[convert_gromacs_lengths] explicitly in setUp - encountered failures (possibly when running multiple tests with --processes=8) which   came about because the conversion flag was set to False even though it should have   been True,0,0.0,0
+9bd92f9,2017-09-06 22:22:45,Fix missing occupancy in PrimitivePDBReader,1,1.0,1
+0708d72,2017-09-06 22:27:34,made tests for waterdynamics more robust,0,0.0,0
+5199241,2017-09-06 22:36:08,Merge pull request #1733 from jmborr/1731_spherical_tokens_pkdtree,0,0.0,0
+3b4d946,2017-09-07 12:15:06,Allows construction of minimal Universes  also for topology-less coord loading (#1533),0,0.0,0
+cf029a3,2017-09-07 12:25:47,fixed: helanal analysis was missing import statement,1,1.0,1
+ef9fcdc,2017-09-08 09:24:02,Bumped version to 0.17 release,0,0.0,0
+a35a5ea,2017-09-08 19:24:58,Merge branch 'develop',0,0.0,0
+fdbd08b,2017-09-11 11:17:30,Bug dcd correl functions when running on 64 bit machines This corresponds to r10 in /code/MDAnalysis.,1,0.0,0
+3697e04,2017-09-11 11:46:05,Adding copy method to ChainReader,0,0.0,0
+bbbd0cd,2017-09-11 19:20:49,regenerated c files for 0.17.0,0,0.0,0
+50c24e4,2017-09-12 11:13:55,removed tabs,0,0.0,0
+c428efd,2017-09-13 11:29:06,Remove test generators in core/test_groups.py::TestGroupSlicing,0,0.0,0
+0d673de,2017-09-13 14:02:02,extended format PDB reader,0,0.0,0
+2946aa4,2017-09-14 17:00:10,Merge pull request #1735 from MDAnalysis/issue-1732-travisfix,0,0.0,0
+882978e,2017-09-15 11:02:05,Named stream issue (#1669),0,1.0,1
+97cdae7,2017-09-15 17:20:42,Update the adress of networkx doc in the doc,0,0.0,0
+03508c6,2017-09-15 17:20:57,drop usage of assert_array_*,0,0.0,0
+a999086,2017-09-17 11:33:00,Use RuntimeError if coordinates not set,0,0.0,0
+76cd70c,2017-09-18 15:32:12,Use assert in place of assert_equal,0,0.0,0
+65a6d6b,2017-09-18 15:58:45,Merge pull request #1648 from utkbansal/coord-null,0,0.0,0
+3ef4196,2017-09-26 15:30:01,added fs as a time unit and minor fix in flags,1,1.0,1
+88b6c20,2017-09-26 16:39:12,Merge pull request #1652 from utkbansal/coord-trz,0,0.0,0
+49177fd,2017-09-28 17:19:39,TST: Added MDAnalysisTests to the asv dependency matrix along with the appropriate conda channel. When combined with modifications to our fork for asv this fixes #1577. (#1580),1,1.0,1
+37834d0,2017-10-01 12:08:06,source and some testing,0,0.0,0
+a3e9e89,2017-10-02 20:29:09,test_find_centers added,0,0.0,0
+d5dec2b,2017-10-05 08:03:22,Unit test for PeriodicKDTree.search,0,0.0,0
+5ccd046,2017-10-10 13:57:24,Amend AtomNeighborSearch docstring,0,0.0,0
+7d7a9fb,2017-10-10 15:46:01,clean up pkdtree source,0,0.0,0
+b1e11bb,2017-10-10 15:50:34,Use six.moves.range,0,0.0,0
+ad48254,2017-10-11 17:11:42,replace yield based tests,0,0.0,0
+3eb900c,2017-10-12 11:21:53,add assert_timestep_equal,0,0.0,0
+1d2dd6e,2017-10-12 14:34:50,Use distances.apply_PBC and distances._check_array,0,0.0,0
+bf1ba97,2017-10-12 15:04:44,Refactor search method to gain speed,0,0.0,0
+a597437,2017-10-12 15:05:28,Entries in AUTHORS and CHANGELOG,0,0.0,0
+d833bed,2017-10-17 15:17:38,Remove all remaining test generators in core/test_groups.py,0,0.0,0
+f02a177,2017-10-21 14:31:32,replace `assert_` with plain assert,0,0.0,0
+1b0dbf6,2017-10-21 14:42:55,Fixed numpy's partial import when installing,1,1.0,1
+2e22d06,2017-10-21 15:34:43,tprparser works now for gromacs-4.6 and gromacs-4.6.1 1. updated read_tpxheader functino since the tpx header format has changed 2. updated variables in tpr/setting.py 3. updated docstring in TPRParser.py,0,0.0,0
+88b3934,2017-10-26 16:22:50,Correct apply_PBC for triclinic systems (#1697),0,0.0,0
+21a5f87,2017-10-27 19:19:43,Changed bare except in GROParser to try and fix coverage detection,1,1.0,1
+8fedab5,2017-10-30 15:04:38,removed print statement in GSDParser,0,0.0,0
+abe7933,2017-10-30 18:11:08,GSDParser sets `resid` and `resname` of atoms,0,0.0,0
+c4a8b13,2017-10-31 10:16:13,Parameterize tests,0,0.0,0
+a79cdf2,2017-10-31 10:34:37,Fixed circular reference to reader causing memleak,1,1.0,1
+c9c801b,2017-10-31 11:14:31,Forgot to sort the list of indices!,0,0.0,0
+e96b74b,2017-10-31 12:20:56,Merge pull request #1655 from utkbansal/coord-xdr,0,0.0,0
+a913625,2017-10-31 12:21:49,doc fixes for removal of Bio.PDBParser,1,0.0,0
+d7c0001,2017-10-31 12:26:55,Minor tweaks to nearest neighbor plotting method,0,0.0,1
+803edc1,2017-10-31 12:34:49,Use fixture parametrization instead of individual classes,0,0.0,0
+6546eae,2017-10-31 12:35:47,remove need for filename fixture,0,0.0,0
+92a8a06,2017-10-31 14:09:36,fixed memory blowup in the unit tests (introduced in commit 1e05654b23e2),1,1.0,1
+f7cf7bf,2017-10-31 17:34:16,Rename some TPR test to have them detected,0,0.0,0
+b15ef4c,2017-11-02 12:25:11,fixed and improved helanal_main(),1,0.0,1
+026f3a6,2017-11-02 12:40:02,Merge pull request #1606 from utkbansal/t-tprparser,0,0.0,0
+0d66ec1,2017-11-02 15:20:52,Extend search to triclinic systems,0,0.0,0
+d8ec980,2017-11-02 16:31:18,Pytest Style topology/test_topology_base.py,0,1.0,1
+0bca300,2017-11-02 16:54:24,replace yield tests with fixtures,0,0.0,0
+e3e1dfb,2017-11-02 17:05:46,HydrogenBondAnalysis: fixed acceptors  doc improvements,1,1.0,1
+fc7aa1c,2017-11-02 17:13:15,remove yield tests,0,0.0,0
+4700d04,2017-11-03 10:54:04,another commit another yield gone,0,0.0,0
+13370a9,2017-11-03 11:04:05,ban more yields,0,0.0,0
+4d5b1d2,2017-11-03 11:48:50,Renamed _TopologyAttrContainer._singular to _is_group,0,0.0,0
+1a54776,2017-11-03 13:32:09,Fixed module imports (ii),1,1.0,1
+569cd20,2017-11-03 14:22:08,Merge pull request #1692 from jmborr/test_pkdtree,0,0.0,0
+270b876,2017-11-05 05:01:53,test neighbor search,0,0.0,0
+90f281d,2017-11-07 05:28:54,renamed bilayer analysis script to adhere to common scheme membrane-XXX.py,0,0.0,0
+6642002,2017-11-07 14:38:05,Added example to add_TopologyAttr,0,0.0,0
+45530c8,2017-11-07 14:59:41,Fix unitcell handling,1,1.0,1
+fd667d6,2017-11-07 15:10:05,enabled mass-weighted fitting in rms_fit_trj(),0,0.0,0
+89c1991,2017-11-07 15:10:21,modify changelog,0,0.0,0
+b2bbc33,2017-11-07 15:11:10,Removes mda_nosetests,0,0.0,0
+33122bd,2017-11-07 15:15:11,avoid copy in dcd writer,0,0.0,0
+c3bbe74,2017-11-07 15:18:42,use assert_array_equal,0,0.0,0
+154c05c,2017-11-07 15:22:44,delete old files,0,0.0,0
+14bd0d4,2017-11-11 12:31:14,"test case for writing GRO files and optimization of fixes for Issue 57 - testing for writing GRO and limits ( -999.994 nm < x < 9999.994 nm ) - sharpened test for PDB limits ( -999.994 A < x < 9999.994 A)  note units A vs nm - conceivably we could include the boundaries into the legal values (they still round down)    if we do then we need to adjust the tests - legal coordinates check for GRO: moved out to before the file is even opened so we can get   rid of removing the opened file - GRO writer: use ""with open() as ..."" instead of ""try: ... finally: close()""",1,0.0,0
+4ba0db1,2017-11-11 16:26:39,fixup CHANGELOG & setup.py with rebase cleaning,0,0.0,0
+bd85593,2017-11-11 16:31:51,add random unit cell test to test_dcd,0,0.0,0
+3aecc3e,2017-11-11 16:33:26,prefer to use format over string interpolation,0,0.0,0
+4226af2,2017-11-11 16:41:51,add information about charm bitfield,0,0.0,0
+4dac2f5,2017-11-12 13:20:51,uniformly use xyz to refer to coordinates in libdcd,0,0.0,0
+224ee3b,2017-11-12 15:54:56,add Exception names to libdcd docs,0,0.0,0
+3ea0bd1,2017-11-13 11:46:47,added ez files to MANIFEST  I think they are needed to build fully functional eggs (untested),0,0.0,0
+b5ba827,2017-11-15 06:46:18,add libdcd to rst docs,0,0.0,0
+6a15b97,2017-11-15 17:11:39,Removed weakref system from Atom.universe. Atoms now hold a strong/real reference to the Universe,0,0.0,0
+75d5e8c,2017-11-16 12:04:46,Removed unused/orphaned code from core/Selections,0,0.0,0
+8bad428,2017-11-17 20:38:18,added scipy.io.netcdf (v0.19.1) as lib.netcdf (fallback for Amber Reader/Writer),0,0.0,0
+d201825,2017-11-17 20:47:26,use netcdf for reading Amber netcdf but netCDF4 for writing,0,0.0,0
+19799e7,2017-11-17 20:48:27,Pytest Style core/test_fragments.py (#1633),0,0.0,1
+9ba1ab9,2017-11-18 14:04:17,removed bundled lib.netcdf,0,0.0,0
+2c96fca,2017-11-20 21:21:23,fixed type selection,1,0.0,1
+a71ed70,2017-11-21 19:21:04,add python 3 to travis (#1479),0,0.0,0
+5b0cf1e,2017-11-21 19:39:35,Convert libmdaxdr test (#1442),0,0.0,0
+4cb4345,2017-11-21 20:11:23,updated README (removed vm) (#1474),0,0.0,0
+d2d89dd,2017-11-21 21:05:05,Excluded visualizations from code coverage,0,0.0,0
+5444614,2017-11-21 21:18:40,FIXED: trajectory IObase.convert_time_from_native() did the opposite,1,1.0,1
+5c2f0de,2017-11-21 22:41:17,update license header,0,0.0,0
+fed8be3,2017-11-22 22:00:25,update version number to 0.17.0 (#1426),0,0.0,0
+3d7aac3,2017-11-23 00:17:40,remove TimeseriesCollection (#1375),0,0.0,0
+000c5f2,2017-11-23 00:30:49,Remove planned deprecations (#1297),0,0.0,0
+7c50845,2017-11-23 01:31:19,refactor libdcd header API,0,0.0,0
+3671080,2017-11-23 21:26:09,don't change dt when using nsavc for writing,0,0.0,0
+e99949c,2017-11-23 21:27:32,improve unitcell decoding,0,0.0,0
+9b074d5,2017-11-23 21:27:53,install hypothesis for tests with setup.py,0,0.0,0
+fe1a196,2017-11-25 20:10:09,Fixed potential issues in XTC TRR GRO PDB writers (when convert_units=False),1,0.0,1
+1322f55,2017-11-27 18:01:27,open in 'rt' mode by default,0,0.0,0
+de46fee,2017-11-29 16:57:21,Merge pull request #1372 from MDAnalysis/dcd-cython-rebase,0,0.0,0
+fa83729,2017-12-03 13:55:19,Merge pull request #1456 from MDAnalysis/testing-deps,0,0.0,0
+db9a9e1,2017-12-03 14:22:32,topology/core.py fixed  updated to Py3K convention and cleaned to avoid cyclic imports,1,1.0,1
+923786b,2017-12-05 00:51:14,anyopen in rt mode,0,0.0,0
+1e11a67,2017-12-05 12:30:24,Merge branch 'fix-tpr-IO' into develop,0,0.0,0
+07b8d63,2017-12-05 15:00:41,Merge pull request #1458 from MDAnalysis/anyopen-py3,0,0.0,0
+b56254c,2017-12-06 10:35:30,add explicit byte encoding to Amber netCDF files (#1455),0,0.0,0
+e84c3fd,2017-12-06 10:35:56,remove unmaintained virtual machines from repository (#1462),0,0.0,0
+68c2da4,2017-12-06 10:36:37,Shift analysis to PYTEST_LIST,0,0.0,0
+d37b669,2017-12-06 11:31:09,Delete useless file,0,0.0,0
+4dcfb7d,2017-12-06 11:37:47,Merge pull request #503 from MDAnalysis/scipy-ncdf-debug,0,0.0,0
+b9db71d,2017-12-06 11:41:51,UNSTABLE: fixed __init__.py fles so that we really present the same names in the MDAnalysis name space as before the reorganization,1,1.0,1
+3c4d607,2017-12-06 11:47:12,update libdcd,0,0.0,0
+958e971,2017-12-06 17:04:16,Simplified setattr across Component and Group,0,0.0,0
+e7104a5,2017-12-06 18:14:33,Add changelog,0,0.0,0
+de695f4,2017-12-06 18:16:24,Fixup,0,0.0,0
+54d5bab,2017-12-07 14:20:11,Changed to a _SETATTR_WHITELIST per class  (not shared),0,0.0,0
+74d51a2,2017-12-07 19:07:32,new test for GSD frame number,0,0.0,0
+27946f2,2017-12-08 09:40:09,Test absence of images for box center point,0,0.0,0
+98e6d95,2017-12-08 09:43:44,added several new tests for GSD trajectory parsers,0,0.0,0
+069af03,2017-12-08 16:20:38,no spaces between function and parentheses in GSD parsers,0,0.0,0
+48aacef,2017-12-08 22:58:46,Merge branch 'develop' into gsdparser-feature,0,0.0,0
+37881f4,2017-12-09 07:49:35,Fixed bug in initializing self.box,1,1.0,1
+251df4d,2017-12-09 08:08:17,omit due.py from coverage reporting,0,0.0,0
+b7af4d7,2017-12-09 08:14:07,pytest.fixture,0,0.0,0
+1062ed2,2017-12-09 09:08:39,make API of pkdtree more generic and update docs,0,0.0,0
+3c75a00,2017-12-10 21:02:24,PEP8 changes,0,0.0,0
+e92d073,2017-12-11 10:36:32,Final updates to make_whole following review,0,0.0,0
+8867646,2017-12-11 13:19:36,update CHANGELOG,0,0.0,0
+b6c25ab,2017-12-11 13:22:21,allow failure of numpy dev build,0,0.0,0
+eb3678d,2017-12-11 13:23:40,This enables pkdtree in atom selections tests,0,0.0,0
+4baa8a9,2017-12-11 14:31:07,PSFParser now gracefully handles psf files that only contain NATOM fields This corresponds to r17 in /code/MDAnalysis.,0,0.0,0
+56c4a7c,2017-12-11 14:40:12,forces: unit conversion and test case,0,0.0,0
+10155d7,2017-12-12 11:00:00,More tests for attribute setting,0,0.0,0
+2e871f7,2017-12-12 11:07:43,Compiler args (#1676),0,0.0,0
+71f13d2,2017-12-12 11:28:39,Fix for issue 51: bolean correction from and to or for various flot32/64 checks etc.,1,0.0,1
+bf147ef,2017-12-13 10:35:59,selection string can be unicode (#1710),0,0.0,0
+51b6270,2017-12-13 11:03:20,Make PointSelection use the periodic flag in the same way as AroundSelection  even if it's no working properly at least it's consistent.,0,0.0,0
+f878fbf,2017-12-13 13:13:17,skip not implemented tests,0,0.0,0
+a35ce01,2017-12-13 13:13:44,Added explanation of _gen_initial_values,0,0.0,0
+15e49e9,2017-12-13 14:29:47,Adding asv geometric selection benchmarks (#1695),0,0.0,0
+311379f,2017-12-15 16:08:22,improve docs for libdcd and DCD,0,0.0,0
+699697a,2017-12-16 00:30:36,changed exceptions raised by lib.util.get_weights(),0,0.0,0
+ad3d811,2017-12-18 21:12:43,fix yield in test_atomgroup,1,1.0,1
+e3a6bf5,2017-12-19 02:34:27,document (and test) setting DX array type (#1725),0,0.0,1
+5daf18c,2017-12-22 20:03:20,Fixed memory deallocation: under certain conditions the offset array could be freed more than once.,1,1.0,1
+4129acd,2018-01-02 17:31:40,use minimally version 0.7.0 of seaborn,0,0.0,0
+9f96380,2018-01-02 17:33:14,Remove yield based tests,0,0.0,0
+dc538a4,2018-01-02 17:33:23,fixed: @kain88-de was not listed as an author in the docs,1,1.0,1
+6e71ffe,2018-01-02 18:21:59,Speed up rotate (#1708),0,0.0,0
+41739b1,2018-01-04 18:10:18,Fix #541,1,1.0,1
+f9e99df,2018-01-12 16:24:28,Added u.add_TopologyAttribute with string,0,0.0,0
+7531c8f,2018-01-12 16:33:03,rewrote parts of NCDF float32 test,0,0.0,0
+ff7f4d9,2018-01-12 17:42:19,Refs #1731 resolve conflicts,0,1.0,1
+8ef999c,2018-01-14 17:26:38,reST fixes (align and psa) and CHANGELOG fix,1,1.0,1
+5a06075,2018-01-16 08:12:05,Removed TestCase usage from test_universe,0,0.0,0
+ef3cb5c,2018-01-21 16:45:39,added tests for universe.add_TopologyAttr,0,0.0,0
+b837af1,2018-01-21 16:53:34,Merge branch 'develop' into develop,0,0.0,0
+06fae8b,2018-01-21 17:42:57,new chi1_selection() method for Residues,0,0.0,0
+8664cd7,2018-01-22 16:38:37,hierarchy made more consistent: AtomGroup.atoms is now a AtomGroup - AtomGroup.atoms is managed attribute - atom list (immutable  the old AG.atoms) is now AG._atoms - reSTified docs - use @property where possible in AtomGroup.py - adjusetd AG testcase,0,0.0,0
+6fb2727,2018-01-22 17:06:45,Merge remote-tracking branch 'richardjgowers2/TScopy' into develop,0,1.0,0
+9457fb3,2018-01-24 15:48:13,Merge branch 'develop' into develop,0,0.0,0
+2b327cd,2018-01-24 17:47:26,TopologyAttrs now registered upon definiton,0,0.0,0
+b6c0086,2018-01-24 17:47:26,added core.topology.Topology.copy,0,0.0,0
+b07983c,2018-01-24 17:47:45,Merge pull request #1704 from sobuelow/develop,0,0.0,0
+3961b09,2018-01-24 17:50:32,Added core.topology.TransTable.copy method,0,0.0,0
+9189429,2018-01-24 17:52:19,TST: added asv benchmarks for analysis.distances (#1718),0,0.0,0
+10ee7ff,2018-01-25 00:44:27,H-bonding analysis now defaults to updating selections each time step (fixes Issue 138),1,1.0,1
+f7a6f47,2018-01-25 12:03:37,removed segments from WHITELIST,0,0.0,0
+911ea22,2018-01-25 16:18:55,psa_pairs  nearest_neighbors  hausdorff_pairs are properties whose corresponding instance variables (_psa_pairs  _NN  and _HP) are now removed from the API,0,0.0,0
+93aefc7,2018-01-25 16:21:47,Importing explicitly waterdynamics since this is the module we are testing in this file. Decreased precision to 3 decimals.,0,0.0,0
+9.851e+35,2018-01-26 17:33:06,encoding of RecordTypes,0,0.0,0
+5265b62,2018-01-29 14:04:17,Single class that supports both cutoff and best-hummer contacts - scipy.sparse will cause an ImportException - updated tests (appear to be passing...),0,0.0,0
+4de452f,2018-01-29 14:41:24,Fix test_psa.py,1,1.0,1
+d9ef4ec,2018-01-29 20:24:29,Create tag release-0-6-3,0,0.0,0
+7cc1e81,2018-01-30 13:15:27,fixes Issue 122 by making netCDF4 an optional dependency,1,1.0,1
+b56ef01,2018-01-30 14:58:01,correct align function,0,0.0,0
+2cdf0fb,2018-02-01 16:12:43,- distance_array bug: need to copy() to get a contigious array - AROUND selection: if periodic = False then do not use minimum image   convention when looking for neighbours. The default is now True to   get the behaviour from previous version of MDAnalysis.   Note: I'm not sure if the AROUND selection is working properly at         all. It didn't work for me before and it needs to be tested         again.,1,0.0,0
+f658404,2018-02-01 19:18:09,Don't superposition for RMSD on default,0,0.0,0
+62522f5,2018-02-01 19:18:35,doc string upgrades in analysis.contacts,0,0.0,0
+6fdf06d,2018-02-02 09:29:03,added docs for PQR fix,1,1.0,1
+0ac274e,2018-02-02 10:47:29,Added tests for moving Universe out of scope,0,0.0,0
+46d90c4,2018-02-02 11:40:17,analysis: added native contacts analysis (from AdK/lib/python/AdK/contacts.py),0,0.0,0
+1fd24eb,2018-02-02 11:46:51,Merge pull request #1762 from MDAnalysis/issue-1753-add_recordtype,0,0.0,0
+f170e59,2018-02-02 13:42:47,Added test for lib.mdamath.make_whole,0,0.0,0
+fd68f60,2018-02-02 14:17:18,Merge pull request #438 from sseyler/develop,0,0.0,0
+c5504e5,2018-02-02 17:29:36,fix (scope='class'),1,1.0,1
+4945415.0,2018-02-02 17:31:00,added atom_style kwarg to Lammps Data file reading,0,0.0,0
+adaf9d9,2018-02-03 09:22:00,finalised 0.18.0,0,0.0,0
+b307e73,2018-02-03 09:27:15,removed old tests,0,0.0,0
+7a82fa9,2018-02-03 11:57:46,updeprecated older Group.__init__,0,0.0,0
+75b69bc,2018-02-04 20:39:43,fixup! updated docs for AtomGroup to clarify init methods,0,0.0,0
+2c55dcd,2018-02-05 14:55:08,Merge pull request #1856 from MDAnalysis/issue-1804-pqrfix,0,0.0,0
+eae5845,2018-02-06 17:52:44,Bump TPX version,0,0.0,0
+1ae6ed5,2018-02-07 01:11:01,Use numpy style doc strings,0,0.0,0
+2703b38,2018-02-07 17:20:06,added Joe Goose to AUTHORS and documented fix of Issue 51 in CHANGELOG (picked from the 0.7.0 release branch),1,0.0,0
+0a09297,2018-02-07 18:53:56,Merge pull request #430 from MDAnalysis/issue/386,0,0.0,0
+9935167.0,2018-02-11 10:08:57,fixed Python 2.6 incompatibility in topology.Bond.__eq__(),1,1.0,0
+daf6c1a,2018-02-11 10:14:54,README: changed Google Group badges,0,0.0,0
+a5517b9,2018-02-11 10:29:46,add binder button (#1770),0,0.0,0
+83f8383,2018-02-11 10:44:51,doc deployment: only fetch shallow doc branch for speed-up,0,0.0,0
+a647b2e,2018-02-12 21:39:40,ENH: Added directed_hausdorff from scipy to speed up hausdorff calc (#1758),0,0.0,0
+c85cc4e,2018-02-12 21:40:45,PSA updated: new metrics  Hausdorff/nearest neigh analysis and plotting  additional functions/features,0,0.0,0
+10184af,2018-02-12 22:10:49,Improved the test for Issue#550 to include all lines in the coordinate file. Improved the error message.,1,1.0,1
+7.506e+80,2018-02-12 22:17:58,enable new style reader/writer tests,0,0.0,0
+acfa56a,2018-02-21 15:33:57,reST formatting fixes,1,1.0,1
+fc81ad0,2018-02-21 15:54:31,Update CHANGELOG,0,0.0,0
+97e6752,2018-02-22 15:29:45,pep8 pass,0,0.0,0
+1c5d2fc,2018-02-22 16:07:58,update changelog,0,0.0,0
+4b62604,2018-02-22 16:40:19,fix NeighborSearch,1,1.0,1
+0bf8090,2018-02-22 17:34:51,Merge branch 'develop' into feature-newtimestepconstructor,0,0.0,0
+2322fa4,2018-02-22 17:36:37,standard documentation update - added Phil Fowler as author - reformatting and update of the README  with links to the wiki - minor doc fixes - schedule release for 07/08/2010 - AUTHORS file included in distribution,1,0.0,0
+323823b,2018-02-22 17:40:58,Pytest Style topology/test_mol2.py,0,0.0,1
+ae62b93,2018-02-23 04:42:38,Temporarily adding verbose to travis,0,0.0,0
+69746d9,2018-02-23 05:11:44,Added frame seeking to XYZReader,0,0.0,0
+34b3276,2018-02-23 08:12:41,Add doc,0,0.0,0
+fc20c22,2018-02-23 11:46:07,updated test_nuclinfo to reflect segid selection option,0,1.0,0
+b78f7ce,2018-02-23 11:49:56,TST: Added first draft of trajectory reader asv benchmark tests.,0,0.0,0
+2f55f50,2018-02-23 15:13:14,[Review Needed]Pytest Style core/test_residuegroup.py (#1624),0,0.0,0
+9756173.0,2018-02-23 15:30:29,Pytest Style core/test_topologyattrs.py (#1620),0,1.0,0
+09680c0,2018-02-23 19:12:20,raise minimum scipy version to 1.0.0,0,0.0,0
+7b6ad00,2018-02-23 20:23:17,Fixes for Issue #396,1,1.0,1
+3088f19,2018-02-24 16:26:21,tests for unwanted side effects when importing MDAnalysis,0,0.0,0
+1b514a8,2018-02-24 18:35:40,Primitive PDB parser that reads simple PDB without a fuzz - added PrimitivePDBReader and parser which just stupidly   read a well-formatted pdb file without raising a stink if the resids   are oddly numbered or multiple atom names occur in the same residue - added permissive=False (default) flag to Universe  True switches on   the primitive readers (right now  only PDB has this distinction) - moved the guess_atom_type/mass/charge functions from PDB into topology.core - added permissive keyword arg to the get_parser_for() and get_reader_for()   functions - added a second dictionary each for the permissive parsers and readers (a bit   of an ugly hack...) - added unit tests for the primitive PDBReader/parser (and all pass),0,0.0,0
+3b46b31,2018-02-26 18:28:16,Updates to https urls for downloading hole,0,0.0,0
+efa0842,2018-02-26 21:42:31,MANIFEST.in files corrected,0,0.0,0
+00c785b,2018-02-26 23:02:49,Updated core/selection.py to include amber N- and C-termini resnames in list prot_res,0,0.0,0
+38af730,2018-02-27 00:30:38,dynamic atom selections for density.density_from_Universe(),0,0.0,0
+b992af4,2018-02-27 01:39:34,fixed race conditions in test suite - any tests that relied on values of the internal flags have been   changed so that they set behaviour through keyword arguments instead    of manipulating flags - affects gromacs conversion of length (GRO  XTC  TRR) with the convert_gromacs_length   flag and the use of the permissive PDB reader (permissive_pdb_reader flag) - tests could fail when they were performed in parallel and different test threads   changed the global flags - added a fes tests to check for the default values but DO NOT USE THE FLAGS during   testing,1,0.0,1
+3366c8a,2018-02-27 03:26:52,push test loop into pytest parametrize,0,0.0,0
+5368a7a,2018-02-27 19:25:29,cython setup clean-up,0,0.0,0
+931c170,2018-02-28 01:36:34,Bonds: changed to using 0-based atom indices (PDB  guess_bonds()),0,0.0,0
+60430.0,2018-02-28 01:52:58,removing unnecessary section from copy() and adding testcases,0,0.0,0
+bbe9fe5,2018-02-28 12:12:48,prepared 0.7.1 release - bumped version to 0.7.1 - updated README with various package licences - updated contacts - removed doc/DevelopmentBranch.txt (outdated) and   added short README to point user to docs - fixed: pqr must be included in test cases,1,0.0,1
+941afa0,2018-02-28 20:36:23,added pbc to calc_angle() in hbond_analysis,0,0.0,0
+3c6d6b1,2018-02-28 21:25:53,Merge branch 'develop' into issue-1819-dcd-istart,0,0.0,0
+7e7a154,2018-03-01 00:31:23,Merge pull request #1832 from MDAnalysis/issue-1819-dcd-istart,0,0.0,0
+e135861,2018-03-01 14:48:58,add GSD to docs,0,0.0,0
+2457627.0,2018-03-01 18:31:51,Pytest Style topology/test_pqr.py,0,1.0,0
+3.6e+22,2018-03-02 07:08:26,Final docstring fixes,1,0.0,0
+c4c7ad6,2018-03-02 07:36:13,AMBER NCDF: cleaned up mmap use,0,0.0,0
+3d86c45,2018-03-02 07:44:45,Merge pull request #432 from MDAnalysis/extra-occupancy,0,0.0,0
+8955570.0,2018-03-02 10:51:57,FIX: rmsf.run should return itself,1,1.0,0
+41787ac,2018-03-04 09:17:33,Fix 'from numpy import ...',1,0.0,1
+6159650.0,2018-03-04 13:32:01,Merge pull request #1855 from MDAnalysis/issue-1854-PDBresids,0,0.0,0
+e97fd8e,2018-03-05 09:37:09,Adds machinery to recognize dummy atoms and assign masses,0,0.0,0
+eaaa968,2018-03-05 09:42:01,doc deployment: added travis build_ext step,0,0.0,0
+0308d68,2018-03-05 10:12:02,doc deployment: only run if first job,0,0.0,0
+e47215b,2018-03-05 10:39:28,Merge pull request #1813 from MDAnalysis/issue-1807-mmap,0,0.0,0
+7c6e970,2018-03-05 11:18:48,Added the test case for Duecredit,0,0.0,0
+3b40305,2018-03-05 11:37:28,merged (only white space in commented out  debug logging in topology/LAMMPSParser.py,0,1.0,1
+eabf44f,2018-03-05 11:38:46,Updated docstring for AtomGroup.select_atoms,0,0.0,0
+48f8dc4,2018-03-05 11:39:09,Moved core.log to lib.log,0,0.0,0
+a28e672,2018-03-05 22:41:11,added comment explaining test_os_dot_fork_not_none,0,0.0,0
+9761de7,2018-03-06 05:22:52,isolated import tests by offloading to separate Python instance,0,0.0,0
+37f51d3,2018-03-06 08:52:46,isolated import tests by offloading to separate Python instance,0,0.0,0
+713dc36,2018-03-06 23:13:00,isolated import tests by offloading to separate Python instance,0,0.0,0
+1fa0f81,2018-03-07 09:31:01,applied changes suggested by @orbeckst and  @richardjgowers,0,0.0,0
+a5f09a0,2018-03-07 14:00:27,Fixed up test,1,1.0,1
+50f0bcb,2018-03-07 15:03:05,Merge pull request #1793 from MDAnalysis/issue-1791-lammpsparser,0,0.0,0
+139f4b9,2018-03-07 16:01:37,split the test into two separate ones (otherwise one could never fail),1,0.0,0
+dc32455,2018-03-07 23:22:13,split the test into two separate ones (otherwise one could never fail),1,0.0,0
+44a1356,2018-03-07 23:22:13,split the test into two separate ones (otherwise one could never fail),1,0.0,0
+dbafc04,2018-03-07 23:33:27,moved one test back into the test module,0,0.0,0
+dc706ed,2018-03-07 23:35:41,Updates hole download links,0,0.0,0
+9b32968,2018-03-08 10:29:06,MAINT: Config / DOC updates for latest asv version.,0,0.0,0
+2f3419b,2018-03-08 12:00:56,Added order='C' to make clear what the array layout should be  this does not change anything because the numpy default is 'C' anyway.,0,0.0,0
+f8b583b,2018-03-08 12:00:56,AtomGroup gained residues and segments attributes - managed attributes (cached) that contain the full list of residue and   segment objects that make up the AtomGroup - use residues and segments to simplify or implement the resids()  resnames()    numberOf...() methods,0,0.0,0
+a4a6d81,2018-03-08 12:00:56,Wrap the imports of authors.py,0,0.0,0
+e94b1c4,2018-03-08 14:43:49,cleanup: removed some unnecessary lines,0,0.0,0
+f0ee149,2018-03-08 16:51:30,added pbc to dist(),0,0.0,0
+da738bd,2018-03-08 16:51:30,Added new DIMS AdK trajectory to test data,0,0.0,0
+0f30ff5,2018-03-08 16:51:30,restructured Amber docs and WebCited original Amber format pages,0,0.0,0
+d873996,2018-03-08 17:26:59,Merge pull request #428 from MDAnalysis/feature-XYZimprovements,0,0.0,0
+96ab1cc,2018-03-08 17:26:59,updated Amber TRJ docs,0,0.0,0
+fdbd139,2018-03-08 17:26:59,docs: updated path to matplotlib objects,0,0.0,0
+27d2727,2018-03-08 17:53:33,Adjusted agsetterpluralization fixer to handle more pathological test case that was causing issues in the unit tests.,0,0.0,0
+5209585.0,2018-03-08 17:53:33,added numframes to TrjReader as a cached attribute - can get numframes for XTC/TRR but takes a long time when accessed the first time - added test cases - broke correl test case into individual test cases,0,0.0,0
+068e4ea,2018-03-08 17:53:33,Merge branch 'develop' into feature-XYZimprovements,0,0.0,0
+b15e8ea,2018-03-09 00:28:50,Added set_occupancies,0,0.0,0
+5e3bd49,2018-03-09 11:41:41,Add new function topology.guessers.validate_atom_types,0,0.0,0
+3f31d61,2018-03-09 16:16:33,changed groupby function to accept multiple attributes #1839 (#1846),0,0.0,0
+fe68045,2018-03-09 16:55:47,doc updated for #1791,0,0.0,0
+b2fc3f9,2018-03-09 23:08:37,made atom_style kwarg optional,0,0.0,0
+46fe093,2018-03-10 03:10:19,Merge pull request #1720 from MDAnalysis/fix-align-step,0,0.0,0
+dde9250,2018-03-10 16:27:59,make diffusionmap.DistanceMatrix full y use AnalysisBase,0,0.0,0
+e3d5cac,2018-03-11 11:00:54,fixed pkdtree with BioPython >= 1.71 (#1858),1,1.0,1
+9383f08,2018-03-11 21:01:35,Segment.id is an alias for Segment.name (to make the interface more consistent),0,0.0,0
+149ac8b,2018-03-12 08:51:40,added testcase for dist w/o pbc,0,0.0,0
+f68f884,2018-03-12 10:29:43,duecredit: small fixes,1,1.0,1
+d97c75e,2018-03-13 20:55:35,updated CHANGELOG for #1819,0,0.0,0
+bc374fa,2018-03-13 22:40:39,density: friendly error message if GridDataFormats are not installed,1,0.0,0
+ffc7b7a,2018-03-14 14:12:43,fixing istart/nsavc for writers,1,0.0,0
+1413eac,2018-03-14 22:40:41,removing redundant test cases,0,0.0,0
+2ea22fd,2018-03-15 00:19:50,in copy()  seeking new reader and copying over current Timestep,0,0.0,0
+b23e688,2018-03-15 01:04:13,Merge pull request #1822 from MDAnalysis/ayushsuhane-duecredits,0,0.0,0
+81a44aa,2018-03-15 01:08:36,DCD test: use decimal=5 for time tests,0,0.0,0
+d3f5163,2018-03-15 09:08:27,fix ndims DCD reader error,1,1.0,1
+6c788c6,2018-03-15 10:49:35,fixes stochasticproxembed.pyx Cython compilation error,1,1.0,1
+4e323f1,2018-03-15 13:39:16,fixed: pdb file output could not be read by Charmm even though it was technical legal pdb 3.2.,1,1.0,1
+486b27b,2018-03-16 18:34:21,analysis docs: explain verbose,0,1.0,0
+340ffbf,2018-03-17 18:13:30,Fix comparison of None with int in auxiliary (#1459),1,1.0,1
+0658f75,2018-03-17 18:13:53,improved docs for analysis.density,0,0.0,0
+be3e4f7,2018-03-17 19:33:50,Removes the added versionchanged,0,0.0,0
+f79f88b,2018-03-18 09:16:10,Pytest Style coordinates/test_trz.py,0,0.0,0
+83648d2,2018-03-18 09:33:48,Fixed setup-time dependency on numpy that broke pip installs.,1,1.0,1
+4e7d4aa,2018-03-18 11:17:12,added comment explaining why CalledProcessError is caught and raised again,0,0.0,0
+d1f6b8c,2018-03-18 11:28:08,RMSD doc improvements,0,0.0,0
+543853e,2018-03-19 04:37:46,Fixes hyperlinks to external resources in docs for MDAnalysis.coordinates.PQR (#1836),1,1.0,1
+a11dce4,2018-03-19 19:49:42,added changelog entry for PR #1794 and added @zemanj to the list authors,0,0.0,0
+63b70f0,2018-03-20 03:40:17,Updates CHANGELOG and adds name to author list,0,0.0,0
+74defb7,2018-03-21 23:16:55,release number 0.7.0 with changes to setup.py - removed numpy from requirements because we are needing it anyway    even for setup and thus check earlier  easy_install is sometimes   trying to download a version of numpy even though a required version   exists in the system. This can be hugely annoying is prevented   by removing it from requirements. - raise the error when importing numpy fails in order to make   debugging easier,1,0.0,0
+c7c6f40,2018-03-22 11:39:01,whitespace removal,0,0.0,0
+994f08c,2018-03-22 16:33:16,Removes unnecessary docstrings,0,0.0,0
+6412516.0,2018-03-22 17:37:23,Reorders docstring elements for better consistency,0,0.0,0
+5a232a3,2018-03-22 23:04:33,align.get_matching_atoms(): more checks and tests,0,0.0,0
+de6a585,2018-03-23 21:11:18,AMBER NCDF reader mmap=None as default,0,0.0,0
+d404dd4,2018-03-24 12:57:33,tests for unwanted side effects when importing MDAnalysis,0,0.0,0
+4ce5ae9,2018-03-24 13:03:50,added changelog entry for import side effects,0,0.0,0
+d91dd3c,2018-03-27 00:16:53,added myself to the list of authors,0,0.0,0
+8f950b6,2018-03-28 23:14:59,Merge pull request #425 from kain88-de/pdb-reading,0,0.0,0
+ace4dc8,2018-03-29 00:25:06,BENCH: add rdf asv benchmarks (#1840),0,0.0,0
+5be20e3,2018-04-03 16:57:10,fix rms tests,1,1.0,1
+0baba7c,2018-04-04 19:14:35,Work on Issue #1092,0,0.0,0
+224347b,2018-04-04 19:58:07,Missed camelCase fix,1,1.0,1
+1ee4ce9,2018-04-05 09:15:45,Removed _topology_coordinates_readers dict from coordinates,0,0.0,0
+160a909,2018-04-06 12:04:59,Pytest Style core/test_segment.py (#1623),0,1.0,1
+ea124c1,2018-04-06 12:08:36,Closes Issue 310: Fixed doc mentions of 1-based frames to 0-based.,1,1.0,1
+a67cce9,2018-04-09 08:52:41,Merge pull request #423 from kain88-de/docs,0,0.0,0
+2b57a15,2018-04-09 13:04:06,Fixed documentation This corresponds to r59 in /code/MDAnalysis.,1,1.0,1
+b63d685,2018-04-09 14:21:55,Fixed wrong knownfailure import,1,1.0,1
+b41fa2f,2018-04-09 15:08:01,Use numpy with abreviation np consistently,0,0.0,0
+a295b2c,2018-04-09 16:22:53,Fix for Issue 115 - GRO file column width,1,1.0,1
+e9fe678,2018-04-10 17:35:57,Merge pull request #421 from kain88-de/numpy-to-np,0,0.0,0
+63a2b0e,2018-04-10 21:17:49,use links through mdanalysis.org,0,0.0,0
+c84c86c,2018-04-11 08:33:34,Use current branch to build docs,0,0.0,0
+b205bad,2018-04-13 10:52:41,Activate sphinx.ext.napoleon for numpy-style docs,0,0.0,0
+2f0ea82,2018-04-13 10:53:26,added pbc to dist(),0,1.0,0
+e56073f,2018-04-13 11:45:44,Add failing test to read PDB trajectory,1,0.0,0
+8ed2571,2018-04-13 13:05:34,Default to occupancy=1 if not given in PDB,0,0.0,0
+e8a1648,2018-04-15 15:56:24,automatic develop doc deployment (#386),0,0.0,0
+bc5be1f,2018-04-15 15:59:40,README: updated doc badges,0,0.0,0
+39b0e4c,2018-04-22 13:55:05,Add occupancy information to Atom/AtomGroup,0,0.0,0

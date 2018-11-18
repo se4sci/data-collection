@@ -1,0 +1,493 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+db1dfc7,2017-08-12 05:41:53,Apply abilint,0,0.0,0
+21f0cc4,2017-08-12 07:02:15,All topics mentioned in input files exist.,0,0.0,0
+469a1d1,2017-08-12 11:53:02,Merge branch 'master' into develop : import hotfix-8.4   with merge requests iid 163  180  181  182.,0,0.0,0
+2afa9c4,2017-08-12 12:14:48,Merge branch 'hotfix-8.4' of abinit-gitlab:trunk/abinit into tutopositron,0,0.0,0
+c78fa79,2017-08-12 12:54:10,Initialize v8.4.4,0,0.0,0
+e22d43d,2017-08-12 14:13:23,Merge branch 'develop' into input-web,0,0.0,0
+8d06942,2017-08-12 14:51:47,Create topic GeoConstraints,0,0.0,0
+177cd82,2017-08-12 16:40:25,Fix topics for some input files. Start to prepare finding inputvariables in input files.,1,1.0,1
+e66aac7,2017-08-12 16:41:22,Had not yet stored GeoConstraints ...,0,0.0,0
+2547498.0,2017-08-13 01:05:22,Improve tpositron_7 test (portability issue),0,0.0,0
+cbadb0b,2017-08-13 02:27:32,Continue to try to make a test portable,0,0.0,0
+5347f34,2017-08-13 07:56:26,Generate the list of input variables for each test. Not fully debugged though.,0,0.0,0
+914b0e8,2017-08-13 10:42:12,Accumulate statistics.,0,0.0,0
+6b7c4fe,2017-08-13 11:52:45,Continue to try to make a test portable,0,0.0,0
+e19765e,2017-08-13 13:00:18,Continue to try to make a test portable,0,0.0,0
+37888bd,2017-08-13 14:18:34,Update (again) ref file,0,0.0,0
+57c0725,2017-08-13 14:20:06,Continue to try to make a test portable,0,0.0,0
+717e894,2017-08-13 16:05:21,Complete the coding of the usage report. Will then apply.,0,0.0,0
+f2fb7d0,2017-08-13 16:27:13,Now mention the links to tests using the input variables.,0,0.0,0
+175216e,2017-08-13 16:55:37,Slight adjustment.,0,0.0,0
+b8c9f74,2017-08-13 16:57:05,Another adjustment.,0,0.0,0
+a0762f3,2017-08-13 17:51:43,Create varset_stats . Minor typo modifications.,0,0.0,0
+e2571b5,2017-08-13 18:22:35,Make table of content of varset_stats. Also minor modifs.,0,0.0,0
+39c689e,2017-08-13 18:53:57,Mention the number of tests per executable in the stats. Also minor modif for blanks in other varsets.,0,0.0,0
+6f96c2b,2017-08-13 20:46:47,Adjust some tolerances,0,0.0,0
+477ce55,2017-08-14 07:09:10,Finalize varset_stats. Also fix typo occurrence (was often occurence),1,0.0,0
+4dde2ab,2017-08-14 20:52:07,Clean topic k-points,0,0.0,0
+bc0f257,2017-08-15 10:05:22,Topics in section 6 of lesson_features have been cleaned and checked.,0,0.0,0
+17d4777,2017-08-15 10:06:19,Create q-points topic,0,0.0,0
+899789e,2017-08-15 10:23:00,Sec 7 of lesson_features has been reviewed/completed.,0,0.0,0
+4b51c72,2017-08-15 10:29:14,The introduction of all existing topics has been reviewed.,0,0.0,0
+6edba42,2017-08-15 14:29:29,Add topic_Susceptibility   add Veithen2002,0,0.0,0
+0fbabbc,2017-08-15 15:20:22,Create SelfEnergy topic,0,0.0,0
+79b6b2b,2017-08-15 15:44:42,Create topic SelfEnergy,0,0.0,0
+db84a17,2017-08-15 16:03:23,Create topics SelfEnergy and FrquencyMeshMBPT,0,0.0,0
+6abe1f3,2017-08-15 16:13:18,"Suppress the shortlinks to ""GW"" characteristics  as non existent anymore.",0,0.0,0
+b1b187b,2017-08-15 16:50:06,Create the Abipy topic,0,0.0,0
+22cbb48,2017-08-15 16:58:14,Establish links to Abipy and APPA,0,0.0,0
+d946805,2017-08-15 16:59:02,Create the Abipy and APPA topics,0,0.0,0
+3ed2d24,2017-08-15 17:11:03,Create topic DensityPotential,0,0.0,0
+9c28cac,2017-08-15 17:19:39,Create topic_Band2eps,0,0.0,0
+336a095,2017-08-15 17:36:43,Create Band2eps and FileFormats topics,0,0.0,0
+24c616e,2017-08-15 17:43:48,Create the topic Verification,0,0.0,0
+3f144a5,2017-08-15 17:48:11,Create Verification topic,0,0.0,0
+604d8d6,2017-08-15 18:07:57,Create topic PortabilityNonRegression,0,0.0,0
+c94ce1f,2017-08-15 18:23:15,Create Git and PortabilityNonRegression topic,0,0.0,0
+5c89d8c,2017-08-15 18:38:42,Merge torrent/tutopositron into _torrent_tutopositron,0,0.0,0
+de5e879,2017-08-15 18:47:21,Merge branch '_torrent_tutopositron' into input-web,0,0.0,0
+2c8699a,2017-08-16 05:55:55,Transform all the full links with href to shortcuts (to have the correct target).,0,0.0,0
+827c114,2017-08-16 06:41:06,Add tutorial_flowchart_v5.png  clean the other version  and update lesson_welcome,0,0.0,0
+9197d9d,2017-08-16 06:50:33,Update topic_positron  complete lesson_welcome for positron lesson.,0,0.0,0
+b461871,2017-08-16 08:55:00,Fix incoherent allocation of amass,1,1.0,1
+560cd9c,2017-08-16 09:26:00,Better output for docchk.py  update ref,0,0.0,0
+521ee90,2017-08-16 14:03:12,One more acknowledgment. Also update ref positron_4,0,0.0,0
+f4741a0,2017-08-16 14:04:54,Also update input file to try to reach portability,0,0.0,0
+d383e5a,2017-08-16 18:53:04,Try to find a setting for the test tutorial_positron_4 that is sufficiently portable. Try now ntime=4. Should come with appropriate modif of lesson_positron ...,0,0.0,0
+5b59842,2017-08-17 05:55:58,Tune the text of the positron tutorial  taking into account modifications that were needed to make it portable.,0,0.0,0
+7d3028b,2017-08-17 06:38:11,Start finalization of v8.5.2,0,0.0,0
+6524900000.0,2017-08-17 10:32:36,Again update tolerance  here for bob,0,0.0,0
+dcb3a33,2017-08-17 15:03:57,Initialize v8.5.3,0,0.0,0
+95a061d,2017-08-18 15:45:02,Merge branch 'npike/abinit-develop' Small bugfixs to anaddb and mrgddb,0,0.0,0
+8b1819d,2017-08-21 10:54:02,Merge branch 'trunk' into nonlinear,0,0.0,0
+63c5173,2017-08-21 18:39:13,Add a factor 0.5 in dfptnl_pert (term with H^2),0,0.0,0
+123d386,2017-08-22 07:58:23,Merge remote-tracking branch 'trunk/develop' into develop,0,0.0,0
+f60023f,2017-08-22 16:01:28,Correct a bug in pawinit when ixc=0. Initialize an array to zero even when ixc=0,1,1.0,1
+4cca9ae,2017-08-22 16:14:01,Ensure nproc_slk>0,0,0.0,0
+10b2a85,2017-08-22 16:18:29,Bug fix (test case from R. Cohen): prtden<0 was not compatible with parallelism over atoms,1,1.0,1
+a4eb856,2017-08-23 13:16:09,Bug fix: g-vectors were not correctly computed when getcell/=0,1,1.0,1
+96db9d4,2017-08-23 16:42:51,Bug fix: had tu use blas intead of matmul in m_fock (because of the increment in an array),1,1.0,1
+5b9d0af,2017-08-23 17:58:09,Another bug fix in m_fock,1,1.0,1
+96ab5d9,2017-08-23 18:15:31,Add several tests in chkinp for incompatible options,0,0.0,0
+8c68ff8,2017-08-24 18:27:32,Support for ELPA 2016,0,0.0,0
+e98e874,2017-08-28 11:48:32,Merge branch 'trunk' into nonlinear,0,0.0,0
+eb90126,2017-08-28 14:09:36,merge with hotfix-8.4,0,0.0,0
+cca257f,2017-08-28 14:47:40,ELPA 2017 support (new F2008 API),0,0.0,0
+817c771,2017-08-28 17:03:40,Bug fix in opernld_ylm  concerns only choice=81,1,1.0,1
+e61e3bb,2017-08-28 18:51:17,Bug fix in pawdijxc (case pawxcdev=0 only  very rare),1,1.0,1
+5f6c118,2017-08-28 19:17:14,Correct a bug when pawxcdev=0,1,1.0,1
+2f6d160,2017-08-28 19:19:32,Had to hack abilint to make the class statement accepted,0,0.0,0
+6d5ec3c,2017-08-28 19:57:58,make libxc 3 accepted by the build system,0,0.0,0
+6a1ce4f,2017-08-28 23:40:41,Revert a change in m_fock,0,1.0,1
+e465fe6,2017-08-29 12:16:00,ELPA implementation improved,0,0.0,0
+ac7f76a,2017-08-29 14:10:15,2 libxc tests: suppress functionals that do not exist anymore in libxc 3,0,0.0,0
+f7b5b25,2017-08-29 14:52:54,6 libxc tests: suppress functionals that do not exist anymore in libxc 3,0,0.0,0
+4897000000000.0,2017-08-29 15:06:09,Activate support for libXC 3.0 (libXC 2.2 still usuable),0,0.0,0
+a0eb914,2017-09-01 16:48:45,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+73d1fcc,2017-09-01 18:31:26,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,0.0,0
+67a76c0,2017-09-04 10:32:52,Improvment of libXC v3 + C-API implementation,0,0.0,0
+4e1ee4b,2017-09-04 13:52:48,Improvment of the nonlop test script,0,0.0,0
+f26242a,2017-09-04 15:13:57,Bug fix + improvment of nonlop test,1,1.0,1
+31750c5,2017-09-05 08:53:44,Minor corrections in nonlinear,0,1.0,1
+33d7431,2017-09-05 08:55:43,Merge branch 'trunk' into nonlinear,0,0.0,0
+359ae6c,2017-09-05 10:39:12,Merge remote-tracking branch 'gitlab_torrent/misc' into nonlinear,0,0.0,0
+d500301,2017-09-05 11:17:13,Improve ELPA detection by the build system,0,0.0,0
+6d6911e,2017-09-05 11:24:47,Correct a term in paw_dfptnl_energy,0,1.0,1
+591c3b9,2017-09-05 13:24:47,Correct the atom ordering in a test of getgh2c,0,0.0,1
+d4c326d,2017-09-11 11:28:12,may be a little bit slower but better?,0,0.0,0
+e356bd3,2017-09-11 15:07:32,Merge remote-tracking branch 'trunk/develop' into develop,0,0.0,0
+7e82a30,2017-09-11 18:46:49,This version should handle getcell and getwfk correctly,0,1.0,1
+57bfe69,2017-09-11 19:18:58,Simplfy inwffil arguments,0,0.0,0
+f87e1a7,2017-09-12 14:39:39,add datatype for the fit data,0,0.0,0
+b33aa8e,2017-09-12 15:53:02,Adjust 2 refs due to new getcell treatment,0,0.0,0
+223816c,2017-09-13 10:53:55,Update another ref file after getcell modifications,0,0.0,0
+da90d0e,2017-09-13 10:58:50,These lines in m_fock did not compile with xlf,0,1.0,1
+67c171c,2017-09-13 11:12:47,Upgrade atompaw version (needed after libxc upgrade),0,0.0,0
+12fcd62,2017-09-13 11:31:39,oupps  type in fallback.conf,0,0.0,0
+cff70fe,2017-09-13 14:10:01,Merge tag 'start-8.5.3',0,0.0,0
+a7facbc,2017-09-13 14:42:06,reoder subroutines in 78_effpot,0,0.0,0
+f1e90a8,2017-09-15 16:03:39,Add possibility of LDA/GGA+U calculation (without spin polarisation in the functional) (usual calculation are LSDA+U or SGGA+U). Need still to modify double counting and compatability with DMFT.,0,0.0,0
+c2d2b3c,2017-09-15 18:52:06,BigDFT upgrade (following libXC upgrade) + libPAw improvments,0,0.0,0
+85bff4c,2017-09-15 18:56:46,Bug fix in m_pawdij (concerns only electronpositron) - Thanks to J. Wiktor,1,1.0,1
+85c2929,2017-09-15 19:38:18,correct wrong hyperlinks (following website upgrade),1,1.0,1
+d4fba7b,2017-09-16 01:09:35,Change bigDFT tarball md5,0,0.0,0
+a75c01a,2017-09-16 02:24:07,Change bigDFT tarball md5,0,0.0,0
+ff4f9d4,2017-09-17 05:28:33,Issued abi_yml2html.py   start to finalize v8.4.4,0,0.0,0
+b9ae50c,2017-09-17 13:15:39,Replace obsolete links for the ftp documents  and the ABINIT papers  by the new links (cf emails with Marc and JMich),0,1.0,1
+873b1cf,2017-09-17 13:21:51,Improve slightly the previous commit.,0,0.0,0
+370776f,2017-09-17 21:18:50,Fix the last problem detected by linkchecker in v8.4.4,1,1.0,1
+6fe4b6c,2017-09-19 11:04:19,Merge with trunk,0,0.0,0
+f72a126,2017-09-19 12:13:20,remove the dimension for the imaginary part for the IFC (reduce the memory usage),0,1.0,0
+0d14638,2017-09-19 12:35:15,fix dimension in atmfrc array,1,1.0,1
+ed6ea28,2017-09-19 12:48:46,Update for TDEP,0,0.0,0
+654d5e5,2017-09-19 13:40:08,remove option in fit_polynomial_coeff_fit,0,0.0,0
+b3df01b,2017-09-19 14:28:08,Switch to abirules,0,0.0,0
+4d30730,2017-09-19 16:16:53,abirules,0,0.0,0
+69d88ee,2017-09-20 00:48:22,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+c57ce3d,2017-09-20 02:42:16,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph and solve conflicts in a2fw_solve_gap,0,0.0,0
+4e1d93b,2017-09-20 09:55:27,robodoc,0,0.0,0
+f128e7d,2017-09-20 12:59:08,add MC option to the fit process,0,0.0,0
+47fa20a,2017-09-20 13:37:40,Update refs,0,0.0,0
+7f1e86b,2017-09-21 09:32:33,Add the variable nonlinear_info to control outputs and debug_mode in nonlinear,0,0.0,0
+dcbc677,2017-09-21 20:16:53,Interface with TRIQS 1.4,0,0.0,0
+e9c3b24,2017-09-22 10:34:08,Merge branch 'develop' of gitlab.abinit.org:mverstra/abinit into mjv_eph,0,0.0,0
+a257044,2017-09-22 10:37:04,Reduce memory allocated for wfs in m_phgamma,0,0.0,0
+e5f3a77,2017-09-23 11:26:17,Initialize v8.6.0,0,0.0,0
+58217f1,2017-09-23 14:57:23,Start 8.7.0,0,0.0,0
+b6f3631,2017-09-23 14:58:50,Initialize v8.7.0,0,0.0,0
+f145e4b,2017-09-23 17:17:10,merged Matteo and updated some stuff,0,0.0,0
+c8efbbd,2017-09-24 05:48:59,"Suppress ""feature file"" from the infos_html  as it is replaced by the ""topics"".",0,0.0,0
+d457638,2017-09-24 05:51:49,Merge branch 'release-8.6.0' into develop,0,0.0,0
+bf6446c,2017-09-24 06:37:51,Features was not completely removed from makefile,0,0.0,0
+466ebc3,2017-09-24 06:38:37,Feature was not completely removed from makefile,0,0.0,0
+d5b243b,2017-09-24 06:39:37,Merge branch 'release-8.6.0' into develop,0,0.0,0
+27b1cec,2017-09-24 18:40:11,Again update of v67mbpt#52 for portability,0,0.0,0
+392870b,2017-09-24 20:19:08,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+e5ddf35,2017-09-24 20:19:54,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,0.0,0
+2f66c19,2017-09-25 06:04:06,Merge branch 'release-8.6.0' into develop,0,0.0,0
+f1a30c5,2017-09-25 08:06:06,Merge remote-tracking branch 'trunk/develop' into develop,0,0.0,0
+36f276c,2017-09-25 11:39:39,trial symmetrization for Danila of the atom resolved PDOS in anaddb,0,0.0,0
+cf49ff9,2017-09-25 13:06:19,Merge branch 'develop' into tdep,0,0.0,0
+71e2dba,2017-09-25 13:21:34,test: partial dos for q along a path in qspace,0,0.0,0
+b7cd215,2017-09-25 15:07:58,Suppress hybrid_corr (not used),0,0.0,0
+6913be2,2017-09-25 16:40:18,update ref files for PHDOS with symmetrized atom specific DOS,0,0.0,0
+00dca18,2017-09-25 17:26:35,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,0.0,0
+bd6cb5f,2017-09-25 18:53:09,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into dev_gingras,0,0.0,0
+93f2d15,2017-09-26 07:54:48,Prepare the cleaning of the rhohxc routine arguments (removing dtset from the list of args).,0,0.0,0
+3277cae,2017-09-26 08:35:05,Do not mention the frequency of occurrence in case of internal_only variable.,0,0.0,0
+38c2707,2017-09-26 12:25:17,Extract dtset out of the list of args of rhohxc. make tests_in works.,0,0.0,0
+c1208e7,2017-09-26 12:46:53,Convert tsmear to tphysel in vtorhotf.F90,0,0.0,0
+fb4c413,2017-09-26 12:59:38,Clean calc_vhxc_me.F90,0,0.0,0
+8a59f48,2017-09-26 13:23:04,Rely on the nelect from xcdata,0,0.0,0
+39a8038,2017-09-26 13:25:33,Suppress unused hartre1,0,0.0,0
+010a5b8,2017-09-26 13:33:13,Use rprimd instead of gprimd for strhar,0,0.0,0
+f647c3e,2017-09-26 13:42:06,Use rprimd as argument of hartrestr instead of gmet and gprimd,0,0.0,0
+417f178,2017-09-26 13:50:52,Update TDEP version,0,0.0,0
+2892b0d,2017-09-26 14:26:04,Use rprimd as argument of hartre,0,0.0,0
+52563.0,2017-09-26 14:26:35,Fix xclevel determination.,1,1.0,1
+98e2ee9,2017-09-26 14:30:38,All test should pass now. Note tphysel has replaced tsmear for tkinfunc /=0 .,0,0.0,0
+2b6fd11,2017-09-26 14:36:01,Merge branch 'ace_1' into ace_2,0,0.0,0
+85952b5,2017-09-26 14:48:34,abirules,0,0.0,0
+09eadf3,2017-09-26 15:16:08,Extract call hartree from rhohxc.,0,0.0,0
+5d0fe14,2017-09-26 15:59:18,Cleaned the arguments of rhohxc.,0,0.0,0
+efbe69c,2017-09-26 16:10:54,Rename rhohxc to rhotoxc (not for psolver and positro  though),0,0.0,0
+74f5753,2017-09-26 16:12:52,Fix minor stuff,1,1.0,1
+8269bbb,2017-09-26 22:18:06,Fix too long lines,1,0.0,0
+173644d,2017-09-27 08:32:23,Merge remote-tracking branch 'remotes/origin/ace_1' into ace_2,0,0.0,0
+f3350fb,2017-09-27 08:39:28,Fix incorrect args of hartre,1,1.0,1
+22fb242,2017-09-27 11:07:00,Suppress many unused variables,0,0.0,0
+a274e1e,2017-09-27 11:07:33,Merge branch 'release-8.6.0' of gitlab.abinit.org:trunk/abinit into release-8.6.0,0,0.0,0
+9e97733,2017-09-27 11:33:11,Correct type initialisations  to avoid compiler error messages,1,1.0,1
+0671f5e,2017-09-27 11:40:55,Fix compiling issues,1,1.0,1
+b461d1b,2017-09-27 12:15:53,Make qpt an optional argument of hartre.F90,0,0.0,0
+aac1f16,2017-09-27 12:30:25,Tune the timing  because of previous modifs for rhotoxc.F90,0,0.0,0
+b9cb3f5,2017-09-27 12:35:40,Merge branch 'release-8.6.0' into ace_3,0,0.0,0
+2713b37,2017-09-27 13:29:25,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+ab2b5ee,2017-09-27 13:30:27,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,0.0,0
+e7c34f8,2017-09-27 13:48:11,Fix compile problems.,1,1.0,1
+ebe3838,2017-09-27 13:50:23,Format modif to please the compiler,0,0.0,0
+ae1c682,2017-09-27 13:53:35,Merge remote-tracking branch 'origin/release-8.6.0' into ace_2,0,0.0,0
+32bf632,2017-09-27 13:55:14,One occurrence of qphonon as arg of hartree had been left.,0,0.0,0
+3f05d30,2017-09-27 14:23:13,Correct the args of hartre in respfn,0,1.0,1
+bad4077,2017-09-27 15:13:25,Move the allocation of vhartr,0,0.0,0
+383123b,2017-09-27 15:22:11,Correct condition for dmft_dc is usepawu 14,0,0.0,1
+942659f,2017-09-27 16:07:56,Update references in cRPA after BUG correction.,1,0.0,0
+fa52940,2017-09-28 08:44:26,Update two reference files : the rhog extraction allowed to fix a bug !,1,1.0,1
+08273d3,2017-09-28 08:50:07,Merge remote-tracking branch 'remotes/origin/ace_2' into ace_3,0,0.0,0
+399b9b7,2017-09-28 10:13:07,Minor fix,1,1.0,1
+a3d1d25,2017-09-28 10:13:31,Merge branch 'ace_2' of gitlab:trunk/abinit into ace_2,0,0.0,0
+9e180ce,2017-09-28 11:10:23,Minor cleaning  remove unused useri and userr in invars1,0,0.0,0
+3bc9646,2017-09-28 12:38:37,Implement algorithm with a compensating vxc in case of hybrids,0,0.0,0
+b6e9a68,2017-09-28 12:46:22,Fix typos. Now  pass abilint.,1,1.0,0
+21b82e6,2017-09-28 14:35:03,Allows fockoptmix=11,0,0.0,0
+d60023a,2017-09-28 15:25:04,Adjust tolerance (large !) for v6#94   also eliminate unused variable,0,0.0,0
+8440311.0,2017-09-28 15:25:58,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0,0.0,0
+7363dc2,2017-09-28 18:35:14,bug correction for stresses in fock calculations,1,1.0,1
+e505aac,2017-09-28 18:36:27,Merge remote-tracking branch 'trunk/develop' into develop,0,0.0,0
+bff7162,2017-09-29 11:35:18,Now the energies are computed correctly. Also  a multiplicative factor has been indluced. Preliminary tests show a value of 2 is to be preferred ?!,0,0.0,0
+7091f3f,2017-09-29 14:40:00,abirules fix,1,1.0,1
+71cf355,2017-09-29 18:06:35,bug correction for stresses in Fock ACE,1,1.0,1
+64a06c2,2017-10-02 09:24:30,Merge tag 'start-8.7.0' into Multibinit,0,0.0,0
+e24dc2d,2017-10-02 09:28:57,Merge tag 'start-8.7.0' into develop,0,0.0,0
+c1a2977,2017-10-02 12:01:25,Merge branch 'ace_1' into ace_2,0,0.0,0
+76c8565,2017-10-02 14:48:45,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0,0.0,0
+53c5c9a,2017-10-02 16:34:20,bug corrections for abiref serial,1,1.0,1
+5a76c5c,2017-10-02 17:31:08,test seq tsv7_70.out updated,0,0.0,0
+4066879.0,2017-10-03 09:08:34,Change stop by MSG_ERROR/MSG_BUG,0,0.0,0
+73f735c,2017-10-03 09:24:08,abirules,0,0.0,0
+7799b87,2017-10-03 09:42:00,I didnt do anything ...,0,0.0,0
+95c98ba,2017-10-03 10:03:26,Introduce new input variable chkdilatmx.,0,0.0,0
+29266fd,2017-10-03 10:17:05,Abiauty modification to ignore IF uppercase in IFC and run it from build directory,0,0.0,0
+3df3a71,2017-10-03 10:23:22,Document the new input variable chkdilatmx. Should still make at least one test ...,0,0.0,0
+c6c94e8,2017-10-03 11:00:36,Line length reduction,0,0.0,0
+8d19e5d,2017-10-03 11:04:55,Add header in calling ifc_print,0,0.0,0
+3d8578c,2017-10-03 12:53:31,typo,0,0.0,0
+f1ff83c,2017-10-03 13:01:49,Fix the declrataion and innder document of chkdilatmx,1,1.0,1
+3299d0b,2017-10-03 13:41:53,Line length,0,0.0,0
+ce7324a,2017-10-03 13:57:48,add dipdip_prt input and update tests,0,0.0,0
+913c311,2017-10-03 14:17:20,Missing end marker for robodoc ?,0,0.0,0
+7d1637c,2017-10-03 14:18:29,Merge branch 'develop' into tdep_2ndonly,0,0.0,0
+98b9854,2017-10-03 15:10:24,Remove 3rd order,0,0.0,0
+6da0313,2017-10-03 15:39:40,Fix gub (endif missing),1,1.0,1
+88e920d,2017-10-03 22:59:00,Define message,0,0.0,0
+e657a95,2017-10-04 10:08:09,add libxml flag for the abiref__gnu_5.3_serial config.ac,0,0.0,0
+e9e7ff6,2017-10-04 10:39:31,supress comments and unused variables in fosrt.F90,0,0.0,0
+f6eef3b,2017-10-04 15:02:46,petrus and max2 fix,1,0.0,1
+d1bfa17,2017-10-05 09:13:54,petrus@nag,0,0.0,0
+70da029,2017-10-05 10:14:45,Petrus is boring,0,0.0,0
+f0c411f,2017-10-05 11:29:18,reset m_lobpcg to trunk version,0,0.0,0
+901d025,2017-10-05 11:58:00,Add testf ubu_triqs,0,0.0,0
+70eec59,2017-10-05 14:33:53,Change testfarm,0,0.0,0
+0f0e002,2017-10-05 18:24:07,Fixed the translation vector L0 used in v1phq_complete,1,1.0,1
+033a5b1,2017-10-05 18:26:47,Allow vxc1 to be printed in dfpt calculations,0,0.0,0
+a44f731,2017-10-06 08:23:08,Merge branch 'ace_2' of gitlab:trunk/abinit into ace_2,0,0.0,0
+0f2f3cd,2017-10-06 09:05:15,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0,0.0,0
+ba7c728,2017-10-06 09:47:55,Merge remote-tracking branch 'trunk/develop' into develop,0,0.0,0
+83e8441,2017-10-07 08:19:50,Merge jollet/develop/e9e7 into _jollet,0,0.0,0
+fd0d3e0,2017-10-07 10:32:15,Merge biederj/tdep_2ndonly/f0c4 into _biederj,0,0.0,0
+6c137fd,2017-10-07 10:34:14,Remove unneeded comment lines  for which robodoc complained.,0,0.0,0
+d56b085,2017-10-07 10:34:35,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0,0.0,0
+ea44f57,2017-10-07 15:23:11,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0,0.0,0
+77b02e6,2017-10-07 16:21:52,Merge antonius/develop/ba7d into _antonius,0,0.0,0
+85792de,2017-10-08 11:11:49,Change ALL http:// by https://www.abinit.org,0,0.0,0
+16362ba,2017-10-08 11:19:05,remove some unicode characters,0,0.0,0
+6fd1e8b,2017-10-09 11:26:48,Reset the update that does not work for mpiio t99,0,0.0,0
+684806f,2017-10-09 11:42:20,cleaning of Fock2ACE,0,0.0,0
+739c1b1,2017-10-09 14:28:25,Implemented scaling factor for hybrid compensation  but energy double counting is not yet OK.,0,0.0,0
+e29488c,2017-10-09 16:00:07,Fix problems with the doc of chkdilatmx  and ROBODOC.,1,1.0,1
+65c397b,2017-10-09 16:01:02,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+c33aa28,2017-10-10 08:25:02,Merge remote-tracking branch 'remotes/jollet/develop' into ace_4,0,0.0,0
+0fb2445,2017-10-10 11:29:55,Create a test for auxiliary functional treatment,0,0.0,0
+5283ce6,2017-10-11 10:29:58,Merge branch 'trunk' into nonlinear,0,0.0,0
+bc3bbef,2017-10-11 10:56:58,"Correct the numbering in the ""installation notes"" for v8.4 and 8.6.",0,1.0,1
+5523bb4,2017-10-11 11:02:57,Update ref for v3#42  from abiref machine,0,0.0,0
+f7540dd,2017-10-11 12:40:18,Document the new input variables fockaux_ixc and fockaux_scal. Update the documentation.,0,0.0,0
+4f4c7a0,2017-10-11 13:26:52,Correct bugs due to merge (rhotoxc),1,1.0,1
+e802a01,2017-10-11 14:49:43,Fix minor problem for ROBODOC,1,1.0,1
+e7eb231,2017-10-11 15:36:25,Update reference for abirules #01,0,0.0,0
+e840b20,2017-10-12 09:53:44,Merge branch 'chkdilatmx' into release-8.6.0,0,0.0,0
+dce2d62,2017-10-12 09:58:17,Exclude tests 93 & 94 from executing on buda_intel_14.0_mpich (was already excluded from intel_13.0),0,0.0,0
+33ab16b,2017-10-12 10:59:49,"Update ref v3#42  for missing ""s""",0,0.0,0
+7576645.0,2017-10-12 11:05:54,Print the time spent in a dataset in ab_out and std_out,0,0.0,0
+d021aa7,2017-10-12 11:21:51,Clarified the calls to xchybrid_ncpp_cc.F90. Should still incorporate better handling of fockaux_ixc,0,0.0,0
+431a8d3,2017-10-12 11:46:54,Minor modif of outputs in nonlinear,0,0.0,0
+6dae63e,2017-10-12 13:12:52,Merge branch 'ace_4' into develop,0,0.0,0
+c7419c8,2017-10-12 13:13:47,Merge branch 'release-8.6.0' into develop,0,0.0,0
+c697736,2017-10-12 13:18:21,Merge branch 'develop' into ace_5,0,0.0,0
+d05e4c9,2017-10-12 13:22:39,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,0.0,0
+7708151.0,2017-10-12 13:56:25,hange fockaux_ixc to auxc_ixc  and fockaux_scal to auxc_scal .,0,0.0,0
+ee10c24,2017-10-12 14:46:59,Define get_auxc_ixc  and use it throughout.,0,0.0,0
+d4335d3,2017-10-12 14:51:43,Change http to https in ref file,0,0.0,0
+25f4814,2017-10-12 15:11:28,bcf8795d branch version with Fabio's U matrix rotation option added to dfpt_mkvxc_noncoll,0,0.0,0
+4225071.0,2017-10-12 15:59:32,missing https for ref file,0,1.0,0
+61be066,2017-10-13 11:07:09,Now compile  and tests execute correctly. Use of auxc_ixc is rationalized  including default value. Fix typo in the doc for auxc_ixc.,1,0.0,0
+6f77382,2017-10-14 21:28:15,Upgrade Abivars.jar : much better help.,0,0.0,0
+9381664.0,2017-10-15 05:58:40,Apply generate_doc.py,0,0.0,0
+d108a37,2017-10-15 06:30:22,Start the finalization of ABINITv8.6.0,0,0.0,0
+74009fe,2017-10-15 06:33:42,Apply generate_doc.py,0,0.0,0
+e8d3bb3,2017-10-16 00:27:17,Include latex equations,0,0.0,0
+5bf99c8,2017-10-16 01:50:09,Replace png with latex  use svg because it's 2017  24Mb --> 8Mb,0,0.0,0
+d0a1820,2017-10-16 03:07:09,Use wikilink and bibtex entries for citations,0,0.0,0
+0ad0a59,2017-10-16 03:10:51,And now chmod ugo-x for several py modules because only scripts need x bit-flag,0,0.0,0
+564144d,2017-10-16 10:14:20,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+c0a22b9,2017-10-16 11:32:05,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,0.0,0
+c055281,2017-10-17 08:08:11,Regenerate doc  on the basis of Matteo's modifications for theory BSE and MBPT (latex + mathjax),0,0.0,1
+b0cca5f,2017-10-17 08:30:39,Fix references in the abiref.bib file,1,1.0,0
+3c760f4,2017-10-17 08:39:34,Fix anchor problem in bib_acknow.htm,1,1.0,1
+4a14566,2017-10-17 11:28:39,third Vxc rotation method added (explicit roation matrix) turns out to be numerically unstable,0,0.0,0
+a255043,2017-10-17 12:29:17,Fix typos in topic_DFT+U,1,0.0,0
+3da09be,2017-10-17 12:34:31,Adjust tolerabces for graphene_macports,0,0.0,1
+001b44f,2017-10-17 15:22:44,graphene seems very sensitive for tutorial positron test - normally I did not touch anything which could have triggered this bb error,1,0.0,0
+b2e8803,2017-10-17 15:24:07,graphene seems very sensitive for some tests. One extra line diff on graphene bot  I have simply adjusted the tolerance,0,0.0,0
+89406c3,2017-10-17 16:05:00,Scanned the past merge requests  to constitute the release notes for v8.6.0,0,0.0,0
+cf6921f,2017-10-17 20:58:46,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0,0.0,0
+2787fa6,2017-10-17 21:13:54,Finalized a first version of the release_notes for v8.6.0 .,0,0.0,0
+c346e40,2017-10-17 21:20:11,Update contributor file,0,0.0,0
+6fd35ca,2017-10-18 08:05:28,Update cRPA tutorial (to take into account bug in the calculation of J).,1,0.0,0
+a0b4205,2017-10-18 09:27:18,Merge remote-tracking branch 'trunk/develop' into Multibinit,0,0.0,0
+3172d85,2017-10-18 09:42:15,fix dimension of atmfrc in 80/m_tdep_abitype,1,1.0,1
+e4d90dd,2017-10-18 09:42:22,Merge remote-tracking branch 'remotes/gingras.ol/dev_gingras' into _gingras,0,0.0,0
+b72a970,2017-10-18 10:27:48,Backport the modifs done by O. Gingras to switch from TRIQS 1.3 to TRIQS 1.4,0,0.0,0
+aed09b4,2017-10-18 10:42:05,Upgrade of the release_notes  incl. TRIQS 1.4,0,0.0,0
+9dd3248,2017-10-18 11:01:17,Merge branch 'release-8.6.0' into _gingras,0,0.0,0
+35c0fd8,2017-10-18 11:02:33,Apply generate_doc,0,0.0,0
+c80e380,2017-10-18 14:22:51,Now compile. Also continued to clean : removed cg_typ,0,0.0,0
+44ce7c7,2017-10-18 14:34:43,Change fock_downsampling to fockdownsampling,0,0.0,0
+3f15c97,2017-10-18 14:49:29,Start support for elpa,0,0.0,0
+64910000.0,2017-10-18 15:04:14,Document new input variable fockdownsampling.,0,0.0,0
+d1f78f5,2017-10-18 15:28:44,Merge branch 'develop' of gitlab.abinit.org:gingras.ol/abinit into dev_gingras,0,0.0,0
+5e057a4,2017-10-18 15:51:01,Fix bugs. Document nkptns_hf. Also modify nkpthf documentation.,1,1.0,1
+bc76a7b,2017-10-18 21:34:04,Upgrade check_list.txt,0,0.0,0
+fa3636e,2017-10-18 21:34:32,Merge branch 'release-8.6.0' of gitlab:trunk/abinit into release-8.6.0,0,0.0,0
+2c4b288,2017-10-18 21:38:09,Initialize v8.6.1,0,0.0,0
+588adb5,2017-10-18 21:54:17,Merge branch 'release-8.6.1' into develop,0,0.0,0
+2c260fe,2017-10-19 05:17:57,Merge branch '_gingras' into develop,0,0.0,0
+117a19f,2017-10-19 05:22:35,Merge remote-tracking branch 'remotes/gingras.ol/dev_gingras' into _gingras,0,0.0,0
+9dfed68,2017-10-19 05:23:30,Merge branch '_gingras' into develop,0,0.0,0
+63525bd,2017-10-19 05:25:27,Initialize v8.7.1,0,0.0,0
+f29cd08,2017-10-19 07:56:37,Merge remote-tracking branch 'trunk/develop' into develop,0,0.0,0
+045ac61,2017-10-19 07:57:55,Merge remote-tracking branch 'trunk/develop' into elpa,0,0.0,0
+b871ed2,2017-10-19 08:48:22,Now v7#65 works (reference should be updated  though ...).,0,0.0,0
+90fad50,2017-10-19 11:23:42,Determine a better nbandhf default value  echo nbandhf and nkpthf when it is useful  import stress bug fix from François  upgrade many refs files  BUT libxc#67 68  69 are not correct ?!,1,1.0,1
+ae1ecee,2017-10-19 12:15:22,Enhanced PSML-related release notes and reviewed the rest of the document,0,0.0,0
+79d9b96,2017-10-19 12:32:18,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+9e48c89,2017-10-19 12:35:52,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,0.0,0
+8c231a4,2017-10-19 14:08:01,Fix a bug  and then update the remaining references.,1,1.0,1
+04f8292,2017-10-19 14:19:28,Change communicator names for slk/elpa,0,0.0,0
+4661098.0,2017-10-19 14:20:12,make debug happy - explicit list of libxc CPP vars we will use,0,0.0,0
+37a6bd3,2017-10-19 14:39:03,Merge branch 'ace_6' into ace_1,0,0.0,0
+1fad9ee,2017-10-19 15:07:52,bug corrections for stresses in the Fock context: Stresses in PAW now work and parallel calculations also,1,0.0,1
+36bb379,2017-10-19 15:08:02,trial beautification of berryphase new subroutine,0,0.0,0
+998c32d,2017-10-19 15:54:05,Fix compile problem ELPA. Progress in the def of test libxc#72,1,1.0,1
+1ca98cb,2017-10-19 16:02:40,Echo kpthf only when there is some non-zero usefock,0,0.0,0
+f68114d,2017-10-19 18:02:54,paral/t60.in was erroneously disabled because HAVE_ETSF_IO has been removed.,0,0.0,0
+53ae732,2017-10-19 23:11:00,merged trunk provisional,0,0.0,0
+728330000000.0,2017-10-19 23:38:26,Preliminary version of GKK file,0,0.0,0
+943115e,2017-10-20 08:01:03,Fix a bug with the ordering of loops in smpbz,1,1.0,1
+f1bd22b,2017-10-20 09:27:40,Fix bug in smpbz (taking into account shiftk was incorrect),1,1.0,1
+1a90626,2017-10-20 09:48:20,tolerance corrections for the test farm,0,1.0,1
+604c57d,2017-10-20 09:54:39,Merge remote-tracking branch 'trunk/develop' into develop,0,0.0,0
+1930f03,2017-10-20 09:56:40,Update reference files  with correct ordering of k points.,0,1.0,1
+9fd32d5,2017-10-20 10:00:22,Disable temporarily tests libxc 72 and 73,0,0.0,0
+dadcea4,2017-10-20 10:26:27,Merge branch 'release-8.6.1' into develop,0,0.0,0
+70cd422,2017-10-20 10:33:51,Merge branch 'develop' into ace_6,0,0.0,0
+d2982a8,2017-10-20 12:11:07,Fix memory leak in smpbz   fix incorrect links,1,1.0,1
+4335ab8,2017-10-20 12:13:03,Add fockdownsampling input variable in test v7#70. A real test will come later.,0,0.0,0
+c14815f,2017-10-20 13:06:01,Fix problem with the shifts   use norm conserving for test libxc#72,1,1.0,1
+506f586,2017-10-20 13:10:21,Merge branch 'ace_6' into ace_1,0,0.0,0
+5e4774c,2017-10-20 13:40:41,things in progress (handle with care),0,0.0,0
+40a29c8,2017-10-20 14:03:57,bug correction for Fock forces,1,1.0,1
+78fdb65,2017-10-20 15:42:21,Merge remote-tracking branch 'trunk/develop' into Multibinit,0,0.0,0
+20febdd,2017-10-20 16:51:00,Merge remote-tracking branch 'trunk/develop' into develop,0,0.0,0
+a912a62,2017-10-20 21:31:28,Merge branch 'release-8.6.1' of gitlab:trunk/abinit into release-8.6.1,0,0.0,0
+25ec9a0,2017-10-20 22:06:10,Add E. Bousquet sections to release notes,0,0.0,0
+115b5d4,2017-10-20 23:17:10,Merge branch 'develop' of gitlab:trunk/abinit into develop,0,0.0,0
+e6f032e,2017-10-21 05:42:38,Merge branch 'release-8.6.1' into develop,0,0.0,0
+90da232,2017-10-21 05:44:57,Merge gmatteo/develop/f681 into _gmatteo,0,0.0,0
+2ea0c8a,2017-10-21 08:29:52,Merge jollet/develop/20fe into _jollet,0,0.0,0
+f9b139a,2017-10-22 00:07:40,fix mem leak,1,1.0,1
+097dc9c,2017-10-23 08:19:46,Fix the echo of kptns_hf,1,1.0,1
+2f99764,2017-10-23 09:25:32,Final version of the tests libxc#72 & 73  to test downsampling.,0,0.0,0
+8a1416d,2017-10-23 09:28:12,Merge branch 'release-8.6.1' into ace_1,0,0.0,0
+4339c04,2017-10-23 10:44:15,Add support for DDk.nc to ddk_init  netcdf output in optic,0,0.0,0
+e7318c7,2017-10-23 12:20:54,Clean debugging,0,0.0,1
+bf458bf,2017-10-23 15:28:00,Typos and still working on the cRPA bug on J,1,1.0,1
+fbeeffc,2017-10-23 18:15:31,Suppress comment in pawpuxinit,0,0.0,0
+e9d2b36,2017-10-23 22:49:00,Fix compilation errors on slaves without netcdf,1,1.0,1
+4914afb,2017-10-24 09:27:31,Correct the writing of the DDB in nonlinear,0,0.0,0
+eb705e1,2017-10-24 09:58:31,Update Refs for some cRPA tests,0,0.0,0
+0d24b12,2017-10-24 13:46:14,method 2 for vxc1 is working properly  but poor convergence  method1 contains mistakes  to continue fixing metallic corrections,1,0.0,0
+c0dc19f,2017-10-24 14:28:56,Define new input variablse hybrid_mixing hybrid_mixing_sr hybrid_range_dft hybrid_range_fock,0,0.0,0
+1ab40b6,2017-10-24 14:58:48,Separate hybrid_range into hybrid_range_dft and hybrid_range_fock for the upper routines. Should work ...,0,0.0,0
+6f63d03,2017-10-24 16:08:16,New version for ELPA module,0,0.0,0
+2ada948,2017-10-24 16:13:09,APply change hybrid once more,0,0.0,0
+bf1a894,2017-10-24 16:15:33,Final application of change,0,0.0,0
+4e016d9,2017-10-24 16:20:40,merge with trunk.,0,0.0,0
+f667064,2017-10-24 18:05:28,modify non_magnetic_xc in m_pawpsp,0,0.0,0
+2e66f0b,2017-10-24 18:11:21,Update vtorho after makemake,0,0.0,0
+e0145cc,2017-10-24 18:25:39,Change convention for the calculation of J in cRPA: The new convention is coherent with the definition of jpawu in DFT+U calculations in ABINIT.,0,0.0,0
+2865cbd,2017-10-24 21:50:33,Merge mverstra/develop/f9b1 into _mverstra,0,0.0,0
+d14b20b,2017-10-25 00:19:49,begin mixing of tau,0,0.0,0
+d6f85b2,2017-10-25 09:19:49,Change default for fockdownsampling in indefo.F90,0,0.0,0
+eb791e1,2017-10-25 09:23:41,merge with the trunk,0,0.0,0
+4038c48,2017-10-25 09:43:32,kpthf becomes kptns_hf also in the echo  so update the references,0,0.0,0
+d73755f,2017-10-25 09:46:16,add stresses calculation for PAW Fock tests,0,0.0,0
+3fcf65e,2017-10-25 10:58:31,Allow the user to modify the parameters for hybrids. Try to avoid printing them unless they have been user defined.,0,0.0,0
+b4cbe4d,2017-10-25 13:03:39,Now test extensively all definitions of HSEx,0,0.0,0
+08fd643,2017-10-25 13:35:29,Document the new input variables hyb_mixing  hyb_mixing_sr  hyb_range_dft  hyb_range_fock,0,0.0,0
+f4a8441,2017-10-25 13:54:16,update refs files for libxc #72&73,0,0.0,0
+678c8a1,2017-10-25 14:05:32,Merge branch 'ace_1' into ace_2,0,0.0,0
+f010b89,2017-10-25 14:17:45,Switch gga_id(1) and gga_id(2),0,0.0,0
+a55484d,2017-10-25 15:00:38,test reference corrections for PAW Fock stresses,0,1.0,1
+eae2666,2017-10-25 16:34:45,Update references for tests v7/25 78 79 (cRPA),0,0.0,0
+a61664e,2017-10-25 18:20:33,Update refs,0,0.0,0
+92c5f69,2017-10-25 20:45:27,Define tolerances for test libxc#72,0,0.0,0
+6f4ee78,2017-10-26 05:34:58,Merge branch 'develop' into ace_1,0,0.0,0
+42bcdae,2017-10-26 07:54:44,Merge branch 'develop' into ace_2,0,0.0,0
+1f9b4b7,2017-10-26 08:24:49,Add two datasets to libxc#72. Also correct a few lines in the on-going implementation of B3LYP.,0,1.0,1
+334764a,2017-10-26 08:26:04,Suppress the hyb_ lines in the reference abirules/t01.out,0,0.0,0
+9bf9c2c,2017-10-26 08:31:08,More accurate documentation of the default for hyb_range_dft and hyb_range_fock,0,0.0,0
+d76f9f0,2017-10-26 09:37:45,Introduce hyb_mixing as optional argument of drivexc  drivexc_main. Also inside xcdata datastructure.,0,0.0,0
+2ba9e5f,2017-10-26 10:09:43,Change typo in crpa tutorial,0,0.0,0
+f0200d1,2017-10-26 10:24:57,Make all input args of xcdata_init optional.,0,0.0,0
+777675a,2017-10-26 11:31:07,Merge amadon/release-8.6.1/2ba9 into _amadon-8.6.1,0,0.0,0
+2b60aeb,2017-10-26 11:35:34,Update the doc  from Bernard Amadon,0,0.0,0
+08bcd85,2017-10-26 13:36:39,add ddb_to_dtset to m_ddb.F90,0,0.0,0
+6a1c8b3,2017-10-26 13:37:30,Merge remote-tracking branch 'trunk/develop' into Multibinit,0,0.0,0
+5dce9a9,2017-10-26 13:41:52,Merge branch 'develop' of gitlab:amartin/abinit into develop,0,0.0,0
+f22a202,2017-10-26 14:40:03,update ref of abichecks/buildsys/Refs/abiref_gnu_5.3_serial.ac (for libxml),0,0.0,0
+f4c5aa3,2017-10-26 14:55:00,New optic.nc format.,0,0.0,0
+90ea85e,2017-10-26 14:55:07,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into ddk,0,0.0,0
+59a1aab,2017-10-26 14:59:12,Implemented the possibility to have optional xc_functionals as argument of drivexc and drivexc_main.,0,0.0,0
+1f4de20,2017-10-26 16:57:35,debug abiref and add transfert from ddb to dtset (header of DDB),0,0.0,0
+8811ebc,2017-10-26 19:24:14,Merge branch 'release-8.6.1' of gitlab:trunk/abinit into release-8.6.1,0,0.0,0
+1.53e+54,2017-10-26 19:25:02,Merge _amadon-8.6.1/2b60 into release-8.6.1,0,0.0,0
+119e5af,2017-10-26 22:06:20,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+58c876a,2017-10-26 22:08:03,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,0.0,0
+b09a432,2017-10-26 23:14:49,bad copy and paste from previous test,0,0.0,0
+40a708c,2017-10-27 15:01:45,Develop test libxc#25 of many functionals  using the hyb_* input variables. Also code combined Spencer-Alavi and HSE functionals.,0,0.0,0
+d764364,2017-10-27 16:30:45,Several adjutments for the new ELPA module: OK for ELPA 2014  2015  2016  2017,0,0.0,0
+6746f77,2017-10-27 16:33:34,Merge branch 'develop' of abinit-gitlab:trunk/abinit into elpa2017-2,0,0.0,0
+ff1374b,2017-10-27 18:41:22,Merge branch 'release-8.6.1' of abinit-gitlab:trunk/abinit into quickfixes,0,0.0,0
+390a090,2017-10-27 18:43:02,Add a missing file in Psps_for_tests,0,1.0,1
+5Feb0300,2017-10-28 14:42:43,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into gwsoc,0,0.0,0
+4c7c0f0,2017-10-28 15:50:54,abilint,0,0.0,0
+21d6e1f,2017-10-28 17:12:12,Move GW-SOC tests to v8,0,0.0,0
+a6be096,2017-10-28 17:20:31,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into ddk,0,0.0,0
+bb0c4c7,2017-10-28 17:20:48,abilint,0,0.0,0
+2fb6f8d,2017-10-28 18:45:08,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into eph,0,0.0,0
+e10f448,2017-10-28 19:33:45,abilint,0,0.0,0
+270d5c2,2017-10-30 08:56:48,Added python script to calculate Raman spectra from Anaddb output,0,0.0,0
+e7e345c,2017-10-30 14:48:37,Exclude host nag@abiref for test MPIIO 28,0,0.0,0
+d3f3562,2017-10-30 16:26:49,Exclude host nag@abiref for etsf_io # 4.,0,0.0,0
+af29696,2017-10-30 18:15:28,Finalize test libxc 72,0,0.0,0
+49db121,2017-10-30 19:43:25,Add a2f values to EPH.nc,0,0.0,0
+528f798,2017-10-30 20:41:45,One more test to be disabled for nag@abiref. However  according to JMB  will work with ABINITv8.7.0 ...,0,0.0,0
+ffc9de6,2017-10-30 20:43:00,Merge branch 'release-8.6.1' into develop,0,0.0,0
+ea56439,2017-10-30 20:43:45,Reenable test v7#80 for nag@abiref in develop,0,0.0,0
+06535f7,2017-10-30 22:06:21,Create new test libxc#74  with a pseudopotential that includes a non-linear core correction,0,0.0,0
+a75a1ca,2017-10-31 09:43:38,debug nfixcoeff in m_fitpolynome,0,1.0,1
+653e574,2017-10-31 09:48:49,update test multibinit,0,0.0,0
+dd8dc80,2017-10-31 12:13:20,update ref,0,0.0,0
+06d1401,2017-10-31 14:32:36,right before merge with trunk,0,0.0,0
+b667700,2017-10-31 15:04:18,merge with trunk  conflicts resolved,0,0.0,0
+e454c75,2017-10-31 15:14:58,There is an erratic problem with nag@abiref for v7#80 even in v8.7.1 . Exclude host ...,1,0.0,0
+79dbc1f,2017-10-31 15:50:38,compilation after merge ok  v8[20] updated for new calden,0,0.0,0
+f95a2be,2017-10-31 16:51:21,Introduce new test libxc#74 with a pseudopotential that has a nonlinear core correction  and fix problems detected.,1,1.0,1
+427aaaf,2017-10-31 19:20:51,Update refs,0,0.0,0
+b2a2b70,2017-10-31 20:48:55,Modify test 72 to make it less sensitive to numerical errors. Also use option -medium.,1,0.0,0
+289fd13,2017-10-31 20:51:15,Fix typo,1,0.0,0
+986b72f,2017-10-31 20:56:03,Merge gmatteo/gwsoc/21d6 into _gmatteo,0,0.0,0
+671f6b3,2017-10-31 21:45:09,Recover the normal default for auxc_ixc (namely  ixc 11),0,0.0,0
+6579eec,2017-10-31 22:14:29,Update ref for libxc#72 due to modif of the input file,0,0.0,0
+522e9b5,2017-10-31 22:16:14,Correct typo,0,0.0,0
+3b2c2c5,2017-10-31 22:20:51,fld options set to -easy for tests libxc 72&74,0,1.0,1
+0fab725,2017-10-31 23:35:06,abiauty...,0,0.0,0
+2aec0b6,2017-11-01 04:01:23,cleaning up comments etc.,0,0.0,0
+575827b,2017-11-01 06:25:16,Update tolerances for libxc#74,0,0.0,0
+baf266b,2017-11-01 11:36:23,Resolved merge conflicts,0,0.0,0
+02fa3c5,2017-11-01 12:30:08,fixed small typo,1,0.0,1
+9705408.0,2017-11-01 13:38:23,pre-mr  before update,0,0.0,0
+73f3fec,2017-11-01 13:38:31,Merge remote-tracking branch 'trunk/develop' into dfpt_noncoll,0,0.0,0
+92e018e,2017-11-01 16:47:02,update configure.ac,0,0.0,0
+256e1b6,2017-11-01 16:53:14,spelling error fixed,1,0.0,0
+9cfe38e,2017-11-01 17:59:25,Slight adjustment of tolerance libxc#74 . Also exclude nag@petrus host for Tlibxc#74,0,0.0,0
+0eb2861,2017-11-02 07:01:47,Update the doc for ixc. Also apply ./generate_doc.py.,0,0.0,0
+41c225b,2017-11-02 09:27:39,Develop the GGA counterpart of B3LYP  for non-linear core corrections.,0,0.0,0
+fd0438b,2017-11-02 09:35:16,Add missing declarations,0,1.0,0
+9ec215e,2017-11-02 09:41:25,Typo,0,0.0,0
+63679a3,2017-11-02 09:47:52,Clean the set up and doc of B3LYP functional,0,0.0,0
+306de4e,2017-11-02 11:05:14,Merge npike/develop/256e into _npike,0,0.0,0
+98bd806,2017-11-02 15:53:11,B3LYP is coded  including the non-linear core correction. Test 74 is adapted.,0,0.0,0
+6678f51,2017-11-02 17:59:10,Tune libxc#72  for portability,0,0.0,0
+770cb5e,2017-11-02 17:59:50,Strangely max2 complained about the previous deallocation coding. Should work now...,0,0.0,0
+a9fc1f8,2017-11-02 18:13:54,Fix an allocation problem. However  max2 is still complaining about test libxc#72. I do not find the bug. So  exclude the host.,1,1.0,1
+0ca117c,2017-11-02 21:12:27,Document ixc_adv,0,0.0,0
+758a08f,2017-11-03 06:20:34,Correct inlinde ABI_ALLOCATE statement,0,1.0,1
+0db6f02,2017-11-03 08:28:16,Reenable two excluded hosts.,0,0.0,0
+25495b3,2017-11-03 10:18:02,modifications of Raman_spec,0,0.0,0
+c9a650d,2017-11-03 13:03:38,Merge branch 'develop' of gitlab.abinit.org:trunk/abinit into ddk,0,0.0,0
+88fb9d0,2017-11-03 13:14:58,small bug fix,1,1.0,1
+3b24460,2017-11-03 13:23:41,output renaming fixed,1,1.0,1
+a93a229,2017-11-03 22:17:00,Finalize release_notes.,0,0.0,0

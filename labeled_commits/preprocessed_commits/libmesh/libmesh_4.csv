@@ -1,0 +1,948 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+109cc37,2011-11-10 21:14:30,Fix libmesh-0.7.2 organization  add libmesh_tests,1,1.0,1
+3f8ade9,2011-12-05 04:49:39,Reorganized the examples into subdirectories. The comments in each example still need to be updated to reflect the new numbering scheme.,0,0.0,0
+469639e,2011-12-05 05:18:01,updated makefile,0,0.0,0
+5364.0,2011-12-05 18:35:33,Massive whitespace-only patch.,1,0.0,0
+42c7883,2011-12-06 20:08:09,"Fix ""make all"" examples target to handle new refactoring",1,1.0,1
+5ac7ee7,2011-12-06 20:44:56,Bugfix for Real!=double,0,1.0,1
+8a557e2,2011-12-06 21:37:06,Fixes for --disable-exodus,1,1.0,1
+8ca5c63,2011-12-06 23:06:01,Updated svn:ignore,0,0.0,0
+28ccb03,2011-12-06 23:11:55,Move Physics  QoI functions into their own classes  this is the first step in making diff_system more flexible with them.,0,0.0,0
+71d6369,2011-12-07 04:01:51,cleaned up some comments in examples/reduced_basis,0,0.0,0
+911e70e,2011-12-07 04:06:20,another small change to reduced_basis/examples comments,0,0.0,0
+e46bbbe,2011-12-07 22:31:48,"Making the Parameters class inheritable (i.e. added a virtual destructor and a number of virtual methods). In addition a virtual ""set_attributes"" method was added so that extended parameters could be updated as needed when calls are made to the base-class templated ""set"" method.",0,0.0,0
+44992f0,2011-12-09 04:17:56,rbOOmit change: updated EIM classes  also changed truth solution viz from GMV to exodus  and added some simple methods to RBAssemblyExpansion  RBThetaExpansion.,0,0.0,0
+be8e19b,2011-12-09 04:33:03,rbOOmit change: added reduced_basis/reduced_basis_ex4  which demonstrates EIM,0,0.0,0
+5fe1495,2011-12-09 06:40:51,Fix Makefile for LIBMESH_DIR undefined case  modern libMesh compiler option env names,1,1.0,1
+f723195,2011-12-09 13:32:39,small change to output printing in TransientRBConstruction,0,0.0,0
+14dc4a3,2011-12-09 15:11:20,need to pass a version string to read_header in RBEvaluation,0,0.0,0
+5382f55,2011-12-09 18:14:43,fix to rb_eim_evaluation.C for LIBMESH_DIM == 2,1,1.0,1
+c57452b,2011-12-13 01:15:06,rbOOmit change: added non-dirichlet matrices to TransientRBConstruction,0,0.0,0
+1820ad6,2012-01-03 22:32:26,In the C++ standard std::complex<T>::real()/imag() return T  not reference-to-T?  Anyway  it looks like some real compilers (g++ -std=c++0x  and I'm told some PGI versions) enforce that.  Adding workarounds.,0,0.0,0
+5da524d,2012-01-03 22:32:55,Fix some compiler warnings,1,1.0,0
+ba4442a,2012-01-03 22:34:42,"Fixes for ""unused variable"" warnings",1,1.0,0
+30a8a13,2012-01-03 22:37:13,With -std=c++0x I see errors from down-conversion of long double to double.  Explicit static_cast fixes them,1,1.0,1
+3ae65a2,2012-01-03 23:14:14,"MAKECMDGOALS doesn't work here when two commands are given on the same line  e.g. ""make clobber all""",0,0.0,0
+191a18c,2012-01-04 21:32:48,Updated publications for Jan 2012.,0,0.0,0
+eb9b93b,2012-01-06 16:36:28,force positivity of the stability constant,0,0.0,0
+1a17092,2012-01-06 22:40:39,Breaking apart System from Physics classes  giving the latter their own subdirectory.  This breaking-apart process is incomplete  TimeSolvers aren't yet using the physics member rather than the physics superclass.,0,0.0,0
+8256040.0,2012-01-09 19:03:32,Const correctness patch from Paul Bauman,1,0.0,0
+b261e3c,2012-01-10 21:19:25,,0,0.0,0
+607d7e8,2012-01-11 15:02:24,Bugfix from Robert Weidlich for tensor assign(),0,1.0,1
+2928868.0,2012-01-13 22:33:08,Refactored System::point_*  introduced point-already-located versions,0,0.0,0
+2be1a71,2012-01-16 14:53:32,Remove unused dim variable.,0,0.0,0
+f5c4a38,2012-01-18 21:19:22,Add openmp check for configure,0,0.0,0
+444b078,2012-01-20 16:52:49,Turn on keyword expansion in all files.,0,0.0,0
+855770a,2012-01-25 00:12:31,Added LGPL stuff to files in src/apps.,0,0.0,0
+93ae8d7,2012-01-25 00:28:45,Removed SVN keywords from all C/h files.,0,0.0,0
+41030ed,2012-01-25 00:33:11,Removed SVN keywords from examples  m4  contrib  and miscellaneous other files.,0,0.0,0
+1e478c8,2012-01-25 00:33:26,Commented out the AC_REVISION macro.  This only modifies the configure script  and is useless if you run bootstrap in git anyway.,0,0.0,0
+10c9d2e,2012-01-25 20:40:29,Make the examples parallel-buildable... again.,0,0.0,0
+98daa2d,2012-01-27 00:06:58,Adding another useful utility from my private apps,0,0.0,0
+bdd38ba,2012-01-27 00:07:33,Making meshdiff slilghtly more informative in unusual cases,0,0.0,0
+531b2f9,2012-01-30 05:47:06,Building fparser in contrib,0,0.0,0
+16001c5,2012-01-30 14:29:30,fix for --disable-fparser,1,1.0,1
+45520a1,2012-01-30 16:48:59,Set svn:ignore  removing regenerated inc files properly,0,0.0,0
+a976b26,2012-01-30 17:18:17,Wait  this one isn't autoregenerated...,0,0.0,0
+7c1ed54,2012-01-30 17:29:28,gcc doesn't want to generate dependencies when there's a missing include file,0,0.0,0
+dc2b63c,2012-01-30 17:44:51,"Let's not rebuild fp_opcode_add.inc before every single ""make clean""...",0,0.0,0
+8d04b3a,2012-01-30 17:55:22,Adding gitignores and some small Makefile fixes for fparser.,1,0.0,0
+2.031e+64,2012-01-30 20:09:43,fparser fixes,1,1.0,1
+f14384a,2012-01-30 20:09:58,Fixing sed issues  and by that I mean getting rid of it!,1,1.0,1
+d62feee,2012-01-30 21:58:24,We should be able to declare even parameters with default values as unnamed parameters,0,0.0,0
+3d3a03e,2012-01-30 22:06:28,Fix for misparse,1,1.0,1
+a26478e,2012-01-30 23:13:14,Adding ZeroFunction and ParsedFunction subclasses of FunctionBase,0,0.0,0
+15cc5dc,2012-01-30 23:48:50,Filenames should match libMesh conventions  cpp directives shouldn't be buggy.,0,0.0,0
+8befce2,2012-01-31 17:20:25,set svn:executable.  for some reason my ICE/SuSE box was not treating it as such,0,0.0,0
+0dd21ff,2012-01-31 18:27:46,"Revert ""fparser fixes""",1,1.0,1
+6722f8a,2012-01-31 18:34:19,"Removing some redundant executable targets  adding a ""make extra"" option for the others.",0,0.0,0
+d50c0f2,2012-01-31 19:03:54,Fix fparser builds when LIBMESH_DIR is undefined,1,1.0,1
+26fe4d2,2012-01-31 20:11:50,Disable fparser optimization for everybody  Roy gets buggy results in his tests...,0,0.0,0
+1.176e+42,2012-01-31 21:26:16,New links on webpage,0,0.0,0
+4f771e1,2012-01-31 22:16:20,Fix perl calls in Makefile.,1,1.0,1
+44933d5,2012-01-31 22:51:10,Roy says optimizations are working on Linux  only turn them off for Mac OSX.,0,0.0,0
+16bf997,2012-01-31 22:51:26,Don't introduce perl dependency when not necessary.,0,0.0,0
+4acf1e0,2012-02-01 15:40:31,Handle cNop case  now that the enum is defined even when optimization is off.,0,0.0,0
+55d4cf6,2012-02-01 20:30:42,Print out Newton warnings in inverse_map() only in devel/dbg modes.,0,0.0,0
+fd8c768,2012-02-01 23:21:00,"""make distclean"" ought to get rid of .depend files too",0,0.0,0
+f504ec2,2012-02-02 16:32:06,Bugfix: arbitrary function projections onto 2D/3D HERMITE spaces were zeroing out mixed partial derivative based degrees of freedom!,0,1.0,1
+0.0,2012-02-02 18:18:14,Fixing another similar Hermite projection error...,1,1.0,0
+5dd39fa,2012-02-02 22:37:14,Updated .gitignore,0,0.0,0
+255b5e1,2012-02-02 22:37:29,Use $(libmesh_CXX) instead of g++ in fparser Makefile.,0,0.0,0
+f5a8740,2012-02-02 23:09:43,Implementing Elem::close_to_point().,0,0.0,0
+b872afd,2012-02-03 23:01:53,Moved mesh_function.C from src/numerics to src/mesh to be consistent with the header file.,0,0.0,0
+e1fc6ee,2012-02-04 16:57:53,object-based send list and sparsity pattern user interaction,0,0.0,0
+7e15406,2012-02-05 02:36:11,set the initial time regardless of log_events status,0,0.0,0
+b7971f2,2012-02-06 17:15:00,Removing atavistic code - this bit of coarsening got refactored into FEBase long ago.,0,0.0,0
+88c8c83,2012-02-06 17:28:54,Added missing CHKERRABORT,0,0.0,0
+a468794,2012-02-06 17:37:06,Commenting out unused variables,0,0.0,0
+053e5cf,2012-02-06 18:57:34,We should be able to ostream<<Elem,0,0.0,0
+4080c88,2012-02-06 18:58:12,Make debugging code more useful when not in debuggers  disable it when running with NDEBUG  and avoid compiler warnings at the same time.,0,0.0,0
+f7b195a,2012-02-07 00:05:30,Template FunctionBase (and subclasses as appropriate) around Output type,0,0.0,0
+19589f5,2012-02-07 00:06:16,Add WrappedFunction to allow old-style libMesh pointer-to-function arguments to be handed to routines expecting FunctionBase functor arguments,0,0.0,0
+40f2cd1,2012-02-07 00:07:16,System::project_* now accepts FunctionBase functors as a (preferred) alternative to pointers-to-functions,0,0.0,0
+3a28f8c,2012-02-07 16:46:29,Rename single-component-returning FunctionBase method - there was no good reason for this much overloading and it was leading to warnings and potential errors.,1,0.0,0
+7b3e6b0,2012-02-07 17:20:39,Avoid unused variable warnings.,0,0.0,0
+e674357,2012-02-07 22:12:49,Add FunctionBase::clone() and subclass implementations,0,0.0,0
+511f9b7,2012-02-07 22:16:05,Move TBB functor classes into system_projection.C  we never needed these to be nested classes or taking up header space.  Switch to per-thread-cloned functors.,0,0.0,0
+8f1eda9,2012-02-07 22:18:20,Add functor-based options for ExactSolution,0,0.0,0
+8d2016f,2012-02-07 23:21:37,Fix missing whitespace,1,1.0,0
+e309fea,2012-02-07 23:34:26,Don't leak memory if the user calls attach_exact_*(functors) multiple times.,0,0.0,0
+57d1e0a,2012-02-07 23:58:42,Most FunctionBase subclasses are fully initialized from construction time.,0,0.0,0
+b9d2ceb,2012-02-08 00:01:42,Make sure functors are properly init()ed before use.,0,0.0,0
+883cfb9,2012-02-08 00:07:13,Make sure we've init()ed functors properly,0,0.0,0
+1f18e36,2012-02-08 00:17:26,rbOOmit change: avoid calling read_header in RBEvaluation  since this crashes when n_vars > 0. Instead  we should initialize an EquationSystems object using EquationSystems::read()  and before calling RBEvaluation::read_in_basis_functions(). Also made corresponding changes to the reduced_basis examples.,0,0.0,0
+2548963.0,2012-02-08 14:49:02,Add ifdef's around Eigensystem.,0,0.0,0
+2380929.0,2012-02-08 15:49:42,Adding interfaces to get/set the current nonlinear iteration number in NonlinearSolver.,0,0.0,0
+a767fbf,2012-02-08 16:20:24,Explicitly include wrapped_function.h dependencies,0,0.0,0
+90cf0ff,2012-02-08 19:13:49,Add functor options to ExactErrorEstimator,0,0.0,0
+7a3ff15,2012-02-08 20:49:52,ZeroFunction  ParsedFunction bugfixes,0,1.0,1
+76ab863,2012-02-08 21:31:36,Reset current nonlinear iteration count in clear().,0,0.0,0
+8c7216e,2012-02-10 17:32:55,Fix for DenseVector<Gradient/Tensor> with --enable-complex,1,1.0,1
+9ef4a6d,2012-02-10 22:48:38,Fix subexpression parsing  use a delimiter that doesn't conflict with the non-unary function call argument delimiter...,1,1.0,1
+cb89680,2012-02-10 22:49:24,Throwing some binary xdr and some ParsedFunction testing into adaptivity example 5,0,0.0,0
+4512bb8,2012-02-10 22:53:59,Adding an Optimize call couldn't hurt.  Unless broken optimization starts hurting people.  Which it almost certainly will.,0,0.0,0
+36c1cf4,2012-02-11 16:22:03,Fixing up xdr --enable-single support,1,1.0,1
+e8024c1,2012-02-14 20:08:20,Pass $(fp_CXXFLAGS) down to the building of utility files.,0,0.0,0
+bbe535f,2012-02-14 20:11:47,Define typedef boundary_id_type,0,0.0,0
+a3833d2,2012-02-17 18:39:09,Patch from Jed Brown: More generic preallocation of matrices  such that type can be changed with -mat_type,1,1.0,1
+a42d9a5,2012-02-18 22:42:05,Fix for periodic boundary conditions in 1D,1,1.0,1
+727e44b,2012-02-21 17:23:02,parsed_function enhancements,0,0.0,0
+648621e,2012-02-22 17:25:45,Adding dependency for bytecodesynth.cc for parallel makes Silencing most of the make commands,0,0.0,0
+6fcdf80,2012-02-22 23:13:14,Use braces rather than hash for delimiting vector-valued ParsedFunction subexpressions,0,0.0,0
+45abc40,2012-02-23 20:52:36,allow caching with TBB in hermite shape function calculations by employing thread local storage,0,0.0,0
+461b365,2012-02-24 18:06:15,Added Elem::is_edge_on_side(),0,0.0,0
+0a1d964,2012-02-24 18:10:09,Adding System::boundary_project_* functions,0,0.0,0
+974c06b,2012-02-24 19:24:19,Fix unused variable warnings,1,0.0,0
+12d6bcf,2012-02-27 20:34:34,fixup an unintended full localization of the solution vector during projection,0,1.0,1
+0c2c054,2012-02-27 21:26:06,Use DenseMatrix::vector_mult_transpose where appropriate,0,0.0,0
+81859a9,2012-02-28 00:16:18,Don't die in the 0D case,0,0.0,0
+b197fba,2012-02-28 00:16:46,No  we want to *apply* periodic BCs in 1D  not skip them.,0,0.0,0
+418a8b4,2012-02-28 01:39:34,Added discontinuous Lagrange basis (L2_LAGRANGE),0,0.0,0
+120bb8a,2012-02-28 05:36:08,Added eigenproblems_ex3: Computing eigenvalues of two isospectral drums,0,0.0,0
+be6359c,2012-02-28 20:41:52,Fixup constrain_element_matrix for the case where each matrix block is represented by a separate DenseMatrix,0,1.0,1
+3809dd7,2012-02-28 21:20:54,Fixed get_continuity in fe_l2_hierarchic.C  it should return DISCONTINUOUS. Also  change compute_constraints to a NOOP.,1,1.0,1
+c7e0276,2012-02-28 21:26:07,removed monomial_n_dofs_per_elem in fe_monomial.C  since it's identical to monomial_n_dofs (all dofs are elemenet dofs in this case),0,0.0,0
+d7e7ed4,2012-02-29 15:54:10,added Driscoll's reference eigenvalues to the comment in  eigenvalue_ex3,0,0.0,0
+a841f0a,2012-02-29 16:28:57,added extra SLEPc ifdefs to eigenproblem_ex3,0,0.0,0
+d5ac1c6,2012-02-29 18:52:24,Fixing indexing error in constraints,1,1.0,0
+7c45089,2012-03-01 15:59:43,print out the number of matrices each system has,0,0.0,0
+46ccc9f,2012-03-01 21:11:27,NumericVectors ought to be closed() before it gets zero()ed  and when they aren't we'd rather hear that from libMesh than wait until it propagates to PETSc,0,0.0,0
+f083b47,2012-03-01 21:11:56,Need to close() these adjoint_rhs vectors  or the next time we try to assemble them will fail.,1,0.0,0
+1Dec0194,2012-03-01 22:38:14,Typo fix,1,0.0,0
+dc4e19d,2012-03-01 22:43:38,We get a SLEPc error with --enable-complex on this one,1,0.0,0
+778e795,2012-03-02 18:47:55,Adding support for additional variables in the parsed function interface.  Users may request a writable reference to that parsed variables location where they can supply different values between evalations,0,0.0,0
+4cb1652,2012-03-03 16:41:31,Eigenproblem example 3 needs Exodus support,0,0.0,0
+1ea8cc9,2012-03-03 19:58:24,Search in Fedora/Ubuntu default directory for Eigen,0,0.0,0
+a378f2c,2012-03-03 21:15:15,else,0,0.0,0
+ced1f2a,2012-03-04 02:05:06,fixed for eigen.m4,1,1.0,1
+23addb2,2012-03-05 21:47:35,We don't want arbitrary LIBMESH_DIR here,0,0.0,0
+575f164,2012-03-07 03:19:46,Code (originally based on a patch from Boyce Griffith) to allow heterogenous linear DoF constraint equations,1,0.0,0
+7312f7d,2012-03-07 05:06:05,Move variable_scalar_number info into Variable class,0,0.0,0
+9beb678,2012-03-07 05:25:34,Adding options for dirichlet boundary enforcement,0,0.0,0
+7373940.0,2012-03-07 14:27:40,ifdef/namespace ordering,0,0.0,0
+5c62587,2012-03-07 14:29:46,documentation,0,0.0,0
+bbd3fa9,2012-03-07 14:35:41,include requirements,0,0.0,0
+9654030.0,2012-03-07 14:49:19,Fixed ifdef.,1,1.0,0
+b1dc21c,2012-03-07 15:22:43,If we are going to create these temporary int variables  we should probably use them...,0,0.0,0
+3eebcda,2012-03-07 16:39:34,Newer version of autoconf used  enable_dirichlet added,0,0.0,0
+fdaf759,2012-03-07 16:40:14,apparently different anonymous namespaces are different - makes sense but surprised me.,0,0.0,0
+d7d3e9c,2012-03-07 19:07:48,Time-dependent dirichlet constraints need to know the time,0,0.0,0
+a17bd11,2012-03-07 19:08:31,Use System::time rather than a Parameter where appropriate,0,0.0,0
+84f7a73,2012-03-07 21:20:19,Remove Parameters argument from new APIs where we don't need it  make it a const Parameters argument on old APIs where we don't need to modify it.,0,0.0,0
+b95d9ee,2012-03-07 21:49:13,Add a homogeneous option to enforce_constraints_exactly,0,0.0,0
+fa5e67a,2012-03-08 00:52:40,Make it easy for System and subclasses to disable caching (pre-assembled matrices  preconditioner reuse) before a solve.  The UniformRefinement estimator is going to need this...,0,0.0,0
+e684355,2012-03-08 05:20:59,Fix QoISet::iterator definition  add QoISet::begin() to provide iterators,1,1.0,1
+430aea4,2012-03-08 05:48:33,The UniformRefinement estimator never got updated to handle all the QoISet based API changes  and it was breaking when used as a dual subestimator for adjoint residual refinement.  This patch fixes it in my tests.,1,1.0,1
+497006b,2012-03-08 07:36:27,Adding MeshTools::Generation::build_extrusion,0,0.0,0
+9ac65e3,2012-03-08 07:52:53,Fix atavism in example error message,1,1.0,1
+3b54da1,2012-03-08 08:22:20,Adding more debug-mode code to make Laspack closed() behavior match PETSc behavior.  Still a work in progress.,0,0.0,0
+3e45c36,2012-03-08 18:35:56,Fix for debug-mode SERIAL/Laspack closure tests,1,1.0,1
+7415d41,2012-03-08 19:04:28,Ignore dependency generation error messages from when mpfr isn't configured  svn ignore gmon.out files from when profiling mode is used.,1,0.0,0
+f2c2ea7,2012-03-08 19:15:34,Updated svn:ignore,0,0.0,0
+086e85a,2012-03-08 20:04:35,Forward declaration and preprocessor #if fixes for various --disable options,1,1.0,1
+969b2f4,2012-03-08 20:13:47,Reduce header dependencies slightly,0,0.0,0
+7438f0a,2012-03-08 20:46:34,Forward declarations need to be in the right namespace...,0,0.0,0
+5394b8f,2012-03-08 20:51:03,Make pool_allocator.h pass test_headers.sh when !LIBMESH_HAVE_BOOST.,0,0.0,0
+331031f,2012-03-08 20:54:40,Fix heterogenous constraints with --enable-complex,1,1.0,1
+719afcf,2012-03-08 21:47:13,Fix bug with heterogeneous constraints on ParallelMesh,1,1.0,1
+8.264e+82,2012-03-09 21:52:12,Bug fix for potential multiple insertions of duplicate boundary ids,1,1.0,1
+93f3d42,2012-03-09 21:57:42,BoundaryInfo::add_node() method that takes full sets of nodes,0,0.0,0
+ac470f6,2012-03-09 21:58:36,Handle boundary ids when building an extrusion,0,0.0,0
+590589e,2012-03-09 22:55:29,Give spheres a 0 boundary id,0,0.0,0
+de4a284,2012-03-12 13:42:24,Patch from Benjamin Spencer:,1,1.0,1
+0a804ed,2012-03-14 00:00:25,Fixes for extrusion boundary id bug  extrusions of distributed meshes,1,1.0,1
+a1a9937,2012-03-14 17:02:34,Adding an interface to GetPot to detect when variables are overridden. This can happen when a variable is supplied twice in an input file or two similar sections are supplied in different locations in an input file.,0,0.0,0
+ef7b669,2012-03-14 17:58:12,We don't try to initialize a vector with a pointer - the default empty vector constructor will do fine for the NULL case.,0,0.0,0
+41b0b6a,2012-03-14 18:08:26,Dirichlet boundary gradients don't apply to most problems  ought to be an optional argument,1,0.0,0
+9b01b21,2012-03-14 18:15:10,Don't try to add Dirichlet constraints on already constrained DoFs.,0,0.0,0
+a90b9db,2012-03-14 18:39:38,Boundary operations need to skip element interior DoFs...,0,0.0,0
+9c14d62,2012-03-14 20:54:39,Fix boundary projections on higher order elements,1,1.0,1
+045ddce,2012-03-14 22:01:41,Don't skip Dirichlet constraints in 1D,0,0.0,0
+42f2cbd,2012-03-14 22:17:46,Fix capitalization and rhs bugs with DofMap::get_info(),1,1.0,1
+a04b71b,2012-03-15 17:26:24,Element constraint methods ought to default to homogeneous constraints even in heterogeneous cases.,0,0.0,0
+c485b97,2012-03-15 18:22:06,Do homogeneous enforce_constrants_exactly where appropriate,0,0.0,0
+fd15d85,2012-03-20 23:06:29,Define and use LIBMESH_ENABLE_CONSTRAINTS.,0,0.0,0
+0144c57,2012-03-20 23:07:47,Use LIBMESH_ENABLE_CONSTRAINTS in code that doesn't care what generated those constraints.  Fix a couple badly nested ifdefs that could fail on odd configure option combinations.,1,1.0,1
+2713bda,2012-03-21 15:16:15,Fix mistake in comment,1,1.0,1
+0d8ea46,2012-03-21 19:19:57,Moved contrib/boost header files to a place where boost's configure script will find them.,0,0.0,0
+446ace6,2012-03-21 22:40:32,n_local_constrained_dofs() is cheap enough to print and might be useful to know,0,0.0,0
+422a0d5,2012-03-21 22:41:57,Bugfix to make sure that after prepare_for_use  a manually partitioned mesh has a correct n_partitions() count even if it's not partitioned by a Partitioner.,0,1.0,1
+cae0616,2012-03-21 22:56:18,Don't ever converge on a full Newton step that actually *increased* the residual,0,0.0,0
+ac0be69,2012-03-22 17:42:03,Write element truth table to exodus to improve performance,0,0.0,0
+f81074d,2012-03-22 17:49:15,Minor changes to use libmesh indentation  initialization styles.,0,0.0,0
+1e738ab,2012-03-22 19:15:46,"Revert ""Minor changes to use libmesh indentation  initialization styles.""",0,0.0,0
+613dfac,2012-03-22 19:21:12,Adding 0.7.3 changes,0,0.0,0
+86a8821,2012-03-22 21:50:45,Don't unnecessarily close() PetscDiffSolver::solve() inputs - this could actually throw away preallocation information for an unassembled jacobian.,0,0.0,0
+5d19c1a,2012-03-22 21:53:09,No  *really* make sure that a ParallelMesh cached n_partitions() is correct.,0,0.0,0
+f2b6e97,2012-03-23 03:29:05,Patch from David Knezevic fixing bugs with the AnalyticFunction updates,1,1.0,1
+69fd181,2012-03-23 19:36:25,Supply template argument to FunctionBase<>  we see problems with clang otherwise.,1,0.0,0
+4472af4,2012-03-23 20:02:32,Fix for heterogeneous constraint vector construction,1,1.0,1
+fadd01d,2012-03-23 21:49:14,print_*_constraints now explicitly prints only local constraints  rather than printing only semilocal constraints and then not telling you.,0,0.0,0
+06d297b,2012-03-24 18:35:58,Modified introduction_ex4 to use DirichletBoundary instead of a penalty approach,0,0.0,0
+25d9c97,2012-03-24 18:42:09,Modified introduction_ex5 to use DirichletBoundary instead of a penalty approach,0,0.0,0
+47b8a7b,2012-03-25 02:14:55,clang is like icpc: it claims to be a recent gcc version  but it doesn't understand all the gcc pragmas.  Liars.,0,0.0,0
+fcfbdd2,2012-03-25 02:15:41,Don't rely on implicitly casting false to NULL,0,0.0,0
+a12f5c2,2012-03-25 02:34:09,Pass partitioner to TBB when provided,0,0.0,0
+214a667,2012-03-25 02:34:52,Use a named object here  we don't want a temp to be destroyed too early.,0,0.0,0
+1cbacca,2012-03-25 04:57:48,Add newline at eof,0,0.0,0
+7c2c856,2012-03-25 05:38:29,Make sure even templated functions are declared before use.,0,0.0,0
+19076d9,2012-03-25 05:48:32,Handle dependencies of files with .cc extensions,0,0.0,0
+bef8097,2012-03-25 05:49:57,clang doesn't understand -MG.  Other compilers might not even grok -MM.  Best to just use our perl script for dependency generation.,0,0.0,0
+38f45c0,2012-03-25 05:52:10,Reverting r5381 - commited wrong copy of file...,1,0.0,0
+bc24818,2012-03-25 05:53:21,Forward declarations  partial template specializations for fpaux.hh  from the right file this time.,0,0.0,0
+d113b91,2012-03-25 05:58:58,clang++ appears to be extra picky about how this namespace gets used  possibly a problem when trying to do precompiled headers?,1,0.0,0
+f0e6c28,2012-03-25 06:10:55,This #define gets set in the Makefile,0,0.0,0
+3777981.0,2012-03-25 06:11:35,clang++ warns when a friend declaration or forward declaration of struct refers to a class or vice-versa.,0,0.0,0
+a6f9dce,2012-03-25 06:36:31,Patch from Jungho Lee for clang compiler detection,1,0.0,1
+2ef3899,2012-03-25 06:53:24,"clang likes forward and friend declarations of structs to use the ""struct"" keyword",0,0.0,0
+fe14cf8,2012-03-25 06:53:41,Added newlines to ends of files,0,0.0,0
+b61bdd0,2012-03-25 07:26:43,Avoid returning references to (even const) temporaries,0,0.0,0
+456e4de,2012-03-25 14:18:51,do not initialize an object with a null pointer,0,0.0,0
+50c2cb4,2012-03-25 14:48:22,watch out for ambiguous time,0,0.0,0
+f6b0c2e,2012-03-25 17:11:12,standalone headers,0,0.0,0
+5500806.0,2012-03-25 22:38:11,Let clang ignore warnings on 3rd party files,0,0.0,0
+1dcb827,2012-03-25 22:40:07,Add end-of-file newlines to stop clang's warnings,0,0.0,0
+d4d7ad5,2012-03-26 00:02:42,Fix for 1d-only and 2d-only,1,1.0,1
+309afad,2012-03-26 15:06:53,Write element truth table to exodus to improve performance,0,0.0,0
+8c03e23,2012-03-26 17:00:13,Verifying that some of the flagging methods are always called in parallel,0,0.0,0
+67019bb,2012-03-26 21:29:43,,0,0.0,0
+4627636.0,2012-03-26 21:38:20,More prompt mesh status output during refinement,0,0.0,0
+617a27f,2012-03-26 22:16:28,Bugfixes and additional options for _INF norms in System::calculate_norm,0,1.0,1
+1779b60,2012-03-26 22:17:15,When debugging let's make sure that MeshRefinement isn't given a parallel-inconsistent error vector,1,0.0,0
+a66498b,2012-03-26 22:18:08,ParallelMesh-compatible version of MeshRefinement::flag_by_nelem_target,0,0.0,0
+fd59143,2012-03-26 22:39:33,Fix unused variable warning,1,0.0,0
+a2fbc80,2012-03-26 23:12:09,,0,0.0,0
+e5fef98,2012-03-27 00:18:37,rbOOmit change: Use DirichletBoundary to impose dirichlet boundary conditions. Also made the corresponding changes in the RB examples.,0,0.0,0
+ae2915e,2012-03-27 01:12:38,rbOOmit change: added zero_constrained_dofs_on_vector,0,0.0,0
+86905cd,2012-03-27 02:45:15,Bugfix for estimate_errors() with differing per-variable error norm types,1,1.0,1
+8915883.0,2012-03-27 02:59:16,Commenting out overzealous assertion,0,0.0,0
+6.799e+26,2012-03-27 16:04:31,Give more diagnostic info when a dynamic_cast fails,1,0.0,0
+1d0128d,2012-03-27 20:16:26,"Avoid ""unused variables"" warnings in non-debug modes",0,0.0,0
+942e526,2012-03-27 20:46:32,rbOOmit change: added rb_eim_theta.C to avoid linking error with METHOD=pro for reduced_basis_ex4,1,1.0,1
+c105c85,2012-03-27 21:28:23,Add a Make target for building annotated assembly files from src files.  This is somewhat useful for optimization purposes.,0,0.0,0
+c1fde1d,2012-03-27 21:46:18,Give default empty implementations for FunctionBase::init and ::clear,0,0.0,0
+0cef619,2012-03-27 22:22:01,Avoid warnings in the LIBMESH_DIM==1 case,0,0.0,0
+7.296e+28,2012-03-27 22:24:37,Avoid underflow with Real==float,0,0.0,0
+17b7013,2012-03-27 23:03:08,FunctionBase::clone ought to be const,0,0.0,0
+80bdd69,2012-03-27 23:03:39,A DirichletBoundary can take a const functor now that that's cloneable.,0,0.0,0
+a2620cb,2012-03-28 03:43:44,added systems_of_equations_ex4  a linear elasticity cantilever problem,1,0.0,0
+c0e6708,2012-03-28 16:59:27,Skip the 2D cantilever in 1D-only builds,0,0.0,0
+b97592c,2012-03-28 17:40:48,rbOOmit examples: changed equations_systems.xda to equations_systems.dat  since it's not xda format...,0,0.0,0
+19edfd3,2012-03-28 18:08:31,We should be more flexible about when time_evolving() can be called,0,0.0,0
+2a7291c,2012-03-28 18:14:46,Switching from penalty to true Dirichlet BCs gives better solver behavior,0,0.0,0
+c7d6890,2012-03-28 18:32:31,Fix from David Andrs for WrappedFunction returning SCALAR components,1,1.0,1
+31c2fa8,2012-03-28 18:42:56,One more bad-starting-index fix,1,1.0,1
+b8aa2a1,2012-03-28 19:02:53,Updating usage message,0,0.0,0
+5703ab1,2012-03-28 21:40:24,Bugfix for point_value/gradient/hessian,0,1.0,1
+9de6a3c,2012-03-28 21:55:12,Add an output  to exercise postprocess() and point_value().  Should have done this earlier.  Thanks to Vikram for catching that point_value() bug I just fixed.,1,0.0,0
+428be14,2012-03-29 02:02:15,rbOOmit change: rb_evaluation basis read/write,0,0.0,0
+59e696f,2012-03-29 02:34:33,removed obsolete commented code in reduced_basis_ex2,0,0.0,0
+48ce766,2012-03-29 04:01:18,set default Krylov solver to CG for linear elasticity example (via the Makefile commandline)  since CG is much faster than GMRES for this symmetric PDE,0,0.0,0
+b9883ea,2012-03-29 15:42:33,Added reduced_basis_ex5  an RB version of systems_of_equation_ex4,0,0.0,0
+ca74f9b,2012-03-29 17:53:03,Use AC_CHECK_HEADER instead of AC_CHECK_FILE where appropriate  or we can't configure with a cross-compiler.,0,0.0,0
+152910.0,2012-03-29 18:01:39,Built configure with updated m4 files,0,0.0,0
+ac4fc9e,2012-03-29 18:06:37,Temporarily reverting m4 changes  AC_CHECK_HEADER is going to need some more set up.,0,0.0,0
+5bcd220,2012-03-29 21:28:19,We don't need a libmesh_config.h dependency here  all our source files only include gzstream if configured to anyway,0,0.0,0
+cc36fb8,2012-03-29 22:09:50,Cross-compilation-compatible configure (say that five times fast)  take two.,0,0.0,0
+5826117.0,2012-03-29 22:41:18,These reduced_basis examples are segfaulting with Trilinos and Laspack.  Need to look into that...,0,0.0,0
+81c1b66,2012-03-29 22:45:57,Don't bother logging unless we're actually doing something,0,0.0,0
+395bdb5,2012-03-29 22:56:42,Even with out-of-mesh mode disabled  there are cases where a PointLocator will be given an out-of-local-mesh point on a ParallelMesh.  We can't error out on such cases  any assertions will have to be done at a higher level (asserting that the locator doesn't return NULL).,1,0.0,0
+78ffcd9,2012-03-29 23:21:46,reduced_basis_ex5: increased Greedy stopping tolerance,0,0.0,0
+1b605eb,2012-03-30 00:45:12,added systems_of_equations_ex5: linear elasticity with a constraint,0,0.0,0
+9119fad,2012-03-30 01:04:37,systems_of_equations_ex5: update comment,0,0.0,0
+f6d58a4,2012-03-30 01:05:21,systems_of_equations_ex5: update comment,0,0.0,0
+06f13bb,2012-03-30 17:16:17,Fixes for --disable-fparser,1,1.0,1
+6a2ac69,2012-03-30 18:19:32,Intel compilers can come with tbb support built-in  in which case no additional include paths are necessary.  Let's try and make sure it's enabled in that case unless the user deliberately disables it.,0,0.0,0
+0d783cd,2012-03-30 18:20:49,Re-bootstrapped configure with new tbb.m4 changes,0,0.0,0
+fdf446e,2012-03-30 21:13:25,Fix for tbb.m4 builtin-detection patch,1,1.0,1
+c228253,2012-03-30 21:40:08,The user might want max_nonlinear_iteration=0 for testing purposes,0,0.0,0
+bbee5ba,2012-03-30 23:12:46,TBB requires libpthread  and in case nothing else brings it in  we need to.,0,0.0,0
+0f07ddc,2012-03-31 00:06:55,Make FE order and family configurable  but default to previous (cheap) values,0,0.0,0
+5541a8f,2012-04-01 01:04:30,simple syntax change to avoid confusing doxygen,0,0.0,0
+4e4378a,2012-04-02 14:23:20,Ignoring example data files.,0,0.0,0
+9b11624,2012-04-02 16:05:38,Make grepping through petscconf safer  hopefully.,0,0.0,0
+bcd11bd,2012-04-04 01:15:46,"My Trilinos 10 install was complaining about not finding MPI or PETSc headers during our configure tests  this m4 change fixes that.  Now Trilinos 10 complains about polymorphic PETSc functions included via ml_petsc.h.  They do know that we haven't been supposed to wrap PETSc headers in ""extern ""C"""" since somewhere around 2.3.0  right?",1,0.0,0
+44b9cc7,2012-04-04 02:11:32,Regenerate configure with the latest petsc/trilinos changes,0,0.0,0
+412a5d1,2012-04-04 02:53:46,AC_CHECK_HEADER can't be nested without disabling its cache  so let's do the two calls in an if/else pattern instead.,0,0.0,0
+c2c66ce,2012-04-04 03:27:44,Fix incorrect quotes,1,0.0,0
+316295.0,2012-04-04 04:07:48,Hackish workaround for petsc.m4 vs trilinos conflict,0,1.0,0
+5f9cba4,2012-04-04 04:19:41,Fix for Trilnos without ML case,1,1.0,1
+7b39ae1,2012-04-04 18:44:36,Adding a FIXME note to a bad algorithm I just noticed,0,0.0,0
+93ad3f6,2012-04-04 20:39:53,Adding support for reading/writing Block  Sideset  and Nodeset names to ExodusII meshes. The mesh generation routines will also generate sideset names.,0,0.0,0
+d2362ca,2012-04-04 23:03:28,Example docs hadn't been updated since the categorization...,0,0.0,0
+37ac93a,2012-04-04 23:12:59,Updating (at least partially...) headers in example comments,0,0.0,0
+3546930.0,2012-04-04 23:14:39,Updated svn:ignore,0,0.0,0
+fb9b352,2012-04-05 14:16:29,Fix for missing TBB case,1,1.0,1
+01ec522,2012-04-05 16:36:30,Added FEMContext::{fixed_ }point_{gradient hessian} methods,0,0.0,0
+cc9298c,2012-04-05 17:10:45,gzstream configure fix,1,1.0,1
+3287ee3,2012-04-06 04:33:52,Bugfix for example==NULL case,0,1.0,1
+1bcf1e9,2012-04-06 19:54:03,Set MAT_NEW_NONZERO_ALLOCATION_ERR by default for PETSc matrices,0,0.0,0
+ae64587,2012-04-07 19:37:55,Fixed up comments in RB examples for the website,1,1.0,1
+c789093,2012-04-07 19:44:35,fixed up header comment in transient examples,1,1.0,0
+d37a2ff,2012-04-07 21:21:49,run examples to completion,0,0.0,0
+a90d2ad,2012-04-07 21:26:46,words,0,0.0,0
+122d833,2012-04-09 13:58:32,MatSetOption only took two arguments in PETSc 2.x.,0,0.0,0
+3555c51,2012-04-09 22:39:41,Patch from Dmitry Karpeev:,1,1.0,1
+36e489c,2012-04-09 22:40:04,Adding example from Dmitry Karpeev which makes use of the new PetscDMNonlinearSolver.,0,0.0,0
+8748225.0,2012-04-10 01:20:17,rbOOmit change: Changed the API to reduce the number of raw pointers. Use getters/setters instead.,0,0.0,0
+8f1de05,2012-04-10 14:05:59,Use .e for exodus output for consistency with other examples,0,0.0,0
+8d11ab9,2012-04-10 17:16:50,Removing overzealous check in reading exodus 1D meshes,0,0.0,0
+578e7a7,2012-04-10 18:50:29,fix for petsc 3.0.0,1,0.0,0
+4056c30,2012-04-11 16:20:34,Adding on_reference_elem(NODEELEM) implementation avoids making a debug-mode assertion overzealous,0,0.0,0
+d2f8fa7,2012-04-11 19:39:23,Checked and answered a question in comment  saving answer there for future reminders.,0,0.0,0
+5de3ab9,2012-04-13 03:55:50,Clean exists in --disable-second and --disable-periodic cases,0,0.0,0
+5a91807,2012-04-13 03:57:03,One more fix for compiling in --disable-second case,1,1.0,1
+64c57f2,2012-04-13 04:06:09,Being able to test LIBMESH_HAVE_PETSC and PETSC_VERSION_LESS_THAN in the same #if line is a decent thing to enable.  Hopefully this fix unbreaks our --disable-petsc builds,1,0.0,1
+7ed41f6,2012-04-13 04:12:42,This isn't the only problem this example has in 1D/2D  but it's a start,1,0.0,0
+b798236,2012-04-13 04:20:11,A few more specializations for users.  This also prevents linker errors in misc ex7 in the single and triple precision modes.,1,0.0,0
+4faa811,2012-04-13 15:29:26,libmesh_example_assert only works in main(),0,0.0,0
+d938bc9,2012-04-16 07:21:46,Disable misc ex7 on non-PETSc builds  and for dim > LIBMESH_DIM,0,0.0,0
+7b7ff1b,2012-04-16 07:25:48,Set svn:ignore,0,0.0,0
+22896bb,2012-04-16 07:26:46,Add a BinaryTree - PointLocator wasn't working with --enable-1D-only before,0,0.0,0
+8e45ffd,2012-04-17 00:27:07,Misc ex7 won't work with ParallelMesh until periodic boundaries do.,0,0.0,0
+28f1fbe,2012-04-18 22:30:50,Check that strings are not too long when writing Exodus files.,0,0.0,0
+3208db1,2012-04-18 22:31:16,Let's use C++ functions to copy strings  not strcpy.,0,0.0,0
+b5c27fa,2012-04-18 22:31:43,Enforce unofficial libmesh coding guideline for spacing between function bodies.,0,0.0,0
+8ad6b69,2012-04-19 22:43:08,"Copy ""make doc"" example output to screen too",0,0.0,0
+a3bb106,2012-04-19 22:55:56,Merging some m4 changes from automake branch.  This passes initial tests  time to let buildbot pick it up and play.,0,0.0,0
+4222abf,2012-04-20 00:20:29,Set top_srcdir for compatibility with automake-oriented macro definitions,0,0.0,0
+9fa7509,2012-04-20 04:42:04,added new init function to PetscMatrix  based on a vector n_nz and n_oz. Also  added get_eigenvalue to EigenSolver which (unlike get_eigenpair) does not retrieve the eigenvector.,0,0.0,0
+c1196fd,2012-04-20 14:55:23,more automake masquerading,0,0.0,0
+ff30695,2012-04-20 15:38:07,Keeping any failed cases around makes it easier to test and fix them,1,1.0,1
+21978b6,2012-04-20 15:43:10,Get typo fix propagated from sfc.m4 to configure,1,0.0,0
+9fc4c9f,2012-04-20 15:44:16,"G++ is getting more strict - we can't use ""NULL"" without including cstddef",0,0.0,0
+9fa5f73,2012-04-20 16:02:03,More fixes for the automake->trunk m4 sync up.,1,0.0,1
+33390db,2012-04-20 17:49:15,m4 fixes,1,1.0,1
+6c33e3f,2012-04-20 17:50:26,m4 fixes,1,1.0,1
+a6bd4e8,2012-04-20 19:54:12,Remove now-redundant AC_ARG_ENABLE calls and conditional blocks,0,0.0,0
+4ca8a19,2012-04-20 19:56:47,Make some PatchRecovery members protected:  this might be useful to anyone extending it  but specifically it'll be necessary to merge in Vikram's weighted patch recovery class once the bugs are worked out of that.,1,0.0,1
+f8c5d5a,2012-04-20 20:46:35,Fix linking against tecio,1,1.0,1
+1a81cf3,2012-04-23 02:15:10,rbOOmit change: added get_rb_theta_expansion() to RBEvaluation,0,0.0,0
+ceff70a,2012-04-23 17:32:48,no optimizer on cygwin,0,0.0,0
+b6ff9b5,2012-04-23 22:29:02,Adding more cstddef includes to headers that use NULL,0,0.0,0
+88260ca,2012-04-23 22:50:36,grammar_data.cc is a generated file  so we should probably delete it during 'make clean'.,0,0.0,0
+4ff012f,2012-04-23 23:21:06,Ignore generated files.,0,0.0,0
+29b3529,2012-04-24 16:14:45,Regenerate configure to pull in Ben's fparser.m4 change,0,0.0,0
+91d0b27,2012-04-27 17:38:51,Added DofMap::remove_dirichlet_boundary(),0,0.0,0
+0cf319f,2012-05-04 22:27:17,I just ran into an application bug where point_value() was being called on an element which didn't contain the point.  It would be nice if such bugs were runtime errors (at least in debug/devel modes) rather than harder-to-catch numerical errors.,1,0.0,0
+3f4a244,2012-05-08 18:50:09,BoundaryInfo::sync could fail for some partitionings of some mesh types.  Fixed now.,1,1.0,1
+cf62a79,2012-05-09 18:25:44,Two tweaks so that Elem::print_info() will work on Side proxy objects as well.,0,0.0,0
+8d26fa4,2012-05-09 20:28:05,Slight optimization  major bugfix (for heterogenous constraints) added to process_constraints.  This ought to fix broken interactions between dirichlet constraints and anything that constraints with respect to them.,1,1.0,1
+c809136,2012-05-14 04:56:16,Don't leak sout,0,1.0,0
+a398b0a,2012-05-14 04:57:06,Fixes for style and performance issues found by cppcheck,1,1.0,1
+0f742f2,2012-05-14 04:57:47,Adding static_analysis make target,0,0.0,0
+3c045bc,2012-05-14 05:19:57,Adding another static_analysis tool - Google's cpplint.py  with support for .C extensions tacked on in the source code and some warnings disabled via the command line.,0,0.0,0
+079e73e,2012-05-14 15:11:05,I'd accidentally committed some deliberately-broken code that I was throwing at static testing tools.  Let's get rid of that now...,0,1.0,1
+727fe0a,2012-05-15 16:53:10,Don't echo commands in fparser's .dep target.,0,0.0,0
+afac74a,2012-05-15 19:09:36,Some initial cleanup according to suggestions from cpplint.py,0,0.0,0
+132a31c,2012-05-15 19:20:58,cpplint output fix,1,1.0,1
+7164c8d,2012-05-15 21:20:48,Bugfixes/enhancements for the Abaqus reader: * Fixed bug in reading comma-separated values in Abaqus reader. * Allow for general Abaqus->libmesh node mapping. * Better code for reading comma-separated element connectivities.,1,1.0,1
+9364dfe,2012-05-18 23:02:05,Users who want a carriage return after printing a TypeVector (or Point  etc) can print one themselves  users who don't want a carriage return should be able to omit it.,0,0.0,0
+8905bbf,2012-05-18 23:38:22,Check for duplicate HilbertIndices as they're being generated  or we'll have a much more confusing error later in the I/O process.,1,0.0,0
+1c84e30,2012-05-19 07:57:58,Using cerr is necessary if we hit duplicate hilbert key errors on processors other than 0.,1,0.0,0
+728d156,2012-05-19 14:53:20,Fix for --enable-complex,1,1.0,1
+734c0ba,2012-05-21 22:14:50,rbOOmit change: renamed RBParametrizedObject to RBParametrized  and moved parameter ranges into RBParametrized so that we can check validity in set_current_parameters.,0,0.0,0
+45450d2,2012-05-22 00:34:00,rbOOmit change: API change  renamed current_parameters to parameters in RBParametrized  and subclasses.,0,0.0,0
+6ca1330,2012-05-22 02:16:50,rbOOmit change: added parameter initialize from file to RBParametrized. Useful in the online stage.,0,0.0,0
+9c32386,2012-05-22 17:53:46,rbOOmit change: removed superfluous log,0,0.0,0
+669d603,2012-05-24 18:14:54,Fixing stupid bug in TetGenIO.,1,1.0,1
+c474d70,2012-05-24 20:32:49,Updated svn:ignore,0,0.0,0
+ade4a8a,2012-05-24 21:41:41,Not sure how to disable -ksp_right_pc if it's in LIBMESH_OPTIONS  and I'm sick of this example failing with my preferred LIBMESH_OPTIONS  so let's just disable LIBMESH_OPTIONS entirely here.,1,0.0,0
+41dc4f5,2012-05-24 22:24:46,Ignore LIBMESH_OPTIONS in any Makefile where they might conflict with -ksp_type cg,0,0.0,0
+9a74980,2012-05-24 22:31:52,Updated svn:ignore,0,0.0,0
+76ec4fe,2012-05-24 22:54:22,Broken DofObject redistribution triggers these asserts - let's define an intermediate variable to make them easier to probe in gdb,0,0.0,0
+203b688,2012-05-24 23:02:26,Enable communication of DofObject indices when we pack Elem or Node classes.,0,0.0,0
+74f8f46,2012-05-25 12:58:48,Adding  using Elem::packed_size(),0,0.0,0
+2e25416,2012-05-28 05:52:54,rbOOmit change: Removed RBParamSubdomain code since it is not being actively maintained. Also  major API change  introduced RBParameters class which is indexed based on string names of parameters.,0,0.0,0
+e5236cf,2012-05-29 15:30:23,Make sure we reserve enough buffer space for dof indices too,0,0.0,0
+f3fcb4c,2012-05-29 17:10:34,rbOOmit change: added RBParaters class. This wraps a std::map<std::string  Real> so that we index each parameter value by its name.,0,0.0,0
+13de209,2012-05-30 05:33:25,Remember to test for remote_elem before trying to create node constraints at an interface,0,0.0,0
+516a99c,2012-05-30 17:22:06,added \usepackage{fullpage} to fix ugly page formatting in xda_format.pdf,1,0.0,0
+3c40c65,2012-05-30 17:25:08,removed manual margin sizes to fix ugly page formatting in xda_format.pdf,1,0.0,0
+4d77d05,2012-05-30 21:30:12,Ignoring some generated files in examples.,0,0.0,0
+0ea429e,2012-05-30 23:10:10,Allow overriding of initial mesh size  for testing purposes,0,0.0,0
+e8e08e2,2012-05-31 04:55:48,rbOOmit change: corrected the read_header call in RBEvaluation so that it now works properly. The problem was that the Xdr version was not set before the call to read_header (needed header_data.set_version). Also  examples have been changed since we can now read basis functions in without doing EquationsSystems::read first.,1,0.0,0
+176619b,2012-05-31 05:07:33,rbOOmit change: In RBEvaluation::read_in_basis_functions  get header version number from io_version_string,0,0.0,0
+5c9602f,2012-05-31 17:42:16,Creating FEAbstract from which FEBase derives. Towards vector-valued finite elements.,0,0.0,0
+d6fe117,2012-06-01 04:14:06,"Remove .depend too when doing a ""make clean""",0,0.0,0
+13ef034,2012-06-02 13:56:32,(Ugly hack to) make sure that BOOST_DIR and/or BOOST_ROOT directories get tested before system directories do.  The user should be able to override system defaults  not the other way around.,0,0.0,0
+5195c56,2012-06-02 18:04:46,Parmetis manual recommends 1.05 here  and newer parmetis gives an error with 1.0 or less,1,0.0,0
+9df242d,2012-06-02 18:07:21,Upgrade to latest METIS and ParMETIS,0,0.0,0
+0bbac4b,2012-06-02 23:38:25,Updated configure to match new m4 files,0,0.0,0
+2f292d8,2012-06-03 02:19:05,Clarify comment,0,0.0,0
+20a04b8,2012-06-03 03:41:53,After the element repartitioning on a distributed mesh  each processor doesn't yet know about all it's own new elements. Partiitoner::set_node_processor_ids() was not written to handle such a case.  We could rewrite it  but for now it seems simpler to just do a redistribute() (if applicable - making it a MeshBase virtual decides that) immediately after element repartitioning.  redistribute() and gather_neighboring_elements() don't depend on node processor_ids being correct yet.,0,0.0,0
+3fbfe2c,2012-06-03 03:54:30,Node redistribution should redistribute dof indices too,0,0.0,0
+dfcc06a,2012-06-04 16:35:54,cast to a pointer instead of a reference and workaround failed cast for the serial mesh case,1,0.0,0
+e138f27,2012-06-04 16:56:36,Debug mode does not like commas at the end of initialization lists.,0,0.0,0
+568beda,2012-06-04 16:56:50,Make sure LIBMESH_DIR is set to something sensible in Makefiles.,0,0.0,0
+5a886e1,2012-06-04 17:10:42,Make sure LIBMESH_DIR is set to something sensible in Makefiles.,0,0.0,0
+b2fa1d2,2012-06-04 18:16:34,remove debugging code,0,0.0,0
+0d8973a,2012-06-04 20:52:07,Parmetis' make system uses '-D__thread=' when compiling on Mac.  Since we ripped the source out of their build system and did not bring along this compiler flag  use the configure'd value of LIBMESH_TLS (which should be more portable anyway) instead of __thread for the handful of variables which had this attribute in Parmetis.,0,0.0,0
+4a26ad9,2012-06-08 20:40:30,PETSc API and version changes.,0,0.0,0
+d6a70b2,2012-06-08 20:40:57,libMesh can now serve up (recursive) splits for PETSc's PC(G)ASM and PCFIELSPLIT.,0,0.0,0
+9d4cd40,2012-06-08 20:41:21,Updated PETSc version guards for petsc-3.3.,0,0.0,0
+f922bd4,2012-06-08 20:41:43,VI is turned on by -snes_type virs.,0,0.0,0
+5838d6b,2012-06-10 20:36:52,Fix for FEVectorBase second derivatives case,1,1.0,1
+ce4cb11,2012-06-10 21:06:25,One more fe_vector_base/ENABLE_SECOND_DERIVATIVES bugfix,0,1.0,1
+2c0bca2,2012-06-11 15:47:49,Do not renumber when doing mesh copy,0,0.0,0
+845c28d,2012-06-11 15:53:21,preserve node ordering as much as possible,0,0.0,0
+a78001e,2012-06-11 20:29:55,Add get_time_steps() to ExodusII_IO,0,0.0,0
+52f5ec0,2012-06-11 22:03:04,Adding LIBMESH_DEFINE_HASH_POINTERS so we can build unordered sets/maps/multisets/multimaps of pointers even when our best unordered container implementation is __gnu_cxx::hash*,0,0.0,0
+ca4f83a,2012-06-11 22:03:55,Use LIBMESH_DEFINE_HASH_POINTERS for max compatibility for an unordered Node* set,0,0.0,0
+87c1f6b,2012-06-12 02:06:26,rbOOmit change: commented out some output to libMesh::out when reading/writing basis functions,0,0.0,0
+c8e7d5c,2012-06-13 19:51:28,"Adding a ton of ""this->""  so that the C++ compiler won't have to act confused when we replace the FEBase with a templated base class",0,0.0,0
+ea271f4,2012-06-13 23:30:35,Output-templated FEBase and FE classes are passing our tests now. Next step should be a simple LAGRANGE_VEC FEFamily to actually exercise the FEVectorBase case.,0,0.0,0
+82db225,2012-06-14 16:58:50,Shutting up unused variable warnings.,0,0.0,0
+b7f58c2,2012-06-14 18:37:26,rbOOmit change: added option to not read in error bound data,1,0.0,0
+d2c502b,2012-06-18 15:57:32,Cleaning up print_trace.C.  Spliting the demangling function so that it can handle individual types as well as stack trace information.  Changing parameters.h so that it will call the new damangle function.,0,0.0,0
+9da59f9,2012-06-18 18:01:59,We only need these internal methods when reference counting is enabled.,0,0.0,0
+6c81015,2012-06-18 18:22:03,perf_log.h shouldn't need to pull in o_string_stream.h,0,0.0,0
+3228ad1,2012-06-18 18:41:39,Remove redundant find_neighbors() call,0,0.0,0
+6e6be95,2012-06-18 18:59:23,Let's give remote_elem a unique id,0,0.0,0
+2f87ebc,2012-06-18 23:33:27,Make debugging failures here easier,0,0.0,0
+911805a,2012-06-18 23:33:47,Fix for uninitialized data when copy constructing ParallelMesh,1,1.0,1
+64cb5ed,2012-06-19 00:00:07,Make sure ParallelMesh gets max_node_id etc. correct after prepare_for_use even when it hasn't been told to renumber those ids. Get rid of a redundant recalculate_n_partitions.,0,1.0,0
+6de03e2,2012-06-19 15:57:00,Avoid ParMETIS when we don't have enough elements per partition.,0,0.0,0
+91d458c,2012-06-19 19:35:46,rbOOmit change: slight change in API for RBParameters.,0,0.0,0
+ab444d8,2012-06-19 19:53:30,Adding FEInterface::map().,0,0.0,0
+e87381c,2012-06-19 19:53:41,Fixing Elem::point_test() (called by Elem::contains_point()) to detect cases in which FEInterface::inverse_map() projects points for 1D/2D elements living in higher dimensional space to a location *not* on the element  even though on_reference_element() thinks they are.,1,1.0,1
+f13626a,2012-06-19 22:05:45,Hex8::node_child_map[] only seemed to be used by Hex::is_child_on_side()  so declare it locally to that function.,0,0.0,0
+df3b02c,2012-06-19 22:05:57,Fixing unused variable warnings when !LIBMESH_ENABLE_AMR.,1,1.0,0
+c8cdda4,2012-06-19 22:06:13,Fixing Tet::is_child_on_side(),1,1.0,1
+7.695e+16,2012-06-19 22:06:28,Moving copy-n-pasted code from Tet4 and Tet10 classes into their base class.,0,0.0,0
+fca959c,2012-06-19 22:15:16,A few macros factors away 2000 lines of switch statements...,0,0.0,0
+86b4ed1,2012-06-20 13:37:41,Fix for !LIBMESH_ENABLE_HIGHER_ORDER_SHAPES.,1,1.0,1
+de36c0c,2012-06-20 13:51:56,Use void_fe_switch for FEInterface functions returning void.,0,0.0,0
+4e75ed9,2012-06-20 16:56:51,Fix for some linker errors using intel 11.1 in oprofile mode - the new point_test code seems to want more FE::map options to link against  even when it's obviously still only going to be called with FE<LAGRANGE>?,1,1.0,1
+1f20452,2012-06-20 17:58:44,Fixes for InfElemBuilder in the empty partition case,1,1.0,1
+10e29da,2012-06-20 20:16:43,Removing stale and unnecessary header that got accidently committed awhile ago.,0,0.0,0
+24ba03e,2012-06-20 23:27:59,Keep any remote_elem links correct on any new elements created by MeshModification functions,0,0.0,0
+d3df926,2012-06-20 23:39:43,Fix constructor for non-scalar-valued FE,1,1.0,1
+6d4fc11,2012-06-21 00:02:22,Elem::subactive ought to query parents  not children  or it can break in ParallelMesh situations where some of those children are remote.,0,0.0,0
+f9a2a3e,2012-06-21 00:21:53,When --enable-parmesh is on  it's still better to run ParallelMesh examples using SerialMesh than to avoid running them altogether.,0,0.0,0
+99fe490,2012-06-21 00:30:09,family_tree_by_side needs to be remote_elem aware,0,0.0,0
+7912028.0,2012-06-21 00:51:38,Include neighbor information when packing and unpacking elements.,0,0.0,0
+82d4161,2012-06-21 04:36:48,Adding FEAbstract::build which will give back an AutoPtr<FEAbstract>. Isn't being used yet.,0,0.0,0
+848c565,2012-06-21 22:36:01,Adding LAGRANGE_VEC finite element with updates to underlying infrastructure to handle it. Includes a new vector_fe example that tests it.,0,0.0,0
+b30d968,2012-06-21 23:50:32,Enforce const-correct use of MeshBase::elem()  fix library code that wasn't const-correct.,1,1.0,1
+10f6b21,2012-06-22 01:23:55,Created FEFieldType and changed FEInterface::is_vector_type to FEInterface::field_type. Current types are TYPE_SCALAR and TYPE_VECTOR.,0,0.0,0
+af5225e,2012-06-22 04:10:14,Have fem_system_ex1 clean up after itself a little better. Also  use write_timestep instead of write_equation_systems to demo unsteady output appropriate for reading by ParaView.,0,0.0,0
+966da2f,2012-06-22 06:19:23,Modifying an original mesh Elem (rather than making and modifying a copy) for ALE is an ugly non-const-correct non-thread-safe hack.  We can at least correct the API for now  and get to the implementation later.,0,0.0,0
+31e201e,2012-06-22 06:44:57,Fixes to allow our const iterators to behave like const iterators,1,1.0,1
+3db8187,2012-06-22 06:47:04,const iterators now behave like const iterators,0,0.0,0
+a89b7e9,2012-06-22 08:12:09,Missed a const-correctness fix for --enable-vtk,1,1.0,1
+7869db1,2012-06-22 09:55:20,"Reverting proper const iterators until I figure out how to fix that ""returning reference to temporary"" problem.",1,0.0,0
+e862397,2012-06-22 18:24:34,Let's write a .e file instead of .exo to be consistent with other examples?,0,0.0,0
+6534891.0,2012-06-22 19:20:37,rbOOmit change: By default we now write out all data in binary rather than ASCII,0,0.0,0
+abd9453,2012-06-22 20:40:08,Fixes for --disable_amr,1,1.0,1
+4f4ae09,2012-06-22 20:43:27,Fixes for --enable-complex,1,1.0,1
+afc09b8,2012-06-25 23:44:06,Missed a spot for including vector elements in FEInterface.,0,0.0,0
+2d6ae8f,2012-06-26 20:33:55,Add Elem::RefinementState specialization for string_to_enum/enum_to_string,0,0.0,0
+63ca09f,2012-06-26 22:28:01,Do not generate sparsity pattern for non overlapping subdomain restricted variables,0,0.0,0
+6cd2469,2012-06-27 02:23:16,Better updates to local object count estimates,0,0.0,0
+e6945d3,2012-06-27 03:09:22,Add MeshBase::query_{elem node_ptr} methods.  Now element and node accessor behavior is implementation independent: elem/node_ptr assert that the requested element exists  query_elem/node_ptr simply return NULL if it doesn't.,0,0.0,0
+66d4218,2012-06-27 03:11:52,To do AMR/C load balancing  we need to pack/unpack old_dof_object as well when communicating DofObject subclassses between processors.,0,0.0,0
+6b7067d,2012-06-27 03:17:11,With the new elem/query_elem semantics  these asserts become redundant,0,0.0,0
+7cd1710,2012-06-27 03:18:34,Restoring some find_neighbors() remote_elem behavior  slight refactoring,0,0.0,0
+e2aac24,2012-06-27 08:16:27,Forgot an important part of the r5737 patch  now Elem packed_size should be correct again,1,0.0,0
+8875f57,2012-06-27 17:05:40,Patch from Ben Spencer:,1,1.0,1
+ba9ee5e,2012-06-27 17:05:49,Patch from Ben Spencer:,1,1.0,1
+60252a3,2012-06-27 17:06:01,Patch from Ben Spencer:,1,1.0,1
+5e07553,2012-06-27 17:22:07,Adding MeshTools::libmesh_assert_equal_n_systems() as a way of debugging miscommunicated DofObject problems,1,1.0,1
+9fa5b56,2012-06-27 17:23:24,More informative warning message when writing xdr/xda in parallel.,0,0.0,0
+3cda73a,2012-06-27 17:25:46,Fixed comment typo,1,1.0,0
+57f2756,2012-06-27 18:23:53,Forgot an important part of the r5736 patch - now PackedElem::unpack uses query_elem appropriately.,1,0.0,0
+b606385,2012-06-28 15:23:51,Removing duplicate data structures (they're in fe_base.h). I could've sworn I had removed these originally. Would be nice if C++ at least warned you about it...,0,0.0,0
+267d5ca,2012-06-28 21:40:55,Fix for FEMSystem for when user forces numerical Jacobian calculation. Updated adjoints_ex1 to do that to test it. Thought I'd committed this awhile ago...,1,1.0,1
+1a6cc1f,2012-06-29 18:29:11,Initial support for vector-valued elements in FEMContext. This also includes updating DirichletConstraint to handle vector elements. The newly added vector_fe_ex2 exercises both new capabilities.,0,0.0,0
+1628090.0,2012-06-29 20:48:56,Fix for vector-valued FEInterface::shape. This shouldn't have been templated. Left it templated in the header to keep it cleaner there.,1,1.0,0
+a0ef9d4,2012-06-29 23:22:53,Added MeshTools::libmesh_assert_old_dof_objects,0,0.0,0
+bf6d49c,2012-06-29 23:45:06,Added Elem::make_links_to_me_local()  a method for restoring mesh topology after redistributing elements between processors.,0,0.0,0
+8274137.0,2012-06-29 23:48:40,Express RefinementState as text rather than numeric codes when printing Elem info,0,0.0,0
+8f85d97,2012-06-30 00:31:31,Make vector_fe_ex1 clean up after itself.,0,0.0,0
+4be8aec,2012-06-30 00:53:25,Checkpointing work on making FEMContext compatible with vector-elements. These changes added templated interior  side  and point methods. The old API was kept  but internally calls the new API.,0,0.0,0
+1a09052,2012-06-30 01:38:07,Added quadrature rule accessors to FEMContext. Updated all examples accordingly. qrules still public at this point.,0,0.0,0
+15d3397,2012-06-30 19:53:47,Adding helper function called from Parameters::Parameter<T>::print(...) so that specialization on basic vector types is no longer needed,0,0.0,0
+1a1c2bf,2012-06-30 23:13:25,Updated svn:ignore,0,0.0,0
+e6b265a,2012-07-01 05:24:53,Allow duplicate adds of existing elements/nodes to a ParallelMesh. This will help simplify some of the communication code.,0,0.0,0
+d12bddf,2012-07-01 10:29:28,Added BoundaryInfo::n_boundary_ids() to count the number of bcs at a node or an element side,0,0.0,0
+3f95aa3,2012-07-02 03:43:38,Add Parallel::Request::PostWaitWork to enable completing a Parallel:: operation after the request wait is finished,0,0.0,0
+614c0d6,2012-07-02 03:49:27,Fix that constructor  add potentially-missing std header,1,1.0,1
+01718a9,2012-07-02 15:44:42,Headers go outside the libMesh namespace  need to include all dependencies,0,0.0,0
+afc9c7d,2012-07-02 16:21:17,Adding a --handle-mpi-errors command line option,0,0.0,0
+921efce,2012-07-02 17:08:40,"Let's run examples in alphabetical order rather than ""whatever random order the filesystems gives us"" order",0,0.0,0
+2de4982,2012-07-02 18:28:37,Fixes for vector-enabled FEMContext methods with --enable-complex,1,1.0,1
+b181226,2012-07-02 18:29:44,DirichletConstraints fixes for --enable-complex,1,0.0,1
+62c5135,2012-07-02 19:41:40,A stream proxy should usually return itself  not return the raw stream.,0,0.0,0
+5e7b582,2012-07-02 19:43:50,It's useful to have vector/tensor implicit construction and assignment from any scalar  not just the underlying data type,0,0.0,0
+a89e425,2012-07-02 19:56:17,Fixes for --enable-complex,1,1.0,1
+dda62d8,2012-07-02 21:57:16,We should probably support consistent MeshBase::mesh_dimension() even on distributed meshes with empty subpartitions,0,0.0,0
+2bc793f,2012-07-02 22:12:37,"Use the same ""gnuplot_script"" output file name  svn ignore those outputs",0,0.0,0
+96b4828,2012-07-03 00:33:36,Test consistency of element processor ids in debug mode,0,0.0,0
+bac53fc,2012-07-03 01:25:54,We need valid element proc ids before we can hope to get consistent node proc ids,0,0.0,0
+8f0ae5a,2012-07-03 04:36:59,Remove some old debugging code,0,0.0,0
+93efd2a,2012-07-03 18:02:51,Directly include iostream header,0,0.0,0
+561e1f7,2012-07-03 18:03:38,Print id and processor_id in addition to location when printing nodes,0,0.0,0
+624d90f,2012-07-03 18:07:13,Make Elem printing a little more compact.,0,0.0,0
+41e8133,2012-07-03 18:38:30,Catch NULL elements with an assert  not a segfault,0,0.0,0
+8868673.0,2012-07-03 19:04:29,Fixes for --disable-amr,1,1.0,0
+a1ce518,2012-07-03 19:23:40,Consistently use unsigned int for libMesh processor ids,0,0.0,0
+e73d28f,2012-07-03 19:30:53,Fix for --enable-complex,1,1.0,1
+b004d14,2012-07-03 19:44:26,Typo fix,1,1.0,0
+52ce3ac,2012-07-03 19:52:21,Fix (or workaround? the real fix should probably be to our Vector/Tensor constructors...) for Real != double,1,1.0,1
+de0f78c,2012-07-03 20:00:10,Optional MessageTag arguments for Parallel::send_receive(),0,0.0,0
+045c32c,2012-07-03 20:04:47,Avoid warnings,0,0.0,0
+40d7779,2012-07-03 20:06:16,Fix for PostWait uses,1,1.0,1
+9142dd9,2012-07-03 20:28:32,Use SerialMesh with tetgen until I can track down the (not recent!) ParallelMesh regression there,0,0.0,0
+d69a43d,2012-07-03 21:22:57,Request::post_wait_work is now a reference-counted pointer so it will play nicely with STL containers  and is now hidden behind an accessor function.,0,0.0,0
+f867055,2012-07-03 21:49:26,Request still needed a copy constructor and some more cleanup() work to fix STL compatibility and memory leaks when using post_wait_work,1,0.0,0
+4b72372,2012-07-03 22:28:47,rbOOmit API change: several things were poorly named in rb_theta_expansion and rb_assembly_expansion. Also  renamed _norms members to _innerprods  which is a more accurate description.,0,0.0,0
+5882b1c,2012-07-03 22:36:40,Parallel verify can be written more tersely now,0,0.0,0
+70e8860,2012-07-03 22:43:42,Wrap the libmesh_assert_valid*procids declarations into one templated function that can be called from ParallelMesh::renumber_dof_objects,0,0.0,0
+d782115,2012-07-03 22:50:05,g++ was pickier than icpc about how template function specializations are declared within a namespace,0,0.0,0
+8edfef6,2012-07-03 22:59:44,"Add ""packed_range"" Parallel:: functions.  This can greatly simplify MPI communications of variable data size objects like Elem and Node",0,0.0,0
+3235c22,2012-07-03 23:01:50,Parallel::pack/unpack/packed_size specializations for Node and Elem  now they are usable with Parallel::*packed_range* calls,0,0.0,0
+5e48752,2012-07-03 23:05:12,Some output iterator options to make Parallel:: packed_range calls useful.,0,0.0,0
+0e2a45e,2012-07-03 23:09:03,Fix bug where processors could get our of sync when generating DoF constraints on a distributed mesh,1,1.0,1
+6b97e45,2012-07-03 23:11:36,Check parallel node processor id consistency too,0,0.0,0
+0aa4e38,2012-07-03 23:20:23,Use packed_range methods for MeshCommunication,0,0.0,0
+4589a66,2012-07-04 17:14:05,Fix for --disable-amr,1,1.0,1
+90be9d7,2012-07-04 17:24:46,Fixes for --disable-mpi,1,1.0,1
+421261b,2012-07-05 17:07:58,Fix capitalization typo from the m4 refactoring,1,1.0,0
+90e6b7d,2012-07-05 17:21:16,Fix for --disable-amr,1,1.0,1
+217f700,2012-07-05 17:21:49,Fix for --disable-second,1,1.0,1
+ab12fd4,2012-07-05 19:45:11,An extra hundred bytes is worth it to avoid truncated trace files,0,0.0,0
+b3a3469,2012-07-05 20:52:05,fix shadow parameter error,1,1.0,1
+450fc0b,2012-07-05 21:40:07,More error checking when packing a range,1,0.0,0
+483a0fc,2012-07-05 21:45:04,More ParallelMesh fixes:,1,1.0,1
+7022061.0,2012-07-05 22:43:58,Fix for --disable-amr,1,1.0,0
+74225bc,2012-07-05 23:11:27,"Add ""magic header"" constants to range-packing routines for Elem and Node.  One resultant bug fix in Node packing  more to come.",1,0.0,1
+59838d9,2012-07-06 03:34:11,rbOOmit change: added boolean flag exit_greedy_on_repeated_parameters to quit the greedy when we encounter the same parameters twice in a row (in some cases this indicates saturation of the error bound due to rounding error). Also  cleaned up some whitespace.,1,0.0,0
+e7a33e9,2012-07-06 05:00:48,rbOOmit change: in exit_on_repeated_greedy_parameters  check all parameters in greedy_param_list not just the most recent.,0,0.0,0
+aae538b,2012-07-06 13:14:04,More assertions - this code seems to be working fine with SerialMesh and non-load-balanced ParallelMesh but we've still got a corner case failing during redistribution.,1,0.0,0
+ce17575,2012-07-06 20:27:20,--disable-amr fixes,1,1.0,1
+1a0e1c4,2012-07-06 21:04:51,Using SerialMesh with TetGen for now,0,0.0,0
+2188-02-01,2012-07-06 21:07:23,ParallelMesh: Assertion adjustments  change query_ functions and renumber_ behavior to handle the possibility of NULL container entries from delete_node(),0,0.0,0
+d0ccbab,2012-07-07 17:27:38,Added Elem::type_to_n_sides map,0,0.0,0
+81ce54f,2012-07-07 17:29:10,"Dividing packed_size() into packable_size() (based on object) and packed_size() (based on data buffer).  This will allow us to ""upgrade"" existing objects easily.",0,0.0,0
+b42112b,2012-07-09 15:01:36,rbOOmit change: Modified how we store temporal discretization parameters in TransientRBEvaluation and TransientRBConstruction. Now inherit from RBTemporalDiscretization  rather than store an object.,0,0.0,0
+ee23018,2012-07-09 19:18:45,Vectors and tensors should still be constructable from T arguments even in cases where T isn't a scalar,0,0.0,0
+c57d90e,2012-07-09 20:03:35,rbOOmit change: Write out and read in parameter ranges in write_offline_data_to_files/read_offline_data_from_files. Also  do a similar thing for the temporal discretization data.,0,0.0,0
+c2c8dd3,2012-07-10 01:29:55,rbOOmit change: added an endl to improve formatting,0,0.0,0
+3005c00,2012-07-11 02:44:31,rbOOmit change: Check whether the RBEIMEvaluation solve is the same as the previous one  and short-circuit if so. This gives a big speedup since we otherwise do _many_ unnecessary solves.,0,0.0,0
+640cfe1,2012-07-11 20:41:53,rbOOmit change: Fixed up EIM for cases with more than one variable,1,1.0,1
+f827b7e,2012-07-11 22:27:52,rbOOmit change: cleaned up the EIM API a bit more,0,0.0,0
+9d0b3ae,2012-07-12 03:35:26,rbOOmit change: fixed error in RBEIMConstruction::evaluate_basis_function  previously the vector wasn't being updated correctly,1,0.0,1
+53fe242,2012-07-12 18:41:28,rbOOmit change: Improved EIM code. The offline is much faster because we store the parametrized functions on the training set rather than recomputing. Also  moved evaluate_basis_function from RBEIMConstruction into a new class  RBEIMAssembly. Also fixed parallel bug in RBConstructionBase when we have a serial training set.,1,1.0,1
+6d4a7d7,2012-07-12 19:10:05,New reduced_basis example  reduced_basis_ex6: demonstrates EIM for non-affine geometric mappings in 3D.,0,0.0,0
+b44ff57,2012-07-12 19:10:49,uncommented LIBMESH_DIR in example,0,0.0,0
+fa85b1c,2012-07-12 20:15:54,Making some FE map functions protected. This will break backward compatibility for anyone directly using these functions  but no one complained on the user and devel lists.,0,0.0,0
+6c97050,2012-07-14 01:25:22,Updated reduced_basis_ex6  now has 3 parameters rather than just one.,0,0.0,0
+1df0ac0,2012-07-14 02:41:35,Fixed boundary condition IDs in reduced_basis_ex6,1,1.0,1
+1e8674d,2012-07-14 03:00:48,"Committing patch from Lorenzo Botti which fixes and improves XYZ finite elements. From his email: ""The major change is related to a scaling introduced to improve the condition number on small and big elements (small and big compared to the reference element). With such a scaling on linear hexs the XYZ is equivalent to a MONOMIAL basis  independently of the element size. On curved elements the approximation properties of this scaled XYZ should be better than MONOMIAL and should allow to go up to a third or fourth degree approximation without any trouble."" Also added miscellaneous_ex8 which is a copy of misellaneous_ex5  but uses XYZ elements instead of MONOMIAL elements. Tested successfully in 2D and 3D.",1,1.0,1
+132faf5,2012-07-14 03:47:38,rbOOmit change: Modified RBEIMTheta so that evaluate picks out a subset of the parameters.,0,0.0,0
+94768b0,2012-07-14 04:00:38,rbOOmit change: fixed typo in output message,1,0.0,0
+3d1bd28,2012-07-14 04:22:22,fixed comments in reduced_basis_ex6,1,0.0,0
+6499da4,2012-07-14 05:03:57,Removed exmaple miscellaneous_ex8 and have miscellaneous_ex5 run twice  first with MONOMIAL  then with XYZ elements.,0,0.0,0
+3803efb,2012-07-15 22:41:58,Corrected the geometric mapping  the y-component was wrong.,1,0.0,0
+737488d,2012-07-16 00:29:06,Added comment about bc_id in reduced_basis_ex6,0,0.0,0
+a923f63,2012-07-16 17:05:27,Made some changes to reduced_basis_ex6 (shifted the mesh so it's centered at the origin),0,0.0,0
+6cc4adf,2012-07-17 13:41:25,rbOOmit change: fixed RBEIMConstruction compilation error with --enable-complex,1,0.0,1
+ff25b55,2012-07-17 13:59:55,rbOOmit change: added matrix->close() in TransientRBConstruction::truth_solve to prevent a run-time error,1,0.0,0
+66200b1,2012-07-17 14:33:53,fix for stricter compilers,1,1.0,1
+b5c8c54,2012-07-17 15:42:26,standalone header fix,1,1.0,1
+76ad997,2012-07-17 15:44:13,rbOOmit change: moved matrix->close call into truth_assembly in TransientRBConstruction,0,0.0,0
+0fa0b8e,2012-07-18 13:53:54,Adding a print_trace to Parameters::get(...) for better debugging purposes,0,0.0,0
+3ac3da8,2012-07-19 16:30:36,infrastructure to support new tecplot binary file formats  should be able to parallelize tecplot I/O,0,0.0,0
+7901d03,2012-07-20 02:14:48,rbOOmit change: added mkdir call in RBEvaluation::write_out_basis_functions so that it works when the directory  directory_name  doesn't exist,0,0.0,0
+b4e53ad,2012-07-20 21:51:57,Printing a screen trace by default when an error is thrown in serial,1,0.0,0
+e913c9a,2012-07-22 16:28:56,Changed reduced_basis_ex5 so that it is a 3D cantilever beam  rather than 2D,0,0.0,0
+b57edf9,2012-07-22 16:46:27,Added systems_of_equations_ex6  a 3D cantilever. Note the default iterative solvers in PETSc seem to struggle a bit for this problem.,1,0.0,0
+268e66a,2012-07-23 00:27:24,corrected K's name in the example,0,0.0,0
+f444a43,2012-07-23 15:28:45,Updated publications for July 2012.,0,0.0,0
+723fc37,2012-07-23 15:33:37,Fixing weird character encoding.,1,1.0,1
+1408125.0,2012-07-23 19:13:37,honor --fc and --flags,0,0.0,0
+9178005.0,2012-07-25 05:20:33,rbOOmit change: Greedy should behave sensibly when we have 0 parameters,0,0.0,0
+3e80c09,2012-07-25 18:14:26,Adding DecrementRank to vector and tensor types. Not used yet (will be used in forthcoming FETransformation).,0,0.0,0
+756ef0d,2012-07-25 19:21:44,Fixed some of the switch macros that were added for vector elements and made them more general (conforming better with what was already there).,1,1.0,1
+c83f295,2012-07-25 19:32:19,Adding NumericVector::reciprocal() and subclass implementations.,0,0.0,0
+22d0fc6,2012-07-25 19:38:42,Fix comment,1,1.0,0
+146b290,2012-07-25 19:47:43,DofMap::sys_number() can be useful public:,0,0.0,0
+7778456.0,2012-07-25 19:53:20,#include missing header,0,0.0,0
+05e863e,2012-07-25 20:18:57,Adding Elem::find_edge_neighbors version for finding neighbors of a specific edge,0,0.0,0
+01730b2,2012-07-25 23:41:28,Crazy idea: in an adaptivity example  let's default to running with adaptive refinement on!,0,0.0,0
+9.2e+61,2012-07-25 23:47:55,This should slightly improve performance in non-threaded proj constraint generation  may save us from a race condition leading to inaccurate proj constraints in a few corner cases (3D  level one rule off  or AMR combined with periodic BCs) when we're threaded.,0,0.0,0
+6a70c09,2012-07-26 04:16:47,Adding FEMap class. This (almost...) encapulates data and functions related to the reference to physical element map. It is expected that this will eventually evolve  but this is a starting point.,0,0.0,0
+e2d0021,2012-07-26 20:17:23,Performance and thread-safety requires a lock around each constraint row acquisition  not just each constraint row entry.,0,0.0,0
+09e6465,2012-07-26 23:30:29,We need to add the periodic boundaries before the init()  so they get applied to initial conditions.,0,0.0,0
+647769b,2012-07-26 23:35:07,"We need to have periodic boundary constraint equation directions be decided by a more objective standard  not just by a ""who gets there first"" system  or we can end up creating recursive constraints when running threaded or on a distributed mesh.",0,0.0,0
+05823db,2012-07-27 04:07:28,Updated svn:ignore,0,0.0,0
+36130ab,2012-07-27 04:10:12,Fixed a bug in FEMap where the Jacobian was not properly cached for affine maps (copy/paste error).,1,1.0,1
+b7e4d7f,2012-07-27 04:28:51,Fix for --disable-second,1,1.0,1
+2424f74,2012-07-27 04:41:48,Fix reciprocal() implementations for --enable-complex,1,1.0,1
+f620d04,2012-07-27 05:38:24,We only need to gather constraints on distributed meshes,0,0.0,0
+a6de42c,2012-07-28 21:57:15,Updated svn:ignore,0,0.0,0
+c6ccb45,2012-07-30 20:18:42,Adjusted solver options on vector_fe_ex2 for better convergence (i.e. only one Newton step for the linear problem).,1,0.0,0
+94941d4,2012-07-31 00:55:44,We should still be able to configure with PETSc but without MPI,0,0.0,0
+62ed58b,2012-07-31 21:08:01,These assertions aren't safe in single precision unless we base them on TOLERANCE,0,0.0,0
+0ef4150,2012-07-31 22:08:36,Adding the FETransformation classes. These handle computing the shape function values in the physical domain according to the element type  i.e. H1  HCurl  HDiv  or L2 conforming finite elements. This required updating the internal API for compute_shape_functions. curl_phi and div_phi data structures were also added. H1 transformations are fully implemented (curl and div are untested)  while HCurl transformations are partially implemented.,0,0.0,0
+9cf2ec3,2012-08-01 03:42:27,Fix compiler warnings and potential memory leaks,1,0.0,0
+985b55d,2012-08-01 14:02:40,Getting rid of warning from type_n_tensor.,0,0.0,0
+c14e489,2012-08-01 17:44:04,Adding RawAccessor<TypeNTensor<> > stub,0,0.0,0
+a834092,2012-08-01 19:50:11,Actually make the RealTensor RawAccessor actually access as described.,0,0.0,0
+904b48a,2012-08-01 20:08:07,Restructuring vector_fe_ex2 a bit for forthcoming ExactSolution update. Also made the grid coarser so it doesn't run painfully slow.,0,0.0,0
+7c5fd24,2012-08-02 15:14:32,Updating ExactSolution to begin supporting vector-valued elements. vector_fe_ex2 now leverages this capability. However  reference solutions are currently not supported for vector elements nor are H2 error values.,1,0.0,0
+5d9c7e4,2012-08-02 16:09:42,Have a warning for unimplemented functions in HCurlFETransformation instead of error. This is to allow error calculations for forthcoming HCurl elements.,1,0.0,0
+910c068,2012-08-02 20:00:59,Make max_r_steps a command line option,0,0.0,0
+5de1177,2012-08-02 22:47:47,More efficient set reassignment,0,0.0,0
+b3c6681,2012-08-02 23:22:53,Don't exit the search for primary neighbors prematurely,0,1.0,0
+11638b2,2012-08-03 16:46:40,Bugfix (hopefully the only bugfix needed) for angular periodicity cases,0,1.0,1
+de10372,2012-08-03 17:12:19,Adding missing <= and >= operators to TypeVector,0,0.0,0
+94734a4,2012-08-06 14:03:10,Specializations for --enable-complex,0,0.0,0
+b0157da,2012-08-06 14:04:23,Better solution for testing periodic BCs  make it easy to tweak number of refinement steps,0,0.0,0
+75c4e1a,2012-08-06 15:34:20,Partially revert recent constraints changes,0,0.0,0
+2782dad,2012-08-06 19:54:28,Patch from Jed Brown for SLEPc 3.3 support,1,1.0,1
+8f8583b,2012-08-07 04:28:50,change copy constructor so that it doesn't segfault when other_mesh._partitioner==NULL,0,0.0,0
+8a4f9dc,2012-08-07 04:29:19,rbOOmit change: added get_string() to RBParameters,0,0.0,0
+f5ebac4,2012-08-09 00:10:33,Added stress plotting to systems_of_equations_ex6,0,0.0,0
+61b0b52,2012-08-09 00:29:13,Added von Mises stress to systems_of_equations_ex6,0,0.0,0
+103af3a,2012-08-09 02:45:54,Add stress plotting to reduced_basis_ex5,0,0.0,0
+882fa5b,2012-08-09 02:52:57,Added some logging to reduced_basis_ex5,0,0.0,0
+7c7d4fa,2012-08-09 19:02:21,We don't need more than stubs for the unimplemented 3D Clough-Tocher case  and the cut-n-pasted code was triggering clang warnings,0,0.0,0
+69d1a4f,2012-08-09 19:03:17,Tuning parameters stored as references are dangerous.  References to temporaries are moreso.  Thanks  clang warnings...,0,0.0,0
+17cc81a,2012-08-09 19:03:52,Assorted fixes for minor clang warnings,1,0.0,0
+42685fa,2012-08-10 19:06:17,preliminary support for --enable-fpe from Cody et al,0,0.0,0
+a83ac29,2012-08-10 19:14:43,use libmesh_error(),0,0.0,0
+9abd97f,2012-08-10 20:13:22,Fix help on how to run the VI version.,1,1.0,1
+85467da,2012-08-10 20:13:29,Jed Brown: Check error codes and remove unused variables.,1,0.0,0
+eb838fd,2012-08-10 23:38:41,comment until I fix configure test,1,0.0,0
+f08c6e9,2012-08-10 23:47:22,fixed,1,1.0,1
+7aa7cf6,2012-08-12 13:53:53,System::remove_vector implementation from Jens Lohne Eftang  correct atavistic comments about adding vectors,0,0.0,0
+3dc3d3e,2012-08-13 15:59:23,Fixes for --enable-complex,1,1.0,1
+a064b7e,2012-08-13 16:39:26,Ignoring more files.,0,0.0,0
+ab97a24,2012-08-13 16:56:53,SSE instruction error checking on linux too,1,0.0,0
+bac4fe6,2012-08-13 17:48:49,If MPI was disabled at runtime  but PETSc was configured with MPI  then we need to fall back on Laspack.,0,0.0,0
+c5e6c4c,2012-08-13 17:50:40,SSE instruction error checking on linux too,1,0.0,0
+d9a5d4f,2012-08-13 17:51:16,Optimized parallel sort in n_processors() == 1 case,0,0.0,0
+55505d0,2012-08-13 17:52:08,Specializations allow us to optimize send_receive into a plain data copy in the case where n_processors()==1 and the data types match,0,0.0,0
+39f1dc8,2012-08-13 23:23:25,More ParallelMesh-friendly refinement flagging options.,0,0.0,0
+fad0c01,2012-08-14 16:58:59,Fix newly parallelized refinement flagging,1,1.0,1
+612d1ff,2012-08-15 07:49:09,--enable-complex fixes,1,1.0,1
+f180523,2012-08-15 22:02:00,Fix asserts to handle asymmetric matrix case  thanks to Jens Lohne Eftang,1,1.0,1
+9889466.0,2012-08-16 15:51:08,remove deprecated,0,0.0,0
+a8eac3d,2012-08-16 15:51:31,unused variables,0,0.0,0
+622cc0e,2012-08-16 16:18:51,Check for point locator failure in periodic boundaries and give an error message rather than segfaulting.,1,0.0,0
+ecbafef,2012-08-16 16:56:37,Fix for compilation error on my laptop,1,1.0,1
+1ea2861,2012-08-16 23:02:06,Configure test for fe{enable disable}except.,0,0.0,0
+f8d9e93,2012-08-17 14:07:50,clearer,0,0.0,0
+64ba4c2,2012-08-18 15:39:29,Use smaller block size on smaller system I/O - this seems to fix a performance problem found by Jens Lohne Eftang,1,1.0,1
+06ba11b,2012-08-22 01:23:50,Updates to sparsity pattern behavior:,0,0.0,0
+e9e3840,2012-08-22 01:24:38,With the new sparsity pattern changes  more reduced basis examples work with Laspack.  Still need to test this stuff with trilinos.,0,0.0,0
+23e1f9d,2012-08-22 01:43:57,rbOOmit change: If a CouplingMatrix is attached to an RBConstruction then we should only increment the designated blocks in matrix assembly  otherwise matrix assembly is extremely slow since we go outside the sparsity pattern.,0,0.0,0
+b871407,2012-08-22 05:58:37,Looks like r5963 included a configure generated with non-final m4 files  syncing it up now.,0,0.0,0
+cf07882,2012-08-22 06:27:12,Handle autodetection of mpich-dependent-on-mpl libraries,0,0.0,0
+eb57dc4,2012-08-22 06:30:24,bootstrap with latest m4/mpi.m4,0,0.0,0
+2fa12c7,2012-08-22 06:59:28,Fix missing assert around Parallel::verify  add additional assertions where a failed verify would otherwise lead to harder-to-debug problems later.,1,1.0,1
+dfad770,2012-08-22 08:07:19,A couple interfaces are no longer libmesh_not_implemented(). Unfortunately we do not have a libmesh_insufficiently_tested() macro...,0,0.0,0
+14c1280,2012-08-22 17:37:20,Merging in some build system goodies  utilities from the automake branch.,0,0.0,0
+51c590d,2012-08-22 17:41:58,Forgot to add utility files in that last commit,0,0.0,0
+19f4e84,2012-08-22 17:43:46,Put a copy of libmesh-config in the new standard place.  Apps written for the automake branch build system should configure against trunk too now  hopefully this will make transitioning easier.,0,0.0,0
+ae7274a,2012-08-22 20:13:31,rbOOmit change: Add a coupling matrix to RBEIMConstruction since in this case the variables are always uncoupled,0,0.0,0
+7d83f85,2012-08-22 22:57:37,Fix for combinations of heterogenous and non-local constraints,1,1.0,1
+2d354fd,2012-08-23 14:25:34,Adding documentation files for several newish examples. Should we really be checking these in at all?,0,0.0,0
+d43783a,2012-08-23 14:25:55,Adding libmesh_version.h and soft-linked libmesh-config script to .gitignore.,0,0.0,0
+23ef0e5,2012-08-23 14:52:01,Updating examples.php with recently added examples.,0,0.0,0
+2bf202d,2012-08-23 15:22:31,Fixing some broken links in presentations.php  many are still broken.,1,1.0,1
+763b550,2012-08-23 19:36:07,Updating more presentation links.,0,0.0,0
+7603d95,2012-08-24 16:38:37,Fix adjoints links,1,1.0,1
+43d0140,2012-08-24 19:59:12,"Use ""-include"" to prevent Make errors when a third-party Makefile can't be loaded.  We'll get errors anyway at link time  but this ought to prevent a ""make clean"" from failing just because a dependency got pulled out from under us.",1,0.0,0
+712eece,2012-08-24 20:30:41,Update example comments based on patches from Geordie McBain  regenerate html docs for examples,1,0.0,0
+aaf9b2b,2012-08-25 23:39:27,rbOOmit change: Added a getter to RBEIMAssembly,0,0.0,0
+82beaa7,2012-08-27 14:37:33,Another patch from Geordie McBain fixing example comments,1,0.0,0
+487869.0,2012-08-30 00:05:35,Added SerialMesh::stitch_meshes. This function stitches other_mesh to this mesh and optionally tries to merge nodes so that the two meshes are connected.,0,0.0,0
+beecad8,2012-09-05 14:23:52,Created TensorTools namespace to stash handy vector/tensor related methods that don't really belong in a class. Note that libmesh_dot and libmesh_norm were removed in this patch in place of inner_product and norm_sq respectively.,1,0.0,0
+b9da495,2012-09-05 18:21:50,Added utility tensor_tools functions.,0,0.0,0
+b01d5ef,2012-09-05 19:59:21,Put code comment in the correct place.,0,0.0,0
+8a2d530,2012-09-08 02:17:33,After one of the recent vector patches  it looks like we need an explicit tensor_value.h include under some configurations (probably with --disable-second),1,0.0,0
+b64756c,2012-09-10 20:32:07,Add NEDELEC_ONE FE type corresponding to Nedelec elements of the first type. Currently only for 2D  first order. Updated ExactSolution to compute HCurl and HDiv errors and added vector_fe_ex3 which solves curl curl u + u = f using quads and triangles and computes the error.,1,0.0,0
+c18ee17,2012-09-12 15:47:20,Allowing elemntal variables to be restricted in ExodusII output,0,0.0,0
+80ea272,2012-09-12 15:54:29,Adding accessor to retrieve the translation vector from a periodic boundary,0,0.0,0
+330b30c,2012-09-12 16:36:57,DofMap::get_info() should be accurate even when bandwidth varies from processor to processor  and DofMap::add_matrix() should take into account the possibility of processors with no DoFs.,0,0.0,0
+a6a5f10,2012-09-12 16:38:05,Fixes for PetscMatrix::init() and PetscMatrix::zero() in the not-all-processors-have-DoFs case.,1,1.0,1
+61a701f,2012-09-12 16:39:23,Switching back to new Periodic Boundary Conditions code  but updated to better handle cases of multiple PBCs meeting at a node.,0,0.0,0
+5fab6fb,2012-09-12 18:06:16,If we have a convergence failure  we don't want to spam output unless/until no higher-level code catches and handles the problem.,1,0.0,0
+aa22e52,2012-09-12 18:56:47,Change naming scheme for exodus files in this example.,0,0.0,0
+71000000000.0,2012-09-12 19:02:13,Reorganizing Periodic BC files.,0,0.0,0
+c35e0e4,2012-09-12 19:02:34,Splitting PeriodicBoundary into base and derived classes.,0,0.0,0
+b7f2885,2012-09-12 19:18:18,Fix unused variable warnings,1,1.0,0
+1c7264b,2012-09-12 19:25:17,Looks like r6012 missed a couple spots,0,0.0,0
+9b27929,2012-09-12 19:36:35,"Fix for (overzealous) gcc ""possibly uninitialized variable"" warning",1,1.0,1
+c31b3d9,2012-09-12 20:00:49,Fix typo from previous macro change,1,1.0,0
+c850a7d,2012-09-12 20:39:29,Fixing the broken PBC Fix :),1,1.0,1
+f1fdebe,2012-09-12 22:01:23,Add assertion options which print out more information upon assertion failure.,0,0.0,0
+8c06beb,2012-09-12 22:33:05,We're not getting charged by the newline...,0,0.0,0
+ea6242c,2012-09-13 00:38:49,"Fix for another overzealous ""uninitialized"" warning.",1,1.0,1
+c328edf,2012-09-13 19:25:40,symlinks from */*.h into libmesh,0,0.0,0
+3f233cd,2012-09-13 21:18:05,Change KSP/PC options for PETSc  -ksp_type cg -pc_type icc,0,0.0,0
+bcb87c2,2012-09-13 22:09:49,"change all #include ""foo.h"" directives with #include ""libmesh/foo.h""",0,0.0,0
+a04f6e2,2012-09-13 23:24:21,Remove some of the intel -something_report0 flags  they were unnecessary and in outdated versions on newer icpc  and removing them works around a distcc problem.,1,0.0,0
+a118197,2012-09-14 03:45:15,Adding in missing libmesh_version.h to new include/libmesh directory.,0,0.0,0
+4e19095,2012-09-14 16:37:41,by default do not add subdirectories to include paths,0,0.0,0
+ec5d2b6,2012-09-14 17:37:00,Fixes for LIBMESH_REQUIRE_SEPARATE_NAMESPACE,1,1.0,1
+fe12479,2012-09-14 18:08:38,Fix petscdmlibmesh.h includes to handle the path shakeup case,1,1.0,1
+4eec90c,2012-09-14 18:12:42,Leave --enable-legacy-include-paths on by default until users have had time (and an intervening official release) to adjust,0,0.0,0
+5a6c131,2012-09-14 18:39:38,"Add legacy ""using namespace"" configure option  defaulting to on.",0,0.0,0
+51462c4,2012-09-14 20:21:17,Fix one more header (and all the examples) for the separate namespace case,1,1.0,1
+cdc6b35,2012-09-16 19:46:18,namespace fix,1,1.0,1
+e10bb28,2012-09-17 20:03:54,We need systems ex6 to work in parallel too,0,0.0,0
+96a8f74,2012-09-17 22:05:16,Fix .depend generation to work with new header directory,1,1.0,1
+4.317e+48,2012-09-17 22:11:12,Additional libmesh_ assertion and error macros:,1,0.0,0
+7e76c1f,2012-09-17 22:19:52,Missed a couple bad-regexp failures when I was testing the assert_ changes without SLEPc...,0,0.0,0
+9aba7b0,2012-09-18 01:53:22,Implemented attachable DifferentiableQoI capability in FEMSystem. Updated adjoints_ex2 to test capability.,0,0.0,0
+27d1314,2012-09-18 20:25:53,Fix warnings,1,0.0,0
+3a0a16b,2012-09-18 23:01:07,Don't leak attached QoI objects,0,0.0,0
+a6cebf5,2012-09-18 23:08:22,Wrapping a potentially-voluminous warning in libmesh_do_once,0,0.0,0
+f5d3784,2012-09-18 23:09:34,Weighted Patch Recovery Error Estimator and supporting functions  from Vikram Garg,1,1.0,1
+9b844d6,2012-09-19 02:26:37,Use AutoPtr in DifferentiableQoI cloning to be a little more explicit about pointer ownership transfer.,0,0.0,0
+7917d20,2012-09-19 16:16:46,Allow outside code to test whether a matrix is already attached to a DofMap.,0,0.0,0
+96fc272,2012-09-19 19:32:09,"More work on attachable DifferentiableQoI. DifferentiableQoI can now init the System.qoi data structure. New virtual methods to handle a future ""CompositeQoI"" object.",0,0.0,0
+390768b,2012-09-19 19:34:51,Removed redundant return.,0,0.0,0
+1afdf8a,2012-09-19 20:01:25,Make these two old assertions properly cover all our current seminorms,0,0.0,0
+668051d,2012-09-19 20:04:55,Adding an example-in-progress from Vikram Garg demonstrating weighted adjoint residual error estimator,1,0.0,0
+f316c98,2012-09-19 21:31:05,Curl-curl makes ILU curl up in a ball and die.  Fortunately PETSc seems to robustly accept the last option it sees if it's given redundant -pc_type arguments,0,0.0,0
+6c879d8,2012-09-19 23:15:57,Use DifferentiableQoI::init_context where appropriate,0,0.0,0
+7c1e12f,2012-09-19 23:21:36,Adding FEMContext::side_boundary_ids(),0,0.0,0
+00b8195,2012-09-20 00:28:54,Removed postprocess methods from DifferentiableQoI. Added methods to DiffSystem needed for backward compatibility.,0,0.0,0
+551de8d,2012-09-20 04:40:39,Adding has_boundary_id methods,0,0.0,0
+f157d0c,2012-09-20 14:27:55,Patch from Roman Vetter for 1D support in OFF I/O,1,0.0,1
+5a8e6d5,2012-09-20 15:00:48,Adding nodeset names to the Mesh Generation routines,0,0.0,0
+1a940e6,2012-09-20 16:58:30,Deprecate BoundaryInfo::boundary_id()  switch examples to use boundary_ids() or has_boundary_id(),0,0.0,0
+1e53d99,2012-09-20 19:22:39,Fix typos,1,1.0,0
+0e684f6,2012-09-20 19:28:53,Let's give users an example of how to make clone() more robust.,0,0.0,0
+dbb03bc,2012-09-20 19:32:47,Add separate options for qoi assembly (or not) of external sides  internal sides  and elements.,0,0.0,0
+85f0be8,2012-09-20 19:38:28,Fix for disabled legacy namespaces,1,1.0,1
+66cd726,2012-09-20 19:41:02,init_qoi() shouldn't need a QoISet - that comes only when it's time to finally evaluate something.,0,0.0,0
+98d4b1a,2012-09-20 19:44:00,"Fixing ""don't send NULL to an ostream"" warnings",1,1.0,0
+afde7bd,2012-09-20 19:50:30,"More ""don't try to send NULL to an ostream"" fixes",1,1.0,1
+b0d4dfd,2012-09-20 21:23:15,I may not be smart enough to use while loops.  Let's fix the infinite-looping one  and also convert some more while loops to for loops where practical.,1,0.0,1
+855fc7f,2012-09-21 01:31:55,DiffSystem::attach_qoi doesn't need QoISet since init_qoi doesn't need a QoISet. Removes some warnings. Updated adjoints_ex2 accordingly.,0,0.0,0
+8aa6164,2012-09-21 14:18:35,fix for strict namespace,1,1.0,1
+f8afe50,2012-09-21 17:15:50,handle #include <foo.h> as well,0,0.0,0
+e9cc366,2012-09-21 18:18:01,Fix atavism in comment,1,1.0,1
+14335dc,2012-09-21 18:32:42,Most adjoint solves should be homogeneous on Dirichlet boundaries,0,0.0,0
+e3b3ee9,2012-09-21 22:20:41,Fix for --enable-complex,1,1.0,1
+13b3342,2012-09-21 22:30:00,Allow FEMFunctionBase users to define init_context() for efficiency.,0,0.0,0
+5aaa302,2012-09-21 22:38:07,Fixes for counting distributed constraints in parallel,1,1.0,1
+dbce13d,2012-09-22 21:21:30,"""make test_headers"" should work even without legacy header include paths",0,0.0,0
+1c94760,2012-09-23 06:34:12,LaspackVector::scale() bugfix,0,1.0,1
+0cfb501,2012-09-23 06:36:22,Adding Laspack adjoint_solve() implementation,0,0.0,0
+d1ef3ed,2012-09-23 07:48:38,Enable EpetraMatrix transposes.  adjoint solves should work now  but I see mixed test results.,0,0.0,1
+15de9bd,2012-09-23 07:49:18,Non-PETSc interfaces support adjoint_solve (or at least don't die on it) now.,0,0.0,0
+de47030,2012-09-23 15:12:31,Simplified clone() implementation,0,0.0,0
+fe6e0fa,2012-09-24 01:24:18,adjoint example 3 cleanup  commenting from Vikram Garg,0,0.0,0
+202206f,2012-09-24 03:06:02,Edits for brevity  disable adjoints_ex3 for --enable-1D-only,0,0.0,0
+9b3008a,2012-09-24 03:10:42,Adjoints ex3 doesn't use periodic BCs  so let's strip that out. It does require AMR  so let's require that.,0,0.0,0
+fbcc75b,2012-09-24 17:31:12,Fixes for --enable-complex,1,1.0,1
+fbf8a83,2012-09-25 03:33:06,More (hopefully better) adjoints_ex3 --enable-complex fixes,1,0.0,0
+0811Feb3,2012-09-25 19:47:01,Move libMesh-specific code out of m4 files which don't have to be libMesh-specific.,0,0.0,0
+c8416ae,2012-09-25 20:27:53,Remove out-dated version of PETSc configuration macro  grab additional variables in the current version,0,0.0,0
+aa4f3d5,2012-09-25 23:21:48,Fixes for configuration with newer VTK  PETSc,1,1.0,1
+1d79725,2012-09-26 00:05:45,Actually use an FETransformation for SCALAR elements and not NULL...,0,0.0,0
+154ecd0,2012-09-26 00:07:50,Have QoIContributions functor respect qoi_indices. Also  bug fix for threaded QoI assembly.,1,1.0,1
+fa6dd25,2012-09-26 21:03:26,Another --enable-complex fix  plus remove some atavistic code.,1,1.0,1
+f3cc724,2012-09-26 21:43:23,We need signal.h definitions here  and they might not be pulled in indirectly,0,0.0,0
+25e49b5,2012-09-26 22:21:23,"These solutions could be overzealous in the common ""system1.time == system2.time"" usage case",0,0.0,0
+3efbb3b,2012-09-26 22:22:06,Pass system.time to FunctionBase objects when doing projections,0,0.0,0
+0cf5d15,2012-09-26 22:26:11,Don't forget to pass system.time to the scalar evaluation,0,0.0,0
+04a4dcc,2012-09-26 22:28:39,Bugfix last commit,0,1.0,1
+c8b4b4a,2012-09-27 03:15:28,rbOOmit change: modify the valid_params method so we just print out a warning (rather than throw an error) if a parameter is outside the parameter range,1,0.0,0
+3ba1402,2012-09-27 03:30:38,update SerialMesh::stitch_meshes to throw an error if we find multiple matching nodes,1,0.0,0
+e7952da,2012-09-27 20:28:58,Another --enable-complex fix for adjoints ex3,1,0.0,1
+706e4ab,2012-09-27 23:17:15,bugfix for xmmintrin.h inclusion,0,1.0,1
+516fcc3,2012-09-27 23:30:30,Updated git ignores.,0,0.0,0
+8e046dc,2012-09-27 23:30:38,Configure was complaining about the line involving a compound test statement with enabletecplot and enabletecio.  Changing the string comparsions to be a bit safer seemed to silence it.,0,0.0,0
+770b3e5,2012-09-27 23:30:47,Print configure result messages consistently as <<< message >>>.,0,0.0,0
+8009f4e,2012-09-27 23:30:55,"Fix ""unary operator expected"" error message from compiler.m4",1,1.0,1
+365c419,2012-09-27 23:31:02,Disable __thread for clang when building shared libraries on Mac OSX.,0,0.0,0
+e5ac68f,2012-09-27 23:31:09,Regenerating configure script after recent updates.,0,0.0,0
+4029720.0,2012-09-28 00:28:52,eigen merge from branch,0,0.0,0
+0dfd93e,2012-09-30 22:20:33,These debug-mode tests can take a ludicrously long time  let's turn them off until/unless they're needed again.,0,0.0,0
+ed362d5,2012-10-02 17:08:09,"That ""empty"" string ought to be static and doesn't need to be in a header.",0,0.0,0
+c2554fc,2012-10-02 20:00:51,compiler warnings suggest that mesh_base.h needs more than a forward declaration of BoundaryInfo or our boundary_info AutoPtr might not get its delete right.,0,0.0,0
+5cf8498,2012-10-02 20:02:12,Removing some atavistic code,0,0.0,0
+9452bdc,2012-10-02 20:26:24,Add a utility for copying just selected variables from a solution file.,0,0.0,0
+3fe8324,2012-10-02 22:05:45,If we don't READ_ADDITIONAL_DATA  then read() fails spectacularly on files that were created with WRITE_ADDITIONAL_DATA.  We *really* need to autodetect this (and presumably the converse situation) in equation_systems_io.C or system_io.C in the long term.,1,0.0,0
+c77b868,2012-10-02 22:42:14,Don't accidentally shallow copy a Mesh,0,0.0,0
+14ad3bd,2012-10-02 22:55:18,Trying to shallow copy a Mesh was embarrassing  let's make sure it doesn't happen again.,0,0.0,0
+836ddf3,2012-10-02 23:11:56,This could probably be merged with meshtool  but I don't have the time to dust the cobwebs off meshtool.C right now,0,0.0,0
+3472843.0,2012-10-03 13:56:22,fix for strict namespace,1,1.0,0
+c99a537,2012-10-03 14:16:31,The MPI standard does not specify that things like MPI_SUCCESS or MPI_REQUEST_NULL be plain-old-data types.  So  the new libmesh_assert_equal_to() macros and friends can fail with messages like,1,0.0,0
+c329088,2012-10-03 16:47:52,SGI MPT fix,1,1.0,1
+4d20673,2012-10-03 18:52:49,Reverting test types  again - OpenMPI wasn't happy with second MPT fix: include/libmesh/parallel.h:397:11: error: invalid static_cast from type 'ompi_communicator_t*' to type 'int',1,0.0,0
+5879be8,2012-10-04 14:43:33,Removing outdated el() function documentation.,0,0.0,0
+f96e2ce,2012-10-04 15:11:45,More documentation fixes while we're at it.,1,0.0,0
+7f39db3,2012-10-04 23:30:56,Uninlining SparseMatrix member functions.,0,0.0,0
+d206787,2012-10-04 23:31:15,Uninlining PetscMatrix member functions.,0,0.0,0
+446d104,2012-10-04 23:31:27,Uninlining LaspackMatrix member functions.,0,0.0,0
+406552d,2012-10-04 23:31:39,Uninlining EpetraMatrix member functions.,0,0.0,0
+8f13b5e,2012-10-04 23:31:52,More documentation fixes and minor code cleanup.,1,0.0,0
+6270319.0,2012-10-04 23:32:00,Slightly modifying the declaration of SparseMatrix::operator<< to be more in line with the C++ FAQ.,0,0.0,0
+dd08f11,2012-10-05 13:10:14,Adding write_nodal_data for UCDIO thereby enabling write_equation_systems for UCDIO. This includes some internal rearrangement of UCDIO. Also updated vector_fe_ex2 to use this capability as a regression test.,0,0.0,0
+c557b08,2012-10-05 18:14:56,gcc 4.7  intel 13.0,0,0.0,0
+2cf5223,2012-10-06 23:32:18,rbOOmit change: RBParameters::get_string now takes a precision argument and writes out parameters in scientific notation,0,0.0,0
+b2c8b74,2012-10-08 14:04:14,Fparser Update V4.3.3 -> V4.5,0,0.0,0
+e017410,2012-10-09 04:03:17,Fix TransientSystem vectors to be consistent in basic_system_only case,1,1.0,1
+d48c616,2012-10-09 20:05:47,"Revert ""Fparser Update V4.3.3 -> V4.5""",0,0.0,0
+2d4e3ae,2012-10-10 22:08:21,Patch from Vikram Garg implementing global error estimation and an initial version of element-wise error indication based on refined adjoint solutions,1,1.0,1
+edf8b88,2012-10-10 22:23:58,Adding another adjoints example from Vikram  this one testing out the AdjointRefinementErrorEstimator,0,0.0,0
+d34cace,2012-10-11 19:58:24,Fix for GNU hash_map case  fix forgot-to-reset-elem_it bug  if(false)-out some code that isn't being used yet and needs to be a non-O(N^2) algorithm before it is.,1,1.0,1
+02485ca,2012-10-12 03:30:06,Fix the bug Shuangxing Dai found in our gzstream dependency checking,1,1.0,1
+2398b9a,2012-10-14 16:43:37,If we want to evaluate some norms or plot some data  we don't need to construct Jacobians etc. first.,0,0.0,0
+b2e3f40,2012-10-16 15:50:31,Use new asserts  remove a redundant assertion,0,0.0,0
+5cd08ef,2012-10-16 15:57:47,Allow users to disable renumbering directly from a MeshBase reference,0,0.0,0
+b85d16b,2012-10-16 16:59:45,No  really: listen to both the argument and the member variable when deciding whether it's safe to renumber.,0,0.0,0
+e5e095d,2012-10-16 20:57:18,"Let's call this accessor ""allow_renumbering"" to match Derek's preferences",0,0.0,0
+1034d21,2012-10-16 21:19:47,Skip renumbering when requested  updated cached numbers where appropriate to make that work.,0,0.0,0
+a293f85,2012-10-16 21:25:41,Assorted efficiency tweaks and correctness fixes from Vikram Garg and myself for ARefEE,1,0.0,0
+0dbdc8c,2012-10-16 21:37:44,Fix operator typo,1,1.0,0
+bc9c9db,2012-10-18 14:45:30,Call {PC KSP Vec}GetType with correct arguments for petsc-dev.,0,0.0,0
+add0f53,2012-10-22 16:42:52,Bug fix for interaction between ParallelMesh and user-supplied constraints.,1,1.0,1
+e6f291b,2012-10-23 21:46:46,Fixes for non-debug Node communication  Nemesis->ParallelMesh regressions,1,1.0,1
+6da8c15,2012-10-23 21:50:37,Fix  re-enable ParallelMesh gathering of recursive NodeConstraint data,1,1.0,1
+f3de1ea,2012-10-23 21:54:12,Fix for --disable-amr,1,1.0,1
+5ff8159,2012-10-23 22:38:15,Bugfix for allocations in constraint gathering,0,1.0,1
+d19227d,2012-10-24 15:21:40,Do not use GLIBCXX_DEBUG and the like for *any* compilers on OS X  not just the Apple compilers.,0,0.0,0
+3b1dbb0,2012-10-24 17:10:56,Oops  forgot to commit updated configure script that has the changes in compiler.m4 from r6197.,0,0.0,0
+13b318a,2012-10-24 17:36:39,fparser update,0,0.0,0
+349dc32,2012-10-24 17:44:28,Oops somehow managed to bork the version of fparser.m4 - here's the right version (configure in previous commit was generated with this version),0,0.0,0
+5861d36,2012-10-24 19:01:15,Turning off the function parser optimizer,0,0.0,0
+edaa866,2012-10-24 19:10:24,Fixes for constraint gather/scatter.  We're not quite done here yet - I still have to figure out how to handle the case where a processor needs to know about a constraint  not because it owns a constraining dof  but because it owns an elem which supports another processor's constraining dof...,1,1.0,1
+c9b9e8d,2012-10-24 21:45:51,Printing DoFs is useful for debugging.,0,0.0,0
+95b9eb1,2012-10-24 23:56:34,SubDM now generates global vectors of correct size  albeit non-ghosted.,0,0.0,0
+f7dc01d,2012-10-24 23:56:46,Provide callbacks to serve up (near)nullspaces to the solver.  PETSc hookup in place.,0,0.0,0
+d3a546d,2012-10-25 15:23:55,Clean up trailing whitespace only.,0,0.0,0
+28984c1,2012-10-25 15:24:11,* Use libmesh formatting.,0,0.0,0
+5f589cd,2012-10-25 15:24:24,Clean up unused variable warnings.,0,0.0,0
+f0a1369,2012-10-25 15:36:45,Improved error message: print the name of the block that's not found.,1,0.0,0
+b5fc590,2012-10-25 16:42:18,Avoiding compiler warnings is good  but so is avoiding compiler errors.,1,0.0,0
+b1f9691,2012-10-25 20:26:53,Adds ExodusII_IO capability to ErrorVector::plot_error. Also updates adaptivity_ex3 to use this capability.,0,0.0,0
+544b707,2012-10-25 22:25:32,Not sure how to get the --enable-complex ARefEE case just right without making the real-valued case much more expensive.  So let's just make sure --enable-complex still compiles  for now.,0,0.0,0
+8fa20d8,2012-10-25 22:31:57,Forgot to update the no-MPI version of this function,0,0.0,0
+1503784.0,2012-10-25 22:52:10,Deprecate skip_renumbering arguments  but fix their behavior so they'll work as expected until after we remove them.,1,0.0,0
+9a86abf,2012-10-26 04:14:32,Fix for initialization of additional SERIAL vectors.  This fixes our --disable-ghosted TransientSystem regression.,1,1.0,1
+f1d94f3,2012-10-26 18:27:17,Parallel::send/receive for strings,0,0.0,1
+b66b7e2,2012-10-26 18:30:27,Avoid overzealous asserts,0,0.0,0
+642b0e2,2012-10-26 18:33:58,Better options for printing constraints  bugfix and handle more corner cases for communicating constraints on a distributed mesh.,0,0.0,0
+3e74df8,2012-10-26 21:32:17,Added norm capabilities to DenseSubVector.,0,0.0,0
+1132fec,2012-10-27 05:23:36,Fix uninitialized pointers,1,1.0,1
+884c273,2012-10-27 06:54:21,Bugfix for flagging on a non-contiguous mesh,0,1.0,1
+858a7e1,2012-10-27 15:58:07,Even non-node-constraints code needs a mesh here now,0,0.0,0
+8174735.0,2012-10-27 16:38:50,More than NodeConstraints needs this mesh now,0,0.0,0
+9c28006,2012-10-29 03:52:03,rbOOmit change: added verbose flag to RBParametrized,0,0.0,0
+bcb297a,2012-10-29 15:24:32,Make initialization order match declaration order (fixing warning).,1,0.0,0
+7565914.0,2012-10-29 15:39:29,allgather_recursive_constraints() only needs named parameter 'mesh' if LIBMESH_ENABLE_NODE_CONSTRAINTS.,0,0.0,0
+38d7bd8,2012-10-29 16:01:30,I have no idea why getpwuid() suddenly decided to return NULL (with errno=0) on one of my systems  but the man page suggests a returned NULL is indeed an Official Thing That Can Happen  so let's make sure we don't just segfault when it does.,0,0.0,0
+bc89796,2012-10-29 19:52:44,Sun Studio fixes,1,1.0,1
+b5bf111,2012-10-29 21:13:58,fix for implicit declaration of function strptime,1,1.0,1
+22ddb1b,2012-10-30 01:41:04,PGI fix - really  <cstdlib> needed before <cmath> - http://mailman.ucar.edu/pipermail/met_help/2012-July/001824.html,1,1.0,0
+0805fbb,2012-10-30 01:41:25,PGI fix - really  <cstdlib> needed before <cmath> - http://mailman.ucar.edu/pipermail/met_help/2012-July/001824.html,1,0.0,0
+c4993b0,2012-10-30 04:05:43,Added accessors for DiffContext data members who will be made private after the next release. Also updated fem_system_ex1 to use the new accessors.,0,0.0,0
+98bf8c7,2012-10-30 04:29:03,Accessors for FEMContext members who we plan to make private after the next release.,0,0.0,0
+fbeb140,2012-10-30 16:23:56,Sun Studio fixes,1,1.0,1
+8b05b4c,2012-10-30 18:10:45,fix  found by Sun Studio,1,1.0,1
+eceb798,2012-10-30 19:15:36,fix linking error with PGI  std::string::npos not necessarily printable,1,1.0,1
+4934716.0,2012-10-31 01:27:32,Optionally write out a subset of the systems in an EquationSystems object in write_equation_systems,0,0.0,0
+581b645,2012-10-31 16:02:23,header portability fix for Sun Studio,1,1.0,1
+f5f486b,2012-10-31 17:23:56,Avoid overzealous deprecated() warnings,0,0.0,0
+359ab84,2012-10-31 17:51:10,Typo fix in warning message,1,0.0,0
+b30240d,2012-10-31 18:43:51,Warnings that are reached in parallel can be output on processor 0 alone.,0,0.0,0
+e448334,2012-10-31 18:48:28,Fix up warning  make mesh numbering contiguous if we have to.,1,0.0,0
+7474661.0,2012-10-31 19:54:21,Adding an assert,0,0.0,0
+5490496.0,2012-10-31 19:58:30,We can safely renumber if necessary to plot an error vector on a non-contiguously-numbered mesh.,1,0.0,0
+7cff2ba,2012-10-31 21:47:52,reduced_basis example 6 (at least...) isn't distributed mesh compatible yet.,0,0.0,0
+12443dc,2012-11-01 14:17:16,handle heterogeneous constraints,0,0.0,0
+fd70923,2012-11-01 15:49:47,Parallel refactoring  stage 1:,0,0.0,0
+3e0de71,2012-11-01 16:03:22,Adding more example output files to gitignore.,0,0.0,0
+9246fc5,2012-11-01 16:03:32,Updated list of publications.,0,0.0,0
+322db00,2012-11-01 16:08:44,Accidentally made that last commit from an older checkout - here's the new Communicator part of the refactoring and the separate-namespace compatibility fix.,1,1.0,1
+6be3d1c,2012-11-01 19:08:17,rbOOmit change: Fixed rb_eim_construction for --enable-parmesh,1,1.0,1
+d82a7a6,2012-11-01 19:47:07,rbOOmit change: changed Parallel::sum to Parallel::max in rb_eim_construction to avoid a potential bug when an evaluation point is on a ghosted element. Also  removed parmesh assert in reduced_basis_ex6.,1,1.0,1
+38f9d80,2012-11-01 19:54:24,rbOOmit change: fixed up comments related to the change in r6280,1,0.0,0
+e9295e0,2012-11-01 21:38:00,I was expecting a cholesky solve to modify the matrix being factored  but not the right hand side too...  Finding that behavior was hell  but changing it seems to be quite cheap.,0,0.0,0
+c99af46,2012-11-01 21:50:34,Const-correctness is nice  but so is correctness.,0,0.0,0
+bec8b2d,2012-11-01 22:19:28,I forgot about receive-with-DataType shims  let's add them.,0,0.0,0
+455c9d7,2012-11-01 23:05:20,Sanely return an out-of-mesh value when MeshFunction is given a non-serialized vector but asked for a non-local point value.,0,0.0,0
+7586b32,2012-11-02 03:33:38,Added a method to get all the variable numbers in a system  since this is useful for setting up a MeshFunction that can access all the variables (as is done in rb_eim_construction.C),0,0.0,0
+979a890,2012-11-02 13:49:49,MessageTag::invalid_tag.  Set this to INT_MIN.  Note that we can't use std::numeric_limits<int>::min() (which is equivalent) because that is a function call and not allowed in the initialization of static data in this case.,0,0.0,0
+fedbedd,2012-11-02 16:52:24,Disable caching in Hermite elements until we figure out a cache test that can't break after a renumbering.,0,0.0,0
+d73530f,2012-11-02 18:19:52,Try to be compatible with disabled-legacy-includes,0,0.0,0
+f2e1fb2,2012-11-02 20:47:54,Bugfix for NodeConstraints scatter,0,1.0,1
+419ce4a,2012-11-04 20:33:42,rbOOmit update: updating code to match the new DiffConext API (get_elem_residual instead of elem_residual  etc),0,0.0,0
+56d5f12,2012-11-05 17:49:11,do not require message tag creation to be done by all processors in DEBUG mode.  there are valid use cases where processor 0 creates tags to send to other processors  but the call cannot be synchronized.,0,0.0,0
+7c1b199,2012-11-05 18:04:10,Let's not deprecate Parallel::wait - the vector-of-requests case doesn't really have a new equally-convenient equivalent  and so we might as well leave the single request case in too for symmetry.,0,0.0,0
+f4886d8,2012-11-05 18:45:37,commented-out profiling code,0,0.0,0
+cde879c,2012-11-05 19:30:21,Add non-specialized versions of Communicator::receive to main header  fix implementations for --disable-mpi,1,0.0,0
+abc091f,2012-11-05 20:51:58,Fixes for --disable-legacy-using-namespace,1,1.0,1
+1ff020f,2012-11-05 20:55:09,Fix --disable-mpi linking failure,1,1.0,1
+7ba9863,2012-11-06 20:23:52,Don't try to do fine C1 adaptivity in single precision,0,0.0,0
+f4a4ad9,2012-11-06 20:59:30,Parallelize  and fix a very-hard-to-trigger-bug in  and add distributed-mesh compatibility to  sparsity pattern generation.,1,0.0,1
+ed6058d,2012-11-06 21:32:01,Refactoring the System IO for increased performance.  Removed collective communication',0,0.0,0
+08dc7b4,2012-11-07 00:25:54,After conferring with Ben: We're going to make the next libMesh release 0.8.0  and use 0.9.0 for the automake-d release.,0,0.0,0
+f54c46a,2012-11-07 14:35:11,adding support for std::thread where available  will add fallback option to boost::thread if it exists,0,0.0,0
+055ca67,2012-11-07 17:10:59,Change include .depend -> -include .depend,0,0.0,0
+e9145a9,2012-11-07 17:14:55,fall back to TBB thread when it is there,0,0.0,0
+5dc6b45,2012-11-07 17:56:55,semantics  sync with branch,0,0.0,0
+6f0fac6,2012-11-07 19:45:00,Updating ignores.,0,0.0,0
+05d7e87,2012-11-07 21:11:31,Clobber should also remove the library  the way it does for other contrib packages.,0,0.0,0
+8ddf775,2012-11-07 22:35:28,std::thread compatibility,0,0.0,0
+16afbf3,2012-11-07 22:56:39,use asynchronous threads to overlap disk IO with MPI communication,0,0.0,0
+344b8f0,2012-11-07 23:01:10,comment-out oops,0,0.0,0
+abbf562,2012-11-08 00:12:18,reset default,0,0.0,0
+5210656.0,2012-11-08 16:53:56,use asynchronous threads to overlap disk IO with MPI communication,0,0.0,0
+411ce93,2012-11-08 17:27:29,Refactor parallel id count updating.,0,0.0,0
+a07f7a6,2012-11-08 23:25:41,Refactoring DiffSystem: it should now be possible to swap different objects of our Physics class in to and out of a single System.,0,0.0,0
+b0e93cf,2012-11-08 23:34:47,More MeshTools::libmesh_assert_stuff,0,0.0,0
+d20b973,2012-11-09 02:44:28,fix for standalone headers,1,1.0,1
+64ec7b2,2012-11-09 14:32:20,The reduced basis IO needs to pass the version to read,0,0.0,0
+690ea5f,2012-11-09 15:55:18,consolidate IO versioning info,0,0.0,0
+dc987d8,2012-11-12 08:11:22,Fixes for --enable-singleprecision,1,1.0,1
+8955d12,2012-11-12 15:03:45,RB IO optimization,0,0.0,0
+7eb4bf5,2012-11-12 18:16:07,fix for Trilinos 11.0.3  must disabiguate (if that is a word) between int and long long,1,1.0,1
+97ef88d,2012-11-12 19:50:23,Remove overzealous assertions,0,0.0,0
+acf1ae6,2012-11-12 21:43:24,rbOOmit change: some more edits to RB IO  added a new helper function write_out_vectors in RBEvaluation,0,0.0,0
+fdc840e,2012-11-12 23:51:06,Lowering convergence tolerance so this example will run in single precision too,0,0.0,0
+d467783,2012-11-13 00:27:18,Public accessors for _vector_projections settings,0,0.0,0
+f8958b1,2012-11-13 16:14:56,Fix ParallelMesh id selection for cases of mixed fixed-id and mesh-selected-id elements,1,1.0,1
+3e0ef43,2012-11-13 16:23:33,Always update parallel id counts in prepare_for_use,0,0.0,0
+d6a99a7,2012-11-14 05:00:00,Added reduced_basis_ex7: Simulate an acoustic horn with the reduced basis method. This requires --enable-complex,0,0.0,0
+84940fd,2012-11-14 14:53:20,towards a CHANGELOG,0,0.0,0
+abf3020,2012-11-14 15:23:42,fix for strict namespace,1,1.0,1
+deb9bd0,2012-11-14 23:01:33,Set svn:ignore,0,0.0,0
+fce2de1,2012-11-14 23:20:43,Additional debug-mode assertion regarding copying mesh elements,0,0.0,0
+c11b390,2012-11-14 23:31:29,More robust next_free_*_id.  This fixes the recent ParallelMesh examples regressions.,1,0.0,1
+8e3a2a8,2012-11-15 23:58:19,When we copy a mesh we probably don't want to change the partitioning,0,0.0,0
+7b8dd97,2012-11-16 03:03:39,added info about new examples to CHANGES,0,0.0,0
+7fe8025,2012-11-16 15:07:43,"Extend the MeshTools::Generation::build_sphere() function to optionally build what is called an ""icosasphere"" (or  more rarely  ""icosphere""). That is  a regularly triangulated 2D spherical mesh  obtained by iterative refinement of a regular icosahedron. The patch fits quite nicely into the preexisting code. An icosasphere can be built by setting the new flag ""flat"" to false (default true) when building a 2D mesh in 3D space.",1,0.0,0
+1e9ffbb,2012-11-16 18:45:16,Fixes for Cygwin,1,1.0,1
+6e3d14b,2012-11-16 18:46:23,Update configure,0,0.0,0

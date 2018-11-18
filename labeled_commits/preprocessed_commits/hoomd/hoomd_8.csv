@@ -1,0 +1,765 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+53c364d35,2017-08-22 07:22:17,Tagging v2.1.9 release,0,,0
+dfb900235,2017-08-22 08:10:12,Merge branch 'maint',0,,0
+82ecfe12d,2017-08-22 08:47:52,Update change log,0,,0
+f507b3782,2017-08-22 08:50:05,Update list of tested compilers,0,,0
+655b362b3,2017-08-22 08:51:02,Merge branch 'master' into bd_validation_test,0,,0
+27dcb4c70,2017-08-22 08:51:34,Merge branch 'master' into force_callback,0,,0
+0148bc461,2017-08-22 09:26:50,Point submodules to group maintained forks,0,,0
+8fb9cdbb8,2017-08-22 09:36:11,Bump cereal to latest bugfix release,0,,0
+7d83afa87,2017-08-22 09:38:49,Fix typos in modified .gitmodules,1,,0
+694731543,2017-08-22 09:39:05,Use the latest upp11 with bug fixes,1,,1
+5b99d73c1,2017-08-22 09:48:41,Run `git submodule update sync`,0,,0
+4aa939550,2017-08-22 11:26:38,Fix CI conda build/upload issues,1,,0
+def5d73db,2017-08-22 12:22:05,Merged in convexpolyhedron-union-merge (pull request #321),0,,0
+13b2606ed,2017-08-22 12:26:28,Merged in rigid_body_self_interactions (pull request #361),0,,0
+ba3db8151,2017-08-22 12:27:15,Merged in optimize_gpu_pppm (pull request #385),0,,0
+772cb87ef,2017-08-22 12:29:54,Merged in olcf_compat (pull request #386),0,,0
+514bde7ba,2017-08-22 12:57:32,Add missing change log entries,0,,0
+a53ceb431,2017-08-23 10:37:42,Make conda package upload more robust,0,,0
+6c37a98ab,2017-08-24 11:13:07,Use full path for conda uploads on mac,0,,0
+d203886e3,2017-08-24 11:56:44,Use conda build variants to build hoomd,0,,0
+8ce916b35,2017-08-24 14:13:25,Support multiple variant builds in conda build.sh,0,,0
+92c7d199c,2017-08-24 14:42:03,Merged in protect-submodules (pull request #389),0,,0
+d6e5fe9cc,2017-08-25 07:21:22,Reduce parallel builds on linux,0,,0
+1ebafd9f4,2017-08-30 13:58:58,test_file,0,,0
+142072a68,2017-08-30 14:01:38,deleted test file,0,,0
+b056de859,2017-08-31 15:09:25,added spheropolyhedron and sphere wall capability,0,,0
+4a2343023,2017-09-05 12:12:49,Fix typos,1,,0
+4e160952b,2017-09-05 12:59:17,added sphere wall + spheropolyhedron unit test,0,,0
+a224d21fa,2017-09-05 16:13:53,Merged in conda-cuda (pull request #390),0,,0
+40929a060,2017-09-06 11:27:29,Merged in bd_validation_test (pull request #384),0,,0
+4a21c71ef,2017-09-07 15:02:43,Install special pair headers,0,,0
+950e9fec2,2017-09-08 09:32:46,Bump version to 2.2.0,0,,0
+75f97d001,2017-09-11 11:51:34,Merged in mphoward/hoomd-blue/install-special-pair (pull request #392),0,,0
+240dd9cf5,2017-09-11 12:18:34,Merge branch 'master' into hpmc-enthalpy,0,,0
+c95187879,2017-09-11 18:05:49,Merge branch 'master' of https://bitbucket.org/glotzer/hoomd-blue into spheropoly-wall,0,,0
+dcc799d75,2017-09-11 18:36:28,removed comments  added documentation  added contributor details,0,,0
+41b0f7495,2017-09-12 13:58:03,Add prototype JIT based patch energy evaluator,1,,0
+d7f93740e,2017-09-12 23:50:17,support update.muvt() with depletant_mode='overlap_regions',0,,0
+99f8f8b91,2017-09-13 01:18:17,correct acceptance criteria for update.muvt() with implicit=True,0,,0
+565563e0e,2017-09-13 12:06:26,Compile user specified code using clang,0,,0
+f8357dbd6,2017-09-13 13:02:08,Add documentation for jit computed patch energy,1,,0
+cb90c42a7,2017-09-13 16:22:43,Merge branch 'master' into clusters_new,0,,0
+b67c65466,2017-09-13 16:41:23,Changed name of getMaxDiameter,0,,0
+a906950cc,2017-09-13 16:49:43,update with latest master,0,,0
+2724a0c7d,2017-09-14 02:29:20,working on GCA algorithm  intermediate commit,0,,0
+75d323e37,2017-09-14 09:23:35,Clean up documentation,0,,0
+e430b1227,2017-09-14 19:04:34,UpdaterClusters doesn't produce overlaps,0,,0
+2fb0caf4c,2017-09-14 19:30:30,add validation test for update.cluster(),0,,0
+4d8a48632,2017-09-14 20:15:08,some optimizations,0,,0
+509830c0d,2017-09-14 21:06:52,add some comments,0,,0
+256cdc3a8,2017-09-14 21:29:12,ignore moves in statistics output that are not performed,0,,0
+108996b20,2017-09-14 22:19:00,use line reflections with random pivots,0,,0
+6a0dd8238,2017-09-14 22:59:25,make MPI simulation work again,0,,0
+d2f4b66e2,2017-09-15 00:48:41,apply random box shift to compensate for uncrossable boundaries,0,,0
+96b84d6c0,2017-09-15 14:42:57,Fix alignment bug in ManagedArray,1,,1
+5b937e5ba,2017-09-15 14:52:56,Merge branch 'fix_managed_array' into clusters_new,0,,0
+8bc0cb3cf,2017-09-15 16:47:15,need to test hard core overlaps,0,,0
+64d0f0235,2017-09-15 17:34:03,require random seed,0,,0
+3dc2eac65,2017-09-15 20:58:07,adding MPI capability  compiles,0,,0
+50d77e1ec,2017-09-15 21:12:42,add copy constructor to AABB tree,0,,0
+f6c4ca588,2017-09-16 01:38:24,fix image handling,1,,1
+9b6c4a93e,2017-09-16 02:05:21,fix a memory alignment bug,1,,1
+eacdf11c6,2017-09-16 03:01:46,fix more problems,1,,1
+55399a691,2017-09-16 03:11:01,correct log quantities,0,,0
+5670f24c7,2017-09-16 03:51:45,remove unnecessary line,0,,0
+3b6c46617,2017-09-16 04:56:11,fix a bug where compute.free_volume() would crash in MPI,1,,1
+f558d71e7,2017-09-16 05:55:43,particles near the global boundary are inactive in MPI,0,,0
+679baa16c,2017-09-16 15:30:45,fix validation test,1,,1
+08568fc22,2017-09-16 16:20:14,simplify check of periodic boundaries,0,,0
+4e1115c19,2017-09-16 17:20:48,add comment,0,,0
+5bec4e901,2017-09-16 18:03:15,correctly handle origin shift,0,,0
+6a9770fb4,2017-09-16 18:09:24,add MPI Barrier to Profiler,0,,0
+9f020596c,2017-09-16 19:23:22,"Revert ""add MPI Barrier to Profiler""",0,,0
+3dc0b4995,2017-09-16 20:04:41,reflect around line through origin,0,,0
+8172aecd8,2017-09-16 21:11:54,only reject moves for line reflections,0,,0
+63fad45cd,2017-09-18 20:16:59,Fixes #221,1,,0
+afeccf2d4,2017-09-19 13:46:52,Merged in fix_managed_array (pull request #395),0,,0
+ff040c79b,2017-09-20 16:28:38,Merge remote-tracking branch 'glotzer/master' into mpcd-working,0,,0
+a6a1dea37,2017-09-20 18:55:29,Merged in spheropoly-wall (pull request #391),0,,0
+dcde3612e,2017-09-21 10:20:32,CI builds should now build,0,,0
+daee532c6,2017-09-21 12:48:33,Fix typo in circleci config,1,,0
+2bc393018,2017-09-21 15:03:52,Document mpcd package,0,,0
+9136452d1,2017-09-22 14:28:43,changed exp(deltaE)s to deltaEs  made doubles,0,,0
+9e57e2957,2017-09-22 14:40:08,small change to exp,0,,0
+6e2b2a4c8,2017-09-25 08:52:43,Test Jenkins parallel stages,0,,0
+b088a2d5c,2017-09-25 08:55:06,Test with parallel stage definition,0,,0
+0fe94ffe6,2017-09-26 07:18:45,Update change log,0,,0
+ff3aed322,2017-09-26 07:19:42,Merge branch 'maint',0,,0
+d52b13723,2017-09-26 07:21:01,Update change log,0,,0
+87285e2fe,2017-09-26 11:18:13,Merged in parallel-jenkins (pull request #397),0,,0
+cd98a36f2,2017-09-27 10:57:10,Moving the NeighborListGPU::dist_check profiler::pop include reading flags and MPI in the profiling.,0,,0
+b9cb34cf2,2017-09-27 12:40:48,Merged in LudwigSchneider/hoomd-blue/neighborlist_profiling (pull request #398),0,,0
+faf1719d1,2017-09-27 15:22:22,Fix compile errors from merge,1,,1
+acfb1d8d8,2017-09-28 10:55:50,Perform conda-build-mac first,0,,0
+c32269587,2017-09-28 11:06:13,"Revert ""Parallel jenkins (pull request #397)""",0,,0
+62fed81d2,2017-09-28 14:32:14,Add missing link to _hoomd,0,,0
+98f2f1deb,2017-09-28 15:03:06,Refactor streaming method from integrator,0,,0
+eddd775b6,2017-09-28 15:05:28,Merge branch 'mpcd-geometry' into mpcd-docs,0,,0
+64bab9203,2017-09-29 11:38:24,Merged in revert-pr-397 (pull request #399),0,,0
+974959c37,2017-09-29 15:36:16,draft of new boltzmann criteria,0,,0
+28351db28,2017-09-29 16:54:44,Cleanup timestep check in streaming method,0,,0
+f2c8fd49f,2017-10-02 11:52:07,Optimize compaction for GPU,0,,0
+53c4a7dbc,2017-10-02 12:24:25,Use counting fancy iterator to avoid extra write op,0,,0
+ffea9ecb2,2017-10-02 13:40:08,Optimize particle compaction on the CPU,0,,0
+eb4080248,2017-10-02 15:25:08,Enable sort notification,0,,0
+b14f83739,2017-10-03 14:03:56,Revert changes to collide so that enable/disable is still supported,0,,0
+60991b1e4,2017-10-03 14:19:25,Remove phase option  which does not make any sense for MPCD integrators,0,,0
+7ecba94c4,2017-10-03 14:23:05,Fix period behavior of collision method when it is toggled on/off,1,,1
+8e142a895,2017-10-04 11:05:17,Tagging v2.2.1,0,,0
+e891fa88a,2017-10-04 11:06:15,Merge branch 'maint',0,,0
+2f0b245d2,2017-10-04 14:12:05,Add documentation for streaming method,0,,0
+09a9335ab,2017-10-04 14:47:26,Allow streaming period to be changed,0,,0
+43bdfa9da,2017-10-04 15:43:35,Allow more flexible streaming and collision,0,,0
+56c50f4c5,2017-10-05 10:51:32,Cleanup documentation and move integrator into main module,0,,0
+d48bdd702,2017-10-05 10:57:12,Merge mpcd-stream-refactor,0,,0
+2f6657763,2017-10-05 11:18:45,Cleanup sphinx docs with refactored streaming,0,,0
+bac853ab8,2017-10-06 12:55:45,added timestep argument to calculateDeltaE for ExternalField,0,,0
+0adc4b4a6,2017-10-06 14:41:35,removed timestep from calculateDeltaE and fixed test_walls test by re-expressing overlapcount,1,,0
+447c7852a,2017-10-10 17:10:29,fixed image-list test to work on more recent versions of numpy,1,,0
+fd52abc15,2017-10-11 15:03:29,fixed energydiff function for composite fields,1,,0
+2e4d2f116,2017-10-13 08:24:51,Added new energy calculations  PatchEnergy master class,0,,0
+3ad3af199,2017-10-13 18:21:09,broken commit  fixed lattice,1,,0
+c8ff5ad71,2017-10-18 14:35:32,fixed tests,1,,0
+255367966,2017-10-19 13:33:57,added imput parameter to specify clang executable for llvm code,0,,0
+1730a6c4d,2017-10-22 19:51:40,add CUDA code for initializing molecules,0,,0
+3512f1f9f,2017-10-22 20:12:06,add unit test for mixtures of rigid and nonrigid particles,0,,0
+82618ad7a,2017-10-22 20:29:41,add forgotten include,0,,0
+f8235dd4e,2017-10-22 20:59:47,try to fix compilation error,1,,1
+19d9cca9d,2017-10-23 09:57:57,Fix a bug in the dihedral table code,1,,1
+539d1f638,2017-10-23 11:51:58,add unit test for MoleculeForceCompute,0,,0
+bc9dbc69a,2017-10-23 13:21:13,fix mistake in unit test,1,,1
+985bcbaa4,2017-10-23 14:08:42,work around cuda 7.5 / thrust bug,1,,1
+990c5f2a3,2017-10-23 14:59:44,use cached allocator with Thrust,0,,0
+babdd8975,2017-10-23 15:00:30,fix comments and naming in unit test,1,,0
+a20ad0a40,2017-10-23 16:33:43,try to fix compile error,1,,1
+4fe555905,2017-10-24 14:01:55,Merge branch 'mpcd-comm-opt' into mpcd-docs,0,,0
+027f207a9,2017-10-24 15:12:26,Add additional docs for collision  expose cell list bin size to python,0,,0
+71f8c61b2,2017-10-25 10:53:38,Cache build configuration for plugins,0,,0
+d887d0ba5,2017-10-25 19:08:00,add debug output,0,,0
+f9f7bb5d2,2017-10-25 20:04:54,communicate net force/torque/virial,0,,0
+44a6daf3f,2017-10-25 20:15:43,fix compile error,1,,1
+85253ea58,2017-10-25 21:18:07,Merge branch 'fix_mpi_particle_sort' into gpu_init_molecules,0,,0
+eaef14b9f,2017-10-26 11:58:00,made m_patch not always null,0,,0
+3a098d22f,2017-10-26 15:12:15,Use forceMigrate rather than migrateParticles in load balancer,0,,0
+337c53d3d,2017-10-27 16:17:44,adjusted query distance  removed infinity warning,0,,0
+13b74a6bf,2017-10-29 09:43:39,Really fix bug in dihedral set_from_file,1,,1
+a9a84c3be,2017-10-29 09:44:13,Unit test dihedral set_from_file,0,,0
+2189bbeff,2017-10-29 13:55:53,Merged in mphoward/hoomd-blue/mpcd-merge-master (pull request #400),0,,0
+8432832cd,2017-10-29 14:00:17,Merged in mphoward/hoomd-blue/cache-build (pull request #404),0,,0
+1a6eb8ed5,2017-10-29 14:02:29,Merged in fix_mpi_particle_sort (pull request #405),0,,0
+6cada05c6,2017-10-29 14:09:03,Merged in mphoward/hoomd-blue/fix-lb-migrate (pull request #406),0,,1
+9faa87c94,2017-10-30 11:05:36,Test metadata in constrain.rigid,0,,0
+02e56fd92,2017-10-30 13:35:18,Merge branch 'maint' into meta-constrain-fix,0,,1
+d85a829d0,2017-10-31 18:43:10,Merge branch 'mpcd-working' into mpcd-docs,0,,0
+030f28d94,2017-10-31 18:43:40,Merge remote-tracking branch 'glotzer/maint' into mpcd-working,0,,0
+5a51a37d8,2017-10-31 18:43:48,Merge remote-tracking branch 'glotzer/master' into mpcd-working,0,,0
+002071b90,2017-10-31 18:44:06,Merge branch 'mpcd-working' into mpcd-docs,0,,0
+41669ea9a,2017-10-31 18:46:16,Merge branch 'mpcd-working' into mpcd-stream-refactor,0,,0
+24233e478,2017-10-31 18:46:41,Merge branch 'mpcd-working' into mpcd-comm-opt,0,,0
+0d1433dbb,2017-10-31 21:54:10,Make dihedral table theta value a warning  not an error,1,,0
+035ef3893,2017-11-01 01:49:31,Merged in meta-constrain-fix (pull request #396),0,,1
+9a06c6615,2017-11-01 14:27:49,Add unit test to validate table dihedral table values,0,,0
+21a88fc06,2017-11-01 14:31:02,Fix dihedral._table_eval,1,,1
+c71136b6c,2017-11-01 15:08:53,fixed e_old energy calculation & added logging framework,1,,0
+3acb90795,2017-11-02 00:04:50,first attempt to calculate total energy,0,,0
+5bc64b385,2017-11-02 12:03:09,Update change log,0,,0
+830c2e173,2017-11-02 12:06:07,Merge branch 'maint',0,,0
+7774b7bf6,2017-11-02 12:07:33,Merge branch 'master' into mpcd-working,0,,0
+a10798501,2017-11-02 13:21:15,Merged in fix-dihedral-table (pull request #407),0,,1
+7a6f10c54,2017-11-04 19:31:16,Use correct ghost layer width with rigid bodies,0,,0
+bd5ac34d4,2017-11-05 11:47:24,profile MPI synchronization due to load imbalance,0,,0
+ccf7ed22e,2017-11-05 11:56:45,try fixing failing unit tests,1,,0
+e5d538790,2017-11-06 10:09:48,recalculate PPPM reference energy for new box dimensions,0,,0
+6d5c5ed1c,2017-11-06 14:11:26,Added log quantites (energy & rcut) through integrator. Working properly.,0,,0
+ec74240c8,2017-11-06 14:14:51,clean cout statements from previous commit,0,,0
+220eea655,2017-11-06 15:21:09,add validation test for rigid body NPT,0,,0
+ed47964cb,2017-11-06 22:48:51,modified computePatchEnergy to accept pos/orients,0,,0
+5b93ee8a3,2017-11-07 00:13:36,modified UpdaterBoxMC to include patch contribuion to energy  all tests passing,1,,0
+692a0fa6d,2017-11-07 09:23:25,shorten run time & don't create file,0,,0
+f289f958d,2017-11-08 13:25:30,Update read_snapshot docs to note restart incompatability,0,,0
+331f14912,2017-11-08 15:48:40,communicate net_torque when needed,0,,0
+f2bf0ee06,2017-11-08 15:54:40,update DEM,0,,0
+c475eb649,2017-11-08 18:08:18,Merge branch 'fix_composite_ghost_layer' into gpu_init_molecules,0,,0
+37eb429ef,2017-11-09 14:09:01,Fix typo in docs,1,,0
+af8c35f24,2017-11-10 09:18:24,Fix typo in numpy example,1,,0
+8d15f0424,2017-11-13 15:35:20,added option to make spheres orientable,0,,0
+1f2e2eb84,2017-11-17 11:32:12,fixed orientation issue with spheres  updated style  some unit tests still failing,1,,0
+f32562a5c,2017-11-18 12:35:49,fix sphere union parameters,1,,1
+45c189f4e,2017-11-18 17:30:35,fix patch interaction range,1,,1
+ecddc15d7,2017-11-18 17:30:45,fix direction of rij separation vector,1,,1
+354c1616c,2017-11-18 17:31:49,use correct box dimensions for old/new configuration,0,,0
+bbcf238a9,2017-11-18 18:59:38,add kinetic rotational contribution to virial tensor,0,,0
+7615e1574,2017-11-18 19:38:14,"Revert ""add kinetic rotational contribution to virial tensor""",0,,0
+47348ccb8,2017-11-18 19:53:46,add equation of state test WCA dimers,0,,0
+bf367b51c,2017-11-18 20:34:16,add validation test for WCA dumbbells,0,,0
+23ce494be,2017-11-19 16:41:27,added getOrientable to sphere_param_proxy and orientable member to export_sphere_proxy,0,,0
+9b604ea8d,2017-11-20 13:02:29,add AABB optimization back in,0,,0
+a8af2aaf7,2017-11-20 13:42:14,Merge branch 'hpmc-enthalpy' of https://bitbucket.org/glotzer/hoomd-blue into hpmc-enthalpy,0,,0
+b12e9addd,2017-11-20 14:09:58,fixed test_sphere test: 100% unit tests passed,1,,0
+5fc599867,2017-11-20 15:11:14,add PatchEnergyJITUnion  compiles,0,,0
+11a39e0ba,2017-11-20 16:41:02,cleaning and formatting to comply with hoomd style,0,,0
+ca2fe1a42,2017-11-20 17:28:12,added jit.patch.user_union(),0,,0
+a35a79614,2017-11-20 17:54:25,optimize energy calculation,0,,0
+c738d14d1,2017-11-20 17:54:56,be on the safe side with r_cut initialization,0,,0
+b5261ca57,2017-11-20 18:01:18,Merge branch 'hpmc-enthalpy' into patch_union,0,,0
+71e8f7732,2017-11-20 18:27:16,fix cutoff,1,,1
+075db7ef0,2017-11-20 18:40:40,Merged in fix_patch_issues (pull request #414),0,,0
+b2158df4f,2017-11-20 19:15:10,add patch support to update.muvt(),1,,0
+5b3c10f2a,2017-11-20 21:23:22,pass charge and diameter to evaluator,0,,0
+2af27c9da,2017-11-20 21:25:14,Merge branch 'patch_union' into muvt_energy,0,,0
+336ad53a8,2017-11-20 21:34:20,add charge and diameter to UpdaterMuVT,0,,0
+65e1fa6da,2017-11-20 21:42:03,add warning,0,,0
+e72b2a2c0,2017-11-20 21:42:36,Merge branch 'patch_union' into muvt_energy,0,,0
+cb16a901b,2017-11-20 22:24:20,tentatively fix segfault,1,,1
+5b511a005,2017-11-20 22:24:42,Merge branch 'patch_union' into muvt_energy,0,,0
+55a61e827,2017-11-21 00:08:26,update to latest gsd.c,0,,0
+911185c9c,2017-11-21 00:08:43,support writing zero vectors with dump.gsd(),0,,0
+976e51cdd,2017-11-21 00:19:08,test that we can write zero particles,0,,0
+616e3ad7d,2017-11-21 00:51:42,fix self-energy,1,,1
+bfe58ea02,2017-11-21 13:32:52,tentatively fix LLVM compilation on flux,1,,1
+7ce7400d5,2017-11-21 14:03:43,refactor JIT & really fix LLVM linking on flux,1,,1
+29171a04f,2017-11-21 21:23:03,search for paths if necessary,0,,0
+dcb76391d,2017-11-22 18:55:01,fix acceptance criteria,1,,1
+8e3b840d4,2017-11-22 19:02:44,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+51d019a64,2017-11-22 21:22:01,add energy evaluation to update.clusters(),0,,0
+7a4e0859f,2017-11-22 23:36:21,add validation test,0,,0
+a517aac50,2017-11-23 12:50:45,forgot to add energy evaluation to volume move,0,,0
+611b5171c,2017-11-23 12:59:40,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+4c751f961,2017-11-23 13:25:47,fix communication of Boltzmann factor,1,,1
+9080dd8e4,2017-11-23 13:26:42,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+62dd02b4e,2017-11-24 20:02:55,more robust temporary directory creation,0,,0
+cb4289a69,2017-11-24 20:31:25,Fix JIT RPATH,1,,1
+3d61d8d6f,2017-11-24 20:42:39,Merge branch 'fix_llvm_flux' into patch_union,0,,0
+73474c8a4,2017-11-24 20:43:11,remove unnecessary rmtree,0,,0
+4077493a7,2017-11-24 20:43:45,Merge branch 'fix_llvm_flux' into patch_union,0,,0
+01c88113f,2017-11-24 20:45:46,fix merge conflict,1,,1
+041bab5e5,2017-11-24 20:51:22,Merge branch 'patch_union' into muvt_energy,0,,0
+84dd4b831,2017-11-24 20:51:51,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+894128307,2017-11-24 22:13:40,compile from stdin to stdout,0,,0
+c7af60e1c,2017-11-24 22:15:16,Merge branch 'fix_llvm_flux' into patch_union,0,,0
+1866e7b93,2017-11-24 22:15:37,Merge branch 'patch_union' into muvt_energy,0,,0
+64f7a7acf,2017-11-24 22:16:09,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+1e11c211d,2017-11-24 22:22:10,fix argument when IR file is provided,1,,1
+5d6d86524,2017-11-24 22:22:51,Merge branch 'fix_llvm_flux' into patch_union,0,,0
+fe9f1be52,2017-11-24 22:23:14,Merge branch 'patch_union' into muvt_energy,0,,0
+6d73f3bf3,2017-11-24 22:23:34,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+5d40fb45b,2017-11-24 22:31:58,fix merge conflict,1,,1
+9f08765f6,2017-11-24 22:32:38,Merge branch 'patch_union' into muvt_energy,0,,0
+2863c5e35,2017-11-24 22:33:02,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+814ee52c6,2017-11-24 22:40:31,fix clang source code error,1,,1
+f13eea728,2017-11-24 22:40:54,Merge branch 'patch_union' into muvt_energy,0,,0
+2588afc6d,2017-11-24 22:41:15,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+8c3361818,2017-11-25 13:39:05,fix AABB query in update.muvt(),1,,1
+00c4576b6,2017-11-25 13:39:39,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+5dda82013,2017-11-25 22:26:56,fix a few indexing problems,1,,0
+eba12596b,2017-11-25 22:30:03,fix acceptance with implicit depletants and AABB search radius,1,,1
+1eb8d599a,2017-11-26 10:51:33,use OBB's not spheres,0,,0
+c1333b238,2017-11-26 10:52:12,Merge branch 'patch_union' of https://bitbucket.org/glotzer/hoomd-blue into patch_union,0,,0
+f7287d8e0,2017-11-26 10:52:42,Merge branch 'patch_union' into muvt_energy,0,,0
+5878c1445,2017-11-26 10:53:16,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+67521bb9f,2017-11-26 13:28:54,add MPI support,0,,0
+e354889ed,2017-11-26 13:28:54,add MPI support,0,,0
+3b043a28c,2017-11-26 13:29:44,Merge branch 'patch_union' into muvt_energy,0,,0
+b89fd523f,2017-11-26 13:30:19,support MPI,0,,0
+07bc2a4cf,2017-11-26 13:30:57,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+183689172,2017-11-26 13:36:53,fix problem with MPI,1,,1
+fbc8603bb,2017-11-26 13:37:21,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+19cd405ee,2017-11-26 13:41:16,fix problem with MPI,1,,1
+7e1c8069c,2017-11-26 13:59:54,fix a counting problem with patch energy,1,,1
+952068dad,2017-11-26 14:09:39,tentatively fix segfault with MPI,1,,1
+5a230520e,2017-11-26 14:10:12,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+8972823f3,2017-11-26 14:13:34,fix compile error,1,,1
+1fa085795,2017-11-26 14:13:56,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+3142570fe,2017-11-26 14:17:06,2nd attempt at fixing compile error,1,,0
+d28c1afa0,2017-11-26 14:17:35,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+5555af561,2017-11-26 14:57:00,fix MPI simulations with zero particles on a rank,1,,1
+252fa22a2,2017-11-26 14:57:55,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+82a8823bb,2017-11-26 15:59:13,do not compute energy when overlapping,0,,0
+6f0646c7f,2017-11-26 16:01:02,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+dc2310f8f,2017-11-26 17:02:32,fix bond addition probability,1,,1
+d49f1790e,2017-11-27 15:42:52,Fix headers for dpd gpu potential,1,,1
+3f6196212,2017-11-27 17:46:53,Merged in mphoward/hoomd-blue/mpcd-stream-refactor (pull request #402),0,,0
+2b4a83394,2017-11-27 17:48:20,Merged in mphoward/hoomd-blue/mpcd-comm-opt (pull request #401),0,,0
+be52387fe,2017-11-27 17:52:24,Merged in docs-snapshot-update (pull request #411),0,,0
+bcfaad6fe,2017-11-27 17:58:17,Merged in gpu_init_molecules (pull request #403),0,,0
+a7acbcacc,2017-11-27 18:00:36,Merged in mphoward/hoomd-blue/mpcd-docs (pull request #413),0,,0
+3e057b497,2017-11-27 18:07:37,Merged in fix_llvm_flux (pull request #418),0,,0
+ef735b831,2017-11-27 21:22:24,fix incorrect STL map usage,1,,1
+baafcc82e,2017-11-27 21:37:18,print target density in unit test,0,,0
+c611e8a5a,2017-11-27 22:12:13,tentatively fix compile errors,1,,1
+90b25091a,2017-11-27 23:03:17,fix MPI log value,1,,1
+1d0566b09,2017-11-27 23:04:02,Merge branch 'patch_union' into muvt_energy,0,,0
+ceb60294a,2017-11-28 01:32:15,Merged in support_zero_gsd (pull request #417),0,,0
+ae15870e4,2017-11-28 01:33:17,Merged in profile_sync (pull request #409),0,,0
+7bb49e8cc,2017-11-28 01:34:21,Merged in communicate_net_torque (pull request #412),0,,0
+6935920a8,2017-11-28 01:39:39,Merged in mphoward/hoomd-blue/fix-dpd-gpu-include (pull request #420),0,,1
+7b7a87de4,2017-11-28 09:53:49,Merged in fix_composite_ghost_layer (pull request #408),0,,0
+d60313b93,2017-11-28 12:04:51,Merge branch 'maint' into validate_npt_rigid,0,,0
+92d92f0ec,2017-11-28 13:11:21,Update change log,0,,0
+355de29fb,2017-11-28 13:13:19,Merge branch 'maint',0,,0
+4104f7a62,2017-11-28 13:15:31,Update change log,0,,0
+18d2c779b,2017-11-28 13:31:19,Bump version to 2.2.2,0,,0
+096d4e3f0,2017-11-28 18:08:41,Merged in muvt_new_depletants (pull request #393),0,,0
+4c9b67904,2017-11-28 18:42:47,fix update of accelerations,1,,1
+d194bd91a,2017-11-28 18:50:33,attempt at fixing the virial calculation with MPI rigid bodies,1,,0
+584caff28,2017-11-28 18:51:06,Merge branch 'validate_npt_rigid' of https://bitbucket.org/glotzer/hoomd-blue into validate_npt_rigid,0,,0
+b4fe69b6d,2017-11-28 19:02:10,fix typo,1,,0
+f460cdd63,2017-11-29 11:22:53,add optimization to energy calculation: only take into account particles within r_cut,0,,0
+30a193b7d,2017-11-29 11:32:33,Merge branch 'hpmc-enthalpy' of https://bitbucket.org/glotzer/hoomd-blue into hpmc-enthalpy,0,,0
+d523b4c75,2017-11-29 12:01:18,add snapshot.broadcast() and .broadcast_all(),0,,0
+f36e729b2,2017-11-29 12:05:33,test broadcast_all(),0,,0
+9f01d8ae9,2017-11-29 12:12:28,Merge branch 'master' into muvt_energy,0,,0
+ba47162b3,2017-11-29 12:20:40,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+c8a021108,2017-11-29 13:03:51,fix failing builds and silently skip bcast without MPI,1,,1
+5007cf262,2017-11-29 13:24:13,Update change log,0,,0
+1838e256d,2017-11-29 13:37:07,separate unit test for broadcast between partitions,0,,0
+80a954cb4,2017-11-29 13:45:28,print a status line,0,,0
+941fb3e8f,2017-11-29 15:36:35,Fix LLVM make on Mac,1,,1
+a23a36552,2017-11-29 15:39:38,Merge branch 'hpmc-enthalpy' into patch_union,0,,0
+b52c23530,2017-11-29 15:39:49,Merge branch 'patch_union' into muvt_energy,0,,0
+641df146c,2017-11-29 15:40:45,Merge branch 'muvt_energy' of https://bitbucket.org/glotzer/hoomd-blue into muvt_energy,0,,0
+dad1a08ac,2017-11-29 15:42:14,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+cb007c1e3,2017-11-29 15:52:18,update documentation,0,,0
+7ebcc2459,2017-11-29 15:53:12,Merge branch 'patch_union' into muvt_energy,0,,0
+e0830d200,2017-11-29 15:53:41,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+ef58986bc,2017-11-29 15:55:17,update documentation once more,0,,0
+a1ac0ea72,2017-11-29 15:56:24,Merge branch 'patch_union' into muvt_energy,0,,0
+57618c502,2017-11-29 15:56:49,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+5824e0808,2017-11-29 18:06:08,Merged in fix_snapshot_mod (pull request #422),0,,0
+2ded8b73f,2017-11-29 18:23:44,Merged in validate_npt_rigid (pull request #410),0,,0
+9a4d797b3,2017-11-30 11:04:40,always account for self-interaction when inserting particles,0,,0
+948ec2ddd,2017-11-30 11:05:31,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+c00dc12a7,2017-11-30 13:26:28,compute total energy using AABB tree,0,,0
+e4e741e3a,2017-11-30 13:28:32,Merge branch 'patch_union' into muvt_energy,0,,0
+5a7ede1e8,2017-11-30 13:35:58,use correct patch energy in UpdaterMuVT,1,,0
+26082cfb1,2017-11-30 13:37:16,Merge branch 'muvt_energy' into clusters_enthalpy,0,,0
+cdfa51f36,2017-11-30 17:10:32,support 2d systems,0,,0
+bf0e19953,2017-11-30 22:52:59,Merged in patch_union (pull request #415),0,,0
+dce51f183,2017-12-01 07:33:12,Build with latest test images,0,,0
+2852c6f56,2017-12-01 15:16:35,Compile JIT code upfront instead of lazily,0,,0
+e792f2da4,2017-12-01 15:42:12,remove TBB linking,0,,0
+7512031b6,2017-12-01 15:47:10,remove left-over comments,0,,0
+c8e26b507,2017-12-01 15:54:29,tentative fix for linking error(s),1,,1
+6e386396a,2017-12-04 11:49:09,Update change log,0,,0
+b72b39fa4,2017-12-04 11:49:21,Merge branch 'maint',0,,0
+a1592c934,2017-12-07 10:03:04,Merge branch 'master' into hpmc-enthalpy,0,,0
+f674f63cb,2017-12-07 10:06:33,Merge branch 'hpmc-enthalpy' into muvt_energy,0,,0
+469892e89,2017-12-07 14:33:50,Merged in use_static_jit (pull request #425),0,,0
+d2de03d4e,2017-12-07 17:41:54,Merged in bcast_snapshot (pull request #423),0,,0
+0aecb75d5,2017-12-08 11:17:34,Support negative frame indices when reading gsd files,0,,0
+15206fe49,2017-12-08 11:18:13,Test negative indices,0,,0
+bc2a9ec50,2017-12-08 13:07:00,Test buidls on gcc6  cuda9  and clang5,0,,0
+88985df8a,2017-12-08 13:12:50,Don't re-run all unit and validation tests,0,,0
+6614263dd,2017-12-08 13:16:39,Document new tested compiler versions,0,,0
+80847c9fd,2017-12-08 13:18:35,Merged in muvt_energy (pull request #416),0,,0
+32fafbe70,2017-12-08 14:48:45,Fix typo in circleci config,1,,0
+5155d0c5e,2017-12-11 06:48:11,Fix test error on modern numpy,1,,1
+34fe871c5,2017-12-11 20:01:16,fix orientations in ShapePolyehedron on GPU,1,,1
+90a5f211e,2017-12-12 12:08:46,Merged in modern-tests (pull request #427),0,,0
+2f34b2244,2017-12-12 12:09:26,Merged in gsd-neg-frame (pull request #426),0,,0
+6b444060e,2017-12-13 19:43:59,Merge branch 'master' into hpmc-enthalpy,0,,0
+c0689a8a6,2017-12-14 09:49:14,Support LLVM 4+ API,0,,0
+7274268f2,2017-12-14 10:01:28,Go back to explicit list of llvm libs to link,0,,0
+8bc9a1cfb,2017-12-14 11:44:25,Support LLVM 3.8  3.9  4.0  and 5.0,0,,0
+2700d9a13,2017-12-15 12:32:33,Merged in fix_gpu_polyhedron (pull request #428),0,,0
+bbae29403,2017-12-15 14:52:11,Merged in llvm4-support (pull request #430),0,,0
+9f33582c0,2017-12-16 00:27:43,Merge branch 'hpmc-enthalpy' into clusters_enthalpy,0,,0
+14e8a3e80,2017-12-16 01:06:43,add patch.user.enable() and disable(),0,,0
+2eebff659,2017-12-18 15:20:07,use a symmetric acceptance criterion for depletants,0,,0
+15b8c39b6,2017-12-18 17:46:01,removed some unnesary comments and fixed some indentation issues,1,,0
+8e835d2ce,2017-12-18 19:06:04,fixed more indentation issues  removed accept method  improved acceptance step inside update method,1,,0
+518575b5a,2017-12-18 21:38:34,impose less strict rejection for across-boundary interactions,0,,0
+a652d1842,2017-12-18 21:56:13,reinstate rejection in inactive region for MPI simulation,0,,0
+d6c94a1de,2017-12-18 22:04:38,don't check overlaps unnecssarily,0,,0
+da7a7059a,2017-12-19 00:17:49,fixed more formatting/comment issues and added documentation for orientable spheres,1,,0
+87740cd53,2017-12-19 16:14:34,added unit test for patch interactions,1,,0
+7e4099c0b,2017-12-19 16:28:58,added unit test for patch interactions,1,,0
+91206090e,2017-12-19 18:32:29,fix acceptance rule for non-spherical shapes,1,,1
+ea0d69b93,2017-12-19 19:03:15,limit random shift in small boxes and fix depletants criteria,1,,1
+be33d7ff5,2017-12-19 19:43:01,port external fiels functions to new acceptance method,0,,0
+ac569ece6,2017-12-19 20:33:42,remove unnecessary loop,0,,0
+b737be6af,2017-12-20 03:14:02,tentative version without grid shift,0,,0
+d3a4d3838,2017-12-20 03:47:53,don't extend image list  but wrap into box,0,,0
+4c7d15ce4,2017-12-20 18:16:01,fix boundary conditions for overlap checks,1,,1
+085f90b98,2017-12-22 07:02:13,tentatively fix sphere cap point picking,1,,1
+b4141e224,2017-12-22 13:42:43,Fix a bug where shape information was not correctly written to a gsd file,1,,1
+0a7d2502f,2017-12-24 11:49:21,fixed missing semicolon,1,,0
+cece59828,2017-12-27 11:56:40,fix problem with boundary conditions,1,,1
+1cbf0dedb,2017-12-27 12:04:51,fix sphere cap picking,1,,1
+278804ef6,2017-12-27 12:15:57,"Revert ""tentatively fix sphere cap point picking""",1,,0
+4224f7189,2017-12-28 07:31:15,fix handling of image flags,1,,1
+fda52124b,2017-12-28 08:16:54,reset images to (0 0 0) before every move and restore afterwards,0,,0
+608041e4f,2017-12-28 08:27:45,choose pivot randomly,0,,0
+c3a3a7f1b,2017-12-28 09:01:57,fix wrapping around boundary conditions,1,,1
+0d25b26bf,2017-12-28 09:28:14,reinstate grid shift,0,,0
+43e297629,2017-12-28 09:55:55,perform grid shift at end of update,0,,0
+f60e3a931,2017-12-28 12:33:32,introduce cluster flip probability,0,,0
+459c5ed77,2017-12-28 12:40:28,fix typo,1,,0
+f5ac6bab5,2017-12-29 13:22:33,add OpenMP support,0,,0
+2633f499c,2017-12-30 04:14:45,switch to TBB support,0,,0
+8e76d2626,2017-12-30 04:15:45,initial TBB support in UpdaterClusters,0,,0
+891e40ef2,2017-12-30 04:21:11,Merge branch 'fix_depletants_and_improve_acceptance' into clusters_enthalpy,0,,0
+517e412f2,2017-12-30 06:50:12,use more parallel data structures,0,,0
+e1ff876ad,2017-12-30 07:04:19,use vector instead of set where applicable,0,,0
+20f8ff12f,2018-01-02 16:06:27,fix updater box,1,,1
+a1737170b,2018-01-05 16:05:09,Remove surviving deprecated dependencies from md tests,0,,0
+d49d7e8c7,2018-01-11 12:32:09,Merged in fix-gsd-shape (pull request #432),0,,1
+1186e6f21,2018-01-11 13:01:02,Merged in glotzer/hoomd-blue-alchemy-hpmc/box_mc_fix (pull request #434),0,,0
+eda9f2444,2018-01-11 14:43:29,validation test for patch interaction (non-union shapes),1,,0
+58c1c337c,2018-01-12 17:06:03,remove clang_exec specification,0,,0
+410234ce9,2018-01-12 18:26:49,add type swap move,0,,0
+e326a3a9a,2018-01-12 18:49:15,tbb serialization -> HOOMDMPI.h,0,,0
+068745c2a,2018-01-12 19:14:03,fix sign in acceptance probability,1,,1
+e06fd296e,2018-01-12 21:00:33,for now  separate swap and geometric moves,0,,0
+819d493e3,2018-01-12 21:47:37,fix boundary condition rejection,1,,1
+6f152ae87,2018-01-12 22:20:05,check BC correctly with depletants,0,,0
+1df9b8003,2018-01-13 13:48:05,fix swap related acceptance counting and prevent improper use of swap,1,,1
+636b334b7,2018-01-13 14:04:38,fix particle index,1,,1
+e7b20d0bc,2018-01-13 18:36:13,fix boundary conditions once and for all (?),1,,1
+044daef19,2018-01-13 18:45:03,re-enable grid shift I accidentally left disabled,0,,0
+a60b500aa,2018-01-13 19:08:05,do not reject unnecessarily with pivot moves,0,,0
+9bd597a7c,2018-01-13 19:53:10,use faster (?) multimap data type,0,,0
+3f8f40e15,2018-01-13 22:06:13,parallel (TBB) connected components,0,,0
+6bf24e41e,2018-01-16 10:07:47,add function to set number of TBB threads,0,,0
+36ea8df14,2018-01-16 10:07:47,add function to set number of TBB threads,0,,0
+ee98b95e7,2018-01-16 13:29:42,Merged in mphoward/hoomd-blue/remove-deprecated-md (pull request #435),0,,0
+37c18c74d,2018-01-16 13:46:29,Remove deprecated use in  gibbs.py,0,,0
+eb8ad1036,2018-01-16 13:51:12,Run CI test with BUILD_DEPRECATED=off,0,,0
+87310a47d,2018-01-16 14:19:59,Use python3 division semantics,0,,0
+ea93b4817,2018-01-16 14:39:14,Set is_set to True on restore_state,0,,0
+fcffd38b5,2018-01-16 20:19:33,Write default gsd chunks when nondefault chunks exist in frame 0,0,,0
+61e3bf36e,2018-01-16 22:23:53,fix TBB/clang incompatibility and add ENABLE_TBB cmake option,1,,1
+2dc0bcc08,2018-01-16 22:23:53,fix TBB/clang incompatibility and add ENABLE_TBB cmake option,1,,1
+5e45ec7b9,2018-01-16 22:55:35,fix compile errors,1,,1
+47c19f8f9,2018-01-17 10:21:06,Fix update coeffs for force shifted lj wall potential,1,,1
+993601ef1,2018-01-17 13:04:13,Merged in test-without-deprecated (pull request #436),0,,0
+ca0d93195,2018-01-17 13:20:39,Unit test default writes,0,,0
+68c9876a9,2018-01-17 14:04:00,Remove warning from documentation,0,,0
+d7827c2f1,2018-01-17 14:24:13,fix compile error,1,,1
+9d59e34da,2018-01-17 16:14:46,try fix compile error,1,,1
+8a093b097,2018-01-17 22:39:00,faster reinitialization from snapshots,0,,0
+9a41ab11a,2018-01-18 13:51:21,Update change log,0,,0
+a5d9c1930,2018-01-18 13:54:31,Merge branch 'maint',0,,0
+e3d60dcdf,2018-01-18 18:31:01,Merged in fix-hpmc-restore-state (pull request #437),0,,1
+abb63284d,2018-01-18 18:31:46,Merged in mphoward/hoomd-blue/fix-wall-force-shifted-lj (pull request #438),0,,1
+8c6c8c5f2,2018-01-18 18:32:46,Merged in fix-default-aliasing (pull request #439),0,,1
+9cfb77ea1,2018-01-19 07:56:09,Drop python 3.4 builds,0,,0
+f73b99150,2018-01-19 07:59:59,Limit conda builds to main branches,0,,0
+8040b5c46,2018-01-19 08:49:01,Merge branch 'master' into hpmc-enthalpy,0,,0
+95feb9094,2018-01-19 09:09:05,Misc style fixes,1,,0
+d5f2a611c,2018-01-19 09:39:10,Set isOriented when restoring gsd state,0,,0
+6109e72b0,2018-01-19 10:17:58,Add lj_spheres to CMakeLists,0,,0
+ca685c5e6,2018-01-19 10:27:32,Fix mismerge,1,,1
+f067706c5,2018-01-19 10:35:17,Remove uneeded script,0,,0
+bd35d951c,2018-01-19 11:05:16,Remove embedded Eigen,0,,0
+0f315b3ef,2018-01-19 12:01:13,Add Eigen as a submodule,0,,0
+96fccc58e,2018-01-19 12:08:28,Point include dirs to Eigen/Eigen,0,,0
+f65e66c58,2018-01-19 16:07:11,convert m_comm to bool explicitly,0,,0
+f2e2475c8,2018-01-22 10:27:08,remove clang_exec spec. from unittest,0,,0
+5cecd560a,2018-01-22 13:19:01,Attempt to fix python ABI compatibility issues,1,,0
+5db22cf73,2018-01-22 13:24:30,renamed update.cluster to update.clusters in validation tests,0,,0
+43bf06fa0,2018-01-22 14:06:27,Link python lib first in c++ tests,0,,0
+38529ec1b,2018-01-22 18:11:53,use tbb's task groups to avoid stack overflow,0,,0
+569ee4261,2018-01-22 19:34:36,use task recycling to avoid stack overflow,0,,0
+9d99d535a,2018-01-22 19:41:20,"Revert ""use tbb's task groups to avoid stack overflow""",0,,0
+99934d735,2018-01-23 07:10:45,fix swap acceptance in small boxes,1,,1
+228800549,2018-01-23 12:16:41,Link unit tests libs in correct order,0,,0
+2085757bc,2018-01-23 14:44:23,generalize BoxDim::shift(),0,,0
+e09ee4f4f,2018-01-23 14:44:37,reconstruct images in clusters updater,0,,0
+7f54913a9,2018-01-23 14:49:53,Merge branch 'clusters_enthalpy' of https://bitbucket.org/glotzer/hoomd-blue into clusters_enthalpy,0,,0
+124815448,2018-01-23 16:33:53,add mc arg to patch.py doc,0,,0
+7bbf1a4f3,2018-01-24 11:35:36,Use a jinja template to create Jenkinsfile,0,,0
+478f00f30,2018-01-24 11:38:27,Move CPU validation testing to local resources,0,,0
+00222c07e,2018-01-24 12:02:14,Try parallel builds again,0,,0
+9e4605174,2018-01-24 18:40:43,fix merge conflict,1,,1
+e60b37095,2018-01-24 19:49:23,fix MPI runs,1,,1
+6eaff86d2,2018-01-25 09:58:41,Reduce memory footprint by reducing build parallelism,0,,0
+9aeaa8759,2018-01-25 11:00:03,Merge branch 'parallel-tests',0,,0
+054e9538c,2018-01-25 11:08:00,Merge branch 'master' into hpmc-enthalpy,0,,0
+a6b9c43d5,2018-01-25 11:54:02,Skip the MPI-enabled enthalpy test,0,,0
+a9cd794a9,2018-01-25 11:55:06,Disable BUILD_JIT for old cmake versions,0,,0
+f6df786c5,2018-01-25 11:59:24,Disable JIT module build on unsupported container,0,,0
+af5797760,2018-01-25 12:53:58,Update change log,0,,0
+1e86eec95,2018-01-25 12:54:38,Bump version to 2.2.3,0,,0
+31a5fd157,2018-01-25 13:17:12,Merge branch 'maint',0,,0
+846a220a8,2018-01-25 14:36:16,Fix std::map use with TBB,1,,1
+65d0e9255,2018-01-25 14:53:24,Use newer cmake with cuda80,0,,0
+2caae9470,2018-01-25 14:59:56,Merged in fix-python-abi-compatibility (pull request #441),0,,1
+c2a94fcfb,2018-01-26 10:10:41,Skip enthalpy test when BUILD_JIT is off,0,,0
+b84298e69,2018-01-26 13:48:38,Add developers to credits,0,,0
+e764a1fcc,2018-01-26 13:51:07,Add versionadded notices for JIT and jit.patch,0,,0
+ee3111a6b,2018-01-26 14:05:31,fix no-MPI builds,1,,1
+0cdeebc27,2018-01-26 14:09:42,fix pdata unit test,1,,1
+3b63a6df6,2018-01-26 14:10:41,tentatively fix race condition with TBB and patches,1,,1
+36816fec0,2018-01-26 14:37:07,error out on GPU and with depletants when patches are enabled,1,,0
+7eb9c3d63,2018-01-26 14:40:55,Merge branch 'hpmc-enthalpy' into clusters_enthalpy,0,,0
+a302267d0,2018-01-26 15:07:00,looks like I forgot to discard bonds that are already broken,0,,0
+ae03a42e2,2018-01-26 15:13:57,"Revert ""looks like I forgot to discard bonds that are already broken""",0,,0
+97a004e19,2018-01-26 15:17:23,try using consistent ordering of i's and js,0,,0
+324de720d,2018-01-26 15:55:15,"Revert ""try using consistent ordering of i's and js""",0,,0
+b449ca3e0,2018-01-26 16:12:37,fix RNG generation for particle pairs with patches,1,,1
+c9d5e28fc,2018-01-26 17:47:04,fix patch.disable(),1,,1
+d2515ae6f,2018-01-26 17:49:09,Merge branch 'hpmc-enthalpy' into clusters_enthalpy,0,,0
+34d4f9d3f,2018-01-26 18:03:05,add patch disable/enable unit test and fix patch.enable and patch.disable,1,,1
+3deef3cea,2018-01-26 18:11:19,Merge branch 'hpmc-enthalpy' of https://bitbucket.org/glotzer/hoomd-blue into hpmc-enthalpy,0,,0
+2374dbe68,2018-01-26 22:53:29,fix comments,1,,0
+cace1e9ac,2018-01-29 13:14:51,Bump pybind to v2.2.1,0,,0
+a224b855d,2018-01-29 13:15:35,Use pybind2.2 preferred module definition,0,,0
+750e7e4dc,2018-01-29 13:15:53,Remove doubly exported methods from ExecutionConfiguration,0,,0
+a2091776b,2018-01-29 13:16:30,Remove pybind shared ptr declaration,0,,0
+9bc8a782a,2018-01-29 13:16:59,Fix compile error in shape proxy,1,,1
+ca5b4695c,2018-01-29 15:44:10,compile_user can now be called to produce an IR file from provided code,0,,0
+c35b1d988,2018-01-29 15:49:49,Merged in hpmc-enthalpy (pull request #429),0,,0
+a07c9c3fa,2018-01-29 15:50:47,Merged in update-eigen (pull request #440),0,,0
+758d3520e,2018-01-30 10:08:04,Compile with hidden visibility,0,,0
+88ba062d4,2018-01-30 10:20:11,Explicitly mark py::object holding classes as hidden,0,,0
+20ff747a9,2018-01-30 11:26:22,Fix compile errors on gcc48,1,,1
+2c6076cf0,2018-01-30 12:13:33,Fix compile error,1,,1
+a6e19a9ef,2018-01-30 13:04:40,Fix more compile errors,1,,1
+1261425eb,2018-01-30 14:50:30,Fix compile errors,1,,1
+28cfa0a11,2018-01-30 14:52:29,Drop clang34 testing,0,,0
+9e336b13a,2018-01-30 20:17:05,Run LJ unit test with cluster updater,0,,0
+90ca903a6,2018-02-01 11:58:10,Fixed GetarInitializer when non-root-ranks get bad file names,1,,0
+ac65c439c,2018-02-01 12:19:59,Add dimensions to the list of viz_static records in dump.getar,0,,0
+ea4c31e01,2018-02-01 12:25:13,Fix sphinx documentation table in dump.getar,1,,0
+a8fcd7ce2,2018-02-02 12:04:24,Use pybind11_add_module,0,,0
+052d35e65,2018-02-02 12:50:59,Fix indexing for certain tree configurations,1,,1
+77c5244c5,2018-02-02 13:22:39,Trick pybind11 into letting hoomd handle cflags,0,,0
+000d3bc46,2018-02-02 15:39:31,Disable pybind's LTO settings,0,,0
+28871b4bb,2018-02-05 08:30:34,Use pybind11_add_module in example plugin,0,,0
+c58da6ca4,2018-02-05 08:54:18,Support external plugin builds,0,,0
+05cee7d0f,2018-02-05 08:56:10,Restore example plugin symlink,0,,0
+3c91197a8,2018-02-05 09:04:52,Really fix the example plugin symlink,1,,1
+89ab5fadb,2018-02-05 09:07:16,Remove uneeded example plugin library suffix,0,,0
+3ed5d3a9d,2018-02-05 13:46:40,fix noTBB compile,1,,1
+b3965b66f,2018-02-06 20:58:57,Use modern conda recipe configuration,0,,0
+0fca90abc,2018-02-07 12:48:14,Merged in fix_depletants_and_improve_acceptance (pull request #431),0,,0
+abaa01a4d,2018-02-07 13:30:43,Merged in fix_read_getar_mpi (pull request #443),0,,0
+a30aedfe4,2018-02-07 15:21:47,Enable depletant simulations with patches,1,,0
+c6d2918c5,2018-02-07 15:45:29,Make warning more descriptive for old depletant integrator,0,,0
+6c43d10cf,2018-02-08 09:30:02,Set the -march in the conda build recpie,0,,0
+02920106d,2018-02-08 09:54:58,Update change log,0,,0
+f3b50f4ef,2018-02-08 09:57:38,Merge branch 'maint',0,,0
+6e86eaa56,2018-02-08 11:05:18,Update change log,0,,0
+2cb3a0a50,2018-02-08 11:08:36,Add gcc72 compilation test,0,,0
+33497c954,2018-02-08 13:34:14,Merged in mphoward/hoomd-blue/fix-nlist-tree (pull request #444),0,,1
+bd6412195,2018-02-10 21:22:19,Merge branch 'maint' into clusters_enthalpy,0,,0
+c07cc9d6b,2018-02-12 15:46:52,Fixed documentation.,1,,0
+b578328c4,2018-02-12 15:53:22,Merge branch 'maint' into randomizing_velocities,0,,0
+0ef84acad,2018-02-12 15:53:35,Merge branch 'master' into randomizing_velocities,0,,0
+e1e2484ca,2018-02-14 11:04:16,First draft of tests.,0,,0
+a5165ee1a,2018-02-14 16:35:36,Reformatted code  simplified angmom randomization.,0,,0
+ce4de0866,2018-02-14 16:36:12,Fixed bug in drift subtraction (must account for particle mass).,1,,1
+b23406d12,2018-02-14 16:36:45,Added anisotropic test  reduced code duplication.,0,,0
+d6280802f,2018-02-14 17:23:01,Added 2D tests.,0,,0
+cb777cfef,2018-02-14 17:38:36,Updated integrator functions to auto-detect temperature where applicable  added missing test for Berendsen thermostat.,0,,0
+1497e4fae,2018-02-14 18:07:43,Fixed division for Python 2 tests.,1,,0
+58a62f840,2018-02-14 22:43:12,Disabled berendsen test on MPI with more than one rank  corrected MPI implementation to use the right data types and reduce in place.,0,,0
+ca17e9a62,2018-02-15 02:22:22,Minor clarification in FindHOOMD.cmake.,0,,0
+610008a9c,2018-02-15 08:24:39,Added Bradley Dice and Avisek Das to credits.,0,,0
+aadb5e221,2018-02-15 09:05:13,Added examples and versionadded.,0,,0
+d9d40750a,2018-02-17 17:50:30,enable TBB with jit.patch.user_union(),0,,0
+db46381e8,2018-02-21 13:26:17,display TBB compile flag in version message,0,,0
+bbf7dc352,2018-02-21 13:58:22,Merge branch 'master' into pybind2.2,0,,0
+8af4505fe,2018-02-21 14:35:42,add options for setting number of threads on the command line,0,,0
+db8992433,2018-02-21 15:18:13,add docs and additional unit test for clusters move,0,,0
+047006457,2018-02-21 15:18:29,small doc fix,1,,1
+5b0c79bed,2018-02-21 15:24:51,listen to OMP_NUM_THREADS environment variable,0,,0
+cb4f4af0b,2018-02-21 15:26:23,document environment variable,0,,0
+bfe803845,2018-02-21 15:28:02,Merge remote-tracking branch 'origin/master' into clusters_enthalpy,0,,0
+080298f1d,2018-02-21 15:35:13,update log quantities and docs,0,,0
+c4b1072ed,2018-02-21 18:53:10,Merged in randomizing_velocities (pull request #448),0,,0
+f4b31cce3,2018-02-21 19:14:40,Support python2 in FindHOOMD.cmake,0,,0
+bca3c8504,2018-02-22 00:11:39,Merged in m_eric_irrgang/findhoomdcmake-edited-online-with-bitbuc-1518661171108 (pull request #447),0,,0
+0c37844b7,2018-02-22 10:17:02,fix non-TBB build's unit test,1,,1
+27ca19c5e,2018-02-22 10:55:44,tentatively fix docs and move nthread set API to option.py,1,,1
+d18c9e119,2018-02-22 12:45:47,fix MPI unit test,1,,1
+c54934e2f,2018-02-26 17:04:01,Merge branch 'clusters_enthalpy' into enable_depletants,0,,0
+4b6288c13,2018-02-26 17:14:03,test depletant integrator with patches enabled,1,,0
+a2fd5518a,2018-03-02 09:14:31,Revise MPCD stability,0,,0
+324708d98,2018-03-02 09:22:17,Merge remote-tracking branch 'glotzer/master' into mpcd-working,0,,0
+338ed35e5,2018-03-02 09:24:30,Add missing packages to hoomd cache,0,,0
+e66c3d2fc,2018-03-02 15:05:42,Add entry to credits,0,,0
+f1107cae4,2018-03-05 12:48:56,Merge branch 'master' into clusters_enthalpy,0,,0
+2401dcfcb,2018-03-05 12:52:34,Enable TBB unit tests on Jenkins,0,,0
+156bbdfc5,2018-03-05 12:56:20,Add TBB tests to circleci,0,,0
+69f783ce0,2018-03-05 12:57:13,Merge branch 'clusters_enthalpy' of bitbucket.org:glotzer/hoomd-blue into clusters_enthalpy,0,,0
+6729c46f9,2018-03-05 13:36:39,Use FindTBB.cmake,0,,0
+2d965d1b5,2018-03-05 13:37:04,Test TBB with gcc7 and clang5 on the arch linux images,0,,0
+4ecb7055a,2018-03-05 13:43:35,Forgot to update jenkinsfile,0,,0
+5e40c7fe6,2018-03-05 13:55:50,Really disable TBB tests with gcc6 on arch CI images this time,0,,0
+3ceece45c,2018-03-05 13:58:29,Update change log,0,,0
+7c83917e2,2018-03-05 13:58:45,Bump version to v2.2.4,0,,0
+336257d3e,2018-03-05 13:59:48,Merge branch 'maint',0,,0
+166b17231,2018-03-05 14:00:35,Merge branch 'maint' of bitbucket.org:glotzer/hoomd-blue into maint,0,,0
+93719a855,2018-03-05 14:49:46,Fix python abi compatibility,1,,1
+0e8321f14,2018-03-05 17:14:03,Allow HOOMD without MPI support to run in MPI environments,0,,0
+3037f62d5,2018-03-05 17:18:59,Now works for both implicit integrator types,0,,0
+3804b25d0,2018-03-06 09:18:52,Merge remote-tracking branch 'glotzer/master' into mpcd-working,0,,0
+548a8277c,2018-03-06 13:20:06,Merged in clusters_enthalpy (pull request #419),0,,0
+805371046,2018-03-06 15:15:12,Merge remote-tracking branch 'origin/master' into single_mpi,0,,0
+b80f1ad66,2018-03-08 13:11:06,Merged in mphoward/hoomd-blue/mpcd-working (pull request #450),0,,0
+287a26a8d,2018-03-09 12:20:02,Merge branch 'maint',0,,0
+c3d8c65c9,2018-03-09 14:07:49,Add missing depends in example plugin,0,,0
+232e624d6,2018-03-12 11:50:38,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue,0,,0
+e042fb78e,2018-03-12 14:40:43,Merged in single_mpi (pull request #451),0,,0
+0adc8db6b,2018-03-21 10:44:19,Merge remote-tracking branch 'origin/master' into enable_depletants,0,,0
+bf5c27363,2018-03-22 12:48:53,Merge branch 'master' into pybind2.2,0,,0
+0c8b14b11,2018-03-22 15:15:29,MPCD compiles,0,,0
+dc190d7ad,2018-03-22 16:38:29,Merged in enable_depletants (pull request #446),0,,0
+908d3640d,2018-03-28 15:15:48,Metadata fields property fixed.,1,,0
+37f97adf0,2018-04-03 13:21:43,add forgotten preprocessor flags for TBB,0,,0
+0c682977e,2018-04-04 15:51:57,Merged in md_force_metadata (pull request #454),0,,0
+0aee9bbcb,2018-04-04 18:26:03,allow additive contribution to cutoff with patch.user_union(),0,,0
+14c3b0214,2018-04-04 19:08:45,enable additive cutoff radii in implicit integrators,0,,0
+33fa2986f,2018-04-04 19:19:27,fix test code left in there,1,,1
+5adb93052,2018-04-04 19:23:39,diameter -> radius,0,,0
+3decedc01,2018-04-05 12:07:17,tentative fix for failling unit test,1,,1
+d9e8f687f,2018-04-05 12:58:49,tentatively fix unit test,1,,1
+2c94f6ebc,2018-04-05 14:39:29,add support for isotropic contribution to patch.user_union(),0,,0
+231977984,2018-04-05 15:59:45,tentatively fix failing move_by_type unit test,1,,1
+be5a9ccd6,2018-04-05 15:59:45,tentatively fix failing move_by_type unit test,1,,1
+8b500d169,2018-04-05 21:39:20,fix handling of cut-offs,1,,1
+74c208fc9,2018-04-05 21:49:52,another attempt at the right cut-off,0,,0
+d0057fa02,2018-04-05 21:54:53,simplify logic,0,,0
+55358693e,2018-04-10 11:14:51,First attempt to fix mpcd particle data numpy access,1,,0
+f8ead698f,2018-04-10 16:13:17,Handle mpcd snapshots with smart pointers,0,,0
+9cca8eb9f,2018-04-10 19:36:27,Remove adapter class and correctly wrap original class,0,,0
+2da81a378,2018-04-10 19:38:52,Remove debug print,0,,0
+5b5f23259,2018-04-11 09:48:47,Fix compile errors in mpcd,1,,1
+9ea0dab73,2018-04-11 10:31:44,Bump copyrights to 2018,0,,0
+058f711be,2018-04-11 10:51:12,No longer require cpu/gpu mode on flux,0,,0
+87f688bc1,2018-04-11 11:20:45,quiet compiler warnings,0,,0
+e28fc0e1b,2018-04-11 11:33:14,Clean up warnings in dfft,0,,0
+e9d7919e3,2018-04-11 12:16:14,Use new cmake policies,0,,0
+1ca215b91,2018-04-11 12:33:30,Silence ENABLE_MPI=off compiler warnings,0,,0
+253a368c7,2018-04-11 12:54:19,Bump pybind to v2.2.2,0,,0
+14a9b12f6,2018-04-11 20:12:18,fix patch.user_union with None argument for code_iso,1,,1
+8c1a30cc0,2018-04-12 12:45:23,Merged in tbb_preprocessor_flags (pull request #455),0,,0
+d76331c1b,2018-04-12 13:39:28,Merged in hpmc_patch_polydisperse (pull request #456),0,,0
+776954ad6,2018-04-13 08:22:35,Merge branch 'copyright-2018',0,,0
+aadcc1066,2018-04-13 10:58:48,Update additional copyright date,0,,0
+b242fa87e,2018-04-13 12:20:55,Merged in pybind2.2 (pull request #445),0,,0
+1599c8fa6,2018-04-13 12:49:24,Remove unknown from version tag in tarball builds,0,,0
+dcfddf874,2018-04-13 12:49:45,Remove glotzports mention from compilation documentation,0,,0
+6425d51bf,2018-04-14 17:23:42,use atomics as locks for thread-safe connected components,0,,0
+998924a3b,2018-04-14 23:39:04,TBB for patch energy summation,1,,0
+28b739411,2018-04-14 23:39:11,take into account full patch range in clusters updater,1,,0
+c2d867200,2018-04-16 08:03:06,Silence clang 6.0 warnings,0,,0
+33173a5c3,2018-04-16 11:01:47,Merged in remove-flux-limits (pull request #460),0,,0
+b2bc55b49,2018-04-16 11:19:24,tentatively fix compile error,1,,1
+04a1e8cb2,2018-04-16 11:22:21,Merge branch 'master' into force_callback,0,,0
+d56a4909f,2018-04-16 12:42:31,complete implementation of setting particle forces and add unit test,0,,0
+908236c30,2018-04-16 12:45:47,Update change log,0,,0
+b6e42f5f7,2018-04-16 13:15:33,Mention intel TBB optional dependency,0,,0
+a3daa9372,2018-04-16 13:21:32,fix documentation,1,,0
+fd80fc8f6,2018-04-16 14:40:56,tentatively fix compile error,1,,1
+2332f3a7e,2018-04-17 08:36:48,function -> callable,0,,0
+f3ee31ad1,2018-04-17 12:33:32,Merged in gcc7-warning-free (pull request #462),0,,0
+fe52b731a,2018-04-17 13:17:16,Set ignore flags to 0 in GSD shape schema,0,,0
+58c40534f,2018-04-17 13:18:03,Fix additional compiler warning,1,,0
+87f4fb099,2018-04-17 14:07:26,Use pybind11 arrays in BondedGroupData,0,,0
+92c11d787,2018-04-17 14:49:15,Remove commented use of num_util,0,,0
+2d586b0dd,2018-04-17 14:49:25,Use pybind numpy arrays in particle data snapshot,0,,0
+67d1ef735,2018-04-17 17:01:08,Merged in hpmc_patch_union_iso (pull request #457),0,,0
+454f6df60,2018-04-18 06:56:46,Use pybind11:array in PotentialPair,0,,0
+0182e81b5,2018-04-18 06:57:27,Move numpy.h include to .cc file,0,,0
+02409d743,2018-04-18 07:23:30,Remove num_util,0,,0
+f6869a61c,2018-04-18 07:53:26,Warn users about future workflow compatibility with TBB,0,,0
+18579301d,2018-04-18 08:08:52,Mention conda cudatoolkit limitations in README,0,,0
+5e63e01db,2018-04-19 10:31:56,Reversed order of git submodule update and pybind inclusion.,0,,0
+5e893f332,2018-04-19 13:16:53,Merged in force_callback (pull request #381),0,,0
+bdddf7625,2018-04-19 15:22:56,Error out when sm70 build requested,1,,0
+f46bc2549,2018-04-19 23:34:27,output average cluster size,0,,0
+f62ede4ec,2018-04-20 07:03:49,Use GREATER  not GREATER_EQUAL,0,,0
+3530f8558,2018-04-20 07:10:53,Re-enable validation testing on the GPU,0,,0
+39873bee9,2018-04-20 07:45:27,Attempt to fix cudatoolkit pinning,1,,1
+2935db852,2018-04-20 08:30:35,Update change log,0,,0
+2ceb421a1,2018-04-20 08:31:17,Bump version to v2.2.5,0,,0
+e184d9337,2018-04-20 08:33:14,Merge branch 'maint',0,,0
+3180e5ccb,2018-04-20 18:46:11,Merged in hpmc-schema-uninit (pull request #463),0,,0
+32131d000,2018-04-21 05:05:26,access correct charge array,0,,0
+0f2b43d7e,2018-04-21 19:38:37,document and fix logging of hpmc_boxmc_ln_volume_acceptance,1,,1
+de9e82837,2018-04-23 07:50:17,Don't set OMP_NUM_THREADS in cmake scripts,0,,0
+7c3cd0c6c,2018-04-23 07:52:19,Set OMP_NUM_THREADS in unit test envs,0,,0
+b8bb15aa1,2018-04-23 08:05:55,Update change log,0,,0
+e8ce6e630,2018-04-23 11:00:08,Merged in remove-num-util (pull request #464),0,,0
+affe9be80,2018-04-23 11:06:59,Merged in pybind-submodule-fix (pull request #465),0,,1
+1aff626fe,2018-04-23 11:14:55,Merged in fix_clusters_reported_acceptance (pull request #461),0,,0
+906361321,2018-04-23 11:15:54,Merged in fix_log_lnvolume (pull request #466),0,,0
+aaa783512,2018-04-23 12:08:55,Merged in sm70-error (pull request #467),0,,0
+d31a9c894,2018-04-24 15:52:20,Sign of energy is wrong,1,,0
+331d9a6fa,2018-04-24 16:15:48,Some cleanup,0,,0
+a5d9fc69c,2018-04-24 18:10:57,Moved negation to integrator so that it works correctly for all fields,0,,0
+f132c3dea,2018-04-25 10:40:54,Fix signs across all external fields,1,,1
+bdbf221b6,2018-04-25 12:35:38,Bump version to v2.3.0,0,,0
+c06bedd63,2018-04-25 12:35:39,Add tests that actually check moves,0,,0
+abae7ac1c,2018-04-25 13:29:12,Some style fixes  fixed bug for pure spheres as spheropolyhedra,1,,1
+a861aeb11,2018-04-25 15:26:49,Test sphere spheropolyhedra,0,,0
+d0d1c5c7b,2018-04-25 16:27:29,Enable plane walls with spheropolyhedra,0,,0
+9cb62aa21,2018-04-25 23:27:50,Add unit test for spheropolyhedra with plane walls,0,,0
+6c693c69a,2018-04-25 23:28:10,Remove terminal semicolons,0,,0
+aed4ad6ec,2018-04-25 23:33:31,Merge remote-tracking branch 'origin/master' into fix_walls,0,,0
+121367c57,2018-04-26 00:35:26,Removed unused accept method,0,,0
+90ad86556,2018-04-26 07:50:45,Add RPATH to sub modules,0,,0
+c9e64efca,2018-05-01 09:09:20,Add a unit test for 2d neighbor lists,0,,0
+fd51a8af9,2018-05-01 09:11:36,Fix image list for tree neighbor lists in 2d,1,,1
+a7313d676,2018-05-03 11:04:55,fixing typos to get the doxygen documentation building,1,,0
+809de3f92,2018-05-03 12:51:43,Add ENABLE_TBB=off validation test on the CPU,0,,0
+a672e8695,2018-05-03 16:42:24,Merged in fix_walls (pull request #469),0,,0
+fb64e68d9,2018-05-03 17:00:45,Merged in LudwigSchneider/hoomd-blue-old/typo_doc_fix (pull request #471),0,,0
+bd5efeb8a,2018-05-03 17:01:33,Merged in fix-linking (pull request #472),0,,1
+71603c05a,2018-05-04 17:35:20,fix wrong acceptance rule in implicit (new) integrator,1,,1
+af3d7c0ac,2018-05-08 00:02:32,Merged in tbb-testing (pull request #468),0,,0
+d828f7230,2018-05-09 16:26:20,Merged in mphoward/hoomd-blue/fix-bvh-2d (pull request #470),0,,1
+e146e4341,2018-05-09 16:27:41,Merged in fix_new_depletants (pull request #473),0,,0
+486b6b3ab,2018-05-10 12:34:34,Fixing Dipole Pair Potential force calculation,1,,0
+d72034cec,2018-05-10 16:03:52,Eliminate compiler warning,0,,0
+68c55766d,2018-05-11 07:54:00,Update change log,0,,0
+d3b9b0261,2018-05-11 07:54:20,Merge branch 'maint',0,,0
+81caca61f,2018-05-22 12:57:54,Correctly choose between volume and lnV moves,0,,0
+b8db230a4,2018-05-22 13:07:15,fix name of log quantity,1,,1
+84519a9c4,2018-05-23 15:39:27,Merged in fix-boxmc-volume-move (pull request #479),0,,1
+e679c0236,2018-05-24 14:45:23,Update change log,0,,0
+27a38be91,2018-05-24 14:46:02,Bump version to v2.3.1,0,,0
+2bc474d3a,2018-05-24 14:46:52,Update change log,0,,0
+f9e6459b0,2018-05-24 14:47:16,Merge branch 'maint',0,,0
+7cf39f019,2018-05-24 14:48:53,Merged in fix_typo (pull request #480),0,,0
+b7f98d02c,2018-05-25 09:35:51,Fix typo,1,,0
+4a1472237,2018-05-25 09:35:59,Merge branch 'maint',0,,0
+88bd1ddf3,2018-05-28 16:03:14,Add dipole force compute unit test,0,,0
+049066c0f,2018-06-06 13:40:48,Mention container binaries in README,0,,0
+d9f4ed28b,2018-06-06 13:50:38,Remove usefulness judgement.,0,,0
+5c97c2382,2018-06-18 08:20:34,Check for available exec_conf in gsd_snapshot,0,,0
+61a0b149f,2018-06-18 14:35:25,Add MPCD paper to the cite module,0,,0
+673660b43,2018-06-18 14:35:35,Fix typos in other cite module commands,1,,0
+ecdcdebd7,2018-06-19 16:48:46,kT is not a default parameter for collide.at,0,,0
+9360dd12f,2018-06-26 08:21:03,Fix test for MPI execution,1,,1
+e1e02faaa,2018-06-26 08:31:32,hoomd is now on conda-forge,0,,0
+24bd09ab6,2018-06-26 08:44:20,Remove conda recipe from source,0,,0
+f41d92deb,2018-06-26 09:10:50,Make gcc8 happy,0,,0
+d00c87573,2018-06-26 09:44:32,Use relative RPATHs,0,,0
+e449a43f7,2018-06-26 10:27:50,Add TBB include directory,0,,0
+846272afc,2018-06-26 11:51:17,Merged in error-when-no-context (pull request #483),0,,0
+63a2245dd,2018-06-26 11:52:16,Merged in mphoward/hoomd-blue/fix-mpcd-at-kT (pull request #484),0,,1
+43d74ad1b,2018-06-26 12:01:03,Merged in mphoward/hoomd-blue/cite-mpcd (pull request #482),0,,0
+29c81549d,2018-06-27 07:55:07,Fix circleci config,1,,1
+4128385fe,2018-06-27 07:56:08,Remove conda mac build from Jenkinsfile,0,,0
+4cee4371c,2018-06-27 12:03:49,Merged in fix-gcc8-warnings (pull request #486),0,,1
+adf49549e,2018-06-27 12:04:17,Merged in add-tbb-include (pull request #488),0,,0
+1a5db9a69,2018-06-27 12:05:47,Merged in fix-rpath-again (pull request #487),0,,1
+0f2c7d23b,2018-06-27 12:31:07,Update conda references in sphinx docs,0,,0
+51ee73c48,2018-06-28 07:36:58,Lower tolerance in dipole test,0,,0
+08a43e392,2018-06-28 08:08:48,Use consistent language in README,0,,0
+892dcac2a,2018-06-29 09:15:55,Update change log,0,,0
+92c265397,2018-06-29 09:16:28,Bump version to v2.3.2,0,,0
+a05eabb81,2018-06-29 09:17:02,Merge branch 'maint',0,,0
+9961315d8,2018-06-29 13:04:11,Merged in container-docs (pull request #485),0,,0
+3499b89f8,2018-06-29 13:05:19,Merged in fix_dipole (pull request #475),0,,0
+0a2375737,2018-07-02 11:57:46,Use @loader_path for relative linking on mac,0,,0
+e7ddbf255,2018-07-03 07:20:30,Update change log,0,,0
+5bf42e67c,2018-07-03 07:20:42,Bump version to v2.3.3,0,,0
+8f5b5bb4f,2018-07-03 07:24:10,Merge branch 'maint',0,,0
+9f28eb73d,2018-07-03 11:17:40,Merged in fix-rpath-3rd-time (pull request #490),0,,1

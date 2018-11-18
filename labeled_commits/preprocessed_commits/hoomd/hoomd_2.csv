@@ -1,0 +1,548 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+3b804ca1f,2014-09-09 08:07:30,Tagging v1.0.1,0,,0
+78461fed8,2014-09-09 13:06:18,Merge branch 'maint',0,,0
+49312cbdc,2014-09-13 19:31:22,Merge branch 'master' of https://codeblue.umich.edu/git/hoomd-blue into pair_pot,0,,0
+3691faa31,2014-09-13 19:34:36,suppress warning,0,,0
+0507f1861,2014-09-15 17:56:01,First commit on texture fetch optimization,0,,0
+16cbaa970,2014-09-15 18:25:38,Texture fetches for nlist in PairPotentialGPU.cuh,0,,0
+04231dd5e,2014-09-15 18:37:26,Removed suboptimal texture fetch on head list,0,,0
+2fa03a9de,2014-09-16 17:56:03,Added comment about multiple of 8 vs 32 in nlist,0,,0
+33703da2b,2014-09-18 16:03:47,added print,0,,0
+99b4ec215,2014-09-18 16:51:04,added print,0,,0
+c473e9724,2014-09-24 19:39:46,Fix bond_coeff syntax in example script,1,,1
+a9c84ec4e,2014-09-30 15:08:58,Add more SSE/AVX output lines,0,,0
+ea60220c5,2014-10-06 10:31:26,Enable parallel tests.,0,,0
+2f994b272,2014-10-07 15:59:31,Add AABB tree to utils,0,,0
+8b10e6cdd,2014-10-09 18:50:13,Fix typo in hoomd_script,1,,0
+39cf5933f,2014-10-10 07:58:41,Merged in typo_fix (pull request #1),0,,0
+981af8451,2014-10-17 09:58:56,Add AABB tree neighbor list builds on the CPU + Add NeighborListTree to the unit tests + Modify python pair runner module for testing new class,0,,0
+6af29937a,2014-10-17 11:57:27,Fix tree traversal to skip ahead in search,1,,1
+ad6fcec35,2014-10-22 18:29:08,allow implicit precision changes in quat and vec3,0,,0
+00afa1f47,2014-10-26 21:41:17,Fix K=0 FENE bonds,1,,1
+ec2ac46cc,2014-10-30 21:42:21,Added functionality to change number of types between runs (untested),0,,0
+99458b8aa,2014-10-30 22:12:44,Added python interface for adding and listing types,0,,0
+f63206532,2014-10-30 22:20:31,Added C++ unit test in test_pdata for adding types,0,,0
+f5e4dd0f1,2014-10-30 23:03:08,Added python unit tests,0,,0
+32aa1f7de,2014-10-30 23:05:07,Fixed problem when types are changed in BDNVT(Rigid) simulation,1,,0
+5a88806f9,2014-10-30 23:14:15,Make initialization from snapshots with different numbers of types work,0,,0
+dd6d7ee38,2014-10-30 23:23:02,Add one more unit test for pair.table,0,,0
+df59ef5d8,2014-10-31 00:40:47,Starting changes for grand-canonical simulations,0,,0
+2ccdf5714,2014-10-31 13:57:33,Sanity check for adding duplicate types,0,,0
+d8d51085f,2014-11-01 15:59:52,Added some more code for dynamic global particle data (untested),0,,0
+a36efa35c,2014-11-02 13:26:21,Fix some compiler warnings,1,,0
+6d49651c2,2014-11-02 14:56:37,Further changes for adding/removing particles,0,,0
+e994dfc7f,2014-11-02 15:37:34,take into account that getMaximumTag is max num of particles - 1,0,,0
+99847dccc,2014-11-02 16:09:21,Added python interface for adding/removing particles (untested),0,,0
+9f0b130ad,2014-11-02 19:26:03,Debugging,0,,0
+4b0d0f837,2014-11-02 20:35:19,Now addition of particles does not give any errors when running,1,,0
+a170bcf54,2014-11-02 21:11:30,Removing particles now also works,0,,0
+c81ca3490,2014-11-02 21:45:48,Fix logical error in initialization,1,,1
+efbed66f7,2014-11-02 21:59:57,Tentatively fixing snapshot initialization with MPI when bonds have been added or removed,1,,0
+5bf31a14e,2014-11-02 22:03:51,Fixing snapshot test with MPI,1,,0
+4c53578e9,2014-11-02 22:43:58,All script unit tests passing (MPI and non-MPI) assuming C++ unit tests OK  too  but will see when merging into next,0,,0
+b4e542be6,2014-11-03 08:32:41,Fix order of bonds in BondedGroupData<>::takeSnapshot(),1,,1
+d847625eb,2014-11-03 09:42:45,Merged in fix_zero_fene (pull request #3),0,,0
+cbb40144f,2014-11-03 10:21:46,add unit tests for adding/removing particles,0,,0
+5c7507e94,2014-11-03 13:40:41,Test adding bonds and particles,0,,0
+4cd2bb7f9,2014-11-03 15:02:15,Added tests to test_group python unit tests,0,,0
+56f98a420,2014-11-03 15:12:15,Error out in Analyzers if particle number changes,1,,0
+fe46d2d3c,2014-11-03 15:47:35,Make sure exclusions work with added/removed bonds/particles,0,,0
+12ad4e2e8,2014-11-03 16:21:23,Fix bug in exclusions counting,1,,1
+8f8640b2f,2014-11-03 17:44:38,Updating documentation,0,,0
+a1e653c3e,2014-11-03 19:02:30,Sensible default orientation for added particles,0,,0
+2c97889f4,2014-11-03 19:23:17,Add particle number to log quantities,0,,0
+fe549050b,2014-11-03 20:47:31,Fix assert()'s,1,,1
+c9032c36a,2014-11-03 21:43:19,Remove ghost particle tags via signal,0,,0
+766ace098,2014-11-03 21:56:00,Fix failing unit tests,1,,1
+7a012c36d,2014-11-03 22:11:32,Fix whitespace problem,1,,1
+134ca74a8,2014-11-05 20:23:32,Changes to allow having zero particles,0,,0
+a42ba9bd2,2014-11-06 13:46:27,Removed casts. They do not appear to be necessary.,0,,0
+d5e43a521,2014-11-06 14:05:31,"Revert ""Removed casts. They do not appear to be necessary.""",0,,0
+001fdcb32,2014-11-06 15:30:51,Merged in change_num_types (pull request #5),0,,0
+b85c88d12,2014-11-06 17:02:53,Fix bdnvt_rigid,1,,1
+6622d924b,2014-11-06 17:30:46,Merge branch 'master' into add_remove_particles,0,,0
+256ac5247,2014-11-07 03:04:59,Fix compile error with GCC on Linux,1,,1
+548ff9a73,2014-11-07 07:57:41,Merged in bdnvt_rigid_fix (pull request #7),0,,0
+fcf2fc984,2014-11-07 15:14:15,Fix performance of initializing pair.slj() in MPI,1,,1
+e95ee46f1,2014-11-07 18:11:23,make error of adding existing types a warning,1,,0
+2b82ef27d,2014-11-07 18:14:44,add line break,0,,0
+e1c25c5d0,2014-11-07 18:18:17,Output type name,0,,0
+16b1952e0,2014-11-07 22:27:29,Merge branch 'master' into add_remove_particles,0,,0
+8c5a34149,2014-11-09 20:38:51,Check if box size is sufficiently large for domain decomposition in exchangeGhosts(),0,,0
+40b1c430a,2014-11-09 20:38:51,Check if box size is sufficiently large for domain decomposition in exchangeGhosts(),0,,0
+204a6ce9f,2014-11-10 10:52:53,Merged in add_type_warning (pull request #9),0,,0
+910afeb52,2014-11-10 10:55:27,Fix a small typo.,1,,0
+ed47038cf,2014-11-10 11:52:14,fix failing unit test,1,,1
+b1d69e466,2014-11-10 14:00:50,Merged in data_unit_test_fix (pull request #10),0,,0
+411345684,2014-11-10 15:55:06,Added unit test for shifted lj maximum diameter,0,,0
+5fc0e8ca3,2014-11-10 20:06:14,Tolerate python 2.6,0,,0
+8d113cdb3,2014-11-10 20:07:34,Quiet init messages in init,0,,0
+2376e69c0,2014-11-11 15:04:50,Quiet autotuner warnings when disabled too early,0,,0
+9566d5ad0,2014-11-11 15:05:19,Add a section on Blue Waters,0,,0
+4c7e0dc2e,2014-11-11 20:39:50,uses assertAlmostEqual and random diameters in unit test,0,,0
+8dc599cb7,2014-11-11 20:55:29,Merge branch 'master' into add_remove_particles,0,,0
+4cd836b16,2014-11-11 21:04:43,Merge branch 'master' into add_remove_particles,0,,0
+26c004f19,2014-11-11 22:19:29,Require passing the required minimum ghost layer width via a signal,0,,0
+3472eb15c,2014-11-12 07:45:22,Fix transcription error,1,,1
+db9748c7e,2014-11-12 07:47:36,Merged in bw-fixes (pull request #11),0,,0
+98bf22390,2014-11-13 20:13:21,Added OPLSDihedralForceCompute (only CPU version),0,,0
+91adfcf7e,2014-11-18 11:09:55,"sanitize variant ""zero"" parameter. resolves #28",0,,0
+9288283e0,2014-11-18 12:17:34,Merged in issue28 (pull request #13),0,,0
+cd2474857,2014-11-20 21:51:06,Update AABB.h and AABBTree.h with optimizations for SSE and AVX,0,,0
+16dbc4687,2014-11-20 22:56:59,Add particle tagging to AABB tree,0,,0
+157c62747,2014-11-20 23:18:45,Add copyright to updated AABB and AABBTree,0,,0
+75899069c,2014-11-21 15:42:45,Added OPLS test code and initial GPU wrapper code,0,,0
+bb2071bc0,2014-11-22 18:00:03,Add autotuner setting for computing the maximum runtime,0,,0
+a6f4be76f,2014-11-22 21:44:24,Added OPLS GPU code and cuda kernel,0,,0
+b5c3eb18c,2014-11-24 09:30:36,Remove accessors for public AABB tag,0,,0
+a45bdf441,2014-11-24 11:42:35,Merged in pair_slj_init_fix (pull request #8),0,,0
+cfb5cd3f6,2014-11-24 12:27:44,Fix bug (mode_Enum instead of bool),1,,1
+c80c0fe1a,2014-12-03 18:10:00,Add shells for GPU version of NeighborListTree,0,,0
+f5ba6c71c,2014-12-03 18:13:28,Merge branch 'master' of https://github.com/joaander/hoomd-blue into aabb_tree,0,,0
+6078df787,2014-12-03 18:26:05,Merge branch 'aabb_tree' into nlist_asymm,0,,0
+79f220e5d,2014-12-11 09:56:23,Add GPU kernel for tree traversal,0,,0
+b46e9e96e,2014-12-11 18:20:30,Strip down AABBTreeGPU,0,,0
+ae0062f7b,2014-12-12 11:17:34,Optimize leaf data structures on GPU,0,,0
+ce15e3923,2014-12-12 13:55:42,Add -= to Scalar3,0,,0
+33058bc3e,2014-12-12 14:15:23,Clean up NeighborListTreeGPU,0,,0
+a63aeb5f7,2014-12-14 02:56:01,Rewrote OPLS code without trig functions,0,,0
+76d1a4386,2014-12-14 03:38:10,Updated comment in python script,0,,0
+3aaadd507,2014-12-16 12:29:10,Merge branch 'master' into multiple_ghost_layer_widths,0,,0
+53209e21d,2014-12-16 13:50:19,Added fallback to use explict ghost layer width,0,,0
+a72959b85,2014-12-18 13:04:58,Save changes to merge upstream master,0,,0
+3b2bde6d7,2014-12-18 13:05:01,Merge upstream branch 'master' into tree_refactor,0,,0
+34a6b064f,2014-12-23 14:59:00,forgot to reinstate Communicator:setGhostLayerWidth as fallback method,0,,0
+caf581d3e,2015-01-04 12:19:11,Merge branch 'master' into aniso_int_new,0,,0
+9c7c2d7b4,2015-01-05 10:32:45,Added anisotropic support to Martyna Tobias Klein NVT,0,,0
+4bb80b154,2015-01-07 13:13:13,Add casting support to vec2 for symmetry,0,,0
+8d56b1f0f,2015-01-07 13:13:35,More robust testing of vecX casting,0,,0
+5be2c7872,2015-01-07 14:13:46,Merged in vectormath_constructors (pull request #2),0,,0
+f5046ff1e,2015-01-07 14:13:56,Merged in autotuner_max (pull request #14),0,,0
+839d7fc13,2015-01-07 19:38:45,Anistropic NVT on GPU and unit test using Gay-Berne potential,0,,0
+153cff463,2015-01-09 11:46:23,Give more useful error message when cudaGetDeviceCount() errors,1,,0
+8e074967e,2015-01-09 11:46:57,Python's make install target has race conditions again :(,0,,0
+946af17f0,2015-01-09 12:51:24,Add launch timing benchmark,0,,0
+bc25bed4c,2015-01-09 13:26:40,Fix compile error  not sure how it got there.....,1,,1
+0fd1aefc6,2015-01-10 18:29:55,Shift LJ potential in NVT unit test,0,,0
+45f780489,2015-01-11 12:03:00,Simplified Trotter factorization for NPT integrator,0,,0
+1c60d41a8,2015-01-14 12:50:30,Link to python statically when ENABLE_STATIC=on,0,,0
+94d380149,2015-01-14 18:01:54,Fix virial computation in anisotropic pair potentials,1,,1
+53fec433d,2015-01-14 18:02:49,Enable NPT integration of anisotropic potentials,0,,0
+10f39233f,2015-01-15 14:06:37,Added unit test for Gay-Berne,0,,0
+fb2c9f3bb,2015-01-19 10:36:58,Fix git clone link in comple docs.,1,,1
+8cf6e2d5f,2015-01-20 17:36:57,Micro optimization of tree traversal,0,,0
+6413a77d3,2015-01-21 11:41:35,Bump version to 1.0.2,0,,0
+22b34ae8f,2015-01-23 14:11:08,Merge branch 'maint',0,,0
+fc468f940,2015-01-26 19:29:16,Microoptimization of AABBGPU to Scalar3,0,,0
+ebc7fee1d,2015-01-27 12:41:03,Merged in add_remove_particles (pull request #6),0,,0
+170b8e56b,2015-01-27 15:23:10,Clean up extra data from C++ tree code,0,,0
+483582f57,2015-01-29 18:33:05,Merge branch 'master' into aniso_int_new,0,,0
+a58ba136d,2015-01-30 12:33:39,Forgot to sort angular momentum and moment of inertia fields on CPU,0,,0
+b1b25a0d7,2015-01-30 18:18:42,Fixed bug in group.rigid()/group.nonrigid() python interface,1,,1
+7df997c24,2015-01-30 18:18:42,Fixed bug in group.rigid()/group.nonrigid() python interface,1,,1
+879b89dba,2015-02-01 19:13:10,Fix image counters when particle positions are set through data API,1,,1
+5ae0b47e8,2015-02-12 17:24:45,Fix GPUArray scoping bug,1,,1
+3b15d6944,2015-02-12 17:25:29,Fix leftover conflict from earlier merge,1,,1
+d421759a2,2015-02-12 17:29:33,Fix debug mode assertion (another scoping bug),1,,1
+48c54d1a5,2015-02-12 20:26:11,Fix segfault in NeighborList when adding particles,1,,1
+6bd4b36c6,2015-02-13 08:02:44,Merged in fix_add_particles_segfault (pull request #18),0,,0
+786c94472,2015-02-13 14:31:02,Fix logic to re-allocate exclusions upon particle addition,1,,1
+febf0eb5a,2015-02-13 15:04:34,Really amortize exclusion list resizing,0,,0
+6933d2d78,2015-02-15 22:24:43,Fixed some comments and formatting issues,1,,0
+074a10ec8,2015-02-18 15:39:19,Add Morton code generation and hierarchy generation to GPU trees,0,,0
+9ba47614d,2015-02-19 16:31:20,Add leaf particle merging and AABB calculation for hierarchy,0,,0
+6b27e2c39,2015-02-20 15:26:03,Fix multiple type tree build bugs  and refactor data structures,1,,1
+cfc0a7902,2015-02-23 08:21:39,Merged in fix_rigid_body_group (pull request #20),0,,0
+5b64d3729,2015-02-23 09:28:30,Merge branch 'master' into aniso_int_new,0,,0
+27d7cc672,2015-02-23 10:03:47,Merge branch 'master' into fix_data_access_img,0,,0
+8995657d7,2015-02-23 10:10:13,Update image counters by taking into account old values,0,,0
+cf0ca8285,2015-02-23 19:37:32,Bridge GPU tree builds to GPU tree traversal,0,,0
+4f024fe1c,2015-02-23 19:42:00,Remove test code meant for experimental branch,0,,0
+6116ce4e4,2015-02-24 08:44:59,Merged in fix_data_access_img (pull request #17),0,,0
+e220f98b1,2015-02-24 14:03:53,Refactor tree build code,0,,0
+cc37094ef,2015-02-24 14:56:03,Refactor morton code generation,0,,0
+38060756e,2015-02-24 17:50:54,dump.write_metadata() generates/appends to JSON,0,,0
+83b01f835,2015-02-24 19:24:50,Implement metadata for forces and analyzers,0,,0
+60e4f2272,2015-02-25 15:13:15,Output NVT metadata,0,,0
+2c7c708e5,2015-02-25 18:03:28,Optimize tree traversal for new data structure * Port particle histogramming / mapping to the GPU,0,,0
+59d133976,2015-02-25 18:39:12,Improve hoomd shell script,0,,0
+5e68173f1,2015-02-26 11:15:08,Fix bug in ghost layer width for periodic systems,1,,1
+c32d64b8e,2015-02-26 16:24:04,Reorganize metadata collection,0,,0
+f1056939f,2015-02-26 18:09:04,Further unify metadata collection,0,,0
+d0abb2df3,2015-02-26 18:20:07,Refactor and clean up tree code * Remove legacy code from CPU tree builds * Combine memory allocation into single setup method * Add autotuners for tree build kernels,0,,0
+1a97a7ea4,2015-02-26 18:46:17,Enabled metadata generation for all relevant classes,0,,0
+6ff44deb6,2015-02-26 18:54:31,Forgot updaters,0,,0
+ca86095bb,2015-02-27 09:02:06,Fixed typo/leftover code,1,,0
+e55276822,2015-02-27 09:06:20,Update documentation,0,,0
+912b53963,2015-02-27 09:20:55,Remove unneeded import,0,,0
+fc0b4cc6b,2015-02-27 09:22:44,Fix erroneously deleted lines of code,1,,1
+c5f2d8aaf,2015-02-27 09:28:05,fix typo,1,,0
+7d8e083a3,2015-02-27 09:30:44,Fix missing line of code,1,,1
+402766784,2015-02-27 09:33:05,remove unneeded line of code,0,,0
+77cc50db5,2015-02-27 16:02:11,return metadata as dictionary,0,,0
+0d025dc7c,2015-02-27 16:05:50,Add to documentation,0,,0
+b0b6800c3,2015-02-27 16:30:09,Fix a bug for multiple particle type tree builds,1,,1
+8cd90be7f,2015-03-02 12:53:03,Fix a bug for trees with only a single leaf,1,,1
+ea409f659,2015-03-02 13:44:43,Replace head list code with thrust prefix sum * Fix a typo in autotuner initialization,1,,1
+2fc087236,2015-03-03 10:13:34,Add r_cut(i j) to distance checking,0,,0
+cbac05ab1,2015-03-03 15:06:10,Fix some (but not all) bugs in MPI implementation * Clean up memory management * Fix a bug in handling single leaf trees * Fix a bug in texture binds for tree traversal,1,,1
+21a7b6b21,2015-03-03 16:37:15,Fix a bug in Morton code generation that incorrectly marked particles on the boundary as out of bounds,1,,1
+4a86d4fed,2015-03-04 13:23:55,Fix a bug in nlist memory allocation * Properly allocates memory on ranks with no particles * Add notifyParticleSort to nlist unit tests * Fix a bug in nlist unit tests that required particle ordering   when no ordering was necessary,1,,1
+a89b359ef,2015-03-05 11:56:48,Merged in junghans/hoomd-blue (pull request #21),0,,0
+a46476ef6,2015-03-05 15:25:35,Refactor tree nlist CPU code * Fully implement MPI * Replace GPUArray with std::vector * Cleanup unnecessary AABBTreeGPU,0,,0
+86093ba26,2015-03-05 18:54:17,Restore diameter shifting to CPU code,0,,0
+397074bf8,2015-03-06 09:43:22,Add diameter shifting to binned GPU code,0,,0
+590679f4b,2015-03-06 14:12:55,Add diameter shifting to GPU trees,0,,0
+2d17577c1,2015-03-08 12:21:05,cmake: fix build with ninja instead of make,1,,1
+0405a11ca,2015-03-08 21:29:36,Minor documentation cleanup,0,,0
+802d3a64e,2015-03-09 09:06:06,Merged in junghans/hoomd-blue (pull request #23),0,,0
+e78ed88e4,2015-03-10 07:54:20,Add missing include,0,,0
+4edb9b209,2015-03-12 12:10:07,Enable building with IMPI (CPU only),0,,0
+53fb8603f,2015-03-16 15:32:15,"SRR: Fixed stress/virial calculations for rigid bodies to correctly take into account bodies that might span a periodic boundary. Changed ""x [dot] F_constraint"" to ""(x-xCOM) [dot] F_constraint""",1,,0
+b41009823,2015-03-17 10:57:15,Update Python module for pair potentials and Python unittests,0,,0
+ec6b997e4,2015-03-17 14:53:22,Replace deprecated NeighborList with NeighborListTree in unit tests,0,,0
+7cb30fad2,2015-03-17 14:54:01,Replace neighbor list indexer with head list in all potentials,0,,0
+228028c9e,2015-03-17 17:13:04,Fix compile error for determining block size,1,,1
+2dbcca823,2015-03-18 00:03:57,Mark boost headers as system includes,0,,0
+44c9d9b91,2015-03-18 00:04:47,Reorder headers in gpu code for impi,0,,0
+dbd9570cd,2015-03-18 08:05:17,Bump to version 1.0.3,0,,0
+02e914125,2015-03-18 11:38:27,Add CUB library 1.3.2,0,,0
+4a048c0a4,2015-03-18 21:16:06,Fix missing signal disconnect,1,,1
+82dee95ee,2015-03-19 11:35:14,Use texture tools for fetching nlist,0,,0
+f9767f7b0,2015-03-19 13:15:31,Merge branch 'nlist_asymm' into cub_sort,0,,0
+459dd9b71,2015-03-19 16:11:40,Use CUB sorting libraries instead of thrust,0,,0
+80a1328c5,2015-03-19 17:55:13,Use single morton code sort for all types,0,,0
+81ebf8e4e,2015-03-23 18:11:20,Sort morton codes by type with 64 bit keys,0,,0
+09091df84,2015-03-24 09:11:40,Fix a bug for single particle type mapping,1,,1
+23c0231be,2015-03-24 11:31:15,Fix a bug in setting tree roots  remove deprecated mapping code,1,,1
+c5c9d37d5,2015-03-24 11:41:08,Explicitly request 32bit uints for morton codes,0,,0
+2fda7e317,2015-03-24 13:22:44,Add support for changing number of types,0,,0
+94b8a133b,2015-03-24 13:55:45,Build head list using CUB libraries CUB is at least 2x faster than thrust on modern cards for prefix sums  so use these libraries instead of thrust.,0,,0
+8105a0dde,2015-03-24 17:14:50,Fix a bug in diameter shifting * Cleanup documentation of NeighborList class,1,,1
+cfced7db5,2015-03-24 17:36:33,Clean up and document CPU nlist code,0,,0
+5e8e97b4d,2015-03-24 18:13:58,Fix MPI linker flags in example plugins,1,,1
+47c8ddf8b,2015-03-25 09:18:54,Merge branch 'maint',0,,0
+63dfd155d,2015-03-25 11:14:34,Remove iteritems for Python 3 compatibility,0,,0
+8648815d2,2015-03-25 14:30:28,Merge remote-tracking branch 'ksil/opls' into opls-merge,0,,0
+083976305,2015-03-25 14:32:48,Remove EOL whitespace,0,,0
+9b4bef6a4,2015-03-25 14:49:57,Add OPLS to documentation index.,0,,0
+bcb5c400a,2015-03-25 14:50:11,Add OPLS authors to credits page.,0,,0
+70dadf663,2015-03-25 14:51:17,Add missing __syncthreads() in rigid body force reduction,0,,0
+227b99643,2015-03-25 15:18:35,Add rigid virial fix to the credits page,1,,1
+e65bc29a8,2015-03-25 15:20:17,Merge rigid-virial-merge: fixes bug where rigid body virials were computed incorrectly when bodies split across periodic boundaries,1,,0
+59669f765,2015-03-25 15:21:42,Merged in fix_rigid_force (pull request #25),0,,0
+3ba0e24b1,2015-03-25 15:23:20,Merged in fix_plugin_mpi_link_flags (pull request #24),0,,0
+bd13fd29b,2015-03-25 15:27:08,Merge opls-merge: Add OPLS dihedral.,0,,0
+df081296d,2015-03-25 17:41:23,Fix a bug reallocating tree internal memory,1,,1
+b7e463efc,2015-03-25 19:25:21,Fix intra-warp reduction in pair force kernels,1,,1
+2525e285b,2015-03-25 20:48:22,Disable shared memory usage in NeighborListGPUBinned on Fermi,0,,0
+6018e21e3,2015-03-25 20:54:05,Fix compilation error on MacOS 10.10 with CUDA toolkit 7.0,1,,1
+9047717d7,2015-03-26 07:19:57,Merged in fix_compile_cuda70 (pull request #28),0,,0
+d25d16d3f,2015-03-26 07:25:43,Merged in fix_pair_force_kernels (pull request #26),0,,0
+c6ced021b,2015-03-26 07:30:22,Merged in neighborlist_fix_fermi (pull request #27),0,,0
+bdc99bc78,2015-03-26 07:54:30,Merge branch 'maint',0,,0
+c3d394971,2015-03-26 11:36:04,Fix usage of __shfl call,1,,1
+5f49d4e56,2015-03-26 12:03:36,Provide double specialization of __shfl for toolkit versions < 6.5,0,,0
+bc048f44d,2015-03-26 13:22:05,Fix warning in NeighborListGPUBinned,1,,0
+60dbf8e30,2015-03-26 15:01:31,Merged in fix_pair_force_kernels (pull request #29),0,,0
+9613ce303,2015-03-26 15:02:38,Merged in fix_nlist_warning (pull request #30),0,,0
+e19440951,2015-03-26 15:11:06,Merge branch 'maint',0,,0
+e88bc40e4,2015-03-26 16:07:40,enable script unit tests with cuda-memcheck,0,,0
+815bee403,2015-03-26 16:11:14,Fix name of memcheck/racecheck tests,1,,1
+90fbfd5c1,2015-03-26 16:30:33,Merge upstream master,0,,0
+465f39a13,2015-03-26 16:30:39,Merge bug fixes from upstream master,1,,1
+bd254d7c0,2015-03-26 18:33:45,Fix a bug to gracefully include ghost particles outside the expected layer width,1,,1
+82079aa7d,2015-03-27 08:36:49,Merged master into deterministic,0,,0
+b0ca3e1d0,2015-03-27 09:11:41,Add deterministic unit test,0,,0
+6fb2565aa,2015-03-27 09:48:02,Revise CPU neighbor list documentation,0,,0
+a94eb2baf,2015-03-27 10:19:20,Merged in cuda_memcheck_unit_test (pull request #31),0,,0
+16c839803,2015-03-27 10:42:47,Fix a bug in distance check for slj,1,,1
+2714783a2,2015-03-27 11:20:42,Amortize neighbor list resizing * Revise documentation for NeighborListGPU,0,,0
+1c15bbd1c,2015-03-27 11:34:13,Cleanup and document NeighborListGPUBinned,0,,0
+c648ec2d2,2015-03-27 16:00:03,Enhance NeighborListGPUTree * Performance improvements for traversal * Refactor internal data structures * Add documentation for most kernels and kernel drivers,0,,0
+392caf17e,2015-03-30 13:24:04,Finish CUDA documentation,0,,0
+52b439805,2015-03-30 13:31:13,Cleanup Python documentation,0,,0
+67d50eddf,2015-03-30 13:41:13,Remove lineinfo from CMake,0,,0
+bdc38ac08,2015-04-02 11:28:07,Use tmp files for hoomd script tests,0,,0
+0dcdcd54c,2015-04-02 13:32:27,Enable parallel tests in C++ unit tests,0,,0
+7dadcb1b5,2015-04-03 15:06:50,Disable long unit tests by default,0,,0
+0e2571510,2015-04-03 15:08:41,Merged in parallel-tests (pull request #33),0,,0
+376378d1e,2015-04-03 15:18:51,Merge branch 'maint',0,,0
+9d890eb88,2015-04-06 08:32:01,init.read_xml now uses tmp files for both files,0,,0
+a4c1a6722,2015-04-06 08:33:14,Merge branch 'maint',0,,0
+704fa6f0f,2015-04-06 18:43:13,Add automatic citation generation to HOOMD script,0,,0
+afd21aac7,2015-04-07 08:59:36,Fix a bug where Fermi nlists were generated incorrectly,1,,1
+3f573ab4b,2015-04-07 09:01:40,Remove debug prints from previous commit,0,,0
+5ea151623,2015-04-07 11:18:41,Merge branch 'maint',0,,0
+87d427f50,2015-04-07 12:01:57,Added mpi.h exclusively to solve impi order problem for stampede,1,,0
+37dcd4b72,2015-04-07 12:47:27,Adding mpi.h for MPI_CUDA flag,0,,0
+1cc516f86,2015-04-07 13:14:37,Bump version to 1.0.4,0,,0
+f0251b942,2015-04-07 13:21:00,More elegant way of including mpi.h,0,,0
+d7109afb4,2015-04-07 16:18:56,Using HOOMD Libraries in the right order for mpi,0,,0
+2730e4dad,2015-04-08 07:03:03,Merged in impi_fix (pull request #34),0,,0
+9f9f0ddc1,2015-04-08 14:17:17,Fix debug mode assertion,1,,1
+f9d6c068e,2015-04-08 14:22:26,Fix dangling connection,1,,1
+47e0bfc44,2015-04-08 14:29:42,Merged in fix_assert (pull request #37),0,,0
+69ea1d576,2015-04-08 14:43:36,Merged in fix_swap_integrator_maint (pull request #36),0,,0
+b4c1912c9,2015-04-08 14:53:19,Merge branch 'pair_pot' of login.itcs.umich.edu:/afs/umich.edu/user/p/d/pdodd/projects/general/hoomd into potential_mod,0,,0
+4e786355b,2015-04-08 15:23:43,Allow a 2nd file to init.read_xml,0,,0
+b40fc9bf3,2015-04-08 16:13:44,removed xcode project,0,,0
+16b603ba5,2015-04-08 16:16:23,undo trivial changes done to these files,0,,0
+42a7406b6,2015-04-08 16:19:02,using master verion of these files,0,,0
+50050d8bb,2015-04-08 18:40:35,cleanup and implementation complete. todo: create a unit test,0,,0
+0b9dc30e9,2015-04-09 13:13:57,Keep a cached vector of active particle tags. Fixes #39,1,,0
+0c199b487,2015-04-09 13:34:28,Use GPUVector instead of GPUArray for cached active tag list,0,,0
+8ebb8cb0a,2015-04-09 13:39:50,Add HOOMD_WALLTIME_STOP env var,0,,0
+ecbfb85b9,2015-04-09 15:31:59,Backend for phase keyword,0,,0
+7c53a2fa1,2015-04-10 08:45:46,Enable phase keyword in all analyzers and updaters,0,,0
+e7db3fc6c,2015-04-10 09:10:39,Add WalltimeLimitReached exception,0,,0
+c72f0f610,2015-04-10 09:38:22,Lazily rebuild active tag list,0,,0
+d5b248f5c,2015-04-10 09:48:16,Document HOOMD_WALLTIME_START,0,,0
+dc6e40199,2015-04-13 16:13:34,Changed to a iterator input for the energy calculation,0,,0
+1895716eb,2015-04-13 16:14:00,typos fixed,1,,0
+dbf7122ba,2015-04-15 13:15:42,Make system_data.box have the right dimensions,0,,0
+e31d782f1,2015-04-17 11:25:56,Remove ghost particles when using data access API,0,,0
+95963abad,2015-04-17 11:32:45,Lazily rebuild active tag list for BondedGroupData,0,,0
+93065adad,2015-04-17 11:48:56,Fix style issues in BondedGroupData,1,,1
+61b453f32,2015-04-17 11:55:19,Moved BondedGroupData::maybe_rebuild_tag_cache() decl out of conditional block,0,,0
+32dfe0dad,2015-04-17 16:26:30,Merge branch 'master' into multiple_ghost_layer_widths,0,,0
+09c04a568,2015-04-20 07:51:22,Fix bug where comm.get_rank did not work with --nrank,1,,1
+7babde8d7,2015-04-20 08:15:50,Merge branch 'maint',0,,0
+cd7632ba4,2015-04-20 08:30:55,Merged in fix_data_api (pull request #38),0,,0
+33229feeb,2015-04-20 09:44:00,Merged in fix_nlist_reallocate (pull request #19),0,,0
+87450b89f,2015-04-20 16:57:18,Merge branch 'multiple_ghost_layer_widths' of https://bitbucket.org/glotzer/hoomd-blue into multi_nlist,0,,0
+fc2a3cba4,2015-04-21 17:27:44,Enable multiple neighbor lists to coexist,0,,0
+56392211b,2015-04-21 17:53:20,Add automated testing for pair nlist subscription,0,,0
+119369f6a,2015-04-21 18:22:29,Exclude particles from neighbor list on build time when r_cut(i j) is non-positive,0,,0
+cb535f28c,2015-04-23 15:05:11,Python script changes to enable ignoring by rcut(i j),0,,0
+c60069051,2015-04-23 15:05:32,Add C++ unit tests for ignoring particles by cutoff,0,,0
+d91170582,2015-04-24 10:25:01,Revise user documentation,0,,0
+039ad0ad0,2015-04-24 13:50:42,Refactor and document citation module * Rename some methods and functions * Fully document module * Fix bug where misc did not automatically subscribe to global bib,1,,1
+b46306ceb,2015-04-24 15:54:09,Add Python unit testing and fix a few bugs,1,,1
+107e70b31,2015-04-24 16:35:01,Move HOOMD version info into Python module * Info is passed via Messenger to squash extra output in MPI runs,0,,0
+2108aeada,2015-04-24 18:03:25,fix documentation typo in tune.r_buff(),1,,0
+fa00b28d3,2015-04-27 09:45:14,Clean up documentation,0,,0
+cd529c752,2015-04-27 09:46:39,Merge https://github.com/joaander/hoomd-blue into cite,0,,0
+e7c080cfc,2015-04-27 10:13:36,Remind user about cite.save,0,,0
+247c056fc,2015-04-27 11:26:41,Merged in m_eric_irrgang/tunepy-edited-online-with-bitbucket-1429898560410 (pull request #41),0,,0
+f476aef39,2015-04-27 11:56:46,Enable automatic updating of bibliography with run() * Expand unit tests * Fix a bug that caused MPI tests to fail or hang,1,,1
+5ae4146ea,2015-04-27 12:03:46,Remove unnecessary call to ensure bibliography,0,,0
+ce79a93eb,2015-04-28 10:49:28,Merged in deterministic (pull request #32),0,,0
+3c2dc6e36,2015-05-04 10:08:03,Fix duplication of STL container data types on rank 0 for bcast,1,,1
+df4a601cf,2015-05-04 11:50:44,Suppress warnings on non-zero ranks,0,,0
+379305ee5,2015-05-04 12:07:05,Output status lines correctly in python3.5,0,,0
+d13481164,2015-05-04 15:50:15,Fix initialization of domain decomposition,1,,1
+2324332c4,2015-05-05 06:19:15,Enable CUDA builds with intel compiler,0,,0
+a194f50a3,2015-05-05 06:20:52,Use CMake's built-in FindCUDA.cmake,0,,0
+22beb5b36,2015-05-05 06:21:59,GCC_ARCH flag sets the -march command line option to gcc,0,,0
+375d7d81b,2015-05-05 06:34:56,Plugins still expect to find thrust in cuda/,0,,0
+ab4c74155,2015-05-06 08:19:30,Fix local rank detection with --mode=gpu,1,,1
+0b02102d1,2015-05-07 15:29:29,Wrap around when running more ranks than GPUS,0,,0
+0da3fe27f,2015-05-10 20:12:24,Merged in python35_output_statusline (pull request #44),0,,0
+6694bbb76,2015-05-10 20:18:38,Merged in suppress_warn_nonzero_rank (pull request #43),0,,0
+c2426ccee,2015-05-10 20:29:50,Fix typo: STOP -> START,1,,0
+5d21757a9,2015-05-10 23:07:31,Fix compiler warning,1,,0
+4b7c34295,2015-05-11 05:54:26,Merged in fix_bcast_maint (pull request #42),0,,0
+74a88a379,2015-05-11 07:51:12,Fix typo in comment,1,,0
+9e9e0354f,2015-05-11 07:55:22,Merged in multiple_ghost_layer_widths (pull request #12),0,,0
+37b1b7a72,2015-05-11 07:56:09,Merged in restartability (pull request #45),0,,0
+a16cd2ba4,2015-05-11 10:18:45,Try to quiet compiler warnings,0,,0
+10d19a0bb,2015-05-11 10:34:32,Merge branch 'maint',0,,0
+e48201ba1,2015-05-11 15:11:35,Merge branch 'maint',0,,0
+3c0846d59,2015-05-11 15:49:48,Revise user interface to cite(),0,,0
+07a6eb74f,2015-05-11 17:20:35,Re-enable manual GPU selection,0,,0
+fda027592,2015-05-11 17:20:35,Re-enable manual GPU selection,0,,0
+42d11dce0,2015-05-11 17:25:18,Simplify logic,0,,0
+e15910de2,2015-05-11 17:25:18,Simplify logic,0,,0
+82ea036c5,2015-05-12 14:51:49,Minor fixes and changes * Fix bug where r_cut and r_buff were swapped * Use HOOMD CachedAllocator instead of CUB CachingDeviceAllocator * Notify particle sort when types change,1,,1
+0c5f05f55,2015-05-12 15:57:02,Merge remote-tracking branch 'upstream/master' into nlist_asymm,0,,0
+6686966ba,2015-05-12 16:14:47,Add num_util and setup numpy,0,,0
+beb97c9b7,2015-05-12 16:26:25,Add makeNumFromData,0,,0
+1d168e3d5,2015-05-12 17:37:16,fixes #56 to improve 2D DCD output: extract angle from orientation with maximum precision and less error-prone math function,1,,0
+661a87694,2015-05-13 09:08:00,Expose SnapshotParticleData as numpy arrays,0,,0
+0e5bd830f,2015-05-13 10:38:29,Modify names in system data snapshot,0,,0
+d3d4c50f4,2015-05-13 10:42:01,Add data.make_snapshot,0,,0
+649114f10,2015-05-13 18:41:08,Document particle data snapshots,0,,0
+9fc4b215c,2015-05-13 18:44:35,Simplify take_snapshot,0,,0
+a75015a0a,2015-05-13 18:46:09,Merged in dcdAngle (pull request #47),0,,0
+0461bc2da,2015-05-15 14:19:53,Fix a compiler warning in ModernGPU,1,,0
+d065bcac2,2015-05-15 14:21:51,Merge branch 'master' into fix_moderngpu_warn,0,,0
+60df57d46,2015-05-15 15:55:25,Merged in fix_moderngpu_warn (pull request #49),0,,0
+cf55e93fb,2015-05-18 09:42:15,small change to handle first==last case just to be sure,0,,0
+c922a1ef8,2015-05-18 11:34:14,Merge branch 'master' of https://bitbucket.org/glotzer/hoomd-blue into potential_mod,0,,0
+c1ee0a4c7,2015-05-19 09:46:39,Fix a bug where epsilon=0 walls resulted in NaNs,1,,1
+0cf0b8638,2015-05-19 10:02:18,Tagging version 1.0.5,0,,0
+1570283f0,2015-05-20 12:37:56,Add -xHOST to the intel compiler command line,0,,0
+b870cca8c,2015-05-22 06:46:32,Really fix lj wall bug,1,,1
+41729271c,2015-05-26 13:18:06,Merge pull request #11 from mphoward/cite,0,,0
+6d8b32b46,2015-05-26 14:11:57,Merge branch 'maint',0,,0
+7725e8bb4,2015-05-26 14:13:38,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue,0,,0
+196cb9c6b,2015-05-26 14:29:10,Add citation for cite.py,0,,0
+54a4025cb,2015-05-26 15:38:59,Fix typo in get type method,1,,0
+146043d41,2015-05-26 15:56:24,Merged in fix_migrate_error_msg (pull request #50),0,,0
+b44908bb0,2015-05-26 15:57:52,Reinstate box size check in migrateParticles(),0,,0
+611464988,2015-05-26 15:57:52,Reinstate box size check in migrateParticles(),0,,0
+58e474085,2015-05-26 16:04:41,Fix simplified take_snapshot API,1,,1
+9cd868bff,2015-05-26 16:05:01,Add numpy access to bond data snapshots,0,,0
+aa0888e5c,2015-05-27 07:39:01,Merge branch 'master' into numpy-snapshots,0,,0
+af1dd616d,2015-05-27 09:22:57,Update interface for bonded group data snapshot,0,,0
+1834682d1,2015-05-27 09:23:38,Document bonded group data snapshot,0,,0
+5fc366409,2015-05-27 12:10:08,Initialize bond types in make_snapshot,0,,0
+26fa13207,2015-05-27 13:10:45,Unit tests for snapshot numpy API,0,,0
+7f98a0a98,2015-05-29 13:23:20,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+97df1140b,2015-06-01 12:31:35,Template particle data snaphots on Real type,0,,0
+eff0723c5,2015-06-01 12:56:41,Allow ParticleData to work with templated snapshots,0,,0
+3b03d6389,2015-06-01 14:07:23,Complete float/double snapshots,0,,0
+5fea5fae5,2015-06-01 14:30:55,Notice that create_empty is deprecated.,0,,0
+cb700365c,2015-06-01 14:50:16,Fix compile errors in GPU builds,1,,1
+c7db00fe9,2015-06-01 15:16:02,Fix more compile errors,1,,1
+9fcb77705,2015-06-02 07:42:07,Enable unit test for snapshot dtypes,0,,0
+36a45a3ea,2015-06-02 07:43:21,Fix a bug where numpy arrays were not exported with the right type,1,,1
+fdc9d671f,2015-06-02 08:35:37,Fix failing test,1,,1
+c9e0ff3b9,2015-06-02 09:39:44,Snapshots are invalid on ranks other than 0,0,,0
+40ab3e6c7,2015-06-02 09:44:05,Rename tags to group,0,,0
+1b56d9f16,2015-06-02 10:01:05,Finally fixed all of the bugs?,1,,0
+07a7f3be6,2015-06-02 12:49:03,Merge revised nlist_asymm,0,,0
+bc13ed8c0,2015-06-03 06:06:14,Merged in numpy-snapshots (pull request #51),0,,0
+c60db5f33,2015-06-03 07:49:44,GPU prioritization now preferes newer GPUs,0,,0
+2a01e8e20,2015-06-03 07:59:12,Add CUDA RT version to initial status output,0,,0
+8a4ffed50,2015-06-03 08:55:47,Add option.parse_args() command,0,,0
+d54e9863b,2015-06-03 09:34:26,Merge remote-tracking branch 'upstream/master' into nlist_asymm,0,,0
+cb9a10b24,2015-06-03 16:09:58,Fix a bug in pair force computes for neighbor lists exceeding 2^27 items when using textures,1,,1
+0ef318160,2015-06-03 16:12:01,Add developer credit,0,,0
+2bb3722d2,2015-06-03 16:16:55,Merge branch 'nlist_asymm' into multi_nlist,0,,0
+475604378,2015-06-04 11:22:19,Remove installation guide,0,,0
+572d22865,2015-06-04 11:35:41,Document cuda_profile_start,0,,0
+26ee2038d,2015-06-04 11:39:25,Update license to 2015,0,,0
+2230f953a,2015-06-04 12:55:37,Remove exec_conf,0,,0
+ad2b2566b,2015-06-04 12:57:14,Fix failing test,1,,1
+ef851b0fe,2015-06-04 13:15:43,Call setup() before updateRV(),0,,0
+586510a51,2015-06-04 13:34:10,Remove WIN32 vestiges,0,,0
+5ee39d910,2015-06-04 13:39:59,Removed packaging scripts that are no longer used,0,,0
+d877528d0,2015-06-04 13:40:18,Removed one more ref to windows,0,,0
+cd2f50441,2015-06-04 13:54:54,Cleanup old junk in cmake files,0,,0
+d38357864,2015-06-04 14:21:41,Merged in misc-updates (pull request #52),0,,0
+a58a411cb,2015-06-05 10:21:58,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+0de62f367,2015-06-05 10:57:52,Fixed compile errors on mac,1,,0
+cafc46a93,2015-06-05 11:08:12,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+9ddc16cd2,2015-06-05 11:12:38,Initial stub.,0,,0
+cb0572727,2015-06-05 11:12:57,In progress.,0,,0
+43ebcec86,2015-06-05 11:15:22,Merge branch 'analyzer_callback' of bitbucket.org:glotzer/hoomd-blue into analyzer_callback,0,,0
+b6038b1c3,2015-06-05 13:20:34,Implement analyzer callback.,0,,0
+e2928357a,2015-06-05 13:59:03,Fixed doxygen documentation.,1,,0
+69da53129,2015-06-05 14:34:29,Merge branch 'master' into write_metadata,0,,0
+449b7407c,2015-06-05 17:48:41,Add execution context to metadata gathering.,0,,0
+64672caa4,2015-06-05 20:30:59,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+28dabfd78,2015-06-06 13:09:24,Extend context and add unit tests.,0,,0
+68c9ec44a,2015-06-06 13:30:38,Add user documentation.,0,,0
+fc47cd0db,2015-06-06 18:12:26,added get_metadata to dihedral.h  not yet tested,0,,0
+f7e8d530e,2015-06-06 18:12:31,Merge branch 'write_metadata' of https://bitbucket.org/glotzer/hoomd-blue into write_metadata,0,,0
+a558eb498,2015-06-08 13:58:23,Merged in analyzer_callback (pull request #53),0,,0
+8d3e64021,2015-06-08 15:21:24,Add hoomd provided metadata fields.,0,,0
+2ceaa1560,2015-06-08 15:22:15,Add restart option to dump.xml,0,,0
+c63899136,2015-06-08 15:35:34,Remove git_sha1 of cwd from context.,0,,0
+4de1f9343,2015-06-08 16:00:33,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+8c8b30e62,2015-06-08 16:48:18,Merge branch 'potential_mod' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+87f0e6bc4,2015-06-09 11:07:21,Merge branch 'master' into write_metadata,0,,0
+e99b0f067,2015-06-10 09:35:55,Add comm.barrier() and comm.barrier_all(),0,,0
+bcfe7cc8b,2015-06-10 10:19:29,Rename parse_args() to init.setup_conf(),0,,0
+fbacdf0f9,2015-06-10 10:20:14,Update documentation for setup_exec_conf,0,,0
+de7300fa4,2015-06-10 10:22:27,Merged in mpi_barrier (pull request #54),0,,0
+276d8c6a7,2015-06-10 10:39:53,Fix a compile error when MPI is disabled.,1,,1
+b1d78f5d4,2015-06-10 10:40:43,Allow comm.barrier() after init.setup_exec_conf(),0,,0
+3a75f01d6,2015-06-10 10:40:56,Add unit test for barrier,0,,0
+996a26cea,2015-06-10 11:13:11,Fix bug in test_option.py,1,,1
+706193412,2015-06-10 12:03:44,Require init.setup_exec_conf for comm.get_rank and friends,0,,0
+ed4442809,2015-06-10 12:56:36,Merged in setup_exec_conf (pull request #55),0,,0
+009b0373a,2015-06-10 13:27:15,Add metadata_output to credits.,0,,0
+fb38b61ca,2015-06-10 13:28:37,Merge branch 'write_metadata' of bitbucket.org:glotzer/hoomd-blue into write_metadata,0,,0
+1396ba3bf,2015-06-10 13:32:59,Merge branch 'write_metadata' into next,0,,0
+d78761f90,2015-06-10 15:17:25,Fix: Call to getNRanks() failed on non-mpi builds.,1,,1
+4e0d3a5bc,2015-06-10 15:26:31,Use comm instead of exec_conf for nranks determination.,0,,0
+197a15c9e,2015-06-11 16:43:17,Merge branch 'master' into write_metadata,0,,0
+fd29fb998,2015-06-15 13:14:07,Added Mie Potential,0,,0
+0f2bdc5ed,2015-06-15 14:11:44,Fix snapshot data objects in long unit tests,1,,1
+c870dc8b9,2015-06-16 09:51:00,Merged in mphoward/hoomd-blue/fix_long_unit_tests (pull request #56),0,,0
+1980fef12,2015-06-17 10:48:09,Merge branch 'master' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+309b1611b,2015-06-17 10:55:29,removed cmake files,0,,0
+60ef38bf0,2015-06-17 11:36:57,added test_mie_force.cc  but did not yet test  waiting for boost to install on new computer  ugh.,0,,0
+f0203c385,2015-06-17 12:59:10,Add MPI paper to required citation list.,0,,0
+e47845961,2015-06-17 13:02:57,Add MPI paper to citation docs,0,,0
+0376e9517,2015-06-17 13:07:11,Fix additional citations,1,,1
+ad1163273,2015-06-17 13:09:52,Fix failing unit test,1,,1
+48d42e7d3,2015-06-17 13:22:52,fixed and ran test_mie_force.cc and got no errors,1,,0
+3d386e190,2015-06-17 13:30:03,changed python-module/hoomd_script/pair.py comments to have examples that actually correspond to the mie potential,0,,0
+88b79d7ce,2015-06-17 13:55:52,tested test_pair_mie.py and everything is a-ok with this.,0,,0
+7429e9eef,2015-06-17 14:03:05,added python interface to pair force compute,0,,0
+1feae3443,2015-06-17 14:04:10,added my name to credits.dox and added an entry in index.dox for the mie potential,0,,0
+3b95bcae5,2015-06-17 14:17:35,small change to test,0,,0
+ef26f2024,2015-06-17 14:20:07,Misc fixup tasks,0,,0
+5021fcc52,2015-06-17 14:26:43,Rearrange where timestep is sourced,0,,0
+229146d02,2015-06-17 14:34:31,Move all imports to the top,0,,0
+0753cef5f,2015-06-17 14:37:50,Remove leading hoomd_script.,0,,0
+cc89ed3f6,2015-06-17 14:45:29,Fix failing test,1,,1
+a18019a75,2015-06-17 15:48:20,Add multiple ghost layers with unit tests,0,,0
+68e7e7d47,2015-06-17 16:09:33,Add developer credit,0,,0
+a59c7f56c,2015-06-17 16:09:52,Merge remote-tracking branch 'upstream/master' into per_type_ghosts,0,,0
+9f1c9bf6f,2015-06-17 16:21:15,Remove commented line,0,,0
+56363007f,2015-06-23 10:15:37,Merge branch 'master' into mie_potential,0,,0
+ac35b0887,2015-06-23 10:19:51,Fix mismerge,1,,1
+9b3c616ff,2015-06-23 10:23:30,Add missing include,0,,0
+923609d71,2015-06-23 10:29:26,Fix typo,1,,0
+914872f24,2015-06-23 11:27:03,Merge branch 'master' into context_init,0,,0
+76b340998,2015-06-23 13:49:53,Rename init.setup_exec_conf to context.initialize,0,,0
+32dc02d44,2015-06-23 14:07:05,Fix documentation typos,1,,0
+8c2150ffa,2015-06-23 14:14:46,Fix missing documentation for analyze.callback,1,,0
+d88eec988,2015-06-24 08:11:54,More documentation fixes for snapshots.,1,,0
+483500562,2015-06-24 08:12:52,Broadcast snapshot box information before initializing,0,,0
+1654f1a87,2015-06-24 08:13:49,Merge branch 'maint',0,,0
+982b64034,2015-06-24 10:08:38,Fix metadata issues with python 2.7,1,,1
+5df99db6e,2015-06-24 10:15:06,Add hoomd compile time options to metadata,0,,0
+36d004d8a,2015-06-24 10:15:30,Detect clang and intel compilers,0,,0
+2f2c762b1,2015-06-24 11:40:58,Metadata now saves type names in a list,0,,0
+75a11113f,2015-06-24 13:30:05,Fix test_meta script test,1,,1
+50f188b85,2015-06-24 13:38:23,Merged in mie_potential (pull request #57),0,,0
+4a0707d9e,2015-06-24 14:01:08,Update README,0,,0
+3adf36153,2015-06-24 14:22:30,Merge branch 'master' into write_metadata,0,,0
+c9c3fdb99,2015-06-24 14:23:09,Merged in write_metadata (pull request #22),0,,0
+e17c2578d,2015-06-24 16:05:52,Merge branch 'master' into context_init,0,,0
+f63bdfcea,2015-06-24 16:12:52,Add context.initialize() to quick start guide,0,,0
+30c123b84,2015-06-24 16:18:21,Slight changes to the quick start docs.,0,,0
+837472dac,2015-06-24 22:46:51,checkout master versions of Compute.h and RigidData.h to undo misc spelling and whitespace changes,0,,0
+929b7b54b,2015-06-24 22:48:43,added mpi support  changed python::list to numeric::array in the python interface  and doxygen documentation.,0,,0
+c755b74bc,2015-06-24 23:31:13,updated documentation and tested the example in doc,0,,0
+1b674c986,2015-06-24 23:34:18,update compute and rigid data with the right master version,0,,0
+502969e3a,2015-06-24 23:45:17,merge master to resolve conflict,0,,0
+fa25a9944,2015-06-26 07:57:03,Clarify code,0,,0
+95356077d,2015-06-26 08:03:42,Merged in context_init (pull request #60),0,,0
+fecd7c677,2015-06-26 08:10:26,Add Paul to credits,0,,0
+ccc5cfecf,2015-06-26 11:15:44,Add restartable jobs documentation.,0,,0
+016214f96,2015-06-26 14:08:11,added numpy.int to int converter,0,,0
+d1750554f,2015-06-26 14:08:54,Merge branch 'potential_mod' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+3fbcacc50,2015-06-26 15:01:36,removed converter and just use num_util,0,,0
+7482bb450,2015-06-26 17:22:16,Fix a compile warning,1,,0
+2a0013f82,2015-06-26 17:54:38,Merge branch 'potential_mod' of bitbucket.org:glotzer/hoomd-blue into potential_mod,0,,0
+a097ead04,2015-06-26 20:06:00,upped the number of particles in the test to make the box larger so the box decomposition doesn't fail. Also a check to make sure the outer loop particle is on the processor.,1,,0
+cac6b1f67,2015-06-29 08:11:42,Fix segfault,1,,1
+84bc80a71,2015-06-29 09:05:17,Fix computeEnergyBetweenSets MPI bugs,1,,1
+9e8998f2d,2015-06-29 09:06:07,Exchange ghosts at the end of a run(),0,,0
+01b40c43b,2015-06-29 09:06:45,Update pair_set_energy test,0,,0
+134cca80b,2015-06-29 09:24:44,Fix compiler warnings in unit tests,1,,0
+ee9f6cfeb,2015-06-29 09:59:46,Check for mixed execution environments and quit,0,,0
+e70339358,2015-06-29 10:24:10,Add dump.pos,0,,0
+50ceb6178,2015-06-29 10:24:27,Add dump.pos to the documentation index,0,,0
+69cfa4386,2015-06-29 10:24:47,Unit test for dump.pos,0,,0
+eb768b798,2015-06-29 11:00:46,Move Change Log into the hoomd repository,0,,0
+a3a58291b,2015-07-02 11:52:16,Merged in potential_mod (pull request #58),0,,0
+89de79bf1,2015-07-02 11:52:50,Merged in pos (pull request #62),0,,0
+5e0585460,2015-07-06 15:07:11,Enable changing the global particle number with analyze.msd(),0,,0
+49c35a736,2015-07-06 15:13:22,Print warning only once,0,,0
+60eec65a0,2015-07-07 08:51:00,Build sm50 binaries by default,0,,0
+80ccff251,2015-07-07 10:53:19,Merged in xml_restart (pull request #61),0,,0
+2211b444a,2015-07-07 10:57:57,Updated change log for restart_xml,0,,0
+780035d50,2015-07-10 16:22:25,Fix image returned by data API in HPMC simulations,1,,1
+ac4dc9c72,2015-07-13 14:14:33,Fix confusing variable naming for rcut_max,1,,0
+5338dcf19,2015-07-13 14:21:56,Merge nlist_asymm with fixed naming,1,,0
+f72cbd056,2015-07-13 16:07:53,Update misleading documentation,0,,0
+da997f148,2015-07-13 18:43:50,Merged in enable_msd_global_ptl_num_change (pull request #63),0,,0
+8d6c1202d,2015-07-13 18:46:20,Merged in fix_data_access_image (pull request #64),0,,0

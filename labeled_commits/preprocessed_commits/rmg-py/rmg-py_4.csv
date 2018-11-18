@@ -1,0 +1,1615 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+2d16792f,2016-08-09 17:44:09,Update documentation sidebar to match website,0,,0
+301c984b,2016-08-09 18:30:19,only submit a thermo calc when there is no thermo available,0,,0
+37956ca4,2016-08-10 01:58:26,Make unit tests check comments and exhaustively check conversion between heat capacity models,0,,0
+7984b60e,2016-08-10 01:58:55,Get rid of comment storing line in processathermoData,0,,0
+04176859,2016-08-10 17:45:09,Merge pull request #744 from ReactionMechanismGenerator/wilhoit,0,,1
+0d8824c3,2016-08-12 15:11:14,Add unit tests for molecular manipulations in thermo.py,0,,0
+1b63f641,2016-08-12 15:11:39,Add unit test for isPolyringPartialMatched,0,,0
+d543ed97,2016-08-12 20:55:40,Added three unit test examples for addPolyRingCorrectionThermoDataFromHeuristic,0,,0
+12ef49ec,2016-08-15 21:01:38,Update out-of-date unittests,0,,0
+64df1e4d,2016-08-17 00:42:01,Additional logging when updating networks,0,,0
+8d8c8350,2016-08-17 07:28:22,databaseTest.py: deactivate sibling parent checking for polycyclic groups,0,,0
+cb3d799b,2016-08-17 15:42:23,Add Uncertainty class to rmgpy.tools.uncertainty,0,,0
+0751ecb3,2016-08-17 15:44:18,Engines to compute uncertainty of the inputs given their source,0,,0
+2969f8e2,2016-08-17 15:44:56,Add Uncertainty.assignParameterUncertainties function,0,,0
+a3c9fdfc,2016-08-17 16:22:30,Add ipython notebook example findParameterSourcesAndAssignUncertainties,0,,0
+016ab7ae,2016-08-19 13:37:12,Add helper functions for polyring thermo correction,0,,0
+8f676bbd,2016-08-19 13:43:32,Added two methods for deep copying SSSR,0,,0
+6aee9a7d,2016-08-19 13:45:21,Add method to check whether matched polycyclic group is partial match,0,,0
+690b7d9f,2016-08-19 13:46:19,Add function bicyclicDecompositionForPolyring,0,,0
+c9147ed8,2016-08-19 13:51:16,Change the name of __addRingCorrectionThermoData to __addRingCorrectionThermoDataFromTree,0,,0
+4497c15a,2016-08-19 13:52:13,Added new polycyclic thermo correction estimation methods,0,,0
+128941d5,2016-08-19 14:01:21,Mark core pdep reactions as reversible,0,,0
+23deabd7,2016-08-20 00:20:50,Possible fix for the duplicate training reactions problem,1,,1
+e7f1e0bd,2016-08-22 10:19:31,Merge pull request #747 from ReactionMechanismGenerator/smart_polycyclic_thermo,0,,1
+4645100b,2016-08-22 10:36:18,change RMG-Py version number from 1.0.4 to 2.0.0,0,,0
+611d21cf,2016-08-22 11:29:42,Change order of some atomtypes under the 'specific' attribute,0,,0
+0a8a045b,2016-08-22 13:20:57,Merge pull request #750 from ReactionMechanismGenerator/fixTrainingDup,0,,1
+c4025535,2016-08-22 15:03:35,databaseTest.py: Add a unit test preventing square brackets in kinetics group names,0,,0
+634d0d1d,2016-08-22 15:38:09,In kinetics comments  change parentheses to square brackets,0,,0
+10efe31f,2016-08-22 16:11:40,Merge pull request #751 from ReactionMechanismGenerator/squareBracketComments,0,,1
+3801fcd4,2016-08-22 17:03:19,added release notes for previous v1.0.4,0,,0
+cbf87849,2016-08-22 17:25:27,Merge pull request #749 from ReactionMechanismGenerator/extractSource,0,,1
+5477b501,2016-08-22 20:20:49,change database requirement to 2.0.0,0,,0
+3ed2a006,2016-08-22 21:37:19,added ffmpeg to meta.yml for binnary build,0,,0
+1f0ecac9,2016-08-23 00:11:17,Add implicit atoms based on atomtypes for makeSampleAtom,0,,0
+807d6db5,2016-08-23 10:54:41,change those extraneous thermo comments printing to debug mode,0,,0
+6e917f7c,2016-08-23 13:36:07,Modified sibling/parent check to only test for children in one direction,0,,0
+80deaebd,2016-08-23 14:05:24,Add Gitter badge,0,,0
+356028b2,2016-08-23 14:19:04,Update mopac.py for MOPAC2016,0,,0
+b9de0d31,2016-08-23 14:29:02,make polycyclic test on checkSiblingsForParents,0,,0
+b3da790b,2016-08-23 16:04:07,Merge pull request #758 from ReactionMechanismGenerator/siblingTest,0,,1
+b54bc0ca,2016-08-24 14:02:20,Merge pull request #754 from ReactionMechanismGenerator/muq,0,,1
+dc743bfc,2016-08-25 20:12:09,fix polycyclic test non-deterministic behavior,1,,1
+e89318eb,2016-08-26 09:29:29,Merge pull request #752 from ReactionMechanismGenerator/fix736,0,,1
+142383ce,2016-08-26 10:39:40,Merge pull request #760 from ReactionMechanismGenerator/polycyclic_test_fix,0,,1
+59962b68,2016-08-26 11:50:46,Add Graph.getAllCyclesOfSize(size) method,0,,0
+0bd5bb55,2016-08-29 11:15:31,First working version of add benzene bonds,0,,0
+e33d4751,2016-08-30 17:49:09,Add documentation about degeneracy for rules vs training,0,,0
+f154a5ae,2016-09-06 16:58:44,Merge pull request #765 from ReactionMechanismGenerator/documentationUpdate,0,,0
+f3177bc4,2016-09-06 23:03:17,check existence of libraries specified in input when loading database,0,,0
+1e6e6817,2016-09-06 23:03:34,added a unittest for loadlibraries correctness,0,,0
+048ee37f,2016-09-07 17:29:07,Update unit tests for addImplicitBenzene,0,,0
+8f1af5d0,2016-09-07 18:02:26,Added benzene to makeSampleAtom,0,,0
+46343cba,2016-09-07 23:19:32,Implement entryAccessibility test for database test on non-kinetics databases,0,,0
+8c3c1bd1,2016-09-07 23:55:47,Improve readability of code,0,,0
+18771243,2016-09-08 21:37:20,getAromaticResonanceIsomers is already replaced by generateAromaticResonanceIsomers,0,,0
+e307fc16,2016-09-08 22:00:46,added a helper function taking special consideration of B bonds,0,,0
+141f0725,2016-09-08 22:35:56,make saturate() use getBondOrdersForAtom as well,0,,0
+327f9b21,2016-09-08 22:36:30,added an unittest for aromatics that need saturateH,0,,0
+aaa8f667,2016-09-08 22:47:56,added two more fused aromatics unittests,0,,0
+defc5ee4,2016-09-08 23:16:31,make updateCharge also use the unified get bond orders,0,,0
+01fe7484,2016-09-09 00:08:25,refactor: move bond_orders to molecule.py,0,,0
+c90f4d88,2016-09-09 00:08:55,import bond_order from molecule inside methods to avoid cyclic importing,0,,0
+bc6e9ab3,2016-09-09 01:06:36,move PeriodicSystem class to element.py and refactor,0,,0
+b961db34,2016-09-09 11:19:54,raise error instead of warning  notifying user right away,1,,0
+cdef90b5,2016-09-09 14:18:24,Merge pull request #766 from ReactionMechanismGenerator/library_existence_checking,0,,1
+33e8ffeb,2016-09-09 17:16:44,Don't use old reverse names when loading reaction families.,0,,0
+c92eb4e9,2016-09-11 21:41:55,Fix bug with checking parent/child relationshps in databseTest,1,,1
+e42c48ae,2016-09-12 12:38:45,Merge pull request #705 from ReactionMechanismGenerator/atomtypes,0,,1
+a3b22e4a,2016-09-12 14:32:30,Make method isBenzeneExplict for :class:Group and associated unit tests,0,,0
+b5c7623a,2016-09-13 15:13:15,Generalize find_shortest_path function to superclass :class:Graph,0,,0
+89d93f6e,2016-09-13 17:13:00,Add correlated uncertainty to the global uncertainty ipython notebook,0,,0
+6d97e402,2016-09-13 17:17:27,Add additional variables to the  function for plotting the sensitivities from RMG,0,,0
+e332c9f3,2016-09-13 17:18:34,Add Uncertainty.sensitivityAnalysis function,0,,0
+953d03c4,2016-09-13 17:21:27,Uncertainty.localAnalysis function for running first order local uncertainty analysis,0,,0
+e744a870,2016-09-13 17:28:50,Local Uncertainty Analysis iPython notebook,0,,0
+72a20e4f,2016-09-13 18:27:48,Added method copyAndMap to Graph,0,,0
+c9ee2cdb,2016-09-13 20:58:45,change copyright time stamp for new year,0,,0
+11285d21,2016-09-14 19:54:31,rename valence to valence_electron to be more precise,0,,0
+08c0bccb,2016-09-14 19:59:54,another 2 hidden places that can be replace by getBondOrdersForAtom,0,,0
+6f9c7e0f,2016-09-15 10:49:02,Merge pull request #769 from ReactionMechanismGenerator/dynamicBenzeneBondOrder,0,,1
+6fdb7835,2016-09-15 11:14:15,Added the keepIrreversible option.,0,,0
+61d90d93,2016-09-15 15:25:18,Merge pull request #772 from alongd/keepIr,0,,1
+204f1d27,2016-09-15 16:02:31,Merge pull request #771 from ReactionMechanismGenerator/fixDatabaseTest,0,,1
+6b36c274,2016-09-16 09:41:15,added RMG-Py and RMG-database release notes for v2.0.0,0,,0
+6f811ba1,2016-09-16 10:23:50,CCLibData does exist any longer  update documentation for that,0,,0
+9bd4807b,2016-09-16 10:31:46,PDF documentation for release 2.0.0 has been updated,0,,0
+1da78dbd,2016-09-16 20:17:16,make sure windows gets pkg from rmg channel first,0,,0
+1c18cb44,2016-09-17 12:25:55,Merge pull request #773 from ReactionMechanismGenerator/release2.0.0,0,,1
+614d53d1,2016-09-17 15:38:04,RMG-Py v2.0.0 release,0,,0
+632a5169,2016-09-28 17:06:23,make sure all the reactants and products are reactive,0,,0
+d24702d2,2016-09-29 13:09:45,Merge pull request #776 from ReactionMechanismGenerator/isN2Inert,0,,1
+79b166f9,2016-09-29 14:38:00,added unittest for checking reactant n2 should be treated as reactive,0,,0
+9b2ab748,2016-09-29 14:57:53,add missing shutil import,0,,0
+e2824c73,2016-09-30 15:22:57,Change valency check for standardize group to use dictionary from .elements,0,,0
+a7adf2ab,2016-09-30 17:36:07,Add more unit tests for makeSampleMolecule,0,,0
+c445b67c,2016-10-05 10:34:29,added chemkin support for all isotopes,0,,0
+bcaadd3f,2016-10-05 17:37:34,Merge pull request #739 from ReactionMechanismGenerator/elementChemkin,0,,1
+f5f75138,2016-10-06 14:12:49,Modified to prevent user-specified PList from being overwritten,0,,0
+c604a941,2016-10-07 19:35:29,added kinetic test for degeneracy,0,,0
+446463f0,2016-10-11 14:39:10,Merge branch 'master' into thermoAccessibility,0,,1
+90161ad5,2016-10-11 15:09:39,described unused method,0,,0
+87d944c7,2016-10-11 15:57:52,Merge pull request #777 from ReactionMechanismGenerator/thermoAccessibility,0,,1
+45e3b0b7,2016-10-14 15:37:30,add instructions of installation approach without anaconda,0,,0
+b42f0405,2016-10-14 17:24:12,Fix and speed up test_liquidInputReading,1,,1
+ed76967d,2016-10-15 13:47:17,Merge pull request #787 from ReactionMechanismGenerator/liquidTestFix,0,,1
+7cd0a467,2016-10-17 18:19:42,Use chemkin.writeKineticsEntry in Cantherm,0,,0
+35589d5f,2016-10-18 15:56:54,renamed a variable for clarity,0,,0
+bdef025c,2016-10-18 17:09:47,Change way we enforce charge on making sample atoms,0,,0
+5e2965ce,2016-10-19 12:00:34,removed guppy dependency,0,,0
+e03fb9bc,2016-10-24 12:33:33,enable users to select customized transport liraries,0,,0
+d7d29e29,2016-10-24 16:43:31,add install faq page,0,,0
+8fec3585,2016-10-24 22:44:55,Add 'St' atom type for carbon monosulfide,0,,0
+1c5c77fe,2016-10-25 01:44:13,Enable accessibility testing for reaction families,0,,0
+78da3937,2016-10-25 09:23:04,Remove guppy from linux instructions,0,,0
+fd34bdc8,2016-10-25 09:25:30,Small tweak to MacOS instructions.,0,,0
+70a227f0,2016-10-25 09:32:53,Remove guppy from dependencies in installation instructions.,0,,0
+ccbce5e6,2016-10-25 09:47:42,Edits to the FAQ,0,,0
+b697fdb0,2016-10-25 11:45:34,Replace mencoder with ffmpeg in dependencies list,0,,0
+48bbf493,2016-10-25 15:20:30,Merge pull request #794 from ReactionMechanismGenerator/doc_direct_install,0,,0
+52bb8049,2016-10-26 22:56:18,update environment yaml to allow pkg upgrade,0,,0
+7b99cc0f,2016-10-27 01:31:46,Add bug fix so that we no longer need extra lines for species dictionary,1,,0
+dee3e013,2016-10-27 14:34:22,change to stable miniconda,0,,0
+f877f3e5,2016-10-27 15:14:34,Merge pull request #800 from ReactionMechanismGenerator/environment,0,,1
+04b4a5c3,2016-10-27 15:54:30,Merge pull request #801 from ReactionMechanismGenerator/upgrade,0,,1
+2ee73707,2016-10-27 16:03:39,Right-align some entries in Chemkin thermo block,0,,0
+c57a9654,2016-10-27 16:08:50,Add optional elementCounts argument in writeThermoEntry,0,,0
+47d3503a,2016-10-27 16:09:52,Include element count in Chemkin output from Cantherm,0,,0
+e8321b7b,2016-10-27 19:43:51,make standard last commit msg for RMG-tests,0,,0
+2e430caf,2016-10-27 20:03:35,Merge pull request #804 from ReactionMechanismGenerator/deploy_tests,0,,1
+f073feef,2016-10-31 14:14:30,Improve error handling for wrong number of reverse rxns,1,,0
+30a15f54,2016-11-07 13:37:59,Set logSpecies=False for updateAtomType calls in resonance.py,0,,0
+52cf3500,2016-11-07 22:29:25,Add a new method getNthNeighbor for molecule object. It recursively get the Nth nonHydrogen neighbors of the given starting atoms  and return them in a list.,0,,0
+6206be9d,2016-11-07 22:52:14,Do long distance interaction correction for cyclic molecule in computeGroupAdditivityThermo.,0,,0
+811d8ccb,2016-11-07 23:02:36,Instead of using gauche and int15 interactions  do long distance interaction correction for non-cyclic molecule in a consistent way with that of cyclic molecule.,0,,0
+bb2691ac,2016-11-07 23:14:39,Add a verbosity switch to the method addThermoData and removeThermoData. And set it True for the methods involving polycyclic molecule.,0,,0
+483babb4,2016-11-07 23:21:34,Load longDistanceInteraction correction files instead of the gauche and int15 interaction correction files.,0,,0
+e67f8f66,2016-11-07 23:27:10,Add a new method __removeGroupThermoData based on the existed __addGroupThermoData method.,0,,0
+da1bd96d,2016-11-07 23:29:54,Add long distance interaction correction for cyclic radical.,0,,0
+34addd90,2016-11-07 23:36:23,In the unittest for parsing the thermo comments  replace the case for gauche interaction correction with the one for long distance interaction correction.,0,,0
+e8362a71,2016-11-07 23:38:48,Add unittest for long distance interaction calculation of aromatics molecule  radical  and biradical.,0,,0
+d7a2165e,2016-11-08 09:34:18,Modify AtomTypeError handling in updateAtomTypes,0,,0
+d0143b55,2016-11-09 11:28:05,Fix bug in addImplicitBenzene regarding step 3 sorting by connectivity,1,,1
+7bc7fd59,2016-11-09 14:14:40,Improve error handling of inability to apply atom actions Log the family along with reactant structures.,1,,0
+f64f75b7,2016-11-09 23:05:14,fixed two typos in clear(),1,,0
+34db9234,2016-11-10 20:34:41,Merge pull request #793 from ReactionMechanismGenerator/transport_libs,0,,1
+c60345f3,2016-11-11 16:00:34,Merge pull request #813 from ReactionMechanismGenerator/debugMssg,0,,1
+de26df3d,2016-11-11 18:30:58,Merge pull request #816 from ReactionMechanismGenerator/allow_user_specified_Plist,0,,1
+8da74245,2016-11-14 15:10:40,Added chat room suggestion to feedback section of readme,0,,0
+cef5c30e,2016-11-14 15:22:57,Added another entry to the FAQ for issue #817,0,,0
+de6d8eda,2016-11-14 20:26:26,Merge pull request #818 from ReactionMechanismGenerator/FAQ-update,0,,1
+502802e9,2016-11-15 11:03:57,Commented a potential issue into the method `searchTargetIndex` docstring.,0,,0
+a5061407,2016-11-15 11:12:02,reduction method added to documentation,0,,0
+0bc24db8,2016-11-16 17:40:23,Enables new flag -k to give detailed sources from families,0,,0
+7e48a4de,2016-11-20 17:50:42,update edge species removal for pruning to avoid memory leak,0,,0
+315c870c,2016-11-23 17:07:41,Move classifyBenzeneCarbons from a helper function to a method for Group.py,0,,0
+b89f642d,2016-11-24 15:26:41,Added unit tests for the new methods classifyBenzeneAtoms and sortByConnectivity,0,,0
+acfc4d91,2016-11-28 14:20:57,Move sortByConnectivity from a helper function to a method of Group.py,0,,0
+f182d055,2016-11-29 13:33:53,Change addBenzeneAtom helper function to more general Group method createAndConnectAtom,0,,0
+90e31340,2016-11-29 14:45:12,Merge pull request #830 from ReactionMechanismGenerator/pruning_mem_leak_fix,0,,1
+602e781a,2016-12-05 18:14:52,added unit tests for symmetry of cyclic  allyl  and resonanceHybrid,0,,0
+583ca690,2016-12-07 14:34:19,Add getAromaticSSSR() method to Molecule class,0,,0
+6804ab31,2016-12-07 14:40:10,Add unit tests for getAromaticSSSR() method,0,,0
+ab4aee5c,2016-12-07 15:05:49,Add header+license to top of resonance.py,0,,0
+f9f0a9f2,2016-12-07 15:12:51,Add clarOptimization function,0,,0
+8e6d1ba0,2016-12-07 15:18:43,Add clarTransformation function,0,,0
+cac8e7c3,2016-12-07 15:20:47,Add unit tests for clarOptimization and clarTransformation,0,,0
+1c0e5ff6,2016-12-07 15:22:24,Add main function for generating Clar structures,0,,0
+2c8c36d0,2016-12-07 15:24:26,Add unit tests for Clar structure generation,0,,0
+0ba818d0,2016-12-07 15:25:14,Add lpsolve55 to environment files and meta.yaml,0,,0
+ad103f0b,2016-12-07 16:26:31,Merge pull request #805 from mliu49/clar,0,,1
+b705bc33,2016-12-07 17:54:11,Add getPartialUncertaintyValue functions to the uncertainty classes,0,,0
+73666f7b,2016-12-07 17:58:02,Fix typo in ClarTest.testPhenalene,1,,1
+7b4de65b,2016-12-08 13:21:07,Merge pull request #836 from ReactionMechanismGenerator/clar_typo_fix,0,,1
+78846f19,2016-12-08 13:55:46,Uncertainty Class: assign correlated uncertainties and perform correlated local analysis,0,,0
+f0778abd,2016-12-08 14:03:04,Add correlated uncertainties to findParameterSourcesAndAssignUncertainties.ipynb,0,,0
+2b736453,2016-12-09 14:21:55,Edit molecule.update method so that it also updates charge of all atoms,0,,0
+ae211d1d,2016-12-09 17:44:00,Change identity of decrement bond on Ct to include CO and CS,0,,0
+d07e6101,2016-12-12 14:15:51,Fix typo under increment bond for Cs,1,,0
+80fc1d49,2016-12-12 14:36:04,Merge pull request #838 from ReactionMechanismGenerator/updateCharge,0,,1
+e9227051,2016-12-13 10:38:46,Uncertainty class: create compileAllSources function.,0,,0
+120b1f5a,2016-12-13 20:23:54,Merge pull request #814 from ReactionMechanismGenerator/fixBenzeneAccessibility,0,,1
+ae7ecb8d,2016-12-14 11:59:54,rmgpy.tools.muq: change variable kReactions and gSpecies to kParams and gParams,0,,0
+c70234a5,2016-12-14 16:22:10,Updates to N-AtomTypes,0,,0
+ed076beb,2016-12-14 21:43:08,Modify global uncertainty classes to be able to run correlated parameters,0,,0
+62883bde,2016-12-15 12:32:17,Merge pull request #803 from ReactionMechanismGenerator/cantherm_chemkin_fix,0,,1
+a0555d60,2016-12-15 12:52:00,Generate Cantera files using ck2cti,0,,0
+aab5c81b,2016-12-15 14:55:35,Fix #841: mergeModels tool gives wrong info about third-body reaction and lindemann reaction.,1,,0
+bac1bc88,2016-12-15 16:45:47,added pathway analysis tool in ipython,0,,0
+951bdfaa,2016-12-15 16:49:34,added helper functions for extracting info from CKCSV files,0,,0
+8c571a24,2016-12-15 16:53:50,added minimal example for mechanism_analyzer,0,,0
+1168b648,2016-12-15 17:19:29,Merge pull request #842 from ReactionMechanismGenerator/fix841,0,,1
+db888420,2016-12-15 23:12:12,rename ReduceTest to ReduceFunctionalTest,0,,0
+3d5b6dc0,2016-12-15 23:13:14,added a unittest for searchTargetIndex,0,,0
+71c3d757,2016-12-15 23:42:58,update cantherm header,0,,0
+8542c5ec,2016-12-15 23:52:01,Merge pull request #845 from ReactionMechanismGenerator/mech_analyzer,0,,1
+6825ac91,2016-12-16 13:42:19,added documentation on how  add a reaction family,0,,0
+d3c78d99,2016-12-16 14:36:52,updated reduction documentation,0,,0
+4e6c0172,2016-12-16 14:48:33,added parallelizing info to documentation,0,,0
+9d27d8c6,2016-12-16 15:13:49,reordered RMG user guide table of contents,0,,0
+d31b7ff1,2016-12-16 15:25:10,added table to guide users in how to contribute,0,,0
+31d0fa9d,2016-12-16 15:53:40,modified css utils,0,,0
+24e462f6,2016-12-16 22:12:53,Merge pull request #846 from ReactionMechanismGenerator/cantherm_header,0,,1
+41c5e733,2016-12-16 22:41:07,Merge pull request #820 from ReactionMechanismGenerator/reduction,0,,1
+35867928,2016-12-17 21:44:29,update developer info,0,,0
+a171e1ed,2016-12-17 23:42:50,Add and move some badges in README,0,,0
+65c8cc4b,2016-12-18 08:55:01,Merge pull request #839 from ReactionMechanismGenerator/ck2cti,0,,1
+233a6270,2016-12-19 16:42:32,Merge pull request #847 from ReactionMechanismGenerator/documentation,0,,1
+db3f2a89,2016-12-19 16:55:53,make underline long enough to have correct rendering,0,,0
+8c5610bf,2016-12-19 17:21:40,Merge pull request #849 from ReactionMechanismGenerator/liquids_doc,0,,1
+c9f9656c,2016-12-20 15:25:05,Fix bug when reordering molecules after HBI thermo calculation,1,,1
+3a3d6f9a,2016-12-20 15:59:26,Fix if statements in Molecule.getFormula(),1,,1
+e965d06d,2016-12-20 16:38:02,Add two unit tests for thermo generation for species,0,,0
+cbe6c23a,2016-12-20 17:48:01,Only save atom counts for species objects (not TS),0,,0
+20f3712d,2016-12-20 17:51:52,Improve element count determination for ThermoJob in Cantherm,0,,0
+b4856ef4,2016-12-20 22:28:31,fix the returned values from diff_models.execute,1,,1
+6a0ac57a,2016-12-20 23:42:10,Merge pull request #852 from ReactionMechanismGenerator/check_models,0,,1
+469f4b18,2016-12-21 00:49:08,Merge pull request #850 from ReactionMechanismGenerator/thermo_molecule_bug,0,,1
+306f8a4e,2016-12-21 16:35:02,update version number to 2.1.0,0,,0
+9f7b807e,2016-12-21 16:35:19,added version 2.1.0 release notes,0,,0
+36750e74,2016-12-21 16:36:19,change copyright year range,0,,0
+a9dba18c,2016-12-21 17:40:51,PDF documentation for release 2.1.0 has been updated,0,,0
+9729c129,2016-12-22 19:42:55,Moved parsing of SMARTS strings to go through _parser function,0,,0
+af42f748,2016-12-26 12:55:05,Fix bug where new nitrogen atomtypes are not correctly made from SMILES/InChI,1,,1
+87ba131c,2016-12-28 11:44:13,Removed exception for same-reactants from reducing degeneracy,0,,0
+20ca05f2,2016-12-29 13:48:12,Add unittests checking identity of N2s  N1s  and N1sc atomtypes,0,,0
+9701a3c3,2016-12-29 14:12:09,modified Bond class to use numbers,0,,0
+05284226,2016-12-29 14:30:01,added numerical retrieval methods for GroupBond,0,,0
+48707168,2016-12-29 21:48:11,Add N3b and N5b into benzene atom types handled by addImplicitBenzene for making sample molecules,0,,0
+6e5fcdf7,2016-12-30 23:14:38,Pdep rxn added as an example rxn to prevent error,1,,0
+4ca7e245,2017-01-03 12:08:29,Add new functions into family.py for getting backbone and endGroups,0,,0
+28799e18,2017-01-04 15:42:11,added a method to make group drawing easier in ipython notebook,0,,0
+244a6b25,2017-01-04 15:54:38,adds jupyter as one of RMG's denpendencies,0,,0
+db42e80f,2017-01-04 16:08:46,Merge pull request #861 from ReactionMechanismGenerator/group_draw,0,,1
+da6f089a,2017-01-05 23:22:35,Add new functionality to display dominant species,0,,0
+4d6a7199,2017-01-05 23:33:07,forward & reverse rate coefficients are displayed,0,,0
+f6fde7a8,2017-01-06 11:56:04,modified and expanded bond unit tests,0,,0
+44782be0,2017-01-06 13:52:58,made GroupBond hold floats not strings,0,,0
+8a6ded2a,2017-01-06 13:54:43,fixed functions calling bond.order,1,,0
+d0dfe7cf,2017-01-06 14:48:12,Time integrated flux can be chosen for analysis,0,,0
+88dbf9f4,2017-01-06 15:12:58,Merge pull request #860 from ReactionMechanismGenerator/mech_analyzer_2,0,,1
+5768e285,2017-01-06 15:23:38,Add unit tests for loading Cantherm input files,0,,0
+429bbca5,2017-01-06 17:44:18,Correcting updateLonePairs,0,,0
+5ac9f36a,2017-01-08 23:57:37,Change parameter uncertainty calculation to be additive rather than sum of squares,0,,0
+58fae3ae,2017-01-10 23:59:41,replaced bond.order with method access,0,,0
+ad92392a,2017-01-11 00:05:51,make order for Bond robust to numerical error,1,,0
+85a6ca13,2017-01-13 12:08:01,use getDeterministicSSSR in bicyclicDecomposition instead of the old getSSSR method,0,,0
+df8955ff,2017-01-14 11:41:22,adds a more deterministic method for finding sssr,0,,0
+9bb11249,2017-01-14 12:26:43,adds three tricky test examples for the deterministic sssr method,0,,0
+c5dadb86,2017-01-15 12:58:02,Merge pull request #866 from ReactionMechanismGenerator/deterministic_poly,0,,1
+4918c739,2017-01-16 19:08:52,Fixed bug in __gainPair function of class GroupAtom,1,,0
+9c0c22ec,2017-01-17 14:17:55,Don't crash if empty edge when plotting runtime statistics.,0,,0
+676172ac,2017-01-17 16:34:56,Added a UnitTest for updateLonePairs,0,,0
+84e54477,2017-01-18 17:49:35,Add atom label swapping for new reaction families,0,,0
+b0194d9b,2017-01-19 12:45:49,Fix to gain/lose lone pair functions for GroupAtoms,1,,1
+a60234d3,2017-01-19 14:05:18,Included lonePairs in GroupAtom.copy.,0,,0
+2522175f,2017-01-20 15:40:16,Change product template duplicate testing from isIsomorphic to isIdentical,0,,0
+f3e89c32,2017-01-20 18:22:16,Merge pull request #869 from ReactionMechanismGenerator/fixProductTemplates,0,,1
+ddbd8184,2017-01-23 12:30:56,Use getBondOrdersForAtom instead of if statements in Molecule.updateAtomType(),0,,0
+9e9a4488,2017-01-23 16:14:55,Merge pull request #824 from ReactionMechanismGenerator/store_kinetic_database_details,0,,1
+78d79401,2017-01-24 09:38:58,added core and interrupt tolerances as optional parameters to the model function  by default the tolerances are set to infinity turning them off (+2 squashed commits) Squashed commits: [2f75de7] added new criterion core tolerance and interrupt tolerance to main  added additional enlargement option for use when the returned object is a Reaction [84b7bbd] Added additional option to the model function to set the tolerances for the new criterion,0,,0
+adef575a,2017-01-24 09:47:48,added in production and consumption calculations added in production and consumption calculations to liquid reactor (+2 squashed commits) Squashed commits: [1c427c9] syntax fixes [2174430] added missing comma (+3 squashed commits) Squashed commits: [b0d3123] Calculation of production and consumption rates added (+1 squashed commit) Squashed commits: [1232050] updated logRates header [0a48db8] added and initialized core production and consumption rates as fields of ReactionSystem  calculation of criterion  criterion related information added to logRates [40510f7] added arrays to store core production and consumption rates and tweaked the simulate function header to add the tolerances for the new criterion,1,,0
+4b17e50b,2017-01-24 15:31:53,added catch for dealing with zero consumption or production rates  if the concentration is zero the accumulation number for that species is left out of the total reaction accumulation number calculation  otherwise the analysis is terminated and the greatest flux production/consumption (as appropriate) reaction for that species is added to the model (+1 squashed commit) Squashed commits: [dd3b1ff] tweaks to handling the case when a Reaction object is returned for enlargement rather than a species object,0,,0
+2c6c70c7,2017-01-24 16:06:49,Some debugging print statements.,0,,0
+e004e1a3,2017-01-24 16:43:01,Merge branch 'master' into fixElementCount,0,,1
+2d733a2a,2017-01-24 18:04:15,Merge pull request #854 from ReactionMechanismGenerator/fixElementCount,0,,1
+979f5a1c,2017-01-24 18:04:48,Merge branch 'master' into master,0,,1
+66ac0474,2017-01-24 18:17:52,Merge pull request #770 from rwest/master,0,,1
+d994dd50,2017-01-25 15:35:31,removed GroupAtom getBondOrdersForAtom method.,0,,0
+38a17053,2017-01-25 17:07:51,Merge pull request #863 from ReactionMechanismGenerator/lonePairs,0,,1
+199506a9,2017-01-27 15:32:58,fix the bug where original model swaps with tested model wrongly,1,,1
+b14b8a57,2017-01-28 19:58:54,Merge pull request #875 from ReactionMechanismGenerator/benchmark_test_swap,0,,1
+8d9bea46,2017-01-30 10:27:06,Provides an ignoreOverallFluxCriterion boolean option  this option deactivates movement to core of a species based on its dimensionless flux  the toleranceMoveToCore then only applies to pressure dependent network exploration.  This allows pressure dependent models to be built using the new criterion only while still using the original tolerance to decide when to explore. (+2 squashed commits) Squashed commits: [cd54caa] remove duplicate species when decomposing a reaction to move to core into species objects to move to core [51d542d] include missing optional parameters in sensitivity simulate call,0,,0
+39d54dce,2017-01-30 11:04:33,Small Cython optimization to generateReverseRateCoefficient() [master],0,,0
+5c64faab,2017-02-01 10:16:41,More detailed error logging when calculating DeltaGrxn [master],1,,0
+eb71975d,2017-02-01 18:11:05,set the reverse attribute to None instead of deleting it,0,,0
+38fdb0cb,2017-02-01 18:11:22,add unit test for restart file generation,0,,0
+b5c9215b,2017-02-01 22:21:34,due to recent changes  the filterReactions matrix should also be pickled,0,,0
+5bc3921c,2017-02-01 22:23:23,family in reactionDict already uses labels instead of objects,0,,0
+ef8f05d4,2017-02-01 22:24:12,load restart file properly with matrix used for filterReactions,0,,0
+fc8f39ac,2017-02-01 22:24:35,update runing RMG job with other common flags,0,,0
+c82ba9e3,2017-02-02 00:48:11,Merge pull request #878 from ReactionMechanismGenerator/restart,0,,1
+3e2983fa,2017-02-02 09:51:23,add parsing restart file to the unit test,0,,0
+c81a85a7,2017-02-02 10:14:14,seperate restart loading step out from big initializeRestartRun,0,,0
+b3b280b9,2017-02-02 11:21:38,Merge pull request #879 from ReactionMechanismGenerator/restart_load_test,0,,1
+f42c1c25,2017-02-02 16:16:22,Created unit tests for gainPair and losePair functions of GroupAtom class.,0,,0
+d0428d4e,2017-02-02 17:23:26,Change atomtype for GroupAtom when applying gainPair or losePair action.,0,,0
+19435c2d,2017-02-04 12:58:05,modified docstring to represent returned filetypes,0,,0
+0294583e,2017-02-04 16:19:43,tested for getResonanceHybrid method,0,,0
+1a7b5d2e,2017-02-04 16:24:31,added getResonanceHybrid method,0,,0
+dbe8465e,2017-02-06 13:37:46,Fixed typo in 'O' atomType definition.,1,,0
+1894b055,2017-02-06 23:57:39,add unit test where existing tricyclics should match exactly,0,,0
+57f32690,2017-02-07 00:00:29,we should not just look at depth to determine best matched group,0,,0
+fd96a878,2017-02-07 10:30:29,some matched groups may have branches outside ring structure,0,,0
+e2e8cb7f,2017-02-07 10:32:45,return isPartialMatch from __addRingCorrectionThermoDataFromTree,0,,0
+ec556b2d,2017-02-08 15:44:06,Added sulfur & nitrogen BAC to statmech.py,0,,0
+eea762a7,2017-02-08 17:27:48,Merge pull request #882 from ReactionMechanismGenerator/BAC,0,,1
+704bc8c9,2017-02-09 11:25:40,Allowing delocalization paths allyl to the radical center to include a birad. This addresses issue #545 where RMG isn't able to calculate degeneracy since the resonance structures weren't explored for molecules like [CH]=C[N],0,,0
+d8e83340,2017-02-09 12:52:08,thermo uses species symmetry,0,,0
+5a6ac62c,2017-02-09 15:15:24,Move some unit tests from moleculeTest to resonanceTest,0,,0
+77be80be,2017-02-09 15:15:31,Add method to determine if molecule is an aryl radical,0,,0
+6a25d3d1,2017-02-09 15:15:36,Add unit tests for isArylRadical,0,,0
+68c121af,2017-02-09 15:15:39,Improvements to getAromaticSSSR(),0,,0
+437d8e50,2017-02-09 15:15:42,Update unit tests for getAromaticSSSR,0,,0
+efde5b96,2017-02-09 15:15:45,Add method to analyze molecule for resonance purposes,0,,0
+b854e57d,2017-02-09 15:15:47,Add method to generate opposite Kekule structure,0,,0
+4de5043e,2017-02-09 15:15:50,Add new method to populate resonance algorithms,0,,0
+81f45628,2017-02-09 15:15:52,Completely overhaul generateAromaticResonanceIsomers,0,,0
+0c10d504,2017-02-09 15:15:55,Revamp core resonance structure generation algorithm,0,,0
+f072a949,2017-02-09 15:15:57,Remove old method for populating resonance algorithms,0,,0
+adf8fb2a,2017-02-09 15:16:03,Add new unit tests for resonance structure generation,0,,0
+8c0251e7,2017-02-09 15:16:06,Update some unit tests to reflect resonance changes,0,,0
+d348707e,2017-02-09 15:16:09,Additions and fixes to docstrings in resonance.py,1,,0
+7cadcbd4,2017-02-09 15:16:13,Rename methods in rmgpy.molecule.resonance,0,,0
+e034c536,2017-02-09 19:23:12,Merge pull request #864 from ReactionMechanismGenerator/bond_doubles,0,,1
+577e89f2,2017-02-10 09:36:35,added test to ensure that symmetry contribution occurs from species object,0,,0
+cba754a2,2017-02-10 12:10:40,Added nitrogen atomTypes to documentation under 12.1.1. Group Definitions,0,,0
+97239bc1,2017-02-11 17:17:04,added resonance hybrid structure to calculateAtomSymmetryNumber,0,,0
+1e43509a,2017-02-12 13:38:07,Merge pull request #857 from ReactionMechanismGenerator/degeneracy,0,,1
+24bd4b7b,2017-02-13 12:53:57,Update Group._repr_png_() to use Bond.getOrderStr(),0,,0
+0d21b488,2017-02-13 13:10:47,Add unit test for Group._repr_png_(),0,,0
+19c696d9,2017-02-13 14:43:13,Merge pull request #892 from ReactionMechanismGenerator/fix_repr_png,0,,1
+bb316a1c,2017-02-13 19:25:55,add duplicate counterparty in the warning message to help debug,0,,0
+3c6cda43,2017-02-13 20:28:35,Merge pull request #893 from ReactionMechanismGenerator/tricyclic_match,0,,1
+9016e545,2017-02-13 21:59:26,remove temporary restart file generated by unittest,0,,0
+dbc0050d,2017-02-14 17:50:20,Added mergeGroups method to :class:Family,0,,0
+0a8e7600,2017-02-15 17:46:07,Change gainRadical/loseRadical to default to lists when input is wildcard,0,,0
+74a579bd,2017-02-15 20:21:05,fixed error raise text in adjlist,1,,0
+b10d32d5,2017-02-15 20:22:09,converted string comparison to float comparison,0,,0
+34e0d9c5,2017-02-15 20:32:32,sourcename has extension of .rst.txt  so we have to replace that with .rst,0,,0
+f3bdbe23,2017-02-15 20:56:42,update environment name in documentation,0,,0
+a3724f8f,2017-02-16 16:05:55,Add method pickWildcards as a helper function for makeSampleMolecule,0,,0
+4879028a,2017-02-16 17:41:18,refactored updateAtomTypes,0,,0
+16d36d6d,2017-02-16 19:00:21,made symmetry use all resonance isomers,0,,0
+0330795d,2017-02-17 00:34:15,increased tolerance and and fixed bug in Bond class,1,,0
+c331a37a,2017-02-17 13:59:10,Merge pull request #868 from ReactionMechanismGenerator/GAIN_PAIR_bug_fix,0,,1
+a5a3d870,2017-02-17 16:42:14,The conda configuration files for the default rmg_env environment have been updated to include the module 'networkx' as a dependency. This module is required by the mechanism_analyzer.ipynb script. This addition will prevent the user from having to use pip install the first time they encounter this error.,1,,0
+35dafcb6,2017-02-19 15:35:43,Add in loading boundaryAtoms attribute for unimolecular families,0,,0
+3f405000,2017-02-20 15:36:55,Merge pull request #906 from ReactionMechanismGenerator/unimol_format_tests,0,,1
+7c37e357,2017-02-21 19:16:43,Add truncated PDD chemkin model for use in the uncertainty ipython examples,0,,0
+6599c004,2017-02-22 11:11:50,Defensive programming tweak,0,,0
+1caeed1c,2017-02-22 11:12:43,Fix docstring in KineticsFamily.__matchReactantToTemplate,1,,0
+9d61c559,2017-02-22 11:13:28,Some cython declarations in Group class,0,,0
+ac640648,2017-02-22 12:57:01,Tiny tweak to docstring.,0,,0
+c3997a02,2017-02-22 16:49:30,Disable resonance structure generation for training reactions,0,,0
+60bbcfdc,2017-02-22 19:05:48,Remove duplicated method getNumberOfRadicalElectrons,0,,0
+35e1e899,2017-02-22 20:01:35,Add database test to check formatting for unimolecular families,0,,0
+9058f638,2017-02-23 11:28:27,Merge pull request #835 from ReactionMechanismGenerator/resonance,0,,1
+9e3d10a4,2017-02-23 18:10:08,refactored Reaction.degeneracy property,0,,0
+27e188fb,2017-02-23 18:10:08,refactored Reaction.degeneracy property,0,,0
+7563d0d6,2017-02-24 11:31:12,Update anacondaUserWindows.rst,0,,0
+ddfd7bb4,2017-02-24 11:40:10,Tweaked the windows instructions.,0,,0
+4ca73507,2017-02-24 11:42:57,Run as Admin Instructions,0,,0
+638cbfa7,2017-02-24 15:29:05,Added wildcards to isSingle  isDouble etc methods for :class:GroupBonds,0,,0
+0d3aaa89,2017-02-24 16:47:48,nodalDistances field added to kinetics and general entries,0,,0
+c6fc3995,2017-02-24 17:18:40,Add new method countBonds() to :class:GroupAtom,0,,0
+0df5a8c0,2017-02-24 18:41:22,Refactor MoleculeDrawer to allow saving to file-like objects,0,,0
+cb3561fe,2017-02-24 23:11:16,Create separate Group.draw method to allow format specification,0,,0
+fb8c7a2f,2017-02-25 11:03:36,Added assert statement to check treeDistances length  added lines to pull treeDistances out of the local context in the group file,0,,0
+67815daf,2017-02-25 12:44:38,Added distributeTreeDistances function to data/kinetics/family.py to fill in the nodalDistances field for every entry in each tree  adapted the distance calculation in data/kinetics/rules.py to use the nodalDistances only,0,,0
+ee0bc336,2017-02-25 14:46:45,changed calculateNormDistance to go through the tree and determine the nodal distance,0,,0
+db96712f,2017-02-25 16:59:15,Move some tests on makeSampleAtom earlier in the function.,0,,0
+55e2f365,2017-02-26 12:32:50,Merge pull request #918 from ReactionMechanismGenerator/draw_svg,0,,1
+9bbc37aa,2017-02-26 18:10:43,Add new restriction on charges on sample molecules,0,,0
+6ce44312,2017-02-27 02:53:55,Add UnexpectedCharge and largeBenzene exceptions for general nodes in databaseTest,0,,0
+68d12b91,2017-02-27 11:23:18,Including a notice that KlippensteinH2O2 was deleted,0,,0
+20dc0dbb,2017-02-27 23:32:36,conda-build removes source files and redirect SRC_DIR to test tmp folder,0,,0
+31d0c96e,2017-02-28 00:08:04,Merge pull request #923 from ReactionMechanismGenerator/source_files,0,,1
+1939f314,2017-02-28 12:17:11,Fix bug for addImplicitBenzene where too many bonds are formed with radical,1,,1
+6b74f8f3,2017-02-28 14:57:12,Make it so database tests picks a larger sized backboneSample,0,,0
+9c9db7c8,2017-03-01 09:41:56,Updated CanTherm documentation-primarily 'species()' description,0,,0
+a5ebf5d4,2017-03-01 11:02:45,Update the URLs for CanTherm reference for SOC to more stable doi URL.,0,,0
+3b8241d6,2017-03-01 11:08:56,make reaction direction deterministic,0,,0
+90a92555,2017-03-01 11:27:27,use reverse degeneracy when using reverse reaction,0,,0
+e734b193,2017-03-02 18:43:56,add support for drawing isotopic carbons,0,,0
+f3fb8efd,2017-03-03 14:26:52,Make new directories for testing_database for unit tests,0,,0
+c8179834,2017-03-03 15:29:51,Add new setting directory test_data.directory to Settings,0,,0
+30bf4783,2017-03-04 20:20:17,Remove debugging print statements from databaseTest,0,,0
+05f40bd1,2017-03-06 10:23:34,Merge pull request #908 from ReactionMechanismGenerator/entryAccessibility,0,,1
+488a9bf9,2017-03-07 17:00:29,change the required database version to be 2.1.0,0,,0
+e5104306,2017-03-07 17:00:51,mini database for unittests are not needed for binary,0,,0
+8edf0913,2017-03-08 14:44:18,RMG-Py v2.1.0 release,0,,0
+be4d0c87,2017-03-08 15:41:14,Merge pull request #935 from ReactionMechanismGenerator/v2.1.0,0,,1
+729bd6ed,2017-03-09 12:41:57,Update input.py,0,,0
+24161225,2017-03-09 14:58:59,only average the closest nodes using nodal distance,0,,0
+24458ea4,2017-03-09 16:03:31,Merge pull request #937 from chiyw13/patch-1,0,,1
+384071b8,2017-03-09 16:34:20,estimateKinetics has been changed to track the distances of nodes as it steps out and determine the closest kinetics in the 2-norm sense even when the nodalDistances are not 1 (+4 squashed commits) Squashed commits: [3fd6fb6] reverse toDelete list to avoid messing up indices [01ba1ea] fixed issue with filtering of the less close kinetics [e736138] deleted calculateNormDistance function [d37b2e1] estimateKinetics distance tracking and proper 2-norm use,1,,0
+6f1be74a,2017-03-09 18:43:30,Fix signal handling after calling lpsolve,1,,1
+8b88ae59,2017-03-10 10:47:04,adds method to record polycyclic generic node,0,,0
+43d5b69e,2017-03-10 10:48:28,adds method to split a bicyclic into single rings,0,,0
+587d7e3f,2017-03-10 10:48:58,adds unit test for the split bicyclic method,0,,0
+28510394,2017-03-10 11:16:43,adds method to saturate non-single bonds of a ring submolecule,0,,0
+ed655775,2017-03-10 11:17:08,adds unit test for the method of saturateRingBonds,0,,0
+a19386b9,2017-03-10 12:03:37,Changed assertion message We're checking that the index number is unique  but the message suggested that the reaction isn't unique.,0,,0
+8e4d2a22,2017-03-12 15:17:55,adds method to estimate bicyclic correction when no exact match is found in db,0,,0
+d971ce59,2017-03-12 15:18:28,adds two unittest for the heuristic estimation for bicyclic correction,0,,0
+93eeae01,2017-03-12 15:27:24,adds method to check if a polyring is bicyclic or not,0,,0
+60434877,2017-03-12 15:27:43,adds two unittests for the isBicyclic method,0,,0
+9337fac4,2017-03-12 15:56:34,estimate bicyclic correction when no exact match is found,0,,0
+4c65543e,2017-03-13 14:38:07,special case (aromatic) for saturateRingBonds,0,,0
+e8804d55,2017-03-13 14:43:21,adds two unittests for saturate two types of aromatic bicyclics,0,,0
+671d177e,2017-03-13 16:19:40,fix the multiplicity and connectivity values for the generated submolecules,1,,0
+47de6ad0,2017-03-13 16:32:44,Allow users to input lists of strings for reactionLibraries,0,,0
+49505aa1,2017-03-13 18:25:35,Check charge on atoms more rigorously for MakeSampleGroup method in Group.py,0,,0
+8941bb43,2017-03-14 18:19:44,Add isIdentical method to Species,0,,0
+9f20d375,2017-03-14 18:20:44,.pxd definitions and pointer association,0,,0
+888883ab,2017-03-14 18:24:20,Catch for initial models with no reactions in them,0,,0
+127a3baf,2017-03-14 18:30:01,New bulk core-surface-edge movement management,0,,0
+9589158d,2017-03-15 11:29:08,default interrupt tolerance changes,0,,0
+10e9e5c2,2017-03-15 11:36:59,default surface variables to empty,0,,0
+dd96411b,2017-03-17 10:56:36,Created a test file for the diffusionLimited module.,0,,0
+376c503b,2017-03-17 11:05:10,Change incorrect comments for some diffusionLimited methods.,0,,0
+84923c42,2017-03-17 12:21:37,adds unittest for ThermoDatabase pickling,0,,0
+bc7e37a0,2017-03-17 12:23:25,Add Unit Test Method for combineCycles,0,,0
+db810de9,2017-03-17 14:35:32,added tests for rmgpy.rmg.main,0,,0
+1713bfbf,2017-03-17 14:42:51,Reformat chemkinTest.py with pycharm,0,,0
+31809af3,2017-03-17 14:48:58,removed unnecessary import (+1 squashed commit) Squashed commits: [f822ceb] causing mop tests to verify the output file,0,,0
+84855a69,2017-03-17 15:23:14,Added a functioning unit test for getEffectiveRate,0,,0
+bcaba524,2017-03-17 15:32:50,Add Unit Test for getCopyForOneRing The test confirms that:,0,,0
+bed1ac73,2017-03-17 15:51:34,Test SMILES generation for various species.,0,,0
+3b472f43,2017-03-17 16:22:19,Create SMILES of singlet atomic [C] correctly.,0,,0
+d53bf6b8,2017-03-17 16:32:57,Remove pdb calls in chemkin.py,0,,0
+5fc031f8,2017-03-17 16:42:31,Add some unit tests for chemkin.py,0,,0
+f2047b23,2017-03-17 16:43:42,Added another test for a bimolecular->unimolecular reaction.,0,,0
+ed9e5a54,2017-03-17 22:08:48,Fix warning parsing molecules with implicit Hs via RDKit,1,,0
+81b1ded0,2017-03-17 22:21:57,Some unit tests for parsing SMILES strings.,0,,0
+89e676dd,2017-03-17 22:23:15,Added [Ar] to the SMILES lookup table.,0,,0
+a3386fca,2017-03-17 22:28:24,Make SMILES parsing of [C] give triplet state (and test it).,0,,0
+e67f0fc5,2017-03-17 22:52:16,Regression(?) test for parsing [CH] methylidyne SMILES,0,,0
+978fe277,2017-03-18 17:21:25,Fix database loading in kineticsTest.py,1,,0
+a8776d03,2017-03-18 17:23:59,Fix some unit tests in thermoTest.py so they work properly,1,,0
+6bc60422,2017-03-18 17:25:56,Fix database loading in thermoTest.py,1,,0
+99634cd1,2017-03-18 17:30:17,Add mock to environment/meta/requirements files,0,,0
+a5ac153b,2017-03-18 18:17:51,rebasing nodalDistances onto the miscellaneous changes pull,0,,0
+b9c5bdb4,2017-03-19 14:32:00,adds two more unittests for highly unstaturated large polycyclic,0,,0
+ca62dd73,2017-03-19 15:18:26,Optimizations  moved function definition out of function and switched the template0 passing to a pass items by object rather than a deepcopy,0,,0
+505cc819,2017-03-20 11:47:24,rank cycles with more unsaturated bonds higher,0,,0
+e5ca2a73,2017-03-20 14:42:18,function output handling fix,1,,1
+ef31c5fc,2017-03-20 14:42:47,adapting tests,0,,0
+475335d4,2017-03-20 16:04:45,fixing passing issue and simulate calls,1,,0
+bcd13ec1,2017-03-20 16:51:41,Add R_Addition_MultipleBond family to test database,0,,0
+39d11765,2017-03-20 23:57:07,Merge pull request #954 from ReactionMechanismGenerator/Thermo_Test_AMP,0,,1
+f4a3ef08,2017-03-21 11:07:17,fix [CH] spin state in parsing,1,,1
+47e7787e,2017-03-21 11:28:24,modified the related unittest for [CH],0,,0
+c8d2365e,2017-03-21 12:26:54,Merge pull request #949 from ReactionMechanismGenerator/tests1,0,,1
+e2f2edd9,2017-03-21 13:47:57,make surface adjust come before criteria checks,0,,0
+17ff2422,2017-03-21 17:16:01,Merge pull request #952 from ReactionMechanismGenerator/chemkinTest,0,,1
+9f3b977c,2017-03-22 12:00:02,Added some doc-str to getKinetics method in family.py,0,,0
+bf75dbd4,2017-03-23 09:54:19,Including a notice that KlippensteinH2O2 thermo library was deleted,0,,0
+203bcdaf,2017-03-24 14:35:18,improved error message in speciesTest,1,,0
+31471f78,2017-03-24 16:24:22,added H_abstraction reaction family to test database,0,,0
+422398b8,2017-03-24 16:29:19,added R_Recombination family to test_data,0,,0
+919074d1,2017-03-24 16:34:48,added option to load empty forbidden structures in loadForbiddenStructures,0,,0
+c48e1bac,2017-03-26 22:39:19,added corrections to calculateBondSymmetryNumber and calcAxisSymNum,0,,0
+1d06f833,2017-03-27 00:55:55,allow non-standard bond orders to properly create adjlists,0,,0
+a38b3efc,2017-03-27 00:58:13,allow for intermediate bond orders to be drawn properly,0,,0
+a1b8d023,2017-03-27 16:17:11,Add script to generate output html,0,,0
+98f01d68,2017-03-28 13:04:23,Elaborating the multiplicity check for nRad = 3 or 4 Also  changed the dafault of the condition to a warning instead of a debug logging level.,0,,0
+bcc1c9ea,2017-03-28 19:16:46,Merge pull request #957 from ReactionMechanismGenerator/fix_CH,0,,1
+c48b58f7,2017-03-28 21:00:50,Merge pull request #953 from ReactionMechanismGenerator/fixDatabaseTests,0,,1
+cee3a449,2017-03-29 13:32:42,add import rmgpy.settings (+1 squashed commit) Squashed commits: [62e6b5e] extraneous import removed  doctoring edit  checkin file loading fix,1,,0
+6722cefc,2017-03-29 15:18:18,Merge pull request #950 from ReactionMechanismGenerator/kinetics_and_mopac_unittests,0,,1
+e07acde6,2017-03-30 13:49:26,Add documentation page for generateChemkinHTML.py script,0,,0
+1f9216d4,2017-03-30 13:49:59,Update hyperlinks to RMG website tools,0,,0
+298d304c,2017-03-30 21:53:31,adds muq dependency warning in globalUncertainty.ipynb,0,,0
+34295632,2017-03-30 22:00:30,we're using brackets instead of parentheses for rules,0,,0
+ec09c6f7,2017-03-30 22:01:42,currently we only have muq linux version work,0,,0
+d5ceace4,2017-03-30 23:15:46,Merge pull request #891 from ReactionMechanismGenerator/uncertainty,0,,1
+be15e3ab,2017-04-04 17:35:49,Reorder molecules when getting thermo from library,0,,0
+1f72bbfb,2017-04-04 17:37:00,Add unit test for molecule order when matching library thermo,0,,0
+bcbbc944,2017-04-04 18:06:09,Reorganize thermoTest.py,0,,0
+73447897,2017-04-05 15:50:42,associated treeDistances pointer and added error for when treeDistances is not the correct length,1,,0
+9f7ebe2e,2017-04-05 17:00:03,added unittests for database input method,0,,0
+8a93cac0,2017-04-05 17:58:00,Added a unit test for `check_multiplicity` verifying that RMG allows different electron spins in the same molecule with multiplicity = 2s + 1,0,,0
+275f62cc,2017-04-05 20:38:25,Merge pull request #973 from ReactionMechanismGenerator/check_mul,0,,1
+c06483e7,2017-04-06 10:54:34,modified verbose input file with new instructions,0,,0
+134c908a,2017-04-06 16:39:27,fixes and improvements to testFilterReactions,1,,0
+58cb70e8,2017-04-06 18:16:03,Adding details to docstrings about what some methods return.,0,,0
+77d1d4aa,2017-04-06 18:17:26,More detail in justification for kinetic direction decision.,0,,0
+07c0c1ba,2017-04-06 19:27:18,Merge pull request #985 from ReactionMechanismGenerator/docstrings,0,,1
+e4e5a0b5,2017-04-07 13:01:01,cleanup for the removeIdenticalKinetics function,0,,0
+ddd6171a,2017-04-07 15:27:21,cairo and cairocffi are available in RMG channel now,0,,0
+3c9fc466,2017-04-07 15:49:49,Merge pull request #986 from ReactionMechanismGenerator/cairo,0,,1
+3846a94e,2017-04-07 17:30:50,modified the isomorphism algorithm to make method accessible for symmetry finding,0,,0
+33731068,2017-04-08 22:31:17,use atomType in equivalency check between atoms,0,,0
+35e1c46d,2017-04-08 22:33:58,use more modern cython version,0,,0
+0f2dd21b,2017-04-09 00:58:49,added getLargestRing method to Graph in graph.pyx,0,,0
+25c00be6,2017-04-09 02:13:24,fixed cyclic symmetry number algorithm,1,,0
+c39d339e,2017-04-09 02:13:58,undid work in progress symmetry tests,0,,0
+4bc8db9a,2017-04-09 12:01:23,update connectivity before finding molecule symmetry,0,,0
+45f9dc71,2017-04-09 12:08:07,allow bond order flexibility in RDkitMol generation,0,,0
+841c0504,2017-04-09 12:39:30,allow filterReactions to include species or molecule objects,0,,0
+335ad343,2017-04-10 11:22:10,Update name of KlippensteinH2O2 in example files,0,,0
+601e16e4,2017-04-10 12:00:02,Merge pull request #987 from ReactionMechanismGenerator/replaceKlippenstein,0,,1
+013ed70f,2017-04-10 15:12:29,Merge pull request #888 from ReactionMechanismGenerator/nitrogen,0,,1
+cdf80296,2017-04-12 14:51:19,Add Comment Stating that Annotated Chemkin File is Necessary Comment added above line.,0,,0
+80cec353,2017-04-12 15:31:54,Added option in getInternalReducedMomentOfInertia,0,,0
+2f01fd75,2017-04-12 16:00:54,Merge pull request #970 from ReactionMechanismGenerator/visualizeChemkin,0,,1
+35d85d2f,2017-04-13 16:24:12,Merge pull request #989 from ReactionMechanismGenerator/localuncertainty_update,0,,1
+bfd4b9cc,2017-04-13 19:32:40,Add new kekulize module,0,,0
+01c03c55,2017-04-13 19:32:47,Add unit tests for classes within kekulize module,0,,0
+ba65ebdc,2017-04-13 19:32:49,Use new kekulize method for generateKekuleStructure,0,,0
+276cb9ac,2017-04-13 19:32:52,Add unit tests for generateKekuleStructure(),0,,0
+1a034bf4,2017-04-13 19:32:54,Add error handling for adding lpsolve constraints,1,,0
+78b4db63,2017-04-13 19:32:57,Add method Graph.getAllSimpleCyclesOfSize(),0,,0
+9894be0a,2017-04-13 19:32:59,Add unit test for Graph.getAllSimpleCyclesOfSize(),0,,0
+edfab46c,2017-04-13 19:33:01,Get all simple rings instead of SSSR for aromaticity methods,0,,0
+14676e8a,2017-04-13 19:33:03,Improve handling of false positives during aromaticity detection,0,,0
+9ea5a131,2017-04-13 19:33:05,Add unit tests for resonance of complex polycyclic aromatics,0,,0
+01ada3ff,2017-04-13 19:33:07,Add returnMapping option to generator.toOBMol,0,,0
+af60f2b4,2017-04-13 19:33:09,Fallback to OB if RDKit does not work for aromaticity detection,0,,0
+f2e654f3,2017-04-13 19:33:11,Also apply other resonance algorithms to aromatic species,0,,0
+06d67a49,2017-04-13 19:33:13,Add unit tests for aromatic species with other resonance types,0,,0
+26dca294,2017-04-13 19:33:15,Add error handling when calling clarOptimization,1,,0
+c7e3a25c,2017-04-13 19:33:18,Add flag for Clar structure generation,0,,0
+7235c2ee,2017-04-14 10:12:53,Removed cantherm/geometry.py and cantherm/geometryTest.py since it is never called and it is redundant with statmech/conformer.pyx,0,,0
+90cce7b0,2017-04-14 14:59:26,added method to reduce atomID renaming,0,,0
+a07457cb,2017-04-17 11:43:19,Add fallback for transport search if group additivity fails,1,,0
+a7a83d33,2017-04-17 14:22:16,Move TransportDatabase tests to transportTest.py,0,,0
+50496c02,2017-04-18 13:43:54,add example entry for reactionLibraries,0,,0
+ef246c9d,2017-04-18 14:08:24,Merge pull request #943 from ReactionMechanismGenerator/kinetics_library_input_flexibility,0,,1
+079edf9e,2017-04-18 14:26:35,update demo example chemkin files for parseSource ipynb,0,,0
+82b53394,2017-04-18 14:31:51,Merge pull request #947 from ReactionMechanismGenerator/unittest_rmgpy_rmg,0,,1
+9d89e026,2017-04-18 14:59:14,Merge pull request #998 from ReactionMechanismGenerator/update_chemkin_files,0,,1
+d6333769,2017-04-19 11:50:19,mainTest.py adaptions,0,,0
+2b396838,2017-04-20 22:42:12,adds method to record ring generic node,0,,0
+5b04724a,2017-04-20 22:43:11,record cyclic generic nodes during loading thermo database,0,,0
+2c86f63f,2017-04-20 23:58:27,adds thermoCentralDatabase option in rmg input,0,,0
+851aac64,2017-04-21 00:01:25,register the species in thermo central database via thermoengine,0,,0
+ab290516,2017-04-21 00:38:51,adds thermoCentralDatabaseInterface class,0,,0
+27d2fc55,2017-04-21 11:10:22,Merge pull request #974 from ReactionMechanismGenerator/resonanceFixes,0,,1
+8dd7a31c,2017-04-21 13:14:54,Implementation of new charged C/N/O/S atomtypes,0,,0
+d8890079,2017-04-21 15:24:07,add method to connect thermo central database,0,,0
+a77ce9f6,2017-04-21 15:39:27,adds pymongo as a dependency for thermoCentralDB,0,,0
+80b10d7e,2017-04-21 16:24:06,adds central database registration method,0,,0
+caa98768,2017-04-21 16:24:52,adds unittest for registerInCentralThermoDB,0,,0
+96811b8d,2017-04-21 19:43:39,Added new atomTypeTests,0,,0
+93a3d731,2017-04-22 10:19:51,Modified atomtypedatabase.py according to new atomTypes,0,,0
+3f7db6b6,2017-04-22 14:27:40,adds unittest for rmgpy.rmg.input.thermoCentralDatabase,0,,0
+1b013b55,2017-04-24 16:41:34,Add kekulize method to Molecule class,0,,0
+7c0b3fca,2017-04-24 16:41:42,Add increment/decrement bond properties for Cb/Cbf,0,,0
+af0fcf79,2017-04-24 16:41:44,Handle benzene bond modifications in GroupBond,0,,0
+8e32fd4b,2017-04-24 16:41:47,Add `props` attribute to Group,0,,0
+06a41050,2017-04-24 16:41:49,Redistribute electrons after changing a benzene bond,0,,0
+7605a831,2017-04-24 16:41:52,Add unit tests for reacting benzene bonds to familyTest,0,,0
+671a0d55,2017-04-24 16:41:55,Add atom id attribute and method to assign,0,,0
+471eecc6,2017-04-24 16:41:57,Add isIdentical method for molecule comparison,0,,0
+970db9d3,2017-04-24 16:41:59,Add unit tests for isIdentical,0,,0
+bbe85199,2017-04-24 16:42:02,Add keepIsomorphic option for generateResonanceStructures,0,,0
+84d56ec1,2017-04-24 16:42:05,Add unit test for keepIsomorphic option,0,,0
+6d0ec736,2017-04-24 16:42:08,Allow 1 benzene bond for Cb atomtype,0,,0
+e9399ffe,2017-04-24 16:42:11,Improve error handling for kekulization,1,,0
+643c56ec,2017-04-25 17:48:15,Changed Fourier Fitting in Cantherm,0,,0
+e69eb4c0,2017-04-26 10:36:57,Merge pull request #968 from ReactionMechanismGenerator/reactBenzene,0,,1
+3be84623,2017-04-26 13:55:40,Update NASA Class Docstrings for Returning Thermo in J/mol The NASA class calls the NASAPolynomial methods  which return the thermo in J/mol or J/mol-K. However  the NASA Class claims erroneously that it returns the dimensionless versions.,0,,0
+bc630351,2017-04-26 15:49:23,Tweaks to cantherm input processing to manage FreeRotors,0,,0
+2152b513,2017-04-27 14:06:20,fix rotor management issue that removed rotors if fit != ‘best’,1,,0
+26406dd0,2017-04-28 04:35:19,Added the CO_Disprop family to getReactionPairs in family.py,0,,0
+edd10b00,2017-04-28 11:17:08,warning for when the Force Constant matrix is missing and there are rotors in the system,0,,0
+0487aaa7,2017-04-28 13:56:46,Add writing of boundaryAtom to saveGroups method in families,0,,0
+bdba7a33,2017-04-28 14:19:05,Merge pull request #1008 from ReactionMechanismGenerator/Update_Thermo_Docstrings,0,,1
+2af1fc3e,2017-04-28 14:25:32,update resonance atom types,0,,0
+4a160b01,2017-05-01 13:19:14,Add bug fix for postive charges in writing adjlists,1,,1
+b1c2edc3,2017-05-02 12:20:47,Fix bug for writing solvation library entries,1,,1
+b91ea41c,2017-05-03 09:30:53,Change Database.getEntriesToSave() to renumber indexes,0,,0
+17730e9a,2017-05-03 09:33:23,Add script which machine writes the database,0,,0
+5b20ef12,2017-05-03 15:10:39,Machine-write the kinetics families in test_database directory.,0,,0
+35d3d7a8,2017-05-03 15:56:19,Add functional test to check maching-saving for a family,0,,0
+4a93ea2c,2017-05-03 15:56:56,Add the remaining part of the docstring for diffModels.py,0,,0
+e250e45d,2017-05-03 18:54:57,Merge pull request #928 from ReactionMechanismGenerator/deterministic_rxn_direction,0,,1
+d8efa928,2017-05-04 12:31:31,Merge pull request #991 from ReactionMechanismGenerator/RemoveCanthermGeometry,0,,1
+3120c2be,2017-05-14 18:22:58,added solvation database to testing database,0,,0
+c10a6657,2017-05-15 11:49:49,Merge pull request #1012 from ReactionMechanismGenerator/COdisprop,0,,1
+26510a52,2017-05-16 11:48:06,modularized adding kinetics to reactions in `cerm.enlarge`,0,,0
+76165121,2017-05-17 16:53:57,add species label as smiles string if species.__str__ called,0,,0
+792b6dd6,2017-05-18 15:27:26,Updated thermo test database to use longDistanceInteraction files,0,,0
+6f548bb4,2017-05-18 16:33:23,make species string parsing from ckcsv more robust,0,,0
+1d8a2985,2017-05-18 17:06:28,Merge pull request #1024 from ReactionMechanismGenerator/mech_analyzer,0,,1
+db9680bd,2017-05-18 18:52:08,fix species string parsing typo,1,,0
+be8325be,2017-05-18 19:18:15,Merge pull request #1025 from ReactionMechanismGenerator/mech_analyzer,0,,1
+7adab32b,2017-05-19 11:11:46,added sig. figs. to A factors output by RMG,0,,0
+a933b631,2017-05-22 22:48:32,In Cantherm  ensure that the same Cartesian coordinate system is used for both the species's geometry and Hessian  to prevent erroneous hindered/free rotor projection.,0,,0
+524605ec,2017-05-25 00:37:45,added changeBaseEntropy method for NASA thermo class,0,,0
+ac110fb7,2017-05-28 23:09:11,adds satisfyRegistrationRequirement to tcdi,0,,0
+ce864820,2017-05-28 23:10:28,create connectToTestCentralDatabase,0,,0
+b5c47286,2017-05-28 23:33:45,add unittests for satisfyRegistrationRequirements,0,,0
+36d55522,2017-05-29 01:43:37,Merge pull request #1030 from ReactionMechanismGenerator/thermo_db,0,,1
+077d9ab4,2017-05-30 14:43:26,Fixes to support use of multiple reactors,1,,0
+4338c6b9,2017-05-30 17:39:32,Add props attribute to Atom,0,,0
+9eabf9bf,2017-05-30 17:47:40,Add props attribute to GroupAtom,0,,0
+22bf1c61,2017-05-30 20:26:39,Rename COPYING.txt to LICENSE.txt Changed so that github will recognize the file,0,,0
+40789ff6,2017-05-30 20:46:25,Update Copywrite Dates,0,,0
+7f71b2d6,2017-05-31 11:18:33,Incude ICCK_Demo ipython script in ipython folder,0,,0
+773cc853,2017-05-31 12:26:51,Merge pull request #994 from ReactionMechanismGenerator/transportSearch,0,,1
+30f33963,2017-05-31 13:54:59,Merge pull request #1033 from ReactionMechanismGenerator/ICCK_Demo,0,,1
+37cdcfc7,2017-05-31 14:08:51,allow pickling of isotopic elements in molecules,0,,0
+a9dead48,2017-05-31 14:58:01,Added methods for working with isotopes,0,,0
+7da2c0e8,2017-05-31 15:10:59,correct Entropy of isotopomers,0,,0
+7a4c0b6f,2017-05-31 15:13:17,Ensure correct reaction direction for similar reactions,0,,0
+515e4937,2017-05-31 23:38:48,remove degeneracy calculations from __generateReactions,0,,0
+d63b998a,2017-05-31 23:49:28,refactor reaction.isIsomorphic and allow identical checking,0,,0
+5d217158,2017-06-01 00:25:42,undo work-in-progress test for rmgTest,0,,0
+8e358b48,2017-06-01 00:28:18,make default resonance structures isomorphic,0,,0
+71c56a96,2017-06-01 00:43:20,separate degeneracy calculation for rxn.reverse objects,0,,0
+f9586e1d,2017-06-01 01:03:44,Allow input of species' objects to __generateReactions(products),0,,0
+e647ca99,2017-06-01 01:05:36,small type & name changes in saving training reactions,0,,0
+f4b7a745,2017-06-01 02:01:38,updated degeneracy algorithm,0,,0
+77745266,2017-06-01 02:05:43,method to ensure species list has all different IDs,0,,0
+83e7c64c,2017-06-01 02:10:30,ensure that reverse reactions have correct degeneracies,0,,0
+70db6220,2017-06-01 02:20:36,reduced degeneracy for identical reactants,0,,0
+bc0f5d14,2017-06-01 02:28:17,get react module to work on Species  not molecules,0,,0
+7ed8a6c4,2017-06-01 02:34:10,updated the calculateDegeneracy method,0,,0
+883aaddd,2017-06-01 03:15:06,reset database at end of test methods,0,,0
+73b00de0,2017-06-01 03:15:53,Allow checkForExistingReactions to track multiple TS,0,,0
+c49650c5,2017-06-01 15:21:09,Add method to identify ring membership of atoms,0,,0
+10f7e723,2017-06-01 15:22:34,Add adjlist support for props attribute of Group,0,,0
+d7004751,2017-06-01 15:44:07,Allow database-test to make sample atoms using nitrogen atomTypes,0,,0
+d8137424,2017-06-01 16:39:06,Add support for props in equivalent and isSpecificCaseOf,0,,0
+5219087f,2017-06-01 18:01:18,Identify ring membership after molecule creation,0,,0
+35885830,2017-06-01 18:02:19,Add unit test for subgraph isomorphism with inRing property,0,,0
+b157b0a5,2017-06-02 15:34:51,Add one fringe case test to databaseTest,0,,0
+5e66b3b3,2017-06-02 16:59:12,Merge pull request #1038 from ReactionMechanismGenerator/databaseTestFix,0,,1
+db9232a2,2017-06-02 18:18:27,Merge pull request #1016 from ReactionMechanismGenerator/entrySaving,0,,1
+58280fae,2017-06-03 15:11:57,turn off dynamics if not used,0,,0
+f5df3952,2017-06-04 18:13:24,addition of a getSumOfStates function for FreeRotors based on Forst 1995,0,,0
+71f03511,2017-06-04 18:13:59,Unit Tests for FreeRotors,0,,0
+d48b916c,2017-06-04 18:15:09,unit test to check that the Gaussian Log File Error is raised when appropriate,1,,0
+586920af,2017-06-05 13:48:52,make new simulate parameters option in addition to the input parameters (+4 squashed commits) Squashed commits: [1dda62c] Fix to catch special case when totalDivAccumNums is empty [30ce661] fix indentation error [ac9e7b5] add statement to append pdep objects to objectsToEnlarge in main [134a660] added reversibility issue fixes used in simple reactor to liquid reactor (+1 squashed commit) Squashed commits: [50af486] fix issue with reverse reaction rate being added instead of subtracted (+2 squashed commits) Squashed commits: [b42bcbd] differentiation between forward and reverse reaction rates in production and consumption [9d99df6] further handling of the production or consumption = 0 case (+1 squashed commit) Squashed commits: [9889abb] Fixed  reverse reaction bug causing inconsistent calculation of edge species formation rates,1,,0
+97ee50f8,2017-06-05 16:29:33,Added a raise DatabaseError to thermo.py to avoid infinite looping incase a thermo pointer is corrupt,0,,0
+cdffa142,2017-06-05 16:29:33,Added a raise DatabaseError to thermo.py to avoid infinite looping in case a thermo pointer is corrupt,0,,0
+1c8f8d9b,2017-06-06 17:38:12,Add bugfix for alignment of species when displaying reactions,0,,0
+0775701f,2017-06-07 15:01:37,Add try/except for resetting signal after calling lpsolve,0,,0
+19b21d37,2017-06-07 16:43:29,Merge pull request #1041 from ReactionMechanismGenerator/reactionDrawingFix,0,,1
+94cfe310,2017-06-08 12:24:27,Add argparse function to model reduction script for command line control Add control of logging level from the command line,0,,0
+223c3177,2017-06-10 16:41:58,Always use scaled harmonic oscillator (HO) frequencies for calculating ZPE in Cantherm  rather than projected frequencies when hindered rotors are included.  Remove deprecated getZPEfromfrequencies function.,0,,0
+f56e9f58,2017-06-10 16:44:13,Adding Benzyl radical hindered rotor example,0,,0
+df4dc23e,2017-06-12 11:58:05,Update Documentation for rmgpy/tools/diff_models.py,0,,0
+75111a5c,2017-06-12 15:49:47,Add Command Line Options for Controlling diffModels.py Output,0,,0
+9cc3ad2a,2017-06-13 07:43:26,change default kinetics estimator to rate rules,0,,0
+1bd44a9d,2017-06-13 13:51:35,add testing for degneracy and symmetry,0,,0
+88d8dd50,2017-06-14 11:09:35,Add minimal_surface example (ethane pyrolysis),0,,0
+9292a790,2017-06-14 15:34:18,adapt minimal_surface example,0,,0
+25c3de82,2017-06-15 09:49:57,Added the charge attribute to atomTypes,0,,0
+aeec5013,2017-06-16 11:25:31,adds decorator for tests need authentication to access resource online,0,,0
+9c3a5dd4,2017-06-16 11:26:13,reorganize test modes in makefile,0,,0
+f24c7cc3,2017-06-16 12:12:20,Merge pull request #1040 from ReactionMechanismGenerator/canthermRotors,0,,1
+99226147,2017-06-16 12:39:03,make travis test to run `make test-all`,0,,0
+bd5bf380,2017-06-16 13:20:10,Merge pull request #1056 from ReactionMechanismGenerator/auth_test,0,,1
+93aee205,2017-06-16 16:47:19,Merge pull request #1036 from ReactionMechanismGenerator/UpdateCopyright,0,,1
+cca849e0,2017-06-19 11:19:02,Output the Euclidian distance in the chem_annotated.inp,0,,0
+5d7182c9,2017-06-20 11:08:55,Modification of the minimal_surface example to effectively test the dynamicsTimeScale as well as the surface algorithm,0,,0
+2f9e2670,2017-06-20 11:54:37,staged model generation example,0,,0
+4aa01d37,2017-06-20 12:33:10,thermodynamic filtering example based on the minimal example,0,,0
+e4271070,2017-06-20 13:36:04,dynamics criterion example based on the minimal example,0,,0
+89bd5590,2017-06-20 13:47:30,adjust to new naming convention,0,,0
+5d092c2b,2017-06-21 13:53:39,Fix group additivity calls so that they can access the root template properly,1,,0
+cc46464f,2017-06-21 15:40:39,make cantherm chemkin output file runnable,0,,0
+1fbf8fb7,2017-06-21 21:42:06,make cantherm comment out excess reactions,0,,0
+ebc32fd3,2017-06-23 09:56:02,Be more specific about how small the diffusion limited rate should be.,0,,0
+5533691f,2017-06-23 10:02:17,function header fixes,1,,0
+a638c69a,2017-06-23 10:25:33,simplify treeDistances setting,0,,0
+908ae442,2017-06-23 10:38:26,Merge pull request #980 from ReactionMechanismGenerator/mol_order_from_library,0,,1
+0cc4fcd1,2017-06-23 11:04:36,Report minimum euclidian distance is 0 if you get a direct hit.,0,,0
+d48f0a61,2017-06-23 11:47:31,documentation of symmetry updated,0,,0
+91519a95,2017-06-23 12:03:25,use string dictionary for treeDistances,0,,0
+a4a56926,2017-06-23 12:03:52,clean up loops and added comments,0,,0
+e4213fa8,2017-06-23 12:42:13,Change the maximum number of terms we use to fit hinderedRotors,0,,0
+23b3a471,2017-06-23 13:04:43,Merge pull request #1043 from ReactionMechanismGenerator/Model_Reduction_Argparse,0,,1
+f6948e1c,2017-06-23 13:05:52,Add warnings when adding more terms for Fourier fits of hindered rotors,0,,0
+c3dd7047,2017-06-23 13:11:39,Add diffModels example,0,,0
+8a9e658f,2017-06-23 13:46:31,Merge pull request #1006 from ReactionMechanismGenerator/torsion_Lai,0,,1
+8ca658ad,2017-06-23 14:22:11,clean up and renaming,0,,0
+8738f440,2017-06-23 14:26:57,Fix bug where some species did not have pictures saved in diffModels tool,1,,1
+cef213f3,2017-06-23 14:32:36,Merge pull request #1014 from ReactionMechanismGenerator/symmetry_corrections,0,,1
+c6441ce2,2017-06-23 15:06:19,updated meta.yaml cython version,0,,0
+362cb36f,2017-06-23 15:11:03,Merge pull request #1048 from ReactionMechanismGenerator/diffModels_Customize_Output,0,,1
+1c426b05,2017-06-23 15:17:36,Merge pull request #871 from ReactionMechanismGenerator/longDistanceInteraction_rewrite,0,,1
+e117febe,2017-06-23 16:44:04,Merge pull request #1055 from ReactionMechanismGenerator/degeneracy,0,,1
+eef8b286,2017-06-23 16:50:20,Merge pull request #1059 from ReactionMechanismGenerator/DynamicsCriterion,0,,1
+41f630b8,2017-06-25 07:03:50,Update isomer in PDep exploration,0,,0
+4bd520ab,2017-06-26 17:34:17,remove special case for atom symmetry,0,,0
+74591956,2017-06-26 17:36:27,improve error checking for symmetry estimation with resonance hybrids,1,,0
+82e17444,2017-06-27 18:45:28,allow cantera output to use RMG names,0,,0
+82881617,2017-06-27 20:31:53,Add indexing to args.output_directory to return a string,0,,0
+efe5544b,2017-06-28 00:16:23,made species.toCantera default to using RMG labels,0,,0
+4d86b7bd,2017-06-28 10:31:12,added warning to change folder name during installation,0,,0
+88939cff,2017-06-28 11:17:51,Merge pull request #1069 from ReactionMechanismGenerator/developer_documentation_update,0,,0
+85d0a833,2017-06-28 14:20:03,added documentation for cantherm chemkin output file,0,,0
+666bc291,2017-06-28 14:43:15,two canterm examples output species and reactions,0,,0
+ab06fc71,2017-06-28 15:57:35,modified documentation about pdep output,0,,0
+500a5164,2017-06-29 15:32:24,added option to comment out chemkin kinetics entry,0,,0
+87dd5ea5,2017-06-29 17:31:55,added isotope script documentation,0,,0
+aa8e2387,2017-06-30 10:39:49,Added a specificCollider attribute to the Reaction class,0,,0
+3489fc7f,2017-06-30 10:42:23,Added the ability to read specificCollider from a library reaction,0,,0
+2e7bfbd4,2017-06-30 10:55:04,Reading\writing Chemkin files with a specificCollider,0,,0
+0ebc173a,2017-06-30 16:48:09,ensure database test checks all all atom labels,0,,0
+4e0fb0af,2017-07-01 20:40:43,Test that a specificCollider can be read,0,,0
+7f31cc52,2017-07-02 14:25:29,Reorganized the PDep documentation a bit.,0,,0
+491cbb45,2017-07-03 06:47:29,Handeling specificCollider attribute,0,,0
+e100a7eb,2017-07-03 16:26:29,Enable model.py to handel specificCollider as a model Species,0,,0
+d545d922,2017-07-06 13:53:44,allow loaded TemplateReactions to store degeneracy and templates,0,,0
+a558e7c2,2017-07-06 13:59:39,extend unittest to read the written chemkin file,0,,0
+b237abe6,2017-07-06 22:50:33,output template for exact matches to training reactions,0,,0
+3e4f2bf3,2017-07-07 09:55:26,Modified simple.pyx solver to account for specificCollider,0,,0
+ea266086,2017-07-07 13:42:01,Added a testSpecificColliderModel,0,,0
+d00ebe90,2017-07-10 12:28:54,Add support in reaction group additivity for ArrheniusEP also switch degeneracy adjustments to use changeRate,0,,0
+332ae28f,2017-07-10 14:24:46,Merge pull request #941 from ReactionMechanismGenerator/nodalDistances,0,,1
+7cb7b0ae,2017-07-10 14:29:06,expand rxn.isIsomorphic to optionally check species labels,0,,0
+1d702533,2017-07-10 16:43:55,allow all resonance structures to be used in deflating,0,,0
+07e0c2d8,2017-07-10 18:17:41,Adding an Exception to retrieveNewSpecies(),0,,0
+d038f39e,2017-07-11 11:22:47,make it possible to run the superminimal example as eg0 in the makefile:  make eg0.  Since profiling is pretty useless on a such a short job and the intent of this example is speed profiling and html generation have been removed.,0,,0
+956c3a8a,2017-07-11 11:23:24,Adding superminimal example for fast (~20 sec) testing that RMG runs properly  based on stoichiometric H2 oxidation at 1000 K,0,,0
+f0375209,2017-07-11 13:51:31,Add terminateAtMaxObjects option causes RMG simulations to terminate when the maximum number of objects it can collect in a simulation has been reached,0,,0
+7be33706,2017-07-11 14:05:37,new function getLayeringIndices,0,,0
+8cae0ad2,2017-07-11 15:03:38,Added info of reaction type to PDep network files,0,,0
+7a8ff980,2017-07-11 15:05:28,remove line breaks for chemkin kinetics comment parsing,0,,0
+9ebbc7c4,2017-07-11 15:24:14,Adapt the minimal_staged example,0,,0
+f7f1fee7,2017-07-12 11:34:02,Removed logging.debug message in reaction.py __setDegeneracy(),0,,0
+45a96d28,2017-07-12 16:54:37,Add code to set walltime from commandline flag Walltime flag was implemented in rmg.py  but was not utilized in rmgpy.rmg.main.py,0,,0
+6388d45a,2017-07-12 16:59:17,Toluene Free and Hindered Rotor Example Added Gaussian logs for Toluene and separate hindered and free rotor input and species files for Toluene allows both a hindered rotor and free rotor example to be run,0,,0
+1ae3a89b,2017-07-13 18:35:57,Added a `comment` attribute to Reaction class,0,,0
+619c2cfd,2017-07-13 22:10:06,Added kinetics documentation,0,,0
+517d45b5,2017-07-14 15:02:16,added atom energies for m06-2x model chemistry,0,,0
+8ab3cdfb,2017-07-14 15:51:42,Added M06-2X/cc-pVTZ to Cantherm's documentation,0,,0
+75c6795e,2017-07-14 16:03:32,Changes to fixBarrierHeight,0,,0
+998043e7,2017-07-14 16:19:01,adds detailed docstring for how we get atom energies,0,,0
+869a9e6a,2017-07-17 12:00:58,added unit test for Reaction.fixBarrierHeight,0,,0
+b87be952,2017-07-17 14:55:16,kill ssh-agent after everything's done,0,,0
+d7f9a573,2017-07-17 16:32:49,Merge pull request #1092 from ReactionMechanismGenerator/ssh_agent,0,,1
+8fbf8858,2017-07-17 17:07:37,Merge pull request #1084 from ReactionMechanismGenerator/collider,0,,1
+1fc47ef5,2017-07-17 19:41:00,Merge pull request #1088 from ReactionMechanismGenerator/m06,0,,1
+75524b19,2017-07-17 20:43:13,Merge pull request #1080 from ReactionMechanismGenerator/superminimal,0,,1
+68f16927,2017-07-18 10:30:18,Merge pull request #1085 from ReactionMechanismGenerator/FixWalltimeFlag,0,,1
+c683724a,2017-07-18 11:35:38,added parameters to commented ex.,0,,0
+388060d3,2017-07-18 11:50:23,prevent overwriting of existing libraries,0,,0
+8d4e48c9,2017-07-18 14:33:46,add new line to nodal distance comments,0,,0
+0e1e62ed,2017-07-18 15:26:42,deletes the Euclidean distance comment during kinetics parsing to make the string ready for template evaluation,0,,0
+f439bc61,2017-07-18 16:35:02,minor: correction to atomic number format for N in qchem.py,0,,0
+b87b3f0f,2017-07-18 19:02:10,move rate rule name in entry.data.comment,0,,0
+d0697a67,2017-07-18 21:51:41,added method from Arrhenius to ArrheniusEP,0,,0
+770c02da,2017-07-18 21:57:50,convert all Arrhenius rate rules to ArrheniusEP,0,,0
+8a35d30b,2017-07-18 22:05:11,refactored addKineticsFromTrainingSet to use toArrheniusEP,0,,0
+c2dcf9d7,2017-07-19 16:26:19,removes unused “specificColliderEfficiencies” variable from simple.pyx,0,,0
+cd77fbbf,2017-07-20 11:44:42,added option to set alpha in toArrheniusEP,0,,0
+ac97e2b1,2017-07-20 12:15:38,Add options for seed generation,0,,0
+89e4d439,2017-07-20 13:12:37,Corrected ArrheniusEP documentation,0,,0
+97db40c5,2017-07-23 16:17:37,improve error message for quantity.py,1,,0
+26178298,2017-07-23 18:18:33,get resetting degeneracy to fix kinetics comments,1,,0
+21ecb2b6,2017-07-23 20:00:53,moved RMG exception class to specific file,0,,0
+04e84a00,2017-07-24 14:27:20,Fixed two example files and a bug in statmech.py,1,,0
+31536b8a,2017-07-26 14:50:18,remove saving failsafe,0,,0
+a66a1e18,2017-07-26 14:53:50,create directories only when needed,0,,0
+605dae77,2017-07-26 15:48:24,avoid smiles parsing error,1,,0
+e128e702,2017-07-26 15:49:46,delete the old seed folder if present the first time through,0,,0
+e9228d50,2017-07-26 15:50:22,test seed mechanism file generation,0,,0
+7f78be6d,2017-07-27 10:26:04,remove duplicate getMoleculeTuple method,0,,0
+6e8e3caf,2017-07-27 11:57:48,removed commented out code,0,,0
+9194e200,2017-07-27 13:39:10,added repr function to TemplateRxn to show family & template,0,,0
+e0c79f5b,2017-07-27 17:02:52,cimport tweak,0,,0
+5900b0b7,2017-07-28 13:03:34,fix referencing issue,1,,1
+1fb578b3,2017-07-28 13:37:47,compound example,0,,0
+49823d9e,2017-07-28 14:08:45,Surface Tracking Variables and Tolerances Added,0,,0
+eca0f3da,2017-07-28 14:10:34,New function maxIndUnderSurfaceLayeringConstraint,0,,0
+5386a7db,2017-07-28 14:11:45,movement to the initialize_surface function,0,,0
+35af0c9e,2017-07-28 14:19:18,fixing indexing and naming errors,1,,0
+66532720,2017-07-28 14:21:36,fixes for issues with adding species/reactions to surface,1,,0
+1c39bc1e,2017-07-28 14:22:52,surface function tests,0,,0
+6a1b6f62,2017-07-28 14:24:45,Cythonization and indexing fixes,1,,0
+d813d4aa,2017-07-28 14:28:52,Fixes for reaction movement,1,,0
+7ecea5a8,2017-07-28 14:30:01,adds a test for addReactionToSurface,0,,0
+ed62aab2,2017-07-28 14:33:25,surface calculations made sequential,0,,0
+b1f208c5,2017-07-28 14:59:39,automatic seed mechanism generation on simulate call termination,0,,0
+f9a8aab3,2017-07-28 15:00:45,added name to options block,0,,0
+44908c9b,2017-07-28 15:02:55,change labels back,0,,0
+2cd013ba,2017-07-28 15:17:53,creation and application of Reaction.toLabeledStr,0,,0
+16cfa44c,2017-07-31 16:19:56,pdep fix,1,,1
+2e91bf15,2017-07-31 18:02:38,Rephrased exception class descriptions.,0,,0
+ebcbc257,2017-07-31 23:27:21,Convert a print statement to a logging.debug,0,,0
+a2e2f28c,2017-08-01 15:03:35,remove tabs from main.py,0,,0
+0faa4f8b,2017-08-02 09:29:37,fix issue with not including options block,1,,1
+ecea505a,2017-08-02 09:32:02,make the seed appear in the output directory,0,,0
+f3834eb9,2017-08-02 09:41:56,correct naming mistake,0,,0
+66ba6ca8,2017-08-02 14:15:16,Add getAllEdges method to Graph,0,,0
+c015cef1,2017-08-02 14:28:41,Add new unit tests to graphTest,0,,0
+e0376272,2017-08-02 15:54:47,Replace algorithm for getSmallestSetOfSmallestRings,0,,0
+f20ebad5,2017-08-02 15:56:56,Add method to retrieve set of relevant cycles,0,,0
+84dae4a1,2017-08-03 09:08:43,fix windows seed generation,1,,1
+82d23b93,2017-08-03 12:19:37,transfer the entry label attribute to the thermo object,0,,0
+e5c3e4d7,2017-08-03 12:20:26,if not already named try to use thermo label,0,,0
+d8d14a24,2017-08-03 14:03:58,Sort cycle vertices after ring perception,0,,0
+dfe55ade,2017-08-03 15:15:29,add label attribute,0,,0
+d12e58b5,2017-08-03 15:15:36,adapt test,0,,0
+e3ed455c,2017-08-03 15:30:14,Add unit tests for ring perception,0,,0
+be7cda77,2017-08-03 17:21:19,Use getRelevantCycles for aromaticity perception,0,,0
+a9512904,2017-08-03 17:22:56,Sort lists during Clar optimization,0,,0
+eb739fb2,2017-08-03 17:41:01,Use getRelevantCycles for checking isAromatic,0,,0
+b5a1365e,2017-08-03 17:54:03,fix sensitivity analysis,1,,1
+2f1b3b39,2017-08-04 13:54:46,Addition of frequency  geometry  and zero-point energy reading from Molpro output files,0,,0
+0dceda16,2017-08-04 13:55:31,Allows iodine species to be read in from Gaussian log files,0,,0
+c5337a5e,2017-08-04 13:56:10,Adds the spin orbital correction for iodine as well as an iodine specific CCSD method,0,,0
+1e081516,2017-08-04 15:06:50,extend docstring for Atom  Bond  Molecule,0,,0
+2ca9bdf6,2017-08-04 17:56:22,convert Molecule.fingerprint to a property,0,,0
+b176b206,2017-08-07 12:00:30,Decrease grain size to keep collision tensor manageable,0,,0
+89b9c2ca,2017-08-07 14:48:54,add codecov to report coverage change,0,,0
+e1aebf90,2017-08-07 15:55:06,Merge pull request #1133 from ReactionMechanismGenerator/codecov,0,,1
+5180a6a9,2017-08-07 16:22:04,added toleranceThermoKeepSpeciesInEdge,0,,0
+fe004ed9,2017-08-07 16:23:55,initiate thermodynamic filtering while species being added to edge,0,,0
+98562969,2017-08-07 18:41:02,Do not get coverage of functional tests,0,,0
+437ca05c,2017-08-07 18:41:52,label functional tests with attribute 'functional',0,,0
+5785bc18,2017-08-08 19:22:42,Add pyrdl to environment files and meta.yaml,0,,0
+c828d2ce,2017-08-09 11:28:04,Merge pull request #1126 from ReactionMechanismGenerator/useThermoLibraryNames,0,,1
+7c0df3d3,2017-08-09 11:38:13,Fix bug with handling non-aromatic resonance structures,1,,1
+d43e2446,2017-08-09 15:10:07,test collision matrix memory fix,1,,1
+e32da33d,2017-08-09 16:50:26,print species dictionary with cantherm job,0,,0
+065a6faf,2017-08-09 16:56:56,Update dependencies and installation by source in documentation,0,,0
+1f93534c,2017-08-10 15:50:51,Update the input file documentation,0,,0
+641d2528,2017-08-10 16:24:20,generate edge seeds,0,,0
+84fc920e,2017-08-11 10:22:49,added handling for lists of objects returned from simulate,0,,0
+d69182c5,2017-08-11 10:41:48,Adaptions to reduction and sensitivity,0,,0
+faf7d0b1,2017-08-11 10:44:35,test adaptions,0,,0
+f66e14d4,2017-08-11 10:46:45,setting a max number of species termination criterion,0,,0
+7db7f37f,2017-08-11 10:52:06,taking multiple objects per iteration,0,,0
+09e2a88b,2017-08-11 11:04:41,resetting of the self.done flag and added messages,0,,0
+a551a966,2017-08-11 11:06:35,pruning fix and naming mistake fix,1,,1
+c1aa9636,2017-08-11 11:11:48,Prevent silent pruning iteration error,1,,0
+958eb402,2017-08-11 11:21:22,object processing fixes and renaming,1,,0
+018be08f,2017-08-11 14:08:55,RMG run concatenation,0,,0
+85d8cb6d,2017-08-11 14:13:47,Update settings.py to reflect the new parameters,0,,0
+ecf24a2c,2017-08-11 16:08:31,fix tolerance reference,1,,1
+697311f6,2017-08-11 16:11:56,added functions to manage thermodynamic filtering,0,,0
+f588beed,2017-08-11 16:14:12,manage thermodynamic filtering,0,,0
+c312f306,2017-08-11 22:05:02,Merge pull request #997 from ReactionMechanismGenerator/AcceleratorTools,0,,1
+b13bfea2,2017-08-13 13:08:37,Add isForward attribute to TemplateReaction,0,,0
+e53ffd6c,2017-08-13 14:20:33,Extended pdep Network's init method to allow more inputs,0,,0
+709cbfef,2017-08-13 14:22:37,Added repr and str methods to Network,0,,0
+a884c53c,2017-08-13 14:40:11,Allow highPlimit calculations to use input tunneling parameters,0,,0
+1dc2dfd6,2017-08-13 14:44:08,add debug logging to pdep calculations,0,,0
+fd43f9d7,2017-08-13 16:10:06,Remove unfinished test method and add 2 tests,0,,0
+1081b56a,2017-08-13 17:03:59,Check isForward attribute in correctDegeneracyOfReverseReactions,0,,0
+a5c0fe39,2017-08-13 17:08:03,Add option to only check products in Reaction.isIsomorphic,0,,0
+18e15c95,2017-08-13 17:09:43,Only generate product resonance structures for degeneracy checking,0,,0
+555849de,2017-08-13 17:10:58,Use product checking only for degeneracy calculation,0,,0
+c15d301e,2017-08-13 17:12:01,Don't generate molecule tuples for addReverseAttribute,0,,0
+e41684b1,2017-08-13 18:16:53,Added a repr method for Configuration,0,,0
+e180ab79,2017-08-14 12:18:25,added tests for thermodynamic filtering,0,,0
+092b27f8,2017-08-14 13:18:15,Raise error when fitToData does not have degrees of freedom,1,,0
+dd9bcfd3,2017-08-14 15:02:18,add object in order of their addition value,0,,0
+95277741,2017-08-14 17:17:22,extend charRate=0 catch to all cases,0,,0
+3edeee74,2017-08-14 17:38:58,Refactor findDegeneracies to return corrected values,0,,0
+b65fb2f3,2017-08-14 17:46:30,Add unit test for reacting different resonance structure of a species,0,,0
+f047c0a7,2017-08-15 16:09:55,Fix atom relabeling for intra_H_migration,1,,1
+89751966,2017-08-15 17:52:37,make bounds for change bonds more flexible,0,,0
+6d24651a,2017-08-16 10:25:10,removes the ThermoData.label for HBI,0,,0
+f13b06e1,2017-08-16 11:22:56,break thermodynamic filtering operations into functions,0,,0
+fcc2c948,2017-08-16 13:53:11,skip parameter setting if not thermofiltering,0,,0
+6cc1f266,2017-08-16 15:17:14,atomtype needs updated before using isomorphism check properly,0,,0
+cbb2f816,2017-08-16 16:17:12,fix edge species removal,1,,1
+1de05dbe,2017-08-16 16:47:16,Fix reaction degeneracy unit test,1,,0
+cae18d5a,2017-08-16 18:27:52,Fix Walltime for generateReactions.py,1,,1
+c34dae7a,2017-08-17 15:33:37,avoid checking duplicates in created seed mechs,0,,0
+bc0ec60e,2017-08-17 15:33:51,make seed mechanism generation default off,0,,0
+c3bbab6f,2017-08-17 16:38:49,Update documentation makefile,0,,0
+9cd3df8f,2017-08-17 16:39:52,Update copyright date in documentation,0,,0
+0e7ede06,2017-08-17 16:40:01,Add cython directive to embed docstrings,0,,0
+7a0c88d3,2017-08-17 17:03:47,add kinetics comment for family,0,,0
+49bea6da,2017-08-17 17:06:08,use library and template info when loading,0,,0
+23c6cc8b,2017-08-17 17:30:01,adapt parser to new kinetics comment,0,,0
+b1560524,2017-08-17 18:38:53,Restructure rmg.py,0,,0
+e6f9b7fd,2017-08-17 18:38:53,Add Unit Test for rmg.py,0,,0
+007d45a3,2017-08-18 12:06:04,Fix unit test to ensure that thermo comes from GAV,1,,1
+04f23e64,2017-08-18 14:04:13,Add unit test for Molecule.fingerprint property,0,,0
+97619a19,2017-08-18 14:21:24,Update Vertex/Edge/Graph docstrings,0,,0
+cfba29d6,2017-08-18 14:27:09,Merge pull request #1156 from ReactionMechanismGenerator/AddUnitTestRmgPy,0,,1
+b5163942,2017-08-18 15:12:21,Remove not implemented features from rmg.py,0,,0
+c8133da8,2017-08-18 16:11:13,Merge pull request #1047 from ReactionMechanismGenerator/filterThermo,0,,1
+3c83a908,2017-08-18 16:53:38,Completely refactor rmgpy.rmg.mainTest.TestMain,0,,0
+7595b6a7,2017-08-19 20:03:52,Convert print statements to logging statements,0,,0
+de9a7da5,2017-08-20 20:28:07,update generateReactions walltime attribute,0,,0
+ef73d3eb,2017-08-20 20:28:28,Improve walltime error message,1,,0
+deb46fbf,2017-08-21 11:23:15,allow floating point degeneracies,0,,0
+6b366aed,2017-08-21 18:09:06,Added Klippenstein_Glarborg2016 to documentation,0,,0
+a7dd4e8c,2017-08-22 11:55:06,skip updating thresholds for resurrected systems,0,,0
+d4aa5d20,2017-08-22 11:55:22,adapt to new simulate call syntax,0,,0
+8ff538d2,2017-08-22 14:20:12,add function getLibraryReactions,0,,0
+e7973f9d,2017-08-22 18:46:28,Create new DependencyError class,0,,0
+c3e348ba,2017-08-22 18:49:52,Check for common MOPAC errors in Mopac.testReady,1,,0
+07831b12,2017-08-22 18:50:48,Refactor mopacTest to check validity of executable using testReady(),0,,0
+6a3d62ce,2017-08-23 11:57:48,Merge pull request #1169 from ReactionMechanismGenerator/mopac_expiry,0,,1
+ff0a24f6,2017-08-23 14:20:24,add seed parameters to docs,0,,0
+6ad99db4,2017-08-23 14:47:17,Improve error messages within TestBond,1,,0
+a75d66d9,2017-08-23 16:06:22,If no symmetry is input then cantherm will default to use the symmetry estimated by gaussian or molpro. Also minor clean-ups and reordering of some of the quantum methods,0,,0
+e13b43b6,2017-08-23 16:43:17,Cleaned up a coordinate reading loop in loadGeometry and correct several annotations to correctly read Molpro instead of Gaussian,0,,0
+6c8976f5,2017-08-23 18:19:06,Replace misc print statements with logging or exceptions,0,,0
+806c6ee2,2017-08-23 18:19:32,Remove unnecessary try/except in cantherm/qchem,0,,0
+1155551c,2017-08-23 21:01:50,Merge pull request #1130 from ReactionMechanismGenerator/improve_docstring_molecule,0,,1
+39ee2ad1,2017-08-23 22:09:53,Merge pull request #1164 from ReactionMechanismGenerator/wallclock_updates,0,,1
+401569f7,2017-08-24 10:07:22,Merge pull request #1154 from ReactionMechanismGenerator/doc_settings,0,,1
+79bf7a7b,2017-08-24 10:23:42,Remove inaccessible return statement,0,,0
+e05e8a7f,2017-08-24 11:25:36,add tests for library.py,0,,0
+c5868701,2017-08-24 12:01:25,Fixed info of reaction type to PDep network files,1,,0
+2ca8907f,2017-08-24 13:03:30,Merge pull request #1155 from ReactionMechanismGenerator/properSeedMechanisms,0,,1
+df279ee1,2017-08-24 15:01:25,Remove Unused Test from conformerTest,0,,0
+2f8aa9d8,2017-08-24 15:02:08,Remove Not Implemented Function setSpinMultiplicity,0,,0
+1b52c27b,2017-08-24 15:02:34,Remove Not Implemented InChi Collision Check,0,,0
+e48ffd30,2017-08-24 15:20:15,Remove unused code,0,,0
+3c35afa0,2017-08-24 15:36:19,Make symmetry attribute a float,0,,0
+aee7d1df,2017-08-24 15:44:02,Account for chiral centers in getAtomSymmetryNumber,0,,0
+b52f0ef9,2017-08-24 17:10:57,Add new documentation for input file,0,,0
+88679b1e,2017-08-24 18:31:50,Updated documentation for chirality,0,,0
+0c4a4f19,2017-08-25 10:06:08,Remove Unused 'e' from Exception Statements,0,,0
+64bbd532,2017-08-25 17:45:12,add dynamics/surface algorithm theory,0,,0
+48268134,2017-08-25 19:06:21,Clean up liquidTest.py for readability and PEP8 compliance,0,,0
+d4722a12,2017-08-27 00:37:23,Fix liquidReactor jacobian unit test,1,,1
+b6952d96,2017-08-28 11:03:19,Enable diffusion-limited rates in sensitivity tool,0,,0
+90dbcaa0,2017-08-28 12:15:34,always initialize reaction diffusion attribute,0,,0
+ddaef2cb,2017-08-28 12:25:13,remove testPickleLiquidReaction,0,,0
+a408978f,2017-08-28 15:37:34,Add Loop Counter to __addGroupThermoData,0,,0
+d2f137e4,2017-08-28 15:47:53,Add atom label swapping for intra_substitutionS_isomerization,0,,0
+41b6a72b,2017-08-28 15:54:12,DynamicsTimeScale Allows setting of a dynamicsTimeScale variable in the input file as a parameter of the model function  while the simulation time is less than the dynamicsTimeScale value the dynamics criterion related calculations are not run (thus the dynamic criterion will not pick up anything in the simulation until after the dynamicsTimeScale has passed),0,,0
+f4a79e68,2017-08-28 16:07:04,Modify comments in KineticsFamily.applyRecipe(),0,,0
+fd60dcfd,2017-08-28 16:10:51,Add jacobian method to LiquidReactor,0,,0
+73480170,2017-08-28 16:14:03,Add families that are their own reverse to the testing database,0,,0
+2e303123,2017-08-28 16:14:58,Add new unit tests for atom label swapping,0,,0
+e32cbca6,2017-08-28 16:25:11,Fix sensitivity tool loader for liquidReactor,1,,1
+7221d741,2017-08-28 16:37:19,Add unit test for liquid phase sensitivity,0,,0
+8680ebc8,2017-08-28 18:51:19,Merge pull request #1180 from ReactionMechanismGenerator/PreventInfiniteLoop,0,,1
+89392fdb,2017-08-28 18:56:39,Don’t use diffusion limitations in the sensitivities test,0,,0
+f3550f4a,2017-08-29 11:43:43,Merge pull request #1181 from ReactionMechanismGenerator/sensitivity_tool_fix,0,,1
+7df66936,2017-08-29 18:18:15,Updated BAC for CBS-QB3 according to Paraskevas2013,0,,0
+32a0772e,2017-08-29 19:02:56,Allow flexibility in getLabeledReactantsAndProducts,0,,0
+8ae9ad3a,2017-08-30 13:57:13,Add getSingletCarbeneCount method to Molecule class,0,,0
+78f8e790,2017-08-30 14:02:33,Add species constraint for maxSingletCarbenes,0,,0
+a71417b1,2017-08-30 14:11:08,Add species constraint for maxCarbeneRadicals,0,,0
+7fa90314,2017-08-30 14:16:58,Adjust spacing in commented input file,0,,0
+88ded185,2017-08-30 14:26:33,Add new species constraints to commented input file,0,,0
+2dfbe62e,2017-08-30 14:40:40,Add new species constraints to user documentation,0,,0
+d9b678c6,2017-08-30 17:01:23,Add unit tests for species constraints,0,,0
+e9737a7d,2017-08-30 22:15:00,Add unit test for getSingletCarbeneCount(),0,,0
+330fbefa,2017-08-31 20:38:27,thermo estimation should not affect database entries,0,,0
+5a291bba,2017-09-01 11:42:43,use DatabaseError when obtaining database,0,,0
+490efaf9,2017-09-01 11:44:56,Remove usage of Species.solventData  solventStructure  solventName  solventViscosity,0,,0
+179ad340,2017-09-01 12:00:18,clean up surface management in main.py,0,,0
+41fa4fe8,2017-09-01 14:03:45,Merge pull request #1166 from ReactionMechanismGenerator/KlippGlar2016,0,,1
+a87ad9b7,2017-09-01 15:32:34,Merge two Species classes,0,,0
+f3af5ae5,2017-09-01 16:42:22,make bondOrder compare to 10^-4,0,,0
+24125a1c,2017-09-02 13:55:57,added unitest for addNewSurfaceObjects,0,,0
+09ef13cb,2017-09-04 09:01:09,add comments for forbidden structure check process,0,,0
+81396e4a,2017-09-07 12:55:52,Merge pull request #1168 from ReactionMechanismGenerator/GetRidofUnusedCode,0,,1
+f030b200,2017-09-07 16:23:28,Merge pull request #1187 from ReactionMechanismGenerator/carbene_constraint,0,,1
+6d4894cf,2017-09-08 11:45:29,Add Code of Conduct,0,,0
+d242d1a7,2017-09-08 12:06:23,Merge pull request #1179 from ReactionMechanismGenerator/account_for_enantiomers_in_entropy,0,,1
+d4fba2e5,2017-09-08 13:51:14,Make rmg.py PEP-8 compliant,0,,0
+8bca20bc,2017-09-08 15:14:42,Merge pull request #1161 from ReactionMechanismGenerator/Restructure_rmg.py,0,,1
+9b60a5d3,2017-09-08 18:19:04,Added sulfur and nitrogen libraries to documentation,0,,0
+f5702400,2017-09-08 19:53:11,Added atomTypes to documentation,0,,0
+0e661bad,2017-09-09 10:51:51,need verbosity for ring/cyclic related thermo comments,0,,0
+c21cf906,2017-09-09 10:52:37,need verbosity for ring/cyclic related thermo comments,0,,0
+b128447b,2017-09-11 14:03:45,Add error handling to Graph._sortCyclicVertices,1,,0
+41a89fe0,2017-09-11 14:04:47,Add unit tests for Graph._sortCyclicVertices,0,,0
+90d42baf,2017-09-11 14:35:25,Merge pull request #1193 from ReactionMechanismGenerator/bicyclic_formula,0,,1
+fbe63037,2017-09-11 19:07:29,remove excessive logging messages,0,,0
+ba4eb718,2017-09-11 20:10:14,adapt loadLibraries for single library use,0,,0
+0c823a5f,2017-09-12 11:31:42,if off only make seedmech at end,0,,0
+6401db66,2017-09-12 14:57:19,Merge pull request #1171 from ReactionMechanismGenerator/fix_float_error_bond,0,,1
+fe4ae3a9,2017-09-12 19:18:17,Merge pull request #1134 from ReactionMechanismGenerator/separate_functional_tests,0,,1
+da8b91f4,2017-09-13 13:09:41,Add kinetic isotope effect functionality to tools/isotopes.py,0,,0
+1bff5424,2017-09-13 13:11:33,Allow user to specify kinetic isotope method in input command,0,,0
+46653bae,2017-09-13 17:57:29,Update reaction generation when debugging reverse reaction error,1,,0
+3ea44f75,2017-09-13 17:59:35,Also check for multiple transition states when debugging,0,,0
+87ad930b,2017-09-13 18:01:00,Change deletion method when debugging forbidden reverse rxns,0,,0
+dd8e2811,2017-09-13 18:04:15,Update lone pairs as first step in molecule.updateAtomType(),0,,0
+bb638244,2017-09-14 13:46:21,Fixes to thermoTest for new updateLonePair addition in updateAtomtype,1,,0
+cd935f29,2017-09-14 13:59:28,Change makeSampleAtom to work with new charge attribute on atomtypes,0,,0
+b7cc911a,2017-09-15 13:21:04,Refactor Molecule.saturate() to saturateRadical,0,,0
+27db908a,2017-09-15 13:28:24,Add saturateUnfilledValence method to Molecule,0,,0
+ffb38a40,2017-09-15 13:35:04,Saturate submols with H in heuristic thermo method for polyrings,0,,0
+4c498700,2017-09-15 22:59:31,Updated atomtypes through the testing_database,0,,0
+189e2ff2,2017-09-15 23:02:00,Updated atomTypes throughout the code,0,,0
+13bacf47,2017-09-17 06:08:31,Don't saturate lonePairs on carbon monoxide in solvation,0,,0
+c9631bb9,2017-09-19 15:35:37,Reorganize badges in README,0,,0
+2d32f77c,2017-09-19 15:37:34,Minor additions to README content,0,,0
+d61e6b12,2017-09-19 17:14:11,Allow all objects violating tolerance to be added to invalidObjects prior to this taking multiple objects meant only that we checked the object with the maximum value for each criteria every iteration and if it wasn’t present in invalidObjects we added it This involved extensive restructuring within the simulate function,0,,0
+033372dd,2017-09-19 17:32:46,fix surface issues,1,,1
+11e737fd,2017-09-19 17:46:05,add dividers and comments to make the simulate() code sections clearer,0,,0
+b48a85a2,2017-09-20 11:02:16,Merge pull request #1205 from ReactionMechanismGenerator/update_readme,0,,1
+d42ba905,2017-09-20 11:53:36,deprecate zeroProduction/Consumption handling,0,,0
+ea8b2e21,2017-09-20 18:59:19,Formating fixes to pass codevac,1,,0
+758147d9,2017-09-24 18:57:15,Fix aromatic resonance structures when RDKit misidentifies aromaticity,1,,1
+4122835f,2017-09-25 11:22:12,adding necessary files to testing_database,0,,0
+9f6da2a5,2017-09-25 11:26:31,fix parentheses parsing issue,1,,1
+09326e5d,2017-09-25 17:01:11,calculate reverse rates in cantherm jobs,0,,0
+b7809055,2017-09-26 08:24:14,Merge pull request #1189 from ReactionMechanismGenerator/cleanSurface,0,,1
+725683ef,2017-09-26 10:41:40,Print out the Arrhenius for the reverse rates,0,,0
+41503c15,2017-09-26 11:23:04,change seed mech processing,0,,0
+08861f07,2017-09-26 12:18:38,replace duplicateChecked with autoGenerated in test_data,0,,0
+c330b74b,2017-09-26 15:44:45,Adds a force constant reading capability and directions to print the force constant in Molpro,0,,0
+6f89948a,2017-09-28 10:14:59,handle case saturated species case,0,,0
+a565cc97,2017-09-28 10:21:33,added a test for uncertainties,0,,0
+790d5e2c,2017-09-28 16:25:50,move the ‘from training reaction’ comment,0,,0
+8d4757de,2017-10-02 15:55:32,Reorder updateCharge() and updateAtomTypes() in molecule.py,0,,0
+7ee5bacf,2017-10-03 10:34:27,avoid unnecessary thermoFilterDown calls,0,,0
+fc4d323a,2017-10-03 11:25:02,Require Cantera 2.3.0a3 in environment files,0,,0
+fa02e5d1,2017-10-03 11:57:00,Run conda list in travis build,0,,0
+55a098b1,2017-10-03 13:48:58,Fix imports in kineticsTest.py,1,,1
+f66346d1,2017-10-04 08:04:25,Added known SMILES to generator.py,0,,0
+5a2f3415,2017-10-04 14:50:15,Merge pull request #1165 from ReactionMechanismGenerator/fixUncertainty,0,,1
+50b85333,2017-10-05 14:35:34,Create molecule.converter module for RDKit and OB conversion,0,,0
+670f1d92,2017-10-05 16:09:05,Move InChI related methods from generator/parser to inchi module,0,,0
+6cf87962,2017-10-05 16:59:22,Combine generator and parser into new translator module,0,,0
+070e2bb8,2017-10-05 17:24:14,Move generator/parser unit tests to new locations,0,,0
+7092e545,2017-10-05 17:37:01,Move inchiparsingTest contents into translatorTest,0,,0
+142ac1ad,2017-10-06 16:31:43,Automatically format inchi.py using pycharm,0,,0
+524b135d,2017-10-06 16:52:45,Remove unused methods in inchi.py,0,,0
+c1b0d01f,2017-10-06 18:19:35,Reorganize methods related to fixing molecules created from augInChI,1,,0
+5a4a38a7,2017-10-11 09:08:13,Change makeSampleMolecule to work with new charge attribute on atomtypes,0,,0
+461ae3b5,2017-10-11 10:36:46,Restored test-all in Makefile,0,,0
+3750d453,2017-10-11 17:39:51,Merge pull request #1082 from ReactionMechanismGenerator/atools,0,,1
+33a4b5e1,2017-10-11 18:14:00,Merge pull request #1142 from ReactionMechanismGenerator/Aromatics_updates,0,,1
+b88c9f76,2017-10-12 11:45:28,Extended LonePairRadical resonance structures,0,,0
+d9314228,2017-10-12 11:47:59,Added tests for LonePairRadical resonance,0,,0
+c330f11c,2017-10-12 15:18:27,Add unit test for debugging forbidden reverse rxns,0,,0
+bef4f78d,2017-10-12 16:10:38,Update TemplateReaction docstring with new attributes,0,,0
+8ceb2818,2017-10-13 11:42:45,Merge pull request #1207 from ReactionMechanismGenerator/calcRevRate,0,,1
+d328254f,2017-10-16 15:35:10,Merge pull request #1209 from ReactionMechanismGenerator/degeneracy_speedup,0,,1
+2470e495,2017-10-17 15:15:14,Added the C2H4+O_Klipp2017 library to documentation,0,,0
+96033e15,2017-10-17 19:08:14,Merge pull request #1203 from ReactionMechanismGenerator/forbidden_bug,0,,1
+4adaf2e6,2017-10-18 15:12:15,Correct misplaced parenthesis,0,,0
+1704ea5d,2017-10-19 11:30:15,fix parser.check to actually use the data in aug_inchi,1,,0
+4c873a64,2017-10-19 11:32:47,Allow species.generate_aug_inchi to skip resonance isomers,0,,0
+60bb09f5,2017-10-19 13:20:47,Make generate_minimum_resonance_isomer() consider charges,0,,0
+f7b33e2b,2017-10-19 13:31:31,Add unit tests for the fixed resonance bugs,1,,0
+2f720164,2017-10-19 16:18:15,Reorganize methods related parsing and generating InChI layers,0,,0
+673d9dc6,2017-10-19 17:43:59,Merge pull request #1190 from ReactionMechanismGenerator/one_species,0,,1
+bf7ffa73,2017-10-20 10:49:32,Model Resurrector Rather than fail on daspk errors this commit causes the solver to add the edge species with the highest edge flux to core  the reaction with the greatest dynamics criterion to bulk core and the reaction with the greatest dynamics criterion under the layering constraint to the surface  ideally this should kick the dynamics away from what caused it to fail before. Time stepping now does not occur during the first while loop iteration  this ensures that the objects needed to resurrect the solver are present during the first time step,1,,0
+7952adaf,2017-10-20 11:10:58,add Model Resurrection syngas test example,0,,0
+8bcd14ee,2017-10-20 11:12:25,Merge pull request #1214 from ReactionMechanismGenerator/resLPrad,0,,1
+433a7dfd,2017-10-20 11:29:03,Merge run and createFluxDiagram functions in fluxdiagram.py,0,,0
+ebf403c8,2017-10-20 13:44:37,Merge pull request #1076 from ReactionMechanismGenerator/read_templates_from_chemkin,0,,1
+918b329e,2017-10-20 14:43:10,make model enlargement occur after each reactor,0,,0
+b1ad2aa5,2017-10-20 15:13:20,Enable constant species for LiquidRector,0,,0
+1209b97d,2017-10-20 15:29:05,Enable diffusion-limited rates when creating flux diagram,0,,0
+32bbca71,2017-10-20 15:39:00,Revise findAllDelocalizationPathsLonePairRadical to allow only NO2,0,,0
+27bbf87f,2017-10-20 15:39:28,Standardize importing of OpenBabel,0,,0
+6ec62b8a,2017-10-20 15:48:42,Rename two constants in translator.py,0,,0
+163f3fda,2017-10-20 16:07:11,set the prunableSpecies and Networks after each cycle of reactors,0,,0
+b68a2126,2017-10-20 16:07:35,convert pruning to working with prunable species/networks,0,,0
+a88a0f4b,2017-10-20 16:14:33,remove collisionModel Attribute def,0,,0
+8aafd52d,2017-10-20 16:53:57,Add additional options to generateFluxDiagram.py script,0,,0
+7221e563,2017-10-20 17:06:29,Update fluxtest to reflect changes to fluxdiagram,0,,0
+6f1bfae2,2017-10-20 18:35:41,Ensure that fluxdiagram.py and sensitivity.py work with new unified Species class,0,,0
+543bed65,2017-10-20 19:47:56,Refactor translator module,0,,0
+10f1d267,2017-10-23 16:49:59,add text for kinetics parsing of lines starting with 'family',0,,0
+f3a235da,2017-10-25 15:46:29,change kinetics commenting of training reactions,0,,0
+54fb46ea,2017-10-26 11:27:21,Add additional markers for line breaks in kinetics comments,0,,0
+680c5620,2017-10-26 21:05:12,Add method that ensures a list contains species objects,0,,0
+009f2b47,2017-10-26 21:19:32,Reduce code duplication by using ensure_species,0,,0
+adf0e194,2017-10-26 21:27:19,Refactor generateReactionsFromLibrary to accept Species objects,0,,0
+a4da7e69,2017-10-27 12:58:24,increment vectors but don’t update react flags,0,,0
+2c1e04cd,2017-10-27 13:10:49,Merge pull request #1046 from ReactionMechanismGenerator/ModelResurrection,0,,1
+d9098280,2017-10-27 14:28:48,Refactor generateReactionsFromFamilies to behave like reactSpecies,0,,0
+1c051c07,2017-10-27 17:51:06,Use generateReactionsFromFamilies in reactSpecies,0,,0
+d63af6b1,2017-10-27 18:07:00,Move some methods from rmg.react to data.kinetics.common,0,,0
+f61f24c1,2017-10-27 18:31:11,Minor changes to methods in data.kinetics.common,0,,0
+651772bf,2017-10-27 18:38:50,Move two unit tests from reactTest to kineticsTest,0,,0
+00e298bb,2017-10-27 20:34:45,Cleanup TestReactionDegeneracy class,0,,0
+24d68fc4,2017-10-28 22:28:28,Add optional arguments to allow turning off resonance for rxn gen,0,,0
+5b0c864a,2017-10-28 22:29:58,Add unit tests for resonance argument in reaction generation,0,,0
+93e73831,2017-10-28 23:27:50,Remove unused code in reactSpecies,0,,0
+a2cf3317,2017-10-30 13:40:11,Rename generateResonanceIsomers to generate_resonance_structures,0,,0
+13402c35,2017-10-30 13:46:31,Rename all methods in resonance module using lowercase_with_underscores,0,,0
+d6ce5824,2017-10-30 14:57:33,Make products an optional argument in generateReactionsFromLibraries,0,,0
+a545adc0,2017-10-30 14:57:48,Add unit test for generateReactionsFromLibraries,0,,0
+adfe54c3,2017-10-30 15:04:49,Rename reaction generation methods in KineticsDatabase class,0,,0
+e3d0a744,2017-10-30 15:08:26,Allow KineticsDatabase.generate_reactions to pass optional arguments,0,,0
+2b6ff106,2017-11-09 10:39:23,Fix charged polyrings formed in thermoTests,1,,1
+8ebf093e,2017-11-09 16:18:39,Allow products to be passed all the way to __generateReactions,0,,0
+7bc106a7,2017-11-09 16:29:22,Allow Reaction.matchesSpecies to also check products,0,,0
+f7dd2f18,2017-11-09 16:49:50,Add deprecation warning to filter_reactions,0,,0
+9a3b0fb1,2017-11-09 17:17:12,Add `Ea raised from` to list of kinetics comment line breaks,0,,0
+d6cb0e1e,2017-11-14 21:01:23,Added new aromatics libraries to RMG documentation.,0,,0
+b3913ecf,2017-11-15 14:38:56,make seed mech family name parsing more robust,0,,0
+967edb6c,2017-11-15 14:42:46,automatically load the library a reaction is from,0,,0
+b2630e60,2017-11-15 14:57:53,Fix library name parsing,1,,1
+7df44de2,2017-11-16 11:42:41,Add argument to control product resonance in reaction generation,0,,0
+663eb21a,2017-11-16 11:43:05,Add unit test for product resonance argument in reaction gen,0,,0
+e843aa3f,2017-11-16 12:04:26,This adds a simulator block to the ch3no2 example,0,,0
+b5d391b7,2017-11-16 12:44:14,Update docstrings for reaction generation,0,,0
+412eb655,2017-11-16 14:47:36,Merge pull request #1241 from ReactionMechanismGenerator/fix_ch3no2_example,0,,1
+84ae0e0c,2017-11-17 10:37:23,Remove accidentally committed file,0,,0
+91bdca38,2017-11-17 14:33:09,adapt uncertainty.sensitivityAnalysis to new call syntax,0,,0
+5f117a13,2017-11-17 17:33:10,Avoid generating carbenes in findAllDelocalizationPathsN5dd_N5ts,0,,0
+4603ec35,2017-11-21 15:51:28,Load species dictionaries as ordered dict,0,,0
+99c0a4bd,2017-11-22 18:36:03,Allow RCCSD(T)-F12 energies,0,,0
+907d5159,2017-11-22 19:00:38,Fix Tlist error when fitting Arrhenius,1,,1
+7e08a240,2017-11-22 21:14:55,Removed hard-coded exception for carbonMonoxide in group.py,0,,0
+ccee9ebf,2017-11-22 21:22:06,Deleted species containing O2sn atomType,0,,0
+2a27920d,2017-11-22 21:24:06,Updated atomTypes throughout the repository,0,,0
+481bd41b,2017-11-27 11:27:53,Modified Species.isIsomorphic for filtered resonance structures,0,,0
+dbc50c6e,2017-11-27 11:28:21,Added test_is_isomorphic_to_filtered_resonance_structure to speciesTest,0,,0
+fb9b500d,2017-11-27 11:31:34,Added resonance tests,0,,0
+f95b53b8,2017-11-27 12:52:09,Merge pull request #1243 from ReactionMechanismGenerator/fixUncertaintySens,0,,1
+85865af3,2017-11-27 14:02:44,Add flux diagram unit test for liquid reactor,0,,0
+b1f4290e,2017-11-28 10:38:46,Merge pull request #1244 from ReactionMechanismGenerator/cantherm_molpro,0,,1
+9a716d76,2017-11-28 12:00:30,Added atom.isNOS(),0,,0
+1214767b,2017-11-29 14:56:42,Added pathfinder tests,0,,0
+2e119078,2017-11-30 14:27:34,Update reactSpecies docstring,0,,0
+7735b94c,2017-11-30 15:56:09,Refactor Exceptions in family.py,0,,0
+500c95d0,2017-11-30 16:52:33,Test methods for kinetic isotope effects,0,,0
+f4a0c26b,2017-11-30 18:07:07,Add unit test for addAtomLabelsForReaction,0,,0
+4e170601,2017-12-01 10:31:07,Added N and S atoms to reaction.pairs determination by similarity,0,,0
+28078888,2017-12-01 11:03:23,Added a sulfur reaction pair test,0,,0
+e33d59ec,2017-12-01 14:22:10,Include centralSpecies and settings in fluxtest,0,,0
+4a8f209e,2017-12-01 17:05:41,Track prunable species/networks,0,,0
+5f6288b9,2017-12-03 18:48:36,Capture a generatePairs error in deflateReaction(),1,,0
+686835df,2017-12-05 09:23:17,Added a `reactive` attribute to the Molecule class,0,,0
+cf7df87c,2017-12-05 11:36:00,Merge pull request #1225 from ReactionMechanismGenerator/flux_diagram,0,,1
+fe285ec1,2017-12-05 14:06:01,Merge pull request #1231 from ReactionMechanismGenerator/refactor_rxn_gen,0,,1
+8879fdd3,2017-12-05 14:22:45,Added filter_structures to molecule.generate_resonance_structures(),0,,0
+82800e02,2017-12-05 14:23:06,Added filter_structures to species.generate_resonance_structures(),0,,0
+54517a31,2017-12-06 17:48:56,Use resonance method instead of molecule method in resonanceTest,0,,0
+91f40782,2017-12-06 18:06:34,Generate aromatic resonance structures when checking products,0,,0
+1123fcb0,2017-12-07 10:18:49,Add specificCollider to areIdenticalSpeciesReferences(),0,,0
+74adc5bd,2017-12-11 15:32:46,molecule.reactive considerations in thermo.py,0,,0
+97bbbf35,2017-12-12 15:33:01,Added resonance transformations specific for atoms with lone pairs,0,,0
+821788f8,2017-12-14 09:46:28,Fix a CpInf < Cphigh case in getEntropy(),1,,1
+249f1ce1,2017-12-15 10:49:49,Hardcode Korcek_step1_cat in getReactionPairs,0,,0
+b540463e,2017-12-18 16:40:37,Rewrite Graph.getDisparateRings() method,0,,0
+031a1cd3,2017-12-18 18:27:20,Update unit test for getDisparateRings,0,,0
+844c4149,2017-12-19 12:12:24,Add note to docstring of getDeterministicSSSR,0,,0
+a930f2cb,2017-12-19 14:32:09,Clean up travis.yml,0,,0
+207f56c4,2017-12-19 16:30:08,Sort cycle vertices for symmetry determination,0,,0
+06c497ed,2017-12-20 12:18:26,Do not log SMILES in updateAtomTypes when AtomTypeError is encountered,0,,0
+070720c7,2017-12-27 15:47:20,Added a getChargeSpan() function to molecule,0,,0
+0720b3f4,2017-12-28 13:52:38,Added a logSpecies option to molecule.update(),0,,0
+2db754e7,2017-12-29 14:26:39,Added test_append_unreactive_structure to modelTest,0,,0
+96d374ab,2017-12-29 15:10:11,Modified checkForExistingSpecies for unreactive structures,0,,0
+39b7eea2,2017-12-31 19:37:24,In rmgTest added `reactive` as an output of checkForExistingSpecies(),0,,0
+b2b54d07,2018-01-08 21:13:57,Save only reactive structures in the species dictionary,0,,0
+3c6a0bf7,2018-01-09 09:10:48,Ensure reactions from depositories are properly labeled,0,,0
+87836114,2018-01-09 10:46:50,add functions for generating set of all extensions,0,,0
+91b677bd,2018-01-09 11:07:34,Merge pull request #1248 from ReactionMechanismGenerator/minor_thermo_isotope_tweaks,0,,1
+9fd7a794,2018-01-09 11:59:45,Don't generate net charged species in families,0,,0
+a875bf8a,2018-01-09 16:48:00,Moved ensure_species_in_reaction to Reaction class,0,,0
+6671dbb2,2018-01-09 16:52:19,Add options to Rxn.ensure_species to make resonance flexible,0,,0
+bfb8f090,2018-01-09 17:23:10,Reworked functionality of addAtomLabelsForReaction,0,,0
+4eb89049,2018-01-10 10:07:42,Added a thermoTest for lowest H298 in resonance structures,0,,0
+7628f59c,2018-01-10 11:28:16,Sort molecules in a Species by reactivity for thermo evaluation,0,,0
+9bef699c,2018-01-10 16:30:31,This adds the testing database GRI-Mech3.0 library as a seed mechanism to the original mainTest rmg run.,0,,0
+66953ee9,2018-01-10 18:10:57,Move generic node recording to loadGroups() instead of load(),0,,0
+6ed3e25a,2018-01-10 18:20:11,Refactor code for thermo group loading,0,,0
+5905fa95,2018-01-11 14:14:51,Add docstrings to recordPolycyclicGenericNodes and recordRingGenericNodes,0,,0
+7c023a4a,2018-01-11 14:42:07,Merge pull request #1257 from ReactionMechanismGenerator/load_thermo,0,,1
+2d56e46c,2018-01-12 10:47:08,Fixed mixed spaces/tabs in main.py,1,,0
+477e9b0d,2018-01-12 12:07:41,Merge pull request #1200 from ReactionMechanismGenerator/improveFamilyParsing,0,,1
+eb1fce58,2018-01-12 12:22:23,Before raising NetworkError  print all reactants/products/isomers/reactions,0,,0
+e19584b7,2018-01-16 11:54:28,add test for extension generation,0,,0
+88d62082,2018-01-16 16:42:51,Add hydrogen bond type,0,,0
+c96b8851,2018-01-16 17:16:04,functions for generating H-bonded structures,0,,0
+119d1963,2018-01-17 11:25:27,add tests for hydrogen bonding manipulations,0,,0
+1f2d9c53,2018-01-21 21:50:15,Added structure filtration,0,,0
+1af95455,2018-01-22 14:21:40,Added is_structure_in_list to species.py,0,,0
+7f374c0d,2018-01-22 17:03:23,Combine InChI generation methods with aug_level argument,0,,0
+be116b85,2018-01-24 11:41:04,retrieve the correct Gibbs number for printing in thermoFilterDown,0,,0
+5bd165b7,2018-01-24 13:46:17,Add some error checking in translator._read,1,,0
+1b1da7b7,2018-01-25 10:57:26,Added an assertion message to to loadChemkinFile() in chemkin.py,0,,0
+b75a8460,2018-01-25 16:26:26,Failure to generate reaction pairs in a family now no longer raises an error,1,,0
+7e85c689,2018-01-25 17:52:18,Relabel atoms for peroxide families,0,,0
+e8eb9266,2018-01-25 18:15:17,Duplicate templates for peroxide families,0,,0
+66b3a747,2018-01-26 12:51:27,Changed output of addAtomLabelsForReaction,0,,0
+5632cc82,2018-01-26 17:09:13,add generateInitialMap option to isSubgraphIsomorphic,0,,0
+f9ad58d5,2018-01-27 18:14:31,Merge pull request #1247 from ReactionMechanismGenerator/minor_kinetics_fixes,0,,1
+a94718a2,2018-01-27 19:40:30,Modified the commented kinetics debug message in groups.py,0,,0
+3fe47dbd,2018-01-29 12:09:23,Added a family irreversibility test,0,,0
+623c4ea7,2018-01-29 12:19:06,Allow families to be irreversible,0,,0
+3fe25b67,2018-01-29 12:20:17,Added Singlet_Val6_to_triplet to testing_database,0,,0
+9ab73ecc,2018-01-29 16:02:58,functions for calculating the value of an objective function,0,,0
+4df8ad48,2018-01-29 16:05:14,helper functions for tree generations,0,,0
+5e4d6b65,2018-01-29 16:06:36,functions for evaluating a given extension,0,,0
+7bdfaf0a,2018-01-29 16:11:40,New function generateTree,0,,0
+204f188e,2018-01-29 16:14:47,add the Singlet_Carbene_Intra_Disproportionation family to the testing database,0,,0
+37120103,2018-01-29 16:16:10,tests for tree generation,0,,0
+8c466420,2018-01-29 16:17:00,fix uncertainty test,1,,1
+6dc16e44,2018-01-29 19:27:57,Added filtration tests,0,,0
+28a2be3b,2018-01-30 12:06:00,Added a test_calculate_degeneracy_for_non_reactive_molecule kinetics test,0,,0
+d4416bfe,2018-01-30 12:06:17,Added getNetCharge() to group.py,0,,0
+85c73ed9,2018-01-30 14:05:59,fix the example for adding multiple species,1,,0
+8236fc92,2018-02-01 13:43:33,Merge pull request #1266 from ReactionMechanismGenerator/irreversible,0,,1
+9b1ff159,2018-02-01 14:27:49,Allow input to allow specification of temperature and pressure ranges,0,,0
+5f218071,2018-02-01 14:28:27,adapt simulate to return the time and conversion at which a run terminated,0,,0
+aaa02415,2018-02-01 14:30:01,adapt simple and liquid reactors to deal with T and P range input,0,,0
+0f2240a2,2018-02-01 14:31:50,adapt simple and liquid reactors initialization to take a P and T input,0,,0
+211eb21f,2018-02-02 15:25:51,Merge pull request #1206 from ReactionMechanismGenerator/chargedAT,0,,1
+f9ad0f42,2018-02-02 16:08:51,Merge pull request #1222 from ReactionMechanismGenerator/addSpcsEachReactor,0,,1
+5f2e57be,2018-02-05 23:05:21,Revamp documentation site theme,0,,0
+9b427faf,2018-02-06 17:30:23,Merge pull request #1128 from ReactionMechanismGenerator/ring_perception,0,,1
+42834d03,2018-02-07 11:34:50,Use `step` instead of `advance` in fluxdiagram.py,0,,0
+f27aa346,2018-02-07 11:58:09,Remove calculation of edge reaction rates,0,,0
+36e81356,2018-02-07 16:39:02,Enable multiple centralSpecies in flux diagram generation and allow superimposing them onto main graph,0,,0
+904e2699,2018-02-07 18:10:15,Redesign documentation sidebar,0,,0
+3fb5fd11,2018-02-07 18:15:55,Update documentation copyright date,0,,0
+8e502079,2018-02-07 18:20:03,Clean up documentation static files,0,,0
+b5f7e62a,2018-02-07 19:01:54,Fix miscellaneous documentation compiling issues,1,,0
+4dfd7da6,2018-02-08 11:50:32,Reorganize documentation index page,0,,0
+c1b06b49,2018-02-08 11:50:48,Add some table styles to documentation css,0,,0
+a74c7f6b,2018-02-08 12:17:38,Correct spelling of MolePro to Molpro,0,,0
+7466c075,2018-02-08 12:35:46,Update Cantherm api,0,,0
+812906bc,2018-02-08 13:36:54,Create new exceptions page in documentation,0,,0
+28661684,2018-02-08 13:55:49,Add api pages for new modules in rmgpy.molecule,0,,0
+5ec171e4,2018-02-08 14:36:15,Included collFreq in the try block (pdep/network.py),0,,0
+2b9754b1,2018-02-08 16:15:44,Corrected modelChemistry in Cantherm species examples,0,,0
+646bf86f,2018-02-08 16:36:17,Update calculateDegeneracy to deal with identical reactants,0,,0
+3540ca43,2018-02-08 18:13:45,Update list of developers in documentation,0,,0
+981122f9,2018-02-08 18:19:38,Update copyright year in license,0,,0
+1ca13dff,2018-02-08 18:20:07,Add script to automatically rewrite file headers,0,,0
+06ed74d9,2018-02-08 18:28:08,Add option for saving/reading simulation states to/from file,0,,0
+69f5efe9,2018-02-08 19:04:24,Update file headers,0,,0
+ad4d10f7,2018-02-09 10:23:33,Refactor ensure_species to modify inplace,0,,0
+d34485c5,2018-02-09 10:35:58,Refactor ensure_independent_atom_ids to accept Molecule objects,0,,0
+0f02a7c5,2018-02-09 14:07:55,Added description for Lai_Hexylbenzene kinetics library,0,,0
+a97ef741,2018-02-09 15:49:13,Modify O2 special case in MoleculeDrawer,0,,0
+cb867491,2018-02-12 15:55:19,Remove author tags from module docstrings,0,,0
+4472de6f,2018-02-12 16:33:34,Add Python script to check important dependencies,0,,0
+d8912a5f,2018-02-12 17:09:43,Replace QM target in Makefile,0,,0
+4a321e90,2018-02-12 20:57:33,Merge pull request #1277 from ReactionMechanismGenerator/update_headers,0,,1
+5336d8de,2018-02-13 10:04:55,Added electronegativity dictionary to the PeriodicSystem class,0,,0
+3d42748b,2018-02-13 10:05:49,Draw E units in network PDF,0,,0
+6261e03e,2018-02-13 12:03:37,Disable syntax highlighting for license in documentation,0,,0
+26eacbc3,2018-02-13 12:26:01,Add LiquidReactor page to api,0,,0
+cec9ce27,2018-02-13 15:28:49,Remove duplicate simulation script,0,,0
+58f491d7,2018-02-13 15:40:08,Add missing scripts in setup.py,0,,0
+9c7d1834,2018-02-13 15:49:04,Always plot simulation profiles when running simulate.py,0,,0
+5647418c,2018-02-13 18:25:27,Merge pull request #1284 from ReactionMechanismGenerator/simulation_script,0,,1
+2b1fd9c1,2018-02-14 16:05:07,Describe Network attributes in docstring,0,,0
+559f2e68,2018-02-15 15:58:29,fix uncertainty parsing issue,1,,1
+11ffacfd,2018-02-15 16:50:14,Allow resonance specification in generate_reactions,0,,0
+0ea38e47,2018-02-15 16:52:16,Add test that resonance parameter functions as intended,0,,0
+fda3c51b,2018-02-15 16:53:35,Separate generate_reaction unittests,0,,0
+7fdc4740,2018-02-15 20:54:09,Enable restricting the number of reactions when using central species,0,,0
+cf6b7ff7,2018-02-16 11:15:45,allow loading of template reactions as library reactions if their family is not loaded,0,,0
+dd1ca2af,2018-02-16 11:19:54,adjust seed mech comments,0,,0
+649b0386,2018-02-16 11:48:12,use the molecular formula for species with + in their label to avoid parsing issues,0,,0
+7a0b1fc5,2018-02-16 11:49:58,add assert to prevent input species names from having a + in them,0,,0
+2d83f97a,2018-02-16 11:50:42,Fix invalid argument in loader.py,1,,1
+142ed11b,2018-02-16 16:54:29,Merge pull request #1183 from ReactionMechanismGenerator/documentNewFeatures,0,,1
+5f48eb59,2018-02-16 19:47:24,Cythonize part of loadChemkinFile,0,,0
+79762ef6,2018-02-17 20:24:13,Don't add a PDep reaction if it exists as a LibraryReaction,0,,0
+83c53c4d,2018-02-19 11:22:59,Add flag for checking duplicates,0,,0
+d825c300,2018-02-19 16:54:08,Ensure that superimposed species connect to main flux graph,0,,0
+0fc46c8b,2018-02-19 17:33:56,Add foreign flags to tools/scripts,0,,0
+abd10624,2018-02-20 23:40:23,Fixes gaussianTest and adds partition function loading checks for HOSI to moleproTest.py,1,,0
+0240d6a6,2018-02-20 23:47:35,Improved the geometry reading method for Molpro optimization output files,0,,0
+16a0fab4,2018-02-21 10:46:42,Added a more useful error message when conformer loading fails from a Molpro output file,1,,0
+57a2fdda,2018-02-21 10:56:54,Allows the user to specify if they would like to read the symmetry from the log file in QChem jobs,0,,0
+b5a2ff0d,2018-02-21 11:10:08,Allow tri-rads in findAllDelocalizationPaths,0,,0
+f4fb2ffa,2018-02-21 12:28:19,Update kinetics family list in documentation,0,,0
+b9bb7626,2018-02-21 12:39:02,Corrected the example atomType in S2dc,0,,0
+28ba557d,2018-02-21 15:12:07,Add b3lyp\6-31g** as a modelChemistry with fitted atomic energy corrections,0,,0
+85206bb4,2018-02-21 23:14:47,Add a line in the documentation including b3lyp\6-31g** in the method list,0,,0
+154d056d,2018-02-22 11:22:03,Adjust threshold for zero energy in applyInverseLaplaceTransformMethod,0,,0
+81bc011b,2018-02-23 10:49:40,Bugfix for the conformer loading of linear molecules from a Molpro output file,0,,0
+1e258d60,2018-02-23 14:03:33,Merge pull request #1145 from ReactionMechanismGenerator/cantherm_pdep_debug,0,,1
+35f94756,2018-02-23 15:53:06,Use Molecule.getNetCharge in ForbiddenStructures to avoid duplication,0,,0
+57052417,2018-02-26 11:23:29,Change the 'from training reaction' comment so it doesn't use the same words,0,,0
+14a18b35,2018-02-26 11:27:16,fix test comment,1,,1
+711de537,2018-02-26 13:41:35,Merge pull request #1260 from ReactionMechanismGenerator/hydrogenBonding,0,,1
+5b618178,2018-02-26 14:27:51,Merge pull request #1288 from ReactionMechanismGenerator/uncertaintyFix,0,,1
+edc9c10f,2018-02-26 16:51:57,no longer generate thermo libraries during seed mechanism generation,0,,0
+7841dd1c,2018-02-27 10:46:48,Create new error type for problems with the model core,1,,0
+973d8bf1,2018-02-27 11:15:03,check_model function,0,,0
+0a26e533,2018-02-27 11:49:13,fix mainTest to account for lack of seed thermo libraries,1,,1
+8dd8d37a,2018-02-27 18:20:01,Fix RDKitMol conversion to avoid losing lone pairs,1,,0
+7ec8408f,2018-02-27 18:38:10,Add Intra_R_Add_Exo_Scission and 1 2_ShiftC to documentation,0,,0
+8abbee9a,2018-02-27 20:39:32,Restore Molecule.sortAtoms() method and related methods,0,,0
+d53a3ccb,2018-02-27 20:45:55,Fix errors and style issues flagged by Codacy,1,,1
+597716c1,2018-02-28 16:01:39,fix array handling in network.__repr__,1,,1
+e8c4cef1,2018-03-01 09:04:42,Added a thermoTest for nonreactive molecule in a species,0,,0
+bddef1f0,2018-03-01 18:09:08,Merge pull request #1273 from ReactionMechanismGenerator/doc_update,0,,1
+40b5e0df,2018-03-02 15:20:34,Merge pull request #1306 from ReactionMechanismGenerator/pdep_fix,0,,1
+9e53289d,2018-03-02 15:40:24,remove logging statement from getLibraryReactions,0,,0
+664ab437,2018-03-02 16:33:14,fix seed mech template parsing issue,1,,0
+89bfaf31,2018-03-02 18:00:47,Merge pull request #1290 from ReactionMechanismGenerator/SeedMechLoading,0,,1
+29f4c932,2018-03-03 21:16:36,"Suppressed ""square root of a negative number"" warning in Cantherm statmech.py where vibrational frequencies are calculated from Hessian. Otherwise this warning will appear for every species/transitionState that has a hindered/free rotor  which has been a source of confusion in the past.",0,,0
+f5b7467a,2018-03-03 22:36:43,Added examples of hindered rotor scans with symmetry=1 2 and 3 to Cantherm documentation.,0,,0
+a06d840b,2018-03-05 12:25:21,Have OpenBabel output canonical SMILES,0,,0
+c09b8138,2018-03-05 20:03:05,Refactor forbidden structure loading and checking,0,,0
+02778e2e,2018-03-06 10:00:12,Added has_reactive_molecule to Species,0,,0
+e2bd0182,2018-03-06 16:52:09,Added `Cl1s` chlorine atomType,0,,0
+444d908d,2018-03-06 16:52:25,Added Chlorine atomType to documentation,0,,0
+7495ad08,2018-03-06 16:52:36,Added a chlorine atomType Test,0,,0
+7cd5cf55,2018-03-06 16:52:57,Avoid generating a charged chlorine atomType in isomorphismTest,0,,0
+46025bf7,2018-03-07 12:33:08,Add 'rdkit-first' option for translator backends,0,,0
+2520d742,2018-03-07 14:43:53,Add output checking when generating identifiers,0,,0
+10f7dad7,2018-03-07 14:52:14,Only prevent RDKit from sanitizing for SMILES generation,0,,0
+ed212e10,2018-03-07 15:02:17,Refactor imports in converter and translator modules,0,,0
+5ffa8621,2018-03-07 15:44:22,Add two unit tests for SMILES and InChI generation,0,,0
+1ab1513b,2018-03-07 15:47:44,Update TestMolecule.smilesTest with canonical SMILES,0,,0
+6b492dd2,2018-03-07 16:56:46,Fixes and improvements to thermoEstimator.py script,1,,0
+d586797c,2018-03-07 17:12:20,Add error handling to getAllThermoData,1,,0
+d6808415,2018-03-07 17:26:59,Fix formatting of two Molecule docstrings,1,,0
+98d093a6,2018-03-07 17:30:28,Restore Molecule import in species.py,0,,0
+e6e4b4b9,2018-03-07 17:39:50,Combine check_dependencies.py and update_headers.py into utilities.py,0,,0
+8d0921fb,2018-03-07 17:49:07,Create python utility to clean compiled files,0,,0
+2c8c4004,2018-03-08 14:44:34,Add attributes to thermo database saveEntry method,0,,0
+d537b0b7,2018-03-09 15:34:57,Streamline unit test make targets,0,,0
+6ed0c149,2018-03-13 13:14:34,Added C-Cl and C-F to CBS-QB3 BAC,0,,0
+4288bec8,2018-03-13 13:15:03,Added F  I to element.py,0,,0
+87dc4757,2018-03-13 13:20:01,Added Cl  Si to group updateFingerprint(),0,,0
+77581839,2018-03-13 13:20:59,Added is F/Cl/I to Atom in molecule.py,0,,0
+f317c69a,2018-03-13 21:18:12,Added Cl and Si to generatePairs() in reaction.py,0,,0
+20859c15,2018-03-13 21:27:13,Added the has_PDep_route attribute to Reaction,0,,0
+62607cae,2018-03-13 21:29:40,Added the has_PDep_route attribute to LibraryReaction,0,,0
+73d4706e,2018-03-13 22:52:45,Merge pull request #1310 from ReactionMechanismGenerator/chlorine,0,,1
+e1e3bb79,2018-03-13 23:34:40,Removed reaction duplicate checks,0,,0
+f2d08c20,2018-03-14 00:38:40,Reset ring membership after generating product templates,0,,0
+dba2f39a,2018-03-14 17:14:47,Update sensitivity example script to point to simulate.py,0,,0
+15365bdc,2018-03-14 17:24:04,Update Documentation for Sensitivity Analysis,0,,0
+bbec3326,2018-03-14 18:09:26,Merge pull request #1318 from ReactionMechanismGenerator/fix_sensitivity_example,0,,1
+d804bc39,2018-03-14 23:01:01,Change species to optional argument,0,,0
+9680c55f,2018-03-14 23:11:48,Update documentation for simulate and generateFluxDiagram,0,,0
+ac004c6e,2018-03-15 12:15:29,Add unit tests for forbidden structure loading and checking,0,,0
+13ceacb2,2018-03-15 12:46:44,Add get_element_count methods to Molecule and Group,0,,0
+e3d11c95,2018-03-15 13:14:18,Add unit tests for get_element_count,0,,0
+ea7c6b5f,2018-03-15 13:18:56,Use get_element_count in util.retrieveElementCount,0,,0
+153da216,2018-03-15 13:40:34,Use get_element_count for subgraph isomorphism,0,,0
+3f904659,2018-03-15 15:02:27,Fix codacy issues,1,,1
+94760de9,2018-03-15 15:06:49,Added Iodine atomType to documentation,0,,0
+7e9cb09b,2018-03-15 15:19:53,Added 'I1s' iodine atomType,0,,0
+5b90cd43,2018-03-15 15:45:26,Added a iodine atomType Test,0,,0
+20341406,2018-03-15 15:48:44,fixup! Refactor forbidden structure loading and checking,0,,0
+e8fe4de1,2018-03-15 16:14:04,Add documentation for new forbidden structure types,0,,0
+5f7e063b,2018-03-15 16:39:22,Added I to group updateFingerprint(),0,,0
+8c4e2b97,2018-03-15 16:45:49,Add unit test for _process_duplicate_reactions,0,,0
+3465eb9c,2018-03-15 17:21:02,Added I to generatePairs() in reaction.py,0,,0
+98bce383,2018-03-15 17:34:39,Avoid generating a charged iodine atomType in isomorphismTest,0,,0
+73cb0f43,2018-03-15 23:09:17,Minor formatting fixes to check_model,1,,0
+814128d8,2018-03-16 10:25:34,Merge pull request #1317 from ReactionMechanismGenerator/dupWarning,0,,0
+ee46ff97,2018-03-16 10:31:00,Adds an annotation explaining the source of Iodine's spin orbital correction,0,,0
+012a515a,2018-03-16 11:38:34,Adds negative frequency loading (and thus kinetics calculations) from molpro output files,0,,0
+c45ca173,2018-03-19 14:37:43,Merge pull request #1295 from ReactionMechanismGenerator/loadchemkin_speedup,0,,1
+7e61272c,2018-03-19 18:43:21,Add instructions for updating entire env to check_dependencies,0,,0
+76f74ea2,2018-03-19 19:20:17,Fix ChemkinTest.test_process_duplicate_reactions,1,,1
+d02ed26a,2018-03-19 20:59:32,Merge pull request #1321 from ReactionMechanismGenerator/iodineMonoval,0,,1
+f0846cad,2018-03-19 23:28:13,Allow addLabelsForReaction to properly handle identical references,0,,0
+4e16a2bf,2018-03-20 00:23:45,Merge pull request #1312 from ReactionMechanismGenerator/misc_fixes,0,,1
+6f02e882,2018-03-20 16:12:58,Remove inadequately specified model chemistries,0,,0
+b2b333e5,2018-03-20 17:02:45,Automatically infer atoms from quantum chemistry output,0,,0
+427bafcb,2018-03-20 17:46:18,Allow user-defined atomic energies,0,,0
+bb77680c,2018-03-21 09:49:05,Corrected known SMILES in generator.py,0,,0
+dfb623b4,2018-03-21 11:37:29,Add enthalpies of formation for more atoms,0,,0
+994c5738,2018-03-21 11:46:51,Allow bond labels to be entered in reverse,0,,0
+bfc8057f,2018-03-22 11:23:11,Add option to turn off atom corrections,0,,0
+e7bdd327,2018-03-22 13:02:13,Merge pull request #1276 from ReactionMechanismGenerator/fix_calculate_degeneracy_bug,0,,1
+4a4b885c,2018-03-22 15:52:49,Merge pull request #1262 from ReactionMechanismGenerator/refactor_translation,0,,1
+eebbc758,2018-03-22 16:55:23,Merge pull request #1320 from ReactionMechanismGenerator/subgraph_isomorphism,0,,1
+b307d5dc,2018-03-22 19:21:21,Change model chemistries to lower-case and make user input insensitive to case,0,,0
+f6288dc4,2018-03-23 12:17:40,Add atomic energies for B3LYP/6-311+g(3df 2p),0,,0
+96109df6,2018-03-23 14:57:05,Merge pull request #1324 from ReactionMechanismGenerator/cantherm_changes,0,,1
+69c1584d,2018-03-26 11:21:41,Hardcode reaction pairs for Baeyer-Villiger families,0,,0
+67caad0b,2018-03-26 15:45:11,Remove unnecessary comments from Species class,0,,0
+00cc8712,2018-03-26 18:42:06,Enable consistent generation of trimolecular product structures,0,,0
+26125a0d,2018-03-26 19:12:16,Speed up isomorphism checking of species lists,0,,0
+43f130a1,2018-03-26 20:23:50,adaption of tests and tools systems to match new syntax,0,,0
+a5f441d6,2018-03-27 11:15:53,Adds the ability to load geometry from Molpro frequency output files,0,,0
+d7d24bc2,2018-03-27 11:18:21,Removes several unused variables from the zero point energy and negative frequency loading methods,0,,0
+e2a1c600,2018-03-27 12:09:49,Reduce degeneracy for trimolecular reactions with identical reactants,0,,0
+cbe47f9f,2018-03-27 16:40:46,Enable trimolecular reaction families,0,,0
+8d87b259,2018-03-27 16:51:15,Raise error if self.densStates is None,1,,0
+0f58d669,2018-03-27 21:26:24,Improved cyclic symmetry algorithm,0,,0
+99f91930,2018-03-27 21:30:31,Added tests for cyclic symmetry algorithm,0,,0
+ea231e3d,2018-03-28 16:53:24,Merge pull request #1296 from ReactionMechanismGenerator/PDepDUP,0,,1
+90a58c0b,2018-03-29 13:53:10,Check for empty molecule when generating identifiers,0,,0
+66eb5f3b,2018-03-29 14:45:43,Properly count elements in disconnected InChIs,0,,0
+6ba5d7b7,2018-03-29 15:54:08,Fix incorrect variable in _rdkit_translator,1,,1
+16d4d276,2018-03-29 15:57:34,Have toAdjacencyList return emptry string if no atoms are provided,0,,0
+caa5d0aa,2018-03-29 17:31:34,Allow _rdkit_translator to handle mol=None input argument,0,,0
+70768c9b,2018-03-29 18:03:23,Enable filtering of trimolecular reactions in RMG solver,0,,0
+7214c0bf,2018-03-29 18:06:48,Allow trimolecular reactions in RMG simulations,0,,0
+166c2684,2018-03-30 17:21:39,creation of function extendNode,0,,0
+59f52061,2018-03-30 17:24:28,creation of getExtensionEdge function,0,,0
+f1426ceb,2018-03-30 17:26:20,functions for preparing the tree for generation and saving it afterwards,0,,0
+2f589a57,2018-03-30 22:28:01,Switch to new-style classes,0,,0
+d77fbc27,2018-03-31 14:49:20,Extend diffusion-limited rate calculation to reactions of higher orders,0,,0
+6d560cd3,2018-03-31 15:19:54,Add unit test for diffusion limit of trimolecular reaction,0,,0
+5924c85e,2018-03-31 15:55:37,Update liquid-phase documentation,0,,0
+93a02f6e,2018-04-01 18:56:36,Adjust sensitivity analysis to work with range based reactors,0,,0
+b45184c4,2018-04-02 18:00:37,Remove unnecessary error flag in getReactionPairs,1,,0
+02c3d120,2018-04-03 16:37:15,Update documentation for reaction filtering thresholds,0,,0
+c0ddc5c3,2018-04-06 11:59:49,Merge pull request #1334 from ReactionMechanismGenerator/identifier_fixes,0,,1
+a0cb5fdf,2018-04-06 13:34:10,changes MultiPdepArrhenius getRateCoefficient to calculate as a sum of the PdepArrhenius objects within it,0,,0
+bb50e9fc,2018-04-06 13:34:38,adds a database test to check reasonability for every library reaction,0,,0
+f231c40a,2018-04-10 14:49:55,Change reaction degeneracy algorithm,0,,0
+3353ed8f,2018-04-10 14:50:01,Allow find_degenerate_reactions to filter by template,0,,0
+9cc2f0ce,2018-04-10 14:50:05,Update docstring and rename variables in find_degnerate_reactions,0,,0
+4f389faf,2018-04-10 14:50:07,Add new unit tests for modified degeneracy algorithm,0,,0
+50acda88,2018-04-10 14:50:10,Mark deterministic kinetics unit test as work in progress,0,,0
+720ac35b,2018-04-10 14:50:12,Do not identify duplicates in checkForExistingReaction,0,,0
+6fe4e9d1,2018-04-10 14:50:15,Updates unit tests for checkForExistingReaction,0,,0
+631e79fe,2018-04-12 09:40:29,Added a saturate_h option to generateIsomorphicResonanceStructures,0,,0
+ad6af9ae,2018-04-12 09:43:18,Set saturate_h=True in inchi.py generate_isomorphic_res_structures,0,,0
+4a71bf39,2018-04-12 09:46:05,Use OpenBabel instead of RDkit for species containing sulfur,0,,0
+7660f13e,2018-04-12 10:03:11,React molecules in family.py only if they are `reactive`,0,,0
+81c64459,2018-04-12 10:10:40,common.py: generate resonance structures condition,0,,0
+186c0872,2018-04-12 19:28:04,Clean up applyRecipe,0,,0
+ad56fcd9,2018-04-16 17:30:00,ensure filterReactions is set before the filterReactions occurance,0,,0
+27394a6d,2018-04-16 17:30:58,make the algorithm go through filter checking if it is the first iteration,0,,0
+06b68dca,2018-04-16 17:32:18,prevent the algorithm from terminating if new reactions are generated,0,,0
+4090708f,2018-04-16 18:23:56,Merge pull request #1343 from ReactionMechanismGenerator/fixSeedFilterReact,0,,1
+ca386eed,2018-04-19 09:50:15,Corrected keep_isomorphic syntax,0,,0
+5c410136,2018-04-19 17:10:38,Update Documentation for rmgpy.molecule,0,,0
+3e5f79fb,2018-04-20 11:54:23,preserve order in splitReactions isomorphism checks,0,,0
+facdbe1d,2018-04-20 15:40:14,Fix ensure_reaction_direction handling of multiple TS,1,,1
+8dd535a6,2018-04-24 12:24:13,Add option to turn off generation of reverse reaction for families with three products,0,,0
+5ac5644a,2018-04-24 13:36:57,Only generate reactions for family of reaction template,0,,0
+b0a4b121,2018-04-24 16:14:07,fix values for number of opticalIsomers in 23dimethylpropoxy example,1,,1
+36c93f0f,2018-04-25 16:16:36,add is_forward attribute to reaction object,0,,0
+0dddb513,2018-04-25 16:16:57,assign Reaction.is_forward when loading training,0,,0
+2cd755e6,2018-04-25 16:18:03,added test that generated extensions are subgraph isomorphic to the parent,0,,0
+7c0ec5e1,2018-04-26 20:56:46,Improvements to KineticsFamily.saveTrainingReactions,0,,0
+eb037d40,2018-04-27 09:14:07,Don't generate resonance isomers for aug-InChI,0,,0
+ba7baf25,2018-04-27 09:15:19,Deprecating inchi._generate_minimum_resonance_isomer(),0,,0
+2451858e,2018-04-27 10:13:35,Added detail to recommended citation.,0,,0
+0fc6f865,2018-04-27 11:39:33,RMG memory and condition generation,0,,0
+031b93ca,2018-04-27 12:17:05,Adapt solver/reactor object syntax to deal with variable condition reactors,0,,0
+0e4dc4d7,2018-04-27 12:22:41,Add sampling reactor example for ethane oxidation,0,,0
+7679db47,2018-04-27 12:30:55,Add testing for RMG_Memory class,0,,0
+a0067a32,2018-04-27 17:19:02,Add balanceSpecies feature,0,,0
+5064ae39,2018-04-27 17:19:24,Added range based reactors example,0,,0
+dae1585f,2018-04-27 17:26:29,added documentation for range based reactors,0,,0
+a7ca3683,2018-04-29 23:39:23,Update RMG-Py version number to 2.1.1,0,,0
+32dcc0bb,2018-04-29 23:39:47,Add release notes for v2.1.1,0,,0
+79cbbb16,2018-04-29 23:59:31,Merge branch 'v2.1.1' into v2.1.2,0,,0
+84f30477,2018-04-30 11:58:53,Update RMG-Py version number to 2.1.2,0,,0
+d63f8fe3,2018-04-30 11:59:03,Add release notes for v2.1.2,0,,0
+47c6e01e,2018-05-01 16:08:47,Add kinetics_library_to_training IPython notebook and tools,0,,0
+e9eb625b,2018-05-01 16:44:44,Fix typos in pdep.py comments,1,,0
+8f6d6ae8,2018-05-02 00:15:31,Merge branch 'v2.1.2' into v2.1.3,0,,0
+52746f06,2018-05-02 00:24:14,Update RMG-Py version number to 2.1.3,0,,0
+1cebdf66,2018-05-02 00:24:36,Add release notes for v2.1.3,0,,0
+8c12cb13,2018-05-02 00:30:39,Merge branch 'v2.1.3' into v2.1.4,0,,0
+d4bbfdeb,2018-05-02 00:31:24,Update RMG-Py version number to 2.1.4,0,,0
+e74b7046,2018-05-02 00:34:26,Add release notes for v2.1.4,0,,0
+2e297797,2018-05-02 00:38:09,Merge branch 'v2.1.4' into v2.1.5,0,,0
+33ff5a6f,2018-05-02 00:41:21,Update RMG-Py version number to 2.1.5,0,,0
+5cf04af2,2018-05-02 00:41:38,Add release notes for v2.1.5,0,,0
+f06a9c81,2018-05-02 00:43:46,Merge branch 'v2.1.5' into v2.1.6,0,,0
+0ee784d5,2018-05-02 00:44:59,Update RMG-Py version number to 2.1.6,0,,0
+ffbaa08c,2018-05-02 00:46:09,Add release notes for v2.1.6,0,,0
+baabd262,2018-05-02 00:47:55,Merge branch 'v2.1.6' into v2.1.7,0,,0
+7ab5202b,2018-05-02 00:49:12,Update RMG-Py version number to 2.1.7,0,,0
+23d5be2d,2018-05-02 00:51:18,Add release notes for v2.1.7,0,,0
+f6165529,2018-05-02 00:53:07,Merge branch 'v2.1.7' into v2.1.8,0,,0
+d0876568,2018-05-02 00:54:21,Update RMG-Py version number to 2.1.8,0,,0
+c37f0e40,2018-05-02 00:56:13,Add release notes for v2.1.8,0,,0
+c720b74a,2018-05-02 23:24:53,Merge branch 'v2.1.8' into v2.1.9,0,,0
+126ffbcc,2018-05-02 23:28:08,Update RMG-Py version number to 2.1.9,0,,0
+e8a3a415,2018-05-02 23:30:12,Add release notes for v2.1.9,0,,0
+6927e017,2018-05-03 13:13:50,Adds the parameters necessary for Cantherm to calculate the thermodynamic properties of iodine containing molecules. This includes the atomic energies for two pseudo-potential containing CCSD basis sets.,0,,0
+97b4eafc,2018-05-03 15:23:06,delete not reasonable atomtype change,0,,0
+210726b0,2018-05-03 16:43:34,Merge pull request #1146 from ReactionMechanismGenerator/canthermchanges2,0,,1
+02926fc1,2018-05-04 12:12:52,Fix matchNodeToChild to account for ancestor comparison,1,,1
+b303fa70,2018-05-06 21:52:39,Added a test for zero net charge in family products,0,,0
+a79e0bb2,2018-05-07 11:35:07,Use anaconda compilers for conda recipe,0,,0
+c5590b91,2018-05-07 13:52:57,Update build scripts for conda recipe,0,,0
+b03d126c,2018-05-07 14:38:54,Merge pull request #1270 from ReactionMechanismGenerator/ring_attributes,0,,1
+3bb2e151,2018-05-07 14:52:38,Added an `elementary_high_p` attribute to Reaction,0,,0
+c9f26c00,2018-05-07 14:54:03,Added an `elementary_high_p` attribute to LibraryReaction,0,,0
+0ace8d4d,2018-05-07 14:55:01,Modified saveEntry in kinetics/common.py,0,,0
+5f35298b,2018-05-07 14:56:53,Added a `network_kinetics` attribute to Reactions,0,,0
+4175825d,2018-05-07 14:57:36,Minor: Relocated isomers generator in model.enlarge,0,,0
+a80286c9,2018-05-07 14:58:58,Added the `network_kinetics` attribute to PDepReaction,0,,0
+cdd3042e,2018-05-07 14:59:19,Write the high pressure limit kinetics in network files,0,,0
+d53240ac,2018-05-07 15:00:02,Added the `network_kinetics` attribute to LibraryReaction,0,,0
+3d94eb42,2018-05-07 15:00:21,Generate the high P limit kinetics for unimolecular library reactions,0,,0
+81f8e0ea,2018-05-07 15:00:44,Minor: typo fix in network debug messages,1,,0
+208c5c68,2018-05-07 15:01:04,Consider network_kinetics when calculating network kf_expected,0,,0
+c1ffdc8d,2018-05-07 15:01:27,Consider network_kinetics in pdep reaction,0,,0
+d91597d7,2018-05-07 15:06:21,Allow library reactions with network_kinetics to be explored in pdep,0,,0
+d43633a8,2018-05-07 15:11:31,LibraryTest: test_generate_high_p_limit_kinetics,0,,0
+fb8283e1,2018-05-07 17:09:13,Set version number based on git tag in meta.yaml,0,,0
+06ec1ca6,2018-05-07 17:52:36,Update dependencies in meta.yaml,0,,0
+b7ce027c,2018-05-08 13:26:26,Handle library reactions with PDep kinetics in networks,0,,0
+5c94d65a,2018-05-08 13:59:45,Corrected P units in network debug messages,0,,0
+9db00667,2018-05-08 14:26:07,Minor: Change logging level of beta>1 in collision efficiency,0,,0
+325a14ef,2018-05-08 14:57:45,Allow elementary_high_p network reactions to be added,0,,0
+b3fe799d,2018-05-08 19:44:50,Updated the documentation of pdep library flags,0,,0
+3b83153f,2018-05-09 13:41:33,Added methods for collision rate limit checks to Reaction,0,,0
+16c1b9a5,2018-05-09 13:42:12,Check collision limit violators among core reactions,0,,0
+d2e8e672,2018-05-10 10:48:51,Automatically read the spinMultiplicity from QM log files,0,,0
+a8a097a9,2018-05-10 14:05:03,Use a general Log class in cantherm,0,,0
+c75e6584,2018-05-10 14:17:03,Miscellaneous Cantherm documantation updates,0,,0
+1a22ecdf,2018-05-10 15:31:42,Allow auto-calc of Mw in PDep jobs,0,,0
+d4a7ebc9,2018-05-10 15:44:43,Raise an exception if imaginary freq not found,0,,0
+9a94fef5,2018-05-10 15:56:19,Allow a adjLists to be specified in Cantherm,0,,0
+5a62ce59,2018-05-10 16:52:38,add regularization helper functions,0,,0
+e03a88ac,2018-05-10 17:00:13,add simpleRegularization function,0,,0
+27bb90fe,2018-05-10 17:01:15,test that regularized trees remain subgraph isomorphic,0,,0
+57cff8a5,2018-05-10 19:03:03,Automatically assign the frequency scale factor,0,,0
+1a0c2dec,2018-05-10 22:14:06,Plot rates and thermo by default,0,,0
+90808d45,2018-05-10 23:05:44,Raise an error if TS E0 cannot be found,1,,0
+fb32314e,2018-05-10 23:27:19,Updating Cantherm's examples,0,,0
+67333a77,2018-05-11 10:30:48,Consolidate imports in isotopes.py,0,,0
+77585050,2018-05-11 10:33:02,Fix alignment issues in isotopes.py,1,,0
+ea83368f,2018-05-14 11:31:55,fix checking of pdep input,1,,1
+a374c48b,2018-05-14 17:26:08,add new unittest to familyTest about famililes with recipes that modify charges,0,,0
+16251e64,2018-05-15 12:24:20,Refactored LibraryReaction.`allow_pdep_route`,0,,0
+5a07cc9a,2018-05-15 18:33:58,Merge pull request #1365 from ReactionMechanismGenerator/v2.1.9,0,,1
+993a3fa5,2018-05-16 11:20:52,Minor: whitespace changes,0,,0
+ae011959,2018-05-16 12:56:08,Corrected M08SO level in Cantherm's examples,0,,0
+a3047911,2018-05-16 13:12:31,Relocated the methoxy example,0,,0
+34d782e5,2018-05-16 16:30:05,Replacing pylab with matplotlib.pyplot,0,,0
+ef51186b,2018-05-16 18:26:37,Merge pull request #1331 from ReactionMechanismGenerator/SamplingReactors,0,,1
+2373e058,2018-05-16 20:06:45,Merge pull request #1357 from ReactionMechanismGenerator/lib_net,0,,1
+150dbbc3,2018-05-16 22:30:25,Merge pull request #1364 from ReactionMechanismGenerator/can_up,0,,1
+56cd4bf4,2018-05-17 10:44:14,Minor: Whitespace corrections in rmg/react.py,0,,0
+45ccfbbd,2018-05-18 11:06:38,Added update_charge method to Group  to genereate templates with correct charge,0,,0
+14ad6dc9,2018-05-18 15:19:32,Adjust atom sorting algorithm for Molecules,0,,0
+ffe80af9,2018-05-18 16:42:33,allow list inputs to saveTrainingReactions,0,,0
+e2fc892f,2018-05-19 15:29:47,Create new termination class,0,,0
+7384e5f6,2018-05-19 15:30:27,track the maximum characteristic rate in simulate,0,,0
+8463117b,2018-05-19 15:30:44,termination handling for TerminationRateRatio class,0,,0
+aa70fef2,2018-05-19 15:31:41,Adapting input for specification of TerminationRateRatio,0,,0
+95dce214,2018-05-19 15:32:11,Add terminationRateRatio to mainTest,0,,0
+0c18878f,2018-05-19 15:33:02,adapt documentation for termination to include TerminationRateRatio,0,,0
+1c6066e9,2018-05-19 19:05:40,Allow skipping of failed filter simulations,1,,0
+9f698f29,2018-05-21 17:25:50,Draw PES for KineticsJob,0,,0
+483d2a64,2018-05-22 11:48:31,Added SA for KineticsJob in Cantherm,0,,0
+bf82ff66,2018-05-22 11:49:36,Minor: Define KineticsJob and ThermoJob as object sub-classes,0,,0
+1016a29d,2018-05-22 11:50:07,Minor: Remove unused import in cantherm.py,0,,0
+2226ff8f,2018-05-22 12:06:39,Merge pull request #1369 from ReactionMechanismGenerator/rateRatioTermination,0,,1
+41d1d6e5,2018-05-22 14:36:24,Complete redesign of recommended families and family loading,0,,0
+324a5cf8,2018-05-22 14:40:38,Update KineticsFamily.saveRecommendedFamilies for new format,0,,0
+2d1b66ff,2018-05-22 14:41:40,Update recommended.py file in testing_database,0,,0
+3e6fef63,2018-05-22 14:43:16,Add additional unit tests for loading kinetics families,0,,0
+8d3146e7,2018-05-22 15:15:03,Update documentation for kinetics families in input file,0,,0
+5b6add29,2018-05-22 22:09:01,Merge pull request #1356 from ReactionMechanismGenerator/debug_CO_update,0,,1
+66554a27,2018-05-22 22:28:59,Added SA for PDepJob in Cantherm,0,,0
+6d94f5ec,2018-05-24 15:26:55,Merge pull request #1371 from ReactionMechanismGenerator/filterResurrection,0,,1
+c15d4e93,2018-05-25 11:48:26,Added a PDep test to Cantherm,0,,0
+68f2552f,2018-05-25 12:02:19,Added SA to acetyl+O2 example,0,,0
+b5dc5465,2018-05-25 12:45:04,Added Canthem's SA to the documentation,0,,0
+04af89da,2018-05-25 14:31:47,Merge pull request #1217 from ReactionMechanismGenerator/multiple_TS_resonance,0,,1
+51945e8b,2018-05-29 18:29:15,Allow proper isomorphism w/ isotopes with molecules and groups,0,,0
+7848ac76,2018-05-29 18:53:15,Merge pull request #1373 from ReactionMechanismGenerator/save_training,0,,1
+d2918690,2018-05-30 20:56:16,Added a ResonanceError exception,0,,0
+1245ebf5,2018-05-31 12:12:09,Merge pull request #1376 from ReactionMechanismGenerator/SA,0,,1
+4b913353,2018-05-31 12:56:08,Report OpenBabel version in check_dependencies,0,,0
+6385e266,2018-06-01 08:37:36,Merge pull request #1381 from ReactionMechanismGenerator/ob_version,0,,1
+386b931e,2018-06-01 15:26:45,Create issue templates,0,,0
+a5c571c5,2018-06-01 15:40:16,Add pull request template,0,,0
+60d5e533,2018-06-01 15:52:40,fixed wrong parameter name in kinetics draw,1,,0
+a1df0505,2018-06-02 12:18:37,Prevent pruning of species exceeding flux tolerance,0,,0
+7c820339,2018-06-03 11:39:27,Merge pull request #1348 from ReactionMechanismGenerator/resLP,0,,1
+3c459a38,2018-06-04 13:11:50,Correct library name parsing in Chemkin readReactionComments(),0,,0
+6783c3bc,2018-06-04 15:43:06,Merge pull request #1383 from ReactionMechanismGenerator/issue_templates,0,,1
+fca114d9,2018-06-04 17:02:21,Merge pull request #1374 from ReactionMechanismGenerator/family_recs,0,,1
+99861040,2018-06-07 11:11:49,move the rest of maxEdgeSpeciesRateRatios to its own function,0,,0
+79cd383c,2018-06-07 11:18:20,change ranged reactor behavior to fix pruning,1,,0
+0d8c872d,2018-06-07 11:18:44,added example for testing pruning behavior,0,,0
+2d49238b,2018-06-07 11:19:03,adjust documentation to reflect how ranged reactors operate now,0,,0
+3ba6587d,2018-06-07 11:52:56,rename nSimsTerm to nSims,0,,0
+b5423e5d,2018-06-08 11:58:26,Automatically skip TCD tests if TCD is unavailable,0,,0
+83f7e22e,2018-06-08 13:28:01,Make filtering threshold rate constant user-definable,0,,0
+3526a589,2018-06-08 14:48:50,Merge pull request #1390 from ReactionMechanismGenerator/safe_pruning_,0,,1
+d01dc799,2018-06-08 15:46:18,add allow_max_rate_violation attribute to exempt reactions from the max rate requirements,0,,0
+8e2ae040,2018-06-08 18:16:53,Update rmgpy.display.display method,0,,0
+32811e46,2018-06-10 15:55:56,Add the saveOrder option to isomorphism checks,0,,0
+fc33ccb6,2018-06-10 15:59:04,saveOrder option stuff,0,,0
+81ede25d,2018-06-10 16:07:56,replace the TemplateReaction isForward attribute with the new Reaction.is_forward attribute,0,,0
+7107f1cb,2018-06-10 16:39:49,use Reaction.is_forward to speed up reaction splitting,0,,0
+0ea1a6a9,2018-06-10 18:27:24,fix map validation process,1,,1
+791a7547,2018-06-11 12:20:47,Merge pull request #1271 from ReactionMechanismGenerator/fluxdiagram_improvements,0,,1
+1e907432,2018-06-11 15:15:02,Minor: Corrected `r` notation into `k` in CanTherm's SA,0,,0
+1acaeaba,2018-06-11 17:40:03,Change reaction filtering for LiquidReactor,0,,0
+e7d17621,2018-06-12 15:01:19,Merge pull request #1338 from ReactionMechanismGenerator/trimolecular_reactions,0,,1
+f5e2ca12,2018-06-12 16:03:22,"Revert ""added a work in progress unittest for generatePairs()""",0,,0
+b99970ed,2018-06-12 17:48:24,make reference writing unicode,0,,0
+296ea7a3,2018-06-12 17:48:48,Change Rank Definitions,0,,0
+a663604a,2018-06-12 17:49:09,change defined rank for averaged rules,0,,0
+40996cd4,2018-06-14 15:24:54,write the reversible attribute when saving families,0,,0
+227293f5,2018-06-15 16:14:19,Merge pull request #1363 from ReactionMechanismGenerator/atg2,0,,1
+4605cd9a,2018-06-18 10:34:02,"fix reverse = ""None"" issue",1,,1
+f0290e30,2018-06-18 14:59:23,Add reversible attribute to intra_H_migration in the testing database,0,,0
+62433f61,2018-06-18 21:24:52,Fix bug when using filterReactions due to leftover keyword,1,,1
+2b29d89e,2018-06-19 15:03:22,Handle invalid vector errors gracefully in clar optimization,1,,0
+d07ea878,2018-06-21 14:43:20,Merge pull request #1401 from ReactionMechanismGenerator/new_rank_sys,0,,1
+1163a69c,2018-06-22 16:47:54,Move maxNumSpcHit check to after saveEverything step,0,,0
+ed9e0027,2018-06-23 22:21:19,Fix networkIndices for edge networks,1,,1
+26efffc8,2018-06-26 21:51:49,Added a generate_N5dc_radical_resonance_structures resonance transition,0,,0
+0ca7e901,2018-06-27 15:05:19,Merge pull request #1394 from ReactionMechanismGenerator/ranged_pruning,0,,1
+a6c4e4b2,2018-06-27 15:58:07,Merge pull request #1410 from ReactionMechanismGenerator/N5res,0,,1
+19639fb5,2018-06-27 16:28:27,Bugfix for calling getLabeledReactantsAndProducts with unimolecular,0,,0
+8a246ec5,2018-06-27 17:16:13,Add description of kinetics depositories to documentation,0,,0
+1e916eb7,2018-06-27 22:14:09,Merge pull request #1333 from ReactionMechanismGenerator/fix_symmetry_inconsistency,0,,1
+0a233697,2018-06-28 08:29:52,Remove maximumIsotopicAtoms from species constraints,0,,0
+a62c3cec,2018-06-28 10:09:12,Improved module imports in rmg/main.py,0,,0
+cc8dcfbe,2018-06-28 10:49:49,Add deprecation warnings for RMG-Java related methods,0,,0
+442e5ae1,2018-06-28 10:52:08,Add deprecation warnings to groupAdditivity,0,,0
+18f97d22,2018-06-28 10:53:35,Add deprecation warnings to old-style adjacency list,0,,0
+75de8660,2018-06-28 10:58:05,Add deprecation warning for saveRestartPeriod,0,,0
+71573c56,2018-06-28 11:23:57,Merge pull request #1292 from ReactionMechanismGenerator/isotopeResonance,0,,1
+e46f814f,2018-06-28 11:33:41,Remove deprecated filter_reactions,0,,0
+19b8eb45,2018-06-28 11:57:33,Reword inchi deprecation warning to mention version 2.3,0,,0
+6b10cffe,2018-06-28 14:34:12,Allow proper termination when maxNumSpcs is hit,0,,0
+a833738d,2018-06-29 15:02:50,Mark chemkin duplicates after adding library to edge,0,,0
+bede969e,2018-06-29 15:04:29,Handle irreversible reactions properly in markDuplicateReaction,0,,0
+4bd88088,2018-06-29 16:10:39,Add unit test for Chemkin.markDuplicateReactions,0,,0
+2d1d2ca2,2018-06-29 18:02:15,Merge pull request #1339 from ReactionMechanismGenerator/peroxide_families,0,,1
+32af08d2,2018-07-02 13:33:44,Merge pull request #1416 from ReactionMechanismGenerator/duplicate_fixes,0,,1
+8df7d800,2018-07-03 18:26:06,Add unit test for MultiPDepArrhenius with different plists,0,,0
+d4da7914,2018-07-05 15:26:49,Merge pull request #1341 from ReactionMechanismGenerator/fixMultiPdepArrhenius,0,,1
+5c86dd6e,2018-07-05 18:02:31,Merge pull request #1412 from ReactionMechanismGenerator/add_deprecation_warnings,0,,1
+ed056dd0,2018-07-06 22:47:09,Merge pull request #1361 from ReactionMechanismGenerator/coll,0,,1
+061734e7,2018-07-13 16:37:43,Corrects a geometry reading error for Qchem files,1,,0
+2fa3e92f,2018-07-13 17:59:38,Merge pull request #1423 from ReactionMechanismGenerator/qchemfixup,0,,1

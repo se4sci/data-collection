@@ -1,0 +1,653 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+adf2eff2,2015-07-17 17:39:56,Merge pull request #396 from ReactionMechanismGenerator/docs,0,,1
+80f2761e,2015-07-26 18:22:28,Allow Cantherm networks to be drawn in multiple formats.,0,,0
+054743fd,2015-07-26 19:04:01,Tweak some docstrings in rmgpy modules,0,,0
+2a2fced0,2015-07-27 20:43:49,isNotHydrogen() now checks atomic number != 0,0,,0
+3724051c,2015-07-27 22:46:13,More helpful failure message in atom unit test,0,,0
+a9387fe8,2015-07-28 14:08:12,Fix initial mole fraction normalization!,1,,1
+e3ffe170,2015-07-28 14:59:24,Merge pull request #419 from rwest/master,0,,1
+76fe5379,2015-07-28 18:14:16,Additional capabilities when saving input files,0,,0
+7382bffc,2015-07-29 11:32:04,Updated pdep section of saveInputFile,0,,0
+9a6d0d8f,2015-07-30 15:05:47,Add RMG-website links to HTML sidebar of Documentation,0,,0
+76b73bf0,2015-07-30 15:27:43,Merge pull request #422 from ReactionMechanismGenerator/documentation_web,0,,1
+3e369fe1,2015-07-30 17:30:22,Check RDKit version during 'make' so that people update to 2015+,0,,0
+c756dcd0,2015-07-30 17:54:04,Simplify the rdkit version check.,0,,0
+a4e6e27f,2015-07-30 21:44:57,Add line about inchi support when RDKit needs to be upgraded.,0,,0
+e55934b3,2015-07-30 21:56:23,Merge rdkit version check to close pull request #423,0,,1
+01a19026,2015-07-31 12:16:54,Add useful error message about how to set reversible reactions in libraries.,1,,0
+d7b747da,2015-07-31 15:18:11,Save reversible attribute when adding library reactions from seed or reaciton library,0,,0
+5bfd816f,2015-07-31 15:40:51,Add additional check for RDKit when version cannot be imported.,0,,0
+52d7e67f,2015-07-31 15:57:35,Eliminate line checking year number in version for RDKit.,0,,0
+053e1c52,2015-07-31 16:53:09,Changes to how saveInputFile writes QMTP options,0,,0
+3fcbc6c2,2015-07-31 23:15:28,Merge pull request #424 from ReactionMechanismGenerator/reverseReactions,0,,1
+b2b345f4,2015-08-03 15:35:07,Deprecate getRate and getReactionRates functions,0,,0
+471326f0,2015-08-04 11:56:43,Adjust order of entries when saving input file,0,,0
+a946163a,2015-08-04 17:00:20,Fixed read and save code for sensitivity analysis,1,,0
+56cbd40b,2015-08-06 15:53:02,Add functions to calculate effective pressure on the fly in solver,0,,0
+187a716e,2015-08-09 20:39:01,add __reduce__ to ReactionSystem  SimpleReactor,0,,0
+683acedc,2015-08-10 14:55:47,Update the documentation on Pdep calculations in CanTherm,0,,0
+11a00202,2015-08-10 17:18:11,Change PDepKineticsModel object's initialization of efficiencies.  Initialize as Molecule objects.,0,,0
+8c313525,2015-08-10 17:20:25,Remove conversion step to Molecule objects when loading collider efficiencies from Reaction libraries.,0,,0
+7e47912a,2015-08-10 17:22:12,Update getEffectivePressure and getEffectiveColliderEfficiencies functions to perform isomorphism checks.,0,,0
+731128df,2015-08-10 17:24:44,Unit tests for getEffectivePressure and getEffectiveColliderEfficiencies,0,,0
+4af5c640,2015-08-11 13:37:21,Make the getFilePath more extensible and more used in QM.,0,,0
+02cae314,2015-08-11 13:56:35,Raise KineticsError rather than generic Exception in reaction family.,0,,0
+a176463b,2015-08-12 09:56:44,Catch weird NFS bugs when making QM directories.,1,,0
+91d4110b,2015-08-12 14:14:38,Detect when there are no pdepColliderReactions.,0,,0
+e98f8c0a,2015-08-12 15:17:55,saveJavaKineticsLibrary() now uses Java style adjacency list,0,,0
+946a305b,2015-08-12 16:29:09,rmgpy.data.Database.saveOldDictionary() uses old style AdjacencyList,0,,0
+0f2712e7,2015-08-12 19:11:20,Added QMscratch/* to .gitignore,0,,0
+91a4d44e,2015-08-12 20:22:17,Skip check_partial_charge on fused benezene atom types.,0,,0
+8174aed6,2015-08-12 22:12:48,Fix moleculeTest for fused aromatics (perylene example),1,,0
+545eecbc,2015-08-13 13:52:41,Fix bug in if statement for pdepColliders,1,,1
+af7f7e60,2015-08-13 15:31:13,Marking mixed pdep/non-pdep reactions as duplicate,0,,0
+270563b0,2015-08-13 15:56:33,Merge pull request #427 from mliu49/markDup,0,,1
+226f7994,2015-08-13 17:29:26,Change markDuplicates to mark all duplicates,0,,0
+1bca35a8,2015-08-13 17:47:45,Add P  Peff  y_coreSpecies cdefined variables.,0,,0
+d7eca59f,2015-08-13 17:48:00,Remove unused declaration of equilibriumConstants in jacobian.,0,,0
+c4107820,2015-08-14 16:52:38,"When saving kinetics libraries  check that ""labels"" are correct.",0,,0
+6f0dda88,2015-08-14 17:47:39,Allow # in chemkin species labels.,0,,0
+714fe3b9,2015-08-14 18:09:57,Force longDesc and shortDesc to be unicode,0,,0
+e8211b9d,2015-08-14 19:30:06,Sort atoms (by sorting label) whenever asked to sort.,0,,0
+1a5ea1dd,2015-08-14 20:03:31,Say which chemkin label is dangerously long,0,,0
+ace1c5f4,2015-08-14 20:08:16,Only warn if chemkin reaction string is too long  not species.,0,,0
+b7a34f80,2015-08-18 11:09:44,Change reaction label assertion check to a try block in saveEntry(),0,,0
+971c1b2c,2015-08-18 11:11:22,Merge pull request #429 from rwest/chemkin,0,,1
+cfa8208e,2015-08-18 15:54:15,Correct PDepArrhenius instructions,0,,0
+ab014c04,2015-08-18 16:20:38,Add a unit test for a model containing kinetics with collision efficiencies,0,,0
+43c7b765,2015-08-18 17:38:20,created parser package in rmgpy.molecule package,0,,0
+9699965e,2015-08-18 18:32:51,define InChI and AugmentedInChI classes in inchi module,0,,0
+938e3205,2015-08-18 18:54:06,create Atom.getDescriptor method and refactor .sortAtoms(),0,,0
+b909b46d,2015-08-18 19:17:19,replace sortVertices() by sortAtoms(),0,,0
+d0ddf296,2015-08-19 09:56:05,Fix input reading of interpolation model for ('PDepArrhenius'),1,,0
+409b4d84,2015-08-19 11:18:02,create InChI attribute in Molecule object,0,,0
+04909d3b,2015-08-19 11:19:48,implement a hash and equality comparison in molecule,0,,0
+182cec9e,2015-08-19 11:21:50,lazy evaluation for InChI  SMILES generation,0,,0
+2822bbfc,2015-08-19 11:45:23,Tiny optimization,0,,0
+b8e22e41,2015-08-19 11:57:19,Move P and T definitions further up to re-use them.,0,,0
+c5387562,2015-08-19 11:58:18,Avoid looking up index four times when once will do.,0,,0
+5b9eb5ca,2015-08-19 12:00:11,Don't switch forward and reverse coefficients.,0,,0
+9d43e1e4,2015-08-19 12:40:24,move identifier generation / parsing into its own module,0,,0
+7024d542,2015-08-19 17:45:09,Add a non-pdep reaction to collider model for unit test,0,,0
+2ab06217,2015-08-19 18:02:32,Merge pull request #425 from ReactionMechanismGenerator/collisionEfficiencies,0,,1
+b6aea933,2015-08-20 16:21:18,saveInputFile(): Write sensitivity tolerances,0,,0
+4fbc5b43,2015-08-20 16:47:41,pdep: remove the interpolation=False argument in the input file,0,,0
+8bc0ab67,2015-08-20 17:12:31,saveInputFile(): write the maximumAtoms for pdep,0,,0
+7edabf24,2015-08-20 17:12:49,fix typo in allowSingletO2 in commented example input file,1,,0
+22286f0e,2015-08-20 17:54:01,Merge pull request #437 from mliu49/input,0,,1
+3459a772,2015-08-24 15:21:45,Enabled anaconda-installed mopac to be found (within eclipse),0,,0
+4ff9c4b2,2015-08-26 09:54:01,move files from parser subpackage to molecule package,0,,0
+92bacab6,2015-08-26 09:54:56,create 3 new Extension modules in setup.py,0,,0
+da51b438,2015-08-27 14:15:59,convert inchi attribute of AugmentedInChI to str object,0,,0
+fe339a5a,2015-08-27 14:45:20,set default multiplicity of parsed Augmented InChI to -1,0,,0
+f4f9d73e,2015-08-27 14:47:02,allow for optional multiplicity layer for aug. inchis,0,,0
+02761afd,2015-08-27 15:55:01,static type declaration in parser.fromRDKitMol function,0,,0
+03959b06,2015-08-27 18:33:14,Update docstring in mergeModels.py script to reflect actual usage,0,,0
+08286391,2015-08-27 18:33:35,Add a script to standardize model names between multiple models,0,,0
+7b57fdd2,2015-08-28 10:48:26,added eg5 nheptane pyrolysis example,0,,0
+43cce882,2015-08-28 11:00:17,added eg5 nheptane pyrolysis example,0,,0
+7b047997,2015-08-28 11:11:29,Remove rmgpy.reaction.ReactionModel class and merge functionality into rmg.model.ReactionModel,0,,0
+e23b436b,2015-08-28 11:11:49,Point scripts to new ReactionModel class,0,,0
+fa99eec6,2015-08-28 11:19:10,reduce complexity of eg5 example,0,,0
+534cf3af,2015-08-28 11:25:32,Merge pull request #445 from ReactionMechanismGenerator/moveReactionModel,0,,1
+c4090244,2015-08-28 13:39:13,add ethane oxidation example with P-dep (eg6),0,,0
+6ea7902e,2015-08-28 13:50:26,reduce logging by adding -q (--quiet) in the Makefile of eg5 and eg6,0,,0
+6f06e655,2015-08-28 13:58:58,Merge examples eg5 and eg6.,0,,0
+24161e41,2015-08-28 15:25:12,Preliminary saving of models to new repo RMG-tests,0,,0
+f35a64cb,2015-08-28 16:43:42,Change exception type from AssertionError to NotImplementedError,0,,0
+3c8f3420,2015-08-28 16:46:15,Optimization tweaks to Molecule.sortAtoms(),0,,0
+2d622037,2015-08-28 16:51:13,Some cythonization of molecule/parser.pyx,0,,0
+a2b20ab4,2015-08-28 17:11:15,Reinstate Molecule.toRDKitMol() method.,0,,0
+e636cd4f,2015-08-29 11:48:37,Converting parser.pyx to parser.py and recythoning.,0,,0
+0a912a18,2015-08-31 10:26:28,notify listeners when intermediate state variables are updated,0,,0
+ddd44818,2015-08-31 11:24:40,added baseTest: test for listener functionality,0,,0
+5e128b20,2015-08-31 14:08:20,add reduction framework,0,,0
+c4025b24,2015-09-02 15:01:25,Change sidebar icon width in documentation website,0,,0
+e6275284,2015-09-07 17:13:55,Merge pull request #443 from ReactionMechanismGenerator/parser,0,,1
+e26f749e,2015-09-09 15:39:36,Merge pull request #447 from ReactionMechanismGenerator/base_notify,0,,1
+38734b7b,2015-09-12 12:54:57,add resonanceTest,0,,0
+88404efe,2015-09-12 12:55:35,do not remove H's when generating an rdmol in generateAroResonanceIsomers,0,,0
+6e2f228a,2015-09-14 11:42:29,do not add H's to rdAtomIndices if removeHs=True,0,,0
+87f86098,2015-09-15 09:14:06,Add garbage collection after pruning,0,,0
+6d0ce132,2015-09-15 09:46:52,Added two handles for better control prune performance,0,,0
+a2acb569,2015-09-15 10:51:21,Let the drawMolecules input attribute turn saveHTMLOutput on or off.,0,,0
+b5b348ba,2015-09-17 15:21:50,rename minSpcExistIterForPrune into minSpeciesExistIterationsForPrune,0,,0
+82d0e9aa,2015-09-21 18:59:54,add eg7 example to test use of reaction libraries,0,,0
+4594caf6,2015-09-21 19:06:08,sort the colliders in chemkin by id,0,,0
+0d1276d7,2015-09-21 19:57:28,add make eg7 to travis test build,0,,0
+66dde441,2015-09-22 13:14:45,Merge pull request #455 from ReactionMechanismGenerator/fix_bug454,0,,1
+5a5dbb87,2015-09-22 14:17:32,Alter the way diffModels.py is called and update documentation,0,,0
+78017801,2015-09-22 14:19:30,ensure heavy atoms are always sorted first,0,,0
+e4cbb250,2015-09-22 16:38:20,Change some assertions to self.assertEqual in inchiparsingTest,0,,0
+5bad432e,2015-09-22 16:38:36,Write useful exception messages rather than logging.error,0,,0
+ee19574d,2015-09-22 16:49:02,Revert to removeHs=True for getAromaticResonanceIsomers,0,,0
+46af4c2d,2015-09-22 21:42:15,testing the exception catching of malformed Aug. InChIs,0,,0
+1eede8b0,2015-09-22 22:14:42,raise Exception in convert_unsaturated_bond_to_biradical,0,,0
+1b357817,2015-09-24 09:50:01,move zwitterion correction to its own function in parser,0,,0
+364c187d,2015-09-24 09:53:37,make correct_O_triple_bond more robust,0,,0
+76c93b39,2015-09-25 16:09:45,add C=CC=O test case to inchi parsing test,0,,0
+320a7058,2015-10-01 09:21:15,add normalization step for isomorphic resonance isomers,0,,0
+624c1684,2015-10-01 16:30:12,use inchi sorting in createULayer,0,,0
+267766e3,2015-10-02 09:34:05,Add Retroen family into consideration,0,,0
+d9b629a4,2015-10-02 11:20:14,use decrementOrder in convert_unsaturated_bond_to_biradical,0,,0
+765cd876,2015-10-05 09:33:11,create find_delocalized_path function in parser,0,,0
+6f453b73,2015-10-05 09:35:39,extend convert_unsaturated_bond_to_biradical,0,,0
+2a05b7dd,2015-10-05 09:39:12,rename fixZwitter to fixCharge and extend,0,,0
+04948bf7,2015-10-05 09:42:01,extend correct_O_triple_bond(mol),0,,0
+eaf5c2b5,2015-10-05 10:35:24,new inchi parsing test C3H4,0,,0
+7d895dca,2015-10-05 11:01:26,correct/add some inchi parsing tests,0,,0
+3ca9e1c9,2015-10-06 09:05:48,modify the u-layer by adding multiple electrons per center,0,,0
+af5489e4,2015-10-06 09:36:12,search for 3_atom_2_bond_paths in fixCharge,0,,0
+a626f750,2015-10-06 09:56:33,silence rdkit's stereo info in parser,0,,0
+9756088f,2015-10-06 10:35:07,remove indices from u-layer that already have unpaired electrons,0,,0
+8a3e1f96,2015-10-06 10:36:35,rename correct_O_triple_bond to correct_O_unsaturated_bond,0,,0
+8865b5b2,2015-10-07 13:56:57,Changed 'drawMolecules' attribute to 'generateOutputHTML' for clarity.,0,,0
+5acbc544,2015-10-07 17:12:28,Fixed documentation for 'drawMolecules' --> 'generateOutputHTML'.,1,,0
+c5bc3ba5,2015-10-08 13:06:56,default value of bond order should be 'S',0,,0
+19c26f15,2015-10-08 13:09:57,fix inchi parser dealing with mobile-H's,1,,1
+f964963d,2015-10-08 13:12:21,expand correct_O_unsaturated_bond functionality,0,,0
+31f066ae,2015-10-08 14:38:47,reduce the constraint to call fixCharge,0,,0
+943dab21,2015-10-08 14:40:16,add u-layer as a parameter to correct_O_unsaturated_bond,0,,0
+a9ef8a88,2015-10-08 14:41:26,make a copy of u-layer when iterating over it in fixCharge,0,,0
+f3945c2d,2015-10-08 14:41:48,add test_C2H2O3 in inchi parsing test,0,,0
+dee2e241,2015-10-08 17:48:22,Merge pull request #460 from ReactionMechanismGenerator/bondorder,0,,1
+b6ad9bad,2015-10-09 15:09:16,loop over all discovered 3_atom_2_bond_end_with_charge_paths,0,,0
+200ac78d,2015-10-09 17:04:43,only update molecule when the flag is set to True,0,,0
+37f7a9e7,2015-10-09 17:07:42,iterate over all 3-a-2-b paths in fixCharge,0,,0
+7570bb3f,2015-10-09 17:08:14,make a copy every time multiple possibilities exist to extend a path,0,,0
+51cdb4ed,2015-10-09 17:08:33,expand the compare method of inchiparsingTest,0,,0
+2792de31,2015-10-09 17:09:36,add test_C3H2O3 in inchiparsing test,0,,0
+e104f7b5,2015-10-14 16:37:01,update atom types before returning the parsed molecule,0,,0
+3f9f9c01,2015-10-14 16:37:53,redesign condition checking in parser check,0,,0
+52fa29f4,2015-10-15 14:26:19,do not allow the path to return to the original atom,0,,0
+1be137a0,2015-10-15 14:27:04,add find_inverse_allyl_paths and fix find_3_atom_2_bond_end_with_charge,1,,1
+a6116f11,2015-10-15 14:27:23,add 2 new tests in inchi parsing test,0,,0
+15458624,2015-10-15 14:29:10,expand testC3H4 in inchiparsing test,0,,0
+d9ba2e33,2015-10-15 14:29:27,add global import of Species in inchiparsing Test,0,,0
+dce5d596,2015-10-15 15:39:32,make conda env use RDKit v 2015.03.1,0,,0
+1deeaa23,2015-10-15 15:56:02,Make the conda-built binaries also require RDKit 2015.03.1,0,,0
+35f6d1a8,2015-10-15 16:12:06,Update build conda binary build number to 2.,0,,0
+fdb515fd,2015-10-15 16:12:35,Merge pull request #462 from ReactionMechanismGenerator/newrdkit,0,,1
+907f8bb5,2015-10-15 16:33:32,Change to generateOutputHTML flag in sensitivity example input file,0,,0
+5e8a202f,2015-10-15 16:36:43,Merge pull request #463 from ReactionMechanismGenerator/saveHTML,0,,1
+ff38c098,2015-10-15 17:18:14,Perform garbage collection after each pruning iteration,0,,0
+fd72835b,2015-10-15 17:18:42,Reformat code for running pruning when minCoreSize isn't reached,0,,0
+86a46183,2015-10-15 17:40:07,Update documentation and commented input file with new pruning parameters,0,,0
+abd36bbc,2015-10-15 17:43:20,Add new prune parameters to saveInputFile function,0,,0
+511fffcc,2015-10-15 18:07:48,Reformat parameter table for RMG class. Add the pruning parameters.,0,,0
+1e773760,2015-10-16 00:31:06,Fix icon sizes in documentation html.,1,,0
+407a63e5,2015-10-16 01:09:32,Make documentation use official __version__ number.,0,,0
+931c1150,2015-10-16 01:09:54,Make anaconda build use official __version__ number,0,,0
+2f16aa37,2015-10-16 01:11:22,Make anaconda use commits-since-last-tag as build number.,0,,0
+4efbc514,2015-10-16 01:11:33,Bump the version number to 1.0.1,0,,0
+b445a610,2015-10-16 02:21:09,Print the correct version number in the log header.,0,,0
+e0faddc6,2015-10-16 11:07:25,Merge pull request #453 from ReactionMechanismGenerator/prune,0,,1
+55de2213,2015-10-16 11:34:44,Merge pull request #464 from ReactionMechanismGenerator/Retroen,0,,1
+e97b1427,2015-10-16 12:18:11,Merge pull request #467 from ReactionMechanismGenerator/diffModels,0,,1
+ed2a8402,2015-10-16 12:19:39,Add database test to travis build for RMG-Py repo,0,,0
+fd694deb,2015-10-16 12:42:18,Require pydas >=1.0.1 in conda environment and build,0,,0
+061b2308,2015-10-16 14:13:27,Correcting gaussian log file verification,0,,0
+38fa51aa,2015-10-16 14:18:24,Keeping the mopac output file verification consistent with gaussian,0,,0
+5e56f646,2015-10-16 15:48:31,Merge pull request #469 from pierrelb/fixgauss,0,,1
+97b106fc,2015-10-16 18:29:27,fix unit tests with hard coded atom numbers,1,,0
+d342fcba,2015-10-17 15:34:37,Fix indentation in parserTest.py.  Use 4 spaces instead of 3 for tabs,1,,0
+b46981a8,2015-10-17 15:53:46,Add note about sorting hydrogens to Molecule.sortAtoms function docstring,0,,0
+3de4a5f2,2015-10-17 15:54:19,Add a unit test for parser.toRDKitMol() to test atoms and bondMappings,0,,0
+eecbcf80,2015-10-17 16:06:18,add unit test testRDKitMolAtomMapping in moleculeTest,0,,0
+70292953,2015-10-17 16:30:22,Merge pull request #456 from ReactionMechanismGenerator/fix_Bug91_Website,0,,1
+52bdc104,2015-10-17 23:58:08,Show version number in documentation breadcrumbs in HTML template,0,,0
+58a00b7f,2015-10-18 13:58:29,flag vertices to be ignored rather than removing them,0,,0
+7c5cde82,2015-10-18 18:29:45,Avoid making lists comprehensions in vf2 algorithm.,0,,0
+21b83e3a,2015-10-18 19:37:01,Merge pull request #468 from ReactionMechanismGenerator/fixGroupsAlgorithm,0,,1
+08e39762,2015-10-19 10:55:21,Merge pull request #465 from ReactionMechanismGenerator/versions,0,,1
+b38b45ed,2015-10-19 13:54:31,Store a version.py file with just the RMG-Py version number,0,,0
+76fe0e5b,2015-10-19 14:13:42,Redirect minimal example input file to master branch version o,0,,0
+8553e921,2015-10-19 20:30:56,Remove duplicates and force pydas >=1.0.1 in conda run environment.,0,,0
+e91d4d61,2015-10-19 20:32:59,Alphabetize requirements in conda's meta.yaml,0,,0
+d66dd094,2015-10-20 00:17:34,Set PyDQED version requirement to 1.0.0 for now,0,,0
+48aa475b,2015-10-20 00:27:10,Change anaconda instructions.,0,,0
+a4d43034,2015-10-20 00:47:39,Merge pull request #474 from rwest/master,0,,1
+830f639c,2015-10-20 01:18:49,Change installation instructions back.,0,,0
+9e6b0468,2015-10-20 13:30:22,refactor N-layer parsing into its own function,0,,0
+d45d88d4,2015-10-20 13:30:41,replace logging.erorr by Exception message,0,,0
+38e03ac6,2015-10-20 13:31:50,replace normalize by a more general parsing of the E-layer,0,,0
+619afada,2015-10-20 13:32:17,add new inchi parsing tests,0,,0
+b5c1b8b9,2015-10-20 14:27:40,replace erroneous empty list checking in parser,0,,0
+51f9a7ca,2015-10-20 14:30:11,add C3H4 inchi parsing test,0,,0
+0ee46ca7,2015-10-20 16:58:49,check if the atoms already have unpaired electrons for a valid combo,0,,0
+450b04a8,2015-10-20 17:15:22,convert tuples to lists in parser,0,,0
+4232d925,2015-10-20 17:16:04,remove isInEquivalenceList  use any instead,0,,0
+aa4dec8d,2015-10-20 17:16:36,do not iterate over the original combo in find_lowest_u_layer,0,,0
+a732505c,2015-10-20 17:31:40,correct some inchi parsing tests and add some more,0,,0
+4c98f929,2015-10-21 11:18:03,add documentation to parse_E_layer and refactor related tests,0,,0
+0e581c3e,2015-10-21 11:19:12,add documentation to parse_N_layer and refactor related tests,0,,0
+a55601f5,2015-10-21 13:56:10,refactor create_U_layer  add documentation,0,,0
+a84b87ab,2015-10-21 15:01:02,add documentation to generate_combos,0,,0
+073ea33e,2015-10-21 15:13:58,expand inchi parsing test with inchi comparison after generation,0,,0
+70796b16,2015-10-21 15:23:50,add documentation to group_adjacent_unpaired_electrons,0,,0
+6ae08858,2015-10-21 17:27:30,add normalize function again  before parsing the E-layer,0,,0
+070bae50,2015-10-21 17:28:22,correct moleculeTest testCarbeneIdentifiers,0,,0
+a14a5295,2015-10-22 14:33:41,add some inchi parsing tests,0,,0
+936c3219,2015-10-22 17:42:25,generalize generate_combos,0,,0
+42a8d71a,2015-10-22 17:42:45,add unit test for generate combos,0,,0
+8beecdd3,2015-10-22 17:43:59,rework function valid_combo,0,,0
+a7830677,2015-10-22 17:45:42,expand find_lowest_u_layer for combinations with 1 element,0,,0
+3b344824,2015-10-23 11:42:53,a single-element combo with a multiple element u-layer is not a valid combo,0,,0
+5a1aba90,2015-10-23 11:45:14,Create InChIGenerationTest class within inchiparsingTest,0,,0
+ce208bb9,2015-10-23 12:31:25,refactor the path finder algorithms into own module,0,,0
+d51e41fd,2015-10-23 12:47:50,move parse H layer to inchi module,0,,0
+9832857a,2015-10-23 14:32:13,move parse_E_layer to inchi module,0,,0
+0c17359a,2015-10-23 15:26:25,move parse_N_layer to inchi module,0,,0
+11e76f6b,2015-10-23 15:32:53,refactor the identifier generation from molecules into own module,0,,0
+545a360e,2015-10-23 17:34:57,add shortest path finding algorithm,0,,0
+2d4e5dfe,2015-10-26 15:21:35,create partition function,0,,0
+40daa114,2015-10-26 15:23:30,create compute_atom_distance function in pathfinder,0,,0
+7fd19f97,2015-10-26 15:30:55,rework generation of unpaired electron combinations,0,,0
+b6fc5bd5,2015-10-26 17:38:23,redesign find_lowest_u_layer and is_valid_combo,0,,0
+542fc4ac,2015-10-26 17:38:45,add 3 new inchi generation unit tests,0,,0
+e54464f9,2015-10-26 17:39:15,fix u-layer of test_CH2O2 case in inchi parsing test,1,,1
+fe2208ee,2015-10-27 12:28:42,fix typo in ArrayQuantity class documentation,1,,0
+0619cde2,2015-10-27 12:53:47,"raise NotImplementedError when units belong to a ""black list""",0,,0
+23be160d,2015-10-27 13:04:59,add NOT_IMPLEMENTED_UNITS to quantity.pxd,0,,0
+b06b302b,2015-10-27 13:19:33,remove deprecated group_adjacent_unpaired_electrons function,0,,0
+c4e1ea5f,2015-10-27 13:20:30,refactor some tests in generatorTest,0,,0
+7b3c73c1,2015-10-27 13:28:51,move generator.partition function to util,0,,0
+5461f3c1,2015-10-27 13:47:07,move generator.agglomerate function to util module,0,,0
+e3ae0e87,2015-10-27 14:13:41,move generator.generate_combo to util module,0,,0
+297c4eb6,2015-10-27 14:55:46,create resonance module and algorithms here from molecule module,0,,0
+929bd850,2015-10-27 15:11:16,create generate_isomorphic_isomers function in resonance,0,,0
+87028464,2015-10-27 15:13:15,call generate_isomorphic_isomers in generator.normalize,0,,0
+b3f1472b,2015-10-27 17:42:57,create Species.getAugmentedInChI() and use it wherever we can,0,,0
+e5a39ff6,2015-10-28 09:28:28,fix errors in redesign condition checking in parser check,1,,0
+179951ae,2015-10-28 10:03:46,add sortAtoms in toRDKitMol again,0,,0
+03cff22e,2015-10-28 10:50:18,"rename ""normalize"" function to generate_minimum_resonance_isomer",0,,0
+82e72b6f,2015-10-28 10:54:56,add function documentation for find_lowest_u_layer,0,,0
+1443914b,2015-10-28 11:06:45,refactor fix_adjacent_charges into function,0,,0
+bbfcb379,2015-10-28 11:48:27,refactor the fixCharge function of parser,0,,0
+72d45e22,2015-10-28 14:33:08,"refactor parser.fromAugmentedInChI into ""fix"" function",1,,0
+06ac5c3a,2015-10-28 14:33:16,refactor parser.convert_unsaturated_bond_to_biradical,0,,0
+12d5ea89,2015-10-28 15:34:24,refactor parser's unsaturated bond fix functions,1,,1
+f65525c3,2015-10-28 15:39:06,added WIP aug. inchi gen. test for singlet vs closed shell,0,,0
+2395b4c7,2015-10-28 16:26:08,refactor fix_mobile_h and move part to util module,0,,0
+57136149,2015-10-28 17:11:10,create rmgpy.tools package,0,,0
+55f330b2,2015-10-28 18:10:42,create tools.fluxdiagram module and move stuff from the scripts module,0,,0
+bad510d7,2015-10-29 12:07:07,add static type declarations to generator  inchi  parser  pathfinder,0,,0
+13b83446,2015-10-29 16:30:33,move loadRMGJob functions to tools.loader module,0,,0
+f8a67b3d,2015-10-29 16:52:04,move sensitivity to tools package,0,,0
+c3bbb5dc,2015-10-29 17:09:12,add sensitivity unit test,0,,0
+b42e1265,2015-10-29 17:15:04,Merge pull request #477 from ReactionMechanismGenerator/quantity,0,,1
+f7484d8f,2015-10-29 18:14:44,rename tools.tests folder to tools.data,0,,0
+7c3b9fa4,2015-10-30 09:50:09,provide species path in method signature of fluxdiagram.run,0,,0
+12c0db0d,2015-10-30 12:36:24,round penwidth numbers to 3 decimals,0,,0
+e8443977,2015-10-30 17:45:48,Merge pull request #480 from ReactionMechanismGenerator/tools,0,,1
+e007b5d2,2015-11-01 21:44:11,use urllib to convert between url encoded strings and bytestrings,0,,0
+5cf72804,2015-11-02 15:30:51,Merge pull request #481 from ReactionMechanismGenerator/django_185,0,,1
+4c96649c,2015-11-02 15:49:34,function to create a deep copy of rmgpy.species,0,,0
+46f104bb,2015-11-02 16:40:21,also generate aromatic res isomers in generate_isomorphic_isomers,0,,0
+c6ecbf41,2015-11-03 10:54:00,Merge pull request #482 from ReactionMechanismGenerator/species_copy,0,,1
+f6ac1ac6,2015-11-03 11:37:02,move generate reactions script to tools folder,0,,0
+d16a8d61,2015-11-03 14:17:05,use kwargs in rmg's initialize and execute functions,0,,0
+311eb659,2015-11-03 14:21:42,decouple command line args from execution in generate_reactions,0,,0
+cafebb83,2015-11-03 15:37:20,move diffModels to rmgpy.tools package,0,,0
+fdcf59e5,2015-11-03 15:52:12,move merge_models to rmgpy.tools package,0,,0
+c429888c,2015-11-04 11:10:16,Merge pull request #483 from ReactionMechanismGenerator/move_scripts,0,,1
+bebbff89,2015-11-04 14:47:54,correct toAugmentedInChIKey function,0,,0
+dfc3b74e,2015-11-04 17:48:47,move atom typing to the specific resonance algorithms,0,,0
+579898ac,2015-11-04 17:59:17,move resonance isom find delocalization paths to pathfinder,0,,0
+205f1b0a,2015-11-04 17:59:36,rename resonance generation algorithms,0,,0
+e8175f3b,2015-11-04 18:03:52,remove special treatment for aro res isoms in generate_isomorphic_isomers,0,,0
+ed1a9826,2015-11-05 09:15:59,centralize the resonance generation algorithms,0,,0
+76d7cbab,2015-11-05 11:33:32,Added test examples for two main typical pathfinders in molecules,0,,0
+871f555d,2015-11-05 11:34:06,Change Process.get_memory_info() to Process.memory_info() in Cantherm.,0,,0
+0fa1763c,2015-11-05 11:58:33,Merge pull request #485 from bslakman/cantherm_fix,0,,1
+ac682fea,2015-11-05 12:58:57,add large mol unit test: C32H54,0,,0
+0a3f7126,2015-11-05 13:27:30,do not add OB to available backends when not installed,0,,0
+a6c1eb70,2015-11-05 13:36:29,move SMILEwriter instantiation to toSMILES,0,,0
+a9cc7760,2015-11-05 13:40:12,check if OB is installed in toInChI and toInChIKey,0,,0
+57f88302,2015-11-05 14:29:34,change int to long for connectivity value in graph.*,0,,0
+cb647a65,2015-11-05 15:28:13,remove unnecessary zip in graph.__update(...) method,0,,0
+2ab9d1d8,2015-11-05 16:16:09,"remove "" is rxn present in self.edge.reactions""",0,,0
+eb7a34e8,2015-11-06 11:39:35,remove mult layer from aug. inchi,0,,0
+e82e7a43,2015-11-06 11:42:45,set mol multiplicity based on u-layer length,0,,0
+699038ab,2015-11-06 14:48:37,create has_unexpected_lone_pairs function,0,,0
+e1314de2,2015-11-06 15:36:18,make create_P_layer function,0,,0
+00a195a0,2015-11-06 15:59:18,redesign parser.fix to incorporate the p-layer,0,,0
+987d5e80,2015-11-06 16:10:46,improve fix_triplet_to_singlet function,0,,0
+098a83ab,2015-11-06 17:24:11,Merge pull request #488 from ReactionMechanismGenerator/edge_reaction_speedup,0,,1
+b87e8b9b,2015-11-06 17:25:36,redesign inchi.decompose,0,,0
+a9f7cef2,2015-11-08 12:04:36,add the WIP decorator to CO inchi parsing test,0,,0
+c800f8b1,2015-11-09 09:24:10,add inchi parsing tests with lone pairs,0,,0
+36b1d5fc,2015-11-09 09:28:17,Merge pull request #486 from ReactionMechanismGenerator/ob_dep,0,,1
+895f3dcd,2015-11-09 09:48:26,rename the P layer prefix to 'lp' to avoid overlap with proton layer,0,,0
+b0734a9b,2015-11-09 10:16:43,anticipate atoms with zero  and unexpected lone pairs,0,,0
+b583a97f,2015-11-09 11:03:47,add a C5H6_triplet_singlet WIP test,0,,0
+83980e98,2015-11-09 13:25:55,Merge pull request #487 from ReactionMechanismGenerator/long_conn_values,0,,1
+f4244fef,2015-11-10 11:19:13,add framework for minimization of p-layer,0,,0
+4c807dd9,2015-11-10 15:19:29,cleanup rebase errors,1,,0
+600958b8,2015-11-10 17:19:27,Merge pull request #478 from nickvandewiele/aug_inchi,0,,1
+b1b724fa,2015-11-11 09:35:04,"remove temp file ""rebase.txt""",0,,0
+b55603ae,2015-11-11 10:10:15,use PeriodicSystem instead of util constants,0,,0
+d2a34a62,2015-11-11 10:23:19,use ConsistencyChecker in parser.check function,0,,0
+5d4ad990,2015-11-11 11:25:47,change info to debug of ConsistencyChecker.check_multiplicity,0,,0
+cb0562a3,2015-11-12 12:26:34,subclass RMG from pydas.observer.Subject,0,,0
+3f23fc78,2015-11-12 12:37:25,ChemkinListener moves saveChemkinFiles to chemkin module,0,,0
+5f300b46,2015-11-12 12:54:18,move rmg.model.saveChemkinFile to rmg.chemkin.saveChemkin,0,,0
+81af2be2,2015-11-12 13:02:17,rename ChemkinListener to ChemkinWriter,0,,0
+59c0fc81,2015-11-12 13:11:29,create rmg.register_listeners() method,0,,0
+8fb9cbd5,2015-11-12 13:21:36,move rmg.saveOutputHTML to output OutputHTMLWriter,0,,0
+3eca177a,2015-11-12 14:32:34,fix typo: adjList -> adjlist,1,,0
+1146a709,2015-11-12 14:58:57,move rmg.saveRestartFile to restart module,0,,0
+b256b36e,2015-11-12 15:10:26,"remove ""from .adjlist import *"" in rmgpy.molecule package",0,,0
+18d517bb,2015-11-12 15:29:17,move QM Database writing to rmgpy.qm.main module,0,,0
+5c4585a8,2015-11-12 15:55:19,move execution stats to rmgpy.stats module,0,,0
+cb5960d2,2015-11-12 16:10:41,convert execTime from a local variable to a instance attribute,0,,0
+516cdcf2,2015-11-12 16:19:09,fix typo adjList -> adjlist in inchiparsingTest,1,,0
+f89b8429,2015-11-12 17:02:17,remove product.updateConnectivityValues(),0,,0
+18a9dcc7,2015-11-12 17:07:51,do not update moleucles in __apply(...),0,,0
+3f3e828b,2015-11-12 17:08:42,remove the update=True optional argument from apply* methods,0,,0
+faa7e38e,2015-11-12 17:12:11,remove updateConnectivityValues from Molecule.update(...),0,,0
+1b1d03ac,2015-11-12 17:16:17,remove updateConnectivityValues from Molecule.saturate,0,,0
+2dcaee14,2015-11-12 17:19:26,remove updateConnectivityValues() from fromAdjacencyList,0,,0
+29f6ea4e,2015-11-13 10:49:37,Merge pull request #491 from ReactionMechanismGenerator/update_eff,0,,1
+3ef0cc00,2015-11-14 09:29:30,Merge pull request #492 from ReactionMechanismGenerator/rmg_listener,0,,1
+ea481d2c,2015-11-15 11:36:47,move register_listeners call from initialize to execute,0,,0
+55a2d9b1,2015-11-15 11:41:37,replace rmg.save* calls by attaching listeners,0,,0
+a2a0f8d5,2015-11-15 11:51:55,redesign main/execute function of generate_reactions,0,,0
+54cd6e5f,2015-11-15 11:52:18,add GenerateReactionsTest unit test,0,,0
+efebd31a,2015-11-15 12:04:18,replace pydas.observer.Subject by duplicate in util module,0,,0
+83c1e00a,2015-11-15 12:15:34,move makeOutputSubdirectory to util,0,,0
+ff72011f,2015-11-15 12:16:19,correct indent for saveChemkinFiles,0,,0
+74ea85c7,2015-11-15 12:18:46,delete output dirs in generate reactions tests,0,,0
+b03ee431,2015-11-15 12:26:16,move sensitivity unit test data to sens/ subfolder,0,,0
+85f623f8,2015-11-15 12:40:08,add diff_modelsTest,0,,0
+518c1d2c,2015-11-15 12:44:16,make 'species' output dir in appropriate output writer,0,,0
+38d3febd,2015-11-15 12:46:44,make dir 'plot' in appropriate output writer,0,,0
+9c453dec,2015-11-15 16:56:19,"move ""from rmgpy.rmg.main import RMG"" import in loader",0,,0
+eb67f856,2015-11-15 18:31:17,store simulation profile data in instance variable in ReactionSystem,0,,0
+5380b795,2015-11-15 19:06:18,replace worksheet variable by SimulationProfileWriter,0,,0
+287944f0,2015-11-15 21:56:56,add documentation on the new listener classes,0,,0
+1d323d96,2015-11-16 17:49:54,Merge pull request #493 from ReactionMechanismGenerator/rmg_listener_bis,0,,1
+591ee320,2015-11-16 18:00:15,refactor index assignment into generate_indices,0,,0
+aea65ae2,2015-11-16 18:29:26,convert local num* variables into instance variables,0,,0
+fb125cc6,2015-11-16 18:31:47,create set_initial_conditions method,0,,0
+39f05e75,2015-11-16 18:49:00,refactor the computation of network variable in own method,0,,0
+a3f6a8f9,2015-11-16 18:49:22,refactor computation of collider variables into own method,0,,0
+31e84e3c,2015-11-17 10:13:06,refactor the creation of the reactant/product indices into its method,0,,0
+2405480c,2015-11-17 10:47:57,refactor rate coefficient computation into its own method,0,,0
+d2874d43,2015-11-17 13:30:25,split generate_indices into species and reaction generator,0,,0
+b190c8f0,2015-11-17 13:46:30,add documentation to newly created methods,0,,0
+41799553,2015-11-17 14:02:07,add break in the for..else clause of generate_rate_coefficients,0,,0
+e7a23901,2015-11-17 14:28:17,move solver helper instance attributes to superclass,0,,0
+957eb524,2015-11-17 14:30:20,remove static type declarations in simple  liquid  base,0,,0
+ec363ec1,2015-11-17 17:17:46,restructure the ReactionSystem instance attributes,0,,0
+9b4d7b8c,2015-11-17 17:27:41,rename instance variables,0,,0
+2e75089b,2015-11-17 17:38:53,refactor the initial derivate computation in its own method,0,,0
+919bf3a8,2015-11-17 17:40:13,move compute_network_variables before generate_rate_coefficients,0,,0
+8786a315,2015-11-18 10:08:45,refactor effective pressure calculation in its own method,0,,0
+adc490b3,2015-11-18 10:37:35,pass sensitiveSpecies  sensitivityThreshold to superclass constructor,0,,0
+6003ac54,2015-11-18 11:05:23,extend and move documentation to the declaration section of the variables,0,,0
+6a2714ef,2015-11-18 11:05:43,refactor the tolerance initialization into its own method,0,,0
+3be2970e,2015-11-18 11:14:10,refactor the species index retrieval into its own method,0,,0
+8a24151e,2015-11-18 11:18:14,replace range by xrange generator,0,,0
+8e0ef64d,2015-11-18 17:00:19,refactor DASx initialization into superclass method,0,,0
+14f78add,2015-11-18 17:00:50,move duplicate computeRateDerivative method to superclass,0,,0
+c95dc127,2015-11-18 17:37:31,add liquidTest,0,,0
+78e22057,2015-11-18 17:49:07,correct Volume calculation in liquid reactor,0,,0
+3ec6075e,2015-11-18 18:11:13,refactor liquidTest in multiple tests,0,,0
+84d69ffb,2015-11-19 11:25:05,add WIP decorator to LiquidReactorCheck.test_jacobian,0,,0
+391b6050,2015-11-19 11:43:16,remove analytical jacobian of LiquidReactor,0,,0
+a9a711d9,2015-11-19 12:28:41,Merge pull request #496 from ReactionMechanismGenerator/liquid_reactor_tests,0,,1
+5de3826a,2015-11-19 21:07:28,added a test file for module rmg work flow,0,,0
+8f2db89a,2015-11-20 08:09:05,Merge pull request #497 from ReactionMechanismGenerator/reaction_system_redesign,0,,1
+cb1d141a,2015-11-23 09:06:48,Merge pull request #498 from ReactionMechanismGenerator/rmgTest,0,,1
+21d38b16,2015-11-24 11:34:55,move import xlwt from main module to stats module,0,,0
+c1ac18d3,2015-11-24 11:46:43,added statsTest,0,,0
+d3bf4b78,2015-11-24 11:47:23,check if self.reactionLibraries is None before iterating over them,0,,0
+030aab7b,2015-11-24 13:54:11,print input file to log info at beginning of simulation,0,,0
+e65a8985,2015-11-24 15:51:27,add fluxtest,0,,0
+9a897f10,2015-11-25 02:33:50,Extend generateReverseRateCoefficient for some PDep types.,0,,0
+fd728064,2015-11-25 08:20:25,Merge pull request #499 from ReactionMechanismGenerator/statsTest,0,,1
+54de0427,2015-11-30 17:35:13,broadcast RMG's databases to workers if/when SCOOP is loaded,0,,0
+cbcc296c,2015-11-30 17:37:30,remove 'libraryOrder' attribute from SolvationDatabase functions,0,,0
+a49bc53c,2015-11-30 20:46:56,added reverse coefficent test for Arrhenius format,0,,0
+4a70f629,2015-11-30 20:47:27,added reverse coefficent test for ArrheniusEP format,0,,0
+d3030a8f,2015-11-30 20:47:46,added reverse coefficent test for PDepArrhenius format,0,,0
+6ff343cf,2015-11-30 20:48:50,added reverse coefficent test for MultiArrhenius format,0,,0
+ffe6634d,2015-11-30 20:49:14,added reverse coefficent test for MultiPDepArrhenius format,0,,0
+daad02b1,2015-11-30 20:49:35,added reverse coefficent test for ThirdBody format,0,,0
+7dca94a9,2015-11-30 20:49:50,added reverse coefficent test for Lindemann format,0,,0
+cf9bb1ab,2015-11-30 20:50:08,added reverse coefficent test for Troe format,0,,0
+d7005527,2015-12-01 10:06:53,add parallel test,0,,0
+de1ff26c,2015-12-01 10:16:23,add SCOOP to requirements.txt,0,,0
+a99fde34,2015-12-01 10:23:41,add pyzmq to requirements.txt (SCOOP dependency),0,,0
+66172be1,2015-12-01 10:30:13,Indicate installation of Python 2.7 for anaconda instructions.,0,,0
+dfc45b29,2015-12-01 10:30:13,add pyzmq and scoop to meta.yaml,0,,0
+c73b1499,2015-12-01 10:49:02,remove print statements in generateReverseRateCoefficient,0,,0
+d8675eae,2015-12-01 11:02:01,bundle supported kinetics models in tuple,0,,0
+697f88e0,2015-12-01 13:50:30,Merge pull request #502 from ReactionMechanismGenerator/reverses,0,,1
+e9f8e6be,2015-12-01 14:05:53,add scoop to environment.yml,0,,0
+4aa70d07,2015-12-01 14:06:12,Remove unused getRateCoefficientUnits function,0,,0
+41d37cc0,2015-12-01 14:06:25,Remove unused import getRateCoefficientUnitsFromReactionOrder,0,,0
+233ed011,2015-12-01 14:23:27,Migrate hardcoding of reaction family order to processing old database only,0,,0
+845ddf71,2015-12-01 15:32:49,move/rename 'parallel' module to scoop_framework package  name it 'util',0,,0
+7b09d2f1,2015-12-01 15:33:38,broadcast forbidden structures,0,,0
+fef8252e,2015-12-01 15:37:41,rename 'name' parameter to 'key',0,,0
+ca3d0654,2015-12-01 16:00:36,add 'get' in util to retrieve a broadcasted variable,0,,0
+038fcdd6,2015-12-01 16:00:55,add unit test for retrieving a shared variable,0,,0
+8d0b50da,2015-12-01 16:29:32,create getFamily function in rmgpy.rmg.model,0,,0
+7d60a7d2,2015-12-01 17:39:07,store the family/library label as a reaction attribute,0,,0
+e7a450ee,2015-12-02 08:44:32,Merge pull request #503 from ReactionMechanismGenerator/db_broadcast,0,,1
+0ea0b82c,2015-12-02 14:14:10,create map_ function in util module,0,,0
+b0f54710,2015-12-02 17:43:37,add outputdirectory when instantiating ChemkinWriter/OutputWriter,0,,0
+e4e88605,2015-12-02 18:16:57,allow for multiple targets in the optimization,0,,0
+a44353cf,2015-12-02 21:55:01,implement bisect optimizer,0,,0
+13bdd30a,2015-12-02 21:55:22,improve logging messages,0,,0
+a1f528f7,2015-12-02 22:09:22,create rudimental initializer for logging in reduction main module,0,,0
+cf7a1d7c,2015-12-03 10:58:46,rework reduction output,0,,0
+5aa6424d,2015-12-03 11:12:07,comment out test_C6H5 in generatorTest module,0,,0
+7c58c7ba,2015-12-03 13:52:34,optimized compute_reaction_rate,0,,0
+ac0a8629,2015-12-03 14:32:31,compare forward to 'reactants' in compute_reaction_rate,0,,0
+b292b49a,2015-12-03 15:30:48,remove getConcentration function,0,,0
+65cd3db7,2015-12-03 16:29:39,Merge pull request #505 from ReactionMechanismGenerator/getFamily,0,,1
+5939df54,2015-12-03 17:10:02,refactor reactionDict entry addition into its own method,0,,0
+0e351820,2015-12-03 18:05:05,refactor checkForExistingReaction,0,,0
+f42f11e8,2015-12-04 18:06:20,Merge pull request #504 from ReactionMechanismGenerator/reactionOrder,0,,1
+f30fca33,2015-12-04 18:12:49,Add unimolecular and bimolecular threshold arrays to solver,0,,0
+fa309bf0,2015-12-04 18:13:54,Add comments to ReactionModel.react function indicate uni or bi-molecular,0,,0
+b42541f2,2015-12-04 18:23:02,Use uni and bimolecularThreshold to filter species from reacting in enlarge step,0,,0
+670e781c,2015-12-05 09:57:58,Merge pull request #507 from ReactionMechanismGenerator/reactionDict,0,,1
+3d194435,2015-12-05 13:25:51,add ReactionSystemTest unit test for pickle,0,,0
+62d75969,2015-12-07 12:53:59,The raw simulation used for setting rxn thresholds should run with toleranceMoveToCore,0,,0
+e3911105,2015-12-08 17:22:21,added reaction filter by spec in output html,0,,0
+41c9e797,2015-12-09 23:24:49,Print to log file a note if memory could not be logged.,0,,0
+911890d3,2015-12-10 00:36:21,Enforce enlargeCore to take only 1 newObject at a time rather than a list.,0,,0
+16f16cd1,2015-12-10 01:24:31,Print all core and edge changes in summary  but make different headers for core vs edge expansion,0,,0
+f60ec9b3,2015-12-10 01:27:26,enlargeEdge: processNewReactions must track the newest species for keeping track of pdep networks,0,,0
+2c8374fc,2015-12-10 01:27:54,enlargeCore for any type of objectToEnlarge  including pdepnetworks in addition to Species objects,0,,0
+abc36314,2015-12-10 01:28:54,Was this a bug?!  Both reactants and products were set to rxn's products.,1,,0
+0ed0ce13,2016-01-03 15:31:00,the reaction family name is the last token instead of last second one,0,,0
+77b28bb4,2016-01-03 15:36:44,RMG-Py's chemkin files should not be captured by this if,0,,0
+03e4e414,2016-01-05 17:07:14,Allow RDKit versions newer than 2015.03.1 in environment.yml,0,,0
+edcf9b2c,2016-01-06 10:40:23,change function name getFamily -> getFamilyLibraryObject,0,,0
+bb73178e,2016-01-06 10:41:50,fix bug: check type of library object rather than its corr. string,1,,1
+fb374dfb,2016-01-06 10:42:46,fix bug: reactants -> rxn.reactants,1,,1
+28923ff3,2016-01-07 09:37:14,add test for reaction collision Library vs Family,0,,0
+db590f13,2016-01-07 09:57:58,tear down RMGDatabase in testGenerateReaction tests,0,,0
+97f0dd82,2016-01-07 10:11:26,improve module documentation for rmgpy.rmg.model module,0,,0
+0428d00a,2016-01-07 11:21:25,created unitTests for chemkin comment parse,0,,0
+e7b141f0,2016-01-07 14:26:51,Merge pull request #511 from ReactionMechanismGenerator/readChemkinComments,0,,1
+af165df2,2016-01-07 15:49:03,added a work in progress unittest for generatePairs(),0,,0
+bd1398f6,2016-01-08 09:17:10,create methods to convert template into labels and vice versa,0,,0
+225028a9,2016-01-08 09:30:32,store rxn.template as a list of strings rather than groups,0,,0
+4a868108,2016-01-08 09:37:08,Merge pull request #517 from ReactionMechanismGenerator/fixbug_RMG-database_81,0,,1
+273266d1,2016-01-08 10:34:42,add 'scoop' target in Makefile,0,,0
+e9281973,2016-01-08 13:53:17,use getDB instead of importing database to get forbidden structs,0,,0
+2e2c2bed,2016-01-11 01:15:55,Add debugging lines to reverse reaction KineticsError,0,,0
+a26984f9,2016-01-11 01:26:01,Hack fix: Delete reactions that are forbidden in the reverse direction,1,,0
+08e60079,2016-01-11 08:58:24,Merge pull request #520 from ReactionMechanismGenerator/rxn_template,0,,1
+13d99fc5,2016-01-11 14:26:30,React radicals bimolecularly using the R_Recombination family,0,,0
+5b977622,2016-01-11 15:46:52,Fix an indentation in commentary for kinetics error debugging,1,,0
+d32a2690,2016-01-11 15:49:38,Keep track of the recombination products in the enlargeEdge step,0,,0
+efdcef49,2016-01-11 15:50:44,Force recombination products into the core after the enlargeEdge step,0,,0
+0495dd49,2016-01-11 19:53:17,wrote flux pairs comments to chemkin files,0,,0
+2a5cdab1,2016-01-11 19:54:06,update reaction pairs if necessary in merging models,0,,0
+622c92cf,2016-01-12 10:55:47,don't pass failsSpeciesConstraints method to KineticsFamily object.,0,,0
+1797012c,2016-01-12 10:58:51,broadcast speciesConstraints when loaded from input,0,,0
+81facdf3,2016-01-12 11:00:08,create getInput function in input module,0,,0
+24b6f276,2016-01-12 11:18:54,remove speciesConstraints as an attribute of CERM,0,,0
+31682723,2016-01-12 11:20:49,Allow OutputHTMLWriter and ChemkinWriter to be initialized with no directory,0,,0
+e7f843fe,2016-01-12 11:38:01,bug in generateReactions: Do not reset the outputSpeciesList in saveEverything(),1,,0
+d254d93c,2016-01-12 11:39:01,Change generateReactions script due to reaction filter algorithm,0,,0
+c02ba565,2016-01-12 12:09:40,Fix to accomodate change of reaction.family now a string rather than family object,1,,0
+db8998e2,2016-01-12 12:19:23,move failsSpeciesConstraints method to constraints module,0,,0
+1359d515,2016-01-12 12:53:28,Get rid of superfluous 'comments' attribute in output html.,0,,0
+bac1cd13,2016-01-12 12:54:01,Make sure kinetics comments stores all comments without flags,0,,0
+5180b330,2016-01-12 13:42:41,"Revert ""Force recombination products into the core after the enlargeEdge step""",0,,0
+7a37a471,2016-01-12 14:29:55,move initialization of 'explicitlyAllowedMolecules' to input,0,,0
+62f33aa4,2016-01-12 17:53:56,Make HTML vizualization prettier and toggle thermo comments,0,,0
+69cb1499,2016-01-12 21:55:23,Reformatting of thermo display for diff models to also toggle thermo comments,0,,0
+d2870ae2,2016-01-12 21:58:34,changed the test data folder structure,0,,0
+d35454f2,2016-01-12 22:45:32,Fixes to make reactions look nicer in diff html,1,,0
+2c088786,2016-01-12 23:30:13,Fix to allow species search on second submission in output html,1,,1
+568ad9c4,2016-01-13 01:34:33,Fixes to make selection work properly for filtering reactions in output html,1,,0
+3981b823,2016-01-13 10:43:06,Fix typo in pruning documentation,1,,0
+79749b7a,2016-01-13 11:15:06,ignore RuntimeWarning emitted by warnScoopStartedProperly wrapper,0,,0
+2c5a5d8e,2016-01-13 12:29:16,Merge pull request #527 from ReactionMechanismGenerator/fixOutputHTML,0,,1
+cb090fe3,2016-01-13 12:35:23,Merge pull request #526 from ReactionMechanismGenerator/fix_pruning_doc_typo,0,,0
+2a055dda,2016-01-13 14:58:14,move logging to global imports,0,,0
+2a5a8784,2016-01-13 15:29:52,Merge pull request #525 from ReactionMechanismGenerator/test_data_structure,0,,1
+2d200a6e,2016-01-13 16:17:52,Merge pull request #529 from ReactionMechanismGenerator/failsSpeciesConstraints,0,,1
+0469fbbc,2016-01-13 16:25:52,Display heats of reaction: H298  S298  and G298 in output HTML,0,,0
+4752a8d6,2016-01-13 16:37:11,Add heats of reaction to diff models output,0,,0
+97b34e45,2016-01-13 16:41:06,Format all the heats of reaction to 2 decimal places in output html,0,,0
+237a4065,2016-01-14 11:50:55,Fix usage of failsSpeciesConstraints in error debugging,1,,1
+c0a5b5b0,2016-01-14 15:23:05,change error-> debug level for Exception logging in getInput,0,,0
+b10fc140,2016-01-14 15:23:58,catch getInput Exception in failsSpeciesConstraints,0,,0
+620aba15,2016-01-14 15:24:40,add constraintsTest,0,,0
+0b71cab3,2016-01-15 08:30:26,Merge pull request #531 from ReactionMechanismGenerator/RMGwebsite_bug104,0,,1
+0e06701c,2016-01-15 11:06:22,sort reactant and product lists in checkForExistingReaction,0,,0
+00f22868,2016-01-15 15:38:03,Merge pull request #532 from ReactionMechanismGenerator/fixBug_DuplicateReactions,0,,1
+825571c0,2016-01-18 22:09:00,Start a function to add training reactions,0,,0
+52a675e7,2016-01-19 00:44:08,Beginnings of a windows build for RMG-Py,0,,0
+68072ff0,2016-01-19 15:32:14,Make sure windows environment uses 2015.09.2 version of rdkit,0,,0
+22ca83af,2016-01-19 15:32:44,Some changes to accomodate compiling in Windows,0,,0
+81ac094a,2016-01-19 16:17:49,Adjust makefile so that `mingw32-make test` will work on Windows,0,,0
+2d6b7021,2016-01-20 14:35:40,Fix function that loads RMG-database directory from rmgrc for windows,1,,0
+cb6e9744,2016-01-20 14:40:05,Changes to the conda files for windows,0,,0
+ee074447,2016-01-20 16:03:48,Remove Symmetry from external folder because it is now an anaconda package,0,,0
+a3a64f53,2016-01-20 16:34:16,Save external packages to site-packages/external folder for windows build,0,,0
+9e8edb03,2016-01-20 17:15:03,Add some windows installation images for setting an environment variable,0,,0
+5cf43da8,2016-01-20 18:25:58,Reorder dependencies in meta.yaml so that they are alphabetical,0,,0
+9d138052,2016-01-20 18:45:11,Update the dependencies documentation,0,,0
+f36c4af7,2016-01-20 18:48:22,Update note about python 2.7 in installation documentation,0,,0
+37298400,2016-01-20 18:49:45,Deprecate the old source compile documentation,0,,0
+c06327fc,2016-01-20 18:50:12,Rename and reorganize installation index page,0,,0
+39f74ca3,2016-01-21 00:20:42,Change environment to rmg_env instead of rmg,0,,0
+07e3d28e,2016-01-21 01:22:17,Delete reference/reaction/reactionmodel.rst,0,,0
+04fac525,2016-01-21 01:23:12,Remove extra info from install anaconda by source for unix,0,,0
+10c3822e,2016-01-21 01:23:58,Add windows installation documention for RMG-Py,0,,0
+d2ec8f5e,2016-01-21 11:25:21,Fix windows 'activate rmg_env' command,1,,1
+572346a2,2016-01-21 11:25:49,Doesn't require configuring distutils if running locally,0,,0
+549c434f,2016-01-21 11:29:58,Append git tools to CMD  otherwise user has to use Git CMD,0,,0
+58c81f8c,2016-01-21 11:33:43,Make sure to 'source activate rmg_env' in .travis.yml,0,,0
+e19d5303,2016-01-21 11:35:29,echo TRAVIS_BUILD_DIR at beginning of script,0,,0
+d6394c7b,2016-01-21 11:39:56,No longer need clause for mingwpy!! yay,0,,0
+257bf749,2016-01-21 11:41:09,Delete rmgpy/solver/settings.pxi,0,,0
+279465fb,2016-01-21 11:42:57,Add mingwpy to list of windows dependencies in environment_windows.yml,0,,0
+9863e7d4,2016-01-21 11:47:37,change mopac password entry for windows,0,,0
+0609fc60,2016-01-21 14:03:24,Make the binary installation more clear that it is through the command line,0,,0
+2574a677,2016-01-21 14:03:44,Add setting the windows environment to the doctree so that it apepars in pdf,0,,0
+9f26b0cf,2016-01-21 16:47:02,Reword user installation: they are installing binaries through the command line,0,,0
+899b2476,2016-01-21 17:14:42,change print to logging.info in diff_models.py,0,,0
+0a6270b6,2016-01-21 17:19:41,Instructions for how to update anaconda binary,0,,0
+ad0e831e,2016-01-21 17:19:58,Instructions for how to update the source code,0,,0
+567c9b55,2016-01-21 17:20:56,Spam instructions for people to post to the issues page,0,,0
+11eb375a,2016-01-21 17:27:54,Add the link to features in the main doctree,0,,0
+eea09b70,2016-01-21 17:28:06,Update the citation to Computer Physics Communications paper,0,,0
+c426dda8,2016-01-21 17:34:10,Switch the compile sensitivity reference to dependency restriction page,0,,0
+74aade37,2016-01-21 17:42:32,Fix the malformed table in docstring for rmgpy.molecule.graph.Vertex,1,,0
+473f7903,2016-01-21 17:44:03,Remove Deprecated reaction.ReactionModel API reference,0,,0
+57a9df6a,2016-01-21 18:00:17,return the common/unique spc/rxns in diff_models,0,,0
+758c43cd,2016-01-22 10:55:39,Merge pull request #534 from ReactionMechanismGenerator/windows,0,,1
+4a749083,2016-01-22 11:26:30,Change maximum k_unimolecular to kB*T/h,0,,0
+02954923,2016-01-22 11:41:42,Make paths absolute in testGenerateReactions.py,0,,0
+c1881be7,2016-01-22 12:17:14,Have generateReactions duplicate test be more specific,0,,0
+78c30265,2016-01-22 14:25:52,Merge pull request #538 from ReactionMechanismGenerator/debugKineticsError,0,,1
+7249dacd,2016-01-22 14:52:41,Set the reaction threshold for the liquid reactor in set_initial_conditions(),0,,0
+3661e55b,2016-01-22 15:22:23,Have a way to turn the filtering of reactions on and off in ReactionSystem solver,0,,0
+057dbeec,2016-01-22 15:24:57,Add a flag 'filterReactions' to the input file,0,,0
+277a997c,2016-01-22 15:48:18,Check in ReactionModel.react() to prevent non-reactive species from reacting,0,,0
+9cfa82f8,2016-01-22 15:48:30,Be able to turn off filtering of reactions,0,,0
+8b1a752c,2016-01-22 16:10:59,Make RMG-Py use numpy 1.10,0,,0
+d976efb2,2016-01-22 16:35:14,Cleanup of print log and extraneous variables...,0,,0
+80aca497,2016-01-22 16:57:15,Revert setting filterReactions to true in minimal example.,0,,0
+bd4ff4d0,2016-01-24 09:27:49,Create separate set_initial_reaction_threshold function in ReactionSystem,0,,0
+2c50dbc6,2016-01-24 11:34:25,add testSaveOutputHTML test in outputTest module,0,,0
+5079f3bd,2016-01-24 11:59:34,convert to string when used in PdepReaction.getSource(),0,,0
+9344601c,2016-01-24 13:57:22,Merge pull request #541 from ReactionMechanismGenerator/jinja2Error,0,,1
+80418069,2016-01-24 14:06:41,Merge pull request #542 from ReactionMechanismGenerator/diffModels,0,,1
+979e631a,2016-01-24 15:18:10,clean up saveModel.sh,0,,0
+d5e0f8e6,2016-01-24 15:31:08,echo RMG-Py commit in saveModel.sh,0,,0
+c5d00acd,2016-01-24 15:47:14,commit an empty commit in RMG-tests repo,0,,0
+b7d4e279,2016-01-24 15:53:33,Modify initializeModel to allow filterReactions to be turned off or on,0,,0
+07571505,2016-01-24 15:54:57,Refactor initialization and updating of react and threshold flags,0,,0
+16c85fb1,2016-01-24 16:00:47,Make generate_reactions execution cleaner,0,,0
+1c5a39ed,2016-01-24 16:06:20,rename saveModels.sh to deploy.sh,0,,0
+e17ff690,2016-01-24 16:11:32,exit with nonzero exit code if anything fails in deploy,1,,0
+b66f1f9f,2016-01-24 18:01:21,Conslidate enlargeCore and enlargeEdge into a single enlarge() function as before,0,,0
+947630e2,2016-01-24 18:02:55,Delete superfluous processNewReactions when reactEdge is False,0,,0
+d95e2493,2016-01-24 18:20:05,Rename to testing/egX folder when running 'make egX',0,,0
+a01e6ff0,2016-01-25 10:36:12,Use numpy.cosh instead of libc's cosh in function calculateTunnelingFunction,0,,0
+cdcf2e31,2016-01-25 11:07:31,Revert the special treatment of R_Recombination reactions for filtering reactions.,0,,0
+fe8c5fe6,2016-01-25 11:26:48,Make logging.warning lines prettier for statmech warnings,0,,0
+403b12c8,2016-01-25 15:23:00,Merge pull request #546 from ReactionMechanismGenerator/precision32bit,0,,1
+77657835,2016-01-25 15:43:49,documentation: add more detailed instruction on how to refresh environment variables,0,,0
+a134d354,2016-01-25 16:30:03,update deploy.sh  travis based on SSH authetication,0,,0
+cfc7b398,2016-01-25 17:40:03,Set the default maximumEdgeSpecies in any input file to 1e6,0,,0
+bca3db57,2016-01-25 17:42:52,documentation: update credit: RMG-Py paper to correct year,0,,0
+fd747a7a,2016-01-25 17:43:45,documentation: clean up the input file documentation  add filterReactions parameter,0,,0
+0f4b8ca6,2016-01-25 17:43:55,Add more documentation for flux-based algorithm and filtering reactions,0,,0
+ba2898c4,2016-01-25 17:57:14,documentation: remove reactionModel reference from tocTree,0,,0
+57fbec36,2016-01-25 20:12:48,Correct bug: remove TARGET_BRANCH variable,1,,0
+3c53bce4,2016-01-26 13:18:00,change deploy URL for RMG-tests from HTTPS to SSH form,0,,0
+a2b279f9,2016-01-26 13:23:41,clone RMG-tests repo in a temporary folder,0,,0
+f59ea51a,2016-01-26 13:27:48,decrypt deploy key in before_install stage,0,,0
+3747a35b,2016-01-26 14:23:49,add make test(-database) to travis yaml script,0,,0
+1546122a,2016-01-26 14:25:48,move GIT_NAME  GIT_EMAIL to deploy script,0,,0
+cf36d20e,2016-01-26 14:28:14,"remove ""Built from commit"" commit message",0,,0
+4b9e81df,2016-01-26 14:53:34,Documentation: Add link to RMG input form,0,,0
+5e45aa55,2016-01-26 15:23:29,Merge pull request #537 from ReactionMechanismGenerator/enlargeReactionFilter,0,,1
+763dd1cd,2016-01-26 15:52:51,force push to RMG-tests branch,0,,0
+69ac0daf,2016-01-26 15:55:46,save reactions altogether instead of a single one,0,,0
+19e19c87,2016-01-26 16:05:58,Fix issue: reaction library rxns containing all input species rxns not added in core,1,,0
+2a30bd1a,2016-01-26 16:44:00,Added a test for Molecule().updateLonePairs(),0,,0
+03fc93fe,2016-01-26 17:17:27,Add a unit test for adding reaction library rxn to core,0,,0
+ea3bdfc4,2016-01-26 18:06:48,Merge pull request #547 from ReactionMechanismGenerator/fixReactionLibraryError,0,,1
+d6795e44,2016-01-27 11:08:34,Change tabs to spaces in rmgTest.py..,0,,0
+6fa93bc9,2016-01-27 11:11:30,Have loadRecommendedFamilies print a more useful error message,1,,0
+9527d093,2016-01-27 11:51:36,Make sure to set loading of reactionLibraries to empty list  otherwise the default is to load everything!,0,,0
+98ca37ed,2016-01-27 12:01:46,Cut down on the loading of families in the normal GenerateReactionsTest,0,,0
+4bd73ad6,2016-01-27 22:38:17,Add a safety check in CERM to ensure symmetrical rxns don't enter,0,,0
+e427c3a2,2016-01-28 00:32:43,Update README with info about CanTherm,0,,0
+9164a0b7,2016-01-28 01:31:07,Some documentation clean up,0,,0
+f9469b79,2016-01-28 01:31:32,documentation: add version 1.0.2 release notes,0,,0
+4cb9b43c,2016-01-28 01:32:16,documentation homepage: update index.html,0,,0
+fc1b7faa,2016-01-28 13:06:14,Merge pull request #551 from ReactionMechanismGenerator/fixGenerateReactions,0,,1
+cfdae498,2016-01-28 14:45:23,Update the release notes for RMG-database also.,0,,0
+6bcc269c,2016-01-28 15:58:15,Update version.py to 1.0.2,0,,0
+89f060c9,2016-01-28 16:04:36,Update conda requirements for version 1.0.2 in meta.yaml,0,,0
+c6443810,2016-01-28 21:26:22,Change url in setup.py to github homepage.,0,,0
+87b11eb4,2016-01-29 13:30:18,start to code for dictionary file saving,0,,0
+84457aae,2016-01-29 14:45:00,Update PDF version of documentation,0,,0
+9395c5dd,2016-01-29 15:16:06,redirect git push to /dev/null to avoid leaking of decrypted token,0,,0
+fa42fd3c,2016-01-29 15:54:42,Update the README to be more clean and include more information,0,,0
+e66b11d1,2016-01-29 16:21:14,Update the priority of steps for finding the MOPAC executable,0,,0
+1c42c2f3,2016-01-29 19:07:12,Use gcc=4.8.2 for linux32 conda binary builds.  4.8.5 is broken right now,0,,0
+e63aa53e,2016-01-29 20:18:29,Add pydas and pydqed back into environment_windows.yml,0,,0
+5651c870,2016-01-29 21:42:58,Update documentation due to slight change in windows mopac usage,0,,0
+1a64ed1e,2016-01-30 18:00:21,added a method for labeledAtoms info retrieval,0,,0
+9f9e26b3,2016-02-01 12:21:13,Remove rdkit from referenced channels in environment.yml,0,,0
+dab0f925,2016-02-01 15:25:58,fix bug: replace i -> index in base.pyx loop,1,,1
+42ceaaf8,2016-02-01 15:27:14,removed commented uni/bimolecularThreshold local variables,0,,0
+3240d203,2016-02-01 16:48:55,Remove utilTest.py for scoop for now  since it crashes in Mac OSX,0,,0
+3033a792,2016-02-01 16:54:56,Merge pull request #556 from ReactionMechanismGenerator/fixLiquidReactorBug,0,,1

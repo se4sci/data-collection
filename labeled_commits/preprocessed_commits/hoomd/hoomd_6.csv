@@ -1,0 +1,614 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+c398b2601,2016-10-04 11:32:03,Bump version to 2.1.0,0,,0
+1494322cc,2016-10-04 11:51:30,Add release date for 2.1.0,0,,0
+0580a251e,2016-10-06 13:13:45,Ensure that Python.h is included first,0,,0
+6188b55c2,2016-10-06 13:46:42,Attempt to fix memory error in active force compute,1,,1
+19dd69bc8,2016-10-07 17:25:58,Merge branch 'master' into hpmc_deep_copy,0,,0
+267f968f7,2016-10-07 17:28:39,fix compile with ENABLE_CUDA=OFF,1,,1
+b51c8fccf,2016-10-07 17:30:11,fix C++11 compile,1,,1
+d1f6970f1,2016-10-07 18:10:42,Fixed dump.getar.writeJSON in MPI runs,1,,0
+15f38a739,2016-10-07 18:12:22,revert templating of ShapeUnion,0,,0
+eea428b03,2016-10-08 11:54:26,Fix gpu compile,1,,1
+b3a525a96,2016-10-08 12:46:21,More economic GPUTree storage,0,,0
+dcf017b6c,2016-10-08 13:48:01,int -> unsigned int,0,,0
+fff0373f9,2016-10-09 14:28:29,print CUDA error in managed_allocator,1,,0
+fb1880186,2016-10-09 16:03:47,ShapeUnion<> only load orientation if needed,0,,0
+2578cabf4,2016-10-10 09:24:01,Update change log,0,,0
+73715e4f6,2016-10-10 09:25:46,Add missing entry to data.py TOC,0,,0
+aa06e56f8,2016-10-10 11:11:32,Fixed GetarDumpWriter mpi root check,1,,0
+cf1af87ae,2016-10-10 12:34:10,Fix analyzer setup in dump.getar for python 2,1,,1
+bd6b7e40e,2016-10-10 20:19:00,align shared memory,0,,0
+3a64b01e2,2016-10-10 22:00:19,use simpler tree traversal in ShapeUnion,0,,0
+b3799ab80,2016-10-10 22:32:17,fix shared memory race,1,,1
+3abb30616,2016-10-10 22:59:21,do not manually align pointers,0,,0
+2f36c102a,2016-10-11 00:19:39,parallelize tree traversals,0,,0
+e4abbe058,2016-10-11 00:59:57,widen parallelism,0,,0
+196a74cd2,2016-10-11 01:17:39,fix indexing,1,,1
+65c352ef4,2016-10-11 12:01:38,BUGFIX: Flow swaps min/max slabs correclty for oscillatory flow.,0,,0
+35b3b5bab,2016-10-12 17:55:25,Fix a bug where multi-charachter particle types failed in HPMC,1,,1
+19858fe25,2016-10-14 11:17:41,Merge branch 'maint' of https://bitbucket.org/glotzer/hoomd-blue,0,,0
+8b51fc5a3,2016-10-17 13:37:15,Merged in fix_writejson_mpi (pull request #266),0,,0
+e130cd0af,2016-10-17 14:03:01,reinstate tandem tree traversal on CPU,0,,0
+d8f48ac90,2016-10-17 17:20:55,adapt unit test,0,,0
+f570fb466,2016-10-17 17:21:01,use quaternion rotations for OBBs,0,,0
+1be9c1f31,2016-10-17 18:17:01,force inlining of vector math,0,,0
+8ad5a34a1,2016-10-17 20:03:14,enable new sphere union in compute.free_volume(),0,,0
+f5959e0e7,2016-10-18 10:34:43,re-enable update.muvt() for sphere_union shape,0,,0
+187594ac9,2016-10-18 23:07:19,use exact OBB checks,0,,0
+c6af6dd90,2016-10-21 13:57:11,Fix communication bug in HPMC,1,,1
+77a89f741,2016-10-22 11:22:10,fix compilation without MPI,1,,1
+d9a5042fe,2016-10-23 20:49:09,Update change log,0,,0
+20f3e5d64,2016-10-23 20:50:27,Labelling version 2.1.1,0,,0
+136e8fa66,2016-10-24 00:38:57,Merged in LudwigSchneider/hoomd-blue/flow (pull request #267),0,,0
+7a25100e6,2016-10-24 16:03:35,parallel shapes in .x component of threadIdx,0,,0
+34b68075c,2016-10-25 09:21:50,load shapeunion in shared mem,0,,0
+398b2c3d1,2016-10-25 10:38:32,"Revert ""use exact OBB checks""",0,,0
+d0cebc7c5,2016-10-25 11:37:07,Merge branch 'master' into hpmc_deep_copy,0,,0
+811fca6c3,2016-10-25 14:31:55,expose templates for different leaf node capacities,0,,0
+8848b91a7,2016-10-25 14:45:10,remove unnecssary dependencies,0,,0
+3b4961f2b,2016-10-25 14:47:57,fix duplicate symbol error,1,,1
+2dd2f1e3a,2016-10-25 15:27:58,"Revert ""force inlining of vector math""",0,,0
+16403425d,2016-10-25 15:28:22,"Revert ""use quaternion rotations for OBBs""",0,,0
+6ab069d09,2016-10-25 16:41:37,remove tandem traversal from ShapeUnion<> and ShapePolyhedron<>,0,,0
+98bcd1a94,2016-10-25 17:19:27,fix overlap checks for trees with only one level,1,,1
+bac27c2ac,2016-10-25 17:41:14,fix failing polyhedron unit test,1,,1
+1799904e3,2016-10-25 17:44:38,Optimization,0,,0
+db2557136,2016-10-25 18:00:53,remove more unnecessary dependencies,0,,0
+4710896a2,2016-10-25 21:07:39,ShapePolyhedron is a parallel shape,0,,0
+f496b5ee2,2016-10-25 22:39:41,fix compile error,1,,1
+06d28a8af,2016-10-26 18:02:26,stackless traversal (again),0,,0
+cc5503f68,2016-10-26 18:06:14,one more capacity setting (n=32) for sphere union,0,,0
+f50ed943f,2016-10-27 10:30:20,"Revert ""re-enable update.muvt() for sphere_union shape""",0,,0
+2acc0cbaf,2016-10-27 10:30:27,"Revert ""enable new sphere union in compute.free_volume()""",0,,0
+fa1fd60d8,2016-10-27 10:31:47,max_members -> capacity,0,,0
+511b3acbe,2016-10-27 10:49:48,synchronize memory to fix failing unit test,1,,1
+4d7d1d5ff,2016-10-27 11:34:52,adapt implicit integrators to managed memory,0,,0
+56d17daab,2016-10-27 11:35:05,fix failing unit test,1,,1
+5be3c9c0a,2016-10-27 11:45:57,fix alignment issue,1,,1
+a652a0d6a,2016-10-27 11:54:52,add to change log,0,,0
+c1852ffb0,2016-10-27 11:56:37,more adding to changelog,0,,0
+21dac0e71,2016-10-27 12:20:09,FIX: Logger clears also python callbacks if removeAll is called.,1,,1
+7aa13fb21,2016-10-27 12:35:15,also fix bus error with implicit depletants,1,,1
+fe2042c22,2016-10-27 12:56:05,"Revert ""also fix bus error with implicit depletants""",1,,0
+6bc2cc8d3,2016-10-27 13:03:43,next attempt to fix implicit depletants memory coherency,1,,0
+61a684563,2016-10-27 13:26:49,"Revert ""use cudaMallocManaged on GPU for HPMC params""",0,,0
+a750dee2d,2016-10-27 13:42:21,remove managed_allocator.h,0,,0
+4d448e48d,2016-10-27 14:16:19,move synchronization into GPUArray,0,,0
+7ffce1102,2016-10-27 14:22:51,max_members -> capacity in unit test,0,,0
+a08e9d0a0,2016-10-27 15:06:13,clarify with a comment to not clear python callbacks.,0,,0
+d6d408360,2016-10-27 15:06:13,clarify with a comment to not clear python callbacks.,0,,0
+ca1b0eeeb,2016-10-27 15:09:09,Merge branch 'log_minor_fix' of https://bitbucket.org/LudwigSchneider/hoomd-blue into log_minor_fix,0,,0
+92aa49bf9,2016-10-27 15:10:42,readd the DumpWriter.,0,,0
+5853e99aa,2016-10-27 15:57:05,doh .. need to synchronize first  then return from function,0,,0
+4c97699a2,2016-10-27 16:51:29,Merged in LudwigSchneider/hoomd-blue/log_minor_fix (pull request #270),0,,0
+ef89bd944,2016-10-27 17:01:09,Splitting the Logger class in two halves.,0,,0
+8cfd7fb98,2016-10-27 23:56:53,"Revert ""doh .. need to synchronize first  then return from function""",0,,0
+d55f07833,2016-10-27 23:57:12,"Revert ""move synchronization into GPUArray""",0,,0
+9f3b6a67c,2016-10-27 23:57:31,"Revert ""remove managed_allocator.h""",0,,0
+849ac878d,2016-10-27 23:57:45,"Revert ""Revert ""use cudaMallocManaged on GPU for HPMC params""""",0,,0
+365974e9a,2016-10-28 00:34:03,use cudaStreamMemAttachAsync for synchronization,0,,0
+8e6938126,2016-10-28 00:50:47,initialize by reference to avoid unnecessary alloc/dealloc,0,,0
+08e00ba2b,2016-10-28 11:04:17,attach nested managed memory regions to CUDA streams as well,0,,0
+ff1159a57,2016-10-28 14:59:11,minor fixes in the documentation.,1,,0
+67d22d5b7,2016-10-28 17:25:36,Adding matrix quantity API and LogMatrix class.,0,,0
+3df3fdf20,2016-10-30 10:54:34,use cudaMemAdvise to optimize for read-only access,0,,0
+72f6555fd,2016-10-30 14:26:28,only use memadvise when available,0,,0
+098ef6f6d,2016-10-31 18:38:06,adding missing files.,0,,0
+beff9cbc6,2016-11-02 17:10:43,first version of single value hdf5 logging.,0,,0
+f72602e71,2016-11-03 10:52:39,Frist version with at least python callback matrix support.,0,,0
+17684a6ab,2016-11-03 14:23:41,added basic tests.,0,,0
+6c970910d,2016-11-03 16:01:12,C++ clarification and documentation.,0,,0
+22fcf7af3,2016-11-03 16:41:39,Reorganizing python class to separate module.,0,,0
+ae34ef5de,2016-11-03 17:26:55,adding python documentation.,0,,0
+f5b9e833c,2016-11-03 17:59:18,testing sphinx documentation.,0,,0
+91db9e954,2016-11-09 10:33:26,Link to tutorials from the main doc page,0,,0
+76bd4145f,2016-11-09 13:49:14,Drop sm2.0 support,0,,0
+dc18d24eb,2016-11-14 01:05:11,fix hang in polyhedron overlap check and extend shape paramters,1,,1
+b1b6e1ead,2016-11-15 17:17:11,catch overlap errors,1,,0
+e2f76b536,2016-11-15 17:46:30,increaset overlap check accuracy,0,,0
+111b3f530,2016-11-15 17:51:37,fix failing unit test,1,,1
+169da78e0,2016-11-15 18:08:32,reduce node cacpity in polyhedron overlap check and exact OBB checks,0,,0
+5acf2a82e,2016-11-15 22:34:36,made changes to support variable no of vertices,0,,0
+602a1d41e,2016-11-16 11:49:06,convex polyhedron working again,0,,0
+26e3f4520,2016-11-16 11:54:57,move attach_to_stream into Shape classes,0,,0
+b93121157,2016-11-16 12:00:36,fix polyhedron unit test,1,,1
+f53a18e12,2016-11-16 12:04:00,shapes unit test working again,0,,0
+af3477f1f,2016-11-16 12:07:32,remove max verts from unit tests,0,,0
+9b16fa090,2016-11-16 12:30:05,make polyhedron number of vertices flexible,0,,0
+ca5886357,2016-11-16 13:05:13,load as much into shared memory as possible,0,,0
+834e1fba0,2016-11-16 14:31:26,tentatively fix unit test failure,1,,1
+3105da39c,2016-11-16 14:52:11,second attempt to fix unit test,1,,0
+8ddfc3358,2016-11-16 20:48:45,fix boxmc acceptance criteria,1,,1
+8c2a028a8,2016-11-16 20:51:12,add to changelog,0,,0
+0ae3ecd39,2016-11-16 20:54:13,Merge branch 'fix_boxmc' into hpmc_deep_copy,0,,0
+68d3b02f4,2016-11-17 10:42:08,Up to date after testing with ComputeDensity.,0,,0
+e8827fb76,2016-11-17 10:47:21,Merge branch 'master' into matrix_logger,0,,0
+e072877f4,2016-11-17 10:48:32,changelog upate,0,,0
+58b830754,2016-11-17 10:52:30,correct changelog and integrate documentation.,0,,0
+1fb75a08b,2016-11-21 23:35:24,use strict tolerance in polyhedron overlap check,0,,0
+758f46095,2016-11-22 11:28:41,Restrict general polyhedra to triangulations,0,,0
+2fe02c889,2016-11-22 11:34:38,make tolerance relative to shape size,0,,0
+e8181820e,2016-11-22 12:49:58,made capacity a per-type parameter,0,,0
+a87a6ac02,2016-11-22 13:49:53,python level changes,0,,0
+f4cf2a35e,2016-11-22 18:44:32,fix overlap check problem with binary mixtures of polyhedra,1,,1
+e1ba033f4,2016-11-22 18:54:47,fix comment,1,,1
+3564b174f,2016-11-22 20:53:42,minor optimization,0,,0
+6d762a930,2016-11-22 21:55:47,fix wrong sampling with implicit depletants,1,,1
+d67f531db,2016-11-23 00:43:19,fix GPU compile,1,,1
+a80fa1b0b,2016-11-23 00:50:00,Merge branch 'triangulated_polyhedron' of https://bitbucket.org/glotzer/hoomd-blue into triangulated_polyhedron,0,,0
+34222eff1,2016-11-23 00:51:33,GPU fix for insphere radius,1,,1
+e880dac6e,2016-11-23 01:13:45,minor optimization,0,,0
+b9a160bdf,2016-11-23 01:15:28,Merge branch 'triangulated_polyhedron' of https://bitbucket.org/glotzer/hoomd-blue into triangulated_polyhedron,0,,0
+fcf8726d7,2016-11-23 03:21:44,correct ntrial acceptance criterion,0,,0
+488b2128c,2016-11-24 13:57:11,add validation script for implicit depletants,0,,0
+01ddcdaf2,2016-11-24 15:05:57,use variable tolerance in triangle-triangle check,0,,0
+d1ecffda7,2016-11-25 16:55:19,support origin different from (0 0 0) in integrate.polyhedron(),0,,0
+79ecfa63d,2016-11-25 17:13:10,fix is inside shape test,1,,1
+fb1693fbd,2016-11-26 16:45:35,for is-contained-in check  do a segment-triangle intersection,0,,0
+5bb1966ff,2016-11-26 17:44:57,use ray-triangle intersection instead of segment triangle intersection,0,,0
+5842a3d30,2016-11-26 19:17:51,move validation tests for hpmc into subdir,0,,0
+16eeaab9c,2016-11-26 20:06:59,add omp_num_threads =1,0,,0
+13c20f3cd,2016-11-26 20:38:28,"Revert ""fix wrong sampling with implicit depletants""",1,,0
+b43c1dd8f,2016-11-26 20:38:38,"Revert ""correct ntrial acceptance criterion""",0,,0
+4a70f33db,2016-11-27 11:43:59,fix implicit depletants with shapes that have a finite insphere radius,1,,1
+e9537ff37,2016-11-27 11:44:56,use correct reference data and reduce number of state points,0,,0
+b9220aacf,2016-11-27 13:18:35,error out when not triangulated,1,,0
+1c9958615,2016-11-27 14:08:29,correct orientation of triangles in ray intersection test,0,,0
+aa526a934,2016-11-27 15:45:49,fix ntrial > 0 bug,1,,1
+be3de732e,2016-11-27 15:59:42,re-enable unit test,0,,0
+9bcacc77b,2016-11-27 16:19:14,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+8506b0a43,2016-11-27 16:58:46,adapt to last merge-in  compiles,0,,0
+91fb59f14,2016-11-27 17:11:49,fix python script error,1,,1
+e1351446e,2016-11-27 18:18:16,fix connected components,1,,1
+81721ca01,2016-11-27 18:46:44,fix cluster criterion,1,,1
+b65d574c2,2016-11-27 18:56:21,do not apply trivial transformations,0,,0
+45a043201,2016-11-27 19:50:14,correct PBC,0,,0
+1e38dc71b,2016-11-27 19:55:05,Merge branch 'validation' into triangulated_polyhedron,0,,0
+7cf8fb8d3,2016-11-27 19:55:33,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+1cf2a1fa9,2016-11-27 20:08:55,remove unneeded box shift,0,,0
+0f1e23051,2016-11-27 21:27:36,use ray-OBB query for is-contained-in check,0,,0
+4149e3330,2016-11-27 21:28:06,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+6ca14129a,2016-11-27 21:35:13,re-enable GPU compile,0,,0
+896f91325,2016-11-27 21:35:45,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+334f7840a,2016-11-27 21:44:40,add forgotten shared memory size check,0,,0
+e389d1811,2016-11-27 21:45:54,Merge branch 'hpmc_deep_copy' into triangulated_polyhedron,0,,0
+b6b69b00c,2016-11-27 21:46:05,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+7c7f27a73,2016-11-27 23:10:03,two-sided triangle test is necessary,0,,0
+95fbe5a7b,2016-11-27 23:10:29,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+4db793540,2016-11-28 10:50:37,Fix single precision builds,1,,1
+6cfcde3b6,2016-11-28 10:50:37,Fix single precision builds,1,,1
+6e6888e2b,2016-11-28 10:51:09,Simplify CUDA_ARCH defaults,0,,0
+28ea22b19,2016-11-28 11:58:10,Merge branch 'master' into validation,0,,0
+5d61b244f,2016-11-28 12:16:50,Add TEST_CPU_IN_GPU_BUILDS option,0,,0
+260a64166,2016-11-28 13:49:23,Merge branch 'validation' of https://bitbucket.org/glotzer/hoomd-blue into clusters_new,0,,0
+7586b0aa2,2016-11-28 13:50:38,run validation test longer,0,,0
+dbb09d94b,2016-11-28 14:01:43,Enable cusolver in CUDA 8 builds,0,,0
+090ece21c,2016-11-28 14:53:16,revert unnecessary changes,0,,0
+1e46fa589,2016-11-28 19:52:29,Merge branch 'fix_boxmc' into triangulated_polyhedron,0,,0
+d4ec42d9c,2016-11-28 19:53:09,Merge branch 'validation' into triangulated_polyhedron,0,,0
+fb10d6f9b,2016-11-28 19:53:22,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+d4e3bd3b2,2016-11-28 19:54:21,Merge branch 'triangulated_polyhedron' of https://bitbucket.org/glotzer/hoomd-blue into triangulated_polyhedron,0,,0
+3d18afdcd,2016-11-28 20:18:24,Merge branch 'clusters_new' of https://bitbucket.org/glotzer/hoomd-blue into clusters_new,0,,0
+48138c362,2016-11-28 20:27:57,Enable test_gsd to operate with ctest parallel,0,,0
+0da680be2,2016-11-28 20:28:45,Fix getar tests for ctest parallel,1,,1
+1031f018f,2016-11-29 09:59:39,Use exact temperature in temp rescale test,0,,0
+348f052bd,2016-11-29 10:58:59,Merge branch 'fix-parallel-tests' into validation,0,,1
+1ffa22d64,2016-11-29 11:53:50,Attempting to debug failing temp_rescale test,1,,0
+09ff7a880,2016-11-29 11:56:23,Typo in test.,0,,0
+8a97200a8,2016-11-29 12:11:16,Merge branch 'maint',0,,0
+e7d29548e,2016-11-29 12:11:50,Merge branch 'master' into cuda8-cusolver,0,,0
+ccc84f085,2016-11-29 12:41:46,Make cusolver availablility logic more robust,0,,0
+951b6596a,2016-11-29 14:45:51,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+1795396d5,2016-11-29 17:09:44,Merged in fix-parallel-tests (pull request #276),0,,1
+bc8d5858d,2016-11-30 10:48:34,test within 95% confidence interval,0,,0
+1588e821c,2016-11-30 11:32:52,add NPT validation test,0,,0
+df5c3bcd6,2016-11-30 13:20:46,wider parallelism also in implicit GPU integration,0,,0
+44c0e1dfe,2016-11-30 13:21:58,Merge branch 'hpmc_deep_copy' into triangulated_polyhedron,0,,0
+6c36924eb,2016-11-30 13:22:26,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+b76697706,2016-11-30 14:03:38,Merged in cuda8-cusolver (pull request #275),0,,0
+bc77bbb78,2016-11-30 16:28:43,switch to postorder traversal in OBB tree,0,,0
+b8e577baf,2016-11-30 16:46:09,enable binary-stack traversal,0,,0
+3d177578e,2016-11-30 16:58:38,use dynamic descend rule,0,,0
+f5ac6dc1f,2016-11-30 16:59:10,Merge branch 'triangulated_polyhedron' of https://bitbucket.org/glotzer/hoomd-blue into triangulated_polyhedron,0,,0
+de0a65b5d,2016-11-30 16:59:28,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+ec571bd38,2016-11-30 16:59:40,Merge branch 'clusters_new' of https://bitbucket.org/glotzer/hoomd-blue into clusters_new,0,,0
+07733d16e,2016-11-30 17:08:05,re-enable CUDA,0,,0
+12c29f711,2016-11-30 17:09:04,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+40814ddfa,2016-11-30 20:22:50,minor optimization,0,,0
+b7d7d77ec,2016-11-30 21:18:39,fix small problem,1,,1
+f4006699d,2016-11-30 21:21:21,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+577afa1f6,2016-12-01 09:18:12,Merge branch 'fix_boxmc' into validation,0,,0
+d0a4c534a,2016-12-01 12:21:50,slight optmization with implicit depletants on CPU,0,,0
+21ffacec3,2016-12-01 12:24:04,Merge branch 'hpmc_deep_copy' into triangulated_polyhedron,0,,0
+0e5303705,2016-12-01 12:24:39,Merge branch 'triangulated_polyhedron' into clusters_new,0,,0
+6c6055c83,2016-12-01 14:24:32,Disable internal nvt/npt compute thermos,0,,0
+39c736027,2016-12-01 14:27:03,Remove compute tracking,0,,0
+423632645,2016-12-02 10:02:45,Shorten NPT API test,0,,0
+8d3fd6b97,2016-12-02 10:05:03,Update change log,0,,0
+3e8c07ebc,2016-12-02 14:14:30,Add -u to python calls in validation tests,0,,0
+f13abae2c,2016-12-02 14:15:18,Add test to validate hard disks,0,,0
+bd11a8af1,2016-12-02 16:45:30,Merged in multiple-integrators (pull request #277),0,,0
+9fb0806b4,2016-12-05 11:11:59,invert acceptance criterion for implicit depletants,0,,0
+4e1b124cd,2016-12-05 11:55:00,Merge branch 'triangulated_polyhedron' into improve_implicit,0,,0
+22ae6f63f,2016-12-05 12:35:13,remove ntrial option,0,,0
+14feb8aec,2016-12-05 12:55:22,enable new acceptance criterion on GPU as well,0,,0
+cac2689b2,2016-12-05 13:32:01,simplify sphere validation test,0,,0
+f1d87a6fa,2016-12-05 13:42:49,be on the safe side for depletant insertion,0,,0
+0873080e1,2016-12-05 13:44:08,Merge branch 'validation' into hpmc_deep_copy,0,,0
+49c0007f3,2016-12-05 13:45:36,Merge branch 'hpmc_deep_copy' into triangulated_polyhedron,0,,0
+8c231e535,2016-12-05 13:46:55,Merge branch 'triangulated_polyhedron' into improve_implicit,0,,0
+03cd3a092,2016-12-05 13:58:24,Shorten implicit tests,0,,0
+0c4dcb625,2016-12-05 14:10:27,More tweaks to sphere eos test,0,,0
+898004bdb,2016-12-05 15:09:16,fix merge conflict,1,,1
+f1a6bb179,2016-12-05 15:26:03,use early exit,0,,0
+c110d2888,2016-12-05 15:34:26,eliminate unnecessary warp_reduce,0,,0
+9e9f7af69,2016-12-05 15:36:49,fix overlap check,1,,1
+bc5654427,2016-12-05 16:56:03,simplify logic,0,,0
+1afb746e5,2016-12-05 18:26:28,use tandem tree traversal also for ShapeUnion,0,,0
+6a30cd244,2016-12-05 18:27:17,Merge branch 'triangulated_polyhedron' into improve_implicit,0,,0
+6f710b823,2016-12-06 09:38:13,Update change log,0,,0
+24874310a,2016-12-06 09:56:56,Clarify change log,0,,0
+b37ac219c,2016-12-06 09:58:05,Merge branch 'master' into maint,0,,0
+b7d425a47,2016-12-06 09:58:42,Merge branch 'maint' into validation,0,,0
+29447d865,2016-12-06 10:17:48,Merge branch 'maint' into fix_boxmc,0,,0
+1454efeec,2016-12-06 10:26:20,Merge branch 'maint' into validation,0,,0
+5a4672697,2016-12-06 10:31:03,Use langevin thermostat in README example,0,,0
+d37edbf18,2016-12-06 10:45:27,Document that md.pair.dipole has no shift modes,0,,0
+210c19ff1,2016-12-06 12:03:02,new queue-design for implicit kernel  compiles,0,,0
+e03d6bb51,2016-12-06 12:37:20,runs,0,,0
+ff4ea65e1,2016-12-06 14:24:07,write out correct reject flag,0,,0
+eb36df2c0,2016-12-06 14:37:04,Merge remote-tracking branch 'origin/validation' into improve_implicit,0,,0
+d4657bbe8,2016-12-06 14:39:13,update validation test for implicit,0,,0
+68f6dc9df,2016-12-06 15:01:20,fix insertion position,1,,1
+0a325d6f2,2016-12-06 15:25:08,Merged in fix_boxmc (pull request #273),0,,0
+18d9d6fe1,2016-12-06 15:40:20,get rid of old kernel and fix problem with RNG generation,1,,1
+12a2cd32f,2016-12-06 18:01:01,fix alignment issues,1,,1
+eb45ff499,2016-12-06 18:01:27,fix shared memory alignment issues,1,,1
+ed1f00f89,2016-12-06 18:01:53,Merge branch 'hpmc_deep_copy' into triangulated_polyhedron,0,,0
+8df73f77c,2016-12-06 18:02:13,Merge branch 'triangulated_polyhedron' into improve_implicit,0,,0
+ac9f482fa,2016-12-06 21:03:37,safer shared memory handling with alignment,0,,0
+eabeaba3d,2016-12-07 10:28:02,initialize curand correctly,0,,0
+6100c8be4,2016-12-07 11:22:10,adding missing installation of cuda headers for Potential*GPU classes.,0,,0
+99538d681,2016-12-07 11:23:28,Remove set_params test in pair.dipole tests,0,,0
+c3fe2e6eb,2016-12-07 11:45:59,revert a performance-relevant change to the GPU kernel launch,0,,0
+001fe3c87,2016-12-07 11:48:45,Merge remote-tracking branch 'origin/maint' into hpmc_deep_copy,0,,0
+5ec55a0f9,2016-12-07 11:49:42,Merge branch 'hpmc_deep_copy' into triangulated_polyhedron,0,,0
+797f7e3bb,2016-12-07 11:54:29,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+2e4eb13a7,2016-12-07 11:55:30,revert a performance-relevant change to implicit GPU,0,,0
+1aafe1939,2016-12-07 12:19:05,do not synchronize unnecessarily,0,,0
+0a9a5b1d4,2016-12-07 13:19:51,remove convex hull check,0,,0
+b036b64c2,2016-12-07 13:20:44,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+95bf4c3d9,2016-12-07 13:22:10,clarify comment,0,,0
+5f78cda01,2016-12-07 13:22:39,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+dabe7093a,2016-12-07 14:01:43,Merged in validation (pull request #278),0,,0
+8701fb2fe,2016-12-07 14:02:05,Merged in LudwigSchneider/hoomd-blue/missing_cuh (pull request #280),0,,0
+514ca3636,2016-12-07 15:01:30,Merged in LudwigSchneider/hoomd-blue/flexible_logger (pull request #271),0,,0
+93843a04a,2016-12-07 17:27:14,divergence optimization,0,,0
+f9f130a9c,2016-12-07 17:28:32,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+b1b3c06f8,2016-12-07 17:54:24,safety check,0,,0
+d253583c2,2016-12-07 17:54:44,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+96d9aba0e,2016-12-07 18:34:25,minor optimization for divergence,0,,0
+0bb88f43c,2016-12-07 18:35:08,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+2dcae5bf2,2016-12-08 09:44:06,Resolve conflicts with master branch,0,,0
+065a36e9a,2016-12-08 10:46:12,Remove old num_util API use.,0,,0
+54d882fbe,2016-12-08 10:49:43,correct typo.,0,,0
+f011fde76,2016-12-08 10:58:49,remove vestigal code,0,,0
+df2730192,2016-12-08 11:36:51,rename single_values to quantities,0,,0
+f00bfe583,2016-12-08 11:42:36,Only root rank deletes files.,0,,0
+ce3cac1f3,2016-12-08 12:01:34,Clarifing and auto guessing for query.,0,,0
+20dded285,2016-12-08 12:18:47,reset test_analyze original logger to master version.,0,,0
+7aa1a5a5f,2016-12-08 13:18:44,let hdf5.log know that timestep is a scalar.,0,,0
+50e738e10,2016-12-08 18:25:13,adding whitespace after  ,0,,0
+81994d96f,2016-12-08 18:26:20,[] -> list(),0,,0
+ce9bc5d68,2016-12-08 18:30:00,python syntax cleanup.,0,,0
+9fb2663f1,2016-12-08 18:38:14,modify the analye_test.,0,,0
+2f27bceb0,2016-12-08 18:59:09,get the test running again.,0,,0
+d2b2f13fe,2016-12-08 19:29:10,Force users to pass a hoomd.hdf5.File instance to the logger. Defefring file safety to users.,0,,0
+48f6f1932,2016-12-09 10:02:32,Attempt to fix external plugin builds.,1,,0
+bfb5e8586,2016-12-09 11:17:19,Merged in fix-plugins (pull request #281),0,,1
+80bb73fbc,2016-12-09 11:24:22,optimize sphinx doc.,0,,0
+c7f3bc3f9,2016-12-09 12:01:21,autoformatted python code.,0,,0
+dcbb3ff59,2016-12-12 11:02:07,Label copy_cmake target outputs correctly,0,,0
+46144409d,2016-12-12 12:24:58,Use CUDA_COMPILE in unit tests,0,,0
+c132360b3,2016-12-12 14:09:29,Use consistent rng seed in test_angle_table,0,,0
+e2d829ddf,2016-12-12 14:42:21,Add a more thourough python level compute.thermo test,0,,0
+43658cd8e,2016-12-12 16:29:22,correcting typo.,0,,0
+711e57cc3,2016-12-12 17:49:47,Fixing comiplation warning.,1,,0
+eed674676,2016-12-12 22:40:32,only place depletants in lens-shaped overlap volumes,0,,0
+1698e9b79,2016-12-13 00:44:35,remove 2d error message,1,,0
+70604aead,2016-12-13 12:57:33,first attempt to fix faceted sphere,1,,1
+35b469ad0,2016-12-13 13:17:07,Correct python2 error in test_compute_thermo.py,1,,0
+5df135afe,2016-12-13 13:17:28,Run spheres_implicit longer to tighten error bars,1,,0
+aaa31fe66,2016-12-13 16:39:02,Move driver function definition to header to allow plugins to build external potentials,0,,0
+2c8a64da1,2016-12-13 18:07:50,do not add unnecessary vertices,0,,0
+db32f9544,2016-12-13 23:26:41,tentatively fix faceted sphere shape,1,,1
+0634909b9,2016-12-13 23:37:25,need to take into account intersection vertices,0,,0
+7335311b6,2016-12-14 00:37:58,another attempt at fixing the overlap check,1,,0
+25fc1ffbc,2016-12-14 00:43:12,fix comment,1,,0
+974ecc9ff,2016-12-14 01:00:32,fix sphere-plane-plane intersections,1,,1
+183edf594,2016-12-14 01:54:01,"Revert ""fix sphere-plane-plane intersections""",1,,0
+04af93768,2016-12-14 01:58:10,use tolerance to include all vertices,0,,0
+eb73fbe10,2016-12-14 08:44:12,Fix typo in docs,1,,0
+49963d481,2016-12-14 09:25:27,Add verify check when updating wall coefficients,0,,0
+0660ddfa6,2016-12-14 09:51:02,Unit test missing wall coefficients,0,,0
+37177b301,2016-12-14 10:22:04,Merged in mphoward/hoomd-blue/fix_ext_pot_plugins (pull request #283),0,,0
+cb4e7cba0,2016-12-14 10:22:30,Merged in mphoward/hoomd-blue/fix_wall_missing_types (pull request #284),0,,0
+713b1e906,2016-12-15 09:10:53,Merged in LudwigSchneider/hoomd-blue/flow (pull request #282),0,,0
+246d369f4,2016-12-15 11:37:12,Try to reduce memory of MPI PPPM test,0,,0
+c62a2fcb4,2016-12-15 11:40:13,Exclude spheres_implicit from GPU MPI tests,0,,0
+8f27318d6,2016-12-15 16:10:08,Make sure balance is ignored when MPI is available but only one rank is used,0,,0
+dff75d7cf,2016-12-15 16:13:51,update changelog,0,,0
+2175d5a3e,2016-12-16 08:50:01,Re-enable internal thermos,0,,0
+bc3a42a02,2016-12-16 09:33:28,Lengthen sphere_eos validation test,0,,0
+88c233acf,2016-12-16 09:42:04,Fix typo.,1,,0
+cac811e81,2016-12-16 14:08:49,Add PotentialExternalGPU.cuh to installation,0,,0
+48a7c4500,2016-12-16 14:35:44,Merge branch 'fix_missing_external_header',0,,0
+ca90bc87b,2016-12-16 14:49:46,Fix recompile in components,1,,1
+92a16efc9,2016-12-20 08:49:09,Merged in mphoward/hoomd-blue/fix_balancer (pull request #285),0,,0
+ff213f115,2016-12-20 08:49:19,Merged in multiple-nvt-alternate-fix (pull request #286),0,,1
+4218fe5f8,2016-12-20 08:49:27,Merged in mphoward/hoomd-blue/fix_missing_external_header (pull request #287),0,,0
+9acb15032,2016-12-20 08:49:38,Merged in mphoward/hoomd-blue/fix_recompile_components (pull request #288),0,,0
+cfadb250c,2016-12-20 14:28:32,Update change log,0,,0
+e63408adf,2016-12-21 12:43:20,"Revert ""Revert ""use quaternion rotations for OBBs""""",0,,0
+2cbefca06,2016-12-21 13:00:28,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+e55727779,2016-12-21 13:00:58,Merge branch 'improve_implicit_new_gpu_kernel' into fix_faceted_sphere,0,,0
+7fee39a42,2016-12-21 13:10:31,fix compiler warning,1,,0
+697e1c3f8,2016-12-21 13:10:53,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+4feb0194c,2016-12-21 13:11:14,Merge branch 'improve_implicit_new_gpu_kernel' into fix_faceted_sphere,0,,0
+adbbc7912,2016-12-21 16:42:49,add hull_only option to integrate.polyhedron(),0,,0
+1357fc368,2016-12-21 16:43:39,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+9f2117d5b,2016-12-21 16:43:57,Merge branch 'improve_implicit_new_gpu_kernel' into fix_faceted_sphere,0,,0
+19d5ea6ef,2016-12-22 11:26:49,Merge remote-tracking branch 'glotzer/maint',0,,0
+0bdc38d4f,2017-01-06 11:06:16,add mask to OBB to accelerate overlap checks for sphere unions,0,,0
+ffb539a49,2017-01-10 14:30:42,Add ninja build script to sublime text project,0,,0
+54bc87500,2017-01-11 09:20:05,Fix a bug where PPPM pressure was computed incorrectly,1,,1
+3b883c681,2017-01-11 09:20:26,Regression test to check PPPM pressure increases,0,,0
+ebd907f21,2017-01-11 09:21:24,Update change log,0,,0
+e761ee5cd,2017-01-11 12:46:08,Merged in fix-pppm-pressure (pull request #290),0,,1
+aa2f2dfdc,2017-01-11 12:50:39,Set release date for 2.1.2,0,,0
+a30e302ba,2017-01-11 12:51:16,Label version 2.1.2,0,,0
+a4d442bea,2017-01-11 13:21:15,Merge branch 'maint',0,,0
+d5e66fcb0,2017-01-11 13:30:17,Update copyright year,0,,0
+e26862d90,2017-01-12 12:53:33,implement sphere tree option for OBB tree,0,,0
+500bad25a,2017-01-12 15:03:01,Fixed some errors in the shape definitions provided by integrators,1,,0
+1c44a2b33,2017-01-12 15:21:32,fix sphere fitting,1,,1
+10fc20e78,2017-01-12 16:37:52,Fixed the year,1,,0
+5906dc958,2017-01-12 18:18:51,clarifying the error message.,1,,0
+4040ffbc7,2017-01-13 10:50:50,metal/pair.py fixed  add get_r_cut() function.,1,,0
+d788b8d66,2017-01-13 13:24:38,eam fixed,1,,0
+021938034,2017-01-13 13:37:41,reformat code in metal/,0,,0
+885ca930a,2017-01-13 16:27:15,comment fixed,1,,0
+bdb555213,2017-01-13 17:40:43,pairPotential to 1d  so all array are 1d after this commit,0,,0
+2c270fb5e,2017-01-14 16:25:26,"interpolation function added. NOT tested  NOT console parameter allowed. Array starts by ""new"" means interpolated array.",0,,0
+20670bc8c,2017-01-16 11:54:23,Merge tag 'v2.1.2',0,,0
+094c08230,2017-01-19 09:34:18,Merge remote-tracking branch 'glotzer/master',0,,0
+078e834a5,2017-01-19 09:38:41,"interpolation function added. tested. modified to fit non-integer ratio points. NOT console parameter allowed. Array starts by ""new"" means interpolated array.",0,,0
+2c9eae2bb,2017-01-19 18:57:25,interpolation function added. tested. modified to fit non-integer ratio points. console parameter allowed.,0,,0
+7a44d19ff,2017-01-21 11:00:51,refine and modify the comments  if ifinter=False  do not export potential  complete the documents.,0,,0
+f1b54b7fe,2017-01-27 12:24:51,Raise exception when period for updaters is set to 0,0,,0
+9192c5c0b,2017-01-27 12:58:05,Fix formatting in ChangeLog,1,,0
+402e98118,2017-01-27 15:35:49,Fix for systems with partial installs of MLK?? not sure why I see this on MacOS,1,,1
+67359bb79,2017-01-27 17:55:18,Merged in fix_get_type_shapes (pull request #291),0,,0
+0426ab5cc,2017-01-27 17:56:19,Merged in LudwigSchneider/hoomd-blue/matrix_logger (pull request #272),0,,0
+807af3287,2017-02-02 16:38:15,Merge remote-tracking branch 'origin/master' into pair_van_der_waals,0,,0
+fef6f6e83,2017-02-02 23:19:37,Added back in __my_shfl function for doubles. Added PotentialTersoff back to module,0,,0
+990023c04,2017-02-03 09:51:10,Fix multiple declaration,1,,1
+ff6ef3ad7,2017-02-03 14:33:16,Prevent usage on GPUs,0,,0
+7bacc7e3a,2017-02-03 19:10:00,Cleaned up some comments. Moved GPU check to CommunicatorGPU::exchangeGhosts,0,,0
+c633d6884,2017-02-03 19:12:43,Removed unnecessary buffer resizing. Removed accidental commit of swap file,0,,0
+4d2f56a7d,2017-02-03 19:13:17,gitignore vim swap files,0,,0
+42a8d3fa4,2017-02-04 09:56:29,Fixed broken unit test,1,,0
+3851d06d4,2017-02-07 09:17:17,Unit test to verify walltime stop exception,0,,0
+01e3c9808,2017-02-07 09:18:27,Fix walltime limit exception.,1,,1
+f5836e585,2017-02-07 09:22:38,Label version 2.1.3,0,,0
+52e6a8494,2017-02-10 11:26:56,fixing latex typo,1,,0
+b0641cd74,2017-02-13 10:31:25,Merge branch 'master' into hpmc_deep_copy,0,,0
+928948e3f,2017-02-17 15:37:12,Don't require scipy for DEM python tests,0,,0
+1de9c6fb5,2017-02-19 20:29:10,Constant torque working,0,,0
+f133e865f,2017-02-20 17:51:42,md.force classes now take optional torque inputs,0,,0
+d8e5e6b71,2017-02-21 16:31:41,fixed sphinx variable type,1,,0
+0405f639a,2017-02-21 20:26:42,Warn when initializing with different options,0,,0
+cc9b1629e,2017-02-21 20:34:37,Merge remote-tracking branch 'origin/master' into pair_van_der_waals,0,,0
+17305cd66,2017-02-21 20:43:31,Defer import messages to first context.initialize,0,,0
+2820ab6e9,2017-02-22 00:39:19,removed extra messages,0,,0
+1cc43cf64,2017-02-22 01:06:12,Merged in error_period_zero (pull request #292),0,,0
+60ea6d2b9,2017-02-22 01:09:59,Merged in LudwigSchneider/hoomd-blue/doxygen_fix (pull request #294),0,,0
+d12bfc279,2017-02-22 01:12:48,Merged in fix_dem_tests (pull request #295),0,,0
+c196fd662,2017-02-22 16:46:34,add unittest  but segFault error occurs  waiting for Josh's help.,1,,0
+009bb6b0f,2017-02-22 16:51:59,Broadcast DPD seed to all ranks.,0,,0
+d211cdd71,2017-02-23 11:41:35,make ghost layer w/rigid bodies only as wide as necessary,0,,0
+2f29759d1,2017-02-23 13:53:20,Merged in warn-different-context-args (pull request #296),0,,0
+5520362be,2017-02-23 15:18:31,support mpiexec -n 1 and better doc.,0,,0
+4171c1205,2017-02-23 22:54:08,Completed all TODO items  corrected sentence structure and spelling.,0,,0
+e45f9436c,2017-02-24 09:37:29,Fixed sphinx build errors,1,,0
+375515c88,2017-02-24 19:54:06,add changelog entry,0,,0
+142c5d518,2017-02-27 19:06:49,Merge branch 'defer-import-messages' into maint,0,,0
+3a4f67c61,2017-02-27 19:09:54,Merge branch 'maint',0,,0
+420165c6f,2017-02-27 19:33:58,Merged in LudwigSchneider/hoomd-blue/mpi_dpd (pull request #298),0,,0
+8ff47115d,2017-02-27 20:18:02,Merged in DocFixesBradley (pull request #299),0,,0
+b0bf9209f,2017-02-28 09:57:11,cherry picked from Issue227,0,,0
+05a3ed806,2017-02-28 10:27:22,I missed System.h changes in the cherry-pick,0,,0
+9e727c79b,2017-02-28 13:57:56,Merge branch 'master' into optimize_rigid_body_comm,0,,0
+049ab15ee,2017-02-28 16:36:12,Add aniso pair potential cuda header,0,,0
+48114c549,2017-03-01 12:17:32,Support triclinic boxes with rigid bodies,0,,0
+6232fe4ba,2017-03-01 12:19:30,add to changelog,0,,0
+52631372f,2017-03-01 13:56:30,Clarified documentation of orientation_link behaviour,0,,0
+27c32053b,2017-03-01 14:02:39,addressing comment regarding m_cur_tps,0,,0
+4712f5621,2017-03-01 14:27:11,adding variable to hold median tps,0,,0
+db6e1151d,2017-03-02 14:24:13,Add MPCD particle and system data structures and snapshots,0,,0
+b509a3068,2017-03-02 15:15:56,Merged in mphoward/hoomd-blue/add_aniso_header (pull request #304),0,,0
+8da3d0b5b,2017-03-02 15:22:10,Add particle communicators on the CPU and GPU,0,,0
+a39cae737,2017-03-03 08:01:56,Remove unneeded box shifting logic,0,,0
+b87ade71a,2017-03-03 08:41:16,Prefer cached vectors of requests to new/delete in loops,0,,0
+da6ecc4e1,2017-03-03 10:12:02,Fix type add for anisotropic pairs,1,,1
+142c46df1,2017-03-03 10:50:44,Fix integrate enable,1,,1
+f453b9dc9,2017-03-03 10:58:42,Add unit test for enable / disable,0,,0
+df56c7b4c,2017-03-03 11:28:18,Add next maint version to changelog for fix,1,,0
+71ac9f45c,2017-03-03 11:29:43,Add next maint version to changelog for fix,1,,0
+b4aaa443e,2017-03-03 11:54:15,Add MPCD cell list implementation,0,,0
+98ac19857,2017-03-03 13:21:30,Use cell list coverage box for communicator,0,,0
+72da416ce,2017-03-03 14:20:21,Add cell thermo computes and communication,0,,0
+d1a44eef9,2017-03-03 15:57:37,Merged in MedianTPS (pull request #303),0,,0
+1795058c7,2017-03-06 09:27:31,Merge glotzer/maint,0,,0
+6c1cbbdaf,2017-03-06 14:21:30,Merged in mphoward/hoomd-blue/fix-integrate-enable (pull request #310),0,,1
+34d056287,2017-03-06 14:30:31,Merged in mphoward/hoomd-blue/fix-aniso-type-change (pull request #309),0,,1
+bbe84af5c,2017-03-08 14:13:51,Add HPMC and DEM to citation notices,0,,0
+32baea28f,2017-03-08 14:41:49,Update change log,0,,0
+b67dea756,2017-03-09 09:17:05,Revise README,0,,0
+340a71d1f,2017-03-09 09:22:56,Tagging v2.1.4,0,,0
+c41883a2b,2017-03-09 10:02:47,Fix compile error on Mac,1,,1
+f62e79dbc,2017-03-09 10:03:22,Update Change log,0,,0
+45da7d07d,2017-03-09 10:04:40,Tagging v2.1.5,0,,0
+fe0d8c153,2017-03-09 18:53:04,Fix typo,1,,0
+db8d8dd99,2017-03-09 18:53:56,Merge branch 'maint',0,,0
+e800d4110,2017-03-09 19:06:10,Convince sphinx to build docs,0,,0
+b11d8df48,2017-03-09 20:19:06,Merge branch 'maint',0,,0
+6aaa32ef9,2017-03-09 20:19:58,Merge branch 'master' into optimize_rigid_body_comm,0,,0
+b6b302012,2017-03-09 20:21:59,Merge branch 'master' into rigid_support_triclinic,0,,0
+fdcab4918,2017-03-09 20:22:21,Fix Change Log,1,,1
+bf5815dd2,2017-03-09 20:32:10,Update change log and credits,0,,0
+010aef0f3,2017-03-10 00:40:25,Change policy on when ChangeLog.md should be updated. PR authors should propose ChangeLog entries in their PR description. The maintainer will update the change log on master or maint as appropriate. This policy will avoid some merge conflicts.,0,,0
+489373dba,2017-03-10 01:20:38,Merged in optimize_rigid_body_comm (pull request #300),0,,0
+d138b62a7,2017-03-10 01:23:45,Merged in rigid_support_triclinic (pull request #305),0,,0
+471c8414a,2017-03-10 01:26:57,Merged in set_torque (pull request #297),0,,0
+c6e14a4e9,2017-03-10 15:31:13,Made dump.getar.writeJSON work even when MPI is disabled,0,,0
+fc8d91e89,2017-03-10 15:40:20,Add a test for making sure writeJSON writes the correct output,0,,0
+727858a47,2017-03-11 16:59:40,Add documentation for hoomd.hpmc.util.tune,0,,0
+9e841e638,2017-03-14 11:42:17,Fix missing comment close,1,,1
+c0914f138,2017-03-14 13:18:52,Subscribe cell list to migration signal for embedded particles,0,,0
+21dfba849,2017-03-14 14:09:46,Fixed some build errors,1,,0
+7cb58ecbe,2017-03-14 14:18:05,Added additional cross-references to tune_npt,0,,0
+0d6f65fa5,2017-03-15 13:49:36,Only call communication when building cell list,0,,0
+42478a42c,2017-03-15 15:12:34,Add shells for integration methods,0,,0
+34be0b3f1,2017-03-15 15:51:28,Refactor system data to expose communicator and cell list,0,,0
+7a91698b7,2017-03-15 20:41:02,Add python interface to integrator,0,,0
+f5a08e235,2017-03-15 22:02:03,Add streaming method on the GPU,0,,0
+b34804c9f,2017-03-15 22:26:17,Add core unit testing for streaming,0,,0
+46906b1ac,2017-03-16 01:06:12,Fixed RNG seeding issues with the Langevin/Brownian integrators when MPI is enabled.,1,,0
+17b1b2393,2017-03-17 16:39:22,Fix profiling and misc setup bugs,1,,1
+9e5463bd2,2017-03-18 16:24:09,Fix const error in some MPI versions,1,,1
+6e27eb17c,2017-03-18 16:24:31,Merge branch 'mpcd-cell-list' into mpcd-cell-thermo,0,,0
+6f29eacf4,2017-03-18 16:24:45,Merge branch 'mpcd-cell-thermo' into mpcd-integrator,0,,0
+c4b5a3ad7,2017-03-18 19:49:34,Add SRD rotation rule on the CPU,0,,0
+eb7aa3dbe,2017-03-18 22:45:39,Implement SRD on the GPU,0,,0
+a0be33d0a,2017-03-19 11:51:18,initial changes  but not compiling,0,,0
+f997e9add,2017-03-19 12:50:50,Fix failing unit test,1,,1
+5c49a9f0b,2017-03-19 12:52:21,Remove unnecessary flag copy,0,,0
+14f50b7b4,2017-03-19 12:52:40,Remove profiler flags (for now),0,,0
+9f9f30e33,2017-03-19 22:22:25,more changes  still not compiling,0,,0
+7af31c833,2017-03-20 10:22:57,Fix wrapping bug for particles on multiple boundaries,1,,1
+27256efae,2017-03-20 15:05:55,Add core unit test for SRD collision,0,,0
+39b5c0bd0,2017-03-20 15:19:37,compiles,0,,0
+e8e710d68,2017-03-20 16:04:33,Add SRD unit tests and some docs,0,,0
+5e37678a6,2017-03-20 16:33:30,Set profiler on particle data,0,,0
+0ff4b5257,2017-03-20 20:00:09,working on things,0,,0
+5416530bb,2017-03-21 14:31:06,Add collision methods to sphinx docs,0,,0
+90c1c8f80,2017-03-21 16:29:53,added convex polyhedron union unit test,0,,0
+fe062b32b,2017-03-22 16:04:45,shape class name change,0,,0
+55d0ef5f0,2017-03-22 17:03:42,Add particle sorter on CPU,0,,0
+881eb3103,2017-03-23 12:40:34,Add python wrapper and shell for GPU sorter,0,,0
+3967e9886,2017-03-23 12:44:44,Remove embedded cub,0,,0
+52e664a19,2017-03-23 12:53:44,Add cub 1.6.4 as submodule,0,,0
+574965241,2017-03-23 12:57:51,Update include paths to new cub header,0,,0
+934598954,2017-03-23 13:23:45,Merge maint,0,,0
+59713b671,2017-03-23 14:25:39,Fix failing unit test,1,,1
+650e778bb,2017-03-23 14:37:17,Update cub path,0,,0
+9f3055bf8,2017-03-23 15:35:17,Add particle sorting on the GPU,0,,0
+ad801f040,2017-03-23 16:00:18,Add test for embedded particle to sorter,0,,0
+0007b1f98,2017-03-23 16:15:09,Add python level unit tests,0,,0
+e4e9601c7,2017-03-23 16:18:02,Add sphinx doc shells for sorter,0,,0
+3a2966e42,2017-03-23 18:12:57,Merged in tune_docs (pull request #314),0,,0
+c3dbcf16c,2017-03-23 19:01:07,Merged in mphoward/hoomd-blue/mpcd-data (pull request #307),0,,0
+33f0a858d,2017-03-24 09:10:40,Return a null pointer for domain decomposition in non-MPI builds,0,,0
+d4a0aa7e5,2017-03-24 09:11:54,Merge branch 'mpcd-fix-nompi' into mpcd-particle-comm,0,,1
+a07de2400,2017-03-24 11:41:24,Add missing doxygen comments for Sorter,0,,0
+0c43b23b3,2017-03-24 13:01:55,Merged in fix_getar_writejson_mpi (pull request #313),0,,0
+fc0cdd4fe,2017-03-24 13:12:25,Merged in alexchunha/hoomd-blue/fix_langevin_seed_mpi (pull request #315),0,,0
+0f901c64b,2017-03-24 13:30:26,Merged in mphoward/hoomd-blue/mpcd-particle-comm (pull request #308),0,,0
+e37d0b31d,2017-03-24 13:40:05,Prepend MPCD to sort profiler,0,,0
+68bcd94ea,2017-03-24 20:07:48,Simplify send/receive buffers to eliminate extra copies,0,,0
+04d6e2b14,2017-03-24 21:11:29,Only initialize once,0,,0
+dd6ba2e77,2017-03-24 21:36:52,Clean up profiling,0,,0
+f43bb6a31,2017-03-25 17:03:22,Only use CUDA event timings to profile GPU paths,0,,0
+f20f7793b,2017-03-25 17:10:50,Optimize calls when there is only 1 neighbor,0,,0
+78568aae3,2017-03-26 13:03:45,Merge branch 'master' into sphere_tree,0,,0
+acaa81732,2017-03-28 14:27:16,attempt to save registers in convex polyhedron overlap check,0,,0
+b4b221851,2017-03-28 14:27:16,some attempt at saving registers,0,,0
+924ecf2e5,2017-03-28 15:15:40,Merge branch 'master' into hpmc_deep_copy,0,,0
+b338cb7ff,2017-03-28 15:30:59,Merge branch 'hpmc_deep_copy' into triangulated_polyhedron,0,,0
+d5aaa766f,2017-03-28 15:41:11,Merge branch 'triangulated_polyhedron' into improve_implicit_new_gpu_kernel,0,,0
+e3c5d5011,2017-03-28 15:42:20,remove spurious file,0,,0
+883f6f8b0,2017-03-28 15:43:02,Merge branch 'improve_implicit_new_gpu_kernel' into fix_faceted_sphere,0,,0
+542b0b3e5,2017-03-28 15:45:45,Merge branch 'fix_faceted_sphere' into sphere_tree,0,,0
+5b86eea90,2017-03-28 16:08:48,integrate.polyhedron(): enable bitwise mask for facet-facet overlap checks,0,,0
+5d5cc0a2b,2017-03-28 16:28:16,implement get_type_shapes() for polyhedron shape,0,,0
+86d5fdd48,2017-03-28 16:59:21,make get_type_shapes() return per-type dictionary,0,,0
+2615d6fca,2017-03-29 09:33:44,Use CUDA-aware MPI when available in cell comm,0,,0
+c00d28ce2,2017-03-29 14:02:33,Add cell list size change signal,0,,0
+7122220d0,2017-03-29 14:39:51,Shut up _XOPEN_SOURCE redefine warnings by getting python in first,0,,0
+d3de67058,2017-03-30 12:49:15,Update change log,0,,0
+a70193972,2017-03-30 13:15:43,Merge branch 'maint',0,,0
+aaf854116,2017-03-30 14:41:28,Merged in hpmc_deep_copy (pull request #264),0,,0
+4a2976d8b,2017-03-30 14:48:10,Merged in mphoward/hoomd-blue/cub-submodule (pull request #318),0,,0
+cc9c21eb9,2017-04-03 15:29:44,changed max number of union members to 32,0,,0
+310e17bb0,2017-04-03 20:09:59,Merge remote-tracking branch 'origin/master' into pair_van_der_waals,0,,0
+133c55698,2017-04-04 12:32:05,derivativeEmbeddingFunction fixed  single_precision flag does not need.,1,,0
+047187a92,2017-04-04 13:47:02,have no idea how to do linear interpolation.,0,,0
+738c54edd,2017-04-04 19:00:31,fixed conflict in ChangeLog,1,,0
+1bf3b5569,2017-04-04 20:09:15,fixed merge conflicts,1,,0
+48cfa4248,2017-04-04 20:25:19,compiles,0,,0
+5fa5677ab,2017-04-05 17:21:47,Fixed comments on pull requests. Removed all instantiations of MPI_Request vectors inside loops.,1,,0
+d5565edbd,2017-04-06 15:52:48,Use std::isnan in CPU code,0,,0
+f3165395e,2017-04-06 15:54:24,Only run tests on first partition,0,,0
+7f46903ba,2017-04-06 16:03:33,segfault issue,0,,0
+951ce8037,2017-04-06 16:26:30,Merge branch 'sphere_tree' of https://bitbucket.org/glotzer/hoomd-blue into convexpolyhedron-union-merge,0,,0
+ed8f45b83,2017-04-06 16:49:57,compiles and seems to work,0,,0
+59f182159,2017-04-06 16:50:23,whoops  need the actual module file,0,,0
+ad11f1911,2017-04-06 19:00:31,trying to solve mysterious segfault issue,0,,0
+3beb5aed9,2017-04-07 00:02:01,fix memory management,1,,1
+44cc55d86,2017-04-07 00:02:01,fix memory management,1,,1
+8f84189e2,2017-04-07 00:02:01,fix memory management,1,,1
+16f6038c8,2017-04-07 08:41:49,GPUArray rewritten EAMForceCompute CPU,0,,0
+6c4b445c7,2017-04-07 17:38:51,GPUArray rewritten GPU part.,0,,0
+b087b1dee,2017-04-08 13:21:49,Support double precision.,0,,0
+0f222afc2,2017-04-08 16:11:58,clean CPU function,0,,0
+36dbd725e,2017-04-08 17:16:45,clean GPU function,0,,0
+739a1e1af,2017-04-08 18:52:56,fix readin double conversion,1,,1
+0cf413279,2017-04-09 10:12:37,fix readin double conversion  double to Scalar,1,,1
+fa816ea4e,2017-04-09 13:06:22,Scalar4 to record potential,0,,0
+25e0b5359,2017-04-09 21:10:04,Merge branch 'maint',0,,0
+7a154497b,2017-04-10 09:56:04,Add extra profiling and minor optimizations to comm flags,0,,0
+104293059,2017-04-10 10:08:31,Only run communicator test in validation,0,,0
+da3d2ef7c,2017-04-10 10:31:57,Only allow one round of particle communication,0,,0
+655118a2c,2017-04-10 10:42:26,Cleanup comm flags on GPU,0,,0
+5c622c068,2017-04-10 11:13:13,Check for overdecomposition of simulation box,0,,0
+c6a4d8e98,2017-04-10 11:23:31,Use an explicitly cached buffer,0,,0
+c0f27a51b,2017-04-10 11:58:37,fix failing polyhedron unit test,1,,1
+bbbefdfa0,2017-04-10 12:08:27,shortened unit test,0,,0
+381b8f149,2017-04-10 12:27:58,provide option for checking OBBs as AABBs,0,,0
+18642e17d,2017-04-10 13:06:48,Use cub for packing particles,0,,0
+dce3fc832,2017-04-10 20:02:12,implementation for gsd_state for hpmc.,0,,0
+f5fd7b2e8,2017-04-10 20:26:53,store reference to reader,0,,0
+bd6d32d80,2017-04-10 20:28:25,fix the creation of the shape parameters for convexpolyhedra,1,,1
+0d6e475ee,2017-04-10 20:28:58,cleanup after tests better,0,,0
+cb91ae407,2017-04-11 10:23:00,Merge glotzer/mpcd-working,0,,0
+971ee14ac,2017-04-11 12:49:22,adding shared signals to analyzers,0,,0
+6b1b4b28d,2017-04-11 12:49:44,adding shared signals to computes,0,,0
+c55ce17f8,2017-04-11 12:51:04,removing comments we will not support those cases.,0,,0
+bced0b3fc,2017-04-11 12:51:25,removed testing code,0,,0
+4f85f0b7a,2017-04-11 12:52:40,reworked general writes to be MPI safe,0,,0
+cf5fc118d,2017-04-11 12:58:17,write stepsizes in state information,0,,0
+ac5d33835,2017-04-11 13:43:43,updated gsd schema,0,,0
+f6d565a7f,2017-04-11 13:59:48,Merged in mphoward/hoomd-blue/mpcd-cell-list (pull request #311),0,,0
+148e5614e,2017-04-11 14:20:33,bug fix in naming scheme,1,,1
+ea3957568,2017-04-11 14:20:56,added testing for stepsize parameters,0,,0
+7a75e1a2c,2017-04-11 14:45:41,Bump hoomd schema version,0,,0
+a9f78f92f,2017-04-11 15:37:41,put gsd state connect/restore methods into the base classes. should reduce the amount of duplicate code in the future,0,,0
+bd8299bed,2017-04-11 15:38:09,Merge branch 'gsd_state_pr' of bitbucket.org:glotzer/hoomd-blue into gsd_state_pr,0,,0
+5780f1300,2017-04-11 15:52:05,a littler cleaner.,0,,0
+313972f5c,2017-04-11 18:37:56,everything is in GPUArray,0,,0
+bf7189bf2,2017-04-11 20:01:39,Fix compile errors when ENABLE_MPI=off,1,,1
+0d333ee40,2017-04-11 20:43:17,Add user-level documentation,0,,0
+a4180d582,2017-04-12 09:41:15,Do-nothing commit to ping jenkins,0,,0
+b39847e54,2017-04-12 09:43:57,Add square_density to the doc index,0,,0
+24d257954,2017-04-12 09:49:41,Update change log,0,,0

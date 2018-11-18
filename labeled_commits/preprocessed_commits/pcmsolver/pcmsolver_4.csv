@@ -1,0 +1,273 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+c6e7d3a2,2016-02-07 14:59:14,Update CHANGELOG.md,0,,0
+9ee0d147,2016-02-07 15:38:17,Update CHANGELOG.md and citation snippet,0,,0
+6eed8626,2016-02-12 09:58:41,Push CMake requirements up to 2.8.9 and fix issue with list expansion,1,,1
+2278e3d5,2016-02-12 11:41:10,Start reorganizing includes,0,,0
+91caad0f,2016-02-22 15:35:20,Atom in now a POD,0,,0
+4058072d,2016-02-22 15:35:52,Adapt for changes in Atom object,0,,0
+a1277718,2016-02-22 17:35:58,Add a test to make sure that the invalid radius check works,0,,0
+0404ec12,2016-02-23 00:34:00,Error handling now just kills execution  without throwing exceptions,1,,0
+bd35f78a,2016-02-23 00:42:33,Update CHANGELOG.md,0,,0
+5783bb22,2016-02-23 16:41:10,Silence warnings from PEDRA,0,,0
+e45094c8,2016-02-24 00:42:30,Reorganize includes,0,,0
+aee88f58,2016-02-24 15:58:31,Fix race condition when building,1,,1
+72f140c2,2016-03-02 15:46:02,Copu getkw.py and pyparsing.py to build directory,0,,0
+bc6640b6,2016-03-02 15:59:39,Show two different ways of definining labels,0,,0
+0cea5faf,2016-03-03 09:30:02,Solvent is now a POD,0,,0
+6923a5d9,2016-03-03 11:37:45,Remove surface function class.,0,,0
+520ad9e5,2016-03-05 09:50:14,Add some custom overloads to cnpy functions,0,,0
+5f8ff6af,2016-03-05 12:31:46,Silence some -Wsign-compare warnings,0,,0
+29f8b5d2,2016-03-08 11:04:43,Modify way lenght conversions are handled.,0,,0
+440fdc79,2016-03-09 00:40:48,A better printer for GePolCavity + address feature request #13.,0,,0
+0f0f86ea,2016-03-09 09:07:07,Move one header file from utils directory,0,,0
+368aff76,2016-03-09 10:16:41,Sphere is now a POD,0,,0
+c8907d22,2016-03-09 12:02:02,Users can now select the scaling factor for the diagonal of the collocation matrices,0,,0
+29a2785e,2016-03-10 09:43:55,Add 32bit known issue to change log,0,,0
+5d6b3066,2016-03-10 11:55:02,Fixed default template parameter problem for non C++11 compilers,1,,1
+db5b73a3,2016-03-10 18:58:33,Add more timing checkpoints to the interface,0,,0
+f705ceef,2016-03-10 19:43:54,Update README.md and CHANGELOG.md,0,,0
+0ce06177,2016-03-11 13:06:45,Merge branch 'release/1.x',0,,0
+ecb14ad1,2016-03-11 13:34:41,Added cavity constructor from single sphere,0,,0
+2b56ddfd,2016-03-22 10:39:06,Add various timing checkpoints. The standalone executable doesn't work properly with an explicitly speficied cavity,0,,0
+af4387db,2016-03-22 15:04:45,Copy reference files to tests directories,0,,0
+b332a027,2016-03-22 15:06:18,Merge branch 'standalone',0,,0
+c26ba70a,2016-03-22 15:30:54,Fraction input tests,0,,0
+c1ccdb9a,2016-03-22 20:45:57,Amend list of sources for fractined input tests,0,,0
+cc7ddd02,2016-03-24 15:48:19,Reduce verbosity of Green's functions instantiation in tests,0,,0
+fb69bbd1,2016-04-01 09:22:04,Merge branch 'master' into release/1.Y,0,,0
+f00a6508,2016-04-05 13:48:36,Add periodic table with available radii,0,,0
+d49bc4ba,2016-04-06 14:42:21,Change stop -1 to stop in Fortran host tests,0,,0
+810ebb9c,2016-04-08 10:27:47,Update docs. Added periodic tables with available radii,0,,0
+aeda5f45,2016-04-08 10:30:21,Better error message,1,,0
+b34928f9,2016-04-08 10:47:09,Fix warning in Sphinx build up,1,,0
+f189128b,2016-04-09 22:14:40,Remove IPO,0,,0
+f7861b54,2016-04-09 22:16:45,Adjust a source line in .travis.yml,0,,0
+3d4997f8,2016-04-09 22:30:15,Merge branch 'master' into release/1.Y,0,,0
+7ef78c87,2016-04-09 22:34:56,Update CHANGELOG.md for patch,1,,0
+3d0ab8f9,2016-04-09 23:37:20,Include fstream in MathUtils.hpp,0,,0
+993056ca,2016-04-09 23:37:20,Include fstream in MathUtils.hpp,0,,0
+4ff2435d,2016-04-13 00:20:33,Track figures with available radii,0,,0
+f4e5ca3a,2016-04-13 00:27:31,Merge branch 'master' into release/1.Y,0,,0
+27abea90,2016-04-27 09:08:28,Update publications list,0,,0
+0effe61b,2016-05-03 15:08:17,Fix Fortran bindings,1,,0
+f139385e,2016-05-31 12:38:42,Update CHANGELOG.md for v1.1.2,0,,0
+661eeee2,2016-05-31 15:02:14,Fix a typo in README and CHANGELOG,1,,0
+88577992,2016-06-30 17:35:56,Two preliminary fixes for the generation of large cavities.,1,,0
+a8b52f5a,2016-07-03 12:38:26,Switch to robust LDLt for CPCM.,0,,0
+4b142ea0,2016-07-03 15:59:48,Do not calculate inverse of T explicitly in IEFSolver,0,,0
+c35b4378,2016-07-03 21:15:04,Form T^-1R explicitly,0,,0
+02bf6a93,2016-07-03 21:33:44,Update CHANGELOG.md,0,,0
+491780e3,2016-07-03 21:50:49,Update README.md and CHANGELOG.md for v1.1.3 release,0,,0
+f16aeb2b,2016-07-03 22:00:02,Remove an item from CHANGELOG.md,0,,0
+bc936be2,2016-07-05 12:37:14,Symmetrize S matrix in CPCMSolver,0,,0
+fb141c24,2016-07-05 13:10:39,Revert to storing T and R explicitly instead of computing T^-1R,0,,0
+671e7585,2016-07-05 15:53:44,Solve two linear systems of equations to get ASC when IEFPCM is used,0,,0
+09e42df0,2016-07-05 16:15:49,Bump version and add README.md,0,,0
+34d2fea4,2016-07-05 16:24:22,Complete version bump in CHANGELOG.md,0,,0
+7261d7e7,2016-07-13 09:00:49,Initial work on Allinger radii,0,,0
+01debb4e,2016-07-16 10:46:12,Added data for Allinger's MM3 set of radii,0,,0
+f0fdbe9f,2016-07-16 10:55:06,Update the changelog,0,,0
+0a275097,2016-07-18 10:02:04,Prepare for v1.1.5,0,,0
+dc9adcde,2016-07-18 10:08:51,Write docs. Periodic table with radii still missing,0,,0
+b3f3b6f8,2016-07-19 00:26:17,Finish up documentation,0,,0
+250976c6,2016-07-19 00:31:29,Update copyright notices,0,,0
+ac92a355,2016-07-19 00:34:18,Adjust v1.1.5 release date,0,,0
+2d7f7a98,2016-07-19 00:35:58,Update README.md,0,,0
+e40e8124,2016-07-19 11:13:09,Fix radii print out + add two new solvents,1,,1
+7d2f705e,2016-07-19 11:24:57,Fix links in CHANGELOG.md,1,,0
+86d96f1d,2016-07-19 12:25:50,Small fix for input parameters printout,1,,1
+b4ae739c,2016-07-28 11:40:06,Use LLt Cholesky instead of LDLt,0,,0
+35a16b5e,2016-07-31 10:39:28,Fix some inconsistencies and a potential memory leak,1,,1
+6b5b6294,2016-09-15 12:00:29,Add an additional molecule (H2O) for testing,0,,0
+7e421ac7,2016-09-20 19:25:17,Update CHANGELOG.md,0,,0
+9fc1d646,2016-09-20 19:31:58,Rectify LICENSE file,0,,0
+7f163db9,2016-09-20 19:40:45,Bump version in README.md,0,,0
+df7107fc,2016-10-17 11:35:12,Add .mailmap file and pre-commit hooks,0,,0
+ea3323c8,2016-10-18 17:49:34,Added two preprocessor macros: UNUSED and UNUSED_FUNCTION,0,,0
+9fcd242e,2016-10-18 17:50:08,Temporarily disable license header pre-commit hook,0,,0
+17121787,2016-10-18 17:51:02,Refactor Green's functions  boundary integral operators and solvers,0,,0
+340dd65e,2016-11-04 13:04:37,Re-enable license maintainer pre-commit hook,0,,0
+227711e5,2016-11-10 16:35:21,Update Eigen to 3.3.0,0,,0
+28f567f5,2016-11-10 19:21:37,Fix format of template >> Should be > > for C++03 compliance,1,,1
+2ad0a666,2016-11-11 16:33:35,Fix the PCMSOLVER_ERROR macro. It now prints out a more informative error message.,1,,1
+0f00e854,2016-11-14 22:54:02,Exclude external subdirectory from clang-format pre-commit hook,0,,0
+14cee771,2016-11-15 09:41:33,Give up on XCode 6.4 on Travis,0,,0
+c0477d86,2016-11-15 09:42:27,Update README.md,0,,0
+12921a22,2016-11-15 16:08:02,Switch to newer version of Autocmake (YAML based),0,,0
+9a442b42,2016-11-15 18:48:45,Add C++11/C++14/C++17 compatibility checks,0,,0
+a17a2049,2016-11-16 09:45:42,"Revert ""Add C++11/C++14/C++17 compatibility checks""",0,,0
+93970269,2016-11-16 16:07:31,Add CMake module to extract Git info,0,,0
+2a428436,2016-11-17 15:45:03,Impose GNU standard installation directories and maintenance for Travis CI,0,,0
+ec750af2,2016-11-22 14:53:36,Revamping builds on AppVeyor CI (Windows),0,,0
+1988cb52,2016-11-23 09:46:02,Travis CI: OS X builds,0,,0
+f95cc641,2016-11-24 17:31:35,Host writer function is passed as a function pointer,0,,0
+d9dd6a63,2016-11-26 12:14:50,Fix bug in Eigen to NumPy functions (row major vs. col major confusion),1,,1
+dfd7fd20,2016-11-27 13:39:51,Fix visibility header,1,,0
+0bbc04b5,2016-11-27 13:51:10,Allowed failures on Travis CI and license maintainer script,0,,0
+02ea9021,2016-12-01 17:33:52,Update README.md and CHANGELOG.md,0,,0
+5b46918e,2016-12-01 17:55:53,Add binary and png in .gitattributes,0,,0
+f451faeb,2016-12-01 18:20:02,Additional attributes in .gitattributes do not interfece with the license maintainer,0,,0
+3d9f11b3,2016-12-01 22:26:04,Update README.md,0,,0
+0d055589,2016-12-01 22:40:38,Update CHANGELOG.md and README.md,0,,0
+88979cbc,2016-12-01 22:40:38,Bump version to 1.1.7,0,,0
+af1cc0b7,2016-12-01 23:18:16,Bump to version 1.1.7,0,,0
+31d4286c,2016-12-01 23:32:42,Merge branch 'release/1.Y',0,,0
+4a52e576,2016-12-01 23:34:04,Magnum CI submissions to dashboard,0,,0
+31ca3005,2016-12-02 15:13:29,Deploy Magnum CI build to the dashboard,0,,0
+e1d35795,2016-12-15 16:46:29,Fix generation of faulty static library,1,,1
+18649521,2017-02-06 19:12:41,Bump version to 1.1.8 [ci skip],0,,0
+edcaf9d2,2017-02-09 15:28:01,Fix CPCM regression and Factory initialization,1,,1
+cd7d8819,2017-02-09 15:28:28,Merge branch 'release/1.Y',0,,0
+376d2b64,2017-02-13 10:50:49,Merge branch 'master' of gitlab.com:PCMSolver/pcmsolver,0,,0
+d83318f1,2017-02-15 04:49:30,Modifications to export PCMSolver as a proper CMake target (#38),0,,0
+fb6ff160,2017-02-16 17:37:42,Fix code bloat in Factory Method implementation and usage,1,,1
+5080ffe1,2017-02-16 18:24:09,Reduce build times when modifying Factory.hpp,0,,0
+1cfd2182,2017-02-16 19:16:57,Update Eigen to 3.3.2,0,,0
+5d7ac755,2017-02-16 19:53:56,Bump version to 1.1.9,0,,0
+cc3c7fb6,2017-02-17 14:45:44,Update cloc.pl script,0,,0
+12210404,2017-02-23 15:51:14,Simplify internal structure of Meddle and Input objects,0,,0
+d8adfbb4,2017-03-15 09:48:57,Add templates for issues and merge requests on GitLab,0,,0
+303dd253,2017-03-15 10:19:35,Add support for GitLab CI,0,,0
+46b346da,2017-03-21 14:54:08,[Backport from ReSpect] Fix initialization of explicit solvent from host,1,,1
+3d092a65,2017-03-27 04:55:59,export zlib dependency for static lib (#60),0,,0
+a5e17c94,2017-03-27 10:57:32,Merge branch 'master' into release/1.Y,0,,0
+5a5f9c31,2017-03-27 11:18:34,Bump version to 1.1.10,0,,0
+cfa578b9,2017-04-07 09:37:35,Remove gitlab stuff (#64),0,,0
+411e9358,2017-04-08 11:12:51,Save also vertices and arcs when saving cavity to file,0,,0
+32e1b8cb,2017-04-08 18:13:00,Add Python script to plot cavity from .npz file,0,,0
+0888a2ee,2017-04-08 19:39:41,Use PRIVATE ZLIB::ZLIB instead of ${ZLIB_LIBRARIES} everywhere,0,,0
+7b16c4e9,2017-04-09 15:13:00,Investigate Travis CI failures,0,,0
+653e92fc,2017-04-11 09:43:19,[Backport from ReSpect] Fix Fortran API functions for string passing,1,,1
+bdb27830,2017-04-11 12:28:37,Fix inconsistency betwen NumPy surface function save and load functions,1,,1
+999281be,2017-04-11 18:09:33,Fix erroneous loop construct in loadCavity,1,,1
+50dab856,2017-04-11 18:09:33,Fix erroneous loop construct in loadCavity,1,,1
+cc7abb50,2017-04-21 10:39:41,Merge remote-tracking branch 'upstream/release/1.Y' into release/1.Y,0,,0
+af4df2a1,2017-04-21 13:08:28,Classical multipolar charge distributions from input (#74),0,,0
+f3fd8f93,2017-04-22 13:37:08,Merge remote-tracking branch 'upstream/release/1.Y' into release/1.Y,0,,0
+2ddebb12,2017-04-28 22:27:56,rm summary.cmake,0,,0
+12d07df3,2017-04-28 22:52:34,skip three unsupported compiler flags if g++ is below 5.1  fixes #76,1,,0
+7b528c29,2017-06-25 12:27:01,Merge pull request #71 from robertodr/fix-fortran-api,0,,1
+b541a910,2017-07-05 10:06:27,Prune Travis CI build menu (#82),0,,0
+6c4eb6b9,2017-08-09 16:19:18,Trim and uppercase strings w/o Boost,0,,0
+09141a54,2017-08-09 21:45:47,Switch to Ubuntu Trusty Linux image on Travis CI (#85),0,,0
+6af52370,2017-08-17 18:36:15,Forward stdout and stderr from Python to terminal,0,,0
+b2f42b26,2017-08-19 18:09:23,Use #pragma once instead of preprocessor guards (#93),0,,0
+40cc52df,2017-08-24 18:14:29,Add Danger.Systems integration to the project (#73),0,,0
+38d964c5,2017-08-25 23:17:10,Fix uppercasing of input (#95),1,,0
+faf40d43,2017-08-25 23:17:10,PCMSolver can be built with Ninja,0,,0
+3e6c5910,2017-08-26 13:48:20,Use labelling to dispatch Green's functions,0,,0
+e139533b,2017-10-19 02:00:04,Fix read-in of old .npz files,1,,0
+ecb669ab,2017-10-19 11:18:14,Merge pull request #98 from robertodr/build-with-ninja,0,,1
+7ca96a62,2017-10-19 17:59:41,Merge pull request #96 from robertodr/restart-cavity,0,,1
+58d92356,2017-10-19 19:29:58,Format sources using clang-format and YAPF,0,,0
+045495c2,2017-10-20 09:20:40,Merge pull request #99 from robertodr/format-code,0,,1
+3b64e098,2017-10-24 09:20:29,"Removed error in ""code-block"" directive",1,,0
+e8f787aa,2017-10-25 22:31:10,Bump version to 1.1.11,0,,0
+3b6b8059,2017-10-27 01:06:42,Add spherical sharp  real Green's function,0,,0
+e647fcf0,2017-11-23 00:07:47,Clean up  MPL almost completely out,0,,0
+17dc4ba0,2017-11-23 18:09:33,Further clean-up  MPL fully out,0,,0
+84cb416d,2017-11-23 18:10:10,License header added to utils/QuadratureRules.cpp,0,,0
+d18df18b,2017-11-23 18:15:58,Remove unused headers,0,,0
+96e1ba20,2017-11-23 18:29:05,Fix comments from @MinazoBot,1,,0
+133ddd35,2017-11-23 19:20:34,Clean up input from unreleased functionality,0,,0
+cb93e172,2017-11-25 18:37:52,Remove use of boost::math::sign,0,,0
+a36d1724,2017-11-25 18:53:51,Provide workaround for erf and Legendre,0,,0
+37d83afa,2017-11-25 18:54:43,Update .gitattributes,0,,0
+e72d144d,2017-11-25 18:54:43,Update .gitattributes,0,,0
+3c2986e4,2017-11-25 19:00:47,Use std::map instead of flat_map,0,,0
+66285ed5,2017-11-25 19:16:53,Implement BOOST_FOREACH loops in C++11,0,,0
+5fdca79f,2017-11-25 22:00:34,Do not use Boost.Format,0,,0
+09538e7e,2017-11-25 22:26:18,Fixed the readthedocs build.,1,,0
+de19f34a,2017-11-25 22:36:42,Simplify .travis.yml and get rid of Conda,0,,0
+529e4438,2017-11-26 16:01:03,Update CHANGELOG.md,0,,0
+311c656d,2017-11-26 18:47:54,Update Catch to v1.1.10,0,,0
+ef08f8af,2017-11-26 20:00:12,Update README.md,0,,0
+9253d9a6,2017-11-27 12:01:49,Fix docstrings in dielectric_profile [ci skip],1,,1
+c96b734e,2017-11-27 12:04:17,Use Xcode 8gm,0,,0
+9dea80cc,2017-11-27 13:05:41,Allow use of membrane profile,0,,0
+c13c3f69,2017-11-27 15:10:22,Fix use of enable_if,1,,1
+e20bf8b6,2017-11-27 17:28:35,Update default.nix and .envrc (#104),0,,0
+da8cdc07,2017-11-27 21:28:46,Remove boost::variant and boost::any,0,,0
+3006581d,2017-11-28 11:09:28,Devirtualize two functions,0,,0
+60f72164,2017-12-01 15:13:40,Drop GCC build on Mac,0,,0
+20a89d15,2017-12-02 15:07:05,Introduce pcmsolver/__init__.py  fixes #40,1,,0
+509af08f,2017-12-02 15:11:32,Add spaces to make the code easier to read,0,,0
+174006cd,2017-12-02 21:20:23,Document change in changelog,0,,0
+673b768f,2017-12-08 16:13:45,Add stub of in-house RK4 solver [ci skip],0,,0
+23b7edda,2017-12-27 17:03:39,Add a string-translation function in Fortran API,0,,0
+d71149c2,2017-12-27 18:03:05,Remove FortranCUtils.{hpp cpp},0,,0
+6a521557,2017-12-27 18:12:12,Update Autocmake,0,,0
+90eddb0d,2017-12-28 09:24:56,Update .gitattributes,0,,0
+4b7ff9e0,2017-12-28 13:20:04,Indent CMakeLists.txt for easier diffs,0,,0
+fdcfd415,2017-12-28 14:51:21,Fix licensing in Legendre.hpp,1,,0
+172e7a20,2017-12-28 14:59:11,RungeKutta4 class not ready for consumption,0,,0
+bc78fc17,2018-01-10 13:12:33,Fix Python 3 issue writing out uppercased input,1,,1
+c8bebf0a,2018-01-15 17:18:36,Make plot_cavity.py Python 3 compatible,0,,0
+c6466c96,2018-01-18 11:54:09,Remove re-declaration of operator<< for Sphere (#114),0,,0
+5d067e79,2018-01-18 18:00:54,Add pcmsolver_new_v1112 API function,0,,0
+ec743a81,2018-01-18 20:08:36,Remove Mac builds on Travis CI,0,,0
+cc8e3c9b,2018-01-18 20:44:56,Update license year in license headers,0,,0
+d9ee9348,2018-01-18 22:36:04,Update license header in plot_cavity.py,0,,0
+1df85471,2018-01-20 13:36:12,Update docs and version bump,0,,0
+8549bb18,2018-01-20 13:55:48,Update CHANGELOG.md,0,,0
+d4f274f0,2018-01-20 14:05:45,Update Zenodo DOI in README.md,0,,0
+3ce437c4,2018-01-31 12:38:16,Fix visibility of symbols and RPATH,1,,0
+9295432e,2018-02-06 09:47:48,Roberto: fixed osx-error,1,,1
+7d44d24c,2018-02-06 13:12:04,"Replace ""warning"" with ""note"" in documentation",0,,0
+b066ea2a,2018-02-07 11:13:21,Restore code coverage,0,,0
+4dfac304,2018-02-07 13:09:01,Fix MACOSX_RPATH (again),1,,0
+730cce26,2018-02-08 10:37:37,Added phd thesis and openrsp article to publ.,0,,0
+c8462f59,2018-02-08 11:44:57,one more art. to pub. list,0,,0
+a3c305c3,2018-02-19 13:56:12,rm obsolete doc about building doc locally,0,,0
+32a568b5,2018-02-19 15:45:27,fixed regex for finding version num,1,,1
+adf020d9,2018-02-19 15:45:57,added pcmsolver programs,0,,0
+3ff47dd0,2018-02-19 15:48:27,more articles and talks added to docs,0,,0
+7ea23ad5,2018-02-20 10:43:26,Update conf.py,0,,0
+fdcdc6f7,2018-02-20 12:01:51,Added yapf to requirements.txt and Pipfile.lock,0,,0
+96a0015d,2018-02-20 14:35:25,pipenv install/lock with python36,0,,0
+c562393b,2018-02-20 21:51:43,Update requirements.txt  Pipfile and Pipfile.lock,0,,0
+81959832,2018-02-27 17:16:38,Fix bug and improve ODE integration of the spherical diffuse Green's function (#109),1,,1
+90ef546a,2018-02-28 10:25:46,Fixes for installation (#121),1,,1
+022f7614,2018-02-28 18:00:41,Fix versioning regex (#128),1,,1
+9a8c391c,2018-03-02 09:10:51,Bump version to 1.2.0-rc1,0,,0
+9c9a35e2,2018-03-05 10:54:02,Add more tests for the spherical diffuse interface,0,,0
+5be1a8cd,2018-03-05 11:14:56,Implement S and D diagonal matrix elements,0,,0
+8efe846b,2018-03-05 13:39:38,Increase timeout for testing on Travis,0,,0
+4dfc4611,2018-03-05 17:57:05,List perf and flameGraph in default.nix,0,,0
+03b2ff43,2018-03-05 21:26:26,Document spherical sharp,0,,0
+fc0d6246,2018-03-06 11:48:01,Update CHANGELOG.md,0,,0
+3ff20c98,2018-03-06 20:11:55,Add CMake files to find gperftools,0,,0
+ffd4497d,2018-03-07 09:45:02,Rewrite macro to add Catch test  take 2 (#131),0,,0
+ec0022ca,2018-03-07 10:27:12,Install docopt with PCMSolver (#132),0,,0
+7fbe2360,2018-03-07 14:55:16,Use clang-format on Travis,0,,0
+d840bc51,2018-03-19 17:00:37,Add profiling docs with perf  gperftools  VTUne,0,,0
+d5d775f1,2018-03-27 04:36:55,Versioning script (#133),0,,0
+98e87eff,2018-04-05 15:05:34,Clean up conf.py  Doxyfile.in,0,,0
+0d364f17,2018-04-05 16:08:48,Fix Doxygen warnings,1,,0
+65454baa,2018-04-05 21:03:23,Refactor cloc_tools,0,,0
+e01c1b10,2018-04-06 23:48:57,Document some more folders,0,,0
+49b15988,2018-04-07 11:14:46,Remove DTOR and operator<< from derived classes,0,,0
+1c3da695,2018-04-09 09:06:38,Update documentation on building docs,0,,0
+bf5b5f28,2018-04-09 15:29:13,Update old information about building,0,,0
+d5ef738b,2018-04-10 10:00:34,FIx handling of pcmsolver.f90 file (#143),1,,1
+1110a3f8,2018-04-12 02:49:54,Revise fortran example (#149),0,,0
+f2ae4513,2018-04-12 11:31:23,Initialize raw pointer data members with nullptr,0,,0
+2c57cabd,2018-04-12 11:32:32,Insert spaces after markup commands (#150),0,,0
+5133636b,2018-04-12 16:40:09,Move import of local docopt in try block,0,,0
+4e5c80ab,2018-04-13 17:44:50,Use strings in Meddle object,0,,0
+7b85d587,2018-04-13 17:45:39,Add some options to plot_cavity.py,0,,0
+d057abab,2018-04-14 14:18:39,Set CodeCov threshold,0,,0
+ac789b23,2018-04-14 18:00:21,Adjust codecov theshold,0,,0
+07955401,2018-04-14 18:02:41,Enforce const-correctness in Meddle,0,,0
+13b06911,2018-04-15 12:09:43,Write changelog,0,,0
+787f9ddd,2018-04-20 11:51:17,Update citation.bib with Zenodo DOI (#155),0,,0
+dfda032c,2018-04-25 04:08:35,Fix calculation of S matrix inverse (#156),1,,1
+0664b57f,2018-04-25 16:36:12,Mixed fixes for Conda build (#158),1,,0
+7d704351,2018-04-26 15:12:20,help internal pyparsing import,0,,0
+1c2e8361,2018-04-27 09:47:23,Only use one getkw.py (#161),0,,0
+bb928217,2018-04-27 10:55:20,Bump version to v1.2.0,0,,0
+9bcea3fe,2018-04-27 15:52:43,Records tag for v1.2.0,0,,0
+5418ebcb,2018-05-01 21:41:48,Fix conf.py for doc build,1,,1
+99cdc8d9,2018-05-01 21:50:23,Update CHANGELOG.md  AUTHORS.md  documentation,0,,0
+37b97bf6,2018-05-01 21:51:34,Bump version to v1.2.1,0,,0
+74027df9,2018-05-01 21:54:35,Records tag for v1.2.1,0,,0

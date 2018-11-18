@@ -1,0 +1,1285 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+a59b7e4,2017-07-24 09:09:22,doc edits i missed in earlier commit,0,0.0,0
+f202343,2017-07-24 12:54:26,fix typo,1,0.0,0
+6716de5,2017-07-24 20:17:17,Update documentation,0,0.0,0
+bc446bb,2017-07-25 12:12:30,add .cpp and .h to root src,0,0.0,0
+633ca33,2017-07-25 13:08:24,fix newly introduced bug,1,1.0,1
+557e5b9,2017-07-25 13:37:01,Fixing CUDA runtime issues in fix_shardlow_kokkos,1,1.0,1
+d3fa882,2017-07-25 13:49:23,fix enforce2d has to be defined after fixes with enforce2d_flag set,1,1.0,1
+76fb4e0,2017-07-25 14:16:31,first pass at implementing atom2bin for KOKKOS neighbor lists,0,0.0,0
+c3c9f35,2017-07-25 14:37:41,fix off-by-one memory allocation bug,1,0.0,1
+0231cc3,2017-07-25 19:09:20,Make Kokkos comm give warning and switch to classic comm instead of erroring out,1,0.0,0
+60c67b0,2017-07-26 10:45:11,the original fix qeq went away over 7 years ago  we don't need to purge it,1,0.0,0
+aa5ea95,2017-07-26 11:55:50,added MKL support,0,0.0,0
+51a0633,2017-07-26 12:08:42,Merge pull request #652 from junghans/latte,0,0.0,0
+f0d2863,2017-07-26 14:02:02,support QUIP wrapper API version query  relax hybrid restriction to allow hybrid/overlay  update docs,0,0.0,0
+f7a243a,2017-07-26 14:20:03,Update Colvars to version 2017-07-15 and support automated builds for it,0,0.0,0
+fd6e11f,2017-07-26 14:29:17,added FFTW2 support,0,0.0,0
+715c797,2017-07-26 15:14:12,disallow binary output with dump style local. fixes #596,1,0.0,0
+2806f07,2017-07-26 15:46:51,include pair style kim doc changes that were accidentally included in PR #590,0,0.0,0
+934cbbb,2017-07-26 16:07:08,avoid division by zero in reaxff bond interaction computations in very rare cases,0,0.0,0
+da7a5f5,2017-07-26 19:32:55,correct typo in USER-REAXC code,0,0.0,0
+72419b6,2017-07-26 19:35:15,handle one more case where allowing shifted potential with cutoff 0.0 would create NaNs,0,0.0,0
+8f59c0e,2017-07-27 08:51:17,Fix CUDA issue in pair_exp6_rx_kokkos,1,0.0,1
+0427f62,2017-07-27 09:25:02,Minor updates in documentation and setup tool  merge before upgrade to oxDNA2,0,0.0,0
+acf6d54,2017-07-27 09:25:39,cmake: fixed two typos,1,0.0,0
+8e834d8,2017-07-27 09:37:16,add support for trapping floating point exception as an optional compile time feature,0,0.0,0
+6d0a228,2017-07-27 10:34:44,added support for LAMMPS_MEMALIGN and LAMMPS_LONGLONG_TO_LONG,0,0.0,0
+c494ec3,2017-07-27 12:48:32,Remove hardcoded execution spaces,0,0.0,0
+e397379,2017-07-27 15:51:45,Fix modify/sync issue in neigh_bond_kokkos,1,1.0,1
+9695aa6,2017-07-27 15:51:56,Update in.molecular,0,0.0,0
+7edb294,2017-07-28 10:44:08,Fixed recent segfault in fix gcmc and added mcmoves keyword,1,1.0,1
+e7d9aab,2017-07-28 11:25:08,Add a (contrived) molecular example for USER-QUIP,0,0.0,0
+f3850da,2017-07-28 13:36:06,add GZIP and FFMPEG status,0,0.0,0
+ffb778c,2017-07-28 14:03:29,revert change that accidentally undoes part of PRs #583 and #588,0,0.0,0
+3ebf561,2017-07-28 14:25:47,Clarified some points in in.molecular example,0,0.0,0
+8512084.0,2017-07-28 15:20:33,avoid reporting negative memory allocation when memory_usage() is called before initialized,0,0.0,0
+8512084.0,2017-07-28 15:20:33,Enabled again neigh no with tpa > 1 for 3-body gpu styles for backward compatibility  could be slower than neigh no tpa 1 in many cases,0,0.0,0
+8512084.0,2017-07-28 15:20:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12003 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8512084.0,2017-07-28 15:20:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12004 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+841a92c,2017-07-28 16:03:24,Cleaned up 3-body kernels  reverted some mistaken changes to vashishta,0,0.0,0
+7d0d701,2017-07-28 16:05:16,Merge pull request #593 from akohlmey/collected-bug-fixes-and-small-updates,0,0.0,0
+9bfd926,2017-07-28 16:11:13,Merge pull request #595 from libAtoms/idces2quip,0,0.0,0
+13f2d39,2017-07-31 10:34:21,Merge pull request #594 from junghans/license,0,0.0,0
+8431ca5,2017-07-31 10:54:07,LICENSE: update address of Free Software Foundation,0,0.0,0
+408d9d9,2017-07-31 11:35:41,added support -DLAMMPS_XDR and -DPACK_*,0,0.0,0
+72f50c9,2017-07-31 11:48:22,added lammps size option,0,0.0,0
+93190a5,2017-07-31 11:48:27,cmake: add cross-configure warning,0,0.0,0
+71553cf,2017-07-31 13:53:41,Fix compile errors from neigh history refactor,1,1.0,1
+d3169ee,2017-07-31 13:56:20,Update lib/kim/Install.py for phthon 2.7 conversion,0,0.0,0
+5cd1dc9,2017-07-31 15:32:20,"Revert ""use neighbor list exclusions instead of a zero cutoff""",0,0.0,0
+b395ef0,2017-07-31 15:50:14,skip table consistency check for bitmapped tables,0,0.0,0
+96d3712,2017-07-31 15:52:33,GPU: added cuda includedir,0,0.0,0
+e84b6d8,2017-08-04 08:35:00,added USER-QUIP,0,0.0,0
+2fa16bc,2017-08-04 11:11:41,added support for QEQ,0,0.0,0
+59ac6ef,2017-08-04 11:19:09,Added warning to discourage use of group all and fixed some segfault cases,1,0.0,0
+23ca009,2017-08-04 14:47:32,enable REPLICA RIGID SHOCK SNAP SRD VORONOI,0,0.0,0
+163ed27,2017-08-04 16:04:40,add sanity checks to EAM potential file reader subroutine,0,0.0,0
+ca7a3a6,2017-08-04 17:48:27,added USER-ATC,0,0.0,0
+5ad8a33,2017-08-04 19:18:57,add USER-AWPMD,0,0.0,0
+aaf17bd,2017-08-06 23:53:23,enable more user packages,0,0.0,0
+e0f9a7c,2017-08-06 23:59:01,more USER packages,0,0.0,0
+a8f6a95,2017-08-07 08:00:56,add OpenKIM support,0,0.0,0
+0a54c34,2017-08-07 08:02:04,added USER-VTK,0,0.0,0
+135b165,2017-08-07 17:13:01,Added OPT,0,0.0,0
+8bba29d,2017-08-07 17:21:45,allow internal lapack,0,0.0,0
+b3244f9,2017-08-08 07:20:33,added support for LAMMPS_FFMPEG,0,0.0,0
+8a7a831,2017-08-08 12:57:22,started on USER-QMMM,0,0.0,0
+d2b0c28,2017-08-08 13:19:44,finish USER-QMMM,0,0.0,0
+b7b62f6,2017-08-08 13:20:25,Make read_restart evenly divide the work of reading when using mpiio. Currently only affects restart files written without any per-atom fix data.,1,0.0,0
+c53a84a,2017-08-08 13:55:12,added USER-INTEL,0,0.0,0
+30431d4,2017-08-08 16:57:27,cmake: clean up,0,0.0,0
+b7b1257,2017-08-08 17:00:09,added GPU,0,0.0,0
+95ece8a,2017-08-08 17:03:52,split PACKAGES  get ENABLE-ALL right,0,0.0,0
+691d1b7,2017-08-08 17:26:22,patch 24Jul17,1,0.0,0
+be25a7d,2017-08-08 20:37:20,fix typo in formatting,1,0.0,0
+6780c73,2017-08-09 07:10:08,allow user to override PYTHON_INSTDIR,0,0.0,0
+3e9b41c,2017-08-09 10:05:14,Merge branch 'master' into USER-DPD_kokkos_testing,0,0.0,0
+e86b139,2017-08-09 15:32:03,Merge branch 'colvars-safer-makefiles' of https://github.com/giacomofiorin/lammps into colvars-quickfix,0,0.0,0
+210a77c,2017-08-09 16:36:51,use list of bonds per atom instead of bondlist  as that will work with shake as well,0,0.0,0
+7f437d7,2017-08-09 17:37:35,add USER-UEF classes to .gitignore,0,0.0,0
+81f4d7e,2017-08-09 19:07:20,ignore generated header files with OpenCL kernels,0,0.0,0
+f01103d,2017-08-09 19:08:23,correct embarrassing typo,0,0.0,0
+77a628e,2017-08-09 19:13:40,automatically call 'make purge' before calling 'make package-update' or 'make package-overwrite',0,0.0,0
+4e97b57,2017-08-10 05:46:42,remove another couple of purge items from long ago,0,0.0,0
+ce62c41,2017-08-10 06:47:26,remove bogus version of temper/npt command,0,0.0,0
+0dc3cba,2017-08-10 06:51:57,whether virial contributions from fixes are included depend on thermo_virial  not virial_flag.,1,0.0,0
+5b55744,2017-08-10 07:21:39,Fix issue in pair_snap_kokkos memory_usage,1,0.0,1
+f9a515e,2017-08-10 07:24:24,correct USER-INTEL installer script for verlet_lrt_intel files,0,0.0,0
+2bc6ad8,2017-08-10 07:45:21,LATTE package doc update and some small code changes,0,0.0,0
+f68c625,2017-08-10 08:02:55,cmake: add LAMMPS_SUFFIX,0,0.0,0
+2f3747e,2017-08-10 08:34:46,add .gitignore and add Makefile.lammps.* symlinks to stay consistent with other libraries,0,0.0,0
+146aa4c,2017-08-10 09:05:23,Merge pull request #655 from akohlmey/fixes-for-patch,0,0.0,0
+da01be7,2017-08-10 09:22:53,new SNAP potentials and examples,0,0.0,0
+378989e,2017-08-10 13:21:53,Merge pull request #657 from lammps/snap-potentials,0,0.0,0
+2a7d2de,2017-08-10 14:49:51,convert DOS/Windows CR-LF line endings to native format,0,0.0,0
+c8741f3,2017-08-10 15:12:56,whitespace cleanup,0,0.0,0
+8c16ea1,2017-08-10 15:58:51,cmake: download/build latte if not found,0,0.0,0
+52bec0f,2017-08-10 16:44:09,Added USER-PINNING package,0,0.0,0
+6d24be8,2017-08-10 21:14:40,Delete README,0,0.0,0
+c6d923b,2017-08-10 21:15:35,Added readme file  and removed old files,0,0.0,0
+df56b2d,2017-08-11 08:16:20,Added readme.m,0,0.0,0
+2755328.0,2017-08-11 08:28:37,fix issue with docs for orientorder/atom compute reported by @andeplane,1,1.0,1
+2755328.0,2017-08-11 08:28:37,fix incorrect preprocessor define for windows,1,1.0,1
+2755328.0,2017-08-11 08:28:37,fix bugs from incorrect code synchronization,1,1.0,1
+2755328.0,2017-08-11 08:28:37,correct set command example in fix property/atom,1,1.0,1
+b209a4e,2017-08-11 08:35:20,Merge pull request #645 from akohlmey/kokkos-makefile-updates,0,0.0,0
+0b3f1b8,2017-08-11 12:19:02,Change order of targets in Makefiles for Colvars,0,0.0,0
+4041db8,2017-08-11 13:25:28,Merge pull request #581 from libAtoms/idces2quip,0,0.0,0
+13b804e,2017-08-11 14:53:44,Comment out use by Colvars of Makefile.lammps from other packages,0,0.0,0
+81e7d4a,2017-08-12 00:35:50,fix speelink in documentation files,1,1.0,1
+60e14f1,2017-08-14 08:54:26,Merge pull request #592 from akohlmey/reaxc-bugfix,0,0.0,0
+cee87d7,2017-08-15 16:19:09,Merge pull request #584 from ellio167/kim-install,0,0.0,0
+1d4d215,2017-08-15 17:12:07,Merge pull request #585 from akohlmey/make-py-manual-cleanup,0,0.0,0
+e34b204,2017-08-15 21:10:05,Merge pull request #42 from akohlmey/redo-fix-ti-spring-fixes,0,0.0,0
+7175abc,2017-08-16 13:58:46,restore python3 support. this now can run with python 2.7.13 and 3.5.3.,0,0.0,0
+00aafef,2017-08-17 11:31:59,"Update USER_QUIP docs to clarify use of ""special_bonds""",0,0.0,0
+dd67989,2017-08-17 11:32:18,cmake: clean up and updated comments,0,0.0,0
+c46d5ff,2017-08-17 11:32:38,make FFT a selective option,0,0.0,0
+fa3c0c6,2017-08-17 11:32:53,Add forgotten decode() in Install.py,0,0.0,0
+76cd613,2017-08-17 11:34:52,Detect number of processors for make,0,0.0,0
+7ddcb68,2017-08-17 16:02:20,Refactor lib/kim/Install.py  works with phtyon 3 2.7,0,0.0,0
+b11fe2e,2017-08-17 16:06:19,revert change  that is part of the kim-install branch and changeset,0,0.0,0
+9e85b31,2017-08-17 21:39:25,molecule maxspecial value corrected when specials autogenerated,0,1.0,1
+bf7cff7,2017-08-18 14:23:48,Merge pull request #576 from akohlmey/sanitizer-changes,0,0.0,0
+d671a04,2017-08-18 14:24:09,Merge pull request #583 from giacomofiorin/colvars-update-2017-07-19,0,0.0,0
+6aa7569,2017-08-18 15:21:49,GPU: bring back CUDPP_OPT,0,0.0,0
+822bffd,2017-08-18 15:29:59,added one trivial test,0,0.0,0
+f945d45,2017-08-18 17:33:42,Merge pull request #586 from ellio167/kim-install,0,0.0,0
+6f66e6c,2017-08-18 19:07:32,Merge pull request #588 from akohlmey/colvars-quickfix,0,0.0,0
+2e6a928,2017-08-18 19:23:33,cmake: error for POEMS + BODY package,1,0.0,0
+44ccdb8,2017-08-18 19:24:39,avoid makefile failure  if LAMMPS has not been configured yet,0,0.0,0
+aa1ce09,2017-08-18 20:03:47,make ENABLE_ALL work out of the box,0,0.0,0
+1a80d4b,2017-08-19 05:29:16,README clarification from giacomo,0,0.0,0
+c9d41db,2017-08-19 06:33:27,Merge pull request #590 from lammps/fortran-dftb,0,0.0,0
+00a78cf,2017-08-20 08:30:09,Compile linalg as library and track link dependencies for correct link order,0,0.0,0
+b1615d1,2017-08-20 09:17:49,Merge pull request #659 from stanmoore1/kk_border_comm,0,0.0,0
+c5ce3ff,2017-08-20 09:18:04,cmake: move shared libs install warning in one place,0,0.0,0
+35fd82b,2017-08-20 09:19:04,restore locale and enforce grep option squashing,0,0.0,0
+de5883b,2017-08-20 09:27:12,new library functions,0,0.0,0
+892a3f8,2017-08-20 09:39:51,Version 27 Oct 2016,0,0.0,0
+4dc1195,2017-08-20 09:41:49,Allow extended Lagrangian on non-scalar collective variables,0,0.0,0
+c895df7,2017-08-20 09:47:51,Merge branch 'master' into kokkos-vashishta,0,0.0,0
+39e51df,2017-08-20 10:02:11,Merge branch 'master' into collected-small-fixes,0,0.0,0
+f5b8f72,2017-08-20 10:09:21,fix stupid typo (too much compiling of fortran codes...),1,0.0,0
+aef2416,2017-08-20 10:49:30,permission cleanup in tools folder,0,0.0,0
+d1a0c04,2017-08-20 23:28:13,Merge branch 'master' into bounds-error-with-code-line,0,0.0,0
+6d86697,2017-08-21 10:18:20,Merge branch 'master' into manybody-short-neighbor-list,0,0.0,0
+bdccdbf,2017-08-21 10:20:56,Calculating short neighbor lists,0,0.0,0
+c8aa06b,2017-08-21 11:12:36,Using short neighbor lists,0,0.0,0
+1f4c550,2017-08-21 13:09:52,add error location propagation to atom->set_mass() and atom->check_mass(),1,0.0,0
+5a0c3ae,2017-08-21 13:12:43,Using short neighborlists in neigh full,0,0.0,0
+24c00b1,2017-08-21 13:12:48,correct logic bug in else branch of the conditional,1,0.0,0
+5fcc197,2017-08-21 14:24:00,fix domain boundary indexing,1,0.0,1
+cf3f15b,2017-08-21 15:04:03,remove work repetitions for 'the',0,0.0,0
+ad0ecfa,2017-08-21 20:53:53,do not access uninitialized data for ewald/disp and pppm/disp,0,0.0,0
+e2a1b66,2017-08-21 20:54:24,avoid memory leaks when using kspace solvers for lennard-jones,0,0.0,0
+c5ccbbe,2017-08-22 07:13:04,changes for next patch  2d disc options for spheres  fix external upgrade  bug fixes for fix ave/chunk for density calcs  Aidan doc page citation deconvolution,1,0.0,1
+090c792,2017-08-22 13:42:02,avoid uninitialized data for using ewald/disp with lj only,0,0.0,0
+5c98594,2017-08-22 13:50:19,build short neighbor list for sw on based on ij parameters only,0,0.0,0
+26c1514,2017-08-22 23:46:09,use local variables for more efficient force accumulation,0,0.0,0
+79d5ca6,2017-08-22 23:46:32,Fix more typos in examples,1,0.0,0
+b80752a,2017-08-23 00:01:19,accumulate forces in temporary local variables for tersoff,0,0.0,0
+cdfb1aa,2017-08-23 00:39:52,',0,0.0,0
+57aafba,2017-08-23 07:54:05,add temporary force accumulation to local variables for vashishta styles,0,0.0,0
+12150ff,2017-08-23 07:54:56,add thorough checking for valid arguments to -partition or -p,0,0.0,0
+97edf90,2017-08-23 11:22:09,add USER-OMP variant of manybody short neighbor list,0,0.0,0
+c4b3703,2017-08-23 14:11:47,remove word repetitions for 'a',0,0.0,0
+d80a6cb,2017-08-23 14:12:18,region cylinder is compatible with open_faces[2]  so do not disallow it.,0,0.0,0
+f7a0a6e,2017-08-23 14:12:45,correct typo in write_dump docs,0,0.0,0
+1536eb5,2017-08-23 14:13:07,add authorship attribution,0,0.0,0
+7b7a507,2017-08-23 14:14:33,Merge branch 'master' of github.com:lammps/lammps,0,0.0,0
+b6c93f9,2017-08-23 14:39:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15397 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+270abff,2017-08-23 14:59:19,fix issues in FixNeighHistory and FixNeighHistoryOMP reported in https://sourceforge.net/p/lammps/mailman/message/36138319/,1,1.0,1
+4784506.0,2017-08-23 15:02:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12005 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4784506.0,2017-08-23 15:02:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12006 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4784506.0,2017-08-23 15:02:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15400 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4784506.0,2017-08-23 15:02:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15399 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f5a99de,2017-08-23 15:08:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15401 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e88ff8d,2017-08-23 15:20:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15402 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+cbf3646,2017-08-23 15:20:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15403 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e55fa9d,2017-08-23 15:21:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15404 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b52efa2,2017-08-23 15:28:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15406 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a062944,2017-08-23 16:08:01,Set peratom_freq in fix ave/chunk,1,0.0,1
+6db3bd8,2017-08-23 17:52:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15407 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+dea92fb,2017-08-23 21:01:55,A few GLE fixes,1,0.0,0
+de0fdbe,2017-08-24 07:12:45,correct a link and a name for OpenKIM,0,0.0,0
+6195b3c,2017-08-24 08:35:32,Merge branch 'master' of github.com:lammps/lammps,0,0.0,0
+a641289,2017-08-25 12:36:53,forward skip lists /omp neighbor list builds to non-omp implementations,0,0.0,0
+1e16fed,2017-08-25 15:16:19,Update gitignore for the new USER-DPD source files.,0,0.0,0
+b73999e,2017-08-25 15:25:41,USER-DPD: move custom binning stuff to a NBinSSA child class. Removes most SSA specific fields from class NeighList.,0,0.0,0
+1f8c4f2,2017-08-25 15:31:00,USER-DPD: Set missing NP_HALF flag in npair_half_bin_newton_ssa.h,0,0.0,0
+01dd0e1,2017-08-25 16:02:27,new neighbor list changes,0,0.0,0
+e52a28f,2017-08-25 16:20:42,USER-DPD: move nstencil_ssa out of core LAMMPS into USER-DPD,0,0.0,0
+81ba181,2017-08-25 17:04:36,Merge pull request #28 from timattox/new-neighbor,0,0.0,0
+dd101db,2017-08-25 17:06:26,remove USER-DPD files that should not be where they are,0,0.0,0
+2189353.0,2017-08-25 17:41:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12008 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2189353.0,2017-08-25 17:41:00,delete a couple more files  that don't belong into src/,0,0.0,0
+2189353.0,2017-08-25 17:41:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12007 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2189353.0,2017-08-25 17:41:00,corrected mismatched free() vs. delete[],0,0.0,0
+7572dc6,2017-08-26 18:24:47,patch 16Mar18,1,0.0,0
+67ae271,2017-08-27 03:04:32,USER-DPD: remove several files from src that came from src/USER-DPD/ These were accidentally added to git in c9c2ae6.,0,0.0,0
+76926b7,2017-08-27 03:54:40,remove mobi file format creation from makefile and explain it in README instead,0,0.0,0
+47f16c0,2017-08-27 07:06:08,have bond style table exit when bond length is outside table range,0,0.0,0
+b7ec720,2017-08-27 07:13:55,simplify short neighbor list implementation. remove unneeded class member,0,0.0,0
+bdc117b,2017-08-27 07:15:00,add short neighbor list support to pair style tersoff,0,0.0,0
+98f2716,2017-08-27 08:58:47,Merge branch 'doc',0,0.0,0
+e441573,2017-08-27 12:10:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15307 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+bc11868,2017-08-27 12:13:35,remove obsolete warning about fix rigid image flag restrictions,1,0.0,0
+c196025,2017-08-27 12:23:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15310 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5308ee6,2017-08-27 13:45:48,fix bug in computing mixed EAM potentials introduced by TI modifications,1,1.0,1
+313b8bc,2017-08-27 16:58:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15311 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+153c771,2017-08-27 17:27:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15312 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4bff008,2017-08-27 18:40:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15313 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+57872c8,2017-08-27 18:42:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15314 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f47cc0a,2017-08-27 18:55:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15315 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fa5ec0b,2017-08-27 19:22:37,Fixing bug in Kokkos ReaxFF,1,1.0,1
+eed4815,2017-08-27 20:03:28,simplify and shorten examples for fix filter/corotate and combine into a single folder,1,0.0,0
+c8dfe0c,2017-08-28 13:17:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15316 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+62928a1,2017-08-28 13:24:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15317 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9207f65,2017-08-28 14:11:21,moltemplate bugfix update,0,1.0,1
+7.36e+65,2017-08-28 14:26:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12009 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+736e063,2017-08-28 14:26:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15318 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+bd9dc48,2017-08-28 14:27:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15319 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d0efd3a,2017-08-28 14:48:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15309 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2add18e,2017-08-28 14:55:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15320 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6a4bbdd,2017-08-28 14:56:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15322 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+19b7785,2017-08-28 14:59:01,fix gcmc units change for chemical potential,1,0.0,1
+988613.0,2017-08-28 16:18:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12010 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0988613,2017-08-28 16:18:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15323 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+34b3fc2,2017-08-29 01:04:39,new compute global/atom command  also bug fix for descending dump sorts,1,1.0,1
+f57d194,2017-08-29 10:40:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15324 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a4a45f1,2017-08-29 17:25:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15325 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+27c962d,2017-08-30 09:45:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15326 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f2d8c37,2017-08-30 10:24:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15327 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2dd202c,2017-08-30 10:34:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15328 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+dc7f128,2017-08-30 11:01:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15329 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3e6cdd1,2017-08-30 14:58:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15305 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d95a5f2,2017-08-31 10:38:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15304 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f3dda30,2017-08-31 13:53:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15321 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4d2ed30,2017-08-31 14:13:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15306 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+eba4be1,2017-08-31 14:48:30,Merge pull request #239 from akohlmey/static-analysis-fixes,0,0.0,0
+d9d9ba8,2017-08-31 14:52:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15393 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+397bc22,2017-08-31 14:56:43,Add C-linkage wrapper for colvarscript (useful with ctypes),0,0.0,0
+a5b65c1,2017-08-31 15:03:04,Minor changes and fixes not relevant to LAMMPS,1,0.0,0
+76cc545,2017-08-31 16:14:45,correct issues related to the addition of fix cmap,1,1.0,1
+f56a345,2017-08-31 16:15:39,use correct installed kim lib when adding new models,0,0.0,0
+251bc88,2017-08-31 16:25:16,MEAM/C: Remove unused function,0,0.0,0
+6e945f7,2017-09-01 00:16:54,write the name of a pair style to the restart even if it does not store data,0,0.0,0
+f58088a,2017-09-01 09:15:37,Add ensemble-biased metadynamics (Fabrizio Marinelli  NIH),0,0.0,0
+2b96460,2017-09-01 09:16:11,whitespace cleanup,0,0.0,0
+3d614bb,2017-09-01 12:23:48,neighbor_kokkos.cpp: Don't call grow() on neighbor lists that are copies. This corresponds to a bugfix from commit 9161bd98 on neighbor.cpp,0,1.0,1
+88d54d4,2017-09-01 17:40:49,Merge pull request #7 from lammps/master,0,0.0,0
+bb3ee75,2017-09-04 19:59:50,Make SMP parallelism for Colvars optional,0,0.0,0
+89a0bc9,2017-09-05 10:04:20,Merge branch 'colvars-2016-10-24' of https://github.com/giacomofiorin/lammps into colvars-update,0,0.0,0
+65b295e,2017-09-05 10:05:49,update documentation pdf for updated colvars lib,0,0.0,0
+b170606,2017-09-05 10:08:55,doc page changes,0,0.0,0
+12fe614,2017-09-05 10:48:38,Merge pull request #231 from akohlmey/collected-doc-fixes,0,0.0,0
+f7715ab,2017-09-05 11:35:26,consistent short neighbor list for vashishta and vashishta/table,0,0.0,0
+2105145.0,2017-09-05 11:40:36,Merge pull request #232 from akohlmey/small-bugfixes,0,0.0,0
+2105145.0,2017-09-05 11:40:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12011 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2105145.0,2017-09-05 11:40:36,Merge pull request #230 from akohlmey/manual-in-ebook-format,0,0.0,0
+2105145.0,2017-09-05 11:40:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12012 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c8967a3,2017-09-05 11:45:32,Merge pull request #238 from giacomofiorin/colvars-2016-10-24,0,0.0,0
+cd72532,2017-09-05 12:47:34,Ported Morse to KOKKOS,0,0.0,0
+45602e5,2017-09-05 12:48:28,fix syntax error in fix saed/vtk docs example,1,1.0,1
+4560200000.0,2017-09-05 12:48:28,Rename fix,1,0.0,0
+dec1d7b,2017-09-05 16:41:19,Merge branch 'master' into collected-doc-fixes,0,0.0,0
+c8f92c1,2017-09-05 16:42:58,Merge branch 'collected-doc-fixes' of github.com:akohlmey/lammps into collected-doc-fixes,0,0.0,0
+4c5d901,2017-09-05 16:45:03,fix reax/c/species/omp doesn't is not needed anymore,1,0.0,0
+d886cc9,2017-09-05 17:45:56,fix compilation,1,0.0,1
+cccd6c4,2017-09-05 23:27:26,Merge pull request #845 from akohlmey/dummy-pair-restart-warning,0,0.0,0
+fd0fae4,2017-09-05 23:40:14,Keyword 'bodyforces' added to fix_modify command - Applies to classes FixRigid  FixRigidSmall  and FixPOEMS,0,0.0,0
+99791ce,2017-09-06 08:50:43,Added KOKKOS vashishta,0,0.0,0
+9ca39c8,2017-09-06 08:51:27,Enable write_data for dihedral_fourier,0,0.0,0
+4161868.0,2017-09-06 08:52:05,Enable write_data,0,0.0,0
+4161868.0,2017-09-06 08:52:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12014 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4161868.0,2017-09-06 08:52:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12013 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4161868.0,2017-09-06 08:52:05,Clean whitespace,0,0.0,0
+c80203c,2017-09-06 08:52:51,Added updated vashishta for KOKKOS support,0,0.0,0
+0248a7b,2017-09-06 09:24:05,fully tested multi-element compatible short neighbor list for Stillinger-Weber,0,0.0,0
+fe557cb,2017-09-06 11:35:52,fix typo in comments,1,0.0,0
+de8297e,2017-09-06 12:02:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15396 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+cdb6ec7,2017-09-06 14:05:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15395 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5089b26,2017-09-06 14:15:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15394 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3a5d836,2017-09-06 14:16:17,Merge pull request #29 from timattox/new-neighbor,0,0.0,0
+366d087,2017-09-06 14:20:24,Merge remote-tracking branch 'lammps-rw/integration' into update-neighbor,0,0.0,0
+dbc60d9,2017-09-06 15:08:02,Fixed error in average option,1,0.0,1
+eb0e64b,2017-09-07 12:00:33,Merge pull request #849 from stanmoore1/kk_deprecated,0,0.0,0
+08bdc4e,2017-09-07 12:01:19,Merge pull request #835 from junghans/fix_python,0,0.0,0
+48dd824,2017-09-07 16:30:56,Merge pull request #622 from akohlmey/collected-small-fixes,0,0.0,0
+be96486,2017-09-07 16:31:39,ignore generated PDF and ePUB files,0,0.0,0
+7b1542a,2017-09-07 16:31:50,More minor changes,0,0.0,0
+2f6be88,2017-09-08 07:04:12,add temper/npt to src/USER-MISC/README,0,0.0,0
+fce633a,2017-09-08 11:33:49,Mods for extra/special/per/atom and add toluene,0,0.0,0
+b861ea3,2017-09-08 11:54:32,Fix issues in Kokkos npair_halffull and npair_skip,1,1.0,1
+bf9f084,2017-09-08 14:09:44,plug memory leak,0,0.0,0
+8a06a7b,2017-09-08 22:20:47,patch 1Sep17,1,0.0,0
+ff18cff,2017-09-08 23:34:59,Merge branch 'master' of github.com:lammps/lammps,0,0.0,0
+3fdb6f1,2017-09-09 06:51:24,Added optional numpy access to atom data,0,0.0,0
+1601433.0,2017-09-09 07:05:51,Clean up after renaming back to fix python/move,1,0.0,0
+1601433.0,2017-09-09 07:05:51,make fix gcmc command overview consistent,1,0.0,0
+1601433.0,2017-09-09 07:05:51,gatherv fix  doc updates,1,0.0,0
+1601433.0,2017-09-09 07:05:51,Fix error in Manual.txt,1,0.0,0
+4738fed,2017-09-09 08:22:30,small update to docs for new commands,0,0.0,0
+0be7f46,2017-09-09 08:25:57,Merge pull request #638 from jdevemy/master,0,0.0,0
+84b84c1,2017-09-09 19:53:56,Merge pull request #620 from amilumas/master,0,0.0,0
+b3547a9,2017-09-11 11:09:59,Added sequence-dependent stacking and base-pairing strength,0,0.0,0
+95d8492,2017-09-11 21:59:22,print the warning about using group all with fix gcmc only from MPI rank 0,1,0.0,0
+cb19ef5,2017-09-11 22:00:58,make libmpi_stubs,0,0.0,0
+e196a2b,2017-09-11 22:24:06,Added comment about optimised damping coefficient for BD,0,0.0,0
+e9277946,2017-09-12 10:31:22,adapt formatting and naming conventions to fully match LAMMPS style. allow rigid and accelerated integrators.,0,0.0,0
+0cb3a38,2017-09-12 10:31:51,re-indent so that gcc no longer complains about inconsistent indentation,0,0.0,0
+f971cd6,2017-09-12 10:56:13,add a couple deleted files from USER-DPD to Purge.list,0,0.0,0
+d84825f,2017-09-13 14:37:24,Merge pull request #632 from timattox/USER-DPD_kokkos_merge,0,0.0,0
+66f59f9,2017-09-13 15:51:03,fix typos and remove trailing whitespace,1,0.0,0
+da7776f,2017-09-14 11:00:55,Bugfix for building LAMMPS+KOKKOS+DPD with CMake,0,1.0,1
+f1fce64,2017-09-14 12:58:00,prevented reorder from being used with fix gcmc,1,0.0,0
+8776b81,2017-09-15 00:46:18,fix issues indicated by compiler warnings,1,0.0,0
+2cd7cbd,2017-09-15 00:51:16,Merge pull request #639 from rbberger/python_interface_improvements,0,0.0,0
+ccb67d8,2017-09-15 01:20:56,Merge pull request #640 from ohenrich/user-cgdna,0,0.0,0
+99e5dc7,2017-09-15 01:21:16,Fix small typo to calculation of accumulated work in Colvars,1,0.0,0
+3b39694,2017-09-15 15:19:46,Merge pull request #641 from lammps/doc-tweak,0,0.0,0
+5f6937d,2017-09-15 15:21:53,remove duplicate listing of deleted USER-DPD files from Purge.list,0,0.0,0
+27f9953,2017-09-15 15:22:09,recover ability to compile USER-INTEL without OpenMP enabled,0,0.0,0
+d101fe3,2017-09-15 15:25:09,reverse the pre-processor logic of the LRT mode define,0,0.0,0
+17aeccf,2017-09-15 16:18:13,Included hyperlink to package,0,0.0,0
+39daf3c,2017-09-15 17:40:34,cmake: convert mscg into a lib,0,0.0,0
+d614d56,2017-09-15 17:41:02,link QUIP against LAPACK_LIB too,0,0.0,0
+cc2a53a,2017-09-15 17:43:48,update fix qeq docs for the new  more flexible parameter file format,1,0.0,0
+02665e4,2017-09-15 17:52:14,Fix more typos in src files,1,0.0,0
+26650000.0,2017-09-15 17:52:14,Added basic documentation for grem fix,1,0.0,0
+6f1935e,2017-09-15 21:58:47,Merge pull request #621 from lammps/user-meso,0,0.0,0
+b5894e2,2017-09-17 19:19:45,cmake: make awpmd includes local,0,0.0,0
+b4ecad7,2017-09-17 19:21:21,cmake: LAMMPS_SUFFIX -> LAMMPS_MACHINE,0,0.0,0
+a500048,2017-09-17 19:25:22,cmake: make _ in LAMMPS_MACHINE implicit,0,0.0,0
+388eab5,2017-09-17 20:49:41,Merge branch 'user_manifold_fix' into user-manifold-fix-every-keyword,0,0.0,0
+66130f5,2017-09-17 20:50:22,add docs for compute fragment/atom,0,0.0,0
+5f18428,2017-09-17 21:10:41,fix documentation issues: non-ASCII characters  broken/missing links  formatting,1,0.0,0
+1ac9081,2017-09-17 23:58:10,integrate fix wall/ees and wall/region/ees into doc system,1,1.0,1
+aad8cd1,2017-09-18 18:08:57,additional fix external hooks for calling programs,1,0.0,0
+19f1f3a,2017-09-19 11:48:27,skip over disabled bonds,0,0.0,0
+ac897ea,2017-09-19 16:27:25,add missing entry in pdf manual,0,0.0,0
+76d93f2,2017-09-19 16:55:08,enable dynamic groups for fix dt/reset,1,1.0,1
+59d2e13,2017-09-19 19:06:02,Simplify CMake script,0,0.0,0
+2e9803e,2017-09-20 08:40:20,add initializers for nmatch/nwant variables in molecule file parser,0,0.0,0
+fbaa7ab,2017-09-20 08:51:47,cmake: move option in user options block,0,0.0,0
+dd49d54,2017-09-20 08:54:30,cmake: make linker flags more clear,0,0.0,0
+638b91b,2017-09-20 09:34:51,cmake: build libs separate,0,0.0,0
+e7d042b,2017-09-20 11:12:58,add a compute aggregate/atom  that combines the rules for compute cluster/atom and fragment/atom,0,0.0,0
+ad25a95,2017-09-20 11:13:13,Merge pull request #619 from jrgissing/molecule_maxspecial,0,0.0,0
+d708e34,2017-09-20 12:01:26,cmake: make h5md includes local,0,0.0,0
+5e35ab2,2017-09-20 17:11:49,Fixed initialization of arrays in computes,1,0.0,1
+a8ae886,2017-09-21 10:40:54,fix typo,1,0.0,0
+491d5f3,2017-09-21 11:38:59,Merge remote-tracking branch 'junghans/lammps_suffix' into cmake_improvements,0,0.0,0
+9a9af2c,2017-09-21 13:58:51,Merge remote-tracking branch 'junghans/cmake_flags_summary' into cmake_improvements,0,0.0,0
+73708b0,2017-09-21 16:17:26,Update Kokkos library to v2.04.00,0,0.0,0
+3381a43,2017-09-21 16:20:06,Merge branch 'master' into USER-DPD_kokkos,0,0.0,0
+fe8244c,2017-09-21 16:49:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14166 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ee487ef,2017-09-22 10:32:19,add USER-MESO files to .gitignore,0,0.0,0
+3ed39ca,2017-09-22 13:03:24,restore changes to read_data docs  that would have been lost due to merging an outdated version,0,0.0,0
+bcde318,2017-09-22 13:47:44,remove old moltemplate version,0,0.0,0
+789812e,2017-09-22 14:46:53,avoid spurious error message  when no storage fix is active/used,1,0.0,0
+32e0de7,2017-09-22 15:10:53,add moltemplate version 2017-8-22,0,0.0,0
+d6316c4,2017-09-22 15:17:44,Fix issues in Kokkos npair_halffull and npair_skip,1,1.0,1
+f2c1172,2017-09-22 15:46:34,make kokkos_cuda_mpi compatible with both MPICH and OpenMPI,0,0.0,0
+78a486c,2017-09-25 16:18:08,Fix dump cfg in viz_atomeye.py example,1,0.0,1
+836a6d2,2017-09-25 16:31:39,update .gitignore,0,0.0,0
+0448bc9,2017-09-25 18:31:32,add reference outputs to temper/npt example,0,0.0,0
+4beccf5,2017-09-25 18:35:53,fix typos,1,0.0,0
+b35f2ff,2017-09-25 18:44:24,Makefile.lammps.gfortran,0,0.0,0
+f1aea57,2017-09-25 18:48:21,ignore mobi file as well,0,0.0,0
+88a882b,2017-09-25 18:59:23,Merge pull request #3 from ibaned/fix-dpd-energy-kokkos-pr,0,0.0,0
+e696900,2017-09-25 19:37:37,Version 20 Sep 2016,0,0.0,0
+0573aaa,2017-09-25 19:37:55,Version 21 Sep 2016,0,0.0,0
+3853041.0,2017-09-25 20:03:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12016 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3853041.0,2017-09-25 20:03:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12015 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3853041.0,2017-09-25 20:03:53,Version 28 Sep 2016,0,0.0,0
+3853041.0,2017-09-25 20:03:53,Version 26 Sep 2016,0,0.0,0
+b60cff7,2017-09-25 23:15:49,Version 29 Sep 2016,0,0.0,0
+53e4ee4,2017-09-25 23:20:42,Merge branch 'master' into new-neighbor,0,0.0,0
+b0bba19,2017-09-26 09:03:27,Version 30 Sep 2016,0,0.0,0
+8bba6d3,2017-09-26 16:52:10,avoid memory leak in pppm/disp/omp,0,1.0,1
+fd3ecd0,2017-09-26 16:52:24,fix typo,1,0.0,0
+bfdc4ac,2017-09-26 16:53:36,Merge branch 'master' into new-neighbor,0,0.0,0
+de45fa6,2017-09-26 18:25:37,Version 5 Oct 2016,0,0.0,0
+23e283f,2017-09-27 16:20:07,fix several GPU memory bugs in pair_table_kokkos,1,1.0,1
+34c1adb,2017-09-28 12:28:58,Version 6 Oct 2016,0,0.0,0
+2fda041,2017-09-28 16:00:16,remove more leftover code,0,0.0,0
+4e1eeca,2017-09-28 16:02:00,Version 11 Oct 2016,0,0.0,0
+67e4826,2017-09-28 16:02:20,Version 18 Oct 2016,0,0.0,0
+37e55a8,2017-09-28 16:20:03,forgot pair table change,0,0.0,0
+e49f0e3,2017-09-28 16:24:26,Version 20 Oct 2016,0,0.0,0
+855b600,2017-09-28 16:34:18,update packages section in manual with information about USER-NC-DUMP,0,0.0,0
+fe80c57,2017-09-28 17:01:12,Recommitting reverted change,0,0.0,0
+80898b8,2017-09-28 17:42:02,support generation of manual in ePUB format,0,0.0,0
+c0f1a32,2017-09-28 17:43:59,Fixing broken USER-INTEL examples,1,0.0,1
+29583.0,2017-09-28 17:46:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12017 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0029583,2017-09-28 17:46:39,Add support for ebook generation in ePUB and mobi format,0,0.0,0
+75b3f34,2017-09-28 18:16:06,"Revert ""support generation of manual in ePUB format""",0,0.0,0
+348c4eb,2017-09-28 18:18:28,Merge branch 'collected-small-changes' into collected-doc-fixes,0,0.0,0
+d11733d,2017-09-28 18:28:46,make certain  that atom->maxspecial is incremented with extra special space,0,0.0,0
+480b087,2017-09-28 18:31:51,Version 13 Oct 2016,0,0.0,0
+a64040c,2017-09-28 18:33:04,Makefile.lammps.gfortran,0,0.0,0
+10d1741,2017-09-28 18:38:25,Create in.temper_npt,0,0.0,0
+0f52dd7,2017-09-28 18:41:06,Remove all thread fences except one in verlet_kokkos,0,0.0,0
+285a123,2017-09-28 18:42:15,Add files via upload,0,0.0,0
+c66ddf9,2017-09-29 08:03:02,make molfile less special,0,0.0,0
+d898afa,2017-09-29 09:19:38,build lib/gpu as a library,0,0.0,0
+d7aac2f,2017-09-29 13:26:02,Use PIC in mpi_stubs when BUILD_SHARED_LIBS=on,0,0.0,0
+9f2740b,2017-09-29 13:41:35,enable PIC globally,0,0.0,0
+2a06b75,2017-09-29 15:36:41,drop INSTALL_LIB option,0,0.0,0
+4ef63fe,2017-09-29 15:50:31,simpilfy pkg lib build,0,0.0,0
+71c4edd,2017-09-29 15:52:34,drop BUILD_SHARED_PKG_LIBS and make all pkglibs static,0,0.0,0
+a86572f,2017-09-29 16:20:19,plug small memory leak,0,0.0,0
+4524b0f,2017-09-29 16:54:46,make GPU flags local to libgpu,0,0.0,0
+4c71beb,2017-09-30 12:12:15,replace variable length array in fix drude/transform with new/delete,1,0.0,0
+091d058,2017-09-30 17:44:15,we cannot add a fix while creating a fix. move fix addintion to Fix::init(),1,0.0,0
+6e342d2,2017-10-01 14:03:52,Merge branch 'master' (21893539cb Aug 25) into USER-DPD_kokkos_merge,0,0.0,0
+84378f8,2017-10-01 14:05:12,check for '-fno-second-underscore',0,0.0,0
+100231b,2017-10-01 14:21:09,cmake: README is markdown,0,0.0,0
+56d21bf,2017-10-01 14:22:04,fully integrate temper/npt command into manual,0,0.0,0
+da7be99,2017-10-01 14:28:20,Add files via upload,0,0.0,0
+fbe42cd,2017-10-01 14:31:33,SOVERSION not needed for STATIC libs,0,0.0,0
+a7b0d1f,2017-10-01 14:40:19,Add files via upload,0,0.0,0
+cf24dd0,2017-10-02 04:53:17,Remove unnecessary check in npair_kokkos,0,0.0,0
+529eeb6,2017-10-02 09:31:39,link cuda in gpu only  remove duplicated incl. dir,0,0.0,0
+8d384b9,2017-10-02 15:03:48,Rename SSA specific debug #ifdef to DEBUG_SSA_PAIR_CT,0,0.0,0
+0c7879e,2017-10-02 15:53:28,USER-DPD: remove some out-of-date FIXME comments in fix_shardlow_kokkos.cpp,0,0.0,0
+81be9b3,2017-10-02 17:15:13,USER-DPD: Kokkos version of Const Temperature DPD isn't implemented yet,0,0.0,0
+cc09a63,2017-10-02 17:19:42,USER-DPD: finish renaming #ifdef DEBUG_PAIR_CT to DEBUG_SSA_PAIR_CT,0,0.0,0
+8acdc80,2017-10-02 17:24:36,Merge pull request #630 from akohlmey/moltemplate-update,0,0.0,0
+92d9b36,2017-10-02 17:39:59,GPU: cubin not needed,0,0.0,0
+00aef0f,2017-10-02 17:40:46,GPU: clean up part 2,0,0.0,0
+2a24cbf,2017-10-02 21:13:51,GPU: clean up,0,0.0,0
+466fde6,2017-10-02 21:20:26,Merge pull request #798 from akohlmey/always-use-internal-xdr,0,0.0,0
+d2aa05c,2017-10-02 21:24:51,Merge pull request #781 from wmbrownIntel/user-intel-2018u1p2,0,0.0,0
+588b253,2017-10-02 23:26:21,fix bug in power operator in LAMMPS variable expressions,1,1.0,1
+1dffb0c,2017-10-02 23:27:10,make link unambiguous so sphinx is not confused,0,0.0,0
+5e89269,2017-10-02 23:41:14,apply pattern to ignore OPT package sources,0,0.0,0
+b34109a,2017-10-02 23:43:31,remove dead code in various neighbor list related source files,0,0.0,0
+9dc42fd,2017-10-02 23:53:05,avoid segfaults in USER-MESO by checking for required atom style flags,0,0.0,0
+af1fc45,2017-10-03 00:04:52,there is no support for multi-cutoff r-RESPA in lj/cut/coul/wolf,0,0.0,0
+11eed23,2017-10-03 00:14:34,more cleanup and respa code removal,0,0.0,0
+f07719e,2017-10-03 10:08:38,update src/.gitignore for fix wall*/ees sources,1,0.0,0
+251f280,2017-10-03 10:10:38,Fix compilation warnings in fix_python,1,0.0,0
+ca032f2,2017-10-03 10:14:24,add USER-OMP versions of lj/cut/coul/wolf,0,0.0,0
+1bb7af9,2017-10-03 10:45:08,explain position of fix cmap command in input for data and restart files,1,0.0,0
+fe14eec,2017-10-03 10:54:22,avoid division by zero for pair styles meam and meam/c,0,0.0,0
+4dcc49e,2017-10-03 10:56:07,Merge pull request #797 from akohlmey/multifile-restart-bugfix,0,0.0,0
+40ae6f2,2017-10-03 10:58:21,plug memory leak in pair style lj/class2/coul/long with coulomb tables,0,0.0,0
+8f79f5d,2017-10-03 10:59:46,Add make package-installed command,0,0.0,0
+8a2cf5c,2017-10-03 11:13:10,Added error if gcmc is used with molecules on more than one processor,1,0.0,0
+197f082,2017-10-03 11:15:44,Merge pull request #815 from akohlmey/collected-small-fixes,0,0.0,0
+e6d687f,2017-10-03 11:15:49,Merge pull request #816 from giacomofiorin/colvars-update-2018-02-23,0,0.0,0
+7e8bbe8,2017-10-03 11:16:29,Merge pull request #814 from stanmoore1/kk_snap_workaround,0,0.0,0
+245bf74,2017-10-03 11:16:54,Merge pull request #819 from stanmoore1/package_installed,0,0.0,0
+35cc795,2017-10-03 11:17:43,Merge pull request #822 from andeplane/gcmc_mpi_error,0,0.0,0
+a55adf4,2017-10-03 11:30:00,Merge pull request #728 from danicholson/cluster-fragment-aggregate-fixes,0,0.0,0
+1e790fb,2017-10-03 11:44:23,dead code removal,0,0.0,0
+e44f370,2017-10-03 11:44:52,add sanity checks for ring communication,0,0.0,0
+250ef9f,2017-10-03 11:46:08,avoid multiple calls to delete [] on the same pointer.,0,0.0,0
+5c59eb6,2017-10-03 11:49:57,Merge pull request #796 from akohlmey/create-bonds-sanity-check,0,0.0,0
+fd8f5f8,2017-10-03 11:52:08,Merge pull request #794 from akohlmey/tersoff-fixes,0,0.0,0
+e9b07a7,2017-10-03 11:52:48,Merge pull request #792 from pastewka/18_dump_nc1,0,0.0,0
+74dcf0b,2017-10-03 11:54:46,update authors list and packages from http://lammps.sandia.gov/authors.html,0,0.0,0
+30aaa7e,2017-10-03 12:00:43,make dihedrals and impropers header output consistent with bonds and angles,0,0.0,0
+5f52709,2017-10-03 12:02:01,avoid triggering misformatting of manual overview table with txt2html,0,0.0,0
+2876baa,2017-10-03 13:08:56,Update error.cpp,0,0.0,0
+c522b1b,2017-10-04 00:22:56,Merge branch 'patch-1' of https://github.com/evoyiatzis/lammps into collected-small-changes,0,0.0,0
+f12031f,2017-10-04 01:14:57,use Error::message() instead of Error::warning() to report whether coulomb tables are used or not,1,0.0,0
+9572634.0,2017-10-04 09:38:43,update long-range coulomb message formatting  so it fits better into other kspace output,0,0.0,0
+9572634.0,2017-10-04 09:38:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11992 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9572634.0,2017-10-04 09:38:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11994 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9572634.0,2017-10-04 09:38:43,Lennard-Jones potential with Coulomb interactions accounted through Wolf summations,0,0.0,0
+bda0ee3,2017-10-04 12:06:03,Fix execution space issues,1,1.0,1
+3653f40,2017-10-04 12:10:13,remove dead code,0,0.0,0
+2b0bfcb,2017-10-05 10:35:09,added coeff  settings  single  fix compile,1,1.0,1
+eecd2fb,2017-10-05 11:23:31,strip off unwanted ^M characters,0,0.0,0
+4c6779c,2017-10-05 14:11:15,Merge branch 'patch-2' of https://github.com/amilumas/lammps into collected-small-changes,0,0.0,0
+6bf2c60,2017-10-05 14:58:05,new fix halt command  other sundry small bug fixes,1,1.0,1
+44d2e8f,2017-10-05 15:27:00,Merge pull request #787 from akohlmey/user-atc-dep,0,0.0,0
+e0efdd5,2017-10-05 15:47:46,update fix ti/spring docs to reflect it is part of USER-MISC,1,0.0,0
+214c0cf,2017-10-05 16:44:24,try to use OS-provided (and obsoleted) RPC headers for XDR. always use bundled code,0,0.0,0
+55a3fdc,2017-10-05 16:55:22,add package file to .gitignore,0,0.0,0
+0ed987d,2017-10-05 16:56:20,fully integrate ufm into documentation,0,0.0,0
+4b7ca03,2017-10-05 16:58:16,make links to papers unique across files,0,0.0,0
+5d0626e,2017-10-05 16:58:49,Merge pull request #710 from rpleite/add-pair-ufm,0,0.0,0
+7a90eef,2017-10-05 17:00:10,Merge pull request #777 from lammps/fix_prop_atom,0,0.0,0
+0dd7ba2,2017-10-05 17:01:37,Merge pull request #778 from athomps/fix_gcmc_segfault_fix,0,0.0,0
+a9b7ff1,2017-10-05 17:08:17,Merge pull request #782 from hheenen/user-mofff-contribution,0,0.0,0
+bd17ee5,2017-10-05 17:08:35,Merge pull request #783 from numericalfreedom/lammps-doxygen,0,0.0,0
+15853a0,2017-10-05 17:08:49,Merge pull request #785 from jrgissing/imp_dihed_print,0,0.0,0
+439c2fd,2017-10-05 17:10:00,Merge pull request #791 from akohlmey/charmm-cmap-docs-reference,0,0.0,0
+4cfa88b,2017-10-06 09:12:39,patch 5Feb18,1,0.0,0
+f7cbdcf,2017-10-06 09:14:12,Merge pull request #827 from akohlmey/fixes-for-stable,0,0.0,0
+e91e505,2017-10-06 09:44:29,add restartinfo=0 to manbody file it was missing from,0,0.0,0
+05847a0,2017-10-06 10:18:38,documentation update for MEAM to clarify the I J K indices in the MEAM parameter file,0,0.0,0
+58e1969,2017-10-06 14:34:10,forgot to remove one default argument on a method derived from Integrate::setup(),0,0.0,0
+6820db9,2017-10-06 14:41:38,patch 22Feb18,1,0.0,0
+dc0e209,2017-10-06 16:37:52,Merge pull request #812 from akohlmey/correct-integrate-setup,0,0.0,0
+352a20f,2017-10-06 16:38:15,Merge pull request #813 from akohlmey/correct-neighbor-build,0,0.0,0
+88a33ed,2017-10-06 17:43:52,Collected fixes and updates to Colvars library,1,0.0,0
+b618717,2017-10-07 12:35:51,dead code and uninitialized variables detected by clang,0,0.0,0
+0f5d7dc,2017-10-07 12:38:41,merge capture regions  so the library interface code can compiled with exceptions,0,0.0,0
+7e58f08,2017-10-08 08:33:07,correct cut-n-paste bug reported by Massimo Pica Ciamarra on lammps-users,1,1.0,1
+0264610,2017-10-09 07:49:29,rename examples to match usual naming conventions and add reference output.,0,0.0,0
+264610.0,2017-10-09 07:49:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12019 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a1f5693,2017-10-09 08:29:12,adapt to current manual conventions,0,0.0,0
+14dc1c6,2017-10-09 08:29:52,Better load balance fix_qeq_reax_kokkos for half neigh list,0,0.0,0
+93c9a92,2017-10-09 08:30:48,remove tab char,0,0.0,0
+775a15b,2017-10-09 13:11:16,make default argument of virtual function Neighbor::build() explicit,0,0.0,0
+d90aad8,2017-10-09 14:42:47,Move compute_bi outside of j-loop,0,0.0,0
+534b7ad,2017-10-09 21:29:07,bugfix from Axel,0,0.0,1
+01051e4,2017-10-10 16:53:51,Introduced the change in reax/c/omp,0,0.0,0
+10510000.0,2017-10-10 16:53:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11991 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7e35042,2017-10-11 10:29:41,Add newline at end of pair_snap_kokkos_impl.h,0,0.0,0
+53aa92c,2017-10-11 10:30:29,Add Kokkos skip list capability,0,0.0,0
+45aa7de,2017-10-12 14:43:17,Add ghost option to npair_halffull,0,0.0,0
+cee94da,2017-10-13 00:15:15,Bugfix for effective plastic strain rate calc,0,1.0,1
+d3ef4bd,2017-10-13 09:48:16,state name of the affected variable in error messages where possible,1,0.0,0
+18ca229,2017-10-13 09:48:42,replace non-ASCII quotation marks with ASCII equivalent,0,0.0,0
+1a20058,2017-10-13 09:49:03,Added more permanent citation,0,0.0,0
+a973c65,2017-10-13 09:50:03,improve PDF reader compatibility for the created PDF file.,0,0.0,0
+b7c7492,2017-10-13 09:50:56,correctly escape 'a_ ' text  which is not a reference unlike 'a_b ',0,0.0,0
+fa2e5ac,2017-10-13 10:13:34,add dummy doc files for not-yet-implemented features,0,0.0,0
+3df9caf,2017-10-13 10:29:49,Add Kokkos versions of pair_style snap and zbl,0,0.0,0
+f6ddc8c,2017-10-13 10:49:31,correct issues related to the addition of fix cmap,1,1.0,1
+3e89b27,2017-10-13 13:25:02,default arguments on polymorph/pure methods can lead to unexpected overloading in derived classes,0,0.0,0
+f8f13d9,2017-10-13 17:25:06,Merge pull request #804 from akohlmey/collected-small-changes,0,0.0,0
+5fb5f70,2017-10-16 14:37:20,add code to check the ABI version of the LATTE library,0,0.0,0
+59de1a7,2017-10-16 14:37:30,allow for mpi4py version 2 or 3 in Python wrapper,0,0.0,0
+374d619,2017-10-16 14:57:12,remove dead code,0,0.0,0
+bb141aa,2017-10-16 22:51:56,fix uninitialized data access as reported by @martok in #174,1,1.0,1
+9.66e+16,2017-10-17 17:33:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11965 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0966e14,2017-10-17 17:33:01,update dependencies for colvars library,0,0.0,0
+2c75288,2017-10-18 11:24:12,remove code that has no effect,0,0.0,0
+39ededd,2017-10-18 11:24:44,correct commented out MPI examples,0,0.0,0
+17c17ac,2017-10-18 11:25:15,Merge pull request #830 from akohlmey/more-fixes-for-stable,0,0.0,0
+7dfc6b7,2017-10-18 13:24:36,ring communication *is* called with outbut set to NULL  so don't error out on that.,1,0.0,0
+382de50,2017-10-18 13:25:07,allow dynamic groups for some standard walls interacting with point particles,0,0.0,0
+b1b4a52,2017-10-18 13:25:48,correctly compute adjusted box lengths for triclinic boxes. code taken from topotools,0,0.0,0
+2fe1d1b,2017-10-18 13:26:19,Update comment,0,0.0,0
+e44196c,2017-10-18 13:27:15,Merge pull request #829 from lammps/restartinfo,0,0.0,0
+35f2cfa,2017-10-18 13:31:15,added old tangent to fix_neb for AGNI potential,0,0.0,0
+e93f8f8,2017-10-18 13:38:56,Merge pull request #806 from vishalkenchan/new_pair_lj_cut_coul_wolf,0,0.0,0
+281b1dc,2017-10-18 14:56:47,replace non-ASCII character,0,0.0,0
+6dd55e4,2017-10-18 15:24:54,make XDR support for dump style xtc compile on MacOSX,0,0.0,0
+f709a72,2017-10-18 15:26:15,fix off-by one bug when looking for bonds.,1,1.0,1
+40147a7,2017-10-18 16:44:18,correct typo,0,0.0,0
+19eb5d3,2017-10-18 18:05:34,Merge pull request #810 from lammps/latte-error2,0,0.0,0
+b0b67ca,2017-10-18 18:49:15,protect OpenMP header include with ifdefs,0,0.0,0
+6e7504f,2017-10-19 08:09:44,delete duplicate fclose() in fix ttm/mod constructor,1,1.0,1
+e368acd,2017-10-19 11:45:36,Cleaned up  sna factorial table,0,0.0,0
+e284545,2017-10-20 12:03:22,Merge pull request #786 from jrgissing/per_atom_prop_group,0,0.0,0
+f479f02,2017-10-20 13:41:31,Import segfault fix in Colvars module,1,1.0,1
+ac6434e,2017-10-20 13:54:45,Merge pull request #809 from Jc11235/fix_neb_old_tangent_implementation,0,0.0,0
+961b976,2017-10-20 13:56:09,Merge pull request #800 from athomps/fix_gcmc_segfault_fix,0,0.0,0
+260bbc6,2017-10-20 14:06:15,avoid uninitialized memory access errors reports from valgrind with fix qeq,1,0.0,0
+2d0f5e2,2017-10-20 14:06:35,Merge pull request #811 from akohlmey/check-latte-version,0,0.0,0
+aaf5e87,2017-10-20 14:08:15,support offsets for molecule IDs (if available) in read_data similar to atomIDs,0,0.0,0
+83c7d3a,2017-10-20 14:18:50,Merge pull request #220 from rbberger/fix-doc-makefile,0,0.0,0
+6b34a30,2017-10-20 14:53:22,bugifx for using compute chunk/atom with compress via rerun or right at the beginning of a run,0,0.0,0
+998aedc,2017-10-20 16:09:33,different style of AtC page headers that works well with html and pdf,0,0.0,0
+0a02c3c,2017-10-20 16:56:06,re-factored balance command now works with group and time weights,0,0.0,1
+ce78f69,2017-10-20 17:01:50,add group style to create an empty group directly,0,0.0,0
+2137be3,2017-10-21 15:50:27,remove PDF-only .txt file from Sphinx documentation processing,0,0.0,0
+a7ad124,2017-10-21 16:12:23,Update readme.md,0,0.0,0
+253a17b,2017-10-23 12:45:58,add the LAMMPS copyright,0,0.0,0
+68d0411,2017-10-23 13:35:43,reformatting and use citeme class,0,0.0,0
+0148c2a,2017-10-23 14:12:19,cmake: Add -restrict for Intel compilers for some packages,0,0.0,0
+39df9f5,2017-10-23 16:07:21,Rename crystal.lmp to in.crystal,0,0.0,0
+41c2587,2017-10-24 11:04:11,Rename pinning.lmp to in.pinning,0,0.0,0
+b63acf6,2017-10-24 11:11:10,Rename setup.lmp to in.setup,0,0.0,0
+941ee56,2017-10-24 11:12:51,Update in.setup,0,0.0,0
+d1630bb,2017-10-24 13:22:20,Update to Kokkos r2.04.04 and add workaround for performance regression,0,0.0,0
+2dbb44f,2017-10-24 13:38:04,Update readme.md,0,0.0,0
+82c6fd6,2017-10-26 12:06:57,add the usual LAMMPS copyright,0,0.0,0
+e79cd6c,2017-10-26 12:25:55,Update readme.md,0,0.0,0
+9f44e3e,2017-10-26 12:26:34,remove dependence of dump modify 'at' and 'append',0,0.0,0
+b002e07,2017-10-26 12:31:30,Merge branch 'master' into user-intel-update,0,0.0,0
+a26ffc7,2017-10-26 12:32:30,Merge pull request #694 from akohlmey/bond-gromos,0,0.0,0
+99a6c6e,2017-10-26 12:33:16,Merge branch 'history' of github.com:lammps/lammps into history,0,0.0,0
+f4d0aa3,2017-10-27 11:25:57,Fixing Kokkos bug,1,1.0,1
+f6658d1,2017-10-30 23:33:26,Fix a Colvars error that was hidden by the previous segfault,1,1.0,1
+36b7aa7,2017-11-01 21:19:55,add gromos bond style,0,0.0,0
+8a80446,2017-11-01 21:19:55,more changes to rRESPA neighbor lists,0,0.0,0
+7ef17ef,2017-11-01 21:20:19,update respa/omp integrator style for neighbor list refactor,0,0.0,0
+f7f6a15,2017-11-01 21:20:19,update several pair styles to be compliant with refactored respa lists data structures,0,0.0,0
+e755a83,2017-11-01 21:28:14,correct stan's email address,0,0.0,0
+91e4bcc,2017-11-01 21:28:14,optimized data access and using approximate exponential for USER-OMP version,0,0.0,0
+65b7723,2017-11-02 15:04:04,update multi-threaded neighbor list build for neighbor list refactor,0,0.0,0
+605fe53,2017-11-03 12:23:01,Merge pull request #688 from lammps/history,0,0.0,0
+279339e,2017-11-03 13:42:36,Merge pull request #673 from pastewka/17_dump_nc2,0,0.0,0
+b34000a,2017-11-04 02:49:22,Delete fix_rhok.h,0,0.0,0
+aa0d6cd,2017-11-04 02:49:28,Add Kokkos threaded reverse comm option,0,0.0,0
+5a8c5eb,2017-11-06 10:41:01,retrieve target temperature and pressure from fix npt. add sanity checks.,1,0.0,0
+0f971bf,2017-11-06 10:41:32,Switch to classic comm if ghost_velocity. The check_forward and check_reverse tests aren't necessary because the fix/pair/etc. comm is done in a separate routine.,0,0.0,0
+e337db4,2017-11-06 11:31:43,include dump cfg/uef in commands toctree,0,0.0,0
+09c61ca,2017-11-06 13:29:59,fix typos introduced in original translation: results are correct again,1,0.0,0
+ba43465,2017-11-06 13:30:08,add atom_modify map yes  also timers to create_atoms and replicate,0,0.0,0
+16b5315,2017-11-06 13:47:33,Merge pull request #660 from junghans/latte_fix,0,0.0,0
+88474fc,2017-11-06 13:48:26,Merge pull request #663 from jdevemy/master,0,0.0,0
+f39c621,2017-11-06 13:50:16,Merge pull request #664 from timattox/kokkos_atom2bin,0,0.0,0
+51688b2,2017-11-06 15:06:54,Merge pull request #665 from akohlmey/collected-small-fixes,0,0.0,0
+4342bcd,2017-11-07 09:17:58,Added group keywords to fix gcmc,1,1.0,1
+2e40c00,2017-11-07 10:00:57,Merge pull request #668 from ovilab/modify_deallocation_fix,0,0.0,0
+f043212,2017-11-07 13:57:29,fix for bug with compute rdf with pair reax/c. we must not copy a neighbor list  if newton settings are not compatible,1,0.0,1
+40e776e,2017-11-10 09:55:11,Merge pull request #672 from akohlmey/phana-w-tricubic,0,0.0,0
+8580650,2017-11-12 15:46:51,Merge pull request #679 from stanmoore1/kk_reax_comm,0,0.0,0
+c16b7a3,2017-11-12 15:57:53,change name zhou to momb in docs  fix grammar,1,0.0,0
+a085ee0,2017-11-13 04:53:16,Merge pull request #675 from wesbarnett/master,0,0.0,0
+dbd4acc,2017-11-13 08:58:07,Merge pull request #676 from stanmoore1/kokkos_reverse_comm,0,0.0,0
+a97553a,2017-11-13 08:58:29,Merge pull request #677 from stanmoore1/kk_update,0,0.0,0
+6abf68f,2017-11-13 08:59:18,Merge pull request #674 from wmbrownIntel/user-intel-update,0,0.0,0
+e2e21f0,2017-11-13 08:59:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11526 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c4c59b9,2017-11-13 09:00:26,Update readme.md,0,0.0,0
+f2dc764,2017-11-13 09:01:38,Update readme.md,0,0.0,0
+dde94c2,2017-11-13 09:07:25,',0,0.0,0
+adbc75c,2017-11-13 11:52:01,Update readme.md,0,0.0,0
+751465a,2017-11-13 14:32:26,Delete fix_rhok.cpp,0,0.0,0
+ec067bd,2017-11-13 17:59:16,Fix issues in Kokkos pair snap and zbl,1,1.0,1
+e55c90c,2017-11-14 14:01:07,Fix a few issues with Kokkos class2 files,1,1.0,1
+8e5d4fa,2017-11-17 14:12:16,update documentation for the reversal in the INTEL_MKL_RNG define,0,0.0,0
+53c1558,2017-11-17 14:21:54,update README in USER-INTEL for recent LRT logic reversal,0,0.0,0
+5ba8066,2017-11-17 15:07:59,reran npt_biaxial examples,0,0.0,0
+f3ed148,2017-11-20 10:18:53,"Revert ""bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS""",0,1.0,1
+7d07f06,2017-11-20 10:21:19,Minor adjustments to intel makefiles and documentation based on the reversed preprocessor logic and default memory align. Removing knl_coprocessor makefile.,0,0.0,0
+9a57231,2017-11-21 23:43:52,fix problems with references,1,1.0,1
+a111cf6,2017-11-26 22:35:56,address uninitialized variable issues pointed out by valgrind/coverity,0,0.0,1
+f02eb22,2017-11-26 22:39:03,formatting changes,0,0.0,0
+83ec981,2017-11-27 11:07:58,intel_simd.h is currently also needed by dihedral/charmm  not just sw.,0,0.0,0
+90ee522,2017-11-27 11:45:09,added citation to doc,0,0.0,0
+5770a20,2017-11-27 21:16:51,Merge pull request #696 from wmbrownIntel/intel-update-oct17,0,0.0,0
+39d24ab,2017-11-27 21:25:23,Add pre_reverse to verlet_kokkos and comment out timer,0,0.0,0
+e118938,2017-11-28 11:19:19,Merge pull request #695 from timattox/USER-DPD_small_updates,0,0.0,0
+fa6fc94,2017-11-28 11:28:15,fix memory leak via NeighListKokkos::clean_copy(),1,0.0,1
+e4b1421,2017-11-28 11:35:49,Merge pull request #669 from urpedersen/master,0,0.0,0
+5647522.0,2017-11-28 12:34:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11968 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5647522.0,2017-11-28 12:34:23,add support for neighbor list history refactoring in USER-OMP part 2,0,0.0,0
+5647522.0,2017-11-28 12:34:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11966 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5647522.0,2017-11-28 12:34:23,add support for neighbor list history refactoring in USER-OMP part 1,0,0.0,0
+6f7bd78,2017-11-29 01:02:04,Fixed error->all instead of error->one bug in USER-DPD/fix_shardlow.cpp.,1,1.0,1
+e3b961b,2017-11-30 09:10:39,Limit IPython autocomplete to known commands and properties,0,0.0,0
+8c2d38c,2017-11-30 09:13:03,Merge pull request #685 from ellio167/kim-api-v1.9.2,0,0.0,0
+c3aa705,2017-11-30 09:22:32,Merge pull request #686 from giacomofiorin/lepton-library,0,0.0,0
+319508b,2017-11-30 10:56:58,fix ti/spring,1,1.0,1
+15a3364,2017-12-01 09:13:31,Merge pull request #689 from rbberger/pylammps_autocomplete_fix,0,0.0,0
+31f2ca1,2017-12-01 09:51:40,Merge pull request #691 from akohlmey/collected-fixes,0,0.0,0
+31eb129,2017-12-01 10:18:22,handle invalid lookup for bond/angle tabulation,0,0.0,0
+5b33f15,2017-12-01 10:33:47,handle lookup exceptions consistently across energy and energy+force lookup in bond/angle style table,0,0.0,0
+80dffb2,2017-12-01 11:33:42,error out on trying to compile USER-INTEL with -DLAMMPS_BIGBIG,1,0.0,0
+da51a8a,2017-12-01 12:13:14,remove some dead code,0,0.0,0
+5d2e097,2017-12-01 12:53:40,refactoring of neighbor history,0,0.0,0
+42e03da,2017-12-01 13:16:11,Add special KOKKOS styles individually,0,0.0,0
+14aa036,2017-12-01 15:53:02,avoid segfault when using a hash as map on an empty system,0,0.0,0
+5d9a6c1,2017-12-01 16:03:25,correctly represent  that the molecule summary refers to the largest type number and not the number of types,0,0.0,0
+58ed92d,2017-12-01 16:45:22,protect library interface from issuing lammps commands during run and minimize,0,0.0,0
+e7f9772,2017-12-01 17:14:11,add support for UFM pair style support to OpenCL compilation makefile,0,0.0,0
+f8891a4,2017-12-02 01:04:46,fix bug with pair_modify <style> compute not triggering the correct global change,1,1.0,1
+4a3a6b4,2017-12-03 19:37:42,Merge branch 'patch-4' of https://github.com/abbatux/lammps into collected-small-changes,0,0.0,0
+2813923.0,2017-12-04 10:43:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11970 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2813923.0,2017-12-04 10:43:41,remove non-functional doxygen generated navigation header from AtC doc files,0,0.0,0
+2813923.0,2017-12-04 10:43:41,improve format,0,0.0,0
+2813923.0,2017-12-04 10:43:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11969 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d916416,2017-12-04 12:02:32,insert new toplevel text into USER-ATC docs  change header levels.,0,0.0,0
+1baecc6,2017-12-04 14:16:53,promote header levels for better formatting in pdf manual,0,0.0,0
+f64544a,2017-12-05 08:34:24,add a short command overview page for the PDF manual only,0,0.0,0
+fc742eb,2017-12-05 16:23:20,update manual content list for recent updates,0,0.0,0
+4d915db,2017-12-05 23:33:24,Fix Python 3 compatibility by encoding strings passed as c_char_p,1,1.0,1
+bc3a84b,2017-12-07 08:19:56,cmake: fix typo and pkg info,1,0.0,0
+fa0c28b,2017-12-07 08:21:20,include added docpages in toctrees for sphinx,0,0.0,0
+73d509f,2017-12-07 08:22:34,drop const qualifier to allow bracketing of lookup index,0,0.0,0
+bae45e2,2017-12-07 08:23:06,Add Lepton library within lib/colvars,0,0.0,0
+abb2fe5,2017-12-07 08:23:47,Merge pull request #684 from irisTa56/bugfix-in-domain.cpp,0,0.0,0
+5179efd,2017-12-07 08:24:22,Merge pull request #693 from giacomofiorin/colvars-update,0,0.0,0
+d7e5d60,2017-12-07 08:25:01,Merge pull request #671 from danicholson/user-uef,0,0.0,0
+c4e83be,2017-12-07 08:42:17,fix uninitialized variable bug spotted by coverity scan,1,0.0,1
+3e99d1a,2017-12-07 09:06:33,small updates to recently added docs and rename of an example dir,0,0.0,0
+d029cb9,2017-12-07 10:31:04,Merge pull request #698 from lammps/doc-update,0,0.0,0
+29df5a5,2017-12-07 10:57:01,Merge pull request #699 from lammps/doc-update2,0,0.0,0
+ed8680d,2017-12-07 15:38:15,Avoid checking region when not specified,0,0.0,0
+4b1bcaa,2017-12-07 16:01:02,Fix issues with Kokkos skip lists,1,0.0,1
+0b51e9b,2017-12-07 16:36:36,Moved rerun bug fix to individual affected styles,1,0.0,1
+81a1c00,2017-12-07 16:39:41,added some documentation and reference example,0,0.0,0
+0edad83,2017-12-08 11:29:12,add input examples for custom rigid body definition,0,0.0,0
+16d6dfc,2017-12-08 11:40:44,apply bugfix for MEAM provided by Wolfgang Verestek on lammps-users,0,1.0,1
+1b07a4e,2017-12-10 17:14:08,fix memory leak in fix_shardlow_kokkos,1,1.0,1
+3291a4f,2017-12-11 08:08:49,add/correct code to define rigid bodies with atomstyle/atomfile variables and via custom per-atom properties,0,0.0,0
+09ca7b3,2017-12-11 08:08:49,Merge pull request #704 from akohlmey/bond-gromos-bugfix,0,0.0,0
+3af389e,2017-12-11 08:08:49,Merge pull request #703 from akohlmey/custom-rigid-body-generation,0,0.0,0
+5968850.0,2017-12-12 09:20:09,Fix space/tab error in pizza/gl.py,1,1.0,1
+5968850.0,2017-12-12 09:20:09,fix bug with pair_modify <style> compute not triggering the correct global change,1,1.0,1
+5968850.0,2017-12-12 09:20:09,Completed first version of fix python/integrate,1,1.0,1
+5968850.0,2017-12-12 09:20:09,fix cut-n-paste error in create_bond docs,1,1.0,1
+1932522.0,2017-12-12 09:54:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11972 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1932522.0,2017-12-12 09:54:28,Update Colvars to version 2017-10-11,0,0.0,0
+1932522.0,2017-12-12 09:54:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11971 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1932522.0,2017-12-12 09:54:28,update USER-OMP code for shear history neighbor refactoring,0,0.0,0
+8a93f63,2017-12-13 10:05:53,"rename misleading ""CPU time"" into ""Time spent""",0,0.0,0
+2f857c6,2017-12-13 15:12:14,fix various formatting and broken link issues identified by ebook-convert,1,1.0,1
+9a71efc,2017-12-13 15:19:46,fix bond/react final touches,1,1.0,1
+cec22dd,2017-12-13 16:20:49,Update lib/kim for kim-api-v1.9.2,0,0.0,0
+e5cd068,2017-12-13 17:41:00,avoid merge conflict,0,0.0,0
+8a36cdc,2017-12-13 18:42:24,MAINT: Return error when 'at' keyword is used without 'append yes'.,1,0.0,0
+10fa54b,2017-12-13 18:44:31,DOC: Updated doc to separate description of 'append' and 'at' keywords.,0,0.0,0
+68cf694,2017-12-15 13:01:38,Merge pull request #680 from lammps/map-yes,0,0.0,0
+4d725c3,2017-12-15 13:17:12,correct comment for Fix::ev_setup(),1,0.0,0
+950bfb8,2017-12-15 13:20:13,Merge pull request #727 from lammps/fix-gcmc-examples,0,0.0,0
+a7bc3ed,2017-12-15 13:30:17,Merge branch 'master' into HEAD,0,0.0,0
+bcc5f49,2017-12-15 13:53:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14145 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2a131d1,2017-12-15 13:56:54,cmake: added USER-UEF,0,0.0,0
+73c55ac,2017-12-15 14:06:16,fix memory corruption issue in fix reax/c/species,1,1.0,1
+da83feb,2017-12-15 16:36:21,"correct handling of ""at"" keyword for netcdf dumps as suggested by @pastewka in PR #681 review",0,0.0,0
+a2756db,2017-12-15 16:42:06,Merge pull request #681 from lammps/dump-modify,0,0.0,0
+00a9672,2017-12-18 13:57:56,Fix execution space issues in comm_kokkos,1,0.0,1
+46fe0a9,2017-12-18 14:09:39,plug memory leak in fix bond/react,1,0.0,1
+798d68c,2017-12-18 14:50:33,Merge pull request #683 from wmbrownIntel/pppm_intel_fix,0,0.0,0
+56e633a,2017-12-19 14:54:35,Add Kokkos halffull neighbor list capability,0,0.0,0
+18acc6a,2017-12-19 15:01:11,Relax restriction in neighbor.cpp,0,0.0,0
+ff2b613,2017-12-20 03:13:08,bugfix. avoiding operating on uninitialize data. closes #690,0,0.0,1
+b9184ef,2017-12-20 04:51:46,Optimize npair_halffull styles  the number of i atoms  whether owned or ghost  must match between the child half list and parent full list,0,0.0,0
+7d07baa,2017-12-21 11:07:06,more lib installation cleanup,0,0.0,0
+d4f45f4,2017-12-24 17:45:58,fix variable name bug and synchronize with other ported Install.py files,1,1.0,1
+a9e9a20,2017-12-25 13:03:18,remove unused variable,0,0.0,0
+c333401,2017-12-25 13:27:14,add reference outputs for QUIP/GAP example,0,0.0,0
+2896df2,2018-01-04 17:16:31,update and automate the QUIP configuration so that no environment variables are needed,0,0.0,0
+ffc74fc,2018-01-04 19:46:31,Update Kokkos library to v2.03.13,0,0.0,0
+75f1a4f,2018-01-04 20:43:53,Merge pull request #607 from akohlmey/final-changes-for-stable,0,0.0,0
+5ecc3ce,2018-01-04 20:44:40,restore mpic++ makefile to resolve regression test failure,0,0.0,0
+91993b2,2018-01-05 19:52:51,Added references to GPU package citations,0,0.0,0
+6c058fb,2018-01-05 20:14:25,Merge pull request #573 from junghans/cmake,0,0.0,0
+6070182.0,2018-01-06 11:03:48,add comment to msi2lmp README about symmetry limitations,0,0.0,0
+6070182.0,2018-01-06 11:03:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11974 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6070182.0,2018-01-06 11:03:48,update manual to point to packages.lammps.org instead of rpm.lammps.org,0,0.0,0
+6070182.0,2018-01-06 11:03:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11973 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+46217db,2018-01-06 12:56:42,USER-INTEL add-ons from Mike,0,0.0,0
+d6d7dde,2018-01-06 18:54:55,update QUIP examples to closer match typical LAMMPS examples,0,0.0,0
+11cddd8,2018-01-06 19:42:40,flag more pair styles as supporting USER-INTEL to match newly added code,0,0.0,0
+f77483e,2018-01-06 19:44:07,Merge pull request #612 from giacomofiorin/colvars-update-2017-08-10,0,0.0,0
+450c689,2018-01-08 09:12:51,Merge pull request #618 from lammps/intel,0,0.0,0
+3bb8294,2018-01-08 09:13:11,Merge pull request #613 from akohlmey/collected-small-changes,0,0.0,0
+8888b05,2018-01-08 09:14:36,patch 17Aug17,1,0.0,0
+1b51efd,2018-01-08 09:15:02,allocate the temporary special array on the heap and not the stack (it may get too big quickly) and clear the array before use.,0,0.0,0
+09bed0c,2018-01-08 09:15:21,Merge branch 'master' into USER-DPD_kokkos as of patch 10Aug17,1,0.0,0
+cc9b611,2018-01-08 09:15:36,whitespace cleanup,0,0.0,0
+85ff0c1,2018-01-08 09:16:16,Temper_NPT and example,0,0.0,0
+9e9cfe5,2018-01-08 09:16:43,Merge pull request #1 from amilumas/temper_npt,0,0.0,0
+1bd9e17,2018-01-08 09:20:18,new USER-MESO package,0,0.0,0
+2690075.0,2018-01-08 14:38:24,Merge pull request #601 from stanmoore1/kokkos_update,0,0.0,0
+2690075.0,2018-01-08 14:38:24,Merge pull request #597 from ndtrung81/three-body-short-nlist,0,0.0,0
+2690075.0,2018-01-08 14:38:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11975 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2690075.0,2018-01-08 14:38:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11976 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b96100c,2018-01-08 14:42:43,Fixed pbc wrapping in case of spherical bins,1,1.0,1
+a5d401e,2018-01-08 14:46:32,Fixed uninitialized variable for multiple molecule in set,1,1.0,1
+91107cc,2018-01-09 12:47:33,remove tarball after unpacking,0,0.0,0
+e26c170,2018-01-09 15:08:08,make Install.py for lib/smd and lib/voronoi consistent,0,0.0,0
+4adbb88,2018-01-09 15:14:47,"clean up makefiles provide ""serial"" and ""mpi"" targets for atc and awpmd",0,0.0,0
+2047ae7,2018-01-09 15:25:36,Remove redundant check in Makefile.kokkos,0,0.0,0
+275c084,2018-01-09 17:03:49,add local makefile overrides to be compatible with standard suffixes,0,0.0,0
+92e2df7,2018-01-10 10:20:12,Fix compile error in pair_yukawa_kokkos,1,1.0,1
+d7d087a,2018-01-10 10:20:40,added examples/threebody  fix reaxc/speceies/kk,1,1.0,1
+92742c5,2018-01-10 18:00:22,update README file for lib/mscg,0,0.0,0
+db1ed32,2018-01-11 09:39:53,fix stupid bug in AtC when using alloca() instead of VLAs,1,1.0,1
+0d7bee4,2018-01-11 09:41:37,rework Install.py for gpu library. make it consistent with other lib folders and support python3,0,0.0,0
+22d2d1c,2018-01-11 10:01:34,fix ti/spring,1,1.0,1
+45674e6,2018-01-11 10:07:44,remove attempts to use urllib and use curl for all downloading. restore printing help with no flags.,0,0.0,0
+45674000000.0,2018-01-11 10:07:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11978 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1c10c78,2018-01-11 13:54:26,"consistently use $(PYTHON) in the master makefile (which defaults to ""python"")",0,0.0,0
+2691728.0,2018-01-11 15:01:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11980 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2691728.0,2018-01-11 15:01:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11979 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2691728.0,2018-01-11 15:01:08,Merge branch 'cmake' of github.com:junghans/lammps into cmake,0,0.0,0
+2691728.0,2018-01-11 15:01:08,Add -DLAMMPS_EXCEPTIONS flag,0,0.0,0
+3b1b9a2,2018-01-12 11:30:27,cmake: improve some error messages,1,0.0,0
+17b6a4c,2018-01-12 11:47:35,Merge pull request #599 from lammps/kim-doc,0,0.0,0
+75d259f,2018-01-12 12:00:53,"must not include system headers within 'extern ""C""' blocks. breaks with MPICH",0,0.0,0
+5863f11,2018-01-12 12:26:50,convert explicit copies back into symbolic links,0,0.0,0
+190cc78,2018-01-12 12:29:03,convert copies of Install.py files to symlinks,0,0.0,0
+61ebf62,2018-01-12 12:50:02,integrate fix rhok into the LAMMPS source code management and documentation system,1,0.0,0
+1ec5482,2018-01-12 15:41:59,simplify Install.py for voronoi,0,0.0,0
+6e3acce,2018-01-12 15:44:11,Merge pull request #598 from akohlmey/last-minute-changes,0,0.0,0
+52d3e98,2018-01-12 15:45:24,Fix bug in fix_property_atom,1,1.0,1
+dea8d59,2018-01-12 15:51:54,restore lost KIM doc section in Section packages,0,0.0,0
+24f1889,2018-01-12 16:10:42,Merge branch 'kim-install' into install-and-docs-reviewed,0,0.0,0
+f6075c9,2018-01-12 16:12:57,Merge remote-tracking branch 'github/kim-doc' into install-and-docs-reviewed,0,0.0,0
+72eb2da,2018-01-13 20:41:05,python3 port  yet untested,0,0.0,0
+7a78875,2018-01-13 21:31:11,cmake: fix molfile compile,1,1.0,1
+9e35e76,2018-01-13 21:32:59,new fix flow/gauss command,1,0.0,1
+9e+111,2018-01-13 21:32:59,new fix flow/gauss command,1,1.0,1
+23e8fb0,2018-01-13 21:57:24,Add missing sync to neigh_bond_kokkos,0,0.0,0
+1cfc311,2018-01-13 22:17:23,correct symbolic links to shared Install.py file,0,0.0,0
+2b7c233,2018-01-14 08:44:50,Remove tpls directory,0,0.0,0
+f37f4f0,2018-01-14 17:56:03,Merge branch 'master' into USER-DPD_kokkos_testing,0,0.0,0
+d2983ca,2018-01-14 18:01:19,Merge branch 'kim-install' into install-and-docs-reviewed,0,0.0,0
+a599817,2018-01-15 08:23:39,Fix memory leak in pair_reaxc_kokkos,1,1.0,1
+c8b5d83,2018-01-15 10:43:30,add new compute fragment/atom,0,0.0,0
+72b479d,2018-01-15 11:01:07,ignore file recently added to USER-INTEL,0,0.0,0
+26d6f6d,2018-01-15 15:42:31,add checks when reading QEQ parameter file to avoid segfaults and memory corruption on incorrect files,0,0.0,0
+07ddb5e,2018-01-15 23:54:48,replace variable length arrays in fix gcmc with new/delete,1,0.0,0
+b374813,2018-01-16 08:50:30,make download function more resilient by also catching failed execution,1,0.0,0
+9e413bf,2018-01-16 09:00:34,avoid invalid calls to memcpy(): when ndot == 0  pointers may be NULL,0,0.0,0
+57dd6c7,2018-01-16 09:00:52,cmake: some more typo fixes,1,0.0,0
+6bd6e62,2018-01-16 09:01:15,cmake: print flag summary,0,0.0,0
+6e37272,2018-01-16 09:02:20,Merge branch 'master' into kk_changes,0,0.0,0
+e07a6d1,2018-01-16 09:03:45,avoid division by zero in peri pair styles,0,0.0,0
+97dd812,2018-01-16 09:04:04,safer handling of memory management for lists in reax/c,0,0.0,0
+e798cdf,2018-01-16 09:05:36,Removing stray file,0,0.0,0
+21ff440,2018-01-16 10:48:38,Prefer DeviceType specification over RangePolicy,0,0.0,0
+3de39c7,2018-01-16 11:29:48,protect LAMMPS from calling incompatible QUIP library with -DLAMMPS_BIGBIG,0,0.0,0
+01cfb71,2018-01-16 11:31:20,update manual links that got broken when removing and renumbering a section,0,0.0,0
+8d37c89,2018-01-16 11:32:37,fix LAMMPS_LONGLONG_TO_LONG description,1,1.0,1
+3b1ec14,2018-01-16 12:01:47,trigger relink after package library build through updating the time stamp on main.cpp,0,0.0,0
+9a70f2d,2018-01-16 12:59:51,update manual links that got broken when removing and renumbering a section,0,0.0,0
+5d25485,2018-01-16 13:00:42,remove references to Make.py and USER-CUDA,0,0.0,0
+23dda3d,2018-01-16 13:02:10,remove references to Make.py and USER-CUDA,0,0.0,0
+bf48f3e,2018-01-16 13:04:20,working on GPU build,0,0.0,0
+4c0cd5f,2018-01-16 13:50:49,add workaround that allows pair style quip to work with -DLAMMPS_BIGBIG  assuming tags are still only 32-bit signed integer,0,0.0,0
+2ad823f,2018-01-16 14:08:18,add various checks and improvements to identify incompatible uses and warn or exit with error message,1,0.0,0
+709ce8a,2018-01-16 14:09:21,GPU compiles,0,0.0,0
+b95cf65,2018-01-16 14:10:46,added minimal README,0,0.0,0
+0cd8641,2018-01-16 15:39:07,ported lib/voronoi/Install.py to python 3.x and tested with 2.7,0,0.0,0
+f190123,2018-01-16 15:49:16,port USER-SMD folder. make voronoi consistent with it,0,0.0,0
+0c8af07,2018-01-16 16:43:25,remove cubin_headers hack,0,0.0,0
+86ed555,2018-01-16 17:28:58,remove references to Make.py from the manual and instead refer to section 4,0,0.0,0
+1640066.0,2018-01-16 18:38:12,patch 10Aug17,1,0.0,0
+1640066.0,2018-01-16 18:38:12,whitespace cleanup,0,0.0,0
+1640066.0,2018-01-16 18:38:12,Supported short neighbor lists for 3-body kernels in sw/gpu and vashishta/gpu,0,0.0,0
+1640066.0,2018-01-16 18:38:12,cmake: add cross-configure warning,0,0.0,0
+f2c0c4a,2018-01-16 18:39:08,"remove -DLAMMPS_MEMALIGN from ""make mpi"" and ""make serial"" for increased portability",0,0.0,0
+1b91c0e,2018-01-16 21:01:25,add automatic triggering of review requests with a code owners file,0,0.0,0
+480d7dd,2018-01-17 07:33:46,Remove style files in src dir while running cmake,0,0.0,0
+88a2f9f,2018-01-17 07:34:08,Ignore installed package files when using cmake,0,0.0,0
+e1e6825,2018-01-17 07:34:18,Merge branch 'USER-DPD_kokkos' into USER-DPD_GBhacks as of patch 10Aug17,1,0.0,0
+415a55b,2018-01-17 10:41:56,clean up code so it can be compiled with and without OpenMP enabled regardless of whether the USER-OMP package is installed,0,1.0,1
+5e9d257,2018-01-17 13:00:48,patch 11Aug17,1,0.0,0
+9bb7f1d,2018-01-17 13:45:15,Fix CUDA issue in USER-DPD/random_external_state.h,1,1.0,1
+8d29f64,2018-01-17 14:05:30,Merge pull request #25 from timattox/USER-DPD_GBhacks_cudafix,0,0.0,0
+9b12984,2018-01-17 14:46:44,Merge pull request #611 from akohlmey/final-tweaks,0,0.0,0
+a802b75,2018-01-17 21:59:37,add a deprecation warning to pair style meam and make the reax one consistent with it,0,0.0,0
+3f967e3,2018-01-21 08:10:38,Merge pull request #609 from akohlmey/doc-changes-for-stable,0,0.0,0
+f7e2bf2,2018-01-21 11:40:48,rework section 4 (Packages) in the manual to match Install.py scripts,0,0.0,0
+5212e95,2018-01-21 13:34:02,correctly use the term CUDA (instead of Cuda) when not referring to the KOKKOS device flag (which is Cuda),0,0.0,0
+5.212e+98,2018-01-21 13:34:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11930 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e72faf3,2018-01-21 20:55:04,more cleanup  checks and generalization of QEQ parameter file parsing,0,0.0,0
+d2da49c,2018-01-22 23:56:11,make the deprecation warning nicer looking,0,0.0,0
+13c0822,2018-01-23 00:16:51,when recomputing special bonds  make certain we do not shrink atom->maxspecial and add force->special_extra only once,0,0.0,0
+448c9c8,2018-01-23 16:27:06,"Revert ""remove -DLAMMPS_MEMALIGN from ""make mpi"" and ""make serial"" for increased portability""",0,0.0,0
+ba68548,2018-01-28 06:19:33,add some remarks about makefile settings on windows,0,0.0,0
+cf8dae5,2018-01-28 06:20:03,replace variable length arrays in fix gle with new/delete,1,0.0,0
+031812b,2018-01-28 06:22:03,avoid writable string and deprecated implicit conversion warning,0,0.0,0
+6753977.0,2018-01-28 06:23:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11827 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6753977.0,2018-01-28 06:23:09,Merge pull request #614 from akohlmey/fixes-for-stable,0,0.0,0
+6753977.0,2018-01-28 06:23:09,we need to override compiler flags in lib/voronoi/Install.py,0,0.0,0
+6753977.0,2018-01-28 06:23:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11898 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9fd1e47,2018-01-28 06:24:03,fall back to wget when curl is not available,0,0.0,0
+4e4fd5f,2018-01-28 14:23:05,correct small (but harmless) logic error.,1,1.0,1
+9cf4ac8,2018-01-28 14:24:28,More robust change from initial to target restraint centers in Colvars,0,0.0,0
+17d98d0,2018-01-30 04:53:57,Merge pull request #27 from timattox/USER-DPD_kokkos_update,0,0.0,0
+54a3096,2018-01-31 05:59:19,add more strict checking of data when parsing molecule files to detect format errors,1,0.0,0
+38715d7,2018-01-31 06:08:04,remove special_bonds extra keyword and refer to read_data and create_box instead,0,0.0,0
+3bc1c6b,2018-02-01 14:25:55,fix array bounds issue due to typo. spotted by GCC.,1,1.0,1
+090ce7c,2018-02-01 18:19:37,more lib compilation updates,0,0.0,0
+cc54848,2018-02-01 18:40:17,revamp of library builds,0,0.0,0
+080ce42,2018-02-01 18:40:28,replace variable length array with fixed size,1,0.0,0
+b70149e,2018-02-01 18:50:25,Only include ghosts for newton off  since this style exists as a standalone build  but the newton on method doesn't,0,0.0,0
+3e0cb9b,2018-02-01 18:56:10,Merge pull request #600 from akohlmey/install-and-docs-reviewed,0,0.0,0
+c3d1cee,2018-02-02 09:23:02,Merge pull request #747 from stanmoore1/kk_reax_hist,0,0.0,0
+bfcb71a,2018-02-02 09:27:09,Merge pull request #748 from stanmoore1/kk_docs,0,0.0,0
+2ff278d,2018-02-02 10:02:44,Merge pull request #750 from stanmoore1/kk_fences,0,0.0,0
+85fdf9e,2018-02-02 10:10:27,Merge pull request #754 from rbberger/cmake_kokkos_bugfix,0,0.0,0
+4af14be,2018-02-02 14:38:28,Merge pull request #749 from akohlmey/collected-bugfixes-and-updates,0,0.0,0
+2913d3d,2018-02-02 14:39:42,mention tool/doxygen folder in tools section and refer to README file,0,0.0,0
+553b3ff,2018-02-02 14:40:14,Add missing return value in pair_snap_kokkos,0,0.0,0
+160edc9,2018-02-02 14:41:28,"Tools for LAMMPS documentation with the ""doxygen"" documentation platform are provided.",0,0.0,0
+e4a1826,2018-02-02 14:41:56,Added double quotes to a word in Section_tools.txt file in order to activate Sphinx hyperlink.,0,0.0,0
+dc4dd15,2018-02-02 14:44:15,Merge pull request #774 from lammps/neigh-tweak,0,0.0,0
+5383035.0,2018-02-02 14:44:36,Merge pull request #742 from rbberger/fix_python_move,0,0.0,0
+5383035.0,2018-02-02 14:44:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11895 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5383035.0,2018-02-02 14:44:36,Merge pull request #744 from akohlmey/doc-update,0,0.0,0
+5383035.0,2018-02-02 14:44:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11856 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+10d80ba,2018-02-02 14:44:58,Merge pull request #775 from wmbrownIntel/user-intel-2018u1,0,0.0,0
+7441b06,2018-02-02 14:45:52,patch 17Jan18,1,0.0,0
+f4a79b4,2018-02-02 14:46:11,Small character corrections to the file Developer.dox.lammps,0,0.0,0
+196b3c8,2018-02-02 14:46:46,Small correction in image caption in Developer.dox.lammps,0,0.0,0
+984fda5,2018-02-02 14:47:09,USER-INTEL: Adding missing backslash for two Makefiles using Intel compiler.,0,0.0,0
+401bfc5,2018-02-02 14:47:40,cmake: add USER-MOFFF,0,0.0,0
+fa4c7fc,2018-02-02 14:51:23,Added MOF-FF src  doc and example files,0,0.0,0
+4974596,2018-02-04 14:39:19,added src/USER-MOFFF/README,0,0.0,0
+1d403b2,2018-02-05 13:29:14,same PR  also has cosmetic changes to new fix neb options,1,0.0,0
+f914da6,2018-02-05 14:55:26,comm tiled bug fix,1,1.0,1
+669ae02,2018-02-05 14:56:55,modifications to correctly print modified dihedrals  impropers,0,0.0,0
+b49806d,2018-02-07 16:35:49,fix memory leak via NeighListKokkos::clean_copy(),1,0.0,1
+3d63c29,2018-02-07 21:35:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12652 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+996c62f,2018-02-07 21:58:05,fix compilation  move meam_cleanup to destructor,1,0.0,1
+21fe88f,2018-02-08 13:07:56,Merge branch 'lammps-tools-doxygen' of https://github.com/numericalfreedom/lammps into lammps-tools-doxygen,0,0.0,0
+a0de2f2,2018-02-08 19:15:09,per-atom property dynamic group,0,0.0,0
+7e78738,2018-02-09 14:26:21,Merge pull request #776 from numericalfreedom/lammps-tools-doxygen,0,0.0,0
+2e99e54,2018-02-09 14:44:11,Merge pull request #718 from timattox/USER-DPD_es_RNG,0,0.0,0
+3528f9c,2018-02-09 15:19:01,Fixed proper deletion of fixes if fix is NULL,1,1.0,1
+a6eb521,2018-02-09 17:32:32,Merge pull request #725 from stanmoore1/kk_update,0,0.0,0
+8a39ae8,2018-02-09 17:32:42,adapt #include statements to current LAMMPS conventions,0,0.0,0
+6efeab0,2018-02-10 20:40:02,One last tweak to npair_halffull_newtoff.cpp,0,0.0,0
+afd39eb,2018-02-11 16:17:24,Add missing math.h header,0,0.0,0
+b9eaf98,2018-02-11 17:09:06,Merge branch 'fix-ipi-update' of https://github.com/akohlmey/lammps into fix-ipi,0,0.0,0
+a04a975,2018-02-11 17:35:47,abort with an error when a pair style incorrectly advertises a restart ability,1,0.0,0
+378c507,2018-02-12 14:26:05,Update CMake build for USER-COLVARS,0,0.0,0
+776f588,2018-02-12 18:43:30,CMake: remove BUILD_SHARED_LIBS requirement from PYTHON package,0,0.0,0
+fcf552f,2018-02-13 09:51:02,Simplify change to CMake build for USER-COLVARS,0,0.0,0
+3a909e1,2018-02-13 11:43:52,support more cases where the variable name is reported on errors,1,0.0,0
+f890cdf,2018-02-13 11:44:07,some more formatting cleanup in fix neb,1,0.0,0
+3ceec36,2018-02-13 12:38:48,CMake: limit visibility of COLVARS lepton library headers,0,0.0,0
+44faa8e,2018-02-13 12:43:32,Temper SNAP output,0,0.0,0
+b0d8fb2,2018-02-13 12:43:56,Added example and tabulated close-range correction,0,0.0,0
+7b551bb,2018-02-13 12:47:05,"add a ""coeffs"" keyword to the info command for debugging ""All XXX coeffs are not set"" errors.",1,0.0,0
+60f411d,2018-02-13 12:47:36,Add error output if python evaluation failed,1,0.0,0
+63714c7,2018-02-13 13:10:20,Fixes/clarifies the fix_property_atom docs.,0,0.0,0
+1a21336,2018-02-13 14:54:30,Use bold font instead of underscores for emphasis.,0,0.0,0
+b3693f8,2018-02-13 16:40:50,avoid that occasional neighbor lists requested from commands linger around for too long and thus cause segementation faults,0,0.0,0
+69f813b,2018-02-13 16:41:23,fix warning about enum comparisons,1,0.0,0
+4210abf,2018-02-13 18:15:17,Merge branch 'fix_property_atom_doc_update' of https://github.com/Pakketeretet2/lammps into collected-bugfixes-and-updates,0,0.0,0
+2aa693c,2018-02-15 05:06:54,use filelink.o consistently  since filelink does not work with some compilers  e.g. nvcc,0,0.0,0
+f8daea5,2018-02-15 05:13:59,avoid division by zero when trying to run PPPM on a system without atoms,0,0.0,0
+2c42876,2018-02-15 05:17:15,fix compilation,1,0.0,1
+a30ede8,2018-02-15 12:12:19,avoid division by zero in PPPM for empty and uncharged systems. require kspace_modify gewald,0,0.0,0
+b220b64,2018-02-16 10:49:08,avoid division by zero in ewald for empty and uncharged systems. require kspace_modify gewald,0,0.0,0
+3d12cff,2018-02-16 10:55:25,correctly account for individually added bonds  angles  and dihedrals,0,0.0,0
+a641e40,2018-02-16 14:11:58,make python functions examples more complete by adding exception handling and initializing variables,0,0.0,0
+c4ea2f2,2018-02-16 14:24:33,explicitly include math.h,0,0.0,0
+c864e55,2018-02-18 14:20:59,Performance increase for charge-implicit ReaxFF/changed cutoff selection,0,0.0,0
+6587084,2018-02-18 15:37:35,harden fix shear/history against use-after-delete and from incorrect use of reverse communication,1,0.0,0
+98bcf51,2018-02-18 16:07:00,add a dependency on PairEAM/MANYBODY for installing USER-ATC,0,0.0,0
+44285f8,2018-02-18 16:37:41,clarify ch2lmp commands purpose in tools section,0,0.0,0
+7ec4a58,2018-02-18 16:38:11,recreate 1gb1 input deck with CMAP included.,0,0.0,0
+5843be1,2018-02-18 17:03:40,Fix some shadowing warnings,1,0.0,0
+75a4328,2018-02-18 17:11:06,refactor headline levels to result in a more structured PDF manual,0,0.0,0
+d52c543,2018-02-18 17:12:03,Move fix to USER-MISH,1,0.0,0
+7bd089a,2018-02-19 14:05:50,Merge branch 'doc-updates' of github.com:akohlmey/lammps into doc-updates,0,0.0,0
+54dc73c,2018-02-19 14:06:26,add short bond cutoff warning also to USER-OMP,0,0.0,0
+a8a3821,2018-02-20 10:06:24,Merge branch 'neigh-identical-check' into couple-simple,0,0.0,0
+54740a0,2018-02-20 11:54:24,remove faulty line of code  left in by accident,0,0.0,0
+9cf99ef,2018-02-20 11:55:37,Merge pull request #765 from stanmoore1/halffull_ghost,0,0.0,0
+c399b75,2018-02-20 12:52:12,Removing aggressive_vectorization flag due to safety issue,0,0.0,0
+9f7b837,2018-02-20 17:18:56,small changes to recent PR to standardize with other npair styles,0,0.0,0
+a5a4789,2018-02-20 22:10:21,Tweak to npair_halffull_newtoff.cpp,0,0.0,0
+911529a,2018-02-21 08:43:33,reverse logic for using MKL pRNG: this way  make serial and make mpi will compile LAMMPS with USER-INTEL installed,0,0.0,0
+53fb7f4,2018-02-21 09:47:17,rerun logfiles for USER-UEF example inputs,0,0.0,0
+a3cd600,2018-02-21 09:48:49,include USER-UEF styles in PDF version of manual,0,0.0,0
+d9d072d,2018-02-21 09:49:39,avoid integer overflow and remove unused function argument causing it,0,0.0,0
+aa1503b,2018-02-21 09:50:22,Remove Make.py reference in PyLammps examples,0,0.0,0
+a672874,2018-02-21 10:04:13,correct check for identical requests,0,0.0,0
+b252866,2018-02-21 10:17:00,Fix typos in txt2html,1,0.0,0
+daae906,2018-02-21 10:30:35,squash bug in fix srp that was incorrectly comparing cutoffs for triclinic cells,1,0.0,0
+e1d1c87,2018-02-21 10:54:58,Revert 7edb294b447c62d3d2dbd4f9df984fb8d14f9a7c temporarily,0,0.0,0
+deeba53,2018-02-21 11:14:32,Merge branch 'compute_chunk_atom_pbc' of https://github.com/poppik/lammps into collected-small-changes,0,0.0,0
+b6821ed,2018-02-21 11:15:09,update missing data files and adjust input files for potentials comparison,0,0.0,0
+5191071,2018-02-21 11:15:44,update spc/e data and reax/c input,0,0.0,0
+38ce56f,2018-02-21 11:51:25,Fix typos in tools folder,1,0.0,0
+bcef43c,2018-02-21 12:11:02,Add missing link flag,0,0.0,0
+a8eb3ff,2018-02-21 23:20:17,update logfiles,0,0.0,0
+8fef788,2018-02-22 02:23:57,update the bop potential file and input,0,0.0,0
+3787b89,2018-02-22 02:31:25,detect and error out on unsupported/old bop potential files,1,0.0,0
+cf3887c,2018-02-22 07:53:58,Merge pull request #602 from rbberger/pylammps_fixes,0,0.0,0
+65acd23,2018-02-22 08:13:54,make overlapping links to references unique to avoid anchor label errors,1,0.0,0
+99d5957,2018-02-22 08:42:36,more updates to kim/Install.py to restore missing functionality and align with other scripts,0,0.0,0
+bfdf464,2018-02-22 08:46:03,update .gitignore,0,0.0,0
+feb9f29,2018-02-22 08:47:45,"Fixed typo in ""compute_voronoi_atom.txt""",1,0.0,0
+77efd3d,2018-02-22 08:48:06,Merge pull request #55 from GarrettTow/patch-1,0,0.0,0
+939b1b2,2018-02-22 14:27:23,Correct off-by-one error in line number reported,1,1.0,1
+f3cf407,2018-02-23 08:34:53,Added tutorial for using LAMMPS in Bash on Windows,0,0.0,0
+4a875dc,2018-02-23 09:01:34,Further tweaked the flangevin issue,0,1.0,1
+d5e43a9,2018-02-23 10:20:29,update BOP input and log files,0,0.0,0
+523978b,2018-02-23 12:04:15,Adds BOW tutorial link in main menu,0,0.0,0
+0003bb6,2018-02-23 14:20:39,Merge pull request #605 from rbberger/bash_on_windows,0,0.0,0
+bba4bd1,2018-02-23 18:02:05,Update tutorial_pylammps.txt,0,0.0,0
+5fb2979,2018-02-24 13:50:42,Merge pull request #758 from mkanski/ci-ReaxFF,0,0.0,0
+fb6e7e8,2018-02-24 16:41:10,Merge pull request #763 from stanmoore1/kk_neighlist,0,0.0,0
+948f478,2018-02-24 17:17:45,Merge pull request #770 from numericalfreedom/lammps-tools-doxygen,0,0.0,0
+7d1de34,2018-02-24 22:49:28,Fix typo,1,0.0,0
+3b90f60,2018-02-24 23:49:27,update logs for eff and reax,0,0.0,0
+58e01a9,2018-02-25 14:03:07,ignore generated/copied files,0,0.0,0
+51b19df,2018-02-25 14:10:28,fix memory leaks in pair_tabl_rx_kokkos,1,0.0,1
+eadac15,2018-02-28 14:02:16,DOC: Added netcdf and netcdf/mpiio to dump style supporting atom attributes.,0,0.0,0
+8d0fdb1,2018-03-01 10:39:06,make checking for tersoff parameters consistent across all implementations,0,0.0,0
+21364f3,2018-03-01 23:11:46,new example scripts for fix gcmc,1,0.0,0
+d18ba3b,2018-03-01 23:22:03,do not allow single bond/angle/dihedral definitions with illegal atom ID combinations,0,0.0,0
+b1d3b56,2018-03-02 04:33:13,Fixing segfault in USER-FEP,1,1.0,1
+0666607,2018-03-02 13:15:35,do not allow illegal combination of atom IDs in data files for bonds/angles/dihedrals/impropers,0,0.0,0
+812a454,2018-03-02 13:15:56,fix typo in docs resulting in broken link,1,0.0,0
+39a09d3,2018-03-02 14:40:20,Merge remote-tracking branch 'lammps-origin/master' into lammps-tools-doxygen,0,0.0,0
+22b6764,2018-03-02 14:40:36,Add reax example,0,0.0,0
+54f58fa,2018-03-02 14:41:03,add a warning if the bonded cutoff is large,0,0.0,0
+45555b0,2018-03-02 15:52:26,Merge pull request #760 from akohlmey/info-coeffs,0,0.0,0
+89de70f,2018-03-03 14:17:56,Remove deprecated Kokkos code,0,0.0,0
+a323147,2018-03-03 14:28:35,refactor code and examples to match LAMMPS conventions. whitespace cleanup. shorten examples.,0,0.0,0
+e8eeb52,2018-03-03 19:31:53,cmake: fix LATTE linkage,1,1.0,1
+52446ee,2018-03-03 19:34:31,Fix for big endian machines,1,0.0,1
+959883a,2018-03-04 09:49:50,update kolmogorov-crespi examples,0,0.0,0
+04bd268,2018-03-04 09:55:44,minor cleanup in docs and updated log files for kolmogorov/crespi/full,0,0.0,0
+49aad1d,2018-03-04 09:56:22,refine the code and documentation,0,0.0,0
+a1bdea1,2018-03-05 14:03:10,recreate 1ac7 input deck with up to date tools and LAMMPS binary.,0,0.0,0
+25d2f4b,2018-03-05 17:34:11,a few new lib interface methods,0,0.0,0
+1ca928b,2018-03-05 20:33:19,Merge pull request #761 from stanmoore1/kk_snap,0,0.0,0
+3e53563,2018-03-06 12:33:33,Merge pull request #764 from akohlmey/improved-variable-error-reporting,0,0.0,0
+070e85b,2018-03-06 12:45:40,Merge pull request #768 from akohlmey/collected-doc-fixes,0,0.0,0
+64779eb,2018-03-06 13:21:34,Merge pull request #769 from rbberger/cmake_compilation_fixes,0,0.0,0
+8d6fbd9,2018-03-06 15:17:05,Merge pull request #771 from stanmoore1/reax_example,0,0.0,0
+fd1edaf,2018-03-07 08:52:46,update of COUPLE/simple examples,0,0.0,0
+47e2ca6,2018-03-07 09:52:14,Workaround issue in pair_snap_kokkos_impl,0,0.0,1
+f91c368,2018-03-07 10:57:07,print variable name with errors only for known variables.,1,0.0,0
+812572e,2018-03-07 10:57:56,propagate printing variable name with error deeper into the code,1,0.0,0
+63c0a35,2018-03-07 11:12:08,Merge pull request #773 from lammps/couple-simple,0,0.0,0
+a1bb877,2018-03-07 11:17:03,The bash shell script doxygen.sh has been revised.,0,0.0,0
+626ca25,2018-03-07 14:00:32,Merge pull request #772 from akohlmey/improved-variable-error-reporting,0,0.0,0
+bad1cdd,2018-03-07 14:01:22,add missing KOKKOS_INLINE_FUNCTION attributes,0,0.0,0
+0c4c002,2018-03-08 08:19:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14605 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+39786b1,2018-03-08 10:57:08,Merge pull request #839 from oywg11/master,0,0.0,0
+62d4466,2018-03-08 16:23:44,Merge pull request #842 from martok/meamc-bugfix,0,0.0,0
+fcfbdb1,2018-03-08 18:10:28,Merge pull request #846 from akohlmey/pdf-manual-reorg,0,0.0,0
+d358e88,2018-03-09 08:41:44,Merge pull request #847 from akohlmey/collected-small-changes,0,0.0,0
+35abbab,2018-03-09 08:42:15,add pointer Force class to temporarily hold the name of the restarted pair style,0,0.0,0
+70c5f3b,2018-03-11 17:01:20,do not capitalize library.cpp  even if it is at the beginning of a sentence,0,0.0,0
+25c4659,2018-03-12 11:56:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12653 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b2c8c40,2018-03-12 12:15:37,Bugfix: Kronecker term ignored in spline forces.,0,1.0,1
+9c3296a,2018-03-12 13:45:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12557 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ce4ffe5,2018-03-12 13:51:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12556 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d9c6278,2018-03-12 16:39:35,Update minimization documentation to reflect line quadratic default,0,0.0,0
+821b186,2018-03-12 16:58:03,print name of unknown or incorrect variable in error message,1,0.0,0
+375cf61,2018-03-13 17:27:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12534 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+bbb2a6d,2018-03-13 17:43:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12535 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6965307,2018-03-13 22:58:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12536 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d00908e,2018-03-13 23:02:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12537 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d625346,2018-03-14 12:11:58,correct broken link in html bond doc overview,0,1.0,1
+15a9600,2018-03-14 13:27:03,Fix GPU CMake compilation,1,1.0,1
+6415bef,2018-03-14 16:30:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12538 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7d2ada9,2018-03-15 21:57:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12539 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+94a9231,2018-03-15 22:02:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12540 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7c300ee,2018-03-16 09:25:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12541 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ab914a9,2018-03-16 09:25:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12542 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fc3de22,2018-03-16 09:26:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12543 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ee862d8,2018-03-16 12:28:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12544 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+59dbb49,2018-03-16 12:37:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12545 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e9ac8ba,2018-03-16 13:21:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12546 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3befd4b,2018-03-16 14:44:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12547 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ac97c21,2018-03-16 16:23:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12548 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a25e36a,2018-03-16 17:45:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12549 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8e5d380,2018-03-16 19:11:30,avoid tiny memory leak  when the restart command is specified multiple times,0,1.0,1
+f6c76e0,2018-03-19 08:26:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12550 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f089d8d,2018-03-19 09:22:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12551 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+545e40f,2018-03-19 13:33:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12552 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c2c4939,2018-03-19 18:00:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12553 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3c94f7d,2018-03-19 18:03:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12554 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+16054cc,2018-03-19 18:04:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12590 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+28a922b,2018-03-19 18:05:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12564 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5cdc609,2018-03-19 18:25:18,Made line quadratic default and changed backtrack alpha zero check to be more friendly,0,0.0,0
+69ca8e5,2018-03-19 18:57:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12588 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1a402d4,2018-03-20 15:42:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12559 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e66c71e,2018-03-21 12:13:09,fix neb bugfix from Emile Maras,1,1.0,1
+96061b8,2018-03-21 15:34:05,Updated to MacPorts Open MPI 1.4.3,0,0.0,0
+57dbad5,2018-03-21 16:03:21,Updated to MacPorts Open MPI 1.4.3,0,0.0,0
+ad87b63,2018-03-21 19:03:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12567 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a585871,2018-03-21 19:04:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12568 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a19f550,2018-03-21 19:40:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12569 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9f785a4,2018-03-21 19:40:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12570 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+07a8e31,2018-03-21 19:45:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12571 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8bbefb6,2018-03-21 20:12:14,Allow fix python to only execute every N steps,1,0.0,1
+c58bc6f,2018-03-21 21:20:15,fixed case where no axial components are active,1,0.0,1
+b2194d6,2018-03-21 21:26:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12572 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a6d10ba,2018-03-22 11:19:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12573 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+04c9683,2018-03-22 18:19:03,update fix latte examples and virial,1,0.0,0
+8de7c44,2018-03-22 19:31:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15558 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c398eb6,2018-03-22 19:42:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12575 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5a341be,2018-03-23 06:42:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12576 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+78e09e1,2018-03-23 13:26:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12577 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d14c16a,2018-03-23 13:34:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12578 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+318877a,2018-03-23 13:38:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12579 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+db5a6b2,2018-03-23 13:40:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12580 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5770a59,2018-03-23 13:40:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12581 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e73663d,2018-03-23 13:41:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12583 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b5ee713,2018-03-23 13:42:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12584 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+24e4876,2018-03-23 13:47:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12585 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f38169f,2018-03-23 16:08:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12586 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6d0b53f,2018-03-24 09:54:32,Added warning to README file,0,0.0,0
+4850962,2018-03-26 11:51:00,USER-DPD: more whitespace fixes,1,1.0,1
+1956d93,2018-03-27 09:58:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12438 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e8b8428,2018-03-27 10:08:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14932 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+da9f632,2018-03-27 13:59:21,Remove no longer needed generated files in doc,0,0.0,0
+2aef3a0,2018-03-27 14:37:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14930 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b571f54,2018-03-27 14:39:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14300 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a524d8c,2018-03-27 14:39:35,docfix,0,0.0,0
+b5b0f67,2018-03-27 15:43:57,Merge pull request #863 from ellio167/kim-update,0,0.0,0
+b37664b,2018-03-28 10:57:13,Small bug fix for Kokkos charmm pair styles,1,0.0,0
+c664f46,2018-03-28 11:28:28,fix reaxc division by zero bug also for USER-OMP variant,1,1.0,1
+5fd1767,2018-03-28 11:31:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14271 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+09313cf,2018-03-28 13:35:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14270 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6dff29b,2018-03-28 13:52:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14269 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2a930da,2018-03-29 08:10:55,',0,0.0,0
+0984e94,2018-03-29 08:11:33,',0,0.0,0
+ef84239,2018-03-29 17:04:53,mention restriction for use with fix shake or fix rigid in fix gcmc docs,1,0.0,0
+81caeff,2018-03-30 09:07:19,',0,0.0,0
+a19e8fb,2018-03-30 09:15:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14227 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ee5ad9c,2018-03-30 09:45:02,',0,0.0,0
+bfc0771,2018-03-30 09:48:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14173 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e476f89,2018-03-30 10:10:34,Create KIM_LAMMPS_PlugIn.h & related changes,0,0.0,0
+a4795df,2018-03-30 10:49:38,Added hexatic bond orientational order parameter,0,0.0,0
+7786cb5,2018-03-30 15:21:55,removed print statement,0,0.0,0
+0bfb6f0,2018-03-30 15:22:15,Added missing normalization to vector case,0,0.0,0
+020fc66,2018-04-01 12:55:58,shift files into doc/src,0,0.0,0
+3f3bab4,2018-04-02 09:38:30,remove files that were added in error last summer by a pull request,1,0.0,0
+d1356c1,2018-04-03 15:07:04,Made ndof dynamic for temperature fixes and computes,1,1.0,1
+af8e258,2018-04-03 17:17:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14175 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5221ac2,2018-04-03 17:48:31,',0,0.0,0
+8e3ba36,2018-04-04 09:45:07,Added average keyword,0,0.0,0
+12bc841,2018-04-04 11:06:20,Small change,0,0.0,0
+e1a17d4,2018-04-04 12:26:43,Change fix box/relax example to be more efficient,1,0.0,0
+24e0ca5,2018-04-04 12:28:20,Added latest changes from Albert Bartok,0,0.0,0
+4fa95de,2018-04-04 12:33:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14276 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2d4e0fc,2018-04-04 13:24:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14180 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+aa4f044,2018-04-05 11:44:19,',0,0.0,0
+4517c85,2018-04-05 11:47:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14177 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3c6102a,2018-04-05 11:49:57,Merge pull request #858 from junghans/fix_return,0,0.0,0
+49d524e,2018-04-05 11:58:47,new reset_ids command and dump_modify delay option,0,0.0,0
+72cd13a,2018-04-06 17:22:54,',0,0.0,0
+bc49ce6,2018-04-09 23:08:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14206 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+dee945c,2018-04-10 15:44:13,Added hexatic bond orientational order parameter,0,0.0,0
+e2bc4d4,2018-04-10 17:26:16,Added hexatic bond orientational order parameter,0,0.0,0
+8f1487f,2018-04-11 11:20:39,',0,0.0,0
+6e31b7d,2018-04-11 22:06:22,remove or reformulate references to USER-CUDA package  which no longer exists,0,0.0,0
+1b965d4,2018-04-13 08:43:56,update logfiles for gcmc example inputs,0,0.0,0
+7f9400e,2018-04-13 08:44:41,add placeholders to include files for error messges,1,0.0,0
+4300274,2018-04-13 08:44:59,patch 30Mar18,1,0.0,0
+bc0fd54,2018-04-13 08:57:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13927 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6027de5,2018-04-13 10:26:31,replace variable length array in Molecule class with new/delete,0,0.0,0
+48e42a4,2018-04-13 10:27:21,',0,0.0,0
+798fcac,2018-04-13 11:37:51,fix typo,1,0.0,0
+398f317,2018-04-13 11:38:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14195 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a087813,2018-04-18 07:26:13,sync Make.py and fix addforce change with GHub,1,1.0,1
+caa9907,2018-04-18 22:27:12,BUG: Dumping to multiple files failed with an error message complaining about a missing 'append yes' option.,1,0.0,1
+f1ee46c,2018-04-19 18:24:19,',0,0.0,0
+164537c,2018-04-19 18:30:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14298 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5bf8e1b,2018-04-19 18:37:15,',0,0.0,0
+91b4075,2018-04-19 20:23:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14208 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c5127ec,2018-04-20 09:30:02,update log files for SNAP package examples to reflect current state of keywords.,0,0.0,0
+836027d,2018-04-20 14:35:58,"Added #include ""citeme.h""",0,0.0,0
+d5ec762,2018-04-20 17:22:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14010 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6f9a224,2018-04-23 16:56:19,Merge pull request #803 from jrgissing/fix_bond_react,0,0.0,0
+69665c2,2018-04-24 22:09:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13986 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c4373c7,2018-04-24 22:53:54,correct typo in converting c-library header includes to c++ styles,0,0.0,0
+c5e884f,2018-04-26 09:34:47,',0,0.0,0
+26d22a4,2018-04-26 10:02:42,bugfix for AngleAngle term in CLASS2 impropers by Ivan A. Strelnikov  ICP RAS,0,0.0,1
+56d0014,2018-04-26 10:05:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14001 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c7edc66,2018-04-26 15:36:07,Updating minimum gcc version for kokkos,0,0.0,0
+64b08d3,2018-04-26 16:39:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14013 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6b92826,2018-04-27 12:35:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14129 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f202f1b,2018-04-27 14:15:32,Added vashishta to USER-OMP from Axel,0,0.0,0
+e4071d7,2018-04-27 17:41:04,Added acknowledgement for Xiong,0,0.0,0
+0015b15,2018-04-27 18:25:30,Made output prettier,0,0.0,0
+ca6f991,2018-04-27 18:39:11,Update methanol.lmp,0,0.0,0
+25ac1fd,2018-05-01 18:55:00,',0,0.0,0
+2e2f197,2018-05-02 11:14:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14127 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+efbee4a,2018-05-02 11:27:31,Delete MOD_COMPUTE_H,0,0.0,0
+ed3f8d4,2018-05-02 11:28:44,Added deprecated warning message to pair_style reax,0,0.0,0
+fbf96b6,2018-05-02 11:29:41,Added elastic constant example at finite temperature,0,0.0,0
+072a063,2018-05-02 11:30:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14131 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fc0110a,2018-05-02 13:25:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12840 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0c005f5,2018-05-02 14:57:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12836 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+75cffc7,2018-05-03 10:23:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12832 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+83f5c33,2018-05-03 11:21:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12843 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+35294da,2018-05-03 11:25:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12845 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+654fec1,2018-05-03 11:25:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12851 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+749f1ff,2018-05-03 11:28:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14058 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+28786ef,2018-05-03 11:49:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14054 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+07a15a7,2018-05-03 12:38:24,Addings xy  xz  and yz strains for axial strain,0,0.0,0
+b5b70b4,2018-05-03 13:00:24,"Revert ""workaround for ISFINITE() macro to work with the latest KOKKOS library update""",0,0.0,0
+1fdb010,2018-05-03 13:08:15,Merge pull request #881 from akohlmey/cplus-plus-style-includes,0,0.0,0
+eeee2d3,2018-05-03 14:16:46,',0,0.0,0
+c8a0689,2018-05-03 15:44:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14065 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+53cc609,2018-05-03 16:03:37,updates to quadratic form of SNAP potential,0,0.0,0
+2b8576c,2018-05-03 16:55:22,update USER-INTEL Install.sh script and dependency handling,0,0.0,0
+844858d,2018-05-03 16:59:17,must use fabs() on doubles  not abs()  to avoid ambiguity,0,0.0,0
+23f71ee,2018-05-03 22:34:11,fix bug in reserving sufficient space for special atoms,1,0.0,1
+6886dcb,2018-05-03 23:04:07,correct out-of-bounds accesses,0,1.0,1
+c9d4117,2018-05-03 23:37:01,Merge pull request #890 from jrgissing/bond_react_final_touches,0,0.0,0
+366aaf2,2018-05-04 00:32:13,correct some formatting issues with USER-NC-DUMP,0,0.0,0
+330f29d,2018-05-04 16:26:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13940 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1d54c93,2018-05-04 16:30:52,',0,0.0,0
+b61834f,2018-05-04 16:34:46,import updated fix msst file with some additional cleanup and simplification,1,0.0,0
+b11757a,2018-05-04 16:47:29,add support for gzip compressed output to fix reax/bonds  reax/c/bonds and reax/c/species,1,0.0,0
+5670dc5,2018-05-04 18:09:25,replace variable length arrays in USER-PHONON with new/delete,0,0.0,0
+6dcee30,2018-05-04 18:21:22,"Revert ""Rename fix python/move to move/python""",1,0.0,0
+0a835c4,2018-05-04 18:32:41,Adding Kokkos error check,1,0.0,1
+477d9fe,2018-05-04 18:48:43,allow fix momentum angular with CUDA,1,0.0,0
+345c212,2018-05-04 18:55:22,',0,0.0,0
+d24885f,2018-05-04 19:00:43,add missing USER-MOFFF to Makefile and fix typo,1,0.0,0
+1b31b48,2018-05-04 19:06:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13937 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9a389c9,2018-05-04 19:36:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13934 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e242b37,2018-05-04 21:13:02,first updates,0,0.0,0
+7edecca,2018-05-04 21:14:08,USER-DPD: fix a typo in the DPD-H example input  update reference output.,1,0.0,0
+c83fedf,2018-05-04 21:41:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13971 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+974ea34,2018-05-04 21:45:17,make fix rhok more similar to other LAMMPS sources,1,0.0,0
+d53dc54,2018-05-04 21:48:44,Merge pull request #891 from akohlmey/collected-small-changes,0,0.0,0
+53342a5,2018-05-04 22:17:25,updates to USER-REAXC code in USER-OMP from Chris Knight. addresses issues with multiple threads in use,0,1.0,1
+b7210e9,2018-05-04 22:26:53,Merge pull request #878 from jrgissing/group_extract,0,0.0,0
+36126cc,2018-05-05 02:14:17,Merge branch 'master' into USER-BOCS,0,0.0,0
+ce86ff6,2018-05-05 02:15:36,fix addtorque is compatible with dynamic groups,1,0.0,0
+460e8bd,2018-05-05 02:35:42,Make the description of global properties more explicit,0,0.0,0
+88dca11,2018-05-05 02:36:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14073 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+14588f6,2018-05-05 03:33:12,port Make.py so it is compatible with python 2.7 *and* python 3.x,0,0.0,1
+81293b0,2018-05-05 10:21:11,Remove Kokkos deprecated code,0,0.0,0
+735bceb,2018-05-05 10:21:21,',0,0.0,0
+0c53afb,2018-05-05 10:39:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15410 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9acd35a,2018-05-05 10:52:39,make links unique  fix doc format warnings and add entries to administrative files,1,0.0,0
+f9f8e2b,2018-05-05 11:43:05,Added elastic constant example at finite temperature,0,0.0,0
+095ca76,2018-05-05 11:44:21,silence compiler warnings about bool vs int in AtC lib,0,0.0,0
+f7c37a7,2018-05-05 11:46:35,revive lib/atc/Makefile.mpic++,0,0.0,0
+2616dd9,2018-05-05 12:05:32,Merge pull request #906 from akohlmey/recover-jenkins,0,0.0,0
+f4fbdea,2018-05-05 13:48:29,Merge pull request #904 from jrgissing/typing_bugfix,0,0.0,0
+2d321a6,2018-05-05 14:22:23,Merge pull request #12 from lammps/master,0,0.0,0
+934f825,2018-05-05 19:25:51,update example log files,0,0.0,0
+e14b61e,2018-05-05 19:51:30,make links to citations unique across files 1/2,0,0.0,0
+9d68918,2018-05-05 20:38:22,Merge branch 'master' into kk_dep,0,0.0,0
+916ed71,2018-05-06 00:34:03,fix bug in fix shear/history reported by kevin hanley. see #500,1,1.0,1
+e1f9ee1,2018-05-06 01:04:23,',0,0.0,0
+941d289,2018-05-06 10:54:34,tune OpenCL for generic architecture by default,0,0.0,0
+9d9d7cb,2018-05-06 11:10:40,update src/.gitignore,0,0.0,0
+5e49976,2018-05-06 11:17:34,correct indentation,0,0.0,0
+d7339bb,2018-05-06 16:56:31,convert colvars lib to use c++ style header files,0,0.0,0
+551ea96,2018-05-06 16:59:37,Merge pull request #900 from lammps/install,0,0.0,0
+009666d,2018-05-06 16:59:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13888 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ecfe5c8,2018-05-06 19:00:32,',0,0.0,0
+c3588f0,2018-05-06 19:21:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13895 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d51745f,2018-05-06 19:22:30,',0,0.0,0
+d9d33ac,2018-05-06 21:41:09,cmake: fix lib suffix,1,0.0,0
+1ea5b9e,2018-05-07 10:34:51,',0,0.0,0
+bc0c405,2018-05-07 10:37:00,',0,0.0,0
+a7c9418,2018-05-07 10:37:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13881 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8ec033e,2018-05-07 10:42:22,',0,0.0,0
+ca96a7a,2018-05-07 10:43:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13889 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+74fbb84,2018-05-07 11:45:37,update dependencies for USER-CGSDK package. make script permissions consistent,0,0.0,0
+624173d,2018-05-07 13:42:33,consistency tweak to package LATTE Install.sh file,0,0.0,0
+d203118,2018-05-07 14:19:50,convert gpu lib to use c++-style include files,0,0.0,0
+d80b375,2018-05-07 14:24:00,convert poems lib to use c++-style header includes,0,0.0,0
+7cf42e4,2018-05-07 14:25:18,remove variable length arrays in gpu lib,0,0.0,0
+7fed6c7,2018-05-07 14:39:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13868 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a475921,2018-05-07 14:39:32,significantly expand .github/CODEOWNERS file to automatically notify more contributors of changes to files/packages they maintain,0,0.0,0
+bfdfd36,2018-05-07 14:53:43,patch 11May18,1,0.0,0
+b2370b6,2018-05-07 15:49:51,update rigid body reference outputs. add bodyforces early examples,0,0.0,0
+cde6e9b,2018-05-07 15:51:15,Added group keywords to fix gcmc,1,1.0,1
+8221700,2018-05-07 15:56:35,correct typo in fix bond/react docs,1,0.0,0
+761b15b,2018-05-07 16:03:23,make links to citations unique across files 2/2,0,0.0,0
+808eb2a,2018-05-07 16:43:25,cosmetic changes to avoid compiler warnings,0,0.0,0
+104dde2,2018-05-07 17:36:34,Merge pull request #11 from lammps/master,0,0.0,0
+1888b61,2018-05-07 18:04:25,convert awpmd header include to c++ style,0,0.0,0
+7225499,2018-05-07 18:13:18,be more verbose in USER-PHONON install script when KSPACE is not installed,0,0.0,0
+fcdcdb3,2018-05-07 18:19:24,make QEQ package depend on MANYBODY,0,0.0,0
+5076b6d,2018-05-07 18:25:55,add return value to non-void function,0,0.0,0
+00b92cd,2018-05-07 21:58:57,update USER-BOCS example to match LAMMPS style and include reference logs,0,0.0,0
+f39a8d4,2018-05-08 00:05:18,',0,0.0,0
+fff9626,2018-05-08 00:10:20,replace pointless use of strncat() emulating strcat() with plain strcat(),0,0.0,0
+ff6507e,2018-05-08 00:17:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14095 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3394d18,2018-05-08 00:25:10,replace C-style include files with their C++ equivalents,0,0.0,0
+f4d14c9,2018-05-08 00:29:56,Added elastic constant example at finite temperature,0,0.0,0
+318dfd0,2018-05-08 00:32:49,Added elastic constant example at finite temperature,0,0.0,0
+c9817b0,2018-05-08 00:33:27,Added elastic constant example at finite temperature,0,0.0,0
+e7e1827,2018-05-08 00:48:53,Added elastic constant example at finite temperature,0,0.0,0
+fccc16f,2018-05-08 00:50:23,workaround for ISFINITE() macro to work with the latest KOKKOS library update,0,0.0,0
+8705ea9,2018-05-08 08:49:05,Removed .html files. Removed compute.h mods. Cast pressure for functions,0,0.0,0
+6960529,2018-05-08 10:02:10,fix incorrect create_atoms example for selecting created atoms with a variable,1,0.0,1
+53fc9f1,2018-05-08 10:11:00,cmake: fix lib suffix,1,0.0,0
+16697fc,2018-05-08 10:46:41,whitespace cleanup,0,0.0,0
+671876e,2018-05-08 15:33:42,Delete fix_bocs.html,0,0.0,0
+b4e5828,2018-05-08 15:36:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14074 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9f03a67,2018-05-09 11:41:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14075 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+dc8e141,2018-05-09 11:43:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14076 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e5a589e,2018-05-09 11:43:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14077 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+793260f,2018-05-09 11:47:57,Added elastic constant example at finite temperature,0,0.0,0
+dde271d,2018-05-09 15:10:35,revert <cstdint> back to <stdint.h> as the former seems to require C++-11,0,0.0,0
+8697cac,2018-05-09 16:06:37,changes to integrate USER-BOCS into LAMMPS and to closer follow the LAMMPS programming/documentation style,0,0.0,0
+a7a83b1,2018-05-09 16:13:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14094 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6625358,2018-05-09 23:51:57,forgot to reduce energies,0,0.0,0
+863a853,2018-05-09 23:55:04,FindLATTE.cmake: fixed a typo,1,0.0,0
+aa1d815,2018-05-10 06:56:50,update colvars dependencies,0,0.0,0
+33a41a4,2018-05-10 15:20:01,Update fix_restrain.cpp,0,0.0,0
+79d1d34,2018-05-10 15:44:36,Merge pull request #880 from stanmoore1/kk_dep,0,0.0,0
+40a8b1a,2018-05-10 17:42:10,fix uninitialized members,1,1.0,1
+724ade0,2018-05-10 18:48:47,Merge pull request #896 from akohlmey/cplusplus-compliance-lib,0,0.0,0
+8d24101,2018-05-11 14:04:49,Merge pull request #898 from robeme/fix_restrain_individual_energies,0,0.0,0

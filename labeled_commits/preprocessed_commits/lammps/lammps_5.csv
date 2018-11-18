@@ -1,0 +1,856 @@
+hash,time,message,keyword_buggy,human_buggy,fastread_buggy
+abf05ee,2016-09-16 10:31:52,BUG: openfile is called multiple times  second call stopped code with 'at keyword requires use of append yes',1,1.0,1
+ca558f6,2016-09-16 13:18:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14937 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e4bd637,2016-09-16 13:19:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14911 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+60dfdbc,2016-09-16 13:19:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14912 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d17421e,2016-09-16 13:19:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14913 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6fd60f5,2016-09-16 16:20:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15230 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7d77aea,2016-09-16 16:24:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15218 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5336ec0,2016-09-16 16:26:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15264 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ed53235,2016-09-16 16:29:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15263 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8db7ef4,2016-09-16 18:46:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14914 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+719d7c6,2016-09-16 18:52:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14966 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+484122b,2016-09-16 19:21:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15262 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+aa9fe38,2016-09-17 09:50:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14915 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+900c839,2016-09-18 00:06:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15169 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+faa0b40,2016-09-19 23:19:14,Adding Kokkos error check,1,1.0,1
+5d89493,2016-09-20 08:49:38,Updating kokkos lib,0,0.0,0
+7dc8746,2016-09-20 08:51:42,Updating kokkos lib,0,0.0,0
+849ff25,2016-09-20 08:57:04,Adding signal handler to Kokkos package,0,0.0,0
+7bb880f,2016-09-20 09:05:39,Reverting back to old kokkos view,0,0.0,0
+b9b044e,2016-09-20 10:44:12,correct logic bug in bufix for fix tmd,1,1.0,1
+5c37fcc,2016-09-20 12:10:58,fixed bug in triclinic case,1,1.0,1
+5583030,2016-09-20 14:52:43,Collapsing kokkos half and half/thread neighbor lists,0,0.0,0
+5583030,2016-09-20 14:52:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15170 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5583030,2016-09-20 14:52:43,Collapsing kokkos half and half/thread neighbor lists,0,0.0,0
+5583030,2016-09-20 14:52:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15171 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3a73a14,2016-09-20 15:06:39,add virial support to fix addforce,1,0.0,0
+8b80d0c,2016-09-20 16:09:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15172 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+df0ed58,2016-09-20 16:12:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15173 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b4e2876,2016-09-20 16:13:14,"Revert ""recognize any word starting with FP as FPRIME style table""",0,0.0,0
+af4a423,2016-09-20 16:14:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15174 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f4263e3,2016-09-20 16:16:36,Reverting accidental changes,0,0.0,0
+4f941ab,2016-09-20 16:19:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15175 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ed9f136,2016-09-20 16:20:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15176 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f81f0da,2016-09-20 16:20:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15207 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ce36766,2016-09-20 16:21:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15210 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f1d3637,2016-09-20 16:26:57,Adding Kokkos mpi-only Makefile,0,0.0,0
+f86bd1f,2016-09-20 16:35:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15260 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8944d48,2016-09-20 16:36:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15248 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+04eadb6,2016-09-20 16:41:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14926 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c6ee506,2016-09-20 16:45:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14927 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+281ace3,2016-09-20 16:46:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14928 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+10034ce,2016-09-20 16:46:54,correct broken link in updated fix ti/spring docs,1,0.0,0
+9ef748b,2016-09-20 16:46:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14929 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2591776,2016-09-20 16:47:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14916 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fe73c3e,2016-09-20 17:25:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15249 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+26b9b95,2016-09-20 18:04:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15250 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3eee584,2016-09-20 18:08:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15251 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0d7e4f1,2016-09-20 18:51:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14965 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9bedb8a,2016-09-20 18:54:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14964 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5345efb,2016-09-20 18:57:01,move fix bond/react to USER-MISC package,1,0.0,0
+33d9a55,2016-09-20 19:01:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14143 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2943dd5,2016-09-20 19:02:13,Fix execution space in manybody potentials,1,1.0,1
+90ff54c,2016-09-20 19:09:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14963 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f8c8434,2016-09-20 22:39:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15252 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b27179b,2016-09-21 07:27:37,Simplify MPI abort code path  make C++ exceptions optional,0,0.0,0
+68d6f10,2016-09-21 07:28:27,add an additional explanation to compute XXX/tally docs and fix a typo,1,0.0,0
+f1183cb,2016-09-21 11:28:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15253 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a4c8c9b,2016-09-21 11:35:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15254 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d3406df,2016-09-21 12:07:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15255 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+71f7dde,2016-09-21 15:26:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15256 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+72c5792,2016-09-21 15:40:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15259 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0bcd901,2016-09-21 20:38:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15261 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d7c6f57,2016-09-21 20:50:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15246 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b321721,2016-09-21 20:54:20,Merge remote-tracking branch 'akohlmey/integration' into library_interface_abort,0,0.0,0
+03c5ce6,2016-09-21 21:22:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15233 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e7fb82a,2016-09-21 21:22:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15235 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c382759,2016-09-21 21:25:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15236 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a1364ad,2016-09-21 21:26:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15081 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fc434b3,2016-09-21 21:29:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15083 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0329aaa,2016-09-21 22:14:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15084 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ca5ad04,2016-09-21 22:15:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15085 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+26e16ed,2016-09-21 22:31:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15086 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6dd4480,2016-09-21 22:31:49,recognize any word starting with FP as FPRIME style table,0,0.0,0
+32872a7,2016-09-22 02:22:05,Merge branch 'master' of github.com:lammps/lammps,0,0.0,0
+d0bbf3f,2016-09-22 02:22:08,Merge pull request #229 from akohlmey/small-corrections,0,0.0,0
+2bf6688,2016-09-22 06:03:49,fix suffix style handling bug for adding fixes and computes,1,1.0,1
+c10aa55,2016-09-22 09:19:45,allow to override PairEAM::extract(),0,0.0,0
+c22df8d,2016-09-22 14:05:57,Merge branch 'collected-bugfixes' of github.com:akohlmey/lammps into collected-bugfixes,0,0.0,0
+32cec47,2016-09-22 15:45:27,remove assignment without effect,0,0.0,0
+31e4170,2016-09-22 15:46:03,apply proper initialization and remove redundant variable declaration,0,0.0,0
+08d9792,2016-09-22 21:46:45,need to apply fix_modify already in fix grem constructor,1,0.0,0
+c6cebe6,2016-09-22 22:26:17,we should scale energies as well as forces,0,0.0,0
+e18941e,2016-09-22 23:41:53,remvoing doc/html,0,0.0,0
+3785249,2016-09-22 23:52:52,new dump_modify refresh and compute displace/atom refresh commands for incremental dump files,0,0.0,0
+065d35e,2016-09-22 23:53:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12574 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3d5f5bf,2016-09-23 10:25:10,new option *add keep* added to read_dump,0,0.0,0
+23781d6,2016-09-23 10:37:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15082 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+08f0bf9,2016-09-23 14:37:53,remove unused class members,0,0.0,0
+6f4b726,2016-09-23 14:52:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14956 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d730cda,2016-09-23 14:54:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14945 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fc031c3,2016-09-23 14:56:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14946 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c00cd61,2016-09-23 14:57:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14947 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+86d17a5,2016-09-23 15:12:24,Merge pull request #1 from akohlmey/pull-315,0,0.0,0
+2a30b76,2016-09-23 16:49:40,Merge branch 'halt2',0,0.0,0
+3ce178d,2016-09-23 18:12:47,add Timer::reset_timeout() API  that allows restoring the previous timeout setting after a forced timeout,0,0.0,0
+e96ebb2,2016-09-23 18:57:16,"add support for ""error continue"" option  which resets the timer timeout setting after a soft exit",1,0.0,0
+f718c54,2016-09-23 21:04:56,Merge pull request #221 from akohlmey/collected-bugfixes,0,0.0,0
+8662662,2016-09-23 21:14:00,final changes to fix halt,1,1.0,1
+8662662,2016-09-23 21:14:00,fix unitialized pointer issue in USER-OMP with pppm/disp,1,1.0,1
+8662662,2016-09-23 21:14:00,Added group keywords to fix gcmc,1,1.0,1
+8662662,2016-09-23 21:14:00,Fix half from full nlist issue with Kokkos,1,1.0,1
+c2cd439,2016-09-23 22:24:27,Merge branch 'master' into collected-bugfixes,0,0.0,0
+756cac0,2016-09-23 22:59:35,reapply changes to the timer class that got lost somehow,0,0.0,0
+8a6e5ed,2016-09-23 22:59:43,updated Makefile.lammps for NetCDF support based on suggestions from lars pastewka,0,0.0,0
+da480bd,2016-09-23 23:00:00,Merge pull request #228 from akohlmey/correct-prd-for-bigbig,0,0.0,0
+24ff008,2016-09-23 23:06:44,forgot to include USER-NC-DUMP in PACKUSER variable,0,0.0,0
+50d5945,2016-09-23 23:06:49,update Makefile.lammps and add README according to suggestions by lars pastewka,0,0.0,0
+b97b9dd,2016-09-26 08:40:53,Fix up docs after renaming,1,0.0,1
+c87f9ae,2016-09-26 11:59:30,provide an accessor for names of LAMMPS variables,0,0.0,0
+7453a4f,2016-09-26 14:39:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15080 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5769c10,2016-09-26 14:39:43,Removed some memory leaks is SSA neighbor list,0,0.0,0
+47b52ed,2016-09-26 15:19:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15079 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c31b026,2016-09-26 15:20:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15238 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fb64ae6,2016-09-26 16:23:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15240 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d0aa13b,2016-09-26 16:53:18,convert from using fix property/atom to using fix store,1,1.0,1
+67d4c07,2016-09-26 16:56:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15241 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2c5f6e1,2016-09-26 18:13:18,fix bug in create_bonds  where ghost atoms were counted incorrectly,1,1.0,1
+7732548,2016-09-26 18:14:32,Add documentation about fix python,1,1.0,1
+7732548,2016-09-26 18:14:32,add documentation for fix move/python,1,1.0,1
+7732548,2016-09-26 18:14:32,fix bug reported on lammps-users  when not using the first molecule template,1,1.0,1
+7732548,2016-09-26 18:14:32,Use compute_map and fix_map to list compute and fix styles,1,1.0,1
+158599f,2016-09-26 18:25:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15242 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2af5c75,2016-09-26 18:32:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15243 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,1.0,0
+69a8842,2016-09-26 18:33:50,make fix rhok examples more consistent with LAMMPS conventions:,1,0.0,0
+8a951f9,2016-09-26 18:43:03,Merge pull request #431 from v0i0/fix-airebo-morse,0,0.0,0
+877a504,2016-09-26 18:44:25,fix typo,1,1.0,0
+a327711,2016-09-26 18:47:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15151 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+53eac44,2016-09-26 23:32:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15149 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f280bd3,2016-09-26 23:34:26,replace unsafe code,0,0.0,0
+f9677e6,2016-09-27 10:52:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15148 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a3a3af6,2016-09-27 10:53:56,dead code removal,0,0.0,0
+063307c,2016-09-27 15:05:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15237 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2b88050,2016-09-27 15:06:14,make PRD code compatible with -DLAMMPS_BIGBIG,0,0.0,0
+b68e954,2016-09-27 15:06:58,Added Axel's improvement,0,0.0,0
+4363318,2016-09-27 15:08:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15068 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4363318,2016-09-27 15:08:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14949 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4363318,2016-09-27 15:08:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15069 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4363318,2016-09-27 15:08:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14948 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9a2f738,2016-09-27 15:32:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15070 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3570521,2016-09-27 15:34:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15071 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3570521,2016-09-27 15:34:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14951 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3570521,2016-09-27 15:34:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14950 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3570521,2016-09-27 15:34:08,Merge pull request #831 from lammps/mpi4py-version,0,0.0,0
+96f31d6,2016-09-27 15:35:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15073 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+829d11e,2016-09-27 15:36:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15074 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+995ecea,2016-09-27 16:02:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15075 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b66039b,2016-09-27 16:43:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15076 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d1b8ffd,2016-09-27 16:49:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15077 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2ae966c,2016-09-27 16:49:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15078 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e1c6b6b,2016-09-27 17:01:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15168 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f9c2049,2016-09-27 17:12:17,correct formatting in fix atc docs,1,1.0,0
+3333e4b,2016-09-27 17:21:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15178 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1adf385,2016-09-27 17:36:02,bugfix for 2 recenty reported neighbor issues  also a ReaxFF fix species issue,1,1.0,1
+8c1d003,2016-09-27 18:20:06,Merge branch 'integration' into weighted-balancing,0,0.0,0
+56b0856,2016-09-27 21:16:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15166 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6fedf8d,2016-09-27 21:18:32,sync with SVN,0,0.0,0
+3486b7d,2016-09-27 21:24:10,enable multi-processor NEB replicas,0,0.0,0
+1cfa49f,2016-09-27 21:28:06,Merge pull request #43 from akohlmey/doc-fixes,0,0.0,0
+1fbddc9,2016-09-27 21:31:02,Merge pull request #44 from rbberger/doc-fixes,0,0.0,0
+f82e0c5,2016-09-27 21:31:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15652 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+45e50b4,2016-09-27 21:37:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15653 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1ec3987,2016-09-28 14:36:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15656 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f511c17,2016-09-28 14:37:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15657 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4.46e+16,2016-09-28 16:33:30,Merge branch 'integration' into balance2,0,0.0,0
+446e7e7,2016-09-28 16:33:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14952 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+596b260,2016-09-28 16:36:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15642 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f6c77c3,2016-09-28 22:08:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15651 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6897cc8,2016-09-28 22:29:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15621 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+bdd0f66,2016-09-28 22:32:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15622 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1898254,2016-09-28 22:32:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14954 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1898254,2016-09-28 22:32:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14953 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1898254,2016-09-28 22:32:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15623 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1898254,2016-09-28 22:32:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15624 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+78a22be,2016-09-28 22:36:54,updated version of fix latte from SJP,1,1.0,1
+a315dcd,2016-09-29 08:33:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15625 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5b2becd,2016-09-29 10:37:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15626 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3b408d7,2016-09-29 10:53:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15280 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+27c3149,2016-09-29 10:54:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15282 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+473b12d,2016-09-29 10:55:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15283 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d8bf149,2016-09-29 10:55:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15284 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2551619.0,2016-09-29 10:55:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15286 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2551619.0,2016-09-29 10:55:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15285 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2551619.0,2016-09-29 10:55:26,,0,0.0,0
+2551619.0,2016-09-29 10:55:26,,0,0.0,0
+f7b5afe,2016-09-29 15:51:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15628 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c88acc9,2016-09-29 22:59:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15629 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5eb9dd0,2016-09-29 23:14:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15287 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0eeb240,2016-09-30 07:22:47,Fix data type of molecule array in npair_kokkos.h,1,1.0,1
+4337f2c,2016-09-30 07:39:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15630 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+cb7bd27,2016-09-30 07:39:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15631 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6d20006,2016-09-30 08:15:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15632 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d4b074d,2016-09-30 09:09:44,Rename fix python/move to move/python,1,1.0,1
+b9d0f96,2016-09-30 09:17:55,Fixed coding style.,1,0.0,1
+91edee2,2016-09-30 09:20:25,new verion of balance weighting,0,0.0,0
+e2c7aca,2016-09-30 09:21:00,added respa to fix_flow_gauss  not fully understood yet,0,0.0,0
+5bb85b4,2016-09-30 09:38:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15650 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d45e333,2016-09-30 11:11:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15643 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+be4734b,2016-09-30 11:57:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15288 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+035279d,2016-10-01 06:26:14,Merge pull request #499 from akohlmey/add-fix-compute-style-bugfix,0,1.0,1
+a3e05a2,2016-10-01 06:34:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15649 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1985db4,2016-10-01 23:05:05,fix typo in commands table,1,0.0,0
+114926a,2016-10-02 00:26:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15290 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c2e11df,2016-10-02 20:33:20,update html docs to be used with latest version of converter tools,0,0.0,0
+3b94627,2016-10-03 06:52:30,sync with Git,0,0.0,0
+690f913,2016-10-03 06:58:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15577 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+45d2cc2,2016-10-03 07:03:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15579 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6e719f2,2016-10-03 07:07:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15580 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+03766db,2016-10-03 16:28:59,BUGFIX: Prevent possible deadlock in Irregular::create_atom and create_data,0,1.0,1
+c3ff881,2016-10-03 17:57:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15581 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e079362,2016-10-03 17:58:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15582 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ab92529,2016-10-03 17:59:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15583 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+11c2892,2016-10-04 09:49:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15588 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+91be47a,2016-10-04 11:43:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15618 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e2caf5c,2016-10-04 13:57:21,fix qeq/reax/omp bugfix from metin,1,1.0,1
+4381db8,2016-10-04 14:33:26,Fixing auto_sync logic bug in modify_kokkos,1,0.0,1
+c46be7d,2016-10-05 10:33:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15619 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6a97211,2016-10-05 10:54:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15620 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+030df74,2016-10-05 10:54:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15648 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d31121b,2016-10-05 15:22:48,correct input examples affected by the Pair::settings() bugfix,0,0.0,1
+02bfa89,2016-10-05 15:46:20,Merge branch 'integration' into weighted-balancing,0,0.0,0
+c07a01c,2016-10-05 18:11:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15645 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f32819d,2016-10-05 18:13:46,Do not escape underscore inside preformat blocks,0,0.0,0
+326fdf2,2016-10-05 18:20:09,Merge branch 'balance2' into weighted-balancing,0,0.0,0
+969d3cf,2016-10-05 18:25:40,correct issue from merge,0,0.0,0
+8809a60,2016-10-05 18:26:21,Add filter which merges preformatted sections,0,0.0,0
+d7d321a,2016-10-05 18:41:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15646 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d80a9de,2016-10-05 18:49:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15302 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f9f955d,2016-10-05 22:34:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15647 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d133167,2016-10-06 09:32:50,released version of weighted balancing,0,0.0,0
+887981c,2016-10-06 10:47:08,USER-DPD bugfix: Properly initialize the local temperature averaging array.,0,1.0,1
+4921dc1,2016-10-06 10:47:08,incorporate bugfix and cleanup from lammps-icms and upstream,0,1.0,1
+22ce671,2016-10-06 11:16:59,Merge branch 'balance' into integration,0,0.0,0
+ef079ae,2016-10-06 11:27:18,USER-DPD Kokkos: bugfix for the rare case were the SSA ghost processing has more parallelism than for the locals.,0,1.0,1
+83bcdb6,2016-10-06 11:27:18,USER-DPD Kokkos: bugfix  add a misisng line of code in pair_exp6_rx_kokkos.cpp,0,1.0,1
+0853cdb,2016-10-06 11:47:08,Merge remote-tracking branch 'akohlmey/integration' into ipython-update-and-cleanup,0,0.0,0
+fd16118,2016-10-06 12:02:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15633 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8ea0633,2016-10-06 12:15:48,now understand how respa works in lammps,0,0.0,0
+493873f,2016-10-06 13:00:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15197 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0f45cd6,2016-10-06 13:02:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15199 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c213457,2016-10-06 13:02:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15200 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e1e9a5c,2016-10-06 13:49:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15201 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+27e76a7,2016-10-06 14:27:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15202 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+60a031e,2016-10-06 14:28:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15203 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b3d2fb9,2016-10-06 15:47:41,fix memory corruption issue in fix reax/c/species,1,1.0,1
+0b5d715,2016-10-06 15:48:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15204 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+54fc194,2016-10-06 15:49:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15205 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e9fed80,2016-10-06 15:49:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15206 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9507a78,2016-10-06 16:01:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15181 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f92618a,2016-10-06 17:21:38,correct link targets,0,1.0,0
+19984c9,2016-10-06 17:23:10,USER-DPD Kokkos: correct some error messages,1,1.0,0
+13b6eb1,2016-10-06 19:12:58,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15291 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e78b426,2016-10-06 20:23:06,Blocked fix rigid,1,1.0,1
+7f3a7c5,2016-10-06 20:33:24,reintroduce pointer nullification for fix balance,1,1.0,1
+615a2da,2016-10-06 21:48:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15180 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+49c45ab,2016-10-07 09:44:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15198 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+72ac073,2016-10-07 09:50:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15179 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e27ed6c,2016-10-07 14:52:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15153 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9789f04,2016-10-07 15:55:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15154 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e01e90e,2016-10-08 10:45:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15156 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+683689c,2016-10-08 11:00:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15157 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+dd192ca,2016-10-10 09:15:42,Adding kokkos half list with ghosts,0,0.0,0
+fca6d72,2016-10-10 09:16:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15159 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+144e6a8,2016-10-10 09:40:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15161 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a2b0840,2016-10-10 13:40:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15162 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+467bcad,2016-10-10 13:57:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15163 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+27dac02,2016-10-10 13:58:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15164 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ed8cc82,2016-10-10 13:59:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15165 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e70d530,2016-10-10 13:59:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15195 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+bb0bfd5,2016-10-10 23:55:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15182 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b00b40b,2016-10-11 08:03:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15194 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+04f5ead,2016-10-11 12:39:52,sync with GH,0,0.0,0
+3e+299,2016-10-11 12:42:08,first draft of documentation for respa,0,0.0,0
+3e8e291,2016-10-11 12:42:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14955 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+803dc57,2016-10-11 12:42:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15636 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6f11629,2016-10-11 13:39:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15637 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fbf7df1,2016-10-11 13:40:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15638 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0eb7fbf,2016-10-11 15:43:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15639 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+559637f,2016-10-11 16:11:29,propagate global package installation bugfix to explicit package scripts,0,1.0,1
+2f07a62,2016-10-11 16:30:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15640 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8540a9f,2016-10-11 17:10:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15292 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ecb03dd,2016-10-11 23:03:18,Allow building other targets without Python3 and virtualenv,0,0.0,0
+69cb831,2016-10-11 23:39:37,Merge pull request #219 from akohlmey/python-no-double-load,0,0.0,0
+b758600,2016-10-11 23:50:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15274 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e10ea91,2016-10-11 23:51:42,adjusted default respa level to be outermost,0,0.0,0
+39a2203,2016-10-11 23:57:40,Fixing compiler warning,1,0.0,0
+adc98e0,2016-10-11 23:58:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15150 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6b4ab0a,2016-10-12 00:00:21,new orient/bcc for pull request #95,0,0.0,0
+c24bf51,2016-10-12 00:00:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15184 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+da66c1e,2016-10-12 00:07:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15185 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2e8edbd,2016-10-12 06:53:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15186 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f8a26dd,2016-10-12 07:26:03,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15187 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4e3a550,2016-10-12 07:30:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15188 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4a5d9ea,2016-10-12 07:32:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15189 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+63e71cd,2016-10-12 07:35:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15190 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+495800000000000.0,2016-10-12 15:46:46,restrain energy must be incremented. bugfix from robert meissner posted to lammps-users,0,0.0,0
+4958e11,2016-10-12 15:46:46,cleanup and bugfix for compute heat/flux/tally,0,0.0,1
+fcb5271,2016-10-12 15:56:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15191 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0b426da,2016-10-12 18:36:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15192 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e4ff812,2016-10-13 08:22:08,Merge branch 'fix-airebo-morse' of https://github.com/v0i0/lammps into pull-431,0,0.0,0
+95cca1b,2016-10-13 11:40:44,make plain nc dump style a compile time option as well,0,0.0,0
+2c8a7a3,2016-10-13 16:55:53,Reduce memory churn in Kokkos package,0,0.0,1
+40f2310,2016-10-13 16:56:19,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15167 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,1.0,0
+5aefb2a,2016-10-13 16:58:35,Merge branch 'master' into user-nc-dump,0,0.0,0
+d11363c,2016-10-13 17:00:23,Merge pull request #850 from lammps/addlib,0,0.0,0
+fa984b2,2016-10-13 19:56:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15293 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+411ecca,2016-10-14 07:27:14,BUG: DumpNCMPIIO is now called DumpNetCDFMPIIO,1,0.0,0
+d07703e,2016-10-14 07:27:40,correct minor issues  so LAMMPS compiles again,0,1.0,1
+c9c66ca,2016-10-14 07:28:25,another workaround for duplicate labels (which sphinx does not like),0,0.0,0
+deceb9d,2016-10-14 07:31:52,more preference of datamask over custom sync,0,0.0,0
+f67975f,2016-10-14 07:37:06,Adding support to npair_kokkos for triclinic-newton-on neighborlists,0,0.0,0
+909ec2c,2016-10-14 11:48:24,More tweaks to npair_kokkos for triclinic,0,0.0,0
+e77e1f6,2016-10-14 19:40:51,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14158 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e7825ba,2016-10-15 07:30:07,whitespace cleanup  fix bug in looking for empty strings  improve read performance and handling of comments,1,1.0,1
+c5513c4,2016-10-17 19:56:18,remove unused variable,0,0.0,0
+954d536,2016-10-18 09:27:01,fix bug found by coverity scan,1,1.0,1
+003581c,2016-10-18 11:16:28,bug fix for fix GCMC w/ fix shake  enhance of fix wall/gran/region with restarting,1,1.0,1
+6eadd45,2016-10-18 11:16:44,add missing return keywords,0,0.0,0
+394c3bb,2016-10-18 12:20:49,add missing KOKKOS_INLINE_FUNCTION attributes,0,0.0,0
+1f1c872,2016-10-18 12:21:27,Merge pull request #344 from timattox/USER-DPD_zero_compute,0,0.0,0
+713b2af,2016-10-18 12:58:25,Merge pull request #332 from akohlmey/coord-atom-orientorder-atom-enhancements,0,0.0,0
+2106dce,2016-10-18 13:11:40,USER-DPD: fix a bug in AtomVecDPDKokkos::unpack_restart(),1,1.0,1
+3e88fb5,2016-10-18 13:54:15,Merge pull request #334 from sstrong99/flow_gauss_changeRef,0,0.0,0
+2c5ea9f,2016-10-18 14:05:08,Merge pull request #340 from stanmoore1/fix_rx_neighborlist,0,0.0,0
+1f7693f,2016-10-18 14:06:43,need to add removed fix ti/rs to purge list,1,0.0,0
+a752966,2016-10-18 14:07:05,kspace & dihedral can't do their own sync/modify,0,0.0,0
+4502d32,2016-10-18 14:45:06,Merge pull request #341 from stanmoore1/qeq_kk_neighlist,0,0.0,0
+ae77664,2016-10-18 14:45:25,Merge pull request #335 from stanmoore1/neighbor_fixes,0,0.0,0
+2b47fa6,2016-10-18 15:05:30,Merge pull request #339 from akohlmey/fixes-for-srp-example,0,0.0,0
+6e54443,2016-10-18 15:11:22,patch 17Jan17,1,0.0,0
+27796b4,2016-10-18 15:32:20,cmake: fixed another typo,1,0.0,0
+5a6dea7,2016-10-18 15:36:18,USER-DPD: Skip a0*stuff computations  if a0 was set to zero in pair_coeff. This saves around 10% of the runtime for many of our tests using SSA.,0,0.0,0
+13ce103,2016-10-18 15:46:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15294 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7b7cb29,2016-10-18 22:26:47,Merge pull request #343 from timattox/USER-DPD_bugfix_molecule,0,0.0,0
+019bc0b,2016-10-19 07:39:03,Merge pull request #337 from ohenrich/user-cgdna,0,0.0,0
+ccca642,2016-10-19 08:08:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15130 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+efc7b23,2016-10-19 08:33:59,remove unused variable,0,0.0,0
+e0ed218,2016-10-19 08:36:52,USER-DPD: cleanup initialization of splitFDT_flag in pair_dpd_fdt.cpp,0,0.0,0
+393337e,2016-10-19 08:37:32,"USER-DPD: Also apply ""check if a0 is zero"" optimization to pair_dpd_fdt This relates to commit 4eb08a5822 that was applied to pair_dpd_fdt_energy",0,0.0,0
+58141.0,2016-10-19 08:41:44,fix typo causing wrong neighbor list copy selections,1,0.0,0
+58141e0,2016-10-19 08:41:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14957 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0891ed8,2016-10-19 08:56:19,Merge pull request #342 from epfl-cosmo/ipi-multiinit-bug,0,0.0,0
+b0cf1de,2016-10-19 08:57:54,sync GHub with SVN,0,0.0,0
+3d25478,2016-10-19 08:58:22,Merge pull request #354 from stanmoore1/kokkos_bugfixes,0,0.0,0
+86f5b51,2016-10-19 09:05:25,Merge pull request #361 from akohlmey/user-omp-fix-per-atom-data,0,0.0,0
+566effc,2016-10-19 09:08:20,account for new fix halt properly in PDF and online docs,1,1.0,1
+2634468,2016-10-19 10:42:02,adapt example inputs for TAD and PRD to the change in compute coord/atom,0,0.0,0
+2634468,2016-10-19 10:42:02,import contributed code for computes coord/atom and orientorder/atom,0,0.0,0
+2634468,2016-10-19 10:42:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14958 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2634468,2016-10-19 10:42:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@11698 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1a10857,2016-10-19 10:43:25,Squelching output from Makefile,0,0.0,0
+ffb8eb3,2016-10-19 10:44:38,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14164 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9954d5d,2016-10-19 10:47:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15295 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d2da0fa,2016-10-19 15:29:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15296 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e835992,2016-10-19 15:58:50,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15298 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+21619f6,2016-10-19 19:02:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15299 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8c3f5cb,2016-10-20 09:27:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15300 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f022f6d,2016-10-20 14:40:18,Fix broken charge history in fix_qeq_reax_kokkos,1,1.0,1
+2cf77ff,2016-10-20 16:16:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15301 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a957227,2016-10-20 16:27:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15330 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6cd6c10,2016-10-20 19:27:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15331 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a2e34aa,2016-10-21 11:55:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15333 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ed3f02f,2016-10-21 12:04:48,Added axes keyword,0,0.0,0
+6742fb6,2016-10-21 12:05:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15336 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+607246f,2016-10-21 13:25:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15279 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+991034b,2016-10-21 13:54:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15337 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+db36c8b,2016-10-21 14:51:09,KOKKOS: minor typo fix,1,0.0,0
+bc44988,2016-10-23 15:18:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15339 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4f69d91,2016-10-24 08:12:08,Merge branch 'master' into new-neighbor,0,0.0,0
+477ddaf,2016-10-24 08:15:08,Merge branch 'new-neighbor' of github.com:akohlmey/lammps into new-neighbor,0,0.0,0
+ad57a17,2016-10-24 16:48:20,Fixed small typos in doc,1,0.0,0
+c243093,2016-10-24 17:05:47,Fix PyLammps regression after output.cpp change,1,1.0,1
+be2d155,2016-10-24 17:08:36,Removing used Kokkos file,0,0.0,0
+e02505c,2016-10-24 17:11:09,Small tweaks to Kokkos neighbor,0,0.0,0
+7b89e47,2016-10-24 17:12:28,fix array bounds issue due to typo. spotted by GCC.,1,0.0,1
+512c413,2016-10-24 17:13:21,make the output of the %CPU/OpenMP threads line consistent with compiling in OpenMP support  not having USER-OMP installed,0,0.0,0
+182141b,2016-10-24 17:13:34,Prevent neighbor list copies between SSA and non-SSA neighbor list requests.,0,0.0,0
+ba6d152,2016-10-24 17:34:28,"USER-DPD: Make fix_shardlow request its own SSA-specific neighbor list  instead of having pair_dpd_fdt* make the SSA-neighbor list request for it. Forces an ""extra"" list to be built  but now skip lists work properly. Maybe we can detect if skip lists won't be used  and squash the extra list.",0,0.0,0
+f8367e3,2016-10-24 17:49:53,More changes for Kokkos neighbor,0,0.0,0
+9c81ad1,2016-10-25 09:45:55,Merge branch 'new-neighbor' into new-neighbor,0,0.0,0
+eca96e2,2016-10-25 09:46:07,Kokkos neighbor refactor,0,0.0,0
+6b33499,2016-10-25 10:30:34,Merge pull request #1 from timattox/new-neighbor,0,0.0,0
+ad5f7c4,2016-10-25 10:32:41,Merging,0,0.0,0
+efaa8fe,2016-10-25 10:32:55,Merge pull request #52 from timattox/new-neighbor,0,0.0,0
+52dd9ae,2016-10-25 11:55:09,Updating to master,0,0.0,0
+1a436bd,2016-10-25 11:58:42,Whitespace change,0,0.0,0
+63eada2,2016-10-25 12:12:48,Another fix for seg fault in parallel allocation.,1,1.0,1
+6929603.0,2016-10-25 14:15:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12056 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6929603.0,2016-10-25 14:15:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12090 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6929603.0,2016-10-25 14:15:34,correct broken link to USER-SMD docs PDF,0,0.0,0
+6929603.0,2016-10-25 14:15:34,explicitly disallow dynamic groups with compute rdf,0,0.0,0
+d7c77a4,2016-10-25 14:36:18,fix typo and USER-OMP support omission,1,0.0,0
+f350500,2016-10-25 14:43:12,small comment/whitespace tweak,0,0.0,0
+7f3f5e8,2016-10-25 14:46:44,Merge branch 'master' into grem-feature,0,0.0,0
+039bda9,2016-10-25 15:02:00,minor cleanups,0,0.0,0
+e8b3f79,2016-10-25 23:04:03,also remove generated html files with 'make clean' in docs folder,0,0.0,0
+399c0af,2016-10-25 23:46:25,Merging pull request,0,0.0,0
+0a417b4,2016-10-26 07:06:38,30Nov16 patch,1,0.0,0
+3267b34,2016-10-26 09:29:27,Merge pull request #289 from akohlmey/collected-updates-and-bugfixes,0,0.0,0
+8e61bed,2016-10-26 09:51:52,update format,0,0.0,0
+ef9f7c8,2016-10-26 10:14:08,add error location propagation to force->bounds() and force->boundsbig(),1,1.0,1
+f028a9a,2016-10-26 15:04:18,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15340 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+35753b8,2016-10-26 15:53:02,Print error if pair_write does not get correct number of arguments,1,0.0,0
+f9a9e27,2016-10-26 16:01:40,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15341 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d9891ab,2016-10-27 09:34:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15342 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c3a1e72,2016-10-27 11:40:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15344 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7a45c72,2016-10-27 18:31:06,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15345 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3870780.0,2016-10-28 10:43:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12058 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3870780.0,2016-10-28 10:43:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15358 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3870780.0,2016-10-28 10:43:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12063 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3870780.0,2016-10-28 10:43:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15347 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4216be4,2016-10-28 10:46:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15348 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+93d393a,2016-10-28 10:48:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15349 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+218e121,2016-10-28 11:11:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15350 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2.18e+123,2016-10-28 11:11:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13218 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c4b86a2,2016-10-28 11:12:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15351 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e37d2b5,2016-10-29 22:20:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15352 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+51e2313,2016-10-29 22:35:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15353 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f333d65,2016-10-29 22:54:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15354 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2e0d304,2016-11-01 11:36:11,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15355 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7fdd6e2,2016-11-01 11:40:07,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15356 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e81ae21,2016-11-01 14:54:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15357 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+782a328,2016-11-01 14:55:13,Merge pull request #244 from ketankhare/patch-2,0,0.0,0
+e13e403,2016-11-01 16:48:00,Workaround for compiler bug in gcc v4.9.3  manifest in KOKKOS SNAP,1,1.0,1
+c8f4b55,2016-11-01 16:48:30,Merge pull request #246 from akohlmey/manybody-short-neighbor-list,0,0.0,0
+5d787f7,2016-11-01 21:39:12,apply airebo/m bugfix also to USER-OMP version,0,1.0,1
+b156771,2016-11-02 17:09:32,Merge pull request #247 from akohlmey/bounds-error-with-code-line,0,0.0,0
+639fb6f,2016-11-02 17:20:56,synchronize USER-SMD examples with code,0,0.0,0
+33140e5,2016-11-02 22:16:53,fix typo in compute cluster/atom docs,1,0.0,0
+3314000000.0,2016-11-02 22:16:53,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13187 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+02510ec,2016-11-02 22:32:30,simplify code,0,0.0,0
+7d23a07,2016-11-04 00:42:23,dihedral_nharmonic: added writing coefficient by write_data,0,0.0,0
+f48b71f,2016-11-04 10:56:04,Fix bug introduced in latest changes,1,1.0,1
+8214555.0,2016-11-04 10:57:20,NULLing ptrs in comm_brick and dump*.cpp,0,0.0,0
+8214555.0,2016-11-04 10:57:20,info styles also prints out pair styles,0,0.0,0
+8214555.0,2016-11-04 10:57:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13157 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8214555.0,2016-11-04 10:57:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13185 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+60908ee,2016-11-04 10:57:43,NULL ptrs in dump_custom and dump_image,0,0.0,0
+32e0a58,2016-11-04 10:58:14,NULLed ptrs in files,0,0.0,0
+f013139,2016-11-04 10:58:42,Merge pull request #45 from akohlmey/small-bugfixes,0,0.0,0
+7cff08c,2016-11-04 10:58:55,update .gitignore,0,0.0,0
+77bbf03,2016-11-04 10:59:06,update #include statements for system includes,0,0.0,0
+6cc4eb1,2016-11-04 12:20:17,update #include directives to match current LAMMPS coding conventions,0,0.0,0
+3a3d96b,2016-11-04 18:18:40,USER-SMD was missing from PACKLIB variable,0,0.0,0
+bda0730,2016-11-07 14:59:25,update AGNI potential for Al  reference runs and output and citation,0,0.0,0
+b221b15,2016-11-07 15:50:18,update Timer::force_timeout() to trigger at next loop iteration,0,0.0,0
+f8226e8,2016-11-07 15:56:47,Merge pull request #215 from timattox/USER-DPD_bugfix_for_dtsqrt,0,0.0,0
+45f2e86,2016-11-07 16:07:37,Merge pull request #217 from akohlmey/small-fixes,0,0.0,0
+cd65d44,2016-11-07 16:15:39,patch to add DPD-VV,1,0.0,0
+06959a9,2016-11-07 16:21:08,USER-DPD: Initialize the dpdThetaLocal array consistently in fix_rx,0,0.0,0
+e7a2c6b,2016-11-07 16:26:16,do not require the LAMMPS shared library when loading the python wrapper from inside LAMMPS,0,0.0,0
+c5869bd,2016-11-07 16:33:50,Merge branch 'master' into improper-virial-bugfixes,0,0.0,0
+a5c6104,2016-11-07 16:54:59,make no-lib should also remove MPIIO and USER-LB packages,0,0.0,0
+30dede8,2016-11-07 17:02:32,clean up doc src,0,0.0,0
+9b910d5,2016-11-07 17:07:40,edited documentation,0,0.0,0
+21694ca,2016-11-07 17:10:12,Merge pull request #196 from akohlmey/charmm-cmap-updates,0,0.0,0
+1ff75ea,2016-11-07 17:15:48,Merge pull request #197 from giacomofiorin/colvars_2016-10-05,0,0.0,0
+db05242,2016-11-07 19:58:27,USER-DPD: math corrections in pair_exp6_rx.cpp (by Jim Larentzos),0,0.0,0
+7cd7cda,2016-11-07 20:22:04,Merge branch 'USER-DPD_hybrid_atom_bugfix' of https://github.com/timattox/lammps_USER-DPD into small-changes,0,0.0,0
+fb3ac9a,2016-11-07 20:30:38,Merge branch 'USER-DPD_pair_exp6_rx_mathfix' of https://github.com/timattox/lammps_USER-DPD into small-changes,0,0.0,0
+616420c,2016-11-07 20:51:36,collected documentation updates and corrections from LAMMPS-ICMS,0,0.0,0
+054ab6b,2016-11-07 21:07:10,Merge pull request #199 from akohlmey/small-changes,0,0.0,0
+667f4df,2016-11-07 21:46:22,Merge pull request #202 from akohlmey/doc-formatting-fixes,0,0.0,0
+31204aa,2016-11-08 08:57:51,Merge pull request #203 from rbberger/txt2rst-external-link-fix,0,0.0,0
+a23b287,2016-11-08 09:05:50,whitespace cleanup in USER-DPD,0,0.0,0
+25e7d07,2016-11-08 16:51:54,updates for recent changes to the manual,0,0.0,0
+cdb5d47,2016-11-08 18:24:54,import dump nc and dump nc/mpiio from lammps-netcdf as USER-NC-DUMP package by lars pastewka,0,0.0,0
+9de1a2a,2016-11-08 18:27:44,Merge pull request #187 from akohlmey/colvars-update-2016-09-30,0,0.0,0
+d20b320,2016-11-08 18:57:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15672 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2c80132,2016-11-09 11:46:10,Merge pull request #702 from giacomofiorin/colvars-fix-the-fix,0,0.0,0
+16a02ef,2016-11-09 11:47:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15673 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f9eb2a9,2016-11-09 11:50:11,remove dead code,0,0.0,0
+c81a723,2016-11-09 11:50:23,Merge branch 'integration' into new-master,0,0.0,0
+ef6801f,2016-11-09 11:50:31,Merge pull request #184 from akohlmey/dynamic-groups-for-respa,0,0.0,0
+2d132ca,2016-11-09 11:50:41,make reader for target geometry file more resilient,0,0.0,0
+5e2b9d8,2016-11-09 11:50:50,include charmm22 and charmm36 cmap files and include date added signature,0,0.0,0
+59922f8,2016-11-09 11:51:01,flag header as C++ to emacs,0,0.0,0
+cf3ab51,2016-11-09 11:51:09,update colvars library to version 2016-09-30,0,0.0,0
+3f71bfb,2016-11-09 11:51:25,Merge pull request #186 from akohlmey/small-bugfixes,0,0.0,0
+176f2c3,2016-11-09 11:51:36,update reference data files for updated/corrected clayff parameters,0,0.0,0
+51b3b5f,2016-11-09 11:51:44,removed dump_modify command,0,0.0,0
+ae00666,2016-11-09 11:51:53,add NETCDF libs (as defined in QUIP) to the linking line if QUIP was built with NETCDF support,0,0.0,0
+0cc2fbf,2016-11-09 11:52:05,add doc file to toctree,0,0.0,0
+eef862e,2016-11-09 11:53:43,added LAST option to dump_modify thresh  more restart info printed out to screen,0,0.0,0
+bfea3dc,2016-11-09 11:57:09,Merge pull request #213 from akohlmey/improper-virial-bugfixes,0,0.0,0
+7eb05b3,2016-11-09 13:48:11,trigger recomputing ichunk between runs unless requested otherwise,0,0.0,0
+031d4ac,2016-11-09 13:48:11,make the introduction of the command-by-category list less confusing,0,0.0,0
+6f23f65,2016-11-09 13:48:11,remove outdated log files  too.,0,0.0,0
+71ee2ec,2016-11-09 14:52:39,Merge pull request #214 from akohlmey/make-no-lib-no-mpiio,0,0.0,0
+c55fd50,2016-11-09 15:04:24,Merge pull request #207 from timattox/USER-DPD_new_VV_for_DPD,0,0.0,0
+9ed5c4f,2016-11-09 15:15:10,Merge pull request #212 from timattox/USER-DPD_fix_eos_atom_style_checks,0,0.0,0
+9806da6,2016-11-09 15:47:50,fix scoping ambiguity issue that confuses nvcc,1,1.0,1
+3e36ec3,2016-11-09 16:17:46,tweaks to new USER-DPD docs,0,0.0,0
+3d3a99c,2016-11-09 16:50:34,Forgot to remove my call to reset_dt(),0,0.0,0
+fec87c0,2016-11-09 16:53:39,import lammps-netcdf code as USER-NC-DUMP package,0,0.0,0
+1f38e1a,2016-11-09 18:18:05,USER-DPD: whitespace and indentation fixes,1,0.0,0
+95a7f71,2016-11-10 09:26:52,Migrate changes from GRANULAR to USER-OMP,0,0.0,0
+c20ee34,2016-11-10 09:30:07,edited documentation,0,0.0,0
+352e177,2016-11-10 13:26:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15608 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3.52e+179,2016-11-10 13:26:00,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12064 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2b75ee7,2016-11-10 13:28:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15612 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+bfc478c,2016-11-10 14:12:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15613 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+801111a,2016-11-10 15:00:36,Remove old copies of IPython notebooks,0,0.0,0
+72b0841,2016-11-11 07:44:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14155 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c5c8c50,2016-11-11 07:47:42,Strip IPython notebooks of output,0,0.0,0
+fdcabd7,2016-11-11 09:01:18,Made fix adapt work with bond_harmonic.,1,0.0,0
+8e0fd88,2016-11-11 10:52:50,update example for API change in Fix::copy_arrays(),1,0.0,0
+e453ada,2016-11-11 15:53:37,Updated instructions in IPython notebooks,0,0.0,0
+9b0987d,2016-11-11 17:32:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15614 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6e1492a,2016-11-11 18:10:26,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15615 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9cc0c8b,2016-11-11 18:10:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15616 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b977076,2016-11-11 18:19:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15617 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+22fc92f,2016-11-11 18:32:55,sync with GH,0,0.0,0
+5685131.0,2016-11-11 19:08:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15611 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5685131.0,2016-11-11 19:08:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12065 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5685131.0,2016-11-11 19:08:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12066 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5685131.0,2016-11-11 19:08:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15610 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d0124ea,2016-11-12 08:36:27,remove redundant code from fix qeq/reax and qeq/reax/omp,1,0.0,0
+03b3834,2016-11-12 09:07:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15591 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+57124b9,2016-11-12 09:18:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15572 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+20daf82,2016-11-13 18:44:10,sync with GH,0,0.0,0
+b5130a3,2016-11-13 18:46:55,sync with GH,0,0.0,0
+09544d0,2016-11-13 19:19:52,bugfix for virial tally for improper style umbrella from Steven Vandenbrande (U Gent),0,1.0,1
+26870f2,2016-11-13 23:18:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15563 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+14c7cf4,2016-11-13 23:18:59,correct a bunch of documentation formatting issues for updated neb and fix neb commands,1,0.0,0
+0c25f3b,2016-11-13 23:20:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15564 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e59552c,2016-11-14 07:58:47,add a few more missing details for integrating pair style kolmogorov/crespi/z,0,0.0,0
+765fe3c,2016-11-14 07:58:47,update lammps.book file for latest doc changes,0,0.0,0
+f3d6ecf,2016-11-14 07:58:47,Added Kolmogorov-Crespi potential,0,0.0,0
+fdf5d68,2016-11-14 09:27:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15566 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5f94b31,2016-11-14 10:11:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15567 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+1c68e42,2016-11-14 13:43:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15568 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f040f15,2016-11-14 16:11:12,email added,0,0.0,0
+b912db5,2016-11-14 16:11:12,updated documentation and ev_tally,0,0.0,0
+ef8d507,2016-11-14 16:11:12,Merge pull request #399 from rbberger/docs_spelling_fixes,0,0.0,0
+950442b,2016-11-15 21:53:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15569 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e57ae1c,2016-11-16 12:45:13,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15570 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+705f66a,2016-11-16 13:24:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15590 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4641c9e,2016-11-16 13:36:13,disallow MC moves with fix rigid and fix shake active. update examples and add shake example,1,0.0,0
+f617993,2016-11-16 13:52:27,fix typos: moleclue -> molecule,1,0.0,0
+683f514,2016-11-16 14:22:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15607 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+22d93fe,2016-11-16 14:31:10,Merge pull request #218 from timattox/USER-DPD_fix_rx_init_bugfix,0,0.0,0
+94f14ab,2016-11-16 15:34:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15605 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+16c8a30,2016-11-16 15:39:02,USER-DPD: update the USER/dpd examples and their reference outputs,0,0.0,0
+82364d1,2016-11-16 16:11:53,workaround for double free issue when using USER-COLVARS with lammps code loaded as shared library into a standalone executable,0,0.0,0
+2e7fd51,2016-11-16 16:42:01,ignore installed copy of fix bond/react,1,0.0,0
+b45d1e3,2016-11-16 16:46:00,revert to previous style conventions for size_t constants,0,0.0,0
+07e46b7,2016-11-16 20:27:14,whitespace cleanup,0,0.0,0
+0102c5d,2016-11-16 20:38:53,completed synchronization with non-threaded version,0,0.0,0
+9f313aa,2016-11-16 20:43:41,whitespace cleanup,0,0.0,0
+8756a10,2016-11-17 08:58:22,USER-DPD: Add atom_style compatibility checks in fix_eos_*.cpp files.,0,0.0,0
+cdae794,2016-11-17 09:00:03,Merge pull request #204 from rbberger/fix-user-omp,0,0.0,0
+2.535e+47,2016-11-17 09:00:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12067 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2535e44,2016-11-17 09:00:52,Merge pull request #209 from akohlmey/static-double-deallocation-workaround,0,0.0,0
+300ac30,2016-11-17 09:01:27,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15661 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4448819.0,2016-11-17 09:01:37,Merge pull request #211 from akohlmey/add-respa-to-fix-flow-gauss,0,0.0,0
+4448819.0,2016-11-17 09:01:37,USER-DPD: Added support to use VV integrator with USER-DPD if desired. Includes documentation and examples. NOTE: VV requires very small timesteps under isoenergetic conditions. Consider using fix_shardlow instead  since this VV support is primarily for comparison purposes.,0,0.0,0
+4448819.0,2016-11-17 09:01:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12069 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4448819.0,2016-11-17 09:01:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12068 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5320bbf,2016-11-17 09:01:46,Put snap before zbl to get more helpful error message,1,0.0,0
+073e8a0,2016-11-17 09:02:27,correctly handle exceptions raised from subprocess module,0,0.0,0
+74c0e4d,2016-11-17 09:04:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15595 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+19ac9d2,2016-11-17 09:31:07,sync with GH,0,0.0,0
+5ac2d95,2016-11-17 09:43:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15598 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4e62e58,2016-11-17 10:04:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15599 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4e+120,2016-11-17 10:04:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12070 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5c64934,2016-11-17 10:40:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15600 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+747c95c,2016-11-17 11:00:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15601 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4a3091f,2016-11-17 11:24:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15602 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2a026c9,2016-11-17 12:53:25,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15603 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+25d7be5,2016-11-17 16:11:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15604 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4b51719,2016-11-17 16:51:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15671 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+81f68e0,2016-11-17 20:44:07,patch for allowing prd command to work with sorted atoms,1,0.0,0
+635f3ce,2016-11-18 08:09:24,Initialize pointers in ASPHERE,0,0.0,0
+c78914e,2016-11-18 09:21:50,remove duplicate paragraph in nose-hoover fix docs,1,0.0,0
+78e0188,2016-11-18 14:48:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15670 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7.8e+189,2016-11-18 14:48:47,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12071 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2862c20,2016-11-18 14:51:46,Merge pull request #276 from akohlmey/doc-updates,0,0.0,0
+176cde8,2016-11-18 15:36:38,Merge pull request #278 from akohlmey/pair-agni,0,0.0,0
+d787afc,2016-11-18 15:37:49,turned off dev mode by default in temper_grem,0,0.0,0
+a5bde82,2016-11-18 15:38:11,Re-run example with debug off,0,0.0,0
+e175a18,2016-11-18 16:18:47,Merge pull request #47 from dstelter92/grem-feature,0,0.0,0
+2383c31,2016-11-18 23:58:57,added documention  re-ran temper_grem example,0,0.0,0
+230b29e,2016-11-19 11:47:12,USER-DPD: bugfix for an array that changed length in the non-kokkos version.,0,1.0,1
+c982b17,2016-11-19 19:36:13,',0,0.0,0
+b11f376,2016-11-19 23:25:51,revised documentation  added temper_grem ref to fix_grem,0,0.0,0
+fd174ce,2016-11-20 00:04:56,fix up and integrate documentation for contributed pair styles,1,0.0,0
+87a5a35,2016-11-20 00:44:23,USER-DPD: bugfix for new PairExp6rx::polynomialScaling() function.,0,1.0,1
+9e9d9d5,2016-11-21 11:34:42,modified temper_grem example with more exchanges,0,0.0,0
+dab232c,2016-11-21 12:02:17,revised temper_grem example  better file management,0,0.0,0
+3dff9f2,2016-11-21 12:05:30,compute pressure doc change,0,0.0,0
+1d93923,2016-11-21 12:21:01,First batch of spelling fixes in manual,1,0.0,0
+8f78157,2016-11-21 12:32:48,bugfix for library interface,0,1.0,1
+7893215.0,2016-11-21 12:46:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12072 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7893215.0,2016-11-21 12:46:43,add restrict to CCFLAGS for makefiles intended for intel compilers,0,0.0,0
+7893215.0,2016-11-21 12:46:43,Merge pull request #275 from andeplane/IP_VORONOI,0,0.0,0
+7893215.0,2016-11-21 12:46:43,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12073 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7590791.0,2016-11-21 13:54:14,Spelling fixes in source files,1,0.0,0
+7590791.0,2016-11-21 13:54:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12075 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7590791.0,2016-11-21 13:54:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12074 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7590791.0,2016-11-21 13:54:14,Merge pull request #394 from jaapkroe/kolmogorov-crespi,0,0.0,0
+0ffa50f,2016-11-22 08:15:13,spell check  minor typos,0,0.0,0
+d7b5421,2016-11-22 08:15:35,Merge branch 'master' into small-fixes-and-updates,0,0.0,0
+b95f255,2016-11-22 08:47:44,add USER-OMP version of pair style agni,0,0.0,0
+41907d3,2016-11-22 08:48:27,avoid segmentation fault  when creating a LAMMPS instance from the library interface. arg[] may be NULL.,0,0.0,0
+ff0441a,2016-11-22 08:49:46,simpler variant of the segfault workaround  that does not offend Clang c++.,0,0.0,0
+b6f2f0e,2016-11-22 08:50:29,dummy framework implementation for AGNI pair style,0,0.0,0
+61e71d2,2016-11-22 08:51:11,initialize 'nper',0,0.0,0
+59d100a,2016-11-22 09:23:02,implemented parser for 1 element potential files,0,0.0,0
+ae70f10,2016-11-22 12:05:14,first complete implementation of AGNI pair style,0,0.0,0
+d58dd4f,2016-11-22 12:13:20,Kokkos bugfix,0,0.0,1
+237307e,2016-11-22 12:16:00,add potential file for pair style AGNI,0,0.0,0
+647c6f0,2016-11-22 14:51:19,error exit when requested element is not in potential file,1,0.0,0
+df46b9a,2016-11-22 15:25:59,simplify multi-replica run by passing per-replica parameters as variables on the command line,0,0.0,0
+8778177.0,2016-11-23 09:02:32,Merge pull request #271 from akohlmey/tersoff-modc,0,0.0,0
+8778177.0,2016-11-23 09:02:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12076 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8778177.0,2016-11-23 09:02:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12077 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8778177.0,2016-11-23 09:02:32,Merge pull request #273 from akohlmey/auto-memalign,0,0.0,0
+6759630.0,2016-11-23 17:08:36,fix bug in recent dump changes for -DLAMMPS_BIGBIG,1,1.0,1
+6759630.0,2016-11-23 17:08:36,Fix issue with external links containing anchors,1,1.0,1
+6759630.0,2016-11-23 17:08:36,Fix broken link in Section_packages.txt,1,1.0,1
+6759630.0,2016-11-23 17:08:36,fix elusive uninitialized data bug reported by valgrind,1,1.0,1
+470908f,2016-11-24 05:46:15,Merge pull request #242 from andeplane/vashishta_kokkos,0,0.0,0
+02ae2d2,2016-11-28 11:34:22,Kokkos updates by Stan,0,0.0,0
+91e3872,2016-11-28 14:25:02,Second batch of spelling fixes in manual,1,0.0,0
+6d94439,2016-11-28 14:42:47,Convert USER/lb/polymer files to UNIX line endings and remove trailing whitespace,0,0.0,0
+fe99fc2,2016-11-28 15:29:37,Third batch of spelling fixes in manual,1,0.0,0
+f209c8c,2016-11-28 15:29:37,Added spellcheck utility to documentation build,0,0.0,0
+d43bd57,2016-11-28 15:29:37,Add remaining false positives,0,0.0,0
+5ff5bc2,2016-11-28 21:34:35,address issue where uninstalling an empty package will erase all code in src,0,1.0,1
+42d4301,2016-11-29 07:24:09,Initialized pointers in BODY,0,0.0,0
+789e623,2016-11-29 09:03:53,Initialize pointers in CORESHELL,0,0.0,0
+1d970d3,2016-11-29 12:15:39,Initialize pointers in KSPACE,0,0.0,0
+7d098bf,2016-11-29 12:47:19,sync with SVN,0,0.0,0
+7ddb667,2016-11-30 00:12:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12870 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+beb5a30,2016-11-30 14:01:27,cmake: fix 'make test',1,0.0,1
+d14814a,2016-11-30 14:02:41,Initialize pointers in MANYBODY and MC,0,0.0,0
+fb3f597,2016-11-30 14:04:41,make name of the actual executable (i.e. arg[0]) accessible,0,0.0,0
+6e6776f,2016-11-30 16:25:07,new neigh_modify exclude option  other SNAP changes,0,0.0,0
+3f68d37,2016-11-30 16:57:48,Merge pull request #376 from v0i0/airebo-bondorderLJ-fixes,0,0.0,0
+45b85b1,2016-12-01 14:50:11,gatherv fix  take 2,1,0.0,0
+16b15a6,2016-12-01 14:50:11,fix lambda syntax for CUDA,1,1.0,1
+07d9f9d,2016-12-01 14:50:11,fix bug in fix_modify respa reported by steven early strong on lammps-users,1,0.0,1
+5f78c2b,2016-12-01 15:14:47,Merge pull request #515 from stanmoore1/remove_fences,0,0.0,0
+ee4d1b3,2016-12-01 15:14:47,Merge branch 'pair_write_fix' of https://github.com/andeplane/lammps into small-bugfixes,0,0.0,0
+544e23f,2016-12-01 15:14:47,Merge pull request #386 from akohlmey/doc-consistentcy,0,0.0,0
+8318c67,2016-12-07 13:00:27,improve help and it through a pager  when screen == stdout,0,0.0,0
+39a12b1,2016-12-07 13:40:14,Initialized pointers in MISC and MOLECULE,0,0.0,0
+7c61dbf,2016-12-07 13:43:04,Initializing pointers in PERI  QEQ and REPLICA,0,0.0,0
+d3d5ac1,2016-12-07 19:37:51,Initialize pointers in RIGID and SHOCK,0,0.0,0
+9b48c49,2016-12-08 09:18:55,Initialize pointers in SNAP and SRD,0,0.0,0
+4354213.0,2016-12-09 08:37:01,Initializing pointers in USER-OMP,0,0.0,0
+4354213.0,2016-12-09 08:37:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12079 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4354213.0,2016-12-09 08:37:01,Initializing pointers in USER-DIFFRACTION and USER-DPD,0,0.0,0
+4354213.0,2016-12-09 08:37:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12078 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ddf678d,2016-12-09 14:30:27,Fix typo,1,0.0,0
+cdcebab,2016-12-09 14:43:56,pair style born/coul/dsf added with its coreshell version,0,0.0,0
+eff503e,2016-12-09 15:39:46,Merge branch 'master' into doc-updates,0,0.0,0
+5187cb9,2016-12-09 15:42:27,Initialize pointers in POEMS,0,0.0,0
+43c459b,2016-12-09 15:56:55,Initializing pointers in VORONOI,0,0.0,0
+586514e,2016-12-09 16:08:08,Merge pull request #274 from andeplane/IP_POEMS,0,0.0,0
+0f3b254,2016-12-09 16:08:31,removed leftover tex files,0,0.0,0
+31be0da,2016-12-09 16:17:35,Merge branch 'grem-feature' of https://github.com/dstelter92/lammps into grem-feature,0,0.0,0
+a5e46e3,2016-12-09 16:20:42,integrate fix grem docs and update to match current conventions,1,0.0,0
+b5c3d2f,2016-12-09 17:51:35,added internal tempering in grem with example,0,0.0,0
+a31b009,2016-12-12 09:18:20,file cleanup,0,0.0,0
+770f5d0,2016-12-12 09:24:37,shorter example,0,0.0,0
+baf55c9,2016-12-12 09:25:41,add adatom and vacancy examples for AGNI pair style,0,0.0,0
+13b6196,2016-12-12 10:47:39,Fixing GPU memory issue in fix_eos_table_rx_kokkos,1,1.0,1
+b34be30,2016-12-12 13:18:03,use special ev_tally() function suitable for this kind of force compute,0,0.0,0
+fda43c0,2016-12-12 13:22:54,add documentation for pair style agni,0,0.0,0
+ae5764b,2016-12-13 16:22:17,changes to imbalance weight factors,0,0.0,0
+f3b355b,2016-12-13 16:23:23,Merge pull request #193 from akohlmey/eam-bugfix,0,0.0,0
+624c57e,2016-12-13 16:24:41,adjustments to balancing weights and factors  also XOR op for formulas  if  dump_modify thresh,0,0.0,0
+1dbf6d4,2016-12-13 16:43:40,Removed non-general CUDA-dir in makefile,0,0.0,0
+f93c62d,2016-12-13 16:54:00,remove dead code,0,0.0,0
+f509f13,2016-12-13 17:14:28,null-ing of pointers and a couple select integers for fix ave/chunk,1,0.0,0
+d47c6b2,2016-12-14 11:25:11,Merge pull request #372 from akohlmey/fft-cleanup,0,0.0,0
+3e2cd6d,2016-12-14 11:46:04,Merge pull request #385 from akohlmey/collected-small-bugfixes,0,0.0,0
+766b3fa,2016-12-14 11:49:49,patch 21Feb17 sync with GHub,1,0.0,0
+cf40104,2016-12-14 12:50:52,improve consistency and resolve dead links for USER-CGDNA related doc files,0,0.0,0
+a9d26b3,2016-12-14 12:58:02,a few formatting fixes for pair style python,1,0.0,0
+bfcab72,2016-12-14 15:24:55,import updated README file for charmm2lammps.pl with CMAP support,0,0.0,0
+da2ad5b,2016-12-14 15:51:12,added tweak to write out the command line used for the conversion to the beginning of the LAMMPS input,0,0.0,0
+a58f763,2016-12-15 10:57:02,Merge pull request #393 from akohlmey/small-bugfixes,0,0.0,0
+c0d6cbb,2016-12-15 11:18:50,patch 7Mar17,1,0.0,0
+d5f8f36,2016-12-15 15:48:09,Cleanup of a few more references to obsoleted and removed tools like xmovie,0,0.0,0
+a3c1d38,2016-12-15 15:50:30,Verified oxDNA with modified nucleotide layout,0,0.0,0
+925481c,2016-12-15 16:46:25,Fixed triclinic bug in gcmc and qtype bug atom/swap,1,0.0,1
+fed629c,2016-12-15 17:10:13,Corrected formula for case lx != ly,0,1.0,1
+0a90492,2016-12-15 17:39:15,added 1GB1 example from Robert Latour and update 1AC7 example files,0,0.0,0
+eff7238,2016-12-15 17:43:04,Colvars update: make ABF check that the colvar isn't using already subtractAppliedForce,0,0.0,0
+f47a40b,2016-12-16 10:02:01,Fixing small bug in run-style verlet split,1,0.0,1
+d93e3d1,2016-12-16 10:06:12,Fixing GPU memory issue in fix_eos_table_rx_kokkos,1,1.0,1
+126fb22,2016-12-16 10:08:30,Colvars update: issue a warning that cannot be ignored regarding total forces,0,0.0,0
+e364b80,2016-12-16 10:24:25,some more updates to the README file to reflect the inclusion of the CMAP example and renamed file names,0,0.0,0
+fc54ab5,2016-12-16 10:25:29,update include statement format,0,0.0,0
+3027ac9,2016-12-16 10:30:57,Merge branch 'master' of https://github.com/albapa/lammps into small-changes,0,0.0,0
+4907b29,2016-12-16 11:21:15,Merge pull request #192 from rbberger/python-interface-bugfix,0,0.0,0
+830c9e8,2016-12-16 11:22:25,improved whitespace handling in msi2lmp for force fields and topologies,0,0.0,0
+0a17684,2016-12-16 11:35:42,restrict choice of weight factors and guarantee that weights are >= 0.001,0,0.0,0
+81a2db8,2016-12-16 11:36:54,remove unused variable,0,0.0,0
+cfa61b9,2016-12-16 12:37:41,Fixing Kokkos compile error,1,1.0,1
+8474453.0,2016-12-16 15:02:41,Cleanup on equations  JPG to be constructed.,0,0.0,0
+8474453.0,2016-12-16 15:02:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12086 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8474453.0,2016-12-16 15:02:41,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12080 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8474453.0,2016-12-16 15:02:41,Merge branch 'master' into updates-for-stable,0,0.0,0
+5cae3ec,2016-12-16 17:09:19,Using correct value for atom->nlocal,0,0.0,0
+ac57f47,2016-12-16 17:14:27,Starting to refactor in preparation to contruct OMP version.,0,0.0,0
+f6f2170,2016-12-19 11:28:24,support dynamic groups with run style respa,0,0.0,0
+a1b441a,2016-12-19 12:02:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15662 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ca30c1e,2016-12-19 13:08:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15663 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c7ac9e7,2016-12-19 13:17:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15664 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+21bb603,2016-12-19 13:30:00,Cleanup of style (removing all tabs  shortened long lines).,0,0.0,0
+3f1f51c,2016-12-19 13:31:09,update pair style python docs,0,0.0,0
+2ba424e,2016-12-19 15:11:52,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15665 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+000df6e,2016-12-19 15:20:10,Fixing Kokkos bug,1,0.0,1
+99910fc,2016-12-19 15:27:16,Force PDF documentation build to fail on first error,1,0.0,0
+6f51c3b,2016-12-19 16:25:31,Fixing per-atom ev issue,1,0.0,1
+f62a6fe,2016-12-19 16:50:22,Merge pull request #398 from stanmoore1/kokkos_changes,0,0.0,0
+889ee78,2016-12-19 17:15:02,when growing arrays with reallocate  always check against atom->nmax and not atom->nlocal or else these arrays may be of inconsistent size and communication can lead to data corruption,0,0.0,0
+590f317,2016-12-20 11:03:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15666 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+c4e02a5,2016-12-20 11:17:11,Possible uninitialized variable in USER-DPD/pair_exp6_rx.cpp bugfix.,0,0.0,0
+07bee39,2016-12-20 12:23:02,Fixed typo in dox.,1,0.0,0
+386c12c,2016-12-20 16:09:29,sync with GH,0,0.0,0
+2ceee6b,2016-12-20 16:19:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15669 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b2b33cc,2016-12-20 16:30:21,permission cleanup,0,0.0,0
+8b5e15e,2016-12-20 16:30:50,Revert type checking commit from July,0,0.0,0
+35803c7,2016-12-20 17:03:46,Fixing USER-CUDA compile error,1,1.0,1
+992becc,2016-12-21 08:00:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15276 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+01e3a31,2016-12-21 08:01:06,Merge branch 'restrict-weights-and-weight-factors' of https://github.com/akohlmey/lammps,0,0.0,0
+d9a0f57,2016-12-21 08:01:19,update documentation metadata files for recent changes,0,0.0,0
+d1a55ad,2016-12-21 08:07:19,initial import of adapted gREM code by David Stelter and Edyta Malolepsza,0,0.0,0
+41c9357,2016-12-21 08:53:27,avoid NaN for variance from average output,0,0.0,0
+7fb4faa,2016-12-21 08:53:57,add example for gREM,0,0.0,0
+ea76041,2016-12-21 08:54:40,whitespace cleanup,0,0.0,0
+54963ba,2016-12-21 08:55:33,disallow MC moves with fix rigid and fix shake active. update examples and add shake example,1,0.0,0
+7332692.0,2016-12-21 08:56:48,Fixing region issue,1,1.0,1
+7332692.0,2016-12-21 08:56:48,Fixing compile error,1,1.0,1
+7332692.0,2016-12-21 08:56:48,Fixing memory leak in Kokkos neighborlist,1,1.0,1
+7332692.0,2016-12-21 08:56:48,Fixing issue with ev_setup in pair_hybrid_kokkos,1,1.0,1
+f3327ca,2016-12-21 09:21:11,allow to extract properties in NH integrator only when they are active,0,0.0,0
+9161bd9,2016-12-21 09:50:29,Fixed problem in column_length(int),1,1.0,1
+800ff43,2016-12-21 09:51:10,add multi-replica example for gREM,0,0.0,0
+62dea1b,2016-12-21 09:53:32,fix_modify is not longer needed,0,0.0,0
+7559bc9,2016-12-21 10:21:55,added check for nvt vs npt  enabled nvt simulation with fix_grem,0,0.0,0
+807d952,2016-12-21 10:41:29,Fixing error check in fix_eos_table_rx_kokkos,1,1.0,1
+ae8d882,2016-12-21 10:57:18,compute scaled kinetic energy tensor without destroying the original data,0,0.0,0
+4c33f31,2016-12-21 10:57:44,fix doc in lib/latte/Makefile.lammps.*,1,0.0,0
+304f65b,2016-12-21 12:23:32,remove superfluous code,0,0.0,0
+163b61a,2016-12-21 15:37:00,avoid undesired negative forces for high particle velocities in granular models,0,0.0,0
+26c21da,2016-12-21 16:50:42,Merge branch 'master' into add-user-reaxc-omp,0,0.0,0
+ccaa050,2016-12-22 07:55:15,Merge branch 'USER-MANIFOLD-gaussian-bump',0,0.0,0
+66cdd3a,2016-12-22 08:01:46,match reax/c pair style variants against prefix and not full name,0,0.0,0
+53e0799,2016-12-22 08:07:48,whitespace cleanup,0,0.0,0
+04e2f17,2016-12-22 09:28:25,Merge pull request #389 from akohlmey/update-agni-potential,0,0.0,0
+06ae280,2016-12-22 10:05:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15277 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+89795b3,2016-12-22 10:18:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12285 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b3557bf,2016-12-22 10:45:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15275 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+994f36b,2016-12-22 10:45:57,correct typo in Make.py,0,0.0,0
+9a0007a,2016-12-22 10:49:28,import updated charmm2lammps.pl script from Rober Latour,0,0.0,0
+f6fe611,2016-12-22 11:34:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12284 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a4ab877,2016-12-22 13:16:57,Slight tweaks to Kokkos Makefiles,0,0.0,0
+a36e563,2016-12-22 14:37:42,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13573 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ba96fcc,2016-12-22 16:21:05,properly handle -nohints flag  make -cmap flag take version as option. step version number,0,0.0,0
+fa435fb,2016-12-22 17:05:49,rebuild charmm2lammps example output files with updated tools,0,0.0,0
+3faa57a,2016-12-22 17:15:09,permission update for ch2lmp tool folder,0,0.0,0
+781daad,2016-12-22 17:31:17,remove trailing whitespace,0,0.0,0
+c301d70,2016-12-22 17:32:41,added XOR operator to variable command,0,0.0,0
+4f19525,2016-12-23 10:13:01,Fixing Kokkos neighbor bug,1,1.0,1
+27172c4,2016-12-23 10:47:08,Fixing Kokkos neighbor bug,1,1.0,1
+a1036f2,2016-12-23 11:36:59,USER-DPD: bugfix in unpack_comm_hybrid()  now works with hybrid atom style,0,1.0,1
+eca9539,2016-12-23 11:38:48,more formatting issues addressed,0,0.0,0
+cc1b55e,2016-12-23 12:36:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13552 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+371df8e,2016-12-23 13:08:34,Merge pull request #190 from akohlmey/small-bufixes-and-enhancements,0,0.0,0
+634eb35,2016-12-24 16:09:18,Merge pull request #191 from akohlmey/updated-charmm2lammps,0,0.0,0
+6ab7161,2016-12-27 13:17:02,fix memory leaks in pair_tabl_rx_kokkos,1,1.0,1
+f553e23,2016-12-27 13:17:34,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12313 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+925f427,2016-12-27 14:26:43,replace complex solution to implement a soft exit with simpler one,0,0.0,0
+b0263e8,2016-12-27 17:16:32,fix warning about enum comparisons,1,1.0,1
+616ca1d,2016-12-28 16:17:07,fix typo,1,1.0,1
+68814d4,2016-12-28 16:26:05,Merge pull request #49 from epfl-cosmo/fix-ipi,0,0.0,0
+94c4f8f,2016-12-28 17:03:37,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@15338 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+aa146e9,2016-12-28 19:06:35,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12314 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b0ebd3e,2016-12-28 23:12:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12381 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2db66e4,2016-12-30 12:16:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13553 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5.12e+80,2016-12-30 14:42:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12087 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+0512e78,2016-12-30 14:42:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13554 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7d057d4,2017-01-02 13:02:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13754 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+391ab76,2017-01-02 17:55:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13756 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4d98bbd,2017-01-02 18:08:14,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13757 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2c7fea1,2017-01-02 18:15:08,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13758 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+18b12ef,2017-01-02 18:25:36,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13759 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4f096db,2017-01-02 18:53:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13760 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4f45d39,2017-01-03 02:34:11,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13761 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4cfe122,2017-01-03 09:04:10,Fix compile error for CUDA in pair_exp6_rx_kokkos,1,1.0,1
+e632f85,2017-01-03 09:04:10,fix typo,1,0.0,0
+e3ebd8e,2017-01-03 09:15:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13558 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+2af10cb,2017-01-03 10:09:44,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13559 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f220b07,2017-01-03 10:36:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13561 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+dae132c,2017-01-03 10:53:10,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13562 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6d7607a,2017-01-03 11:13:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13568 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b10d0c1,2017-01-03 11:24:48,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13762 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ae0e882,2017-01-03 11:51:28,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13569 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+37d5567,2017-01-03 11:54:14,USER-DPD: fix a segfault when using constant temperature (DPD vs. DPDE),1,1.0,1
+b5c7d44,2017-01-03 12:35:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13588 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+50df3da,2017-01-03 14:27:49,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@14148 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+fe3c98c,2017-01-03 14:29:11,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13572 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a7c5905,2017-01-03 15:15:29,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13763 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+17bdb57,2017-01-03 16:08:38,',0,0.0,0
+318ab9a,2017-01-03 16:33:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13587 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3941fe9,2017-01-03 16:42:24,2nd try on LATTE error returns  plus a couple minor doc edits,1,0.0,1
+79ed1b5,2017-01-03 17:04:12,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13575 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b46629e,2017-01-04 08:06:55,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13753 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a1ac861,2017-01-04 08:24:11,',0,0.0,0
+aebc8ea,2017-01-04 10:51:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13768 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a1ac2ae,2017-01-04 10:51:31,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13576 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+7cff343,2017-01-04 10:57:52,fix bug reported in issue #851,1,1.0,1
+fe14158,2017-01-04 13:13:56,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13770 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d059b5d,2017-01-04 14:06:17,simplified neighbor list copying to avoid possible same-timestep re-build issues,0,1.0,1
+933b288,2017-01-04 14:31:23,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13771 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+a4271ae,2017-01-04 15:13:46,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13578 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+42bbeb3,2017-01-04 16:04:05,',0,0.0,0
+0bcbcca,2017-01-04 17:28:22,',0,0.0,0
+cc4040d,2017-01-05 12:25:45,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13579 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+53a1de1,2017-01-05 13:01:34,cmake: fix build with system latte,1,1.0,1
+70927d0,2017-01-05 13:25:30,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13581 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+8503ac2,2017-01-05 13:58:11,Fixing more broken USER-EFF examples,1,1.0,1
+332372d,2017-01-05 14:03:16,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13582 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+267f05e,2017-01-05 14:06:54,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13747 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+19f2d2d,2017-01-05 15:22:59,Removing untested feature to fix bug affecting Windows builds,1,1.0,1
+967cdd9,2017-01-05 15:37:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13583 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+e5906df,2017-01-05 15:37:21,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13584 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+49d644e,2017-01-05 16:46:04,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13585 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+b9144d6,2017-01-05 20:22:15,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13746 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+9bf7712,2017-01-05 20:46:05,Edited quip text,0,0.0,0
+ad14025,2017-01-05 20:54:24,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13574 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+d8ddef3,2017-01-05 20:56:37,Remove unused ngroup calc,0,0.0,0
+7201f00,2017-01-05 21:00:39,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13614 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+6af56e6,2017-01-06 08:31:02,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13725 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+f6a8195,2017-01-06 09:57:27,fix memory leak in fix_shardlow_kokkos,1,1.0,1
+d4e8d47,2017-01-06 09:58:01,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13708 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+41a6a30,2017-01-06 09:58:20,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13767 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+5.656e+93,2017-01-06 10:00:33,Merge pull request #841 from stanmoore1/compiler_warnings,0,0.0,0
+5656e90,2017-01-06 10:00:33,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13752 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4673770.0,2017-01-06 10:01:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13751 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4673770.0,2017-01-06 10:01:17,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13750 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+4673770.0,2017-01-06 10:01:17,replace leading tabs,0,0.0,0
+4673770.0,2017-01-06 10:01:17,remove trailing whitespace,0,0.0,0
+9b348d5,2017-01-06 10:01:57,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@13749 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+3ac5845,2017-01-06 10:02:22,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12247 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+12c4fa2,2017-01-06 10:03:05,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12223 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+ebbf60b,2017-01-06 10:03:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12234 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+83da5d3,2017-01-06 10:10:09,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12224 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+63f2025,2017-01-06 10:10:59,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12225 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
+142770c,2017-01-06 10:38:32,git-svn-id: svn://svn.icms.temple.edu/lammps-ro/trunk@12226 f3b2605a-c512-4ea7-a41b-209d697bcdaa,0,0.0,0
