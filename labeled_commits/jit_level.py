@@ -97,11 +97,9 @@ def jit_metrics_building(p, commit_hash, delta_files, udb_path):
     sp.call(commit_cmd, shell=True, stdout=sp.PIPE, stderr=sp.STDOUT)
     path = udb_path
     if REPO_LINKS[p]["lang"] == "fortran":
-        cmd = "und create -db {} -languages Fortran python C++ add {}".format(str(path), str_files)
-        sp.call(cmd, shell=True, stdout=sp.PIPE, stderr=sp.STDOUT)
-        cmd = "und -db {} settings -FileTypes .F90=Fortran .F77=Fortran .F03=Fortran .F95=Fortran .F=Fortran".format(str(path))
-        sp.call(cmd, shell=True, stdout=sp.PIPE, stderr=sp.STDOUT)
-        cmd = "und -db {} analyze -all".format(str(path))
+        cmd = "und create -db {} -languages Fortran python C++ ".format(str(path))
+        cmd += "settings -FileTypes .F90=Fortran .F77=Fortran .F03=Fortran .F95=Fortran .F=Fortran "
+        cmd += "add {} analyze -all".format(str_files)
     elif REPO_LINKS[p]["lang"] == "python":
         cmd = "und create -db {} -languages python add {} analyze -all".format(
             str(path), str_files)
