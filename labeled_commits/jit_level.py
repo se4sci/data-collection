@@ -136,7 +136,7 @@ def get_buggy_clean_pairs(main_path, p, index, type_label):
     previous_bugs = df_commits.loc[previous_bugs_indices]['hash'].values.tolist()
     return zip(previous_bugs, fixed_bugs)
 
-def update_changed_df(udb_path, files_changed, type_label, f_status):
+def update_changed_df(udb_path, files_changed, type_label, commit_hash, f_status):
     curr_udb = und.open(udb_path)
     metrics_df = pd.DataFrame() 
     for file in curr_udb.ents("File"):
@@ -145,6 +145,7 @@ def update_changed_df(udb_path, files_changed, type_label, f_status):
             if str(file) in f_c:
                 metrics = file.metric(file.metrics())
                 metrics["File"] = f_c
+                metrics["Hash"] = commit_hash
                 metrics[type_label] = f_status
                 metrics_df = metrics_df.append(pd.Series(metrics), 
                                                ignore_index=True)
@@ -171,13 +172,14 @@ def build_jit_datasets(type_label, p):
                 sp.call("git reset --hard master", shell=True, stdout=sp.PIPE, stderr=sp.STDOUT)
                 files_changed = _files_changed_in_git_diff(buggy, cleanny)
                 if files_changed:
+                    print("hello")
                     # ------------------------------------------------------------------
                     # ---------------------- BUGGY FILES METRICS -----------------------
                     # ------------------------------------------------------------------
                     # Create a understand file for this hash
                     udb_path_buggy = str(get_und_type(udb_folder, p, type_label, "buggy"))
                     jit_metrics_building(p, buggy, files_changed, udb_path_buggy)
-                    temp_df_1 = update_changed_df(udb_path_buggy, files_changed, type_label, 1)
+                    temp_df_1 = update_changed_df(udb_path_buggy, files_changed, type_label, buggy, 1)
 
 
                     sp.call("git reset --hard master", shell=True, stdout=sp.PIPE, stderr=sp.STDOUT)
@@ -187,12 +189,12 @@ def build_jit_datasets(type_label, p):
                     # Create a understand p, file for this hash
                     udb_path_cleanny = str(get_und_type(udb_folder, p, type_label, "cleanny"))
                     jit_metrics_building(p, cleanny, files_changed, udb_path_cleanny)
-                    temp_df_2 = update_changed_df(udb_path_cleanny, files_changed, type_label, 0)
+                    temp_df_2 = update_changed_df(udb_path_cleanny, files_changed, type_label, cleanny, 0)
                     metrics_dataframe = pd.concat([metrics_dataframe, temp_df_1, temp_df_2], 
                                                     ignore_index=True)
                     #print(files_changed, metrics_dataframe.shape, temp_df_1.shape[0], temp_df_2.shape[0])
                 
-            columns_order = ['File'] + [a for a in metrics_dataframe.columns if a not in ['File', 'Bugs']] + ['Bugs']
+            columns_order = ['File'] + [a for a in metrics_dataframe.columns if a not in ['File', 'Hash', type_label]] 
             metrics_dataframe = metrics_dataframe.reindex(columns=(columns_order))
             #metrics_dataframe = metrics_dataframe.drop_duplicates(subset='File', keep="last").reset_index()
             #metrics_dataframe = metrics_dataframe.dropna()
