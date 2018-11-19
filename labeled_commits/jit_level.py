@@ -97,7 +97,7 @@ def jit_metrics_building(p, commit_hash, delta_files, udb_path):
     sp.call(commit_cmd, shell=True, stdout=sp.PIPE, stderr=sp.STDOUT)
     path = udb_path
     if REPO_LINKS[p]["lang"] == "fortran":
-        cmd = "und create -db {} -languages Fortran python C++ ".format(str(path))
+        cmd = "und create -db {} -languages Fortran python ".format(str(path))
         cmd += "settings -FileTypes .F90=Fortran .F77=Fortran .F03=Fortran .F95=Fortran .F=Fortran "
         cmd += "add {} analyze -all".format(str_files)
     elif REPO_LINKS[p]["lang"] == "python":
@@ -172,7 +172,7 @@ def build_jit_datasets(type_label, p):
                 sp.call("git reset --hard master", shell=True, stdout=sp.PIPE, stderr=sp.STDOUT)
                 files_changed = _files_changed_in_git_diff(buggy, cleanny)
                 if files_changed:
-                    print("hello")
+                    #print("hello")
                     # ------------------------------------------------------------------
                     # ---------------------- BUGGY FILES METRICS -----------------------
                     # ------------------------------------------------------------------
@@ -194,7 +194,7 @@ def build_jit_datasets(type_label, p):
                                                     ignore_index=True)
                     #print(files_changed, metrics_dataframe.shape, temp_df_1.shape[0], temp_df_2.shape[0])
                 
-            columns_order = ['File'] + [a for a in metrics_dataframe.columns if a not in ['File', 'Hash', type_label]] 
+            columns_order = ['File', 'Hash'] + [a for a in metrics_dataframe.columns if a not in ['File', 'Hash', type_label]] + [type_label]
             metrics_dataframe = metrics_dataframe.reindex(columns=(columns_order))
             #metrics_dataframe = metrics_dataframe.drop_duplicates(subset='File', keep="last").reset_index()
             #metrics_dataframe = metrics_dataframe.dropna()
